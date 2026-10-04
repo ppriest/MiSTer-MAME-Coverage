@@ -113,8 +113,8 @@ def resolve_core(m: dict, cores, by_repo, by_rbf, repo_count) -> str:
         cores[cid] = {
             "id": cid, "name": m.get("rbf") or "?", "source": src,
             "source_title": mister_mod.DB_TITLES.get(src, src), "channel": None,
-            "rbf": (m.get("rbf") or "") + ".rbf", "repo": m["repo"],
-            "url": f"https://github.com/{m['repo']}", "build_date": None, "status": None,
+            "rbf": (m.get("rbf") or "") + ".rbf", "repo": None if m["repo"].startswith("db:") else m["repo"],
+            "url": None if m["repo"].startswith("db:") else f"https://github.com/{m['repo']}", "build_date": None, "status": None,
             "reading": None, "score": None, "mame_drivers": [], "note": None, "alamone_sets": [],
         }
     return cid
@@ -206,6 +206,8 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
             unmatched.append({"set": setn, "cores": sorted(recs)})
     # Every machine that is arcade/gambling, or that MiSTer loads regardless of category.
     for name, m in machines.items():
+        if m.get("isbios"):  # "Acclaim ZN-1", "Neo-Geo" and the like are not games
+            continue
         cat = mame_mod.classify(m)
         if cat not in ("arcade", "mahjong", "gambling") and name not in support:
             continue

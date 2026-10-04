@@ -10,7 +10,7 @@
   const S = { data: null, cores: {}, titles: [], shown: 0, PAGE: 250, dir: { t: 1, d: -1, c: 1 }, open: new Set() };
 
   // ---------- state in the URL hash ----------
-  const FILTER_IDS = ["f-q", "f-cov", "f-work", "f-cat", "f-y0", "f-y1", "f-manu", "f-drv", "f-core", "f-rot", "f-sort"];
+  const FILTER_IDS = ["f-q", "f-cov", "f-work", "f-cat", "f-y0", "f-y1", "f-manu", "f-drv", "f-dcov", "f-core", "f-rot", "f-sort"];
   function readHash() {
     const p = new URLSearchParams(location.hash.slice(1));
     for (const id of FILTER_IDS) if (p.has(id)) { const el = $("#" + id); if (el) el.value = p.get(id); }
@@ -181,6 +181,11 @@
     if (f.y1 && (!+t.year || +t.year > f.y1)) return false;
     if (f.manu && t.manufacturer !== f.manu) return false;
     if (f.drv && t.sourcefile !== f.drv) return false;
+    if (f.dcov) {
+      const d = S.driverByFile[t.sourcefile];
+      const state = !d || d.covered === 0 ? "none" : d.covered < d.titles ? "partial" : "full";
+      if (f.dcov === "some" ? state === "none" : state !== f.dcov) return false;
+    }
     if (f.core && !t.cores.includes(f.core)) return false;
     if (f.rot === "h" && (t.rotate === 90 || t.rotate === 270)) return false;
     if (f.rot === "v" && !(t.rotate === 90 || t.rotate === 270)) return false;
@@ -193,7 +198,7 @@
 
   function readFilters() {
     return { q: $("#f-q").value.trim().toLowerCase(), cov: $("#f-cov").value, work: $("#f-work").value, cat: $("#f-cat").value,
-      y0: +$("#f-y0").value || 0, y1: +$("#f-y1").value || 0, manu: $("#f-manu").value, drv: $("#f-drv").value, core: $("#f-core").value, rot: $("#f-rot").value, sort: $("#f-sort").value };
+      y0: +$("#f-y0").value || 0, y1: +$("#f-y1").value || 0, manu: $("#f-manu").value, drv: $("#f-drv").value, dcov: $("#f-dcov").value, core: $("#f-core").value, rot: $("#f-rot").value, sort: $("#f-sort").value };
   }
 
   function applyTitles() {
@@ -266,7 +271,7 @@
   function applyDrivers() {
     const q = $("#d-q").value.trim().toLowerCase(), cov = $("#d-cov").value, sort = $("#d-sort").value, dir = S.dir.d;
     let rows = S.data.drivers.filter(d => (!q || d.sourcefile.toLowerCase().includes(q) || d.cores.some(c => coreName(c).toLowerCase().includes(q)))
-      && (cov === "all" || (cov === "none" && d.covered === 0) || (cov === "partial" && d.covered > 0 && d.covered < d.titles) || (cov === "full" && d.covered === d.titles)));
+      && (cov === "all" || (cov === "none" && d.covered === 0) || (cov === "partial" && d.covered > 0 && d.covered < d.titles) || (cov === "notfull" && d.covered < d.titles) || (cov === "full" && d.covered === d.titles)));
     const cmp = {
       remaining: (a, b) => (a.titles - a.covered) - (b.titles - b.covered) || a.sourcefile.localeCompare(b.sourcefile),
       sourcefile: (a, b) => a.sourcefile.localeCompare(b.sourcefile),
@@ -339,6 +344,7 @@
   FILTER_IDS.forEach(id => { const el = $("#" + id); el.dataset.default = el.value; });
   fetch("data/coverage.json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(data => {
     S.data = data; S.titles = data.titles; data.cores.forEach(c => S.cores[c.id] = c);
+    S.driverByFile = {}; data.drivers.forEach(d => S.driverByFile[d.sourcefile] = d);
     const c = data.meta.counts;
     $("#subtitle").textContent = `MAME ${data.meta.mame_version.replace(/^0/, "0.")} · ${fmt(c.working_arcade_titles)} working arcade titles · ${fmt(c.cores)} MiSTer cores · updated ${data.meta.generated.slice(0, 10)}`;
     $("#mame-ver").textContent = data.meta.mame_version.replace(/^0/, "0.");

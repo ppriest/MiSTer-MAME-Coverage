@@ -29,7 +29,7 @@ from . import paths
 
 LEDGER = os.path.join(paths.DATA, "ledger.json")
 
-_QUALITY_RANK = {"git": 3, "git-other": 2, "build": 1, "none": 0}
+_QUALITY_RANK = {"git": 4, "git-other": 3, "build": 2, "observed": 1, "none": 0}
 
 
 def _today() -> str:
@@ -90,6 +90,8 @@ def merge(ledger: dict, observed: dict, note: str = "") -> dict:
             old = slot.get(cid)
             if old is None:
                 new = dict(rec, first_recorded=today, last_seen=today)
+                if not new.get("date"):  # no history anywhere: the day we first saw it is the date
+                    new.update(date=today, date_quality="observed")
                 slot[cid] = new
                 added_pairs += 1
                 continue

@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-04T01:16:47+00:00",
+  "generated": "2026-10-04T01:42:09+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-04T01:15:43+00:00",
+  "mister_generated": "2026-10-04T01:41:20+00:00",
   "alamone_generated": "2026-10-01T23:23:16+00:00",
   "ledger_updated": "2026-10-04",
   "ledger_runs": [
@@ -21,6 +21,22 @@
     "cores": 0,
     "sets": 0,
     "pairs": 0,
+    "dates_improved": 0
+   },
+   {
+    "date": "2026-10-04",
+    "note": "alamone 2026-10-01",
+    "cores": 1,
+    "sets": 15,
+    "pairs": 15,
+    "dates_improved": 0
+   },
+   {
+    "date": "2026-10-04",
+    "note": "alamone 2026-10-01",
+    "cores": 5,
+    "sets": 10,
+    "pairs": 33,
     "dates_improved": 0
    }
   ],
@@ -2077,20 +2093,75 @@
     "mras": 2
    },
    {
+    "source": "repo",
+    "repo": "kyledlester/Namco_NB1_MiSTer",
+    "dirs": [
+     "MRA"
+    ],
+    "mras": 15
+   },
+   {
+    "source": "repo",
+    "repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+    "dirs": [
+     "MRA"
+    ],
+    "mras": 6
+   },
+   {
+    "source": "repo",
+    "repo": "ppriest/Arcade-HyperNG64_MiSTer",
+    "dirs": null,
+    "mras": 4
+   },
+   {
     "source": "dist",
     "repo": "MiSTer-devel/NeoGeo_MiSTer",
     "dirs": [],
     "mras": 262
    }
   ],
-  "repo_errors": [],
+  "repo_errors": [
+   [
+    "Kyp069/zx48-MiSTer",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "blahm1d/MiSTer-cores",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "blahm1d/wolf-unit",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "kandowontu/BrickBoy_MiSTer",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/Bucky",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/mrdo",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/s24",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "https://mister.blahm1d.com/db.json.zip",
+    "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   ]
+  ],
   "counts": {
-   "titles": 6886,
-   "working_arcade_titles": 3762,
-   "working_arcade_titles_covered": 1805,
-   "working_arcade_sets": 10018,
-   "working_arcade_sets_covered": 4601,
-   "cores": 524,
+   "titles": 6823,
+   "working_arcade_titles": 3725,
+   "working_arcade_titles_covered": 1817,
+   "working_arcade_sets": 9981,
+   "working_arcade_sets_covered": 4624,
+   "cores": 530,
    "unmatched_sets": 400
   }
  },
@@ -5796,9 +5867,9 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-04",
-   "nsets": 99,
-   "ntitles": 23,
-   "first_date": "2026-03-15"
+   "nsets": 98,
+   "ntitles": 22,
+   "first_date": "2026-04-17"
   },
   {
    "id": "dist:ikariwarriors",
@@ -12035,6 +12106,27 @@
    "first_date": "2026-07-23"
   },
   {
+   "id": "meat:stoneball",
+   "name": "Arcade-StoneBall",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-StoneBall.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 3,
+   "ntitles": 3,
+   "first_date": "2026-10-03"
+  },
+  {
    "id": "meat:suna8bit",
    "name": "Arcade-Suna8bit",
    "source": "meat",
@@ -12055,6 +12147,48 @@
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-09"
+  },
+  {
+   "id": "meat:tumble",
+   "name": "Arcade-Tumble",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-Tumble.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 12,
+   "ntitles": 11,
+   "first_date": "2026-10-02"
+  },
+  {
+   "id": "meat:viostorm",
+   "name": "Arcade-VioStorm",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-VioStorm.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 7,
+   "ntitles": 1,
+   "first_date": "2026-10-02"
   },
   {
    "id": "meat:yellowcab",
@@ -12846,9 +12980,9 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-04",
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-09-30"
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": null
   },
   {
    "id": "ongo:pspike",
@@ -13939,6 +14073,27 @@
    "first_date": "2026-09-07"
   },
   {
+   "id": "repo:hyperng64",
+   "name": "HyperNG64",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "HyperNG64.rbf",
+   "repo": "ppriest/Arcade-HyperNG64_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-HyperNG64_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 4,
+   "ntitles": 4,
+   "first_date": "2026-09-20"
+  },
+  {
    "id": "repo:jtnslasher",
    "name": "jtnslasher (derpyder)",
    "source": "repo",
@@ -14007,6 +14162,49 @@
    "nsets": 21,
    "ntitles": 10,
    "first_date": "2026-09-25"
+  },
+  {
+   "id": "repo:namco_nb1",
+   "name": "Namco_NB1",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "Namco_NB1.rbf",
+   "repo": "kyledlester/Namco_NB1_MiSTer",
+   "url": "https://github.com/kyledlester/Namco_NB1_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
+   "nsets": 15,
+   "ntitles": 8,
+   "first_date": "2026-09-30"
+  },
+  {
+   "id": "repo:nostradamus",
+   "name": "Nostradamus",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "Nostradamus.rbf",
+   "repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+   "url": "https://github.com/kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 6,
+   "ntitles": 2,
+   "first_date": "2026-10-03"
   },
   {
    "id": "repo:polyplay",
@@ -14588,19 +14786,10 @@
    "first": null
   },
   {
-   "sourcefile": "amiga/alg.cpp",
-   "titles": 1,
-   "covered": 0,
-   "sets": 1,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
-  },
-  {
    "sourcefile": "amiga/arsystems.cpp",
-   "titles": 17,
+   "titles": 16,
    "covered": 0,
-   "sets": 23,
+   "sets": 22,
    "sets_covered": 0,
    "cores": [],
    "first": null
@@ -14705,9 +14894,9 @@
   },
   {
    "sourcefile": "atari/atarisy1.cpp",
-   "titles": 7,
+   "titles": 6,
    "covered": 5,
-   "sets": 28,
+   "sets": 27,
    "sets_covered": 26,
    "cores": [
     "dist:atarisys1"
@@ -15080,9 +15269,9 @@
   },
   {
    "sourcefile": "atari/maxaflex.cpp",
-   "titles": 5,
+   "titles": 4,
    "covered": 0,
-   "sets": 5,
+   "sets": 4,
    "sets_covered": 0,
    "cores": [],
    "first": null
@@ -15865,9 +16054,9 @@
   },
   {
    "sourcefile": "ces/galgames.cpp",
-   "titles": 4,
+   "titles": 3,
    "covered": 0,
-   "sets": 5,
+   "sets": 4,
    "sets_covered": 0,
    "cores": [],
    "first": null
@@ -16181,9 +16370,9 @@
   },
   {
    "sourcefile": "dataeast/decocass.cpp",
-   "titles": 38,
+   "titles": 37,
    "covered": 37,
-   "sets": 59,
+   "sets": 58,
    "sets_covered": 56,
    "cores": [
     "dist:decocassette"
@@ -16259,6 +16448,7 @@
    "sets": 6,
    "sets_covered": 0,
    "cores": [
+    "meat:tumble",
     "ongo:kuze_tumble",
     "ongo:tumble"
    ],
@@ -16450,6 +16640,7 @@
    "cores": [
     "coinop:supbtime",
     "coinop:tumblep",
+    "meat:tumble",
     "ongo:kuze_tumble",
     "ongo:tumble"
    ],
@@ -16480,6 +16671,7 @@
    "sets": 20,
    "sets_covered": 10,
    "cores": [
+    "meat:tumble",
     "ongo:kuze_tumble",
     "ongo:tumble"
    ],
@@ -16618,9 +16810,9 @@
   },
   {
    "sourcefile": "efo/cedar_magnet.cpp",
-   "titles": 9,
+   "titles": 8,
    "covered": 0,
-   "sets": 10,
+   "sets": 9,
    "sets_covered": 0,
    "cores": [],
    "first": null
@@ -17245,14 +17437,14 @@
   },
   {
    "sourcefile": "igs/pgm.cpp",
-   "titles": 26,
-   "covered": 23,
-   "sets": 125,
-   "sets_covered": 99,
+   "titles": 25,
+   "covered": 22,
+   "sets": 124,
+   "sets_covered": 98,
    "cores": [
     "dist:igspgm"
    ],
-   "first": "2026-03-15"
+   "first": "2026-04-17"
   },
   {
    "sourcefile": "igs/pgm2.cpp",
@@ -17428,9 +17620,9 @@
   },
   {
    "sourcefile": "itech/iteagle.cpp",
-   "titles": 13,
+   "titles": 12,
    "covered": 0,
-   "sets": 21,
+   "sets": 20,
    "sets_covered": 0,
    "cores": [],
    "first": null
@@ -17741,9 +17933,9 @@
   },
   {
    "sourcefile": "kaneko/suprnova.cpp",
-   "titles": 15,
+   "titles": 14,
    "covered": 14,
-   "sets": 39,
+   "sets": 38,
    "sets_covered": 38,
    "cores": [
     "repo:skns"
@@ -18131,18 +18323,18 @@
   },
   {
    "sourcefile": "konami/konamigv.cpp",
-   "titles": 10,
+   "titles": 9,
    "covered": 0,
-   "sets": 12,
+   "sets": 11,
    "sets_covered": 0,
    "cores": [],
    "first": null
   },
   {
    "sourcefile": "konami/konamigx.cpp",
-   "titles": 16,
+   "titles": 15,
    "covered": 11,
-   "sets": 36,
+   "sets": 35,
    "sets_covered": 22,
    "cores": [
     "repo:konamigx"
@@ -18187,9 +18379,9 @@
   },
   {
    "sourcefile": "konami/ksys573.cpp",
-   "titles": 28,
+   "titles": 27,
    "covered": 0,
-   "sets": 71,
+   "sets": 70,
    "sets_covered": 0,
    "cores": [],
    "first": null
@@ -18276,6 +18468,7 @@
     "coinop:mystwarr",
     "jlrh:ffmtlchamp",
     "jlrh:ffmystwarr",
+    "meat:viostorm",
     "ongo:meathax_viostorm",
     "ongo:viostorm"
    ],
@@ -18283,9 +18476,9 @@
   },
   {
    "sourcefile": "konami/nemesis.cpp",
-   "titles": 14,
+   "titles": 13,
    "covered": 4,
-   "sets": 24,
+   "sets": 23,
    "sets_covered": 9,
    "cores": [
     "dist:bubsysrom",
@@ -18585,9 +18778,9 @@
   },
   {
    "sourcefile": "konami/twinkle.cpp",
-   "titles": 10,
+   "titles": 9,
    "covered": 0,
-   "sets": 15,
+   "sets": 14,
    "sets_covered": 0,
    "cores": [],
    "first": null
@@ -18621,15 +18814,6 @@
     "meat:escapekids"
    ],
    "first": "2024-02-16"
-  },
-  {
-   "sourcefile": "konami/viper.cpp",
-   "titles": 1,
-   "covered": 0,
-   "sets": 1,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
   },
   {
    "sourcefile": "konami/wecleman.cpp",
@@ -18836,6 +19020,7 @@
    "sets": 6,
    "sets_covered": 3,
    "cores": [
+    "meat:stoneball",
     "ongo:meathax_stoneball",
     "ongo:stoneball"
    ],
@@ -18933,9 +19118,9 @@
   },
   {
    "sourcefile": "misc/crystal.cpp",
-   "titles": 5,
+   "titles": 4,
    "covered": 0,
-   "sets": 5,
+   "sets": 4,
    "sets_covered": 0,
    "cores": [],
    "first": null
@@ -19316,11 +19501,13 @@
   {
    "sourcefile": "misc/mcatadv.cpp",
    "titles": 2,
-   "covered": 0,
+   "covered": 2,
    "sets": 6,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 6,
+   "cores": [
+    "repo:nostradamus"
+   ],
+   "first": "2026-10-03"
   },
   {
    "sourcefile": "misc/megaphx.cpp",
@@ -19929,11 +20116,13 @@
   {
    "sourcefile": "namco/namconb1.cpp",
    "titles": 10,
-   "covered": 0,
+   "covered": 8,
    "sets": 21,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 15,
+   "cores": [
+    "repo:namco_nb1"
+   ],
+   "first": "2026-09-30"
   },
   {
    "sourcefile": "namco/namcond1.cpp",
@@ -20239,15 +20428,6 @@
    "first": null
   },
   {
-   "sourcefile": "nichibutsu/hrdvd.cpp",
-   "titles": 1,
-   "covered": 0,
-   "sets": 1,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
-  },
-  {
    "sourcefile": "nichibutsu/hyhoo.cpp",
    "titles": 2,
    "covered": 0,
@@ -20341,9 +20521,9 @@
   },
   {
    "sourcefile": "nintendo/aleck64.cpp",
-   "titles": 10,
+   "titles": 9,
    "covered": 9,
-   "sets": 10,
+   "sets": 9,
    "sets_covered": 9,
    "cores": [
     "dist:aleck64"
@@ -20431,21 +20611,10 @@
    "first": null
   },
   {
-   "sourcefile": "nintendo/nss.cpp",
-   "titles": 1,
-   "covered": 1,
-   "sets": 1,
-   "sets_covered": 1,
-   "cores": [
-    "ongo:nss_bazset"
-   ],
-   "first": "2026-09-30"
-  },
-  {
    "sourcefile": "nintendo/playch10.cpp",
-   "titles": 55,
+   "titles": 54,
    "covered": 0,
-   "sets": 57,
+   "sets": 56,
    "sets_covered": 0,
    "cores": [],
    "first": null
@@ -21177,18 +21346,9 @@
   },
   {
    "sourcefile": "sega/megaplay.cpp",
-   "titles": 10,
+   "titles": 9,
    "covered": 0,
-   "sets": 11,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
-  },
-  {
-   "sourcefile": "sega/megatech.cpp",
-   "titles": 1,
-   "covered": 0,
-   "sets": 1,
+   "sets": 10,
    "sets_covered": 0,
    "cores": [],
    "first": null
@@ -21318,9 +21478,9 @@
   },
   {
    "sourcefile": "sega/segas16b_isgsm.cpp",
-   "titles": 3,
+   "titles": 2,
    "covered": 0,
-   "sets": 3,
+   "sets": 2,
    "sets_covered": 0,
    "cores": [],
    "first": null
@@ -21403,9 +21563,9 @@
   },
   {
    "sourcefile": "sega/stv.cpp",
-   "titles": 43,
+   "titles": 42,
    "covered": 38,
-   "sets": 50,
+   "sets": 49,
    "sets_covered": 43,
    "cores": [
     "dist:st-v"
@@ -21833,11 +21993,13 @@
   {
    "sourcefile": "snk/hng64.cpp",
    "titles": 7,
-   "covered": 0,
+   "covered": 4,
    "sets": 7,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 4,
+   "cores": [
+    "repo:hyperng64"
+   ],
+   "first": "2026-09-20"
   },
   {
    "sourcefile": "snk/lasso.cpp",
@@ -21897,9 +22059,9 @@
   },
   {
    "sourcefile": "snk/neogeo.cpp",
-   "titles": 159,
+   "titles": 158,
    "covered": 153,
-   "sets": 280,
+   "sets": 279,
    "sets_covered": 221,
    "cores": [
     "dist:neogeo"
@@ -21964,18 +22126,18 @@
   },
   {
    "sourcefile": "sony/taitogn.cpp",
-   "titles": 32,
+   "titles": 30,
    "covered": 0,
-   "sets": 40,
+   "sets": 38,
    "sets_covered": 0,
    "cores": [],
    "first": null
   },
   {
    "sourcefile": "sony/zn.cpp",
-   "titles": 47,
+   "titles": 38,
    "covered": 35,
-   "sets": 113,
+   "sets": 104,
    "sets_covered": 97,
    "cores": [
     "meat:primal2",
