@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MiSTer MAME Coverage</title>
+<meta name="description" content="Which MAME arcade titles are playable on MiSTer FPGA cores, which remain, and how coverage grew over time.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>MiSTer <span class="vs">×</span> MAME arcade coverage</h1>
+    <p class="sub" id="subtitle">Loading data…</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="tiles" id="tiles" aria-label="Headline numbers"></section>
+
+  <section class="charts">
+    <figure class="chart" id="fig-time">
+      <figcaption>
+        <strong>Coverage over time</strong>
+        <span class="muted">working arcade titles in MAME <span id="mame-ver"></span>, by the date their first MiSTer MRA appeared</span>
+      </figcaption>
+      <div class="chart-body" id="chart-time"></div>
+      <div class="legend" id="legend-time"></div>
+    </figure>
+    <figure class="chart" id="fig-year">
+      <figcaption>
+        <strong>Coverage by release year</strong>
+        <span class="muted">working arcade titles, grouped by the year MAME gives the parent set</span>
+      </figcaption>
+      <div class="chart-body" id="chart-year"></div>
+      <div class="legend" id="legend-year"></div>
+    </figure>
+  </section>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-tab="titles" aria-selected="true">Titles</button>
+    <button role="tab" data-tab="drivers">Drivers</button>
+    <button role="tab" data-tab="cores">Cores</button>
+    <button role="tab" data-tab="unmatched">Unmatched</button>
+    <button role="tab" data-tab="about">About</button>
+  </nav>
+
+  <section id="tab-titles" class="tab" role="tabpanel">
+    <form class="filters" id="filters" onsubmit="return false">
+      <label>Search <input type="search" id="f-q" placeholder="title, set name, manufacturer, driver…"></label>
+      <label>Coverage
+        <select id="f-cov">
+          <option value="all">all</option>
+          <option value="no" selected>not on MiSTer</option>
+          <option value="yes">on MiSTer</option>
+          <option value="partial">partially (some sets)</option>
+        </select>
+      </label>
+      <label>MAME status
+        <select id="f-work">
+          <option value="working" selected>working</option>
+          <option value="all">all (incl. not working)</option>
+          <option value="good">good only</option>
+          <option value="notworking">not working only</option>
+        </select>
+      </label>
+      <label>Category
+        <select id="f-cat">
+          <option value="arcade" selected>arcade</option>
+          <option value="mahjong">mahjong</option>
+          <option value="gambling">gambling / fruit</option>
+          <option value="all">all</option>
+        </select>
+      </label>
+      <label>Year <span class="row"><input type="number" id="f-y0" placeholder="from" min="1970" max="2030" class="yr"> – <input type="number" id="f-y1" placeholder="to" min="1970" max="2030" class="yr"></span></label>
+      <label>Manufacturer <select id="f-manu"><option value="">any</option></select></label>
+      <label>Driver <select id="f-drv"><option value="">any</option></select></label>
+      <label>Core <select id="f-core"><option value="">any</option></select></label>
+      <label>Orientation
+        <select id="f-rot">
+          <option value="">any</option>
+          <option value="h">horizontal</option>
+          <option value="v">vertical</option>
+        </select>
+      </label>
+      <label>Sort
+        <span class="row"><select id="f-sort">
+          <option value="desc">title</option>
+          <option value="year">year</option>
+          <option value="manufacturer">manufacturer</option>
+          <option value="sourcefile">driver</option>
+          <option value="date">date on MiSTer</option>
+          <option value="nsets">number of sets</option>
+        </select>
+        <button type="button" id="f-dir" title="toggle direction">↑</button>
+      </span></label>
+      <button type="button" id="f-reset">Reset</button>
+    </form>
+    <p class="count" id="titles-count"></p>
+    <div class="tablewrap">
+      <table class="grid" id="titles-table">
+        <thead><tr>
+          <th></th><th>Title</th><th>Set</th><th>Year</th><th>Manufacturer</th><th>Driver</th><th>Sets</th><th>Cores</th><th>On MiSTer since</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="more"><button type="button" id="titles-more">Show more</button></p>
+  </section>
+
+  <section id="tab-drivers" class="tab" role="tabpanel" hidden>
+    <form class="filters" onsubmit="return false">
+      <label>Search <input type="search" id="d-q" placeholder="driver source file…"></label>
+      <label>Show
+        <select id="d-cov">
+          <option value="all">all drivers</option>
+          <option value="none">no coverage</option>
+          <option value="partial">partial coverage</option>
+          <option value="full">fully covered</option>
+        </select>
+      </label>
+      <label>Sort
+        <span class="row"><select id="d-sort">
+          <option value="remaining">titles remaining</option>
+          <option value="sourcefile">driver</option>
+          <option value="titles">titles</option>
+          <option value="pct">% covered</option>
+          <option value="first">first on MiSTer</option>
+        </select>
+        <button type="button" id="d-dir" title="toggle direction">↓</button>
+      </span></label>
+    </form>
+    <p class="count" id="drivers-count"></p>
+    <div class="tablewrap">
+      <table class="grid" id="drivers-table">
+        <thead><tr><th>Driver</th><th>Titles covered</th><th></th><th>Sets covered</th><th>Cores</th><th>First on MiSTer</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="tab-cores" class="tab" role="tabpanel" hidden>
+    <form class="filters" onsubmit="return false">
+      <label>Search <input type="search" id="c-q" placeholder="core, repository, driver…"></label>
+      <label>Source <select id="c-src"><option value="">any</option></select></label>
+      <label>Sort
+        <span class="row"><select id="c-sort">
+          <option value="name">name</option>
+          <option value="source">source</option>
+          <option value="ntitles">titles</option>
+          <option value="nsets">sets</option>
+          <option value="first_date">first MRA</option>
+          <option value="build_date">latest build</option>
+        </select>
+        <button type="button" id="c-dir" title="toggle direction">↑</button>
+      </span></label>
+    </form>
+    <p class="count" id="cores-count"></p>
+    <div class="tablewrap">
+      <table class="grid" id="cores-table">
+        <thead><tr><th>Core</th><th>Source</th><th>Repository</th><th>MAME drivers</th><th>Titles</th><th>Sets</th><th>First MRA</th><th>Latest build</th><th>Verified against</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="tab-unmatched" class="tab" role="tabpanel" hidden>
+    <p class="muted">Set names found in MiSTer MRAs that do not exist in this MAME version: hacks, homebrew, renamed or removed sets, or MRA typos.</p>
+    <div class="tablewrap">
+      <table class="grid" id="unmatched-table"><thead><tr><th>Set name</th><th>Cores</th></tr></thead><tbody></tbody></table>
+    </div>
+  </section>
+
+  <section id="tab-about" class="tab" role="tabpanel" hidden>
+    <h2>What this is</h2>
+    <p>A comparison of the arcade machines MAME emulates with the ROM sets MiSTer FPGA cores can load, to show what is still missing on MiSTer. Everything on this page is computed by a Python script (<a href="https://github.com/ppriest/MiSTer-MAME-Coverage">source</a>) and served as static files.</p>
+    <h2>How it is built</h2>
+    <ul>
+      <li><strong>MAME side.</strong> The <code>-listxml</code> output mamedev attaches to each release. A machine counts as <em>arcade</em> when it is runnable, takes coins, has a video display and is not flagged mechanical; gambling boards (by driver folder, driver file or words such as poker, slot, bingo in the title) and mahjong boards are categorised separately and left out of the headline counts. <em>Working</em> means MAME does not flag it <code>MACHINE_NOT_WORKING</code> (listxml <code>emulation="preliminary"</code>). Not-working sets are kept in the data but excluded from every default count.</li>
+      <li><strong>MiSTer side.</strong> Every MRA (plus the NeoGeo core's <code>romsets.xml</code>) in the official distribution, JTCORES (jotego), Coin-Op Collection, OngoGablogian's MiSTer_Ongo database, the per-core <code>releases/</code> folders, and the developer databases catalogued by <a href="https://github.com/alamone/fpga-verified-against">alamone/fpga-verified-against</a>. An MRA's <code>&lt;setname&gt;</code> is the MAME set it loads; its <code>&lt;rbf&gt;</code> names the core.</li>
+      <li><strong>Dates.</strong> Each repository is cloned without file contents and <code>git log</code> gives the day each MRA file was first committed. The earliest date across every source is the date a set became available; a title (MAME parent set plus its clones) takes the earliest of its sets. Where a repository's history was squashed (jotego's jtbin in May 2024, the official distribution starts September 2021) the per-core repository history fills in; where no history exists at all the core's latest build date is used and marked approximate.</li>
+      <li><strong>Titles vs sets.</strong> A <em>title</em> is a MAME parent set with all its clones. It counts as covered when any of its sets loads on any core. The burndown therefore shows titles, not individual ROM sets.</li>
+    </ul>
+    <h2>Caveats</h2>
+    <ul>
+      <li>"On MiSTer" means an MRA exists; it says nothing about how well the core runs the game.</li>
+      <li>The MAME total is for one MAME version. Sets MAME added after a core shipped show up as covered from the MRA date, so the early part of the curve is measured against today's MAME, not the MAME of the time.</li>
+      <li>Cores that predate the MRA format (2018 to mid-2019) are dated by their first MRA, which is later than the core's first release.</li>
+      <li>Category heuristics are rough: some gambling and mahjong boards live in ordinary driver folders and count as arcade.</li>
+    </ul>
+    <h2>Data</h2>
+    <p><a href="data/coverage.json">coverage.json</a> holds every title, set, core and date on this page. <a href="data/summary.json">summary.json</a> is the roll-up (meta, cores, drivers, unmatched sets).</p>
+    <div id="about-meta"></div>
+  </section>
+</main>
+
+<div class="tooltip" id="tooltip" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
