@@ -5,6 +5,11 @@
 * ``src/mame/mame.lst`` at every release tag from 0.180 on, fetched raw from GitHub: a set that is
   in version N's list and not in N-1's was added in N.
 
+* M.A.S.H.'s MAMEUI "Version" folder files (``MAMEUI-inifiles-0XXX.zip`` in
+  https://github.com/MASHinfo/mameinfo, ``folders/Version*.ini``): the sets added in every release
+  and "u" update from 0.129u5 to the current version, with update granularity. Every source can
+  only move a set's date earlier, so a set re-listed after a rename keeps its first appearance.
+
 Version dates come from the release tags of mamedev/mame (a tree-less, depth-1 fetch of
 ``refs/tags/mame0*`` is under 2 MB). Versions older than the first tag (0.121, 2007) and the
 "u" updates between tags are interpolated from a short table of known release dates.
@@ -25,6 +30,9 @@ import urllib.request
 from . import paths
 
 MAME_ADDED = os.path.join(paths.DATA, "mame_added.json")
+MASH_REPO = "https://github.com/MASHinfo/mameinfo"
+MASH_RAW = "https://raw.githubusercontent.com/MASHinfo/mameinfo/main/download/"
+MASH_DIR = os.path.join(paths.CACHE, "mash")
 TAGS_DIR = os.path.join(paths.CACHE, "mametags")
 LST_DIR = os.path.join(paths.CACHE, "mamelst")
 LST_URL = "https://raw.githubusercontent.com/mamedev/mame/mame{v}/src/mame/mame.lst"
@@ -146,6 +154,54 @@ def veradded_from_catver() -> dict[str, str]:
     return out
 
 
+def mash_versions() -> tuple[dict[str, str], str | None]:
+    """``{set: "0.129u5"}`` from the newest ``MAMEUI-inifiles-*.zip`` in MASHinfo/mameinfo.
+
+    The repository's download folder holds ~100 MB, so it is listed through a blob-less clone and
+    only the one zip (about 1 MB) is fetched, by raw URL."""
+    import urllib.parse
+    import zipfile
+    os.makedirs(MASH_DIR, exist_ok=True)
+    repo = os.path.join(MASH_DIR, "repo")
+    if not os.path.isdir(os.path.join(repo, ".git")):
+        subprocess.run(["git", "clone", "-q", "--filter=blob:none", "--no-checkout", "--depth=1", MASH_REPO, repo],
+                       capture_output=True, check=False)
+    else:
+        subprocess.run(["git", "fetch", "-q", "--depth=1", "origin"], cwd=repo, capture_output=True, check=False)
+        subprocess.run(["git", "reset", "-q", "--soft", "origin/HEAD"], cwd=repo, capture_output=True, check=False)
+    names = subprocess.run(["git", "ls-tree", "--name-only", "HEAD", "download/"], cwd=repo,
+                           capture_output=True, text=True, check=False).stdout.splitlines()
+    zips = sorted((m.group(1), n) for n in names if (m := re.search(r"MAMEUI-inifiles-0?(\d{3})\.zip$", n)))
+    if not zips:
+        return {}, None
+    ver, name = zips[-1]
+    dest = os.path.join(MASH_DIR, os.path.basename(name))
+    if not os.path.exists(dest):
+        url = MASH_RAW + urllib.parse.quote(os.path.basename(name))
+        with urllib.request.urlopen(url, timeout=120) as r, open(dest, "wb") as f:
+            f.write(r.read())
+    out: dict[str, str] = {}
+    with zipfile.ZipFile(dest) as z:
+        for member in z.namelist():
+            if not re.search(r"folders/Version[^/]*\.ini$", member):
+                continue
+            section = None
+            for raw in z.read(member).decode("utf-8", errors="replace").splitlines():
+                line = raw.strip()
+                m = re.fullmatch(r"\[\.(\d{1,3})(u\d+)?\]", line)
+                if m:
+                    section = f"0.{int(m.group(1)):03d}{m.group(2) or ''}"
+                    continue
+                if line.startswith("["):
+                    section = None
+                    continue
+                if section and re.fullmatch(r"[a-z0-9_]+", line):
+                    cur = out.get(line)
+                    if cur is None or _vkey(section) < _vkey(cur):
+                        out[line] = section
+    return out, f"0.{ver}"
+
+
 def load() -> dict:
     if os.path.exists(MAME_ADDED):
         with open(MAME_ADDED, encoding="utf-8") as f:
@@ -161,6 +217,20 @@ def build(latest: int) -> dict:
     if not sets:
         sets.update(veradded_from_catver())
         print(f"[mamehist] {len(sets)} sets dated by catver VerAdded")
+    mash, mash_ver = mash_versions()
+    if mash:
+        # A set listed under a later version too (re-added after a rename, or a re-dump) keeps its
+        # earliest version: every source only ever moves a date earlier.
+        earlier = new = 0
+        for k, v in mash.items():
+            if k not in sets:
+                sets[k] = v
+                new += 1
+            elif _vkey(v) < _vkey(sets[k]):
+                sets[k] = v
+                earlier += 1
+        data["mash_version"] = mash_ver
+        print(f"[mamehist] M.A.S.H. Version.ini ({mash_ver}): {len(mash)} sets, {new} new, {earlier} moved earlier")
     seen = set(data.get("lst_versions", []))
     prev: set[str] | None = None
     for v in range(FIRST_LST, latest + 1):
