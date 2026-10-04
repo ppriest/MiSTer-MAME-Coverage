@@ -2,9 +2,9 @@
 
 Generated 2026-10-04 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (313 games).
 
-**Agreement:** 291 of 305 deck titles are Shmup in our data (95.4%).
+**Agreement:** 292 of 305 deck titles are Shmup in our data (95.7%).
 
-## A. Deck games our data does not call Shmup (14)
+## A. Deck games our data does not call Shmup (13)
 
 Grouped by the raw category our genre came from. Rows marked *kept* are vehicle or isometric shooters this project keeps out of Shmup on purpose.
 
@@ -18,14 +18,13 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `guwange` | Guwange (Japan, 1999 6/24 Master Ver 16:55) | Run and Gun | Shooter / Walking (catver) | Guwange |  |
 | `outzone` | Out Zone | Run and Gun | Shooter / Walking (catver) | Out Zone |  |
 | `youjyudn` | Youjyuden (Japan) | Run and Gun | Shooter / Walking (catver) | Youjyuden |  |
-| `sdi` | SDI - Strategic Defense Initiative (Japan, newer, System 16A, FD1089B 317-0027) | Shooter | Shooter / Command (catver) | SDI Strategic Defense Initiative |  |
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 | `lastmisn` | Last Mission (World revision 8) | Shooter | Shooter / Field (catver) | Last Mission |  |
 | `tp84` | Time Pilot '84 (set 1) | Shooter | Shooter / Field (catver) | Time Pilot '84 |  |
 | `sbomber` | Space Bomber (ver. B) | Shooter | Shooter / Gallery (catver) | Space Bomber |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (39)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (44)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
@@ -39,6 +38,8 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `bchopper` | Battle Chopper (World) | 1987 | Shooter / Flying (catver) | IremM72 |
 | `brkthru` | Break Thru (World) | 1986 | Shooter / Driving Horizontal (catver) | xnbrkthru |
 | `choplift` | Choplifter (8751 315-5151) | 1985 | Shooter / Flying Horizontal (catver) | Blackwine-SegaSystem1-2, SegaSys1+2 (TheJesusFish) |
+| `colony7` | Colony 7 (set 1) | 1981 | Shooter / Command (catver) | Defender |
+| `dcon` | D-Con | 1992 | Shooter / Command (catver) | DCon |
 | `dariusgx` | Darius Gaiden - Silver Hawk Extra Version (Ver 2.7J 1995/03/06) (Official Hack) | 1994 | Shooter / Flying Horizontal (catver) | TaitoF3, Rayforce (spacestate1) |
 | `defender` | Defender (Red label) | 1980 | Shooter / Flying Horizontal (catver) | Defender |
 | `cexplore` | Explorer (DECO Cassette) (US) | 1982 | Shooter / Flying Vertical (catver) | DECOCassette |
@@ -49,13 +50,16 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `metlhawk` | Metal Hawk (Rev C) | 1988 | Shooter / Flying (catver) | Arcade-NamcoS2_MH |
 | `mimonkey` | Mighty Monkey | 1982 | Shooter / Flying Horizontal (catver) | Scramble |
 | `minefld` | Minefield | 1983 | Shooter / Driving Horizontal (catver) | Scramble |
+| `missile` | Missile Command (rev 3, A035467-02/04 PCBs) | 1980 | Shooter / Command (catver) | MissileCommand |
 | `mpatrol` | Moon Patrol | 1982 | Shooter / Driving Horizontal (catver) | MoonPatrol |
 | `moonwar` | Moonwar | 1981 | Shooter / Flying (catver) | Scramble |
 | `cnightst` | Night Star (DECO Cassette) (US) (set 1) | 1983 | Shooter / Flying Vertical (catver) | DECOCassette |
 | `ninjemak` | Ninja Emaki (US) | 1986 | Shooter / Misc. Vertical (catver) | rmGalivan |
 | `opaopa` | Opa Opa (MC-8123, 317-0042) | 1987 | Shooter / Flying Horizontal (catver) | SMS |
+| `orbitron` | Orbitron | 1982 | Shooter / Command (catver) | Galaxian |
 | `phantom2` | Phantom II | 1979 | Shooter / Flying Vertical (catver) | SpaceInvaders |
 | `pballoon` | Pioneer Balloon | 1982 | Shooter / Flying Horizontal (catver) | SNK6502 |
+| `rampart` | Rampart (Trackball) | 1990 | Shooter / Command (catver) | Rampart |
 | `rescue` | Rescue | 1982 | Shooter / Flying (catver) | Scramble |
 | `scotrsht` | Scooter Shooter | 1985 | Shooter / Flying (catver) | ScooterShooter |
 | `sfposeid` | Sea Fighter Poseidon | 1984 | Shooter / Misc. Horizontal (catver) | TaitoSJ |

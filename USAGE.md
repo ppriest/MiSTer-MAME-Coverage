@@ -147,8 +147,8 @@ Raw strings are normalised (lower case, HTML entities decoded, `/`, ` - ` and `>
 
 Scrolling shooters are kept apart from the rest: `Shmup` covers catver's "Flying Vertical /
 Horizontal / Diagonal" (the last being isometric scrollers such as Zaxxon), "Misc. Vertical /
-Horizontal" and "Driving Horizontal" (Moon Patrol-style vehicle scrollers) shooters and the MRA
-spellings of shoot 'em up, while `Shooter` keeps gallery (fixed-screen), gun, walking, vertical
+Horizontal", "Driving Horizontal" (Moon Patrol-style vehicle scrollers) and "Command" (Missile
+Command-style defence shooters) and the MRA spellings of shoot 'em up, while `Shooter` keeps gallery (fixed-screen), gun, walking, vertical
 and diagonal vehicle ("Driving Vertical / Diagonal"), first- and third-person and chase-view
 shooters. Individual games can be moved with `data/genre_overrides.json` (empty by default; see
 the shmup-deck comparison below). Move strings between the two in `full` if you
