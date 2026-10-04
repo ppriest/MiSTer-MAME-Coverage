@@ -164,14 +164,17 @@ MAME classification lives in `mmc/mame.py` (`GAMBLING_DIRS`, `GAMBLING_FILES`, `
 After changing any of these, run `python -m mmc mister --no-fetch` (or `--no-sync` if nothing new
 needs cloning) and then `python -m mmc report`.
 
-## Publishing on GitHub Pages
+## Hosting
 
 Everything the page needs is static and committed under `docs/`: `index.html`, `app.js`,
-`style.css`, `data/coverage.json`, `data/summary.json` and an empty `.nojekyll`.
+`style.css`, `data/coverage.json` and `data/summary.json` (the empty `.nojekyll` only matters if
+the folder is ever served by GitHub Pages, which strips underscore paths otherwise).
 
-1. Repository settings → Pages → Source: *Deploy from a branch*, branch `main`, folder `/docs`.
-2. The page is then served at `https://<owner>.github.io/<repo>/`. The data files are plain URLs
-   next to it (`.../data/coverage.json`) and can be consumed by other tools.
+The live site is **https://mister-mame-coverage-docs.vercel.app/**, a Vercel project whose root
+directory is `docs/` with no build step; it redeploys on every push to `main`, so the weekly
+data refresh goes live on its own. The data files are plain URLs next to the page
+(`https://mister-mame-coverage-docs.vercel.app/data/coverage.json`) and can be consumed by other
+tools. Nothing in the page depends on the host: any static file server pointed at `docs/` works.
 
 Locally, serve the folder over HTTP (`python -m http.server -d docs 8000`); browsers refuse
 `fetch()` of the JSON from `file://`.

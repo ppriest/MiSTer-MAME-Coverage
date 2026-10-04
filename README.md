@@ -2,12 +2,12 @@
 
 Which arcade games that MAME emulates can be played on MiSTer FPGA cores, which cannot yet, and
 how coverage has grown over time. Output is a JSON dataset plus a static web page with client-side
-filters, sorting and charts, served from `docs/` (GitHub Pages).
+filters, sorting and charts, served as static files from `docs/`.
 
-**Live page:** https://ppriest.github.io/MiSTer-MAME-Coverage/ (once Pages is enabled for `docs/`)
+**Live page:** https://mister-mame-coverage-docs.vercel.app/
 
 **Operating manual:** [USAGE.md](USAGE.md) covers every command and option, the ledger's merge
-rules, how to add sources, publishing on GitHub Pages and the weekly refresh.
+rules, how to add sources, hosting and the weekly refresh.
 
 ## What it does
 
@@ -89,13 +89,14 @@ block `fetch()` of the JSON from `file://`.
 - Sets named by MRAs that do not exist in MAME (hacks, homebrew, renamed sets) are listed under
   *Unmatched* and ignored elsewhere.
 
-## Publishing on GitHub Pages
+## Hosting
 
 Everything the page needs is static and committed: `docs/index.html`, `docs/app.js`,
-`docs/style.css` and `docs/data/*.json`. In the repository settings, set Pages to serve from the
-`docs/` folder of the default branch. The scripts that produce the data live in the same
-repository (`mmc/`), and `.github/workflows/update.yml` re-runs them weekly, committing the updated
-ledger and page data when anything changed.
+`docs/style.css` and `docs/data/*.json`. It is deployed by Vercel from the `docs/` folder at
+https://mister-mame-coverage-docs.vercel.app/, redeploying on every push to `main`; any static
+host (GitHub Pages, Netlify, an S3 bucket) would serve the same folder unchanged. The scripts that
+produce the data live in the same repository (`mmc/`), and `.github/workflows/update.yml` re-runs
+them weekly, committing the updated ledger and page data when anything changed.
 
 ## Layout
 

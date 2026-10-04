@@ -1,5 +1,5 @@
 """Where things live. Everything derived is under ``work/`` (not committed) except the published
-outputs, which go to ``docs/`` so GitHub Pages can serve them."""
+outputs, which go to ``docs/`` so a static host (Vercel today) can serve them."""
 import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
