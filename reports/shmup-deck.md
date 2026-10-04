@@ -26,9 +26,9 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `bakutotu` | Bakutotsu Kijuutei | 1988 | Shooter / Flying Horizontal (catver) | jtshouse |
 | `bchopper` | Battle Chopper (World) | 1987 | Shooter / Flying (catver) | IremM72 |
 | `brkthru` | Break Thru (World) | 1986 | Shooter / Driving Horizontal (catver) | xnbrkthru |
-| `bucky` | Bucky O'Hare (ver EAB) | 1992 | Shooter / Walking (catver) | moomesa, Arcade-Bucky |
+| `bucky` | Bucky O'Hare (ver EAB) | 1992 | Shooter / Walking (catver) | moomesa, Bucky |
 | `bullet` | Bullet (FD1094 317-0041) | 1987 | Shooter / Walking (catver) | jts16b |
-| `calibr50` | Caliber 50 (Ver. 1.01) | 1989 | Shooter / Walking (catver) | jtcal50, Arcade-SetaDowntown (ppriest) |
+| `calibr50` | Caliber 50 (Ver. 1.01) | 1989 | Shooter / Walking (catver) | jtcal50, SetaDowntown (ppriest) |
 | `choplift` | Choplifter (8751 315-5151) | 1985 | Shooter / Flying Horizontal (catver) | Blackwine-SegaSystem1-2, SegaSys1+2 (TheJesusFish) |
 | `colony7` | Colony 7 (set 1) | 1981 | Shooter / Command (catver) | Defender |
 | `commando` | Commando (World) | 1985 | Shooter / Walking (catver) | jtcommnd |
@@ -40,20 +40,20 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `cexplore` | Explorer (DECO Cassette) (US) | 1982 | Shooter / Flying Vertical (catver) | DECOCassette |
 | `frontlin` | Front Line (AA1, 4 PCB version) | 1982 | Shooter / Walking (catver) | TaitoSJ |
 | `fnkyfish` | Funky Fish | 1981 | Shooter / Misc. Horizontal (catver) | Kangaroo |
-| `gground` | Gain Ground (World, 3 Players, Floppy Based, FD1094 317-0058-03d Rev A) | 1988 | Shooter / Walking (catver) | Arcade-SegaSystem24, Meathax_SegaSystem24 |
+| `gground` | Gain Ground (World, 3 Players, Floppy Based, FD1094 317-0058-03d Rev A) | 1988 | Shooter / Walking (catver) | SegaSystem24, Meathax_SegaSystem24 |
 | `gbusters` | Gang Busters (set 1) | 1988 | Shooter / Walking (catver) | jtaliens |
 | `gondo` | Gondomania (World) | 1987 | Shooter / Flying Vertical (catver) | dec8 |
-| `gundhara` | Gundhara | 1995 | Shooter / Walking (catver) | Arcade-Seta (ppriest) |
+| `gundhara` | Gundhara | 1995 | Shooter / Walking (catver) | Seta (ppriest) |
 | `heatbrl` | Heated Barrel (World version 3) | 1992 | Shooter / Walking (catver) | HeatedBarrel |
 | `hbarrel` | Heavy Barrel (World) | 1987 | Shooter / Walking (catver) | jtninja |
 | `ikari3` | Ikari III - The Rescue (World version 1, 8-Way Joystick) | 1989 | Shooter / Walking (catver) | SNK68 |
 | `ikari` | Ikari Warriors (US JAMMA) | 1986 | Shooter / Walking (catver) | IkariWarriors |
-| `kikikai` | KiKi KaiKai | 1986 | Shooter / Walking (catver) | kikikai, Arcade-Kikikaikai (alpuy) |
+| `kikikai` | KiKi KaiKai | 1986 | Shooter / Walking (catver) | kikikai, Kikikaikai (alpuy) |
 | `lasthope` | Last Hope (bootleg AES to MVS conversion, no coin support) | 2005 | Shooter / Flying Horizontal (catver) | NeoGeo |
 | `mayday` | Mayday (set 1) | 1980 | Shooter / Flying Horizontal (catver) | Defender |
 | `megaphx` | Mega Phoenix | 1991 | Shooter / Flying Vertical (catver) | ffmegaphx |
 | `mercs` | Mercs (World 900302) | 1990 | Shooter / Walking (catver) | jtcps1 |
-| `metlhawk` | Metal Hawk (Rev C) | 1988 | Shooter / Flying (catver) | Arcade-NamcoS2_MH |
+| `metlhawk` | Metal Hawk (Rev C) | 1988 | Shooter / Flying (catver) | NamcoS2_MH |
 | `mimonkey` | Mighty Monkey | 1982 | Shooter / Flying Horizontal (catver) | Scramble |
 | `minefld` | Minefield | 1983 | Shooter / Driving Horizontal (catver) | Scramble |
 | `missile` | Missile Command (rev 3, A035467-02/04 PCBs) | 1980 | Shooter / Command (catver) | MissileCommand |
@@ -88,7 +88,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `timesold` | Time Soldiers (US Rev 3) | 1987 | Shooter / Walking (catver) | Alpha68k |
 | `totcarn` | Total Carnage (rev LA1 03/10/92) | 1992 | Shooter / Walking (catver) | blahm1d_yunitadpcm |
 | `tricktrp` | Trick Trap (World?) | 1987 | Shooter / Walking (catver) | jtlabrun |
-| `valkyrie` | Valkyrie no Densetsu (Japan) | 1989 | Shooter / Walking (catver) | Arcade-NamcoS2_STD |
+| `valkyrie` | Valkyrie no Densetsu (Japan) | 1989 | Shooter / Walking (catver) | NamcoS2_STD |
 | `victroad` | Victory Road | 1986 | Shooter / Walking (catver) | IkariWarriors |
 | `vsgradus` | Vs. Gradius (US, set GR E) | 1986 | Shooter / Flying Horizontal (catver) | VSnes |
 | `bnglngby` | Vs. Raid on Bungeling Bay (RD4-2 B) | 1985 | Shooter / Flying (catver) | VSnes |

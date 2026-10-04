@@ -12,6 +12,12 @@ from . import mame as mame_mod
 from . import mister as mister_mod
 
 
+def display_name(name: str) -> str:
+    """Core name for display: the "Arcade-" prefix is an artifact of how the distribution names
+    its repositories and builds (``Arcade-NMK16_Afega``), not part of the core's name."""
+    return re.sub(r"^arcade[-_ ]+", "", name, flags=re.I) or name
+
+
 def core_id(source: str, rbf: str | None) -> str:
     return f"{source}:{mister_mod.norm_rbf(rbf) or '?'}"
 
@@ -318,6 +324,7 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
     out_cores = []
     for cid, c in cores.items():
         oc = {k: v for k, v in c.items() if k not in ("alamone_sets",)}
+        oc["name"] = display_name(oc["name"])
         oc["nsets"] = core_sets[cid]
         oc["ntitles"] = len(core_titles[cid])
         oc["first_date"] = core_first.get(cid)

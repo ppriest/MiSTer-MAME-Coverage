@@ -491,6 +491,7 @@
   });
   ["d-q", "d-cov", "d-genre", "d-sort"].forEach(id => $("#" + id).addEventListener(id === "d-q" ? "input" : "change", applyDrivers));
   $("#d-dir").addEventListener("click", () => { S.dir.d *= -1; $("#d-dir").textContent = S.dir.d > 0 ? "↑" : "↓"; applyDrivers(); });
+  $("#d-reset").addEventListener("click", () => { DRIVER_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.d = -1; $("#d-dir").textContent = "↓"; applyDrivers(); });
 
   // ---------- cores ----------
   function applyCores() {
@@ -522,6 +523,7 @@
   });
   ["c-q", "c-src", "c-sort"].forEach(id => $("#" + id).addEventListener(id === "c-q" ? "input" : "change", applyCores));
   $("#c-dir").addEventListener("click", () => { S.dir.c *= -1; $("#c-dir").textContent = S.dir.c > 0 ? "↑" : "↓"; applyCores(); });
+  $("#c-reset").addEventListener("click", () => { CORE_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.c = 1; $("#c-dir").textContent = "↑"; applyCores(); });
 
   // ---------- unmatched + about ----------
   function renderStatic() {
