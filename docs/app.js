@@ -10,17 +10,31 @@
   const S = { data: null, cores: {}, titles: [], shown: 0, PAGE: 250, dir: { t: 1, d: -1, c: 1 }, open: new Set() };
 
   // ---------- state in the URL hash ----------
+  // Every control on the Titles, Drivers and Cores tabs, plus each tab's sort direction and the
+  // open tab, so a view can be linked or restored. Only values that differ from the default are
+  // written.
   const FILTER_IDS = ["f-q", "f-cov", "f-work", "f-cat", "f-y0", "f-y1", "f-m0y", "f-m0m", "f-m1y", "f-m1m", "f-genre", "f-manu", "f-drv", "f-dcov", "f-core", "f-rot", "f-sort"];
+  const DRIVER_IDS = ["d-q", "d-cov", "d-genre", "d-sort"];
+  const CORE_IDS = ["c-q", "c-src", "c-sort"];
+  const ALL_IDS = [...FILTER_IDS, ...DRIVER_IDS, ...CORE_IDS];
+  const DIRS = { dir: "t", ddir: "d", cdir: "c" };   // hash key -> S.dir key
+  function resetControls() {
+    ALL_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; });
+    S.dir = { t: 1, d: -1, c: 1 };
+  }
   function readHash() {
     const p = new URLSearchParams(location.hash.slice(1));
-    for (const id of FILTER_IDS) if (p.has(id)) { const el = $("#" + id); if (el) el.value = p.get(id); }
-    if (p.has("dir")) S.dir.t = +p.get("dir") || 1;
+    for (const id of ALL_IDS) if (p.has(id)) { const el = $("#" + id); if (el) el.value = p.get(id); }
+    for (const [k, d] of Object.entries(DIRS)) if (p.has(k)) S.dir[d] = +p.get(k) || S.dir[d];
     if (p.has("tab")) showTab(p.get("tab"), false);
+    $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓"; $("#d-dir").textContent = S.dir.d > 0 ? "↑" : "↓"; $("#c-dir").textContent = S.dir.c > 0 ? "↑" : "↓";
   }
   function writeHash() {
+    if (S.booting) return;
     const p = new URLSearchParams();
-    for (const id of FILTER_IDS) { const v = $("#" + id).value; if (v !== "" && v !== $("#" + id).dataset.default) p.set(id, v); }
-    if (S.dir.t !== 1) p.set("dir", S.dir.t);
+    for (const id of ALL_IDS) { const v = $("#" + id).value; if (v !== "" && v !== $("#" + id).dataset.default) p.set(id, v); }
+    const defaults = { t: 1, d: -1, c: 1 };
+    for (const [k, d] of Object.entries(DIRS)) if (S.dir[d] !== defaults[d]) p.set(k, S.dir[d]);
     const tab = $(".tabs [aria-selected=true]").dataset.tab;
     if (tab !== "titles") p.set("tab", tab);
     history.replaceState(null, "", "#" + p.toString());
@@ -460,6 +474,7 @@
     }[sort];
     rows.sort((a, b) => dir * cmp(a, b));
     const grem = genre ? ` · ${fmt(rows.reduce((n, d) => n + gstat(d).titles - gstat(d).covered, 0))} ${genre} titles remaining` : "";
+    writeHash();
     $("#drivers-count").textContent = `${fmt(rows.length)} drivers · ${fmt(rows.reduce((n, d) => n + d.titles - d.covered, 0))} titles remaining${grem} · click a driver to list its titles`;
     $("#drivers-table tbody").innerHTML = rows.map(d => { const g = gstat(d); return `<tr class="${d.covered === 0 ? "uncovered" : d.covered < d.titles ? "partial" : "covered"}" data-d="${esc(d.sourcefile)}">
       <td class="set"><a href="#" data-drv="${esc(d.sourcefile)}">${esc(d.sourcefile)}</a></td>
@@ -490,6 +505,7 @@
       build_date: (a, b) => (a.build_date || "0000").localeCompare(b.build_date || "0000") || a.name.localeCompare(b.name),
     }[sort];
     rows.sort((a, b) => dir * cmp(a, b));
+    writeHash();
     $("#cores-count").textContent = `${fmt(rows.length)} cores · click a core to list its titles`;
     $("#cores-table tbody").innerHTML = rows.map(c => `<tr>
       <td><a href="#" data-core="${esc(c.id)}">${esc(c.name)}</a>${c.channel && c.channel !== "default" ? ` <span class="flag">${esc(c.channel)}</span>` : ""}</td>
@@ -522,7 +538,7 @@
   }
 
   // ---------- boot ----------
-  FILTER_IDS.forEach(id => { const el = $("#" + id); el.dataset.default = el.value; });
+  ALL_IDS.forEach(id => { const el = $("#" + id); el.dataset.default = el.value; });
   fetch("data/coverage.json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(data => {
     S.data = data; S.titles = data.titles; data.cores.forEach(c => S.cores[c.id] = c);
     S.driverByFile = {}; data.drivers.forEach(d => S.driverByFile[d.sourcefile] = d);
@@ -533,11 +549,12 @@
     const box = $("#charts-box");
     box.addEventListener("toggle", () => { if (S.chartsLock || box.classList.contains("disabled")) return; try { localStorage.setItem("charts-open", box.open ? "1" : "0"); } catch (e) { /* ignore */ } });
     box.querySelector("summary").addEventListener("click", ev => { if (box.classList.contains("disabled")) ev.preventDefault(); });
+    S.booting = true;   // the hash is read once; applying the tabs must not rewrite it half-read
     readHash();
-    $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓";
+    S.booting = false;
     applyTitles(); applyDrivers(); applyCores();
     // A pasted or back/forward hash applies without a reload (writeHash uses replaceState, so
     // the page's own filter changes do not fire this).
-    addEventListener("hashchange", () => { FILTER_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.t = 1; readHash(); $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓"; applyTitles(); });
+    addEventListener("hashchange", () => { S.booting = true; resetControls(); readHash(); S.booting = false; applyTitles(); applyDrivers(); applyCores(); });
   }).catch(err => { $("#subtitle").textContent = "Could not load data/coverage.json (" + err + "). Serve this folder over HTTP; browsers block fetch() from file://."; });
 })();
