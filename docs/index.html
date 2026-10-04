@@ -147,6 +147,7 @@
   <section id="tab-drivers" class="tab" role="tabpanel" hidden>
     <form class="filters" onsubmit="return false">
       <label>Search <input type="search" id="d-q" placeholder="driver source file…"></label>
+      <label>Genre <select id="d-genre" title="adds the genre's title and set counts per driver and a sort on its remaining titles"><option value="">any</option></select></label>
       <label>Show
         <select id="d-cov">
           <option value="all">all drivers</option>
@@ -159,6 +160,7 @@
       <label>Sort
         <span class="row"><select id="d-sort">
           <option value="remaining">titles remaining</option>
+          <option value="gremaining" id="d-sort-genre" hidden>titles remaining (genre)</option>
           <option value="sourcefile">driver</option>
           <option value="titles">titles</option>
           <option value="pct">% covered</option>
@@ -170,7 +172,7 @@
     <p class="count" id="drivers-count"></p>
     <div class="tablewrap">
       <table class="grid" id="drivers-table">
-        <thead><tr><th>Driver</th><th>Titles covered</th><th></th><th>Sets covered</th><th>Cores</th><th>First on MiSTer</th></tr></thead>
+        <thead><tr><th>Driver</th><th>Titles covered</th><th></th><th>Sets covered</th><th class="gcol">Genre titles</th><th class="gcol">Genre sets</th><th>Cores</th><th>First on MiSTer</th></tr></thead>
         <tbody></tbody>
       </table>
     </div>

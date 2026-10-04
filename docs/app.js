@@ -288,7 +288,9 @@
     const manus = new Map(), drvs = new Map(), genres = new Map();
     S.titles.forEach(t => { if (isArcadeWorking(t)) { manus.set(t.manufacturer, (manus.get(t.manufacturer) || 0) + 1); drvs.set(t.sourcefile, (drvs.get(t.sourcefile) || 0) + 1); const g = t.genre || "(none)"; genres.set(g, (genres.get(g) || 0) + 1); } });
     const opt = (v, l) => `<option value="${esc(v)}">${esc(l)}</option>`;
-    $("#f-genre").insertAdjacentHTML("beforeend", Array.from(genres).sort((a, b) => b[1] - a[1]).map(([g, n]) => opt(g, `${g} (${n})`)).join(""));
+    const gopts = Array.from(genres).sort((a, b) => b[1] - a[1]).map(([g, n]) => opt(g, `${g} (${n})`)).join("");
+    $("#f-genre").insertAdjacentHTML("beforeend", gopts);
+    $("#d-genre").insertAdjacentHTML("beforeend", gopts);
     $("#f-manu").insertAdjacentHTML("beforeend", Array.from(manus).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([m, n]) => opt(m, `${m} (${n})`)).join(""));
     $("#f-drv").insertAdjacentHTML("beforeend", Array.from(drvs).sort((a, b) => a[0].localeCompare(b[0])).map(([d, n]) => opt(d, `${d} (${n})`)).join(""));
     const years = Array.from(new Set(S.titles.filter(t => t.mame_date).map(t => t.mame_date.slice(0, 4)))).sort();
@@ -421,32 +423,58 @@
   FILTER_IDS.filter(id => id !== "f-q").forEach(id => $("#" + id).addEventListener("change", applyTitles));
 
   // ---------- drivers ----------
+  // Per driver and genre: working arcade titles and sets, and how many are on MiSTer.
+  function driverGenreStats() {
+    if (S.driverGenre) return S.driverGenre;
+    const m = new Map();
+    S.titles.filter(isArcadeWorking).forEach(t => {
+      const g = t.genre || "(none)";
+      let byG = m.get(t.sourcefile); if (!byG) { byG = new Map(); m.set(t.sourcefile, byG); }
+      let st = byG.get(g); if (!st) { st = { titles: 0, covered: 0, sets: 0, sets_covered: 0 }; byG.set(g, st); }
+      st.titles++; if (t.ncovered_working > 0) st.covered++; st.sets += t.nworking; st.sets_covered += t.ncovered_working;
+    });
+    S.driverGenre = m;
+    return m;
+  }
+  const ZERO = { titles: 0, covered: 0, sets: 0, sets_covered: 0 };
+
   function applyDrivers() {
-    const q = $("#d-q").value.trim().toLowerCase(), cov = $("#d-cov").value, sort = $("#d-sort").value, dir = S.dir.d;
+    const q = $("#d-q").value.trim().toLowerCase(), cov = $("#d-cov").value, genre = $("#d-genre").value, dir = S.dir.d;
+    const gs = genre ? driverGenreStats() : null;
+    const gstat = d => (gs && gs.get(d.sourcefile) && gs.get(d.sourcefile).get(genre)) || ZERO;
+    const opt = $("#d-sort-genre");
+    opt.hidden = !genre; opt.textContent = genre ? `titles remaining (${genre})` : "titles remaining (genre)";
+    if (!genre && $("#d-sort").value === "gremaining") $("#d-sort").value = "remaining";
+    const sort = $("#d-sort").value;
+    $$("#drivers-table th.gcol").forEach((th, i) => { th.hidden = !genre; th.textContent = genre ? `${genre} ${i ? "sets" : "titles"}` : ""; });
     let rows = S.data.drivers.filter(d => (!q || d.sourcefile.toLowerCase().includes(q) || d.cores.some(c => coreName(c).toLowerCase().includes(q)))
-      && (cov === "all" || (cov === "none" && d.covered === 0) || (cov === "partial" && d.covered > 0 && d.covered < d.titles) || (cov === "notfull" && d.covered < d.titles) || (cov === "full" && d.covered === d.titles)));
+      && (cov === "all" || (cov === "none" && d.covered === 0) || (cov === "partial" && d.covered > 0 && d.covered < d.titles) || (cov === "notfull" && d.covered < d.titles) || (cov === "full" && d.covered === d.titles))
+      && (!genre || gstat(d).titles > 0));
     const cmp = {
       remaining: (a, b) => (a.titles - a.covered) - (b.titles - b.covered) || a.sourcefile.localeCompare(b.sourcefile),
+      gremaining: (a, b) => (gstat(a).titles - gstat(a).covered) - (gstat(b).titles - gstat(b).covered) || gstat(a).titles - gstat(b).titles || a.sourcefile.localeCompare(b.sourcefile),
       sourcefile: (a, b) => a.sourcefile.localeCompare(b.sourcefile),
       titles: (a, b) => a.titles - b.titles || a.sourcefile.localeCompare(b.sourcefile),
       pct: (a, b) => a.covered / a.titles - b.covered / b.titles || a.sourcefile.localeCompare(b.sourcefile),
       first: (a, b) => (a.first || "9999").localeCompare(b.first || "9999") || a.sourcefile.localeCompare(b.sourcefile),
     }[sort];
     rows.sort((a, b) => dir * cmp(a, b));
-    $("#drivers-count").textContent = `${fmt(rows.length)} drivers · ${fmt(rows.reduce((n, d) => n + d.titles - d.covered, 0))} titles remaining · click a driver to list its titles`;
-    $("#drivers-table tbody").innerHTML = rows.map(d => `<tr class="${d.covered === 0 ? "uncovered" : d.covered < d.titles ? "partial" : "covered"}" data-d="${esc(d.sourcefile)}">
+    const grem = genre ? ` · ${fmt(rows.reduce((n, d) => n + gstat(d).titles - gstat(d).covered, 0))} ${genre} titles remaining` : "";
+    $("#drivers-count").textContent = `${fmt(rows.length)} drivers · ${fmt(rows.reduce((n, d) => n + d.titles - d.covered, 0))} titles remaining${grem} · click a driver to list its titles`;
+    $("#drivers-table tbody").innerHTML = rows.map(d => { const g = gstat(d); return `<tr class="${d.covered === 0 ? "uncovered" : d.covered < d.titles ? "partial" : "covered"}" data-d="${esc(d.sourcefile)}">
       <td class="set"><a href="#" data-drv="${esc(d.sourcefile)}">${esc(d.sourcefile)}</a></td>
       <td class="num">${d.covered}/${d.titles}</td>
       <td><span class="pct" title="${pct(d.covered, d.titles)}"><i style="width:${(100 * d.covered / d.titles).toFixed(1)}%"></i></span></td>
       <td class="num">${d.sets_covered}/${d.sets}</td>
+      ${genre ? `<td class="num" title="${esc(genre)} titles on MiSTer / in the driver">${g.covered}/${g.titles}</td><td class="num" title="${esc(genre)} sets on MiSTer / in the driver">${g.sets_covered}/${g.sets}</td>` : ""}
       <td>${d.cores.map(id => badge(id)).join("")}${(d.cores_claimed || []).map(id => badge(id)).join("")}</td>
-      <td class="num">${d.first || ""}</td></tr>`).join("");
+      <td class="num">${d.first || ""}</td></tr>`; }).join("");
   }
   $("#drivers-table").addEventListener("click", ev => {
     const a = ev.target.closest("a[data-drv]"); if (!a) return; ev.preventDefault();
-    $("#f-drv").value = a.dataset.drv; $("#f-cov").value = "all"; applyTitles(); showTab("titles");
+    $("#f-drv").value = a.dataset.drv; $("#f-cov").value = "all"; $("#f-genre").value = $("#d-genre").value; applyTitles(); showTab("titles");
   });
-  ["d-q", "d-cov", "d-sort"].forEach(id => $("#" + id).addEventListener(id === "d-q" ? "input" : "change", applyDrivers));
+  ["d-q", "d-cov", "d-genre", "d-sort"].forEach(id => $("#" + id).addEventListener(id === "d-q" ? "input" : "change", applyDrivers));
   $("#d-dir").addEventListener("click", () => { S.dir.d *= -1; $("#d-dir").textContent = S.dir.d > 0 ? "↑" : "↓"; applyDrivers(); });
 
   // ---------- cores ----------
