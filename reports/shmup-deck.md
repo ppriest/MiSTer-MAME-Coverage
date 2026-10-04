@@ -2,15 +2,14 @@
 
 Generated 2026-10-04 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (313 games).
 
-**Agreement:** 298 of 305 deck titles are Shmup in our data (97.7%).
+**Agreement:** 299 of 305 deck titles are Shmup in our data (98.0%).
 
-## A. Deck games our data does not call Shmup (7)
+## A. Deck games our data does not call Shmup (6)
 
 Grouped by the raw category our genre came from. Rows marked *kept* are vehicle or isometric shooters this project keeps out of Shmup on purpose.
 
 | Set | Title | Our genre | Raw category (source) | Deck title | |
 |---|---|---|---|---|---|
-| `slspirit` | Solite Spirits | None | None (None) | Solite Spirits |  |
 | `backfirt` | Back Fire (Tecmo) | Racing | Driving / Race (catver) | Back Fire |  |
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |

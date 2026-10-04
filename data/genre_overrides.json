@@ -1,4 +1,7 @@
 {
-  "_comment": "Per-set genre overrides applied after data/genre_map.json; a parent's entry cascades to its clones. Entries are set name -> common genre. Empty on purpose: the catver placements stand, so the shmup-deck titles catver files under Field, Gallery or Driving Vertical are not Shmup here. tools/reconcile_shmups.py --write-overrides would fill this; it is not run by the build.",
+  "_comment": "Local genre data applied on top of the sources. 'categories' gives a raw catver-style category (e.g. 'Shooter / Flying Vertical') for sets no source classifies, such as games newer than the catver copies on GitHub; it is remapped through genre_map.json like catver's own entries and wins over every source. 'sets' forces a final common genre (set name -> genre), applied after the map; a parent's entry cascades to its clones. tools/reconcile_shmups.py --write-overrides can fill 'sets'; it is not run by the build.",
+  "categories": {
+    "slspirit": "Shooter / Flying Vertical"
+  },
   "sets": {}
 }

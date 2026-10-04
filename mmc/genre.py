@@ -167,7 +167,17 @@ def resolve(machines: dict, mra_categories: dict[str, dict[str, str]]) -> tuple[
                 return v
         return None
 
+    # data/genre_overrides.json "categories": raw catver-style categories for sets no source
+    # classifies (games newer than the catver copies, MRAs without a <category>). They are
+    # remapped like catver entries and take precedence over every source.
+    local_cats: dict[str, str] = {}
+    if os.path.exists(GENRE_OVERRIDES):
+        with open(GENRE_OVERRIDES, encoding="utf-8") as f:
+            local_cats = {k.lower(): v for k, v in json.load(f).get("categories", {}).items()}
+
     def own(setn: str) -> tuple[str, str] | None:
+        if setn in local_cats:
+            return local_cats[setn], "local"
         if setn in catver:
             return catver[setn], "catver"
         if setn in mad:
@@ -226,6 +236,7 @@ def resolve(machines: dict, mra_categories: dict[str, dict[str, str]]) -> tuple[
 
     summary = {
         "overrides": applied,
+        "local_categories": len(local_cats),
         "catver": catver_origin, "catver_entries": len(catver), "mad_entries": len(mad),
         "mra_entries": len(mra_categories),
         "unmapped": [{"raw": k, "sets": v} for k, v in unmapped.most_common(100)],
