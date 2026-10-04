@@ -217,20 +217,20 @@ def build(latest: int) -> dict:
     if not sets:
         sets.update(veradded_from_catver())
         print(f"[mamehist] {len(sets)} sets dated by catver VerAdded")
+    def earlier(name: str, version: str) -> bool:
+        """Record ``version`` for ``name`` if it is the first we know of. Every source is an upper
+        bound (a set re-listed after a rename or re-dump shows up again later), so dates only move
+        earlier."""
+        if name not in sets or _vkey(version) < _vkey(sets[name]):
+            sets[name] = version
+            return True
+        return False
+
     mash, mash_ver = mash_versions()
     if mash:
-        # A set listed under a later version too (re-added after a rename, or a re-dump) keeps its
-        # earliest version: every source only ever moves a date earlier.
-        earlier = new = 0
-        for k, v in mash.items():
-            if k not in sets:
-                sets[k] = v
-                new += 1
-            elif _vkey(v) < _vkey(sets[k]):
-                sets[k] = v
-                earlier += 1
+        moved = sum(1 for k, v in mash.items() if earlier(k, v))
         data["mash_version"] = mash_ver
-        print(f"[mamehist] M.A.S.H. Version.ini ({mash_ver}): {len(mash)} sets, {new} new, {earlier} moved earlier")
+        print(f"[mamehist] M.A.S.H. Version.ini ({mash_ver}): {len(mash)} sets, {moved} dated or moved earlier")
     seen = set(data.get("lst_versions", []))
     prev: set[str] | None = None
     for v in range(FIRST_LST, latest + 1):
@@ -240,16 +240,14 @@ def build(latest: int) -> dict:
             continue
         cur = parse_lst(path)
         if v == FIRST_LST:
-            # Anything already in 0.180 without a VerAdded entry is at least that old.
-            n = sum(1 for s in cur if s not in sets)
-            for s in cur:
-                sets.setdefault(s, f"0.{FIRST_LST}")
+            # Anything already in 0.180 is at least that old (an upper bound, like every source).
+            n = sum(1 for s in cur if earlier(s, f"0.{FIRST_LST}"))
             if n:
-                print(f"[mamehist] {n} sets in 0.{FIRST_LST} without VerAdded: dated 0.{FIRST_LST}")
+                print(f"[mamehist] {n} sets in 0.{FIRST_LST}: dated 0.{FIRST_LST} or earlier")
         elif prev is not None and v not in seen:
             added = cur - prev
             for s in added:
-                sets.setdefault(s, f"0.{v}")
+                earlier(s, f"0.{v}")
             print(f"[mamehist] 0.{v}: +{len(added)} sets")
         prev = cur
         seen.add(v)
