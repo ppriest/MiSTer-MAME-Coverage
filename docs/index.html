@@ -19,41 +19,6 @@
 <main class="wrap">
   <section class="tiles" id="tiles" aria-label="Headline numbers"></section>
 
-  <section class="charts">
-    <figure class="chart" id="fig-time">
-      <figcaption>
-        <strong>MAME and MiSTer over time</strong>
-        <span class="muted">working arcade sets (as of MAME <span id="mame-ver"></span>): in MAME, by the release that first listed each set; on MiSTer, by the date of its first MRA
-          · <button type="button" class="linkbtn" id="time-range">show since 2018</button></span>
-      </figcaption>
-      <div class="chart-body" id="chart-time"></div>
-      <div class="legend" id="legend-time"></div>
-    </figure>
-    <figure class="chart" id="fig-year">
-      <figcaption>
-        <strong>Coverage by release year</strong>
-        <span class="muted">working arcade titles, grouped by the year MAME gives the parent set</span>
-      </figcaption>
-      <div class="chart-body" id="chart-year"></div>
-      <div class="legend" id="legend-year"></div>
-    </figure>
-    <figure class="chart" id="fig-genre">
-      <figcaption>
-        <strong>Coverage by genre</strong>
-        <span class="muted">working arcade titles; genre from catver.ini, else the MiSTer Arcade Database, else the MRA, cascaded between parent and clones</span>
-      </figcaption>
-      <div class="chart-body" id="chart-genre"></div>
-      <div class="legend" id="legend-genre"></div>
-    </figure>
-    <figure class="chart" id="fig-genre-pct">
-      <figcaption>
-        <strong>Share on MiSTer by genre</strong>
-        <span class="muted">percentage of each genre's working arcade titles with an MRA on any core; the overall share is the vertical line</span>
-      </figcaption>
-      <div class="chart-body" id="chart-genre-pct"></div>
-      <div class="legend" id="legend-genre-pct"></div>
-    </figure>
-  </section>
 
   <nav class="tabs" role="tablist">
     <button role="tab" data-tab="titles" aria-selected="true">Titles</button>
@@ -126,6 +91,44 @@
       <button type="button" id="f-reset">Reset</button>
     </form>
     <p class="count" id="titles-count"></p>
+    <details class="charts-box" id="charts-box" open>
+      <summary><span class="twisty"></span>Charts <span class="muted" id="charts-note">for the titles matching the filters above (all except Coverage)</span></summary>
+    <section class="charts">
+    <figure class="chart" id="fig-time">
+      <figcaption>
+        <strong>MAME and MiSTer over time</strong>
+        <span class="muted">sets of the filtered titles (as of MAME <span id="mame-ver"></span>): in MAME, by the release that first listed each set; on MiSTer, by the date of its first MRA
+          · <button type="button" class="linkbtn" id="time-range">show since 2018</button></span>
+      </figcaption>
+      <div class="chart-body" id="chart-time"></div>
+      <div class="legend" id="legend-time"></div>
+    </figure>
+    <figure class="chart" id="fig-year">
+      <figcaption>
+        <strong>Coverage by release year</strong>
+        <span class="muted">filtered titles, grouped by the year MAME gives the parent set</span>
+      </figcaption>
+      <div class="chart-body" id="chart-year"></div>
+      <div class="legend" id="legend-year"></div>
+    </figure>
+    <figure class="chart" id="fig-genre">
+      <figcaption>
+        <strong>Coverage by genre</strong>
+        <span class="muted">filtered titles; genre from catver.ini, else the MiSTer Arcade Database, else the MRA, cascaded between parent and clones</span>
+      </figcaption>
+      <div class="chart-body" id="chart-genre"></div>
+      <div class="legend" id="legend-genre"></div>
+    </figure>
+    <figure class="chart" id="fig-genre-pct">
+      <figcaption>
+        <strong>Share on MiSTer by genre</strong>
+        <span class="muted">percentage of each genre's filtered titles with an MRA on any core; the overall share is the vertical line</span>
+      </figcaption>
+      <div class="chart-body" id="chart-genre-pct"></div>
+      <div class="legend" id="legend-genre-pct"></div>
+    </figure>
+    </section>
+    </details>
     <div class="tablewrap">
       <table class="grid" id="titles-table">
         <thead><tr>
@@ -212,6 +215,7 @@
       <li><strong>Genre.</strong> From MAME's category file <code>catver.ini</code> first (a current copy at <code>data/catver.ini</code> if present, else the copies libretro vendors), then the MiSTer Arcade Database, then the MRA's own <code>&lt;category&gt;</code> tag. A set without a category takes its parent's, else a clone's. The raw strings (135 spellings across sources) are remapped to a short common list by <code>data/genre_map.json</code>, which is meant to be edited. The raw value and its source show in the title's tooltip.</li>
       <li><strong>When a set entered MAME.</strong> From <code>catver.ini</code>'s <code>VerAdded</code> section up to 0.180 and from the <code>mame.lst</code> of every later release on GitHub (a set in release N's list but not N−1's was added in N); release dates come from mamedev's git tags, with the few pre-2007 versions interpolated from known dates. A set is counted as "in MAME" from that date even if it was not working then; renamed sets are dated by their new name. Kept in <code>data/mame_added.json</code>.</li>
       <li><strong>BIOS sets</strong> (MAME <code>isbios</code>, e.g. "Acclaim ZN-1", "Neo-Geo") are not games and are left out entirely.</li>
+      <li><strong>Charts.</strong> They sit under the Titles filters and follow every filter except Coverage (a coverage chart of only-uncovered titles would be empty); the "MAME and MiSTer over time" chart counts sets, the others titles.</li>
       <li><strong>Titles vs sets.</strong> A <em>title</em> is a MAME parent set with all its clones. It counts as covered when any of its sets loads on any core. The burndown therefore shows titles, not individual ROM sets.</li>
     </ul>
     <h2>Caveats</h2>
