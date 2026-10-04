@@ -99,6 +99,34 @@ a pull request, git history is the audit trail, nothing needs installing, and th
 JSON anyway. A SQLite file would be opaque in review and conflict between branches. If the file
 ever becomes unwieldy, split it per source rather than changing the format.
 
+## Genres
+
+Every title gets a `genre` (a short common value), with `genre_raw` and `genre_source` saying
+where it came from. Sources, in order of preference, with cascading from parent to clones and
+back when a set has no category of its own:
+
+1. **`catver.ini`**, MAME's category file maintained by progettosnaps. Put a current copy at
+   `data/catver.ini` (download it from progettosnaps.net/catver and commit it; ~2 MB) and it
+   wins for every set it names. Without one, the copies libretro vendors on GitHub are merged:
+   `mame2003-plus` (catver 0.239, about 5k sets) first, then `mame2016` (older, about 37k sets).
+2. **MiSTer Arcade Database** (`MiSTer-devel/ArcadeDatabase_MiSTer`, `ArcadeDatabase.csv`), the
+   curated per-MRA metadata behind the Arcade Organizer.
+3. **MRA `<category>`** tags, read during `mister` and kept in the ledger (`categories`), so
+   `report` needs no repositories. `mra_source_order` in the map decides which source's tag wins.
+
+Raw strings are normalised (lower case, HTML entities decoded, `/`, ` - ` and `>` unified to
+`/`, the `* Mature *` marker split off into `mature`) and remapped by **`data/genre_map.json`**:
+
+- `full`: whole normalised string, e.g. `"platform/shooter scrolling": "Run and Gun"`;
+- `main`: the part before the first `/`, e.g. `"driving": "Racing"`;
+- `prefix`: starts-with rules, e.g. `"army/": "Shooter"`;
+- `ignore` and `ignore_prefix`: strings that carry no genre (`arcade`, `home systems/…`);
+- `default`: what everything else becomes (`Other`).
+
+`report` prints every raw string that fell through to the default, with how many sets it
+affects; add those to the map and run `report` again. The page's genre filter, sort, column and
+"Coverage by genre" chart all use the common value.
+
 ## Adding or fixing sources
 
 All in `mmc/mister.py`:

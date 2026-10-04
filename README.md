@@ -100,8 +100,9 @@ ledger and page data when anything changed.
 ## Layout
 
 ```
-mmc/           the tool (mame.py, mister.py, ledger.py, reconcile.py, report.py)
-data/          ledger.json: the committed, incrementally merged record of MiSTer coverage
+mmc/           the tool (mame.py, mister.py, ledger.py, genre.py, reconcile.py, report.py)
+data/          ledger.json (the committed, incrementally merged record of MiSTer coverage),
+               genre_map.json (raw category strings -> common genres), optional catver.ini
 docs/          the static site: index.html, app.js, style.css, data/*.json
 work/          caches and clones (git-ignored)
 ```

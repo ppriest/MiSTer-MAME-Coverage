@@ -1,28 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-04T02:18:02+00:00",
+  "generated": "2026-10-04T08:33:19+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-04T02:18:00+00:00",
+  "mister_generated": "2026-10-04T08:32:10+00:00",
   "alamone_generated": "2026-10-01T23:23:16+00:00",
   "ledger_updated": "2026-10-04",
   "ledger_runs": [
-   {
-    "date": "2026-10-04",
-    "note": "alamone 2026-10-01",
-    "cores": 524,
-    "sets": 5114,
-    "pairs": 5385,
-    "dates_improved": 0
-   },
-   {
-    "date": "2026-10-04",
-    "note": "alamone 2026-10-01",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0
-   },
    {
     "date": "2026-10-04",
     "note": "alamone 2026-10-01",
@@ -46,8 +30,40 @@
     "sets": 6,
     "pairs": 6,
     "dates_improved": 0
+   },
+   {
+    "date": "2026-10-04",
+    "note": "alamone 2026-10-01",
+    "cores": 1,
+    "sets": 1,
+    "pairs": 1,
+    "dates_improved": 0
+   },
+   {
+    "date": "2026-10-04",
+    "note": "alamone 2026-10-01",
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
+    "dates_improved": 0
    }
   ],
+  "genre": {
+   "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
+   "catver_entries": 37998,
+   "mad_entries": 2995,
+   "mra_entries": 2641,
+   "unmapped": [
+    {
+     "raw": "not classified",
+     "sets": 8
+    },
+    {
+     "raw": "electromechanical/kiddy ride",
+     "sets": 3
+    }
+   ]
+  },
   "sources": {
    "dist": "MiSTer official distribution",
    "jt": "JTCORES (jotego)",
@@ -1778,6 +1794,12 @@
    },
    {
     "source": "ongo",
+    "repo": "Usquebagh/Arcade-Jedi_MiSTer",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "ongo",
     "repo": "XelaNotPu/BreakThru_MiSTer",
     "dirs": null,
     "mras": 5
@@ -2137,34 +2159,6 @@
   ],
   "repo_errors": [
    [
-    "Kyp069/zx48-MiSTer",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "blahm1d/MiSTer-cores",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "blahm1d/wolf-unit",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "kandowontu/BrickBoy_MiSTer",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "meathax/Bucky",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "meathax/mrdo",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "meathax/s24",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
     "https://mister.blahm1d.com/db.json.zip",
     "<urlopen error Tunnel connection failed: 403 Forbidden>"
    ]
@@ -2175,7 +2169,7 @@
    "working_arcade_titles_covered": 1820,
    "working_arcade_sets": 9981,
    "working_arcade_sets_covered": 4630,
-   "cores": 531,
+   "cores": 532,
    "unmatched_sets": 400
   }
  },
@@ -9124,6 +9118,28 @@
    "first_date": "2026-07-18"
   },
   {
+   "id": "jlrh:ffoverdriv",
+   "name": "ffoverdriv",
+   "source": "jlrh",
+   "source_title": "jlrh",
+   "channel": null,
+   "rbf": "ffoverdriv.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": "2026-10-04"
+  },
+  {
    "id": "jlrh:ffsquash",
    "name": "ffsquash",
    "source": "jlrh",
@@ -13457,6 +13473,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 3,

@@ -249,7 +249,7 @@ def read_blobs(d: str, specs: list[str]) -> dict[str, bytes | None]:
 
 # --- MRA parsing -----------------------------------------------------------------------------
 
-_TAG = re.compile(r"<(setname|rbf|name|mameversion|year|manufacturer|parent)\b[^>]*>\s*(.*?)\s*</\1>", re.S | re.I)
+_TAG = re.compile(r"<(setname|rbf|name|mameversion|year|manufacturer|parent|category)\b[^>]*>\s*(.*?)\s*</\1>", re.S | re.I)
 
 
 def parse_mra_text(s: str) -> dict:
