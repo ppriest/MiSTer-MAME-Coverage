@@ -50,8 +50,9 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0
 .meter > i { display: block; height: 100%; background: var(--accent); border-radius: 3px; }
 
 .charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 16px; margin-bottom: 20px; }
-#chart-genre svg { max-width: 640px; margin: 0 auto; }
-#chart-genre { min-height: 0; }
+#chart-genre svg, #chart-genre-pct svg { max-width: 640px; margin: 0 auto; }
+#chart-genre, #chart-genre-pct { min-height: 0; }
+svg .ref-line { stroke: var(--text-2); stroke-width: 1; }
 @media (max-width: 480px) { .charts { grid-template-columns: 1fr; } }
 .chart { margin: 0; background: var(--surface-2); border-radius: 8px; padding: 12px 14px 8px; }
 .chart figcaption { display: flex; flex-direction: column; gap: 2px; margin-bottom: 6px; }

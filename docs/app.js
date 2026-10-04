@@ -188,6 +188,40 @@
     });
   }
 
+  function renderGenrePctChart() {
+    const titles = S.titles.filter(isArcadeWorking);
+    const bins = new Map();
+    titles.forEach(t => { const k = t.genre || "(none)"; const b = bins.get(k) || { k, covered: 0, total: 0 }; b.total++; if (t.covered_working) b.covered++; bins.set(k, b); });
+    const rows = Array.from(bins.values()).map(r => ({ ...r, p: r.covered / r.total })).sort((a, b) => b.p - a.p || b.total - a.total);
+    const overall = titles.filter(t => t.covered_working).length / titles.length;
+    const W = 640, rowH = 18, m = { t: 6, r: 110, b: 22, l: 96 };
+    const H = m.t + rows.length * rowH + m.b;
+    const x = v => m.l + (W - m.l - m.r) * v;
+    const bars = rows.map((r, i) => {
+      const y0 = m.t + i * rowH + 2, h = rowH - 4;
+      return `<g class="bar" data-i="${i}">
+        <text x="${m.l - 6}" y="${y0 + h - 4}" text-anchor="end">${esc(r.k)}</text>
+        <rect x="${m.l}" y="${y0}" width="${Math.max(0, x(r.p) - m.l)}" height="${h}" fill="var(--accent)" rx="2"/>
+        <text x="${x(r.p) + 5}" y="${y0 + h - 4}" fill="var(--text)">${(100 * r.p).toFixed(0)}% <tspan fill="var(--text-2)">of ${fmt(r.total)}</tspan></text>
+        <rect x="${m.l}" y="${y0 - 2}" width="${W - m.l - m.r}" height="${rowH}" fill="transparent"/>
+      </g>`;
+    }).join("");
+    const ticks = [0, 0.25, 0.5, 0.75, 1];
+    $("#chart-genre-pct").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Percentage of titles on MiSTer by genre">
+      <g class="grid">${ticks.map(v => `<line x1="${x(v)}" x2="${x(v)}" y1="${m.t}" y2="${H - m.b}"/>`).join("")}</g>
+      ${bars}
+      <line class="ref-line" x1="${x(overall)}" x2="${x(overall)}" y1="${m.t}" y2="${H - m.b}"/>
+      ${ticks.map(v => `<text x="${x(v)}" y="${H - 6}" text-anchor="middle">${100 * v}%</text>`).join("")}
+    </svg>`;
+    $("#legend-genre-pct").innerHTML = `<span><i style="background:var(--accent)"></i>share of the genre's titles on MiSTer</span><span><i class="line" style="background:var(--text-2)"></i>all genres: ${(100 * overall).toFixed(1)}%</span><span class="muted">click a genre to list its missing titles</span>`;
+    $$("#chart-genre-pct .bar").forEach(g => {
+      const r = rows[+g.dataset.i];
+      g.addEventListener("mousemove", ev => showTip(`<b>${esc(r.k)}</b><br>${(100 * r.p).toFixed(1)}% on MiSTer: ${fmt(r.covered)} of ${fmt(r.total)}<br>remaining: ${fmt(r.total - r.covered)}`, ev.clientX, ev.clientY));
+      g.addEventListener("mouseleave", hideTip);
+      g.addEventListener("click", () => { $("#f-genre").value = r.k; $("#f-cov").value = "no"; applyTitles(); showTab("titles"); });
+    });
+  }
+
   // ---------- titles ----------
   function populateSelects() {
     const manus = new Map(), drvs = new Map(), genres = new Map();
@@ -387,7 +421,7 @@
     const c = data.meta.counts;
     $("#subtitle").textContent = `MAME ${data.meta.mame_version.replace(/^0/, "0.")} · ${fmt(c.working_arcade_titles)} working arcade titles · ${fmt(c.cores)} MiSTer cores · updated ${data.meta.generated.slice(0, 10)}`;
     $("#mame-ver").textContent = data.meta.mame_version.replace(/^0/, "0.");
-    renderTiles(); renderTimeChart(); renderYearChart(); renderGenreChart(); populateSelects(); renderStatic();
+    renderTiles(); renderTimeChart(); renderYearChart(); renderGenreChart(); renderGenrePctChart(); populateSelects(); renderStatic();
     readHash();
     $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓";
     applyTitles(); applyDrivers(); applyCores();
