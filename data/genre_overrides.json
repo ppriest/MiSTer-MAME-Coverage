@@ -1,4 +1,4 @@
 {
-  "_comment": "Per-set genre overrides applied after data/genre_map.json; a parent's entry cascades to its clones. Entries are set name -> common genre. Empty on purpose: the catver placements stand, so the shmup-deck titles catver files under Walking, Command, Field, Gallery, Driving or Flying Diagonal are not Shmup here. tools/reconcile_shmups.py --write-overrides would fill this; it is not run by the build.",
+  "_comment": "Per-set genre overrides applied after data/genre_map.json; a parent's entry cascades to its clones. Entries are set name -> common genre. Empty on purpose: the catver placements stand, so the shmup-deck titles catver files under Field, Gallery or Driving Vertical are not Shmup here. tools/reconcile_shmups.py --write-overrides would fill this; it is not run by the build.",
   "sets": {}
 }

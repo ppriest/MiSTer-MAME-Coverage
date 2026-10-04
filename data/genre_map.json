@@ -1,5 +1,5 @@
 {
-  "_comment": "Raw category strings (catver.ini, MiSTer ArcadeDatabase, MRA <category>) are normalised to lower case with '/' between main and sub category, then looked up here: 'full' for the whole string, then 'main' for the part before the first '/', then 'prefix' by starts-with, else 'default'. 'ignore' values and 'ignore_prefix' starts-with matches carry no genre information. Edit freely; report prints raw strings that fell through to the default. 'Shmup' is for scrolling vertical/horizontal shooters; 'Shooter' keeps gallery (fixed), gun, walking, vehicle/driving, isometric (Flying Diagonal), 3rd/1st person and other shooters, with per-title exceptions in genre_overrides.json.",
+  "_comment": "Raw category strings (catver.ini, MiSTer ArcadeDatabase, MRA <category>) are normalised to lower case with '/' between main and sub category, then looked up here: 'full' for the whole string, then 'main' for the part before the first '/', then 'prefix' by starts-with, else 'default'. 'ignore' values and 'ignore_prefix' starts-with matches carry no genre information. Edit freely; report prints raw strings that fell through to the default. 'Shmup' is for scrolling vertical/horizontal/diagonal (isometric, Zaxxon-style) shooters horizontal vehicle scrollers (Driving Horizontal), Command shooters and on-foot scrolling shooters (Walking); 'Shooter' keeps gallery (fixed), gun, walking, vertical/diagonal driving, 3rd/1st person and other shooters, with per-title exceptions in genre_overrides.json.",
   "ignore": [
     "arcade",
     "system",
@@ -24,7 +24,7 @@
     "platform/shooter": "Run and Gun",
     "platform/fighter scrolling": "Beat 'em up",
     "platform/fighter": "Beat 'em up",
-    "shooter/walking": "Run and Gun",
+    "shooter/walking": "Shmup",
     "shooter/run and gun": "Run and Gun",
     "shooter/run & gun": "Run and Gun",
     "shooter/gun": "Light Gun",
@@ -33,7 +33,7 @@
     "shooter/gallery": "Shooter",
     "shooter/driving": "Racing",
     "shooter/driving vertical": "Shooter",
-    "shooter/driving horizontal": "Shooter",
+    "shooter/driving horizontal": "Shmup",
     "maze/fighter": "Beat 'em up",
     "maze/shooter large": "Maze",
     "maze/shooter small": "Maze",
@@ -124,12 +124,13 @@
     "shooter/flying vertical": "Shmup",
     "shooter/flying horizontal": "Shmup",
     "shooter/flying": "Shmup",
-    "shooter/flying diagonal": "Shooter",
+    "shooter/flying diagonal": "Shmup",
     "shooter/driving diagonal": "Shooter",
     "shooter/vertical": "Shmup",
     "shooter/horizontal": "Shmup",
     "shooter/scrolling": "Shmup",
-    "scrolling shooter": "Shmup"
+    "scrolling shooter": "Shmup",
+    "shooter/command": "Shmup"
   },
   "main": {
     "shooter": "Shooter",
