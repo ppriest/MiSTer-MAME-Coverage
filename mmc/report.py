@@ -21,6 +21,10 @@ def write(result: dict) -> None:
     }
     with open(os.path.join(paths.DOCS, "data", "summary.json"), "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=1)
+    g = result["meta"].get("genre", {})
+    if g.get("unmapped"):
+        print(f"[report] genre strings not in data/genre_map.json (mapped to default): "
+              + ", ".join(f"{u['raw']} ({u['sets']})" for u in g["unmapped"][:25]))
     c = result["meta"]["counts"]
     print(f"[report] wrote {full} ({os.path.getsize(full) // 1024} KB)")
     print(f"[report] working arcade titles: {c['working_arcade_titles_covered']}/{c['working_arcade_titles']} covered; "

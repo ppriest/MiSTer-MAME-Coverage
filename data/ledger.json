@@ -34,6 +34,30 @@
 "sets": 10,
 "pairs": 33,
 "dates_improved": 0
+},
+{
+"date": "2026-10-04",
+"note": "alamone 2026-10-01",
+"cores": 1,
+"sets": 6,
+"pairs": 6,
+"dates_improved": 0
+},
+{
+"date": "2026-10-04",
+"note": "alamone 2026-10-01",
+"cores": 1,
+"sets": 1,
+"pairs": 1,
+"dates_improved": 0
+},
+{
+"date": "2026-10-04",
+"note": "alamone 2026-10-01",
+"cores": 0,
+"sets": 0,
+"pairs": 0,
+"dates_improved": 0
 }
 ]
 },
@@ -6093,6 +6117,25 @@
 "aliases": [],
 "last_seen": "2026-10-04"
 },
+"jlrh:ffoverdriv": {
+"id": "jlrh:ffoverdriv",
+"name": "ffoverdriv",
+"source": "jlrh",
+"source_title": "jlrh",
+"channel": null,
+"rbf": "ffoverdriv.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
+"aliases": [],
+"last_seen": "2026-10-04"
+},
 "jlrh:ffsquash": {
 "id": "jlrh:ffsquash",
 "name": "ffsquash",
@@ -8736,6 +8779,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "meat:stunrunner": {
@@ -8794,6 +8838,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "meat:viostorm": {
@@ -8812,6 +8857,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "meat:yellowcab": {
@@ -9859,6 +9905,25 @@
 "aliases": [],
 "last_seen": "2026-10-04"
 },
+"repo:1945kiii": {
+"id": "repo:1945kiii",
+"name": "1945kiii",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": null,
+"rbf": "1945kiii.rbf",
+"repo": "shmupfan/Arcade-1945kIII_MiSTer",
+"url": "https://github.com/shmupfan/Arcade-1945kIII_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
+"aliases": [],
+"last_seen": "2026-10-04"
+},
 "repo:atari-g1": {
 "id": "repo:atari-g1",
 "name": "Arcade-Atari-G1 (Gm0rk)",
@@ -10106,6 +10171,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "repo:jalecoms32": {
@@ -10309,6 +10375,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "repo:penguinkunwars": {
@@ -11244,6 +11311,62 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_1944 The Loop Master/1944 The Loop Master (USA 000620).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"1945kiii": {
+"repo:1945kiii": {
+"core": "repo:1945kiii",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
+"first_path": "releases/1945k III (newer, OPCX2 PCB).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"1945kiiin": {
+"repo:1945kiii": {
+"core": "repo:1945kiii",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
+"first_path": "releases/_alternatives/_1945k III/1945k III (newer, OPCX1 PCB).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"1945kiiio": {
+"repo:1945kiii": {
+"core": "repo:1945kiii",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
+"first_path": "releases/_alternatives/_1945k III/1945k III (older, OPCX1 PCB).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"1945kiiipt": {
+"repo:1945kiii": {
+"core": "repo:1945kiii",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
+"first_path": "releases/_alternatives/_1945k III/1945k III (Promat license, OPCX1 PCB).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -32332,6 +32455,20 @@
 "last_seen": "2026-10-04"
 }
 },
+"flagrall": {
+"repo:1945kiii": {
+"core": "repo:1945kiii",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
+"first_path": "releases/'96 Flag Rally.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "flamegun": {
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
@@ -53108,6 +53245,20 @@
 "last_seen": "2026-10-04"
 }
 },
+"overdriv": {
+"jlrh:ffoverdriv": {
+"core": "jlrh:ffoverdriv",
+"date": "2026-10-04",
+"date_quality": "observed",
+"via": "jlrh",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "overtop": {
 "dist:neogeo": {
 "core": "dist:neogeo",
@@ -69746,6 +69897,20 @@
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/rungun/releases/mra/alternatives/_Run and Gun/Slam Dunk (ver JAA 1993 10.8) (dual screen with demux adapter).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"slspirit": {
+"repo:1945kiii": {
+"core": "repo:1945kiii",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
+"first_path": "releases/Solite Spirits.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -86399,6 +86564,8611 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
+}
+},
+"categories": {
+"005": {
+"repo": "Shooter"
+},
+"11beat": {
+"dist": "Sports"
+},
+"1on1gov": {
+"ongo": "Sports"
+},
+"280zzzap": {
+"dist": "Racing"
+},
+"4dwarrio": {
+"dist": "Shooter - Horizontal"
+},
+"64street": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"64streetj": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"64streetja": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"720": {
+"dist": "Arcade"
+},
+"720g": {
+"dist": "Arcade"
+},
+"720gr1": {
+"dist": "Arcade"
+},
+"720r1": {
+"dist": "Arcade"
+},
+"720r2": {
+"dist": "Arcade"
+},
+"720r3": {
+"dist": "Arcade"
+},
+"99lstwar": {
+"dist": "Shooter"
+},
+"abcop": {
+"dist": "Shooter / Flight"
+},
+"abcopd": {
+"dist": "Shooter / Flight"
+},
+"abcopj": {
+"dist": "Shooter / Flight"
+},
+"abcopjd": {
+"dist": "Shooter / Flight"
+},
+"abortman": {
+"dist": "Maze"
+},
+"aburner": {
+"dist": "Shooter / Flight"
+},
+"aburner131": {
+"dist": "Shooter / Flight"
+},
+"aburner2": {
+"dist": "Shooter / Flight"
+},
+"acrobatm": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"acrobatmbl": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"actfancr": {
+"dist": "Platformer"
+},
+"actfancr1": {
+"dist": "Platformer"
+},
+"actfancr2": {
+"dist": "Platformer"
+},
+"actfancrj": {
+"dist": "Platformer"
+},
+"adcanoe": {
+"dist": "Action"
+},
+"adillor": {
+"repo": "Racing"
+},
+"aerofgts": {
+"ongo": "Shooter"
+},
+"aerofgtst": {
+"ongo": "Shooter"
+},
+"aerolitos": {
+"dist": "Shooter - Multidirectional"
+},
+"agallet": {
+"dist": "Vertical Shooter"
+},
+"agalleta": {
+"dist": "Vertical Shooter"
+},
+"agalletah": {
+"dist": "Vertical Shooter"
+},
+"agalletaj": {
+"dist": "Vertical Shooter"
+},
+"agalletak": {
+"dist": "Vertical Shooter"
+},
+"agalletat": {
+"dist": "Vertical Shooter"
+},
+"agalletau": {
+"dist": "Vertical Shooter"
+},
+"agalleth": {
+"dist": "Vertical Shooter"
+},
+"agalletj": {
+"dist": "Vertical Shooter"
+},
+"agalletk": {
+"dist": "Vertical Shooter"
+},
+"agallett": {
+"dist": "Vertical Shooter"
+},
+"agalletu": {
+"dist": "Vertical Shooter"
+},
+"airass": {
+"dist": "Shooter"
+},
+"airattck": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"airattcka": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"airdueljm72": {
+"dist": "Shooter"
+},
+"airduelm72": {
+"dist": "Shooter"
+},
+"airwolf": {
+"dist": "Shooter"
+},
+"akatana": {
+"ongo": "Shooter"
+},
+"alcon": {
+"dist": "Shooter"
+},
+"alcon_v": {
+"ongo": "Shooter"
+},
+"alibaba": {
+"dist": "Maze"
+},
+"alibabab": {
+"dist": "Maze"
+},
+"alienaru": {
+"dist": "Arena"
+},
+"alieninv": {
+"dist": "Space / Invaders"
+},
+"alieninvp2": {
+"dist": "Space / Invaders"
+},
+"alphamis": {
+"dist": "Shooter / Flying Vertical"
+},
+"alpine": {
+"dist": "Racing"
+},
+"alpinea": {
+"dist": "Racing"
+},
+"altair": {
+"jlrh": "Shooter",
+"ongo": "Shooter"
+},
+"altair2": {
+"jlrh": "Shooter",
+"ongo": "Shooter"
+},
+"amatelas": {
+"coinop": "Shoot 'em up"
+},
+"amazon": {
+"coinop": "Shoot 'em up"
+},
+"amazont": {
+"coinop": "Shoot 'em up"
+},
+"amidars": {
+"dist": "Maze",
+"arcfpga": "Maze"
+},
+"andromd": {
+"dist": "Shooter - Gallery"
+},
+"anpanman": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"anpanmana": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"anteater": {
+"dist": "Maze"
+},
+"apb": {
+"dist": "Arcade"
+},
+"apb1": {
+"dist": "Arcade"
+},
+"apb2": {
+"dist": "Arcade"
+},
+"apb3": {
+"dist": "Arcade"
+},
+"apb4": {
+"dist": "Arcade"
+},
+"apb5": {
+"dist": "Arcade"
+},
+"apb6": {
+"dist": "Arcade"
+},
+"apbf": {
+"dist": "Arcade"
+},
+"apbg": {
+"dist": "Arcade"
+},
+"aponow": {
+"dist": "Shooter - Horizontal"
+},
+"appoooh": {
+"ongo": "Sports",
+"meat": "Sports"
+},
+"aquarush": {
+"ongo": "Puzzle"
+},
+"arabian": {
+"dist": "Action"
+},
+"arabiana": {
+"dist": "Action"
+},
+"arbalest": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"arcadian": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"arian": {
+"dist": "Shooter / Flying Vertical"
+},
+"arkangc": {
+"dist": "Ball and Paddle"
+},
+"arkangc2": {
+"dist": "Ball and Paddle"
+},
+"arkanoid": {
+"dist": "Ball and Paddle"
+},
+"arkanoidj": {
+"dist": "Ball and Paddle"
+},
+"arkanoiduo": {
+"dist": "Ball and Paddle"
+},
+"arkarea": {
+"dist": "Shooter"
+},
+"arkatayt": {
+"dist": "Ball and Paddle"
+},
+"arkbloc2": {
+"dist": "Ball and Paddle"
+},
+"arkblock": {
+"dist": "Ball and Paddle"
+},
+"arktayt2": {
+"dist": "Ball and Paddle"
+},
+"armedf": {
+"coinop": "Shoot 'em up"
+},
+"armedff": {
+"coinop": "Shoot 'em up"
+},
+"armorcar": {
+"dist": "Maze"
+},
+"armorcar2": {
+"dist": "Maze"
+},
+"asideral": {
+"dist": "Shooter - Gallery"
+},
+"aso": {
+"dist": "Shooter / Flying Vertical"
+},
+"asoccer": {
+"ongo": "Sports",
+"meat": "Sports"
+},
+"assault": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"assaultj": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"assaultp": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"astdelux": {
+"dist": "Shooter - Multi-directional"
+},
+"astdelux1": {
+"dist": "Shooter - Multidirectional"
+},
+"astdelux2": {
+"dist": "Shooter - Multidirectional"
+},
+"astdelux4": {
+"dist": "Shooter - Multidirectional"
+},
+"asterock": {
+"dist": "Shooter - Multidirectional"
+},
+"asterockv": {
+"dist": "Shooter - Multidirectional"
+},
+"asteroid": {
+"dist": "Shooter - Multi-directional"
+},
+"asteroid1": {
+"dist": "Shooter - Multidirectional"
+},
+"asteroid2": {
+"dist": "Shooter - Multidirectional"
+},
+"asteroid6": {
+"dist": "Shooter - Multidirectional"
+},
+"astrians": {
+"dist": "Shooter - Gallery"
+},
+"astrob": {
+"repo": "Shooter"
+},
+"astrofl": {
+"dist": "Shooter"
+},
+"astropd2": {
+"dist": "Shooter - Gallery"
+},
+"astroped": {
+"dist": "Shooter - Gallery"
+},
+"asuka": {
+"dist": "Action",
+"ongo": "Action"
+},
+"asukaj": {
+"dist": "Action",
+"ongo": "Action"
+},
+"asukaja": {
+"dist": "Action",
+"ongo": "Action"
+},
+"asurabld": {
+"dist": "Fight"
+},
+"asurabus": {
+"dist": "Fight"
+},
+"asurabusj": {
+"dist": "Fight"
+},
+"asurabusja": {
+"dist": "Fight"
+},
+"asurabusjr": {
+"dist": "Fight"
+},
+"ataxx": {
+"dist": "Puzzle"
+},
+"atehate": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"atetris": {
+"dist": "Puzzle"
+},
+"atetrisa": {
+"dist": "Puzzle"
+},
+"atetrisb": {
+"dist": "Puzzle"
+},
+"atetrisc": {
+"dist": "Puzzle"
+},
+"atetrisc2": {
+"dist": "Puzzle"
+},
+"athena": {
+"dist": "Action"
+},
+"athenab": {
+"dist": "Action"
+},
+"athenaff": {
+"dist": "Action"
+},
+"atlantis2": {
+"dist": "Shooter - Horizontal"
+},
+"attackfc": {
+"dist": "Shooter - Gallery"
+},
+"avefenix": {
+"dist": "Shooter - Gallery"
+},
+"avefenixl": {
+"dist": "Shooter - Gallery"
+},
+"avefenixrf": {
+"dist": "Shooter - Gallery"
+},
+"avspirit": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"azurian": {
+"dist": "Shooter - Multidirectional"
+},
+"baby2": {
+"dist": "Maze"
+},
+"baby3": {
+"dist": "Maze"
+},
+"baby4": {
+"dist": "Maze"
+},
+"backfirt": {
+"dist": "Shooter - Horizontal"
+},
+"badlands": {
+"dist": "Driving"
+},
+"bagman": {
+"dist": "Platform - Climb",
+"repo": "Platform / Extra"
+},
+"bagmanj": {
+"dist": "Platform - Climb"
+},
+"bagmans": {
+"dist": "Platform - Climb"
+},
+"bagmans4": {
+"dist": "Platform - Climb"
+},
+"bagnard": {
+"dist": "Platform - Climb"
+},
+"bagnarda": {
+"dist": "Platform - Climb"
+},
+"bagnardi": {
+"dist": "Platform - Climb"
+},
+"bagturbo": {
+"dist": "Platform - Climb"
+},
+"ballbomb": {
+"dist": "Shooter - Gallery"
+},
+"baluba": {
+"dist": "Platform"
+},
+"bankp": {
+"dist": "Shooter/1stPerson"
+},
+"batlball": {
+"ongo": "Puzzle",
+"repo": "Puzzle"
+},
+"batlballa": {
+"ongo": "Puzzle",
+"repo": "Puzzle"
+},
+"batlballe": {
+"ongo": "Puzzle",
+"repo": "Puzzle"
+},
+"batlballo": {
+"ongo": "Puzzle",
+"repo": "Puzzle"
+},
+"batlballpt": {
+"ongo": "Puzzle",
+"repo": "Puzzle"
+},
+"batlballu": {
+"ongo": "Puzzle",
+"repo": "Puzzle"
+},
+"batman": {
+"dist": "Platform",
+"ongo": "Platform"
+},
+"batrider": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"batriderc": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"batriderhk": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"batriderj": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"batriderja": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"batriderk": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"batridert": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"batrideru": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"batsugun": {
+"slop": "Shoot'em up",
+"ongo": "Shoot'em up"
+},
+"batsuguna": {
+"slop": "Shoot'em up",
+"ongo": "Shoot'em up"
+},
+"batsugunb": {
+"slop": "Shoot'em up",
+"ongo": "Shoot'em up"
+},
+"batsugunsp": {
+"slop": "Shoot'em up",
+"ongo": "Shoot'em up"
+},
+"battles2": {
+"dist": "Shooter - Vertical"
+},
+"battlnts": {
+"ongo": "Shooter"
+},
+"battlntsa": {
+"ongo": "Shooter"
+},
+"battlntsj": {
+"ongo": "Shooter"
+},
+"battroad": {
+"dist": "Shooter - Vertical"
+},
+"bbakraid": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"bbakraidc": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"bbakraidj": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"bbakraidja": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"beastfp": {
+"dist": "Platform - Climb"
+},
+"beastrzr": {
+"ongo": "Fighter"
+},
+"beastrzra": {
+"ongo": "Fighter"
+},
+"berzerk": {
+"dist": "Shooter - Multidirectional"
+},
+"berzerka": {
+"dist": "Arena"
+},
+"berzerkb": {
+"dist": "Arena"
+},
+"berzerkf": {
+"dist": "Arena"
+},
+"berzerkg": {
+"dist": "Arena"
+},
+"berzerks": {
+"dist": "Arena"
+},
+"bgaregga": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"bgareggacn": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"bgareggahk": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"bgareggak": {
+"coinop": "Shoot'em up"
+},
+"bgaregganv": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"bgareggat": {
+"coinop": "Shoot'em up"
+},
+"bgareggat2": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"bgareggatw": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"bigbang": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"bigbanga": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"bigfghtr": {
+"coinop": "Shoot 'em up"
+},
+"bigkong": {
+"dist": "Platform - Climb"
+},
+"bigstrik": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"bilyard": {
+"dist": "Sports"
+},
+"bioatack": {
+"dist": "Shooter"
+},
+"bioship": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"birdiy": {
+"dist": "Maze"
+},
+"bjtwin": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"bjtwina": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"bjtwinp": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"bjtwinpa": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"bkrtmaq": {
+"ongo": "Quiz",
+"repo": "Quiz"
+},
+"blandia": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"blandiap": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"blazeonj": {
+"ongo": "Shooter / Flying Horizontal"
+},
+"bldyroar": {
+"ongo": "Fighter"
+},
+"bldyror2": {
+"ongo": "Fighter"
+},
+"bldyror2a": {
+"ongo": "Fighter"
+},
+"bldyror2j": {
+"ongo": "Fighter"
+},
+"bldyror2u": {
+"ongo": "Fighter"
+},
+"blkbustr": {
+"dist": "Puzzle"
+},
+"blkheart": {
+"coinop": "Shoot 'em Up",
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"blkheartj": {
+"coinop": "Shoot 'em Up",
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"blkhole": {
+"dist": "Shooter - Vertical"
+},
+"blockcar": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"blockgal": {
+"dist": "Ball and Paddle"
+},
+"bloodbro": {
+"dist": "Shoot"
+},
+"bloodbroj": {
+"dist": "Shoot"
+},
+"bloodbroja": {
+"dist": "Shoot"
+},
+"bloodbrok": {
+"dist": "Shoot"
+},
+"bloodbrou": {
+"dist": "Shoot"
+},
+"bloodstm": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"bloodstm104": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"bloodstm110": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"bloodstm210": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"bloodstm216": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"bloodstm220": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"bloodstm221": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"bloxeedc": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"bloxeedu": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"blueprnt": {
+"dist": "Maze"
+},
+"blueprntj": {
+"dist": "Maze"
+},
+"blueshrk": {
+"dist": "Shooter - Gallery"
+},
+"blueshrkmr": {
+"dist": "Platform / Water Diving"
+},
+"bmaster": {
+"dist": "Brawler"
+},
+"bmbjckgr": {
+"dist": "Puzzle - Platform"
+},
+"bnj": {
+"dist": "Racing"
+},
+"bnjm": {
+"dist": "Racing"
+},
+"bnjr": {
+"dist": "Racing"
+},
+"bombjack": {
+"dist": "Puzzle - Platform"
+},
+"bombjack2": {
+"dist": "Puzzle - Platform"
+},
+"bombjacks01": {
+"dist": "Puzzle - Platform"
+},
+"bombjckb": {
+"dist": "Puzzle - Platform"
+},
+"bombjred": {
+"dist": "Puzzle - Platform"
+},
+"bonzeadv": {
+"dist": "Platform",
+"ongo": "Platform"
+},
+"bonzeadvo": {
+"dist": "Platform",
+"ongo": "Platform"
+},
+"bonzeadvp": {
+"dist": "Platform",
+"ongo": "Platform"
+},
+"bonzeadvp2": {
+"dist": "Platform",
+"ongo": "Platform"
+},
+"bonzeadvu": {
+"dist": "Platform",
+"ongo": "Platform"
+},
+"boogwing": {
+"dist": "Action",
+"coinop": "Shoot &apos;Em Up",
+"ongo": "Action"
+},
+"boogwinga": {
+"dist": "Action",
+"coinop": "Shoot &apos;Em Up",
+"ongo": "Action"
+},
+"boogwingu": {
+"dist": "Action",
+"coinop": "Shoot &apos;Em Up",
+"ongo": "Action"
+},
+"boothill": {
+"dist": "Shooter - Multidirectional"
+},
+"borench": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"borencha": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"borenchj": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"bosco": {
+"dist": "Shooter - Multidirectional"
+},
+"boscomd": {
+"dist": "Shooter - Multidirectional"
+},
+"botanic": {
+"dist": "Maze"
+},
+"botanicf": {
+"dist": "Maze"
+},
+"bowler": {
+"dist": "Sports / Bowling"
+},
+"bradley": {
+"dist": "Army / Tank 3D"
+},
+"brain": {
+"repo": "Shooter",
+"ongo": "Shooter"
+},
+"brakman": {
+"dist": "Maze"
+},
+"breakout": {
+"dist": "Ball and Paddle"
+},
+"brubber": {
+"dist": "Racing"
+},
+"brutforc": {
+"dist": "Shooter"
+},
+"brvblade": {
+"ongo": "Shooter"
+},
+"brvbladea": {
+"ongo": "Shooter"
+},
+"brvbladej": {
+"ongo": "Shooter"
+},
+"brvbladeu": {
+"ongo": "Shooter"
+},
+"btime": {
+"dist": "Platform - Climb"
+},
+"btime2": {
+"dist": "Platform - Climb"
+},
+"btlkroad": {
+"dist": "Fight"
+},
+"btlkroadk": {
+"dist": "Fight"
+},
+"bubbles": {
+"dist": "Arena"
+},
+"bubblesp": {
+"dist": "Arena"
+},
+"bubblesr": {
+"dist": "Arena"
+},
+"bubbletr": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"bubbletrj": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"bubl2000": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"bubl2000a": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"bublbobl": {
+"coinop": "Platform"
+},
+"bublbobl1": {
+"coinop": "Platform"
+},
+"bublboblr": {
+"coinop": "Platform"
+},
+"bublboblr1": {
+"coinop": "Platform"
+},
+"buckrogn": {
+"dist": "Shooter - Flying",
+"repo": "Shooter - Flying"
+},
+"buglaxn": {
+"dist": "Shooter - Gallery"
+},
+"bullfgt": {
+"dist": "Arena"
+},
+"burnforc": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"burnforco": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"bwidow": {
+"dist": "Shooter - Tube",
+"repo": "Shooter - Tube"
+},
+"bzone": {
+"dist": "Army / Tank 3D"
+},
+"bzonea": {
+"dist": "Army / Tank 3D"
+},
+"cactus": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"cadanglr": {
+"dist": "Sports"
+},
+"cadash": {
+"dist": "Action / RPG",
+"ongo": "Action / RPG"
+},
+"cadashf": {
+"dist": "Action / RPG",
+"ongo": "Action / RPG"
+},
+"cadashg": {
+"dist": "Action / RPG",
+"ongo": "Action / RPG"
+},
+"cadashgo": {
+"dist": "Action / RPG",
+"ongo": "Action / RPG"
+},
+"cadashi": {
+"dist": "Action / RPG",
+"ongo": "Action / RPG"
+},
+"cadashj": {
+"dist": "Action / RPG",
+"ongo": "Action / RPG"
+},
+"cadashj1": {
+"dist": "Action / RPG",
+"ongo": "Action / RPG"
+},
+"cadashjo": {
+"dist": "Action / RPG",
+"ongo": "Action / RPG"
+},
+"cadashp": {
+"dist": "Action / RPG",
+"ongo": "Action / RPG"
+},
+"cadashs": {
+"dist": "Action / RPG",
+"ongo": "Action / RPG"
+},
+"cadashso": {
+"dist": "Action / RPG",
+"ongo": "Action / RPG"
+},
+"cadashu": {
+"dist": "Action / RPG",
+"ongo": "Action / RPG"
+},
+"cadashu1": {
+"dist": "Action / RPG",
+"ongo": "Action / RPG"
+},
+"calibr50": {
+"repo": "Arcade"
+},
+"calipso": {
+"dist": "Shooter - Multidirectional"
+},
+"candory": {
+"dist": "Platform - Climb"
+},
+"canyon": {
+"dist": "Shooter - Gallery"
+},
+"capitol": {
+"dist": "Shooter - Gallery"
+},
+"captaven": {
+"coinop": "Beat &apos;Em Up"
+},
+"captavena": {
+"coinop": "Beat &apos;Em Up"
+},
+"captavene": {
+"coinop": "Beat &apos;Em Up"
+},
+"captavenj": {
+"coinop": "Beat &apos;Em Up"
+},
+"captavenu": {
+"coinop": "Beat &apos;Em Up"
+},
+"captavenua": {
+"coinop": "Beat &apos;Em Up"
+},
+"captavenuu": {
+"coinop": "Beat &apos;Em Up"
+},
+"caractn": {
+"dist": "Racing"
+},
+"caractn2": {
+"dist": "Racing"
+},
+"carnival": {
+"dist": "Shooter - Fixed vertical"
+},
+"castfant": {
+"dist": "Shooter"
+},
+"catacomb": {
+"dist": "Shooter - Vertical"
+},
+"catch22": {
+"ongo": "Shooter / Lightgun"
+},
+"caterpil": {
+"dist": "Maze"
+},
+"catt": {
+"repo": "Platform"
+},
+"cavelon": {
+"dist": "Maze - Horizontal"
+},
+"cavenger": {
+"dist": "Shooter - Horizontal"
+},
+"cbdash": {
+"dist": "Maze"
+},
+"cbnj": {
+"dist": "Driving"
+},
+"cbtime": {
+"dist": "Platformer"
+},
+"cburnrub": {
+"dist": "Driving"
+},
+"cburnrub2": {
+"dist": "Driving"
+},
+"cburnrubj": {
+"dist": "Driving"
+},
+"cbuster": {
+"coinop": "Beat &apos;Em Up"
+},
+"cbusterj": {
+"coinop": "Beat &apos;Em Up"
+},
+"cbusterw": {
+"coinop": "Beat &apos;Em Up"
+},
+"ccastles": {
+"dist": "Action / Labyrinth"
+},
+"cclimber": {
+"dist": "Platform - Climb"
+},
+"cclimbera": {
+"dist": "Platform - Climb"
+},
+"cclimbr2": {
+"coinop": "Platformer"
+},
+"cclimbr2a": {
+"coinop": "Platformer"
+},
+"cdiscon1": {
+"dist": "Action"
+},
+"cdsteljn": {
+"dist": "Action"
+},
+"cemescry": {
+"dist": "Shooter - Gallery"
+},
+"centipdd": {
+"dist": "Shooter - Gallery"
+},
+"centiped": {
+"dist": "Shooter - Gallery"
+},
+"centiped1": {
+"dist": "Shooter - Gallery"
+},
+"centiped2": {
+"dist": "Shooter - Gallery"
+},
+"centiped3": {
+"dist": "Shooter - Gallery"
+},
+"cexplore": {
+"dist": "Action"
+},
+"cfboy0a1": {
+"dist": "Action"
+},
+"cfghtice": {
+"dist": "Sports"
+},
+"cfishing": {
+"dist": "Sports"
+},
+"cflyball": {
+"dist": "Action"
+},
+"cgangpzl": {
+"ongo": "Puzzle",
+"repo": "Puzzle"
+},
+"cgangpzlj": {
+"ongo": "Puzzle",
+"repo": "Puzzle"
+},
+"cgraplop": {
+"dist": "Action"
+},
+"cgraplop2": {
+"dist": "Action"
+},
+"cgraplopj": {
+"dist": "Action"
+},
+"chamburger": {
+"dist": "Platformer"
+},
+"chameleo": {
+"dist": "Platform"
+},
+"champbas": {
+"dist": "Sports"
+},
+"champbasja": {
+"dist": "Sports"
+},
+"champbasjb": {
+"dist": "Sports"
+},
+"champbb2": {
+"dist": "Sports"
+},
+"checkmat": {
+"dist": "Maze / Tron"
+},
+"cheyenne": {
+"ongo": "Shooter / Lightgun"
+},
+"chiller": {
+"ongo": "Shooter / Lightgun"
+},
+"chimerab": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"chimeraba": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"chinagat": {
+"dist": "Platformer"
+},
+"chopliftu": {
+"repo": "Shooter",
+"ongo": "Shooter"
+},
+"chtpac": {
+"dist": "Maze"
+},
+"chtpac3d": {
+"dist": "Maze"
+},
+"chtpman2": {
+"dist": "Maze"
+},
+"chtpop": {
+"dist": "Maze"
+},
+"chtpuck": {
+"dist": "Maze"
+},
+"chuckieegg": {
+"ongo": "Platform - Climb"
+},
+"chwy": {
+"dist": "Driving"
+},
+"citycon": {
+"dist": "Driving / Action"
+},
+"citycona": {
+"dist": "Driving / Action"
+},
+"ckong": {
+"dist": "Platform - Climb"
+},
+"ckong3a": {
+"dist": "Platform - Climb"
+},
+"ckonga2": {
+"dist": "Platform - Climb"
+},
+"ckonga3": {
+"dist": "Maze / Monkeys"
+},
+"ckongdks": {
+"dist": "Maze / Monkeys"
+},
+"ckongfix": {
+"dist": "Platform - Climb"
+},
+"ckongo": {
+"dist": "Platform - Climb"
+},
+"ckongpt2": {
+"dist": "Platform - Climb"
+},
+"ckongpt2a": {
+"dist": "Platform - Climb"
+},
+"ckongpt2b": {
+"dist": "Platform - Climb"
+},
+"ckongpt2b2": {
+"dist": "Platform - Climb"
+},
+"ckongpt2j": {
+"dist": "Platform - Climb"
+},
+"ckongpt2jeu": {
+"dist": "Platform - Climb"
+},
+"clapapa": {
+"dist": "Action"
+},
+"clapapa2": {
+"dist": "Action"
+},
+"claybust": {
+"dist": "Sports / Shooting"
+},
+"claypign": {
+"ongo": "Shooter / Lightgun"
+},
+"cleansweept": {
+"dist": "Maze"
+},
+"cliffhgr": {
+"dist": "LaserDisc"
+},
+"cloak": {
+"repo": "Shooter"
+},
+"clocknch": {
+"dist": "Maze"
+},
+"clocknchj": {
+"dist": "Maze"
+},
+"clowns": {
+"dist": "Ball and Paddle"
+},
+"clowns1": {
+"dist": "Platform / Circus"
+},
+"clubpacm": {
+"dist": "Maze"
+},
+"cluckypo": {
+"dist": "Casino"
+},
+"cmanhat": {
+"dist": "Action"
+},
+"cmissnx": {
+"dist": "Shooter"
+},
+"cnebula": {
+"dist": "Shooter"
+},
+"cnightst": {
+"dist": "Shooter"
+},
+"cnightst2": {
+"dist": "Shooter"
+},
+"cninja": {
+"coinop": "Platform"
+},
+"cninja1": {
+"coinop": "Platform"
+},
+"cninjau": {
+"coinop": "Platform"
+},
+"cobracom": {
+"coinop": "Shooter"
+},
+"cobracoma": {
+"coinop": "Shooter"
+},
+"cobracomb": {
+"coinop": "Shooter"
+},
+"cobracomj": {
+"coinop": "Shooter"
+},
+"cobram3": {
+"dist": "LaserDisc"
+},
+"cocean1a": {
+"dist": "Action"
+},
+"cocean6b": {
+"dist": "Action"
+},
+"colony7": {
+"dist": "Shooter - Gallery"
+},
+"colony7a": {
+"dist": "Shooter - Gallery"
+},
+"column2j": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"columns": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"columns2": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"columnsj": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"columnsu": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"combat": {
+"ongo": "Shooter / Lightgun"
+},
+"combh": {
+"dist": "Shooter/1stPerson"
+},
+"complexx": {
+"dist": "Maze"
+},
+"congo": {
+"dist": "Isometric Platform"
+},
+"coozumou": {
+"dist": "Sports"
+},
+"cosmica": {
+"dist": "Space"
+},
+"cosmicg": {
+"dist": "Space"
+},
+"cosmicin": {
+"dist": "Space / Invaders"
+},
+"cosmo": {
+"dist": "Shooter - Gallery"
+},
+"cosmogng": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"cosmogngj": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"countryc": {
+"dist": "Sport Golf"
+},
+"cppicf": {
+"dist": "Platformer"
+},
+"cppicf2": {
+"dist": "Platformer"
+},
+"cprobowl": {
+"dist": "Sports"
+},
+"cprogolf": {
+"dist": "Sports"
+},
+"cprogolf18": {
+"dist": "Sports"
+},
+"cprogolfj": {
+"dist": "Sports"
+},
+"cpsoccer": {
+"dist": "Sports"
+},
+"cpsoccerj": {
+"dist": "Sports"
+},
+"cptennis": {
+"dist": "Sports"
+},
+"cptennisj": {
+"dist": "Sports"
+},
+"crackhea": {
+"dist": "Maze"
+},
+"cracksht": {
+"ongo": "Shooter / Lightgun"
+},
+"crashrd": {
+"dist": "Maze"
+},
+"crater": {
+"dist": "Shooter - Multidirectional",
+"arcfpga": "Action"
+},
+"crazyblk": {
+"dist": "Puzzle"
+},
+"crazypac": {
+"dist": "Maze"
+},
+"crbaloon": {
+"dist": "Maze"
+},
+"crossbld": {
+"dist": "Shooter"
+},
+"crossbow": {
+"ongo": "Shooter / Lightgun"
+},
+"cruisin": {
+"dist": "Driving / Action"
+},
+"crush2": {
+"dist": "Maze"
+},
+"crzcross": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"cscrtry": {
+"dist": "Sports"
+},
+"cscrtry2": {
+"dist": "Sports"
+},
+"csdtenis": {
+"dist": "Sports"
+},
+"cskater": {
+"dist": "Action"
+},
+"csprint": {
+"dist": "Arcade"
+},
+"csprint1": {
+"dist": "Arcade"
+},
+"csprint2": {
+"dist": "Arcade"
+},
+"csprintf": {
+"dist": "Arcade"
+},
+"csprintg": {
+"dist": "Arcade"
+},
+"csprintg1": {
+"dist": "Arcade"
+},
+"csprints": {
+"dist": "Arcade"
+},
+"csprints1": {
+"dist": "Arcade"
+},
+"csuperas": {
+"dist": "Shooter"
+},
+"csweetht": {
+"dist": "Action"
+},
+"cterrani": {
+"dist": "Shooter"
+},
+"ctisland": {
+"dist": "Action"
+},
+"ctisland2": {
+"dist": "Action"
+},
+"ctisland3": {
+"dist": "Action"
+},
+"ctornado": {
+"dist": "Shooter"
+},
+"ctower": {
+"dist": "Climbing"
+},
+"ctribe": {
+"ongo": "Side Scrolling / Beatem Up"
+},
+"ctribej": {
+"ongo": "Side Scrolling / Beatem Up"
+},
+"ctribeu1": {
+"ongo": "Side Scrolling / Beatem Up"
+},
+"ctribeua": {
+"ongo": "Side Scrolling / Beatem Up"
+},
+"ctsttape": {
+"dist": "Utility"
+},
+"cupsoc": {
+"dist": "Sports",
+"ongo": "Sports"
+},
+"cupsoca": {
+"dist": "Sports",
+"ongo": "Sports"
+},
+"cupsocb": {
+"dist": "Sports",
+"ongo": "Sports"
+},
+"curvebal": {
+"dist": "Platform"
+},
+"cybattlr": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"cybotsam": {
+"ongo": "Fighting"
+},
+"czeroize": {
+"dist": "Shooter"
+},
+"daioh": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"daioha": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"dairesya": {
+"dist": "Platformer"
+},
+"daiskiss": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"dangar": {
+"dist": "Platform",
+"ongo": "Shoot"
+},
+"dangara": {
+"ongo": "Shoot"
+},
+"dangarb": {
+"ongo": "Shoot"
+},
+"dangarbt": {
+"ongo": "Shoot"
+},
+"dangarj": {
+"ongo": "Shoot"
+},
+"darius": {
+"dist": "Shooter"
+},
+"darius2": {
+"dist": "Shooter"
+},
+"darius2d": {
+"dist": "Shooter"
+},
+"darius2do": {
+"dist": "Shooter"
+},
+"dariuse": {
+"dist": "Shooter"
+},
+"dariusg": {
+"ongo": "Shoot",
+"repo": "Shoot"
+},
+"dariusj": {
+"dist": "Shooter"
+},
+"dariuso": {
+"dist": "Shooter"
+},
+"dariusu": {
+"dist": "Shooter"
+},
+"darkplnt": {
+"dist": "Shooter - Multidirectional"
+},
+"darkseal": {
+"coinop": "Hack &amp; Slash"
+},
+"darkseal1": {
+"coinop": "Hack &amp; Slash"
+},
+"darkseal2": {
+"coinop": "Hack &amp; Slash"
+},
+"darksealj": {
+"coinop": "Hack &amp; Slash"
+},
+"dassault": {
+"coinop": "Run &amp; Gun"
+},
+"dassault4": {
+"coinop": "Run &amp; Gun"
+},
+"dblewing": {
+"coinop": "Shoot &apos;Em Up"
+},
+"dblewinga": {
+"coinop": "Shoot &apos;Em Up"
+},
+"dblewingb": {
+"coinop": "Shoot &apos;Em Up"
+},
+"dbreedjm72": {
+"dist": "Shooter"
+},
+"dcon": {
+"dist": "Shoot"
+},
+"ddonpach": {
+"dist": "Shooter",
+"ongo": "Shooter"
+},
+"ddonpacha": {
+"dist": "Shooter"
+},
+"ddonpachj": {
+"dist": "Shooter"
+},
+"ddonpachjt": {
+"dist": "Shooter"
+},
+"ddonpachsc": {
+"ongo": "Shooter"
+},
+"ddonpachscb": {
+"ongo": "Shooter"
+},
+"ddonpacht1": {
+"ongo": "Shooter"
+},
+"ddpdfk": {
+"ongo": "Shooter"
+},
+"ddpdfk10": {
+"ongo": "Shooter"
+},
+"ddpsdoj": {
+"ongo": "Shooter"
+},
+"ddragon3": {
+"ongo": "Side Scrolling / Beatem Up"
+},
+"ddragon3j": {
+"ongo": "Side Scrolling / Beatem Up"
+},
+"deathbrd": {
+"coinop": "Fighting"
+},
+"deathsml": {
+"ongo": "Shooter"
+},
+"decodark": {
+"dist": "Multigame"
+},
+"decomult": {
+"dist": "Multigame"
+},
+"defender": {
+"dist": "Shooter - Horizontal"
+},
+"demoderm": {
+"dist": "Racing"
+},
+"demonwld": {
+"coinop": "Platform"
+},
+"demonwld1": {
+"coinop": "Platform"
+},
+"demonwld2": {
+"coinop": "Platform"
+},
+"demonwld3": {
+"coinop": "Platform"
+},
+"demonwld4": {
+"coinop": "Platform"
+},
+"demonwld5": {
+"coinop": "Platform"
+},
+"denjinmk": {
+"dist": "Beat'em up"
+},
+"denjinmka": {
+"dist": "Beat'em up"
+},
+"desertgu": {
+"dist": "Sports / Shooting"
+},
+"desterth": {
+"dist": "Space / Moon"
+},
+"destryer": {
+"jlrh": "Shooter",
+"ongo": "Shooter"
+},
+"devilfsg": {
+"dist": "Maze"
+},
+"devzone": {
+"dist": "Space"
+},
+"dfeveron": {
+"dist": "Shooter"
+},
+"dfeverondm": {
+"ongo": "Shooter"
+},
+"dfeveronnd": {
+"ongo": "Shooter"
+},
+"dfkbl": {
+"ongo": "Shooter"
+},
+"dietgo": {
+"coinop": "Platform"
+},
+"dietgoe": {
+"coinop": "Platform"
+},
+"dietgoea": {
+"coinop": "Platform"
+},
+"dietgoeb": {
+"coinop": "Platform"
+},
+"dietgoj": {
+"coinop": "Platform"
+},
+"dietgou": {
+"coinop": "Platform"
+},
+"digdug": {
+"dist": "Maze"
+},
+"digdug1": {
+"dist": "Maze"
+},
+"digdug2": {
+"dist": "Maze"
+},
+"digdug2o": {
+"dist": "Maze"
+},
+"digdugat": {
+"dist": "Maze"
+},
+"digdugat1": {
+"dist": "Maze"
+},
+"digsid": {
+"dist": "Maze"
+},
+"dimahoo_1": {
+"ongo": "Shoot &apos;em up"
+},
+"dimahoo_2": {
+"ongo": "Shoot &apos;em up"
+},
+"dimahoo_3": {
+"ongo": "Shoot &apos;em up"
+},
+"dirtfoxj": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"dizzy": {
+"dist": "Maze"
+},
+"dkfreerun": {
+"dist": "Platform - Climb"
+},
+"dkgensan": {
+"dist": "Platformer"
+},
+"dkong": {
+"dist": "Platform - Climb"
+},
+"dkong2m": {
+"dist": "Platform - Climb"
+},
+"dkong3": {
+"dist": "Shooter",
+"repo": "Platform"
+},
+"dkong3b": {
+"dist": "Platform - Climb"
+},
+"dkong3j": {
+"dist": "Shooter"
+},
+"dkongbcc": {
+"dist": "Platform - Climb"
+},
+"dkongex": {
+"dist": "Platform - Climb"
+},
+"dkongf": {
+"dist": "Platform - Climb"
+},
+"dkonghrd": {
+"dist": "Platform - Climb"
+},
+"dkongj": {
+"dist": "Platform - Climb"
+},
+"dkongjo": {
+"dist": "Platform - Climb"
+},
+"dkongjo1": {
+"dist": "Platform - Climb"
+},
+"dkongjr": {
+"dist": "Platform - Climb"
+},
+"dkongjrj": {
+"dist": "Platform - Climb"
+},
+"dkongk": {
+"ongo": "Platform - Climb"
+},
+"dkongo": {
+"dist": "Platform - Climb"
+},
+"dkongp": {
+"dist": "Platform - Climb"
+},
+"dkongpac": {
+"dist": "Platform - Climb"
+},
+"dkongpe": {
+"dist": "Platform - Climb"
+},
+"dkongrev": {
+"dist": "Platform - Climb"
+},
+"dkpace": {
+"dist": "Platform - Climb"
+},
+"dkrainbow": {
+"dist": "Platform - Climb"
+},
+"dkrdemo": {
+"dist": "Platform - Climb"
+},
+"dktrainer": {
+"dist": "Platform - Climb"
+},
+"dlair": {
+"dist": "LaserDisc"
+},
+"dlair2": {
+"dist": "LaserDisc"
+},
+"dlair_1": {
+"dist": "LaserDisc"
+},
+"dlair_2": {
+"dist": "LaserDisc"
+},
+"dlaira": {
+"dist": "LaserDisc"
+},
+"dlairb": {
+"dist": "LaserDisc"
+},
+"dlairc": {
+"dist": "LaserDisc"
+},
+"dlaird": {
+"dist": "LaserDisc"
+},
+"dlaire": {
+"dist": "LaserDisc"
+},
+"dlairf": {
+"dist": "LaserDisc"
+},
+"doapp": {
+"ongo": "Fighting"
+},
+"doappk": {
+"ongo": "Fighting"
+},
+"docastle": {
+"ongo": "Platform",
+"meat": "Platform"
+},
+"dogosoke": {
+"dist": "Action"
+},
+"dogpatch": {
+"dist": "Sports / Shooting"
+},
+"dogyuun": {
+"slop": "Shoot'em up",
+"ongo": "Shoot'em up"
+},
+"dogyuuna": {
+"slop": "Shoot'em up",
+"ongo": "Shoot'em up"
+},
+"dogyuunb": {
+"slop": "Shoot'em up",
+"ongo": "Shoot'em up"
+},
+"dogyuunt": {
+"slop": "Shoot'em up",
+"ongo": "Shoot'em up"
+},
+"dolmen": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"dolmenk": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"domino": {
+"dist": "Action",
+"arcfpga": "Action"
+},
+"dominos": {
+"dist": "Maze"
+},
+"doncdoon": {
+"dist": "Puzzle"
+},
+"donpachi": {
+"dist": "Shooter"
+},
+"donpachihk": {
+"dist": "Shooter"
+},
+"donpachij": {
+"dist": "Shooter"
+},
+"donpachijs": {
+"dist": "Shooter"
+},
+"donpachikr": {
+"dist": "Shooter"
+},
+"dorodon": {
+"dist": "Maze"
+},
+"dorodon2": {
+"dist": "Maze"
+},
+"dorunrun": {
+"ongo": "Maze",
+"meat": "Maze"
+},
+"dotrikun": {
+"dist": "Maze"
+},
+"dotrikun2": {
+"dist": "Maze"
+},
+"dotriman": {
+"dist": "Maze"
+},
+"dotron": {
+"dist": "Sports"
+},
+"dotrona": {
+"dist": "Sports"
+},
+"douni": {
+"ongo": "Platform",
+"meat": "Platform"
+},
+"dowild": {
+"ongo": "Driving",
+"meat": "Driving"
+},
+"downtown": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"downtown2": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"downtownj": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"downtownp": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"dplay": {
+"dist": "Sports / Baseball"
+},
+"draco": {
+"jlrh": "Shooter",
+"ongo": "Shooter"
+},
+"dragoona": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"dragoonj": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"dremshpr": {
+"dist": "Maze"
+},
+"drgnunit": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"drmicro": {
+"ongo": "Platform",
+"meat": "Platform"
+},
+"dsaber": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"dsabera": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"dsaberj": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"dsmbl": {
+"ongo": "Shooter"
+},
+"dsoccr94": {
+"dist": "Shooter"
+},
+"dsoccr94j": {
+"dist": "Sport"
+},
+"dsoccr94k": {
+"dist": "Shooter"
+},
+"earthjkr": {
+"dist": "Action",
+"ongo": "Action"
+},
+"earthjkra": {
+"dist": "Action",
+"ongo": "Action"
+},
+"earthjkrb": {
+"dist": "Action",
+"ongo": "Action"
+},
+"earthjkrp": {
+"dist": "Action",
+"ongo": "Action"
+},
+"ebases": {
+"dist": "Sports"
+},
+"edf": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"edfa": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"edfb": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"edfu": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"edrandy": {
+"coinop": "Beat &apos;Em Up"
+},
+"edrandy1": {
+"coinop": "Run &amp; Gun"
+},
+"edrandy2": {
+"coinop": "Run &amp; Gun"
+},
+"edrandyj": {
+"coinop": "Run &amp; Gun"
+},
+"eeekkp": {
+"dist": "Platform - Climb"
+},
+"eggor": {
+"dist": "Maze"
+},
+"ehrgeiz": {
+"ongo": "Fighting"
+},
+"ehrgeizja": {
+"ongo": "Fighting"
+},
+"ehrgeizua": {
+"ongo": "Fighting"
+},
+"eightfrc": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"einning": {
+"dist": "Sports / Baseball"
+},
+"ejanhs": {
+"ongo": "Mahjong",
+"repo": "Mahjong"
+},
+"elecyoyo": {
+"dist": "Maze"
+},
+"elevator": {
+"dist": "Platform"
+},
+"elevatora": {
+"dist": "Platform"
+},
+"elevatorb": {
+"dist": "Platform"
+},
+"elim2": {
+"dist": "Shooter",
+"repo": "Shooter"
+},
+"elim2a": {
+"dist": "Shooter",
+"repo": "Shooter"
+},
+"elim2c": {
+"dist": "Shooter",
+"repo": "Shooter"
+},
+"elim4": {
+"dist": "Shooter",
+"repo": "Shooter"
+},
+"elim4p": {
+"dist": "Shooter",
+"repo": "Shooter"
+},
+"eltonpac": {
+"dist": "Maze"
+},
+"emeralda": {
+"ongo": "Puzzle",
+"repo": "Puzzle"
+},
+"emeraldaj": {
+"ongo": "Puzzle",
+"repo": "Puzzle"
+},
+"emeraldajb": {
+"ongo": "Puzzle",
+"repo": "Puzzle"
+},
+"emeraldajd": {
+"ongo": "Puzzle",
+"repo": "Puzzle"
+},
+"endurobl": {
+"repo": "Racing / Driving"
+},
+"enduror": {
+"repo": "Racing / Driving"
+},
+"enduror1": {
+"repo": "Racing / Driving"
+},
+"enduror1d": {
+"repo": "Racing / Driving"
+},
+"endurora": {
+"repo": "Racing / Driving"
+},
+"endurorb": {
+"repo": "Racing / Driving"
+},
+"endurord": {
+"repo": "Racing / Driving"
+},
+"enigma2": {
+"ongo": "Shooter"
+},
+"eprom": {
+"dist": "Arcade"
+},
+"esb": {
+"dist": "Shooter"
+},
+"escmars": {
+"dist": "Space / Moon"
+},
+"espgal2": {
+"ongo": "Shooter"
+},
+"espgal2a": {
+"ongo": "Shooter"
+},
+"espgal2b": {
+"ongo": "Shooter"
+},
+"esprade": {
+"dist": "Shooter"
+},
+"esprade_fp": {
+"dist": "Shooter"
+},
+"espradej": {
+"dist": "Shooter"
+},
+"espradej_fp": {
+"dist": "Shooter"
+},
+"espradejo": {
+"dist": "Shooter"
+},
+"eto": {
+"dist": "Puzzle",
+"ongo": "Puzzle"
+},
+"europac": {
+"dist": "Maze"
+},
+"excthour": {
+"coinop": "Sports"
+},
+"exctscc2": {
+"dist": "Sports"
+},
+"exctsccr": {
+"dist": "Sports"
+},
+"exctsccrb": {
+"dist": "Sports"
+},
+"exeriont": {
+"dist": "Shooter"
+},
+"explbrkr": {
+"ongo": "Shooter / Flying Vertical"
+},
+"exprraid": {
+"dist": "Platform / Fighter Scrolling"
+},
+"extdwnhl": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"exvania": {
+"ongo": "Maze",
+"repo": "Maze"
+},
+"exvaniaj": {
+"ongo": "Maze",
+"repo": "Maze"
+},
+"eyes": {
+"dist": "Maze"
+},
+"eyes2": {
+"dist": "Maze"
+},
+"eyeszac": {
+"dist": "Maze"
+},
+"fa": {
+"ongo": "Shoot 'em Up",
+"repo": "Shoot 'em Up"
+},
+"falcon": {
+"dist": "Shooter - Gallery"
+},
+"fantasyu": {
+"dist": "Shooter"
+},
+"fantjour": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"fantjoura": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"fantzn2": {
+"dist": "Shooter"
+},
+"farmer": {
+"ongo": "Shooter / Walking",
+"meat": "Shooter / Walking"
+},
+"fasthang": {
+"dist": "Maze"
+},
+"fastpop": {
+"dist": "Maze"
+},
+"fastpuck": {
+"dist": "Maze"
+},
+"fenixn": {
+"dist": "Shooter - Gallery"
+},
+"feversos": {
+"dist": "Shooter"
+},
+"ffae": {
+"ongo": "Beat&apos;em Up"
+},
+"ffightae_cps2": {
+"ongo": "Fighting"
+},
+"ffightjh": {
+"ongo": "Beat &apos;em up"
+},
+"fghtatck": {
+"ongo": "Shoot 'em Up",
+"repo": "Shoot 'em Up"
+},
+"fgtlayer": {
+"ongo": "Fighting"
+},
+"fgtlayerja": {
+"ongo": "Fighting"
+},
+"finalap2": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"finalap2j": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"finalap2jb": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"finalap3": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"finalap3a": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"finalap3bl": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"finalap3j": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"finalap3jc": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"finalizr": {
+"dist": "Shooter - Vertical"
+},
+"finalizra": {
+"dist": "Shooter - Vertical"
+},
+"finalizrb": {
+"dist": "Shooter - Vertical"
+},
+"finallap": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"finallapc": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"finallapd": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"finallapjb": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"finallapjc": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"finehour": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"firebarr": {
+"dist": "Shooter"
+},
+"firehawk": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"fitegolf": {
+"dist": "Sport Golf"
+},
+"fixeight": {
+"slop": "Run and gun",
+"ongo": "Run and gun"
+},
+"fixeighta": {
+"slop": "Run and gun",
+"ongo": "Run and gun"
+},
+"fixeightat": {
+"slop": "Run and gun",
+"ongo": "Run and gun"
+},
+"fixeighth": {
+"slop": "Run and gun",
+"ongo": "Run and gun"
+},
+"fixeightht": {
+"slop": "Run and gun",
+"ongo": "Run and gun"
+},
+"fixeightj": {
+"slop": "Run and gun",
+"ongo": "Run and gun"
+},
+"fixeightjt": {
+"slop": "Run and gun",
+"ongo": "Run and gun"
+},
+"fixeightk": {
+"slop": "Run and gun",
+"ongo": "Run and gun"
+},
+"fixeightkt": {
+"slop": "Run and gun",
+"ongo": "Run and gun"
+},
+"fixeightt": {
+"slop": "Run and gun",
+"ongo": "Run and gun"
+},
+"fixeighttw": {
+"slop": "Run and gun",
+"ongo": "Run and gun"
+},
+"fixeighttwt": {
+"slop": "Run and gun",
+"ongo": "Run and gun"
+},
+"fixeightu": {
+"slop": "Run and gun",
+"ongo": "Run and gun"
+},
+"fixeightut": {
+"slop": "Run and gun",
+"ongo": "Run and gun"
+},
+"flamegun": {
+"ongo": "Action"
+},
+"flamegunj": {
+"ongo": "Action"
+},
+"flashgal": {
+"dist": "Shooter"
+},
+"flicky": {
+"dist": "Platform"
+},
+"fnkyfish": {
+"dist": "Platform"
+},
+"foodf": {
+"dist": "Shooter - Multidirectional"
+},
+"foodf1": {
+"dist": "Arena"
+},
+"foodf2": {
+"dist": "Arena"
+},
+"foodfc": {
+"dist": "Arena"
+},
+"fourtrax": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"fourtraxa": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"fourtraxj": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"freeze": {
+"dist": "Platform"
+},
+"frenzy": {
+"dist": "Shooter - Multidirectional"
+},
+"frogger": {
+"dist": "Platform - Climb"
+},
+"froggers2": {
+"dist": "Platform - Climb"
+},
+"frontlin": {
+"dist": "Action"
+},
+"frontlina": {
+"dist": "Action"
+},
+"fshark": {
+"coinop": "Shoot &apos;Em Up"
+},
+"fshark_v": {
+"ongo": "Shoot &apos;Em Up"
+},
+"fstpman2": {
+"dist": "Maze"
+},
+"ftimpact": {
+"ongo": "Fighter"
+},
+"ftimpactj": {
+"ongo": "Fighter"
+},
+"ftimpactu": {
+"ongo": "Fighter"
+},
+"ftimpcta": {
+"ongo": "Fighter"
+},
+"futari10": {
+"ongo": "Shooter"
+},
+"futari15": {
+"ongo": "Shooter"
+},
+"futari15a": {
+"ongo": "Shooter"
+},
+"futaribl": {
+"ongo": "Shooter"
+},
+"futariblj": {
+"ongo": "Shooter"
+},
+"futspy": {
+"dist": "Shooter - Isometric",
+"arcfpga": "Isometric Shoot'em up"
+},
+"gaia": {
+"dist": "Fighting"
+},
+"galactic": {
+"dist": "Space / Galaxian"
+},
+"galaga": {
+"dist": "Shooter - Gallery"
+},
+"galaga3": {
+"dist": "Space / Galaxian"
+},
+"galaga3a": {
+"dist": "Shooter - Gallery"
+},
+"galaga3b": {
+"dist": "Shooter - Gallery"
+},
+"galaga3c": {
+"dist": "Shooter - Gallery"
+},
+"galaga3m": {
+"dist": "Shooter - Gallery"
+},
+"galagads": {
+"dist": "Shooter - Gallery"
+},
+"galagaef": {
+"dist": "Shooter - Gallery"
+},
+"galagamf": {
+"dist": "Shooter - Gallery"
+},
+"galagamw": {
+"dist": "Shooter - Gallery"
+},
+"galagao": {
+"dist": "Shooter - Gallery"
+},
+"galagosb": {
+"dist": "Shooter - Gallery"
+},
+"galagost": {
+"dist": "Shooter - Gallery"
+},
+"galap4": {
+"dist": "Shooter - Gallery"
+},
+"galaped": {
+"dist": "Shooter - Gallery"
+},
+"galapx": {
+"dist": "Shooter - Gallery"
+},
+"galaxbsf": {
+"dist": "Shooter - Gallery"
+},
+"galaxbsf2": {
+"dist": "Shooter - Gallery"
+},
+"galaxiabh": {
+"dist": "Shooter - Gallery"
+},
+"galaxian": {
+"dist": "Shooter - Gallery"
+},
+"galaxianbl": {
+"dist": "Shooter - Gallery"
+},
+"galaxianbl2": {
+"dist": "Shooter - Gallery"
+},
+"galaxiani": {
+"dist": "Shooter - Gallery"
+},
+"galaxianm": {
+"dist": "Shooter - Gallery"
+},
+"galaxianmo": {
+"dist": "Shooter - Gallery"
+},
+"galaxiant": {
+"dist": "Shooter - Gallery"
+},
+"galaxkyo": {
+"dist": "Shooter - Gallery"
+},
+"galaxni": {
+"dist": "Shooter - Gallery"
+},
+"galaxrf": {
+"dist": "Shooter - Gallery"
+},
+"galemp": {
+"dist": "Shooter - Gallery"
+},
+"galgaxin": {
+"dist": "Shooter - Gallery"
+},
+"galivan": {
+"dist": "Platform",
+"ongo": "Shoot"
+},
+"galivan2": {
+"ongo": "Shoot"
+},
+"galivan3": {
+"ongo": "Shoot"
+},
+"gallopm72": {
+"dist": "Shooter"
+},
+"galmedes": {
+"dist": "Action",
+"ongo": "Action"
+},
+"galmonst": {
+"dist": "Space / Invaders"
+},
+"galturbo": {
+"dist": "Shooter - Gallery"
+},
+"galxwars": {
+"dist": "Shooter - Gallery"
+},
+"galxwarst": {
+"dist": "Space / Shooter"
+},
+"galxwarst2": {
+"dist": "Space / Shooter"
+},
+"gaous": {
+"dist": "Shooter - Vertical"
+},
+"gaplus": {
+"dist": "Shooter - Vertical"
+},
+"gaplusa": {
+"dist": "Shooter - Vertical"
+},
+"gaplust": {
+"dist": "Shooter - Vertical"
+},
+"gardia": {
+"repo": "Shooter",
+"ongo": "Shooter"
+},
+"gatedoom": {
+"coinop": "Hack &amp; Slash"
+},
+"gatedoom1": {
+"coinop": "Hack &amp; Slash"
+},
+"gatsbee": {
+"dist": "Shooter - Gallery"
+},
+"gaunt2": {
+"dist": "Shooter - Multidirectional"
+},
+"gaunt22p": {
+"dist": "Shooter - Multidirectional"
+},
+"gaunt22p1": {
+"dist": "Shooter - Multidirectional"
+},
+"gaunt22pg": {
+"dist": "Shooter - Multidirectional"
+},
+"gaunt2g": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntlet": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntlet2p": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntlet2pg": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntlet2pg1": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntlet2pj": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntlet2pj2": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntlet2pr3": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntletg": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntletgr3": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntletgr6": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntletgr8": {
+"dist": "Adventure / Fantasy"
+},
+"gauntletj": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntletj12": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntletr1": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntletr2": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntletr4": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntletr5": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntletr7": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntletr8": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntletr9": {
+"dist": "Shooter - Multidirectional"
+},
+"gauntlets": {
+"dist": "Shooter - Multidirectional"
+},
+"gaylaxn": {
+"dist": "Shooter - Gallery"
+},
+"gberet": {
+"dist": "Run 'n' Gun - Horizontal"
+},
+"gdarius": {
+"ongo": "Shooter"
+},
+"gdarius2": {
+"ongo": "Shooter"
+},
+"gdariusj": {
+"ongo": "Shooter"
+},
+"gdariusu": {
+"ongo": "Shooter"
+},
+"gemini": {
+"dist": "Shooter - Vertical"
+},
+"geostorm": {
+"dist": "Shooter"
+},
+"gforce2": {
+"ongo": "Shooter / Flight",
+"repo": "Shooter / Flight"
+},
+"gforce2j": {
+"ongo": "Shooter / Flight",
+"repo": "Shooter / Flight"
+},
+"gforce2ja": {
+"ongo": "Shooter / Flight",
+"repo": "Shooter / Flight"
+},
+"gforce2sd": {
+"ongo": "Shooter / Flight",
+"repo": "Shooter / Flight"
+},
+"ghox": {
+"slop": "Breakout",
+"ongo": "Breakout"
+},
+"ghoxj": {
+"slop": "Breakout",
+"ongo": "Breakout"
+},
+"ghoxjo": {
+"slop": "Breakout",
+"ongo": "Breakout"
+},
+"gijoe": {
+"coinop": "Run &amp; Gun"
+},
+"gijoeaa": {
+"coinop": "Run &amp; Gun"
+},
+"gijoeea": {
+"coinop": "Run &amp; Gun"
+},
+"gijoej": {
+"coinop": "Run &amp; Gun"
+},
+"gijoeu": {
+"coinop": "Run &amp; Gun"
+},
+"gijoeua": {
+"coinop": "Run &amp; Gun"
+},
+"ginganin": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"ginganina": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"gladiatr": {
+"ongo": "Fighter"
+},
+"gloc": {
+"ongo": "Shooter / Flight",
+"repo": "Shooter / Flight"
+},
+"glocj": {
+"ongo": "Shooter / Flight",
+"repo": "Shooter / Flight"
+},
+"glocr360": {
+"ongo": "Shooter / Flight",
+"repo": "Shooter / Flight"
+},
+"glocr360j": {
+"ongo": "Shooter / Flight",
+"repo": "Shooter / Flight"
+},
+"glocu": {
+"ongo": "Shooter / Flight",
+"repo": "Shooter / Flight"
+},
+"glpracr": {
+"ongo": "Sports"
+},
+"glpracr2": {
+"ongo": "Racing"
+},
+"glpracr2j": {
+"ongo": "Racing"
+},
+"glpracr3": {
+"ongo": "Racing"
+},
+"glpracr3j": {
+"ongo": "Racing"
+},
+"glpracrj": {
+"ongo": "Sports"
+},
+"gmissile": {
+"dist": "Army / Antiaircraft"
+},
+"gng": {
+"jt": "Adventure / Knights"
+},
+"goaltogo": {
+"dist": "LaserDisc"
+},
+"godzilla": {
+"dist": "Fighter"
+},
+"gogomile": {
+"dist": "Maze"
+},
+"gogomileo": {
+"dist": "Maze"
+},
+"gokuparo": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"gollygho": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"gorf": {
+"dist": "Shooter - Gallery"
+},
+"gorkans": {
+"dist": "Maze"
+},
+"gorodki": {
+"dist": "Action"
+},
+"gpriderjs": {
+"dist": "Shooter / Flight"
+},
+"gpriders": {
+"dist": "Shooter / Flight"
+},
+"gpriderus": {
+"dist": "Shooter / Flight"
+},
+"gpworld": {
+"dist": "LaserDisc"
+},
+"gradius": {
+"dist": "Shmup"
+},
+"grainbow": {
+"dist": "Action"
+},
+"grainbowk": {
+"dist": "Action"
+},
+"grasspin": {
+"dist": "Maze"
+},
+"gravitar": {
+"dist": "Lander",
+"repo": "Lander"
+},
+"grdnstrm": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"grdnstrmau": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"grdnstrmg": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"grdnstrmj": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"grdnstrmk": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"grdnstrmv": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"grescue": {
+"dist": "Space / Moon"
+},
+"grindstm": {
+"slop": "Shoot'em up",
+"ongo": "Shoot'em up"
+},
+"grindstma": {
+"slop": "Shoot'em up",
+"ongo": "Shoot'em up"
+},
+"grobda": {
+"dist": "Shooter - Multidirectional"
+},
+"grobda2": {
+"dist": "Shooter - Multidirectional"
+},
+"grobda3": {
+"dist": "Shooter - Multidirectional"
+},
+"gteikoku": {
+"dist": "Shooter - Gallery"
+},
+"gteikokub": {
+"dist": "Shooter - Gallery"
+},
+"gteikokub2": {
+"dist": "Shooter - Gallery"
+},
+"gteikokub3": {
+"dist": "Shooter - Gallery"
+},
+"gulfwar2": {
+"dist": "Shoot'em up"
+},
+"gulfwar2a": {
+"dist": "Shoot'em up"
+},
+"gunball": {
+"coinop": "Run &amp; Gun"
+},
+"gunbird": {
+"dist": "Shoot 'Em Up"
+},
+"gunbirdj": {
+"dist": "Shoot 'Em Up"
+},
+"gunbirdk": {
+"dist": "Shoot 'Em Up"
+},
+"gunchamp": {
+"dist": "Platform / Carnival"
+},
+"gundhara": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"gundharac": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"gunfight": {
+"dist": "Arena"
+},
+"gunfighto": {
+"dist": "Adventure / Western"
+},
+"gunforc2": {
+"dist": "Shooter"
+},
+"gunforce": {
+"dist": "Shooter"
+},
+"gunforcej": {
+"dist": "Shooter"
+},
+"gunforceu": {
+"dist": "Shooter"
+},
+"gunhohki": {
+"dist": "Shooter"
+},
+"gunlock": {
+"ongo": "Shoot",
+"repo": "Shoot"
+},
+"gunnail": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"gunnailb": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"gunnailp": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"guwange": {
+"dist": "Shooter"
+},
+"guwanges": {
+"dist": "Shooter"
+},
+"gwarrior": {
+"dist": "Fighting"
+},
+"gyrodine": {
+"dist": "Shooter"
+},
+"gyruss": {
+"dist": "Shooter - Tube",
+"repo": "Space"
+},
+"gyrussb": {
+"dist": "Shooter - Tube",
+"repo": "Space / Shooter"
+},
+"gyrussce": {
+"dist": "Shooter - Tube",
+"repo": "Space"
+},
+"hachamf": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"hachamfa": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"hachamfb": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"hachamfb2": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"hachamfp": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"handiman": {
+"dist": "Maze"
+},
+"hangly": {
+"dist": "Maze"
+},
+"hanglyad": {
+"dist": "Maze"
+},
+"hangon": {
+"repo": "Racing / Driving"
+},
+"hangon1": {
+"repo": "Racing / Driving"
+},
+"hangon2": {
+"repo": "Racing / Driving"
+},
+"hangonjr": {
+"dist": "Driving"
+},
+"hangonvf": {
+"repo": "Racing / Driving"
+},
+"harddriv": {
+"ongo": "Racing",
+"repo": "Racing"
+},
+"hardhat": {
+"dist": "Maze"
+},
+"hayaosi1": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"headonch": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"hearts": {
+"dist": "Maze"
+},
+"heatbrl": {
+"dist": "Shoot-em-up"
+},
+"heatbrl2": {
+"dist": "Shoot-em-up"
+},
+"heatbrl3": {
+"dist": "Shoot-em-up"
+},
+"heatbrle": {
+"dist": "Shoot-em-up"
+},
+"heatbrlo": {
+"dist": "Shoot-em-up"
+},
+"heatbrlu": {
+"dist": "Shoot-em-up"
+},
+"hharryu": {
+"dist": "Platformer"
+},
+"hipai": {
+"dist": "Mahjong"
+},
+"hipai2": {
+"dist": "Mahjong"
+},
+"hishouza": {
+"coinop": "Shoot &apos;Em Up"
+},
+"hishouza_v": {
+"ongo": "Shoot &apos;Em Up"
+},
+"hitnmiss": {
+"ongo": "Shooter / Lightgun"
+},
+"hm1000": {
+"dist": "Maze"
+},
+"hm2000": {
+"dist": "Maze"
+},
+"hmba5000": {
+"dist": "Maze"
+},
+"hmba7000": {
+"dist": "Maze"
+},
+"hmbabymz": {
+"dist": "Maze"
+},
+"hmbluep": {
+"dist": "Maze"
+},
+"hmgrenp": {
+"dist": "Maze"
+},
+"hmplus": {
+"dist": "Maze"
+},
+"hmpopey": {
+"dist": "Maze"
+},
+"hook": {
+"dist": "Brawler"
+},
+"hookj": {
+"dist": "Shooter"
+},
+"horekid": {
+"coinop": "Platformer"
+},
+"horekidb": {
+"coinop": "Platformer"
+},
+"horekidb2": {
+"coinop": "Platformer"
+},
+"horizon": {
+"dist": "Shooter - Horizontal"
+},
+"hotbubl": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"hotbubla": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"hotdogst": {
+"dist": "Shooter"
+},
+"housepty": {
+"dist": "Maze"
+},
+"hvnsgate": {
+"ongo": "Fighter"
+},
+"hvymetal": {
+"repo": "Shooter",
+"ongo": "Shooter"
+},
+"hwrace": {
+"dist": "Racing"
+},
+"hydra": {
+"repo": "Racing"
+},
+"hydrap": {
+"repo": "Racing"
+},
+"hydrap2": {
+"repo": "Racing"
+},
+"hyperspc": {
+"dist": "Shooter - Multidirectional"
+},
+"ibara": {
+"ongo": "Shooter"
+},
+"ibarablk": {
+"ongo": "Shooter"
+},
+"ibarablka": {
+"ongo": "Shooter"
+},
+"ibarao": {
+"ongo": "Shooter"
+},
+"ichir": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"ichirbl": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"ichirj": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"ichirjbl": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"ichirk": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"idsoccer": {
+"ongo": "Sports",
+"meat": "Sports"
+},
+"ikari": {
+"dist": "Action"
+},
+"ikarijp": {
+"dist": "Action"
+},
+"ikki": {
+"ongo": "Shooter / Walking",
+"meat": "Shooter / Walking"
+},
+"imgfight": {
+"dist": "Shooter"
+},
+"imgfightj": {
+"dist": "Shooter"
+},
+"imsorry": {
+"dist": "Maze"
+},
+"indianbt": {
+"dist": "Adventure / Western"
+},
+"indianbtbr": {
+"dist": "Adventure / Western"
+},
+"indyheat": {
+"dist": "Racing"
+},
+"indytemp": {
+"dist": "Arcade"
+},
+"indytemp2": {
+"dist": "Arcade"
+},
+"indytemp3": {
+"dist": "Arcade"
+},
+"indytemp4": {
+"dist": "Arcade"
+},
+"indytempc": {
+"dist": "Arcade"
+},
+"indytempd": {
+"dist": "Arcade"
+},
+"inferno": {
+"dist": "Maze"
+},
+"insector": {
+"dist": "Platform"
+},
+"inthunt": {
+"dist": "Shooter"
+},
+"inthuntu": {
+"dist": "Shooter"
+},
+"intrepid": {
+"ongo": "Arcade"
+},
+"invad2ct": {
+"dist": "Shooter - Gallery"
+},
+"invader4": {
+"dist": "Space / Invaders"
+},
+"invaderl": {
+"dist": "Space / Invaders"
+},
+"invadernc": {
+"dist": "Space / Invaders"
+},
+"invaders": {
+"dist": "Shooter - Gallery"
+},
+"invadersem": {
+"dist": "Space / Invaders"
+},
+"invadpt2": {
+"dist": "Shooter - Gallery"
+},
+"invadpt2br": {
+"dist": "Space / Invaders"
+},
+"invadrmr": {
+"dist": "Space / Invaders"
+},
+"invasiona": {
+"dist": "Space / Invaders"
+},
+"invrvnge": {
+"dist": "Space / Invaders"
+},
+"invrvngea": {
+"dist": "Space / Invaders"
+},
+"invrvngeb": {
+"dist": "Space / Invaders"
+},
+"invrvngedu": {
+"dist": "Space / Invaders"
+},
+"invrvngegw": {
+"dist": "Space / Invaders"
+},
+"irobot": {
+"ongo": "Arcade",
+"meat": "Arcade"
+},
+"ironhors": {
+"dist": "Platformer"
+},
+"ironhorsbl": {
+"dist": "Platformer"
+},
+"ironhorsh": {
+"dist": "Platformer"
+},
+"jack": {
+"dist": "Platform"
+},
+"jackal": {
+"dist": "Shooter - Multidirectional"
+},
+"jackalbl": {
+"dist": "Shooter - Multidirectional"
+},
+"jackalj": {
+"dist": "Shooter - Multidirectional"
+},
+"jackalr": {
+"dist": "Shooter - Multidirectional"
+},
+"jacman": {
+"dist": "Maze"
+},
+"jailbrek": {
+"dist": "Army / Fighter"
+},
+"jgakuen": {
+"ongo": "Fighting"
+},
+"jgakuen1": {
+"ongo": "Fighting"
+},
+"jigkmgri": {
+"dist": "Platform",
+"ongo": "Platform"
+},
+"jigkmgria": {
+"dist": "Platform",
+"ongo": "Platform"
+},
+"jin": {
+"dist": "Puzzle"
+},
+"jjack": {
+"ongo": "Platform",
+"meat": "Platform"
+},
+"jjsquawk": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"jjsquawko": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"joemac": {
+"coinop": "Platform"
+},
+"journey": {
+"dist": "Arena"
+},
+"joust": {
+"dist": "Arena"
+},
+"joust2": {
+"dist": "Platform"
+},
+"joustr": {
+"dist": "Arena"
+},
+"jousty": {
+"dist": "Arena"
+},
+"jrpacman": {
+"dist": "Maze"
+},
+"jrpacmanf": {
+"dist": "Maze"
+},
+"jspecter": {
+"dist": "Space / Invaders"
+},
+"jspecter2": {
+"dist": "Space / Invaders"
+},
+"jt104": {
+"dist": "Platform"
+},
+"jumpshot": {
+"dist": "Sports"
+},
+"jumpshotp": {
+"dist": "Sports"
+},
+"jungleby": {
+"dist": "Platform"
+},
+"jungleh": {
+"dist": "Platform"
+},
+"junglehbr": {
+"dist": "Platform"
+},
+"junglek": {
+"dist": "Platform"
+},
+"junglekas": {
+"dist": "Platform"
+},
+"junglekj2": {
+"dist": "Platform"
+},
+"junglekj2a": {
+"dist": "Platform"
+},
+"junofrst": {
+"dist": "Shooter"
+},
+"junofrstg": {
+"dist": "Shooter"
+},
+"kaiteids": {
+"dist": "Shooter"
+},
+"kamakazi3": {
+"dist": "Shooter - Gallery"
+},
+"kamenrid": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"kamikazesp": {
+"dist": "Platform - Climb"
+},
+"kangaroo": {
+"dist": "Platform"
+},
+"kangarooa": {
+"dist": "Platform"
+},
+"kangaroob": {
+"dist": "Platform"
+},
+"kbash": {
+"slop": "Beat 'em up",
+"ongo": "Beat 'em up"
+},
+"kbashk": {
+"slop": "Beat 'em up",
+"ongo": "Beat 'em up"
+},
+"kbashp": {
+"slop": "Beat 'em up",
+"ongo": "Beat 'em up"
+},
+"kick": {
+"dist": "Ball and Paddle"
+},
+"kickc": {
+"dist": "Ball and Paddle"
+},
+"kickman": {
+"dist": "Ball and Paddle"
+},
+"kicknrun": {
+"dist": "Soccer"
+},
+"kickridr": {
+"ongo": "Driving",
+"meat": "Driving"
+},
+"kidniki": {
+"dist": "Platform"
+},
+"kidnikiu": {
+"dist": "Platform"
+},
+"kikaioh": {
+"ongo": "Fighting"
+},
+"kikikai": {
+"coinop": "Shoot &apos;Em Up",
+"repo": "Action"
+},
+"kikstart": {
+"dist": "Racing"
+},
+"killiped": {
+"dist": "Shooter - Gallery"
+},
+"kingball": {
+"dist": "Shooter - Gallery"
+},
+"kingballj": {
+"dist": "Shooter - Gallery"
+},
+"kingdmgp": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"kinst": {
+"ongo": "Fighter"
+},
+"kinst2": {
+"ongo": "Fighter"
+},
+"knckhead": {
+"ongo": "Fighter",
+"repo": "Fighter"
+},
+"knckheadj": {
+"ongo": "Fighter",
+"repo": "Fighter"
+},
+"knckheadjp": {
+"ongo": "Fighter",
+"repo": "Fighter"
+},
+"konek": {
+"dist": "Platform"
+},
+"kong2600": {
+"dist": "Platform - Climb"
+},
+"koroleva": {
+"dist": "Maze"
+},
+"kot": {
+"dist": "Action"
+},
+"kozure": {
+"coinop": "Beat 'em up"
+},
+"kram": {
+"dist": "Maze"
+},
+"krama": {
+"dist": "Maze"
+},
+"kroozr": {
+"dist": "Shooter - Multidirectional"
+},
+"krull": {
+"ongo": "Platform",
+"dist": "Platform"
+},
+"ktiger": {
+"coinop": "Shoot &apos;Em Up"
+},
+"ktiger_v": {
+"ongo": "Shoot &apos;Em Up"
+},
+"ktigera": {
+"coinop": "Shoot &apos;Em Up"
+},
+"ktigera_v": {
+"ongo": "Shoot &apos;Em Up"
+},
+"kuhga": {
+"coinop": "Shoot &apos;Em Up"
+},
+"kungfub": {
+"dist": "Beat 'em Up"
+},
+"kungfub2": {
+"dist": "Beat 'em Up"
+},
+"kungfum": {
+"dist": "Beat 'em Up"
+},
+"kurufev": {
+"dist": "Puzzle"
+},
+"kyukaidk": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"kyukaidko": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"ladybug": {
+"dist": "Maze"
+},
+"ladybugb": {
+"dist": "Maze"
+},
+"ladybugb2": {
+"dist": "Maze"
+},
+"lagunar": {
+"dist": "Racing"
+},
+"lastsurv": {
+"dist": "Shooter / Flight"
+},
+"lastsurvd": {
+"dist": "Shooter / Flight"
+},
+"lbgrande": {
+"ongo": "Sports"
+},
+"ldrun": {
+"dist": "Platform - Climb"
+},
+"ldrun2": {
+"dist": "Platform - Climb"
+},
+"ldrun3": {
+"dist": "Platform - Climb"
+},
+"ldrun3j": {
+"dist": "Platform - Climb"
+},
+"ldrun4": {
+"dist": "Platform - Climb"
+},
+"ldruna": {
+"dist": "Platform - Climb"
+},
+"le2": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"le2j": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"le2u": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"leaguemn": {
+"dist": "Fighter"
+},
+"legend": {
+"dist": "Shooter"
+},
+"legion": {
+"coinop": "Shoot 'em up"
+},
+"legionj2": {
+"coinop": "Shoot 'em up"
+},
+"legionna": {
+"dist": "Beat-em-up"
+},
+"legionnaj": {
+"dist": "Beat-em-up"
+},
+"legionnau": {
+"dist": "Beat-em-up"
+},
+"lethalth": {
+"dist": "Shooter"
+},
+"lifefrce": {
+"dist": "Shmup"
+},
+"lifefrcej": {
+"dist": "Shmup"
+},
+"lizwiz": {
+"dist": "Arena"
+},
+"llander": {
+"dist": "Lander"
+},
+"llander1": {
+"dist": "Lander"
+},
+"loffire": {
+"dist": "Shooter / Flight"
+},
+"loffired": {
+"dist": "Shooter / Flight"
+},
+"loffirej": {
+"dist": "Shooter / Flight"
+},
+"loffirejd": {
+"dist": "Shooter / Flight"
+},
+"loffireu": {
+"dist": "Shooter / Flight"
+},
+"loffireud": {
+"dist": "Shooter / Flight"
+},
+"lomakai": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"losttomb": {
+"dist": "Maze"
+},
+"losttombh": {
+"dist": "Maze"
+},
+"lotlot": {
+"dist": "Puzzle"
+},
+"lpadv": {
+"ongo": "Puzzle"
+},
+"lrescue": {
+"dist": "Lander"
+},
+"lrescuem": {
+"dist": "Space / Moon"
+},
+"lrescuem2": {
+"dist": "Space / Moon"
+},
+"luckywld": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"luckywldj": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"luctoday": {
+"dist": "Gambling"
+},
+"lunarbat": {
+"dist": "Lander"
+},
+"lupin3": {
+"dist": "Adventure / Cops"
+},
+"lupin3a": {
+"dist": "Maze"
+},
+"lwings": {
+"arcfpga": "Shooter"
+},
+"m4": {
+"dist": "Army / Tank"
+},
+"mach3": {
+"dist": "LaserDisc"
+},
+"macross": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"macross2": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"macross2g": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"macross2k": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"macrossp": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"madshark": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"magspeed": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"magspot": {
+"dist": "Garden"
+},
+"mahoudai": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"majtitl2": {
+"dist": "Sports"
+},
+"makaiden": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"makaimur": {
+"jt": "Adventure / Knights"
+},
+"mandinga": {
+"dist": "Maze"
+},
+"mangchi": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"manhatan": {
+"dist": "Army / Fighter"
+},
+"maniach": {
+"coinop": "Sports"
+},
+"maniach2": {
+"coinop": "Sports"
+},
+"manybloc": {
+"ongo": "Puzzle",
+"kuze": "Puzzle"
+},
+"mappy": {
+"dist": "Platform - Climb"
+},
+"mappyj": {
+"dist": "Platform - Climb"
+},
+"marble": {
+"dist": "Arcade"
+},
+"marble2": {
+"dist": "Arcade"
+},
+"marble3": {
+"dist": "Arcade"
+},
+"marble4": {
+"dist": "Arcade"
+},
+"marble5": {
+"dist": "Arcade"
+},
+"mario": {
+"dist": "Platform - Climb",
+"arcfpga": "Platform - Climb"
+},
+"marioj": {
+"dist": "Platform",
+"arcfpga": "Platform"
+},
+"marioja": {
+"dist": "Platform",
+"arcfpga": "Platform"
+},
+"marpy": {
+"dist": "Maze"
+},
+"mars": {
+"dist": "Shooter - Horizontal"
+},
+"marvland": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"marvlandup": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"matmania": {
+"coinop": "Sports"
+},
+"matsuri15": {
+"ongo": "Shooter"
+},
+"maxrpm": {
+"dist": "Racing"
+},
+"mayday": {
+"dist": "Shooter - Horizontal"
+},
+"maydaya": {
+"dist": "Shooter - Horizontal"
+},
+"maydayb": {
+"dist": "Shooter - Horizontal"
+},
+"mayjin3": {
+"dist": "Mahjong"
+},
+"maze": {
+"dist": "Maze"
+},
+"mazeman": {
+"dist": "Maze"
+},
+"mazinger": {
+"dist": "Vertical Shooter"
+},
+"mazingerj": {
+"dist": "Vertical Shooter"
+},
+"mcatadv": {
+"repo": "Platform"
+},
+"mcatadvj": {
+"repo": "Platform"
+},
+"megaforc": {
+"dist": "Shooter - Vertical"
+},
+"megaforcu": {
+"dist": "Shooter - Vertical"
+},
+"megrescu": {
+"dist": "Ball and Paddle"
+},
+"metafox": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"metamrph": {
+"coinop": "Beat &apos;Em Up"
+},
+"metamrpha": {
+"coinop": "Beat &apos;Em Up"
+},
+"metamrphe": {
+"coinop": "Beat &apos;Em Up"
+},
+"metamrphj": {
+"coinop": "Beat &apos;Em Up"
+},
+"metamrphu": {
+"coinop": "Beat &apos;Em Up"
+},
+"meteorho": {
+"dist": "Shooter - Multidirectional"
+},
+"meteorite": {
+"dist": "Shooter - Multidirectional"
+},
+"meteorts": {
+"dist": "Shooter - Multidirectional"
+},
+"metlhawk": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"metlhawkj": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"metmqstr": {
+"dist": "Fighting"
+},
+"mfjump": {
+"ongo": "Action"
+},
+"mgcldate": {
+"ongo": "Puzzle"
+},
+"mgcldtex": {
+"ongo": "Puzzle"
+},
+"mgcrystl": {
+"ongo": "Platform"
+},
+"mhavoc": {
+"dist": "Maze / Platform",
+"repo": "Maze / Platform"
+},
+"mia": {
+"repo": "Run and gun"
+},
+"mia2": {
+"repo": "Run and gun"
+},
+"mimonscr": {
+"dist": "Shooter - Multidirectional"
+},
+"minefld": {
+"dist": "Shooter - Gallery"
+},
+"mirninja": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"mirninjaa": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"mlander": {
+"dist": "Space / Moon"
+},
+"mmmbanc": {
+"ongo": "Mahjong"
+},
+"mmpork": {
+"ongo": "Shooter"
+},
+"mnight": {
+"dist": "Platform"
+},
+"mnightj": {
+"dist": "Platform"
+},
+"mofflott": {
+"dist": "Action",
+"ongo": "Action"
+},
+"monkelf": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"monsterb": {
+"repo": "Shooter"
+},
+"moonaln": {
+"dist": "Shooter - Gallery"
+},
+"moonbase": {
+"dist": "Space / Invaders"
+},
+"moonbasea": {
+"dist": "Space / Invaders"
+},
+"mooncrgx": {
+"dist": "Shooter - Gallery"
+},
+"moonqsr": {
+"dist": "Shooter - Gallery"
+},
+"moonwar": {
+"dist": "Shooter - Multidirectional"
+},
+"moonwara": {
+"dist": "Shooter - Multidirectional"
+},
+"motos": {
+"dist": "Arena"
+},
+"mototour": {
+"dist": "Racing"
+},
+"mpatrol": {
+"dist": "Shooter - Horizontal"
+},
+"mpatrolw": {
+"dist": "Shooter - Horizontal"
+},
+"mplanets": {
+"dist": "Platform"
+},
+"mranger": {
+"dist": "Shooter - Horizontal"
+},
+"mrdo": {
+"dist": "Maze"
+},
+"mrdofix": {
+"dist": "Maze"
+},
+"mrdonight": {
+"dist": "Maze"
+},
+"mrdrillrja2": {
+"ongo": "Puzzle"
+},
+"mrgoemon": {
+"dist": "Platform / Fighter Scrolling"
+},
+"mrheli": {
+"dist": "Shooter"
+},
+"mrjong": {
+"dist": "Puzzle"
+},
+"mrtnt": {
+"dist": "Maze"
+},
+"mrviking": {
+"dist": "Shooter - Vertical"
+},
+"msgundam": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"msgundam1": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"msh_1": {
+"ongo": "Fighting"
+},
+"msh_2": {
+"ongo": "Fighting"
+},
+"mshvsf_1": {
+"ongo": "Fighting"
+},
+"mshvsf_2": {
+"ongo": "Fighting"
+},
+"mspacman": {
+"dist": "Maze"
+},
+"mspacmancr": {
+"dist": "Maze"
+},
+"mspacmat": {
+"dist": "Maze"
+},
+"mspacmnf": {
+"dist": "Maze"
+},
+"mtetrisc": {
+"dist": "Puzzle"
+},
+"mtrap": {
+"dist": "Maze"
+},
+"mtwinbee": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"mushisam": {
+"ongo": "Shooter"
+},
+"mushisama": {
+"ongo": "Shooter"
+},
+"mushisamb": {
+"ongo": "Shooter"
+},
+"mushitam": {
+"ongo": "Puzzle"
+},
+"mushitama": {
+"ongo": "Puzzle"
+},
+"mustang": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"mustangb": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"mustangb2": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"mustangb3": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"mustangs": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"mutantf": {
+"coinop": "Fighting"
+},
+"mutantf1": {
+"coinop": "Fighting"
+},
+"mutantf2": {
+"coinop": "Fighting"
+},
+"mutantf3": {
+"coinop": "Fighting"
+},
+"mutantf4": {
+"coinop": "Fighting"
+},
+"mvsc_1": {
+"ongo": "Fighting"
+},
+"mvsc_2": {
+"ongo": "Fighting"
+},
+"mvsc_3": {
+"ongo": "Fighting"
+},
+"mvsc_4": {
+"ongo": "Fighting"
+},
+"myhero": {
+"dist": "Platform"
+},
+"myqbert": {
+"dist": "Platform - Climb"
+},
+"mysticm": {
+"dist": "Sports"
+},
+"mysticmp": {
+"dist": "Sports"
+},
+"mysticri": {
+"dist": "Shooter"
+},
+"mystwarr": {
+"coinop": "Beat &apos;Em Up"
+},
+"mystwarra": {
+"coinop": "Beat &apos;Em Up"
+},
+"mystwarraa": {
+"coinop": "Beat &apos;Em Up"
+},
+"mystwarrj": {
+"coinop": "Beat &apos;Em Up"
+},
+"mystwarru": {
+"coinop": "Beat &apos;Em Up"
+},
+"nadkong": {
+"dist": "Platform - Climb"
+},
+"namcosil": {
+"dist": "Maze"
+},
+"narc": {
+"ongo": "Run and Gun",
+"meat": "Run and Gun"
+},
+"narc_meathax": {
+"ongo": "Run and Gun"
+},
+"naughtyb": {
+"dist": "Shooter - Gallery"
+},
+"nbbatman": {
+"dist": "Fighter"
+},
+"nbbatmanu": {
+"dist": "Fighter"
+},
+"ncv1": {
+"ongo": "Compilation",
+"meat": "Compilation"
+},
+"ncv1j": {
+"ongo": "Compilation"
+},
+"ncv1j2": {
+"ongo": "Compilation"
+},
+"ncv2": {
+"ongo": "Compilation",
+"meat": "Compilation"
+},
+"ncv2j": {
+"ongo": "Compilation"
+},
+"nemesis": {
+"ongo": "Shooter"
+},
+"nemesisuk": {
+"ongo": "Shooter"
+},
+"neobattl": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"netmerc": {
+"ongo": "Shooter"
+},
+"newpuck2": {
+"dist": "Maze"
+},
+"newpuck3": {
+"dist": "Maze"
+},
+"newpuckx": {
+"dist": "Maze"
+},
+"newtangl": {
+"dist": "Sports"
+},
+"nextfase": {
+"dist": "Shooter - Gallery"
+},
+"nibbler": {
+"dist": "Maze"
+},
+"ninjakd2": {
+"dist": "Platform"
+},
+"ninjakd2a": {
+"dist": "Platform"
+},
+"ninjakd2b": {
+"dist": "Platform"
+},
+"ninjakd2c": {
+"dist": "Platform"
+},
+"ninjakun": {
+"dist": "Platform - Climb"
+},
+"ninjaw": {
+"dist": "Fighter"
+},
+"ninjaw1": {
+"dist": "Fighter"
+},
+"ninjawj": {
+"dist": "Fighter"
+},
+"ninjawu": {
+"dist": "Fighter"
+},
+"ninjemak": {
+"ongo": "Platform"
+},
+"ninjemat": {
+"ongo": "Platform"
+},
+"nitrobal": {
+"coinop": "Run &amp; Gun"
+},
+"nitrobala": {
+"coinop": "Run &amp; Gun"
+},
+"nitrobalb": {
+"coinop": "Run &amp; Gun"
+},
+"nmaster": {
+"dist": "Fighting"
+},
+"nobb": {
+"repo": "Shooter",
+"ongo": "Shooter"
+},
+"nomnlnd": {
+"dist": "War"
+},
+"noromname": {
+"arcfpga": "Tests"
+},
+"nost": {
+"repo": "Shooter"
+},
+"nostj": {
+"repo": "Shooter"
+},
+"nostk": {
+"repo": "Shooter"
+},
+"nouryoku": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"nouryokup": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"nova2001": {
+"dist": "Platform - Climb"
+},
+"nova2001h": {
+"dist": "Platform - Climb"
+},
+"nrallyx": {
+"dist": "Racing"
+},
+"nrallyxb": {
+"dist": "Racing"
+},
+"nslasher": {
+"dist": "Action",
+"ongo": "Action"
+},
+"nslasherj": {
+"dist": "Action",
+"ongo": "Action"
+},
+"nslashers": {
+"dist": "Action",
+"ongo": "Action"
+},
+"nslasheru": {
+"dist": "Action",
+"ongo": "Action"
+},
+"numanath": {
+"ongo": "Sports",
+"repo": "Sports"
+},
+"numanathj": {
+"ongo": "Sports",
+"repo": "Sports"
+},
+"numcrash": {
+"dist": "Platform"
+},
+"nwarr2en": {
+"ongo": "Fighting"
+},
+"nwpuc2b": {
+"dist": "Maze"
+},
+"offender": {
+"dist": "Shooter - Horizontal"
+},
+"offensiv": {
+"dist": "Shooter - Horizontal"
+},
+"offroad": {
+"dist": "Driving",
+"repo": "Driving"
+},
+"offroadt": {
+"dist": "Driving",
+"repo": "Driving"
+},
+"ogonsiro": {
+"ongo": "Fighter"
+},
+"ohbakyuun": {
+"ongo": "Shooter"
+},
+"oisipuzl": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"olysoc92": {
+"dist": "Sports",
+"ongo": "Sports"
+},
+"olysoc92a": {
+"dist": "Sports",
+"ongo": "Sports"
+},
+"olysoc92b": {
+"dist": "Sports",
+"ongo": "Sports"
+},
+"omegab": {
+"dist": "Shooter - Gallery"
+},
+"omegaf": {
+"dist": "Shooter"
+},
+"omegafa": {
+"dist": "Shooter"
+},
+"omegafs": {
+"dist": "Shooter"
+},
+"omni": {
+"dist": "Shooter - Gallery"
+},
+"ooparts": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"opaopa": {
+"dist": "Maze"
+},
+"opaopan": {
+"dist": "Maze"
+},
+"orbitron": {
+"dist": "Shooter - Gallery"
+},
+"ordyne": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"ordynej": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"ordyneje": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"oscar": {
+"coinop": "Platform"
+},
+"oscarj1": {
+"coinop": "Platform"
+},
+"oscarj2": {
+"coinop": "Platform"
+},
+"oscaru": {
+"coinop": "Platform"
+},
+"ottopza": {
+"dist": "Maze"
+},
+"ozmawars": {
+"dist": "Space / Shooter"
+},
+"ozmawars2": {
+"dist": "Space / Shooter"
+},
+"ozmawarsmr": {
+"dist": "Space / Shooter"
+},
+"pac2600": {
+"dist": "Maze"
+},
+"pac2600a": {
+"dist": "Maze"
+},
+"pacapp": {
+"ongo": "Rhythm"
+},
+"pacapp2": {
+"ongo": "Rhythm"
+},
+"pacappsp": {
+"ongo": "Rhythm"
+},
+"pacbaby": {
+"dist": "Maze"
+},
+"pacbaby2": {
+"dist": "Maze"
+},
+"pacbaby3": {
+"dist": "Maze"
+},
+"pacbell": {
+"dist": "Maze"
+},
+"pacelec": {
+"dist": "Maze"
+},
+"pacfnt": {
+"dist": "Maze"
+},
+"pacinvis": {
+"dist": "Maze"
+},
+"pacipede": {
+"dist": "Maze"
+},
+"pacjail": {
+"dist": "Maze"
+},
+"pacjr1": {
+"dist": "Maze"
+},
+"pacjr2": {
+"dist": "Maze"
+},
+"pacjr3": {
+"dist": "Maze"
+},
+"pacjr4": {
+"dist": "Maze"
+},
+"packetman": {
+"dist": "Maze"
+},
+"pacm255": {
+"dist": "Maze"
+},
+"pacman": {
+"dist": "Maze / Pac-Man"
+},
+"pacman3d": {
+"dist": "Maze"
+},
+"pacmanf": {
+"dist": "Maze"
+},
+"pacmanp": {
+"dist": "Maze"
+},
+"pacmar": {
+"dist": "Maze"
+},
+"pacmini": {
+"dist": "Maze"
+},
+"pacmini2": {
+"dist": "Maze"
+},
+"pacmod": {
+"dist": "Maze"
+},
+"pacms1": {
+"dist": "Maze"
+},
+"pacms2": {
+"dist": "Maze"
+},
+"pacms3": {
+"dist": "Maze"
+},
+"pacms4": {
+"dist": "Maze"
+},
+"pacmsa1": {
+"dist": "Maze"
+},
+"pacmsa2": {
+"dist": "Maze"
+},
+"pacmsa3": {
+"dist": "Maze"
+},
+"pacmsa4": {
+"dist": "Maze"
+},
+"pacnchmp": {
+"dist": "Maze"
+},
+"pacnpal": {
+"dist": "Maze"
+},
+"pacplus": {
+"dist": "Maze"
+},
+"pacpopey": {
+"dist": "Maze"
+},
+"pacshuf": {
+"dist": "Maze"
+},
+"pacsnoop": {
+"dist": "Maze"
+},
+"pacspeed": {
+"dist": "Maze"
+},
+"pacupacu": {
+"dist": "Maze",
+"ongo": "Maze"
+},
+"pacwf": {
+"dist": "Maze"
+},
+"pacyuyu": {
+"ongo": "Maze"
+},
+"pairlove": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"pajaroes": {
+"dist": "Shooter - Gallery"
+},
+"panic": {
+"dist": "Platform"
+},
+"paperboy": {
+"dist": "Arcade"
+},
+"paperboyp": {
+"dist": "Arcade"
+},
+"paperboyr1": {
+"dist": "Arcade"
+},
+"paperboyr2": {
+"dist": "Arcade"
+},
+"pbaction": {
+"dist": "Pinball"
+},
+"pballoon": {
+"dist": "Shooter"
+},
+"pbancho": {
+"dist": "Puzzle"
+},
+"pbanchoa": {
+"dist": "Puzzle"
+},
+"pclub": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"pclubj": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"pclubjv2": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"pclubjv3": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"pclubjv4": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"pclubjv5": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"pcrunchy": {
+"dist": "Maze"
+},
+"pdrift": {
+"ongo": "Racing / Driving",
+"repo": "Racing / Driving"
+},
+"pdrifta": {
+"ongo": "Racing / Driving",
+"repo": "Racing / Driving"
+},
+"pdrifte": {
+"ongo": "Racing / Driving",
+"repo": "Racing / Driving"
+},
+"pdriftj": {
+"ongo": "Racing / Driving",
+"repo": "Racing / Driving"
+},
+"pdriftjb": {
+"ongo": "Racing / Driving",
+"repo": "Racing / Driving"
+},
+"peekaboo": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"peekaboou": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"pengman": {
+"dist": "Maze"
+},
+"pengo": {
+"dist": "Maze"
+},
+"pengoa": {
+"dist": "Maze"
+},
+"pengob": {
+"dist": "Maze"
+},
+"pengoc": {
+"dist": "Maze"
+},
+"pepper2": {
+"dist": "Maze"
+},
+"perfrman": {
+"dist": "Puzzle"
+},
+"perfrmanu": {
+"dist": "Puzzle"
+},
+"pestplce": {
+"dist": "Puzzle - Platform"
+},
+"peterpak": {
+"dist": "Arcade"
+},
+"phantom2": {
+"dist": "Army / Airforce"
+},
+"phelios": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"pheliosj": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"phoenix": {
+"dist": "Shooter - Gallery"
+},
+"phoenix2": {
+"dist": "Shooter - Gallery"
+},
+"phoenix3": {
+"dist": "Shooter - Gallery"
+},
+"phoenixa": {
+"dist": "Shooter - Gallery"
+},
+"phoenixass": {
+"dist": "Shooter - Gallery"
+},
+"phoenixb": {
+"dist": "Shooter - Gallery"
+},
+"phoenixc": {
+"dist": "Shooter - Gallery"
+},
+"phoenixc2": {
+"dist": "Shooter - Gallery"
+},
+"phoenixc3": {
+"dist": "Shooter - Gallery"
+},
+"phoenixc4": {
+"dist": "Shooter - Gallery"
+},
+"phoenixdal": {
+"dist": "Shooter - Gallery"
+},
+"phoenixg": {
+"dist": "Shooter - Gallery"
+},
+"phoenixgu": {
+"dist": "Shooter - Gallery"
+},
+"phoenixha": {
+"dist": "Shooter - Gallery"
+},
+"phoenixj": {
+"dist": "Shooter - Gallery"
+},
+"phoenixr": {
+"dist": "Shooter - Gallery"
+},
+"phoenixs": {
+"dist": "Shooter - Gallery"
+},
+"phoenixt": {
+"dist": "Shooter - Gallery"
+},
+"pickin": {
+"dist": "Maze"
+},
+"pickinpi": {
+"dist": "Platform - Climb"
+},
+"pignewt": {
+"repo": "Action"
+},
+"pigout": {
+"dist": "Platform",
+"repo": "Platform"
+},
+"pinkswts": {
+"ongo": "Shooter"
+},
+"pinkswtsa": {
+"ongo": "Shooter"
+},
+"pinkswtsb": {
+"ongo": "Shooter"
+},
+"pinkswtssc": {
+"ongo": "Shooter"
+},
+"pinkswtsx": {
+"ongo": "Shooter"
+},
+"pipibibs": {
+"coinop": "Platform"
+},
+"pipibibsa": {
+"coinop": "Platform"
+},
+"piratpet": {
+"dist": "Platform"
+},
+"pisces": {
+"dist": "Shooter - Gallery"
+},
+"piscesb": {
+"dist": "Shooter - Gallery"
+},
+"pitfall2": {
+"dist": "Platform"
+},
+"pitfall2u": {
+"dist": "Platform"
+},
+"pitfight": {
+"repo": "Fighter"
+},
+"pitfight1p2": {
+"repo": "Fighter"
+},
+"pitfight2": {
+"repo": "Fighter"
+},
+"pitfight3": {
+"repo": "Fighter"
+},
+"pitfight4": {
+"repo": "Fighter"
+},
+"pitfight5": {
+"repo": "Fighter"
+},
+"pitfight6": {
+"repo": "Fighter"
+},
+"pitfight7": {
+"repo": "Fighter"
+},
+"pitfightb": {
+"repo": "Fighter"
+},
+"pitfightj": {
+"repo": "Fighter"
+},
+"pkunwar": {
+"dist": "Maze / Penguin",
+"repo": "Maze / Penguin"
+},
+"pkunwarj": {
+"dist": "Maze / Penguin",
+"repo": "Maze / Penguin"
+},
+"playball": {
+"dist": "Ball and Paddle"
+},
+"plegends": {
+"dist": "Fighting"
+},
+"plegendsj": {
+"dist": "Fighting"
+},
+"pleiadbl": {
+"dist": "Shooter - Gallery"
+},
+"pleiadce": {
+"dist": "Shooter - Gallery"
+},
+"pleiads": {
+"dist": "Space / Shooter"
+},
+"pleiadsb2": {
+"dist": "Shooter - Gallery"
+},
+"pleiadsi": {
+"dist": "Shooter - Gallery"
+},
+"pleiadsn": {
+"dist": "Shooter - Gallery"
+},
+"pleiadss": {
+"dist": "Shooter - Gallery"
+},
+"plsmaswd": {
+"ongo": "Fighting"
+},
+"plsmaswda": {
+"ongo": "Fighting"
+},
+"pm1000": {
+"dist": "Maze"
+},
+"pm2000": {
+"dist": "Maze"
+},
+"pm3000": {
+"dist": "Maze"
+},
+"pm4000p": {
+"dist": "Maze / Pac-Man"
+},
+"pm5000p": {
+"dist": "Maze / Pac-Man"
+},
+"pm6000": {
+"dist": "Maze / Pac-Man"
+},
+"pm7000": {
+"dist": "Maze / Pac-Man"
+},
+"pm7000p": {
+"dist": "Maze / Pac-Man"
+},
+"pmad": {
+"dist": "Maze"
+},
+"pmad00": {
+"dist": "Maze"
+},
+"pmada": {
+"dist": "Maze"
+},
+"pmba2000": {
+"dist": "Maze"
+},
+"pmba3000": {
+"dist": "Maze"
+},
+"pmba4000": {
+"dist": "Maze / Pac-Man"
+},
+"pmba6000": {
+"dist": "Maze"
+},
+"pmba8000": {
+"dist": "Maze / Pac-Man"
+},
+"pmbamaz": {
+"dist": "Maze"
+},
+"pmbaplus": {
+"dist": "Maze / Pac-Man"
+},
+"pmbluep": {
+"dist": "Maze / Pac-Man"
+},
+"pmdeluxe": {
+"dist": "Maze / Pac-Man"
+},
+"pmextra": {
+"dist": "Maze / Pac-Man"
+},
+"pmextrap": {
+"dist": "Maze / Pac-Man"
+},
+"pmfever": {
+"dist": "Maze / Pac-Man"
+},
+"pmgrenp": {
+"dist": "Maze / Pac-Man"
+},
+"polaris": {
+"dist": "Army / Submarine"
+},
+"polarisa": {
+"dist": "Army / Submarine"
+},
+"polarisbr": {
+"dist": "Army / Submarine"
+},
+"polariso": {
+"dist": "Army / Submarine"
+},
+"polepos": {
+"dist": "Driving"
+},
+"polepos2": {
+"dist": "Driving"
+},
+"polepos2a": {
+"dist": "Driving"
+},
+"polepos2b": {
+"dist": "Driving"
+},
+"poleposa1": {
+"dist": "Driving"
+},
+"poleposa1n": {
+"dist": "Driving"
+},
+"poleposa2": {
+"dist": "Driving"
+},
+"poleposj": {
+"dist": "Driving"
+},
+"pollenangel": {
+"ongo": "Maze"
+},
+"polyplay": {
+"dist": "Mixed"
+},
+"polyplay2": {
+"dist": "Mixed"
+},
+"pong": {
+"dist": "Ball and Paddle"
+},
+"ponpoko": {
+"dist": "Platform - Climb"
+},
+"ponpokov": {
+"dist": "Platform - Climb"
+},
+"pootan": {
+"dist": "Shooter - Gallery"
+},
+"pooyan": {
+"dist": "Shooter - Gallery"
+},
+"pooyandiag": {
+"dist": "Shooter - Gallery"
+},
+"pooyans": {
+"dist": "Shooter - Gallery"
+},
+"popeye": {
+"dist": "Platform - Climb"
+},
+"popflamn": {
+"dist": "Shooter - Gallery"
+},
+"popspops": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"porter": {
+"dist": "Dunno"
+},
+"potopoto": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"powerdrv": {
+"dist": "Racing"
+},
+"powerins": {
+"ongo": "Fighting",
+"kuze": "Fighting"
+},
+"powerinsa": {
+"ongo": "Fighting",
+"kuze": "Fighting"
+},
+"powerinsb": {
+"ongo": "Fighting",
+"kuze": "Fighting"
+},
+"powerinsj": {
+"ongo": "Fighting",
+"kuze": "Fighting"
+},
+"powerinspj": {
+"ongo": "Fighting",
+"kuze": "Fighting"
+},
+"powerinspu": {
+"ongo": "Fighting",
+"kuze": "Fighting"
+},
+"pplusad": {
+"dist": "Maze / Pac-Man"
+},
+"pprobe": {
+"dist": "Shooter"
+},
+"ppspeed": {
+"dist": "Driving"
+},
+"primrag2": {
+"ongo": "Fighting",
+"meat": "Fighting"
+},
+"progear_1": {
+"ongo": "Shoot &apos;em up"
+},
+"progear_2": {
+"ongo": "Shoot &apos;em up"
+},
+"progear_3": {
+"ongo": "Shoot &apos;em up"
+},
+"propcycl": {
+"ongo": "Arcade",
+"repo": "Flying"
+},
+"psychic5": {
+"dist": "Action / Maze Vertical"
+},
+"psychic5j": {
+"dist": "Action / Maze Vertical"
+},
+"psyforce": {
+"ongo": "Fighter"
+},
+"psyforcej": {
+"ongo": "Fighter"
+},
+"psyforcex": {
+"ongo": "Fighter"
+},
+"puck255": {
+"dist": "Maze"
+},
+"puckman": {
+"dist": "Maze"
+},
+"puckmano": {
+"dist": "Maze"
+},
+"puckmod": {
+"dist": "Maze"
+},
+"puckmot1": {
+"dist": "Maze"
+},
+"puckmoti": {
+"dist": "Maze"
+},
+"pulsar": {
+"dist": "Maze shooter"
+},
+"puyo": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"puyobl": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"puyoj": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"puyoja": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"puyopuy2": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"puzldama": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"puzlwrld": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"pwrinst2": {
+"dist": "Fighting"
+},
+"pwrinst2a": {
+"dist": "Fighting"
+},
+"pwrinst2j": {
+"dist": "Fighting"
+},
+"pwrinst2ja": {
+"dist": "Fighting"
+},
+"pyros": {
+"coinop": "Platform"
+},
+"qbert": {
+"dist": "Platform - Climb"
+},
+"qberta": {
+"dist": "Platform - Climb"
+},
+"qbertj": {
+"dist": "Platform - Climb"
+},
+"qbertqub": {
+"dist": "Platform"
+},
+"qberttst": {
+"dist": "Platform - Climb"
+},
+"qix": {
+"dist": "Maze"
+},
+"qix2": {
+"dist": "Maze"
+},
+"qixa": {
+"dist": "Maze"
+},
+"qixb": {
+"dist": "Maze"
+},
+"qixo": {
+"dist": "Maze"
+},
+"quizmoon": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"quiztou": {
+"ongo": "Quiz",
+"repo": "Quiz"
+},
+"qzkklgy2": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"qzkklogy": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"rachero": {
+"dist": "Shooter / Flight"
+},
+"racherod": {
+"dist": "Shooter / Flight"
+},
+"radarscp": {
+"dist": "Shooter - Gallery"
+},
+"radarscpc": {
+"dist": "Shooter - Gallery"
+},
+"raflesia": {
+"dist": "Shooter - Vertical"
+},
+"ragtime": {
+"dist": "Action",
+"coinop": "Shoot &apos;Em Up",
+"ongo": "Action"
+},
+"ragtimea": {
+"dist": "Action",
+"coinop": "Shoot &apos;Em Up",
+"ongo": "Action"
+},
+"raiden": {
+"dist": "Shoot",
+"ongo": "Shoot"
+},
+"raiden2": {
+"dist": "Shoot",
+"repo": "Shoot"
+},
+"raiden2au": {
+"dist": "Shoot"
+},
+"raiden2dx": {
+"dist": "Shoot"
+},
+"raiden2e": {
+"dist": "Shoot"
+},
+"raiden2ea": {
+"dist": "Shoot"
+},
+"raiden2eg": {
+"dist": "Shoot"
+},
+"raiden2es": {
+"dist": "Shoot"
+},
+"raiden2eu": {
+"dist": "Shoot"
+},
+"raiden2eua": {
+"dist": "Shoot"
+},
+"raiden2eub": {
+"dist": "Shoot"
+},
+"raiden2eup": {
+"dist": "Shoot"
+},
+"raiden2f": {
+"dist": "Shoot"
+},
+"raiden2g": {
+"dist": "Shoot"
+},
+"raiden2gb": {
+"dist": "Shoot"
+},
+"raiden2hk": {
+"dist": "Shoot"
+},
+"raiden2i": {
+"dist": "Shoot"
+},
+"raiden2j": {
+"dist": "Shoot"
+},
+"raiden2k": {
+"dist": "Shoot"
+},
+"raiden2nl": {
+"dist": "Shoot"
+},
+"raiden2sw": {
+"dist": "Shoot"
+},
+"raiden2u": {
+"dist": "Shoot"
+},
+"raidenb": {
+"dist": "Shoot",
+"ongo": "Shoot"
+},
+"raidendx": {
+"dist": "Shoot",
+"repo": "Shoot"
+},
+"raidendxa1": {
+"dist": "Shoot"
+},
+"raidendxa2": {
+"dist": "Shoot"
+},
+"raidendxch": {
+"dist": "Shoot"
+},
+"raidendxg": {
+"dist": "Shoot"
+},
+"raidendxj": {
+"dist": "Shoot"
+},
+"raidendxja": {
+"dist": "Shoot"
+},
+"raidendxk": {
+"dist": "Shoot"
+},
+"raidendxnl": {
+"dist": "Shoot"
+},
+"raidendxpt": {
+"dist": "Shoot"
+},
+"raidendxu": {
+"dist": "Shoot"
+},
+"raidenj": {
+"dist": "Shoot",
+"ongo": "Shoot"
+},
+"raidenk": {
+"dist": "Shoot",
+"ongo": "Shoot"
+},
+"raident": {
+"dist": "Shoot",
+"ongo": "Shoot"
+},
+"raidenu": {
+"dist": "Shoot",
+"ongo": "Shoot"
+},
+"raiders5": {
+"dist": "Platform - Climb"
+},
+"rallyx": {
+"dist": "Maze"
+},
+"rallyxm": {
+"dist": "Maze"
+},
+"rampage": {
+"dist": "Platform - Climb"
+},
+"rampage2": {
+"dist": "Platform - Climb"
+},
+"rampart": {
+"dist": "Strategy"
+},
+"rampart2p": {
+"dist": "Strategy"
+},
+"rampart2pa": {
+"dist": "Strategy"
+},
+"rampartj": {
+"dist": "Strategy"
+},
+"raphero": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"rapheroa": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"raverace": {
+"ongo": "Arcade"
+},
+"rayforce": {
+"ongo": "Shoot",
+"repo": "Shoot"
+},
+"rayforcej": {
+"ongo": "Shoot",
+"repo": "Shoot"
+},
+"raystorm": {
+"ongo": "Shooter"
+},
+"raystormj": {
+"ongo": "Shooter"
+},
+"raystormo": {
+"ongo": "Shooter"
+},
+"raystormu": {
+"ongo": "Shooter"
+},
+"rbtapper": {
+"dist": "Action"
+},
+"rchase": {
+"ongo": "Shooter / Gun",
+"repo": "Shooter / Gun"
+},
+"rchasej": {
+"ongo": "Shooter / Gun",
+"repo": "Shooter / Gun"
+},
+"rchasejb": {
+"ongo": "Shooter / Gun",
+"repo": "Shooter / Gun"
+},
+"rdaction": {
+"dist": "Platform"
+},
+"rdft": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdft2": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdft2a": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdft2aa": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdft2it": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdft2j": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdft2ja": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdft2jb": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdft2jc": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdft2s": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdft2t": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdft2u": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdft2us": {
+"repo": "Shooter"
+},
+"rdfta": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdftadia": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdftau": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdftauge": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdftgb": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdftgr": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdftit": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdftj": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdftja": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdfts": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rdftu": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"reactor": {
+"dist": "Shooter"
+},
+"redbaron": {
+"dist": "Army / Airforce 3D"
+},
+"redbarona": {
+"dist": "Army / Airforce 3D"
+},
+"redfoxwp2": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"redfoxwp2a": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"redhawk": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"redhawkb": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"redhawkc": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"redhawke": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"redhawkg": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"redhawki": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"redhawkk": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"redhawks": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"redhawksa": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"regulus": {
+"dist": "Shooter - Vertical"
+},
+"repulse": {
+"dist": "Shooter"
+},
+"rescue": {
+"dist": "Shooter - Horizontal"
+},
+"revx": {
+"ongo": "Shooter"
+},
+"rezon": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"rezono": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"rfjet": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rfjeta": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rfjetj": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rfjets": {
+"repo": "Shooter"
+},
+"rfjetsa": {
+"repo": "Shooter"
+},
+"rfjett": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"rfjetu": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"ribbit": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"ribbitj": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"ridgera2": {
+"ongo": "Arcade"
+},
+"ridgeraca": {
+"ongo": "Arcade"
+},
+"ridleofp": {
+"dist": "Ball and Paddle"
+},
+"ringking": {
+"dist": "Sports"
+},
+"roadblst": {
+"dist": "Arcade"
+},
+"roadblst1": {
+"dist": "Arcade"
+},
+"roadblst2": {
+"dist": "Arcade"
+},
+"roadblst3": {
+"dist": "Arcade"
+},
+"roadblstc": {
+"dist": "Arcade"
+},
+"roadblstc1": {
+"dist": "Arcade"
+},
+"roadblstcg": {
+"dist": "Arcade"
+},
+"roadblstg": {
+"dist": "Arcade"
+},
+"roadblstg1": {
+"dist": "Arcade"
+},
+"roadblstg2": {
+"dist": "Arcade"
+},
+"roadblstgu": {
+"dist": "Arcade"
+},
+"roadrunm": {
+"dist": "Sports / Shooting"
+},
+"roadrunn": {
+"dist": "Arcade"
+},
+"roadrunn1": {
+"dist": "Arcade"
+},
+"roadrunn2": {
+"dist": "Arcade"
+},
+"robby": {
+"dist": "Maze"
+},
+"robocop2": {
+"coinop": "Run &amp; Gun"
+},
+"robocop2j": {
+"coinop": "Run &amp; Gun"
+},
+"robocop2u": {
+"coinop": "Run &amp; Gun"
+},
+"robocop2ua": {
+"coinop": "Run &amp; Gun"
+},
+"robokid": {
+"dist": "Platform"
+},
+"robokidj": {
+"dist": "Platform"
+},
+"robokidj2": {
+"dist": "Platform"
+},
+"robokidj3": {
+"dist": "Platform"
+},
+"roboman": {
+"dist": "Maze"
+},
+"robotron": {
+"dist": "Shooter - Multidirectional"
+},
+"robotron12": {
+"dist": "Arena",
+"arcfpga": "Adventure / Apocalyptic"
+},
+"robotron201": {
+"dist": "Arena",
+"arcfpga": "Adventure / Apocalyptic"
+},
+"robotron87": {
+"dist": "Arena",
+"arcfpga": "Adventure / Apocalyptic"
+},
+"robotronp": {
+"dist": "Arena",
+"arcfpga": "Adventure / Apocalyptic"
+},
+"robotrontd": {
+"dist": "Arena",
+"arcfpga": "Adventure / Apocalyptic"
+},
+"robotrontie": {
+"dist": "Arena",
+"arcfpga": "Adventure / Apocalyptic"
+},
+"robotronyo": {
+"dist": "Arena",
+"arcfpga": "Adventure / Apocalyptic"
+},
+"robowres": {
+"ongo": "Sports",
+"meat": "Sports"
+},
+"rohga": {
+"coinop": "Run &amp; Gun"
+},
+"rohga1": {
+"coinop": "Run &amp; Gun"
+},
+"rohga2": {
+"coinop": "Run &amp; Gun"
+},
+"rohgah": {
+"coinop": "Run &amp; Gun"
+},
+"rohgau": {
+"coinop": "Run &amp; Gun"
+},
+"rollingc": {
+"dist": "Games / Multiplay"
+},
+"romname": {
+"arcfpga": "Tests"
+},
+"rpatroln": {
+"dist": "Sports"
+},
+"rthun2": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"rthun2j": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"rtype": {
+"dist": "Shooter"
+},
+"rtype2": {
+"dist": "Shooter"
+},
+"rtype2inv": {
+"dist": "Shooter"
+},
+"rtype2j": {
+"dist": "Shooter"
+},
+"rtype2jc": {
+"dist": "Shooter"
+},
+"rtypeb": {
+"dist": "Shooter"
+},
+"rtypej": {
+"dist": "Shooter"
+},
+"rtypejp": {
+"dist": "Shooter"
+},
+"rtypeleo": {
+"dist": "Shooter"
+},
+"rtypeleoj": {
+"dist": "Shooter"
+},
+"rtypeu": {
+"dist": "Shooter"
+},
+"rushatck": {
+"dist": "Run 'n' Gun - Horizontal"
+},
+"rvschool": {
+"ongo": "Fighting"
+},
+"rvschoola": {
+"ongo": "Fighting"
+},
+"rvschoolu": {
+"ongo": "Fighting"
+},
+"rygar": {
+"dist": "Platform"
+},
+"rygarj": {
+"dist": "Platform"
+},
+"s1945": {
+"dist": "Shoot 'Em Up"
+},
+"s1945_v": {
+"ongo": "Shoot 'Em Up"
+},
+"s1945a": {
+"dist": "Shoot 'Em Up"
+},
+"s1945a_v": {
+"ongo": "Shoot 'Em Up"
+},
+"s1945j": {
+"dist": "Shoot 'Em Up"
+},
+"s1945j_v": {
+"ongo": "Shoot 'Em Up"
+},
+"s1945k": {
+"dist": "Shoot 'Em Up"
+},
+"s1945k_v": {
+"ongo": "Shoot 'Em Up"
+},
+"s1945n": {
+"dist": "Shoot 'Em Up"
+},
+"s1945n_v": {
+"ongo": "Shoot 'Em Up"
+},
+"s1945nj": {
+"dist": "Shoot 'Em Up"
+},
+"s1945nj_v": {
+"ongo": "Shoot 'Em Up"
+},
+"sabotenb": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"sabotenba": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"sagaia": {
+"dist": "Shooter"
+},
+"sailormn": {
+"dist": "Beat 'em up"
+},
+"sailormne": {
+"dist": "Beat 'em up"
+},
+"sailormnh": {
+"dist": "Beat 'em up"
+},
+"sailormnk": {
+"dist": "Beat 'em up"
+},
+"sailormnne": {
+"dist": "Beat 'em up"
+},
+"sailormnnh": {
+"dist": "Beat 'em up"
+},
+"sailormnnj": {
+"dist": "Beat 'em up"
+},
+"sailormnnk": {
+"dist": "Beat 'em up"
+},
+"sailormnnt": {
+"dist": "Beat 'em up"
+},
+"sailormnnu": {
+"dist": "Beat 'em up"
+},
+"sailormnoe": {
+"dist": "Beat 'em up"
+},
+"sailormnoh": {
+"dist": "Beat 'em up"
+},
+"sailormnoj": {
+"dist": "Beat 'em up"
+},
+"sailormnok": {
+"dist": "Beat 'em up"
+},
+"sailormnot": {
+"dist": "Beat 'em up"
+},
+"sailormnou": {
+"dist": "Beat 'em up"
+},
+"sailormnt": {
+"dist": "Beat 'em up"
+},
+"sailormnu": {
+"dist": "Beat 'em up"
+},
+"saiyugou": {
+"dist": "Platformer"
+},
+"salamand": {
+"dist": "Shmup"
+},
+"salamandj": {
+"dist": "Shmup"
+},
+"salmndr2": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"salmndr2a": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"samuraia": {
+"dist": "Shoot 'Em Up"
+},
+"samuraiak": {
+"dist": "Shoot 'Em Up"
+},
+"sandscrp": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"sandscrpa": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"sandscrpb": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"sarge": {
+"dist": "Shooter - Multidirectional"
+},
+"sargex": {
+"dist": "Shooter - Multidirectional"
+},
+"sasuke": {
+"dist": "Shooter"
+},
+"satansat": {
+"dist": "Shooter"
+},
+"sathena": {
+"dist": "Action"
+},
+"saturnzi": {
+"dist": "Maze"
+},
+"sbagman": {
+"dist": "Platform - Climb",
+"repo": "Platform / Extra"
+},
+"sbagman2": {
+"dist": "Platform - Climb"
+},
+"sbagmans": {
+"dist": "Platform - Climb",
+"repo": "Platform / Extra"
+},
+"sbrkout": {
+"dist": "Ball and Paddle"
+},
+"sbrkoutct": {
+"dist": "Ball and Paddle"
+},
+"sbsgomo": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"schaser": {
+"dist": "Maze"
+},
+"schasera": {
+"dist": "Maze"
+},
+"schaserb": {
+"dist": "Maze"
+},
+"schaserc": {
+"dist": "Maze"
+},
+"schasercv": {
+"dist": "Maze"
+},
+"schaserm": {
+"dist": "Maze"
+},
+"scobra": {
+"dist": "Shooter - Horizontal"
+},
+"scobrag": {
+"dist": "Shooter - Horizontal"
+},
+"scobraggi": {
+"dist": "Shooter - Horizontal"
+},
+"scobras": {
+"dist": "Shooter - Horizontal"
+},
+"scobrase": {
+"dist": "Shooter - Horizontal"
+},
+"scotrsht": {
+"dist": "Shooter - Horizontal"
+},
+"scramble": {
+"dist": "Shooter - Horizontal"
+},
+"scramblebb": {
+"dist": "Shooter - Horizontal"
+},
+"scramblebf": {
+"dist": "Shooter - Horizontal"
+},
+"scrambp": {
+"dist": "Platform - Climb"
+},
+"scramce": {
+"dist": "Shooter - Horizontal"
+},
+"scrampt": {
+"dist": "Shooter - Horizontal"
+},
+"sdgndmps": {
+"dist": "Shoot"
+},
+"sdojak": {
+"ongo": "Shooter"
+},
+"sdramtest": {
+"kuze": "Diagnostic"
+},
+"sdungeon": {
+"dist": "Shooter"
+},
+"searthie": {
+"dist": "Space / Invaders"
+},
+"searthin": {
+"dist": "Space / Invaders"
+},
+"seawolf": {
+"dist": "Shooter - Gallery"
+},
+"seawolf2": {
+"dist": "Shooter - Gallery"
+},
+"seawolfo": {
+"dist": "Army / Submarine"
+},
+"seganinj": {
+"dist": "Shooter - Gallery"
+},
+"senkyu": {
+"ongo": "Puzzle",
+"repo": "Puzzle"
+},
+"senkyua": {
+"ongo": "Puzzle",
+"repo": "Puzzle"
+},
+"sexyparo": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"sexyparoa": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"sf2ces15": {
+"ongo": "Fighting"
+},
+"sf2ces17": {
+"ongo": "Fighting"
+},
+"sf2ces21": {
+"ongo": "Fighting"
+},
+"sf2ces22": {
+"ongo": "Fighting"
+},
+"sf2ces23": {
+"ongo": "Fighting"
+},
+"sf2dkot2": {
+"ongo": "Fighting"
+},
+"sf2mix100": {
+"ongo": "Fighting"
+},
+"sf2rb": {
+"ongo": "Fighting"
+},
+"sfa2_1": {
+"ongo": "Fighting"
+},
+"sfa2_2": {
+"ongo": "Fighting"
+},
+"sfa3_1": {
+"ongo": "Fighting"
+},
+"sfa3_2": {
+"ongo": "Fighting"
+},
+"sfchamp": {
+"ongo": "Sports"
+},
+"sfchampj": {
+"ongo": "Sports"
+},
+"sfchampo": {
+"ongo": "Sports"
+},
+"sfchampu": {
+"ongo": "Sports"
+},
+"sfex": {
+"ongo": "Fighting"
+},
+"sfex2": {
+"ongo": "Fighting"
+},
+"sfex2a": {
+"ongo": "Fighting"
+},
+"sfex2h": {
+"ongo": "Fighting"
+},
+"sfex2j": {
+"ongo": "Fighting"
+},
+"sfex2p": {
+"ongo": "Fighting"
+},
+"sfex2pa": {
+"ongo": "Fighting"
+},
+"sfex2ph": {
+"ongo": "Fighting"
+},
+"sfex2pj": {
+"ongo": "Fighting"
+},
+"sfex2pu": {
+"ongo": "Fighting"
+},
+"sfex2u": {
+"ongo": "Fighting"
+},
+"sfex2u1": {
+"ongo": "Fighting"
+},
+"sfexa": {
+"ongo": "Fighting"
+},
+"sfexj": {
+"ongo": "Fighting"
+},
+"sfexp": {
+"ongo": "Fighting"
+},
+"sfexpj": {
+"ongo": "Fighting"
+},
+"sfexpj1": {
+"ongo": "Fighting"
+},
+"sfexpu1": {
+"ongo": "Fighting"
+},
+"sfexu": {
+"ongo": "Fighting"
+},
+"sfposeid": {
+"dist": "Shooter"
+},
+"sftm": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"sftm110": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"sftm111": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"sftmj112": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"sftmj114": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"sftmk112": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"sfyumeji": {
+"ongo": "Fighting"
+},
+"sfz2al_1": {
+"ongo": "Fighting"
+},
+"sfz2al_2": {
+"ongo": "Fighting"
+},
+"sfz2al_3": {
+"ongo": "Fighting"
+},
+"sfz2aljs10": {
+"ongo": "Fighting"
+},
+"sfz3mix": {
+"ongo": "Fighting"
+},
+"sfzch": {
+"ongo": "Fighting"
+},
+"sfzj": {
+"ongo": "Fighting"
+},
+"sgunner": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"sgunner2": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"sgunner2j": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"sgunnerj": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"sharrier": {
+"repo": "Shooter / 3rd Person"
+},
+"sharrier1": {
+"repo": "Shooter / 3rd Person"
+},
+"shippumd": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"shiryu2": {
+"ongo": "Platform"
+},
+"shngmtkb": {
+"ongo": "Puzzle"
+},
+"shollow": {
+"dist": "Shooter - Gallery"
+},
+"shollow2": {
+"dist": "Shooter - Gallery"
+},
+"showdown": {
+"ongo": "Shooter / Lightgun"
+},
+"shtrider": {
+"dist": "Racing"
+},
+"shtron": {
+"dist": "Shooter - Gallery"
+},
+"shuffle": {
+"dist": "Sports"
+},
+"shuttlei": {
+"dist": "Shooter - Gallery"
+},
+"sicv": {
+"dist": "Space / Invaders"
+},
+"sicv1": {
+"dist": "Space / Invaders"
+},
+"silkworm": {
+"dist": "Shooter - Horizontal"
+},
+"silkwormj": {
+"dist": "Shooter - Horizontal"
+},
+"silvland": {
+"dist": "Sports"
+},
+"sindbadm": {
+"repo": "Action"
+},
+"sinistar": {
+"dist": "Shooter - Multidirectional"
+},
+"sinistar2": {
+"dist": "Shooter - Multidirectional"
+},
+"sinistarp": {
+"dist": "Shooter - Multidirectional"
+},
+"sinistarsm25": {
+"ongo": "Shooter - Multidirectional"
+},
+"sinvemag": {
+"dist": "Space / Invaders"
+},
+"sisv": {
+"dist": "Space / Invaders"
+},
+"sisv2": {
+"dist": "Space / Invaders"
+},
+"sisv3": {
+"dist": "Space / Invaders"
+},
+"sitv": {
+"dist": "Space / Invaders"
+},
+"sitv1": {
+"dist": "Space / Invaders"
+},
+"skullxbo": {
+"dist": "Fighter",
+"ongo": "Fighter"
+},
+"skullxbo1": {
+"dist": "Fighter",
+"ongo": "Fighter"
+},
+"skullxbo2": {
+"dist": "Fighter",
+"ongo": "Fighter"
+},
+"skullxbo3": {
+"dist": "Fighter",
+"ongo": "Fighter"
+},
+"skullxbo4": {
+"dist": "Fighter",
+"ongo": "Fighter"
+},
+"skyraidr": {
+"dist": "Shooter - Gallery"
+},
+"skyrobo": {
+"coinop": "Shoot 'em up"
+},
+"skyshark": {
+"coinop": "Shoot &apos;Em Up"
+},
+"skyshark_v": {
+"ongo": "Shoot &apos;Em Up"
+},
+"skysharka": {
+"coinop": "Shoot &apos;Em Up"
+},
+"skysharka_v": {
+"ongo": "Shoot &apos;Em Up"
+},
+"skyskipr": {
+"dist": "Arena"
+},
+"skysmash": {
+"dist": "Shoot"
+},
+"slapfighb1": {
+"dist": "Shooter"
+},
+"slapfighb1_v": {
+"ongo": "Shooter"
+},
+"slapshtr": {
+"dist": "Sports / Hockey"
+},
+"slither": {
+"dist": "Shooter"
+},
+"smgp": {
+"dist": "Shooter / Flight"
+},
+"smgpd": {
+"dist": "Shooter / Flight"
+},
+"snapjack": {
+"dist": "Platform"
+},
+"sncwgltd": {
+"ongo": "Shooter"
+},
+"sngkace": {
+"dist": "Shoot 'Em Up"
+},
+"sngkacea": {
+"dist": "Shoot 'Em Up"
+},
+"snowbro2": {
+"coinop": "Platform"
+},
+"snowbros": {
+"coinop": "Platform"
+},
+"snowbrosa": {
+"coinop": "Platform"
+},
+"snowbrosb": {
+"coinop": "Platform"
+},
+"snowbrosc": {
+"coinop": "Platform"
+},
+"snowbrosd": {
+"coinop": "Platform"
+},
+"snowbrosj": {
+"coinop": "Platform"
+},
+"snowpac": {
+"dist": "Maze"
+},
+"sokonuke": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"solarfox": {
+"dist": "Shooter - Multidirectional"
+},
+"solfight": {
+"dist": "Space / Shooter"
+},
+"solomon": {
+"dist": "Platform - Climb"
+},
+"solomonj": {
+"dist": "Platform - Climb"
+},
+"solomonjs01": {
+"dist": "Platform - Climb"
+},
+"soniccar": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"sonicfgt": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"sonicfgtj": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"sonicpop": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"sonofphx": {
+"dist": "Shooter"
+},
+"sosterm": {
+"dist": "Platform"
+},
+"soulclbr": {
+"ongo": "Fighting"
+},
+"soulclbrab": {
+"ongo": "Fighting"
+},
+"soulclbrac": {
+"ongo": "Fighting"
+},
+"soulclbrja2": {
+"ongo": "Fighting"
+},
+"soulclbrjb": {
+"ongo": "Fighting"
+},
+"soulclbrjc": {
+"ongo": "Fighting"
+},
+"soulclbrub": {
+"ongo": "Fighting"
+},
+"soulclbruc": {
+"ongo": "Fighting"
+},
+"spacbat2": {
+"dist": "Shooter - Gallery"
+},
+"spacbatt": {
+"dist": "Shooter - Gallery"
+},
+"spaceace": {
+"dist": "LaserDisc"
+},
+"spaceacea": {
+"dist": "LaserDisc"
+},
+"spaceacea2": {
+"dist": "LaserDisc"
+},
+"spaceat2": {
+"dist": "Space / Invaders"
+},
+"spaceatt": {
+"dist": "Space / Invaders"
+},
+"spaceatt2k": {
+"dist": "Space / Invaders"
+},
+"spacecr": {
+"dist": "Shooter"
+},
+"spacedemon": {
+"dist": "Shoot'em up"
+},
+"spacefb": {
+"dist": "Shoot'em up"
+},
+"spacempr": {
+"dist": "Shooter - Gallery"
+},
+"spaceod": {
+"repo": "Shooter"
+},
+"spaceph": {
+"dist": "Space / Shooter"
+},
+"spaceplt": {
+"dist": "Shooter - Multidirectional"
+},
+"spacerace": {
+"dist": "Racing"
+},
+"spacerng": {
+"dist": "Space / Invaders"
+},
+"spaceskr": {
+"dist": "Shooter"
+},
+"spacewr3": {
+"dist": "Space / Invaders"
+},
+"spacezap": {
+"dist": "Shooter - Multidirectional"
+},
+"spacfury": {
+"dist": "Shooter",
+"repo": "Shooter"
+},
+"spacfurya": {
+"dist": "Shooter",
+"repo": "Shooter"
+},
+"spacmiss": {
+"dist": "Space / Galaxian"
+},
+"spacwalk": {
+"dist": "Platform / Circus"
+},
+"spartanx": {
+"dist": "Beat 'em Up"
+},
+"spatrol": {
+"dist": "Shooter - Horizontal"
+},
+"spatter": {
+"dist": "Maze"
+},
+"spceking": {
+"dist": "Space / Invaders"
+},
+"spcenctr": {
+"dist": "Shooter - Vertical"
+},
+"spclone": {
+"dist": "Shmup",
+"ongo": "Shmup"
+},
+"spcloneo": {
+"dist": "Shmup",
+"ongo": "Shmup"
+},
+"spcrocks": {
+"dist": "Shooter - Multidirectional"
+},
+"spdcoin": {
+"dist": "Puzzle"
+},
+"spec2k": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"spec2kh": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"spectar": {
+"dist": "Maze"
+},
+"spelunk2": {
+"dist": "Platform - Climb"
+},
+"spelunkr": {
+"dist": "Platform - Climb"
+},
+"spelunkrj": {
+"dist": "Platform - Climb"
+},
+"spf2t": {
+"ongo": "Puzzle"
+},
+"spf2tu": {
+"ongo": "Puzzle"
+},
+"spf2xj": {
+"ongo": "Puzzle"
+},
+"spiero": {
+"ongo": "Platform",
+"meat": "Platform"
+},
+"splat": {
+"dist": "Shooter - Multidirectional"
+},
+"sprglbpg": {
+"dist": "Platform - Climb"
+},
+"sprint1": {
+"dist": "Racing"
+},
+"sprint2": {
+"dist": "Racing"
+},
+"sprint2a": {
+"dist": "Racing"
+},
+"spyhunt": {
+"dist": "Shooter - Vertical"
+},
+"spyhuntp": {
+"dist": "Shooter - Vertical"
+},
+"sqbert": {
+"dist": "Platform - Climb"
+},
+"squaitsa": {
+"dist": "Sports"
+},
+"srdmissn": {
+"dist": "Shooter"
+},
+"srmvs": {
+"dist": "Mahjong"
+},
+"srmvsa": {
+"dist": "Mahjong"
+},
+"ssf2t_3": {
+"ongo": "Fighting"
+},
+"ssf2t_4": {
+"ongo": "Fighting"
+},
+"ssf2t_5": {
+"ongo": "Fighting"
+},
+"ssf2tnl_9": {
+"ongo": "Fighting"
+},
+"ssf2us2": {
+"ongo": "Fighting"
+},
+"ssmissin": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"ssoldier": {
+"dist": "Fighter"
+},
+"ssonicbr": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"ssprint": {
+"dist": "Arcade"
+},
+"ssprint1": {
+"dist": "Arcade"
+},
+"ssprint3": {
+"dist": "Arcade"
+},
+"ssprintf": {
+"dist": "Arcade"
+},
+"ssprintg": {
+"dist": "Arcade"
+},
+"ssprintg1": {
+"dist": "Arcade"
+},
+"ssprints": {
+"dist": "Arcade"
+},
+"sstriker": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"sstrikerk": {
+"coinop": "Shoot'em up",
+"repo": "Shoot'em up"
+},
+"stagger1": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"stapper": {
+"dist": "Action"
+},
+"stapper1": {
+"dist": "Action"
+},
+"starfgh2": {
+"dist": "Shooter - Gallery"
+},
+"starfght": {
+"dist": "Shooter - Gallery"
+},
+"starforc": {
+"dist": "Shooter - Vertical"
+},
+"stargate": {
+"dist": "Shooter - Horizontal"
+},
+"starglad": {
+"ongo": "Fighting"
+},
+"stargladj": {
+"ongo": "Fighting"
+},
+"stargld2": {
+"ongo": "Fighting"
+},
+"stargrds": {
+"dist": "Shooter - Multidirectional"
+},
+"starjack": {
+"dist": "Shooter - Vertical"
+},
+"starjacks": {
+"dist": "Shooter - Vertical"
+},
+"starslayer": {
+"dist": "Shooter - Multidirectional"
+},
+"starsldr": {
+"dist": "Shooter"
+},
+"startrek": {
+"dist": "Shooter",
+"repo": "Shooter"
+},
+"starwars": {
+"dist": "Shooter"
+},
+"steelwkr": {
+"dist": "Platform"
+},
+"stg": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"stkclmns": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"stkclmnsj": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"strahl": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"strahlj": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"strahlja": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"strahljbl": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"stratgys": {
+"dist": "Shooter - Multidirectional"
+},
+"stratgyx": {
+"dist": "Shooter - Multidirectional"
+},
+"strider2": {
+"ongo": "Platform"
+},
+"strider2a": {
+"ongo": "Platform"
+},
+"strider2u": {
+"ongo": "Platform"
+},
+"strkfgtr": {
+"ongo": "Shooter / Flight",
+"repo": "Shooter / Flight"
+},
+"strkfgtrj": {
+"ongo": "Shooter / Flight",
+"repo": "Shooter / Flight"
+},
+"strongx": {
+"dist": "Shooter - Multidirectional"
+},
+"stunrun": {
+"ongo": "Racing",
+"meat": "Racing"
+},
+"subs": {
+"dist": "Racing"
+},
+"sucasino": {
+"dist": "Platform"
+},
+"sumeltob": {
+"dist": "Maze"
+},
+"sumelton": {
+"dist": "Maze"
+},
+"supbtime": {
+"coinop": "Platform"
+},
+"supbtimea": {
+"coinop": "Platform"
+},
+"supbtimej": {
+"coinop": "Platform"
+},
+"superdog": {
+"dist": "Shooter - Gallery"
+},
+"superdq": {
+"dist": "LaserDisc"
+},
+"superpac": {
+"dist": "Maze"
+},
+"superpacm": {
+"dist": "Maze"
+},
+"suprheli": {
+"dist": "Shooter - Horizontal"
+},
+"suprloco": {
+"dist": "Labyrinth / Maze"
+},
+"suprlocoo": {
+"dist": "Labyrinth / Maze"
+},
+"sutapper": {
+"dist": "Action"
+},
+"suzuk8h2": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"suzuk8h2j": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"suzuka8h": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"suzuka8hj": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"swa": {
+"ongo": "Shooter"
+},
+"swaj": {
+"ongo": "Shooter"
+},
+"swarm": {
+"dist": "Shooter - Gallery"
+},
+"swat": {
+"dist": "Shooter - Multidirectional"
+},
+"swcourt": {
+"ongo": "Sports",
+"repo": "Sports"
+},
+"swcourtb": {
+"ongo": "Sports",
+"repo": "Sports"
+},
+"swcourtj": {
+"ongo": "Sports",
+"repo": "Sports"
+},
+"swipeout": {
+"dist": "Space / Invaders"
+},
+"sws": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"sws92": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"sws92g": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"sws93": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"sws98": {
+"ongo": "Sports"
+},
+"sws99": {
+"ongo": "Sports"
+},
+"sxevious": {
+"dist": "Shooter - Vertical"
+},
+"szaxxon": {
+"dist": "Shooter - Isometric"
+},
+"tacscan": {
+"dist": "Shooter",
+"repo": "Shooter"
+},
+"talbot": {
+"dist": "Maze"
+},
+"tankbatt": {
+"dist": "Maze"
+},
+"tantr": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"tantrbl": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"tantrbl2": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"tantrbl3": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"tantrbl4": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"tantrkor": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"tapper": {
+"dist": "Action"
+},
+"tappera": {
+"dist": "Action"
+},
+"tapperb": {
+"dist": "Action"
+},
+"tapperg": {
+"dist": "Action"
+},
+"targ": {
+"dist": "Maze"
+},
+"tazmania": {
+"dist": "Shooter - Multidirectional"
+},
+"tblkkuzu": {
+"ongo": "Puzzle"
+},
+"tbyahhoo": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"tdragon": {
+"coinop": "Shoot'em Up",
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"tdragon1": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"tdragon2": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"tdragon2a": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"tdragon3h": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"tdragonb": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"tdragonb3": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"techromn": {
+"ongo": "Fighting"
+},
+"techromna": {
+"ongo": "Fighting"
+},
+"techromnu": {
+"ongo": "Fighting"
+},
+"teddybb": {
+"dist": "Platform"
+},
+"tekipaki": {
+"coinop": "Puzzle"
+},
+"tekken": {
+"ongo": "Fighting"
+},
+"tekken3": {
+"ongo": "Fighting"
+},
+"tekken3a": {
+"ongo": "Fighting"
+},
+"tekken3b": {
+"ongo": "Fighting"
+},
+"tekken3c": {
+"ongo": "Fighting"
+},
+"tekken3d": {
+"ongo": "Fighting"
+},
+"tekken3ja": {
+"ongo": "Fighting"
+},
+"tekken3jd": {
+"ongo": "Fighting"
+},
+"tekken3je1": {
+"ongo": "Fighting"
+},
+"tekken3ua": {
+"ongo": "Fighting"
+},
+"tekken3ud": {
+"ongo": "Fighting"
+},
+"tekkenac": {
+"ongo": "Fighting"
+},
+"tekkenb": {
+"ongo": "Fighting"
+},
+"tekkenjb": {
+"ongo": "Fighting"
+},
+"tektagt": {
+"ongo": "Fighting"
+},
+"tektagtjc1": {
+"ongo": "Fighting"
+},
+"tektagtub": {
+"ongo": "Fighting"
+},
+"tektagtuc1": {
+"ongo": "Fighting"
+},
+"tempest": {
+"dist": "Shooter - Tube",
+"repo": "Shooter - Tube"
+},
+"tengai": {
+"dist": "Shoot 'Em Up"
+},
+"tengaij": {
+"dist": "Shoot 'Em Up"
+},
+"terracre": {
+"coinop": "Shoot 'em up"
+},
+"terracre_v": {
+"ongo": "Shoot 'em up"
+},
+"terracrea": {
+"coinop": "Shoot 'em up"
+},
+"terracrea_v": {
+"ongo": "Shoot 'em up"
+},
+"terracreo": {
+"coinop": "Shoot 'em up"
+},
+"terracreo_v": {
+"ongo": "Shoot 'em up"
+},
+"terraf": {
+"coinop": "Shoot 'em up"
+},
+"terrafj": {
+"coinop": "Shoot 'em up"
+},
+"terrafu": {
+"coinop": "Shoot 'em up"
+},
+"tetrisse": {
+"dist": "Puzzle / Drop"
+},
+"tfrceac": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"tfrceacb": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"tfrceacj": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"tfrceacjpb": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"tgmj": {
+"ongo": "Puzzle"
+},
+"tharrier": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"tharrierb": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"tharrieru": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"thayers": {
+"dist": "LaserDisc"
+},
+"theend": {
+"dist": "Shooter - Gallery"
+},
+"theends": {
+"dist": "Shooter - Gallery"
+},
+"theglobp": {
+"dist": "Platform - Climb"
+},
+"theroes": {
+"dist": "Fighting"
+},
+"theroesa": {
+"dist": "Fighting"
+},
+"thndblst": {
+"dist": "Shooter"
+},
+"thndrbld": {
+"dist": "Shooter / Flight"
+},
+"thndrbld1": {
+"dist": "Shooter / Flight"
+},
+"thndrbldd": {
+"dist": "Shooter / Flight"
+},
+"thndzone": {
+"coinop": "Run &amp; Gun"
+},
+"thndzone4": {
+"coinop": "Run &amp; Gun"
+},
+"thndzonea": {
+"coinop": "Run &amp; Gun"
+},
+"thndzonej": {
+"coinop": "Run &amp; Gun"
+},
+"thunderl": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"thunderla": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"tigerhb1": {
+"dist": "Shooter"
+},
+"tigerhb1_v": {
+"ongo": "Shooter"
+},
+"timber": {
+"dist": "Action"
+},
+"timecris": {
+"ongo": "Arcade",
+"repo": "Shooter"
+},
+"timekill": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"timekill100": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"timekill120": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"timekill121": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"timekill121a": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"timekill131": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"timekill132i": {
+"slop": "Fighting",
+"ongo": "Fighting"
+},
+"timeplt": {
+"dist": "Shooter - Multidirectional"
+},
+"timeplta": {
+"dist": "Shooter - Multidirectional"
+},
+"timepltc": {
+"dist": "Shooter - Multidirectional"
+},
+"timetunl": {
+"dist": "Action"
+},
+"tinklpit": {
+"ongo": "Action",
+"repo": "Action"
+},
+"tinstar": {
+"dist": "Action"
+},
+"tinstara": {
+"dist": "Action"
+},
+"tiptop": {
+"dist": "Isometric Platform"
+},
+"tkmmpzdm": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"tmht": {
+"repo": "Beat 'em up"
+},
+"tmht22pe": {
+"coinop": "Beat'em up"
+},
+"tmht24pe": {
+"coinop": "Beat'em up"
+},
+"tmht2p": {
+"repo": "Beat 'em up"
+},
+"tmhta": {
+"repo": "Beat 'em up"
+},
+"tmnt": {
+"repo": "Beat 'em up"
+},
+"tmnt2": {
+"coinop": "Beat'em up"
+},
+"tmnt22pu": {
+"coinop": "Beat'em up"
+},
+"tmnt24pu": {
+"coinop": "Beat'em up"
+},
+"tmnt2a": {
+"coinop": "Beat'em up"
+},
+"tmnt2o": {
+"coinop": "Beat'em up"
+},
+"tmnt2pj": {
+"repo": "Beat 'em up"
+},
+"tmntj": {
+"repo": "Beat 'em up"
+},
+"tmntu": {
+"repo": "Beat 'em up"
+},
+"tmntua": {
+"repo": "Beat 'em up"
+},
+"tmntub": {
+"repo": "Beat 'em up"
+},
+"tmntuc": {
+"repo": "Beat 'em up"
+},
+"tndrcade": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"tndrcadej": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"tnk3": {
+"dist": "Shooter / Driving Vertical"
+},
+"tnk3j": {
+"dist": "Shooter / Driving Vertical"
+},
+"todruaga": {
+"dist": "Maze"
+},
+"todruagao": {
+"dist": "Maze"
+},
+"todruagas": {
+"dist": "Maze"
+},
+"tokkae": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"tomagic": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"tondemo": {
+"ongo": "Action"
+},
+"topgunbl": {
+"dist": "Shooter - Multidirectional"
+},
+"topgunr": {
+"dist": "Shooter - Multidirectional"
+},
+"topracer": {
+"dist": "Driving"
+},
+"topracera": {
+"dist": "Driving"
+},
+"topsecex": {
+"ongo": "Driving"
+},
+"tornbase": {
+"dist": "Sports / Baseball"
+},
+"tp84": {
+"dist": "Shooter - Multidirectional"
+},
+"tp84a": {
+"dist": "Shooter - Multidirectional"
+},
+"tp84b": {
+"dist": "Shooter - Multidirectional"
+},
+"transfrm": {
+"dist": "Shooter"
+},
+"travrusa": {
+"dist": "Racing"
+},
+"travrusab": {
+"dist": "Racing"
+},
+"triothep": {
+"dist": "Action"
+},
+"triothepj": {
+"dist": "Action"
+},
+"troangel": {
+"dist": "Sports"
+},
+"tron": {
+"dist": "Shooter - Multidirectional"
+},
+"tron2": {
+"dist": "Arena"
+},
+"tron3": {
+"dist": "Arena"
+},
+"tron4": {
+"dist": "Arena"
+},
+"tron5": {
+"dist": "Arena"
+},
+"tronger": {
+"dist": "Arena"
+},
+"trukker": {
+"dist": "Maze"
+},
+"truxton2": {
+"coinop": "Shoot'em up"
+},
+"truxton2rs": {
+"ongo": "Shoot'em up"
+},
+"ts2": {
+"ongo": "Fighting"
+},
+"ts2j": {
+"ongo": "Fighting"
+},
+"ts2ja": {
+"ongo": "Fighting"
+},
+"ts2u": {
+"ongo": "Fighting"
+},
+"ts2ua": {
+"ongo": "Fighting"
+},
+"tshoot": {
+"dist": "Shooter - Gun"
+},
+"tst_invd": {
+"dist": "Space / Invaders"
+},
+"tumblep": {
+"coinop": "Platform"
+},
+"tumblepj": {
+"coinop": "Platform"
+},
+"turbo": {
+"dist": "Driving - Race",
+"repo": "Driving - Race"
+},
+"turbotag": {
+"dist": "Arena"
+},
+"turtles": {
+"dist": "Maze"
+},
+"tutankhm": {
+"dist": "Maze"
+},
+"tutankhm2": {
+"dist": "Maze"
+},
+"tutankhmb": {
+"dist": "Maze"
+},
+"tutankhms": {
+"dist": "Maze"
+},
+"twcupmil": {
+"ongo": "Sports"
+},
+"twinactn": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"twinbee": {
+"dist": "Shmup"
+},
+"twinbeeb": {
+"dist": "Shmup"
+},
+"twincobr": {
+"coinop": "Shoot &apos;Em Up"
+},
+"twincobr_v": {
+"ongo": "Shoot &apos;Em Up"
+},
+"twincobru": {
+"coinop": "Shoot &apos;Em Up"
+},
+"twincobru_v": {
+"ongo": "Shoot &apos;Em Up"
+},
+"twineagl": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"twinsqua": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"twintwst": {
+"ongo": "Shoot'em up"
+},
+"twintwstj": {
+"ongo": "Shoot'em up"
+},
+"twintwstu": {
+"ongo": "Shoot'em up"
+},
+"twintwstw": {
+"ongo": "Shoot'em up"
+},
+"twocrude": {
+"coinop": "Beat &apos;Em Up"
+},
+"twocrudea": {
+"coinop": "Beat &apos;Em Up"
+},
+"twotigerc": {
+"dist": "Shooter - Gallery"
+},
+"twrshaft": {
+"dist": "Puzzle"
+},
+"tylz": {
+"dist": "Platform"
+},
+"uccops": {
+"dist": "Fighter"
+},
+"uccopsar": {
+"dist": "Fighter"
+},
+"uccopsaru": {
+"dist": "Fighter"
+},
+"uccopsj": {
+"dist": "Fighter"
+},
+"uccopsu": {
+"dist": "Fighter"
+},
+"ultra2": {
+"dist": "Maze"
+},
+"ultrainv": {
+"dist": "Space / Invaders"
+},
+"ultratnk": {
+"dist": "Shooter - Multidirectional"
+},
+"umanclub": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"uniwars": {
+"dist": "Shooter - Gallery"
+},
+"uniwarsa": {
+"dist": "Shooter - Gallery"
+},
+"uopoko": {
+"dist": "Puzzle"
+},
+"uopokoj": {
+"dist": "Puzzle"
+},
+"upndown": {
+"dist": "Racing"
+},
+"usvsthem": {
+"dist": "LaserDisc"
+},
+"valkyrie": {
+"ongo": "Arcade",
+"kuze": "Arcade"
+},
+"vandyke": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"vandykeb": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"vandykejal": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"vandykejal2": {
+"ongo": "Shooter",
+"kuze": "Shooter"
+},
+"vanguard": {
+"dist": "Shooter"
+},
+"vanvan": {
+"dist": "Maze"
+},
+"vanvanb": {
+"dist": "Maze"
+},
+"vanvank": {
+"dist": "Maze"
+},
+"vaportra": {
+"coinop": "Shoot &apos;Em Up"
+},
+"vaportrau": {
+"coinop": "Shoot &apos;Em Up"
+},
+"vastar": {
+"dist": "Shooter"
+},
+"vastar2": {
+"dist": "Shooter"
+},
+"vastar3": {
+"dist": "Shooter"
+},
+"vastar4": {
+"dist": "Shooter"
+},
+"vautour": {
+"dist": "Shooter - Gallery"
+},
+"vautourza": {
+"dist": "Shooter - Gallery"
+},
+"vball": {
+"dist": "Sports"
+},
+"vballb": {
+"dist": "Sports"
+},
+"vcrunchy": {
+"dist": "Maze"
+},
+"vecbaby": {
+"dist": "Maze"
+},
+"vecbaby2": {
+"dist": "Maze"
+},
+"vecbaby3": {
+"dist": "Maze"
+},
+"vecpac": {
+"dist": "Maze"
+},
+"vecpengo": {
+"dist": "Maze"
+},
+"vectiped": {
+"dist": "Shooter - Gallery"
+},
+"vectplus": {
+"dist": "Maze / Pac-Man"
+},
+"vectrped": {
+"dist": "Shooter - Gallery"
+},
+"vectxens": {
+"dist": "Maze"
+},
+"venture": {
+"dist": "Adventure"
+},
+"venus": {
+"dist": "Shooter - Tube",
+"repo": "Space / Shooter"
+},
+"vf": {
+"ongo": "Fighter"
+},
+"vfive": {
+"slop": "Shoot'em up",
+"ongo": "Shoot'em up"
+},
+"vformula": {
+"ongo": "Driving"
+},
+"vgalaga": {
+"dist": "Shooter - Gallery"
+},
+"vgalagaf": {
+"dist": "Shooter - Gallery"
+},
+"vgalagam": {
+"dist": "Shooter - Gallery"
+},
+"vhangly": {
+"dist": "Maze"
+},
+"victorycb": {
+"dist": "Shooter - Multidirectional"
+},
+"victroad": {
+"dist": "Action"
+},
+"vindctr2": {
+"dist": "Shooter - Multidirectional"
+},
+"vindctr2r1": {
+"dist": "Shooter - Multidirectional"
+},
+"vindctr2r2": {
+"dist": "Shooter - Multidirectional"
+},
+"viprp1": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"viprp1h": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"viprp1hk": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"viprp1j": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"viprp1k": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"viprp1oj": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"viprp1ot": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"viprp1pt": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"viprp1s": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"viprp1t": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"viprp1u": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"viprp1ua": {
+"ongo": "Shooter",
+"repo": "Shooter"
+},
+"vivdolls": {
+"dist": "Puzzle"
+},
+"vortex": {
+"dist": "Shooter - Multidirectional"
+},
+"vpacbell": {
+"dist": "Maze"
+},
+"vpacelec": {
+"dist": "Maze"
+},
+"vpacjail": {
+"dist": "Maze"
+},
+"vpacms1": {
+"dist": "Maze"
+},
+"vpacms2": {
+"dist": "Maze"
+},
+"vpacms3": {
+"dist": "Maze"
+},
+"vpacms4": {
+"dist": "Maze"
+},
+"vpacmsa1": {
+"dist": "Maze"
+},
+"vpacmsa2": {
+"dist": "Maze"
+},
+"vpacmsa3": {
+"dist": "Maze"
+},
+"vpacmsa4": {
+"dist": "Maze"
+},
+"vpacshuf": {
+"dist": "Maze"
+},
+"vpspeed": {
+"dist": "Maze"
+},
+"vr": {
+"ongo": "Driving"
+},
+"vsav2en": {
+"ongo": "Fighting"
+},
+"vsav_4": {
+"ongo": "Fighting"
+},
+"vsav_5": {
+"ongo": "Fighting"
+},
+"wacko": {
+"dist": "Shooter - Multidirectional"
+},
+"wardner": {
+"coinop": "Platform"
+},
+"wardnerj": {
+"coinop": "Platform"
+},
+"warofbug": {
+"dist": "Shooter - Gallery"
+},
+"warofbugu": {
+"dist": "Shooter - Gallery"
+},
+"warriorb": {
+"dist": "Platform / Fight"
+},
+"waterski": {
+"dist": "Racing"
+},
+"wboy": {
+"dist": "Platform"
+},
+"wexpress": {
+"dist": "Platform / Fighter Scrolling"
+},
+"whodunit": {
+"ongo": "Shooter / Lightgun"
+},
+"whoopee": {
+"coinop": "Platform"
+},
+"wingforc": {
+"ongo": "Shooter / Flying Vertical"
+},
+"wingwar": {
+"ongo": "Simulation"
+},
+"wingwar360": {
+"ongo": "Simulation"
+},
+"wingwarj": {
+"ongo": "Simulation"
+},
+"wingwaru": {
+"ongo": "Simulation"
+},
+"winspike": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"winspikea": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"winspikej": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"wits": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"wizdfire": {
+"coinop": "Hack &amp; Slash"
+},
+"wizdfirea": {
+"coinop": "Hack &amp; Slash"
+},
+"wizdfireu": {
+"coinop": "Hack &amp; Slash"
+},
+"wmatch": {
+"dist": "Sports"
+},
+"wofch_1": {
+"ongo": "Fighting"
+},
+"wolffang": {
+"coinop": "Run &amp; Gun"
+},
+"woodpeck": {
+"dist": "Platform - Climb"
+},
+"wow": {
+"dist": "Shooter - Multidirectional"
+},
+"wrofaero": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"wwanpanm": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"wwanpanmo": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"wwestern": {
+"dist": "Shooter"
+},
+"wwestern1": {
+"dist": "Shooter"
+},
+"wwfwfest": {
+"ongo": "Wrestling"
+},
+"wwfwfestj": {
+"ongo": "Wrestling"
+},
+"wwfwfestk": {
+"ongo": "Wrestling"
+},
+"wwfwfestu": {
+"ongo": "Wrestling"
+},
+"wwfwfestu1": {
+"ongo": "Wrestling"
+},
+"wwjumbo": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"wwmarine": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"wwpajero": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"xensad": {
+"dist": "Maze"
+},
+"xensrev": {
+"dist": "Maze"
+},
+"xeviblk": {
+"dist": "Shooter - Vertical"
+},
+"xevios": {
+"dist": "Shooter - Vertical"
+},
+"xevious": {
+"dist": "Shooter - Vertical"
+},
+"xevious3": {
+"dist": "Shooter - Vertical"
+},
+"xevious4": {
+"dist": "Shooter - Vertical"
+},
+"xevious5": {
+"dist": "Shooter - Vertical"
+},
+"xevioush": {
+"dist": "Shooter - Vertical"
+},
+"xmcota_1": {
+"ongo": "Fighting"
+},
+"xmcota_2": {
+"ongo": "Fighting"
+},
+"xmultiplm72": {
+"dist": "Shooter"
+},
+"xmultiplm72inv": {
+"dist": "Shooter"
+},
+"xsleenab": {
+"dist": "Platform / Shooter Scrolling"
+},
+"xsleenaba": {
+"dist": "Platform / Shooter Scrolling"
+},
+"yanchamr": {
+"dist": "Platform"
+},
+"yellowcbb": {
+"ongo": "Driving"
+},
+"yellowcbj": {
+"ongo": "Driving",
+"meat": "Driving"
+},
+"yosakdon": {
+"dist": "Sports / Shooting"
+},
+"yosakdona": {
+"dist": "Sports / Shooting"
+},
+"youjyudn": {
+"dist": "Shooter - Vertical"
+},
+"youma": {
+"ongo": "Platform"
+},
+"youma2": {
+"ongo": "Platform"
+},
+"youmab": {
+"ongo": "Platform"
+},
+"youmab2": {
+"ongo": "Platform"
+},
+"zaxxon": {
+"dist": "Shooter - Isometric"
+},
+"zektor": {
+"dist": "Shooter",
+"repo": "Shooter"
+},
+"zerotime": {
+"dist": "Shooter - Gallery"
+},
+"zerotimemc": {
+"dist": "Shooter - Gallery"
+},
+"zerowing": {
+"coinop": "Shoot'em up"
+},
+"zerowing1": {
+"coinop": "Shoot'em up"
+},
+"zerowingw": {
+"coinop": "Shoot'em up"
+},
+"zigzagb": {
+"dist": "Maze"
+},
+"zigzagb2": {
+"dist": "Maze"
+},
+"zingzip": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"zombraid": {
+"ongo": "Arcade",
+"repo": "Arcade"
+},
+"zookeep": {
+"dist": "Arcade"
+},
+"zunkyou": {
+"ongo": "Arcade",
+"arcfpga": "Arcade",
+"repo": "Arcade"
+},
+"zzyzzyxx": {
+"dist": "Platform"
 }
 }
 }

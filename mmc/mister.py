@@ -59,6 +59,7 @@ EXTRA_REPOS = [
     ("repo", "kyledlester/Namco_NB1_MiSTer", ["MRA"]),
     ("repo", "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer", ["MRA"]),
     ("repo", "ppriest/Arcade-HyperNG64_MiSTer", None),
+    ("repo", "shmupfan/Arcade-1945kIII_MiSTer", None),
 ]
 
 # Developer "downloader" databases (what update_all installs from downloader.ini). Their
@@ -248,7 +249,7 @@ def read_blobs(d: str, specs: list[str]) -> dict[str, bytes | None]:
 
 # --- MRA parsing -----------------------------------------------------------------------------
 
-_TAG = re.compile(r"<(setname|rbf|name|mameversion|year|manufacturer|parent)\b[^>]*>\s*(.*?)\s*</\1>", re.S | re.I)
+_TAG = re.compile(r"<(setname|rbf|name|mameversion|year|manufacturer|parent|category)\b[^>]*>\s*(.*?)\s*</\1>", re.S | re.I)
 
 
 def parse_mra_text(s: str) -> dict:

@@ -6,6 +6,7 @@ import datetime as dt
 import os
 import re
 
+from . import genre as genre_mod
 from . import mame as mame_mod
 from . import mister as mister_mod
 
@@ -184,7 +185,13 @@ def observe(mister: dict) -> dict:
     for cid, target in alias.items():
         cores[target].setdefault("aliases", []).append(cid)
         del cores[cid]
-    return {"cores": cores, "support": {k: v for k, v in support.items() if v}}
+    # MRA <category> tags, per set and source (kept in the ledger for the genre step).
+    categories: dict[str, dict[str, str]] = collections.defaultdict(dict)
+    for m in mister["mras"]:
+        cat = (m.get("category") or "").strip()
+        if cat and m.get("setname"):
+            categories[m["setname"]].setdefault(m["source"], cat)
+    return {"cores": cores, "support": {k: v for k, v in support.items() if v}, "categories": dict(categories)}
 
 
 def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
@@ -193,6 +200,7 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
     cores = ledger["cores"]
     support = ledger["support"]
     mister_meta = mister_meta or {}
+    genres, genre_summary = genre_mod.resolve(machines, ledger.get("categories", {}))
 
     # 3. Earliest date per set across cores; earliest per title across its sets.
     def earliest(recs):
@@ -238,6 +246,7 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
         covered_working = [s for s in working_sets if s["cores"]]
         all_cores = sorted({r["core"] for s in sets for r in s["cores"]})
         cat = mame_mod.classify(pm)
+        g = genres.get(parent) or next((genres[s["name"]] for s in sets if s["name"] in genres), None)
         out_titles.append({
             "name": parent,
             "desc": pm["desc"],
@@ -245,6 +254,10 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
             "manufacturer": pm["manufacturer"],
             "sourcefile": pm["sourcefile"],
             "category": cat,
+            "genre": g["genre"] if g else None,
+            "genre_raw": g["raw"] if g else None,
+            "genre_source": g["source"] if g else None,
+            "mature": bool(g and g["mature"]),
             "working": any(s["working"] for s in sets),
             "status": pm["status"],
             "rotate": pm["rotate"],
@@ -315,6 +328,7 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
         "alamone_generated": mister_meta.get("alamone_generated"),
         "ledger_updated": ledger["meta"].get("updated"),
         "ledger_runs": ledger["meta"].get("runs", [])[-5:],
+        "genre": genre_summary,
         "sources": mister_mod.DB_TITLES,
         "repos": mister_meta.get("repos", []),
         "repo_errors": mister_meta.get("errors", []),

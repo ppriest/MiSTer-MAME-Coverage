@@ -47,6 +47,7 @@ def save(ledger: dict) -> None:
     os.makedirs(paths.DATA, exist_ok=True)
     ledger["support"] = {k: dict(sorted(v.items())) for k, v in sorted(ledger["support"].items())}
     ledger["cores"] = dict(sorted(ledger["cores"].items()))
+    ledger["categories"] = dict(sorted(ledger.get("categories", {}).items()))
     tmp = LEDGER + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(ledger, f, ensure_ascii=False, indent=0, sort_keys=False)
@@ -101,6 +102,9 @@ def merge(ledger: dict, observed: dict, note: str = "") -> dict:
             old["wip"] = old.get("wip", False) and rec.get("wip", False)
             old["alt"] = old.get("alt", False) and rec.get("alt", False)
             old["last_seen"] = today
+    cats = ledger.setdefault("categories", {})
+    for setn, per_src in observed.get("categories", {}).items():
+        cats.setdefault(setn, {}).update(per_src)
     summary = {"date": today, "note": note, "cores": added_cores, "sets": added_sets, "pairs": added_pairs, "dates_improved": updated_dates}
     ledger["meta"]["updated"] = today
     ledger["meta"]["runs"] = (ledger["meta"].get("runs") or [])[-50:] + [summary]
