@@ -35,6 +35,7 @@ CATVER_URLS = [
 ]
 MAD_CSV_URL = "https://raw.githubusercontent.com/MiSTer-devel/ArcadeDatabase_MiSTer/main/ArcadeDatabase.csv"
 GENRE_MAP = os.path.join(paths.DATA, "genre_map.json")
+GENRE_OVERRIDES = os.path.join(paths.DATA, "genre_overrides.json")
 
 
 def _fetch(url: str, dest: str) -> str | None:
@@ -209,7 +210,22 @@ def resolve(machines: dict, mra_categories: dict[str, dict[str, str]]) -> tuple[
         if name not in out and m.get("cloneof") in out:
             out[name] = dict(out[m["cloneof"]], source="parent")
 
+    # Per-set overrides (data/genre_overrides.json), e.g. from tools/reconcile_shmups.py. A parent's
+    # override cascades to its clones; a clone's applies to that set only.
+    overrides: dict[str, str] = {}
+    if os.path.exists(GENRE_OVERRIDES):
+        with open(GENRE_OVERRIDES, encoding="utf-8") as f:
+            overrides = {k.lower(): v for k, v in json.load(f).get("sets", {}).items()}
+    applied = 0
+    for name, m in machines.items():
+        g = overrides.get(name) or (overrides.get(m["cloneof"]) if m.get("cloneof") else None)
+        if g:
+            prev = out.get(name) or {"raw": None, "mature": False}
+            out[name] = {"genre": g, "raw": prev["raw"], "source": "override", "mature": prev["mature"]}
+            applied += 1
+
     summary = {
+        "overrides": applied,
         "catver": catver_origin, "catver_entries": len(catver), "mad_entries": len(mad),
         "mra_entries": len(mra_categories),
         "unmapped": [{"raw": k, "sets": v} for k, v in unmapped.most_common(100)],

@@ -103,7 +103,9 @@ them weekly, committing the updated ledger and page data when anything changed.
 ```
 mmc/           the tool (mame.py, mister.py, ledger.py, genre.py, reconcile.py, report.py)
 data/          ledger.json (the committed, incrementally merged record of MiSTer coverage),
-               genre_map.json (raw category strings -> common genres), optional catver.ini
+               genre_map.json (raw category strings -> common genres), genre_overrides.json
+               (per-set corrections), optional catver.ini
+tools/         reconcile_shmups.py: compare the Shmup genre with shmupfan/shmup-deck
 docs/          the static site: index.html, app.js, style.css, data/*.json
 work/          caches and clones (git-ignored)
 ```
