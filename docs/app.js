@@ -67,18 +67,33 @@
   }
 
   // ---------- charts ----------
-  // The charts follow the Titles filters, all except Coverage: a coverage chart restricted to
-  // uncovered titles would be empty. chartScope() returns the titles and how to count their sets.
+  // The charts follow the Titles filters. They only make sense with Coverage set to "all" (a
+  // coverage chart of only-uncovered titles is all zeros), so with any other Coverage value the
+  // charts box is collapsed and disabled. chartScope() returns the titles and how to count sets.
   function chartScope() {
     const f = readFilters();
-    const g = { ...f, cov: "all" };
-    const titles = S.titles.filter(t => titleMatches(t, g));
+    const titles = S.titles.filter(t => titleMatches(t, f));
     const setOk = f.work === "all" ? () => true : f.work === "notworking" ? s => !s.working : s => s.working;
     const covered = f.work === "working" ? t => t.ncovered_working > 0 : t => t.covered;
     const date = f.work === "working" ? t => t.date_working : t => t.date;
     return { titles, setOk, covered, date, work: f.work };
   }
-  function renderCharts() { renderTimeChart(); renderYearChart(); renderGenreChart(); renderGenrePctChart(); }
+  function renderCharts() {
+    const box = $("#charts-box"), note = $("#charts-note");
+    const enabled = readFilters().cov === "all";
+    S.chartsLock = true;
+    if (!enabled) {
+      box.open = false; box.classList.add("disabled");
+      note.textContent = "";
+    } else {
+      box.classList.remove("disabled");
+      note.textContent = "for the titles matching the filters above";
+      let open = true; try { open = localStorage.getItem("charts-open") !== "0"; } catch (e) { /* storage unavailable */ }
+      box.open = open;
+    }
+    S.chartsLock = false;
+    if (enabled) { renderTimeChart(); renderYearChart(); renderGenreChart(); renderGenrePctChart(); }
+  }
 
   function monthKey(d) { return d.slice(0, 7); }
   function addMonths(key, n) { let [y, m] = key.split("-").map(Number); m += n; y += Math.floor((m - 1) / 12); m = ((m - 1) % 12 + 12) % 12 + 1; return `${y}-${String(m).padStart(2, "0")}`; }
@@ -448,8 +463,8 @@
     $("#mame-ver").textContent = data.meta.mame_version.replace(/^0/, "0.");
     renderTiles(); populateSelects(); renderStatic();
     const box = $("#charts-box");
-    try { if (localStorage.getItem("charts-open") === "0") box.open = false; } catch (e) { /* storage unavailable */ }
-    box.addEventListener("toggle", () => { try { localStorage.setItem("charts-open", box.open ? "1" : "0"); } catch (e) { /* ignore */ } });
+    box.addEventListener("toggle", () => { if (S.chartsLock || box.classList.contains("disabled")) return; try { localStorage.setItem("charts-open", box.open ? "1" : "0"); } catch (e) { /* ignore */ } });
+    box.querySelector("summary").addEventListener("click", ev => { if (box.classList.contains("disabled")) ev.preventDefault(); });
     readHash();
     $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓";
     applyTitles(); applyDrivers(); applyCores();
