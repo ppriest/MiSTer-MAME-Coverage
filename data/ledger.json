@@ -58,6 +58,14 @@
 "sets": 0,
 "pairs": 0,
 "dates_improved": 0
+},
+{
+"date": "2026-10-04",
+"note": "alamone 2026-10-01",
+"cores": 11,
+"sets": 47,
+"pairs": 89,
+"dates_improved": 7
 }
 ]
 },
@@ -4486,8 +4494,8 @@
 "source_title": "MiSTer official distribution",
 "channel": null,
 "rbf": "Rampart.rbf",
-"repo": "MiSTer-devel/Arcade-Rampart_MiSTer",
-"url": "https://github.com/MiSTer-devel/Arcade-Rampart_MiSTer",
+"repo": "MiSTer-devel/Distribution_MiSTer",
+"url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
 "build_date": null,
 "status": null,
 "reading": null,
@@ -5913,6 +5921,24 @@
 "aliases": [],
 "last_seen": "2026-10-04"
 },
+"jlrh:ffcheqflag": {
+"id": "jlrh:ffcheqflag",
+"name": "ffcheqflag",
+"source": "jlrh",
+"source_title": "jlrh",
+"channel": null,
+"rbf": "ffcheqflag.rbf",
+"repo": "jlrh/konami-fpga",
+"url": "https://github.com/jlrh/konami-fpga",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "jlrh:ffdestroyer": {
 "id": "jlrh:ffdestroyer",
 "name": "ffdestroyer",
@@ -6016,6 +6042,24 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-10-04"
+},
+"jlrh:ffkonamigt": {
+"id": "jlrh:ffkonamigt",
+"name": "ffkonamigt",
+"source": "jlrh",
+"source_title": "jlrh",
+"channel": null,
+"rbf": "ffkonamigt.rbf",
+"repo": "jlrh/konami-fpga",
+"url": "https://github.com/jlrh/konami-fpga",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "jlrh:ffmegaphx": {
@@ -6124,8 +6168,8 @@
 "source_title": "jlrh",
 "channel": null,
 "rbf": "ffoverdriv.rbf",
-"repo": null,
-"url": null,
+"repo": "jlrh/konami-fpga",
+"url": "https://github.com/jlrh/konami-fpga",
 "build_date": null,
 "status": null,
 "reading": null,
@@ -8549,10 +8593,10 @@
 "konami/vendetta.cpp"
 ],
 "note": null,
+"first_recorded": "2026-10-04",
 "aliases": [
 "ongo:meathax_escapekids"
 ],
-"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "meat:i-robot": {
@@ -9050,6 +9094,24 @@
 "aliases": [],
 "last_seen": "2026-10-04"
 },
+"ongo:ffcheqflag": {
+"id": "ongo:ffcheqflag",
+"name": "ffcheqflag",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "ffcheqflag.rbf",
+"repo": "jlrh/jlrh-misterfpga-db",
+"url": "https://github.com/jlrh/jlrh-misterfpga-db",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:ffhotchase": {
 "id": "ongo:ffhotchase",
 "name": "ffhotchase",
@@ -9067,6 +9129,42 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-10-04"
+},
+"ongo:ffkonamigt": {
+"id": "ongo:ffkonamigt",
+"name": "ffkonamigt",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "ffkonamigt.rbf",
+"repo": "jlrh/jlrh-misterfpga-db",
+"url": "https://github.com/jlrh/jlrh-misterfpga-db",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"ongo:ffoverdriv": {
+"id": "ongo:ffoverdriv",
+"name": "ffoverdriv",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "ffoverdriv.rbf",
+"repo": "jlrh/jlrh-misterfpga-db",
+"url": "https://github.com/jlrh/jlrh-misterfpga-db",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "ongo:ffwecleman": {
@@ -9143,6 +9241,24 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-10-04"
+},
+"ongo:jedi": {
+"id": "ongo:jedi",
+"name": "Jedi",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Jedi.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "ongo:jvmomoko": {
@@ -10366,8 +10482,8 @@
 "source_title": "GitHub repository only",
 "channel": null,
 "rbf": "Nostradamus.rbf",
-"repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
-"url": "https://github.com/kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"repo": "kyledlester/MiSTer_Nostradamus",
+"url": "https://github.com/kyledlester/MiSTer_Nostradamus",
 "build_date": null,
 "status": null,
 "reading": null,
@@ -10842,6 +10958,96 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-10-04"
+},
+"repo:twinhawk": {
+"id": "repo:twinhawk",
+"name": "TwinHawk",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": null,
+"rbf": "TwinHawk.rbf",
+"repo": "bazset/Twin-Hawk-FPGA",
+"url": "https://github.com/bazset/Twin-Hawk-FPGA",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"shmupfan:1945kiii": {
+"id": "shmupfan:1945kiii",
+"name": "1945kiii",
+"source": "shmupfan",
+"source_title": "shmupfan (Distribution)",
+"channel": null,
+"rbf": "1945kiii.rbf",
+"repo": "shmupfan/Arcade-1945kIII_MiSTer",
+"url": "https://github.com/shmupfan/Arcade-1945kIII_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"shmupfan:dec8": {
+"id": "shmupfan:dec8",
+"name": "dec8",
+"source": "shmupfan",
+"source_title": "shmupfan (Distribution)",
+"channel": null,
+"rbf": "dec8.rbf",
+"repo": "shmupfan/Arcade-DEC8_MiSTer",
+"url": "https://github.com/shmupfan/Arcade-DEC8_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"shmupfan:dooyong": {
+"id": "shmupfan:dooyong",
+"name": "dooyong",
+"source": "shmupfan",
+"source_title": "shmupfan (Distribution)",
+"channel": null,
+"rbf": "dooyong.rbf",
+"repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"url": "https://github.com/shmupfan/Arcade-Dooyong_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"shmupfan:tecmo16": {
+"id": "shmupfan:tecmo16",
+"name": "tecmo16",
+"source": "shmupfan",
+"source_title": "shmupfan (Distribution)",
+"channel": null,
+"rbf": "tecmo16.rbf",
+"repo": "shmupfan/Arcade-Tecmo16_MiSTer",
+"url": "https://github.com/shmupfan/Arcade-Tecmo16_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "slop:batsugun": {
@@ -11327,6 +11533,18 @@
 "first_path": "releases/1945k III (newer, OPCX2 PCB).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"shmupfan:1945kiii": {
+"core": "shmupfan:1945kiii",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
+"first_path": "releases/1945k III (newer, OPCX2 PCB).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "1945kiiin": {
@@ -11335,6 +11553,18 @@
 "date": "2026-10-03",
 "date_quality": "git",
 "via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
+"first_path": "releases/_alternatives/_1945k III/1945k III (newer, OPCX1 PCB).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"shmupfan:1945kiii": {
+"core": "shmupfan:1945kiii",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "shmupfan",
 "wip": false,
 "alt": true,
 "first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
@@ -11355,6 +11585,18 @@
 "first_path": "releases/_alternatives/_1945k III/1945k III (older, OPCX1 PCB).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"shmupfan:1945kiii": {
+"core": "shmupfan:1945kiii",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
+"first_path": "releases/_alternatives/_1945k III/1945k III (older, OPCX1 PCB).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "1945kiiipt": {
@@ -11363,6 +11605,18 @@
 "date": "2026-10-03",
 "date_quality": "git",
 "via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
+"first_path": "releases/_alternatives/_1945k III/1945k III (Promat license, OPCX1 PCB).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"shmupfan:1945kiii": {
+"core": "shmupfan:1945kiii",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "shmupfan",
 "wip": false,
 "alt": true,
 "first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
@@ -18041,6 +18295,48 @@
 "last_seen": "2026-10-04"
 }
 },
+"bluehawk": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-28",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Blue Hawk.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"bluehawkn": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-28",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Blue Hawk (Japan, NTC license, set 1).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"bluehawkna": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-28",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Blue Hawk (Japan, NTC license, set 2).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "blueprnt": {
 "dist:blueprint": {
 "core": "dist:blueprint",
@@ -20578,13 +20874,13 @@
 "catt": {
 "repo:nostradamus": {
 "core": "repo:nostradamus",
-"date": "2026-10-03",
+"date": "2026-10-02",
 "date_quality": "git",
 "via": "repo",
 "wip": false,
 "alt": true,
-"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
-"first_path": "MRA/_alternatives/_Magical Cat Adventure/Catt (Japan).mra",
+"first_repo": "kyledlester/MiSTer_Nostradamus",
+"first_path": "mra/Catt (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -21511,6 +21807,46 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Choplifter (unprotected).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"chqflag": {
+"jlrh:ffcheqflag": {
+"core": "jlrh:ffcheqflag",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "jlrh",
+"wip": false,
+"alt": false,
+"first_repo": "jlrh/konami-fpga",
+"first_path": "cores/chequeredflag/mra/Chequered Flag (FF, Konami, 1988).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"ongo:ffcheqflag": {
+"core": "ongo:ffcheqflag",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "jlrh/konami-fpga",
+"first_path": "cores/chequeredflag/mra/Chequered Flag (FF, Konami, 1988).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"chqflagj": {
+"jlrh:ffcheqflag": {
+"core": "jlrh:ffcheqflag",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "jlrh",
+"wip": false,
+"alt": true,
+"first_repo": "jlrh/konami-fpga",
+"first_path": "cores/chequeredflag/mra/_alternatives/_Chequered Flag/Chequered Flag (FF, Japan, Konami, 1988).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -24523,6 +24859,18 @@
 "first_path": "_Arcade/_alternatives/_Twin Hawk/Daisenpu (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:twinhawk": {
+"core": "repo:twinhawk",
+"date": "2026-08-26",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Twin Hawk/Daisenpu (Japan).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "daiskiss": {
@@ -25183,6 +25531,20 @@
 "alt": false,
 "first_repo": "MiSTer-devel/Arcade-Dcon_MiSTer",
 "first_path": "releases/D-Con.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"ddaydoo": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Chulgyeok D-Day (Korea).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -32467,6 +32829,18 @@
 "first_path": "releases/'96 Flag Rally.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"shmupfan:1945kiii": {
+"core": "shmupfan:1945kiii",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
+"first_path": "releases/'96 Flag Rally.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "flamegun": {
@@ -32591,6 +32965,34 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_The FairyLand Story/The FairyLand Story (earlier).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"flytiger": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-28",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Flying Tiger (set 1).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"flytigera": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-28",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Flying Tiger (set 2).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -33105,6 +33507,62 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Flying Shark/Flying Shark (World) (Visibility Mod) [v1.0].mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"fstarfrc": {
+"shmupfan:tecmo16": {
+"core": "shmupfan:tecmo16",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
+"first_path": "releases/Final Star Force (US).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"fstarfrcj": {
+"shmupfan:tecmo16": {
+"core": "shmupfan:tecmo16",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
+"first_path": "releases/_alternatives/_Final Star Force/Final Star Force (Japan, set 1).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"fstarfrcja": {
+"shmupfan:tecmo16": {
+"core": "shmupfan:tecmo16",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
+"first_path": "releases/_alternatives/_Final Star Force/Final Star Force (Japan, set 2).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"fstarfrcw": {
+"shmupfan:tecmo16": {
+"core": "shmupfan:tecmo16",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
+"first_path": "releases/_alternatives/_Final Star Force/Final Star Force (World-).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -35741,6 +36199,20 @@
 "last_seen": "2026-10-04"
 }
 },
+"ginkun": {
+"shmupfan:tecmo16": {
+"core": "shmupfan:tecmo16",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
+"first_path": "releases/Ganbare Ginkun.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "gladiatr": {
 "blahm1d:blahm1d_gladiator": {
 "core": "blahm1d:blahm1d_gladiator",
@@ -36283,6 +36755,34 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Golly! Ghost!.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"gondo": {
+"shmupfan:dec8": {
+"core": "shmupfan:dec8",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
+"first_path": "releases/Gondomania (World).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"gondou": {
+"shmupfan:dec8": {
+"core": "shmupfan:dec8",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
+"first_path": "releases/_alternatives/_Gondomania/Gondomania (US).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -37165,6 +37665,76 @@
 "last_seen": "2026-10-04"
 }
 },
+"gulfstrm": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Gulf Storm (set 1).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"gulfstrma": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Gulf Storm (set 2).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"gulfstrmb": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Gulf Storm (set 3).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"gulfstrmk": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Gulf Storm (Korea).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"gulfstrmm": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Gulf Storm (Japan, Media Shoji license).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "gulfwar2": {
 "dist:gulfwarii": {
 "core": "dist:gulfwarii",
@@ -37371,6 +37941,20 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Gundhara/Gundhara (Chinese, bootleg).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"gundl94": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Gun Dealer '94.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -40767,6 +41351,20 @@
 "last_seen": "2026-10-04"
 }
 },
+"jedi": {
+"ongo:jedi": {
+"core": "ongo:jedi",
+"date": "2026-09-30",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "Usquebagh/Arcade-Jedi_MiSTer",
+"first_path": "releases/Return of the Jedi.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "jgakuen": {
 "ongo:zn2capcom": {
 "core": "ongo:zn2capcom",
@@ -43613,6 +44211,32 @@
 "last_seen": "2026-10-04"
 }
 },
+"konamigt": {
+"jlrh:ffkonamigt": {
+"core": "jlrh:ffkonamigt",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "jlrh",
+"wip": false,
+"alt": false,
+"first_repo": "jlrh/konami-fpga",
+"first_path": "cores/konamigt/mra/Konami GT (FF, Konami, 1985).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"ongo:ffkonamigt": {
+"core": "ongo:ffkonamigt",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "jlrh/konami-fpga",
+"first_path": "cores/konamigt/mra/Konami GT (FF, Konami, 1985).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "konek": {
 "dist:tiamc1": {
 "core": "dist:tiamc1",
@@ -44491,6 +45115,34 @@
 "last_seen": "2026-10-04"
 }
 },
+"lastday": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/The Last Day (set 1).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"lastdaya": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/The Last Day (set 2).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "lastduel": {
 "ongo:lastduel": {
 "core": "ongo:lastduel",
@@ -44543,6 +45195,62 @@
 "alt": false,
 "first_repo": "MiSTer-devel/NeoGeo_MiSTer",
 "first_path": "releases/romsets.xml",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"lastmisn": {
+"shmupfan:dec8": {
+"core": "shmupfan:dec8",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
+"first_path": "releases/Last Mission (World revision 8).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"lastmisnj": {
+"shmupfan:dec8": {
+"core": "shmupfan:dec8",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
+"first_path": "releases/_alternatives/_Last Mission/Last Mission (Japan).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"lastmisnu5": {
+"shmupfan:dec8": {
+"core": "shmupfan:dec8",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
+"first_path": "releases/_alternatives/_Last Mission/Last Mission (US revision 5).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"lastmisnu6": {
+"shmupfan:dec8": {
+"core": "shmupfan:dec8",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
+"first_path": "releases/_alternatives/_Last Mission/Last Mission (US revision 6).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -46203,6 +46911,20 @@
 "last_seen": "2026-10-04"
 }
 },
+"makyosen": {
+"shmupfan:dec8": {
+"core": "shmupfan:dec8",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
+"first_path": "releases/_alternatives/_Gondomania/Makyou Senshi (Japan).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "mandinga": {
 "dist:scramble": {
 "core": "dist:scramble",
@@ -46890,13 +47612,13 @@
 "mcatadv": {
 "repo:nostradamus": {
 "core": "repo:nostradamus",
-"date": "2026-10-03",
+"date": "2026-10-02",
 "date_quality": "git",
 "via": "repo",
 "wip": false,
 "alt": false,
-"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
-"first_path": "MRA/Magical Cat Adventure.mra",
+"first_repo": "kyledlester/MiSTer_Nostradamus",
+"first_path": "mra/Magical Cat Adventure.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -46904,13 +47626,13 @@
 "mcatadvj": {
 "repo:nostradamus": {
 "core": "repo:nostradamus",
-"date": "2026-10-03",
+"date": "2026-10-02",
 "date_quality": "git",
 "via": "repo",
 "wip": false,
 "alt": true,
-"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
-"first_path": "MRA/_alternatives/_Magical Cat Adventure/Magical Cat Adventure (Japan).mra",
+"first_repo": "kyledlester/MiSTer_Nostradamus",
+"first_path": "mra/Magical Cat Adventure (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -51562,13 +52284,13 @@
 "nost": {
 "repo:nostradamus": {
 "core": "repo:nostradamus",
-"date": "2026-10-03",
+"date": "2026-10-01",
 "date_quality": "git",
 "via": "repo",
 "wip": false,
 "alt": false,
-"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
-"first_path": "MRA/Nostradamus.mra",
+"first_repo": "kyledlester/MiSTer_Nostradamus",
+"first_path": "mra/Nostradamus.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -51576,13 +52298,13 @@
 "nostj": {
 "repo:nostradamus": {
 "core": "repo:nostradamus",
-"date": "2026-10-03",
+"date": "2026-10-02",
 "date_quality": "git",
 "via": "repo",
 "wip": false,
 "alt": true,
-"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
-"first_path": "MRA/_alternatives/_Nostradamus/Nostradamus (Japan).mra",
+"first_repo": "kyledlester/MiSTer_Nostradamus",
+"first_path": "mra/Nostradamus (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -51590,13 +52312,13 @@
 "nostk": {
 "repo:nostradamus": {
 "core": "repo:nostradamus",
-"date": "2026-10-03",
+"date": "2026-10-02",
 "date_quality": "git",
 "via": "repo",
 "wip": false,
 "alt": true,
-"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
-"first_path": "MRA/_alternatives/_Nostradamus/Nostradamus Yeeon (Korea).mra",
+"first_repo": "kyledlester/MiSTer_Nostradamus",
+"first_path": "mra/Nostradamus Yeeon (Korea).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -53249,12 +53971,24 @@
 "jlrh:ffoverdriv": {
 "core": "jlrh:ffoverdriv",
 "date": "2026-10-04",
-"date_quality": "observed",
+"date_quality": "git",
 "via": "jlrh",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "jlrh/konami-fpga",
+"first_path": "cores/overdriv/mra/Over Drive (FF, Konami, 1990).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"ongo:ffoverdriv": {
+"core": "ongo:ffoverdriv",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "jlrh/konami-fpga",
+"first_path": "cores/overdriv/mra/Over Drive (FF, Konami, 1990).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -56867,6 +57601,62 @@
 "last_seen": "2026-10-04"
 }
 },
+"pollux": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Pollux (set 1).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"polluxa": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Pollux (set 2).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"polluxa2": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Pollux (set 3).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"polluxn": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Pollux (Japan, NTC license, distributed by Atlus).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "polyplay": {
 "dist:polyplay": {
 "core": "dist:polyplay",
@@ -57003,6 +57793,20 @@
 "alt": true,
 "first_repo": "MiSTer-devel/MRA-Alternatives_MiSTer",
 "first_path": "_alternatives/_Pooyan/Pooyan (Stern Electronics).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"popbingo": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Pop Bingo.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -57407,6 +58211,20 @@
 "alt": false,
 "first_repo": "MiSTer-devel/Saturn_MiSTer",
 "first_path": "releases/mra/Princess Clara Daisakusen (J 960910 V1.000).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"primella": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Primella (Japan, NTC license).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -59547,6 +60365,18 @@
 "first_path": "releases/_alternatives/_Raiden2/Raiden II (Australia).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (Australia).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "raiden2dx": {
@@ -59555,6 +60385,18 @@
 "date": "2026-08-25",
 "date_quality": "git",
 "via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (harder, Raiden DX hardware, Korea).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
@@ -59575,6 +60417,18 @@
 "first_path": "releases/_alternatives/_Raiden2/Raiden II (easier, Korea).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (easier, Korea).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "raiden2ea": {
@@ -59583,6 +60437,18 @@
 "date": "2026-08-25",
 "date_quality": "git",
 "via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (easier, Japan).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
@@ -59603,6 +60469,18 @@
 "first_path": "releases/_alternatives/_Raiden2/Raiden II (easier, Germany).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (easier, Germany).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "raiden2es": {
@@ -59611,6 +60489,18 @@
 "date": "2026-08-25",
 "date_quality": "git",
 "via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (Spain).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
@@ -59631,6 +60521,18 @@
 "first_path": "releases/_alternatives/_Raiden2/Raiden II (easier, US set 2).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (easier, US set 2).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "raiden2eua": {
@@ -59639,6 +60541,18 @@
 "date": "2026-08-25",
 "date_quality": "git",
 "via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (easier, US set 1).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
@@ -59659,6 +60573,18 @@
 "first_path": "releases/_alternatives/_Raiden2/Raiden II (easier, US set 3).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (easier, US set 3).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "raiden2eup": {
@@ -59667,6 +60593,18 @@
 "date": "2026-08-25",
 "date_quality": "git",
 "via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (easier, US, prototype 11-16).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
@@ -59687,6 +60625,18 @@
 "first_path": "releases/_alternatives/_Raiden2/Raiden II (France).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (France).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "raiden2g": {
@@ -59695,6 +60645,18 @@
 "date": "2026-08-25",
 "date_quality": "git",
 "via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (Germany).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
@@ -59715,6 +60677,18 @@
 "first_path": "releases/_alternatives/_Raiden2/Raiden II (Great Britain).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (Great Britain).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "raiden2hk": {
@@ -59723,6 +60697,18 @@
 "date": "2026-08-25",
 "date_quality": "git",
 "via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (Hong Kong).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
@@ -59743,6 +60729,18 @@
 "first_path": "releases/_alternatives/_Raiden2/Raiden II (Italy).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (Italy).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "raiden2j": {
@@ -59751,6 +60749,18 @@
 "date": "2026-08-25",
 "date_quality": "git",
 "via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (Japan).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
@@ -59771,6 +60781,18 @@
 "first_path": "releases/_alternatives/_Raiden2/Raiden II (harder, Korea).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (harder, Korea).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "raiden2nl": {
@@ -59779,6 +60801,18 @@
 "date": "2026-08-25",
 "date_quality": "git",
 "via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (Holland).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
@@ -59799,6 +60833,18 @@
 "first_path": "releases/_alternatives/_Raiden2/Raiden II (Switzerland).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (Switzerland).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "raiden2u": {
@@ -59807,6 +60853,18 @@
 "date": "2026-08-25",
 "date_quality": "git",
 "via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_Raiden2/Raiden II (US, set 2).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
@@ -59867,6 +60925,18 @@
 "first_path": "releases/_alternatives/_RaidenDX/Raiden DX (Hong Kong, set 1).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_RaidenDX/Raiden DX (Hong Kong, set 1).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "raidendxa2": {
@@ -59875,6 +60945,18 @@
 "date": "2026-08-25",
 "date_quality": "git",
 "via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_RaidenDX/Raiden DX (Hong Kong, set 2).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
@@ -59895,6 +60977,18 @@
 "first_path": "releases/_alternatives/_RaidenDX/Raiden DX (China).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_RaidenDX/Raiden DX (China).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "raidendxg": {
@@ -59903,6 +60997,18 @@
 "date": "2026-08-25",
 "date_quality": "git",
 "via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_RaidenDX/Raiden DX (Germany).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
@@ -59923,6 +61029,18 @@
 "first_path": "releases/_alternatives/_RaidenDX/Raiden DX (Japan, set 1).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_RaidenDX/Raiden DX (Japan, set 1).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "raidendxja": {
@@ -59931,6 +61049,18 @@
 "date": "2026-08-25",
 "date_quality": "git",
 "via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_RaidenDX/Raiden DX (Japan, set 2).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
@@ -59951,6 +61081,18 @@
 "first_path": "releases/_alternatives/_RaidenDX/Raiden DX (Korea).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_RaidenDX/Raiden DX (Korea).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "raidendxnl": {
@@ -59959,6 +61101,18 @@
 "date": "2026-08-25",
 "date_quality": "git",
 "via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_RaidenDX/Raiden DX (Holland).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
@@ -59979,6 +61133,18 @@
 "first_path": "releases/_alternatives/_RaidenDX/Raiden DX (Portugal).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_RaidenDX/Raiden DX (Portugal).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "raidendxu": {
@@ -59987,6 +61153,18 @@
 "date": "2026-08-25",
 "date_quality": "git",
 "via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
+"first_path": "releases/_alternatives/_RaidenDX/Raiden DX (US).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:raiden2": {
+"core": "repo:raiden2",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Raiden2_MiSTer",
@@ -61909,6 +63087,20 @@
 "last_seen": "2026-10-04"
 }
 },
+"riot": {
+"shmupfan:tecmo16": {
+"core": "shmupfan:tecmo16",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
+"first_path": "releases/Riot (NMK).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "riotcity": {
 "jt:jts16b": {
 "core": "jt:jts16b",
@@ -61919,6 +63111,20 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/s16/Riot City (Japan).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"riotw": {
+"shmupfan:tecmo16": {
+"core": "shmupfan:tecmo16",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
+"first_path": "releases/_alternatives/_Riot/Riot (Woong Bi).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -62903,6 +64109,34 @@
 "last_seen": "2026-10-04"
 }
 },
+"rshark": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/R-Shark (set 1).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"rsharka": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/R-Shark (set 2).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "rthun2": {
 "kuze:namcos2_std": {
 "core": "kuze:namcos2_std",
@@ -63781,6 +65015,20 @@
 "alt": true,
 "first_repo": "kuzearcade/Arcade-NMK16_MiSTer",
 "first_path": "releases/Saboten Bombers (set 2).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"sadari": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Sadari (Japan, NTC license).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -68805,6 +70053,20 @@
 "last_seen": "2026-10-04"
 }
 },
+"shrike": {
+"repo:ballysente": {
+"core": "repo:ballysente",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Shrike Avenger (prototype).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "shtrider": {
 "dist:traverseusa": {
 "core": "dist:traverseusa",
@@ -69907,6 +71169,18 @@
 "date": "2026-10-03",
 "date_quality": "git",
 "via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
+"first_path": "releases/Solite Spirits.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"shmupfan:1945kiii": {
+"core": "shmupfan:1945kiii",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "shmupfan",
 "wip": false,
 "alt": false,
 "first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
@@ -72143,6 +73417,48 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Super Ranger (v2.0).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"srdarwin": {
+"shmupfan:dec8": {
+"core": "shmupfan:dec8",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
+"first_path": "releases/SRD - Super Real Darwin (World).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"srdarwinb": {
+"shmupfan:dec8": {
+"core": "shmupfan:dec8",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
+"first_path": "releases/_alternatives/_SRD Super Real Darwin/SRD - Super Real Darwin (Japan, bootleg).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"srdarwinj": {
+"shmupfan:dec8": {
+"core": "shmupfan:dec8",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
+"first_path": "releases/_alternatives/_SRD Super Real Darwin/SRD - Super Real Darwin (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -74595,6 +75911,34 @@
 "alt": false,
 "first_repo": "MiSTer-devel/NeoGeo_MiSTer",
 "first_path": "releases/romsets.xml",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"superx": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Super-X (NTC).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"superxm": {
+"shmupfan:dooyong": {
+"core": "shmupfan:dooyong",
+"date": "2026-09-29",
+"date_quality": "git",
+"via": "shmupfan",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Super-X (Mitchell).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -80303,6 +81647,18 @@
 "first_path": "_Arcade/Twin Hawk (World).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+},
+"repo:twinhawk": {
+"core": "repo:twinhawk",
+"date": "2026-08-26",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Twin Hawk (World).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
 }
 },
 "twinhawku": {
@@ -80313,6 +81669,18 @@
 "via": "jt",
 "wip": false,
 "alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Twin Hawk/Twin Hawk (US).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"repo:twinhawk": {
+"core": "repo:twinhawk",
+"date": "2026-08-26",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Twin Hawk/Twin Hawk (US).mra",
 "first_recorded": "2026-10-04",
@@ -88311,10 +89679,12 @@
 "ongo": "Shoot"
 },
 "darius": {
-"dist": "Shooter"
+"dist": "Shooter",
+"repo": "Shooter"
 },
 "darius2": {
-"dist": "Shooter"
+"dist": "Shooter",
+"repo": "Shooter"
 },
 "darius2d": {
 "dist": "Shooter"
@@ -88323,20 +89693,24 @@
 "dist": "Shooter"
 },
 "dariuse": {
-"dist": "Shooter"
+"dist": "Shooter",
+"repo": "Shooter"
 },
 "dariusg": {
 "ongo": "Shoot",
 "repo": "Shoot"
 },
 "dariusj": {
-"dist": "Shooter"
+"dist": "Shooter",
+"repo": "Shooter"
 },
 "dariuso": {
-"dist": "Shooter"
+"dist": "Shooter",
+"repo": "Shooter"
 },
 "dariusu": {
-"dist": "Shooter"
+"dist": "Shooter",
+"repo": "Shooter"
 },
 "darkplnt": {
 "dist": "Shooter - Multidirectional"
@@ -90249,6 +91623,9 @@
 "jailbrek": {
 "dist": "Army / Fighter"
 },
+"jedi": {
+"ongo": "Shooter"
+},
 "jgakuen": {
 "ongo": "Fighting"
 },
@@ -91213,16 +92590,20 @@
 "dist": "Platform - Climb"
 },
 "ninjaw": {
-"dist": "Fighter"
+"dist": "Fighter",
+"repo": "Fighter"
 },
 "ninjaw1": {
-"dist": "Fighter"
+"dist": "Fighter",
+"repo": "Fighter"
 },
 "ninjawj": {
-"dist": "Fighter"
+"dist": "Fighter",
+"repo": "Fighter"
 },
 "ninjawu": {
-"dist": "Fighter"
+"dist": "Fighter",
+"repo": "Fighter"
 },
 "ninjemak": {
 "ongo": "Platform"
@@ -92233,125 +93614,161 @@
 },
 "raiden": {
 "dist": "Shoot",
-"ongo": "Shoot"
+"ongo": "Shoot",
+"repo": "Shoot"
 },
 "raiden2": {
 "dist": "Shoot",
 "repo": "Shoot"
 },
 "raiden2au": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2dx": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2e": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2ea": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2eg": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2es": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2eu": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2eua": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2eub": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2eup": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2f": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2g": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2gb": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2hk": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2i": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2j": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2k": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2nl": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2sw": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raiden2u": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raidenb": {
 "dist": "Shoot",
-"ongo": "Shoot"
+"ongo": "Shoot",
+"repo": "Shoot"
 },
 "raidendx": {
 "dist": "Shoot",
 "repo": "Shoot"
 },
 "raidendxa1": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raidendxa2": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raidendxch": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raidendxg": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raidendxj": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raidendxja": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raidendxk": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raidendxnl": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raidendxpt": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raidendxu": {
-"dist": "Shoot"
+"dist": "Shoot",
+"repo": "Shoot"
 },
 "raidenj": {
 "dist": "Shoot",
-"ongo": "Shoot"
+"ongo": "Shoot",
+"repo": "Shoot"
 },
 "raidenk": {
 "dist": "Shoot",
-"ongo": "Shoot"
+"ongo": "Shoot",
+"repo": "Shoot"
 },
 "raident": {
 "dist": "Shoot",
-"ongo": "Shoot"
+"ongo": "Shoot",
+"repo": "Shoot"
 },
 "raidenu": {
 "dist": "Shoot",
-"ongo": "Shoot"
+"ongo": "Shoot",
+"repo": "Shoot"
 },
 "raiders5": {
 "dist": "Platform - Climb"

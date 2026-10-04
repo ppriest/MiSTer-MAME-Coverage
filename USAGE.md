@@ -36,8 +36,9 @@ Options:
    the set names its MRAs load) and the MiSTer_Ongo README (links to the repositories it ships).
 2. Builds the repository plan: the distribution repositories listed in `mister.DISTRIBUTIONS`,
    every repository alamone names, every GitHub repository the Ongo README links, every
-   `MiSTer-devel/Arcade-*` repository the MiSTer wiki links, and the hand-kept `EXTRA_REPOS` and
-   `ROMSET_FILES` lists.
+   `MiSTer-devel/Arcade-*` repository the MiSTer wiki links, every repository shmup-deck's
+   `cores.json` points at (shmupfan's own cores get the `shmupfan` source), and the hand-kept
+   `EXTRA_REPOS` and `ROMSET_FILES` lists.
 3. Clones each one with `--filter=blob:limit=1m --no-checkout` (history, trees and small files such
    as MRAs; no core builds), then checks out only the MRA files. jtbin's pull-request refs are
    fetched too, because they still reach the history that was squashed in May 2024.
@@ -191,7 +192,8 @@ All in `mmc/mister.py`:
   was lost, for example.
 - `ROMSET_FILES`: cores that load sets from a list instead of MRAs (the NeoGeo core's
   `releases/romsets.xml`).
-- `DB_SOURCES`: developer downloader databases (`db.json.zip` URLs). Their MRAs are fetched and
+- `DB_SOURCES`: developer downloader databases (`db.json.zip` URLs, or a plain `db.json` such as
+  shmupfan's Distribution). Their MRAs are fetched and
   parsed directly, so a core published only as builds (Patreon releases such as blahm1d's, which
   have no source repository) still counts through the MRAs its database ships. These files carry
   no dates: a set first seen only here is dated by the run that first saw it (`date_quality:

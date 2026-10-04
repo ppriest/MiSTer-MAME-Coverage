@@ -1,20 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-04T14:49:48+00:00",
+  "generated": "2026-10-04T20:38:49+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-04T08:32:10+00:00",
+  "mister_generated": "2026-10-04T20:38:47+00:00",
   "alamone_generated": "2026-10-01T23:23:16+00:00",
   "ledger_updated": "2026-10-04",
   "ledger_runs": [
-   {
-    "date": "2026-10-04",
-    "note": "alamone 2026-10-01",
-    "cores": 1,
-    "sets": 15,
-    "pairs": 15,
-    "dates_improved": 0
-   },
    {
     "date": "2026-10-04",
     "note": "alamone 2026-10-01",
@@ -46,6 +38,14 @@
     "sets": 0,
     "pairs": 0,
     "dates_improved": 0
+   },
+   {
+    "date": "2026-10-04",
+    "note": "alamone 2026-10-01",
+    "cores": 11,
+    "sets": 47,
+    "pairs": 89,
+    "dates_improved": 7
    }
   ],
   "genre": {
@@ -54,7 +54,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
    "catver_entries": 37998,
    "mad_entries": 2995,
-   "mra_entries": 2641,
+   "mra_entries": 2642,
    "unmapped": [
     {
      "raw": "not classified",
@@ -78,6 +78,7 @@
    "jlrh": "jlrh",
    "arcfpga": "arcfpga (bmo00)",
    "blahm1d": "blahm1d",
+   "shmupfan": "shmupfan (Distribution)",
    "repo": "GitHub repository only"
   },
   "repos": [
@@ -87,7 +88,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1793
+    "mras": 1797
    },
    {
     "source": "dist",
@@ -119,7 +120,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1167
+    "mras": 1160
    },
    {
     "source": "dist",
@@ -1427,7 +1428,7 @@
     "source": "jlrh",
     "repo": "jlrh/konami-fpga",
     "dirs": null,
-    "mras": 13
+    "mras": 17
    },
    {
     "source": "jlrh",
@@ -1577,7 +1578,7 @@
     "source": "repo",
     "repo": "ppriest/Arcade-BallySente_MiSTer",
     "dirs": null,
-    "mras": 39
+    "mras": 40
    },
    {
     "source": "repo",
@@ -1799,7 +1800,7 @@
     "source": "ongo",
     "repo": "Usquebagh/Arcade-Jedi_MiSTer",
     "dirs": null,
-    "mras": 0
+    "mras": 1
    },
    {
     "source": "ongo",
@@ -1943,7 +1944,7 @@
     "source": "ongo",
     "repo": "jlrh/jlrh-misterfpga-db",
     "dirs": null,
-    "mras": 33
+    "mras": 36
    },
    {
     "source": "ongo",
@@ -2108,6 +2109,84 @@
     "mras": 5
    },
    {
+    "source": "shmupfan",
+    "repo": "shmupfan/Arcade-1945kIII_MiSTer",
+    "dirs": null,
+    "mras": 6
+   },
+   {
+    "source": "repo",
+    "repo": "rmonic79/Arcade-Darius_MiSTer",
+    "dirs": null,
+    "mras": 5
+   },
+   {
+    "source": "repo",
+    "repo": "rmonic79/Arcade-Darius2NinjaWarriors_MiSTer",
+    "dirs": null,
+    "mras": 5
+   },
+   {
+    "source": "shmupfan",
+    "repo": "shmupfan/Arcade-DEC8_MiSTer",
+    "dirs": null,
+    "mras": 10
+   },
+   {
+    "source": "shmupfan",
+    "repo": "shmupfan/Arcade-Dooyong_MiSTer",
+    "dirs": null,
+    "mras": 25
+   },
+   {
+    "source": "repo",
+    "repo": "bazset/Gigandes-FPGA",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "repo",
+    "repo": "ika-musume/ikacore_CV1k",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "repo",
+    "repo": "kyledlester/Namco_NB1_MiSTer",
+    "dirs": null,
+    "mras": 15
+   },
+   {
+    "source": "repo",
+    "repo": "kyledlester/MiSTer_Nostradamus",
+    "dirs": null,
+    "mras": 6
+   },
+   {
+    "source": "repo",
+    "repo": "rmonic79/Arcade-Raiden_MiSTer",
+    "dirs": null,
+    "mras": 6
+   },
+   {
+    "source": "repo",
+    "repo": "rmonic79/Arcade-Raiden2_MiSTer",
+    "dirs": null,
+    "mras": 32
+   },
+   {
+    "source": "shmupfan",
+    "repo": "shmupfan/Arcade-Tecmo16_MiSTer",
+    "dirs": null,
+    "mras": 7
+   },
+   {
+    "source": "repo",
+    "repo": "bazset/Twin-Hawk-FPGA",
+    "dirs": null,
+    "mras": 3
+   },
+   {
     "source": "jt",
     "repo": "MiSTer-devel/Arcade-1942_MiSTer",
     "dirs": null,
@@ -2127,31 +2206,9 @@
    },
    {
     "source": "repo",
-    "repo": "kyledlester/Namco_NB1_MiSTer",
-    "dirs": [
-     "MRA"
-    ],
-    "mras": 15
-   },
-   {
-    "source": "repo",
-    "repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
-    "dirs": [
-     "MRA"
-    ],
-    "mras": 6
-   },
-   {
-    "source": "repo",
     "repo": "ppriest/Arcade-HyperNG64_MiSTer",
     "dirs": null,
     "mras": 4
-   },
-   {
-    "source": "repo",
-    "repo": "shmupfan/Arcade-1945kIII_MiSTer",
-    "dirs": null,
-    "mras": 6
    },
    {
     "source": "dist",
@@ -2162,6 +2219,34 @@
   ],
   "repo_errors": [
    [
+    "Kyp069/zx48-MiSTer",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "blahm1d/MiSTer-cores",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "blahm1d/wolf-unit",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "kandowontu/BrickBoy_MiSTer",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/Bucky",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/mrdo",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/s24",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
     "https://mister.blahm1d.com/db.json.zip",
     "<urlopen error Tunnel connection failed: 403 Forbidden>"
    ]
@@ -2169,10 +2254,10 @@
   "counts": {
    "titles": 6823,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 1820,
+   "working_arcade_titles_covered": 1839,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 4630,
-   "cores": 532,
+   "working_arcade_sets_covered": 4676,
+   "cores": 543,
    "unmatched_sets": 400
   }
  },
@@ -7255,8 +7340,8 @@
    "source_title": "MiSTer official distribution",
    "channel": null,
    "rbf": "Rampart.rbf",
-   "repo": "MiSTer-devel/Arcade-Rampart_MiSTer",
-   "url": "https://github.com/MiSTer-devel/Arcade-Rampart_MiSTer",
+   "repo": "MiSTer-devel/Distribution_MiSTer",
+   "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
    "build_date": null,
    "status": null,
    "reading": null,
@@ -8887,6 +8972,27 @@
    "first_date": "2026-09-04"
   },
   {
+   "id": "jlrh:ffcheqflag",
+   "name": "ffcheqflag",
+   "source": "jlrh",
+   "source_title": "jlrh",
+   "channel": null,
+   "rbf": "ffcheqflag.rbf",
+   "repo": "jlrh/konami-fpga",
+   "url": "https://github.com/jlrh/konami-fpga",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 2,
+   "ntitles": 1,
+   "first_date": "2026-10-04"
+  },
+  {
    "id": "jlrh:ffdestroyer",
    "name": "ffdestroyer",
    "source": "jlrh",
@@ -9005,6 +9111,27 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-01"
+  },
+  {
+   "id": "jlrh:ffkonamigt",
+   "name": "ffkonamigt",
+   "source": "jlrh",
+   "source_title": "jlrh",
+   "channel": null,
+   "rbf": "ffkonamigt.rbf",
+   "repo": "jlrh/konami-fpga",
+   "url": "https://github.com/jlrh/konami-fpga",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-04"
   },
   {
    "id": "jlrh:ffmegaphx",
@@ -9127,8 +9254,8 @@
    "source_title": "jlrh",
    "channel": null,
    "rbf": "ffoverdriv.rbf",
-   "repo": null,
-   "url": null,
+   "repo": "jlrh/konami-fpga",
+   "url": "https://github.com/jlrh/konami-fpga",
    "build_date": null,
    "status": null,
    "reading": null,
@@ -11891,10 +12018,10 @@
     "konami/vendetta.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
    "aliases": [
     "ongo:meathax_escapekids"
    ],
-   "first_recorded": "2026-10-04",
    "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
@@ -12559,6 +12686,27 @@
    "first_date": "2026-09-16"
   },
   {
+   "id": "ongo:ffcheqflag",
+   "name": "ffcheqflag",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "ffcheqflag.rbf",
+   "repo": "jlrh/jlrh-misterfpga-db",
+   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-04"
+  },
+  {
    "id": "ongo:ffhotchase",
    "name": "ffhotchase",
    "source": "ongo",
@@ -12579,6 +12727,48 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-01"
+  },
+  {
+   "id": "ongo:ffkonamigt",
+   "name": "ffkonamigt",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "ffkonamigt.rbf",
+   "repo": "jlrh/jlrh-misterfpga-db",
+   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-04"
+  },
+  {
+   "id": "ongo:ffoverdriv",
+   "name": "ffoverdriv",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "ffoverdriv.rbf",
+   "repo": "jlrh/jlrh-misterfpga-db",
+   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": "2026-10-04"
   },
   {
    "id": "ongo:ffwecleman",
@@ -12667,6 +12857,27 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-17"
+  },
+  {
+   "id": "ongo:jedi",
+   "name": "Jedi",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "Jedi.rbf",
+   "repo": "OngoGablogian/MiSTer_Ongo",
+   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-09-30"
   },
   {
    "id": "ongo:jvmomoko",
@@ -13550,8 +13761,8 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-04",
-   "nsets": 39,
-   "ntitles": 25,
+   "nsets": 40,
+   "ntitles": 26,
    "first_date": "2026-09-26"
   },
   {
@@ -14251,8 +14462,8 @@
    "source_title": "GitHub repository only",
    "channel": null,
    "rbf": "Nostradamus.rbf",
-   "repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
-   "url": "https://github.com/kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+   "repo": "kyledlester/MiSTer_Nostradamus",
+   "url": "https://github.com/kyledlester/MiSTer_Nostradamus",
    "build_date": null,
    "status": null,
    "reading": null,
@@ -14264,7 +14475,7 @@
    "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 2,
-   "first_date": "2026-10-03"
+   "first_date": "2026-10-01"
   },
   {
    "id": "repo:polyplay",
@@ -14332,7 +14543,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-04",
-   "nsets": 2,
+   "nsets": 32,
    "ntitles": 2,
    "first_date": "2026-08-09"
   },
@@ -14533,6 +14744,111 @@
    "nsets": 11,
    "ntitles": 2,
    "first_date": "2023-04-01"
+  },
+  {
+   "id": "repo:twinhawk",
+   "name": "TwinHawk",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "TwinHawk.rbf",
+   "repo": "bazset/Twin-Hawk-FPGA",
+   "url": "https://github.com/bazset/Twin-Hawk-FPGA",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 3,
+   "ntitles": 1,
+   "first_date": "2026-08-26"
+  },
+  {
+   "id": "shmupfan:1945kiii",
+   "name": "1945kiii",
+   "source": "shmupfan",
+   "source_title": "shmupfan (Distribution)",
+   "channel": null,
+   "rbf": "1945kiii.rbf",
+   "repo": "shmupfan/Arcade-1945kIII_MiSTer",
+   "url": "https://github.com/shmupfan/Arcade-1945kIII_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 6,
+   "ntitles": 3,
+   "first_date": "2026-10-03"
+  },
+  {
+   "id": "shmupfan:dec8",
+   "name": "dec8",
+   "source": "shmupfan",
+   "source_title": "shmupfan (Distribution)",
+   "channel": null,
+   "rbf": "dec8.rbf",
+   "repo": "shmupfan/Arcade-DEC8_MiSTer",
+   "url": "https://github.com/shmupfan/Arcade-DEC8_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 10,
+   "ntitles": 3,
+   "first_date": "2026-10-04"
+  },
+  {
+   "id": "shmupfan:dooyong",
+   "name": "dooyong",
+   "source": "shmupfan",
+   "source_title": "shmupfan (Distribution)",
+   "channel": null,
+   "rbf": "dooyong.rbf",
+   "repo": "shmupfan/Arcade-Dooyong_MiSTer",
+   "url": "https://github.com/shmupfan/Arcade-Dooyong_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 24,
+   "ntitles": 9,
+   "first_date": "2026-09-28"
+  },
+  {
+   "id": "shmupfan:tecmo16",
+   "name": "tecmo16",
+   "source": "shmupfan",
+   "source_title": "shmupfan (Distribution)",
+   "channel": null,
+   "rbf": "tecmo16.rbf",
+   "repo": "shmupfan/Arcade-Tecmo16_MiSTer",
+   "url": "https://github.com/shmupfan/Arcade-Tecmo16_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 7,
+   "ntitles": 3,
+   "first_date": "2026-10-03"
   },
   {
    "id": "slop:batsugun",
@@ -15289,11 +15605,13 @@
   {
    "sourcefile": "atari/jedi.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 1,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 1,
+   "cores": [
+    "ongo:jedi"
+   ],
+   "first": "2026-09-30"
   },
   {
    "sourcefile": "atari/klax.cpp",
@@ -15729,9 +16047,9 @@
   {
    "sourcefile": "bally/balsente.cpp",
    "titles": 26,
-   "covered": 25,
+   "covered": 26,
    "sets": 40,
-   "sets_covered": 39,
+   "sets_covered": 40,
    "cores": [
     "repo:ballysente"
    ],
@@ -16399,12 +16717,13 @@
   {
    "sourcefile": "dataeast/dec8.cpp",
    "titles": 10,
-   "covered": 2,
+   "covered": 5,
    "sets": 32,
-   "sets_covered": 8,
+   "sets_covered": 18,
    "cores": [
     "coinop:cobracom",
-    "coinop:oscar"
+    "coinop:oscar",
+    "shmupfan:dec8"
    ],
    "first": "2026-04-02"
   },
@@ -16763,11 +17082,13 @@
   {
    "sourcefile": "dooyong/dooyong.cpp",
    "titles": 9,
-   "covered": 0,
+   "covered": 9,
    "sets": 24,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 24,
+   "cores": [
+    "shmupfan:dooyong"
+   ],
+   "first": "2026-09-28"
   },
   {
    "sourcefile": "dooyong/gundealr.cpp",
@@ -18095,11 +18416,14 @@
   {
    "sourcefile": "konami/chqflag.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 2,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 2,
+   "cores": [
+    "jlrh:ffcheqflag",
+    "ongo:ffcheqflag"
+   ],
+   "first": "2026-10-04"
   },
   {
    "sourcefile": "konami/circusc.cpp",
@@ -18537,12 +18861,14 @@
   {
    "sourcefile": "konami/nemesis.cpp",
    "titles": 13,
-   "covered": 4,
+   "covered": 5,
    "sets": 23,
-   "sets_covered": 9,
+   "sets_covered": 10,
    "cores": [
     "dist:bubsysrom",
     "dist:salamander",
+    "jlrh:ffkonamigt",
+    "ongo:ffkonamigt",
     "ongo:nemesis"
    ],
    "first": "2022-07-16"
@@ -19567,7 +19893,7 @@
    "cores": [
     "repo:nostradamus"
    ],
-   "first": "2026-10-03"
+   "first": "2026-10-01"
   },
   {
    "sourcefile": "misc/megaphx.cpp",
@@ -21132,7 +21458,8 @@
    "sets": 6,
    "sets_covered": 6,
    "cores": [
-    "repo:1945kiii"
+    "repo:1945kiii",
+    "shmupfan:1945kiii"
    ],
    "first": "2026-10-03"
   },
@@ -23000,9 +23327,10 @@
    "sets": 10,
    "sets_covered": 10,
    "cores": [
-    "jt:jttaitox"
+    "jt:jttaitox",
+    "repo:twinhawk"
    ],
-   "first": "2026-08-30"
+   "first": "2026-08-26"
   },
   {
    "sourcefile": "taito/taito_z.cpp",
@@ -23505,11 +23833,13 @@
   {
    "sourcefile": "tecmo/tecmo16.cpp",
    "titles": 3,
-   "covered": 0,
+   "covered": 3,
    "sets": 7,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 7,
+   "cores": [
+    "shmupfan:tecmo16"
+   ],
+   "first": "2026-10-03"
   },
   {
    "sourcefile": "tecmo/tecmosys.cpp",
