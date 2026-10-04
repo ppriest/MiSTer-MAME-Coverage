@@ -6,6 +6,9 @@ filters, sorting and charts, served from `docs/` (GitHub Pages).
 
 **Live page:** https://ppriest.github.io/MiSTer-MAME-Coverage/ (once Pages is enabled for `docs/`)
 
+**Operating manual:** [USAGE.md](USAGE.md) covers every command and option, the ledger's merge
+rules, how to add sources, publishing on GitHub Pages and the weekly refresh.
+
 ## What it does
 
 1. **MAME side.** Downloads the `-listxml` output mamedev attaches to every release
