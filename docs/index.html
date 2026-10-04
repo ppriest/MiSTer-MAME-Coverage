@@ -168,6 +168,7 @@
         </select>
         <button type="button" id="d-dir" title="toggle direction">↓</button>
       </span></label>
+      <button type="button" id="d-reset">Reset</button>
     </form>
     <p class="count" id="drivers-count"></p>
     <div class="tablewrap">
@@ -193,6 +194,7 @@
         </select>
         <button type="button" id="c-dir" title="toggle direction">↑</button>
       </span></label>
+      <button type="button" id="c-reset">Reset</button>
     </form>
     <p class="count" id="cores-count"></p>
     <div class="tablewrap">
@@ -205,6 +207,11 @@
 
   <section id="tab-unmatched" class="tab" role="tabpanel" hidden>
     <p class="muted">Set names found in MiSTer MRAs that do not exist in this MAME version: hacks, homebrew, renamed or removed sets, or MRA typos.</p>
+    <form class="filters" onsubmit="return false">
+      <label>Search <input type="search" id="u-q" placeholder="set name or core…"></label>
+      <button type="button" id="u-reset">Reset</button>
+    </form>
+    <p class="count" id="unmatched-count"></p>
     <div class="tablewrap">
       <table class="grid" id="unmatched-table"><thead><tr><th>Set name</th><th>Cores</th></tr></thead><tbody></tbody></table>
     </div>

@@ -66,48 +66,28 @@
 "sets": 47,
 "pairs": 89,
 "dates_improved": 7
+},
+{
+"date": "2026-10-04",
+"note": "alamone 2026-10-01",
+"cores": 0,
+"sets": 0,
+"pairs": 0,
+"dates_improved": 0,
+"cores_removed": 8
+},
+{
+"date": "2026-10-04",
+"note": "alamone 2026-10-01",
+"cores": 0,
+"sets": 0,
+"pairs": 0,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
 "cores": {
-"arcfpga:asterix": {
-"id": "arcfpga:asterix",
-"name": "asterix",
-"source": "arcfpga",
-"source_title": "arcfpga (bmo00)",
-"channel": null,
-"rbf": "asterix.rbf",
-"repo": "bmo00/arcfpga-cores",
-"url": "https://github.com/bmo00/arcfpga-cores",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-04"
-},
-"arcfpga:empirecity": {
-"id": "arcfpga:empirecity",
-"name": "empirecity",
-"source": "arcfpga",
-"source_title": "arcfpga (bmo00)",
-"channel": null,
-"rbf": "empirecity.rbf",
-"repo": "bmo00/arcfpga-cores",
-"url": "https://github.com/bmo00/arcfpga-cores",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-04"
-},
 "arcfpga:jtsectionz": {
 "id": "arcfpga:jtsectionz",
 "name": "jtsectionz",
@@ -115,63 +95,6 @@
 "source_title": "arcfpga (bmo00)",
 "channel": null,
 "rbf": "jtsectionz.rbf",
-"repo": "bmo00/arcfpga-cores",
-"url": "https://github.com/bmo00/arcfpga-cores",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-04"
-},
-"arcfpga:marblemadness2": {
-"id": "arcfpga:marblemadness2",
-"name": "MarbleMadness2",
-"source": "arcfpga",
-"source_title": "arcfpga (bmo00)",
-"channel": null,
-"rbf": "MarbleMadness2.rbf",
-"repo": "bmo00/arcfpga-cores",
-"url": "https://github.com/bmo00/arcfpga-cores",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-04"
-},
-"arcfpga:momoko": {
-"id": "arcfpga:momoko",
-"name": "momoko",
-"source": "arcfpga",
-"source_title": "arcfpga (bmo00)",
-"channel": null,
-"rbf": "momoko.rbf",
-"repo": "bmo00/arcfpga-cores",
-"url": "https://github.com/bmo00/arcfpga-cores",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-04"
-},
-"arcfpga:moomesa": {
-"id": "arcfpga:moomesa",
-"name": "moomesa",
-"source": "arcfpga",
-"source_title": "arcfpga (bmo00)",
-"channel": null,
-"rbf": "moomesa.rbf",
 "repo": "bmo00/arcfpga-cores",
 "url": "https://github.com/bmo00/arcfpga-cores",
 "build_date": null,
@@ -200,63 +123,6 @@
 "mame_drivers": [
 "technos/mystston.cpp"
 ],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-04"
-},
-"arcfpga:opwolf": {
-"id": "arcfpga:opwolf",
-"name": "opwolf",
-"source": "arcfpga",
-"source_title": "arcfpga (bmo00)",
-"channel": null,
-"rbf": "opwolf.rbf",
-"repo": "bmo00/arcfpga-cores",
-"url": "https://github.com/bmo00/arcfpga-cores",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-04"
-},
-"arcfpga:splash": {
-"id": "arcfpga:splash",
-"name": "splash",
-"source": "arcfpga",
-"source_title": "arcfpga (bmo00)",
-"channel": null,
-"rbf": "splash.rbf",
-"repo": "bmo00/arcfpga-cores",
-"url": "https://github.com/bmo00/arcfpga-cores",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-04"
-},
-"arcfpga:ssriders": {
-"id": "arcfpga:ssriders",
-"name": "ssriders",
-"source": "arcfpga",
-"source_title": "arcfpga (bmo00)",
-"channel": null,
-"rbf": "ssriders.rbf",
-"repo": "bmo00/arcfpga-cores",
-"url": "https://github.com/bmo00/arcfpga-cores",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
@@ -5806,10 +5672,10 @@
 "gaelco/gaelco2.cpp"
 ],
 "note": null,
+"first_recorded": "2026-10-04",
 "aliases": [
 "arcfpga:aligator"
 ],
-"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "jlrh:ffaltair": {
@@ -5871,10 +5737,10 @@
 "gaelco/gaelco.cpp"
 ],
 "note": null,
+"first_recorded": "2026-10-04",
 "aliases": [
 "arcfpga:bigkarnk"
 ],
-"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "jlrh:ffbiomtoy": {
@@ -5894,10 +5760,10 @@
 "gaelco/gaelco.cpp"
 ],
 "note": null,
+"first_recorded": "2026-10-04",
 "aliases": [
 "arcfpga:biomtoy"
 ],
-"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "jlrh:ffblswhstl": {
@@ -5937,6 +5803,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "jlrh:ffdestroyer": {
@@ -6019,10 +5886,10 @@
 "gaelco/glass.cpp"
 ],
 "note": null,
+"first_recorded": "2026-10-04",
 "aliases": [
 "arcfpga:glass"
 ],
-"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "jlrh:ffhotchase": {
@@ -6060,6 +5927,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "jlrh:ffmegaphx": {
@@ -6197,10 +6065,10 @@
 "gaelco/gaelco.cpp"
 ],
 "note": null,
+"first_recorded": "2026-10-04",
 "aliases": [
 "arcfpga:squash"
 ],
-"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "jlrh:ffssriders": {
@@ -6241,10 +6109,10 @@
 "gaelco/gaelco.cpp"
 ],
 "note": null,
+"first_recorded": "2026-10-04",
 "aliases": [
 "arcfpga:thoop"
 ],
-"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "jlrh:ffthoop2": {
@@ -6264,10 +6132,10 @@
 "gaelco/thoop2.cpp"
 ],
 "note": null,
+"first_recorded": "2026-10-04",
 "aliases": [
 "arcfpga:thoop2"
 ],
-"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "jlrh:ffwecleman": {
@@ -6306,10 +6174,10 @@
 "gaelco/wrally.cpp"
 ],
 "note": null,
+"first_recorded": "2026-10-04",
 "aliases": [
 "arcfpga:wrally"
 ],
-"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "jlrh:ffwrally2": {
@@ -6329,10 +6197,10 @@
 "gaelco/gaelco2.cpp"
 ],
 "note": null,
+"first_recorded": "2026-10-04",
 "aliases": [
 "arcfpga:wrally2"
 ],
-"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "jlrh:ffxexex": {
@@ -9110,6 +8978,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "ongo:ffhotchase": {
@@ -9147,6 +9016,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "ongo:ffoverdriv": {
@@ -9165,6 +9035,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "ongo:ffwecleman": {
@@ -9259,6 +9130,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "ongo:jvmomoko": {
@@ -10976,6 +10848,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "shmupfan:1945kiii": {
@@ -10994,6 +10867,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "shmupfan:dec8": {
@@ -11012,6 +10886,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "shmupfan:dooyong": {
@@ -11030,6 +10905,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "shmupfan:tecmo16": {
@@ -11048,6 +10924,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
+"aliases": [],
 "last_seen": "2026-10-04"
 },
 "slop:batsugun": {
@@ -14782,18 +14659,6 @@
 }
 },
 "asterix": {
-"arcfpga:asterix": {
-"core": "arcfpga:asterix",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jlrh/konami-fpga",
-"first_path": "cores/asterix/mra/Asterix (FF ver EAD).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jlrh:ffasterix": {
 "core": "jlrh:ffasterix",
 "date": "2026-07-29",
@@ -14803,62 +14668,6 @@
 "alt": false,
 "first_repo": "jlrh/konami-fpga",
 "first_path": "cores/asterix/mra/Asterix (FF ver EAD).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"asterixaad": {
-"arcfpga:asterix": {
-"core": "arcfpga:asterix",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/asterix/releases/mra/alternatives/_Asterix/Asterix (ver AAD).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"asterixeaa": {
-"arcfpga:asterix": {
-"core": "arcfpga:asterix",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/asterix/releases/mra/alternatives/_Asterix/Asterix (ver EAA).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"asterixeac": {
-"arcfpga:asterix": {
-"core": "arcfpga:asterix",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/asterix/releases/mra/alternatives/_Asterix/Asterix (ver EAC).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"asterixj": {
-"arcfpga:asterix": {
-"core": "arcfpga:asterix",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/asterix/releases/mra/alternatives/_Asterix/Asterix (ver JAD).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -19824,18 +19633,6 @@
 }
 },
 "bucky": {
-"arcfpga:moomesa": {
-"core": "arcfpga:moomesa",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Bucky O'Hare (ver EAB).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "meat:bucky": {
 "core": "meat:bucky",
 "date": "2026-08-12",
@@ -19850,18 +19647,6 @@
 }
 },
 "buckyaa": {
-"arcfpga:moomesa": {
-"core": "arcfpga:moomesa",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/bucky/releases/mra/alternatives/_Bucky O'Hare/Bucky O'Hare (ver AA).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "meat:bucky": {
 "core": "meat:bucky",
 "date": "2026-08-26",
@@ -19876,18 +19661,6 @@
 }
 },
 "buckyaab": {
-"arcfpga:moomesa": {
-"core": "arcfpga:moomesa",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/bucky/releases/mra/alternatives/_Bucky O'Hare/Bucky O'Hare (ver AAB).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "meat:bucky": {
 "core": "meat:bucky",
 "date": "2026-08-26",
@@ -19902,18 +19675,6 @@
 }
 },
 "buckyea": {
-"arcfpga:moomesa": {
-"core": "arcfpga:moomesa",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/bucky/releases/mra/alternatives/_Bucky O'Hare/Bucky O'Hare (ver EA).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "meat:bucky": {
 "core": "meat:bucky",
 "date": "2026-08-26",
@@ -19928,18 +19689,6 @@
 }
 },
 "buckyjaa": {
-"arcfpga:moomesa": {
-"core": "arcfpga:moomesa",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/bucky/releases/mra/alternatives/_Bucky O'Hare/Bucky O'Hare (ver JAA).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "meat:bucky": {
 "core": "meat:bucky",
 "date": "2026-08-26",
@@ -19954,18 +19703,6 @@
 }
 },
 "buckyuab": {
-"arcfpga:moomesa": {
-"core": "arcfpga:moomesa",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/bucky/releases/mra/alternatives/_Bucky O'Hare/Bucky O'Hare (ver UAB).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "meat:bucky": {
 "core": "meat:bucky",
 "date": "2026-08-26",
@@ -30438,18 +30175,6 @@
 }
 },
 "empcity": {
-"arcfpga:empirecity": {
-"core": "arcfpga:empirecity",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jlrh/seibu-fpga",
-"first_path": "cores/empirecity/mra/empirecity.mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jlrh:ffempirecity": {
 "core": "jlrh:ffempirecity",
 "date": "2026-07-19",
@@ -30459,76 +30184,6 @@
 "alt": false,
 "first_repo": "jlrh/seibu-fpga",
 "first_path": "cores/empirecity/mra/empirecity.mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"empcityfr": {
-"arcfpga:empirecity": {
-"core": "arcfpga:empirecity",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/empirecity/releases/mra/alternatives/_Empire City 1931/Empire City 1931 (France).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"empcityi": {
-"arcfpga:empirecity": {
-"core": "arcfpga:empirecity",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/empirecity/releases/mra/alternatives/_Empire City 1931/Empire City 1931 (Italy).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"empcityj": {
-"arcfpga:empirecity": {
-"core": "arcfpga:empirecity",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/empirecity/releases/mra/alternatives/_Empire City 1931/Empire City 1931 (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"empcityu": {
-"arcfpga:empirecity": {
-"core": "arcfpga:empirecity",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/empirecity/releases/mra/alternatives/_Empire City 1931/Empire City 1931 (US).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"empcityubl": {
-"arcfpga:empirecity": {
-"core": "arcfpga:empirecity",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/empirecity/releases/mra/alternatives/_Empire City 1931/Empire City 1931 (US, bootleg).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -47108,18 +46763,6 @@
 }
 },
 "marblmd2": {
-"arcfpga:marblemadness2": {
-"core": "arcfpga:marblemadness2",
-"date": "2026-09-07",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Marble Madness II (prototype).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "dist:marblemadness2": {
 "core": "dist:marblemadness2",
 "date": "2026-07-29",
@@ -49010,18 +48653,6 @@
 }
 },
 "momoko": {
-"arcfpga:momoko": {
-"core": "arcfpga:momoko",
-"date": "2026-08-28",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Momoko 120% (Japanese text).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "ongo:jvmomoko": {
 "core": "ongo:jvmomoko",
 "date": "2026-08-21",
@@ -49036,18 +48667,6 @@
 }
 },
 "momokob": {
-"arcfpga:momoko": {
-"core": "arcfpga:momoko",
-"date": "2026-08-28",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Momoko 120%/Momoko 120% (bootleg).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "ongo:jvmomoko": {
 "core": "ongo:jvmomoko",
 "date": "2026-08-21",
@@ -49062,18 +48681,6 @@
 }
 },
 "momokoe": {
-"arcfpga:momoko": {
-"core": "arcfpga:momoko",
-"date": "2026-08-28",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Momoko 120%/Momoko 120% (English text).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "ongo:jvmomoko": {
 "core": "ongo:jvmomoko",
 "date": "2026-08-21",
@@ -49130,18 +48737,6 @@
 }
 },
 "moomesa": {
-"arcfpga:moomesa": {
-"core": "arcfpga:moomesa",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jlrh/konami-fpga",
-"first_path": "cores/cowboys/mra/Wild West C.O.W.-Boys of Moo Mesa (ver EAB).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jlrh:ffmoomesa": {
 "core": "jlrh:ffmoomesa",
 "date": "2026-07-19",
@@ -49151,48 +48746,6 @@
 "alt": false,
 "first_repo": "jlrh/konami-fpga",
 "first_path": "cores/cowboys/mra/Wild West C.O.W.-Boys of Moo Mesa (ver EAB).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"moomesaaab": {
-"arcfpga:moomesa": {
-"core": "arcfpga:moomesa",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/moomesa/releases/mra/alternatives/_Wild West C.O.W.-Boys of Moo Mesa/Wild West C.O.W.-Boys of Moo Mesa (ver AAB).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"moomesauab": {
-"arcfpga:moomesa": {
-"core": "arcfpga:moomesa",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/moomesa/releases/mra/alternatives/_Wild West C.O.W.-Boys of Moo Mesa/Wild West C.O.W.-Boys of Moo Mesa (ver UAB).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"moomesauac": {
-"arcfpga:moomesa": {
-"core": "arcfpga:moomesa",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/moomesa/releases/mra/alternatives/_Wild West C.O.W.-Boys of Moo Mesa/Wild West C.O.W.-Boys of Moo Mesa (ver UAC).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -53228,18 +52781,6 @@
 }
 },
 "opwolf": {
-"arcfpga:opwolf": {
-"core": "arcfpga:opwolf",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jlrh/taito-fpga",
-"first_path": "cores/opwolf/mra/Operation Wolf (World, rev 2, set 1).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jlrh:ffopwolf": {
 "core": "jlrh:ffopwolf",
 "date": "2026-07-18",
@@ -53266,18 +52807,6 @@
 }
 },
 "opwolfa": {
-"arcfpga:opwolf": {
-"core": "arcfpga:opwolf",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Operation Wolf/Operation Wolf (World, rev 2, set 2).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtrastan": {
 "core": "jt:jtrastan",
 "date": "2026-07-24",
@@ -53291,33 +52820,7 @@
 "last_seen": "2026-10-04"
 }
 },
-"opwolfb": {
-"arcfpga:opwolf": {
-"core": "arcfpga:opwolf",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/opwolf/releases/mra/alternatives/_Operation Wolf/Operation Bear (bootleg of Operation Wolf).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
 "opwolfj": {
-"arcfpga:opwolf": {
-"core": "arcfpga:opwolf",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Operation Wolf/Operation Wolf (Japan, rev 2).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtrastan": {
 "core": "jt:jtrastan",
 "date": "2026-07-24",
@@ -53332,18 +52835,6 @@
 }
 },
 "opwolfjsc": {
-"arcfpga:opwolf": {
-"core": "arcfpga:opwolf",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Operation Wolf/Operation Wolf (Japan, SC).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtrastan": {
 "core": "jt:jtrastan",
 "date": "2026-07-24",
@@ -53358,18 +52849,6 @@
 }
 },
 "opwolfp": {
-"arcfpga:opwolf": {
-"core": "arcfpga:opwolf",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Operation Wolf/Operation Wolf (Japan, prototype).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtrastan": {
 "core": "jt:jtrastan",
 "date": "2026-07-24",
@@ -53384,18 +52863,6 @@
 }
 },
 "opwolfu": {
-"arcfpga:opwolf": {
-"core": "arcfpga:opwolf",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Operation Wolf/Operation Wolf (US, rev 2).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtrastan": {
 "core": "jt:jtrastan",
 "date": "2026-07-24",
@@ -73059,90 +72526,6 @@
 "last_seen": "2026-10-04"
 }
 },
-"splash": {
-"arcfpga:splash": {
-"core": "arcfpga:splash",
-"date": "2026-08-28",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/splash/releases/mra/Splash! (ver. 1.3, checksum E7BEF3FA, World).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"splash10": {
-"arcfpga:splash": {
-"core": "arcfpga:splash",
-"date": "2026-08-28",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/splash/releases/mra/alternatives/_Splash!/Splash! (ver. 1.0, checksum 2FC9AE1D, non North America).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"splash11": {
-"arcfpga:splash": {
-"core": "arcfpga:splash",
-"date": "2026-08-28",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/splash/releases/mra/alternatives/_Splash!/Splash! (ver. 1.1, checksum 4697D2BF, non North America).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"splash12": {
-"arcfpga:splash": {
-"core": "arcfpga:splash",
-"date": "2026-08-28",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/splash/releases/mra/alternatives/_Splash!/Splash! (ver. 1.2, checksum 5071804D, non North America).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"splashkr": {
-"arcfpga:splash": {
-"core": "arcfpga:splash",
-"date": "2026-08-28",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/splash/releases/mra/alternatives/_Splash!/Splash! (ver. 1.3, checksum E7BEEBFA, Korea).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"splashna": {
-"arcfpga:splash": {
-"core": "arcfpga:splash",
-"date": "2026-08-28",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/splash/releases/mra/alternatives/_Splash!/Splash! (ver. 1.3, checksum E7BEEEFA, North America).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
 "splat": {
 "dist:robotron": {
 "core": "dist:robotron",
@@ -74290,18 +73673,6 @@
 }
 },
 "ssriders": {
-"arcfpga:ssriders": {
-"core": "arcfpga:ssriders",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/Sunset Riders (4 Players ver EAC).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jlrh:ffssriders": {
 "core": "jlrh:ffssriders",
 "date": "2026-08-15",
@@ -74328,18 +73699,6 @@
 }
 },
 "ssridersabd": {
-"arcfpga:ssriders": {
-"core": "arcfpga:ssriders",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Sunset Riders (2 Players ver ABD) [Unofficial].mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtriders": {
 "core": "jt:jtriders",
 "date": "2024-08-09",
@@ -74354,18 +73713,6 @@
 }
 },
 "ssridersadd": {
-"arcfpga:ssriders": {
-"core": "arcfpga:ssriders",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Sunset Riders/Sunset Riders (4 Players ver ADD).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtriders": {
 "core": "jt:jtriders",
 "date": "2024-08-09",
@@ -74380,18 +73727,6 @@
 }
 },
 "ssriderseaa": {
-"arcfpga:ssriders": {
-"core": "arcfpga:ssriders",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Sunset Riders/Sunset Riders (4 Players ver EAA).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtriders": {
 "core": "jt:jtriders",
 "date": "2024-08-09",
@@ -74406,18 +73741,6 @@
 }
 },
 "ssridersebc": {
-"arcfpga:ssriders": {
-"core": "arcfpga:ssriders",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Sunset Riders/Sunset Riders (2 Players ver EBC).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtriders": {
 "core": "jt:jtriders",
 "date": "2024-08-09",
@@ -74432,18 +73755,6 @@
 }
 },
 "ssridersebd": {
-"arcfpga:ssriders": {
-"core": "arcfpga:ssriders",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Sunset Riders/Sunset Riders (2 Players ver EBD).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jlrh:ffssriders": {
 "core": "jlrh:ffssriders",
 "date": "2026-08-15",
@@ -74470,18 +73781,6 @@
 }
 },
 "ssridersjac": {
-"arcfpga:ssriders": {
-"core": "arcfpga:ssriders",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Sunset Riders/Sunset Riders (4 Players ver JAC).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtriders": {
 "core": "jt:jtriders",
 "date": "2024-08-09",
@@ -74496,18 +73795,6 @@
 }
 },
 "ssridersjad": {
-"arcfpga:ssriders": {
-"core": "arcfpga:ssriders",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Sunset Riders/Sunset Riders (4 Players ver JAD).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtriders": {
 "core": "jt:jtriders",
 "date": "2024-08-09",
@@ -74522,18 +73809,6 @@
 }
 },
 "ssridersjbd": {
-"arcfpga:ssriders": {
-"core": "arcfpga:ssriders",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Sunset Riders/Sunset Riders (2 Players ver JBD).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtriders": {
 "core": "jt:jtriders",
 "date": "2024-08-09",
@@ -74548,18 +73823,6 @@
 }
 },
 "ssridersuab": {
-"arcfpga:ssriders": {
-"core": "arcfpga:ssriders",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Sunset Riders/Sunset Riders (4 Players ver UAB).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtriders": {
 "core": "jt:jtriders",
 "date": "2024-08-09",
@@ -74574,18 +73837,6 @@
 }
 },
 "ssridersuac": {
-"arcfpga:ssriders": {
-"core": "arcfpga:ssriders",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Sunset Riders/Sunset Riders (4 Players ver UAC).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtriders": {
 "core": "jt:jtriders",
 "date": "2024-08-09",
@@ -74600,18 +73851,6 @@
 }
 },
 "ssridersubc": {
-"arcfpga:ssriders": {
-"core": "arcfpga:ssriders",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Sunset Riders (2 Players ver UBC) [Unofficial].mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtriders": {
 "core": "jt:jtriders",
 "date": "2024-08-09",
@@ -74626,18 +73865,6 @@
 }
 },
 "ssridersuda": {
-"arcfpga:ssriders": {
-"core": "arcfpga:ssriders",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Sunset Riders/Sunset Riders (4 Players ver UDA).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-},
 "jt:jtriders": {
 "core": "jt:jtriders",
 "date": "2024-08-09",
@@ -75089,48 +74316,6 @@
 "alt": false,
 "first_repo": "MiSTer-devel/Arcade-SpaceInvaders_MiSTer",
 "first_path": "unreleased/Steel Worker.mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"stfight": {
-"arcfpga:empirecity": {
-"core": "arcfpga:empirecity",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/empirecity/releases/mra/alternatives/_Empire City 1931/Street Fight (Germany).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"stfighta": {
-"arcfpga:empirecity": {
-"core": "arcfpga:empirecity",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/empirecity/releases/mra/alternatives/_Empire City 1931/Street Fight (bootleg).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
-}
-},
-"stfightgb": {
-"arcfpga:empirecity": {
-"core": "arcfpga:empirecity",
-"date": "2026-08-26",
-"date_quality": "git",
-"via": "arcfpga",
-"wip": false,
-"alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/empirecity/releases/mra/alternatives/_Empire City 1931/Street Fight (Germany - Benelux).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }

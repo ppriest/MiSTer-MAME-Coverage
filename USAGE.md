@@ -100,6 +100,9 @@ support[set][core id]       date, date_quality, via (source), wip, alt,
 
 Merge rules (`mmc/ledger.py`):
 
+- The one exception to append-only: cores that a source rule now excludes (`observe()` returns
+  them as `excluded`, see `MULTI_PLATFORM`) are removed from the ledger together with the sets
+  only they supported. The run summary records how many.
 - A set/core pair not yet in the ledger is appended with today's `first_recorded`.
 - An existing pair keeps its date unless the new observation is better: a `git` date beats a
   `git-other` date beats a `build` date, and at equal quality an earlier date wins.
@@ -204,6 +207,13 @@ All in `mmc/mister.py`:
 - `FILTER_OVERRIDES`: use `blob:none` for a repository whose small files are still too big to
   clone wholesale (jotego/jtcores).
 - `SKIP_REPOS`: repositories alamone names that are not worth cloning.
+- `MULTI_PLATFORM`: repositories that publish cores for several FPGA boards, currently
+  `bmo00/arcfpga-cores` (mostly NeptUNO+). Only MRAs under `cores/<name>/` are read, and one
+  counts as MiSTer coverage when the repository's own `cores.json` lists a `mister` release for
+  that core (CPS3, Rastan, Mysterious Stones) or when it loads a jotego core that other sources
+  already provide as a MiSTer build. Everything else, such as NeptUNO+-only ports of other
+  authors' cores (Splash!, the copy of Marble Madness II, alternate regional sets of jlrh's
+  cores), is excluded, and its dates never date another source's MRA.
 - `DB_TITLES`: display names for source ids.
 
 MAME classification lives in `mmc/mame.py` (`GAMBLING_DIRS`, `GAMBLING_FILES`, `GAMBLING_DESC`,
