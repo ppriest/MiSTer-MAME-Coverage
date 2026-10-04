@@ -195,9 +195,12 @@ All in `mmc/mister.py`:
 - `EXTRA_REPOS`: repositories no database or registry points at any more (the official mirrors of
   jotego's first cores, jotego's early `rom/mra` folder). Add a fork of a repository whose history
   was lost, for example.
+- `SUPERSEDED_CORES`: core ids replaced by a better-sourced record (for example `repo:hyperng64`,
+  now `ppriest:hyperng64`); removed from the ledger like excluded cores.
 - `ROMSET_FILES`: cores that load sets from a list instead of MRAs (the NeoGeo core's
   `releases/romsets.xml`).
-- `DB_SOURCES`: developer downloader databases (`db.json.zip` URLs, or a plain `db.json` such as
+- `DB_SOURCES`: developer downloader databases (ppriest's own `MiSTer_ppriest` among them, which is
+  unreachable, and listed as such on the About tab, until that repository is published); (`db.json.zip` URLs, or a plain `db.json` such as
   shmupfan's Distribution). Their MRAs are fetched and
   parsed directly, so a core published only as builds (Patreon releases such as blahm1d's, which
   have no source repository) still counts through the MRAs its database ships. These files carry

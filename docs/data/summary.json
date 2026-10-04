@@ -1,28 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-04T21:45:53+00:00",
+  "generated": "2026-10-04T21:53:05+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-04T21:45:49+00:00",
+  "mister_generated": "2026-10-04T21:53:02+00:00",
   "alamone_generated": "2026-10-01T23:23:16+00:00",
   "ledger_updated": "2026-10-04",
   "ledger_runs": [
-   {
-    "date": "2026-10-04",
-    "note": "alamone 2026-10-01",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0
-   },
-   {
-    "date": "2026-10-04",
-    "note": "alamone 2026-10-01",
-    "cores": 11,
-    "sets": 47,
-    "pairs": 89,
-    "dates_improved": 7
-   },
    {
     "date": "2026-10-04",
     "note": "alamone 2026-10-01",
@@ -49,6 +33,24 @@
     "pairs": 0,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-04",
+    "note": "alamone 2026-10-01",
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
+    "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-04",
+    "note": "alamone 2026-10-01",
+    "cores": 1,
+    "sets": 0,
+    "pairs": 4,
+    "dates_improved": 1,
+    "cores_removed": 1
    }
   ],
   "genre": {
@@ -82,6 +84,7 @@
    "arcfpga": "arcfpga (bmo00)",
    "blahm1d": "blahm1d",
    "shmupfan": "shmupfan (Distribution)",
+   "ppriest": "ppriest (MiSTer_ppriest)",
    "repo": "GitHub repository only"
   },
   "repos": [
@@ -2208,7 +2211,7 @@
     "mras": 2
    },
    {
-    "source": "repo",
+    "source": "ppriest",
     "repo": "ppriest/Arcade-HyperNG64_MiSTer",
     "dirs": null,
     "mras": 4
@@ -2221,34 +2224,6 @@
    }
   ],
   "repo_errors": [
-   [
-    "Kyp069/zx48-MiSTer",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "blahm1d/MiSTer-cores",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "blahm1d/wolf-unit",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "kandowontu/BrickBoy_MiSTer",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "meathax/Bucky",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "meathax/mrdo",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "meathax/s24",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
    [
     "https://mister.blahm1d.com/db.json.zip",
     "<urlopen error Tunnel connection failed: 403 Forbidden>"
@@ -13505,6 +13480,27 @@
    "first_date": "2026-08-29"
   },
   {
+   "id": "ppriest:hyperng64",
+   "name": "HyperNG64",
+   "source": "ppriest",
+   "source_title": "ppriest (MiSTer_ppriest)",
+   "channel": null,
+   "rbf": "HyperNG64.rbf",
+   "repo": "ppriest/Arcade-HyperNG64_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-HyperNG64_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 4,
+   "ntitles": 4,
+   "first_date": "2026-09-20"
+  },
+  {
    "id": "repo:1945kiii",
    "name": "1945kiii",
    "source": "repo",
@@ -13789,28 +13785,6 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-07"
-  },
-  {
-   "id": "repo:hyperng64",
-   "name": "HyperNG64",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": null,
-   "rbf": "HyperNG64.rbf",
-   "repo": "ppriest/Arcade-HyperNG64_MiSTer",
-   "url": "https://github.com/ppriest/Arcade-HyperNG64_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "nsets": 4,
-   "ntitles": 4,
-   "first_date": "2026-09-20"
   },
   {
    "id": "repo:jalecoms32",
@@ -14381,7 +14355,7 @@
    "last_seen": "2026-10-04",
    "nsets": 10,
    "ntitles": 6,
-   "first_date": "2026-09-18"
+   "first_date": "2026-03-13"
   },
   {
    "id": "repo:skns",
@@ -22216,7 +22190,7 @@
    "sets": 7,
    "sets_covered": 4,
    "cores": [
-    "repo:hyperng64"
+    "ppriest:hyperng64"
    ],
    "first": "2026-09-20"
   },

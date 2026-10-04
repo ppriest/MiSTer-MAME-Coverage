@@ -93,6 +93,33 @@
 "pairs": 0,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-04",
+"note": "alamone 2026-10-01",
+"cores": 0,
+"sets": 0,
+"pairs": 0,
+"dates_improved": 0,
+"cores_removed": 0
+},
+{
+"date": "2026-10-04",
+"note": "alamone 2026-10-01",
+"cores": 1,
+"sets": 0,
+"pairs": 4,
+"dates_improved": 1,
+"cores_removed": 1
+},
+{
+"date": "2026-10-04",
+"note": "alamone 2026-10-01",
+"cores": 0,
+"sets": 0,
+"pairs": 0,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -9902,6 +9929,25 @@
 "aliases": [],
 "last_seen": "2026-10-04"
 },
+"ppriest:hyperng64": {
+"id": "ppriest:hyperng64",
+"name": "HyperNG64",
+"source": "ppriest",
+"source_title": "ppriest (MiSTer_ppriest)",
+"channel": null,
+"rbf": "HyperNG64.rbf",
+"repo": "ppriest/Arcade-HyperNG64_MiSTer",
+"url": "https://github.com/ppriest/Arcade-HyperNG64_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
+"aliases": [],
+"last_seen": "2026-10-04"
+},
 "repo:1945kiii": {
 "id": "repo:1945kiii",
 "name": "1945kiii",
@@ -10147,25 +10193,6 @@
 "mame_drivers": [
 "atari/harddriv.cpp"
 ],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-04"
-},
-"repo:hyperng64": {
-"id": "repo:hyperng64",
-"name": "HyperNG64",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": null,
-"rbf": "HyperNG64.rbf",
-"repo": "ppriest/Arcade-HyperNG64_MiSTer",
-"url": "https://github.com/ppriest/Arcade-HyperNG64_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
@@ -19796,11 +19823,11 @@
 }
 },
 "buriki": {
-"repo:hyperng64": {
-"core": "repo:hyperng64",
+"ppriest:hyperng64": {
+"core": "ppriest:hyperng64",
 "date": "2026-09-20",
 "date_quality": "git",
-"via": "repo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
@@ -20214,7 +20241,7 @@
 },
 "repo:setadowntown": {
 "core": "repo:setadowntown",
-"date": "2026-09-19",
+"date": "2026-03-13",
 "date_quality": "git",
 "via": "repo",
 "wip": false,
@@ -31348,11 +31375,11 @@
 }
 },
 "fatfurwa": {
-"repo:hyperng64": {
-"core": "repo:hyperng64",
+"ppriest:hyperng64": {
+"core": "ppriest:hyperng64",
 "date": "2026-09-20",
 "date_quality": "git",
-"via": "repo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
@@ -64916,11 +64943,11 @@
 }
 },
 "sams64": {
-"repo:hyperng64": {
-"core": "repo:hyperng64",
+"ppriest:hyperng64": {
+"core": "ppriest:hyperng64",
 "date": "2026-09-20",
 "date_quality": "git",
-"via": "repo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
@@ -64930,11 +64957,11 @@
 }
 },
 "sams64_2": {
-"repo:hyperng64": {
-"core": "repo:hyperng64",
+"ppriest:hyperng64": {
+"core": "ppriest:hyperng64",
 "date": "2026-09-20",
 "date_quality": "git",
-"via": "repo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
@@ -87407,7 +87434,8 @@
 },
 "arbalest": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "arcadian": {
 "ongo": "Shooter",
@@ -87557,7 +87585,8 @@
 },
 "atehate": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "atetris": {
 "dist": "Puzzle"
@@ -87871,11 +87900,13 @@
 },
 "blandia": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "blandiap": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "blazeonj": {
 "ongo": "Shooter / Flying Horizontal"
@@ -87913,7 +87944,8 @@
 },
 "blockcar": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "blockgal": {
 "dist": "Ball and Paddle"
@@ -88249,7 +88281,8 @@
 "ongo": "Action / RPG"
 },
 "calibr50": {
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "calipso": {
 "dist": "Shooter - Multidirectional"
@@ -88739,7 +88772,8 @@
 },
 "crzcross": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "cscrtry": {
 "dist": "Sports"
@@ -88843,18 +88877,21 @@
 },
 "daioh": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "daioha": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "dairesya": {
 "dist": "Platformer"
 },
 "daiskiss": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "dangar": {
 "dist": "Platform",
@@ -89313,19 +89350,23 @@
 },
 "downtown": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "downtown2": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "downtownj": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "downtownp": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "dplay": {
 "dist": "Sports / Baseball"
@@ -89336,18 +89377,21 @@
 },
 "dragoona": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "dragoonj": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "dremshpr": {
 "dist": "Maze"
 },
 "drgnunit": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "drmicro": {
 "ongo": "Platform",
@@ -89441,7 +89485,8 @@
 },
 "eightfrc": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "einning": {
 "dist": "Sports / Baseball"
@@ -89588,7 +89633,8 @@
 },
 "extdwnhl": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "exvania": {
 "ongo": "Maze",
@@ -89619,11 +89665,13 @@
 },
 "fantjour": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "fantjoura": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "fantzn2": {
 "dist": "Shooter"
@@ -90267,7 +90315,8 @@
 },
 "gokuparo": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "gollygho": {
 "ongo": "Arcade",
@@ -90389,11 +90438,13 @@
 },
 "gundhara": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "gundharac": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "gunfight": {
 "dist": "Arena"
@@ -90843,11 +90894,13 @@
 },
 "jjsquawk": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "jjsquawko": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "joemac": {
 "coinop": "Platform"
@@ -90923,7 +90976,8 @@
 },
 "kamenrid": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "kamikazesp": {
 "dist": "Platform - Climb"
@@ -91116,15 +91170,18 @@
 },
 "le2": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "le2j": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "le2u": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "leaguemn": {
 "dist": "Fighter"
@@ -91259,11 +91316,13 @@
 },
 "madshark": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "magspeed": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "magspot": {
 "dist": "Garden"
@@ -91399,7 +91458,8 @@
 },
 "metafox": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "metamrph": {
 "coinop": "Beat &apos;Em Up"
@@ -91566,11 +91626,13 @@
 },
 "msgundam": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "msgundam1": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "msh_1": {
 "ongo": "Fighting"
@@ -91604,7 +91666,8 @@
 },
 "mtwinbee": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "mushisam": {
 "ongo": "Shooter"
@@ -91745,7 +91808,8 @@
 },
 "neobattl": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "netmerc": {
 "ongo": "Shooter"
@@ -91911,7 +91975,8 @@
 },
 "oisipuzl": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "olysoc92": {
 "dist": "Sports",
@@ -92131,7 +92196,8 @@
 },
 "pairlove": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "pajaroes": {
 "dist": "Shooter - Gallery"
@@ -92714,7 +92780,8 @@
 },
 "puzldama": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "puzlwrld": {
 "ongo": "Shooter",
@@ -92775,11 +92842,13 @@
 },
 "qzkklgy2": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "qzkklogy": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "rachero": {
 "dist": "Shooter / Flight"
@@ -93202,11 +93271,13 @@
 },
 "rezon": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "rezono": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "rfjet": {
 "ongo": "Shooter",
@@ -93561,11 +93632,13 @@
 },
 "salmndr2": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "salmndr2a": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "samuraia": {
 "dist": "Shoot 'Em Up"
@@ -93718,11 +93791,13 @@
 },
 "sexyparo": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "sexyparoa": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "sf2ces15": {
 "ongo": "Fighting"
@@ -94081,7 +94156,8 @@
 },
 "sokonuke": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "solarfox": {
 "dist": "Shooter - Multidirectional"
@@ -94434,7 +94510,8 @@
 },
 "stg": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "stkclmns": {
 "ongo": "Arcade",
@@ -94671,7 +94748,8 @@
 },
 "tbyahhoo": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "tdragon": {
 "coinop": "Shoot'em Up",
@@ -94890,11 +94968,13 @@
 },
 "thunderl": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "thunderla": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "tigerhb1": {
 "dist": "Shooter"
@@ -94964,7 +95044,8 @@
 },
 "tkmmpzdm": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "tmht": {
 "repo": "Beat 'em up"
@@ -95019,11 +95100,13 @@
 },
 "tndrcade": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "tndrcadej": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "tnk3": {
 "dist": "Shooter / Driving Vertical"
@@ -95042,7 +95125,8 @@
 },
 "tokkae": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "tomagic": {
 "ongo": "Shooter",
@@ -95199,7 +95283,8 @@
 },
 "twineagl": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "twinsqua": {
 "ongo": "Arcade",
@@ -95259,7 +95344,8 @@
 },
 "umanclub": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "uniwars": {
 "dist": "Shooter - Gallery"
@@ -95570,19 +95656,23 @@
 },
 "winspike": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "winspikea": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "winspikej": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "wits": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "wizdfire": {
 "coinop": "Hack &amp; Slash"
@@ -95610,7 +95700,8 @@
 },
 "wrofaero": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "wwanpanm": {
 "ongo": "Arcade",
@@ -95764,11 +95855,13 @@
 },
 "zingzip": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "zombraid": {
 "ongo": "Arcade",
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "zookeep": {
 "dist": "Arcade"

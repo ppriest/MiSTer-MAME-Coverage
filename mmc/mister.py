@@ -61,8 +61,12 @@ EXTRA_REPOS = [
     # Cores not yet catalogued by alamone or any database (add new ones here).
     ("repo", "kyledlester/Namco_NB1_MiSTer", ["MRA"]),
     ("repo", "kyledlester/MiSTer_Nostradamus", ["MRA"]),   # was Nostradamus_Magical_Cat_Adventure_MiSTer
-    ("repo", "ppriest/Arcade-HyperNG64_MiSTer", None),
+    ("ppriest", "ppriest/Arcade-HyperNG64_MiSTer", None),
 ]
+
+# Core records that a better-sourced record replaces. They are removed from the ledger together with
+# their set/core pairs (see ledger.merge); the replacement carries the same sets.
+SUPERSEDED_CORES = {"repo:hyperng64"}      # now ppriest:hyperng64, the same repository under the ppriest source
 
 # Developer "downloader" databases (what update_all installs from downloader.ini). Their
 # db.json.zip lists every MRA with a URL; we fetch and parse those directly, so a core that is
@@ -77,6 +81,9 @@ DB_SOURCES = {
     "arcfpga": "https://raw.githubusercontent.com/bmo00/arcfpga-mister-db/db/db.json.zip",
     "blahm1d": "https://mister.blahm1d.com/db.json.zip",
     "shmupfan": "https://raw.githubusercontent.com/shmupfan/Distribution/main/db.json",   # plain JSON, not zipped
+    # ppriest's own cores, rebuilt daily from his public non-archived core repositories
+    # (github.com/ppriest/MiSTer_ppriest). Unreachable until that repository is published.
+    "ppriest": "https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip",
 }
 # Cores that load ROM sets from a list instead of MRAs: (source, repo, file, core name).
 ROMSET_FILES = [
@@ -111,6 +118,7 @@ DB_TITLES = {
     "arcfpga": "arcfpga (bmo00)",
     "blahm1d": "blahm1d",
     "shmupfan": "shmupfan (Distribution)",
+    "ppriest": "ppriest (MiSTer_ppriest)",
     "repo": "GitHub repository only",
 }
 
