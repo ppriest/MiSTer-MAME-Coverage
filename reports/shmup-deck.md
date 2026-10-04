@@ -2,9 +2,9 @@
 
 Generated 2026-10-04 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (313 games).
 
-**Agreement:** 290 of 305 deck titles are Shmup in our data (95.1%).
+**Agreement:** 291 of 305 deck titles are Shmup in our data (95.4%).
 
-## A. Deck games our data does not call Shmup (15)
+## A. Deck games our data does not call Shmup (14)
 
 Grouped by the raw category our genre came from. Rows marked *kept* are vehicle or isometric shooters this project keeps out of Shmup on purpose.
 
@@ -19,14 +19,13 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `outzone` | Out Zone | Run and Gun | Shooter / Walking (catver) | Out Zone |  |
 | `youjyudn` | Youjyuden (Japan) | Run and Gun | Shooter / Walking (catver) | Youjyuden |  |
 | `sdi` | SDI - Strategic Defense Initiative (Japan, newer, System 16A, FD1089B 317-0027) | Shooter | Shooter / Command (catver) | SDI Strategic Defense Initiative |  |
-| `horizon` | Horizon (Irem) | Shooter | Shooter / Driving Horizontal (catver) | Horizon |  |
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 | `lastmisn` | Last Mission (World revision 8) | Shooter | Shooter / Field (catver) | Last Mission |  |
 | `tp84` | Time Pilot '84 (set 1) | Shooter | Shooter / Field (catver) | Time Pilot '84 |  |
 | `sbomber` | Space Bomber (ver. B) | Shooter | Shooter / Gallery (catver) | Space Bomber |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (36)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (39)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
@@ -38,6 +37,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `robokid` | Atomic Robo-kid (World, Type-2) | 1988 | Shooter / Flying Horizontal (catver) | UPLFramebuffer |
 | `bakutotu` | Bakutotsu Kijuutei | 1988 | Shooter / Flying Horizontal (catver) | jtshouse |
 | `bchopper` | Battle Chopper (World) | 1987 | Shooter / Flying (catver) | IremM72 |
+| `brkthru` | Break Thru (World) | 1986 | Shooter / Driving Horizontal (catver) | xnbrkthru |
 | `choplift` | Choplifter (8751 315-5151) | 1985 | Shooter / Flying Horizontal (catver) | Blackwine-SegaSystem1-2, SegaSys1+2 (TheJesusFish) |
 | `dariusgx` | Darius Gaiden - Silver Hawk Extra Version (Ver 2.7J 1995/03/06) (Official Hack) | 1994 | Shooter / Flying Horizontal (catver) | TaitoF3, Rayforce (spacestate1) |
 | `defender` | Defender (Red label) | 1980 | Shooter / Flying Horizontal (catver) | Defender |
@@ -48,6 +48,8 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `megaphx` | Mega Phoenix | 1991 | Shooter / Flying Vertical (catver) | ffmegaphx |
 | `metlhawk` | Metal Hawk (Rev C) | 1988 | Shooter / Flying (catver) | Arcade-NamcoS2_MH |
 | `mimonkey` | Mighty Monkey | 1982 | Shooter / Flying Horizontal (catver) | Scramble |
+| `minefld` | Minefield | 1983 | Shooter / Driving Horizontal (catver) | Scramble |
+| `mpatrol` | Moon Patrol | 1982 | Shooter / Driving Horizontal (catver) | MoonPatrol |
 | `moonwar` | Moonwar | 1981 | Shooter / Flying (catver) | Scramble |
 | `cnightst` | Night Star (DECO Cassette) (US) (set 1) | 1983 | Shooter / Flying Vertical (catver) | DECOCassette |
 | `ninjemak` | Ninja Emaki (US) | 1986 | Shooter / Misc. Vertical (catver) | rmGalivan |
