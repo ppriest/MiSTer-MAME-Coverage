@@ -56,6 +56,10 @@
         </select>
       </label>
       <label>Year <span class="row"><input type="number" id="f-y0" placeholder="from" min="1970" max="2030" class="yr"> – <input type="number" id="f-y1" placeholder="to" min="1970" max="2030" class="yr"></span></label>
+      <label>In MAME since <span class="row" title="the release that first added the title's earliest set; drag across the time chart to set this">
+        <select id="f-m0y" class="yr"><option value="">any</option></select><select id="f-m0m" class="mo"><option value="">–</option></select>
+        – <select id="f-m1y" class="yr"><option value="">any</option></select><select id="f-m1m" class="mo"><option value="">–</option></select>
+      </span></label>
       <label>Genre <select id="f-genre"><option value="">any</option></select></label>
       <label>Manufacturer <select id="f-manu"><option value="">any</option></select></label>
       <label>Driver <select id="f-drv"><option value="">any</option></select></label>
@@ -97,7 +101,7 @@
     <figure class="chart" id="fig-time">
       <figcaption>
         <strong>MAME and MiSTer over time</strong>
-        <span class="muted">sets of the filtered titles (as of MAME <span id="mame-ver"></span>): in MAME, by the release that first listed each set; on MiSTer, by the date of its first MRA
+        <span class="muted">sets of the filtered titles (as of MAME <span id="mame-ver"></span>): in MAME, by the release that first listed each set; on MiSTer, by the date of its first MRA. Drag across the chart to filter by the date titles entered MAME
           · <button type="button" class="linkbtn" id="time-range">show since 2018</button></span>
       </figcaption>
       <div class="chart-body" id="chart-time"></div>
