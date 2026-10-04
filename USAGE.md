@@ -36,7 +36,9 @@ Options:
    the set names its MRAs load) and the MiSTer_Ongo README (links to the repositories it ships).
 2. Builds the repository plan: the distribution repositories listed in `mister.DISTRIBUTIONS`,
    every repository alamone names, every GitHub repository the Ongo README links, every
-   `MiSTer-devel/Arcade-*` repository the MiSTer wiki links, every repository shmup-deck's
+   repository the arcade table of the MiSTer wiki's `Cores.md` links (including ones not named
+   `Arcade-*`, such as N64_MiSTer, SMS_MiSTer and Saturn_MiSTer) and any `MiSTer-devel/Arcade-*`
+   link elsewhere in the wiki, every repository shmup-deck's
    `cores.json` points at (shmupfan's own cores get the `shmupfan` source), and the hand-kept
    `EXTRA_REPOS` and `ROMSET_FILES` lists.
 3. Clones each one with `--filter=blob:limit=1m --no-checkout` (history, trees and small files such
