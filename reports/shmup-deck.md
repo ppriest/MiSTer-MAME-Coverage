@@ -2,9 +2,9 @@
 
 Generated 2026-10-04 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (313 games).
 
-**Agreement:** 292 of 305 deck titles are Shmup in our data (95.7%).
+**Agreement:** 298 of 305 deck titles are Shmup in our data (97.7%).
 
-## A. Deck games our data does not call Shmup (13)
+## A. Deck games our data does not call Shmup (7)
 
 Grouped by the raw category our genre came from. Rows marked *kept* are vehicle or isometric shooters this project keeps out of Shmup on purpose.
 
@@ -12,19 +12,13 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 |---|---|---|---|---|---|
 | `slspirit` | Solite Spirits | None | None (None) | Solite Spirits |  |
 | `backfirt` | Back Fire (Tecmo) | Racing | Driving / Race (catver) | Back Fire |  |
-| `extrmatn` | Extermination (World) | Run and Gun | Shooter / Walking (catver) | Extermination |  |
-| `fixeight` | FixEight (Europe) | Run and Gun | Shooter / Walking (catver) | FixEight |  |
-| `gunsmoke` | Gun.Smoke (World, 1985-11-15) | Run and Gun | Shooter / Walking (catver) | Gun.Smoke |  |
-| `guwange` | Guwange (Japan, 1999 6/24 Master Ver 16:55) | Run and Gun | Shooter / Walking (catver) | Guwange |  |
-| `outzone` | Out Zone | Run and Gun | Shooter / Walking (catver) | Out Zone |  |
-| `youjyudn` | Youjyuden (Japan) | Run and Gun | Shooter / Walking (catver) | Youjyuden |  |
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 | `lastmisn` | Last Mission (World revision 8) | Shooter | Shooter / Field (catver) | Last Mission |  |
 | `tp84` | Time Pilot '84 (set 1) | Shooter | Shooter / Field (catver) | Time Pilot '84 |  |
 | `sbomber` | Space Bomber (ver. B) | Shooter | Shooter / Gallery (catver) | Space Bomber |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (44)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (77)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
@@ -37,38 +31,71 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `bakutotu` | Bakutotsu Kijuutei | 1988 | Shooter / Flying Horizontal (catver) | jtshouse |
 | `bchopper` | Battle Chopper (World) | 1987 | Shooter / Flying (catver) | IremM72 |
 | `brkthru` | Break Thru (World) | 1986 | Shooter / Driving Horizontal (catver) | xnbrkthru |
+| `bucky` | Bucky O'Hare (ver EAB) | 1992 | Shooter / Walking (catver) | moomesa, Arcade-Bucky |
+| `bullet` | Bullet (FD1094 317-0041) | 1987 | Shooter / Walking (catver) | jts16b |
+| `calibr50` | Caliber 50 (Ver. 1.01) | 1989 | Shooter / Walking (catver) | jtcal50, Arcade-SetaDowntown (ppriest) |
 | `choplift` | Choplifter (8751 315-5151) | 1985 | Shooter / Flying Horizontal (catver) | Blackwine-SegaSystem1-2, SegaSys1+2 (TheJesusFish) |
 | `colony7` | Colony 7 (set 1) | 1981 | Shooter / Command (catver) | Defender |
+| `commando` | Commando (World) | 1985 | Shooter / Walking (catver) | jtcommnd |
 | `dcon` | D-Con | 1992 | Shooter / Command (catver) | DCon |
 | `dariusgx` | Darius Gaiden - Silver Hawk Extra Version (Ver 2.7J 1995/03/06) (Official Hack) | 1994 | Shooter / Flying Horizontal (catver) | TaitoF3, Rayforce (spacestate1) |
 | `defender` | Defender (Red label) | 1980 | Shooter / Flying Horizontal (catver) | Defender |
+| `desertbr` | Desert Breaker (World) (FD1094 317-0196) | 1992 | Shooter / Walking (catver) | jts18 |
+| `devilw` | Devil World | 1987 | Shooter / Walking (catver) | jttwin16 |
 | `cexplore` | Explorer (DECO Cassette) (US) | 1982 | Shooter / Flying Vertical (catver) | DECOCassette |
+| `frontlin` | Front Line (AA1, 4 PCB version) | 1982 | Shooter / Walking (catver) | TaitoSJ |
 | `fnkyfish` | Funky Fish | 1981 | Shooter / Misc. Horizontal (catver) | Kangaroo |
+| `gground` | Gain Ground (World, 3 Players, Floppy Based, FD1094 317-0058-03d Rev A) | 1988 | Shooter / Walking (catver) | Arcade-SegaSystem24, Meathax_SegaSystem24 |
+| `gbusters` | Gang Busters (set 1) | 1988 | Shooter / Walking (catver) | jtaliens |
+| `gundhara` | Gundhara | 1995 | Shooter / Walking (catver) | Arcade-Seta (ppriest) |
+| `heatbrl` | Heated Barrel (World version 3) | 1992 | Shooter / Walking (catver) | HeatedBarrel |
+| `hbarrel` | Heavy Barrel (World) | 1987 | Shooter / Walking (catver) | jtninja |
+| `ikari3` | Ikari III - The Rescue (World version 1, 8-Way Joystick) | 1989 | Shooter / Walking (catver) | SNK68 |
+| `ikari` | Ikari Warriors (US JAMMA) | 1986 | Shooter / Walking (catver) | IkariWarriors |
+| `kikikai` | KiKi KaiKai | 1986 | Shooter / Walking (catver) | kikikai, Arcade-Kikikaikai (alpuy) |
 | `lasthope` | Last Hope (bootleg AES to MVS conversion, no coin support) | 2005 | Shooter / Flying Horizontal (catver) | NeoGeo |
 | `mayday` | Mayday (set 1) | 1980 | Shooter / Flying Horizontal (catver) | Defender |
 | `megaphx` | Mega Phoenix | 1991 | Shooter / Flying Vertical (catver) | ffmegaphx |
+| `mercs` | Mercs (World 900302) | 1990 | Shooter / Walking (catver) | jtcps1 |
 | `metlhawk` | Metal Hawk (Rev C) | 1988 | Shooter / Flying (catver) | Arcade-NamcoS2_MH |
 | `mimonkey` | Mighty Monkey | 1982 | Shooter / Flying Horizontal (catver) | Scramble |
 | `minefld` | Minefield | 1983 | Shooter / Driving Horizontal (catver) | Scramble |
 | `missile` | Missile Command (rev 3, A035467-02/04 PCBs) | 1980 | Shooter / Command (catver) | MissileCommand |
+| `mrviking` | Mister Viking (315-5041) | 1984 | Shooter / Walking (catver) | SEGASYS1 |
 | `mpatrol` | Moon Patrol | 1982 | Shooter / Driving Horizontal (catver) | MoonPatrol |
 | `moonwar` | Moonwar | 1981 | Shooter / Flying (catver) | Scramble |
 | `cnightst` | Night Star (DECO Cassette) (US) (set 1) | 1983 | Shooter / Flying Vertical (catver) | DECOCassette |
+| `ncommand` | Ninja Commando | 1992 | Shooter / Walking (catver) | NeoGeo |
 | `ninjemak` | Ninja Emaki (US) | 1986 | Shooter / Misc. Vertical (catver) | rmGalivan |
+| `nitrobal` | Nitro Ball (World, set 1) | 1992 | Shooter / Walking (catver) | nitrobal |
 | `opaopa` | Opa Opa (MC-8123, 317-0042) | 1987 | Shooter / Flying Horizontal (catver) | SMS |
 | `orbitron` | Orbitron | 1982 | Shooter / Command (catver) | Galaxian |
 | `phantom2` | Phantom II | 1979 | Shooter / Flying Vertical (catver) | SpaceInvaders |
 | `pballoon` | Pioneer Balloon | 1982 | Shooter / Flying Horizontal (catver) | SNK6502 |
 | `rampart` | Rampart (Trackball) | 1990 | Shooter / Command (catver) | Rampart |
 | `rescue` | Rescue | 1982 | Shooter / Flying (catver) | Scramble |
+| `searchar` | SAR - Search And Rescue (World) | 1989 | Shooter / Walking (catver) | SNK68 |
 | `scotrsht` | Scooter Shooter | 1985 | Shooter / Flying (catver) | ScooterShooter |
+| `sdgndmps` | SD Gundam Psycho Salamander no Kyoui | 1991 | Shooter / Walking (catver) | SDGundamPS |
 | `sfposeid` | Sea Fighter Poseidon | 1984 | Shooter / Misc. Horizontal (catver) | TaitoSJ |
+| `seganinj` | Sega Ninja (315-5102) | 1985 | Shooter / Walking (catver) | SEGASYS1 |
+| `shocktro` | Shock Troopers (set 1) | 1997 | Shooter / Walking (catver) | NeoGeo |
+| `shocktr2` | Shock Troopers - 2nd Squad | 1998 | Shooter / Walking (catver) | NeoGeo |
+| `skyrobo` | Sky Robo | 1989 | Shooter / Walking (catver) | armedf |
 | `skyskipr` | Sky Skipper | 1981 | Shooter / Flying (catver) | Popeye |
+| `amazon` | Soldier Girl Amazon | 1986 | Shooter / Walking (catver) | terracresta |
 | `stargate` | Stargate | 1981 | Shooter / Flying (catver) | Robotron |
 | `strkforc` | Strike Force (rev 1 02/25/91) | 1991 | Shooter / Flying (catver) | blahm1d_yunit |
 | `syvalion` | Syvalion (Japan) | 1988 | Shooter / Flying Horizontal (catver) | Syvalion |
 | `tacscan` | Tac/Scan | 1982 | Shooter / Flying Vertical (catver) | SegaG80V, SegaG80 (RodimusFVC) |
+| `tazmania` | Tazz-Mania (set 1) | 1982 | Shooter / Walking (catver) | Scramble |
 | `thndrbld` | Thunder Blade (upright) (FD1094 317-0056) | 1987 | Shooter / Flying (catver) | SegaXBoard |
+| `thndzone` | Thunder Zone (World, Rev 1) | 1991 | Shooter / Walking (catver) | thndzone |
+| `timesold` | Time Soldiers (US Rev 3) | 1987 | Shooter / Walking (catver) | Alpha68k |
+| `totcarn` | Total Carnage (rev LA1 03/10/92) | 1992 | Shooter / Walking (catver) | blahm1d_yunitadpcm |
+| `tricktrp` | Trick Trap (World?) | 1987 | Shooter / Walking (catver) | jtlabrun |
+| `valkyrie` | Valkyrie no Densetsu (Japan) | 1989 | Shooter / Walking (catver) | Arcade-NamcoS2_STD |
+| `victroad` | Victory Road | 1986 | Shooter / Walking (catver) | IkariWarriors |
 | `vsgradus` | Vs. Gradius (US, set GR E) | 1986 | Shooter / Flying Horizontal (catver) | VSnes |
 | `bnglngby` | Vs. Raid on Bungeling Bay (RD4-2 B) | 1985 | Shooter / Flying (catver) | VSnes |
 | `vsskykid` | Vs. Super SkyKid | 1985 | Shooter / Flying Horizontal (catver) | VSnes |
