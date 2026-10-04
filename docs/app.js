@@ -70,39 +70,42 @@
   function monthKey(d) { return d.slice(0, 7); }
   function addMonths(key, n) { let [y, m] = key.split("-").map(Number); m += n; y += Math.floor((m - 1) / 12); m = ((m - 1) % 12 + 12) % 12 + 1; return `${y}-${String(m).padStart(2, "0")}`; }
 
-  function renderTimeChart() {
+  function renderTimeChart(sinceKey) {
+    // Working arcade sets: cumulative count in MAME (by the release that added each set) and on
+    // MiSTer (by first MRA). Both lines share one axis; "remaining" is simply the gap between them.
     const titles = S.titles.filter(isArcadeWorking);
-    const total = titles.length;
-    const dated = titles.filter(t => t.covered_working && t.date_working).map(t => monthKey(t.date_working)).sort();
-    const undated = titles.filter(t => t.covered_working && !t.date_working).length;
-    if (!dated.length) return;
-    const first = dated[0], last = monthKey(new Date().toISOString());
+    const sets = titles.flatMap(t => t.sets.filter(s => s.working));
+    const mameKeys = sets.filter(s => s.mame_date).map(s => monthKey(s.mame_date)).sort();
+    const misterKeys = sets.filter(s => s.cores.length && s.date).map(s => monthKey(s.date)).sort();
+    if (!mameKeys.length) return;
+    const first = sinceKey || mameKeys[0], last = monthKey(new Date().toISOString());
     const months = []; for (let k = first; k <= last; k = addMonths(k, 1)) months.push(k);
-    const perMonth = new Map(months.map(k => [k, 0]));
-    dated.forEach(k => perMonth.set(k, (perMonth.get(k) || 0) + 1));
-    let cum = undated; // undated-but-covered titles are counted from the start
-    const rows = months.map(k => { cum += perMonth.get(k); return { k, added: perMonth.get(k), covered: cum, remaining: total - cum }; });
+    const count = keys => { const m = new Map(months.map(k => [k, 0])); let before = 0; keys.forEach(k => { if (k < first) before++; else if (m.has(k)) m.set(k, m.get(k) + 1); }); let c = before; return months.map(k => (c += m.get(k))); };
+    const inMame = count(mameKeys), onMister = count(misterKeys);
+    const rows = months.map((k, i) => ({ k, mame: inMame[i], mister: onMister[i] }));
+    const total = sets.length;
 
-    const W = 640, H = 260, m = { t: 12, r: 16, b: 28, l: 44 };
+    const W = 640, H = 260, m = { t: 22, r: 16, b: 28, l: 48 };
     const x = i => m.l + (W - m.l - m.r) * (i / Math.max(1, rows.length - 1));
     const y = v => m.t + (H - m.t - m.b) * (1 - v / total);
     const path = key => rows.map((r, i) => (i ? "L" : "M") + x(i).toFixed(1) + " " + y(r[key]).toFixed(1)).join("");
     const yTicks = [0, 0.25, 0.5, 0.75, 1].map(f => Math.round(total * f));
-    const years = rows.map((r, i) => [r.k, i]).filter(([k]) => k.endsWith("-01"));
-    const svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Covered and remaining titles over time">
+    const every = rows.length > 240 ? 5 : rows.length > 120 ? 2 : 1;
+    const years = rows.map((r, i) => [r.k, i]).filter(([k]) => k.endsWith("-01") && (+k.slice(0, 4)) % every === 0);
+    const end = rows.at(-1);
+    $("#chart-time").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Working arcade sets in MAME and on MiSTer over time">
       <g class="grid">${yTicks.map(v => `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/>`).join("")}</g>
       <g class="axis"><line x1="${m.l}" x2="${W - m.r}" y1="${y(0)}" y2="${y(0)}"/></g>
       ${yTicks.map(v => `<text x="${m.l - 6}" y="${y(v) + 4}" text-anchor="end">${fmt(v)}</text>`).join("")}
       ${years.map(([k, i]) => `<text x="${x(i)}" y="${H - 8}" text-anchor="middle">${k.slice(0, 4)}</text>`).join("")}
-      <path d="${path("remaining")}" fill="none" stroke="var(--accent-2)" stroke-width="2"/>
-      <path d="${path("covered")}" fill="none" stroke="var(--accent)" stroke-width="2"/>
-      <text x="${x(rows.length - 1) - 4}" y="${y(rows.at(-1).covered) + (rows.at(-1).covered < rows.at(-1).remaining ? 14 : -6)}" text-anchor="end" fill="var(--text)">${fmt(rows.at(-1).covered)} covered</text>
-      <text x="${x(rows.length - 1) - 4}" y="${y(rows.at(-1).remaining) + (rows.at(-1).covered < rows.at(-1).remaining ? -6 : 14)}" text-anchor="end" fill="var(--text)">${fmt(rows.at(-1).remaining)} remaining</text>
+      <path class="ref" d="${path("mame")}"/>
+      <path d="${path("mister")}" fill="none" stroke="var(--accent)" stroke-width="2"/>
+      <text x="${x(rows.length - 1) - 4}" y="${y(end.mame) - 7}" text-anchor="end" fill="var(--text)">${fmt(end.mame)} in MAME</text>
+      <text x="${x(rows.length - 1) - 4}" y="${y(end.mister) + (y(end.mister) - y(end.mame) > 30 ? -7 : 14)}" text-anchor="end" fill="var(--text)">${fmt(end.mister)} on MiSTer</text>
       <line class="hover-line" id="time-hover" x1="0" x2="0" y1="${m.t}" y2="${y(0)}" visibility="hidden"/>
       <rect x="${m.l}" y="${m.t}" width="${W - m.l - m.r}" height="${H - m.t - m.b}" fill="transparent" id="time-hit"/>
     </svg>`;
-    $("#chart-time").innerHTML = svg;
-    $("#legend-time").innerHTML = `<span><i class="line" style="background:var(--accent)"></i>covered titles</span><span><i class="line" style="background:var(--accent-2)"></i>remaining titles (of ${fmt(total)} in MAME ${S.data.meta.mame_version.replace(/^0/, "0.")})</span>${undated ? `<span class="muted">${undated} covered titles have no date and are counted from the start</span>` : ""}`;
+    $("#legend-time").innerHTML = `<span><i class="line" style="background:var(--text-2)"></i>working arcade sets in MAME</span><span><i class="line" style="background:var(--accent)"></i>of which on MiSTer</span>`;
     const hit = $("#time-hit"), hl = $("#time-hover"), svgEl = $("#chart-time svg");
     hit.addEventListener("mousemove", ev => {
       const r = svgEl.getBoundingClientRect();
@@ -110,9 +113,12 @@
       const i = Math.max(0, Math.min(rows.length - 1, Math.round((px - m.l) / (W - m.l - m.r) * (rows.length - 1))));
       hl.setAttribute("x1", x(i)); hl.setAttribute("x2", x(i)); hl.setAttribute("visibility", "visible");
       const row = rows[i];
-      showTip(`<b>${row.k}</b><br>covered: ${fmt(row.covered)} (${pct(row.covered, total)})<br>remaining: ${fmt(row.remaining)}<br>added this month: ${row.added}`, ev.clientX, ev.clientY);
+      showTip(`<b>${row.k}</b><br>in MAME: ${fmt(row.mame)}<br>on MiSTer: ${fmt(row.mister)} (${pct(row.mister, row.mame)})<br>not yet on MiSTer: ${fmt(row.mame - row.mister)}`, ev.clientX, ev.clientY);
     });
     hit.addEventListener("mouseleave", () => { hl.setAttribute("visibility", "hidden"); hideTip(); });
+    const btn = $("#time-range");
+    btn.textContent = sinceKey ? "show full history" : "show since 2018";
+    btn.onclick = () => renderTimeChart(sinceKey ? null : "2018-01");
   }
 
   function renderYearChart() {

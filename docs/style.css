@@ -57,6 +57,8 @@ svg .ref-line { stroke: var(--text-2); stroke-width: 1; }
 .chart { margin: 0; background: var(--surface-2); border-radius: 8px; padding: 12px 14px 8px; }
 .chart figcaption { display: flex; flex-direction: column; gap: 2px; margin-bottom: 6px; }
 .chart figcaption .muted { font-size: 12px; }
+.linkbtn { background: none; border: none; padding: 0; font: inherit; color: var(--accent); cursor: pointer; text-decoration: underline; }
+svg .ref { stroke: var(--text-2); stroke-width: 2; fill: none; }
 .chart-body { width: 100%; min-height: 240px; position: relative; }
 .chart-body svg { width: 100%; height: auto; display: block; }
 .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12px; color: var(--text-2); margin-top: 6px; }

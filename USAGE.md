@@ -62,6 +62,28 @@ the cores and dates from the ledger, rolls up per driver and per core, and write
 `report` needs no repositories, so a fresh checkout can rebuild the page from the committed ledger
 plus the MAME download alone.
 
+### What `mamehist` does
+
+Records when each set entered MAME, in `data/mame_added.json` (committed, append-only):
+
+- `versions`: release dates from mamedev/mame's git tags (a tree-less, depth-1 fetch of
+  `refs/tags/mame0*`, under 2 MB); versions before the first tag (0.121, 2007) and the "u"/"b"
+  releases between tags are interpolated from a short table of known dates in `mmc/mamehist.py`.
+- `sets`: the version that first listed each set, from three sources, each treated as an upper
+  bound so a date only ever moves earlier: the `[VerAdded]` section of the catver.ini copies (to
+  0.180); M.A.S.H.'s MAMEUI `Version*.ini` folder files (`MAMEUI-inifiles-0XXX.zip` in
+  [MASHinfo/mameinfo](https://github.com/MASHinfo/mameinfo), every release and "u" update from
+  0.129u5 to the current version; the repository is listed blob-less and only the one zip is
+  fetched); and `src/mame/mame.lst` at every release tag from 0.180 on (a set in N but not N−1
+  was added in N). Only versions and files not seen before are fetched.
+- A set re-listed later under the same name (after a rename or a re-dump) keeps its first date;
+  a set whose name changed is dated by the new name. A set counts as "in MAME" from its first
+  release even if it was not working then.
+
+`report` attaches `mame_added` and `mame_date` to every set and `mame_date` (earliest set) to
+every title; the "MAME and MiSTer over time" chart is the cumulative count of working arcade sets
+by those dates against the cumulative count on MiSTer.
+
 ## The ledger (`data/ledger.json`)
 
 The ledger is the durable record. It is committed, merged into incrementally, and never pruned.

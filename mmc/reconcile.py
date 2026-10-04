@@ -7,6 +7,7 @@ import os
 import re
 
 from . import genre as genre_mod
+from . import mamehist
 from . import mame as mame_mod
 from . import mister as mister_mod
 
@@ -201,6 +202,7 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
     support = ledger["support"]
     mister_meta = mister_meta or {}
     genres, genre_summary = genre_mod.resolve(machines, ledger.get("categories", {}))
+    added = mamehist.dates_for_sets(mamehist.load())
 
     # 3. Earliest date per set across cores; earliest per title across its sets.
     def earliest(recs):
@@ -232,6 +234,8 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
             "working": mame_mod.is_working(m),
             "status": m["status"],
             "parent": name == parent,
+            "mame_added": added.get(name, (None, None))[0],
+            "mame_date": added.get(name, (None, None))[1],
             "cores": [{k: r.get(k) for k in ("core", "date", "date_quality", "via", "wip", "alt")}
                       for r in sorted(recs.values(), key=lambda r: (r["date"] or "9999", r["core"]))],
             "date": earliest(recs.values()),
@@ -272,6 +276,7 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
             "covered_working": bool(covered_working),
             "date": earliest(r for s in sets for r in s["cores"]),
             "date_working": earliest(r for s in working_sets for r in s["cores"]),
+            "mame_date": min((s["mame_date"] for s in sets if s["mame_date"]), default=None),
             "cores": all_cores,
             "sets": sets,
         })
@@ -329,6 +334,7 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
         "ledger_updated": ledger["meta"].get("updated"),
         "ledger_runs": ledger["meta"].get("runs", [])[-5:],
         "genre": genre_summary,
+        "mame_added_updated": mamehist.load().get("updated"),
         "sources": mister_mod.DB_TITLES,
         "repos": mister_meta.get("repos", []),
         "repo_errors": mister_meta.get("errors", []),
