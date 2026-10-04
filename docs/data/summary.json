@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-04T01:16:47+00:00",
+  "generated": "2026-10-04T01:37:35+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-04T01:15:43+00:00",
+  "mister_generated": "2026-10-04T01:37:34+00:00",
   "alamone_generated": "2026-10-01T23:23:16+00:00",
   "ledger_updated": "2026-10-04",
   "ledger_runs": [
@@ -21,6 +21,14 @@
     "cores": 0,
     "sets": 0,
     "pairs": 0,
+    "dates_improved": 0
+   },
+   {
+    "date": "2026-10-04",
+    "note": "alamone 2026-10-01",
+    "cores": 1,
+    "sets": 15,
+    "pairs": 15,
     "dates_improved": 0
    }
   ],
@@ -2077,20 +2085,57 @@
     "mras": 2
    },
    {
+    "source": "repo",
+    "repo": "kyledlester/Namco_NB1_MiSTer",
+    "dirs": [
+     "MRA"
+    ],
+    "mras": 15
+   },
+   {
     "source": "dist",
     "repo": "MiSTer-devel/NeoGeo_MiSTer",
     "dirs": [],
     "mras": 262
    }
   ],
-  "repo_errors": [],
+  "repo_errors": [
+   [
+    "Kyp069/zx48-MiSTer",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "blahm1d/MiSTer-cores",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "blahm1d/wolf-unit",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "kandowontu/BrickBoy_MiSTer",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/Bucky",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/mrdo",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/s24",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ]
+  ],
   "counts": {
    "titles": 6886,
    "working_arcade_titles": 3762,
-   "working_arcade_titles_covered": 1805,
+   "working_arcade_titles_covered": 1813,
    "working_arcade_sets": 10018,
-   "working_arcade_sets_covered": 4601,
-   "cores": 524,
+   "working_arcade_sets_covered": 4616,
+   "cores": 525,
    "unmatched_sets": 400
   }
  },
@@ -14009,6 +14054,27 @@
    "first_date": "2026-09-25"
   },
   {
+   "id": "repo:namco_nb1",
+   "name": "Namco_NB1",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "Namco_NB1.rbf",
+   "repo": "kyledlester/Namco_NB1_MiSTer",
+   "url": "https://github.com/kyledlester/Namco_NB1_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 15,
+   "ntitles": 8,
+   "first_date": "2026-09-30"
+  },
+  {
    "id": "repo:polyplay",
    "name": "PolyPlay (Niels3RT)",
    "source": "repo",
@@ -19929,11 +19995,13 @@
   {
    "sourcefile": "namco/namconb1.cpp",
    "titles": 10,
-   "covered": 0,
+   "covered": 8,
    "sets": 21,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 15,
+   "cores": [
+    "repo:namco_nb1"
+   ],
+   "first": "2026-09-30"
   },
   {
    "sourcefile": "namco/namcond1.cpp",

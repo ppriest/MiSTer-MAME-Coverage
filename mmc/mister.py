@@ -55,6 +55,8 @@ EXTRA_REPOS = [
     ("jt", "MiSTer-devel/Arcade-1943_MiSTer", None),
     ("jt", "MiSTer-devel/Arcade-gng_MiSTer", None),
     ("jt", "jotego/jtcores", ["rom/mra"]),
+    # Cores not yet catalogued by alamone or any database (add new ones here).
+    ("repo", "kyledlester/Namco_NB1_MiSTer", ["MRA"]),
 ]
 # Cores that load ROM sets from a list instead of MRAs: (source, repo, file, core name).
 ROMSET_FILES = [

@@ -18,6 +18,14 @@
 "sets": 0,
 "pairs": 0,
 "dates_improved": 0
+},
+{
+"date": "2026-10-04",
+"note": "alamone 2026-10-01",
+"cores": 1,
+"sets": 15,
+"pairs": 15,
+"dates_improved": 0
 }
 ]
 },
@@ -10184,6 +10192,24 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-10-04"
+},
+"repo:namco_nb1": {
+"id": "repo:namco_nb1",
+"name": "Namco_NB1",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": null,
+"rbf": "Namco_NB1.rbf",
+"repo": "kyledlester/Namco_NB1_MiSTer",
+"url": "https://github.com/kyledlester/Namco_NB1_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "repo:penguinkunwars": {
@@ -36677,6 +36703,62 @@
 "last_seen": "2026-10-04"
 }
 },
+"gslgr94j": {
+"repo:namco_nb1": {
+"core": "repo:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/_alternatives/_Great Sluggers '94/Great Sluggers '94 (Japan).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"gslgr94u": {
+"repo:namco_nb1": {
+"core": "repo:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/Great Sluggers '94.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"gslgr94ua": {
+"repo:namco_nb1": {
+"core": "repo:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/_alternatives/_Great Sluggers '94/Great Sluggers '94 (prototype).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"gslugrsj": {
+"repo:namco_nb1": {
+"core": "repo:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/Great Sluggers (Japan).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "gteikoku": {
 "dist:galaxian": {
 "core": "dist:galaxian",
@@ -36869,6 +36951,34 @@
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-Psikyo_MiSTer",
 "first_path": "releases/_alternatives/Gunbird (Korea).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"gunbuletj": {
+"repo:namco_nb1": {
+"core": "repo:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/_alternatives/_Point Blank/Gun Bullet (Japan, GN1).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"gunbuletw": {
+"repo:namco_nb1": {
+"core": "repo:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/_alternatives/_Point Blank/Gun Bullet (World, GN3 Rev B).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -50309,6 +50419,48 @@
 "last_seen": "2026-10-04"
 }
 },
+"nebulray": {
+"repo:namco_nb1": {
+"core": "repo:namco_nb1",
+"date": "2026-09-30",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/Nebulas Ray (World, NR2).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"nebulrayj": {
+"repo:namco_nb1": {
+"core": "repo:namco_nb1",
+"date": "2026-10-01",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/_alternatives/_Nebulas Ray/Nebulas Ray (Japan, NR1).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"nebulrayp": {
+"repo:namco_nb1": {
+"core": "repo:namco_nb1",
+"date": "2026-10-01",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/_alternatives/_Nebulas Ray/Nebulas Ray (prototype).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "nemesis": {
 "ongo:nemesis": {
 "core": "ongo:nemesis",
@@ -57153,6 +57305,20 @@
 "last_seen": "2026-10-04"
 }
 },
+"ptblank": {
+"repo:namco_nb1": {
+"core": "repo:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/Point Blank (World, GN2 Rev B, set 1).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "ptblank2a": {
 "ongo:system11": {
 "core": "ongo:system11",
@@ -57205,6 +57371,20 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Point Blank 2/Point Blank 2 (US GNB3-VER.A).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"ptblanka": {
+"repo:namco_nb1": {
+"core": "repo:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/_alternatives/_Point Blank/Point Blank (World, GN2 Rev B, set 2).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
@@ -74429,6 +74609,48 @@
 "last_seen": "2026-10-04"
 }
 },
+"sws95": {
+"repo:namco_nb1": {
+"core": "repo:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/Super World Stadium '95 (Japan).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"sws96": {
+"repo:namco_nb1": {
+"core": "repo:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/Super World Stadium '96 (Japan).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"sws97": {
+"repo:namco_nb1": {
+"core": "repo:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/Super World Stadium '97 (Japan).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "sws98": {
 "ongo:system12": {
 "core": "ongo:system12",
@@ -82399,6 +82621,20 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Nintendo VS. System/Vs. Gumshoe.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"vshoot": {
+"repo:namco_nb1": {
+"core": "repo:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/J-League Soccer V-Shoot (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 }
