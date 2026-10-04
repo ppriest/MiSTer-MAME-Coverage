@@ -75,6 +75,15 @@
       <label>Year <span class="row"><input type="number" id="f-y0" placeholder="from" min="1970" max="2030" class="yr"> – <input type="number" id="f-y1" placeholder="to" min="1970" max="2030" class="yr"></span></label>
       <label>Manufacturer <select id="f-manu"><option value="">any</option></select></label>
       <label>Driver <select id="f-drv"><option value="">any</option></select></label>
+      <label>Driver coverage
+        <select id="f-dcov" title="whether any title of the same MAME driver is on MiSTer">
+          <option value="">any</option>
+          <option value="none">driver has no core</option>
+          <option value="partial">driver partly covered</option>
+          <option value="some">driver has a core (partly or fully)</option>
+          <option value="full">driver fully covered</option>
+        </select>
+      </label>
       <label>Core <select id="f-core"><option value="">any</option></select></label>
       <label>Orientation
         <select id="f-rot">
@@ -116,6 +125,7 @@
           <option value="all">all drivers</option>
           <option value="none">no coverage</option>
           <option value="partial">partial coverage</option>
+          <option value="notfull">not fully covered (none or partial)</option>
           <option value="full">fully covered</option>
         </select>
       </label>
@@ -177,8 +187,9 @@
     <h2>How it is built</h2>
     <ul>
       <li><strong>MAME side.</strong> The <code>-listxml</code> output mamedev attaches to each release. A machine counts as <em>arcade</em> when it is runnable, takes coins, has a video display and is not flagged mechanical; gambling boards (by driver folder, driver file or words such as poker, slot, bingo in the title) and mahjong boards are categorised separately and left out of the headline counts. <em>Working</em> means MAME does not flag it <code>MACHINE_NOT_WORKING</code> (listxml <code>emulation="preliminary"</code>). Not-working sets are kept in the data but excluded from every default count.</li>
-      <li><strong>MiSTer side.</strong> Every MRA (plus the NeoGeo core's <code>romsets.xml</code>) in the official distribution, JTCORES (jotego), Coin-Op Collection, OngoGablogian's MiSTer_Ongo database, the per-core <code>releases/</code> folders, and the developer databases catalogued by <a href="https://github.com/alamone/fpga-verified-against">alamone/fpga-verified-against</a>. An MRA's <code>&lt;setname&gt;</code> is the MAME set it loads; its <code>&lt;rbf&gt;</code> names the core.</li>
+      <li><strong>MiSTer side.</strong> Every MRA (plus the NeoGeo core's <code>romsets.xml</code>) in the official distribution, JTCORES (jotego), Coin-Op Collection, OngoGablogian's MiSTer_Ongo database, the per-core <code>releases/</code> folders, the developer downloader databases (MeatCores, Slop Cores, kuzecores, jlrh, arcfpga, blahm1d; cores published only as builds, such as Patreon releases, count through the MRAs their database ships), a hand-kept list of repositories nobody indexes yet, and the registry kept by <a href="https://github.com/alamone/fpga-verified-against">alamone/fpga-verified-against</a>. An MRA's <code>&lt;setname&gt;</code> is the MAME set it loads; its <code>&lt;rbf&gt;</code> names the core.</li>
       <li><strong>Dates.</strong> Each repository is cloned without file contents and <code>git log</code> gives the day each MRA file was first committed. The earliest date across every source is the date a set became available; a title (MAME parent set plus its clones) takes the earliest of its sets. Where a repository's history was squashed (jotego's jtbin in May 2024, the official distribution starts September 2021) the per-core repository history fills in; where no history exists at all the core's latest build date is used and marked approximate.</li>
+      <li><strong>BIOS sets</strong> (MAME <code>isbios</code>, e.g. "Acclaim ZN-1", "Neo-Geo") are not games and are left out entirely.</li>
       <li><strong>Titles vs sets.</strong> A <em>title</em> is a MAME parent set with all its clones. It counts as covered when any of its sets loads on any core. The burndown therefore shows titles, not individual ROM sets.</li>
     </ul>
     <h2>Caveats</h2>

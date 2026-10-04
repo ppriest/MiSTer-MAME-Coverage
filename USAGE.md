@@ -52,7 +52,7 @@ Options:
 ### What `report` does
 
 Reads the cached MAME data and the ledger, classifies every MAME machine (arcade, mahjong,
-gambling, mechanical, other; working or not), groups sets into titles under their parent, attaches
+gambling, mechanical, other; working or not; BIOS sets are dropped), groups sets into titles under their parent, attaches
 the cores and dates from the ledger, rolls up per driver and per core, and writes:
 
 - `docs/data/coverage.json`: everything the page shows (titles with their sets and cores, cores,
@@ -86,7 +86,8 @@ Merge rules (`mmc/ledger.py`):
 
 `date_quality` values: `git` (the MRA's own source history), `git-other` (history from another
 source, used for a core whose own repository we do not clone), `build` (the core's latest build
-date, approximate), `none`.
+date, approximate), `observed` (no history anywhere: the day this tool first saw the MRA),
+`none`.
 
 Review the ledger diff before committing a run: a large number of new sets usually means a new
 source was added, a date moving earlier means a repository with older history was reached.
@@ -109,6 +110,12 @@ All in `mmc/mister.py`:
   was lost, for example.
 - `ROMSET_FILES`: cores that load sets from a list instead of MRAs (the NeoGeo core's
   `releases/romsets.xml`).
+- `DB_SOURCES`: developer downloader databases (`db.json.zip` URLs). Their MRAs are fetched and
+  parsed directly, so a core published only as builds (Patreon releases such as blahm1d's, which
+  have no source repository) still counts through the MRAs its database ships. These files carry
+  no dates: a set first seen only here is dated by the run that first saw it (`date_quality:
+  observed`), which is why running `mister` regularly matters. An unreachable host is reported in
+  `meta.repo_errors` and the run continues with alamone's copy of that database's set list.
 - `PULL_REFS`: repositories whose pull-request refs should be fetched because they keep squashed
   history alive.
 - `FILTER_OVERRIDES`: use `blob:none` for a repository whose small files are still too big to

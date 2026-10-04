@@ -57,7 +57,23 @@ EXTRA_REPOS = [
     ("jt", "jotego/jtcores", ["rom/mra"]),
     # Cores not yet catalogued by alamone or any database (add new ones here).
     ("repo", "kyledlester/Namco_NB1_MiSTer", ["MRA"]),
+    ("repo", "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer", ["MRA"]),
+    ("repo", "ppriest/Arcade-HyperNG64_MiSTer", None),
 ]
+
+# Developer "downloader" databases (what update_all installs from downloader.ini). Their
+# db.json.zip lists every MRA with a URL; we fetch and parse those directly, so a core that is
+# published only as builds (Patreon releases such as blahm1d's) still counts through its MRAs.
+# These files carry no dates, so a set first seen here is dated by the run that first saw it
+# (``date_quality: observed``) unless some repository history dates it better.
+DB_SOURCES = {
+    "meat": "https://raw.githubusercontent.com/meathax/meatcores/db/db.json.zip",
+    "slop": "https://raw.githubusercontent.com/TheJesusFish/Slop-Core/db/db.json.zip",
+    "kuze": "https://raw.githubusercontent.com/kuzearcade/kuzecores/db/db.json.zip",
+    "jlrh": "https://raw.githubusercontent.com/jlrh/jlrh-misterfpga-db/db/db.json.zip",
+    "arcfpga": "https://raw.githubusercontent.com/bmo00/arcfpga-mister-db/db/db.json.zip",
+    "blahm1d": "https://mister.blahm1d.com/db.json.zip",
+}
 # Cores that load ROM sets from a list instead of MRAs: (source, repo, file, core name).
 ROMSET_FILES = [
     ("dist", "MiSTer-devel/NeoGeo_MiSTer", "releases/romsets.xml", "NeoGeo"),
@@ -93,7 +109,8 @@ def fetch(url: str, dest: str, max_age_h: float = 6.0) -> str:
         age = (dt.datetime.now().timestamp() - os.path.getmtime(dest)) / 3600
         if age < max_age_h:
             return dest
-    print(f"[mister] fetching {url}")
+    if not dest.endswith(".mra"):
+        print(f"[mister] fetching {url}")
     with urllib.request.urlopen(url, timeout=120) as r, open(dest, "wb") as f:
         f.write(r.read())
     return dest
@@ -347,6 +364,57 @@ def scan_romsets(d: str, source: str, full: str, path: str, core: str):
     return mras, history
 
 
+# --- downloader databases ---------------------------------------------------------------------
+
+def scan_databases(workers: int = 8) -> tuple[list[dict], list[tuple[str, str]]]:
+    """Fetch each developer database and the MRAs it lists. Returns (mras, errors)."""
+    import hashlib
+    import urllib.parse
+    import zipfile
+
+    mras: list[dict] = []
+    errors: list[tuple[str, str]] = []
+    cache_dir = os.path.join(paths.CACHE, "dbmra")
+    for src, url in DB_SOURCES.items():
+        zpath = os.path.join(paths.CACHE, f"db_{src}.json.zip")
+        try:
+            fetch(url, zpath, max_age_h=1.0)
+            with zipfile.ZipFile(zpath) as z:
+                db = json.loads(z.read(z.namelist()[0]))
+        except Exception as e:  # unreachable host, bad zip: report and go on
+            errors.append((url, str(e).splitlines()[0] if str(e) else type(e).__name__))
+            continue
+        base = db.get("base_files_url") or ""
+        jobs = []
+        for p, m in db.get("files", {}).items():
+            if p.startswith("_Arcade/") and p.lower().endswith(".mra"):
+                furl = m.get("url") or base + urllib.parse.quote(p)
+                key = hashlib.sha1(p.encode()).hexdigest()[:16] + "_" + str(m.get("hash", ""))[:8]
+                jobs.append((p, furl, os.path.join(cache_dir, src, key + ".mra")))
+
+        def get(job):
+            p, furl, dest = job
+            if not os.path.exists(dest):
+                try:
+                    fetch(furl, dest, max_age_h=1e9)
+                except Exception as e:
+                    return p, None, str(e).splitlines()[0]
+            return p, dest, None
+
+        with cf.ThreadPoolExecutor(workers) as ex:
+            for p, dest, err in ex.map(get, jobs):
+                if err:
+                    errors.append((f"{src}:{p}", err))
+                    continue
+                rec = parse_mra(dest)
+                if not rec.get("setname"):
+                    continue
+                rec.update(path=p, repo=f"db:{src}", source=src, wip=_wip(p), alt="_alternatives" in p.lower())
+                mras.append(rec)
+        print(f"[mister] database {src}: {sum(1 for m in mras if m['source'] == src)} MRAs")
+    return mras, errors
+
+
 # --- putting the MiSTer picture together ------------------------------------------------------
 
 def repo_plan(alamone: dict) -> list[tuple[str, str, list[str] | None]]:
@@ -398,6 +466,8 @@ def build_mister(refresh: bool = False, no_sync: bool = False, fetch_existing: b
         print(f"[mister] syncing {len(plan)} repositories")
         errors = sync_all(plan, workers, fetch_existing)
     scans = scan_all(plan, workers)
+    db_mras, db_errors = scan_databases(workers)
+    errors = errors + db_errors
 
     # Set name per MRA basename: fallback for historical adds whose content could not be read.
     by_base: dict[str, set[str]] = collections.defaultdict(set)
@@ -406,6 +476,7 @@ def build_mister(refresh: bool = False, no_sync: bool = False, fetch_existing: b
         for m in sc["mras"]:
             mras.append(m)
             by_base[os.path.basename(m["path"]).lower()].add(m["setname"])
+    mras.extend(db_mras)
 
     # Earliest date a set appeared in any repository, and in each source.
     first_seen: dict[str, dict] = {}

@@ -26,6 +26,14 @@
 "sets": 15,
 "pairs": 15,
 "dates_improved": 0
+},
+{
+"date": "2026-10-04",
+"note": "alamone 2026-10-01",
+"cores": 5,
+"sets": 10,
+"pairs": 33,
+"dates_improved": 0
 }
 ]
 },
@@ -8712,6 +8720,24 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
+"meat:stoneball": {
+"id": "meat:stoneball",
+"name": "Arcade-StoneBall",
+"source": "meat",
+"source_title": "MeatCores (meathax)",
+"channel": null,
+"rbf": "Arcade-StoneBall.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "meat:stunrunner": {
 "id": "meat:stunrunner",
 "name": "StunRunner",
@@ -8750,6 +8776,42 @@
 "note": "",
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-10-04"
+},
+"meat:tumble": {
+"id": "meat:tumble",
+"name": "Arcade-Tumble",
+"source": "meat",
+"source_title": "MeatCores (meathax)",
+"channel": null,
+"rbf": "Arcade-Tumble.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
+"meat:viostorm": {
+"id": "meat:viostorm",
+"name": "Arcade-VioStorm",
+"source": "meat",
+"source_title": "MeatCores (meathax)",
+"channel": null,
+"rbf": "Arcade-VioStorm.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
 },
 "meat:yellowcab": {
@@ -10028,6 +10090,24 @@
 "aliases": [],
 "last_seen": "2026-10-04"
 },
+"repo:hyperng64": {
+"id": "repo:hyperng64",
+"name": "HyperNG64",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": null,
+"rbf": "HyperNG64.rbf",
+"repo": "ppriest/Arcade-HyperNG64_MiSTer",
+"url": "https://github.com/ppriest/Arcade-HyperNG64_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "repo:jalecoms32": {
 "id": "repo:jalecoms32",
 "name": "Arcade-JalecoMS32 (ppriest)",
@@ -10203,6 +10283,25 @@
 "rbf": "Namco_NB1.rbf",
 "repo": "kyledlester/Namco_NB1_MiSTer",
 "url": "https://github.com/kyledlester/Namco_NB1_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-04",
+"aliases": [],
+"last_seen": "2026-10-04"
+},
+"repo:nostradamus": {
+"id": "repo:nostradamus",
+"name": "Nostradamus",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": null,
+"rbf": "Nostradamus.rbf",
+"repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"url": "https://github.com/kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
 "build_date": null,
 "status": null,
 "reading": null,
@@ -16306,6 +16405,18 @@
 }
 },
 "bcstry": {
+"meat:tumble": {
+"core": "meat:tumble",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/B.C. Story.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
 "date": "2026-10-02",
@@ -19519,6 +19630,20 @@
 "last_seen": "2026-10-04"
 }
 },
+"buriki": {
+"repo:hyperng64": {
+"core": "repo:hyperng64",
+"date": "2026-09-20",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
+"first_path": "releases/Buriki One - World Grapple Tournament '99 in Tokyo (rev.B).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "burnforc": {
 "kuze:namcos2_std": {
 "core": "kuze:namcos2_std",
@@ -20327,6 +20452,20 @@
 "last_seen": "2026-10-04"
 }
 },
+"catt": {
+"repo:nostradamus": {
+"core": "repo:nostradamus",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"first_path": "MRA/_alternatives/_Magical Cat Adventure/Catt (Japan).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "cavelon": {
 "dist:scramble": {
 "core": "dist:scramble",
@@ -20998,6 +21137,18 @@
 }
 },
 "cheesech": {
+"meat:stoneball": {
+"core": "meat:stoneball",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Cheese Chase.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:meathax_stoneball": {
 "core": "ongo:meathax_stoneball",
 "date": "2026-10-03",
@@ -21150,6 +21301,18 @@
 }
 },
 "chokchok": {
+"meat:tumble": {
+"core": "meat:tumble",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Choky! Choky!.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
 "date": "2026-10-02",
@@ -22554,6 +22717,18 @@
 }
 },
 "cookbib": {
+"meat:tumble": {
+"core": "meat:tumble",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Cookie & Bibi.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
 "date": "2026-10-02",
@@ -31023,6 +31198,20 @@
 "last_seen": "2026-10-04"
 }
 },
+"fatfurwa": {
+"repo:hyperng64": {
+"core": "repo:hyperng64",
+"date": "2026-09-20",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
+"first_path": "releases/Fatal Fury - Wild Ambition - Garou Densetsu - Wild Ambition (rev.A).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "fatfury1": {
 "dist:neogeo": {
 "core": "dist:neogeo",
@@ -32270,6 +32459,18 @@
 }
 },
 "fncywld": {
+"meat:tumble": {
+"core": "meat:tumble",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Fancy World - Earth of Crisis.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
 "date": "2026-10-02",
@@ -32904,6 +33105,18 @@
 }
 },
 "funkyjetb": {
+"meat:tumble": {
+"core": "meat:tumble",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Funky Jet (bootleg).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
 "date": "2026-10-02",
@@ -40992,6 +41205,18 @@
 }
 },
 "jumpkids": {
+"meat:tumble": {
+"core": "meat:tumble",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Jump Kids.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
 "date": "2026-10-02",
@@ -45498,6 +45723,18 @@
 }
 },
 "magipur": {
+"meat:tumble": {
+"core": "meat:tumble",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Magic Purple.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
 "date": "2026-10-02",
@@ -46513,6 +46750,34 @@
 "last_seen": "2026-10-04"
 }
 },
+"mcatadv": {
+"repo:nostradamus": {
+"core": "repo:nostradamus",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"first_path": "MRA/Magical Cat Adventure.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"mcatadvj": {
+"repo:nostradamus": {
+"core": "repo:nostradamus",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"first_path": "MRA/_alternatives/_Magical Cat Adventure/Magical Cat Adventure (Japan).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "megablst": {
 "dist:taitof2": {
 "core": "dist:taitof2",
@@ -46960,6 +47225,18 @@
 }
 },
 "metlsavr": {
+"meat:tumble": {
+"core": "meat:tumble",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Metal Saver.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
 "date": "2026-10-02",
@@ -51145,6 +51422,48 @@
 "last_seen": "2026-10-04"
 }
 },
+"nost": {
+"repo:nostradamus": {
+"core": "repo:nostradamus",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"first_path": "MRA/Nostradamus.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"nostj": {
+"repo:nostradamus": {
+"core": "repo:nostradamus",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"first_path": "MRA/_alternatives/_Nostradamus/Nostradamus (Japan).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"nostk": {
+"repo:nostradamus": {
+"core": "repo:nostradamus",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"first_path": "MRA/_alternatives/_Nostradamus/Nostradamus Yeeon (Korea).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "nouryoku": {
 "kuze:nmk16_gunnail": {
 "core": "kuze:nmk16_gunnail",
@@ -53798,6 +54117,18 @@
 }
 },
 "pangpang": {
+"meat:tumble": {
+"core": "meat:tumble",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Pang Pang.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
 "date": "2026-10-02",
@@ -63709,6 +64040,34 @@
 "last_seen": "2026-10-04"
 }
 },
+"sams64": {
+"repo:hyperng64": {
+"core": "repo:hyperng64",
+"date": "2026-09-20",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
+"first_path": "releases/Samurai Shodown 64 - Samurai Spirits - Paewang Jeonseol 64.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
+"sams64_2": {
+"repo:hyperng64": {
+"core": "repo:hyperng64",
+"date": "2026-09-20",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
+"first_path": "releases/Samurai Shodown 64 - Warriors Rage - Samurai Spirits 2 - Asura Zanmaden.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+}
+},
 "samsh5fe": {
 "dist:neogeo": {
 "core": "dist:neogeo",
@@ -64808,6 +65167,18 @@
 }
 },
 "sdfight": {
+"meat:tumble": {
+"core": "meat:tumble",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/SD Fighters.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
 "date": "2026-10-02",
@@ -73382,6 +73753,18 @@
 }
 },
 "stonebal": {
+"meat:stoneball": {
+"core": "meat:stoneball",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Stone Ball (4 Players, v1-20 13-12-1994).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:meathax_stoneball": {
 "core": "ongo:meathax_stoneball",
 "date": "2026-10-03",
@@ -74136,6 +74519,18 @@
 }
 },
 "suprtrio": {
+"meat:tumble": {
+"core": "meat:tumble",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Super Trio.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
 "date": "2026-10-02",
@@ -79294,6 +79689,18 @@
 }
 },
 "tumbleb": {
+"meat:tumble": {
+"core": "meat:tumble",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Tumble Pop (bootleg).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
 "date": "2026-10-02",
@@ -79320,6 +79727,18 @@
 }
 },
 "tumbleb2": {
+"meat:tumble": {
+"core": "meat:tumble",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Tumble Pop (bootleg with PIC).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
 "date": "2026-10-02",
@@ -80042,6 +80461,18 @@
 }
 },
 "ultennis": {
+"meat:stoneball": {
+"core": "meat:stoneball",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Ultimate Tennis.mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:meathax_stoneball": {
 "core": "ongo:meathax_stoneball",
 "date": "2026-10-03",
@@ -81660,6 +82091,18 @@
 }
 },
 "viostorm": {
+"meat:viostorm": {
+"core": "meat:viostorm",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Violent Storm (ver EAC).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:meathax_viostorm": {
 "core": "ongo:meathax_viostorm",
 "date": "2026-10-02",
@@ -81686,6 +82129,18 @@
 }
 },
 "viostorma": {
+"meat:viostorm": {
+"core": "meat:viostorm",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Violent Storm/Violent Storm (ver AAC).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:meathax_viostorm": {
 "core": "ongo:meathax_viostorm",
 "date": "2026-10-02",
@@ -81712,6 +82167,18 @@
 }
 },
 "viostormab": {
+"meat:viostorm": {
+"core": "meat:viostorm",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Violent Storm/Violent Storm (ver AAB).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:meathax_viostorm": {
 "core": "ongo:meathax_viostorm",
 "date": "2026-10-02",
@@ -81738,6 +82205,18 @@
 }
 },
 "viostormeb": {
+"meat:viostorm": {
+"core": "meat:viostorm",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Violent Storm/Violent Storm (ver EAB).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:meathax_viostorm": {
 "core": "ongo:meathax_viostorm",
 "date": "2026-10-02",
@@ -81764,6 +82243,18 @@
 }
 },
 "viostormj": {
+"meat:viostorm": {
+"core": "meat:viostorm",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Violent Storm/Violent Storm (ver JAC).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:meathax_viostorm": {
 "core": "ongo:meathax_viostorm",
 "date": "2026-10-02",
@@ -81790,6 +82281,18 @@
 }
 },
 "viostormu": {
+"meat:viostorm": {
+"core": "meat:viostorm",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Violent Storm/Violent Storm (ver UAC).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:meathax_viostorm": {
 "core": "ongo:meathax_viostorm",
 "date": "2026-10-02",
@@ -81816,6 +82319,18 @@
 }
 },
 "viostormub": {
+"meat:viostorm": {
+"core": "meat:viostorm",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Violent Storm/Violent Storm (ver UAB).mra",
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-04"
+},
 "ongo:meathax_viostorm": {
 "core": "ongo:meathax_viostorm",
 "date": "2026-10-02",
