@@ -28,6 +28,9 @@ from . import paths
 
 ALAMONE_RESULTS = "https://raw.githubusercontent.com/alamone/fpga-verified-against/main/results/results.json"
 ONGO_README = "https://raw.githubusercontent.com/OngoGablogian/MiSTer_Ongo/main/README.md"
+# shmup-deck's core list: every core it knows, with the GitHub repository the build and MRAs
+# come from. Used as a registry of repositories, like the Ongo README.
+DECK_CORES = "https://raw.githubusercontent.com/shmupfan/shmup-deck/main/shmup_deck/app/cores.json"
 
 # Blobs up to this size come with the clone: every MRA (a few KB) but no core build (.rbf, MBs).
 # With them local, the content of an MRA that was later renamed or deleted can still be read.
@@ -57,9 +60,8 @@ EXTRA_REPOS = [
     ("jt", "jotego/jtcores", ["rom/mra"]),
     # Cores not yet catalogued by alamone or any database (add new ones here).
     ("repo", "kyledlester/Namco_NB1_MiSTer", ["MRA"]),
-    ("repo", "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer", ["MRA"]),
+    ("repo", "kyledlester/MiSTer_Nostradamus", ["MRA"]),   # was Nostradamus_Magical_Cat_Adventure_MiSTer
     ("repo", "ppriest/Arcade-HyperNG64_MiSTer", None),
-    ("repo", "shmupfan/Arcade-1945kIII_MiSTer", None),
 ]
 
 # Developer "downloader" databases (what update_all installs from downloader.ini). Their
@@ -74,6 +76,7 @@ DB_SOURCES = {
     "jlrh": "https://raw.githubusercontent.com/jlrh/jlrh-misterfpga-db/db/db.json.zip",
     "arcfpga": "https://raw.githubusercontent.com/bmo00/arcfpga-mister-db/db/db.json.zip",
     "blahm1d": "https://mister.blahm1d.com/db.json.zip",
+    "shmupfan": "https://raw.githubusercontent.com/shmupfan/Distribution/main/db.json",   # plain JSON, not zipped
 }
 # Cores that load ROM sets from a list instead of MRAs: (source, repo, file, core name).
 ROMSET_FILES = [
@@ -100,6 +103,7 @@ DB_TITLES = {
     "jlrh": "jlrh",
     "arcfpga": "arcfpga (bmo00)",
     "blahm1d": "blahm1d",
+    "shmupfan": "shmupfan (Distribution)",
     "repo": "GitHub repository only",
 }
 
@@ -143,6 +147,22 @@ def wiki_repos() -> list[str]:
                 continue
             found.update(m.group(1) for m in re.finditer(r"github\.com/(MiSTer-devel/Arcade-[\w.-]+?)(?:\.git)?(?:[/)\s#]|$)", text))
     return sorted(found)
+
+
+def deck_repos() -> dict[str, str]:
+    """``{owner/repo: source id}`` for the GitHub repositories shmup-deck's cores.json names.
+    shmupfan's own repositories get the ``shmupfan`` source (his Distribution database ships
+    them); the rest are plain repository-only cores."""
+    p = fetch(DECK_CORES, os.path.join(paths.CACHE, "shmup_deck_cores.json"))
+    with open(p, encoding="utf-8") as f:
+        cores = json.load(f).get("cores", {})
+    out: dict[str, str] = {}
+    for c in cores.values():
+        m = re.search(r"github\.com/([\w.-]+/[\w.-]+?)(?:\.git)?(?:[/)\s#]|$)", c.get("url") or "")
+        if m:
+            full = m.group(1)
+            out[full] = "shmupfan" if full.lower().startswith("shmupfan/") else "repo"
+    return out
 
 
 def ongo_repos() -> list[str]:
@@ -377,11 +397,15 @@ def scan_databases(workers: int = 8) -> tuple[list[dict], list[tuple[str, str]]]
     errors: list[tuple[str, str]] = []
     cache_dir = os.path.join(paths.CACHE, "dbmra")
     for src, url in DB_SOURCES.items():
-        zpath = os.path.join(paths.CACHE, f"db_{src}.json.zip")
+        zpath = os.path.join(paths.CACHE, f"db_{src}.json" + (".zip" if url.endswith(".zip") else ""))
         try:
             fetch(url, zpath, max_age_h=1.0)
-            with zipfile.ZipFile(zpath) as z:
-                db = json.loads(z.read(z.namelist()[0]))
+            if zipfile.is_zipfile(zpath):
+                with zipfile.ZipFile(zpath) as z:
+                    db = json.loads(z.read(z.namelist()[0]))
+            else:
+                with open(zpath, encoding="utf-8") as f:
+                    db = json.load(f)
         except Exception as e:  # unreachable host, bad zip: report and go on
             errors.append((url, str(e).splitlines()[0] if str(e) else type(e).__name__))
             continue
@@ -434,6 +458,9 @@ def repo_plan(alamone: dict) -> list[tuple[str, str, list[str] | None]]:
     for full in wiki_repos():
         if full not in plan:
             plan[full] = ("dist", None)
+    for full, src in deck_repos().items():
+        if full not in plan and full not in SKIP_REPOS:
+            plan[full] = (src, None)
     for src, full, dirs in EXTRA_REPOS:
         if full not in plan:
             plan[full] = (src, dirs)

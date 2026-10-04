@@ -1,23 +1,19 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-10-04 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (313 games).
+Generated 2026-10-04 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (311 games).
 
-**Agreement:** 299 of 305 deck titles are Shmup in our data (98.0%).
+**Agreement:** 301 of 303 deck titles are Shmup in our data (99.3%).
 
-## A. Deck games our data does not call Shmup (6)
+## A. Deck games our data does not call Shmup (2)
 
 Grouped by the raw category our genre came from. Rows marked *kept* are vehicle or isometric shooters this project keeps out of Shmup on purpose.
 
 | Set | Title | Our genre | Raw category (source) | Deck title | |
 |---|---|---|---|---|---|
-| `backfirt` | Back Fire (Tecmo) | Racing | Driving / Race (catver) | Back Fire |  |
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
-| `lastmisn` | Last Mission (World revision 8) | Shooter | Shooter / Field (catver) | Last Mission |  |
-| `tp84` | Time Pilot '84 (set 1) | Shooter | Shooter / Field (catver) | Time Pilot '84 |  |
-| `sbomber` | Space Bomber (ver. B) | Shooter | Shooter / Gallery (catver) | Space Bomber |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (77)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (76)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
@@ -46,6 +42,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `fnkyfish` | Funky Fish | 1981 | Shooter / Misc. Horizontal (catver) | Kangaroo |
 | `gground` | Gain Ground (World, 3 Players, Floppy Based, FD1094 317-0058-03d Rev A) | 1988 | Shooter / Walking (catver) | Arcade-SegaSystem24, Meathax_SegaSystem24 |
 | `gbusters` | Gang Busters (set 1) | 1988 | Shooter / Walking (catver) | jtaliens |
+| `gondo` | Gondomania (World) | 1987 | Shooter / Flying Vertical (catver) | dec8 |
 | `gundhara` | Gundhara | 1995 | Shooter / Walking (catver) | Arcade-Seta (ppriest) |
 | `heatbrl` | Heated Barrel (World version 3) | 1992 | Shooter / Walking (catver) | HeatedBarrel |
 | `hbarrel` | Heavy Barrel (World) | 1987 | Shooter / Walking (catver) | jtninja |
@@ -75,12 +72,10 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `rescue` | Rescue | 1982 | Shooter / Flying (catver) | Scramble |
 | `searchar` | SAR - Search And Rescue (World) | 1989 | Shooter / Walking (catver) | SNK68 |
 | `scotrsht` | Scooter Shooter | 1985 | Shooter / Flying (catver) | ScooterShooter |
-| `sdgndmps` | SD Gundam Psycho Salamander no Kyoui | 1991 | Shooter / Walking (catver) | SDGundamPS |
 | `sfposeid` | Sea Fighter Poseidon | 1984 | Shooter / Misc. Horizontal (catver) | TaitoSJ |
 | `seganinj` | Sega Ninja (315-5102) | 1985 | Shooter / Walking (catver) | SEGASYS1 |
 | `shocktro` | Shock Troopers (set 1) | 1997 | Shooter / Walking (catver) | NeoGeo |
 | `shocktr2` | Shock Troopers - 2nd Squad | 1998 | Shooter / Walking (catver) | NeoGeo |
-| `skyrobo` | Sky Robo | 1989 | Shooter / Walking (catver) | armedf |
 | `skyskipr` | Sky Skipper | 1981 | Shooter / Flying (catver) | Popeye |
 | `amazon` | Soldier Girl Amazon | 1986 | Shooter / Walking (catver) | terracresta |
 | `stargate` | Stargate | 1981 | Shooter / Flying (catver) | Robotron |
