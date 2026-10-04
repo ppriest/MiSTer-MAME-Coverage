@@ -59,6 +59,7 @@ EXTRA_REPOS = [
     ("repo", "kyledlester/Namco_NB1_MiSTer", ["MRA"]),
     ("repo", "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer", ["MRA"]),
     ("repo", "ppriest/Arcade-HyperNG64_MiSTer", None),
+    ("repo", "shmupfan/Arcade-1945kIII_MiSTer", None),
 ]
 
 # Developer "downloader" databases (what update_all installs from downloader.ini). Their

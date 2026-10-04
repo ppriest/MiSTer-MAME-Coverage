@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-04T01:42:09+00:00",
+  "generated": "2026-10-04T02:18:02+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-04T01:41:20+00:00",
+  "mister_generated": "2026-10-04T02:18:00+00:00",
   "alamone_generated": "2026-10-01T23:23:16+00:00",
   "ledger_updated": "2026-10-04",
   "ledger_runs": [
@@ -37,6 +37,14 @@
     "cores": 5,
     "sets": 10,
     "pairs": 33,
+    "dates_improved": 0
+   },
+   {
+    "date": "2026-10-04",
+    "note": "alamone 2026-10-01",
+    "cores": 1,
+    "sets": 6,
+    "pairs": 6,
     "dates_improved": 0
    }
   ],
@@ -2115,6 +2123,12 @@
     "mras": 4
    },
    {
+    "source": "repo",
+    "repo": "shmupfan/Arcade-1945kIII_MiSTer",
+    "dirs": null,
+    "mras": 6
+   },
+   {
     "source": "dist",
     "repo": "MiSTer-devel/NeoGeo_MiSTer",
     "dirs": [],
@@ -2158,10 +2172,10 @@
   "counts": {
    "titles": 6823,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 1817,
+   "working_arcade_titles_covered": 1820,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 4624,
-   "cores": 530,
+   "working_arcade_sets_covered": 4630,
+   "cores": 531,
    "unmatched_sets": 400
   }
  },
@@ -12121,6 +12135,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 3,
@@ -12164,6 +12179,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 12,
    "ntitles": 11,
@@ -12185,6 +12201,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 1,
@@ -13425,6 +13442,27 @@
    "first_date": "2026-08-29"
   },
   {
+   "id": "repo:1945kiii",
+   "name": "1945kiii",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "1945kiii.rbf",
+   "repo": "shmupfan/Arcade-1945kIII_MiSTer",
+   "url": "https://github.com/shmupfan/Arcade-1945kIII_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
+   "nsets": 6,
+   "ntitles": 3,
+   "first_date": "2026-10-03"
+  },
+  {
    "id": "repo:atari-g1",
    "name": "Arcade-Atari-G1 (Gm0rk)",
    "source": "repo",
@@ -14088,6 +14126,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 4,
@@ -14201,6 +14240,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 2,
@@ -21068,11 +21108,13 @@
   {
    "sourcefile": "promat/1945kiii.cpp",
    "titles": 3,
-   "covered": 0,
+   "covered": 3,
    "sets": 6,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 6,
+   "cores": [
+    "repo:1945kiii"
+   ],
+   "first": "2026-10-03"
   },
   {
    "sourcefile": "promat/3x3puzzl.cpp",
