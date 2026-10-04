@@ -144,6 +144,15 @@ def wiki_repos() -> list[str]:
     else:
         subprocess.run(["git", "pull", "-q", "--depth", "1"], cwd=d, check=False, capture_output=True)
     found = set()
+    # The arcade table of Cores.md: every GitHub repository it links, whatever it is called
+    # (N64_MiSTer, a /tree/<branch> link, a non-MiSTer-devel owner), with link whitespace tolerated.
+    cores_md = os.path.join(d, "Cores.md")
+    if os.path.exists(cores_md):
+        text = open(cores_md, encoding="utf-8", errors="replace").read()
+        a, b = text.find("<!-- arcade_list_start -->"), text.find("<!-- arcade_list_end -->")
+        if a >= 0:
+            block = text[a:b if b > a else len(text)]
+            found.update(m.group(1) for m in re.finditer(r"\]\(\s*https://github\.com/([\w.-]+/[\w.-]+?)(?:\.git)?(?:[/)\s#?]|$)", block))
     for root, _dirs, files in os.walk(d):
         if ".git" in root:
             continue

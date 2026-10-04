@@ -1,20 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-04T21:21:45+00:00",
+  "generated": "2026-10-04T21:45:53+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-04T21:21:42+00:00",
+  "mister_generated": "2026-10-04T21:45:49+00:00",
   "alamone_generated": "2026-10-01T23:23:16+00:00",
   "ledger_updated": "2026-10-04",
   "ledger_runs": [
-   {
-    "date": "2026-10-04",
-    "note": "alamone 2026-10-01",
-    "cores": 1,
-    "sets": 1,
-    "pairs": 1,
-    "dates_improved": 0
-   },
    {
     "date": "2026-10-04",
     "note": "alamone 2026-10-01",
@@ -39,6 +31,15 @@
     "pairs": 0,
     "dates_improved": 0,
     "cores_removed": 8
+   },
+   {
+    "date": "2026-10-04",
+    "note": "alamone 2026-10-01",
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
+    "dates_improved": 0,
+    "cores_removed": 0
    },
    {
     "date": "2026-10-04",
@@ -2220,6 +2221,34 @@
    }
   ],
   "repo_errors": [
+   [
+    "Kyp069/zx48-MiSTer",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "blahm1d/MiSTer-cores",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "blahm1d/wolf-unit",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "kandowontu/BrickBoy_MiSTer",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/Bucky",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/mrdo",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/s24",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
    [
     "https://mister.blahm1d.com/db.json.zip",
     "<urlopen error Tunnel connection failed: 403 Forbidden>"
