@@ -87,6 +87,10 @@ svg .hover-line { stroke: var(--text-2); stroke-width: 1; }
 .filters input.yr { width: 68px; }
 .filters .row { display: flex; align-items: center; gap: 4px; }
 .filters select { max-width: 240px; }
+.filters select.yr { width: 72px; } .filters select.mo { width: 52px; }
+svg .brush { fill: var(--accent); fill-opacity: 0.12; stroke: var(--accent); stroke-width: 1; }
+svg .band { fill: var(--text-2); fill-opacity: 0.08; }
+#time-hit { cursor: crosshair; }
 .filters button { cursor: pointer; }
 .count { color: var(--text-2); margin: 4px 0 8px; font-size: 13px; }
 .tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; }

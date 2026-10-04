@@ -10,7 +10,7 @@
   const S = { data: null, cores: {}, titles: [], shown: 0, PAGE: 250, dir: { t: 1, d: -1, c: 1 }, open: new Set() };
 
   // ---------- state in the URL hash ----------
-  const FILTER_IDS = ["f-q", "f-cov", "f-work", "f-cat", "f-y0", "f-y1", "f-genre", "f-manu", "f-drv", "f-dcov", "f-core", "f-rot", "f-sort"];
+  const FILTER_IDS = ["f-q", "f-cov", "f-work", "f-cat", "f-y0", "f-y1", "f-m0y", "f-m0m", "f-m1y", "f-m1m", "f-genre", "f-manu", "f-drv", "f-dcov", "f-core", "f-rot", "f-sort"];
   function readHash() {
     const p = new URLSearchParams(location.hash.slice(1));
     for (const id of FILTER_IDS) if (p.has(id)) { const el = $("#" + id); if (el) el.value = p.get(id); }
@@ -103,11 +103,15 @@
     // and on MiSTer (by first MRA). Both lines share one axis; "remaining" is the gap between them.
     const sinceKey = S.timeSince;
     const sc = chartScope();
+    const f = readFilters();
     const sets = sc.titles.flatMap(t => t.sets.filter(sc.setOk));
     const mameKeys = sets.filter(s => s.mame_date).map(s => monthKey(s.mame_date)).sort();
     const misterKeys = sets.filter(s => s.cores.length && s.date).map(s => monthKey(s.date)).sort();
     if (!mameKeys.length) { $("#chart-time").innerHTML = '<p class="muted">no titles match</p>'; $("#legend-time").innerHTML = ""; return; }
-    const first = sinceKey || mameKeys[0], last = monthKey(new Date().toISOString());
+    // The x axis spans the whole history (or 2018 on) whatever the filters, so a drag selection
+    // stays where it was made.
+    if (!S.timeFirst) S.timeFirst = S.titles.filter(t => t.mame_date).map(t => monthKey(t.mame_date)).sort()[0];
+    const first = sinceKey || S.timeFirst, last = monthKey(new Date().toISOString());
     const months = []; for (let k = first; k <= last; k = addMonths(k, 1)) months.push(k);
     const count = keys => { const m = new Map(months.map(k => [k, 0])); let before = 0; keys.forEach(k => { if (k < first) before++; else if (m.has(k)) m.set(k, m.get(k) + 1); }); let c = before; return months.map(k => (c += m.get(k))); };
     const inMame = count(mameKeys), onMister = count(misterKeys);
@@ -122,7 +126,10 @@
     const every = rows.length > 240 ? 5 : rows.length > 120 ? 2 : 1;
     const years = rows.map((r, i) => [r.k, i]).filter(([k]) => k.endsWith("-01") && (+k.slice(0, 4)) % every === 0);
     const end = rows.at(-1);
+    const idx = k => Math.max(0, Math.min(rows.length - 1, months.indexOf(k) < 0 ? (k < first ? 0 : rows.length - 1) : months.indexOf(k)));
+    const band = (f.m0 || f.m1) ? `<rect class="band" x="${x(idx(f.m0 || first))}" y="${m.t}" width="${Math.max(2, x(idx(f.m1 || last)) - x(idx(f.m0 || first)))}" height="${H - m.t - m.b}"/>` : "";
     $("#chart-time").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Working arcade sets in MAME and on MiSTer over time">
+      ${band}
       <g class="grid">${yTicks.map(v => `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/>`).join("")}</g>
       <g class="axis"><line x1="${m.l}" x2="${W - m.r}" y1="${y(0)}" y2="${y(0)}"/></g>
       ${yTicks.map(v => `<text x="${m.l - 6}" y="${y(v) + 4}" text-anchor="end">${fmt(v)}</text>`).join("")}
@@ -132,19 +139,34 @@
       <text x="${x(rows.length - 1) - 4}" y="${y(end.mame) - 7}" text-anchor="end" fill="var(--text)">${fmt(end.mame)} in MAME</text>
       <text x="${x(rows.length - 1) - 4}" y="${y(end.mister) + (y(end.mister) - y(end.mame) > 30 ? -7 : 14)}" text-anchor="end" fill="var(--text)">${fmt(end.mister)} on MiSTer</text>
       <line class="hover-line" id="time-hover" x1="0" x2="0" y1="${m.t}" y2="${y(0)}" visibility="hidden"/>
+      <rect class="brush" id="time-brush" x="0" y="${m.t}" width="0" height="${H - m.t - m.b}" visibility="hidden"/>
       <rect x="${m.l}" y="${m.t}" width="${W - m.l - m.r}" height="${H - m.t - m.b}" fill="transparent" id="time-hit"/>
     </svg>`;
     $("#legend-time").innerHTML = `<span><i class="line" style="background:var(--text-2)"></i>${sc.work === "working" ? "working " : ""}sets in MAME (filtered titles)</span><span><i class="line" style="background:var(--accent)"></i>of which on MiSTer</span>`;
-    const hit = $("#time-hit"), hl = $("#time-hover"), svgEl = $("#chart-time svg");
+    const hit = $("#time-hit"), hl = $("#time-hover"), br = $("#time-brush"), svgEl = $("#chart-time svg");
+    const indexAt = ev => { const r = svgEl.getBoundingClientRect(); const px = (ev.clientX - r.left) * W / r.width; return Math.max(0, Math.min(rows.length - 1, Math.round((px - m.l) / (W - m.l - m.r) * (rows.length - 1)))); };
+    let drag = null;   // start index while the mouse button is down
     hit.addEventListener("mousemove", ev => {
-      const r = svgEl.getBoundingClientRect();
-      const px = (ev.clientX - r.left) * W / r.width;
-      const i = Math.max(0, Math.min(rows.length - 1, Math.round((px - m.l) / (W - m.l - m.r) * (rows.length - 1))));
+      const i = indexAt(ev);
       hl.setAttribute("x1", x(i)); hl.setAttribute("x2", x(i)); hl.setAttribute("visibility", "visible");
+      if (drag !== null) {
+        const a = Math.min(drag, i), b = Math.max(drag, i);
+        br.setAttribute("x", x(a)); br.setAttribute("width", Math.max(1, x(b) - x(a))); br.setAttribute("visibility", "visible");
+        showTip(`<b>${rows[a].k} – ${rows[b].k}</b><br>release to filter "In MAME since"`, ev.clientX, ev.clientY);
+        return;
+      }
       const row = rows[i];
       showTip(`<b>${row.k}</b><br>in MAME: ${fmt(row.mame)}<br>on MiSTer: ${fmt(row.mister)} (${pct(row.mister, row.mame)})<br>not yet on MiSTer: ${fmt(row.mame - row.mister)}`, ev.clientX, ev.clientY);
     });
-    hit.addEventListener("mouseleave", () => { hl.setAttribute("visibility", "hidden"); hideTip(); });
+    hit.addEventListener("mousedown", ev => { if (ev.button === 0) { drag = indexAt(ev); ev.preventDefault(); } });
+    const finish = ev => {
+      if (drag === null) return;
+      const i = indexAt(ev), a = Math.min(drag, i), b = Math.max(drag, i);
+      drag = null; br.setAttribute("visibility", "hidden"); hideTip();
+      if (b > a) { setMonthRange(rows[a].k, rows[b].k); applyTitles(); }
+    };
+    hit.addEventListener("mouseup", finish);
+    hit.addEventListener("mouseleave", ev => { hl.setAttribute("visibility", "hidden"); if (drag !== null) finish(ev); else hideTip(); });
     const btn = $("#time-range");
     btn.textContent = sinceKey ? "show full history" : "show since 2018";
     btn.onclick = () => { S.timeSince = sinceKey ? null : "2018-01"; renderTimeChart(); };
@@ -269,6 +291,11 @@
     $("#f-genre").insertAdjacentHTML("beforeend", Array.from(genres).sort((a, b) => b[1] - a[1]).map(([g, n]) => opt(g, `${g} (${n})`)).join(""));
     $("#f-manu").insertAdjacentHTML("beforeend", Array.from(manus).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([m, n]) => opt(m, `${m} (${n})`)).join(""));
     $("#f-drv").insertAdjacentHTML("beforeend", Array.from(drvs).sort((a, b) => a[0].localeCompare(b[0])).map(([d, n]) => opt(d, `${d} (${n})`)).join(""));
+    const years = Array.from(new Set(S.titles.filter(t => t.mame_date).map(t => t.mame_date.slice(0, 4)))).sort();
+    const yopts = years.map(y => opt(y, y)).join("");
+    const mopts = Array.from({ length: 12 }, (_, i) => String(i + 1).padStart(2, "0")).map(m => opt(m, m)).join("");
+    $("#f-m0y").insertAdjacentHTML("beforeend", yopts); $("#f-m1y").insertAdjacentHTML("beforeend", yopts);
+    $("#f-m0m").insertAdjacentHTML("beforeend", mopts); $("#f-m1m").insertAdjacentHTML("beforeend", mopts);
     const cores = S.data.cores.slice().sort((a, b) => a.name.localeCompare(b.name));
     $("#f-core").insertAdjacentHTML("beforeend", cores.map(c => opt(c.id, `${c.name} · ${c.source}`)).join(""));
     const srcs = new Map(); S.data.cores.forEach(c => srcs.set(c.source, c.source_title));
@@ -288,6 +315,8 @@
     if (f.cov === "partial" && !(covered && ncov < nsets)) return false;
     if (f.y0 && (!+t.year || +t.year < f.y0)) return false;
     if (f.y1 && (!+t.year || +t.year > f.y1)) return false;
+    if (f.m0 && (!t.mame_date || t.mame_date.slice(0, 7) < f.m0)) return false;
+    if (f.m1 && (!t.mame_date || t.mame_date.slice(0, 7) > f.m1)) return false;
     if (f.manu && t.manufacturer !== f.manu) return false;
     if (f.genre && (t.genre || "(none)") !== f.genre) return false;
     if (f.drv && t.sourcefile !== f.drv) return false;
@@ -306,9 +335,20 @@
     return true;
   }
 
+  // "In MAME since" range: a year select plus a month select each end; a year alone means the whole year.
+  function monthFrom(yid, mid, fallbackMonth) {
+    const y = $("#" + yid).value; if (!y) return "";
+    return y + "-" + ($("#" + mid).value || fallbackMonth);
+  }
+  function setMonthRange(from, to) {   // "YYYY-MM" or "" each
+    $("#f-m0y").value = from ? from.slice(0, 4) : ""; $("#f-m0m").value = from ? from.slice(5, 7) : "";
+    $("#f-m1y").value = to ? to.slice(0, 4) : ""; $("#f-m1m").value = to ? to.slice(5, 7) : "";
+  }
+
   function readFilters() {
     return { q: $("#f-q").value.trim().toLowerCase(), cov: $("#f-cov").value, work: $("#f-work").value, cat: $("#f-cat").value,
-      y0: +$("#f-y0").value || 0, y1: +$("#f-y1").value || 0, manu: $("#f-manu").value, genre: $("#f-genre").value, drv: $("#f-drv").value, dcov: $("#f-dcov").value, core: $("#f-core").value, rot: $("#f-rot").value, sort: $("#f-sort").value };
+      y0: +$("#f-y0").value || 0, y1: +$("#f-y1").value || 0, m0: monthFrom("f-m0y", "f-m0m", "01"), m1: monthFrom("f-m1y", "f-m1m", "12"),
+      manu: $("#f-manu").value, genre: $("#f-genre").value, drv: $("#f-drv").value, dcov: $("#f-dcov").value, core: $("#f-core").value, rot: $("#f-rot").value, sort: $("#f-sort").value };
   }
 
   function applyTitles() {
