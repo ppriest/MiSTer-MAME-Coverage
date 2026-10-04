@@ -1,14 +1,4 @@
 {
-  "sets": {
-    "extrmatn": "Shmup",
-    "fixeight": "Shmup",
-    "gunsmoke": "Shmup",
-    "guwange": "Shmup",
-    "outzone": "Shmup",
-    "sbomber": "Shmup",
-    "sdi": "Shmup",
-    "tp84": "Shmup",
-    "youjyudn": "Shmup"
-  },
-  "_comment": "Per-set genre overrides applied after data/genre_map.json; a parent's entry cascades to its clones. Entries are set name -> common genre."
+  "_comment": "Per-set genre overrides applied after data/genre_map.json; a parent's entry cascades to its clones. Entries are set name -> common genre. Empty on purpose: tools/reconcile_shmups.py --write-overrides can fill it, but the catver placements are kept as they are.",
+  "sets": {}
 }

@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-04T09:04:52+00:00",
+  "generated": "2026-10-04T09:06:03+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
   "mister_generated": "2026-10-04T08:32:10+00:00",
@@ -49,7 +49,7 @@
    }
   ],
   "genre": {
-   "overrides": 51,
+   "overrides": 0,
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
    "catver_entries": 37998,
    "mad_entries": 2995,
