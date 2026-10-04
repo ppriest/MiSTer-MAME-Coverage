@@ -26,7 +26,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `bakutotu` | Bakutotsu Kijuutei | 1988 | Shooter / Flying Horizontal (catver) | jtshouse |
 | `bchopper` | Battle Chopper (World) | 1987 | Shooter / Flying (catver) | IremM72 |
 | `brkthru` | Break Thru (World) | 1986 | Shooter / Driving Horizontal (catver) | xnbrkthru |
-| `bucky` | Bucky O'Hare (ver EAB) | 1992 | Shooter / Walking (catver) | moomesa, Bucky |
+| `bucky` | Bucky O'Hare (ver EAB) | 1992 | Shooter / Walking (catver) | Bucky |
 | `bullet` | Bullet (FD1094 317-0041) | 1987 | Shooter / Walking (catver) | jts16b |
 | `calibr50` | Caliber 50 (Ver. 1.01) | 1989 | Shooter / Walking (catver) | jtcal50, SetaDowntown (ppriest) |
 | `choplift` | Choplifter (8751 315-5151) | 1985 | Shooter / Flying Horizontal (catver) | Blackwine-SegaSystem1-2, SegaSys1+2 (TheJesusFish) |

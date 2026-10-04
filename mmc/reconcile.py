@@ -150,18 +150,43 @@ def observe(mister: dict) -> dict:
         rec["wip"] = rec["wip"] and wip
         rec["alt"] = rec["alt"] and alt
 
-    # 1. MRAs we parsed from git checkouts: exact set names, dated by history.
-    for m in mister["mras"]:
-        cid = resolve_core(m, cores, by_repo, by_rbf, repo_count)
+    def dated(m: dict):
+        """Date of an MRA: its own source's first appearance, else the earliest elsewhere. Sources
+        that are mostly other platforms (see ``mister.MULTI_PLATFORM``) never date another
+        source's MRA."""
         fs = first_seen.get(m["setname"])
-        date = None
-        quality = "none"
-        if fs:
-            # Prefer the date from this MRA's own source, fall back to the earliest anywhere.
-            date = fs["by_source"].get(m["source"]) or fs["date"]
-            quality = "git"
-        add(m["setname"], cid, date, quality, m["source"], m.get("wip", False), m.get("alt", False),
-            fs and fs["repo"], fs and fs["path"])
+        if not fs:
+            return None, "none", None, None
+        by = fs["by_source"]
+        others = [d for src, d in by.items() if src != "arcfpga"]
+        date = by.get(m["source"]) or (min(others) if others else fs["date"])
+        return date, "git", fs["repo"], fs["path"]
+
+    # 1. MRAs we parsed from git checkouts: exact set names, dated by history. MRAs flagged
+    # ``mister_build == False`` (cores of a multi-platform repository with no MiSTer release) are
+    # held back: they count only when they load a jotego core other sources already provide.
+    stems: dict[str, str] = {}        # rbf stem -> core id, from MRAs that are plainly MiSTer
+    held: list[dict] = []
+    for m in mister["mras"]:
+        if m.get("mister_build") is False:
+            held.append(m)
+            continue
+        cid = resolve_core(m, cores, by_repo, by_rbf, repo_count)
+        stem = mister_mod.norm_rbf(m.get("rbf"))
+        if stem and m["source"] != "arcfpga":
+            stems.setdefault(stem, cid)
+        date, quality, frepo, fpath = dated(m)
+        add(m["setname"], cid, date, quality, m["source"], m.get("wip", False), m.get("alt", False), frepo, fpath)
+    excluded: set[str] = set()
+    for m in held:
+        stem = mister_mod.norm_rbf(m.get("rbf"))
+        cid = stems.get(stem) if stem and stem.startswith("jt") else None
+        if cid is None:
+            excluded.add(core_id(m["source"], m.get("rbf")))
+            continue
+        date, quality, frepo, fpath = dated(m)
+        add(m["setname"], cid, date, quality, m["source"], m.get("wip", False), m.get("alt", False), frepo, fpath)
+    excluded -= set(cores)            # a core alamone knows as a MiSTer build is never excluded
 
     # 2. Sets alamone attributes to cores we have no MRA checkout for (developer databases).
     for cid, c in cores.items():
@@ -198,7 +223,8 @@ def observe(mister: dict) -> dict:
         cat = (m.get("category") or "").strip()
         if cat and m.get("setname"):
             categories[m["setname"]].setdefault(m["source"], cat)
-    return {"cores": cores, "support": {k: v for k, v in support.items() if v}, "categories": dict(categories)}
+    return {"cores": cores, "support": {k: v for k, v in support.items() if v}, "categories": dict(categories),
+            "excluded": sorted(excluded)}
 
 
 def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:

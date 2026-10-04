@@ -102,10 +102,19 @@ def merge(ledger: dict, observed: dict, note: str = "") -> dict:
             old["wip"] = old.get("wip", False) and rec.get("wip", False)
             old["alt"] = old.get("alt", False) and rec.get("alt", False)
             old["last_seen"] = today
+    # The ledger is append-only except for cores a source rule now excludes (for example
+    # NeptUNO+-only cores of bmo00/arcfpga-cores): those, and the sets only they supported, go.
+    removed = 0
+    for cid in observed.get("excluded", []):
+        if ledger["cores"].pop(cid, None) is not None:
+            removed += 1
+        for setn in list(ledger["support"]):
+            if ledger["support"][setn].pop(cid, None) is not None and not ledger["support"][setn]:
+                del ledger["support"][setn]
     cats = ledger.setdefault("categories", {})
     for setn, per_src in observed.get("categories", {}).items():
         cats.setdefault(setn, {}).update(per_src)
-    summary = {"date": today, "note": note, "cores": added_cores, "sets": added_sets, "pairs": added_pairs, "dates_improved": updated_dates}
+    summary = {"date": today, "note": note, "cores": added_cores, "sets": added_sets, "pairs": added_pairs, "dates_improved": updated_dates, "cores_removed": removed}
     ledger["meta"]["updated"] = today
     ledger["meta"]["runs"] = (ledger["meta"].get("runs") or [])[-50:] + [summary]
     return summary

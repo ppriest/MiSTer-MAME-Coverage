@@ -83,6 +83,13 @@ ROMSET_FILES = [
     ("dist", "MiSTer-devel/NeoGeo_MiSTer", "releases/romsets.xml", "NeoGeo"),
 ]
 
+# Repositories that publish cores for several FPGA boards. Their MRAs are only MiSTer coverage
+# where the repository's own cores.json lists a "mister" release for the core, or where the MRA
+# loads a jotego core someone else builds for MiSTer. bmo00/arcfpga-cores is mostly NeptUNO+:
+# only MRAs under cores/<name>/ count (the rest are samples and tooling), and cores with just a
+# NeptUNO+ build are dropped.
+MULTI_PLATFORM = {"bmo00/arcfpga-cores"}
+
 # jtbin's history was squashed in May 2024, but its pull-request refs still reach the old commits
 # (back to 2019), so fetch those too.
 PULL_REFS = {"jotego/jtbin"}
@@ -312,6 +319,20 @@ def _wip(path: str) -> bool:
     return bool(re.search(r"wip|experimental|unstable|beta|alpha|test", path, re.I))
 
 
+_CORE_DIR = re.compile(r"cores/([^/]+)/")
+
+
+def mister_core_dirs(d: str) -> set[str]:
+    """Core directories whose ``cores.json`` entry lists a ``mister`` release."""
+    out = git("show", "HEAD:cores.json", cwd=d, check=False).stdout
+    try:
+        cores = json.loads(out).get("cores", {})
+    except (ValueError, AttributeError):
+        return set()
+    items = cores.items() if isinstance(cores, dict) else enumerate(cores)
+    return {str(k) for k, v in items if isinstance(v, dict) and "mister" in (v.get("releases") or {})}
+
+
 def scan_repo(source: str, full: str, dirs: list[str] | None) -> dict:
     """Parse the MRAs at HEAD, and every MRA ever added (at the commit that added it)."""
     d = repo_dir(full)
@@ -321,6 +342,10 @@ def scan_repo(source: str, full: str, dirs: list[str] | None) -> dict:
     paths_ = [p for p in ls_files(d) if p.lower().endswith(".mra")]
     if dirs is not None and dirs != ["."]:
         paths_ = [p for p in paths_ if any(p.startswith(x.rstrip("/") + "/") for x in dirs)]
+    multi = full in MULTI_PLATFORM
+    if multi:
+        paths_ = [p for p in paths_ if _CORE_DIR.match(p)]
+        mister_dirs = mister_core_dirs(d)
     mras = []
     for p in paths_:
         fp = os.path.join(d, p)
@@ -330,6 +355,8 @@ def scan_repo(source: str, full: str, dirs: list[str] | None) -> dict:
         if not rec.get("setname"):
             continue
         rec.update(path=p, repo=full, source=source, wip=_wip(p), alt="_alternatives" in p.lower())
+        if multi:
+            rec["mister_build"] = _CORE_DIR.match(p).group(1) in mister_dirs
         mras.append(rec)
     # History: (path, date, setname) for every add, reading the file as it was when added.
     adds = mra_history(d, dirs)
@@ -345,7 +372,7 @@ def scan_repo(source: str, full: str, dirs: list[str] | None) -> dict:
     os.makedirs(os.path.dirname(cache_file), exist_ok=True)
     with open(cache_file, "w", encoding="utf-8") as f:
         json.dump(cache, f)
-    history = [(p, date, cache.get(f"{c}:{p}")) for p, date, c in adds]
+    history = [(p, date, cache.get(f"{c}:{p}")) for p, date, c in adds if not multi or _CORE_DIR.match(p)]
     for src, r, f, core in ROMSET_FILES:
         if r == full:
             m, h = scan_romsets(d, src, full, f, core)

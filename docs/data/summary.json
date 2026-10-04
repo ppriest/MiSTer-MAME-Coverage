@@ -1,28 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-04T21:09:13+00:00",
+  "generated": "2026-10-04T21:21:45+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-04T20:38:47+00:00",
+  "mister_generated": "2026-10-04T21:21:42+00:00",
   "alamone_generated": "2026-10-01T23:23:16+00:00",
   "ledger_updated": "2026-10-04",
   "ledger_runs": [
-   {
-    "date": "2026-10-04",
-    "note": "alamone 2026-10-01",
-    "cores": 5,
-    "sets": 10,
-    "pairs": 33,
-    "dates_improved": 0
-   },
-   {
-    "date": "2026-10-04",
-    "note": "alamone 2026-10-01",
-    "cores": 1,
-    "sets": 6,
-    "pairs": 6,
-    "dates_improved": 0
-   },
    {
     "date": "2026-10-04",
     "note": "alamone 2026-10-01",
@@ -46,6 +30,24 @@
     "sets": 47,
     "pairs": 89,
     "dates_improved": 7
+   },
+   {
+    "date": "2026-10-04",
+    "note": "alamone 2026-10-01",
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
+    "dates_improved": 0,
+    "cores_removed": 8
+   },
+   {
+    "date": "2026-10-04",
+    "note": "alamone 2026-10-01",
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -1452,7 +1454,7 @@
     "source": "arcfpga",
     "repo": "bmo00/arcfpga-cores",
     "dirs": null,
-    "mras": 1432
+    "mras": 1410
    },
    {
     "source": "repo",
@@ -2219,34 +2221,6 @@
   ],
   "repo_errors": [
    [
-    "Kyp069/zx48-MiSTer",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "blahm1d/MiSTer-cores",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "blahm1d/wolf-unit",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "kandowontu/BrickBoy_MiSTer",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "meathax/Bucky",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "meathax/mrdo",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "meathax/s24",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
     "https://mister.blahm1d.com/db.json.zip",
     "<urlopen error Tunnel connection failed: 403 Forbidden>"
    ]
@@ -2254,58 +2228,14 @@
   "counts": {
    "titles": 6823,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 1839,
+   "working_arcade_titles_covered": 1838,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 4676,
-   "cores": 543,
+   "working_arcade_sets_covered": 4654,
+   "cores": 535,
    "unmatched_sets": 400
   }
  },
  "cores": [
-  {
-   "id": "arcfpga:asterix",
-   "name": "asterix",
-   "source": "arcfpga",
-   "source_title": "arcfpga (bmo00)",
-   "channel": null,
-   "rbf": "asterix.rbf",
-   "repo": "bmo00/arcfpga-cores",
-   "url": "https://github.com/bmo00/arcfpga-cores",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "nsets": 5,
-   "ntitles": 1,
-   "first_date": "2026-08-26"
-  },
-  {
-   "id": "arcfpga:empirecity",
-   "name": "empirecity",
-   "source": "arcfpga",
-   "source_title": "arcfpga (bmo00)",
-   "channel": null,
-   "rbf": "empirecity.rbf",
-   "repo": "bmo00/arcfpga-cores",
-   "url": "https://github.com/bmo00/arcfpga-cores",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "nsets": 9,
-   "ntitles": 1,
-   "first_date": "2026-08-26"
-  },
   {
    "id": "arcfpga:jtsectionz",
    "name": "jtsectionz",
@@ -2329,72 +2259,6 @@
    "first_date": "2026-08-26"
   },
   {
-   "id": "arcfpga:marblemadness2",
-   "name": "MarbleMadness2",
-   "source": "arcfpga",
-   "source_title": "arcfpga (bmo00)",
-   "channel": null,
-   "rbf": "MarbleMadness2.rbf",
-   "repo": "bmo00/arcfpga-cores",
-   "url": "https://github.com/bmo00/arcfpga-cores",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-09-07"
-  },
-  {
-   "id": "arcfpga:momoko",
-   "name": "momoko",
-   "source": "arcfpga",
-   "source_title": "arcfpga (bmo00)",
-   "channel": null,
-   "rbf": "momoko.rbf",
-   "repo": "bmo00/arcfpga-cores",
-   "url": "https://github.com/bmo00/arcfpga-cores",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "nsets": 3,
-   "ntitles": 1,
-   "first_date": "2026-08-28"
-  },
-  {
-   "id": "arcfpga:moomesa",
-   "name": "moomesa",
-   "source": "arcfpga",
-   "source_title": "arcfpga (bmo00)",
-   "channel": null,
-   "rbf": "moomesa.rbf",
-   "repo": "bmo00/arcfpga-cores",
-   "url": "https://github.com/bmo00/arcfpga-cores",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "nsets": 10,
-   "ntitles": 2,
-   "first_date": "2026-08-26"
-  },
-  {
    "id": "arcfpga:mystston",
    "name": "mystston",
    "source": "arcfpga",
@@ -2415,72 +2279,6 @@
    "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 3,
-   "ntitles": 1,
-   "first_date": "2026-08-26"
-  },
-  {
-   "id": "arcfpga:opwolf",
-   "name": "opwolf",
-   "source": "arcfpga",
-   "source_title": "arcfpga (bmo00)",
-   "channel": null,
-   "rbf": "opwolf.rbf",
-   "repo": "bmo00/arcfpga-cores",
-   "url": "https://github.com/bmo00/arcfpga-cores",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "nsets": 7,
-   "ntitles": 1,
-   "first_date": "2026-08-26"
-  },
-  {
-   "id": "arcfpga:splash",
-   "name": "splash",
-   "source": "arcfpga",
-   "source_title": "arcfpga (bmo00)",
-   "channel": null,
-   "rbf": "splash.rbf",
-   "repo": "bmo00/arcfpga-cores",
-   "url": "https://github.com/bmo00/arcfpga-cores",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "nsets": 6,
-   "ntitles": 1,
-   "first_date": "2026-08-28"
-  },
-  {
-   "id": "arcfpga:ssriders",
-   "name": "ssriders",
-   "source": "arcfpga",
-   "source_title": "arcfpga (bmo00)",
-   "channel": null,
-   "rbf": "ssriders.rbf",
-   "repo": "bmo00/arcfpga-cores",
-   "url": "https://github.com/bmo00/arcfpga-cores",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "nsets": 13,
    "ntitles": 1,
    "first_date": "2026-08-26"
   },
@@ -8838,10 +8636,10 @@
     "gaelco/gaelco2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
    "aliases": [
     "arcfpga:aligator"
    ],
-   "first_recorded": "2026-10-04",
    "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
@@ -8912,10 +8710,10 @@
     "gaelco/gaelco.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
    "aliases": [
     "arcfpga:bigkarnk"
    ],
-   "first_recorded": "2026-10-04",
    "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
@@ -8938,10 +8736,10 @@
     "gaelco/gaelco.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
    "aliases": [
     "arcfpga:biomtoy"
    ],
-   "first_recorded": "2026-10-04",
    "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
@@ -8987,6 +8785,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
@@ -9081,10 +8880,10 @@
     "gaelco/glass.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
    "aliases": [
     "arcfpga:glass"
    ],
-   "first_recorded": "2026-10-04",
    "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
@@ -9128,6 +8927,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
@@ -9286,10 +9086,10 @@
     "gaelco/gaelco.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
    "aliases": [
     "arcfpga:squash"
    ],
-   "first_recorded": "2026-10-04",
    "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
@@ -9336,10 +9136,10 @@
     "gaelco/gaelco.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
    "aliases": [
     "arcfpga:thoop"
    ],
-   "first_recorded": "2026-10-04",
    "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
@@ -9362,10 +9162,10 @@
     "gaelco/thoop2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
    "aliases": [
     "arcfpga:thoop2"
    ],
-   "first_recorded": "2026-10-04",
    "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
@@ -9410,10 +9210,10 @@
     "gaelco/wrally.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
    "aliases": [
     "arcfpga:wrally"
    ],
-   "first_recorded": "2026-10-04",
    "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
@@ -9436,10 +9236,10 @@
     "gaelco/gaelco2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
    "aliases": [
     "arcfpga:wrally2"
    ],
-   "first_recorded": "2026-10-04",
    "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
@@ -12613,6 +12413,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
@@ -12656,6 +12457,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
@@ -12677,6 +12479,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 0,
    "ntitles": 0,
@@ -12786,6 +12589,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
@@ -14761,6 +14565,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
@@ -14782,6 +14587,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 3,
@@ -14803,6 +14609,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 10,
    "ntitles": 3,
@@ -14824,6 +14631,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 24,
    "ntitles": 9,
@@ -14845,6 +14653,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-04",
+   "aliases": [],
    "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 3,
@@ -15640,7 +15449,6 @@
    "sets": 1,
    "sets_covered": 1,
    "cores": [
-    "arcfpga:marblemadness2",
     "dist:marblemadness2"
    ],
    "first": "2026-07-29"
@@ -17512,13 +17320,11 @@
   {
    "sourcefile": "gaelco/splash.cpp",
    "titles": 2,
-   "covered": 1,
+   "covered": 0,
    "sets": 13,
-   "sets_covered": 6,
-   "cores": [
-    "arcfpga:splash"
-   ],
-   "first": "2026-08-28"
+   "sets_covered": 0,
+   "cores": [],
+   "first": null
   },
   {
    "sourcefile": "gaelco/targeth.cpp",
@@ -18146,7 +17952,6 @@
    "sets": 3,
    "sets_covered": 3,
    "cores": [
-    "arcfpga:momoko",
     "ongo:jvmomoko"
    ],
    "first": "2026-08-21"
@@ -18359,9 +18164,8 @@
    "titles": 1,
    "covered": 1,
    "sets": 5,
-   "sets_covered": 5,
+   "sets_covered": 1,
    "cores": [
-    "arcfpga:asterix",
     "jlrh:ffasterix"
    ],
    "first": "2026-07-29"
@@ -18833,9 +18637,8 @@
    "titles": 2,
    "covered": 2,
    "sets": 10,
-   "sets_covered": 10,
+   "sets_covered": 7,
    "cores": [
-    "arcfpga:moomesa",
     "jlrh:ffmoomesa",
     "meat:bucky"
    ],
@@ -19107,7 +18910,6 @@
    "sets": 38,
    "sets_covered": 35,
    "cores": [
-    "arcfpga:ssriders",
     "coinop:tmnt2",
     "jlrh:ffblswhstl",
     "jlrh:ffssriders",
@@ -22199,9 +22001,8 @@
    "titles": 1,
    "covered": 1,
    "sets": 9,
-   "sets_covered": 9,
+   "sets_covered": 1,
    "cores": [
-    "arcfpga:empirecity",
     "jlrh:ffempirecity"
    ],
    "first": "2026-07-19"
@@ -23086,9 +22887,8 @@
    "titles": 1,
    "covered": 1,
    "sets": 7,
-   "sets_covered": 7,
+   "sets_covered": 6,
    "cores": [
-    "arcfpga:opwolf",
     "jlrh:ffopwolf",
     "jt:jtrastan"
    ],

@@ -49,7 +49,8 @@ def main(argv=None) -> int:
         summary = ledger_mod.merge(led, reconcile.observe(mister), note=f"alamone {mister.get('alamone_generated', '')[:10]}")
         ledger_mod.save(led)
         print(f"[ledger] {ledger_mod.LEDGER}: +{summary['cores']} cores, +{summary['sets']} sets, "
-              f"+{summary['pairs']} set/core pairs, {summary['dates_improved']} dates improved")
+              f"+{summary['pairs']} set/core pairs, {summary['dates_improved']} dates improved, "
+              f"{summary.get('cores_removed', 0)} excluded cores removed")
         mister_meta = {k: mister.get(k) for k in ("generated", "alamone_generated", "repos", "errors")}
     if a.step in ("mamehist", "build"):
         if a.step == "mamehist":
