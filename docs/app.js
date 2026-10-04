@@ -468,5 +468,8 @@
     readHash();
     $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓";
     applyTitles(); applyDrivers(); applyCores();
+    // A pasted or back/forward hash applies without a reload (writeHash uses replaceState, so
+    // the page's own filter changes do not fire this).
+    addEventListener("hashchange", () => { FILTER_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.t = 1; readHash(); $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓"; applyTitles(); });
   }).catch(err => { $("#subtitle").textContent = "Could not load data/coverage.json (" + err + "). Serve this folder over HTTP; browsers block fetch() from file://."; });
 })();
