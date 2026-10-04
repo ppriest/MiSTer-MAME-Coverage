@@ -123,6 +123,12 @@ Raw strings are normalised (lower case, HTML entities decoded, `/`, ` - ` and `>
 - `ignore` and `ignore_prefix`: strings that carry no genre (`arcade`, `home systems/…`);
 - `default`: what everything else becomes (`Other`).
 
+Scrolling shooters are kept apart from the rest: `Shmup` covers catver's "Flying Vertical /
+Horizontal / Diagonal", "Misc. Vertical / Horizontal" and "Driving Vertical / Horizontal" shooters
+and the MRA spellings of shoot 'em up, while `Shooter` keeps gallery (fixed-screen), gun, walking,
+first- and third-person and chase-view shooters. Move strings between the two in `full` if you
+disagree with a placement.
+
 `report` prints every raw string that fell through to the default, with how many sets it
 affects; add those to the map and run `report` again. The page's genre filter, sort, column and
 "Coverage by genre" chart all use the common value.
