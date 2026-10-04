@@ -32,12 +32,9 @@ COVERAGE = os.path.join(ROOT, "docs", "data", "coverage.json")
 OVERRIDES = os.path.join(ROOT, "data", "genre_overrides.json")
 REPORT = os.path.join(ROOT, "reports", "shmup-deck.md")
 DECK_URL = "https://raw.githubusercontent.com/shmupfan/shmup-deck/main/shmup_deck/app/games.json"
-# Our Shmup is 2D scrolling shooters only: vehicle ("Driving …") and isometric ("Flying Diagonal")
-# shooters stay Shooter by decision, so the deck listing them is not treated as a disagreement to fix.
-KEEP_RAW_DEFAULT = [
-    "Shooter / Driving Vertical", "Shooter / Driving Horizontal", "Shooter / Driving Diagonal",
-    "Shooter / Flying Diagonal", "Driving / Race",
-]
+# Raw categories whose placement is kept even when the deck disagrees. Empty: the deck's reading of
+# vehicle and isometric scrollers as shmups was adopted (they map to Shmup in genre_map.json).
+KEEP_RAW_DEFAULT: list[str] = []
 
 
 def load_deck(path: str | None) -> list[dict]:
@@ -60,8 +57,7 @@ def main() -> int:
                     help=f"also write the report as Markdown (default: {os.path.relpath(REPORT, ROOT)}; '' to skip)")
     ap.add_argument("--keep-raw", action="append", default=None, metavar="CATEGORY",
                     help="raw categories whose placement we keep even when the deck disagrees "
-                         "(repeatable; default: the vehicle and isometric shooter categories, which this "
-                         "project deliberately keeps out of Shmup; pass '' to keep none)")
+                         "(repeatable; default: none)")
     a = ap.parse_args()
     keep_raw = {k.lower() for k in (a.keep_raw if a.keep_raw is not None else KEEP_RAW_DEFAULT) if k}
 
@@ -107,7 +103,7 @@ def main() -> int:
     print()
     for t, cards in not_shmup:
         names = ", ".join(sorted({c["title"] for c in cards}))
-        print(f"   {t['name']:<10} {t['desc'][:48]:<48} ours: {str(t['genre']):<10} raw: {t['genre_raw']!r} ({t['genre_source']})   deck: {names}{'  [kept: vehicle/isometric]' if kept(t) else ''}")
+        print(f"   {t['name']:<10} {t['desc'][:48]:<48} ours: {str(t['genre']):<10} raw: {t['genre_raw']!r} ({t['genre_source']})   deck: {names}{'  [kept]' if kept(t) else ''}")
     print(f"\nB. Titles we call Shmup{'' if a.include_uncovered else ', on MiSTer,'} that the deck does not list: {len(ours)}")
     for t in ours:
         print(f"   {t['name']:<10} {t['desc'][:48]:<48} {t['year']:<5} raw: {t['genre_raw']!r} ({t['genre_source']})   cores: {', '.join(t['cores'])}")
