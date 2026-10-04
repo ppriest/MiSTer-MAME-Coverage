@@ -2,9 +2,9 @@
 
 Generated 2026-10-04 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (313 games).
 
-**Agreement:** 286 of 305 deck titles are Shmup in our data (93.8%).
+**Agreement:** 290 of 305 deck titles are Shmup in our data (95.1%).
 
-## A. Deck games our data does not call Shmup (19)
+## A. Deck games our data does not call Shmup (15)
 
 Grouped by the raw category our genre came from. Rows marked *kept* are vehicle or isometric shooters this project keeps out of Shmup on purpose.
 
@@ -24,10 +24,6 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 | `lastmisn` | Last Mission (World revision 8) | Shooter | Shooter / Field (catver) | Last Mission |  |
 | `tp84` | Time Pilot '84 (set 1) | Shooter | Shooter / Field (catver) | Time Pilot '84 |  |
-| `futspy` | Future Spy (315-5061) | Shooter | Shooter / Flying Diagonal (catver) | Future Spy |  |
-| `szaxxon` | Super Zaxxon (315-5013) | Shooter | Shooter / Flying Diagonal (catver) | Super Zaxxon |  |
-| `viewpoin` | Viewpoint | Shooter | Shooter / Flying Diagonal (catver) | Viewpoint |  |
-| `zaxxon` | Zaxxon (set 1, rev D) | Shooter | Shooter / Flying Diagonal (catver) | Zaxxon |  |
 | `sbomber` | Space Bomber (ver. B) | Shooter | Shooter / Gallery (catver) | Space Bomber |  |
 
 ## B. Titles we call Shmup, on MiSTer, that the deck does not list (36)

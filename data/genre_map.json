@@ -1,5 +1,5 @@
 {
-  "_comment": "Raw category strings (catver.ini, MiSTer ArcadeDatabase, MRA <category>) are normalised to lower case with '/' between main and sub category, then looked up here: 'full' for the whole string, then 'main' for the part before the first '/', then 'prefix' by starts-with, else 'default'. 'ignore' values and 'ignore_prefix' starts-with matches carry no genre information. Edit freely; report prints raw strings that fell through to the default. 'Shmup' is for scrolling vertical/horizontal shooters; 'Shooter' keeps gallery (fixed), gun, walking, vehicle/driving, isometric (Flying Diagonal), 3rd/1st person and other shooters, with per-title exceptions in genre_overrides.json.",
+  "_comment": "Raw category strings (catver.ini, MiSTer ArcadeDatabase, MRA <category>) are normalised to lower case with '/' between main and sub category, then looked up here: 'full' for the whole string, then 'main' for the part before the first '/', then 'prefix' by starts-with, else 'default'. 'ignore' values and 'ignore_prefix' starts-with matches carry no genre information. Edit freely; report prints raw strings that fell through to the default. 'Shmup' is for scrolling vertical/horizontal/diagonal (isometric, Zaxxon-style) shooters; 'Shooter' keeps gallery (fixed), gun, walking, vehicle/driving, 3rd/1st person and other shooters, with per-title exceptions in genre_overrides.json.",
   "ignore": [
     "arcade",
     "system",
@@ -124,7 +124,7 @@
     "shooter/flying vertical": "Shmup",
     "shooter/flying horizontal": "Shmup",
     "shooter/flying": "Shmup",
-    "shooter/flying diagonal": "Shooter",
+    "shooter/flying diagonal": "Shmup",
     "shooter/driving diagonal": "Shooter",
     "shooter/vertical": "Shmup",
     "shooter/horizontal": "Shmup",
