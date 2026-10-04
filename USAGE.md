@@ -124,8 +124,8 @@ Raw strings are normalised (lower case, HTML entities decoded, `/`, ` - ` and `>
 - `default`: what everything else becomes (`Other`).
 
 Scrolling shooters are kept apart from the rest: `Shmup` covers catver's "Flying Vertical /
-Horizontal / Diagonal", "Misc. Vertical / Horizontal" and "Driving Vertical / Horizontal" shooters
-and the MRA spellings of shoot 'em up, while `Shooter` keeps gallery (fixed-screen), gun, walking,
+Horizontal / Diagonal" and "Misc. Vertical / Horizontal" shooters and the MRA spellings of
+shoot 'em up, while `Shooter` keeps gallery (fixed-screen), gun, walking, vehicle ("Driving"),
 first- and third-person and chase-view shooters. Move strings between the two in `full` if you
 disagree with a placement.
 
