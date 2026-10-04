@@ -124,11 +124,11 @@ Raw strings are normalised (lower case, HTML entities decoded, `/`, ` - ` and `>
 - `default`: what everything else becomes (`Other`).
 
 Scrolling shooters are kept apart from the rest: `Shmup` covers catver's "Flying Vertical /
-Horizontal / Diagonal", "Misc. Vertical / Horizontal" and "Driving Vertical / Horizontal /
-Diagonal" shooters (so vehicle and isometric scrollers such as Spy Hunter and Zaxxon count) and
-the MRA spellings of shoot 'em up, while `Shooter` keeps gallery (fixed-screen), gun, walking,
-first- and third-person and chase-view shooters. Individual games in those categories that the
-shmup community counts as shmups (Guwange, Out Zone, Space Bomber, …) are listed in
+Horizontal" and "Misc. Vertical / Horizontal" shooters and the MRA spellings of shoot 'em up,
+while `Shooter` keeps gallery (fixed-screen), gun, walking, vehicle ("Driving"), isometric
+("Flying Diagonal"), first- and third-person and chase-view shooters as categories. Individual
+games in those categories that the shmup community counts as shmups (Zaxxon, Spy Hunter-style
+vehicle scrollers the deck lists, Guwange, Out Zone, Space Bomber, …) are listed one by one in
 `data/genre_overrides.json`, following shmup-deck. Move strings between the two in `full` if you
 disagree with a placement.
 
