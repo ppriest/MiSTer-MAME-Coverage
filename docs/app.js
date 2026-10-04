@@ -67,9 +67,9 @@
   }
 
   // ---------- charts ----------
-  // The charts follow the Titles filters. They only make sense with Coverage set to "all" (a
-  // coverage chart of only-uncovered titles is all zeros), so with any other Coverage value the
-  // charts box is collapsed and disabled. chartScope() returns the titles and how to count sets.
+  // The charts follow the Titles filters, Coverage included. When the filters match no title at
+  // all the charts box is collapsed and disabled. chartScope() returns the titles and how to
+  // count their sets.
   function chartScope() {
     const f = readFilters();
     const titles = S.titles.filter(t => titleMatches(t, f));
@@ -80,7 +80,7 @@
   }
   function renderCharts() {
     const box = $("#charts-box"), note = $("#charts-note");
-    const enabled = readFilters().cov === "all";
+    const enabled = S.filtered.length > 0;
     S.chartsLock = true;
     if (!enabled) {
       box.open = false; box.classList.add("disabled");
