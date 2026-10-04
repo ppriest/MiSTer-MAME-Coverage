@@ -67,17 +67,31 @@
   }
 
   // ---------- charts ----------
+  // The charts follow the Titles filters, all except Coverage: a coverage chart restricted to
+  // uncovered titles would be empty. chartScope() returns the titles and how to count their sets.
+  function chartScope() {
+    const f = readFilters();
+    const g = { ...f, cov: "all" };
+    const titles = S.titles.filter(t => titleMatches(t, g));
+    const setOk = f.work === "all" ? () => true : f.work === "notworking" ? s => !s.working : s => s.working;
+    const covered = f.work === "working" ? t => t.ncovered_working > 0 : t => t.covered;
+    const date = f.work === "working" ? t => t.date_working : t => t.date;
+    return { titles, setOk, covered, date, work: f.work };
+  }
+  function renderCharts() { renderTimeChart(); renderYearChart(); renderGenreChart(); renderGenrePctChart(); }
+
   function monthKey(d) { return d.slice(0, 7); }
   function addMonths(key, n) { let [y, m] = key.split("-").map(Number); m += n; y += Math.floor((m - 1) / 12); m = ((m - 1) % 12 + 12) % 12 + 1; return `${y}-${String(m).padStart(2, "0")}`; }
 
-  function renderTimeChart(sinceKey) {
-    // Working arcade sets: cumulative count in MAME (by the release that added each set) and on
-    // MiSTer (by first MRA). Both lines share one axis; "remaining" is simply the gap between them.
-    const titles = S.titles.filter(isArcadeWorking);
-    const sets = titles.flatMap(t => t.sets.filter(s => s.working));
+  function renderTimeChart() {
+    // Sets of the filtered titles: cumulative count in MAME (by the release that added each set)
+    // and on MiSTer (by first MRA). Both lines share one axis; "remaining" is the gap between them.
+    const sinceKey = S.timeSince;
+    const sc = chartScope();
+    const sets = sc.titles.flatMap(t => t.sets.filter(sc.setOk));
     const mameKeys = sets.filter(s => s.mame_date).map(s => monthKey(s.mame_date)).sort();
     const misterKeys = sets.filter(s => s.cores.length && s.date).map(s => monthKey(s.date)).sort();
-    if (!mameKeys.length) return;
+    if (!mameKeys.length) { $("#chart-time").innerHTML = '<p class="muted">no titles match</p>'; $("#legend-time").innerHTML = ""; return; }
     const first = sinceKey || mameKeys[0], last = monthKey(new Date().toISOString());
     const months = []; for (let k = first; k <= last; k = addMonths(k, 1)) months.push(k);
     const count = keys => { const m = new Map(months.map(k => [k, 0])); let before = 0; keys.forEach(k => { if (k < first) before++; else if (m.has(k)) m.set(k, m.get(k) + 1); }); let c = before; return months.map(k => (c += m.get(k))); };
@@ -105,7 +119,7 @@
       <line class="hover-line" id="time-hover" x1="0" x2="0" y1="${m.t}" y2="${y(0)}" visibility="hidden"/>
       <rect x="${m.l}" y="${m.t}" width="${W - m.l - m.r}" height="${H - m.t - m.b}" fill="transparent" id="time-hit"/>
     </svg>`;
-    $("#legend-time").innerHTML = `<span><i class="line" style="background:var(--text-2)"></i>working arcade sets in MAME</span><span><i class="line" style="background:var(--accent)"></i>of which on MiSTer</span>`;
+    $("#legend-time").innerHTML = `<span><i class="line" style="background:var(--text-2)"></i>${sc.work === "working" ? "working " : ""}sets in MAME (filtered titles)</span><span><i class="line" style="background:var(--accent)"></i>of which on MiSTer</span>`;
     const hit = $("#time-hit"), hl = $("#time-hover"), svgEl = $("#chart-time svg");
     hit.addEventListener("mousemove", ev => {
       const r = svgEl.getBoundingClientRect();
@@ -118,14 +132,15 @@
     hit.addEventListener("mouseleave", () => { hl.setAttribute("visibility", "hidden"); hideTip(); });
     const btn = $("#time-range");
     btn.textContent = sinceKey ? "show full history" : "show since 2018";
-    btn.onclick = () => renderTimeChart(sinceKey ? null : "2018-01");
+    btn.onclick = () => { S.timeSince = sinceKey ? null : "2018-01"; renderTimeChart(); };
   }
 
   function renderYearChart() {
-    const titles = S.titles.filter(isArcadeWorking);
+    const sc = chartScope();
     const bins = new Map();
     const key = y => { const n = parseInt(y, 10); if (!n) return "n/a"; if (n < 1975) return "≤1974"; if (n > 2005) return "2006+"; return String(n); };
-    titles.forEach(t => { const k = key(t.year); const b = bins.get(k) || { k, covered: 0, total: 0 }; b.total++; if (t.covered_working) b.covered++; bins.set(k, b); });
+    sc.titles.forEach(t => { const k = key(t.year); const b = bins.get(k) || { k, covered: 0, total: 0 }; b.total++; if (sc.covered(t)) b.covered++; bins.set(k, b); });
+    if (!bins.size) { $("#chart-year").innerHTML = '<p class="muted">no titles match</p>'; $("#legend-year").innerHTML = ""; return; }
     const order = Array.from(bins.keys()).sort((a, b) => (a === "≤1974" ? -1 : b === "≤1974" ? 1 : a === "n/a" ? 1 : b === "n/a" ? -1 : a.localeCompare(b)));
     const rows = order.map(k => bins.get(k));
     const max = Math.max(...rows.map(r => r.total));
@@ -160,10 +175,11 @@
   }
 
   function renderGenreChart() {
-    const titles = S.titles.filter(isArcadeWorking);
+    const sc = chartScope();
     const bins = new Map();
-    titles.forEach(t => { const k = t.genre || "(none)"; const b = bins.get(k) || { k, covered: 0, total: 0 }; b.total++; if (t.covered_working) b.covered++; bins.set(k, b); });
+    sc.titles.forEach(t => { const k = t.genre || "(none)"; const b = bins.get(k) || { k, covered: 0, total: 0 }; b.total++; if (sc.covered(t)) b.covered++; bins.set(k, b); });
     const rows = Array.from(bins.values()).sort((a, b) => b.total - a.total);
+    if (!rows.length) { $("#chart-genre").innerHTML = '<p class="muted">no titles match</p>'; $("#legend-genre").innerHTML = ""; return; }
     const max = Math.max(...rows.map(r => r.total));
     const W = 640, rowH = 18, m = { t: 6, r: 56, b: 22, l: 96 };
     const H = m.t + rows.length * rowH + m.b;
@@ -195,11 +211,13 @@
   }
 
   function renderGenrePctChart() {
-    const titles = S.titles.filter(isArcadeWorking);
+    const sc = chartScope();
+    const titles = sc.titles;
     const bins = new Map();
-    titles.forEach(t => { const k = t.genre || "(none)"; const b = bins.get(k) || { k, covered: 0, total: 0 }; b.total++; if (t.covered_working) b.covered++; bins.set(k, b); });
+    titles.forEach(t => { const k = t.genre || "(none)"; const b = bins.get(k) || { k, covered: 0, total: 0 }; b.total++; if (sc.covered(t)) b.covered++; bins.set(k, b); });
     const rows = Array.from(bins.values()).map(r => ({ ...r, p: r.covered / r.total })).sort((a, b) => b.p - a.p || b.total - a.total);
-    const overall = titles.filter(t => t.covered_working).length / titles.length;
+    if (!rows.length) { $("#chart-genre-pct").innerHTML = '<p class="muted">no titles match</p>'; $("#legend-genre-pct").innerHTML = ""; return; }
+    const overall = titles.filter(sc.covered).length / titles.length;
     const W = 640, rowH = 18, m = { t: 6, r: 110, b: 22, l: 96 };
     const H = m.t + rows.length * rowH + m.b;
     const x = v => m.l + (W - m.l - m.r) * v;
@@ -293,6 +311,7 @@
     }[f.sort];
     rows.sort((a, b) => dir * cmp(a, b));
     S.filtered = rows; S.shown = 0;
+    renderCharts();
     $("#titles-table tbody").innerHTML = "";
     $("#titles-count").textContent = `${fmt(rows.length)} titles` + (f.work === "working" ? ` · ${fmt(rows.reduce((n, t) => n + t.nworking, 0))} working sets` : ` · ${fmt(rows.reduce((n, t) => n + t.nsets, 0))} sets`);
     renderMoreTitles();
@@ -427,7 +446,10 @@
     const c = data.meta.counts;
     $("#subtitle").textContent = `MAME ${data.meta.mame_version.replace(/^0/, "0.")} · ${fmt(c.working_arcade_titles)} working arcade titles · ${fmt(c.cores)} MiSTer cores · updated ${data.meta.generated.slice(0, 10)}`;
     $("#mame-ver").textContent = data.meta.mame_version.replace(/^0/, "0.");
-    renderTiles(); renderTimeChart(); renderYearChart(); renderGenreChart(); renderGenrePctChart(); populateSelects(); renderStatic();
+    renderTiles(); populateSelects(); renderStatic();
+    const box = $("#charts-box");
+    try { if (localStorage.getItem("charts-open") === "0") box.open = false; } catch (e) { /* storage unavailable */ }
+    box.addEventListener("toggle", () => { try { localStorage.setItem("charts-open", box.open ? "1" : "0"); } catch (e) { /* ignore */ } });
     readHash();
     $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓";
     applyTitles(); applyDrivers(); applyCores();
