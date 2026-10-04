@@ -138,7 +138,8 @@ the curated list in [shmupfan/shmup-deck](https://github.com/shmupfan/shmup-deck
 (`shmup_deck/app/games.json`, every shoot 'em up it knows a MiSTer core for, with MAME set names).
 It prints (A) deck games we do not call Shmup, grouped by raw category so you can tell a wrong
 category from a wrong single game, (B) titles we call Shmup, on MiSTer, that the deck lacks, and
-(C) deck sets unknown to this MAME version. `--write-overrides` records the games in (A) as Shmup
+(C) deck sets unknown to this MAME version. The same report is written to `reports/shmup-deck.md`
+(committed, so the latest comparison is readable on GitHub). `--write-overrides` records the games in (A) as Shmup
 in `data/genre_overrides.json`, except those in categories we keep out of Shmup on purpose
 (vehicle and isometric shooters; see `--keep-raw`). Run `python -m mmc report` afterwards.
 
