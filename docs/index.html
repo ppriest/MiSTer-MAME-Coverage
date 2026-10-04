@@ -22,8 +22,9 @@
   <section class="charts">
     <figure class="chart" id="fig-time">
       <figcaption>
-        <strong>Coverage over time</strong>
-        <span class="muted">working arcade titles in MAME <span id="mame-ver"></span>, by the date their first MiSTer MRA appeared</span>
+        <strong>MAME and MiSTer over time</strong>
+        <span class="muted">working arcade sets (as of MAME <span id="mame-ver"></span>): in MAME, by the release that first listed each set; on MiSTer, by the date of its first MRA
+          · <button type="button" class="linkbtn" id="time-range">show since 2018</button></span>
       </figcaption>
       <div class="chart-body" id="chart-time"></div>
       <div class="legend" id="legend-time"></div>
@@ -209,6 +210,7 @@
       <li><strong>MiSTer side.</strong> Every MRA (plus the NeoGeo core's <code>romsets.xml</code>) in the official distribution, JTCORES (jotego), Coin-Op Collection, OngoGablogian's MiSTer_Ongo database, the per-core <code>releases/</code> folders, the developer downloader databases (MeatCores, Slop Cores, kuzecores, jlrh, arcfpga, blahm1d; cores published only as builds, such as Patreon releases, count through the MRAs their database ships), a hand-kept list of repositories nobody indexes yet, and the registry kept by <a href="https://github.com/alamone/fpga-verified-against">alamone/fpga-verified-against</a>. An MRA's <code>&lt;setname&gt;</code> is the MAME set it loads; its <code>&lt;rbf&gt;</code> names the core.</li>
       <li><strong>Dates.</strong> Each repository is cloned without file contents and <code>git log</code> gives the day each MRA file was first committed. The earliest date across every source is the date a set became available; a title (MAME parent set plus its clones) takes the earliest of its sets. Where a repository's history was squashed (jotego's jtbin in May 2024, the official distribution starts September 2021) the per-core repository history fills in; where no history exists at all the core's latest build date is used and marked approximate.</li>
       <li><strong>Genre.</strong> From MAME's category file <code>catver.ini</code> first (a current copy at <code>data/catver.ini</code> if present, else the copies libretro vendors), then the MiSTer Arcade Database, then the MRA's own <code>&lt;category&gt;</code> tag. A set without a category takes its parent's, else a clone's. The raw strings (135 spellings across sources) are remapped to a short common list by <code>data/genre_map.json</code>, which is meant to be edited. The raw value and its source show in the title's tooltip.</li>
+      <li><strong>When a set entered MAME.</strong> From <code>catver.ini</code>'s <code>VerAdded</code> section up to 0.180 and from the <code>mame.lst</code> of every later release on GitHub (a set in release N's list but not N−1's was added in N); release dates come from mamedev's git tags, with the few pre-2007 versions interpolated from known dates. A set is counted as "in MAME" from that date even if it was not working then; renamed sets are dated by their new name. Kept in <code>data/mame_added.json</code>.</li>
       <li><strong>BIOS sets</strong> (MAME <code>isbios</code>, e.g. "Acclaim ZN-1", "Neo-Geo") are not games and are left out entirely.</li>
       <li><strong>Titles vs sets.</strong> A <em>title</em> is a MAME parent set with all its clones. It counts as covered when any of its sets loads on any core. The burndown therefore shows titles, not individual ROM sets.</li>
     </ul>

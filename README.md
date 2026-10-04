@@ -30,7 +30,8 @@ rules, how to add sources, hosting and the weekly refresh.
    name, and finally by set overlap for builds redistributed under another name.
 4. **Report.** `docs/data/coverage.json` (titles, sets, cores, drivers, dates) and
    `docs/data/summary.json` (roll-up). `docs/index.html` renders them: headline numbers, a
-   burndown / coverage-over-time chart, coverage by release year, and filterable tables of titles,
+   chart of working arcade sets in MAME and on MiSTer over time, coverage by release year and by
+   genre, and filterable tables of titles,
    drivers (MAME source files) and cores.
 
 ## The ledger: incremental, committed, no database
@@ -101,8 +102,9 @@ them weekly, committing the updated ledger and page data when anything changed.
 ## Layout
 
 ```
-mmc/           the tool (mame.py, mister.py, ledger.py, genre.py, reconcile.py, report.py)
+mmc/           the tool (mame.py, mister.py, mamehist.py, ledger.py, genre.py, reconcile.py, report.py)
 data/          ledger.json (the committed, incrementally merged record of MiSTer coverage),
+               mame_added.json (the MAME release and date each set first appeared in),
                genre_map.json (raw category strings -> common genres), genre_overrides.json
                (per-set corrections), optional catver.ini
 tools/         reconcile_shmups.py: compare the Shmup genre with shmupfan/shmup-deck
