@@ -185,7 +185,7 @@
       const r = rows[+g.dataset.i];
       g.addEventListener("mousemove", ev => showTip(`<b>${r.k}</b><br>on MiSTer: ${fmt(r.covered)} of ${fmt(r.total)} (${pct(r.covered, r.total)})<br>remaining: ${fmt(r.total - r.covered)}`, ev.clientX, ev.clientY));
       g.addEventListener("mouseleave", hideTip);
-      g.addEventListener("click", () => { const y0 = r.k === "≤1974" ? "" : r.k === "2006+" ? "2006" : r.k === "n/a" ? "" : r.k; const y1 = r.k === "≤1974" ? "1974" : r.k === "2006+" ? "" : y0; $("#f-y0").value = y0; $("#f-y1").value = y1; $("#f-cov").value = "no"; applyTitles(); showTab("titles"); });
+      g.addEventListener("click", () => { const y0 = r.k === "≤1974" ? "" : r.k === "2006+" ? "2006" : r.k === "n/a" ? "" : r.k; const y1 = r.k === "≤1974" ? "1974" : r.k === "2006+" ? "" : y0; $("#f-y0").value = y0; $("#f-y1").value = y1; applyTitles(); showTab("titles"); });
     });
   }
 
@@ -216,12 +216,12 @@
       ${bars}
       ${xTicks.map(v => `<text x="${x(v)}" y="${H - 6}" text-anchor="middle">${fmt(v)}</text>`).join("")}
     </svg>`;
-    $("#legend-genre").innerHTML = `<span><i style="background:var(--accent)"></i>on MiSTer</span><span><i style="background:var(--accent-2)"></i>not on MiSTer</span><span class="muted">click a genre to list its missing titles</span>`;
+    $("#legend-genre").innerHTML = `<span><i style="background:var(--accent)"></i>on MiSTer</span><span><i style="background:var(--accent-2)"></i>not on MiSTer</span><span class="muted">click a genre to filter to it</span>`;
     $$("#chart-genre .bar").forEach(g => {
       const r = rows[+g.dataset.i];
       g.addEventListener("mousemove", ev => showTip(`<b>${esc(r.k)}</b><br>on MiSTer: ${fmt(r.covered)} of ${fmt(r.total)} (${pct(r.covered, r.total)})<br>remaining: ${fmt(r.total - r.covered)}`, ev.clientX, ev.clientY));
       g.addEventListener("mouseleave", hideTip);
-      g.addEventListener("click", () => { $("#f-genre").value = r.k; $("#f-cov").value = "no"; applyTitles(); showTab("titles"); });
+      g.addEventListener("click", () => { $("#f-genre").value = r.k; applyTitles(); showTab("titles"); });
     });
   }
 
@@ -252,12 +252,12 @@
       <line class="ref-line" x1="${x(overall)}" x2="${x(overall)}" y1="${m.t}" y2="${H - m.b}"/>
       ${ticks.map(v => `<text x="${x(v)}" y="${H - 6}" text-anchor="middle">${100 * v}%</text>`).join("")}
     </svg>`;
-    $("#legend-genre-pct").innerHTML = `<span><i style="background:var(--accent)"></i>share of the genre's titles on MiSTer</span><span><i class="line" style="background:var(--text-2)"></i>all genres: ${(100 * overall).toFixed(1)}%</span><span class="muted">click a genre to list its missing titles</span>`;
+    $("#legend-genre-pct").innerHTML = `<span><i style="background:var(--accent)"></i>share of the genre's titles on MiSTer</span><span><i class="line" style="background:var(--text-2)"></i>all genres: ${(100 * overall).toFixed(1)}%</span><span class="muted">click a genre to filter to it</span>`;
     $$("#chart-genre-pct .bar").forEach(g => {
       const r = rows[+g.dataset.i];
       g.addEventListener("mousemove", ev => showTip(`<b>${esc(r.k)}</b><br>${(100 * r.p).toFixed(1)}% on MiSTer: ${fmt(r.covered)} of ${fmt(r.total)}<br>remaining: ${fmt(r.total - r.covered)}`, ev.clientX, ev.clientY));
       g.addEventListener("mouseleave", hideTip);
-      g.addEventListener("click", () => { $("#f-genre").value = r.k; $("#f-cov").value = "no"; applyTitles(); showTab("titles"); });
+      g.addEventListener("click", () => { $("#f-genre").value = r.k; applyTitles(); showTab("titles"); });
     });
   }
 
