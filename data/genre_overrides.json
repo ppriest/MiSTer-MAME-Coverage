@@ -1,22 +1,4 @@
 {
-  "_comment": "Per-set genre overrides applied after data/genre_map.json; a parent's entry cascades to its clones. Entries are set name -> common genre. These follow shmupfan/shmup-deck for individual games whose catver category is not treated as Shmup as a whole; written by tools/reconcile_shmups.py --write-overrides.",
-  "sets": {
-    "backfirt": "Shmup",
-    "extrmatn": "Shmup",
-    "fixeight": "Shmup",
-    "futspy": "Shmup",
-    "gunsmoke": "Shmup",
-    "guwange": "Shmup",
-    "horizon": "Shmup",
-    "lastduel": "Shmup",
-    "outzone": "Shmup",
-    "sbomber": "Shmup",
-    "sdi": "Shmup",
-    "szaxxon": "Shmup",
-    "tndrcade": "Shmup",
-    "tp84": "Shmup",
-    "viewpoin": "Shmup",
-    "youjyudn": "Shmup",
-    "zaxxon": "Shmup"
-  }
+  "_comment": "Per-set genre overrides applied after data/genre_map.json; a parent's entry cascades to its clones. Entries are set name -> common genre. Empty on purpose: the catver placements stand, so the shmup-deck titles catver files under Walking, Command, Field, Gallery, Driving or Flying Diagonal are not Shmup here. tools/reconcile_shmups.py --write-overrides would fill this; it is not run by the build.",
+  "sets": {}
 }

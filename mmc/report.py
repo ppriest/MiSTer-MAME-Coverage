@@ -5,6 +5,9 @@ from __future__ import annotations
 import json
 import os
 
+import subprocess
+import sys
+
 from . import paths
 
 
@@ -25,6 +28,12 @@ def write(result: dict) -> None:
     if g.get("unmapped"):
         print(f"[report] genre strings not in data/genre_map.json (mapped to default): "
               + ", ".join(f"{u['raw']} ({u['sets']})" for u in g["unmapped"][:25]))
+    # Regenerate the shmup-deck comparison (reports/shmup-deck.md) from the data just written.
+    tool = os.path.join(paths.ROOT, "tools", "reconcile_shmups.py")
+    if os.path.exists(tool):
+        r = subprocess.run([sys.executable, tool], capture_output=True, text=True, check=False)
+        last = (r.stdout.strip().splitlines() or [""])[-1]
+        print(f"[report] {last}" if r.returncode == 0 else f"[report] reconcile_shmups.py failed: {(r.stderr or r.stdout).strip().splitlines()[-1:]}")
     c = result["meta"]["counts"]
     print(f"[report] wrote {full} ({os.path.getsize(full) // 1024} KB)")
     print(f"[report] working arcade titles: {c['working_arcade_titles_covered']}/{c['working_arcade_titles']} covered; "
