@@ -16,7 +16,8 @@
   const FILTER_IDS = ["f-q", "f-cov", "f-work", "f-cat", "f-y0", "f-y1", "f-m0y", "f-m0m", "f-m1y", "f-m1m", "f-genre", "f-manu", "f-drv", "f-dcov", "f-core", "f-rot", "f-sort"];
   const DRIVER_IDS = ["d-q", "d-cov", "d-genre", "d-sort"];
   const CORE_IDS = ["c-q", "c-src", "c-sort"];
-  const ALL_IDS = [...FILTER_IDS, ...DRIVER_IDS, ...CORE_IDS];
+  const UNMATCHED_IDS = ["u-q"];
+  const ALL_IDS = [...FILTER_IDS, ...DRIVER_IDS, ...CORE_IDS, ...UNMATCHED_IDS];
   const DIRS = { dir: "t", ddir: "d", cdir: "c" };   // hash key -> S.dir key
   function resetControls() {
     ALL_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; });
@@ -526,8 +527,20 @@
   $("#c-reset").addEventListener("click", () => { CORE_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.c = 1; $("#c-dir").textContent = "↑"; applyCores(); });
 
   // ---------- unmatched + about ----------
+  function applyUnmatched() {
+    const words = $("#u-q").value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    const rows = S.data.unmatched.filter(u => {
+      const hay = (u.set + " " + u.cores.map(id => coreName(id) + " " + id).join(" ")).toLowerCase();
+      return words.every(w => hay.includes(w));
+    });
+    $("#unmatched-count").textContent = `${fmt(rows.length)} of ${fmt(S.data.unmatched.length)} sets`;
+    $("#unmatched-table tbody").innerHTML = rows.map(u => `<tr><td class="set">${esc(u.set)}</td><td>${u.cores.map(id => badge(id)).join("")}</td></tr>`).join("");
+    writeHash();
+  }
+  let uTimer; $("#u-q").addEventListener("input", () => { clearTimeout(uTimer); uTimer = setTimeout(applyUnmatched, 150); });
+  $("#u-reset").addEventListener("click", () => { UNMATCHED_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); applyUnmatched(); });
   function renderStatic() {
-    $("#unmatched-table tbody").innerHTML = S.data.unmatched.map(u => `<tr><td class="set">${esc(u.set)}</td><td>${u.cores.map(id => badge(id)).join("")}</td></tr>`).join("");
+
     const m = S.data.meta;
     const repos = m.repos.filter(r => r.mras > 0).length;
     $("#about-meta").innerHTML = `<table>
@@ -554,9 +567,9 @@
     S.booting = true;   // the hash is read once; applying the tabs must not rewrite it half-read
     readHash();
     S.booting = false;
-    applyTitles(); applyDrivers(); applyCores();
+    applyTitles(); applyDrivers(); applyCores(); applyUnmatched();
     // A pasted or back/forward hash applies without a reload (writeHash uses replaceState, so
     // the page's own filter changes do not fire this).
-    addEventListener("hashchange", () => { S.booting = true; resetControls(); readHash(); S.booting = false; applyTitles(); applyDrivers(); applyCores(); });
+    addEventListener("hashchange", () => { S.booting = true; resetControls(); readHash(); S.booting = false; applyTitles(); applyDrivers(); applyCores(); applyUnmatched(); });
   }).catch(err => { $("#subtitle").textContent = "Could not load data/coverage.json (" + err + "). Serve this folder over HTTP; browsers block fetch() from file://."; });
 })();
