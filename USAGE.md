@@ -156,9 +156,14 @@ Contra) stays Run and Gun. Individual games can be moved with `data/genre_overri
 the shmup-deck comparison below). Move strings between the two in `full` if you
 disagree with a placement.
 
-Single games the map gets wrong go in **`data/genre_overrides.json`** (`"sets": {set name:
-genre}`), applied after the map; a parent's entry cascades to its clones. The title's genre source
-then reads `override`.
+Local corrections go in **`data/genre_overrides.json`**:
+
+- `"categories": {set name: raw category}` supplies a catver-style category (for example
+  `"slspirit": "Shooter / Flying Vertical"`) for sets no source classifies, typically games newer
+  than the catver copies on GitHub. It is remapped like catver's own entries and wins over every
+  source; the title's genre source reads `local`.
+- `"sets": {set name: genre}` forces a final common genre, applied after the map; a parent's entry
+  cascades to its clones; the source reads `override`.
 
 **Checking Shmup against shmup-deck.** `tools/reconcile_shmups.py` compares our Shmup titles with
 the curated list in [shmupfan/shmup-deck](https://github.com/shmupfan/shmup-deck)
