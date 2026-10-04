@@ -120,8 +120,9 @@ def resolve_core(m: dict, cores, by_repo, by_rbf, repo_count) -> str:
     return cid
 
 
-def build(mame: dict, mister: dict) -> dict:
-    machines = mame["machines"]
+def observe(mister: dict) -> dict:
+    """One run's view of the MiSTer side: ``{"cores": {id: core}, "support": {set: {id: rec}}}``.
+    This is what gets merged into the committed ledger (see ``ledger.py``)."""
     cores, by_repo, by_rbf = core_registry(mister)
     repo_count = collections.Counter(c["repo"] for c in cores.values() if c.get("repo"))
     first_seen = mister["first_seen"]
@@ -129,13 +130,15 @@ def build(mame: dict, mister: dict) -> dict:
     # set name -> {core id -> support record}
     support: dict[str, dict[str, dict]] = collections.defaultdict(dict)
 
-    def add(setn: str, cid: str, date: str | None, quality: str, via: str, wip: bool = False, alt: bool = False):
+    def add(setn: str, cid: str, date: str | None, quality: str, via: str, wip: bool = False, alt: bool = False,
+            first_repo: str | None = None, first_path: str | None = None):
         rec = support[setn].get(cid)
         if rec is None:
-            support[setn][cid] = {"core": cid, "date": date, "date_quality": quality, "via": via, "wip": wip, "alt": alt}
+            support[setn][cid] = {"core": cid, "date": date, "date_quality": quality, "via": via, "wip": wip, "alt": alt,
+                                  "first_repo": first_repo, "first_path": first_path}
             return
         if date and (rec["date"] is None or date < rec["date"] or (rec["date_quality"] != "git" and quality == "git")):
-            rec.update(date=date, date_quality=quality)
+            rec.update(date=date, date_quality=quality, first_repo=first_repo, first_path=first_path)
         rec["wip"] = rec["wip"] and wip
         rec["alt"] = rec["alt"] and alt
 
@@ -149,7 +152,8 @@ def build(mame: dict, mister: dict) -> dict:
             # Prefer the date from this MRA's own source, fall back to the earliest anywhere.
             date = fs["by_source"].get(m["source"]) or fs["date"]
             quality = "git"
-        add(m["setname"], cid, date, quality, m["source"], m.get("wip", False), m.get("alt", False))
+        add(m["setname"], cid, date, quality, m["source"], m.get("wip", False), m.get("alt", False),
+            fs and fs["repo"], fs and fs["path"])
 
     # 2. Sets alamone attributes to cores we have no MRA checkout for (developer databases).
     for cid, c in cores.items():
@@ -160,7 +164,7 @@ def build(mame: dict, mister: dict) -> dict:
                 continue
             fs = first_seen.get(setn)
             if fs:
-                add(setn, cid, fs["date"], "git-other", c["source"])
+                add(setn, cid, fs["date"], "git-other", c["source"], first_repo=fs["repo"], first_path=fs["path"])
             else:
                 add(setn, cid, c["build_date"], "build", c["source"])
 
@@ -175,10 +179,20 @@ def build(mame: dict, mister: dict) -> dict:
             if cid in alias:
                 rec = recs.pop(cid)
                 target = alias[cid]
-                add(setn, target, rec["date"], rec["date_quality"], rec["via"], rec["wip"], rec["alt"])
+                add(setn, target, rec["date"], rec["date_quality"], rec["via"], rec["wip"], rec["alt"],
+                    rec.get("first_repo"), rec.get("first_path"))
     for cid, target in alias.items():
         cores[target].setdefault("aliases", []).append(cid)
         del cores[cid]
+    return {"cores": cores, "support": {k: v for k, v in support.items() if v}}
+
+
+def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
+    """Join MAME with the ledger: every arcade set, which cores load it, and since when."""
+    machines = mame["machines"]
+    cores = ledger["cores"]
+    support = ledger["support"]
+    mister_meta = mister_meta or {}
 
     # 3. Earliest date per set across cores; earliest per title across its sets.
     def earliest(recs):
@@ -208,7 +222,8 @@ def build(mame: dict, mister: dict) -> dict:
             "working": mame_mod.is_working(m),
             "status": m["status"],
             "parent": name == parent,
-            "cores": sorted(recs.values(), key=lambda r: (r["date"] or "9999", r["core"])),
+            "cores": [{k: r.get(k) for k in ("core", "date", "date_quality", "via", "wip", "alt")}
+                      for r in sorted(recs.values(), key=lambda r: (r["date"] or "9999", r["core"]))],
             "date": earliest(recs.values()),
         })
 
@@ -282,7 +297,7 @@ def build(mame: dict, mister: dict) -> dict:
                     core_first[r["core"]] = r["date"]
     out_cores = []
     for cid, c in cores.items():
-        oc = {k: v for k, v in c.items() if k != "alamone_sets"}
+        oc = {k: v for k, v in c.items() if k not in ("alamone_sets",)}
         oc["nsets"] = core_sets[cid]
         oc["ntitles"] = len(core_titles[cid])
         oc["first_date"] = core_first.get(cid)
@@ -294,11 +309,13 @@ def build(mame: dict, mister: dict) -> dict:
         "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "mame_version": mame.get("version"),
         "mame_build": mame.get("build"),
-        "mister_generated": mister.get("generated"),
-        "alamone_generated": mister.get("alamone_generated"),
+        "mister_generated": mister_meta.get("generated"),
+        "alamone_generated": mister_meta.get("alamone_generated"),
+        "ledger_updated": ledger["meta"].get("updated"),
+        "ledger_runs": ledger["meta"].get("runs", [])[-5:],
         "sources": mister_mod.DB_TITLES,
-        "repos": mister.get("repos", []),
-        "repo_errors": mister.get("errors", []),
+        "repos": mister_meta.get("repos", []),
+        "repo_errors": mister_meta.get("errors", []),
         "counts": {
             "titles": len(out_titles),
             "working_arcade_titles": len(working_arcade),

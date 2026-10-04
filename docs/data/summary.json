@@ -1,10 +1,29 @@
 {
  "meta": {
-  "generated": "2026-10-04T01:13:11+00:00",
+  "generated": "2026-10-04T01:16:47+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-04T01:13:10+00:00",
+  "mister_generated": "2026-10-04T01:15:43+00:00",
   "alamone_generated": "2026-10-01T23:23:16+00:00",
+  "ledger_updated": "2026-10-04",
+  "ledger_runs": [
+   {
+    "date": "2026-10-04",
+    "note": "alamone 2026-10-01",
+    "cores": 524,
+    "sets": 5114,
+    "pairs": 5385,
+    "dates_improved": 0
+   },
+   {
+    "date": "2026-10-04",
+    "note": "alamone 2026-10-01",
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
+    "dates_improved": 0
+   }
+  ],
   "sources": {
    "dist": "MiSTer official distribution",
    "jt": "JTCORES (jotego)",
@@ -2091,6 +2110,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-08-26"
@@ -2110,6 +2132,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 9,
    "ntitles": 1,
    "first_date": "2026-08-26"
@@ -2129,6 +2154,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-26"
@@ -2148,6 +2176,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-07"
@@ -2167,6 +2198,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-28"
@@ -2186,6 +2220,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 10,
    "ntitles": 2,
    "first_date": "2026-08-26"
@@ -2207,6 +2244,9 @@
     "technos/mystston.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-26"
@@ -2226,6 +2266,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2026-08-26"
@@ -2245,6 +2288,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-28"
@@ -2264,6 +2310,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 13,
    "ntitles": 1,
    "first_date": "2026-08-26"
@@ -2283,6 +2332,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -2302,6 +2354,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 11,
    "ntitles": 10,
    "first_date": "2026-09-06"
@@ -2321,6 +2376,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -2340,6 +2398,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-21"
@@ -2359,6 +2420,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-30"
@@ -2378,6 +2442,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-07-02"
@@ -2397,6 +2464,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 4,
    "first_date": "2026-08-08"
@@ -2416,6 +2486,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-08"
@@ -2435,6 +2508,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-23"
@@ -2454,6 +2530,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-25"
@@ -2473,6 +2552,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 6,
    "first_date": "2026-07-20"
@@ -2492,6 +2574,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-13"
@@ -2511,6 +2596,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 6,
    "first_date": "2026-07-22"
@@ -2530,6 +2618,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 3,
    "first_date": "2026-08-08"
@@ -2549,6 +2640,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 13,
    "ntitles": 6,
    "first_date": "2022-11-16"
@@ -2568,6 +2662,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 12,
    "ntitles": 6,
    "first_date": "2022-09-22"
@@ -2587,6 +2684,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 8,
    "ntitles": 1,
    "first_date": "2023-09-10"
@@ -2606,6 +2706,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2023-09-10"
@@ -2625,6 +2728,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 8,
    "ntitles": 1,
    "first_date": "2023-09-10"
@@ -2644,6 +2750,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-09-09"
@@ -2663,6 +2772,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -2682,6 +2794,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-09-30"
@@ -2701,6 +2816,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2026-07-04"
@@ -2720,6 +2838,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -2739,6 +2860,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -2758,6 +2882,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-06-16"
@@ -2777,6 +2904,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -2796,6 +2926,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-07-31"
@@ -2815,6 +2948,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2023-06-10"
@@ -2834,6 +2970,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-01"
@@ -2853,6 +2992,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -2872,6 +3014,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-01-15"
@@ -2891,6 +3036,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-15"
@@ -2910,6 +3058,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-22"
@@ -2929,6 +3080,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2023-09-10"
@@ -2948,6 +3102,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-03-31"
@@ -2967,6 +3124,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-03-31"
@@ -2986,6 +3146,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 22,
    "ntitles": 12,
    "first_date": "2023-05-13"
@@ -3005,6 +3168,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-09-09"
@@ -3024,6 +3190,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-07-31"
@@ -3043,6 +3212,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-09-09"
@@ -3062,6 +3234,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2023-03-30"
@@ -3081,6 +3256,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-31"
@@ -3100,6 +3278,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-04-02"
@@ -3119,6 +3300,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-12-25"
@@ -3138,6 +3322,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2022-09-25"
@@ -3157,6 +3344,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2023-06-02"
@@ -3176,6 +3366,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -3195,6 +3388,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-02"
@@ -3214,6 +3410,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 15,
    "ntitles": 4,
    "first_date": "2022-09-28"
@@ -3233,6 +3432,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-09-22"
@@ -3252,6 +3454,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2025-12-26"
@@ -3271,6 +3476,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2023-09-10"
@@ -3290,6 +3498,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-01"
@@ -3309,6 +3520,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-09"
@@ -3328,6 +3542,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2024-05-19"
@@ -3347,6 +3564,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 9,
    "ntitles": 3,
    "first_date": "2022-09-22"
@@ -3366,6 +3586,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-14"
@@ -3385,6 +3608,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2025-04-17"
@@ -3404,6 +3630,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-09-22"
@@ -3423,6 +3652,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-04-01"
@@ -3442,6 +3674,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2025-12-14"
@@ -3461,6 +3696,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -3480,6 +3718,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 11,
    "ntitles": 2,
    "first_date": "2023-05-26"
@@ -3499,6 +3740,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-09-18"
@@ -3518,6 +3762,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-08-02"
@@ -3537,6 +3784,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 13,
    "ntitles": 4,
    "first_date": "2022-09-22"
@@ -3558,6 +3808,9 @@
     "dataeast/actfancr.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-06-15"
@@ -3579,6 +3832,9 @@
     "nintendo/aleck64.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 9,
    "ntitles": 9,
    "first_date": "2026-07-18"
@@ -3600,6 +3856,9 @@
     "sunelectronics/arabian.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-08-22"
@@ -3619,6 +3878,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -3640,6 +3902,9 @@
     "taito/arkanoid.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 9,
    "ntitles": 1,
    "first_date": "2020-07-17"
@@ -3661,6 +3926,9 @@
     "atari/asteroid.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 13,
    "ntitles": 3,
    "first_date": "2019-12-19"
@@ -3680,6 +3948,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -3701,6 +3972,9 @@
     "bally/astrocde.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2020-03-30"
@@ -3722,6 +3996,9 @@
     "atari/atarisy1.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 26,
    "ntitles": 5,
    "first_date": "2023-11-30"
@@ -3743,6 +4020,9 @@
     "atari/atarisy2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 33,
    "ntitles": 5,
    "first_date": "2026-08-20"
@@ -3764,6 +4044,9 @@
     "atari/atetris.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2019-12-28"
@@ -3785,6 +4068,9 @@
     "snk/snk.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 3,
    "first_date": "2022-06-07"
@@ -3806,6 +4092,9 @@
     "atari/badlands.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-19"
@@ -3827,6 +4116,9 @@
     "valadon/bagman.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 14,
    "ntitles": 5,
    "first_date": "2019-12-18"
@@ -3848,6 +4140,9 @@
     "sanritsu/bankp.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2022-10-04"
@@ -3867,6 +4162,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-03"
@@ -3888,6 +4186,9 @@
     "atari/bzone.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 3,
    "first_date": "2023-03-24"
@@ -3909,6 +4210,9 @@
     "stern/berzerk.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -3930,6 +4234,9 @@
     "atari/bwidow.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2020-02-16"
@@ -3951,6 +4258,9 @@
     "atari/blstroid.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-09-17"
@@ -3972,6 +4282,9 @@
     "sega/blockade.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 4,
    "first_date": "2022-01-08"
@@ -3993,6 +4306,9 @@
     "seibu/bloodbro.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-05-30"
@@ -4014,6 +4330,9 @@
     "jaleco/blueprnt.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 3,
    "first_date": "2026-02-13"
@@ -4035,6 +4354,9 @@
     "tecmo/bombjack.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2019-12-18"
@@ -4059,6 +4381,8 @@
    "aliases": [
     "ongo:rmboogiewings"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-07-04"
@@ -4080,6 +4404,9 @@
     "namco/bosco.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-09-03"
@@ -4101,6 +4428,9 @@
     "atari/pong.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2020-12-14"
@@ -4120,6 +4450,9 @@
    "score": 63,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -4141,6 +4474,9 @@
     "konami/nemesis.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2025-01-07"
@@ -4162,6 +4498,9 @@
     "dataeast/btime.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-02-14"
@@ -4183,6 +4522,9 @@
     "dataeast/btime.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2021-02-14"
@@ -4204,6 +4546,9 @@
     "atari/canyon.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -4225,6 +4570,9 @@
     "atlus/cave.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 26,
    "ntitles": 10,
    "first_date": "2020-12-13"
@@ -4246,6 +4594,9 @@
     "atlus/cave.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 35,
    "ntitles": 5,
    "first_date": "2022-09-30"
@@ -4267,6 +4618,9 @@
     "atari/centiped.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2021-02-14"
@@ -4288,6 +4642,9 @@
     "snk/lasso.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-08-28"
@@ -4309,6 +4666,9 @@
     "alpha/champbas.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 8,
    "ntitles": 5,
    "first_date": "2026-07-30"
@@ -4330,6 +4690,9 @@
     "technos/chinagat.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-05-06"
@@ -4351,6 +4714,9 @@
     "jaleco/citycon.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-05-03"
@@ -4370,6 +4736,9 @@
    "score": 66,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -4391,6 +4760,9 @@
     "sega/zaxxon.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-11-15"
@@ -4412,6 +4784,9 @@
     "universal/cosmic.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 5,
    "first_date": "2021-07-08"
@@ -4433,6 +4808,9 @@
     "universal/cosmicg.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-03"
@@ -4454,6 +4832,9 @@
     "taito/crbaloon.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2020-06-15"
@@ -4475,6 +4856,9 @@
     "nichibutsu/cclimber.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2019-12-18"
@@ -4496,6 +4880,9 @@
     "nichibutsu/cclimber.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 10,
    "ntitles": 2,
    "first_date": "2020-01-04"
@@ -4517,6 +4904,9 @@
     "atari/ccastles.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-11-20"
@@ -4538,6 +4928,9 @@
     "taito/darius.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-04-11"
@@ -4559,6 +4952,9 @@
     "taito/ninjaw.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2026-05-23"
@@ -4580,6 +4976,9 @@
     "taito/warriorb.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2026-06-20"
@@ -4601,6 +5000,9 @@
     "seibu/dcon.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-05-30"
@@ -4624,6 +5026,9 @@
     "dataeast/vaportra.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 4,
    "first_date": "2026-06-11"
@@ -4645,6 +5050,9 @@
     "dataeast/decocass.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 56,
    "ntitles": 37,
    "first_date": "2026-05-18"
@@ -4666,6 +5074,9 @@
     "williams/williams.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 4,
    "first_date": "2020-02-20"
@@ -4687,6 +5098,9 @@
     "seibu/legionna.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-08-19"
@@ -4708,6 +5122,9 @@
     "namco/digdug.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2021-02-14"
@@ -4729,6 +5146,9 @@
     "atari/sprint2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -4750,6 +5170,9 @@
     "nintendo/dkong.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 13,
    "ntitles": 5,
    "first_date": "2020-06-19"
@@ -4771,6 +5194,9 @@
     "nintendo/dkong.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-01-28"
@@ -4792,6 +5218,9 @@
     "nintendo/dkong.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2020-06-19"
@@ -4811,6 +5240,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-02-14"
@@ -4832,6 +5264,9 @@
     "sega/dotrikun.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2021-06-17"
@@ -4853,6 +5288,9 @@
     "namco/mappy.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 15,
    "ntitles": 7,
    "first_date": "2019-12-19"
@@ -4874,6 +5312,9 @@
     "atari/eprom.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-30"
@@ -4895,6 +5336,9 @@
     "jaleco/exerion.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-11-16"
@@ -4916,6 +5360,9 @@
     "exidy/exidy.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2024-02-17"
@@ -4937,6 +5384,9 @@
     "dataeast/exprraid.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-11-21"
@@ -4958,6 +5408,9 @@
     "konami/finalizr.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2021-10-25"
@@ -4979,6 +5432,9 @@
     "atari/foodf.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2020-01-06"
@@ -5000,6 +5456,9 @@
     "cinematronics/jack.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2023-03-27"
@@ -5021,6 +5480,9 @@
     "stern/berzerk.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-06-10"
@@ -5043,6 +5505,9 @@
     "fuuki/fuukifg3.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 9,
    "ntitles": 4,
    "first_date": "2026-09-05"
@@ -5064,6 +5529,9 @@
     "namco/galaga.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2021-02-14"
@@ -5085,6 +5553,9 @@
     "galaxian/galaxian.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 50,
    "ntitles": 15,
    "first_date": "2020-01-14"
@@ -5106,6 +5577,9 @@
     "nichibutsu/galivan.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2022-08-31"
@@ -5127,6 +5601,9 @@
     "namco/gaplus.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 8,
    "ntitles": 1,
    "first_date": "2020-01-01"
@@ -5148,6 +5625,9 @@
     "atari/gauntlet.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 28,
    "ntitles": 3,
    "first_date": "2020-11-22"
@@ -5169,6 +5649,9 @@
     "seibu/legionna.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-08"
@@ -5190,6 +5673,9 @@
     "seta/seta2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-09"
@@ -5211,6 +5697,9 @@
     "toaplan/twincobr.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-07-04"
@@ -5232,6 +5721,9 @@
     "konami/gyruss.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2021-06-05"
@@ -5253,6 +5745,9 @@
     "seibu/legionna.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-07-15"
@@ -5274,6 +5769,9 @@
     "metro/hyprduel.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2026-07-05"
@@ -5295,6 +5793,9 @@
     "igs/pgm.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 99,
    "ntitles": 23,
    "first_date": "2026-03-15"
@@ -5316,6 +5817,9 @@
     "snk/snk.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2022-08-03"
@@ -5337,6 +5841,9 @@
     "williams/williams.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-03-23"
@@ -5358,6 +5865,9 @@
     "irem/m107.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2023-11-28"
@@ -5379,6 +5889,9 @@
     "irem/m62.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 20,
    "ntitles": 12,
    "first_date": "2020-06-02"
@@ -5403,6 +5916,8 @@
    "aliases": [
     "dist:m72"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 40,
    "ntitles": 14,
    "first_date": "2022-07-24"
@@ -5424,6 +5939,9 @@
     "irem/m90.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 9,
    "ntitles": 3,
    "first_date": "2024-10-13"
@@ -5445,6 +5963,9 @@
     "irem/m92.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 29,
    "ntitles": 13,
    "first_date": "2022-09-18"
@@ -5466,6 +5987,9 @@
     "konami/ironhors.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2021-07-25"
@@ -5487,6 +6011,9 @@
     "konami/jackal.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2021-07-25"
@@ -5508,6 +6035,9 @@
     "konami/jailbrek.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-06-11"
@@ -5529,6 +6059,9 @@
     "williams/williams.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-03-27"
@@ -5550,6 +6083,9 @@
     "konami/junofrst.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-02-23"
@@ -5571,6 +6107,9 @@
     "sunelectronics/kangaroo.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2026-03-29"
@@ -5592,6 +6131,9 @@
     "taito/kikikai.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2023-06-08"
@@ -5613,6 +6155,9 @@
     "atari/klax.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-12"
@@ -5634,6 +6179,9 @@
     "orca/kyugo.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 8,
    "ntitles": 6,
    "first_date": "2026-04-25"
@@ -5655,6 +6203,9 @@
     "universal/ladybug.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 4,
    "first_date": "2019-12-18"
@@ -5674,6 +6225,9 @@
    "score": 48,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 9,
    "ntitles": 6,
    "first_date": "2026-07-04"
@@ -5695,6 +6249,9 @@
     "seibu/legionna.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-07-15"
@@ -5714,6 +6271,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2026-07-19"
@@ -5733,6 +6293,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-02-14"
@@ -5754,6 +6317,9 @@
     "atari/mhavoc.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-31"
@@ -5775,6 +6341,9 @@
     "nintendo/mario.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2020-06-28"
@@ -5796,6 +6365,9 @@
     "bally/mcr.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2020-02-03"
@@ -5817,6 +6389,9 @@
     "bally/mcr.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 12,
    "ntitles": 6,
    "first_date": "2020-01-25"
@@ -5838,6 +6413,9 @@
     "bally/mcr.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 10,
    "ntitles": 4,
    "first_date": "2020-01-26"
@@ -5859,6 +6437,9 @@
     "bally/mcr3.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 6,
    "first_date": "2020-01-14"
@@ -5880,6 +6461,9 @@
     "bally/mcr3.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 3,
    "first_date": "2020-02-02"
@@ -5901,6 +6485,9 @@
     "atari/missile.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2022-08-27"
@@ -5922,6 +6509,9 @@
     "irem/m52.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2019-12-18"
@@ -5943,6 +6533,9 @@
     "universal/mrdo.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-03-22"
@@ -5964,6 +6557,9 @@
     "sanritsu/mrjong.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2022-12-22"
@@ -5985,6 +6581,9 @@
     "williams/williams.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-03-29"
@@ -6006,6 +6605,9 @@
     "phoenix/naughtyb.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2025-03-16"
@@ -6025,6 +6627,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 221,
    "ntitles": 153,
    "first_date": "2019-08-11"
@@ -6049,6 +6654,8 @@
    "aliases": [
     "ongo:rmnightslashers"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-07"
@@ -6070,6 +6677,9 @@
     "upl/nova2001.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 3,
    "first_date": "2020-01-06"
@@ -6092,6 +6702,9 @@
     "pacman/pacman.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 41,
    "ntitles": 20,
    "first_date": "2019-12-30"
@@ -6113,6 +6726,9 @@
     "pacman/pengo.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2021-06-10"
@@ -6134,6 +6750,9 @@
     "upl/nova2001.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-10-02"
@@ -6155,6 +6774,9 @@
     "toaplan/slapfght.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2023-01-18"
@@ -6176,6 +6798,9 @@
     "phoenix/phoenix.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 25,
    "ntitles": 2,
    "first_date": "2020-05-12"
@@ -6197,6 +6822,9 @@
     "tecmo/pbaction.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-27"
@@ -6216,6 +6844,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2020-05-12"
@@ -6237,6 +6868,9 @@
     "namco/polepos.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 11,
    "ntitles": 2,
    "first_date": "2026-07-13"
@@ -6258,6 +6892,9 @@
     "ddr/polyplay.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2021-06-10"
@@ -6279,6 +6916,9 @@
     "atari/pong.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-06-10"
@@ -6300,6 +6940,9 @@
     "konami/pooyan.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2019-12-18"
@@ -6321,6 +6964,9 @@
     "nintendo/popeye.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2020-03-03"
@@ -6342,6 +6988,9 @@
     "psikyo/psikyo.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 17,
    "ntitles": 5,
    "first_date": "2026-08-22"
@@ -6364,6 +7013,9 @@
     "psikyo/psikyosh.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 20,
    "ntitles": 15,
    "first_date": "2026-08-16"
@@ -6385,6 +7037,9 @@
     "jaleco/psychic5.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-09-01"
@@ -6406,6 +7061,9 @@
     "gottlieb/gottlieb.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 13,
    "ntitles": 9,
    "first_date": "2021-01-02"
@@ -6427,6 +7085,9 @@
     "taito/qix.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 12,
    "ntitles": 7,
    "first_date": "2026-02-28"
@@ -6451,6 +7112,8 @@
    "aliases": [
     "ongo:rmraiden"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-07-28"
@@ -6472,6 +7135,9 @@
     "seibu/raiden2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 32,
    "ntitles": 2,
    "first_date": "2026-08-25"
@@ -6493,6 +7159,9 @@
     "namco/rallyx.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2019-12-20"
@@ -6512,6 +7181,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-10-03"
@@ -6533,6 +7205,9 @@
     "dataeast/kingofb.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-27"
@@ -6554,6 +7229,9 @@
     "nichibutsu/cclimber.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-06-10"
@@ -6575,6 +7253,9 @@
     "williams/williams.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 18,
    "ntitles": 8,
    "first_date": "2019-12-19"
@@ -6596,6 +7277,9 @@
     "konami/gberet.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2019-12-29"
@@ -6617,6 +7301,9 @@
     "konami/nemesis.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2024-10-24"
@@ -6638,6 +7325,9 @@
     "konami/scotrsht.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-09-28"
@@ -6661,6 +7351,9 @@
     "galaxian/scramble.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 42,
    "ntitles": 21,
    "first_date": "2020-01-04"
@@ -6682,6 +7375,9 @@
     "seibu/dcon.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-05-14"
@@ -6703,6 +7399,9 @@
     "seibu/legionna.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-08-09"
@@ -6724,6 +7423,9 @@
     "sega/segag80v.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 10,
    "ntitles": 5,
    "first_date": "2026-08-14"
@@ -6745,6 +7447,9 @@
     "sega/system1.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 20,
    "ntitles": 18,
    "first_date": "2020-01-03"
@@ -6766,6 +7471,9 @@
     "sega/vicdual.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 25,
    "ntitles": 23,
    "first_date": "2024-01-21"
@@ -6787,6 +7495,9 @@
     "sega/segaxbd.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 25,
    "ntitles": 9,
    "first_date": "2026-08-23"
@@ -6811,6 +7522,8 @@
    "aliases": [
     "ongo:rmseibucupsoccer"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2026-09-11"
@@ -6832,6 +7545,9 @@
     "nichibutsu/cclimber.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -6851,6 +7567,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-10-03"
@@ -6872,6 +7591,9 @@
     "seibu/bloodbro.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-06-08"
@@ -6893,6 +7615,9 @@
     "toaplan/slapfght.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2022-12-26"
@@ -6914,6 +7639,9 @@
     "sega/segae.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 10,
    "ntitles": 8,
    "first_date": "2021-09-05"
@@ -6935,6 +7663,9 @@
     "snk/snk6502.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2026-04-01"
@@ -6956,6 +7687,9 @@
     "snk/snk.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2022-05-09"
@@ -6977,6 +7711,9 @@
     "tecmo/solomon.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2019-12-30"
@@ -6998,6 +7735,9 @@
     "capcom/sonson.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-11-07"
@@ -7019,6 +7759,9 @@
     "nintendo/spacefb.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-03"
@@ -7040,6 +7783,9 @@
     "midw8080/8080bw.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 111,
    "ntitles": 43,
    "first_date": "2020-12-24"
@@ -7059,6 +7805,9 @@
    "score": 60,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -7080,6 +7829,9 @@
     "atari/sprint2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -7101,6 +7853,9 @@
     "atari/sprint2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -7122,6 +7877,9 @@
     "sega/stv.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 43,
    "ntitles": 38,
    "first_date": "2025-06-13"
@@ -7143,6 +7901,9 @@
     "tecmo/senjyo.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2025-07-21"
@@ -7164,6 +7925,9 @@
     "atari/starwars.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-05-27"
@@ -7185,6 +7949,9 @@
     "atari/subs.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-01-05"
@@ -7206,6 +7973,9 @@
     "atari/sbrkout.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -7227,6 +7997,9 @@
     "sega/suprloco.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2024-07-22"
@@ -7251,6 +8024,8 @@
    "aliases": [
     "ongo:rmtaitoasuka"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 30,
    "ntitles": 7,
    "first_date": "2026-09-17"
@@ -7272,6 +8047,9 @@
     "taito/taito_f2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 63,
    "ntitles": 26,
    "first_date": "2025-05-27"
@@ -7293,6 +8071,9 @@
     "taito/taitosj.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 28,
    "ntitles": 15,
    "first_date": "2023-06-17"
@@ -7314,6 +8095,9 @@
     "namco/tankbatt.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-08-21"
@@ -7335,6 +8119,9 @@
     "tecmo/tecmo.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 4,
    "first_date": "2020-05-08"
@@ -7356,6 +8143,9 @@
     "atari/tempest.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-20"
@@ -7377,6 +8167,9 @@
     "ussr/tiamc1.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2021-03-20"
@@ -7398,6 +8191,9 @@
     "konami/timeplt.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2019-12-18"
@@ -7419,6 +8215,9 @@
     "konami/tp84.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2020-11-21"
@@ -7440,6 +8239,9 @@
     "snk/snk.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-06-06"
@@ -7461,6 +8263,9 @@
     "atari/toobin.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-13"
@@ -7482,6 +8287,9 @@
     "irem/travrusa.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2019-12-19"
@@ -7503,6 +8311,9 @@
     "dataeast/actfancr.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-07-08"
@@ -7524,6 +8335,9 @@
     "irem/m57.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-10-31"
@@ -7545,6 +8359,9 @@
     "williams/williams.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-04-25"
@@ -7566,6 +8383,9 @@
     "konami/tutankhm.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2025-06-02"
@@ -7587,6 +8407,9 @@
     "atari/ultratnk.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2020-01-28"
@@ -7608,6 +8431,9 @@
     "upl/ninjakd2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 16,
    "ntitles": 5,
    "first_date": "2026-08-30"
@@ -7629,6 +8455,9 @@
     "orca/vastar.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2026-02-24"
@@ -7650,6 +8479,9 @@
     "technos/vball.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-03-27"
@@ -7671,6 +8503,9 @@
     "atari/vindictr.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 8,
    "ntitles": 1,
    "first_date": "2026-09-17"
@@ -7692,6 +8527,9 @@
     "namco/xevious.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2019-12-18"
@@ -7713,6 +8551,9 @@
     "technos/xain.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-12-12"
@@ -7734,6 +8575,9 @@
     "atari/xybots.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-09-16"
@@ -7755,6 +8599,9 @@
     "sega/zaxxon.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2020-03-15"
@@ -7776,6 +8623,9 @@
     "galaxian/galaxian.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -7797,6 +8647,9 @@
     "vsystem/aerofgt.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-15"
@@ -7821,6 +8674,8 @@
    "aliases": [
     "arcfpga:aligator"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-06-30"
@@ -7842,6 +8697,9 @@
     "efo/cidelsa.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-09-10"
@@ -7863,6 +8721,9 @@
     "konami/asterix.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -7887,6 +8748,8 @@
    "aliases": [
     "arcfpga:bigkarnk"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-01"
@@ -7911,6 +8774,8 @@
    "aliases": [
     "arcfpga:biomtoy"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-06-22"
@@ -7932,6 +8797,9 @@
     "konami/tmnt2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-04"
@@ -7953,6 +8821,9 @@
     "efo/cidelsa.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-02"
@@ -7974,6 +8845,9 @@
     "efo/cidelsa.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-10"
@@ -7995,6 +8869,9 @@
     "seibu/stfight.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-19"
@@ -8019,6 +8896,8 @@
    "aliases": [
     "arcfpga:glass"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-14"
@@ -8038,6 +8917,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-01"
@@ -8057,6 +8939,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "the repository holds builds or MRAs, no HDL",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-25"
@@ -8078,6 +8963,9 @@
     "konami/moo.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-19"
@@ -8097,6 +8985,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "the repository holds builds or MRAs, no HDL",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-25"
@@ -8116,6 +9007,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "the repository holds builds or MRAs, no HDL",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-22"
@@ -8137,6 +9031,9 @@
     "taito/opwolf.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-18"
@@ -8161,6 +9058,8 @@
    "aliases": [
     "arcfpga:squash"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-06-22"
@@ -8182,6 +9081,9 @@
     "konami/tmnt2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-08-15"
@@ -8206,6 +9108,8 @@
    "aliases": [
     "arcfpga:thoop"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-06-22"
@@ -8230,6 +9134,8 @@
    "aliases": [
     "arcfpga:thoop2"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-06-25"
@@ -8249,6 +9155,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-01"
@@ -8273,6 +9182,8 @@
    "aliases": [
     "arcfpga:wrally"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-06-20"
@@ -8297,6 +9208,8 @@
    "aliases": [
     "arcfpga:wrally2"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-01"
@@ -8316,6 +9229,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-09-30"
@@ -8339,6 +9255,9 @@
     "capcom/vulgus.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 10,
    "ntitles": 3,
    "first_date": "2019-12-22"
@@ -8360,6 +9279,9 @@
     "capcom/1943.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 8,
    "ntitles": 3,
    "first_date": "2019-12-22"
@@ -8381,6 +9303,9 @@
     "konami/ajax.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2025-07-04"
@@ -8404,6 +9329,9 @@
     "konami/thunderx.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 21,
    "ntitles": 5,
    "first_date": "2023-05-12"
@@ -8425,6 +9353,9 @@
     "capcom/bionicc.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2019-12-22"
@@ -8446,6 +9377,9 @@
     "technos/blockout.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-08-16"
@@ -8467,6 +9401,9 @@
     "capcom/blktiger.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2019-12-23"
@@ -8488,6 +9425,9 @@
     "taito/bublbobl.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 12,
    "ntitles": 2,
    "first_date": "2020-08-14"
@@ -8509,6 +9449,9 @@
     "seta/downtown.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 8,
    "ntitles": 5,
    "first_date": "2026-03-13"
@@ -8530,6 +9473,9 @@
     "konami/hcastle.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2023-04-14"
@@ -8551,6 +9497,9 @@
     "konami/circusc.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2024-08-30"
@@ -8572,6 +9521,9 @@
     "capcom/commando.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2019-12-22"
@@ -8593,6 +9545,9 @@
     "konami/combatsc.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-02-27"
@@ -8614,6 +9569,9 @@
     "konami/contra.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2020-11-27"
@@ -8635,6 +9593,9 @@
     "dataeast/dec0.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 10,
    "ntitles": 2,
    "first_date": "2022-01-05"
@@ -8656,6 +9617,9 @@
     "capcom/cps1.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 157,
    "ntitles": 30,
    "first_date": "2020-05-22"
@@ -8677,6 +9641,9 @@
     "capcom/cps1.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 18,
    "ntitles": 5,
    "first_date": "2020-12-11"
@@ -8698,6 +9665,9 @@
     "capcom/cps2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 321,
    "ntitles": 41,
    "first_date": "2021-06-18"
@@ -8719,6 +9689,9 @@
     "capcom/cps3.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 17,
    "ntitles": 6,
    "first_date": "2026-06-12"
@@ -8740,6 +9713,9 @@
     "technos/ddragon.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2019-12-22"
@@ -8761,6 +9737,9 @@
     "technos/ddragon.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2023-07-01"
@@ -8782,6 +9761,9 @@
     "konami/ddribble.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-07-05"
@@ -8803,6 +9785,9 @@
     "capcom/exedexes.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-08-06"
@@ -8824,6 +9809,9 @@
     "konami/fastlane.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-09-10"
@@ -8846,6 +9834,9 @@
     "taito/nycaptor.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 9,
    "ntitles": 6,
    "first_date": "2024-12-14"
@@ -8867,6 +9858,9 @@
     "konami/twin16.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2023-09-01"
@@ -8888,6 +9882,9 @@
     "gaelco/gaelco.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 4,
    "first_date": "2026-07-05"
@@ -8909,6 +9906,9 @@
     "tecmo/gaiden.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 10,
    "ntitles": 3,
    "first_date": "2025-01-03"
@@ -8930,6 +9930,9 @@
     "kaneko/galpanic.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-17"
@@ -8954,6 +9957,8 @@
    "aliases": [
     "jt:gng"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 12,
    "ntitles": 1,
    "first_date": "2019-12-22"
@@ -8975,6 +9980,9 @@
     "konami/gradius3.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-05-16"
@@ -8996,6 +10004,9 @@
     "capcom/gunsmoke.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2019-12-22"
@@ -9017,6 +10028,9 @@
     "sega/segahang.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 9,
    "ntitles": 3,
    "first_date": "2026-09-07"
@@ -9038,6 +10052,9 @@
     "dataeast/karnov.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 3,
    "first_date": "2023-02-03"
@@ -9059,6 +10076,9 @@
     "dataeast/kchamp.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 10,
    "ntitles": 2,
    "first_date": "2022-09-09"
@@ -9080,6 +10100,9 @@
     "konami/shaolins.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-11-19"
@@ -9101,6 +10124,9 @@
     "taito/tnzs.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 31,
    "ntitles": 8,
    "first_date": "2022-12-09"
@@ -9122,6 +10148,9 @@
     "technos/renegade.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2022-08-05"
@@ -9143,6 +10172,9 @@
     "konami/labyrunr.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2021-05-21"
@@ -9164,6 +10196,9 @@
     "dataeast/dec0.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2022-02-18"
@@ -9185,6 +10220,9 @@
     "konami/mikie.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2022-01-21"
@@ -9206,6 +10244,9 @@
     "konami/flkatck.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2021-09-03"
@@ -9225,6 +10266,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2024-01-05"
@@ -9244,6 +10288,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2024-01-05"
@@ -9265,6 +10312,9 @@
     "dataeast/dec0.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2021-10-15"
@@ -9286,6 +10336,9 @@
     "sega/segaorun.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 15,
    "ntitles": 2,
    "first_date": "2022-11-04"
@@ -9307,6 +10360,9 @@
     "namco/pacland.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2025-05-23"
@@ -9328,6 +10384,9 @@
     "capcom/mitchell.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 18,
    "ntitles": 10,
    "first_date": "2022-06-03"
@@ -9350,6 +10409,9 @@
     "konami/surpratk.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 2,
    "first_date": "2024-02-09"
@@ -9371,6 +10433,9 @@
     "konami/pingpong.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-04-01"
@@ -9392,6 +10457,9 @@
     "dataeast/pcktgal.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-07-24"
@@ -9413,6 +10481,9 @@
     "konami/tmnt2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-01-02"
@@ -9436,6 +10507,9 @@
     "taito/rbisland.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 19,
    "ntitles": 4,
    "first_date": "2022-04-08"
@@ -9457,6 +10531,9 @@
     "konami/tmnt2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 24,
    "ntitles": 3,
    "first_date": "2024-07-27"
@@ -9478,6 +10555,9 @@
     "konami/hyperspt.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2022-03-18"
@@ -9499,6 +10579,9 @@
     "konami/rocnrope.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-08-19"
@@ -9520,6 +10603,9 @@
     "capcom/srumbler.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2021-04-04"
@@ -9541,6 +10627,9 @@
     "konami/rungun.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 12,
    "ntitles": 1,
    "first_date": "2025-11-07"
@@ -9562,6 +10651,9 @@
     "sega/segas16a.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 34,
    "ntitles": 15,
    "first_date": "2021-06-11"
@@ -9583,6 +10675,9 @@
     "sega/segas16b.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 80,
    "ntitles": 29,
    "first_date": "2021-07-30"
@@ -9604,6 +10699,9 @@
     "sega/segas18.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 29,
    "ntitles": 10,
    "first_date": "2024-05-24"
@@ -9625,6 +10723,9 @@
     "capcom/sidearms.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2020-08-10"
@@ -9646,6 +10747,9 @@
     "konami/sbasketb.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2021-12-31"
@@ -9667,6 +10771,9 @@
     "capcom/lwings.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 2,
    "first_date": "2020-04-15"
@@ -9688,6 +10795,9 @@
     "capcom/sf.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2020-08-16"
@@ -9709,6 +10819,9 @@
     "sega/segaorun.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2022-09-30"
@@ -9730,6 +10843,9 @@
     "namco/namcos1.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 39,
    "ntitles": 19,
    "first_date": "2023-10-31"
@@ -9752,6 +10868,9 @@
     "konami/vendetta.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 22,
    "ntitles": 3,
    "first_date": "2023-08-11"
@@ -9771,6 +10890,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2026-10-02"
@@ -9792,6 +10914,9 @@
     "dataeast/dec0.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 2,
    "first_date": "2022-03-11"
@@ -9813,6 +10938,9 @@
     "taito/taito_x.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 10,
    "ntitles": 5,
    "first_date": "2026-08-30"
@@ -9835,6 +10963,9 @@
     "namco/namcos86.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 15,
    "ntitles": 8,
    "first_date": "2025-04-25"
@@ -9857,6 +10988,9 @@
     "konami/tmnt2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 24,
    "ntitles": 4,
    "first_date": "2023-08-18"
@@ -9879,6 +11013,9 @@
     "seibu/toki.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 8,
    "ntitles": 2,
    "first_date": "2024-04-07"
@@ -9900,6 +11037,9 @@
     "capcom/tigeroad.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2019-12-22"
@@ -9921,6 +11061,9 @@
     "konami/trackfld.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2022-04-15"
@@ -9942,6 +11085,9 @@
     "capcom/lwings.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 12,
    "ntitles": 2,
    "first_date": "2020-08-02"
@@ -9963,6 +11109,9 @@
     "konami/twin16.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 11,
    "ntitles": 4,
    "first_date": "2024-12-31"
@@ -9984,6 +11133,9 @@
     "irem/vigilant.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2022-05-06"
@@ -10005,6 +11157,9 @@
     "taito/volfied.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-16"
@@ -10026,6 +11181,9 @@
     "toaplan/wardner.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-09-27"
@@ -10047,6 +11205,9 @@
     "tecmo/tehkanwc.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2024-11-08"
@@ -10068,6 +11229,9 @@
     "technos/wwfsstar.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2024-09-06"
@@ -10089,6 +11253,9 @@
     "konami/xmen.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 11,
    "ntitles": 1,
    "first_date": "2024-10-11"
@@ -10110,6 +11277,9 @@
     "konami/yiear.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-12-24"
@@ -10134,6 +11304,8 @@
    "aliases": [
     "ongo:kuze_ginganin"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-09-24"
@@ -10158,6 +11330,8 @@
    "aliases": [
     "ongo:kuze_jalecoms1bcd"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 16,
    "ntitles": 8,
    "first_date": "2026-09-20"
@@ -10182,6 +11356,8 @@
    "aliases": [
     "ongo:kuze_jalecoms1z"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-09-23"
@@ -10206,6 +11382,8 @@
    "aliases": [
     "ongo:kuze_namcos2_lw"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-09-26"
@@ -10230,6 +11408,8 @@
    "aliases": [
     "ongo:kuze_namcos2_mh"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-09-26"
@@ -10254,6 +11434,8 @@
    "aliases": [
     "ongo:kuze_namcos2_sg"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2026-09-26"
@@ -10278,6 +11460,8 @@
    "aliases": [
     "ongo:kuze_namcos2_std"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 49,
    "ntitles": 22,
    "first_date": "2026-09-26"
@@ -10302,6 +11486,8 @@
    "aliases": [
     "ongo:kuze_namcos2_sz"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2026-09-26"
@@ -10326,6 +11512,8 @@
    "aliases": [
     "ongo:kuze_nmk16_afega"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 27,
    "ntitles": 6,
    "first_date": "2026-09-11"
@@ -10350,6 +11538,8 @@
    "aliases": [
     "ongo:kuze_nmk16_gunnail"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 53,
    "ntitles": 21,
    "first_date": "2026-09-09"
@@ -10374,6 +11564,8 @@
    "aliases": [
     "ongo:kuze_nmk16_macross2"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 14,
    "ntitles": 3,
    "first_date": "2026-09-06"
@@ -10398,6 +11590,8 @@
    "aliases": [
     "ongo:kuze_nmk16_raphero"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-09-09"
@@ -10422,6 +11616,8 @@
    "aliases": [
     "ongo:kuze_nmkbp964"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-09-24"
@@ -10446,6 +11642,8 @@
    "aliases": [
     "ongo:kuze_sandscrp"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-09-19"
@@ -10465,6 +11663,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -10489,6 +11690,8 @@
    "aliases": [
     "ongo:meathax_appoooh"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-09-15"
@@ -10511,6 +11714,8 @@
    "aliases": [
     "ongo:meathax_bucky"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-12"
@@ -10533,6 +11738,8 @@
    "aliases": [
     "ongo:meathax_docastle"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 9,
    "ntitles": 6,
    "first_date": "2026-07-28"
@@ -10557,6 +11764,8 @@
    "aliases": [
     "ongo:meathax_drmicro"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-06"
@@ -10581,6 +11790,8 @@
    "aliases": [
     "ongo:meathax_escapekids"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-08-18"
@@ -10603,6 +11814,8 @@
    "aliases": [
     "ongo:meathax_i-robot"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-09"
@@ -10625,6 +11838,8 @@
    "aliases": [
     "ongo:meathax_ikki"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-07-28"
@@ -10647,6 +11862,8 @@
    "aliases": [
     "ongo:meathax_mcr68"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 4,
    "first_date": "2026-09-01"
@@ -10666,6 +11883,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-09-24"
@@ -10685,6 +11905,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-30"
@@ -10704,6 +11927,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-22"
@@ -10723,6 +11949,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-08-06"
@@ -10747,6 +11976,8 @@
    "aliases": [
     "ongo:meathax_segasystem32"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 38,
    "ntitles": 15,
    "first_date": "2026-07-18"
@@ -10771,6 +12002,8 @@
    "aliases": [
     "ongo:meathax_segasystem32multi"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 10,
    "ntitles": 4,
    "first_date": "2026-07-18"
@@ -10795,6 +12028,8 @@
    "aliases": [
     "ongo:meathax_ssv"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 10,
    "ntitles": 10,
    "first_date": "2026-07-23"
@@ -10814,6 +12049,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-09"
@@ -10833,6 +12071,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-28"
@@ -10855,6 +12096,8 @@
    "aliases": [
     "ongo:meathax_stunrunner"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-26"
@@ -10874,6 +12117,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-11"
@@ -10893,6 +12139,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-10-03"
@@ -10912,6 +12161,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 12,
    "ntitles": 11,
    "first_date": "2026-10-02"
@@ -10931,6 +12183,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2026-10-02"
@@ -10950,6 +12205,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-25"
@@ -10969,6 +12227,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-08"
@@ -10988,6 +12249,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 7,
    "first_date": "2023-04-05"
@@ -11007,6 +12271,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-26"
@@ -11026,6 +12293,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-26"
@@ -11045,6 +12315,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2025-06-25"
@@ -11064,6 +12337,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2025-06-25"
@@ -11083,6 +12359,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-12-28"
@@ -11102,6 +12381,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-09-16"
@@ -11121,6 +12403,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-01"
@@ -11140,6 +12425,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-01"
@@ -11159,6 +12447,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-09-30"
@@ -11178,6 +12469,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 28,
    "ntitles": 13,
    "first_date": "2026-09-01"
@@ -11197,6 +12491,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-17"
@@ -11216,6 +12513,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-21"
@@ -11235,6 +12535,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 4,
    "first_date": "2026-08-20"
@@ -11254,6 +12557,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-08-17"
@@ -11273,6 +12579,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 12,
    "ntitles": 11,
    "first_date": "2026-10-02"
@@ -11292,6 +12601,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-09-16"
@@ -11311,6 +12623,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 2,
    "first_date": "2026-09-16"
@@ -11330,6 +12645,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2026-09-24"
@@ -11349,6 +12667,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -11368,6 +12689,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2026-08-06"
@@ -11387,6 +12711,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-10-03"
@@ -11406,6 +12733,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2026-09-09"
@@ -11425,6 +12755,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2026-10-02"
@@ -11444,6 +12777,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-07-28"
@@ -11463,6 +12799,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 8,
    "ntitles": 3,
    "first_date": "2026-08-15"
@@ -11482,6 +12821,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-07-16"
@@ -11501,6 +12843,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-30"
@@ -11520,6 +12865,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 16,
    "ntitles": 4,
    "first_date": "2026-09-16"
@@ -11539,6 +12887,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 9,
    "ntitles": 3,
    "first_date": "2026-08-22"
@@ -11558,6 +12909,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 11,
    "ntitles": 3,
    "first_date": "2026-09-17"
@@ -11577,6 +12931,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-09-19"
@@ -11596,6 +12953,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 35,
    "ntitles": 11,
    "first_date": "2026-07-13"
@@ -11615,6 +12975,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 36,
    "ntitles": 14,
    "first_date": "2026-08-02"
@@ -11634,6 +12997,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-08-30"
@@ -11653,6 +13019,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 35,
    "ntitles": 14,
    "first_date": "2026-09-02"
@@ -11672,6 +13041,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 36,
    "ntitles": 34,
    "first_date": "2026-09-08"
@@ -11691,6 +13063,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-29"
@@ -11710,6 +13085,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 52,
    "ntitles": 34,
    "first_date": "2025-12-22"
@@ -11729,6 +13107,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2025-06-25"
@@ -11748,6 +13129,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-07-05"
@@ -11767,6 +13151,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-09-13"
@@ -11786,6 +13173,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-13"
@@ -11805,6 +13195,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2026-09-23"
@@ -11824,6 +13217,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 51,
    "ntitles": 22,
    "first_date": "2026-07-18"
@@ -11843,6 +13239,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 12,
    "ntitles": 3,
    "first_date": "2026-07-18"
@@ -11862,6 +13261,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 17,
    "ntitles": 5,
    "first_date": "2026-08-29"
@@ -11881,6 +13283,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 28,
    "ntitles": 7,
    "first_date": "2026-08-29"
@@ -11902,6 +13307,9 @@
     "atari/atarig1.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 13,
    "ntitles": 2,
    "first_date": "2026-09-25"
@@ -11923,6 +13331,9 @@
     "toaplan/raizing_batrider.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2022-07-24"
@@ -11944,6 +13355,9 @@
     "bally/balsente.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 39,
    "ntitles": 25,
    "first_date": "2026-09-26"
@@ -11965,6 +13379,9 @@
     "toaplan/raizing_batrider.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 8,
    "ntitles": 1,
    "first_date": "2022-07-24"
@@ -11986,6 +13403,9 @@
     "atari/bwidow.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-06-01"
@@ -12007,6 +13427,9 @@
     "bally/mcr.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2020-01-12"
@@ -12028,6 +13451,9 @@
     "nintendo/dkong.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2020-07-14"
@@ -12049,6 +13475,9 @@
     "toaplan/raizing.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 12,
    "ntitles": 3,
    "first_date": "2022-07-24"
@@ -12070,6 +13499,9 @@
     "konami/gyruss.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2020-02-29"
@@ -12091,6 +13523,9 @@
     "jaleco/ms32.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 13,
    "ntitles": 10,
    "first_date": "2026-09-13"
@@ -12112,6 +13547,9 @@
     "jaleco/ms32.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2026-09-26"
@@ -12133,6 +13571,9 @@
     "taito/kikikai.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-28"
@@ -12154,6 +13595,9 @@
     "konami/konamigx.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 22,
    "ntitles": 11,
    "first_date": "2026-09-19"
@@ -12175,6 +13619,9 @@
     "atari/mhavoc.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-06-02"
@@ -12196,6 +13643,9 @@
     "upl/nova2001.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2020-05-30"
@@ -12217,6 +13667,9 @@
     "atari/atarigt.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 8,
    "ntitles": 2,
    "first_date": "2026-09-26"
@@ -12238,6 +13691,9 @@
     "sega/segahang.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 13,
    "ntitles": 3,
    "first_date": "2026-08-31"
@@ -12259,6 +13715,9 @@
     "sega/segaybd.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 19,
    "ntitles": 5,
    "first_date": "2026-08-27"
@@ -12280,6 +13739,9 @@
     "seta/seta.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 34,
    "ntitles": 27,
    "first_date": "2026-09-10"
@@ -12301,6 +13763,9 @@
     "seta/downtown.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 10,
    "ntitles": 6,
    "first_date": "2026-09-18"
@@ -12322,6 +13787,9 @@
     "kaneko/suprnova.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 38,
    "ntitles": 14,
    "first_date": "2026-08-18"
@@ -12343,6 +13811,9 @@
     "valadon/bagman.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2020-01-18"
@@ -12364,6 +13835,9 @@
     "galaxian/galaxian.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2020-01-01"
@@ -12385,6 +13859,9 @@
     "sega/segac2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 48,
    "ntitles": 23,
    "first_date": "2026-09-02"
@@ -12406,6 +13883,9 @@
     "atari/tempest.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-05-31"
@@ -12427,6 +13907,9 @@
     "atari/cloak.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-08"
@@ -12448,6 +13931,9 @@
     "atari/harddriv.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-07"
@@ -12469,6 +13955,9 @@
     "dataeast/fghthist.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-07-02"
@@ -12488,6 +13977,9 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-07-19"
@@ -12509,6 +14001,9 @@
     "namco/namcona1.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 21,
    "ntitles": 10,
    "first_date": "2026-09-25"
@@ -12528,6 +14023,9 @@
    "score": 40,
    "mame_drivers": [],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -12549,6 +14047,9 @@
     "namco/namcos22.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-08-12"
@@ -12570,6 +14071,9 @@
     "seibu/raiden2.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-08-09"
@@ -12594,6 +14098,8 @@
    "aliases": [
     "repo:rayforce"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 36,
    "ntitles": 34,
    "first_date": "2026-08-09"
@@ -12616,6 +14122,9 @@
     "sega/segag80v.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 16,
    "ntitles": 11,
    "first_date": "2026-04-18"
@@ -12637,6 +14146,9 @@
     "sega/system1.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2025-11-01"
@@ -12658,6 +14170,9 @@
     "sega/turbo.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2026-07-28"
@@ -12679,6 +14194,9 @@
     "seibu/seibuspi.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 51,
    "ntitles": 5,
    "first_date": "2026-08-01"
@@ -12700,6 +14218,9 @@
     "cinematronics/leland.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-07-19"
@@ -12725,6 +14246,8 @@
     "ongo:taitoair",
     "repo:taitoair"
    ],
+   "first_recorded": "2026-10-04",
+   "last_seen": "2026-10-04",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-31"
@@ -12746,6 +14269,9 @@
     "konami/tmnt.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 11,
    "ntitles": 2,
    "first_date": "2023-04-01"
@@ -12767,6 +14293,9 @@
     "toaplan/batsugun.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-17"
@@ -12788,6 +14317,9 @@
     "toaplan/dogyuun.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-30"
@@ -12809,6 +14341,9 @@
     "toaplan/fixeight.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 14,
    "ntitles": 1,
    "first_date": "2026-09-02"
@@ -12830,6 +14365,9 @@
     "toaplan/ghox.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-09-03"
@@ -12851,6 +14389,9 @@
     "toaplan/vfive.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-09"
@@ -12872,6 +14413,9 @@
     "itech/itech32.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 20,
    "ntitles": 3,
    "first_date": "2026-08-21"
@@ -12893,6 +14437,9 @@
     "toaplan/kbash.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-04",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-28"
