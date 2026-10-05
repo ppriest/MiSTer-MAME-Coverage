@@ -93,6 +93,51 @@
 "pairs": 1040,
 "dates_improved": 5,
 "cores_removed": 0
+},
+{
+"date": "2026-10-05",
+"note": "alamone 2026-10-05",
+"cores": 2,
+"sets": 2,
+"pairs": 4,
+"dates_improved": 0,
+"cores_removed": 1
+},
+{
+"date": "2026-10-05",
+"note": "alamone 2026-10-05",
+"cores": 1,
+"sets": 4,
+"pairs": 4,
+"dates_improved": 0,
+"cores_removed": 1
+},
+{
+"date": "2026-10-05",
+"note": "alamone 2026-10-05",
+"cores": 1,
+"sets": 4,
+"pairs": 4,
+"dates_improved": 0,
+"cores_removed": 1
+},
+{
+"date": "2026-10-05",
+"note": "alamone 2026-10-05",
+"cores": 1,
+"sets": 4,
+"pairs": 4,
+"dates_improved": 0,
+"cores_removed": 0
+},
+{
+"date": "2026-10-05",
+"note": "alamone 2026-10-05",
+"cores": 0,
+"sets": 0,
+"pairs": 0,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -210,6 +255,7 @@
 "mame_drivers": [],
 "note": "",
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "blahm1d:blahm1d_legendofkage": {
@@ -247,6 +293,7 @@
 "mame_drivers": [],
 "note": "",
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "blahm1d:blahm1d_narc": {
@@ -4249,6 +4296,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "dist:psikyo": {
@@ -4694,6 +4742,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "dist:segavicz80": {
@@ -6144,6 +6193,25 @@
 "mame_drivers": [],
 "note": "the repository holds builds or MRAs, no HDL",
 "first_recorded": "2026-10-04",
+"aliases": [],
+"last_seen": "2026-10-05"
+},
+"jlrh:ffshadfrce": {
+"id": "jlrh:ffshadfrce",
+"name": "ffshadfrce",
+"source": "jlrh",
+"source_title": "jlrh",
+"channel": null,
+"rbf": "ffshadfrce.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-05",
 "aliases": [],
 "last_seen": "2026-10-05"
 },
@@ -9147,6 +9215,25 @@
 "aliases": [],
 "last_seen": "2026-10-04"
 },
+"ongo:ffshadfrce": {
+"id": "ongo:ffshadfrce",
+"name": "ffshadfrce",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "ffshadfrce.rbf",
+"repo": "jlrh/jlrh-misterfpga-db",
+"url": "https://github.com/jlrh/jlrh-misterfpga-db",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-05",
+"aliases": [],
+"last_seen": "2026-10-05"
+},
 "ongo:ffwecleman": {
 "id": "ongo:ffwecleman",
 "name": "ffwecleman",
@@ -9638,6 +9725,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "ongo:skullxbones": {
@@ -10038,6 +10126,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:1945kiii": {
@@ -10100,6 +10189,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:bakraid": {
@@ -10204,6 +10294,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:cloakanddagger": {
@@ -10245,6 +10336,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:dec8": {
@@ -10267,6 +10359,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:demoderby": {
@@ -10329,6 +10422,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:firetrap": {
@@ -10349,6 +10443,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:gaiapolis": {
@@ -10369,6 +10464,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:galaga_testbuild": {
@@ -10392,6 +10488,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:galaxian_testbuild": {
@@ -10415,6 +10512,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:garegga": {
@@ -10456,6 +10554,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:gyruss": {
@@ -10517,7 +10616,7 @@
 "snk/hng64.cpp"
 ],
 "note": null,
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-05",
 "aliases": [],
 "last_seen": "2026-10-05"
 },
@@ -10581,6 +10680,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:jtnslasher": {
@@ -10704,6 +10804,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:namco_na1_na2": {
@@ -10766,6 +10867,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:nerattechu": {
@@ -10786,6 +10888,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:nostradamus": {
@@ -11145,6 +11248,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:superbagman": {
@@ -11273,6 +11377,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
+"aliases": [],
 "last_seen": "2026-10-05"
 },
 "repo:tempest": {
@@ -21787,7 +21892,7 @@
 "alt": false,
 "first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
 "first_path": "releases/Buriki One - World Grapple Tournament '99 in Tokyo (rev.B).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-05",
 "last_seen": "2026-10-05"
 }
 },
@@ -34847,7 +34952,7 @@
 "alt": false,
 "first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
 "first_path": "releases/Fatal Fury - Wild Ambition - Garou Densetsu - Wild Ambition (rev.A).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-05",
 "last_seen": "2026-10-05"
 }
 },
@@ -74809,7 +74914,7 @@
 "alt": false,
 "first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
 "first_path": "releases/Samurai Shodown 64 - Samurai Spirits - Paewang Jeonseol 64.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-05",
 "last_seen": "2026-10-05"
 }
 },
@@ -74823,7 +74928,7 @@
 "alt": false,
 "first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
 "first_path": "releases/Samurai Shodown 64 - Warriors Rage - Samurai Spirits 2 - Asura Zanmaden.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-05",
 "last_seen": "2026-10-05"
 }
 },
@@ -79868,6 +79973,58 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Steel Gunner/Steel Gunner (Japan).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-05"
+}
+},
+"shadfrce": {
+"jlrh:ffshadfrce": {
+"core": "jlrh:ffshadfrce",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "jlrh",
+"wip": false,
+"alt": false,
+"first_repo": "jlrh/jlrh-misterfpga-db",
+"first_path": "_Arcade/Shadow Force (FF, Technos, 1993).mra",
+"first_recorded": "2026-10-05",
+"last_seen": "2026-10-05"
+},
+"ongo:ffshadfrce": {
+"core": "ongo:ffshadfrce",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "jlrh/jlrh-misterfpga-db",
+"first_path": "_Arcade/Shadow Force (FF, Technos, 1993).mra",
+"first_recorded": "2026-10-05",
+"last_seen": "2026-10-05"
+}
+},
+"shadfrcej": {
+"jlrh:ffshadfrce": {
+"core": "jlrh:ffshadfrce",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "jlrh",
+"wip": false,
+"alt": true,
+"first_repo": "jlrh/jlrh-misterfpga-db",
+"first_path": "_Arcade/_alternatives/_Shadow Force/Shadow Force - Henshin Ninja (FF, Technos, 1993, Japan v2).mra",
+"first_recorded": "2026-10-05",
+"last_seen": "2026-10-05"
+},
+"ongo:ffshadfrce": {
+"core": "ongo:ffshadfrce",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "jlrh/jlrh-misterfpga-db",
+"first_path": "_Arcade/_alternatives/_Shadow Force/Shadow Force - Henshin Ninja (FF, Technos, 1993, Japan v2).mra",
+"first_recorded": "2026-10-05",
 "last_seen": "2026-10-05"
 }
 },

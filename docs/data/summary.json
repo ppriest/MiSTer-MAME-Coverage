@@ -1,53 +1,55 @@
 {
  "meta": {
-  "generated": "2026-10-05T12:19:27+00:00",
+  "generated": "2026-10-05T17:25:40+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-05T12:19:03+00:00",
+  "mister_generated": "2026-10-05T17:25:37+00:00",
   "alamone_generated": "2026-10-05T11:12:58+00:00",
   "ledger_updated": "2026-10-05",
   "ledger_runs": [
    {
-    "date": "2026-10-04",
-    "note": "alamone 2026-10-01",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0
-   },
-   {
-    "date": "2026-10-04",
-    "note": "alamone 2026-10-01",
-    "cores": 11,
-    "sets": 47,
-    "pairs": 89,
-    "dates_improved": 7
-   },
-   {
-    "date": "2026-10-04",
-    "note": "alamone 2026-10-01",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
+    "date": "2026-10-05",
+    "note": "alamone 2026-10-05",
+    "cores": 2,
+    "sets": 2,
+    "pairs": 4,
     "dates_improved": 0,
-    "cores_removed": 8
+    "cores_removed": 1
    },
    {
-    "date": "2026-10-04",
-    "note": "alamone 2026-10-01",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
+    "date": "2026-10-05",
+    "note": "alamone 2026-10-05",
+    "cores": 1,
+    "sets": 4,
+    "pairs": 4,
+    "dates_improved": 0,
+    "cores_removed": 1
+   },
+   {
+    "date": "2026-10-05",
+    "note": "alamone 2026-10-05",
+    "cores": 1,
+    "sets": 4,
+    "pairs": 4,
+    "dates_improved": 0,
+    "cores_removed": 1
+   },
+   {
+    "date": "2026-10-05",
+    "note": "alamone 2026-10-05",
+    "cores": 1,
+    "sets": 4,
+    "pairs": 4,
     "dates_improved": 0,
     "cores_removed": 0
    },
    {
     "date": "2026-10-05",
     "note": "alamone 2026-10-05",
-    "cores": 22,
-    "sets": 375,
-    "pairs": 1040,
-    "dates_improved": 5,
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
+    "dates_improved": 0,
     "cores_removed": 0
    }
   ],
@@ -82,6 +84,7 @@
    "arcfpga": "arcfpga (bmo00)",
    "blahm1d": "blahm1d",
    "shmupfan": "shmupfan (Distribution)",
+   "ppriest": "ppriest (MiSTer_ppriest)",
    "repo": "GitHub repository only"
   },
   "repos": [
@@ -91,7 +94,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1797
+    "mras": 1800
    },
    {
     "source": "dist",
@@ -2085,7 +2088,7 @@
     "source": "ongo",
     "repo": "jlrh/jlrh-misterfpga-db",
     "dirs": null,
-    "mras": 36
+    "mras": 38
    },
    {
     "source": "ongo",
@@ -2294,45 +2297,21 @@
   ],
   "repo_errors": [
    [
-    "Kyp069/zx48-MiSTer",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
-   ],
-   [
-    "blahm1d/MiSTer-cores",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
-   ],
-   [
-    "blahm1d/wolf-unit",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
-   ],
-   [
-    "kandowontu/BrickBoy_MiSTer",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
-   ],
-   [
-    "meathax/Bucky",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
-   ],
-   [
-    "meathax/mrdo",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
-   ],
-   [
-    "meathax/s24",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
-   ],
-   [
     "https://mister.blahm1d.com/db.json.zip",
-    "HTTP Error 403: Forbidden"
+    "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   ],
+   [
+    "https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip",
+    "HTTP Error 404: Not Found"
    ]
   ],
   "counts": {
    "titles": 6824,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 1896,
+   "working_arcade_titles_covered": 1897,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5025,
-   "cores": 557,
+   "working_arcade_sets_covered": 5027,
+   "cores": 559,
    "unmatched_sets": 400
   }
  },
@@ -2465,6 +2444,7 @@
    "mame_drivers": [],
    "note": "",
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 1,
    "ntitles": 1,
@@ -2508,6 +2488,7 @@
    "mame_drivers": [],
    "note": "",
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 1,
    "ntitles": 1,
@@ -7101,6 +7082,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 8,
    "ntitles": 2,
@@ -7609,6 +7591,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 2,
    "ntitles": 2,
@@ -9271,6 +9254,28 @@
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2026-10-04"
+  },
+  {
+   "id": "jlrh:ffshadfrce",
+   "name": "ffshadfrce",
+   "source": "jlrh",
+   "source_title": "jlrh",
+   "channel": null,
+   "rbf": "ffshadfrce.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-05",
+   "aliases": [],
+   "last_seen": "2026-10-05",
+   "nsets": 2,
+   "ntitles": 1,
+   "first_date": "2026-10-05"
   },
   {
    "id": "jlrh:ffsquash",
@@ -12699,6 +12704,28 @@
    "first_date": "2026-10-04"
   },
   {
+   "id": "ongo:ffshadfrce",
+   "name": "ffshadfrce",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "ffshadfrce.rbf",
+   "repo": "jlrh/jlrh-misterfpga-db",
+   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-05",
+   "aliases": [],
+   "last_seen": "2026-10-05",
+   "nsets": 2,
+   "ntitles": 1,
+   "first_date": "2026-10-05"
+  },
+  {
    "id": "ongo:ffwecleman",
    "name": "ffwecleman",
    "source": "ongo",
@@ -13264,6 +13291,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 4,
    "ntitles": 2,
@@ -13727,6 +13755,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 6,
    "ntitles": 1,
@@ -13798,6 +13827,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 5,
    "ntitles": 3,
@@ -13917,6 +13947,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 2,
    "ntitles": 2,
@@ -13964,6 +13995,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 41,
    "ntitles": 11,
@@ -13989,6 +14021,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 10,
    "ntitles": 3,
@@ -14060,6 +14093,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 24,
    "ntitles": 9,
@@ -14083,6 +14117,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 3,
    "ntitles": 1,
@@ -14106,6 +14141,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 3,
    "ntitles": 1,
@@ -14132,6 +14168,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 29,
    "ntitles": 5,
@@ -14158,6 +14195,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 339,
    "ntitles": 71,
@@ -14205,6 +14243,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 1,
    "ntitles": 1,
@@ -14275,7 +14314,7 @@
     "snk/hng64.cpp"
    ],
    "note": null,
-   "first_recorded": "2026-10-04",
+   "first_recorded": "2026-10-05",
    "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 4,
@@ -14348,6 +14387,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 1,
    "ntitles": 1,
@@ -14489,6 +14529,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 1,
    "ntitles": 1,
@@ -14560,6 +14601,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 6,
    "ntitles": 2,
@@ -14583,6 +14625,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 1,
    "ntitles": 1,
@@ -14993,6 +15036,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 166,
    "ntitles": 51,
@@ -15139,6 +15183,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-05",
+   "aliases": [],
    "last_seen": "2026-10-05",
    "nsets": 7,
    "ntitles": 3,
@@ -24159,11 +24204,14 @@
   {
    "sourcefile": "technos/shadfrce.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 3,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 2,
+   "cores": [
+    "jlrh:ffshadfrce",
+    "ongo:ffshadfrce"
+   ],
+   "first": "2026-10-05"
   },
   {
    "sourcefile": "technos/spdodgeb.cpp",

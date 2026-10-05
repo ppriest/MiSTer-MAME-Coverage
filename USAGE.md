@@ -36,7 +36,9 @@ Options:
    the set names its MRAs load) and the MiSTer_Ongo README (links to the repositories it ships).
 2. Builds the repository plan: the distribution repositories listed in `mister.DISTRIBUTIONS`,
    every repository alamone names, every GitHub repository the Ongo README links, every
-   `MiSTer-devel/Arcade-*` repository the MiSTer wiki links, every repository shmup-deck's
+   repository the arcade table of the MiSTer wiki's `Cores.md` links (including ones not named
+   `Arcade-*`, such as N64_MiSTer, SMS_MiSTer and Saturn_MiSTer) and any `MiSTer-devel/Arcade-*`
+   link elsewhere in the wiki, every repository shmup-deck's
    `cores.json` points at (shmupfan's own cores get the `shmupfan` source), and the hand-kept
    `EXTRA_REPOS` and `ROMSET_FILES` lists.
 3. Clones each one with `--filter=blob:limit=1m --no-checkout` (history, trees and small files such
@@ -193,9 +195,13 @@ All in `mmc/mister.py`:
 - `EXTRA_REPOS`: repositories no database or registry points at any more (the official mirrors of
   jotego's first cores, jotego's early `rom/mra` folder). Add a fork of a repository whose history
   was lost, for example.
+- `SUPERSEDED_CORES`: old core id -> replacement id (for example `repo:hyperng64` -> `ppriest:hyperng64`);
+  the old record is removed from the ledger like an excluded core, but only once the replacement was
+  observed in that run, so no support is lost while the replacement's source is unreachable.
 - `ROMSET_FILES`: cores that load sets from a list instead of MRAs (the NeoGeo core's
   `releases/romsets.xml`).
-- `DB_SOURCES`: developer downloader databases (`db.json.zip` URLs, or a plain `db.json` such as
+- `DB_SOURCES`: developer downloader databases (ppriest's own `MiSTer_ppriest` among them, which is
+  unreachable, and listed as such on the About tab, until that repository is published); (`db.json.zip` URLs, or a plain `db.json` such as
   shmupfan's Distribution). Their MRAs are fetched and
   parsed directly, so a core published only as builds (Patreon releases such as blahm1d's, which
   have no source repository) still counts through the MRAs its database ships. These files carry
