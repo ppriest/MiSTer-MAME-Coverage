@@ -195,8 +195,9 @@ All in `mmc/mister.py`:
 - `EXTRA_REPOS`: repositories no database or registry points at any more (the official mirrors of
   jotego's first cores, jotego's early `rom/mra` folder). Add a fork of a repository whose history
   was lost, for example.
-- `SUPERSEDED_CORES`: core ids replaced by a better-sourced record (for example `repo:hyperng64`,
-  now `ppriest:hyperng64`); removed from the ledger like excluded cores.
+- `SUPERSEDED_CORES`: old core id -> replacement id (for example `repo:hyperng64` -> `ppriest:hyperng64`);
+  the old record is removed from the ledger like an excluded core, but only once the replacement was
+  observed in that run, so no support is lost while the replacement's source is unreachable.
 - `ROMSET_FILES`: cores that load sets from a list instead of MRAs (the NeoGeo core's
   `releases/romsets.xml`).
 - `DB_SOURCES`: developer downloader databases (ppriest's own `MiSTer_ppriest` among them, which is

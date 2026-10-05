@@ -187,7 +187,8 @@ def observe(mister: dict) -> dict:
         date, quality, frepo, fpath = dated(m)
         add(m["setname"], cid, date, quality, m["source"], m.get("wip", False), m.get("alt", False), frepo, fpath)
     excluded -= set(cores)            # a core alamone knows as a MiSTer build is never excluded
-    excluded |= mister_mod.SUPERSEDED_CORES
+    # a superseded record goes only when its replacement was observed, so no support is lost
+    excluded |= {old for old, new in mister_mod.SUPERSEDED_CORES.items() if new in cores}
 
     # 2. Sets alamone attributes to cores we have no MRA checkout for (developer databases).
     for cid, c in cores.items():

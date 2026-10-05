@@ -65,8 +65,9 @@ EXTRA_REPOS = [
 ]
 
 # Core records that a better-sourced record replaces. They are removed from the ledger together with
-# their set/core pairs (see ledger.merge); the replacement carries the same sets.
-SUPERSEDED_CORES = {"repo:hyperng64"}      # now ppriest:hyperng64, the same repository under the ppriest source
+# their set/core pairs (see ledger.merge), but only once the replacement is actually observed (the
+# ppriest database is unreachable while MiSTer_ppriest is private); it carries the same sets.
+SUPERSEDED_CORES = {"repo:hyperng64": "ppriest:hyperng64"}      # old id -> replacement
 
 # Developer "downloader" databases (what update_all installs from downloader.ini). Their
 # db.json.zip lists every MRA with a URL; we fetch and parse those directly, so a core that is
