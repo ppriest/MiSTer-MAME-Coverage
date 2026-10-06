@@ -251,8 +251,11 @@ be linked.
 ## Keeping it fresh
 
 `.github/workflows/update.yml` runs every Monday (after alamone's weekly refresh) and on demand:
-it runs `python -m mmc build`, then commits `data/ledger.json` and `docs/data/` if anything
-changed. The MAME download is cached between runs. To change the MAME version used by CI, pass
+it runs `python -m mmc build`, then commits `data/`, `docs/data/` and `reports/` if anything
+changed. Runs are serialised (`concurrency`). If the push is rejected because `main` moved during
+the run (for example a PR merged meanwhile), the job resets to the new `origin/main` and rebuilds
+on top of it, up to three times; the ledger is append-only, so nothing is lost. The MAME download
+is cached between runs. To change the MAME version used by CI, pass
 `--mame-version` in the workflow or leave it to probe for the newest release.
 
 Private or deleted repositories linked by a source fail to clone; they are reported on the About
