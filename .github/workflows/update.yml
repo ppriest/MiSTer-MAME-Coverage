@@ -8,6 +8,11 @@ on:
 permissions:
   contents: write
 
+# One refresh at a time; a second run waits instead of racing the first for the push.
+concurrency:
+  group: refresh-coverage
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,12 +26,22 @@ jobs:
         with:
           path: work/cache/mame*
           key: mame-lx-${{ hashFiles('mmc/mame.py') }}
-      - name: Build
-        run: python -m mmc build
-      - name: Commit
+      - name: Build and commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data docs/data
-          git diff --cached --quiet && echo "no change" || git commit -m "Refresh coverage data"
-          git push
+          for attempt in 1 2 3; do
+            python -m mmc build
+            git add data docs/data reports
+            if git diff --cached --quiet; then echo "no change"; exit 0; fi
+            git commit -m "Refresh coverage data"
+            if git push; then exit 0; fi
+            # main moved while we were building (a merged PR, say): drop our commit, take the
+            # new main, and rebuild on top of it. The ledger is append-only, so nothing is lost
+            # and the repository checkouts under work/ are untracked and kept.
+            echo "push rejected (attempt $attempt); resetting to origin/main and rebuilding"
+            git fetch origin "$GITHUB_REF_NAME"
+            git reset --hard "origin/$GITHUB_REF_NAME"
+          done
+          echo "could not push after 3 attempts" >&2
+          exit 1
