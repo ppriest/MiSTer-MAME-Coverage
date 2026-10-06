@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-06T08:12:15+00:00",
+  "generated": "2026-10-06T19:51:46+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-06T08:11:49+00:00",
+  "mister_generated": "2026-10-06T19:51:20+00:00",
   "alamone_generated": "2026-10-05T11:12:58+00:00",
   "ledger_updated": "2026-10-06",
   "ledger_runs": [
-   {
-    "date": "2026-10-05",
-    "note": "alamone 2026-10-05",
-    "cores": 1,
-    "sets": 4,
-    "pairs": 4,
-    "dates_improved": 0,
-    "cores_removed": 1
-   },
    {
     "date": "2026-10-05",
     "note": "alamone 2026-10-05",
@@ -51,6 +42,15 @@
     "pairs": 10,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-06",
+    "note": "alamone 2026-10-05",
+    "cores": 8,
+    "sets": 43,
+    "pairs": 51,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
    "catver_entries": 37998,
    "mad_entries": 2995,
-   "mra_entries": 3012,
+   "mra_entries": 3013,
    "unmapped": [
     {
      "raw": "not classified",
@@ -118,7 +118,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 278
+    "mras": 279
    },
    {
     "source": "ongo",
@@ -126,7 +126,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1181
+    "mras": 1184
    },
    {
     "source": "dist",
@@ -1716,7 +1716,7 @@
     "source": "repo",
     "repo": "ppriest/Arcade-HyperNG64_MiSTer",
     "dirs": null,
-    "mras": 4
+    "mras": 7
    },
    {
     "source": "repo",
@@ -2088,7 +2088,7 @@
     "source": "ongo",
     "repo": "jlrh/jlrh-misterfpga-db",
     "dirs": null,
-    "mras": 46
+    "mras": 48
    },
    {
     "source": "ongo",
@@ -2112,7 +2112,7 @@
     "source": "ongo",
     "repo": "meathax/meatcores",
     "dirs": null,
-    "mras": 111
+    "mras": 114
    },
    {
     "source": "ongo",
@@ -2283,6 +2283,14 @@
     "mras": 2
    },
    {
+    "source": "repo",
+    "repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+    "dirs": [
+     "mra"
+    ],
+    "mras": 35
+   },
+   {
     "source": "dist",
     "repo": "MiSTer-devel/NeoGeo_MiSTer",
     "dirs": [],
@@ -2330,10 +2338,10 @@
   "counts": {
    "titles": 6824,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 1898,
+   "working_arcade_titles_covered": 1919,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5036,
-   "cores": 560,
+   "working_arcade_sets_covered": 5079,
+   "cores": 568,
    "unmatched_sets": 400
   }
  },
@@ -2999,6 +3007,27 @@
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-06-16"
+  },
+  {
+   "id": "coinop:darkmist",
+   "name": "darkmist_mister",
+   "source": "coinop",
+   "source_title": "Coin-Op Collection",
+   "channel": null,
+   "rbf": "darkmist_mister.rbf",
+   "repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
+   "url": "https://github.com/Coin-OpCollection/Distribution-MiSTerFPGA",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-06",
+   "last_seen": "2026-10-06",
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-06"
   },
   {
    "id": "coinop:darkseal",
@@ -9011,6 +9040,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-06",
+   "aliases": [],
    "last_seen": "2026-10-06",
    "nsets": 1,
    "ntitles": 1,
@@ -9113,6 +9143,27 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-14"
+  },
+  {
+   "id": "jlrh:ffgwar",
+   "name": "ffgwar",
+   "source": "jlrh",
+   "source_title": "jlrh",
+   "channel": null,
+   "rbf": "ffgwar.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-06",
+   "last_seen": "2026-10-06",
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-06"
   },
   {
    "id": "jlrh:ffhotchase",
@@ -12295,6 +12346,27 @@
    "first_date": "2026-07-18"
   },
   {
+   "id": "meat:simple156",
+   "name": "Simple156",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-Simple156.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-06",
+   "last_seen": "2026-10-06",
+   "nsets": 3,
+   "ntitles": 3,
+   "first_date": "2026-10-06"
+  },
+  {
    "id": "meat:ssv",
    "name": "SSV",
    "source": "meat",
@@ -12679,6 +12751,48 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-04"
+  },
+  {
+   "id": "ongo:ffdeadang",
+   "name": "ffdeadang",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "ffdeadang.rbf",
+   "repo": "jlrh/jlrh-misterfpga-db",
+   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-06",
+   "last_seen": "2026-10-06",
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-06"
+  },
+  {
+   "id": "ongo:ffgwar",
+   "name": "ffgwar",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "ffgwar.rbf",
+   "repo": "jlrh/jlrh-misterfpga-db",
+   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-06",
+   "last_seen": "2026-10-06",
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-06"
   },
   {
    "id": "ongo:ffhotchase",
@@ -13099,6 +13213,27 @@
    "first_date": "2026-08-06"
   },
   {
+   "id": "ongo:meathax_simple156",
+   "name": "Meathax_Simple156",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "Meathax_Simple156.rbf",
+   "repo": "OngoGablogian/MiSTer_Ongo",
+   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-06",
+   "last_seen": "2026-10-06",
+   "nsets": 3,
+   "ntitles": 3,
+   "first_date": "2026-10-06"
+  },
+  {
    "id": "ongo:meathax_stoneball",
    "name": "Meathax_StoneBall",
    "source": "ongo",
@@ -13339,6 +13474,27 @@
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2026-09-29"
+  },
+  {
+   "id": "ongo:simple156",
+   "name": "Simple156",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "Arcade-Simple156.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-06",
+   "last_seen": "2026-10-06",
+   "nsets": 3,
+   "ntitles": 3,
+   "first_date": "2026-10-06"
   },
   {
    "id": "ongo:skullxbones",
@@ -14360,8 +14516,8 @@
    "first_recorded": "2026-10-05",
    "aliases": [],
    "last_seen": "2026-10-06",
-   "nsets": 4,
-   "ntitles": 4,
+   "nsets": 7,
+   "ntitles": 7,
    "first_date": "2026-09-20"
   },
   {
@@ -15207,6 +15363,27 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-31"
+  },
+  {
+   "id": "repo:taitol",
+   "name": "taitol",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "taitol.rbf",
+   "repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-TaitoLSystem_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-06",
+   "last_seen": "2026-10-06",
+   "nsets": 35,
+   "ntitles": 13,
+   "first_date": "2026-10-05"
   },
   {
    "id": "repo:tecmo16",
@@ -17535,11 +17712,15 @@
   {
    "sourcefile": "dataeast/simpl156.cpp",
    "titles": 5,
-   "covered": 0,
+   "covered": 3,
    "sets": 11,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 3,
+   "cores": [
+    "meat:simple156",
+    "ongo:meathax_simple156",
+    "ongo:simple156"
+   ],
+   "first": "2026-10-06"
   },
   {
    "sourcefile": "dataeast/sshangha.cpp",
@@ -22637,11 +22818,13 @@
   {
    "sourcefile": "seibu/darkmist.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 1,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 1,
+   "cores": [
+    "coinop:darkmist"
+   ],
+   "first": "2026-10-06"
   },
   {
    "sourcefile": "seibu/dcon.cpp",
@@ -22662,7 +22845,8 @@
    "sets": 4,
    "sets_covered": 1,
    "cores": [
-    "jlrh:ffdeadang"
+    "jlrh:ffdeadang",
+    "ongo:ffdeadang"
    ],
    "first": "2026-10-06"
   },
@@ -22960,9 +23144,9 @@
   {
    "sourcefile": "snk/hng64.cpp",
    "titles": 7,
-   "covered": 4,
+   "covered": 7,
    "sets": 7,
-   "sets_covered": 4,
+   "sets_covered": 7,
    "cores": [
     "repo:hyperng64"
    ],
@@ -23058,14 +23242,16 @@
   {
    "sourcefile": "snk/snk.cpp",
    "titles": 20,
-   "covered": 7,
+   "covered": 8,
    "sets": 55,
-   "sets_covered": 14,
+   "sets_covered": 15,
    "cores": [
     "dist:athena",
     "dist:ikariwarriors",
     "dist:snk_triplez80",
-    "dist:tnkiii"
+    "dist:tnkiii",
+    "jlrh:ffgwar",
+    "ongo:ffgwar"
    ],
    "first": "2022-05-09"
   },
@@ -23883,11 +24069,13 @@
   {
    "sourcefile": "taito/taito_l.cpp",
    "titles": 13,
-   "covered": 0,
+   "covered": 13,
    "sets": 36,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 35,
+   "cores": [
+    "repo:taitol"
+   ],
+   "first": "2026-10-05"
   },
   {
    "sourcefile": "taito/taito_o.cpp",

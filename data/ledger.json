@@ -147,6 +147,15 @@
 "pairs": 10,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-06",
+"note": "alamone 2026-10-05",
+"cores": 8,
+"sets": 43,
+"pairs": 51,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -721,6 +730,24 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-10-06"
+},
+"coinop:darkmist": {
+"id": "coinop:darkmist",
+"name": "darkmist_mister",
+"source": "coinop",
+"source_title": "Coin-Op Collection",
+"channel": null,
+"rbf": "darkmist_mister.rbf",
+"repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
+"url": "https://github.com/Coin-OpCollection/Distribution-MiSTerFPGA",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-06",
 "last_seen": "2026-10-06"
 },
 "coinop:darkseal": {
@@ -5975,6 +6002,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-06",
+"aliases": [],
 "last_seen": "2026-10-06"
 },
 "jlrh:ffdestroyer": {
@@ -6061,6 +6089,24 @@
 "aliases": [
 "arcfpga:glass"
 ],
+"last_seen": "2026-10-06"
+},
+"jlrh:ffgwar": {
+"id": "jlrh:ffgwar",
+"name": "ffgwar",
+"source": "jlrh",
+"source_title": "jlrh",
+"channel": null,
+"rbf": "ffgwar.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-06",
 "last_seen": "2026-10-06"
 },
 "jlrh:ffhotchase": {
@@ -8850,6 +8896,24 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-06"
 },
+"meat:simple156": {
+"id": "meat:simple156",
+"name": "Arcade-Simple156",
+"source": "meat",
+"source_title": "MeatCores (meathax)",
+"channel": null,
+"rbf": "Arcade-Simple156.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+},
 "meat:ssv": {
 "id": "meat:ssv",
 "name": "Arcade-SSV",
@@ -9184,6 +9248,42 @@
 "first_recorded": "2026-10-04",
 "aliases": [],
 "last_seen": "2026-10-04"
+},
+"ongo:ffdeadang": {
+"id": "ongo:ffdeadang",
+"name": "ffdeadang",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "ffdeadang.rbf",
+"repo": "jlrh/jlrh-misterfpga-db",
+"url": "https://github.com/jlrh/jlrh-misterfpga-db",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+},
+"ongo:ffgwar": {
+"id": "ongo:ffgwar",
+"name": "ffgwar",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "ffgwar.rbf",
+"repo": "jlrh/jlrh-misterfpga-db",
+"url": "https://github.com/jlrh/jlrh-misterfpga-db",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
 },
 "ongo:ffhotchase": {
 "id": "ongo:ffhotchase",
@@ -9546,6 +9646,24 @@
 "aliases": [],
 "last_seen": "2026-10-06"
 },
+"ongo:meathax_simple156": {
+"id": "ongo:meathax_simple156",
+"name": "Meathax_Simple156",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Meathax_Simple156.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+},
 "ongo:meathax_stoneball": {
 "id": "ongo:meathax_stoneball",
 "name": "Meathax_StoneBall",
@@ -9754,6 +9872,24 @@
 "first_recorded": "2026-10-05",
 "aliases": [],
 "last_seen": "2026-10-05"
+},
+"ongo:simple156": {
+"id": "ongo:simple156",
+"name": "Arcade-Simple156",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Arcade-Simple156.rbf",
+"repo": "meathax/meatcores",
+"url": "https://github.com/meathax/meatcores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
 },
 "ongo:skullxbones": {
 "id": "ongo:skullxbones",
@@ -11384,6 +11520,24 @@
 "repo:taitoair"
 ],
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-06"
+},
+"repo:taitol": {
+"id": "repo:taitol",
+"name": "taitol",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": null,
+"rbf": "taitol.rbf",
+"repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"url": "https://github.com/decoryah/Arcade-TaitoLSystem_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-06",
 "last_seen": "2026-10-06"
 },
 "repo:tecmo16": {
@@ -18203,6 +18357,20 @@
 "last_seen": "2026-10-06"
 }
 },
+"bbust2": {
+"repo:hyperng64": {
+"core": "repo:hyperng64",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
+"first_path": "releases/Beast Busters - Second Nightmare.mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
 "bchopper": {
 "dist:iremm72": {
 "core": "dist:iremm72",
@@ -22089,6 +22257,20 @@
 "last_seen": "2026-10-06"
 }
 },
+"cachat": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Tube-It/Cachat (Japan).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
 "cactus": {
 "kuze:nmk16_gunnail": {
 "core": "kuze:nmk16_gunnail",
@@ -23648,6 +23830,86 @@
 "first_repo": "MiSTer-devel/Arcade-ChampionBaseball_MiSTer",
 "first_path": "releases/Champion Base Ball Part-2.mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-06"
+}
+},
+"champwr": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/Champion Wrestler (World).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"champwrj": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Champion Wrestler/Champion Wrestler (Japan).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"champwru": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Champion Wrestler/Champion Wrestler (US).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"charlien": {
+"meat:simple156": {
+"core": "meat:simple156",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Charlie Ninja.mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+},
+"ongo:meathax_simple156": {
+"core": "ongo:meathax_simple156",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Charlie Ninja.mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+},
+"ongo:simple156": {
+"core": "ongo:simple156",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Charlie Ninja.mra",
+"first_recorded": "2026-10-06",
 "last_seen": "2026-10-06"
 }
 },
@@ -27085,6 +27347,20 @@
 "last_seen": "2026-10-06"
 }
 },
+"cubybop": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": true,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/Cuby Bop (Japan, location test).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
 "cuebrickj": {
 "jt:jttwin16": {
 "core": "jt:jttwin16",
@@ -27978,6 +28254,20 @@
 "first_repo": "meathax/s32multi",
 "first_path": "mra/Dark Edge (Japan).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-06"
+}
+},
+"darkmist": {
+"coinop:darkmist": {
+"core": "coinop:darkmist",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "coinop",
+"wip": false,
+"alt": false,
+"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
+"first_path": "_Arcade/The Lost Castle In Darkmist [CoC].mra",
+"first_recorded": "2026-10-06",
 "last_seen": "2026-10-06"
 }
 },
@@ -29467,6 +29757,18 @@
 "date": "2026-10-06",
 "date_quality": "git",
 "via": "jlrh",
+"wip": false,
+"alt": false,
+"first_repo": "jlrh/seibu-fpga",
+"first_path": "cores/deadang/mra/Dead Angle (FF, Seibu, 1988).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+},
+"ongo:ffdeadang": {
+"core": "ongo:ffdeadang",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "ongo",
 "wip": false,
 "alt": false,
 "first_repo": "jlrh/seibu-fpga",
@@ -34317,6 +34619,20 @@
 "last_seen": "2026-10-06"
 }
 },
+"evilston": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/Evil Stone.mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
 "excitebk": {
 "ongo:vsnes": {
 "core": "ongo:vsnes",
@@ -35487,6 +35803,34 @@
 "last_seen": "2026-10-06"
 }
 },
+"fhawk": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/Fighting Hawk (World).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"fhawkj": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Fighting Hawk/Fighting Hawk (Japan).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
 "fhboxers": {
 "dist:st-v": {
 "core": "dist:st-v",
@@ -36308,6 +36652,20 @@
 "first_repo": "MiSTer-devel/NeoGeo_MiSTer",
 "first_path": "releases/romsets.xml",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-06"
+}
+},
+"flipull": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Plotting/Flipull (Japan).mra",
+"first_recorded": "2026-10-06",
 "last_seen": "2026-10-06"
 }
 },
@@ -43467,6 +43825,32 @@
 "last_seen": "2026-10-06"
 }
 },
+"gwar": {
+"jlrh:ffgwar": {
+"core": "jlrh:ffgwar",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "jlrh",
+"wip": false,
+"alt": false,
+"first_repo": "jlrh/jlrh-misterfpga-db",
+"first_path": "_Arcade/Guerrilla War (FF, SNK, 1987).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+},
+"ongo:ffgwar": {
+"core": "ongo:ffgwar",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "jlrh/jlrh-misterfpga-db",
+"first_path": "_Arcade/Guerrilla War (FF, SNK, 1987).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
 "gwarrior": {
 "dist:bubsysrom": {
 "core": "dist:bubsysrom",
@@ -44860,6 +45244,20 @@
 "first_repo": "MiSTer-devel/Arcade-IremM62_MiSTer",
 "first_path": "releases/Horizon.mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-06"
+}
+},
+"horshoes": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/American Horseshoes (US).mra",
+"first_recorded": "2026-10-06",
 "last_seen": "2026-10-06"
 }
 },
@@ -47818,6 +48216,44 @@
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/_alternatives/_Caveman Ninja/Tatakae Genshijin Joe & Mac (Japan, Ver. 1).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-06"
+}
+},
+"joemacr": {
+"meat:simple156": {
+"core": "meat:simple156",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Joe & Mac Returns (World, Master Version 1.1, 1994.05.27).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+},
+"ongo:meathax_simple156": {
+"core": "ongo:meathax_simple156",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Joe & Mac Returns (World, Master Version 1.1, 1994.05.27).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+},
+"ongo:simple156": {
+"core": "ongo:simple156",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Joe & Mac Returns (World, Master Version 1.1, 1994.05.27).mra",
+"first_recorded": "2026-10-06",
 "last_seen": "2026-10-06"
 }
 },
@@ -51455,6 +51891,76 @@
 "last_seen": "2026-10-06"
 }
 },
+"kurikint": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/Kuri Kinton (World).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"kurikinta": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Kuri Kinton/Kuri Kinton (World, prototype).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"kurikintj": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Kuri Kinton/Kuri Kinton (Japan).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"kurikintu": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Kuri Kinton/Kuri Kinton (US).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"kurikintw": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Kuri Kinton/Kuri Kinton (US, World Games license).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
 "kurufev": {
 "dist:aleck64": {
 "core": "dist:aleck64",
@@ -51672,6 +52178,20 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Nintendo VS. System/Vs. Stroke & Match Golf (Ladies Version, set E).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-06"
+}
+},
+"lagirl": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Play Girls/LA Girl.mra",
+"first_recorded": "2026-10-06",
 "last_seen": "2026-10-06"
 }
 },
@@ -62125,6 +62645,44 @@
 "last_seen": "2026-10-06"
 }
 },
+"osman": {
+"meat:simple156": {
+"core": "meat:simple156",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Osman (World).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+},
+"ongo:meathax_simple156": {
+"core": "ongo:meathax_simple156",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Osman (World).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+},
+"ongo:simple156": {
+"core": "ongo:simple156",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Osman (World).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
 "othellos": {
 "dist:st-v": {
 "core": "dist:st-v",
@@ -63772,6 +64330,34 @@
 "first_repo": "MiSTer-devel/MRA-Alternatives_MiSTer",
 "first_path": "_alternatives/_Uniwars/Pajaro del Espacio (Spanish bootleg of UniWar S).mra",
 "first_recorded": "2026-10-05",
+"last_seen": "2026-10-06"
+}
+},
+"palamed": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/Palamedes (US).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"palamedj": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Palamedes/Palamedes (Japan).mra",
+"first_recorded": "2026-10-06",
 "last_seen": "2026-10-06"
 }
 },
@@ -65888,6 +66474,104 @@
 "first_repo": "MiSTer-devel/MRA-Alternatives_MiSTer",
 "first_path": "_alternatives/_Pleiads/Pleiads (Spanish bootleg).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-06"
+}
+},
+"plgirls": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/Play Girls.mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"plgirls2": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/Play Girls 2 (Europe).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"plgirls2j": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Play Girls 2/Play Girls 2 (Japan).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"plotting": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/Plotting (World set 1).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"plottinga": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Plotting/Plotting (World set 2, protected).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"plottingb": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Plotting/Plotting (World set 3, earliest version).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"plottingu": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Plotting/Plotting (US).mra",
+"first_recorded": "2026-10-06",
 "last_seen": "2026-10-06"
 }
 },
@@ -68457,6 +69141,90 @@
 "last_seen": "2026-10-06"
 }
 },
+"puzznic": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/Puzznic (World).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"puzznicb": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Puzznic/Puzznic (bootleg, set 1).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"puzznicba": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Puzznic/Puzznic (bootleg, set 2).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"puzznici": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Puzznic/Puzznic (Italian bootleg).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"puzznicj": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Puzznic/Puzznic (Japan).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"puzznicu": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Puzznic/Puzznic (US).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
 "pwrgoal": {
 "ongo:taitof3": {
 "core": "ongo:taitof3",
@@ -70406,6 +71174,48 @@
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_Raiga/Raiga - Strato Fighter (Japan).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-06"
+}
+},
+"raimais": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/Raimais (World, rev 1).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"raimaisj": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Raimais/Raimais (Japan, rev 1).mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
+"raimaisjo": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_alternatives/_Raimais/Raimais (Japan).mra",
+"first_recorded": "2026-10-06",
 "last_seen": "2026-10-06"
 }
 },
@@ -72706,6 +73516,20 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Road Blasters/Road Blasters (upright, German, rev X).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-06"
+}
+},
+"roadedge": {
+"repo:hyperng64": {
+"core": "repo:hyperng64",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
+"first_path": "releases/Roads Edge - Round Trip RV (rev.B).mra",
+"first_recorded": "2026-10-06",
 "last_seen": "2026-10-06"
 }
 },
@@ -93759,6 +94583,20 @@
 "last_seen": "2026-10-06"
 }
 },
+"tubeit": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-05",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/Tube-It.mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
 "tumbleb": {
 "meat:tumble": {
 "core": "meat:tumble",
@@ -100313,6 +101151,20 @@
 "last_seen": "2026-10-06"
 }
 },
+"xrally": {
+"repo:hyperng64": {
+"core": "repo:hyperng64",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
+"first_path": "releases/Xtreme Rally - Off Beat Racer!.mra",
+"first_recorded": "2026-10-06",
+"last_seen": "2026-10-06"
+}
+},
 "xsleenab": {
 "dist:xsleena": {
 "core": "dist:xsleena",
@@ -103191,6 +104043,9 @@
 "dariusu": {
 "dist": "Shooter",
 "repo": "Shooter"
+},
+"darkmist": {
+"coinop": "Platform"
 },
 "darkplnt": {
 "dist": "Shooter - Multidirectional"
