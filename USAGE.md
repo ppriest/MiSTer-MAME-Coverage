@@ -86,7 +86,10 @@ Records when each set entered MAME, in `data/mame_added.json` (committed, append
 `report` attaches `mame_added` and `mame_date` to every set and `mame_date` (earliest set) to
 every title; the "MAME and MiSTer over time" chart is the cumulative count of working arcade sets
 by those dates against the cumulative count on MiSTer. The page's "In MAME since" filter (year
-and month dropdowns, or a drag across that chart) selects titles by that earliest date.
+and month dropdowns, or a drag across that chart) selects titles by that earliest date. The
+"On MiSTer since" filter does the same with the title's first MiSTer support date (`date`, or
+`date_working` in the working-only view); titles not on MiSTer have no such date and drop out
+whenever it is set.
 
 ## The ledger (`data/ledger.json`)
 

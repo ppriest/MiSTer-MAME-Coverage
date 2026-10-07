@@ -1,8 +1,8 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-10-06 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (311 games).
+Generated 2026-10-07 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (317 games).
 
-**Agreement:** 301 of 303 deck titles are Shmup in our data (99.3%).
+**Agreement:** 307 of 309 deck titles are Shmup in our data (99.4%).
 
 ## A. Deck games our data does not call Shmup (2)
 

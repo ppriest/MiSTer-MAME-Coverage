@@ -13,7 +13,7 @@
   // Every control on the Titles, Drivers and Cores tabs, plus each tab's sort direction and the
   // open tab, so a view can be linked or restored. Only values that differ from the default are
   // written.
-  const FILTER_IDS = ["f-q", "f-cov", "f-work", "f-cat", "f-y0", "f-y1", "f-m0y", "f-m0m", "f-m1y", "f-m1m", "f-genre", "f-manu", "f-drv", "f-dcov", "f-core", "f-rot", "f-sort"];
+  const FILTER_IDS = ["f-q", "f-cov", "f-work", "f-cat", "f-y0", "f-y1", "f-m0y", "f-m0m", "f-m1y", "f-m1m", "f-a0y", "f-a0m", "f-a1y", "f-a1m", "f-genre", "f-manu", "f-drv", "f-dcov", "f-core", "f-rot", "f-sort"];
   const DRIVER_IDS = ["d-q", "d-cov", "d-genre", "d-sort"];
   const CORE_IDS = ["c-q", "c-src", "c-sort"];
   const UNMATCHED_IDS = ["u-q"];
@@ -313,6 +313,10 @@
     const mopts = Array.from({ length: 12 }, (_, i) => String(i + 1).padStart(2, "0")).map(m => opt(m, m)).join("");
     $("#f-m0y").insertAdjacentHTML("beforeend", yopts); $("#f-m1y").insertAdjacentHTML("beforeend", yopts);
     $("#f-m0m").insertAdjacentHTML("beforeend", mopts); $("#f-m1m").insertAdjacentHTML("beforeend", mopts);
+    const ayears = Array.from(new Set(S.titles.filter(t => t.date).map(t => t.date.slice(0, 4)))).sort();
+    const ayopts = ayears.map(y => opt(y, y)).join("");
+    $("#f-a0y").insertAdjacentHTML("beforeend", ayopts); $("#f-a1y").insertAdjacentHTML("beforeend", ayopts);
+    $("#f-a0m").insertAdjacentHTML("beforeend", mopts); $("#f-a1m").insertAdjacentHTML("beforeend", mopts);
     const cores = S.data.cores.slice().sort((a, b) => a.name.localeCompare(b.name));
     $("#f-core").insertAdjacentHTML("beforeend", cores.map(c => opt(c.id, `${c.name} · ${c.source}`)).join(""));
     const srcs = new Map(); S.data.cores.forEach(c => srcs.set(c.source, c.source_title));
@@ -334,6 +338,12 @@
     if (f.y1 && (!+t.year || +t.year > f.y1)) return false;
     if (f.m0 && (!t.mame_date || t.mame_date.slice(0, 7) < f.m0)) return false;
     if (f.m1 && (!t.mame_date || t.mame_date.slice(0, 7) > f.m1)) return false;
+    if (f.a0 || f.a1) {   // "On MiSTer since": first MiSTer support (of working sets when the view is working-only)
+      const ad = f.work === "working" ? t.date_working : t.date;
+      if (!ad) return false;
+      if (f.a0 && ad.slice(0, 7) < f.a0) return false;
+      if (f.a1 && ad.slice(0, 7) > f.a1) return false;
+    }
     if (f.manu && t.manufacturer !== f.manu) return false;
     if (f.genre && (t.genre || "(none)") !== f.genre) return false;
     if (f.drv && t.sourcefile !== f.drv) return false;
@@ -365,6 +375,7 @@
   function readFilters() {
     return { q: $("#f-q").value.trim().toLowerCase(), cov: $("#f-cov").value, work: $("#f-work").value, cat: $("#f-cat").value,
       y0: +$("#f-y0").value || 0, y1: +$("#f-y1").value || 0, m0: monthFrom("f-m0y", "f-m0m", "01"), m1: monthFrom("f-m1y", "f-m1m", "12"),
+      a0: monthFrom("f-a0y", "f-a0m", "01"), a1: monthFrom("f-a1y", "f-a1m", "12"),
       manu: $("#f-manu").value, genre: $("#f-genre").value, drv: $("#f-drv").value, dcov: $("#f-dcov").value, core: $("#f-core").value, rot: $("#f-rot").value, sort: $("#f-sort").value };
   }
 
