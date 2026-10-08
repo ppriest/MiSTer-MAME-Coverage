@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-07T18:41:33+00:00",
+  "generated": "2026-10-08T19:19:12+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-07T18:41:01+00:00",
+  "mister_generated": "2026-10-08T19:18:50+00:00",
   "alamone_generated": "2026-10-05T11:12:58+00:00",
-  "ledger_updated": "2026-10-07",
+  "ledger_updated": "2026-10-08",
   "ledger_runs": [
-   {
-    "date": "2026-10-05",
-    "note": "alamone 2026-10-05",
-    "cores": 1,
-    "sets": 4,
-    "pairs": 4,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-05",
     "note": "alamone 2026-10-05",
@@ -51,6 +42,15 @@
     "pairs": 35,
     "dates_improved": 2,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-08",
+    "note": "alamone 2026-10-05",
+    "cores": 10,
+    "sets": 32,
+    "pairs": 45,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
    "catver_entries": 37998,
    "mad_entries": 2995,
-   "mra_entries": 3048,
+   "mra_entries": 3067,
    "unmapped": [
     {
      "raw": "not classified",
@@ -75,7 +75,7 @@
     }
    ]
   },
-  "mame_added_updated": "2026-10-07",
+  "mame_added_updated": "2026-10-08",
   "sources": {
    "dist": "MiSTer official distribution",
    "jt": "JTCORES (jotego)",
@@ -98,7 +98,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1801
+    "mras": 1807
    },
    {
     "source": "dist",
@@ -130,7 +130,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 999
+    "mras": 1016
    },
    {
     "source": "dist",
@@ -2012,12 +2012,6 @@
    },
    {
     "source": "ongo",
-    "repo": "blahm1d/MiSTer-cores",
-    "dirs": null,
-    "mras": 0
-   },
-   {
-    "source": "ongo",
     "repo": "blahm1d/wolf-unit",
     "dirs": null,
     "mras": 0
@@ -2092,7 +2086,7 @@
     "source": "ongo",
     "repo": "jlrh/jlrh-misterfpga-db",
     "dirs": null,
-    "mras": 48
+    "mras": 57
    },
    {
     "source": "ongo",
@@ -2105,6 +2099,12 @@
     "repo": "kuzearcade/kuzecores",
     "dirs": null,
     "mras": 187
+   },
+   {
+    "source": "ongo",
+    "repo": "kyledlester/BrezzaSoft_Crystal_System_MiSTer",
+    "dirs": null,
+    "mras": 5
    },
    {
     "source": "ongo",
@@ -2122,7 +2122,7 @@
     "source": "ongo",
     "repo": "meathax/meatcores",
     "dirs": null,
-    "mras": 116
+    "mras": 118
    },
    {
     "source": "ongo",
@@ -2323,10 +2323,6 @@
     "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
-    "blahm1d/MiSTer-cores",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
     "blahm1d/wolf-unit",
     "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
@@ -2354,11 +2350,11 @@
   "counts": {
    "titles": 6824,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 1941,
+   "working_arcade_titles_covered": 1949,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5113,
-   "cores": 571,
-   "unmatched_sets": 400
+   "working_arcade_sets_covered": 5133,
+   "cores": 581,
+   "unmatched_sets": 411
   }
  },
  "cores": [
@@ -2403,7 +2399,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-26"
@@ -2447,7 +2443,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 11,
    "ntitles": 10,
    "first_date": "2026-09-06"
@@ -2469,7 +2465,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -2491,7 +2487,7 @@
    "note": "",
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-26"
@@ -2513,7 +2509,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-21"
@@ -2535,7 +2531,7 @@
    "note": "",
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-26"
@@ -2557,7 +2553,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-30"
@@ -2579,7 +2575,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-07-02"
@@ -2601,7 +2597,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 4,
    "first_date": "2026-08-08"
@@ -2623,7 +2619,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-08"
@@ -2645,7 +2641,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-23"
@@ -2667,7 +2663,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-25"
@@ -2689,7 +2685,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 6,
    "first_date": "2026-07-20"
@@ -2711,7 +2707,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-13"
@@ -2733,7 +2729,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 6,
    "first_date": "2026-07-22"
@@ -2755,7 +2751,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 3,
    "first_date": "2026-08-08"
@@ -2777,7 +2773,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 13,
    "ntitles": 6,
    "first_date": "2022-11-16"
@@ -2799,7 +2795,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 12,
    "ntitles": 6,
    "first_date": "2022-09-22"
@@ -2821,7 +2817,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 8,
    "ntitles": 1,
    "first_date": "2023-09-10"
@@ -2843,7 +2839,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2023-09-10"
@@ -2865,7 +2861,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 8,
    "ntitles": 1,
    "first_date": "2023-09-10"
@@ -2887,7 +2883,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-09-09"
@@ -2909,7 +2905,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -2931,7 +2927,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-09-30"
@@ -2953,7 +2949,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2026-07-04"
@@ -2975,7 +2971,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -2997,7 +2993,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -3019,7 +3015,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-06-16"
@@ -3041,7 +3037,7 @@
    "note": null,
    "first_recorded": "2026-10-06",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-06"
@@ -3063,7 +3059,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -3085,7 +3081,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-07-31"
@@ -3107,7 +3103,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2023-06-10"
@@ -3129,7 +3125,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-01"
@@ -3151,7 +3147,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -3173,7 +3169,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-01-15"
@@ -3195,7 +3191,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-15"
@@ -3217,7 +3213,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-22"
@@ -3239,7 +3235,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2023-09-10"
@@ -3260,7 +3256,8 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-07",
-   "last_seen": "2026-10-07",
+   "aliases": [],
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-10-06"
@@ -3282,7 +3279,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-03-31"
@@ -3304,7 +3301,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-03-31"
@@ -3326,7 +3323,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 22,
    "ntitles": 12,
    "first_date": "2023-05-13"
@@ -3348,7 +3345,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-09-09"
@@ -3370,7 +3367,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-07-31"
@@ -3392,7 +3389,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-09-09"
@@ -3414,7 +3411,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2023-03-30"
@@ -3436,7 +3433,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-31"
@@ -3458,7 +3455,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-04-02"
@@ -3480,7 +3477,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-12-25"
@@ -3502,7 +3499,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2022-09-25"
@@ -3524,7 +3521,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2023-06-02"
@@ -3546,7 +3543,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -3568,7 +3565,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-02"
@@ -3590,7 +3587,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 15,
    "ntitles": 4,
    "first_date": "2022-09-28"
@@ -3612,7 +3609,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-09-22"
@@ -3634,7 +3631,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2025-12-26"
@@ -3656,7 +3653,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2023-09-10"
@@ -3678,7 +3675,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-01"
@@ -3700,7 +3697,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-09"
@@ -3722,7 +3719,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2024-05-19"
@@ -3744,7 +3741,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 9,
    "ntitles": 3,
    "first_date": "2022-09-22"
@@ -3766,7 +3763,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-14"
@@ -3788,7 +3785,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2025-04-17"
@@ -3810,7 +3807,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-09-22"
@@ -3832,7 +3829,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-04-01"
@@ -3854,7 +3851,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2025-12-14"
@@ -3876,7 +3873,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -3898,7 +3895,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 11,
    "ntitles": 2,
    "first_date": "2023-05-26"
@@ -3920,7 +3917,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-09-18"
@@ -3942,7 +3939,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-08-02"
@@ -3964,7 +3961,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 13,
    "ntitles": 4,
    "first_date": "2022-09-22"
@@ -3988,7 +3985,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-06-15"
@@ -4012,7 +4009,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 9,
    "ntitles": 9,
    "first_date": "2026-07-18"
@@ -4036,7 +4033,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-08-22"
@@ -4060,7 +4057,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 9,
    "ntitles": 1,
    "first_date": "2020-07-17"
@@ -4084,7 +4081,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 13,
    "ntitles": 3,
    "first_date": "2019-12-19"
@@ -4106,7 +4103,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -4130,7 +4127,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2020-03-30"
@@ -4154,7 +4151,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 26,
    "ntitles": 5,
    "first_date": "2023-11-30"
@@ -4178,7 +4175,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 33,
    "ntitles": 5,
    "first_date": "2026-08-20"
@@ -4202,7 +4199,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2019-12-28"
@@ -4226,7 +4223,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 3,
    "first_date": "2022-06-07"
@@ -4250,7 +4247,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-19"
@@ -4274,7 +4271,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 14,
    "ntitles": 5,
    "first_date": "2019-12-18"
@@ -4298,7 +4295,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2022-10-04"
@@ -4322,7 +4319,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-03"
@@ -4346,7 +4343,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 3,
    "first_date": "2023-03-24"
@@ -4370,7 +4367,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -4394,7 +4391,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2020-02-16"
@@ -4418,7 +4415,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-09-17"
@@ -4442,7 +4439,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 4,
    "first_date": "2022-01-08"
@@ -4466,7 +4463,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-05-30"
@@ -4490,7 +4487,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 3,
    "first_date": "2026-02-13"
@@ -4514,7 +4511,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2019-12-18"
@@ -4540,7 +4537,7 @@
     "ongo:rmboogiewings"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-07-04"
@@ -4564,7 +4561,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-09-03"
@@ -4588,7 +4585,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2020-12-14"
@@ -4610,7 +4607,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -4634,7 +4631,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2025-01-07"
@@ -4658,7 +4655,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-02-14"
@@ -4682,7 +4679,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2021-02-14"
@@ -4706,7 +4703,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -4730,7 +4727,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 26,
    "ntitles": 10,
    "first_date": "2020-12-13"
@@ -4754,7 +4751,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 35,
    "ntitles": 5,
    "first_date": "2022-09-30"
@@ -4778,7 +4775,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2021-02-14"
@@ -4802,7 +4799,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-08-28"
@@ -4826,7 +4823,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 8,
    "ntitles": 5,
    "first_date": "2026-07-30"
@@ -4850,7 +4847,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-05-06"
@@ -4874,7 +4871,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-05-03"
@@ -4896,7 +4893,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -4920,7 +4917,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-11-15"
@@ -4944,7 +4941,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 5,
    "first_date": "2021-07-08"
@@ -4968,7 +4965,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-03"
@@ -4992,7 +4989,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2020-06-15"
@@ -5016,7 +5013,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2019-12-18"
@@ -5040,7 +5037,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 10,
    "ntitles": 2,
    "first_date": "2019-12-18"
@@ -5064,7 +5061,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-11-20"
@@ -5088,7 +5085,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-04-11"
@@ -5112,7 +5109,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2026-05-23"
@@ -5136,7 +5133,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2026-06-20"
@@ -5160,7 +5157,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-05-30"
@@ -5186,7 +5183,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 4,
    "first_date": "2026-06-11"
@@ -5210,7 +5207,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 56,
    "ntitles": 37,
    "first_date": "2026-05-18"
@@ -5234,7 +5231,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 4,
    "first_date": "2020-02-20"
@@ -5258,7 +5255,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-08-19"
@@ -5282,7 +5279,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2019-12-20"
@@ -5306,7 +5303,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -5330,7 +5327,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 13,
    "ntitles": 5,
    "first_date": "2020-06-19"
@@ -5354,7 +5351,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-01-28"
@@ -5378,7 +5375,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2020-06-19"
@@ -5400,7 +5397,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-02-14"
@@ -5424,7 +5421,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2021-06-17"
@@ -5448,7 +5445,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 15,
    "ntitles": 7,
    "first_date": "2019-12-19"
@@ -5472,7 +5469,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-30"
@@ -5496,7 +5493,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-11-16"
@@ -5520,7 +5517,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2024-02-17"
@@ -5544,7 +5541,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-11-21"
@@ -5568,7 +5565,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2021-10-25"
@@ -5592,7 +5589,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2020-01-06"
@@ -5616,7 +5613,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2023-03-27"
@@ -5640,7 +5637,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-06-10"
@@ -5665,7 +5662,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 9,
    "ntitles": 4,
    "first_date": "2026-09-05"
@@ -5689,7 +5686,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 29,
    "ntitles": 5,
    "first_date": "2019-12-19"
@@ -5713,7 +5710,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 339,
    "ntitles": 71,
    "first_date": "2019-12-18"
@@ -5737,7 +5734,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2022-08-31"
@@ -5761,7 +5758,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 8,
    "ntitles": 1,
    "first_date": "2020-01-01"
@@ -5785,7 +5782,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 28,
    "ntitles": 3,
    "first_date": "2020-11-22"
@@ -5809,7 +5806,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-08"
@@ -5833,7 +5830,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-09"
@@ -5857,7 +5854,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-07-04"
@@ -5881,7 +5878,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2021-06-05"
@@ -5905,7 +5902,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-07-15"
@@ -5929,7 +5926,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2026-07-05"
@@ -5953,7 +5950,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 98,
    "ntitles": 22,
    "first_date": "2026-04-17"
@@ -5977,7 +5974,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2022-08-03"
@@ -6001,7 +5998,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-03-23"
@@ -6025,7 +6022,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2023-11-28"
@@ -6049,7 +6046,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 20,
    "ntitles": 12,
    "first_date": "2020-06-02"
@@ -6075,7 +6072,7 @@
     "dist:m72"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 40,
    "ntitles": 14,
    "first_date": "2022-07-24"
@@ -6099,7 +6096,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 9,
    "ntitles": 3,
    "first_date": "2024-10-13"
@@ -6123,7 +6120,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 29,
    "ntitles": 13,
    "first_date": "2022-09-18"
@@ -6147,7 +6144,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2021-07-25"
@@ -6171,7 +6168,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2021-07-25"
@@ -6195,7 +6192,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-06-11"
@@ -6219,7 +6216,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-03-27"
@@ -6243,7 +6240,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-02-23"
@@ -6267,7 +6264,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2026-03-29"
@@ -6291,7 +6288,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2023-06-08"
@@ -6315,7 +6312,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-12"
@@ -6339,7 +6336,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 8,
    "ntitles": 6,
    "first_date": "2026-04-25"
@@ -6363,7 +6360,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 4,
    "first_date": "2019-12-18"
@@ -6385,7 +6382,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 9,
    "ntitles": 6,
    "first_date": "2026-07-04"
@@ -6409,7 +6406,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-07-15"
@@ -6433,7 +6430,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2026-07-19"
@@ -6455,7 +6452,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-02-14"
@@ -6479,7 +6476,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-31"
@@ -6525,7 +6522,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2020-06-28"
@@ -6549,7 +6546,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2020-02-03"
@@ -6573,7 +6570,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 12,
    "ntitles": 6,
    "first_date": "2020-01-25"
@@ -6597,7 +6594,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 10,
    "ntitles": 4,
    "first_date": "2020-01-26"
@@ -6621,7 +6618,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 6,
    "first_date": "2020-01-14"
@@ -6645,7 +6642,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 3,
    "first_date": "2020-02-02"
@@ -6669,7 +6666,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2022-08-27"
@@ -6693,7 +6690,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2019-12-18"
@@ -6717,7 +6714,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-03-22"
@@ -6741,7 +6738,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2022-12-22"
@@ -6765,7 +6762,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-03-29"
@@ -6789,7 +6786,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2025-03-16"
@@ -6811,7 +6808,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 221,
    "ntitles": 153,
    "first_date": "2019-08-11"
@@ -6837,7 +6834,7 @@
     "ongo:rmnightslashers"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-07"
@@ -6861,10 +6858,31 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 3,
    "first_date": "2020-01-06"
+  },
+  {
+   "id": "dist:offthewall",
+   "name": "OffTheWall",
+   "source": "dist",
+   "source_title": "MiSTer official distribution",
+   "channel": null,
+   "rbf": "OffTheWall.rbf",
+   "repo": "MiSTer-devel/Distribution_MiSTer",
+   "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-08",
+   "last_seen": "2026-10-08",
+   "nsets": 2,
+   "ntitles": 1,
+   "first_date": "2026-10-08"
   },
   {
    "id": "dist:pacman",
@@ -6886,7 +6904,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 41,
    "ntitles": 20,
    "first_date": "2019-12-30"
@@ -6910,7 +6928,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2021-06-10"
@@ -6934,7 +6952,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-10-02"
@@ -6958,7 +6976,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2023-01-18"
@@ -6982,7 +7000,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 25,
    "ntitles": 2,
    "first_date": "2020-05-12"
@@ -7006,7 +7024,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-27"
@@ -7028,7 +7046,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2020-05-12"
@@ -7052,7 +7070,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 11,
    "ntitles": 2,
    "first_date": "2026-07-13"
@@ -7076,7 +7094,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2021-06-10"
@@ -7100,7 +7118,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-06-10"
@@ -7124,7 +7142,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2019-12-18"
@@ -7148,7 +7166,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2020-03-03"
@@ -7172,7 +7190,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 8,
    "ntitles": 2,
    "first_date": "2026-09-26"
@@ -7196,7 +7214,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 17,
    "ntitles": 5,
    "first_date": "2026-08-22"
@@ -7221,7 +7239,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 20,
    "ntitles": 15,
    "first_date": "2026-08-16"
@@ -7245,7 +7263,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-09-01"
@@ -7269,7 +7287,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 13,
    "ntitles": 9,
    "first_date": "2021-01-02"
@@ -7293,7 +7311,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 12,
    "ntitles": 7,
    "first_date": "2026-02-28"
@@ -7319,7 +7337,7 @@
     "ongo:rmraiden"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-07-28"
@@ -7343,7 +7361,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 32,
    "ntitles": 2,
    "first_date": "2026-08-25"
@@ -7367,7 +7385,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2019-12-20"
@@ -7391,10 +7409,31 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-10-03"
+  },
+  {
+   "id": "dist:reliefpitcher",
+   "name": "ReliefPitcher",
+   "source": "dist",
+   "source_title": "MiSTer official distribution",
+   "channel": null,
+   "rbf": "ReliefPitcher.rbf",
+   "repo": "MiSTer-devel/Distribution_MiSTer",
+   "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-08",
+   "last_seen": "2026-10-08",
+   "nsets": 3,
+   "ntitles": 1,
+   "first_date": "2026-10-08"
   },
   {
    "id": "dist:ringking",
@@ -7415,7 +7454,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-27"
@@ -7439,7 +7478,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-06-10"
@@ -7463,7 +7502,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 21,
    "ntitles": 9,
    "first_date": "2019-12-19"
@@ -7487,7 +7526,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2019-12-29"
@@ -7511,7 +7550,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2024-10-24"
@@ -7535,7 +7574,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-09-28"
@@ -7561,7 +7600,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 42,
    "ntitles": 21,
    "first_date": "2020-01-04"
@@ -7585,7 +7624,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-05-14"
@@ -7609,7 +7648,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-08-09"
@@ -7633,7 +7672,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 10,
    "ntitles": 5,
    "first_date": "2026-08-14"
@@ -7657,7 +7696,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 20,
    "ntitles": 18,
    "first_date": "2020-01-03"
@@ -7681,7 +7720,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-10-02"
@@ -7705,7 +7744,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 25,
    "ntitles": 23,
    "first_date": "2024-01-21"
@@ -7729,7 +7768,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 25,
    "ntitles": 9,
    "first_date": "2026-08-23"
@@ -7755,10 +7794,31 @@
     "ongo:rmseibucupsoccer"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2026-09-11"
+  },
+  {
+   "id": "dist:shuuz",
+   "name": "Shuuz",
+   "source": "dist",
+   "source_title": "MiSTer official distribution",
+   "channel": null,
+   "rbf": "Shuuz.rbf",
+   "repo": "MiSTer-devel/Distribution_MiSTer",
+   "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-08",
+   "last_seen": "2026-10-08",
+   "nsets": 2,
+   "ntitles": 1,
+   "first_date": "2026-10-08"
   },
   {
    "id": "dist:silverland",
@@ -7779,7 +7839,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -7803,7 +7863,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-10-03"
@@ -7827,7 +7887,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-06-08"
@@ -7851,7 +7911,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2022-12-26"
@@ -7875,7 +7935,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 10,
    "ntitles": 8,
    "first_date": "2021-09-05"
@@ -7899,7 +7959,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2026-04-01"
@@ -7923,7 +7983,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2022-05-09"
@@ -7947,7 +8007,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2019-12-30"
@@ -7971,7 +8031,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-11-07"
@@ -7995,7 +8055,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-03"
@@ -8019,7 +8079,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 166,
    "ntitles": 51,
    "first_date": "2020-12-24"
@@ -8041,7 +8101,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -8065,7 +8125,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -8089,7 +8149,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -8113,7 +8173,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 43,
    "ntitles": 38,
    "first_date": "2025-06-13"
@@ -8137,7 +8197,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2025-07-21"
@@ -8161,7 +8221,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-05-27"
@@ -8185,7 +8245,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-01-05"
@@ -8209,7 +8269,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -8233,7 +8293,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2024-07-22"
@@ -8259,7 +8319,7 @@
     "ongo:rmtaitoasuka"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 30,
    "ntitles": 7,
    "first_date": "2026-09-17"
@@ -8283,7 +8343,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 63,
    "ntitles": 26,
    "first_date": "2025-05-27"
@@ -8307,7 +8367,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 28,
    "ntitles": 15,
    "first_date": "2023-06-17"
@@ -8331,7 +8391,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-08-21"
@@ -8355,7 +8415,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 4,
    "first_date": "2020-05-08"
@@ -8379,7 +8439,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-20"
@@ -8403,7 +8463,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2021-03-20"
@@ -8427,7 +8487,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2019-12-18"
@@ -8451,7 +8511,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2020-11-21"
@@ -8475,7 +8535,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-06-06"
@@ -8499,7 +8559,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-13"
@@ -8523,7 +8583,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2019-12-19"
@@ -8547,7 +8607,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-07-08"
@@ -8571,7 +8631,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-10-31"
@@ -8595,7 +8655,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-04-25"
@@ -8619,7 +8679,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2025-06-02"
@@ -8643,7 +8703,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2020-01-28"
@@ -8667,7 +8727,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 16,
    "ntitles": 5,
    "first_date": "2026-08-30"
@@ -8691,7 +8751,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2026-02-24"
@@ -8715,7 +8775,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-03-27"
@@ -8736,7 +8796,8 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-07",
-   "last_seen": "2026-10-07",
+   "aliases": [],
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-10-07"
@@ -8760,7 +8821,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 8,
    "ntitles": 1,
    "first_date": "2026-09-17"
@@ -8784,7 +8845,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2019-12-18"
@@ -8808,7 +8869,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-12-12"
@@ -8832,7 +8893,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-09-16"
@@ -8856,7 +8917,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2020-03-15"
@@ -8880,7 +8941,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2019-12-19"
@@ -8904,7 +8965,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-15"
@@ -8930,7 +8991,7 @@
    "aliases": [
     "arcfpga:aligator"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-06-30"
@@ -8954,7 +9015,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-09-10"
@@ -8978,10 +9039,31 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-29"
+  },
+  {
+   "id": "jlrh:ffbbusters",
+   "name": "ffbbusters",
+   "source": "jlrh",
+   "source_title": "jlrh",
+   "channel": null,
+   "rbf": "ffbbusters.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-08",
+   "last_seen": "2026-10-08",
+   "nsets": 5,
+   "ntitles": 1,
+   "first_date": "2026-10-07"
   },
   {
    "id": "jlrh:ffbigkarnk",
@@ -9004,7 +9086,7 @@
    "aliases": [
     "arcfpga:bigkarnk"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-01"
@@ -9030,7 +9112,7 @@
    "aliases": [
     "arcfpga:biomtoy"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-06-22"
@@ -9054,7 +9136,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-04"
@@ -9078,7 +9160,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-10-04"
@@ -9100,7 +9182,7 @@
    "note": null,
    "first_recorded": "2026-10-06",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-06"
@@ -9124,7 +9206,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-02"
@@ -9148,7 +9230,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-10"
@@ -9172,7 +9254,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 8,
    "ntitles": 1,
    "first_date": "2026-07-19"
@@ -9198,7 +9280,7 @@
    "aliases": [
     "arcfpga:glass"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-14"
@@ -9220,7 +9302,7 @@
    "note": null,
    "first_recorded": "2026-10-06",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-06"
@@ -9242,7 +9324,7 @@
    "note": "the repository holds builds or MRAs, no HDL",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-01"
@@ -9266,10 +9348,31 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-04"
+  },
+  {
+   "id": "jlrh:ffmechatt",
+   "name": "ffmechatt",
+   "source": "jlrh",
+   "source_title": "jlrh",
+   "channel": null,
+   "rbf": "ffmechatt.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-08",
+   "last_seen": "2026-10-08",
+   "nsets": 4,
+   "ntitles": 1,
+   "first_date": "2026-10-07"
   },
   {
    "id": "jlrh:ffmegaphx",
@@ -9288,7 +9391,7 @@
    "note": "the repository holds builds or MRAs, no HDL",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-25"
@@ -9312,7 +9415,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-19"
@@ -9336,7 +9439,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-25"
@@ -9358,7 +9461,7 @@
    "note": "the repository holds builds or MRAs, no HDL",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-22"
@@ -9382,7 +9485,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-18"
@@ -9404,7 +9507,7 @@
    "note": "the repository holds builds or MRAs, no HDL",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2026-10-04"
@@ -9426,7 +9529,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-10-05"
@@ -9452,7 +9555,7 @@
    "aliases": [
     "arcfpga:squash"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-06-22"
@@ -9476,7 +9579,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-08-15"
@@ -9502,7 +9605,7 @@
    "aliases": [
     "arcfpga:thoop"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-06-22"
@@ -9528,7 +9631,7 @@
    "aliases": [
     "arcfpga:thoop2"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-06-25"
@@ -9550,7 +9653,7 @@
    "note": "the repository holds builds or MRAs, no HDL",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-01"
@@ -9576,7 +9679,7 @@
    "aliases": [
     "arcfpga:wrally"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-06-20"
@@ -9602,7 +9705,7 @@
    "aliases": [
     "arcfpga:wrally2"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-01"
@@ -9626,7 +9729,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-09-30"
@@ -9652,7 +9755,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 10,
    "ntitles": 3,
    "first_date": "2019-12-22"
@@ -9676,7 +9779,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 8,
    "ntitles": 3,
    "first_date": "2019-12-22"
@@ -9700,7 +9803,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2025-07-04"
@@ -9726,7 +9829,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 21,
    "ntitles": 5,
    "first_date": "2023-05-12"
@@ -9750,7 +9853,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2019-12-22"
@@ -9774,7 +9877,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-08-16"
@@ -9798,7 +9901,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2019-12-23"
@@ -9822,7 +9925,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 12,
    "ntitles": 2,
    "first_date": "2020-08-14"
@@ -9846,7 +9949,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 8,
    "ntitles": 5,
    "first_date": "2026-03-13"
@@ -9870,7 +9973,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2023-04-14"
@@ -9894,7 +9997,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2024-08-30"
@@ -9918,7 +10021,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2019-12-22"
@@ -9942,7 +10045,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-02-27"
@@ -9966,7 +10069,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2020-11-27"
@@ -9990,7 +10093,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 10,
    "ntitles": 2,
    "first_date": "2022-01-05"
@@ -10014,7 +10117,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 157,
    "ntitles": 30,
    "first_date": "2020-05-22"
@@ -10038,7 +10141,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 18,
    "ntitles": 5,
    "first_date": "2020-12-11"
@@ -10062,7 +10165,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 321,
    "ntitles": 41,
    "first_date": "2021-06-18"
@@ -10086,7 +10189,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 17,
    "ntitles": 6,
    "first_date": "2026-06-12"
@@ -10110,7 +10213,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2019-12-22"
@@ -10134,7 +10237,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2023-07-01"
@@ -10158,7 +10261,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-07-05"
@@ -10182,7 +10285,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-08-06"
@@ -10206,7 +10309,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-09-10"
@@ -10231,7 +10334,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 9,
    "ntitles": 6,
    "first_date": "2024-12-14"
@@ -10255,7 +10358,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2023-09-01"
@@ -10279,7 +10382,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 4,
    "first_date": "2026-07-05"
@@ -10303,7 +10406,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 10,
    "ntitles": 3,
    "first_date": "2025-01-03"
@@ -10327,7 +10430,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-17"
@@ -10353,7 +10456,7 @@
     "jt:gng"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 12,
    "ntitles": 1,
    "first_date": "2019-12-22"
@@ -10377,7 +10480,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-05-16"
@@ -10401,7 +10504,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2019-12-22"
@@ -10425,7 +10528,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 9,
    "ntitles": 3,
    "first_date": "2026-09-07"
@@ -10449,7 +10552,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 3,
    "first_date": "2023-02-03"
@@ -10473,7 +10576,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 10,
    "ntitles": 2,
    "first_date": "2022-09-09"
@@ -10497,7 +10600,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-11-19"
@@ -10521,7 +10624,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 31,
    "ntitles": 8,
    "first_date": "2022-12-09"
@@ -10545,7 +10648,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2022-08-05"
@@ -10569,7 +10672,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2021-05-21"
@@ -10593,7 +10696,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2022-02-18"
@@ -10617,7 +10720,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2022-01-21"
@@ -10641,7 +10744,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2021-09-03"
@@ -10663,7 +10766,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2024-01-05"
@@ -10685,7 +10788,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2024-01-05"
@@ -10709,7 +10812,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2021-10-15"
@@ -10733,7 +10836,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 15,
    "ntitles": 2,
    "first_date": "2022-11-04"
@@ -10757,7 +10860,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2025-05-23"
@@ -10781,7 +10884,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 18,
    "ntitles": 10,
    "first_date": "2022-06-03"
@@ -10806,7 +10909,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 2,
    "first_date": "2024-02-09"
@@ -10830,7 +10933,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-04-01"
@@ -10854,7 +10957,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-07-24"
@@ -10878,7 +10981,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-01-02"
@@ -10904,7 +11007,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 19,
    "ntitles": 4,
    "first_date": "2022-04-08"
@@ -10928,7 +11031,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 24,
    "ntitles": 3,
    "first_date": "2024-07-27"
@@ -10952,7 +11055,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2022-03-18"
@@ -10976,7 +11079,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-08-19"
@@ -11000,7 +11103,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2021-04-04"
@@ -11024,7 +11127,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 12,
    "ntitles": 1,
    "first_date": "2025-11-07"
@@ -11048,7 +11151,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 34,
    "ntitles": 15,
    "first_date": "2021-06-11"
@@ -11072,7 +11175,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 80,
    "ntitles": 29,
    "first_date": "2021-07-30"
@@ -11096,7 +11199,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 29,
    "ntitles": 10,
    "first_date": "2024-05-24"
@@ -11120,7 +11223,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2020-08-10"
@@ -11144,7 +11247,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2021-12-31"
@@ -11168,7 +11271,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 2,
    "first_date": "2020-04-15"
@@ -11192,7 +11295,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2020-08-16"
@@ -11216,7 +11319,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2022-09-30"
@@ -11240,7 +11343,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 39,
    "ntitles": 19,
    "first_date": "2023-10-31"
@@ -11265,7 +11368,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 22,
    "ntitles": 3,
    "first_date": "2023-08-11"
@@ -11289,7 +11392,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2026-10-02"
@@ -11313,7 +11416,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 2,
    "first_date": "2022-03-11"
@@ -11337,7 +11440,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 10,
    "ntitles": 5,
    "first_date": "2026-08-30"
@@ -11362,7 +11465,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 15,
    "ntitles": 8,
    "first_date": "2025-04-25"
@@ -11387,7 +11490,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 24,
    "ntitles": 4,
    "first_date": "2023-08-18"
@@ -11412,7 +11515,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 8,
    "ntitles": 2,
    "first_date": "2024-04-07"
@@ -11436,7 +11539,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2019-12-22"
@@ -11460,7 +11563,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2022-04-15"
@@ -11484,7 +11587,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 12,
    "ntitles": 2,
    "first_date": "2020-08-02"
@@ -11508,7 +11611,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 11,
    "ntitles": 4,
    "first_date": "2024-12-31"
@@ -11532,7 +11635,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2022-05-06"
@@ -11556,7 +11659,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-16"
@@ -11580,7 +11683,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-09-27"
@@ -11604,7 +11707,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2024-11-08"
@@ -11628,7 +11731,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2024-09-06"
@@ -11652,7 +11755,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 11,
    "ntitles": 1,
    "first_date": "2024-10-11"
@@ -11676,7 +11779,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2021-12-24"
@@ -11702,7 +11805,7 @@
    "aliases": [
     "ongo:kuze_ginganin"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-09-24"
@@ -11728,7 +11831,7 @@
    "aliases": [
     "ongo:kuze_jalecoms1bcd"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 16,
    "ntitles": 8,
    "first_date": "2026-09-20"
@@ -11754,7 +11857,7 @@
    "aliases": [
     "ongo:kuze_jalecoms1z"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-09-23"
@@ -11780,7 +11883,7 @@
    "aliases": [
     "ongo:kuze_namcos2_lw"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-09-26"
@@ -11806,7 +11909,7 @@
    "aliases": [
     "ongo:kuze_namcos2_mh"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-09-26"
@@ -11832,7 +11935,7 @@
    "aliases": [
     "ongo:kuze_namcos2_sg"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2026-09-26"
@@ -11858,7 +11961,7 @@
    "aliases": [
     "ongo:kuze_namcos2_std"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 49,
    "ntitles": 22,
    "first_date": "2026-09-26"
@@ -11884,7 +11987,7 @@
    "aliases": [
     "ongo:kuze_namcos2_sz"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 2,
    "first_date": "2026-09-26"
@@ -11910,7 +12013,7 @@
    "aliases": [
     "ongo:kuze_nmk16_afega"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 27,
    "ntitles": 6,
    "first_date": "2026-09-11"
@@ -11936,7 +12039,7 @@
    "aliases": [
     "ongo:kuze_nmk16_gunnail"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 53,
    "ntitles": 21,
    "first_date": "2026-09-09"
@@ -11962,7 +12065,7 @@
    "aliases": [
     "ongo:kuze_nmk16_macross2"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 14,
    "ntitles": 3,
    "first_date": "2026-09-06"
@@ -11988,7 +12091,7 @@
    "aliases": [
     "ongo:kuze_nmk16_raphero"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-09-09"
@@ -12014,7 +12117,7 @@
    "aliases": [
     "ongo:kuze_nmkbp964"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-09-24"
@@ -12040,7 +12143,7 @@
    "aliases": [
     "ongo:kuze_sandscrp"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-09-19"
@@ -12062,7 +12165,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -12088,7 +12191,7 @@
     "ongo:meathax_appoooh"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-09-15"
@@ -12112,10 +12215,31 @@
     "ongo:meathax_bucky"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-12"
+  },
+  {
+   "id": "meat:crystalsystem",
+   "name": "CrystalSystem",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-CrystalSystem.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-08",
+   "last_seen": "2026-10-08",
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-04"
   },
   {
    "id": "meat:docastle",
@@ -12136,7 +12260,7 @@
     "ongo:meathax_docastle"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 9,
    "ntitles": 6,
    "first_date": "2026-07-28"
@@ -12162,7 +12286,7 @@
     "ongo:meathax_drmicro"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-06"
@@ -12188,7 +12312,7 @@
    "aliases": [
     "ongo:meathax_escapekids"
    ],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-08-18"
@@ -12212,7 +12336,7 @@
     "ongo:meathax_i-robot"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-09"
@@ -12236,7 +12360,7 @@
     "ongo:meathax_ikki"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-07-28"
@@ -12260,7 +12384,7 @@
     "ongo:meathax_mcr68"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 4,
    "first_date": "2026-09-01"
@@ -12282,7 +12406,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-09-24"
@@ -12304,7 +12428,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-30"
@@ -12326,7 +12450,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-22"
@@ -12348,7 +12472,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-08-06"
@@ -12374,7 +12498,7 @@
     "ongo:meathax_segasystem32"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 38,
    "ntitles": 15,
    "first_date": "2026-07-18"
@@ -12400,7 +12524,7 @@
     "ongo:meathax_segasystem32multi"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 10,
    "ntitles": 4,
    "first_date": "2026-07-18"
@@ -12422,8 +12546,8 @@
    "note": null,
    "first_recorded": "2026-10-06",
    "aliases": [],
-   "last_seen": "2026-10-07",
-   "nsets": 3,
+   "last_seen": "2026-10-08",
+   "nsets": 4,
    "ntitles": 3,
    "first_date": "2026-10-06"
   },
@@ -12448,7 +12572,7 @@
     "ongo:meathax_ssv"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 10,
    "ntitles": 10,
    "first_date": "2026-07-23"
@@ -12472,7 +12596,7 @@
     "ongo:meathax_stoneball"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-10-03"
@@ -12496,7 +12620,7 @@
     "ongo:meathax_stunrunner"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-26"
@@ -12518,7 +12642,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-09"
@@ -12543,7 +12667,7 @@
     "ongo:meathax_tumble"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 12,
    "ntitles": 11,
    "first_date": "2026-10-02"
@@ -12567,7 +12691,7 @@
     "ongo:meathax_viostorm"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2026-10-02"
@@ -12589,7 +12713,7 @@
    "note": "",
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-28"
@@ -12633,7 +12757,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-08"
@@ -12655,7 +12779,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 7,
    "first_date": "2023-04-05"
@@ -12705,6 +12829,48 @@
    "first_date": "2026-09-26"
   },
   {
+   "id": "ongo:crystal",
+   "name": "Crystal",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "Crystal.rbf",
+   "repo": "OngoGablogian/MiSTer_Ongo",
+   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-08",
+   "last_seen": "2026-10-08",
+   "nsets": 3,
+   "ntitles": 3,
+   "first_date": "2026-10-04"
+  },
+  {
+   "id": "ongo:crystalsystem",
+   "name": "CrystalSystem",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "Arcade-CrystalSystem.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-08",
+   "last_seen": "2026-10-08",
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-04"
+  },
+  {
    "id": "ongo:ctribe",
    "name": "ctribe_mister",
    "source": "ongo",
@@ -12721,7 +12887,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2025-06-25"
@@ -12743,7 +12909,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2025-06-25"
@@ -12765,7 +12931,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-12-28"
@@ -12787,10 +12953,31 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-09-16"
+  },
+  {
+   "id": "ongo:ffbbusters",
+   "name": "ffbbusters",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "ffbbusters.rbf",
+   "repo": "jlrh/jlrh-misterfpga-db",
+   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-08",
+   "last_seen": "2026-10-08",
+   "nsets": 5,
+   "ntitles": 1,
+   "first_date": "2026-10-07"
   },
   {
    "id": "ongo:ffcheqflag",
@@ -12831,7 +13018,7 @@
    "note": null,
    "first_recorded": "2026-10-06",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-06"
@@ -12853,7 +13040,7 @@
    "note": null,
    "first_recorded": "2026-10-06",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-06"
@@ -12903,6 +13090,27 @@
    "first_date": "2026-10-04"
   },
   {
+   "id": "ongo:ffmechatt",
+   "name": "ffmechatt",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "ffmechatt.rbf",
+   "repo": "jlrh/jlrh-misterfpga-db",
+   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-08",
+   "last_seen": "2026-10-08",
+   "nsets": 4,
+   "ntitles": 1,
+   "first_date": "2026-10-07"
+  },
+  {
    "id": "ongo:ffoverdriv",
    "name": "ffoverdriv",
    "source": "ongo",
@@ -12941,7 +13149,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-10-05"
@@ -13007,7 +13215,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 28,
    "ntitles": 13,
    "first_date": "2026-09-01"
@@ -13029,7 +13237,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-17"
@@ -13073,7 +13281,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-21"
@@ -13095,7 +13303,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 4,
    "first_date": "2026-08-20"
@@ -13117,7 +13325,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-08-17"
@@ -13139,7 +13347,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-11"
@@ -13183,7 +13391,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-09-16"
@@ -13205,7 +13413,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 2,
    "first_date": "2026-09-16"
@@ -13227,7 +13435,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2026-09-24"
@@ -13249,7 +13457,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -13271,7 +13479,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2026-08-06"
@@ -13293,8 +13501,8 @@
    "note": null,
    "first_recorded": "2026-10-06",
    "aliases": [],
-   "last_seen": "2026-10-07",
-   "nsets": 3,
+   "last_seen": "2026-10-08",
+   "nsets": 4,
    "ntitles": 3,
    "first_date": "2026-10-06"
   },
@@ -13337,7 +13545,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2026-09-09"
@@ -13381,7 +13589,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-07-28"
@@ -13403,7 +13611,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 8,
    "ntitles": 3,
    "first_date": "2026-08-15"
@@ -13425,7 +13633,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-07-16"
@@ -13447,7 +13655,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -13469,7 +13677,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 16,
    "ntitles": 4,
    "first_date": "2026-09-16"
@@ -13491,7 +13699,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 9,
    "ntitles": 3,
    "first_date": "2026-08-22"
@@ -13513,7 +13721,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 11,
    "ntitles": 3,
    "first_date": "2026-09-17"
@@ -13557,8 +13765,8 @@
    "note": null,
    "first_recorded": "2026-10-06",
    "aliases": [],
-   "last_seen": "2026-10-07",
-   "nsets": 3,
+   "last_seen": "2026-10-08",
+   "nsets": 4,
    "ntitles": 3,
    "first_date": "2026-10-06"
   },
@@ -13623,7 +13831,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 35,
    "ntitles": 11,
    "first_date": "2026-07-13"
@@ -13645,7 +13853,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 36,
    "ntitles": 14,
    "first_date": "2026-08-02"
@@ -13667,7 +13875,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-08-30"
@@ -13689,7 +13897,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 35,
    "ntitles": 14,
    "first_date": "2026-09-02"
@@ -13711,7 +13919,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 36,
    "ntitles": 34,
    "first_date": "2026-09-08"
@@ -13733,7 +13941,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-29"
@@ -13799,7 +14007,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 52,
    "ntitles": 34,
    "first_date": "2025-12-22"
@@ -13821,7 +14029,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2025-06-25"
@@ -13843,7 +14051,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-07-05"
@@ -13865,7 +14073,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-09-13"
@@ -13887,7 +14095,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-13"
@@ -13909,7 +14117,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2026-09-23"
@@ -13931,7 +14139,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 51,
    "ntitles": 22,
    "first_date": "2026-07-18"
@@ -13953,7 +14161,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 12,
    "ntitles": 3,
    "first_date": "2026-07-18"
@@ -13975,7 +14183,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 17,
    "ntitles": 5,
    "first_date": "2026-08-29"
@@ -13997,7 +14205,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 28,
    "ntitles": 7,
    "first_date": "2026-08-29"
@@ -14021,7 +14229,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-10-04"
@@ -14045,7 +14253,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 3,
    "first_date": "2026-10-03"
@@ -14069,7 +14277,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 13,
    "ntitles": 2,
    "first_date": "2026-09-25"
@@ -14093,7 +14301,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 5,
    "ntitles": 3,
    "first_date": "2026-09-28"
@@ -14117,7 +14325,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2022-07-24"
@@ -14141,7 +14349,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 40,
    "ntitles": 26,
    "first_date": "2026-09-26"
@@ -14165,7 +14373,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 8,
    "ntitles": 1,
    "first_date": "2022-07-24"
@@ -14189,7 +14397,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-06-01"
@@ -14213,7 +14421,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-10-04"
@@ -14237,7 +14445,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-08"
@@ -14261,7 +14469,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 41,
    "ntitles": 11,
    "first_date": "2026-09-27"
@@ -14287,7 +14495,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 10,
    "ntitles": 3,
    "first_date": "2026-10-04"
@@ -14311,7 +14519,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2020-01-12"
@@ -14335,7 +14543,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2020-07-14"
@@ -14359,7 +14567,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 24,
    "ntitles": 9,
    "first_date": "2026-09-28"
@@ -14383,7 +14591,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-10-03"
@@ -14407,7 +14615,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-10-04"
@@ -14434,7 +14642,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 29,
    "ntitles": 5,
    "first_date": "2019-12-18"
@@ -14461,7 +14669,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 339,
    "ntitles": 71,
    "first_date": "2019-12-18"
@@ -14485,7 +14693,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 12,
    "ntitles": 3,
    "first_date": "2022-07-24"
@@ -14509,7 +14717,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-24"
@@ -14533,7 +14741,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2020-02-29"
@@ -14557,7 +14765,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-07"
@@ -14581,7 +14789,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 7,
    "first_date": "2026-09-20"
@@ -14605,7 +14813,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 13,
    "ntitles": 10,
    "first_date": "2026-09-13"
@@ -14629,7 +14837,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2026-09-26"
@@ -14653,7 +14861,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-30"
@@ -14677,7 +14885,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-07-02"
@@ -14701,7 +14909,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-28"
@@ -14725,7 +14933,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 22,
    "ntitles": 11,
    "first_date": "2026-09-19"
@@ -14771,7 +14979,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-06-02"
@@ -14795,7 +15003,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -14819,7 +15027,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 21,
    "ntitles": 10,
    "first_date": "2026-09-25"
@@ -14843,7 +15051,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 15,
    "ntitles": 8,
    "first_date": "2026-09-30"
@@ -14867,7 +15075,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 2,
    "first_date": "2026-10-04"
@@ -14891,7 +15099,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-28"
@@ -14915,7 +15123,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 2,
    "first_date": "2026-10-01"
@@ -14939,7 +15147,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2020-05-30"
@@ -14961,7 +15169,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -15009,7 +15217,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-08-12"
@@ -15033,7 +15241,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 32,
    "ntitles": 2,
    "first_date": "2026-08-09"
@@ -15059,7 +15267,7 @@
     "repo:rayforce"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 36,
    "ntitles": 34,
    "first_date": "2026-08-09"
@@ -15084,7 +15292,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 16,
    "ntitles": 11,
    "first_date": "2026-04-18"
@@ -15108,7 +15316,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 13,
    "ntitles": 3,
    "first_date": "2026-08-31"
@@ -15132,7 +15340,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2025-11-01"
@@ -15180,7 +15388,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 19,
    "ntitles": 5,
    "first_date": "2026-08-27"
@@ -15204,7 +15412,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 51,
    "ntitles": 5,
    "first_date": "2026-08-01"
@@ -15228,7 +15436,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 34,
    "ntitles": 27,
    "first_date": "2026-09-10"
@@ -15252,7 +15460,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 10,
    "ntitles": 6,
    "first_date": "2026-03-13"
@@ -15276,7 +15484,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 38,
    "ntitles": 14,
    "first_date": "2026-08-18"
@@ -15302,7 +15510,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 166,
    "ntitles": 51,
    "first_date": "2020-12-24"
@@ -15326,7 +15534,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2020-01-18"
@@ -15350,7 +15558,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2020-01-01"
@@ -15398,7 +15606,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 48,
    "ntitles": 23,
    "first_date": "2026-09-02"
@@ -15425,7 +15633,7 @@
     "repo:taitoair"
    ],
    "first_recorded": "2026-10-04",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-31"
@@ -15447,7 +15655,7 @@
    "note": null,
    "first_recorded": "2026-10-06",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 35,
    "ntitles": 13,
    "first_date": "2026-10-05"
@@ -15471,7 +15679,7 @@
    "note": null,
    "first_recorded": "2026-10-05",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 7,
    "ntitles": 3,
    "first_date": "2026-10-03"
@@ -15495,7 +15703,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-05-31"
@@ -15519,7 +15727,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 11,
    "ntitles": 2,
    "first_date": "2023-04-01"
@@ -15541,7 +15749,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-26"
@@ -15628,7 +15836,8 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-07",
-   "last_seen": "2026-10-07",
+   "aliases": [],
+   "last_seen": "2026-10-08",
    "nsets": 29,
    "ntitles": 21,
    "first_date": "2026-10-06"
@@ -15674,7 +15883,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-17"
@@ -15698,7 +15907,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-30"
@@ -15722,7 +15931,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 14,
    "ntitles": 1,
    "first_date": "2026-09-02"
@@ -15746,7 +15955,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-09-03"
@@ -15770,7 +15979,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-09"
@@ -15794,7 +16003,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 20,
    "ntitles": 3,
    "first_date": "2026-08-21"
@@ -15818,7 +16027,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-08",
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-28"
@@ -16507,11 +16716,13 @@
   {
    "sourcefile": "atari/offtwall.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 2,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 2,
+   "cores": [
+    "dist:offthewall"
+   ],
+   "first": "2026-10-08"
   },
   {
    "sourcefile": "atari/orbit.cpp",
@@ -16566,11 +16777,13 @@
   {
    "sourcefile": "atari/relief.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 3,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 3,
+   "cores": [
+    "dist:reliefpitcher"
+   ],
+   "first": "2026-10-08"
   },
   {
    "sourcefile": "atari/runaway.cpp",
@@ -16595,11 +16808,13 @@
   {
    "sourcefile": "atari/shuuz.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 2,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 2,
+   "cores": [
+    "dist:shuuz"
+   ],
+   "first": "2026-10-08"
   },
   {
    "sourcefile": "atari/skullxbo.cpp",
@@ -17802,7 +18017,7 @@
    "titles": 5,
    "covered": 3,
    "sets": 11,
-   "sets_covered": 3,
+   "sets_covered": 4,
    "cores": [
     "meat:simple156",
     "ongo:meathax_simple156",
@@ -20334,11 +20549,15 @@
   {
    "sourcefile": "misc/crystal.cpp",
    "titles": 4,
-   "covered": 0,
+   "covered": 3,
    "sets": 4,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 3,
+   "cores": [
+    "meat:crystalsystem",
+    "ongo:crystal",
+    "ongo:crystalsystem"
+   ],
+   "first": "2026-10-04"
   },
   {
    "sourcefile": "misc/cubeqst.cpp",
@@ -23216,11 +23435,14 @@
   {
    "sourcefile": "snk/bbusters.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 5,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 5,
+   "cores": [
+    "jlrh:ffbbusters",
+    "ongo:ffbbusters"
+   ],
+   "first": "2026-10-07"
   },
   {
    "sourcefile": "snk/drderby.cpp",
@@ -23265,11 +23487,14 @@
   {
    "sourcefile": "snk/mechatt.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 4,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 4,
+   "cores": [
+    "jlrh:ffmechatt",
+    "ongo:ffmechatt"
+   ],
+   "first": "2026-10-07"
   },
   {
    "sourcefile": "snk/miconkit.cpp",
@@ -25615,6 +25840,12 @@
    ]
   },
   {
+   "set": "akatana_p",
+   "cores": [
+    "ongo:ikacore_cv1k"
+   ]
+  },
+  {
    "set": "alcon_v",
    "cores": [
     "dist:slapfight"
@@ -25910,7 +26141,25 @@
    ]
   },
   {
+   "set": "ddpdfk_p",
+   "cores": [
+    "ongo:ikacore_cv1k"
+   ]
+  },
+  {
    "set": "ddpsdoj",
+   "cores": [
+    "ongo:ikacore_cv1k"
+   ]
+  },
+  {
+   "set": "ddpsdoj_p",
+   "cores": [
+    "ongo:ikacore_cv1k"
+   ]
+  },
+  {
+   "set": "deathsml_p",
    "cores": [
     "ongo:ikacore_cv1k"
    ]
@@ -25931,6 +26180,12 @@
    "set": "dfeveronnd",
    "cores": [
     "dist:cave"
+   ]
+  },
+  {
+   "set": "dfkbl_p",
+   "cores": [
+    "ongo:ikacore_cv1k"
    ]
   },
   {
@@ -26042,6 +26297,12 @@
    ]
   },
   {
+   "set": "espgal2_p",
+   "cores": [
+    "ongo:ikacore_cv1k"
+   ]
+  },
+  {
    "set": "esprade_fp",
    "cores": [
     "dist:cave"
@@ -26111,6 +26372,24 @@
    "set": "fstpman2",
    "cores": [
     "dist:pacman"
+   ]
+  },
+  {
+   "set": "futari15_p",
+   "cores": [
+    "ongo:ikacore_cv1k"
+   ]
+  },
+  {
+   "set": "futaribl_p",
+   "cores": [
+    "ongo:ikacore_cv1k"
+   ]
+  },
+  {
+   "set": "futariblj_p",
+   "cores": [
+    "ongo:ikacore_cv1k"
    ]
   },
   {
@@ -26462,6 +26741,12 @@
    ]
   },
   {
+   "set": "matsuri15_p",
+   "cores": [
+    "ongo:ikacore_cv1k"
+   ]
+  },
+  {
    "set": "mazeman",
    "cores": [
     "dist:pacman"
@@ -26519,6 +26804,12 @@
    "set": "mshvsf_2",
    "cores": [
     "jt:jtcps2"
+   ]
+  },
+  {
+   "set": "mushisam_p",
+   "cores": [
+    "ongo:ikacore_cv1k"
    ]
   },
   {
