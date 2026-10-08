@@ -2,7 +2,7 @@ name: Refresh coverage data
 
 on:
   schedule:
-    - cron: "17 5 * * 1"   # Mondays, after alamone's weekly refresh
+    - cron: "17 5 * * *"   # daily; picks up new MRAs and builds as they appear
   workflow_dispatch:
 
 permissions:

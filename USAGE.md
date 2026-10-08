@@ -239,7 +239,7 @@ Everything the page needs is static and committed under `docs/`: `index.html`, `
 the folder is ever served by GitHub Pages, which strips underscore paths otherwise).
 
 The live site is **https://mister-mame-coverage-docs.vercel.app/**, a Vercel project whose root
-directory is `docs/` with no build step; it redeploys on every push to `main`, so the weekly
+directory is `docs/` with no build step; it redeploys on every push to `main`, so the daily
 data refresh goes live on its own. The data files are plain URLs next to the page
 (`https://mister-mame-coverage-docs.vercel.app/data/coverage.json`) and can be consumed by other
 tools. Nothing in the page depends on the host: any static file server pointed at `docs/` works.
@@ -253,7 +253,7 @@ be linked.
 
 ## Keeping it fresh
 
-`.github/workflows/update.yml` runs every Monday (after alamone's weekly refresh) and on demand:
+`.github/workflows/update.yml` runs daily (05:17 UTC) and on demand:
 it runs `python -m mmc build`, then commits `data/`, `docs/data/` and `reports/` if anything
 changed. Runs are serialised (`concurrency`). If the push is rejected because `main` moved during
 the run (for example a PR merged meanwhile), the job resets to the new `origin/main` and rebuilds

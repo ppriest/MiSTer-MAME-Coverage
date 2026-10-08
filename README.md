@@ -7,7 +7,7 @@ filters, sorting and charts, served as static files from `docs/`.
 **Live page:** https://mister-mame-coverage-docs.vercel.app/
 
 **Operating manual:** [USAGE.md](USAGE.md) covers every command and option, the ledger's merge
-rules, how to add sources, hosting and the weekly refresh.
+rules, how to add sources, hosting and the daily refresh.
 
 ## What it does
 
@@ -97,7 +97,7 @@ Everything the page needs is static and committed: `docs/index.html`, `docs/app.
 https://mister-mame-coverage-docs.vercel.app/, redeploying on every push to `main`; any static
 host (GitHub Pages, Netlify, an S3 bucket) would serve the same folder unchanged. The scripts that
 produce the data live in the same repository (`mmc/`), and `.github/workflows/update.yml` re-runs
-them weekly, committing the updated ledger and page data when anything changed.
+them daily, committing the updated ledger and page data when anything changed.
 
 ## Layout
 
