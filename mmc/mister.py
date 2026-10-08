@@ -78,6 +78,17 @@ SUPERSEDED_CORES = {"repo:hyperng64": "ppriest:hyperng64"}      # old id -> repl
 BINARY_ONLY_CORES: set[str] = set()       # core ids forced binary-only although a source repo is linked
 SOURCE_AVAILABLE_CORES: set[str] = set()  # core ids with public source that the data does not show
 HDL_EXTENSIONS = {"v", "sv", "vhd", "vhdl", "qsf", "qip", "qpf"}
+# Source repositories of cores whose MRAs/builds are published elsewhere (the official distribution
+# lists the build; the source lives in its own MiSTer-devel repository). core id -> repository.
+SOURCE_REPOS = {
+    "dist:asteroidsdeluxe": "MiSTer-devel/Arcade-AsteroidsDeluxe_MiSTer",
+    "dist:lunarlander": "MiSTer-devel/Arcade-LunarLander_MiSTer",
+    "dist:marblemadness2": "MiSTer-devel/Arcade-MarbleMadness2_MiSTer",
+    "dist:offthewall": "MiSTer-devel/Arcade-OffTheWall_MiSTer",
+    "dist:reliefpitcher": "MiSTer-devel/Arcade-ReliefPitcher_MiSTer",
+    "dist:shuuz": "MiSTer-devel/Arcade-Shuuz_MiSTer",
+    "dist:victory": "MiSTer-devel/Arcade-Victory_MiSTer",
+}
 REPO_SOURCE_FILE = os.path.join(paths.DATA, "repo_source.json")
 
 
@@ -116,6 +127,10 @@ def scan_repo_sources(repos) -> dict[str, bool]:
     known = load_repo_source()
     for full in sorted(set(repos)):
         d = repo_dir(full)
+        if not os.path.isdir(d) and full in SOURCE_REPOS.values():
+            os.makedirs(paths.REPOS, exist_ok=True)   # source-only repositories: tree is enough
+            subprocess.run(["git", "clone", "-q", "--filter=blob:none", "--no-checkout", "--depth", "1",
+                            f"https://github.com/{full}", d], stderr=subprocess.DEVNULL)
         if not os.path.isdir(d):
             continue
         try:
@@ -123,7 +138,7 @@ def scan_repo_sources(repos) -> dict[str, bool]:
                                             text=True, stderr=subprocess.DEVNULL).splitlines()
         except (subprocess.CalledProcessError, OSError):
             continue
-        known[full] = any(n.rsplit(".", 1)[-1].lower() in HDL_EXTENSIONS for n in names if "." in n)
+        known[full] = any(n.rsplit(".", 1)[-1].lower() in HDL_EXTENSIONS for n in names if "." in n and not n.startswith("games/"))   # games/: disk images (.vhd)
     with open(REPO_SOURCE_FILE, "w", encoding="utf-8") as f:
         json.dump(dict(sorted(known.items())), f, indent=1)
         f.write("\n")
@@ -136,7 +151,7 @@ def is_binary_only(core: dict, repos=(), repo_source: dict | None = None) -> boo
         return True
     if core["id"] in SOURCE_AVAILABLE_CORES:
         return False
-    tied = {r for r in [core.get("repo"), *repos] if r}
+    tied = {r for r in [core.get("repo"), SOURCE_REPOS.get(core["id"]), *repos] if r}
     if not tied:
         return True
     repo_source = repo_source or {}
