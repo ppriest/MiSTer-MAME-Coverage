@@ -273,7 +273,8 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
     unmatched: list[dict] = []
     for setn, recs in support.items():
         if setn not in machines:
-            unmatched.append({"set": setn, "cores": sorted(recs)})
+            ids = sorted(c for c in recs if not c.startswith("ongo:")) or sorted(recs)
+            unmatched.append({"set": setn, "cores": ids})
     # Every machine that is arcade/gambling, or that MiSTer loads regardless of category.
     for name, m in machines.items():
         if m.get("isbios"):  # "Acclaim ZN-1", "Neo-Geo" and the like are not games
@@ -285,7 +286,10 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
         if parent not in machines:
             parent = name
         t = titles.setdefault(parent, {"name": parent, "sets": []})
-        recs = support.get(name, {})
+        all_recs = support.get(name, {})
+        # MiSTer_Ongo only republishes other developers' builds: it is shown for a set only when
+        # no other source supports it.
+        recs = {c: r for c, r in all_recs.items() if not c.startswith("ongo:")} or all_recs
         t["sets"].append({
             "name": name,
             "desc": m["desc"],
@@ -298,8 +302,8 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
             "mame_date": added.get(name, (None, None))[1],
             "cores": [{k: r.get(k) for k in ("core", "date", "date_quality", "via", "wip", "alt")}
                       for r in sorted(recs.values(), key=lambda r: (r["date"] or "9999", r["core"]))],
-            "date": earliest(recs.values()),
-            "support": support_of(recs),
+            "date": earliest(all_recs.values()),
+            "support": support_of(all_recs),
         })
 
     out_titles = []
@@ -337,8 +341,8 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
             "covered_working": bool(covered_working),
             "support": best(s["support"] for s in sets),
             "support_working": best(s["support"] for s in working_sets),
-            "date": earliest(r for s in sets for r in s["cores"]),
-            "date_working": earliest(r for s in working_sets for r in s["cores"]),
+            "date": min((s["date"] for s in sets if s["date"]), default=None),
+            "date_working": min((s["date"] for s in working_sets if s["date"]), default=None),
             "mame_date": min((s["mame_date"] for s in sets if s["mame_date"]), default=None),
             "cores": all_cores,
             "sets": sets,
@@ -387,6 +391,9 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
         oc["ntitles"] = len(core_titles[cid])
         oc["first_date"] = core_first.get(cid)
         out_cores.append(oc)
+    # Ongo cores that no set is shown under any more are dropped from the core list.
+    shown = {r["core"] for t in out_titles for st in t["sets"] for r in st["cores"]}
+    out_cores = [c for c in out_cores if c["source"] != "ongo" or c["id"] in shown]
     out_cores.sort(key=lambda c: (c["source"], c["name"].lower()))
 
     working_arcade = [t for t in out_titles if t["category"] == "arcade" and t["working"]]

@@ -91,6 +91,12 @@ and month dropdowns, or a drag across that chart) selects titles by that earlies
 `date_working` in the working-only view); titles not on MiSTer have no such date and drop out
 whenever it is set.
 
+## Ongo copies
+
+MiSTer_Ongo only republishes other developers' builds. `report` shows an Ongo core on a set only
+when no other source supports that set (its date and source/binary status still count), and drops
+Ongo cores that no set is shown under, so each build is listed under its own developer.
+
 ## Binary-only support
 
 A core is **binary-only** when no public source is known for it: none of the repositories tied to

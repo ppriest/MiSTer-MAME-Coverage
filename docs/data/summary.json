@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-08T23:19:29+00:00",
+  "generated": "2026-10-08T23:21:32+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
   "mister_generated": "2026-10-08T23:19:22+00:00",
@@ -2328,7 +2328,7 @@
    "working_arcade_sets_covered": 5146,
    "working_arcade_titles_source": 1717,
    "working_arcade_titles_binary_only": 245,
-   "cores": 598,
+   "cores": 567,
    "binary_only_cores": 137,
    "unmatched_sets": 411
   }
@@ -13529,29 +13529,6 @@
    "first_date": "2026-07-28"
   },
   {
-   "id": "ongo:batman",
-   "name": "Batman",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Batman.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": true,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-09-25"
-  },
-  {
    "id": "ongo:battlantis",
    "name": "Battlantis",
    "source": "ongo",
@@ -13593,55 +13570,9 @@
    "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
-   "nsets": 7,
-   "ntitles": 7,
+   "nsets": 1,
+   "ntitles": 1,
    "first_date": "2023-04-05"
-  },
-  {
-   "id": "ongo:blahm1d_invasion",
-   "name": "blahm1d_invasion",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "blahm1d_invasion.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": true,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-09-26"
-  },
-  {
-   "id": "ongo:blahm1d_mk4",
-   "name": "blahm1d_mk4",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "blahm1d_mk4.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": true,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-09-26"
   },
   {
    "id": "ongo:crystal",
@@ -13662,32 +13593,9 @@
    "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": false,
-   "nsets": 3,
-   "ntitles": 3,
-   "first_date": "2026-10-04"
-  },
-  {
-   "id": "ongo:crystalsystem",
-   "name": "CrystalSystem",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Arcade-CrystalSystem.rbf",
-   "repo": "meathax/meatcores",
-   "url": "https://github.com/meathax/meatcores",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-08",
-   "aliases": [],
-   "last_seen": "2026-10-08",
-   "binary_only": false,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-10-04"
+   "nsets": 2,
+   "ntitles": 2,
+   "first_date": "2026-10-07"
   },
   {
    "id": "ongo:ctribe",
@@ -13782,259 +13690,6 @@
    "first_date": "2026-09-16"
   },
   {
-   "id": "ongo:ffbbusters",
-   "name": "ffbbusters",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "ffbbusters.rbf",
-   "repo": "jlrh/jlrh-misterfpga-db",
-   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-08",
-   "aliases": [],
-   "last_seen": "2026-10-08",
-   "binary_only": true,
-   "nsets": 5,
-   "ntitles": 1,
-   "first_date": "2026-10-07"
-  },
-  {
-   "id": "ongo:ffcheqflag",
-   "name": "ffcheqflag",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "ffcheqflag.rbf",
-   "repo": "jlrh/jlrh-misterfpga-db",
-   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": false,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-10-04"
-  },
-  {
-   "id": "ongo:ffdeadang",
-   "name": "ffdeadang",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "ffdeadang.rbf",
-   "repo": "jlrh/jlrh-misterfpga-db",
-   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-06",
-   "aliases": [],
-   "last_seen": "2026-10-08",
-   "binary_only": false,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-10-06"
-  },
-  {
-   "id": "ongo:ffgwar",
-   "name": "ffgwar",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "ffgwar.rbf",
-   "repo": "jlrh/jlrh-misterfpga-db",
-   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-06",
-   "aliases": [],
-   "last_seen": "2026-10-08",
-   "binary_only": true,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-10-06"
-  },
-  {
-   "id": "ongo:ffhotchase",
-   "name": "ffhotchase",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "ffhotchase.rbf",
-   "repo": "jlrh/jlrh-misterfpga-db",
-   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": false,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-10-01"
-  },
-  {
-   "id": "ongo:ffkonamigt",
-   "name": "ffkonamigt",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "ffkonamigt.rbf",
-   "repo": "jlrh/jlrh-misterfpga-db",
-   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": false,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-10-04"
-  },
-  {
-   "id": "ongo:ffmechatt",
-   "name": "ffmechatt",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "ffmechatt.rbf",
-   "repo": "jlrh/jlrh-misterfpga-db",
-   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-08",
-   "aliases": [],
-   "last_seen": "2026-10-08",
-   "binary_only": true,
-   "nsets": 4,
-   "ntitles": 1,
-   "first_date": "2026-10-07"
-  },
-  {
-   "id": "ongo:ffoverdriv",
-   "name": "ffoverdriv",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "ffoverdriv.rbf",
-   "repo": "jlrh/jlrh-misterfpga-db",
-   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": false,
-   "nsets": 0,
-   "ntitles": 0,
-   "first_date": "2026-10-04"
-  },
-  {
-   "id": "ongo:ffshadfrce",
-   "name": "ffshadfrce",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "ffshadfrce.rbf",
-   "repo": "jlrh/jlrh-misterfpga-db",
-   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-05",
-   "aliases": [],
-   "last_seen": "2026-10-08",
-   "binary_only": true,
-   "nsets": 3,
-   "ntitles": 1,
-   "first_date": "2026-10-05"
-  },
-  {
-   "id": "ongo:ffwecleman",
-   "name": "ffwecleman",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "ffwecleman.rbf",
-   "repo": "jlrh/jlrh-misterfpga-db",
-   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": false,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-10-01"
-  },
-  {
-   "id": "ongo:ffxexex",
-   "name": "ffxexex",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "ffxexex.rbf",
-   "repo": "jlrh/jlrh-misterfpga-db",
-   "url": "https://github.com/jlrh/jlrh-misterfpga-db",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": false,
-   "nsets": 4,
-   "ntitles": 1,
-   "first_date": "2026-09-30"
-  },
-  {
    "id": "ongo:ikacore_cv1k",
    "name": "ikacore_CV1k",
    "source": "ongo",
@@ -14079,29 +13734,6 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-17"
-  },
-  {
-   "id": "ongo:jedi",
-   "name": "Jedi",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Jedi.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": false,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-09-30"
   },
   {
    "id": "ongo:jvmomoko",
@@ -14173,52 +13805,6 @@
    "first_date": "2026-08-17"
   },
   {
-   "id": "ongo:krull",
-   "name": "Krull",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Arcade-Krull.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-08",
-   "binary_only": true,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-09-11"
-  },
-  {
-   "id": "ongo:kuze_tumble",
-   "name": "kuze_Tumble",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "kuze_Tumble.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": true,
-   "nsets": 12,
-   "ntitles": 11,
-   "first_date": "2026-10-02"
-  },
-  {
    "id": "ongo:lastduel",
    "name": "lastduel",
    "source": "ongo",
@@ -14283,32 +13869,9 @@
    "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
-   "nsets": 5,
+   "nsets": 3,
    "ntitles": 2,
    "first_date": "2026-09-24"
-  },
-  {
-   "id": "ongo:meathax_narc",
-   "name": "Meathax_NARC",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Meathax_NARC.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-08",
-   "binary_only": true,
-   "nsets": 0,
-   "ntitles": 0,
-   "first_date": null
   },
   {
    "id": "ongo:meathax_segasystem24",
@@ -14329,55 +13892,9 @@
    "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
-   "nsets": 6,
-   "ntitles": 6,
-   "first_date": "2026-08-06"
-  },
-  {
-   "id": "ongo:meathax_simple156",
-   "name": "Meathax_Simple156",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Meathax_Simple156.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-06",
-   "aliases": [],
-   "last_seen": "2026-10-08",
-   "binary_only": true,
-   "nsets": 4,
-   "ntitles": 3,
-   "first_date": "2026-10-06"
-  },
-  {
-   "id": "ongo:meathax_stoneball",
-   "name": "Meathax_StoneBall",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Meathax_StoneBall.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": true,
    "nsets": 3,
    "ntitles": 3,
-   "first_date": "2026-10-03"
+   "first_date": "2026-08-06"
   },
   {
    "id": "ongo:meathax_suna8bit",
@@ -14398,32 +13915,9 @@
    "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
-   "nsets": 6,
-   "ntitles": 6,
+   "nsets": 3,
+   "ntitles": 3,
    "first_date": "2026-09-09"
-  },
-  {
-   "id": "ongo:meathax_viostorm",
-   "name": "Meathax_VioStorm",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Meathax_VioStorm.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": true,
-   "nsets": 7,
-   "ntitles": 1,
-   "first_date": "2026-10-02"
   },
   {
    "id": "ongo:meathax_yellowcab",
@@ -14444,7 +13938,7 @@
    "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
-   "nsets": 2,
+   "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-28"
   },
@@ -14493,29 +13987,6 @@
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-07-16"
-  },
-  {
-   "id": "ongo:nss_bazset",
-   "name": "NSS_bazset",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "NSS_bazset.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-08",
-   "binary_only": true,
-   "nsets": 0,
-   "ntitles": 0,
-   "first_date": null
   },
   {
    "id": "ongo:pspike",
@@ -14582,101 +14053,9 @@
    "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": false,
-   "nsets": 11,
+   "nsets": 9,
    "ntitles": 3,
    "first_date": "2026-09-17"
-  },
-  {
-   "id": "ongo:rshark",
-   "name": "RShark",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "RShark.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-05",
-   "aliases": [],
-   "last_seen": "2026-10-05",
-   "binary_only": false,
-   "nsets": 4,
-   "ntitles": 2,
-   "first_date": "2026-09-29"
-  },
-  {
-   "id": "ongo:simple156",
-   "name": "Simple156",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Arcade-Simple156.rbf",
-   "repo": "meathax/meatcores",
-   "url": "https://github.com/meathax/meatcores",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-06",
-   "aliases": [],
-   "last_seen": "2026-10-08",
-   "binary_only": true,
-   "nsets": 4,
-   "ntitles": 3,
-   "first_date": "2026-10-06"
-  },
-  {
-   "id": "ongo:skullxbones",
-   "name": "SkullXBones",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "SkullXBones.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": true,
-   "nsets": 5,
-   "ntitles": 1,
-   "first_date": "2026-09-19"
-  },
-  {
-   "id": "ongo:stoneball",
-   "name": "StoneBall",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Arcade-StoneBall.rbf",
-   "repo": "meathax/meatcores",
-   "url": "https://github.com/meathax/meatcores",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": true,
-   "nsets": 3,
-   "ntitles": 3,
-   "first_date": "2026-10-03"
   },
   {
    "id": "ongo:system11",
@@ -14771,29 +14150,6 @@
    "first_date": "2026-09-02"
   },
   {
-   "id": "ongo:taitof3",
-   "name": "TaitoF3",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "TaitoF3.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-08",
-   "binary_only": false,
-   "nsets": 36,
-   "ntitles": 34,
-   "first_date": "2026-09-08"
-  },
-  {
    "id": "ongo:thepit",
    "name": "ThePit",
    "source": "ongo",
@@ -14815,52 +14171,6 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-29"
-  },
-  {
-   "id": "ongo:tumble",
-   "name": "Tumble",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Arcade-Tumble.rbf",
-   "repo": "meathax/meatcores",
-   "url": "https://github.com/meathax/meatcores",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": true,
-   "nsets": 12,
-   "ntitles": 11,
-   "first_date": "2026-10-02"
-  },
-  {
-   "id": "ongo:viostorm",
-   "name": "VioStorm",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Arcade-VioStorm.rbf",
-   "repo": "meathax/meatcores",
-   "url": "https://github.com/meathax/meatcores",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-04",
-   "binary_only": true,
-   "nsets": 7,
-   "ntitles": 1,
-   "first_date": "2026-10-02"
   },
   {
    "id": "ongo:vsnes",
@@ -14930,29 +14240,6 @@
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-07-05"
-  },
-  {
-   "id": "ongo:xnsuper22",
-   "name": "XNSUPER22",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "XNSUPER22.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-08",
-   "binary_only": false,
-   "nsets": 2,
-   "ntitles": 2,
-   "first_date": "2026-09-13"
   },
   {
    "id": "ongo:xnsystem22",
@@ -17303,8 +16590,7 @@
    "sets": 1,
    "sets_covered": 1,
    "cores": [
-    "dist:batman",
-    "ongo:batman"
+    "dist:batman"
    ],
    "first": "2026-09-25"
   },
@@ -17584,7 +16870,6 @@
    "sets": 1,
    "sets_covered": 1,
    "cores": [
-    "ongo:jedi",
     "repo:jedi"
    ],
    "first": "2026-09-30"
@@ -17781,8 +17066,7 @@
    "sets": 5,
    "sets_covered": 5,
    "cores": [
-    "dist:skullxbones",
-    "ongo:skullxbones"
+    "dist:skullxbones"
    ],
    "first": "2026-09-19"
   },
@@ -18814,9 +18098,7 @@
    "sets": 6,
    "sets_covered": 0,
    "cores": [
-    "meat:tumble",
-    "ongo:kuze_tumble",
-    "ongo:tumble"
+    "meat:tumble"
    ],
    "first": null
   },
@@ -18977,9 +18259,7 @@
    "sets": 11,
    "sets_covered": 4,
    "cores": [
-    "meat:simple156",
-    "ongo:meathax_simple156",
-    "ongo:simple156"
+    "meat:simple156"
    ],
    "first": "2026-10-06"
   },
@@ -19010,9 +18290,7 @@
    "cores": [
     "coinop:supbtime",
     "coinop:tumblep",
-    "meat:tumble",
-    "ongo:kuze_tumble",
-    "ongo:tumble"
+    "meat:tumble"
    ],
    "first": "2026-04-01"
   },
@@ -19041,9 +18319,7 @@
    "sets": 20,
    "sets_covered": 10,
    "cores": [
-    "meat:tumble",
-    "ongo:kuze_tumble",
-    "ongo:tumble"
+    "meat:tumble"
    ],
    "first": "2026-10-02"
   },
@@ -19077,7 +18353,6 @@
    "sets": 24,
    "sets_covered": 24,
    "cores": [
-    "ongo:rshark",
     "repo:dooyong",
     "shmupfan:dooyong"
    ],
@@ -19696,8 +18971,7 @@
    "cores": [
     "bazset:krull_bazset",
     "dist:laserdiscgames",
-    "dist:qbert",
-    "ongo:krull"
+    "dist:qbert"
    ],
    "first": "2021-01-02"
   },
@@ -20425,8 +19699,7 @@
    "sets": 2,
    "sets_covered": 2,
    "cores": [
-    "jlrh:ffcheqflag",
-    "ongo:ffcheqflag"
+    "jlrh:ffcheqflag"
    ],
    "first": "2026-10-04"
   },
@@ -20857,8 +20130,6 @@
     "jlrh:ffmtlchamp",
     "jlrh:ffmystwarr",
     "meat:viostorm",
-    "ongo:meathax_viostorm",
-    "ongo:viostorm",
     "repo:gaiapolis"
    ],
    "first": "2026-08-22"
@@ -20873,7 +20144,6 @@
     "dist:bubsysrom",
     "dist:salamander",
     "jlrh:ffkonamigt",
-    "ongo:ffkonamigt",
     "ongo:nemesis"
    ],
    "first": "2022-07-16"
@@ -21213,9 +20483,7 @@
    "sets_covered": 2,
    "cores": [
     "jlrh:ffhotchase",
-    "jlrh:ffwecleman",
-    "ongo:ffhotchase",
-    "ongo:ffwecleman"
+    "jlrh:ffwecleman"
    ],
    "first": "2026-10-01"
   },
@@ -21226,8 +20494,7 @@
    "sets": 4,
    "sets_covered": 4,
    "cores": [
-    "jlrh:ffxexex",
-    "ongo:ffxexex"
+    "jlrh:ffxexex"
    ],
    "first": "2026-09-30"
   },
@@ -21412,9 +20679,7 @@
    "sets": 6,
    "sets_covered": 3,
    "cores": [
-    "meat:stoneball",
-    "ongo:meathax_stoneball",
-    "ongo:stoneball"
+    "meat:stoneball"
    ],
    "first": "2026-10-03"
   },
@@ -21516,8 +20781,7 @@
    "sets_covered": 3,
    "cores": [
     "meat:crystalsystem",
-    "ongo:crystal",
-    "ongo:crystalsystem"
+    "ongo:crystal"
    ],
    "first": "2026-10-04"
   },
@@ -22621,7 +21885,6 @@
    "sets": 40,
    "sets_covered": 6,
    "cores": [
-    "ongo:xnsuper22",
     "ongo:xnsystem22",
     "repo:propcycle"
    ],
@@ -24117,8 +23380,7 @@
    "sets": 4,
    "sets_covered": 1,
    "cores": [
-    "jlrh:ffdeadang",
-    "ongo:ffdeadang"
+    "jlrh:ffdeadang"
    ],
    "first": "2026-10-06"
   },
@@ -24402,8 +23664,7 @@
    "sets": 5,
    "sets_covered": 5,
    "cores": [
-    "jlrh:ffbbusters",
-    "ongo:ffbbusters"
+    "jlrh:ffbbusters"
    ],
    "first": "2026-10-07"
   },
@@ -24454,8 +23715,7 @@
    "sets": 4,
    "sets_covered": 4,
    "cores": [
-    "jlrh:ffmechatt",
-    "ongo:ffmechatt"
+    "jlrh:ffmechatt"
    ],
    "first": "2026-10-07"
   },
@@ -24528,8 +23788,7 @@
     "dist:ikariwarriors",
     "dist:snk_triplez80",
     "dist:tnkiii",
-    "jlrh:ffgwar",
-    "ongo:ffgwar"
+    "jlrh:ffgwar"
    ],
    "first": "2022-05-09"
   },
@@ -25338,7 +24597,6 @@
    "sets": 97,
    "sets_covered": 36,
    "cores": [
-    "ongo:taitof3",
     "repo:rayforce_20260908b"
    ],
    "first": "2026-08-09"
@@ -25736,8 +24994,7 @@
    "sets": 3,
    "sets_covered": 3,
    "cores": [
-    "jlrh:ffshadfrce",
-    "ongo:ffshadfrce"
+    "jlrh:ffshadfrce"
    ],
    "first": "2026-10-05"
   },
@@ -26600,9 +25857,7 @@
    "sets_covered": 2,
    "cores": [
     "blahm1d:blahm1d_invasion",
-    "blahm1d:blahm1d_mk4",
-    "ongo:blahm1d_invasion",
-    "ongo:blahm1d_mk4"
+    "blahm1d:blahm1d_mk4"
    ],
    "first": "2026-09-26"
   },
@@ -26939,7 +26194,6 @@
   {
    "set": "bubblembe",
    "cores": [
-    "ongo:taitof3",
     "repo:rayforce_20260908b"
    ]
   },
