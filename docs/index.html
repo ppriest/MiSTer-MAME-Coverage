@@ -39,14 +39,6 @@
           <option value="partial">partially (some sets)</option>
         </select>
       </label>
-      <label>Source code
-        <select id="f-sup" title="source: at least one core loading the title has public source; binary-only: every core loading it is distributed as a binary only">
-          <option value="" selected>any</option>
-          <option value="source">source available</option>
-          <option value="binary">binary-only</option>
-          <option value="none">unsupported</option>
-        </select>
-      </label>
       <label>MAME status
         <select id="f-work">
           <option value="working" selected>working</option>
@@ -85,6 +77,14 @@
         </select>
       </label>
       <label>Core <select id="f-core"><option value="">any</option></select></label>
+      <label>MiSTer source code
+        <select id="f-sup" title="source: at least one core loading the title has public source; binary-only: every core loading it is distributed as a binary only">
+          <option value="" selected>any</option>
+          <option value="source">source available</option>
+          <option value="binary">binary-only</option>
+          <option value="none">unsupported</option>
+        </select>
+      </label>
       <label>Orientation
         <select id="f-rot">
           <option value="">any</option>
@@ -195,7 +195,7 @@
     <form class="filters" onsubmit="return false">
       <label>Search <input type="search" id="c-q" placeholder="core, repository, driver…"></label>
       <label>Source <select id="c-src"><option value="">any</option></select></label>
-      <label>Source code <select id="c-bin"><option value="">any</option><option value="source">source available</option><option value="binary">binary-only</option></select></label>
+      <label>MiSTer source code <select id="c-bin"><option value="">any</option><option value="source">source available</option><option value="binary">binary-only</option></select></label>
       <label>Sort
         <span class="row"><select id="c-sort">
           <option value="name">name</option>

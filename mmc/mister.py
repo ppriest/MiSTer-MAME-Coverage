@@ -63,6 +63,9 @@ EXTRA_REPOS = [
     ("repo", "kyledlester/MiSTer_Nostradamus", ["MRA"]),   # was Nostradamus_Magical_Cat_Adventure_MiSTer
     ("ppriest", "ppriest/Arcade-HyperNG64_MiSTer", None),
     ("repo", "decoryah/Arcade-TaitoLSystem_MiSTer", ["mra"]),
+    # XelaNotPu's Patreon supporter builds (patreon.com/cw/XelaNotPu): extra titles beyond the public cores
+    ("repo", "XelaNotPu/SYSTEM11_MiSTer-Supporter", ["releases/_Arcade"]),
+    ("repo", "XelaNotPu/SYSTEMFL_MiSTer-Supporter", ["_Arcade"]),
 ]
 
 # Core records that a better-sourced record replaces. They are removed from the ledger together with

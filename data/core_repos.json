@@ -1956,6 +1956,9 @@
   "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-KonamiGX_MiSTer"
  ],
+ "repo:konamigxt34": [
+  "ppriest/Arcade-KonamiGX_MiSTer"
+ ],
  "repo:majorhavoc": [
   "derpyder/Arcade-MajorHavoc_MiSTer"
  ],
@@ -2052,6 +2055,12 @@
  ],
  "repo:twinhawk": [
   "bazset/Twin-Hawk-FPGA"
+ ],
+ "repo:xnsystem11": [
+  "XelaNotPu/SYSTEM11_MiSTer-Supporter"
+ ],
+ "repo:xnsystemfl": [
+  "XelaNotPu/SYSTEMFL_MiSTer-Supporter"
  ],
  "shmupfan:taitognet": [
   "shmupfan/Arcade-TaitoGNET_MiSTer"

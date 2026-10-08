@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-08T23:21:32+00:00",
+  "generated": "2026-10-08T23:26:48+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-08T23:19:22+00:00",
+  "mister_generated": "2026-10-08T23:26:45+00:00",
   "alamone_generated": "2026-10-05T11:12:58+00:00",
   "ledger_updated": "2026-10-08",
   "ledger_runs": [
-   {
-    "date": "2026-10-08",
-    "note": "alamone 2026-10-05",
-    "cores": 10,
-    "sets": 32,
-    "pairs": 45,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-08",
     "note": "alamone 2026-10-05",
@@ -51,6 +42,15 @@
     "pairs": 0,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-08",
+    "note": "alamone 2026-10-05",
+    "cores": 3,
+    "sets": 5,
+    "pairs": 45,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
    "catver_entries": 37998,
    "mad_entries": 2995,
-   "mra_entries": 3077,
+   "mra_entries": 3082,
    "unmapped": [
     {
      "raw": "not classified",
@@ -1733,7 +1733,7 @@
     "source": "repo",
     "repo": "ppriest/Arcade-KonamiGX_MiSTer",
     "dirs": null,
-    "mras": 22
+    "mras": 27
    },
    {
     "source": "repo",
@@ -2308,6 +2308,22 @@
     "mras": 35
    },
    {
+    "source": "repo",
+    "repo": "XelaNotPu/SYSTEM11_MiSTer-Supporter",
+    "dirs": [
+     "releases/_Arcade"
+    ],
+    "mras": 35
+   },
+   {
+    "source": "repo",
+    "repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
+    "dirs": [
+     "_Arcade"
+    ],
+    "mras": 5
+   },
+   {
     "source": "dist",
     "repo": "MiSTer-devel/NeoGeo_MiSTer",
     "dirs": [],
@@ -2316,6 +2332,34 @@
   ],
   "repo_errors": [
    [
+    "harlock74/Arcade-CloakDagger_MiSTer",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "Kyp069/zx48-MiSTer",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "blahm1d/wolf-unit",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "kandowontu/BrickBoy_MiSTer",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/Bucky",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/mrdo",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/s24",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
     "https://mister.blahm1d.com/db.json.zip",
     "<urlopen error Tunnel connection failed: 403 Forbidden>"
    ]
@@ -2323,12 +2367,12 @@
   "counts": {
    "titles": 6824,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 1962,
+   "working_arcade_titles_covered": 1963,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5146,
-   "working_arcade_titles_source": 1717,
-   "working_arcade_titles_binary_only": 245,
-   "cores": 567,
+   "working_arcade_sets_covered": 5151,
+   "working_arcade_titles_source": 1720,
+   "working_arcade_titles_binary_only": 243,
+   "cores": 568,
    "binary_only_cores": 137,
    "unmatched_sets": 411
   }
@@ -14058,29 +14102,6 @@
    "first_date": "2026-09-17"
   },
   {
-   "id": "ongo:system11",
-   "name": "SYSTEM11",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "SYSTEM11.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-08",
-   "binary_only": false,
-   "nsets": 35,
-   "ntitles": 11,
-   "first_date": "2026-07-13"
-  },
-  {
    "id": "ongo:system12",
    "name": "SYSTEM12",
    "source": "ongo",
@@ -14263,29 +14284,6 @@
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-13"
-  },
-  {
-   "id": "ongo:xnsystemfl",
-   "name": "XNSYSTEMFL",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "XNSYSTEMFL.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-08",
-   "binary_only": true,
-   "nsets": 5,
-   "ntitles": 2,
-   "first_date": "2026-09-23"
   },
   {
    "id": "ongo:xnzn1",
@@ -15138,6 +15136,28 @@
    "first_date": "2026-09-19"
   },
   {
+   "id": "repo:konamigxt34",
+   "name": "KonamiGXT34",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "KonamiGXT34.rbf",
+   "repo": "ppriest/Arcade-KonamiGX_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-08",
+   "last_seen": "2026-10-08",
+   "binary_only": false,
+   "nsets": 5,
+   "ntitles": 1,
+   "first_date": "2026-10-08"
+  },
+  {
    "id": "repo:leland",
    "name": "Leland",
    "source": "repo",
@@ -15986,6 +16006,50 @@
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-26"
+  },
+  {
+   "id": "repo:xnsystem11",
+   "name": "XNSYSTEM11",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "XNSYSTEM11.rbf",
+   "repo": "XelaNotPu/SYSTEM11_MiSTer-Supporter",
+   "url": "https://github.com/XelaNotPu/SYSTEM11_MiSTer-Supporter",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-08",
+   "last_seen": "2026-10-08",
+   "binary_only": false,
+   "nsets": 35,
+   "ntitles": 11,
+   "first_date": "2026-09-12"
+  },
+  {
+   "id": "repo:xnsystemfl",
+   "name": "XNSYSTEMFL_20260923",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "Arcade-XNSYSTEMFL_20260923.rbf",
+   "repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
+   "url": "https://github.com/XelaNotPu/SYSTEMFL_MiSTer-Supporter",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-08",
+   "last_seen": "2026-10-08",
+   "binary_only": false,
+   "nsets": 5,
+   "ntitles": 2,
+   "first_date": "2026-09-24"
   },
   {
    "id": "shmupfan:1945kiii",
@@ -19995,11 +20059,12 @@
   {
    "sourcefile": "konami/konamigx.cpp",
    "titles": 15,
-   "covered": 11,
+   "covered": 12,
    "sets": 35,
-   "sets_covered": 22,
+   "sets_covered": 27,
    "cores": [
-    "repo:konamigx"
+    "repo:konamigx",
+    "repo:konamigxt34"
    ],
    "first": "2026-09-19"
   },
@@ -21762,7 +21827,7 @@
    "sets": 5,
    "sets_covered": 5,
    "cores": [
-    "ongo:xnsystemfl"
+    "repo:xnsystemfl"
    ],
    "first": "2026-09-23"
   },
@@ -21828,7 +21893,7 @@
    "sets": 30,
    "sets_covered": 30,
    "cores": [
-    "ongo:system11"
+    "repo:xnsystem11"
    ],
    "first": "2026-07-13"
   },
@@ -21839,8 +21904,8 @@
    "sets": 59,
    "sets_covered": 41,
    "cores": [
-    "ongo:system11",
-    "ongo:system12"
+    "ongo:system12",
+    "repo:xnsystem11"
    ],
    "first": "2026-07-14"
   },
