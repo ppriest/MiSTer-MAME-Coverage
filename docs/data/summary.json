@@ -1,30 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-08T23:11:29+00:00",
+  "generated": "2026-10-08T23:15:22+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-08T22:39:56+00:00",
+  "mister_generated": "2026-10-08T23:15:18+00:00",
   "alamone_generated": "2026-10-05T11:12:58+00:00",
   "ledger_updated": "2026-10-08",
   "ledger_runs": [
-   {
-    "date": "2026-10-06",
-    "note": "alamone 2026-10-05",
-    "cores": 1,
-    "sets": 9,
-    "pairs": 10,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
-   {
-    "date": "2026-10-06",
-    "note": "alamone 2026-10-05",
-    "cores": 8,
-    "sets": 43,
-    "pairs": 51,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-07",
     "note": "alamone 2026-10-05",
@@ -49,6 +31,24 @@
     "cores": 17,
     "sets": 13,
     "pairs": 26,
+    "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-08",
+    "note": "alamone 2026-10-05",
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
+    "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-08",
+    "note": "alamone 2026-10-05",
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
     "dates_improved": 0,
     "cores_removed": 0
    }
@@ -2326,10 +2326,10 @@
    "working_arcade_titles_covered": 1962,
    "working_arcade_sets": 9981,
    "working_arcade_sets_covered": 5146,
-   "working_arcade_titles_source": 1835,
-   "working_arcade_titles_binary_only": 127,
+   "working_arcade_titles_source": 1717,
+   "working_arcade_titles_binary_only": 245,
    "cores": 598,
-   "binary_only_cores": 106,
+   "binary_only_cores": 136,
    "unmatched_sets": 411
   }
  },
@@ -2421,6 +2421,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 1,
@@ -2443,6 +2444,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 1,
@@ -2465,6 +2467,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 1,
@@ -2487,6 +2490,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 1,
@@ -2509,6 +2513,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 1,
@@ -2531,6 +2536,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 1,
@@ -2553,6 +2559,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 9,
@@ -2575,6 +2582,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 1,
@@ -2597,8 +2605,9 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-04"
@@ -2619,6 +2628,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 1,
@@ -2641,6 +2651,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 1,
@@ -2663,6 +2674,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 1,
@@ -2685,6 +2697,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 1,
@@ -2707,6 +2720,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 2,
@@ -2729,6 +2743,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 1,
@@ -2751,6 +2766,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 1,
@@ -2773,6 +2789,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
+   "aliases": [],
    "last_seen": "2026-10-08",
    "binary_only": true,
    "nsets": 1,
@@ -2935,7 +2952,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-07-02"
@@ -3142,7 +3159,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 13,
    "ntitles": 6,
    "first_date": "2022-11-16"
@@ -3188,7 +3205,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 8,
    "ntitles": 1,
    "first_date": "2023-09-10"
@@ -3211,7 +3228,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2023-09-10"
@@ -3234,7 +3251,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 8,
    "ntitles": 1,
    "first_date": "2023-09-10"
@@ -3280,7 +3297,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -3349,7 +3366,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -3372,7 +3389,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -3418,7 +3435,7 @@
    "first_recorded": "2026-10-06",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-06"
@@ -3441,7 +3458,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -3625,7 +3642,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2023-09-10"
@@ -3648,7 +3665,7 @@
    "first_recorded": "2026-10-07",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-10-06"
@@ -4062,7 +4079,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2023-09-10"
@@ -4292,7 +4309,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-07-29"
@@ -10046,7 +10063,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-25"
@@ -11478,7 +11495,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2024-01-05"
@@ -11501,7 +11518,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2024-01-05"
@@ -12986,7 +13003,7 @@
    ],
    "first_recorded": "2026-10-04",
    "last_seen": "2026-10-08",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-08-12"
@@ -13009,7 +13026,7 @@
    "first_recorded": "2026-10-08",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-04"
@@ -13529,7 +13546,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-04",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-25"
@@ -13575,7 +13592,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 7,
    "ntitles": 7,
    "first_date": "2023-04-05"
@@ -13598,7 +13615,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-04",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-26"
@@ -13621,7 +13638,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-04",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-26"
@@ -13690,7 +13707,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2025-06-25"
@@ -13713,7 +13730,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2025-06-25"
@@ -13759,7 +13776,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-09-16"
@@ -13782,7 +13799,7 @@
    "first_recorded": "2026-10-08",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-10-07"
@@ -13851,7 +13868,7 @@
    "first_recorded": "2026-10-06",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-06"
@@ -13920,7 +13937,7 @@
    "first_recorded": "2026-10-08",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-10-07"
@@ -13966,7 +13983,7 @@
    "first_recorded": "2026-10-05",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-10-05"
@@ -14035,7 +14052,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 28,
    "ntitles": 13,
    "first_date": "2026-09-01"
@@ -14058,7 +14075,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-17"
@@ -14104,7 +14121,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-21"
@@ -14150,7 +14167,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-08-17"
@@ -14173,7 +14190,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-11"
@@ -14196,7 +14213,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-04",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 12,
    "ntitles": 11,
    "first_date": "2026-10-02"
@@ -14265,7 +14282,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2026-09-24"
@@ -14288,7 +14305,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -14311,7 +14328,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2026-08-06"
@@ -14334,7 +14351,7 @@
    "first_recorded": "2026-10-06",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 4,
    "ntitles": 3,
    "first_date": "2026-10-06"
@@ -14357,7 +14374,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-04",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-10-03"
@@ -14380,7 +14397,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2026-09-09"
@@ -14403,7 +14420,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-04",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2026-10-02"
@@ -14426,7 +14443,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-07-28"
@@ -14472,7 +14489,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-07-16"
@@ -14495,7 +14512,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
@@ -14518,7 +14535,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 16,
    "ntitles": 4,
    "first_date": "2026-09-16"
@@ -14541,7 +14558,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 9,
    "ntitles": 3,
    "first_date": "2026-08-22"
@@ -14610,7 +14627,7 @@
    "first_recorded": "2026-10-06",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 4,
    "ntitles": 3,
    "first_date": "2026-10-06"
@@ -14633,7 +14650,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-04",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-09-19"
@@ -14656,7 +14673,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-04",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-10-03"
@@ -14702,7 +14719,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 36,
    "ntitles": 14,
    "first_date": "2026-08-02"
@@ -14794,7 +14811,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-29"
@@ -14817,7 +14834,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-04",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 12,
    "ntitles": 11,
    "first_date": "2026-10-02"
@@ -14840,7 +14857,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-04",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 7,
    "ntitles": 1,
    "first_date": "2026-10-02"
@@ -14863,7 +14880,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 52,
    "ntitles": 34,
    "first_date": "2025-12-22"
@@ -14886,7 +14903,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2025-06-25"
@@ -14955,7 +14972,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-13"
@@ -14978,7 +14995,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2026-09-23"

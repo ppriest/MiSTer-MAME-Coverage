@@ -166,6 +166,7 @@ def observe(mister: dict) -> dict:
     # ``mister_build == False`` (cores of a multi-platform repository with no MiSTer release) are
     # held back: they count only when they load a jotego core other sources already provide.
     stems: dict[str, str] = {}        # rbf stem -> core id, from MRAs that are plainly MiSTer
+    core_repos: dict[str, set[str]] = collections.defaultdict(set)   # core id -> repositories its MRAs live in
     held: list[dict] = []
     for m in mister["mras"]:
         if m.get("mister_build") is False:
@@ -175,6 +176,8 @@ def observe(mister: dict) -> dict:
         stem = mister_mod.norm_rbf(m.get("rbf"))
         if stem and m["source"] != "arcfpga":
             stems.setdefault(stem, cid)
+        if not m["repo"].startswith("db:"):
+            core_repos[cid].add(m["repo"])
         date, quality, frepo, fpath = dated(m)
         add(m["setname"], cid, date, quality, m["source"], m.get("wip", False), m.get("alt", False), frepo, fpath)
     excluded: set[str] = set()
@@ -217,6 +220,7 @@ def observe(mister: dict) -> dict:
                 add(setn, target, rec["date"], rec["date_quality"], rec["via"], rec["wip"], rec["alt"],
                     rec.get("first_repo"), rec.get("first_path"))
     for cid, target in alias.items():
+        core_repos[target] |= core_repos.pop(cid, set())
         cores[target].setdefault("aliases", []).append(cid)
         del cores[cid]
     # MRA <category> tags, per set and source (kept in the ledger for the genre step).
@@ -226,7 +230,7 @@ def observe(mister: dict) -> dict:
         if cat and m.get("setname"):
             categories[m["setname"]].setdefault(m["source"], cat)
     return {"cores": cores, "support": {k: v for k, v in support.items() if v}, "categories": dict(categories),
-            "excluded": sorted(excluded)}
+            "excluded": sorted(excluded), "core_repos": {k: sorted(v) for k, v in core_repos.items()}}
 
 
 def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
@@ -238,7 +242,15 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
     genres, genre_summary = genre_mod.resolve(machines, ledger.get("categories", {}))
     added = mamehist.dates_for_sets(mamehist.load())
 
-    binary_cores = {cid for cid, c in cores.items() if mister_mod.is_binary_only(c)}
+    repo_source = mister_mod.load_repo_source()
+    mra_repos: dict[str, set[str]] = collections.defaultdict(set)   # core -> repositories its MRAs came from
+    for cid, rs in mister_mod.load_core_repos().items():
+        mra_repos[cid].update(rs)
+    for recs in support.values():
+        for cid, r in recs.items():
+            if r.get("first_repo"):
+                mra_repos[cid].add(r["first_repo"])
+    binary_cores = {cid for cid, c in cores.items() if mister_mod.is_binary_only(c, mra_repos.get(cid, ()), repo_source)}
     RANK = {"none": 0, "binary": 1, "source": 2}
 
     def support_of(core_ids) -> str:

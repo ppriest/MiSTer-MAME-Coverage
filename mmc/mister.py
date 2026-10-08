@@ -70,18 +70,77 @@ EXTRA_REPOS = [
 # ppriest database is unreachable while MiSTer_ppriest is private); it carries the same sets.
 SUPERSEDED_CORES = {"repo:hyperng64": "ppriest:hyperng64"}      # old id -> replacement
 
-# A core is "binary-only" when no source repository is known for it (``repo`` is empty: Patreon
-# drops, database-only builds). Overrides for the exceptions:
-BINARY_ONLY_CORES: set[str] = set()       # core ids forced binary-only although a repo is linked
-SOURCE_AVAILABLE_CORES: set[str] = set()  # core ids with public source although no repo is linked
+# A core is "binary-only" when no public source is known for it: none of the repositories tied to
+# it (its linked ``repo`` and the repositories its MRAs were first seen in) contains HDL source, or
+# it has no repository at all (Patreon drops, database-only builds). Whether a repository holds
+# source is read from its git tree at sync time and kept in data/repo_source.json. Overrides for
+# the exceptions:
+BINARY_ONLY_CORES: set[str] = set()       # core ids forced binary-only although a source repo is linked
+SOURCE_AVAILABLE_CORES: set[str] = set()  # core ids with public source that the data does not show
+HDL_EXTENSIONS = {"v", "sv", "vhd", "vhdl", "qsf", "qip", "qpf"}
+REPO_SOURCE_FILE = os.path.join(paths.DATA, "repo_source.json")
 
 
-def is_binary_only(core: dict) -> bool:
+def load_repo_source() -> dict[str, bool]:
+    try:
+        with open(REPO_SOURCE_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
+CORE_REPOS_FILE = os.path.join(paths.DATA, "core_repos.json")
+
+
+def load_core_repos() -> dict[str, list[str]]:
+    try:
+        with open(CORE_REPOS_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
+def save_core_repos(observed: dict[str, list[str]]) -> None:
+    """Union this run's core -> repositories-holding-its-MRAs into data/core_repos.json."""
+    known = {k: set(v) for k, v in load_core_repos().items()}
+    for k, v in observed.items():
+        known.setdefault(k, set()).update(v)
+    with open(CORE_REPOS_FILE, "w", encoding="utf-8") as f:
+        json.dump({k: sorted(v) for k, v in sorted(known.items())}, f, indent=1)
+        f.write("\n")
+
+
+def scan_repo_sources(repos) -> dict[str, bool]:
+    """Update ``data/repo_source.json``: does each synced repository hold HDL source? Repositories
+    that are not checked out keep their previous answer."""
+    known = load_repo_source()
+    for full in sorted(set(repos)):
+        d = repo_dir(full)
+        if not os.path.isdir(d):
+            continue
+        try:
+            names = subprocess.check_output(["git", "-C", d, "ls-tree", "-r", "--name-only", "HEAD"],
+                                            text=True, stderr=subprocess.DEVNULL).splitlines()
+        except (subprocess.CalledProcessError, OSError):
+            continue
+        known[full] = any(n.rsplit(".", 1)[-1].lower() in HDL_EXTENSIONS for n in names if "." in n)
+    with open(REPO_SOURCE_FILE, "w", encoding="utf-8") as f:
+        json.dump(dict(sorted(known.items())), f, indent=1)
+        f.write("\n")
+    return known
+
+
+def is_binary_only(core: dict, repos=(), repo_source: dict | None = None) -> bool:
+    """``repos``: the repositories tied to the core besides its own ``repo`` (where its MRAs live)."""
     if core["id"] in BINARY_ONLY_CORES:
         return True
     if core["id"] in SOURCE_AVAILABLE_CORES:
         return False
-    return not core.get("repo")
+    tied = {r for r in [core.get("repo"), *repos] if r}
+    if not tied:
+        return True
+    repo_source = repo_source or {}
+    return not any(repo_source.get(r, True) for r in tied)   # an unchecked repository gets the doubt
 
 
 # Developer "downloader" databases (what update_all installs from downloader.ini). Their
