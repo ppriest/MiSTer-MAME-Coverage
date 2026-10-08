@@ -91,6 +91,17 @@ and month dropdowns, or a drag across that chart) selects titles by that earlies
 `date_working` in the working-only view); titles not on MiSTer have no such date and drop out
 whenever it is set.
 
+## Binary-only support
+
+A core is **binary-only** when no source repository is known for it (its `repo` is empty: Patreon
+drops, database-only builds); `mister.BINARY_ONLY_CORES` / `SOURCE_AVAILABLE_CORES` override that
+per core id. `report` derives a tristate for every set and title: `source` (some core loading it
+has public source), `binary` (every core loading it is binary-only) or `none` (unsupported);
+`title.support` covers all sets, `title.support_working` the working ones. Cores carry
+`binary_only`, `meta.counts` has `working_arcade_titles_source` / `_binary_only`, and the page has
+a "Source code" filter and a `bin` flag on binary-only core badges. It is a heuristic: a linked
+repository that only hosts releases still counts as source.
+
 ## The ledger (`data/ledger.json`)
 
 The ledger is the durable record. It is committed, merged into incrementally, and never pruned.

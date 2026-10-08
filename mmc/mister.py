@@ -70,6 +70,20 @@ EXTRA_REPOS = [
 # ppriest database is unreachable while MiSTer_ppriest is private); it carries the same sets.
 SUPERSEDED_CORES = {"repo:hyperng64": "ppriest:hyperng64"}      # old id -> replacement
 
+# A core is "binary-only" when no source repository is known for it (``repo`` is empty: Patreon
+# drops, database-only builds). Overrides for the exceptions:
+BINARY_ONLY_CORES: set[str] = set()       # core ids forced binary-only although a repo is linked
+SOURCE_AVAILABLE_CORES: set[str] = set()  # core ids with public source although no repo is linked
+
+
+def is_binary_only(core: dict) -> bool:
+    if core["id"] in BINARY_ONLY_CORES:
+        return True
+    if core["id"] in SOURCE_AVAILABLE_CORES:
+        return False
+    return not core.get("repo")
+
+
 # Developer "downloader" databases (what update_all installs from downloader.ini). Their
 # db.json.zip lists every MRA with a URL; we fetch and parse those directly, so a core that is
 # published only as builds (Patreon releases such as blahm1d's) still counts through its MRAs.
