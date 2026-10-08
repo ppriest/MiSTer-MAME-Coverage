@@ -103,7 +103,7 @@ core id. `report` derives a tristate for every set and title: `source` (some cor
 has public source), `binary` (every core loading it is binary-only) or `none` (unsupported);
 `title.support` covers all sets, `title.support_working` the working ones. Cores carry
 `binary_only`, `meta.counts` has `working_arcade_titles_source` / `_binary_only`, and the page has
-a "Source code" filter and a `bin` flag on binary-only core badges.
+a "Source code" filter on the Titles and Cores tabs, and a `bin` flag next to binary-only titles (in the covered/sets column), core badges and core names. `mister.SOURCE_REPOS` maps cores published by one repository but built from another (the official distribution's cores) to their source repository; files under `games/` are ignored when looking for HDL (disk images are `.vhd` too).
 
 ## The ledger (`data/ledger.json`)
 

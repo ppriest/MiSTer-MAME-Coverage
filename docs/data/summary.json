@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-08T23:15:22+00:00",
+  "generated": "2026-10-08T23:19:29+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-08T23:15:18+00:00",
+  "mister_generated": "2026-10-08T23:19:22+00:00",
   "alamone_generated": "2026-10-05T11:12:58+00:00",
   "ledger_updated": "2026-10-08",
   "ledger_runs": [
-   {
-    "date": "2026-10-07",
-    "note": "alamone 2026-10-05",
-    "cores": 3,
-    "sets": 35,
-    "pairs": 35,
-    "dates_improved": 2,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-08",
     "note": "alamone 2026-10-05",
@@ -31,6 +22,15 @@
     "cores": 17,
     "sets": 13,
     "pairs": 26,
+    "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-08",
+    "note": "alamone 2026-10-05",
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
     "dates_improved": 0,
     "cores_removed": 0
    },
@@ -2329,7 +2329,7 @@
    "working_arcade_titles_source": 1717,
    "working_arcade_titles_binary_only": 245,
    "cores": 598,
-   "binary_only_cores": 136,
+   "binary_only_cores": 137,
    "unmatched_sets": 411
   }
  },
@@ -5897,7 +5897,7 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-10-08",
-   "binary_only": false,
+   "binary_only": true,
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2021-02-14"

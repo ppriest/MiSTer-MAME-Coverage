@@ -15,7 +15,7 @@
   // written.
   const FILTER_IDS = ["f-q", "f-cov", "f-sup", "f-work", "f-cat", "f-y0", "f-y1", "f-m0y", "f-m0m", "f-m1y", "f-m1m", "f-a0y", "f-a0m", "f-a1y", "f-a1m", "f-genre", "f-manu", "f-drv", "f-dcov", "f-core", "f-rot", "f-sort"];
   const DRIVER_IDS = ["d-q", "d-cov", "d-genre", "d-sort"];
-  const CORE_IDS = ["c-q", "c-src", "c-sort"];
+  const CORE_IDS = ["c-q", "c-src", "c-bin", "c-sort"];
   const UNMATCHED_IDS = ["u-q"];
   const ALL_IDS = [...FILTER_IDS, ...DRIVER_IDS, ...CORE_IDS, ...UNMATCHED_IDS];
   const DIRS = { dir: "t", ddir: "d", cdir: "c" };   // hash key -> S.dir key
@@ -416,7 +416,7 @@
         <td>${esc(t.manufacturer)}</td>
         <td title="${esc(t.genre_raw ? t.genre_raw + " (" + t.genre_source + ")" : "no category in any source")}">${esc(t.genre || "")}${t.mature ? ' <span class="flag">18+</span>' : ""}</td>
         <td class="set">${esc(t.sourcefile)}</td>
-        <td class="num" title="sets covered / sets">${ncov}/${nsets}</td>
+        <td class="num" title="sets covered / sets">${ncov}/${nsets}${(f.work === "working" ? t.support_working : t.support) === "binary" ? ' <span class="flag" title="binary-only: every core loading it is distributed without public source">bin</span>' : ""}</td>
         <td>${t.cores.map(id => badge(id)).join("")}</td>
         <td class="num">${t.date || ""}</td>
       </tr>${S.open.has(t.name) ? detailRow(t) : ""}`;
@@ -508,8 +508,8 @@
 
   // ---------- cores ----------
   function applyCores() {
-    const q = $("#c-q").value.trim().toLowerCase(), src = $("#c-src").value, sort = $("#c-sort").value, dir = S.dir.c;
-    let rows = S.data.cores.filter(c => (!src || c.source === src) && (!q || [c.name, c.repo, c.rbf, ...(c.mame_drivers || [])].join(" ").toLowerCase().includes(q)));
+    const q = $("#c-q").value.trim().toLowerCase(), src = $("#c-src").value, bin = $("#c-bin").value, sort = $("#c-sort").value, dir = S.dir.c;
+    let rows = S.data.cores.filter(c => (!src || c.source === src) && (!bin || (bin === "binary") === !!c.binary_only) && (!q || [c.name, c.repo, c.rbf, ...(c.mame_drivers || [])].join(" ").toLowerCase().includes(q)));
     const cmp = {
       name: (a, b) => a.name.localeCompare(b.name),
       source: (a, b) => a.source.localeCompare(b.source) || a.name.localeCompare(b.name),
@@ -522,7 +522,7 @@
     writeHash();
     $("#cores-count").textContent = `${fmt(rows.length)} cores · click a core to list its titles`;
     $("#cores-table tbody").innerHTML = rows.map(c => `<tr>
-      <td><a href="#" data-core="${esc(c.id)}">${esc(c.name)}</a>${c.channel && c.channel !== "default" ? ` <span class="flag">${esc(c.channel)}</span>` : ""}</td>
+      <td><a href="#" data-core="${esc(c.id)}">${esc(c.name)}</a>${c.binary_only ? ' <span class="flag" title="binary-only: no public source known">bin</span>' : ""}${c.channel && c.channel !== "default" ? ` <span class="flag">${esc(c.channel)}</span>` : ""}</td>
       <td><span class="badge src-${esc(c.source)}">${esc(c.source_title)}</span></td>
       <td class="set">${c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.repo)}</a>` : '<span class="muted">not published</span>'}</td>
       <td class="set">${(c.mame_drivers || []).map(esc).join("<br>")}</td>
@@ -534,7 +534,7 @@
     const a = ev.target.closest("a[data-core]"); if (!a) return; ev.preventDefault();
     $("#f-core").value = a.dataset.core; $("#f-cov").value = "all"; $("#f-cat").value = "all"; $("#f-work").value = "all"; applyTitles(); showTab("titles");
   });
-  ["c-q", "c-src", "c-sort"].forEach(id => $("#" + id).addEventListener(id === "c-q" ? "input" : "change", applyCores));
+  ["c-q", "c-src", "c-bin", "c-sort"].forEach(id => $("#" + id).addEventListener(id === "c-q" ? "input" : "change", applyCores));
   $("#c-dir").addEventListener("click", () => { S.dir.c *= -1; $("#c-dir").textContent = S.dir.c > 0 ? "↑" : "↓"; applyCores(); });
   $("#c-reset").addEventListener("click", () => { CORE_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.c = 1; $("#c-dir").textContent = "↑"; applyCores(); });
 
