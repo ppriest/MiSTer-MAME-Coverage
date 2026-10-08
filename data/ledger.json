@@ -183,6 +183,24 @@
 "pairs": 26,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-08",
+"note": "alamone 2026-10-05",
+"cores": 0,
+"sets": 0,
+"pairs": 0,
+"dates_improved": 0,
+"cores_removed": 0
+},
+{
+"date": "2026-10-08",
+"note": "alamone 2026-10-05",
+"cores": 0,
+"sets": 0,
+"pairs": 0,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -262,6 +280,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:bonzeadventure_bazset": {
@@ -280,6 +299,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:brapboys_bazset": {
@@ -298,6 +318,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:cadash_bazset": {
@@ -316,6 +337,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:chase_hq_bazset": {
@@ -334,6 +356,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:earthjoker_bazset": {
@@ -352,6 +375,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:expro02_bazset": {
@@ -370,6 +394,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:galmedes_bazset": {
@@ -388,6 +413,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:gigandes_bazset": {
@@ -406,6 +432,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:krull_bazset": {
@@ -424,6 +451,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:mazeofflott_bazset": {
@@ -442,6 +470,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:night_striker_bazset": {
@@ -460,6 +489,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:ordyne_bazset": {
@@ -478,6 +508,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:rainbowislands_bazset": {
@@ -496,6 +527,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:sci_bazset": {
@@ -514,6 +546,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:superman_bazset": {
@@ -532,6 +565,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "bazset:volfied": {
@@ -550,6 +584,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "blahm1d:blahm1d_exidy440": {

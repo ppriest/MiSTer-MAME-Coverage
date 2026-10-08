@@ -45,8 +45,13 @@ def main(argv=None) -> int:
         with open(mister_cache, "w", encoding="utf-8") as f:
             json.dump(mister, f, ensure_ascii=False)
         print(f"[mister] {len(mister['mras'])} MRAs, {len(mister['first_seen'])} dated sets, {len(mister['cores'])} cores")
+        observed = reconcile.observe(mister)
+        mister_mod.save_core_repos(observed["core_repos"])
+        repos = {r["repo"] for r in mister["repos"]} | {c.get("repo") for c in observed["cores"].values()}
+        n = len(mister_mod.scan_repo_sources(r for r in repos if r))
+        print(f"[mister] source check: {n} repositories in data/repo_source.json")
         led = ledger_mod.load()
-        summary = ledger_mod.merge(led, reconcile.observe(mister), note=f"alamone {mister.get('alamone_generated', '')[:10]}")
+        summary = ledger_mod.merge(led, observed, note=f"alamone {mister.get('alamone_generated', '')[:10]}")
         ledger_mod.save(led)
         print(f"[ledger] {ledger_mod.LEDGER}: +{summary['cores']} cores, +{summary['sets']} sets, "
               f"+{summary['pairs']} set/core pairs, {summary['dates_improved']} dates improved, "

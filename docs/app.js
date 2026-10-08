@@ -13,7 +13,7 @@
   // Every control on the Titles, Drivers and Cores tabs, plus each tab's sort direction and the
   // open tab, so a view can be linked or restored. Only values that differ from the default are
   // written.
-  const FILTER_IDS = ["f-q", "f-cov", "f-work", "f-cat", "f-y0", "f-y1", "f-m0y", "f-m0m", "f-m1y", "f-m1m", "f-a0y", "f-a0m", "f-a1y", "f-a1m", "f-genre", "f-manu", "f-drv", "f-dcov", "f-core", "f-rot", "f-sort"];
+  const FILTER_IDS = ["f-q", "f-cov", "f-sup", "f-work", "f-cat", "f-y0", "f-y1", "f-m0y", "f-m0m", "f-m1y", "f-m1m", "f-a0y", "f-a0m", "f-a1y", "f-a1m", "f-genre", "f-manu", "f-drv", "f-dcov", "f-core", "f-rot", "f-sort"];
   const DRIVER_IDS = ["d-q", "d-cov", "d-genre", "d-sort"];
   const CORE_IDS = ["c-q", "c-src", "c-sort"];
   const UNMATCHED_IDS = ["u-q"];
@@ -64,9 +64,9 @@
   const coreName = id => (S.cores[id] && S.cores[id].name) || id;
   function badge(id, extra) {
     const c = S.cores[id] || { name: id, source: id.split(":")[0], source_title: "" };
-    const title = `${c.source_title || c.source}${c.repo ? " · " + c.repo : ""}${extra && extra.date ? " · since " + extra.date + (extra.date_quality !== "git" ? " (approx.)" : "") : ""}`;
+    const title = `${c.binary_only ? "binary-only · " : ""}${c.source_title || c.source}${c.repo ? " · " + c.repo : ""}${extra && extra.date ? " · since " + extra.date + (extra.date_quality !== "git" ? " (approx.)" : "") : ""}`;
     const cls = ["badge", "src-" + c.source, extra && extra.wip ? "wip" : ""].join(" ");
-    return `<span class="${cls}" title="${esc(title)}">${esc(c.name)}${extra && extra.alt ? ' <span class="flag">alt</span>' : ""}${extra && extra.wip ? ' <span class="flag">wip</span>' : ""}</span>`;
+    return `<span class="${cls}" title="${esc(title)}">${esc(c.name)}${c.binary_only ? ' <span class="flag">bin</span>' : ""}${extra && extra.alt ? ' <span class="flag">alt</span>' : ""}${extra && extra.wip ? ' <span class="flag">wip</span>' : ""}</span>`;
   }
 
   // ---------- tiles ----------
@@ -334,6 +334,7 @@
     if (f.cov === "yes" && !covered) return false;
     if (f.cov === "no" && covered) return false;
     if (f.cov === "partial" && !(covered && ncov < nsets)) return false;
+    if (f.sup && (f.work === "working" ? t.support_working : t.support) !== f.sup) return false;
     if (f.y0 && (!+t.year || +t.year < f.y0)) return false;
     if (f.y1 && (!+t.year || +t.year > f.y1)) return false;
     if (f.m0 && (!t.mame_date || t.mame_date.slice(0, 7) < f.m0)) return false;
@@ -373,7 +374,7 @@
   }
 
   function readFilters() {
-    return { q: $("#f-q").value.trim().toLowerCase(), cov: $("#f-cov").value, work: $("#f-work").value, cat: $("#f-cat").value,
+    return { q: $("#f-q").value.trim().toLowerCase(), cov: $("#f-cov").value, work: $("#f-work").value, cat: $("#f-cat").value, sup: $("#f-sup").value,
       y0: +$("#f-y0").value || 0, y1: +$("#f-y1").value || 0, m0: monthFrom("f-m0y", "f-m0m", "01"), m1: monthFrom("f-m1y", "f-m1m", "12"),
       a0: monthFrom("f-a0y", "f-a0m", "01"), a1: monthFrom("f-a1y", "f-a1m", "12"),
       manu: $("#f-manu").value, genre: $("#f-genre").value, drv: $("#f-drv").value, dcov: $("#f-dcov").value, core: $("#f-core").value, rot: $("#f-rot").value, sort: $("#f-sort").value };
