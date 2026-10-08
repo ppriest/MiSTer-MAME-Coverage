@@ -83,6 +83,8 @@ DB_SOURCES = {
     "arcfpga": "https://raw.githubusercontent.com/bmo00/arcfpga-mister-db/db/db.json.zip",
     "blahm1d": "https://mister.blahm1d.com/db.json.zip",
     "shmupfan": "https://raw.githubusercontent.com/shmupfan/Distribution/main/db.json",   # plain JSON, not zipped
+    # bazset's binary-only cores (Patreon: patreon.com/cw/bazset); a standard Downloader database repository
+    "bazset": "https://raw.githubusercontent.com/bazset/MiSTer_BAZSET/db/db.json.zip",
     # ppriest's own cores, rebuilt daily from his public non-archived core repositories
     # (github.com/ppriest/MiSTer_ppriest). Unreachable until that repository is published.
     "ppriest": "https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip",
@@ -120,6 +122,7 @@ DB_TITLES = {
     "arcfpga": "arcfpga (bmo00)",
     "blahm1d": "blahm1d",
     "shmupfan": "shmupfan (Distribution)",
+    "bazset": "bazset (MiSTer_BAZSET)",
     "ppriest": "ppriest (MiSTer_ppriest)",
     "repo": "GitHub repository only",
 }
@@ -328,7 +331,7 @@ def norm_rbf(rbf: str | None) -> str | None:
     s = rbf.strip().lower()
     s = s.split("/")[-1]
     s = re.sub(r"\.rbf$", "", s)
-    s = re.sub(r"_\d{8}$", "", s)
+    s = re.sub(r"\.?_\d{8}$", "", s).rstrip(".")
     s = re.sub(r"_mister$", "", s)
     s = re.sub(r"^arcade-", "", s)
     return s
