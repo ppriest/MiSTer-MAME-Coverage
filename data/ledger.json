@@ -174,6 +174,15 @@
 "pairs": 45,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-08",
+"note": "alamone 2026-10-05",
+"cores": 17,
+"sets": 13,
+"pairs": 26,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -236,6 +245,312 @@
 "first_recorded": "2026-10-04",
 "aliases": [],
 "last_seen": "2026-10-04"
+},
+"bazset:asuka_bazset": {
+"id": "bazset:asuka_bazset",
+"name": "Asuka_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Asuka_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:bonzeadventure_bazset": {
+"id": "bazset:bonzeadventure_bazset",
+"name": "BonzeAdventure_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "BonzeAdventure_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:brapboys_bazset": {
+"id": "bazset:brapboys_bazset",
+"name": "BRapBoys_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "BRapBoys_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:cadash_bazset": {
+"id": "bazset:cadash_bazset",
+"name": "Cadash_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Cadash_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:chase_hq_bazset": {
+"id": "bazset:chase_hq_bazset",
+"name": "Chase_HQ_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Chase_HQ_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:earthjoker_bazset": {
+"id": "bazset:earthjoker_bazset",
+"name": "EarthJoker_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "EarthJoker_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:expro02_bazset": {
+"id": "bazset:expro02_bazset",
+"name": "EXPRO02_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "EXPRO02_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:galmedes_bazset": {
+"id": "bazset:galmedes_bazset",
+"name": "Galmedes_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Galmedes_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:gigandes_bazset": {
+"id": "bazset:gigandes_bazset",
+"name": "Gigandes_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Gigandes_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:krull_bazset": {
+"id": "bazset:krull_bazset",
+"name": "Krull_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Krull_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:mazeofflott_bazset": {
+"id": "bazset:mazeofflott_bazset",
+"name": "MazeOfFlott_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "MazeOfFlott_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:night_striker_bazset": {
+"id": "bazset:night_striker_bazset",
+"name": "Night_Striker_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Night_Striker_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:ordyne_bazset": {
+"id": "bazset:ordyne_bazset",
+"name": "Ordyne_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Ordyne_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:rainbowislands_bazset": {
+"id": "bazset:rainbowislands_bazset",
+"name": "RainbowIslands_bazset._20261008",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "RainbowIslands_bazset._20261008.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:sci_bazset": {
+"id": "bazset:sci_bazset",
+"name": "SCI_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "SCI_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:superman_bazset": {
+"id": "bazset:superman_bazset",
+"name": "Superman_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Superman_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
+"bazset:volfied": {
+"id": "bazset:volfied",
+"name": "Volfied",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Volfied.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
 },
 "blahm1d:blahm1d_exidy440": {
 "id": "blahm1d:blahm1d_exidy440",
@@ -4117,6 +4432,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "dist:pacman": {
@@ -4599,6 +4915,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "dist:ringking": {
@@ -4936,6 +5253,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "dist:silverland": {
@@ -6025,6 +6343,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "jlrh:ffbigkarnk": {
@@ -6295,6 +6614,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "jlrh:ffmegaphx": {
@@ -8808,6 +9128,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "meat:docastle": {
@@ -9338,6 +9659,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "ongo:crystalsystem": {
@@ -9356,6 +9678,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "ongo:ctribe": {
@@ -9450,6 +9773,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "ongo:ffcheqflag": {
@@ -9563,6 +9887,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
+"aliases": [],
 "last_seen": "2026-10-08"
 },
 "ongo:ffoverdriv": {
@@ -16664,6 +16989,18 @@
 }
 },
 "asuka": {
+"bazset:asuka_bazset": {
+"core": "bazset:asuka_bazset",
+"date": "2026-09-19",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Asuka & Asuka (World).mra",
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
 "dist:taitoasuka": {
 "core": "dist:taitoasuka",
 "date": "2026-09-19",
@@ -20936,6 +21273,18 @@
 }
 },
 "bonzeadv": {
+"bazset:bonzeadventure_bazset": {
+"core": "bazset:bonzeadventure_bazset",
+"date": "2026-09-17",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Bonze Adventure (World, rev 1).mra",
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
 "dist:taitoasuka": {
 "core": "dist:taitoasuka",
 "date": "2026-09-17",
@@ -21520,6 +21869,20 @@
 "first_repo": "MiSTer-devel/MRA-Alternatives_MiSTer",
 "first_path": "_alternatives/_Pacman/Brakman - HBMame.mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-08"
+}
+},
+"brapboys": {
+"bazset:brapboys_bazset": {
+"core": "bazset:brapboys_bazset",
+"date": "2026-10-08",
+"date_quality": "observed",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-08",
 "last_seen": "2026-10-08"
 }
 },
@@ -22708,6 +23071,18 @@
 }
 },
 "cadash": {
+"bazset:cadash_bazset": {
+"core": "bazset:cadash_bazset",
+"date": "2026-09-20",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Cadash (World).mra",
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
 "dist:taitoasuka": {
 "core": "dist:taitoasuka",
 "date": "2026-09-20",
@@ -24384,6 +24759,20 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Charlie Ninja.mra",
 "first_recorded": "2026-10-06",
+"last_seen": "2026-10-08"
+}
+},
+"chasehq": {
+"bazset:chase_hq_bazset": {
+"core": "bazset:chase_hq_bazset",
+"date": "2026-10-08",
+"date_quality": "observed",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-08",
 "last_seen": "2026-10-08"
 }
 },
@@ -33846,6 +34235,18 @@
 }
 },
 "earthjkr": {
+"bazset:earthjoker_bazset": {
+"core": "bazset:earthjoker_bazset",
+"date": "2026-09-19",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/U.N. Defense Force - Earth Joker (US - Japan, set 1).mra",
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
 "dist:taitoasuka": {
 "core": "dist:taitoasuka",
 "date": "2026-09-19",
@@ -35658,6 +36059,20 @@
 "first_repo": "MiSTer-devel/MRA-Alternatives_MiSTer",
 "first_path": "_alternatives/_Phoenix/Falcon (bootleg of Phoenix) (8085A CPU).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-08"
+}
+},
+"fantasia": {
+"bazset:expro02_bazset": {
+"core": "bazset:expro02_bazset",
+"date": "2026-10-08",
+"date_quality": "observed",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-08",
 "last_seen": "2026-10-08"
 }
 },
@@ -40200,6 +40615,18 @@
 }
 },
 "galmedes": {
+"bazset:galmedes_bazset": {
+"core": "bazset:galmedes_bazset",
+"date": "2026-09-19",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Galmedes (Japan).mra",
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
 "dist:taitoasuka": {
 "core": "dist:taitoasuka",
 "date": "2026-09-19",
@@ -41794,6 +42221,18 @@
 }
 },
 "gigandes": {
+"bazset:gigandes_bazset": {
+"core": "bazset:gigandes_bazset",
+"date": "2026-09-04",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "bmo00/arcfpga-cores",
+"first_path": "cores/taitox/releases/mra/Gigandes.mra",
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
 "jt:jttaitox": {
 "core": "jt:jttaitox",
 "date": "2026-08-30",
@@ -52420,6 +52859,18 @@
 }
 },
 "krull": {
+"bazset:krull_bazset": {
+"core": "bazset:krull_bazset",
+"date": "2026-09-11",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Krull.mra",
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
 "dist:qbert": {
 "core": "dist:qbert",
 "date": "2026-09-11",
@@ -57431,6 +57882,20 @@
 "last_seen": "2026-10-08"
 }
 },
+"missmw96": {
+"bazset:expro02_bazset": {
+"core": "bazset:expro02_bazset",
+"date": "2026-10-08",
+"date_quality": "observed",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+}
+},
 "mizubaku": {
 "dist:taitof2": {
 "core": "dist:taitof2",
@@ -57856,6 +58321,18 @@
 }
 },
 "mofflott": {
+"bazset:mazeofflott_bazset": {
+"core": "bazset:mazeofflott_bazset",
+"date": "2026-09-20",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Maze of Flott (Japan).mra",
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
 "dist:taitoasuka": {
 "core": "dist:taitoasuka",
 "date": "2026-09-20",
@@ -61585,6 +62062,20 @@
 "last_seen": "2026-10-08"
 }
 },
+"newfant": {
+"bazset:expro02_bazset": {
+"core": "bazset:expro02_bazset",
+"date": "2026-10-08",
+"date_quality": "observed",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+}
+},
 "newpuck2": {
 "dist:pacman": {
 "core": "dist:pacman",
@@ -61760,6 +62251,20 @@
 "first_repo": "shmupfan/Arcade-TaitoGNET_MiSTer",
 "first_path": "releases/Night Raid (V2.03J).mra",
 "first_recorded": "2026-10-07",
+"last_seen": "2026-10-08"
+}
+},
+"nightstr": {
+"bazset:night_striker_bazset": {
+"core": "bazset:night_striker_bazset",
+"date": "2026-10-08",
+"date_quality": "observed",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-08",
 "last_seen": "2026-10-08"
 }
 },
@@ -63390,6 +63895,18 @@
 }
 },
 "ordyneje": {
+"bazset:ordyne_bazset": {
+"core": "bazset:ordyne_bazset",
+"date": "2026-09-26",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Ordyne/Ordyne (Japan, English Version).mra",
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
 "kuze:namcos2_std": {
 "core": "kuze:namcos2_std",
 "date": "2026-09-26",
@@ -66308,6 +66825,20 @@
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_Super Gem Fighter Mini Mix/Pocket Fighter (Japan 970904).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-08"
+}
+},
+"pgalvip": {
+"bazset:expro02_bazset": {
+"core": "bazset:expro02_bazset",
+"date": "2026-10-08",
+"date_quality": "observed",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-08",
 "last_seen": "2026-10-08"
 }
 },
@@ -72902,6 +73433,18 @@
 }
 },
 "rbisland": {
+"bazset:rainbowislands_bazset": {
+"core": "bazset:rainbowislands_bazset",
+"date": "2026-08-06",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Rainbow Islands (rev 1).mra",
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
 "jt:jtrastan": {
 "core": "jt:jtrastan",
 "date": "2026-08-09",
@@ -72916,6 +73459,18 @@
 }
 },
 "rbislande": {
+"bazset:rainbowislands_bazset": {
+"core": "bazset:rainbowislands_bazset",
+"date": "2026-08-06",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Rainbow Islands - Extra Version.mra",
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
 "jt:jtrastan": {
 "core": "jt:jtrastan",
 "date": "2026-08-09",
@@ -77928,6 +78483,20 @@
 "first_repo": "MiSTer-devel/Arcade-SpaceInvaders_MiSTer",
 "first_path": "unreleased/_alternatives/_Space Chaser/Space Chaser (Model Racing bootleg).mra",
 "first_recorded": "2026-10-05",
+"last_seen": "2026-10-08"
+}
+},
+"sci": {
+"bazset:sci_bazset": {
+"core": "bazset:sci_bazset",
+"date": "2026-10-08",
+"date_quality": "observed",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-08",
 "last_seen": "2026-10-08"
 }
 },
@@ -84281,6 +84850,20 @@
 "last_seen": "2026-10-08"
 }
 },
+"smissw": {
+"bazset:expro02_bazset": {
+"core": "bazset:expro02_bazset",
+"date": "2026-10-08",
+"date_quality": "observed",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+}
+},
 "smleague": {
 "dist:st-v": {
 "core": "dist:st-v",
@@ -89650,6 +90233,18 @@
 }
 },
 "superman": {
+"bazset:superman_bazset": {
+"core": "bazset:superman_bazset",
+"date": "2026-08-18",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Superman (World).mra",
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
 "jt:jttaitox": {
 "core": "jt:jttaitox",
 "date": "2026-08-30",
@@ -89858,6 +90453,34 @@
 "first_repo": "RodimusFVC/Arcade-SpaceInvaders_MiSTer",
 "first_path": "releases/_alternatives/_Space Invaders/Super Invasion (Electromar, Spanish).mra",
 "first_recorded": "2026-10-05",
+"last_seen": "2026-10-08"
+}
+},
+"supmodel": {
+"bazset:expro02_bazset": {
+"core": "bazset:expro02_bazset",
+"date": "2026-10-08",
+"date_quality": "observed",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+}
+},
+"supmodl2": {
+"bazset:expro02_bazset": {
+"core": "bazset:expro02_bazset",
+"date": "2026-10-08",
+"date_quality": "observed",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-08",
 "last_seen": "2026-10-08"
 }
 },
@@ -98990,6 +99613,18 @@
 }
 },
 "volfied": {
+"bazset:volfied": {
+"core": "bazset:volfied",
+"date": "2026-08-06",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Volfied (World, rev 1).mra",
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+},
 "jt:jtvlfied": {
 "core": "jt:jtvlfied",
 "date": "2026-08-16",
@@ -100862,6 +101497,20 @@
 "first_repo": "MiSTer-devel/Arcade-Astrocade_MiSTer",
 "first_path": "releases/Wizard of Wor.mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-08"
+}
+},
+"wownfant": {
+"bazset:expro02_bazset": {
+"core": "bazset:expro02_bazset",
+"date": "2026-10-08",
+"date_quality": "observed",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-08",
 "last_seen": "2026-10-08"
 }
 },
@@ -103239,6 +103888,20 @@
 "last_seen": "2026-10-08"
 }
 },
+"zipzap": {
+"bazset:expro02_bazset": {
+"core": "bazset:expro02_bazset",
+"date": "2026-10-08",
+"date_quality": "observed",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-08",
+"last_seen": "2026-10-08"
+}
+},
 "znpwfv": {
 "dist:st-v": {
 "core": "dist:st-v",
@@ -104494,6 +105157,9 @@
 },
 "brakman": {
 "dist": "Maze"
+},
+"brapboys": {
+"bazset": "Beat'em Up"
 },
 "breakout": {
 "dist": "Ball and Paddle"
@@ -106227,6 +106893,9 @@
 },
 "falcon": {
 "dist": "Shooter - Gallery"
+},
+"fantasia": {
+"bazset": "Puzzle / Adult"
 },
 "fantastc": {
 "repo": "Shooter"
@@ -108016,7 +108685,8 @@
 },
 "krull": {
 "ongo": "Platform",
-"dist": "Platform"
+"dist": "Platform",
+"bazset": "Platform"
 },
 "ktiger": {
 "coinop": "Shoot &apos;Em Up"
@@ -108539,6 +109209,9 @@
 "ongo": "Arcade",
 "kuze": "Arcade"
 },
+"missmw96": {
+"bazset": "Puzzle / Adult"
+},
 "mlander": {
 "dist": "Space / Moon",
 "repo": "Shooter"
@@ -108940,6 +109613,9 @@
 "netmerc": {
 "ongo": "Shooter"
 },
+"newfant": {
+"bazset": "Puzzle / Adult"
+},
 "newpuck2": {
 "dist": "Maze"
 },
@@ -109193,7 +109869,8 @@
 },
 "ordyneje": {
 "ongo": "Arcade",
-"kuze": "Arcade"
+"kuze": "Arcade",
+"bazset": "Shoot 'em up"
 },
 "oscar": {
 "coinop": "Platform"
@@ -109526,6 +110203,9 @@
 },
 "peterpak": {
 "dist": "Arcade"
+},
+"pgalvip": {
+"bazset": "Puzzle / Adult"
 },
 "phantom2": {
 "dist": "Army / Airforce",
@@ -111550,6 +112230,9 @@
 "smgpd": {
 "dist": "Shooter / Flight"
 },
+"smissw": {
+"bazset": "Puzzle / Adult"
+},
 "smooncrs": {
 "repo": "Shooter"
 },
@@ -112164,6 +112847,12 @@
 },
 "supinvsion": {
 "repo": "Shooter"
+},
+"supmodel": {
+"bazset": "Puzzle / Adult"
+},
+"supmodl2": {
+"bazset": "Puzzle / Adult"
 },
 "suprheli": {
 "dist": "Shooter - Horizontal",
@@ -113377,6 +114066,9 @@
 "wow": {
 "dist": "Shooter - Multidirectional"
 },
+"wownfant": {
+"bazset": "Puzzle / Adult"
+},
 "wrofaero": {
 "ongo": "Arcade",
 "repo": "Arcade",
@@ -113577,6 +114269,9 @@
 "ongo": "Arcade",
 "repo": "Arcade",
 "ppriest": "Arcade"
+},
+"zipzap": {
+"bazset": "Puzzle / Adult"
 },
 "zokuoten": {
 "shmupfan": "Minigames"
