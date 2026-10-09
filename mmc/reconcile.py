@@ -189,6 +189,21 @@ def observe(mister: dict) -> dict:
             continue
         date, quality, frepo, fpath = dated(m)
         add(m["setname"], cid, date, quality, m["source"], m.get("wip", False), m.get("alt", False), frepo, fpath)
+    # 1b. Cores of open jotego/jtcores pull requests (source available, nothing published yet).
+    for pc in mister_mod.load_pending():
+        cid = f"jtpr:{pc['name'].lower()}"
+        if pc.get("merged"):
+            excluded.add(cid)
+            continue
+        cores[cid] = {
+            "id": cid, "name": pc["name"], "source": "jtpr", "source_title": mister_mod.DB_TITLES["jtpr"],
+            "channel": None, "rbf": pc["name"] + ".rbf", "repo": "jotego/jtcores",
+            "url": f"https://github.com/jotego/jtcores/pull/{pc['pr']}", "build_date": None, "status": "open PR",
+            "reading": None, "score": None, "mame_drivers": [], "note": pc.get("game"), "alamone_sets": [],
+        }
+        for setn in pc["sets"]:
+            add(setn, cid, pc["date"], "git", "jtpr", False, False, "jotego/jtcores", f"pull/{pc['pr']}")
+        core_repos[cid].add("jotego/jtcores")
     excluded -= set(cores)            # a core alamone knows as a MiSTer build is never excluded
     # a superseded record goes only when its replacement was observed, so no support is lost
     excluded |= {old for old, new in mister_mod.SUPERSEDED_CORES.items() if new in cores}

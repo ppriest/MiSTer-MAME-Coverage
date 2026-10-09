@@ -1564,6 +1564,15 @@
  "jt:jtyiear": [
   "jotego/jtbin"
  ],
+ "jtpr:jtarblst": [
+  "jotego/jtcores"
+ ],
+ "jtpr:jtmeikyu": [
+  "jotego/jtcores"
+ ],
+ "jtpr:jtmnymny": [
+  "jotego/jtcores"
+ ],
  "kuze:ginganin": [
   "kuzearcade/Arcade-GingaNin_MiSTer",
   "kuzearcade/kuzecores"

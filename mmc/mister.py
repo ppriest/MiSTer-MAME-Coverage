@@ -63,9 +63,6 @@ EXTRA_REPOS = [
     ("repo", "kyledlester/MiSTer_Nostradamus", ["MRA"]),   # was Nostradamus_Magical_Cat_Adventure_MiSTer
     ("ppriest", "ppriest/Arcade-HyperNG64_MiSTer", None),
     ("repo", "decoryah/Arcade-TaitoLSystem_MiSTer", ["mra"]),
-    # XelaNotPu's Patreon supporter builds (patreon.com/cw/XelaNotPu): extra titles beyond the public cores
-    ("repo", "XelaNotPu/SYSTEM11_MiSTer-Supporter", ["releases/_Arcade"]),
-    ("repo", "XelaNotPu/SYSTEMFL_MiSTer-Supporter", ["_Arcade"]),
 ]
 
 # Core records that a better-sourced record replaces. They are removed from the ledger together with
@@ -93,6 +90,19 @@ SOURCE_REPOS = {
     "dist:victory": "MiSTer-devel/Arcade-Victory_MiSTer",
 }
 REPO_SOURCE_FILE = os.path.join(paths.DATA, "repo_source.json")
+
+
+PENDING_FILE = os.path.join(paths.DATA, "pending_cores.json")
+
+
+def load_pending() -> list[dict]:
+    """Source-available cores that sit in open pull requests of jotego/jtcores (no MRA or build
+    published yet). Hand-maintained: set ``merged`` once the PR lands, so the placeholder goes."""
+    try:
+        with open(PENDING_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return []
 
 
 def load_repo_source() -> dict[str, bool]:
@@ -214,6 +224,7 @@ DB_TITLES = {
     "blahm1d": "blahm1d",
     "shmupfan": "shmupfan (Distribution)",
     "bazset": "bazset (MiSTer_BAZSET)",
+    "jtpr": "jtcores open pull requests",
     "ppriest": "ppriest (MiSTer_ppriest)",
     "repo": "GitHub repository only",
 }
