@@ -7,6 +7,7 @@ import os
 import re
 
 from . import genre as genre_mod
+from . import hbmame as hbmame_mod
 from . import mamehist
 from . import mame as mame_mod
 from . import mister as mister_mod
@@ -310,10 +311,15 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
 
     titles: dict[str, dict] = {}
     unmatched: list[dict] = []
+    hb = hbmame_mod.load()
+    hb_sets = set(hb["sets"])
     for setn, recs in support.items():
         if setn not in machines:
             ids = sorted(c for c in recs if not c.startswith("ongo:")) or sorted(recs)
-            unmatched.append({"set": setn, "cores": ids})
+            u = {"set": setn, "cores": ids, "hbmame": setn in hb_sets}
+            if u["hbmame"]:
+                u.update({k: v for k, v in hb["sets"][setn].items() if k in ("desc", "year", "manufacturer", "parent") and v})
+            unmatched.append(u)
     # Every machine that is arcade/gambling, or that MiSTer loads regardless of category.
     for name, m in machines.items():
         if m.get("isbios"):  # "Acclaim ZN-1", "Neo-Geo" and the like are not games
@@ -446,6 +452,7 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
         "ledger_runs": ledger["meta"].get("runs", [])[-5:],
         "genre": genre_summary,
         "mame_added_updated": mamehist.load().get("updated"),
+        "hbmame": {"tag": hb.get("tag"), "version": hb.get("version"), "updated": hb.get("updated"), "sets": len(hb["sets"])},
         "sources": mister_mod.DB_TITLES,
         "source_info": {k: {"page": mister_mod.SOURCE_PAGES.get(k), "db_url": mister_mod.DB_SOURCES.get(k)}
                         for k in mister_mod.DB_TITLES},
