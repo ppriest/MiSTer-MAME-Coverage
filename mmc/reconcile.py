@@ -264,6 +264,10 @@ def observe(mister: dict) -> dict:
         cat = (m.get("category") or "").strip()
         if cat and m.get("setname"):
             categories[m["setname"]].setdefault(m["source"], cat)
+    for setn in list(support):                 # excluded cores are not observed again (the ledger drops them)
+        for cid in [c for c in support[setn] if c in excluded]:
+            del support[setn][cid]
+    cores = {cid: c for cid, c in cores.items() if cid not in excluded}
     return {"cores": cores, "support": {k: v for k, v in support.items() if v}, "categories": dict(categories),
             "excluded": sorted(excluded), "core_repos": {k: sorted(v) for k, v in core_repos.items()}}
 
