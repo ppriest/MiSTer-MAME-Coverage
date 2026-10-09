@@ -106,7 +106,7 @@ core takes over). Sets are those the PR's `mame2mra.toml` selects, checked again
 clone, redone only when a newer tag appears) into `data/hbmame.json`. `report` flags every
 unmatched set that exists there (`unmatched[].hbmame`, `meta.hbmame`); the Unmatched tab labels
 them **homebrew/hacks** and has a show / hide / only filter. HBMAME publishes no machine list, so
-hacks defined outside `src/hbmame/drivers` are not seen. The same lines carry what a `-listxml` would (year, parent, manufacturer, description), stored per set and shown on the Unmatched tab. HBMAME is only released as Windows binaries, so `-listxml` itself cannot be run in CI; MAME's own metadata still comes from its `-listxml` release asset.
+hacks defined outside `src/hbmame/drivers` are not seen. The same lines carry what a `-listxml` would (year, parent, manufacturer, description), stored per set and shown on the Unmatched tab. **`-listxml`:** HBMAME is Windows-only, so `.github/workflows/hbmame.yml` runs `hbmame.exe -listxml` on a Windows runner (daily, or on demand) and publishes it as `hbmame-lx.zip` on this repository's `hbmame-listxml` release; `mmc hbmame` prefers that file (parsed like MAME's listxml) and falls back to the source parse until it exists. The workflow takes the newest `Robbbert/hbmame` release asset (name containing `64`), or the `HBMAME_URL` repository variable / the `url` run input if HBMAME is hosted elsewhere.
 
 ## Databases tab
 
