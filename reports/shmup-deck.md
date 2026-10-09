@@ -28,7 +28,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `brkthru` | Break Thru (World) | 1986 | Shooter / Driving Horizontal (catver) | xnbrkthru |
 | `bucky` | Bucky O'Hare (ver EAB) | 1992 | Shooter / Walking (catver) | Bucky |
 | `bullet` | Bullet (FD1094 317-0041) | 1987 | Shooter / Walking (catver) | jts16b |
-| `calibr50` | Caliber 50 (Ver. 1.01) | 1989 | Shooter / Walking (catver) | jtcal50, SetaDowntown (ppriest) |
+| `calibr50` | Caliber 50 (Ver. 1.01) | 1989 | Shooter / Walking (catver) | jtcal50, SetaDowntown |
 | `choplift` | Choplifter (8751 315-5151) | 1985 | Shooter / Flying Horizontal (catver) | SegaSys1+2 (TheJesusFish) |
 | `colony7` | Colony 7 (set 1) | 1981 | Shooter / Command (catver) | Defender |
 | `commando` | Commando (World) | 1985 | Shooter / Walking (catver) | jtcommnd |
@@ -44,9 +44,9 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `fnkyfish` | Funky Fish | 1981 | Shooter / Misc. Horizontal (catver) | Kangaroo |
 | `gground` | Gain Ground (World, 3 Players, Floppy Based, FD1094 317-0058-03d Rev A) | 1988 | Shooter / Walking (catver) | SegaSystem24 |
 | `gbusters` | Gang Busters (set 1) | 1988 | Shooter / Walking (catver) | jtaliens |
-| `gondo` | Gondomania (World) | 1987 | Shooter / Flying Vertical (catver) | DEC8 (shmupfan), dec8 |
+| `gondo` | Gondomania (World) | 1987 | Shooter / Flying Vertical (catver) | dec8 |
 | `gwar` | Guerrilla War (US) | 1987 | Shooter / Walking (catver) | ffgwar |
-| `gundhara` | Gundhara | 1995 | Shooter / Walking (catver) | Seta (ppriest) |
+| `gundhara` | Gundhara | 1995 | Shooter / Walking (catver) | Seta |
 | `heatbrl` | Heated Barrel (World version 3) | 1992 | Shooter / Walking (catver) | HeatedBarrel |
 | `hbarrel` | Heavy Barrel (World) | 1987 | Shooter / Walking (catver) | jtninja |
 | `ikari3` | Ikari III - The Rescue (World version 1, 8-Way Joystick) | 1989 | Shooter / Walking (catver) | SNK68 |

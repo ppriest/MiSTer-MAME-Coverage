@@ -211,6 +211,27 @@ FILTER_OVERRIDES = {"jotego/jtcores": "blob:none"}
 
 WIKI_REPO = "https://github.com/MiSTer-devel/Wiki_MiSTer.wiki.git"
 
+# Where each source lives (shown on the Databases tab): the page to look at, and the Downloader
+# database file when there is one.
+SOURCE_PAGES = {
+    "dist": "https://github.com/MiSTer-devel/Distribution_MiSTer",
+    "jt": "https://github.com/jotego/jtbin",
+    "coinop": "https://github.com/Coin-OpCollection/Distribution-MiSTerFPGA",
+    "ongo": "https://github.com/OngoGablogian/MiSTer_Ongo",
+    "meat": "https://github.com/meathax/meatcores",
+    "slop": "https://github.com/TheJesusFish/Slop-Core",
+    "kuze": "https://github.com/kuzearcade/kuzecores",
+    "jlrh": "https://github.com/jlrh/jlrh-misterfpga-db",
+    "arcfpga": "https://github.com/bmo00/arcfpga-mister-db",
+    "blahm1d": "https://www.patreon.com/cw/blahm1d",
+    "shmupfan": "https://github.com/shmupfan/Distribution",
+    "bazset": "https://github.com/bazset/MiSTer_BAZSET",
+    "ppriest": "https://github.com/ppriest/MiSTer_ppriest",
+    "jtpr": "https://github.com/jotego/jtcores/tree/andrea-cores/cores",
+    "repo": None,
+}
+
+
 DB_TITLES = {
     "dist": "MiSTer official distribution",
     "jt": "JTCORES (jotego)",

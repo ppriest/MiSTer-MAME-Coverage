@@ -82,6 +82,8 @@ def merge_duplicate_cores(cores: dict[str, dict], sets_by_core: dict[str, set[st
         key = _stem_key(mister_mod.norm_rbf(c["rbf"]) or "")
         best = None
         for kid, k in known:
+            if k["source"] == "repo" and c["source"] in mister_mod.DB_SOURCES and c.get("repo") and c["repo"] == k.get("repo"):
+                continue        # the developer's database record replaces a loose repository record
             theirs = set(k["alamone_sets"]) | sets_by_core.get(kid, set())
             overlap = len(mine & theirs) / len(mine)
             if overlap < 0.8:
@@ -112,8 +114,16 @@ def resolve_core(m: dict, cores, by_repo, by_rbf, repo_count) -> str:
         rstem = mister_mod.norm_rbf(cores[rid]["rbf"])
         if not stem or stem == rstem or _stem_key(stem) == _stem_key(rstem or ""):
             return rid
+    owned = None   # a loose repository record of the developer whose own database this MRA comes from
     if stem and ("*", stem) in by_rbf:
-        return by_rbf[("*", stem)]
+        target = by_rbf[("*", stem)]
+        t = cores[target]
+        url = (mister_mod.DB_SOURCES.get(src) or "").lower()
+        if t["source"] == "repo" and t.get("repo") and src in mister_mod.DB_SOURCES and \
+                f"/{t['repo'].split('/')[0].lower()}/" in url:
+            owned = t        # the developer's database wins: a core of its own (repo record is dropped)
+        else:
+            return target
     if rid and repo_count.get(m["repo"], 0) == 1 and not stem:
         return rid
     cid = core_id(src, m.get("rbf"))
@@ -121,8 +131,9 @@ def resolve_core(m: dict, cores, by_repo, by_rbf, repo_count) -> str:
         cores[cid] = {
             "id": cid, "name": m.get("rbf") or "?", "source": src,
             "source_title": mister_mod.DB_TITLES.get(src, src), "channel": None,
-            "rbf": (m.get("rbf") or "") + ".rbf", "repo": None if m["repo"].startswith("db:") else m["repo"],
-            "url": None if m["repo"].startswith("db:") else f"https://github.com/{m['repo']}", "build_date": None, "status": None,
+            "rbf": (m.get("rbf") or "") + ".rbf",
+            "repo": owned["repo"] if owned else None if m["repo"].startswith("db:") else m["repo"],
+            "url": owned["url"] if owned else None if m["repo"].startswith("db:") else f"https://github.com/{m['repo']}", "build_date": None, "status": None,
             "reading": None, "score": None, "mame_drivers": [], "note": None, "alamone_sets": [],
         }
     return cid
@@ -240,12 +251,23 @@ def observe(mister: dict) -> dict:
         core_repos[target] |= core_repos.pop(cid, set())
         cores[target].setdefault("aliases", []).append(cid)
         del cores[cid]
+    # 2c. A developer's own database wins over a loose repository record of the same repository.
+    db_cores = {(c["repo"].lower(), _stem_key(mister_mod.norm_rbf(c["rbf"]) or "")) for c in cores.values()
+                if c["source"] in mister_mod.DB_SOURCES and c.get("repo")}
+    for cid, c in cores.items():
+        if c["source"] == "repo" and c.get("repo") and \
+                (c["repo"].lower(), _stem_key(mister_mod.norm_rbf(c["rbf"]) or "")) in db_cores:
+            excluded.add(cid)
     # MRA <category> tags, per set and source (kept in the ledger for the genre step).
     categories: dict[str, dict[str, str]] = collections.defaultdict(dict)
     for m in mister["mras"]:
         cat = (m.get("category") or "").strip()
         if cat and m.get("setname"):
             categories[m["setname"]].setdefault(m["source"], cat)
+    for setn in list(support):                 # excluded cores are not observed again (the ledger drops them)
+        for cid in [c for c in support[setn] if c in excluded]:
+            del support[setn][cid]
+    cores = {cid: c for cid, c in cores.items() if cid not in excluded}
     return {"cores": cores, "support": {k: v for k, v in support.items() if v}, "categories": dict(categories),
             "excluded": sorted(excluded), "core_repos": {k: sorted(v) for k, v in core_repos.items()}}
 
@@ -425,6 +447,8 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
         "genre": genre_summary,
         "mame_added_updated": mamehist.load().get("updated"),
         "sources": mister_mod.DB_TITLES,
+        "source_info": {k: {"page": mister_mod.SOURCE_PAGES.get(k), "db_url": mister_mod.DB_SOURCES.get(k)}
+                        for k in mister_mod.DB_TITLES},
         "repos": mister_meta.get("repos", []),
         "repo_errors": mister_meta.get("errors", []),
         "counts": {
