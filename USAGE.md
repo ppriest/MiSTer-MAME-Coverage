@@ -91,11 +91,11 @@ and month dropdowns, or a drag across that chart) selects titles by that earlies
 `date_working` in the working-only view); titles not on MiSTer have no such date and drop out
 whenever it is set.
 
-## Open jtcores pull requests
+## Unreleased jtcores (pull requests and branches)
 
 `data/pending_cores.json` lists source-available cores that sit in open pull requests of
 `jotego/jtcores` and have no published MRA or build yet (name, PR number, date of the core's first
-commit, MAME sets). `observe` turns each into a `jtpr:<name>` core with those sets. When a PR
+commit, MAME sets; `pr` or, for cores on a branch such as `andrea-cores`, `branch`). `observe` turns each into a `jtpr:<name>` core with those sets. When a PR
 merges, set `"merged": true` (the placeholder is then removed from the ledger and the real `jt:`
 core takes over). Sets are those the PR's `mame2mra.toml` selects, checked against MAME by hand.
 

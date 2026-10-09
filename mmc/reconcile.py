@@ -198,11 +198,13 @@ def observe(mister: dict) -> dict:
         cores[cid] = {
             "id": cid, "name": pc["name"], "source": "jtpr", "source_title": mister_mod.DB_TITLES["jtpr"],
             "channel": None, "rbf": pc["name"] + ".rbf", "repo": "jotego/jtcores",
-            "url": f"https://github.com/jotego/jtcores/pull/{pc['pr']}", "build_date": None, "status": "open PR",
+            "url": (f"https://github.com/jotego/jtcores/pull/{pc['pr']}" if pc.get("pr")
+                    else f"https://github.com/jotego/jtcores/tree/{pc['branch']}/cores/{pc['name'][2:]}"), "build_date": None, "status": "open PR" if pc.get("pr") else f"branch {pc['branch']}",
             "reading": None, "score": None, "mame_drivers": [], "note": pc.get("game"), "alamone_sets": [],
         }
         for setn in pc["sets"]:
-            add(setn, cid, pc["date"], "git", "jtpr", False, False, "jotego/jtcores", f"pull/{pc['pr']}")
+            add(setn, cid, pc["date"], "git", "jtpr", False, False, "jotego/jtcores",
+                f"pull/{pc['pr']}" if pc.get("pr") else f"tree/{pc['branch']}")
         core_repos[cid].add("jotego/jtcores")
     excluded -= set(cores)            # a core alamone knows as a MiSTer build is never excluded
     # a superseded record goes only when its replacement was observed, so no support is lost

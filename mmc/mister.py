@@ -224,7 +224,7 @@ DB_TITLES = {
     "blahm1d": "blahm1d",
     "shmupfan": "shmupfan (Distribution)",
     "bazset": "bazset (MiSTer_BAZSET)",
-    "jtpr": "jtcores open pull requests",
+    "jtpr": "jtcores unreleased (PRs, branches)",
     "ppriest": "ppriest (MiSTer_ppriest)",
     "repo": "GitHub repository only",
 }

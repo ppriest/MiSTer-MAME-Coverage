@@ -228,6 +228,15 @@
 "pairs": 9,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-09",
+"note": "alamone 2026-10-05",
+"cores": 3,
+"sets": 1,
+"pairs": 24,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -8793,7 +8802,7 @@
 "id": "jtpr:jtarblst",
 "name": "jtarblst",
 "source": "jtpr",
-"source_title": "jtcores open pull requests",
+"source_title": "jtcores unreleased (PRs, branches)",
 "channel": null,
 "rbf": "jtarblst.rbf",
 "repo": "jotego/jtcores",
@@ -8805,13 +8814,35 @@
 "mame_drivers": [],
 "note": "Arbalester, Meta Fox",
 "first_recorded": "2026-10-09",
+"aliases": [],
+"last_seen": "2026-10-09"
+},
+"jtpr:jtf1grpr": {
+"id": "jtpr:jtf1grpr",
+"name": "jtf1grpr",
+"source": "jtpr",
+"source_title": "jtcores unreleased (PRs, branches)",
+"channel": null,
+"rbf": "jtf1grpr.rbf",
+"repo": "jotego/jtcores",
+"url": "https://github.com/jotego/jtcores/tree/andrea-cores/cores/f1grpr",
+"build_date": null,
+"status": "branch andrea-cores",
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": "F-1 Grand Prix",
+"aliases": [
+"ongo:f1grpr"
+],
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 },
 "jtpr:jtmeikyu": {
 "id": "jtpr:jtmeikyu",
 "name": "jtmeikyu",
 "source": "jtpr",
-"source_title": "jtcores open pull requests",
+"source_title": "jtcores unreleased (PRs, branches)",
 "channel": null,
 "rbf": "jtmeikyu.rbf",
 "repo": "jotego/jtcores",
@@ -8823,13 +8854,14 @@
 "mame_drivers": [],
 "note": "Meikyu Jima",
 "first_recorded": "2026-10-09",
+"aliases": [],
 "last_seen": "2026-10-09"
 },
 "jtpr:jtmnymny": {
 "id": "jtpr:jtmnymny",
 "name": "jtmnymny",
 "source": "jtpr",
-"source_title": "jtcores open pull requests",
+"source_title": "jtcores unreleased (PRs, branches)",
 "channel": null,
 "rbf": "jtmnymny.rbf",
 "repo": "jotego/jtcores",
@@ -8840,6 +8872,46 @@
 "score": null,
 "mame_drivers": [],
 "note": "Zaccaria: Money Money, Jack Rabbit",
+"first_recorded": "2026-10-09",
+"aliases": [],
+"last_seen": "2026-10-09"
+},
+"jtpr:jtpspike": {
+"id": "jtpr:jtpspike",
+"name": "jtpspike",
+"source": "jtpr",
+"source_title": "jtcores unreleased (PRs, branches)",
+"channel": null,
+"rbf": "jtpspike.rbf",
+"repo": "jotego/jtcores",
+"url": "https://github.com/jotego/jtcores/tree/andrea-cores/cores/pspike",
+"build_date": null,
+"status": "branch andrea-cores",
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": "Power Spikes, Aero Fighters / Sonic Wings, Turbo Force, Karate Blazers",
+"aliases": [
+"ongo:pspike"
+],
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
+"jtpr:jtsysfl": {
+"id": "jtpr:jtsysfl",
+"name": "jtsysfl",
+"source": "jtpr",
+"source_title": "jtcores unreleased (PRs, branches)",
+"channel": null,
+"rbf": "jtsysfl.rbf",
+"repo": "jotego/jtcores",
+"url": "https://github.com/jotego/jtcores/tree/andrea-cores/cores/sysfl",
+"build_date": null,
+"status": "branch andrea-cores",
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": "Speed Racer, Final Lap R",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 },
@@ -13906,6 +13978,18 @@
 }
 },
 "aerofgtb": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Aero Fighters/Aero Fighters (Taiwan - Japan, set 1).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -13920,6 +14004,18 @@
 }
 },
 "aerofgtc": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Aero Fighters/Aero Fighters (Taiwan - Japan, set 2).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -36222,6 +36318,18 @@
 }
 },
 "f1gp": {
+"jtpr:jtf1grpr": {
+"core": "jtpr:jtf1grpr",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/F-1 Grand Prix (set 1).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:f1grpr": {
 "core": "ongo:f1grpr",
 "date": "2026-09-16",
@@ -36236,6 +36344,18 @@
 }
 },
 "f1gpa": {
+"jtpr:jtf1grpr": {
+"core": "jtpr:jtf1grpr",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_F-1 Grand Prix/F-1 Grand Prix (set 2).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:f1grpr": {
 "core": "ongo:f1grpr",
 "date": "2026-09-16",
@@ -37226,6 +37346,18 @@
 }
 },
 "finalapr": {
+"jtpr:jtsysfl": {
+"core": "jtpr:jtsysfl",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "tree/andrea-cores",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:xnsystemfl": {
 "core": "ongo:xnsystemfl",
 "date": "2026-09-23",
@@ -37252,6 +37384,18 @@
 }
 },
 "finalapr1": {
+"jtpr:jtsysfl": {
+"core": "jtpr:jtsysfl",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "tree/andrea-cores",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:xnsystemfl": {
 "core": "ongo:xnsystemfl",
 "date": "2026-09-23",
@@ -37278,6 +37422,18 @@
 }
 },
 "finalaprj": {
+"jtpr:jtsysfl": {
+"core": "jtpr:jtsysfl",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "tree/andrea-cores",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:xnsystemfl": {
 "core": "ongo:xnsystemfl",
 "date": "2026-09-23",
@@ -37304,6 +37460,18 @@
 }
 },
 "finalaprj1": {
+"jtpr:jtsysfl": {
+"core": "jtpr:jtsysfl",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "tree/andrea-cores",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:xnsystemfl": {
 "core": "ongo:xnsystemfl",
 "date": "2026-09-23",
@@ -50690,6 +50858,18 @@
 }
 },
 "karatblz": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Karate Blazers (World, set 1).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -50704,6 +50884,18 @@
 }
 },
 "karatblza": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Karate Blazers/Karate Blazers (World, set 2).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -50718,6 +50910,18 @@
 }
 },
 "karatblzj": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Karate Blazers/Toushin Blazers (Japan, Tecmo license).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -50732,6 +50936,18 @@
 }
 },
 "karatblzt": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Karate Blazers/Karate Blazers (World, Tecmo license).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -50746,6 +50962,18 @@
 }
 },
 "karatblzu": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Karate Blazers/Karate Blazers (US).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -70250,6 +70478,18 @@
 }
 },
 "pspikes": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Power Spikes (World).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -70278,6 +70518,18 @@
 }
 },
 "pspikesk": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Power Spikes/Power Spikes (Korea).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -70292,6 +70544,18 @@
 }
 },
 "pspikesu": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Power Spikes/Power Spikes (US).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -85974,6 +86238,18 @@
 }
 },
 "sonicwi": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Aero Fighters/Sonic Wings (Japan).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -87524,6 +87800,18 @@
 }
 },
 "speedrcr": {
+"jtpr:jtsysfl": {
+"core": "jtpr:jtsysfl",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "tree/andrea-cores",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:xnsystemfl": {
 "core": "ongo:xnsystemfl",
 "date": "2026-09-23",
@@ -91546,6 +91834,18 @@
 }
 },
 "svolly91": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Power Spikes/Super Volley '91 (Japan).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -97418,6 +97718,18 @@
 }
 },
 "turbofrc": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Turbo Force (World, set 1).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -97431,7 +97743,33 @@
 "last_seen": "2026-10-09"
 }
 },
+"turbofrcj": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-10-03",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "tree/andrea-cores",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
 "turbofrco": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Turbo Force/Turbo Force (World, set 2).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -97446,6 +97784,18 @@
 }
 },
 "turbofrcu": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Turbo Force/Turbo Force (US, set 1).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -97460,6 +97810,18 @@
 }
 },
 "turbofrcua": {
+"jtpr:jtpspike": {
+"core": "jtpr:jtpspike",
+"date": "2026-09-16",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Turbo Force/Turbo Force (US, set 2).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",

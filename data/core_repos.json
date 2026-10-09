@@ -1567,10 +1567,21 @@
  "jtpr:jtarblst": [
   "jotego/jtcores"
  ],
+ "jtpr:jtf1grpr": [
+  "OngoGablogian/MiSTer_Ongo",
+  "jotego/jtcores"
+ ],
  "jtpr:jtmeikyu": [
   "jotego/jtcores"
  ],
  "jtpr:jtmnymny": [
+  "jotego/jtcores"
+ ],
+ "jtpr:jtpspike": [
+  "OngoGablogian/MiSTer_Ongo",
+  "jotego/jtcores"
+ ],
+ "jtpr:jtsysfl": [
   "jotego/jtcores"
  ],
  "kuze:ginganin": [
