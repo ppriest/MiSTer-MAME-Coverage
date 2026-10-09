@@ -29,6 +29,19 @@ jobs:
         run: |
           url="$HBMAME_URL"; src="$HBMAME_URL"
           if [ -z "$url" ]; then
+            # The binaries are published at https://hbmame.1emulation.com/ : take the newest archive linked there.
+            page=$(curl -sSL -A "Mozilla/5.0" https://hbmame.1emulation.com/ || true)
+            url=$(printf '%s' "$page" | grep -oiE 'href="[^"]+\.(zip|7z|exe)"' | sed -E 's/^href="//I; s/"$//' \
+                  | grep -i 'hbmame' | grep -viE 'hbmameui|mameui|source|src|32' | sort -V | tail -1 || true)
+            case "$url" in
+              "") ;;
+              http*) ;;
+              /*) url="https://hbmame.1emulation.com$url" ;;
+              *) url="https://hbmame.1emulation.com/$url" ;;
+            esac
+            src="$url"
+          fi
+          if [ -z "$url" ]; then
             tag=$(gh api repos/Robbbert/hbmame/releases/latest --jq .tag_name 2>/dev/null || true)
             if [ -n "$tag" ]; then
               url=$(gh api repos/Robbbert/hbmame/releases/latest --jq '[.assets[] | select(.name | test("64|x64"; "i")) | select(.name | test("\\.(zip|7z|exe)$"; "i"))][0].browser_download_url' 2>/dev/null || true)
@@ -36,7 +49,7 @@ jobs:
             fi
           fi
           if [ -z "$url" ] || [ "$url" = "null" ]; then
-            echo "No HBMAME archive found. Set the HBMAME_URL repository variable or run with the url input." >&2
+            echo "No HBMAME archive found on hbmame.1emulation.com or in the GitHub releases. Set the HBMAME_URL repository variable or run with the url input." >&2
             exit 1
           fi
           current=$(gh release view hbmame-listxml --repo "${{ github.repository }}" --json body --jq .body 2>/dev/null || true)
