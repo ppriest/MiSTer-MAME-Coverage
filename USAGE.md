@@ -99,6 +99,13 @@ commit, MAME sets; `pr` or, for cores on a branch such as `andrea-cores`, `branc
 merges, set `"merged": true` (the placeholder is then removed from the ledger and the real `jt:`
 core takes over). Sets are those the PR's `mame2mra.toml` selects, checked against MAME by hand.
 
+## Developer database vs loose repository
+
+When a developer's own Downloader database (a `DB_SOURCES` entry whose owner matches the repository
+owner) lists a build whose repository is also known as a loose `repo:` record (same repository, same
+build name), the database record wins and the `repo:` record is dropped, so each build is listed once
+(for example `shmupfan:1945kiii`, `ppriest:seta`).
+
 ## Ongo copies
 
 MiSTer_Ongo only republishes other developers' builds. `report` shows an Ongo core on a set only

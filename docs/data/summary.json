@@ -1,30 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-09T07:55:37+00:00",
+  "generated": "2026-10-09T08:05:29+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-09T07:55:32+00:00",
+  "mister_generated": "2026-10-09T08:05:26+00:00",
   "alamone_generated": "2026-10-05T11:12:58+00:00",
   "ledger_updated": "2026-10-09",
   "ledger_runs": [
-   {
-    "date": "2026-10-08",
-    "note": "alamone 2026-10-05",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
-   {
-    "date": "2026-10-08",
-    "note": "alamone 2026-10-05",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-08",
     "note": "alamone 2026-10-05",
@@ -51,6 +33,24 @@
     "pairs": 24,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-09",
+    "note": "alamone 2026-10-05",
+    "cores": 7,
+    "sets": 0,
+    "pairs": 135,
+    "dates_improved": 0,
+    "cores_removed": 11
+   },
+   {
+    "date": "2026-10-09",
+    "note": "alamone 2026-10-05",
+    "cores": 11,
+    "sets": 0,
+    "pairs": 183,
+    "dates_improved": 0,
+    "cores_removed": 11
    }
   ],
   "genre": {
@@ -2329,7 +2329,7 @@
    "working_arcade_sets_covered": 5159,
    "working_arcade_titles_source": 1727,
    "working_arcade_titles_binary_only": 239,
-   "cores": 572,
+   "cores": 568,
    "binary_only_cores": 137,
    "unmatched_sets": 411
   }
@@ -12691,6 +12691,7 @@
    "mame_drivers": [],
    "note": "Speed Racer, Final Lap R",
    "first_recorded": "2026-10-09",
+   "aliases": [],
    "last_seen": "2026-10-09",
    "binary_only": false,
    "nsets": 5,
@@ -14430,6 +14431,167 @@
    "first_date": "2026-08-29"
   },
   {
+   "id": "ppriest:ballysente",
+   "name": "BallySente",
+   "source": "ppriest",
+   "source_title": "ppriest (MiSTer_ppriest)",
+   "channel": null,
+   "rbf": "BallySente.rbf",
+   "repo": "ppriest/Arcade-BallySente_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-BallySente_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-09",
+   "aliases": [],
+   "last_seen": "2026-10-09",
+   "binary_only": false,
+   "nsets": 40,
+   "ntitles": 26,
+   "first_date": "2026-09-26"
+  },
+  {
+   "id": "ppriest:hyperng64",
+   "name": "HyperNG64",
+   "source": "ppriest",
+   "source_title": "ppriest (MiSTer_ppriest)",
+   "channel": null,
+   "rbf": "HyperNG64.rbf",
+   "repo": "ppriest/Arcade-HyperNG64_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-HyperNG64_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-09",
+   "aliases": [],
+   "last_seen": "2026-10-09",
+   "binary_only": false,
+   "nsets": 7,
+   "ntitles": 7,
+   "first_date": "2026-09-20"
+  },
+  {
+   "id": "ppriest:jalecoms32",
+   "name": "JalecoMS32",
+   "source": "ppriest",
+   "source_title": "ppriest (MiSTer_ppriest)",
+   "channel": null,
+   "rbf": "JalecoMS32.rbf",
+   "repo": "ppriest/Arcade-JalecoMS32_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-JalecoMS32_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-09",
+   "aliases": [],
+   "last_seen": "2026-10-09",
+   "binary_only": false,
+   "nsets": 13,
+   "ntitles": 10,
+   "first_date": "2026-09-13"
+  },
+  {
+   "id": "ppriest:jalecoms32f1",
+   "name": "JalecoMS32F1",
+   "source": "ppriest",
+   "source_title": "ppriest (MiSTer_ppriest)",
+   "channel": null,
+   "rbf": "JalecoMS32F1.rbf",
+   "repo": "ppriest/Arcade-JalecoMS32_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-JalecoMS32_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-09",
+   "aliases": [],
+   "last_seen": "2026-10-09",
+   "binary_only": false,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": "2026-09-26"
+  },
+  {
+   "id": "ppriest:konamigx",
+   "name": "KonamiGX",
+   "source": "ppriest",
+   "source_title": "ppriest (MiSTer_ppriest)",
+   "channel": null,
+   "rbf": "KonamiGX.rbf",
+   "repo": "ppriest/Arcade-KonamiGX_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-09",
+   "aliases": [],
+   "last_seen": "2026-10-09",
+   "binary_only": false,
+   "nsets": 22,
+   "ntitles": 11,
+   "first_date": "2026-09-19"
+  },
+  {
+   "id": "ppriest:seta",
+   "name": "Seta",
+   "source": "ppriest",
+   "source_title": "ppriest (MiSTer_ppriest)",
+   "channel": null,
+   "rbf": "Seta.rbf",
+   "repo": "ppriest/Arcade-Seta_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-Seta_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-09",
+   "aliases": [],
+   "last_seen": "2026-10-09",
+   "binary_only": false,
+   "nsets": 34,
+   "ntitles": 27,
+   "first_date": "2026-09-10"
+  },
+  {
+   "id": "ppriest:setadowntown",
+   "name": "SetaDowntown",
+   "source": "ppriest",
+   "source_title": "ppriest (MiSTer_ppriest)",
+   "channel": null,
+   "rbf": "SetaDowntown.rbf",
+   "repo": "ppriest/Arcade-Seta_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-Seta_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-09",
+   "aliases": [],
+   "last_seen": "2026-10-09",
+   "binary_only": false,
+   "nsets": 10,
+   "ntitles": 6,
+   "first_date": "2026-03-13"
+  },
+  {
    "id": "repo:10yardfight",
    "name": "10yardfight (adreeve)",
    "source": "repo",
@@ -14453,31 +14615,6 @@
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-10-04"
-  },
-  {
-   "id": "repo:1945kiii",
-   "name": "1945kIII (shmupfan)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-1945kIII_20261004.rbf",
-   "repo": "shmupfan/Arcade-1945kIII_MiSTer",
-   "url": "https://github.com/shmupfan/Arcade-1945kIII_MiSTer",
-   "build_date": "2026-10-04",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 26,
-   "mame_drivers": [
-    "promat/1945kiii.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-09",
-   "binary_only": false,
-   "nsets": 6,
-   "ntitles": 3,
-   "first_date": "2026-10-03"
   },
   {
    "id": "repo:atari-g1",
@@ -14553,31 +14690,6 @@
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2022-07-24"
-  },
-  {
-   "id": "repo:ballysente",
-   "name": "BallySente (ppriest)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-BallySente_20261004.rbf",
-   "repo": "ppriest/Arcade-BallySente_MiSTer",
-   "url": "https://github.com/ppriest/Arcade-BallySente_MiSTer",
-   "build_date": "2026-10-04",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 20,
-   "mame_drivers": [
-    "bally/balsente.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-09",
-   "binary_only": false,
-   "nsets": 40,
-   "ntitles": 26,
-   "first_date": "2026-09-26"
   },
   {
    "id": "repo:batrider",
@@ -14705,33 +14817,6 @@
    "first_date": "2026-09-27"
   },
   {
-   "id": "repo:dec8",
-   "name": "DEC8 (shmupfan)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-DEC8_20261004.rbf",
-   "repo": "shmupfan/Arcade-DEC8_MiSTer",
-   "url": "https://github.com/shmupfan/Arcade-DEC8_MiSTer",
-   "build_date": "2026-10-04",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 36,
-   "mame_drivers": [
-    "dataeast/ghostb.cpp",
-    "dataeast/lastmisn.cpp",
-    "dataeast/srdarwin.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-05",
-   "aliases": [],
-   "last_seen": "2026-10-09",
-   "binary_only": false,
-   "nsets": 10,
-   "ntitles": 3,
-   "first_date": "2026-10-04"
-  },
-  {
    "id": "repo:demoderby",
    "name": "DemoDerby (alanswx)",
    "source": "repo",
@@ -14780,31 +14865,6 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2020-07-14"
-  },
-  {
-   "id": "repo:dooyong",
-   "name": "Dooyong (shmupfan)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-Dooyong_20261004.rbf",
-   "repo": "shmupfan/Arcade-Dooyong_MiSTer",
-   "url": "https://github.com/shmupfan/Arcade-Dooyong_MiSTer",
-   "build_date": "2026-10-04",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 17,
-   "mame_drivers": [
-    "dooyong/dooyong.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-05",
-   "aliases": [],
-   "last_seen": "2026-10-09",
-   "binary_only": false,
-   "nsets": 24,
-   "ntitles": 9,
-   "first_date": "2026-09-28"
   },
   {
    "id": "repo:firetrap",
@@ -15013,81 +15073,6 @@
    "first_date": "2026-09-07"
   },
   {
-   "id": "repo:hyperng64",
-   "name": "HyperNG64 (ppriest)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-HyperNG64_20261004.rbf",
-   "repo": "ppriest/Arcade-HyperNG64_MiSTer",
-   "url": "https://github.com/ppriest/Arcade-HyperNG64_MiSTer",
-   "build_date": "2026-10-04",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 20,
-   "mame_drivers": [
-    "snk/hng64.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-05",
-   "aliases": [],
-   "last_seen": "2026-10-09",
-   "binary_only": false,
-   "nsets": 7,
-   "ntitles": 7,
-   "first_date": "2026-09-20"
-  },
-  {
-   "id": "repo:jalecoms32",
-   "name": "JalecoMS32 (ppriest)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-JalecoMS32_20260919.rbf",
-   "repo": "ppriest/Arcade-JalecoMS32_MiSTer",
-   "url": "https://github.com/ppriest/Arcade-JalecoMS32_MiSTer",
-   "build_date": "2026-09-19",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 18,
-   "mame_drivers": [
-    "jaleco/ms32.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-09",
-   "binary_only": false,
-   "nsets": 13,
-   "ntitles": 10,
-   "first_date": "2026-09-13"
-  },
-  {
-   "id": "repo:jalecoms32f1",
-   "name": "JalecoMS32F1 (ppriest)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-JalecoMS32F1_20260926.rbf",
-   "repo": "ppriest/Arcade-JalecoMS32_MiSTer",
-   "url": "https://github.com/ppriest/Arcade-JalecoMS32_MiSTer",
-   "build_date": "2026-09-26",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 16,
-   "mame_drivers": [
-    "jaleco/ms32.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-09",
-   "binary_only": false,
-   "nsets": 0,
-   "ntitles": 0,
-   "first_date": "2026-09-26"
-  },
-  {
    "id": "repo:jedi",
    "name": "Jedi (Usquebagh)",
    "source": "repo",
@@ -15161,31 +15146,6 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-28"
-  },
-  {
-   "id": "repo:konamigx",
-   "name": "KonamiGX (ppriest)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-KonamiGX_20261004.rbf",
-   "repo": "ppriest/Arcade-KonamiGX_MiSTer",
-   "url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
-   "build_date": "2026-10-04",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 29,
-   "mame_drivers": [
-    "konami/konamigx.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-09",
-   "binary_only": false,
-   "nsets": 22,
-   "ntitles": 11,
-   "first_date": "2026-09-19"
   },
   {
    "id": "repo:konamigxt34",
@@ -15710,56 +15670,6 @@
    "first_date": "2026-08-01"
   },
   {
-   "id": "repo:seta",
-   "name": "Seta (ppriest)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-Seta_20260919.rbf",
-   "repo": "ppriest/Arcade-Seta_MiSTer",
-   "url": "https://github.com/ppriest/Arcade-Seta_MiSTer",
-   "build_date": "2026-09-19",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 38,
-   "mame_drivers": [
-    "seta/seta.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-09",
-   "binary_only": false,
-   "nsets": 34,
-   "ntitles": 27,
-   "first_date": "2026-09-10"
-  },
-  {
-   "id": "repo:setadowntown",
-   "name": "SetaDowntown (ppriest)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-SetaDowntown_20260921.rbf",
-   "repo": "ppriest/Arcade-Seta_MiSTer",
-   "url": "https://github.com/ppriest/Arcade-Seta_MiSTer",
-   "build_date": "2026-09-21",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 38,
-   "mame_drivers": [
-    "seta/downtown.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-09",
-   "binary_only": false,
-   "nsets": 10,
-   "ntitles": 6,
-   "first_date": "2026-03-13"
-  },
-  {
    "id": "repo:skns",
    "name": "SKNS (srg320)",
    "source": "repo",
@@ -15963,31 +15873,6 @@
    "first_date": "2026-10-05"
   },
   {
-   "id": "repo:tecmo16",
-   "name": "Tecmo16 (shmupfan)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-Tecmo16_20261004.rbf",
-   "repo": "shmupfan/Arcade-Tecmo16_MiSTer",
-   "url": "https://github.com/shmupfan/Arcade-Tecmo16_MiSTer",
-   "build_date": "2026-10-04",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 29,
-   "mame_drivers": [
-    "tecmo/tecmo16.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-05",
-   "aliases": [],
-   "last_seen": "2026-10-09",
-   "binary_only": false,
-   "nsets": 7,
-   "ntitles": 3,
-   "first_date": "2026-10-03"
-  },
-  {
    "id": "repo:tempest",
    "name": "Tempest (derpyder)",
    "source": "repo",
@@ -16121,7 +16006,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-04",
+   "last_seen": "2026-10-09",
    "binary_only": false,
    "nsets": 6,
    "ntitles": 3,
@@ -16144,7 +16029,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-04",
+   "last_seen": "2026-10-09",
    "binary_only": false,
    "nsets": 10,
    "ntitles": 3,
@@ -16167,7 +16052,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-04",
+   "last_seen": "2026-10-09",
    "binary_only": false,
    "nsets": 24,
    "ntitles": 9,
@@ -16213,7 +16098,7 @@
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
-   "last_seen": "2026-10-04",
+   "last_seen": "2026-10-09",
    "binary_only": false,
    "nsets": 7,
    "ntitles": 3,
@@ -17434,7 +17319,7 @@
    "sets": 40,
    "sets_covered": 40,
    "cores": [
-    "repo:ballysente"
+    "ppriest:ballysente"
    ],
    "first": "2026-09-26"
   },
@@ -18108,7 +17993,6 @@
    "cores": [
     "coinop:cobracom",
     "coinop:oscar",
-    "repo:dec8",
     "shmupfan:dec8"
    ],
    "first": "2026-04-02"
@@ -18470,7 +18354,6 @@
    "sets": 24,
    "sets_covered": 24,
    "cores": [
-    "repo:dooyong",
     "shmupfan:dooyong"
    ],
    "first": "2026-09-28"
@@ -19553,12 +19436,9 @@
    "sets": 12,
    "sets_covered": 12,
    "cores": [
-    "repo:jalecoms32"
+    "ppriest:jalecoms32"
    ],
-   "first": "2026-09-13",
-   "cores_claimed": [
-    "repo:jalecoms32f1"
-   ]
+   "first": "2026-09-13"
   },
   {
    "sourcefile": "jaleco/psychic5.cpp",
@@ -19605,7 +19485,7 @@
    "sets": 12,
    "sets_covered": 1,
    "cores": [
-    "repo:jalecoms32"
+    "ppriest:jalecoms32"
    ],
    "first": "2026-09-13"
   },
@@ -20117,7 +19997,7 @@
    "sets": 35,
    "sets_covered": 27,
    "cores": [
-    "repo:konamigx",
+    "ppriest:konamigx",
     "repo:konamigxt34"
    ],
    "first": "2026-09-19"
@@ -22867,7 +22747,6 @@
    "sets": 6,
    "sets_covered": 6,
    "cores": [
-    "repo:1945kiii",
     "shmupfan:1945kiii"
    ],
    "first": "2026-10-03"
@@ -23675,7 +23554,7 @@
    "cores": [
     "jt:jtcal50",
     "jtpr:jtarblst",
-    "repo:setadowntown"
+    "ppriest:setadowntown"
    ],
    "first": "2026-03-13"
   },
@@ -23704,7 +23583,7 @@
    "sets": 60,
    "sets_covered": 34,
    "cores": [
-    "repo:seta"
+    "ppriest:seta"
    ],
    "first": "2026-09-10"
   },
@@ -23805,7 +23684,7 @@
    "sets": 7,
    "sets_covered": 7,
    "cores": [
-    "repo:hyperng64"
+    "ppriest:hyperng64"
    ],
    "first": "2026-09-20"
   },
@@ -25279,7 +25158,6 @@
    "sets": 7,
    "sets_covered": 7,
    "cores": [
-    "repo:tecmo16",
     "shmupfan:tecmo16"
    ],
    "first": "2026-10-03"
@@ -27133,7 +27011,7 @@
   {
    "set": "ms32",
    "cores": [
-    "repo:jalecoms32"
+    "ppriest:jalecoms32"
    ]
   },
   {

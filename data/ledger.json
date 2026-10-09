@@ -237,6 +237,24 @@
 "pairs": 24,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-09",
+"note": "alamone 2026-10-05",
+"cores": 7,
+"sets": 0,
+"pairs": 135,
+"dates_improved": 0,
+"cores_removed": 11
+},
+{
+"date": "2026-10-09",
+"note": "alamone 2026-10-05",
+"cores": 11,
+"sets": 0,
+"pairs": 183,
+"dates_improved": 0,
+"cores_removed": 11
 }
 ]
 },
@@ -8913,6 +8931,7 @@
 "mame_drivers": [],
 "note": "Speed Racer, Final Lap R",
 "first_recorded": "2026-10-09",
+"aliases": [],
 "last_seen": "2026-10-09"
 },
 "kuze:ginganin": {
@@ -11028,6 +11047,139 @@
 "aliases": [],
 "last_seen": "2026-10-09"
 },
+"ppriest:ballysente": {
+"id": "ppriest:ballysente",
+"name": "BallySente",
+"source": "ppriest",
+"source_title": "ppriest (MiSTer_ppriest)",
+"channel": null,
+"rbf": "BallySente.rbf",
+"repo": "ppriest/Arcade-BallySente_MiSTer",
+"url": "https://github.com/ppriest/Arcade-BallySente_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-09",
+"aliases": [],
+"last_seen": "2026-10-09"
+},
+"ppriest:hyperng64": {
+"id": "ppriest:hyperng64",
+"name": "HyperNG64",
+"source": "ppriest",
+"source_title": "ppriest (MiSTer_ppriest)",
+"channel": null,
+"rbf": "HyperNG64.rbf",
+"repo": "ppriest/Arcade-HyperNG64_MiSTer",
+"url": "https://github.com/ppriest/Arcade-HyperNG64_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-09",
+"aliases": [],
+"last_seen": "2026-10-09"
+},
+"ppriest:jalecoms32": {
+"id": "ppriest:jalecoms32",
+"name": "JalecoMS32",
+"source": "ppriest",
+"source_title": "ppriest (MiSTer_ppriest)",
+"channel": null,
+"rbf": "JalecoMS32.rbf",
+"repo": "ppriest/Arcade-JalecoMS32_MiSTer",
+"url": "https://github.com/ppriest/Arcade-JalecoMS32_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-09",
+"aliases": [],
+"last_seen": "2026-10-09"
+},
+"ppriest:jalecoms32f1": {
+"id": "ppriest:jalecoms32f1",
+"name": "JalecoMS32F1",
+"source": "ppriest",
+"source_title": "ppriest (MiSTer_ppriest)",
+"channel": null,
+"rbf": "JalecoMS32F1.rbf",
+"repo": "ppriest/Arcade-JalecoMS32_MiSTer",
+"url": "https://github.com/ppriest/Arcade-JalecoMS32_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-09",
+"aliases": [],
+"last_seen": "2026-10-09"
+},
+"ppriest:konamigx": {
+"id": "ppriest:konamigx",
+"name": "KonamiGX",
+"source": "ppriest",
+"source_title": "ppriest (MiSTer_ppriest)",
+"channel": null,
+"rbf": "KonamiGX.rbf",
+"repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-09",
+"aliases": [],
+"last_seen": "2026-10-09"
+},
+"ppriest:seta": {
+"id": "ppriest:seta",
+"name": "Seta",
+"source": "ppriest",
+"source_title": "ppriest (MiSTer_ppriest)",
+"channel": null,
+"rbf": "Seta.rbf",
+"repo": "ppriest/Arcade-Seta_MiSTer",
+"url": "https://github.com/ppriest/Arcade-Seta_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-09",
+"aliases": [],
+"last_seen": "2026-10-09"
+},
+"ppriest:setadowntown": {
+"id": "ppriest:setadowntown",
+"name": "SetaDowntown",
+"source": "ppriest",
+"source_title": "ppriest (MiSTer_ppriest)",
+"channel": null,
+"rbf": "SetaDowntown.rbf",
+"repo": "ppriest/Arcade-Seta_MiSTer",
+"url": "https://github.com/ppriest/Arcade-Seta_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-09",
+"aliases": [],
+"last_seen": "2026-10-09"
+},
 "repo:10yardfight": {
 "id": "repo:10yardfight",
 "name": "10yardfight (adreeve)",
@@ -11046,27 +11198,6 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
-"aliases": [],
-"last_seen": "2026-10-09"
-},
-"repo:1945kiii": {
-"id": "repo:1945kiii",
-"name": "Arcade-1945kIII (shmupfan)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Arcade-1945kIII_20261004.rbf",
-"repo": "shmupfan/Arcade-1945kIII_MiSTer",
-"url": "https://github.com/shmupfan/Arcade-1945kIII_MiSTer",
-"build_date": "2026-10-04",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 26,
-"mame_drivers": [
-"promat/1945kiii.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-04",
 "aliases": [],
 "last_seen": "2026-10-09"
 },
@@ -11127,27 +11258,6 @@
 "score": null,
 "mame_drivers": [
 "toaplan/raizing_batrider.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-09"
-},
-"repo:ballysente": {
-"id": "repo:ballysente",
-"name": "Arcade-BallySente (ppriest)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Arcade-BallySente_20261004.rbf",
-"repo": "ppriest/Arcade-BallySente_MiSTer",
-"url": "https://github.com/ppriest/Arcade-BallySente_MiSTer",
-"build_date": "2026-10-04",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 20,
-"mame_drivers": [
-"bally/balsente.cpp"
 ],
 "note": null,
 "first_recorded": "2026-10-04",
@@ -11259,29 +11369,6 @@
 "aliases": [],
 "last_seen": "2026-10-09"
 },
-"repo:dec8": {
-"id": "repo:dec8",
-"name": "Arcade-DEC8 (shmupfan)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Arcade-DEC8_20261004.rbf",
-"repo": "shmupfan/Arcade-DEC8_MiSTer",
-"url": "https://github.com/shmupfan/Arcade-DEC8_MiSTer",
-"build_date": "2026-10-04",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 36,
-"mame_drivers": [
-"dataeast/ghostb.cpp",
-"dataeast/lastmisn.cpp",
-"dataeast/srdarwin.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-05",
-"aliases": [],
-"last_seen": "2026-10-09"
-},
 "repo:demoderby": {
 "id": "repo:demoderby",
 "name": "Arcade-DemoDerby (alanswx)",
@@ -11321,27 +11408,6 @@
 ],
 "note": null,
 "first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-09"
-},
-"repo:dooyong": {
-"id": "repo:dooyong",
-"name": "Arcade-Dooyong (shmupfan)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Arcade-Dooyong_20261004.rbf",
-"repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"url": "https://github.com/shmupfan/Arcade-Dooyong_MiSTer",
-"build_date": "2026-10-04",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 17,
-"mame_drivers": [
-"dooyong/dooyong.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-05",
 "aliases": [],
 "last_seen": "2026-10-09"
 },
@@ -11519,69 +11585,6 @@
 "aliases": [],
 "last_seen": "2026-10-09"
 },
-"repo:hyperng64": {
-"id": "repo:hyperng64",
-"name": "Arcade-HyperNG64 (ppriest)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Arcade-HyperNG64_20261004.rbf",
-"repo": "ppriest/Arcade-HyperNG64_MiSTer",
-"url": "https://github.com/ppriest/Arcade-HyperNG64_MiSTer",
-"build_date": "2026-10-04",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 20,
-"mame_drivers": [
-"snk/hng64.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-05",
-"aliases": [],
-"last_seen": "2026-10-09"
-},
-"repo:jalecoms32": {
-"id": "repo:jalecoms32",
-"name": "Arcade-JalecoMS32 (ppriest)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Arcade-JalecoMS32_20260919.rbf",
-"repo": "ppriest/Arcade-JalecoMS32_MiSTer",
-"url": "https://github.com/ppriest/Arcade-JalecoMS32_MiSTer",
-"build_date": "2026-09-19",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 18,
-"mame_drivers": [
-"jaleco/ms32.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-09"
-},
-"repo:jalecoms32f1": {
-"id": "repo:jalecoms32f1",
-"name": "Arcade-JalecoMS32F1 (ppriest)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Arcade-JalecoMS32F1_20260926.rbf",
-"repo": "ppriest/Arcade-JalecoMS32_MiSTer",
-"url": "https://github.com/ppriest/Arcade-JalecoMS32_MiSTer",
-"build_date": "2026-09-26",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 16,
-"mame_drivers": [
-"jaleco/ms32.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-09"
-},
 "repo:jedi": {
 "id": "repo:jedi",
 "name": "Arcade-Jedi (Usquebagh)",
@@ -11639,27 +11642,6 @@
 "score": 36,
 "mame_drivers": [
 "taito/kikikai.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-09"
-},
-"repo:konamigx": {
-"id": "repo:konamigx",
-"name": "Arcade-KonamiGX (ppriest)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Arcade-KonamiGX_20261004.rbf",
-"repo": "ppriest/Arcade-KonamiGX_MiSTer",
-"url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
-"build_date": "2026-10-04",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 29,
-"mame_drivers": [
-"konami/konamigx.cpp"
 ],
 "note": null,
 "first_recorded": "2026-10-04",
@@ -12104,48 +12086,6 @@
 "aliases": [],
 "last_seen": "2026-10-09"
 },
-"repo:seta": {
-"id": "repo:seta",
-"name": "Arcade-Seta (ppriest)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Arcade-Seta_20260919.rbf",
-"repo": "ppriest/Arcade-Seta_MiSTer",
-"url": "https://github.com/ppriest/Arcade-Seta_MiSTer",
-"build_date": "2026-09-19",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 38,
-"mame_drivers": [
-"seta/seta.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-09"
-},
-"repo:setadowntown": {
-"id": "repo:setadowntown",
-"name": "Arcade-SetaDowntown (ppriest)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Arcade-SetaDowntown_20260921.rbf",
-"repo": "ppriest/Arcade-Seta_MiSTer",
-"url": "https://github.com/ppriest/Arcade-Seta_MiSTer",
-"build_date": "2026-09-21",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 38,
-"mame_drivers": [
-"seta/downtown.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-09"
-},
 "repo:skns": {
 "id": "repo:skns",
 "name": "Arcade-SKNS (srg320)",
@@ -12317,27 +12257,6 @@
 "aliases": [],
 "last_seen": "2026-10-09"
 },
-"repo:tecmo16": {
-"id": "repo:tecmo16",
-"name": "Arcade-Tecmo16 (shmupfan)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Arcade-Tecmo16_20261004.rbf",
-"repo": "shmupfan/Arcade-Tecmo16_MiSTer",
-"url": "https://github.com/shmupfan/Arcade-Tecmo16_MiSTer",
-"build_date": "2026-10-04",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 29,
-"mame_drivers": [
-"tecmo/tecmo16.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-05",
-"aliases": [],
-"last_seen": "2026-10-09"
-},
 "repo:tempest": {
 "id": "repo:tempest",
 "name": "Arcade-Tempest (derpyder)",
@@ -12452,7 +12371,7 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 },
 "shmupfan:dec8": {
 "id": "shmupfan:dec8",
@@ -12471,7 +12390,7 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 },
 "shmupfan:dooyong": {
 "id": "shmupfan:dooyong",
@@ -12490,7 +12409,7 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 },
 "shmupfan:taitognet": {
 "id": "shmupfan:taitognet",
@@ -12528,7 +12447,7 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 },
 "slop:batsugun": {
 "id": "slop:batsugun",
@@ -13044,18 +12963,6 @@
 }
 },
 "1945kiii": {
-"repo:1945kiii": {
-"core": "repo:1945kiii",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
-"first_path": "releases/1945k III (newer, OPCX2 PCB).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-09"
-},
 "shmupfan:1945kiii": {
 "core": "shmupfan:1945kiii",
 "date": "2026-10-03",
@@ -13066,22 +12973,10 @@
 "first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
 "first_path": "releases/1945k III (newer, OPCX2 PCB).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "1945kiiin": {
-"repo:1945kiii": {
-"core": "repo:1945kiii",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
-"first_path": "releases/_alternatives/_1945k III/1945k III (newer, OPCX1 PCB).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-09"
-},
 "shmupfan:1945kiii": {
 "core": "shmupfan:1945kiii",
 "date": "2026-10-03",
@@ -13092,22 +12987,10 @@
 "first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
 "first_path": "releases/_alternatives/_1945k III/1945k III (newer, OPCX1 PCB).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "1945kiiio": {
-"repo:1945kiii": {
-"core": "repo:1945kiii",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
-"first_path": "releases/_alternatives/_1945k III/1945k III (older, OPCX1 PCB).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-09"
-},
 "shmupfan:1945kiii": {
 "core": "shmupfan:1945kiii",
 "date": "2026-10-03",
@@ -13118,22 +13001,10 @@
 "first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
 "first_path": "releases/_alternatives/_1945k III/1945k III (older, OPCX1 PCB).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "1945kiiipt": {
-"repo:1945kiii": {
-"core": "repo:1945kiii",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
-"first_path": "releases/_alternatives/_1945k III/1945k III (Promat license, OPCX1 PCB).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-09"
-},
 "shmupfan:1945kiii": {
 "core": "shmupfan:1945kiii",
 "date": "2026-10-03",
@@ -13144,7 +13015,7 @@
 "first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
 "first_path": "releases/_alternatives/_1945k III/1945k III (Promat license, OPCX1 PCB).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "19xx": {
@@ -14534,30 +14405,30 @@
 }
 },
 "akiss": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/Mahjong Angel Kiss (ver 1.0, 92047-01 version).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "akissa": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/_alternatives/_Mahjong Angel Kiss (ver 1.0, 92047-01 version)/Mahjong Angel Kiss (ver 1.0, 92048-01 version).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -16154,16 +16025,16 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 },
-"repo:setadowntown": {
-"core": "repo:setadowntown",
+"ppriest:setadowntown": {
+"core": "ppriest:setadowntown",
 "date": "2026-09-18",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/cal50/releases/mra/Arbalester.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -17432,16 +17303,16 @@
 }
 },
 "atehate": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Athena no Hatena.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -19182,16 +19053,16 @@
 }
 },
 "bbbxing": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/Best Bout Boxing (ver 1.3).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -19252,16 +19123,16 @@
 }
 },
 "bbust2": {
-"repo:hyperng64": {
-"core": "repo:hyperng64",
+"ppriest:hyperng64": {
+"core": "ppriest:hyperng64",
 "date": "2026-10-06",
 "date_quality": "git",
-"via": "repo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
 "first_path": "releases/Beast Busters - Second Nightmare.mra",
-"first_recorded": "2026-10-06",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -20236,30 +20107,30 @@
 }
 },
 "blandia": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-11",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Blandia.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "blandiap": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-11",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Blandia/Blandia (prototype).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -20622,16 +20493,16 @@
 }
 },
 "blockcar": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Block Carnival - Thunder & Lightning 2.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -21042,18 +20913,6 @@
 }
 },
 "bluehawk": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-28",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Blue Hawk.mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-28",
@@ -21064,22 +20923,10 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Blue Hawk.mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "bluehawkn": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-28",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Blue Hawk (Japan, NTC license, set 1).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-28",
@@ -21090,22 +20937,10 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Blue Hawk (Japan, NTC license, set 1).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "bluehawkna": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-28",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Blue Hawk (Japan, NTC license, set 2).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-28",
@@ -21116,7 +20951,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Blue Hawk (Japan, NTC license, set 2).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "blueprnt": {
@@ -21336,16 +21171,16 @@
 }
 },
 "bnstars": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/Vs. Janshi Brandnew Stars (Ver 1.1, MegaSystem 32 Version).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -23128,16 +22963,16 @@
 }
 },
 "buriki": {
-"repo:hyperng64": {
-"core": "repo:hyperng64",
+"ppriest:hyperng64": {
+"core": "ppriest:hyperng64",
 "date": "2026-09-20",
 "date_quality": "git",
-"via": "repo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
 "first_path": "releases/Buriki One - World Grapple Tournament '99 in Tokyo (rev.B).mra",
-"first_recorded": "2026-10-05",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -23570,16 +23405,16 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
 },
-"repo:setadowntown": {
-"core": "repo:setadowntown",
+"ppriest:setadowntown": {
+"core": "ppriest:setadowntown",
 "date": "2026-03-13",
 "date_quality": "git",
-"via": "repo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/Caliber 50 (Ver. 1.01).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -28010,16 +27845,16 @@
 }
 },
 "crzcross": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-19",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/Crazy Cross (ver EAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -28164,16 +27999,16 @@
 }
 },
 "cshift": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Chicken Shift (11-23-84).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -28904,30 +28739,30 @@
 }
 },
 "daioh": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Daioh.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "daioha": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-11",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Daioh/Daioh (earlier).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -28972,16 +28807,16 @@
 }
 },
 "daiskiss": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-19",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/Daisu-Kiss (ver JAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -29724,18 +29559,6 @@
 }
 },
 "ddaydoo": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Chulgyeok D-Day (Korea).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -29746,7 +29569,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Chulgyeok D-Day (Korea).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "ddcrew": {
@@ -31384,16 +31207,16 @@
 }
 },
 "desertwr": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/Desert War - Wangan Sensou (ver 1.0).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -33414,16 +33237,16 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
 },
-"repo:setadowntown": {
-"core": "repo:setadowntown",
+"ppriest:setadowntown": {
+"core": "ppriest:setadowntown",
 "date": "2026-09-18",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/cal50/releases/mra/DownTown  Mokugeki (set 1).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -33440,16 +33263,16 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
 },
-"repo:setadowntown": {
-"core": "repo:setadowntown",
+"ppriest:setadowntown": {
+"core": "ppriest:setadowntown",
 "date": "2026-09-18",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/cal50/releases/mra/alternatives/_DownTown/DownTown  Mokugeki (set 2).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -33466,16 +33289,16 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
 },
-"repo:setadowntown": {
-"core": "repo:setadowntown",
+"ppriest:setadowntown": {
+"core": "ppriest:setadowntown",
 "date": "2026-09-18",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/cal50/releases/mra/alternatives/_DownTown/DownTown  Mokugeki (joystick hack).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -33492,16 +33315,16 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
 },
-"repo:setadowntown": {
-"core": "repo:setadowntown",
+"ppriest:setadowntown": {
+"core": "ppriest:setadowntown",
 "date": "2026-09-18",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/cal50/releases/mra/alternatives/_DownTown/DownTown  Mokugeki (prototype).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -33574,30 +33397,30 @@
 }
 },
 "dragoona": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Dragoon Might (ver AAB).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "dragoonj": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Dragoon Might (ver AAB)/Dragoon Might (ver JAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -33644,16 +33467,16 @@
 }
 },
 "drgnunit": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Dragon Unit - Castle of Dragon.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -34962,16 +34785,16 @@
 }
 },
 "eightfrc": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Eight Forces.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -36164,16 +35987,16 @@
 }
 },
 "extdwnhl": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-11",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Extreme Downhill (v1.5).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -36370,16 +36193,16 @@
 }
 },
 "f1superb": {
-"repo:jalecoms32f1": {
-"core": "repo:jalecoms32f1",
+"ppriest:jalecoms32f1": {
+"core": "ppriest:jalecoms32f1",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/F-1 Super Battle.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -36506,30 +36329,30 @@
 }
 },
 "fantjour": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-19",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/Fantastic Journey (ver EAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "fantjoura": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-19",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/_alternatives/Fantastic Journey (ver EAA)/Fantastic Journey (ver AAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -36730,16 +36553,16 @@
 }
 },
 "fatfurwa": {
-"repo:hyperng64": {
-"core": "repo:hyperng64",
+"ppriest:hyperng64": {
+"core": "ppriest:hyperng64",
 "date": "2026-09-20",
 "date_quality": "git",
-"via": "repo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
 "first_path": "releases/Fatal Fury - Wild Ambition - Garou Densetsu - Wild Ambition (rev.A).mra",
-"first_recorded": "2026-10-05",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -38030,18 +37853,6 @@
 }
 },
 "flagrall": {
-"repo:1945kiii": {
-"core": "repo:1945kiii",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
-"first_path": "releases/'96 Flag Rally.mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-09"
-},
 "shmupfan:1945kiii": {
 "core": "shmupfan:1945kiii",
 "date": "2026-10-03",
@@ -38052,7 +37863,7 @@
 "first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
 "first_path": "releases/'96 Flag Rally.mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "flamegun": {
@@ -38262,18 +38073,6 @@
 }
 },
 "flytiger": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-28",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Flying Tiger (set 1).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-28",
@@ -38284,22 +38083,10 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Flying Tiger (set 1).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "flytigera": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-28",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Flying Tiger (set 2).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-28",
@@ -38310,7 +38097,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Flying Tiger (set 2).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "fncywld": {
@@ -39240,18 +39027,6 @@
 }
 },
 "fstarfrc": {
-"repo:tecmo16": {
-"core": "repo:tecmo16",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
-"first_path": "releases/Final Star Force (US).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:tecmo16": {
 "core": "shmupfan:tecmo16",
 "date": "2026-10-03",
@@ -39262,22 +39037,10 @@
 "first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
 "first_path": "releases/Final Star Force (US).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "fstarfrcj": {
-"repo:tecmo16": {
-"core": "repo:tecmo16",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
-"first_path": "releases/_alternatives/_Final Star Force/Final Star Force (Japan, set 1).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:tecmo16": {
 "core": "shmupfan:tecmo16",
 "date": "2026-10-03",
@@ -39288,22 +39051,10 @@
 "first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
 "first_path": "releases/_alternatives/_Final Star Force/Final Star Force (Japan, set 1).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "fstarfrcja": {
-"repo:tecmo16": {
-"core": "repo:tecmo16",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
-"first_path": "releases/_alternatives/_Final Star Force/Final Star Force (Japan, set 2).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:tecmo16": {
 "core": "shmupfan:tecmo16",
 "date": "2026-10-03",
@@ -39314,22 +39065,10 @@
 "first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
 "first_path": "releases/_alternatives/_Final Star Force/Final Star Force (Japan, set 2).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "fstarfrcw": {
-"repo:tecmo16": {
-"core": "repo:tecmo16",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
-"first_path": "releases/_alternatives/_Final Star Force/Final Star Force (World-).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:tecmo16": {
 "core": "shmupfan:tecmo16",
 "date": "2026-10-03",
@@ -39340,7 +39079,7 @@
 "first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
 "first_path": "releases/_alternatives/_Final Star Force/Final Star Force (World-).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "fstpman2": {
@@ -41578,16 +41317,16 @@
 }
 },
 "gametngk": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/The Game Paradise - Master of Shooting! (ver 1.0).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -42530,16 +42269,16 @@
 }
 },
 "gghost": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Goalie Ghost.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -42902,16 +42641,16 @@
 }
 },
 "gimeabrk": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Gimme A Break (7-7-85).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -42944,18 +42683,6 @@
 }
 },
 "ginkun": {
-"repo:tecmo16": {
-"core": "repo:tecmo16",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
-"first_path": "releases/Ganbare Ginkun.mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:tecmo16": {
 "core": "shmupfan:tecmo16",
 "date": "2026-10-03",
@@ -42966,7 +42693,7 @@
 "first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
 "first_path": "releases/Ganbare Ginkun.mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "gladiatr": {
@@ -43430,16 +43157,16 @@
 }
 },
 "gokuparo": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-19",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/_alternatives/Fantastic Journey (ver EAA)/Gokujou Parodius Kako no Eikou o Motomete (ver JAD).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -43542,18 +43269,6 @@
 }
 },
 "gondo": {
-"repo:dec8": {
-"core": "repo:dec8",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
-"first_path": "releases/Gondomania (World).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dec8": {
 "core": "shmupfan:dec8",
 "date": "2026-10-04",
@@ -43564,22 +43279,10 @@
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/Gondomania (World).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "gondou": {
-"repo:dec8": {
-"core": "repo:dec8",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
-"first_path": "releases/_alternatives/_Gondomania/Gondomania (US).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dec8": {
 "core": "shmupfan:dec8",
 "date": "2026-10-04",
@@ -43590,7 +43293,7 @@
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/_alternatives/_Gondomania/Gondomania (US).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "goonies": {
@@ -43916,30 +43619,30 @@
 }
 },
 "gratia": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/Gratia - Second Earth (ver 1.0, 92047-01 version).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "gratiaa": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/_alternatives/_Gratia - Second Earth (ver 1.0, 92047-01 version)/Gratia - Second Earth (ver 1.0, 91022-10 version).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -44276,44 +43979,44 @@
 }
 },
 "grudge": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Grudge Match (v00.90, prototype).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "grudgei": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": true,
 "alt": true,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/_alternatives/Grudge Match (v00.90, Italy, location test-).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "grudgep": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/_alternatives/Grudge Match (v00.80, prototype).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -44546,18 +44249,6 @@
 }
 },
 "gulfstrm": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Gulf Storm (set 1).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -44568,22 +44259,10 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Gulf Storm (set 1).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "gulfstrma": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Gulf Storm (set 2).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -44594,22 +44273,10 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Gulf Storm (set 2).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "gulfstrmb": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Gulf Storm (set 3).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -44620,22 +44287,10 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Gulf Storm (set 3).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "gulfstrmk": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Gulf Storm (Korea).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -44646,22 +44301,10 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Gulf Storm (Korea).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "gulfstrmm": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Gulf Storm (Japan, Media Shoji license).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -44672,7 +44315,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Gulf Storm (Japan, Media Shoji license).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "gulfwar2": {
@@ -44896,46 +44539,34 @@
 }
 },
 "gundhara": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-11",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Gundhara.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "gundharac": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-11",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Gundhara/Gundhara (Chinese, bootleg).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "gundl94": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Gun Dealer '94.mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -44946,7 +44577,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Gun Dealer '94.mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "gunfight": {
@@ -45986,16 +45617,16 @@
 }
 },
 "hattrick": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Hat Trick (11-12-84).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -46014,44 +45645,44 @@
 }
 },
 "hayaosi2": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/Hayaoshi Quiz Grand Champion Taikai.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "hayaosi3": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/Hayaoshi Quiz Nettou Namahousou (ver 1.5).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "hayaosi3a": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/_alternatives/_Hayaoshi Quiz Nettou Namahousou (ver 1.5)/Hayaoshi Quiz Nettou Namahousou (ver 1.2).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -49754,30 +49385,30 @@
 }
 },
 "jjsquawk": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-11",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/J. J. Squawkers.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "jjsquawko": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-11",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_J. J. Squawkers/J. J. Squawkers (older).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -50738,16 +50369,16 @@
 }
 },
 "kamenrid": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Masked Riders Club Battle Race - Kamen Rider Club Battle Racer.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -52002,30 +51633,30 @@
 }
 },
 "kirarast": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/Ryuusei Janshi Kirara Star (ver 1.0, 92047-01 version).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "kirarasta": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/_alternatives/_Ryuusei Janshi Kirara Star (ver 1.0, 92047-01 version)/Ryuusei Janshi Kirara Star (ver 1.0, 91022-10 version).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -54048,18 +53679,6 @@
 }
 },
 "lastday": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/The Last Day (set 1).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -54070,22 +53689,10 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/The Last Day (set 1).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "lastdaya": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/The Last Day (set 2).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -54096,7 +53703,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/The Last Day (set 2).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "lastduel": {
@@ -54156,18 +53763,6 @@
 }
 },
 "lastmisn": {
-"repo:dec8": {
-"core": "repo:dec8",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
-"first_path": "releases/Last Mission (World revision 8).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dec8": {
 "core": "shmupfan:dec8",
 "date": "2026-10-04",
@@ -54178,22 +53773,10 @@
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/Last Mission (World revision 8).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "lastmisnj": {
-"repo:dec8": {
-"core": "repo:dec8",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
-"first_path": "releases/_alternatives/_Last Mission/Last Mission (Japan).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dec8": {
 "core": "shmupfan:dec8",
 "date": "2026-10-04",
@@ -54204,22 +53787,10 @@
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/_alternatives/_Last Mission/Last Mission (Japan).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "lastmisnu5": {
-"repo:dec8": {
-"core": "repo:dec8",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
-"first_path": "releases/_alternatives/_Last Mission/Last Mission (US revision 5).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dec8": {
 "core": "shmupfan:dec8",
 "date": "2026-10-04",
@@ -54230,22 +53801,10 @@
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/_alternatives/_Last Mission/Last Mission (US revision 5).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "lastmisnu6": {
-"repo:dec8": {
-"core": "repo:dec8",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
-"first_path": "releases/_alternatives/_Last Mission/Last Mission (US revision 6).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dec8": {
 "core": "shmupfan:dec8",
 "date": "2026-10-04",
@@ -54256,7 +53815,7 @@
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/_alternatives/_Last Mission/Last Mission (US revision 6).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "lastsold": {
@@ -54414,44 +53973,44 @@
 }
 },
 "le2": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Lethal Enforcers II - Gun Fighters (ver EAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "le2j": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II - The Western (ver JAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "le2u": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II - Gun Fighters (ver UAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -55770,16 +55329,16 @@
 }
 },
 "madshark": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-11",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Mad Shark.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -55892,16 +55451,16 @@
 }
 },
 "magspeed": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Magical Speed.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -56184,18 +55743,6 @@
 }
 },
 "makyosen": {
-"repo:dec8": {
-"core": "repo:dec8",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
-"first_path": "releases/_alternatives/_Gondomania/Makyou Senshi (Japan).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dec8": {
 "core": "shmupfan:dec8",
 "date": "2026-10-04",
@@ -56206,7 +55753,7 @@
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/_alternatives/_Gondomania/Makyou Senshi (Japan).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "mandinga": {
@@ -57570,16 +57117,16 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 },
-"repo:setadowntown": {
-"core": "repo:setadowntown",
+"ppriest:setadowntown": {
+"core": "ppriest:setadowntown",
 "date": "2026-09-18",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/cal50/releases/mra/Meta Fox.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -58356,58 +57903,58 @@
 }
 },
 "minigolf": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Mini Golf (set 1).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "minigolfa": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/_alternatives/Mini Golf (11-25-85).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "minigolfb": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/_alternatives/Mini Golf (10-8-85).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "minigolfct": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/_alternatives/Mini Golf (cocktail, 10-18-85).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -60316,16 +59863,16 @@
 }
 },
 "ms32": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "repo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/_dev/Capture gametngk-f3000 layers.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -60358,30 +59905,30 @@
 }
 },
 "msgundam": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Mobile Suit Gundam.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "msgundam1": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-11",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Mobile Suit Gundam/Mobile Suit Gundam (Japan).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -61174,16 +60721,16 @@
 }
 },
 "mtwinbee": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-19",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/_alternatives/Twin Bee Yahhoo! (ver JAA)/Magical Twin Bee (ver EAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -62024,30 +61571,30 @@
 }
 },
 "nametune": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Name That Tune (Bally, 3-31-86).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "nametunea": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/_alternatives/Name That Tune (Bally, 3-23-86).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -62576,16 +62123,16 @@
 }
 },
 "neobattl": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/SD Gundam Neo Battling (Japan).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -63594,30 +63141,30 @@
 }
 },
 "nstocker": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Night Stocker (10-6-86).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "nstockera": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/_alternatives/Night Stocker (8-27-86).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -64072,16 +63619,16 @@
 }
 },
 "oisipuzl": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Oishii Puzzle Ha Irimasenka.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -64862,16 +64409,16 @@
 }
 },
 "otwalls": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Off the Wall (Sente) (10-16-84).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -65396,30 +64943,30 @@
 }
 },
 "p47aces": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/P-47 Aces (ver 1.1).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "p47acesa": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/_alternatives/_P-47 Aces (ver 1.1)/P-47 Aces (ver 1.0).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -66444,16 +65991,16 @@
 }
 },
 "pairlove": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Pairs Love.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -69442,18 +68989,6 @@
 }
 },
 "pollux": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Pollux (set 1).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -69464,22 +68999,10 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Pollux (set 1).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "polluxa": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Pollux (set 2).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -69490,22 +69013,10 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Pollux (set 2).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "polluxa2": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Pollux (set 3).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -69516,22 +69027,10 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Pollux (set 3).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "polluxn": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Pollux (Japan, NTC license, distributed by Atlus).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -69542,7 +69041,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Pollux (Japan, NTC license, distributed by Atlus).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "polyplay": {
@@ -69686,18 +69185,6 @@
 }
 },
 "popbingo": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Pop Bingo.mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -69708,7 +69195,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Pop Bingo.mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "popbounc": {
@@ -70154,18 +69641,6 @@
 }
 },
 "primella": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Primella (Japan, NTC license).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -70176,7 +69651,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Primella (Japan, NTC license).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "primglex": {
@@ -71274,16 +70749,16 @@
 }
 },
 "puzldama": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-19",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/_alternatives/Crazy Cross (ver EAA)/Taisen Puzzle-dama (ver JAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -72286,30 +71761,30 @@
 }
 },
 "qzkklgy2": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Quiz Kokology 2.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "qzkklogy": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Quiz Kokology.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -75186,30 +74661,30 @@
 }
 },
 "rescraid": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Rescue Raider (5-11-87) (non-cartridge).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "rescraida": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/_alternatives/Rescue Raider (stand-alone).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -75292,30 +74767,30 @@
 }
 },
 "rezon": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Rezon.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "rezono": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-11",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Rezon/Rezon (earlier).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -75652,18 +75127,6 @@
 }
 },
 "riot": {
-"repo:tecmo16": {
-"core": "repo:tecmo16",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
-"first_path": "releases/Riot (NMK).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:tecmo16": {
 "core": "shmupfan:tecmo16",
 "date": "2026-10-03",
@@ -75674,7 +75137,7 @@
 "first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
 "first_path": "releases/Riot (NMK).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "riotcity": {
@@ -75692,18 +75155,6 @@
 }
 },
 "riotw": {
-"repo:tecmo16": {
-"core": "repo:tecmo16",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
-"first_path": "releases/_alternatives/_Riot/Riot (Woong Bi).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:tecmo16": {
 "core": "shmupfan:tecmo16",
 "date": "2026-10-03",
@@ -75714,7 +75165,7 @@
 "first_repo": "shmupfan/Arcade-Tecmo16_MiSTer",
 "first_path": "releases/_alternatives/_Riot/Riot (Woong Bi).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "ripoff": {
@@ -75942,16 +75393,16 @@
 }
 },
 "roadedge": {
-"repo:hyperng64": {
-"core": "repo:hyperng64",
+"ppriest:hyperng64": {
+"core": "ppriest:hyperng64",
 "date": "2026-10-06",
 "date_quality": "git",
-"via": "repo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
 "first_path": "releases/Roads Edge - Round Trip RV (rev.B).mra",
-"first_recorded": "2026-10-06",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -76870,18 +76321,6 @@
 "first_recorded": "2026-10-05",
 "last_seen": "2026-10-05"
 },
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/R-Shark (set 1).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -76892,7 +76331,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/R-Shark (set 1).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "rsharka": {
@@ -76908,18 +76347,6 @@
 "first_recorded": "2026-10-05",
 "last_seen": "2026-10-05"
 },
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/R-Shark (set 2).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -76930,7 +76357,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/R-Shark (set 2).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "rthun2": {
@@ -77816,18 +77243,6 @@
 }
 },
 "sadari": {
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Sadari (Japan, NTC license).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -77838,7 +77253,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Sadari (Japan, NTC license).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "safari": {
@@ -78164,30 +77579,30 @@
 }
 },
 "salmndr2": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Salamander 2 (ver JAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "salmndr2a": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Salamander 2 (ver JAA)/Salamander 2 (ver AAB).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -78248,30 +77663,30 @@
 }
 },
 "sams64": {
-"repo:hyperng64": {
-"core": "repo:hyperng64",
+"ppriest:hyperng64": {
+"core": "ppriest:hyperng64",
 "date": "2026-09-20",
 "date_quality": "git",
-"via": "repo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
 "first_path": "releases/Samurai Shodown 64 - Samurai Spirits - Paewang Jeonseol 64.mra",
-"first_recorded": "2026-10-05",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "sams64_2": {
-"repo:hyperng64": {
-"core": "repo:hyperng64",
+"ppriest:hyperng64": {
+"core": "ppriest:hyperng64",
 "date": "2026-09-20",
 "date_quality": "git",
-"via": "repo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
 "first_path": "releases/Samurai Shodown 64 - Warriors Rage - Samurai Spirits 2 - Asura Zanmaden.mra",
-"first_recorded": "2026-10-05",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -80804,44 +80219,44 @@
 }
 },
 "sentetst": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Sente Diagnostic Cartridge.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "sexyparo": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-19",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/Sexy Parodius (ver JAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "sexyparoa": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-19",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/_alternatives/Sexy Parodius (ver JAA)/Sexy Parodius (ver AAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -82512,16 +81927,16 @@
 }
 },
 "sfootbal": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Street Football (11-12-86).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -83966,16 +83381,16 @@
 }
 },
 "shrike": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-10-04",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Shrike Avenger (prototype).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -85418,18 +84833,6 @@
 }
 },
 "slspirit": {
-"repo:1945kiii": {
-"core": "repo:1945kiii",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
-"first_path": "releases/Solite Spirits.mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-09"
-},
 "shmupfan:1945kiii": {
 "core": "shmupfan:1945kiii",
 "date": "2026-10-03",
@@ -85440,7 +84843,7 @@
 "first_repo": "shmupfan/Arcade-1945kIII_MiSTer",
 "first_path": "releases/Solite Spirits.mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "slyspy": {
@@ -85666,44 +85069,44 @@
 }
 },
 "snakepit": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Snake Pit.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "snakepita": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/_alternatives/Snake Pit (9-14-84).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "snakjack": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Snacks'n Jaxson.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -85960,16 +85363,16 @@
 }
 },
 "sokonuke": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-11",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Sokonuke Taisen Game (Japan).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -88034,44 +87437,44 @@
 }
 },
 "spiker": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Spiker (6-9-86).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "spikera": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/_alternatives/Spiker (5-5-86).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "spikerb": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/_alternatives/Spiker (earliest-).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -88396,18 +87799,6 @@
 }
 },
 "srdarwin": {
-"repo:dec8": {
-"core": "repo:dec8",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
-"first_path": "releases/SRD - Super Real Darwin (World).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dec8": {
 "core": "shmupfan:dec8",
 "date": "2026-10-04",
@@ -88418,22 +87809,10 @@
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/SRD - Super Real Darwin (World).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "srdarwinb": {
-"repo:dec8": {
-"core": "repo:dec8",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
-"first_path": "releases/_alternatives/_SRD Super Real Darwin/SRD - Super Real Darwin (Japan, bootleg).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dec8": {
 "core": "shmupfan:dec8",
 "date": "2026-10-04",
@@ -88444,22 +87823,10 @@
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/_alternatives/_SRD Super Real Darwin/SRD - Super Real Darwin (Japan, bootleg).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "srdarwinj": {
-"repo:dec8": {
-"core": "repo:dec8",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-DEC8_MiSTer",
-"first_path": "releases/_alternatives/_SRD Super Real Darwin/SRD - Super Real Darwin (Japan).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dec8": {
 "core": "shmupfan:dec8",
 "date": "2026-10-04",
@@ -88470,7 +87837,7 @@
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/_alternatives/_SRD Super Real Darwin/SRD - Super Real Darwin (Japan).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "srdmissn": {
@@ -90182,16 +89549,16 @@
 }
 },
 "stg": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Strike Gunner S.T.G.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -90238,44 +89605,44 @@
 }
 },
 "stocker": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Stocker (3-19-85).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "stompin": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Stompin' (4-4-86).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "stompina": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/_alternatives/Stompin' (prototype-).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -90888,30 +90255,30 @@
 }
 },
 "suchie2": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/Idol Janshi Suchie-Pai II (ver 1.1).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "suchie2o": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/_alternatives/_Idol Janshi Suchie-Pai II (ver 1.1)/Idol Janshi Suchie-Pai II (ver 1.0).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -91318,18 +90685,6 @@
 "first_recorded": "2026-10-05",
 "last_seen": "2026-10-05"
 },
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Super-X (NTC).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -91340,7 +90695,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Super-X (NTC).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "superxm": {
@@ -91356,18 +90711,6 @@
 "first_recorded": "2026-10-05",
 "last_seen": "2026-10-05"
 },
-"repo:dooyong": {
-"core": "repo:dooyong",
-"date": "2026-09-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/Super-X (Mitchell).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-09"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -91378,7 +90721,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Super-X (Mitchell).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-04"
+"last_seen": "2026-10-09"
 }
 },
 "supinvsion": {
@@ -92758,16 +92101,16 @@
 }
 },
 "tbyahhoo": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-19",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/Twin Bee Yahhoo! (ver JAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -92960,16 +92303,16 @@
 }
 },
 "teamht": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Team Hat Trick (11-16-84).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -93928,16 +93271,16 @@
 }
 },
 "tetrisp": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/Tetris Plus (ver 1.0).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -94572,30 +93915,30 @@
 }
 },
 "thunderl": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Thunder & Lightning (set 1).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "thunderla": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/_alternatives/_Thunder & Lightning/Thunder & Lightning (set 2).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -95196,16 +94539,16 @@
 }
 },
 "tkmmpzdm": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Tokimeki Memorial Taisen Puzzle-dama (ver JAB).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -95866,30 +95209,30 @@
 }
 },
 "tndrcade": {
-"repo:setadowntown": {
-"core": "repo:setadowntown",
+"ppriest:setadowntown": {
+"core": "ppriest:setadowntown",
 "date": "2026-09-19",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Thundercade - Twin Formation.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "tndrcadej": {
-"repo:setadowntown": {
-"core": "repo:setadowntown",
+"ppriest:setadowntown": {
+"core": "ppriest:setadowntown",
 "date": "2026-09-19",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Thundercade - Twin Formation/Tokusyu Butai U.A.G. (Japan).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -96104,16 +95447,16 @@
 }
 },
 "toggle": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Toggle (prototype).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -96230,16 +95573,16 @@
 }
 },
 "tokkae": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Taisen Tokkae-dama (ver JAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -96704,16 +96047,16 @@
 }
 },
 "tp2m32": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/Tetris Plus 2 (ver 1.0, MegaSystem 32 Version).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -97008,114 +96351,114 @@
 }
 },
 "triviabb": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Trivial Pursuit (Baby Boomer Edition) (3-20-85).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "triviaes": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Trivial Pursuit (Volumen III, Spanish, Maibesa license).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "triviaes2": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/_alternatives/Trivial Pursuit (Volumen II, Spanish, Maibesa license).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "triviag1": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Trivial Pursuit (Think Tank - Genus Edition) (2-12-85).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "triviag1a": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/_alternatives/Trivial Pursuit (Think Tank - Genus Edition) (12-14-84).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "triviag2": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Trivial Pursuit (Genus II Edition) (3-22-85).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "triviasp": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Trivial Pursuit (All Star Sports Edition).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "triviayp": {
-"repo:ballysente": {
-"core": "repo:ballysente",
+"ppriest:ballysente": {
+"core": "ppriest:ballysente",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-BallySente_MiSTer",
 "first_path": "releases/Trivial Pursuit (Young Players Edition) (3-29-85).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -98188,16 +97531,16 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
 },
-"repo:setadowntown": {
-"core": "repo:setadowntown",
+"ppriest:setadowntown": {
+"core": "ppriest:setadowntown",
 "date": "2026-09-18",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/cal50/releases/mra/Twin Eagle - Revenge Joe's Brother.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -98666,16 +98009,16 @@
 }
 },
 "umanclub": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Ultraman Club - Tatakae! Ultraman Kyoudai!!.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -102306,44 +101649,44 @@
 }
 },
 "winspike": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Winning Spike (ver EAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "winspikea": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Winning Spike (ver EAA)/Winning Spike (ver AAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
 "winspikej": {
-"repo:konamigx": {
-"core": "repo:konamigx",
+"ppriest:konamigx": {
+"core": "ppriest:konamigx",
 "date": "2026-09-26",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Winning Spike (ver EAA)/Winning Spike (ver JAA).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -102362,16 +101705,16 @@
 }
 },
 "wits": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/Wit's (Japan).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -102684,16 +102027,16 @@
 }
 },
 "wpksocv2": {
-"repo:jalecoms32": {
-"core": "repo:jalecoms32",
+"ppriest:jalecoms32": {
+"core": "ppriest:jalecoms32",
 "date": "2026-09-13",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "first_path": "releases/World PK Soccer V2 (ver 1.1).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -102810,16 +102153,16 @@
 }
 },
 "wrofaero": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-10",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-Seta_MiSTer",
 "first_path": "releases/War of Aero - Project MEIOU.mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -104322,16 +103665,16 @@
 }
 },
 "xrally": {
-"repo:hyperng64": {
-"core": "repo:hyperng64",
+"ppriest:hyperng64": {
+"core": "ppriest:hyperng64",
 "date": "2026-10-06",
 "date_quality": "git",
-"via": "repo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "ppriest/Arcade-HyperNG64_MiSTer",
 "first_path": "releases/Xtreme Rally - Off Beat Racer!.mra",
-"first_recorded": "2026-10-06",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -105052,16 +104395,16 @@
 }
 },
 "zingzip": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-11",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Zing Zing Zip (World) - Zhen Zhen Ji Pao (China).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -105150,16 +104493,16 @@
 }
 },
 "zombraid": {
-"repo:seta": {
-"core": "repo:seta",
+"ppriest:seta": {
+"core": "ppriest:seta",
 "date": "2026-09-12",
 "date_quality": "git",
-"via": "ongo",
+"via": "ppriest",
 "wip": false,
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Zombie Raid (9-28-95, US).mra",
-"first_recorded": "2026-10-04",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },

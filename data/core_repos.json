@@ -2018,6 +2018,9 @@
   "rmonic79/Arcade-Raiden2_MiSTer",
   "spacestate1/Arcade-Raiden2_MiSTer"
  ],
+ "repo:rayforce": [
+  "spacestate1/Arcade-taitoF3_MiSTer"
+ ],
  "repo:rayforce_20260908b": [
   "spacestate1/Arcade-taitoF3_MiSTer"
  ],
@@ -2056,6 +2059,9 @@
  "repo:systemc2": [
   "Mezzow/Arcade-SystemC2_MiSTer",
   "OngoGablogian/MiSTer_Ongo"
+ ],
+ "repo:taitoair": [
+  "retrogarage/tas-mister"
  ],
  "repo:taitoair_1.0": [
   "OngoGablogian/MiSTer_Ongo",
