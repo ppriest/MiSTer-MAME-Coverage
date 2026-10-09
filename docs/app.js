@@ -16,7 +16,7 @@
   const FILTER_IDS = ["f-q", "f-cov", "f-sup", "f-work", "f-cat", "f-y0", "f-y1", "f-m0y", "f-m0m", "f-m1y", "f-m1m", "f-a0y", "f-a0m", "f-a1y", "f-a1m", "f-genre", "f-manu", "f-drv", "f-dcov", "f-core", "f-db", "f-rot", "f-sort"];
   const DRIVER_IDS = ["d-q", "d-cov", "d-genre", "d-sort"];
   const CORE_IDS = ["c-q", "c-src", "c-bin", "c-sort"];
-  const UNMATCHED_IDS = ["u-q"];
+  const UNMATCHED_IDS = ["u-q", "u-hb"];
   const ALL_IDS = [...FILTER_IDS, ...DRIVER_IDS, ...CORE_IDS, ...UNMATCHED_IDS];
   const DIRS = { dir: "t", ddir: "d", cdir: "c" };   // hash key -> S.dir key
   function resetControls() {
@@ -570,16 +570,21 @@
 
   // ---------- unmatched + about ----------
   function applyUnmatched() {
-    const words = $("#u-q").value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    const words = $("#u-q").value.trim().toLowerCase().split(/\s+/).filter(Boolean), hb = $("#u-hb").value;
     const rows = S.data.unmatched.filter(u => {
-      const hay = (u.set + " " + u.cores.map(id => coreName(id) + " " + id).join(" ")).toLowerCase();
+      if (hb === "hide" && u.hbmame) return false;
+      if (hb === "only" && !u.hbmame) return false;
+      const hay = (u.set + " " + u.cores.map(id => coreName(id) + " " + id).join(" ") + (u.hbmame ? " homebrew hacks hbmame" : "")).toLowerCase();
       return words.every(w => hay.includes(w));
     });
+    const h = S.data.meta.hbmame || {}, nhb = S.data.unmatched.filter(u => u.hbmame).length;
     $("#unmatched-count").textContent = `${fmt(rows.length)} of ${fmt(S.data.unmatched.length)} sets`;
-    $("#unmatched-table tbody").innerHTML = rows.map(u => `<tr><td class="set">${esc(u.set)}</td><td>${u.cores.map(id => badge(id)).join("")}</td></tr>`).join("");
+    $("#unmatched-note").textContent = "Set names found in MiSTer MRAs that do not exist in this MAME version: hacks, homebrew, renamed or removed sets, or MRA typos." +
+      (h.version ? ` ${fmt(nhb)} of them are in HBMAME ${h.version} and are labelled homebrew/hacks.` : "");
+    $("#unmatched-table tbody").innerHTML = rows.map(u => `<tr><td class="set">${esc(u.set)}${u.hbmame ? ' <span class="flag" title="exists in HBMAME ' + esc(h.version || "") + '">homebrew/hacks</span>' : ""}</td><td>${u.cores.map(id => badge(id)).join("")}</td></tr>`).join("");
     writeHash();
   }
-  let uTimer; $("#u-q").addEventListener("input", () => { clearTimeout(uTimer); uTimer = setTimeout(applyUnmatched, 150); });
+  $("#u-hb").addEventListener("change", applyUnmatched);
   $("#u-reset").addEventListener("click", () => { UNMATCHED_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); applyUnmatched(); });
   function renderStatic() {
 

@@ -231,9 +231,12 @@
   </section>
 
   <section id="tab-unmatched" class="tab" role="tabpanel" hidden>
-    <p class="muted">Set names found in MiSTer MRAs that do not exist in this MAME version: hacks, homebrew, renamed or removed sets, or MRA typos.</p>
+    <p class="muted" id="unmatched-note">Set names found in MiSTer MRAs that do not exist in this MAME version: hacks, homebrew, renamed or removed sets, or MRA typos.</p>
     <form class="filters" onsubmit="return false">
       <label>Search <input type="search" id="u-q" placeholder="set name or core…"></label>
+      <label>Homebrew/hacks <select id="u-hb" title="sets that exist in the newest HBMAME release">
+        <option value="" selected>show</option><option value="hide">hide</option><option value="only">only</option>
+      </select></label>
       <button type="button" id="u-reset">Reset</button>
     </form>
     <p class="count" id="unmatched-count"></p>

@@ -4,6 +4,7 @@ Steps:
   mame     download + parse the MAME -listxml release asset (cached under work/)
   mister   clone/refresh the MRA repositories, parse MRAs, read their add dates, and merge the
            observations into the committed ledger (data/ledger.json)
+  hbmame   newest HBMAME release: homebrew/hack set names -> data/hbmame.json
   mamehist when each set entered MAME: release tag dates + mame.lst per release -> data/mame_added.json
   report   MAME + ledger -> docs/data/*.json; needs no repositories at all
   build    mister then report (the default)
@@ -19,13 +20,14 @@ from . import mame as mame_mod
 from . import mister as mister_mod
 from . import paths
 from . import ledger as ledger_mod
+from . import hbmame as hbmame_mod
 from . import mamehist
 from . import reconcile, report
 
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(prog="mmc")
-    ap.add_argument("step", choices=["mame", "mister", "mamehist", "report", "build"], nargs="?", default="build")
+    ap.add_argument("step", choices=["mame", "mister", "mamehist", "hbmame", "report", "build"], nargs="?", default="build")
     ap.add_argument("--mame-version", help="e.g. 0289; default: newest release asset found")
     ap.add_argument("--refresh-mame", action="store_true", help="re-parse the MAME XML even if cached")
     ap.add_argument("--no-sync", action="store_true", help="do not clone/fetch repositories; use what is in work/repos")
@@ -57,6 +59,8 @@ def main(argv=None) -> int:
               f"+{summary['pairs']} set/core pairs, {summary['dates_improved']} dates improved, "
               f"{summary.get('cores_removed', 0)} excluded cores removed")
         mister_meta = {k: mister.get(k) for k in ("generated", "alamone_generated", "repos", "errors")}
+    if a.step in ("hbmame", "build"):
+        hbmame_mod.build()
     if a.step in ("mamehist", "build"):
         if a.step == "mamehist":
             mame = mame_mod.load_mame(a.mame_version, refresh=a.refresh_mame)

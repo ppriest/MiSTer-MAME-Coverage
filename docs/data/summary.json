@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-09T08:11:03+00:00",
+  "generated": "2026-10-09T08:38:28+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
   "mister_generated": "2026-10-09T08:10:59+00:00",
@@ -76,6 +76,12 @@
    ]
   },
   "mame_added_updated": "2026-10-08",
+  "hbmame": {
+   "tag": "tag2893",
+   "version": "0.289.3",
+   "updated": "2026-10-09",
+   "sets": 9711
+  },
   "sources": {
    "dist": "MiSTer official distribution",
    "jt": "JTCORES (jotego)",
@@ -26133,2467 +26139,2878 @@
    "set": "abortman",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "abyssal",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "akatana",
    "cores": [
     "ongo:ikacore_cv1k"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "akatana_p",
    "cores": [
     "ongo:ikacore_cv1k"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "alcon_v",
    "cores": [
     "dist:slapfight"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "andromd",
    "cores": [
     "dist:galaxian"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "aquario",
    "cores": [
     "jt:jts18"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "astdelux4",
    "cores": [
     "dist:asteroidsdeluxe"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "asteroid6",
    "cores": [
     "dist:asteroids"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "astropd2",
    "cores": [
     "dist:centipede"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "astroped",
    "cores": [
     "dist:centipede"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "athenaff",
    "cores": [
     "dist:athena"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "baby2",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "baby3",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "baby4",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "badapple",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "bagturbo",
    "cores": [
     "dist:bagman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "bmbjckgr",
    "cores": [
     "dist:bombjack"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "bnjr",
    "cores": [
     "dist:burningrubber"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "bombjacks01",
    "cores": [
     "dist:bombjack"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "bombjckb",
    "cores": [
     "dist:bombjack"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "bombjred",
    "cores": [
     "dist:bombjack"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "brakman",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "bubblembe",
    "cores": [
     "repo:rayforce_20260908b"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "bublboblu",
    "cores": [
     "jt:jtbubl"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "bublboblultra",
    "cores": [
     "jt:jtbubl"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "buglaxn",
    "cores": [
     "dist:galaxian"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "cabalng",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "cabalpgm_b1",
    "cores": [
     "dist:igspgm"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "captainbarrel",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "caterpil",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "cemescry",
    "cores": [
     "dist:centipede"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "chtpac",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "chtpac3d",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "chtpman2",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "chtpop",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "chtpuck",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "chuckieegg",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ckong3a",
    "cores": [
     "dist:crazykong"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ckonga2",
    "cores": [
     "dist:crazykong"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "ckonga3",
    "cores": [
     "dist:crazykong"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "ckongfix",
    "cores": [
     "dist:crazykong"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "cleansweept",
    "cores": [
     "dist:galaxian"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "columnsn",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "cphd",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "crackhea",
    "cores": [
     "dist:druaga"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "crazypac",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "cyborgforce",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "cybotsam",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ddonpachjt",
    "cores": [
     "dist:cave"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ddonpachsc",
    "cores": [
     "dist:cave"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ddonpachscb",
    "cores": [
     "dist:cave"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ddonpacht1",
    "cores": [
     "dist:cave"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ddpdfk_p",
    "cores": [
     "ongo:ikacore_cv1k"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ddpsdoj",
    "cores": [
     "ongo:ikacore_cv1k"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "ddpsdoj_p",
    "cores": [
     "ongo:ikacore_cv1k"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "deathsml_p",
    "cores": [
     "ongo:ikacore_cv1k"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "devilfsg",
    "cores": [
     "dist:galaxian"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "dfeverondm",
    "cores": [
     "dist:cave"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "dfeveronnd",
    "cores": [
     "dist:cave"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "dfkbl_p",
    "cores": [
     "ongo:ikacore_cv1k"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "dimahoo_1",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "dimahoo_2",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "dimahoo_3",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "dizzy",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "dkfreerun",
    "cores": [
     "dist:donkeykong"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "dkong2m",
    "cores": [
     "dist:donkeykong"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "dkongbcc",
    "cores": [
     "dist:donkeykong"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "dkongex",
    "cores": [
     "dist:donkeykong"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "dkongk",
    "cores": [
     "dist:donkeykong"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "dkongp",
    "cores": [
     "dist:donkeykong"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "dkongpac",
    "cores": [
     "dist:donkeykong"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "dkongrev",
    "cores": [
     "dist:donkeykong"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "dkpace",
    "cores": [
     "dist:donkeykong"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "dkrainbow",
    "cores": [
     "dist:donkeykong"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "dkrdemo",
    "cores": [
     "dist:donkeykong"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "dktrainer",
    "cores": [
     "dist:donkeykong"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ef",
    "cores": [
     "arcfpga:mystston"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "eltonpac",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "espgal2_p",
    "cores": [
     "ongo:ikacore_cv1k"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "esprade_fp",
    "cores": [
     "dist:cave"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "espradej_fp",
    "cores": [
     "dist:cave"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "europac",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "fasthang",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "fastpop",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "fastpuck",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "ffae",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ffightae_cps2",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "frogfest",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "frombelow",
    "cores": [
     "ongo:vsnes"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "fshark_v",
    "cores": [
     "coinop:fshark"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "fstpman2",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "futari15_p",
    "cores": [
     "ongo:ikacore_cv1k"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "futaribl_p",
    "cores": [
     "ongo:ikacore_cv1k"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "futariblj_p",
    "cores": [
     "ongo:ikacore_cv1k"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "galagads",
    "cores": [
     "dist:galaga"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "galagaef",
    "cores": [
     "dist:galaga"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "galagosb",
    "cores": [
     "dist:galaga"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "galagost",
    "cores": [
     "dist:galaga"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "galaped",
    "cores": [
     "dist:galaga"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "galaxiabh",
    "cores": [
     "dist:galaxian"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "galaxkyo",
    "cores": [
     "dist:galaxian"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "galaxni",
    "cores": [
     "dist:galaxian"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "galgaxin",
    "cores": [
     "dist:galaga"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "gaous",
    "cores": [
     "dist:xevious"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "gauntletr8",
    "cores": [
     "dist:gauntlet"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "gaylaxn",
    "cores": [
     "dist:galaxian"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "gladmort",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "grdforcel",
    "cores": [
     "dist:st-v"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "handiman",
    "cores": [
     "dist:mcr2"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "hanglyad",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "hearts",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "hishouza_v",
    "cores": [
     "coinop:fshark"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "hm1000",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "hm2000",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "hmba5000",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "hmba7000",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "hmbabymz",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "hmbluep",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "hmgrenp",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "hmplus",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "hmpopey",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "housepty",
    "cores": [
     "dist:druaga"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "hsf2j1gouki",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "hsf2j1tgouki",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "hyprnoid",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "imgfightb",
    "cores": [
     "dist:iremm72"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ironhorsbl",
    "cores": [
     "dist:ironhorse"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "jacman",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "jtoutrun",
    "cores": [
     "jt:jtoutrun"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "kengoa",
    "cores": [
     "dist:iremm72"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ketps402",
    "cores": [
     "dist:igspgm"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ketps403",
    "cores": [
     "dist:igspgm"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ketps404",
    "cores": [
     "dist:igspgm"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ketps405",
    "cores": [
     "dist:igspgm"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ketps406",
    "cores": [
     "dist:igspgm"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ketps407",
    "cores": [
     "dist:igspgm"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ketps408",
    "cores": [
     "dist:igspgm"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ketps409",
    "cores": [
     "dist:igspgm"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ketps4se",
    "cores": [
     "dist:igspgm"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ketps4u02",
    "cores": [
     "dist:igspgm"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "killiped",
    "cores": [
     "dist:centipede"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "knightsch",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "kof2003ps2",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "kof98ae2016",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "kof98ultimate",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "kof99ae",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "kong2600",
    "cores": [
     "dist:donkeykong"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ktiger_v",
    "cores": [
     "coinop:twincobr"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ktigera_v",
    "cores": [
     "coinop:twincobr"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "looptris",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "marpy",
    "cores": [
     "dist:druaga"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "matsuri15",
    "cores": [
     "ongo:ikacore_cv1k"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "matsuri15_p",
    "cores": [
     "ongo:ikacore_cv1k"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "mazeman",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "mk2_wolf",
    "cores": [
     "blahm1d:blahm1d_wolfunit"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "mk_wolf",
    "cores": [
     "blahm1d:blahm1d_wolfunit"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "montest",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "mrdonight",
    "cores": [
     "dist:galaxian"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ms32",
    "cores": [
     "ppriest:jalecoms32"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "msh_1",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "msh_2",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "mshvsf_1",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "mshvsf_2",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "mushisam_p",
    "cores": [
     "ongo:ikacore_cv1k"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "mvsc_1",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "mvsc_2",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "mvsc_3",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "mvsc_4",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "nadkong",
    "cores": [
     "dist:donkeykong"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "namcosil",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "narc_blahm1d",
    "cores": [
     "blahm1d:blahm1d_narc"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "narc_meathax",
    "cores": [
     "ongo:meathax_narc"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "nbajamtese",
    "cores": [
     "blahm1d:blahm1d_tunit"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "nblktigr",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "neofight",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "neothund",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "neotris",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "newpuck2",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "newpuck3",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "noromname",
    "cores": [
     "arcfpga:test_arc"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "nsmb",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "nwarr2en",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "nwpuc2b",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "offender",
    "cores": [
     "dist:scramble"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "ottopza",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "outrunm",
    "cores": [
     "jt:jtoutrun"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "outzone_v",
    "cores": [
     "coinop:zerowing"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "outzonea_v",
    "cores": [
     "coinop:zerowing"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "outzoneb_v",
    "cores": [
     "coinop:zerowing"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "outzonecv_v",
    "cores": [
     "coinop:zerowing"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "outzoneh_v",
    "cores": [
     "coinop:zerowing"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "pac2600",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pac2600a",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacbaby",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacbaby2",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacbaby3",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacbell",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacelec",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacfnt",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacinvis",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacipede",
    "cores": [
     "dist:centipede"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacjail",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacjr1",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacjr2",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacjr3",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacjr4",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "packetman",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacm255",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacman3d",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacmanp",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacmar",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacmini",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacmini2",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacms1",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacms2",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacms3",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacms4",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacmsa1",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacmsa2",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacmsa3",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacmsa4",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacpopey",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacshuf",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacsnoop",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacspeed",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacupacu",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacwf",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pacyuyu",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pcrunchy",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pengman",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "phoenixg",
    "cores": [
     "dist:phoenix"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "phoenixr",
    "cores": [
     "dist:phoenix"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pickinpi",
    "cores": [
     "dist:bagman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pm1000",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pm2000",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pm3000",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pm4000p",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pm5000p",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pm6000",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pm7000",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pm7000p",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmad",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmad00",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmada",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmba2000",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmba3000",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmba4000",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmba6000",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmba8000",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmbamaz",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmbaplus",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmbluep",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmdeluxe",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmextra",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmextrap",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmfever",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pmgrenp",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "pollenangel",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "pooyandiag",
    "cores": [
     "dist:pooyan"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "popflamn",
    "cores": [
     "dist:naughtyboy"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "pplusad",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "progear_1",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "progear_2",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "progear_3",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "puck255",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "puckmano",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "puckmot1",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "puckmoti",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "quizdask",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "roboman",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "robotron201",
    "cores": [
     "dist:robotron"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "robotronp",
    "cores": [
     "dist:robotron"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "robotrontie",
    "cores": [
     "dist:robotron"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "romname",
    "cores": [
     "arcfpga:test_arc"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "rsgunex",
    "cores": [
     "dist:st-v"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "rtype2inv",
    "cores": [
     "dist:iremm72"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "s1945_v",
    "cores": [
     "dist:psikyo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "s1945a_v",
    "cores": [
     "dist:psikyo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "s1945ii_v",
    "cores": [
     "dist:psikyosh2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "s1945j_v",
    "cores": [
     "dist:psikyo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "s1945k_v",
    "cores": [
     "dist:psikyo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "s1945n_v",
    "cores": [
     "dist:psikyo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "s1945nj_v",
    "cores": [
     "dist:psikyo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "samsh5fe",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "samsh5pf",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "samsho5x",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sargex",
    "cores": [
     "dist:mcr3mono"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "sdojak",
    "cores": [
     "ongo:ikacore_cv1k"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "sdramtest",
    "cores": [
     "kuze:sdramtest"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sf2ceaimedb",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sf2ceaimedf",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sf2cebfire",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sf2cebih",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sf2cebof",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sf2cefires",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sf2ces15",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sf2ces17",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sf2ces21",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sf2ces22",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sf2ces23",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sf2cevampiric",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sf2cre",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sf2hfsce",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sf2mix100",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "sfa2_1",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sfa2_2",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sfa3_1",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sfa3_2",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sfiii4n",
    "cores": [
     "jt:jtcps3"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sfyumeji",
    "cores": [
     "jt:jtsf"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sfz2al_1",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sfz2al_2",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sfz2al_3",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sfz2aljs10",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sfz3mix",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "shtron",
    "cores": [
     "dist:mcr2"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "simpsons2pjfp",
    "cores": [
     "jt:jtsimson"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sinistarsm25",
    "cores": [
     "dist:robotron"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "skyshark_v",
    "cores": [
     "coinop:fshark"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "skysharka_v",
    "cores": [
     "coinop:fshark"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "slapfighb1_v",
    "cores": [
     "dist:slapfight"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "smbng",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "snowpac",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "solomonjs01",
    "cores": [
     "dist:solomonskey"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "spacedemon",
    "cores": [
     "dist:spacefirebird"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "spacerace",
    "cores": [
     "dist:spacerace"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "spatrol",
    "cores": [
     "dist:moonpatrol"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "spclone",
    "cores": [
     "dist:salamander"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "spcloneo",
    "cores": [
     "dist:salamander"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "ssf2t_3",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ssf2t_4",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ssf2t_5",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ssf2tnl_9",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "stapper",
    "cores": [
     "dist:mcr3"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "stapper1",
    "cores": [
     "dist:mcr3"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "starfgh2",
    "cores": [
     "dist:galaxian"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "starslayer",
    "cores": [
     "dist:asteroids"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "strider_fix",
    "cores": [
     "jt:jtcps1"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "sumeltob",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "sumelton",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "superdog",
    "cores": [
     "dist:scramble"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "svccpru",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "teot",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "terracre_v",
    "cores": [
     "coinop:terracresta"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "terracrea_v",
    "cores": [
     "coinop:terracresta"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "terracreo_v",
    "cores": [
     "coinop:terracresta"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "tetrismn",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "tigerhb1_v",
    "cores": [
     "dist:slapfight"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "toryumondx",
    "cores": [
     "jt:jts16b"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "totc",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "trukker",
    "cores": [
     "dist:scramble"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "truxton2rs",
    "cores": [
     "coinop:truxton2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "tutankhm2",
    "cores": [
     "dist:tutankham"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "twinbeeb",
    "cores": [
     "dist:bubsys"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "twincobr_v",
    "cores": [
     "coinop:twincobr"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "twincobru_v",
    "cores": [
     "coinop:twincobr"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "twintwst",
    "cores": [
     "coinop:twincobr"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "twintwstj",
    "cores": [
     "coinop:twincobr"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "twintwstu",
    "cores": [
     "coinop:twincobr"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "twintwstw",
    "cores": [
     "coinop:twincobr"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "tzllzr",
    "cores": [
     "jt:jttwin16"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "ultra2",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vampbh",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "vcrunchy",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vecbaby",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vecbaby2",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vecbaby3",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vecpac",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vecpengo",
    "cores": [
     "dist:pengo"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vectiped",
    "cores": [
     "dist:centipede"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vectplus",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vectrped",
    "cores": [
     "dist:centipede"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vectxens",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vgalaga",
    "cores": [
     "dist:galaga"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vgalagaf",
    "cores": [
     "dist:galaga"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vgalagam",
    "cores": [
     "dist:galaga"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vhangly",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vpacbell",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vpacelec",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vpacjail",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vpacms1",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vpacms2",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vpacms3",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vpacms4",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vpacmsa1",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vpacmsa2",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vpacmsa3",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vpacmsa4",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vpacshuf",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vpspeed",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vs_urban",
    "cores": [
     "ongo:vsnes"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "vsav2en",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "vsav_4",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "vsav_5",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "wjammss",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "wofch_1",
    "cores": [
     "jt:jtcps15"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "wofs",
    "cores": [
     "jt:jtcps15"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "wrldracr",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "xenocrisis",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "xensad",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "xensrev",
    "cores": [
     "dist:pacman"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "xeviblk",
    "cores": [
     "dist:xevious"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "xevious3",
    "cores": [
     "dist:xevious"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "xevious4",
    "cores": [
     "dist:xevious"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "xevious5",
    "cores": [
     "dist:xevious"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "xevioush",
    "cores": [
     "dist:xevious"
-   ]
+   ],
+   "hbmame": true
   },
   {
    "set": "xmcota_1",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "xmcota_2",
    "cores": [
     "jt:jtcps2"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "xmultiplm72inv",
    "cores": [
     "dist:iremm72"
-   ]
+   ],
+   "hbmame": false
   },
   {
    "set": "zintrkcd",
    "cores": [
     "dist:neogeo"
-   ]
+   ],
+   "hbmame": false
   }
  ]
 }

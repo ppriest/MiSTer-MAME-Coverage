@@ -99,6 +99,15 @@ commit, MAME sets; `pr` or, for cores on a branch such as `andrea-cores`, `branc
 merges, set `"merged": true` (the placeholder is then removed from the ledger and the real `jt:`
 core takes over). Sets are those the PR's `mame2mra.toml` selects, checked against MAME by hand.
 
+## HBMAME (homebrew and hacks)
+
+`python -m mmc hbmame` (part of `build`) reads the set names of the newest HBMAME release tag of
+`Robbbert/hbmame` (`tag2893` = 0.289.3) from the `GAME(...)` lines of `src/hbmame/drivers` (sparse
+clone, redone only when a newer tag appears) into `data/hbmame.json`. `report` flags every
+unmatched set that exists there (`unmatched[].hbmame`, `meta.hbmame`); the Unmatched tab labels
+them **homebrew/hacks** and has a show / hide / only filter. HBMAME publishes no machine list, so
+hacks defined outside `src/hbmame/drivers` are not seen.
+
 ## Databases tab
 
 One row per source (`DB_TITLES`): cores, working arcade titles and sets loaded by at least one core
