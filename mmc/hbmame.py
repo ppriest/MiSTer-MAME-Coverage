@@ -2,7 +2,9 @@
 
 HBMAME publishes no machine list, so the set names are read from the ``GAME(...)`` lines of its
 driver sources (``src/hbmame/drivers``) at the newest release tag of github.com/Robbbert/hbmame
-(``tag2893`` = 0.289.3). Written to ``data/hbmame.json``; the clone is only redone when a newer tag
+(``tag2893`` = 0.289.3). The same lines carry the metadata a ``-listxml`` would (year, parent,
+manufacturer, description), which is stored per set. HBMAME ships Windows binaries only,
+so ``-listxml`` itself cannot be run here. Written to ``data/hbmame.json``; the clone is only redone when a newer tag
 appears. Hacks defined in files outside that directory are not seen.
 """
 from __future__ import annotations
@@ -19,7 +21,43 @@ from . import paths
 
 REPO = "https://github.com/Robbbert/hbmame"
 FILE = os.path.join(paths.DATA, "hbmame.json")
-GAME_RE = re.compile(r"\s*GAME[A-Z]*\s*\(\s*[^,]+,\s*(\w+)\s*,")
+GAME_RE = re.compile(r"\s*GAME[A-Z]*\s*\((.*)\)\s*(?://.*)?$")
+
+
+NAME_RE = re.compile(r"\s*GAME[A-Z]*\s*\(\s*[^,]+,\s*(\w+)\s*,")
+
+
+def split_args(text: str) -> list[str]:
+    """Split a macro argument list on top-level commas (quotes and nested parentheses respected)."""
+    out, cur, depth, q = [], [], 0, False
+    for ch in text:
+        if ch == '"' and (not cur or cur[-1] != "\\"):
+            q = not q
+        elif not q:
+            if ch == "(":
+                depth += 1
+            elif ch == ")":
+                depth -= 1
+            elif ch == "," and depth == 0:
+                out.append("".join(cur).strip())
+                cur = []
+                continue
+        cur.append(ch)
+    out.append("".join(cur).strip())
+    return out
+
+
+def parse_game(line: str) -> tuple[str, dict] | None:
+    """``GAME(year, name, parent, machine, input, class, init, rotation, "company", "description", flags)``."""
+    m = GAME_RE.match(line)
+    if not m:
+        return None
+    a = split_args(m.group(1))
+    if len(a) < 10 or not re.fullmatch(r"\w+", a[1]):
+        return None
+    unq = lambda x: x.strip('"')
+    parent = a[2] if re.fullmatch(r"\w+", a[2]) and a[2] != "0" else None
+    return a[1].lower(), {"year": unq(a[0]), "parent": parent, "manufacturer": unq(a[8]), "desc": unq(a[9])}
 
 
 def load() -> dict:
@@ -27,7 +65,7 @@ def load() -> dict:
         with open(FILE, encoding="utf-8") as f:
             return json.load(f)
     except (OSError, ValueError):
-        return {"tag": None, "sets": []}
+        return {"tag": None, "sets": {}}
 
 
 def latest_tag() -> str | None:
@@ -72,17 +110,22 @@ def build(force: bool = False) -> dict:
     except (subprocess.SubprocessError, OSError) as e:
         print(f"[hbmame] clone failed ({e}); keeping", cur.get("tag"))
         return cur
-    names: set[str] = set()
-    for f in glob.glob(os.path.join(d, "src", "hbmame", "drivers", "*.cpp")):
+    names: dict[str, dict] = {}
+    for f in sorted(glob.glob(os.path.join(d, "src", "hbmame", "drivers", "*.cpp"))):
+        src = os.path.basename(f)
         with open(f, encoding="utf-8", errors="replace") as fh:
             for line in fh:
-                m = GAME_RE.match(line)
-                if m:
-                    names.add(m.group(1).lower())
+                g = parse_game(line)
+                if g:
+                    names.setdefault(g[0], dict(g[1], source=src))
+                else:           # a line the argument parser cannot read still names the set
+                    m = NAME_RE.match(line)
+                    if m:
+                        names.setdefault(m.group(1).lower(), {"source": src})
     if len(names) < 1000:
         print(f"[hbmame] only {len(names)} sets parsed; keeping", cur.get("tag"))
         return cur
-    out = {"tag": tag, "version": version_of(tag), "updated": dt.date.today().isoformat(), "sets": sorted(names)}
+    out = {"tag": tag, "version": version_of(tag), "updated": dt.date.today().isoformat(), "sets": dict(sorted(names.items()))}
     with open(FILE, "w", encoding="utf-8") as f:
         json.dump(out, f)
         f.write("\n")

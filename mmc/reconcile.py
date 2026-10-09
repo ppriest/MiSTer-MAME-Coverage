@@ -316,7 +316,10 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
     for setn, recs in support.items():
         if setn not in machines:
             ids = sorted(c for c in recs if not c.startswith("ongo:")) or sorted(recs)
-            unmatched.append({"set": setn, "cores": ids, "hbmame": setn in hb_sets})
+            u = {"set": setn, "cores": ids, "hbmame": setn in hb_sets}
+            if u["hbmame"]:
+                u.update({k: v for k, v in hb["sets"][setn].items() if k in ("desc", "year", "manufacturer", "parent") and v})
+            unmatched.append(u)
     # Every machine that is arcade/gambling, or that MiSTer loads regardless of category.
     for name, m in machines.items():
         if m.get("isbios"):  # "Acclaim ZN-1", "Neo-Geo" and the like are not games

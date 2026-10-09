@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-09T08:38:28+00:00",
+  "generated": "2026-10-09T08:49:48+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
   "mister_generated": "2026-10-09T08:10:59+00:00",
@@ -26140,21 +26140,32 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Paul Copeland",
+   "desc": "Abortman"
   },
   {
    "set": "abyssal",
    "cores": [
     "dist:neogeo"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2021",
+   "parent": "neogeo",
+   "manufacturer": "Kako Eimon",
+   "desc": "Abyssal Infants"
   },
   {
    "set": "akatana",
    "cores": [
     "ongo:ikacore_cv1k"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2010",
+   "manufacturer": "Cave",
+   "desc": "Akai Katana (2010-08-13 MASTER VER.)"
   },
   {
    "set": "akatana_p",
@@ -26182,35 +26193,54 @@
    "cores": [
     "jt:jts18"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2021",
+   "manufacturer": "ININ / Westone",
+   "desc": "Clockwork Aquario"
   },
   {
    "set": "astdelux4",
    "cores": [
     "dist:asteroidsdeluxe"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1980",
+   "parent": "asteroid",
+   "manufacturer": "Atari",
+   "desc": "Asteroids Deluxe (Unknown Revision) [h]"
   },
   {
    "set": "asteroid6",
    "cores": [
     "dist:asteroids"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1979",
+   "parent": "asteroid",
+   "manufacturer": "Clay Cowgill",
+   "desc": "Asteroids (Six-Bullet Hack)"
   },
   {
    "set": "astropd2",
    "cores": [
     "dist:centipede"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2002",
+   "parent": "centiped",
+   "manufacturer": "Twisty",
+   "desc": "Astropede II"
   },
   {
    "set": "astroped",
    "cores": [
     "dist:centipede"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2002",
+   "parent": "centiped",
+   "manufacturer": "Twisty",
+   "desc": "Astropede"
   },
   {
    "set": "athenaff",
@@ -26224,49 +26254,77 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "T-Bone",
+   "desc": "Baby Pacman 2 (Alt)"
   },
   {
    "set": "baby3",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "T-Bone",
+   "desc": "Baby Pacman 3 (Alt)"
   },
   {
    "set": "baby4",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "T-Bone",
+   "desc": "Pacman (Baby Maze 4)"
   },
   {
    "set": "badapple",
    "cores": [
     "dist:neogeo"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2017",
+   "parent": "neogeo",
+   "manufacturer": "BEY",
+   "desc": "Bad Apple demo (v1)"
   },
   {
    "set": "bagturbo",
    "cores": [
     "dist:bagman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1991",
+   "parent": "bagman",
+   "manufacturer": "Tim Arcadecollecting",
+   "desc": "Bagman Turbo (Stern set 1) [c]"
   },
   {
    "set": "bmbjckgr",
    "cores": [
     "dist:bombjack"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1984",
+   "parent": "bombjack",
+   "manufacturer": "hack",
+   "desc": "Bomb Jack (Greek)"
   },
   {
    "set": "bnjr",
    "cores": [
     "dist:burningrubber"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2002",
+   "parent": "brubber",
+   "manufacturer": "DaveC",
+   "desc": "Bump 'n' Jump Reverse Mod"
   },
   {
    "set": "bombjacks01",
@@ -26280,21 +26338,33 @@
    "cores": [
     "dist:bombjack"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1984",
+   "parent": "bombjack",
+   "manufacturer": "bootleg",
+   "desc": "Bomb Jack (Bootleg)"
   },
   {
    "set": "bombjred",
    "cores": [
     "dist:bombjack"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2008",
+   "parent": "bombjack",
+   "manufacturer": "hack",
+   "desc": "Bomb Jack (Red)"
   },
   {
    "set": "brakman",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Scott Lawrence",
+   "desc": "Brakman"
   },
   {
    "set": "bubblembe",
@@ -26308,7 +26378,11 @@
    "cores": [
     "jt:jtbubl"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1986",
+   "parent": "bublbobl",
+   "manufacturer": "bootleg",
+   "desc": "Bubble Bobble (Ultra Version, Hack)"
   },
   {
    "set": "bublboblultra",
@@ -26350,49 +26424,77 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Phi",
+   "desc": "Caterpillar"
   },
   {
    "set": "cemescry",
    "cores": [
     "dist:centipede"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "centiped",
+   "manufacturer": "NoSync",
+   "desc": "Cemescary"
   },
   {
    "set": "chtpac",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman [c]"
   },
   {
    "set": "chtpac3d",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "puckman",
+   "manufacturer": "Marcel Silvius",
+   "desc": "Pacman 3D [c]"
   },
   {
    "set": "chtpman2",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Namco]",
+   "desc": "New Puck2 [c]"
   },
   {
    "set": "chtpop",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pac-man (Popeye) [c]"
   },
   {
    "set": "chtpuck",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Deluxe",
+   "desc": "New Puck-X [c]"
   },
   {
    "set": "chuckieegg",
@@ -26413,14 +26515,22 @@
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1981",
+   "parent": "ckong",
+   "manufacturer": "bootleg",
+   "desc": "Crazy Kong Part II -1"
   },
   {
    "set": "ckonga3",
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1981",
+   "parent": "ckong",
+   "manufacturer": "bootleg",
+   "desc": "Crazy Kong Part II -2"
   },
   {
    "set": "ckongfix",
@@ -26441,28 +26551,44 @@
    "cores": [
     "dist:neogeo"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "neogeo",
+   "manufacturer": "Jeff Kurtz",
+   "desc": "Columns (NeoGeo)(Homebrew)"
   },
   {
    "set": "cphd",
    "cores": [
     "dist:neogeo"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2013",
+   "parent": "neogeo",
+   "manufacturer": "Le Cortex",
+   "desc": "Crouching Pony Hidden Dragon Demo"
   },
   {
    "set": "crackhea",
    "cores": [
     "dist:druaga"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "mappy",
+   "manufacturer": "Cary Barnhard",
+   "desc": "Crackhead"
   },
   {
    "set": "crazypac",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Tim Appleton",
+   "desc": "Crazy Pac"
   },
   {
    "set": "cyborgforce",
@@ -26518,7 +26644,10 @@
    "cores": [
     "ongo:ikacore_cv1k"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2012",
+   "manufacturer": "Cave",
+   "desc": "DoDonPachi SaiDaiOuJou (clean dump)"
   },
   {
    "set": "ddpsdoj_p",
@@ -26588,35 +26717,55 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Tim Appleton",
+   "desc": "Dizzy Ghost - A Reversal of Roles"
   },
   {
    "set": "dkfreerun",
    "cores": [
     "dist:donkeykong"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2019",
+   "parent": "dkong",
+   "manufacturer": "Paul Goes",
+   "desc": "Donkey Kong Freerun Edition (2019-06-20)"
   },
   {
    "set": "dkong2m",
    "cores": [
     "dist:donkeykong"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2013",
+   "parent": "dkong",
+   "manufacturer": "hack",
+   "desc": "Donkey Kong (2 marios)"
   },
   {
    "set": "dkongbcc",
    "cores": [
     "dist:donkeykong"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1981",
+   "parent": "dkong",
+   "manufacturer": "Jeff Kulczycki",
+   "desc": "Donkey Kong (Barrel control coloring)"
   },
   {
    "set": "dkongex",
    "cores": [
     "dist:donkeykong"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2005",
+   "parent": "dkong",
+   "manufacturer": "Jeff Kulczycki",
+   "desc": "Donkey Kong Foundry"
   },
   {
    "set": "dkongk",
@@ -26630,42 +26779,66 @@
    "cores": [
     "dist:donkeykong"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2007",
+   "parent": "dkong",
+   "manufacturer": "Don Hodges",
+   "desc": "Donkey Kong (patched)"
   },
   {
    "set": "dkongpac",
    "cores": [
     "dist:donkeykong"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "dkong",
+   "manufacturer": "Tim Appleton",
+   "desc": "Donkey Kong (Pac-man graphics)"
   },
   {
    "set": "dkongrev",
    "cores": [
     "dist:donkeykong"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2019",
+   "parent": "dkong",
+   "manufacturer": "Paul Goes",
+   "desc": "Donkey Kong Reverse (2019-08-29)"
   },
   {
    "set": "dkpace",
    "cores": [
     "dist:donkeykong"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2016",
+   "parent": "dkong",
+   "manufacturer": "John Kowalski",
+   "desc": "Donkey Kong Pace"
   },
   {
    "set": "dkrainbow",
    "cores": [
     "dist:donkeykong"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2015",
+   "parent": "dkong",
+   "manufacturer": "John Kowalski",
+   "desc": "Rainbow Donkey Kong"
   },
   {
    "set": "dkrdemo",
    "cores": [
     "dist:donkeykong"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2015",
+   "parent": "dkong",
+   "manufacturer": "John Kowalski",
+   "desc": "Donkey Kong Remix demo 1.8"
   },
   {
    "set": "dktrainer",
@@ -26686,7 +26859,11 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Marcel Silvius",
+   "desc": "Elton Pac"
   },
   {
    "set": "espgal2_p",
@@ -26714,28 +26891,44 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Stefano Priore",
+   "desc": "Euro Pac"
   },
   {
    "set": "fasthang",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Nittoh]",
+   "desc": "Hangly Man [f]"
   },
   {
    "set": "fastpop",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Popeye) [f]"
   },
   {
    "set": "fastpuck",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Deluxe",
+   "desc": "New Puck-X [f]"
   },
   {
    "set": "ffae",
@@ -26763,7 +26956,11 @@
    "cores": [
     "ongo:vsnes"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2020",
+   "parent": "suprmrio",
+   "manufacturer": "Matt Hughson",
+   "desc": "Vs. From Below (beta 0.8.0, 2020-12-21)"
   },
   {
    "set": "fshark_v",
@@ -26777,7 +26974,11 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Namco]",
+   "desc": "New Puck2 [f]"
   },
   {
    "set": "futari15_p",
@@ -26805,35 +27006,55 @@
    "cores": [
     "dist:galaga"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1981",
+   "parent": "galaga",
+   "manufacturer": "hack",
+   "desc": "Galaga (fast shoot)"
   },
   {
    "set": "galagaef",
    "cores": [
     "dist:galaga"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "galaga",
+   "manufacturer": "hack",
+   "desc": "Galaga (Enduring Freedom)"
   },
   {
    "set": "galagosb",
    "cores": [
     "dist:galaga"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2002",
+   "parent": "galaga",
+   "manufacturer": "Twisty",
+   "desc": "Galaga Ghost (Set 2, 2002-11-28)"
   },
   {
    "set": "galagost",
    "cores": [
     "dist:galaga"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2002",
+   "parent": "galaga",
+   "manufacturer": "Twisty",
+   "desc": "Galaga Ghost (Set 1)"
   },
   {
    "set": "galaped",
    "cores": [
     "dist:galaga"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "galaga",
+   "manufacturer": "Cary Barnhard",
+   "desc": "Galapede (Fast Shoot)"
   },
   {
    "set": "galaxiabh",
@@ -26861,14 +27082,22 @@
    "cores": [
     "dist:galaga"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "galaga",
+   "manufacturer": "T-Bone",
+   "desc": "Galagalaxian"
   },
   {
    "set": "gaous",
    "cores": [
     "dist:xevious"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2005",
+   "parent": "xevious",
+   "manufacturer": "Namco (Hack)",
+   "desc": "Gaous"
   },
   {
    "set": "gauntletr8",
@@ -26889,7 +27118,11 @@
    "cores": [
     "dist:neogeo"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2024",
+   "parent": "neogeo",
+   "manufacturer": "Pixelheart / ChipsOnSteroids",
+   "desc": "Gladmort"
   },
   {
    "set": "grdforcel",
@@ -26903,21 +27136,33 @@
    "cores": [
     "dist:mcr2"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "tron",
+   "manufacturer": "Bobby Tribble",
+   "desc": "Handi-Man in Cyberworld"
   },
   {
    "set": "hanglyad",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Nittoh]",
+   "desc": "Hangly-Man (set 1) After Dark"
   },
   {
    "set": "hearts",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Hearts)"
   },
   {
    "set": "hishouza_v",
@@ -26931,70 +27176,110 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Hangly Man 1000"
   },
   {
    "set": "hm2000",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Hangly Man 2000"
   },
   {
    "set": "hmba5000",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Hangly Man Babies 5000"
   },
   {
    "set": "hmba7000",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Hangly Man Babies 7000"
   },
   {
    "set": "hmbabymz",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Hangly Man BabiesMaze"
   },
   {
    "set": "hmbluep",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Hangly Man Blue Plus"
   },
   {
    "set": "hmgrenp",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Hangly Man Green Plus"
   },
   {
    "set": "hmplus",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Hangly Man Plus"
   },
   {
    "set": "hmpopey",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1981",
+   "parent": "puckman",
+   "manufacturer": "[Nittoh]",
+   "desc": "Hangly-Man (Popeye)"
   },
   {
    "set": "housepty",
    "cores": [
     "dist:druaga"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "mappy",
+   "manufacturer": "Jerky",
+   "desc": "House Party"
   },
   {
    "set": "hsf2j1gouki",
@@ -27127,14 +27412,22 @@
    "cores": [
     "dist:centipede"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "centiped",
+   "manufacturer": "The Dog",
+   "desc": "Killipede"
   },
   {
    "set": "knightsch",
    "cores": [
     "dist:neogeo"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2014",
+   "parent": "neogeo",
+   "manufacturer": "Neobitz",
+   "desc": "Knight's Chance"
   },
   {
    "set": "kof2003ps2",
@@ -27190,14 +27483,22 @@
    "cores": [
     "dist:neogeo"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2021",
+   "parent": "neogeo",
+   "manufacturer": "Blastar",
+   "desc": "Looptris (2021-12-26)"
   },
   {
    "set": "marpy",
    "cores": [
     "dist:druaga"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "mappy",
+   "manufacturer": "Marks Hacks",
+   "desc": "Marpy"
   },
   {
    "set": "matsuri15",
@@ -27218,7 +27519,11 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Marcel Silvius",
+   "desc": "Maze Man"
   },
   {
    "set": "mk2_wolf",
@@ -27323,14 +27628,22 @@
    "cores": [
     "dist:donkeykong"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2004",
+   "parent": "dkong",
+   "manufacturer": "hack",
+   "desc": "Naked Donkey Kong"
   },
   {
    "set": "namcosil",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "puckman",
+   "manufacturer": "Marcel Silvius",
+   "desc": "Pacman (Namco) (Sil hack) [c]"
   },
   {
    "set": "narc_blahm1d",
@@ -27365,14 +27678,22 @@
    "cores": [
     "dist:neogeo"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2015",
+   "parent": "neogeo",
+   "manufacturer": "Kannagi",
+   "desc": "Neo Fight"
   },
   {
    "set": "neothund",
    "cores": [
     "dist:neogeo"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2012",
+   "parent": "neogeo",
+   "manufacturer": "Sebastian Mihai",
+   "desc": "Neo Thunder"
   },
   {
    "set": "neotris",
@@ -27386,14 +27707,22 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "puckman",
+   "manufacturer": "Sir Scotty",
+   "desc": "New Puck-2"
   },
   {
    "set": "newpuck3",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "puckman",
+   "manufacturer": "Marcel Silvius",
+   "desc": "New Puck-3"
   },
   {
    "set": "noromname",
@@ -27407,7 +27736,11 @@
    "cores": [
     "dist:neogeo"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2020",
+   "parent": "neogeo",
+   "manufacturer": "OzzyOuzo",
+   "desc": "New! Super Mario Bros."
   },
   {
    "set": "nwarr2en",
@@ -27421,28 +27754,44 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1981",
+   "parent": "puckman",
+   "manufacturer": "Linear Elect",
+   "desc": "New Puc2 (Set 2)"
   },
   {
    "set": "offender",
    "cores": [
     "dist:scramble"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "scramble",
+   "manufacturer": "Chris Henry (Battlpriest)",
+   "desc": "Offender"
   },
   {
    "set": "ottopza",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2018",
+   "parent": "mspacman",
+   "manufacturer": "hack",
+   "desc": "Crazy Otto - The Original Ms Pacman (hack of ottopz)"
   },
   {
    "set": "outrunm",
    "cores": [
     "jt:jtoutrun"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2016",
+   "parent": "outrun",
+   "manufacturer": "cmonkey",
+   "desc": "Out Run (sitdown/upright, Rev B) (added music)"
   },
   {
    "set": "outzone_v",
@@ -27484,462 +27833,726 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Bobby Tribble",
+   "desc": "Pac 2600"
   },
   {
    "set": "pac2600a",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "19??",
+   "parent": "puckman",
+   "manufacturer": "Bobby Tribble?",
+   "desc": "Pac 2600 (Older?)"
   },
   {
    "set": "pacbaby",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Baby Maze 1)"
   },
   {
    "set": "pacbaby2",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Baby Maze 2)"
   },
   {
    "set": "pacbaby3",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Baby Maze 3)"
   },
   {
    "set": "pacbell",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Snake Eyes",
+   "desc": "Pacman (Bell)"
   },
   {
    "set": "pacelec",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Snake Eyes",
+   "desc": "Pacman (Electric Cowboy)"
   },
   {
    "set": "pacfnt",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Tim Appleton",
+   "desc": "Pacman with Pacman font"
   },
   {
    "set": "pacinvis",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Original Inviso)"
   },
   {
    "set": "pacipede",
    "cores": [
     "dist:centipede"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "centiped",
+   "manufacturer": "Jeff Coleburn",
+   "desc": "Pacipede"
   },
   {
    "set": "pacjail",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Snake Eyes",
+   "desc": "Pacman (Jail)"
   },
   {
    "set": "pacjr1",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman Jr. (Maze 1)"
   },
   {
    "set": "pacjr2",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman Jr. (Maze 2)"
   },
   {
    "set": "pacjr3",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman Jr. (Maze 3)"
   },
   {
    "set": "pacjr4",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman Jr. (Maze 4)"
   },
   {
    "set": "packetman",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "unbranded",
+   "desc": "Packetman"
   },
   {
    "set": "pacm255",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Fixes 255th Maze)"
   },
   {
    "set": "pacman3d",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "puckman",
+   "manufacturer": "Marcel Silvius",
+   "desc": "Pacman 3D"
   },
   {
    "set": "pacmanp",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2007",
+   "parent": "puckman",
+   "manufacturer": "Don Hodges",
+   "desc": "Pacman (Patched)"
   },
   {
    "set": "pacmar",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Mario Pacman"
   },
   {
    "set": "pacmini",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Bobby Tribble",
+   "desc": "Mini Pacman"
   },
   {
    "set": "pacmini2",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Bobby Tribble",
+   "desc": "Mini Pacman 2"
   },
   {
    "set": "pacms1",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Ms. Pacman Maze 1)"
   },
   {
    "set": "pacms2",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Ms. Pacman Maze 2)"
   },
   {
    "set": "pacms3",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Ms. Pacman Maze 3)"
   },
   {
    "set": "pacms4",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Ms. Pacman Maze 4)"
   },
   {
    "set": "pacmsa1",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Ms. Pacman Attack 1)"
   },
   {
    "set": "pacmsa2",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Ms. Pacman Attack 2)"
   },
   {
    "set": "pacmsa3",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Ms. Pacman Attack 3)"
   },
   {
    "set": "pacmsa4",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Ms. Pacman Attack 4)"
   },
   {
    "set": "pacpopey",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman (Popeye)"
   },
   {
    "set": "pacshuf",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Snake Eyes",
+   "desc": "Pacman (Shuffle)"
   },
   {
    "set": "pacsnoop",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2004",
+   "parent": "puckman",
+   "manufacturer": "Scott Lawrence",
+   "desc": "Pac Snoop v1.3 [f]"
   },
   {
    "set": "pacspeed",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Snake Eyes",
+   "desc": "Pacman (Speedy)"
   },
   {
    "set": "pacupacu",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2025",
+   "parent": "puckman",
+   "manufacturer": "Sokurah",
+   "desc": "Pacu Pacu (v1.0)"
   },
   {
    "set": "pacwf",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Tim Appleton",
+   "desc": "Pacman (Weird Fruit)"
   },
   {
    "set": "pacyuyu",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2022",
+   "parent": "puckman",
+   "manufacturer": "Kirai Shouen, 125scratch",
+   "desc": "Pac-Yuyu"
   },
   {
    "set": "pcrunchy",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Snake Eyes",
+   "desc": "Pacman (Crunchy)"
   },
   {
    "set": "pengman",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Scott Lawrence",
+   "desc": "Pengo Man"
   },
   {
    "set": "phoenixg",
    "cores": [
     "dist:phoenix"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1980",
+   "parent": "phoenix",
+   "manufacturer": "GreekRoms",
+   "desc": "Phoenix (Greek)"
   },
   {
    "set": "phoenixr",
    "cores": [
     "dist:phoenix"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "phoenix",
+   "manufacturer": "CYBERYOGI =CO= Windler",
+   "desc": "PhoenixR (GDR hack)"
   },
   {
    "set": "pickinpi",
    "cores": [
     "dist:bagman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1983",
+   "parent": "pickin",
+   "manufacturer": "Pi",
+   "desc": "Pickin' (Color Hack)"
   },
   {
    "set": "pm1000",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man 1000"
   },
   {
    "set": "pm2000",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man 2000"
   },
   {
    "set": "pm3000",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man 3000"
   },
   {
    "set": "pm4000p",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man 4000 Plus"
   },
   {
    "set": "pm5000p",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man 5000 Plus"
   },
   {
    "set": "pm6000",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man 6000"
   },
   {
    "set": "pm7000",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man 7000"
   },
   {
    "set": "pm7000p",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man 7000 Plus"
   },
   {
    "set": "pmad",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Sir Scotty",
+   "desc": "Pacman After Dark"
   },
   {
    "set": "pmad00",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman After Dark 2000"
   },
   {
    "set": "pmada",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pacman After Dark (Alternate)"
   },
   {
    "set": "pmba2000",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man Babies 2000"
   },
   {
    "set": "pmba3000",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man Babies 3000"
   },
   {
    "set": "pmba4000",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man Babies 4000"
   },
   {
    "set": "pmba6000",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man Babies 6000"
   },
   {
    "set": "pmba8000",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man Babies 8000"
   },
   {
    "set": "pmbamaz",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man Babies Maze"
   },
   {
    "set": "pmbaplus",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man Babies Plus"
   },
   {
    "set": "pmbluep",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man Blue Plus"
   },
   {
    "set": "pmdeluxe",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man Deluxe"
   },
   {
    "set": "pmextra",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man Extra"
   },
   {
    "set": "pmextrap",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man Extra Plus"
   },
   {
    "set": "pmfever",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man Fever"
   },
   {
    "set": "pmgrenp",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2001",
+   "parent": "puckman",
+   "manufacturer": "Blue Justice",
+   "desc": "Pac Man Green Plus"
   },
   {
    "set": "pollenangel",
@@ -27967,7 +28580,11 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Bally Midway]",
+   "desc": "Pacman Plus After Dark"
   },
   {
    "set": "progear_1",
@@ -27995,28 +28612,44 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Namco]",
+   "desc": "Puckman (Fixes 255th Maze)"
   },
   {
    "set": "puckmano",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2007",
+   "parent": "puckman",
+   "manufacturer": "Hebus",
+   "desc": "Puckman Opposite"
   },
   {
    "set": "puckmot1",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2007",
+   "parent": "puckman",
+   "manufacturer": "Hebus",
+   "desc": "Puckmotik (alt)"
   },
   {
    "set": "puckmoti",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2007",
+   "parent": "puckman",
+   "manufacturer": "Hebus",
+   "desc": "Puckmotik"
   },
   {
    "set": "quizdask",
@@ -28030,28 +28663,44 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1999",
+   "parent": "puckman",
+   "manufacturer": "Runge Editing",
+   "desc": "Robo Man"
   },
   {
    "set": "robotron201",
    "cores": [
     "dist:robotron"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2012",
+   "parent": "robotron",
+   "manufacturer": "Sean Riddle",
+   "desc": "Robotron: 2084 (Hacked Patched Blue-201)"
   },
   {
    "set": "robotronp",
    "cores": [
     "dist:robotron"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2014",
+   "parent": "robotron",
+   "manufacturer": "Christian Gingras / Sean Riddle",
+   "desc": "Robotron: 2084 (Patched)"
   },
   {
    "set": "robotrontie",
    "cores": [
     "dist:robotron"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2014",
+   "parent": "robotron",
+   "manufacturer": "Vid Kidz",
+   "desc": "Robotron: 2084 (Tie Die)"
   },
   {
    "set": "romname",
@@ -28149,14 +28798,21 @@
    "cores": [
     "dist:mcr3mono"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2009",
+   "parent": "sarge",
+   "manufacturer": "Gatinho",
+   "desc": "Sarge Exposed"
   },
   {
    "set": "sdojak",
    "cores": [
     "ongo:ikacore_cv1k"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2021",
+   "manufacturer": "CaveDwellers",
+   "desc": "DoDonPachi SaiDaiOuJou & Knuckles (2021-12-01)"
   },
   {
    "set": "sdramtest",
@@ -28268,7 +28924,11 @@
    "cores": [
     "jt:jtcps1"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2021",
+   "parent": "sf2ce",
+   "manufacturer": "Zero800",
+   "desc": "Street Fighter II: Dream Battle (Mix 1.0)"
   },
   {
    "set": "sfa2_1",
@@ -28345,14 +29005,22 @@
    "cores": [
     "jt:jtcps2"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2026",
+   "parent": "sfa3",
+   "manufacturer": "Zero800",
+   "desc": "Street Fighter Zero 3 (Turbo Mix 0.32)"
   },
   {
    "set": "shtron",
    "cores": [
     "dist:mcr2"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2004",
+   "parent": "shollow",
+   "manufacturer": "Scott Lawrence",
+   "desc": "Satan's Hollow (Tron Hardware)"
   },
   {
    "set": "simpsons2pjfp",
@@ -28401,7 +29069,11 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "T-Bone",
+   "desc": "Snowy Day Pacman"
   },
   {
    "set": "solomonjs01",
@@ -28429,21 +29101,33 @@
    "cores": [
     "dist:moonpatrol"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2008",
+   "parent": "mpatrol",
+   "manufacturer": "Gatinho",
+   "desc": "Sponge Patrol"
   },
   {
    "set": "spclone",
    "cores": [
     "dist:salamander"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2007",
+   "parent": "salamand",
+   "manufacturer": "Konami",
+   "desc": "Salamander (version YY 0.7.3) "
   },
   {
    "set": "spcloneo",
    "cores": [
     "dist:salamander"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2007",
+   "parent": "salamand",
+   "manufacturer": "Konami",
+   "desc": "Salamander (version YY 0.7.2.2)"
   },
   {
    "set": "ssf2t_3",
@@ -28478,21 +29162,33 @@
    "cores": [
     "dist:mcr3"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2002",
+   "parent": "tapper",
+   "manufacturer": "DC",
+   "desc": "Tapper (Simpsons Hack)"
   },
   {
    "set": "stapper1",
    "cores": [
     "dist:mcr3"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2002",
+   "parent": "tapper",
+   "manufacturer": "DC",
+   "desc": "Tapper (Simpsons Hack ver.81)"
   },
   {
    "set": "starfgh2",
    "cores": [
     "dist:galaxian"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "19??",
+   "parent": "pisces",
+   "manufacturer": "bootleg",
+   "desc": "Starfighter II"
   },
   {
    "set": "starslayer",
@@ -28513,35 +29209,55 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Staizitto",
+   "desc": "Summertime Elton (old)"
   },
   {
    "set": "sumelton",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Staizitto",
+   "desc": "Summertime Elton"
   },
   {
    "set": "superdog",
    "cores": [
     "dist:scramble"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "scramble",
+   "manufacturer": "Jerky",
+   "desc": "Superdog"
   },
   {
    "set": "svccpru",
    "cores": [
     "dist:neogeo"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2003",
+   "parent": "svc",
+   "manufacturer": "Jason/K3",
+   "desc": "SvC Chaos Remix Ultra (v1.2)"
   },
   {
    "set": "teot",
    "cores": [
     "dist:neogeo"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2022",
+   "parent": "neogeo",
+   "manufacturer": "OzzyOuzo",
+   "desc": "The Eye of Typhoon (Tsunami Edition, beta 7, 2022-07-31)"
   },
   {
    "set": "terracre_v",
@@ -28590,14 +29306,22 @@
    "cores": [
     "dist:neogeo"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2011",
+   "parent": "neogeo",
+   "manufacturer": "FACE Corporation / N.C.I - Le Cortex",
+   "desc": "Treasure of the Caribbean"
   },
   {
    "set": "trukker",
    "cores": [
     "dist:scramble"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1999",
+   "parent": "frogger",
+   "manufacturer": "Grimlick",
+   "desc": "Trukker"
   },
   {
    "set": "truxton2rs",
@@ -28674,7 +29398,11 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "TwoBit Score",
+   "desc": "Ultra Pacman"
   },
   {
    "set": "vampbh",
@@ -28688,196 +29416,307 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Snake Eyes",
+   "desc": "Vector Pacman (Crunchy)"
   },
   {
    "set": "vecbaby",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Vector Pacman (Baby Maze 1)"
   },
   {
    "set": "vecbaby2",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Vector Pacman (Baby Maze 2)"
   },
   {
    "set": "vecbaby3",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Vector Pacman (Baby Maze 3)"
   },
   {
    "set": "vecpac",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Vector Pacman"
   },
   {
    "set": "vecpengo",
    "cores": [
     "dist:pengo"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "pengo",
+   "manufacturer": "T-Bone",
+   "desc": "Pengo (Vector sim)"
   },
   {
    "set": "vectiped",
    "cores": [
     "dist:centipede"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "centiped",
+   "manufacturer": "The Dog",
+   "desc": "Vectipede"
   },
   {
    "set": "vectplus",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Bally Midway]",
+   "desc": "Vector Pacman Plus"
   },
   {
    "set": "vectrped",
    "cores": [
     "dist:centipede"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "1998",
+   "parent": "centiped",
+   "manufacturer": "T-Bone",
+   "desc": "Vectorpede"
   },
   {
    "set": "vectxens",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Jeff Morris",
+   "desc": "Vector Xens Revenge"
   },
   {
    "set": "vgalaga",
    "cores": [
     "dist:galaga"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "galaga",
+   "manufacturer": "Hack",
+   "desc": "Vector Galaga"
   },
   {
    "set": "vgalagaf",
    "cores": [
     "dist:galaga"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "galaga",
+   "manufacturer": "Hack",
+   "desc": "Vector Galaga Fast Shoot"
   },
   {
    "set": "vgalagam",
    "cores": [
     "dist:galaga"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "galaga",
+   "manufacturer": "Hack",
+   "desc": "Vector Galaga Midway"
   },
   {
    "set": "vhangly",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Nittoh]",
+   "desc": "Vector Hangly-Man"
   },
   {
    "set": "vpacbell",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Snake Eyes",
+   "desc": "Vector Pacman (Bell)"
   },
   {
    "set": "vpacelec",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Snake Eyes",
+   "desc": "Vector Pacman (Electric Cowboy)"
   },
   {
    "set": "vpacjail",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Snake Eyes",
+   "desc": "Vector Pacman (Jail)"
   },
   {
    "set": "vpacms1",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Vector Pacman (Ms. Pacman Maze 1)"
   },
   {
    "set": "vpacms2",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Vector Pacman (Ms. Pacman Maze 2)"
   },
   {
    "set": "vpacms3",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Vector Pacman (Ms. Pacman Maze 3)"
   },
   {
    "set": "vpacms4",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Vector Pacman (Ms. Pacman Maze 4)"
   },
   {
    "set": "vpacmsa1",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Vector Pacman (Ms. Pacman Attack 1)"
   },
   {
    "set": "vpacmsa2",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Vector Pacman (Ms. Pacman Attack 2)"
   },
   {
    "set": "vpacmsa3",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Vector Pacman (Ms. Pacman Attack 3)"
   },
   {
    "set": "vpacmsa4",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Vector Pacman (Ms. Pacman Attack 4)"
   },
   {
    "set": "vpacshuf",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Snake Eyes",
+   "desc": "Vector Pacman (Shuffle)"
   },
   {
    "set": "vpspeed",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Snake Eyes",
+   "desc": "Vector Pacman (Speedy)"
   },
   {
    "set": "vs_urban",
    "cores": [
     "ongo:vsnes"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2020",
+   "manufacturer": "Nintendo",
+   "desc": "Vs. Urban Champion"
   },
   {
    "set": "vsav2en",
@@ -28926,7 +29765,11 @@
    "cores": [
     "dist:neogeo"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2025",
+   "parent": "neogeo",
+   "manufacturer": "Blastar",
+   "desc": "World Racer (2025-11-14)"
   },
   {
    "set": "xenocrisis",
@@ -28940,49 +29783,77 @@
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Jeff Morris",
+   "desc": "Xens Revenge After Dark"
   },
   {
    "set": "xensrev",
    "cores": [
     "dist:pacman"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Jeff Morris",
+   "desc": "Xens Revenge"
   },
   {
    "set": "xeviblk",
    "cores": [
     "dist:xevious"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2004",
+   "parent": "xevious",
+   "manufacturer": "Namco",
+   "desc": "Xevious Black"
   },
   {
    "set": "xevious3",
    "cores": [
     "dist:xevious"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2002",
+   "parent": "xevious",
+   "manufacturer": "Namco",
+   "desc": "Xevious 2003"
   },
   {
    "set": "xevious4",
    "cores": [
     "dist:xevious"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2004",
+   "parent": "xevious",
+   "manufacturer": "Namco",
+   "desc": "Xevious 2004"
   },
   {
    "set": "xevious5",
    "cores": [
     "dist:xevious"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2004",
+   "parent": "xevious",
+   "manufacturer": "Namco",
+   "desc": "Xevious 2005"
   },
   {
    "set": "xevioush",
    "cores": [
     "dist:xevious"
    ],
-   "hbmame": true
+   "hbmame": true,
+   "year": "2002",
+   "parent": "xevious",
+   "manufacturer": "Namco",
+   "desc": "Xevious 2002"
   },
   {
    "set": "xmcota_1",

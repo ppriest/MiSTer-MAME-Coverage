@@ -574,14 +574,14 @@
     const rows = S.data.unmatched.filter(u => {
       if (hb === "hide" && u.hbmame) return false;
       if (hb === "only" && !u.hbmame) return false;
-      const hay = (u.set + " " + u.cores.map(id => coreName(id) + " " + id).join(" ") + (u.hbmame ? " homebrew hacks hbmame" : "")).toLowerCase();
+      const hay = (u.set + " " + u.cores.map(id => coreName(id) + " " + id).join(" ") + (u.hbmame ? " homebrew hacks hbmame " + (u.desc || "") + " " + (u.manufacturer || "") + " " + (u.parent || "") : "")).toLowerCase();
       return words.every(w => hay.includes(w));
     });
     const h = S.data.meta.hbmame || {}, nhb = S.data.unmatched.filter(u => u.hbmame).length;
     $("#unmatched-count").textContent = `${fmt(rows.length)} of ${fmt(S.data.unmatched.length)} sets`;
     $("#unmatched-note").textContent = "Set names found in MiSTer MRAs that do not exist in this MAME version: hacks, homebrew, renamed or removed sets, or MRA typos." +
       (h.version ? ` ${fmt(nhb)} of them are in HBMAME ${h.version} and are labelled homebrew/hacks.` : "");
-    $("#unmatched-table tbody").innerHTML = rows.map(u => `<tr><td class="set">${esc(u.set)}${u.hbmame ? ' <span class="flag" title="exists in HBMAME ' + esc(h.version || "") + '">homebrew/hacks</span>' : ""}</td><td>${u.cores.map(id => badge(id)).join("")}</td></tr>`).join("");
+    $("#unmatched-table tbody").innerHTML = rows.map(u => `<tr><td class="set">${esc(u.set)}${u.hbmame ? ' <span class="flag" title="exists in HBMAME ' + esc(h.version || "") + '">homebrew/hacks</span>' : ""}</td><td>${esc(u.desc || "")}${u.parent ? ` <span class="flag">clone of ${esc(u.parent)}</span>` : ""}</td><td class="num">${esc(u.year || "")}</td><td>${esc(u.manufacturer || "")}</td><td>${u.cores.map(id => badge(id)).join("")}</td></tr>`).join("");
     writeHash();
   }
   $("#u-hb").addEventListener("change", applyUnmatched);
