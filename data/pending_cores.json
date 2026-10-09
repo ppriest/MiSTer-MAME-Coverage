@@ -1,0 +1,89 @@
+[
+ {
+  "name": "jtmnymny",
+  "game": "Zaccaria: Money Money, Jack Rabbit",
+  "pr": 1580,
+  "date": "2026-09-04",
+  "sets": [
+   "monymony",
+   "monymony2",
+   "monymony3",
+   "jackrabt",
+   "jackrabt2",
+   "jackrabts"
+  ],
+  "merged": false
+ },
+ {
+  "name": "jtmeikyu",
+  "game": "Meikyu Jima",
+  "pr": 1480,
+  "date": "2026-07-18",
+  "sets": [
+   "kikcubic"
+  ],
+  "merged": false
+ },
+ {
+  "name": "jtarblst",
+  "game": "Arbalester, Meta Fox",
+  "pr": 1445,
+  "date": "2026-09-23",
+  "sets": [
+   "arbalest",
+   "metafox"
+  ],
+  "merged": false
+ },
+ {
+  "name": "jtpspike",
+  "game": "Power Spikes, Aero Fighters / Sonic Wings, Turbo Force, Karate Blazers",
+  "branch": "andrea-cores",
+  "date": "2026-10-03",
+  "sets": [
+   "pspikes",
+   "pspikesk",
+   "pspikesu",
+   "svolly91",
+   "turbofrc",
+   "turbofrcj",
+   "turbofrco",
+   "turbofrcu",
+   "turbofrcua",
+   "karatblz",
+   "karatblza",
+   "karatblzj",
+   "karatblzt",
+   "karatblzu",
+   "aerofgtb",
+   "aerofgtc",
+   "sonicwi"
+  ],
+  "merged": false
+ },
+ {
+  "name": "jtf1grpr",
+  "game": "F-1 Grand Prix",
+  "branch": "andrea-cores",
+  "date": "2026-10-03",
+  "sets": [
+   "f1gp",
+   "f1gpa"
+  ],
+  "merged": false
+ },
+ {
+  "name": "jtsysfl",
+  "game": "Speed Racer, Final Lap R",
+  "branch": "andrea-cores",
+  "date": "2026-10-03",
+  "sets": [
+   "speedrcr",
+   "finalapr",
+   "finalapr1",
+   "finalaprj",
+   "finalaprj1"
+  ],
+  "merged": false
+ }
+]

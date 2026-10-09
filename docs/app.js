@@ -86,12 +86,17 @@
   // all the charts box is collapsed and disabled. chartScope() returns the titles and how to
   // count their sets.
   function chartScope() {
+    // MAME totals ignore the "MiSTer source code" filter (it says nothing about MAME); it only
+    // narrows what counts as being on MiSTer.
     const f = readFilters();
-    const titles = S.titles.filter(t => titleMatches(t, f));
+    const titles = S.titles.filter(t => titleMatches(t, { ...f, sup: "" }));
     const setOk = f.work === "all" ? () => true : f.work === "notworking" ? s => !s.working : s => s.working;
-    const covered = f.work === "working" ? t => t.ncovered_working > 0 : t => t.covered;
+    const baseCovered = f.work === "working" ? t => t.ncovered_working > 0 : t => t.covered;
+    const tsup = f.work === "working" ? t => t.support_working : t => t.support;
+    const covered = t => baseCovered(t) && (!f.sup || tsup(t) === f.sup);
+    const setCovered = s => s.cores.length > 0 && (!f.sup || s.support === f.sup);
     const date = f.work === "working" ? t => t.date_working : t => t.date;
-    return { titles, setOk, covered, date, work: f.work };
+    return { titles, setOk, covered, setCovered, date, work: f.work };
   }
   function renderCharts() {
     const box = $("#charts-box"), note = $("#charts-note");
@@ -121,7 +126,7 @@
     const f = readFilters();
     const sets = sc.titles.flatMap(t => t.sets.filter(sc.setOk));
     const mameKeys = sets.filter(s => s.mame_date).map(s => monthKey(s.mame_date)).sort();
-    const misterKeys = sets.filter(s => s.cores.length && s.date).map(s => monthKey(s.date)).sort();
+    const misterKeys = sets.filter(s => sc.setCovered(s) && s.date).map(s => monthKey(s.date)).sort();
     if (!mameKeys.length) { $("#chart-time").innerHTML = '<p class="muted">no titles match</p>'; $("#legend-time").innerHTML = ""; return; }
     // The x axis spans the whole history (or 2018 on) whatever the filters, so a drag selection
     // stays where it was made.

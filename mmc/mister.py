@@ -92,6 +92,19 @@ SOURCE_REPOS = {
 REPO_SOURCE_FILE = os.path.join(paths.DATA, "repo_source.json")
 
 
+PENDING_FILE = os.path.join(paths.DATA, "pending_cores.json")
+
+
+def load_pending() -> list[dict]:
+    """Source-available cores that sit in open pull requests of jotego/jtcores (no MRA or build
+    published yet). Hand-maintained: set ``merged`` once the PR lands, so the placeholder goes."""
+    try:
+        with open(PENDING_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return []
+
+
 def load_repo_source() -> dict[str, bool]:
     try:
         with open(REPO_SOURCE_FILE, encoding="utf-8") as f:
@@ -211,6 +224,7 @@ DB_TITLES = {
     "blahm1d": "blahm1d",
     "shmupfan": "shmupfan (Distribution)",
     "bazset": "bazset (MiSTer_BAZSET)",
+    "jtpr": "jtcores unreleased (PRs, branches)",
     "ppriest": "ppriest (MiSTer_ppriest)",
     "repo": "GitHub repository only",
 }

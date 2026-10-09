@@ -91,6 +91,14 @@ and month dropdowns, or a drag across that chart) selects titles by that earlies
 `date_working` in the working-only view); titles not on MiSTer have no such date and drop out
 whenever it is set.
 
+## Unreleased jtcores (pull requests and branches)
+
+`data/pending_cores.json` lists source-available cores that sit in open pull requests of
+`jotego/jtcores` and have no published MRA or build yet (name, PR number, date of the core's first
+commit, MAME sets; `pr` or, for cores on a branch such as `andrea-cores`, `branch`). `observe` turns each into a `jtpr:<name>` core with those sets. When a PR
+merges, set `"merged": true` (the placeholder is then removed from the ledger and the real `jt:`
+core takes over). Sets are those the PR's `mame2mra.toml` selects, checked against MAME by hand.
+
 ## Ongo copies
 
 MiSTer_Ongo only republishes other developers' builds. `report` shows an Ongo core on a set only
@@ -109,7 +117,7 @@ core id. `report` derives a tristate for every set and title: `source` (some cor
 has public source), `binary` (every core loading it is binary-only) or `none` (unsupported);
 `title.support` covers all sets, `title.support_working` the working ones. Cores carry
 `binary_only`, `meta.counts` has `working_arcade_titles_source` / `_binary_only`, and the page has
-a "Source code" filter on the Titles and Cores tabs, and a `bin` flag next to binary-only titles (in the covered/sets column), core badges and core names. `mister.SOURCE_REPOS` maps cores published by one repository but built from another (the official distribution's cores) to their source repository; files under `games/` are ignored when looking for HDL (disk images are `.vhd` too).
+a "MiSTer source code" filter on the Titles and Cores tabs (it narrows what counts as being on MiSTer; MAME totals in the charts ignore it), and a `bin` flag next to binary-only titles (in the covered/sets column), core badges and core names. `mister.SOURCE_REPOS` maps cores published by one repository but built from another (the official distribution's cores) to their source repository; files under `games/` are ignored when looking for HDL (disk images are `.vhd` too).
 
 ## The ledger (`data/ledger.json`)
 
