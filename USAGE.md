@@ -99,6 +99,12 @@ commit, MAME sets; `pr` or, for cores on a branch such as `andrea-cores`, `branc
 merges, set `"merged": true` (the placeholder is then removed from the ledger and the real `jt:`
 core takes over). Sets are those the PR's `mame2mra.toml` selects, checked against MAME by hand.
 
+## Databases tab
+
+One row per source (`DB_TITLES`): cores, working arcade titles and sets loaded by at least one core
+of that source, its location and Downloader database URL (`SOURCE_PAGES`, `DB_SOURCES` in
+`mmc/mister.py`). Clicking a row sets the Titles tab's **Database** filter (any core from that source).
+
 ## Developer database vs loose repository
 
 When a developer's own Downloader database (a `DB_SOURCES` entry whose owner matches the repository

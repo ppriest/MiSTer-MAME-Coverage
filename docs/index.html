@@ -24,6 +24,7 @@
     <button role="tab" data-tab="titles" aria-selected="true">Titles</button>
     <button role="tab" data-tab="drivers">Drivers</button>
     <button role="tab" data-tab="cores">Cores</button>
+    <button role="tab" data-tab="databases">Databases</button>
     <button role="tab" data-tab="unmatched">Unmatched</button>
     <button role="tab" data-tab="about">About</button>
   </nav>
@@ -77,6 +78,7 @@
         </select>
       </label>
       <label>Core <select id="f-core"><option value="">any</option></select></label>
+      <label>Database <select id="f-db"><option value="">any</option></select></label>
       <label>MiSTer source code
         <select id="f-sup" title="source: at least one core loading the title has public source; binary-only: every core loading it is distributed as a binary only">
           <option value="" selected>any</option>
@@ -213,6 +215,16 @@
     <div class="tablewrap">
       <table class="grid" id="cores-table">
         <thead><tr><th>Core</th><th>Source</th><th>Repository</th><th>MAME drivers</th><th>Titles</th><th>Sets</th><th>First MRA</th><th>Latest build</th><th>Verified against</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="tab-databases" class="tab" role="tabpanel" hidden>
+    <p class="muted">Every source the coverage is read from. Counts are working arcade sets and titles loaded by at least one core of that source; click a row to list those titles.</p>
+    <div class="tablewrap">
+      <table class="grid" id="databases-table">
+        <thead><tr><th>Database</th><th>Cores</th><th>Titles</th><th>Sets</th><th>Location</th><th>Downloader database</th></tr></thead>
         <tbody></tbody>
       </table>
     </div>

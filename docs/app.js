@@ -13,7 +13,7 @@
   // Every control on the Titles, Drivers and Cores tabs, plus each tab's sort direction and the
   // open tab, so a view can be linked or restored. Only values that differ from the default are
   // written.
-  const FILTER_IDS = ["f-q", "f-cov", "f-sup", "f-work", "f-cat", "f-y0", "f-y1", "f-m0y", "f-m0m", "f-m1y", "f-m1m", "f-a0y", "f-a0m", "f-a1y", "f-a1m", "f-genre", "f-manu", "f-drv", "f-dcov", "f-core", "f-rot", "f-sort"];
+  const FILTER_IDS = ["f-q", "f-cov", "f-sup", "f-work", "f-cat", "f-y0", "f-y1", "f-m0y", "f-m0m", "f-m1y", "f-m1m", "f-a0y", "f-a0m", "f-a1y", "f-a1m", "f-genre", "f-manu", "f-drv", "f-dcov", "f-core", "f-db", "f-rot", "f-sort"];
   const DRIVER_IDS = ["d-q", "d-cov", "d-genre", "d-sort"];
   const CORE_IDS = ["c-q", "c-src", "c-bin", "c-sort"];
   const UNMATCHED_IDS = ["u-q"];
@@ -61,6 +61,7 @@
 
   // ---------- helpers over the data ----------
   const isArcadeWorking = t => t.category === "arcade" && t.working;
+  const srcOf = id => (S.cores[id] && S.cores[id].source) || id.split(":")[0];
   const coreName = id => (S.cores[id] && S.cores[id].name) || id;
   function badge(id, extra) {
     const c = S.cores[id] || { name: id, source: id.split(":")[0], source_title: "" };
@@ -325,6 +326,7 @@
     const cores = S.data.cores.slice().sort((a, b) => a.name.localeCompare(b.name));
     $("#f-core").insertAdjacentHTML("beforeend", cores.map(c => opt(c.id, `${c.name} · ${c.source}`)).join(""));
     const srcs = new Map(); S.data.cores.forEach(c => srcs.set(c.source, c.source_title));
+    $("#f-db").insertAdjacentHTML("beforeend", Array.from(srcs).sort((a, b) => a[1].localeCompare(b[1])).map(([k, v]) => opt(k, v)).join(""));
     $("#c-src").insertAdjacentHTML("beforeend", Array.from(srcs).sort().map(([k, v]) => opt(k, v)).join(""));
   }
 
@@ -339,6 +341,7 @@
     if (f.cov === "yes" && !covered) return false;
     if (f.cov === "no" && covered) return false;
     if (f.cov === "partial" && !(covered && ncov < nsets)) return false;
+    if (f.db && !t.cores.some(id => srcOf(id) === f.db)) return false;
     if (f.sup && (f.work === "working" ? t.support_working : t.support) !== f.sup) return false;
     if (f.y0 && (!+t.year || +t.year < f.y0)) return false;
     if (f.y1 && (!+t.year || +t.year > f.y1)) return false;
@@ -382,7 +385,7 @@
     return { q: $("#f-q").value.trim().toLowerCase(), cov: $("#f-cov").value, work: $("#f-work").value, cat: $("#f-cat").value, sup: $("#f-sup").value,
       y0: +$("#f-y0").value || 0, y1: +$("#f-y1").value || 0, m0: monthFrom("f-m0y", "f-m0m", "01"), m1: monthFrom("f-m1y", "f-m1m", "12"),
       a0: monthFrom("f-a0y", "f-a0m", "01"), a1: monthFrom("f-a1y", "f-a1m", "12"),
-      manu: $("#f-manu").value, genre: $("#f-genre").value, drv: $("#f-drv").value, dcov: $("#f-dcov").value, core: $("#f-core").value, rot: $("#f-rot").value, sort: $("#f-sort").value };
+      manu: $("#f-manu").value, genre: $("#f-genre").value, drv: $("#f-drv").value, dcov: $("#f-dcov").value, core: $("#f-core").value, db: $("#f-db").value, rot: $("#f-rot").value, sort: $("#f-sort").value };
   }
 
   function applyTitles() {
@@ -543,6 +546,28 @@
   $("#c-dir").addEventListener("click", () => { S.dir.c *= -1; $("#c-dir").textContent = S.dir.c > 0 ? "↑" : "↓"; applyCores(); });
   $("#c-reset").addEventListener("click", () => { CORE_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.c = 1; $("#c-dir").textContent = "↑"; applyCores(); });
 
+  // ---------- databases ----------
+  function renderDatabases() {
+    const info = S.data.meta.source_info || {}, titles = S.data.meta.sources || {};
+    const agg = new Map(Object.keys(titles).map(k => [k, { cores: 0, titles: 0, sets: 0 }]));
+    S.data.cores.forEach(c => { const a = agg.get(c.source); if (a) a.cores++; });
+    S.titles.filter(isArcadeWorking).forEach(t => {
+      const seen = new Set();
+      t.sets.forEach(s => { if (!s.working) return; const here = new Set(s.cores.map(r => srcOf(r.core))); here.forEach(k => { const a = agg.get(k); if (a) { a.sets++; seen.add(k); } }); });
+      seen.forEach(k => agg.get(k).titles++);
+    });
+    const rows = Array.from(agg).sort((a, b) => b[1].titles - a[1].titles);
+    const link = u => u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https:\/\//, ""))}</a>` : '<span class="muted">—</span>';
+    $("#databases-table tbody").innerHTML = rows.map(([k, a]) => `<tr>
+      <td><a href="#" data-db="${esc(k)}">${esc(titles[k])}</a></td>
+      <td class="num">${fmt(a.cores)}</td><td class="num">${fmt(a.titles)}</td><td class="num">${fmt(a.sets)}</td>
+      <td class="set">${link((info[k] || {}).page)}</td><td class="set">${link((info[k] || {}).db_url)}</td></tr>`).join("");
+  }
+  $("#databases-table").addEventListener("click", ev => {
+    const a = ev.target.closest("a[data-db]"); if (!a) return; ev.preventDefault();
+    $("#f-db").value = a.dataset.db; $("#f-cov").value = "all"; $("#f-cat").value = "arcade"; $("#f-work").value = "working"; applyTitles(); showTab("titles");
+  });
+
   // ---------- unmatched + about ----------
   function applyUnmatched() {
     const words = $("#u-q").value.trim().toLowerCase().split(/\s+/).filter(Boolean);
@@ -584,7 +609,7 @@
     S.booting = true;   // the hash is read once; applying the tabs must not rewrite it half-read
     readHash();
     S.booting = false;
-    applyTitles(); applyDrivers(); applyCores(); applyUnmatched();
+    applyTitles(); applyDrivers(); applyCores(); renderDatabases(); applyUnmatched();
     // A pasted or back/forward hash applies without a reload (writeHash uses replaceState, so
     // the page's own filter changes do not fire this).
     addEventListener("hashchange", () => { S.booting = true; resetControls(); readHash(); S.booting = false; applyTitles(); applyDrivers(); applyCores(); applyUnmatched(); });

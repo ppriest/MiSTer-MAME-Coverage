@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-09T08:05:59+00:00",
+  "generated": "2026-10-09T08:08:45+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
   "mister_generated": "2026-10-09T08:05:55+00:00",
@@ -92,6 +92,68 @@
    "jtpr": "jtcores unreleased (PRs, branches)",
    "ppriest": "ppriest (MiSTer_ppriest)",
    "repo": "GitHub repository only"
+  },
+  "source_info": {
+   "dist": {
+    "page": "https://github.com/MiSTer-devel/Distribution_MiSTer",
+    "db_url": null
+   },
+   "jt": {
+    "page": "https://github.com/jotego/jtbin",
+    "db_url": null
+   },
+   "coinop": {
+    "page": "https://github.com/Coin-OpCollection/Distribution-MiSTerFPGA",
+    "db_url": null
+   },
+   "ongo": {
+    "page": "https://github.com/OngoGablogian/MiSTer_Ongo",
+    "db_url": null
+   },
+   "meat": {
+    "page": "https://github.com/meathax/meatcores",
+    "db_url": "https://raw.githubusercontent.com/meathax/meatcores/db/db.json.zip"
+   },
+   "slop": {
+    "page": "https://github.com/TheJesusFish/Slop-Core",
+    "db_url": "https://raw.githubusercontent.com/TheJesusFish/Slop-Core/db/db.json.zip"
+   },
+   "kuze": {
+    "page": "https://github.com/kuzearcade/kuzecores",
+    "db_url": "https://raw.githubusercontent.com/kuzearcade/kuzecores/db/db.json.zip"
+   },
+   "jlrh": {
+    "page": "https://github.com/jlrh/jlrh-misterfpga-db",
+    "db_url": "https://raw.githubusercontent.com/jlrh/jlrh-misterfpga-db/db/db.json.zip"
+   },
+   "arcfpga": {
+    "page": "https://github.com/bmo00/arcfpga-mister-db",
+    "db_url": "https://raw.githubusercontent.com/bmo00/arcfpga-mister-db/db/db.json.zip"
+   },
+   "blahm1d": {
+    "page": "https://www.patreon.com/cw/blahm1d",
+    "db_url": "https://mister.blahm1d.com/db.json.zip"
+   },
+   "shmupfan": {
+    "page": "https://github.com/shmupfan/Distribution",
+    "db_url": "https://raw.githubusercontent.com/shmupfan/Distribution/main/db.json"
+   },
+   "bazset": {
+    "page": "https://github.com/bazset/MiSTer_BAZSET",
+    "db_url": "https://raw.githubusercontent.com/bazset/MiSTer_BAZSET/db/db.json.zip"
+   },
+   "jtpr": {
+    "page": "https://github.com/jotego/jtcores/tree/andrea-cores/cores",
+    "db_url": null
+   },
+   "ppriest": {
+    "page": "https://github.com/ppriest/MiSTer_ppriest",
+    "db_url": "https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip"
+   },
+   "repo": {
+    "page": null,
+    "db_url": null
+   }
   },
   "repos": [
    {

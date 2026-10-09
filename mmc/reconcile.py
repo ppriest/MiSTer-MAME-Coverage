@@ -447,6 +447,8 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
         "genre": genre_summary,
         "mame_added_updated": mamehist.load().get("updated"),
         "sources": mister_mod.DB_TITLES,
+        "source_info": {k: {"page": mister_mod.SOURCE_PAGES.get(k), "db_url": mister_mod.DB_SOURCES.get(k)}
+                        for k in mister_mod.DB_TITLES},
         "repos": mister_meta.get("repos", []),
         "repo_errors": mister_meta.get("errors", []),
         "counts": {
