@@ -108,6 +108,16 @@ unmatched set that exists there (`unmatched[].hbmame`, `meta.hbmame`); the Unmat
 them **homebrew/hacks** and has a show / hide / only filter. HBMAME publishes no machine list, so
 hacks defined outside `src/hbmame/drivers` are not seen. The same lines carry what a `-listxml` would (year, parent, manufacturer, description), stored per set and shown on the Unmatched tab. **`-listxml`:** HBMAME is Windows-only, so `.github/workflows/hbmame.yml` runs `hbmame.exe -listxml` on a Windows runner (daily, or on demand) and publishes it as `hbmame-lx.zip` on this repository's `hbmame-listxml` release; `mmc hbmame` prefers that file (parsed like MAME's listxml) and falls back to the source parse until it exists. The workflow takes the newest archive linked from <https://hbmame.1emulation.com/> (falling back to a `Robbbert/hbmame` release asset), or the `HBMAME_URL` repository variable / the `url` run input to pin one.
 
+## Titles filters
+
+The Titles tab keeps the search box, sort and Reset in a bar; the other filters sit in a collapsible
+**Filters** panel (grouped: MiSTer support, MAME, Dates; open/closed is remembered per browser).
+Every filter that is not at its default shows as a removable **chip** under the bar (with a
+**Clear all**), and a badge on the button counts them. **Quick** buttons apply a preset (a set of
+control values: not on MiSTer, partly covered, drivers with no core, binary-only, added this
+month, vertical not on MiSTer); edit the `PRESETS` list in `docs/app.js` to change them. The
+state is still the URL hash, so links keep working.
+
 ## Databases tab
 
 One row per source (`DB_TITLES`): cores, working arcade titles and sets loaded by at least one core

@@ -31,7 +31,27 @@
 
   <section id="tab-titles" class="tab" role="tabpanel">
     <form class="filters" id="filters" onsubmit="return false">
+      <div class="filterbar">
       <label>Search <input type="search" id="f-q" placeholder="title, set name, manufacturer, driver…"></label>
+        <button type="button" id="f-toggle" aria-expanded="false" aria-controls="filter-panel">Filters <span class="nbadge" id="f-nactive" hidden></span> <span id="f-caret">▾</span></button>
+      <label>Sort
+        <span class="row"><select id="f-sort">
+          <option value="desc">title</option>
+          <option value="year">year</option>
+          <option value="manufacturer">manufacturer</option>
+          <option value="genre">genre</option>
+          <option value="sourcefile">driver</option>
+          <option value="date">date on MiSTer</option>
+          <option value="nsets">number of sets</option>
+        </select>
+        <button type="button" id="f-dir" title="toggle direction">↑</button>
+      </span></label>
+        <button type="button" id="f-reset">Reset</button>
+      </div>
+      <div class="presets" id="presets" aria-label="Quick filters"></div>
+      <div class="chips" id="chips" aria-label="Active filters"></div>
+      <div class="panel" id="filter-panel" hidden>
+        <fieldset><legend>MiSTer support</legend>
       <label>Coverage
         <select id="f-cov">
           <option value="all" selected>all</option>
@@ -40,6 +60,27 @@
           <option value="partial">partially (some sets)</option>
         </select>
       </label>
+      <label>MiSTer source code
+        <select id="f-sup" title="source: at least one core loading the title has public source; binary-only: every core loading it is distributed as a binary only">
+          <option value="" selected>any</option>
+          <option value="source">source available</option>
+          <option value="binary">binary-only</option>
+          <option value="none">unsupported</option>
+        </select>
+      </label>
+      <label>Database <select id="f-db"><option value="">any</option></select></label>
+      <label>Core <select id="f-core"><option value="">any</option></select></label>
+      <label>Driver coverage
+        <select id="f-dcov" title="whether any title of the same MAME driver is on MiSTer">
+          <option value="">any</option>
+          <option value="none">driver has no core</option>
+          <option value="partial">driver partly covered</option>
+          <option value="some">driver has a core (partly or fully)</option>
+          <option value="full">driver fully covered</option>
+        </select>
+      </label>
+        </fieldset>
+        <fieldset><legend>MAME</legend>
       <label>MAME status
         <select id="f-work">
           <option value="working" selected>working</option>
@@ -56,6 +97,18 @@
           <option value="all">all</option>
         </select>
       </label>
+      <label>Genre <select id="f-genre"><option value="">any</option></select></label>
+      <label>Manufacturer <select id="f-manu"><option value="">any</option></select></label>
+      <label>Driver <select id="f-drv"><option value="">any</option></select></label>
+      <label>Orientation
+        <select id="f-rot">
+          <option value="">any</option>
+          <option value="h">horizontal</option>
+          <option value="v">vertical</option>
+        </select>
+      </label>
+        </fieldset>
+        <fieldset><legend>Dates</legend>
       <label>Year <span class="row"><input type="number" id="f-y0" placeholder="from" min="1970" max="2030" class="yr"> – <input type="number" id="f-y1" placeholder="to" min="1970" max="2030" class="yr"></span></label>
       <label>In MAME since <span class="row" title="the release that first added the title's earliest set; drag across the time chart to set this">
         <select id="f-m0y" class="yr"><option value="">any</option></select><select id="f-m0m" class="mo"><option value="">–</option></select>
@@ -65,48 +118,8 @@
         <select id="f-a0y" class="yr"><option value="">any</option></select><select id="f-a0m" class="mo"><option value="">–</option></select>
         – <select id="f-a1y" class="yr"><option value="">any</option></select><select id="f-a1m" class="mo"><option value="">–</option></select>
       </span></label>
-      <label>Genre <select id="f-genre"><option value="">any</option></select></label>
-      <label>Manufacturer <select id="f-manu"><option value="">any</option></select></label>
-      <label>Driver <select id="f-drv"><option value="">any</option></select></label>
-      <label>Driver coverage
-        <select id="f-dcov" title="whether any title of the same MAME driver is on MiSTer">
-          <option value="">any</option>
-          <option value="none">driver has no core</option>
-          <option value="partial">driver partly covered</option>
-          <option value="some">driver has a core (partly or fully)</option>
-          <option value="full">driver fully covered</option>
-        </select>
-      </label>
-      <label>Core <select id="f-core"><option value="">any</option></select></label>
-      <label>Database <select id="f-db"><option value="">any</option></select></label>
-      <label>MiSTer source code
-        <select id="f-sup" title="source: at least one core loading the title has public source; binary-only: every core loading it is distributed as a binary only">
-          <option value="" selected>any</option>
-          <option value="source">source available</option>
-          <option value="binary">binary-only</option>
-          <option value="none">unsupported</option>
-        </select>
-      </label>
-      <label>Orientation
-        <select id="f-rot">
-          <option value="">any</option>
-          <option value="h">horizontal</option>
-          <option value="v">vertical</option>
-        </select>
-      </label>
-      <label>Sort
-        <span class="row"><select id="f-sort">
-          <option value="desc">title</option>
-          <option value="year">year</option>
-          <option value="manufacturer">manufacturer</option>
-          <option value="genre">genre</option>
-          <option value="sourcefile">driver</option>
-          <option value="date">date on MiSTer</option>
-          <option value="nsets">number of sets</option>
-        </select>
-        <button type="button" id="f-dir" title="toggle direction">↑</button>
-      </span></label>
-      <button type="button" id="f-reset">Reset</button>
+        </fieldset>
+      </div>
     </form>
     <p class="count" id="titles-count"></p>
     <details class="charts-box" id="charts-box" open>

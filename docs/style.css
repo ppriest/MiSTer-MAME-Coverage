@@ -125,3 +125,22 @@ svg .band { fill: var(--text-2); fill-opacity: 0.08; }
 #about-meta table { border-collapse: collapse; }
 #about-meta td { padding: 2px 10px 2px 0; }
 .flag { color: var(--muted); font-size: 11px; }
+
+/* filter bar, quick filters, active-filter chips, collapsible panel */
+.filterbar { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: end; width: 100%; }
+.presets, .chips { display: flex; flex-wrap: wrap; gap: 6px; width: 100%; align-items: center; }
+.presets:empty, .chips:empty { display: none; }
+.presets .lbl, .chips .lbl { font-size: 12px; color: var(--muted); }
+.filters .presets button { padding: 3px 10px; border-radius: 14px; font-size: 12px; background: var(--surface-2); }
+.filters .presets button:hover { border-color: var(--accent); }
+.chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 2px 4px 2px 10px; border-radius: 14px; background: var(--surface-2); border: 1px solid var(--accent); color: var(--text); }
+.chip b { font-weight: 600; color: var(--text-2); }
+.filters .chip button { border: none; background: none; padding: 0 6px; font-size: 14px; line-height: 1; color: var(--muted); border-radius: 10px; }
+.filters .chip button:hover { color: var(--text); background: var(--line); }
+.chips .clear { font-size: 12px; color: var(--accent); cursor: pointer; background: none; border: none; padding: 2px 4px; }
+.nbadge { display: inline-block; min-width: 16px; padding: 0 5px; border-radius: 9px; background: var(--accent); color: var(--surface); font-size: 11px; text-align: center; }
+.panel { display: flex; flex-wrap: wrap; gap: 12px 24px; width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface-2); }
+.panel[hidden] { display: none; }
+.panel fieldset { border: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: end; min-width: 0; }
+.panel legend { font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); padding: 0; margin-bottom: 4px; width: 100%; float: left; }
+.panel legend + * { clear: both; }

@@ -407,6 +407,7 @@
     $("#titles-table tbody").innerHTML = "";
     $("#titles-count").textContent = `${fmt(rows.length)} titles` + (f.work === "working" ? ` · ${fmt(rows.reduce((n, t) => n + t.nworking, 0))} working sets` : ` · ${fmt(rows.reduce((n, t) => n + t.nsets, 0))} sets`);
     renderMoreTitles();
+    renderChips();
     writeHash();
   }
 
@@ -454,6 +455,55 @@
   $("#titles-more").addEventListener("click", renderMoreTitles);
   $("#f-dir").addEventListener("click", () => { S.dir.t *= -1; $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓"; applyTitles(); });
   $("#f-reset").addEventListener("click", () => { FILTER_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.t = 1; $("#f-dir").textContent = "↑"; applyTitles(); });
+  // ---------- active-filter chips, quick filters, collapsible panel ----------
+  const CHIP_LABELS = { "f-cov": "Coverage", "f-work": "MAME status", "f-cat": "Category", "f-sup": "MiSTer source", "f-db": "Database",
+    "f-core": "Core", "f-dcov": "Driver coverage", "f-genre": "Genre", "f-manu": "Manufacturer", "f-drv": "Driver", "f-rot": "Orientation" };
+  const CHIP_RANGES = [
+    { label: "Year", ids: ["f-y0", "f-y1"], text: v => `${v[0] || "…"}–${v[1] || "…"}` },
+    { label: "In MAME since", ids: ["f-m0y", "f-m0m", "f-m1y", "f-m1m"], text: v => `${[v[0], v[1]].filter(Boolean).join("-") || "…"} – ${[v[2], v[3]].filter(Boolean).join("-") || "…"}` },
+    { label: "On MiSTer since", ids: ["f-a0y", "f-a0m", "f-a1y", "f-a1m"], text: v => `${[v[0], v[1]].filter(Boolean).join("-") || "…"} – ${[v[2], v[3]].filter(Boolean).join("-") || "…"}` },
+  ];
+  const isSet = id => { const el = $("#" + id); return el.value !== (el.dataset.default ?? ""); };
+  const optText = id => { const el = $("#" + id); const o = el.options && el.options[el.selectedIndex]; return o ? o.textContent.replace(/\s*\(\d[\d,]*\)$/, "") : el.value; };
+  const clearIds = ids => ids.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; });
+  function renderChips() {
+    const chips = [];
+    Object.keys(CHIP_LABELS).filter(isSet).forEach(id => chips.push({ label: CHIP_LABELS[id], text: optText(id), ids: [id] }));
+    CHIP_RANGES.filter(r => r.ids.some(isSet)).forEach(r => chips.push({ label: r.label, text: r.text(r.ids.map(id => $("#" + id).value)), ids: r.ids }));
+    S.chips = chips;
+    const html = chips.length
+      ? `<span class="lbl">Filters:</span>` + chips.map((c, i) => `<span class="chip"><b>${esc(c.label)}</b> ${esc(c.text)}<button type="button" data-chip="${i}" title="remove ${esc(c.label)}" aria-label="remove ${esc(c.label)} filter">×</button></span>`).join("") + `<button type="button" class="clear" data-clear>Clear all</button>`
+      : "";
+    if (S.chipsHtml !== html) { S.chipsHtml = html; $("#chips").innerHTML = html; }   // untouched when unchanged, so a click is never swallowed by a re-render
+    const n = $("#f-nactive"); n.hidden = !chips.length; n.textContent = chips.length;
+  }
+  $("#chips").addEventListener("click", ev => {
+    const b = ev.target.closest("button"); if (!b) return;
+    if (b.hasAttribute("data-clear")) { $("#f-reset").click(); return; }
+    const c = S.chips[+b.dataset.chip]; if (c) { clearIds(c.ids); applyTitles(); }
+  });
+  const PRESETS = [
+    { label: "Not on MiSTer", set: { "f-cov": "no" } },
+    { label: "Partly covered", set: { "f-cov": "partial" } },
+    { label: "Drivers with no core", set: { "f-cov": "no", "f-dcov": "none" } },
+    { label: "Binary-only", set: { "f-cov": "yes", "f-sup": "binary" } },
+    { label: "Added this month", set: () => { const d = new Date(); return { "f-a0y": String(d.getFullYear()), "f-a0m": String(d.getMonth() + 1).padStart(2, "0") }; } },
+    { label: "Vertical, not on MiSTer", set: { "f-cov": "no", "f-rot": "v" } },
+  ];
+  $("#presets").innerHTML = `<span class="lbl">Quick:</span>` + PRESETS.map((p, i) => `<button type="button" data-preset="${i}">${esc(p.label)}</button>`).join("");
+  $("#presets").addEventListener("click", ev => {
+    const b = ev.target.closest("button[data-preset]"); if (!b) return;
+    const p = PRESETS[+b.dataset.preset], set = typeof p.set === "function" ? p.set() : p.set;
+    clearIds(FILTER_IDS.filter(id => id !== "f-q" && id !== "f-sort"));
+    Object.entries(set).forEach(([id, v]) => { $("#" + id).value = v; });
+    applyTitles();
+  });
+  function setPanel(open) {
+    $("#filter-panel").hidden = !open; $("#f-toggle").setAttribute("aria-expanded", String(open)); $("#f-caret").textContent = open ? "▴" : "▾";
+    try { localStorage.setItem("filters-open", open ? "1" : "0"); } catch (e) { /* storage unavailable */ }
+  }
+  $("#f-toggle").addEventListener("click", () => setPanel($("#filter-panel").hidden));
+  try { if (localStorage.getItem("filters-open") === "1") setPanel(true); } catch (e) { /* storage unavailable */ }
   let qTimer; $("#f-q").addEventListener("input", () => { clearTimeout(qTimer); qTimer = setTimeout(applyTitles, 150); });
   FILTER_IDS.filter(id => id !== "f-q").forEach(id => $("#" + id).addEventListener("change", applyTitles));
 
