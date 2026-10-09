@@ -776,6 +776,7 @@
   "MiSTer-devel/MRA-Alternatives_MiSTer"
  ],
  "dist:offthewall": [
+  "MiSTer-devel/Arcade-OffTheWall_MiSTer",
   "MiSTer-devel/Distribution_MiSTer"
  ],
  "dist:pacman": [
@@ -887,6 +888,7 @@
   "MiSTer-devel/Distribution_MiSTer"
  ],
  "dist:reliefpitcher": [
+  "MiSTer-devel/Arcade-ReliefPitcher_MiSTer",
   "MiSTer-devel/Distribution_MiSTer"
  ],
  "dist:ringking": [
@@ -961,6 +963,7 @@
   "rmonic79/rmcores"
  ],
  "dist:shuuz": [
+  "MiSTer-devel/Arcade-Shuuz_MiSTer",
   "MiSTer-devel/Distribution_MiSTer"
  ],
  "dist:silverland": [
@@ -1149,6 +1152,7 @@
   "MiSTer-devel/MRA-Alternatives_MiSTer"
  ],
  "dist:victory": [
+  "MiSTer-devel/Arcade-Victory_MiSTer",
   "MiSTer-devel/Distribution_MiSTer"
  ],
  "dist:vindicators": [
@@ -1883,6 +1887,9 @@
  "ongo:xnzn1taitofx1b": [
   "OngoGablogian/MiSTer_Ongo",
   "XelaNotPu/ZN1-TaitoFX1B_MiSTer"
+ ],
+ "ongo:zeroteam": [
+  "meathax/meatcores"
  ],
  "ongo:zn1capcom": [
   "OngoGablogian/MiSTer_Ongo",

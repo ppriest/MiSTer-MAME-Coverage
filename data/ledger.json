@@ -282,6 +282,15 @@
 "pairs": 21,
 "dates_improved": 3,
 "cores_removed": 0
+},
+{
+"date": "2026-10-09",
+"note": "alamone 2026-10-05",
+"cores": 4,
+"sets": 36,
+"pairs": 47,
+"dates_improved": 5,
+"cores_removed": 0
 }
 ]
 },
@@ -684,6 +693,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-09",
+"aliases": [],
 "last_seen": "2026-10-09"
 },
 "blahm1d:blahm1d_exidy440": {
@@ -9805,6 +9815,24 @@
 "aliases": [],
 "last_seen": "2026-10-09"
 },
+"meat:zeroteam": {
+"id": "meat:zeroteam",
+"name": "Arcade-ZeroTeam",
+"source": "meat",
+"source_title": "MeatCores (meathax)",
+"channel": null,
+"rbf": "Arcade-ZeroTeam.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:batman": {
 "id": "ongo:batman",
 "name": "Batman",
@@ -11059,6 +11087,24 @@
 "aliases": [],
 "last_seen": "2026-10-09"
 },
+"ongo:zeroteam": {
+"id": "ongo:zeroteam",
+"name": "Arcade-ZeroTeam",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Arcade-ZeroTeam.rbf",
+"repo": "meathax/meatcores",
+"url": "https://github.com/meathax/meatcores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:zn1capcom": {
 "id": "ongo:zn1capcom",
 "name": "ZN1Capcom",
@@ -11192,6 +11238,24 @@
 "aliases": [],
 "last_seen": "2026-10-09"
 },
+"ppriest:konamigxt34": {
+"id": "ppriest:konamigxt34",
+"name": "KonamiGXT34",
+"source": "ppriest",
+"source_title": "ppriest (MiSTer_ppriest)",
+"channel": null,
+"rbf": "KonamiGXT34.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ppriest:seta": {
 "id": "ppriest:seta",
 "name": "Seta",
@@ -11228,6 +11292,24 @@
 "note": null,
 "first_recorded": "2026-10-09",
 "aliases": [],
+"last_seen": "2026-10-09"
+},
+"ppriest:vamphalf": {
+"id": "ppriest:vamphalf",
+"name": "Vamphalf",
+"source": "ppriest",
+"source_title": "ppriest (MiSTer_ppriest)",
+"channel": null,
+"rbf": "Vamphalf.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 },
 "repo:10yardfight": {
@@ -12420,6 +12502,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-09",
+"aliases": [],
 "last_seen": "2026-10-09"
 },
 "shmupfan:1945kiii": {
@@ -27046,6 +27129,34 @@
 "last_seen": "2026-10-04"
 }
 },
+"coolmini": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
+"coolminii": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
 "coozumou": {
 "dist:decocassette": {
 "core": "dist:decocassette",
@@ -33518,6 +33629,20 @@
 "last_seen": "2026-10-09"
 }
 },
+"dquizgo2": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
 "draco": {
 "jlrh:ffdraco": {
 "core": "jlrh:ffdraco",
@@ -34177,6 +34302,20 @@
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_Darkstalkers The Night Warriors/Darkstalkers The Night Warriors (USA 940705).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-09"
+}
+},
+"dtfamily": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -49664,6 +49803,34 @@
 "last_seen": "2026-10-09"
 }
 },
+"jmpbreak": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
+"jmpbreaka": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
 "jockeygp": {
 "dist:neogeo": {
 "core": "dist:neogeo",
@@ -55290,6 +55457,48 @@
 "last_seen": "2026-10-09"
 }
 },
+"luplup": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
+"luplup10": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
+"luplup29": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
 "lwings": {
 "arcfpga:jtsectionz": {
 "core": "arcfpga:jtsectionz",
@@ -58210,6 +58419,34 @@
 "last_seen": "2026-10-09"
 }
 },
+"misncrft": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
+"misncrfta": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
 "missile": {
 "dist:missilecommand": {
 "core": "dist:missilecommand",
@@ -59856,6 +60093,20 @@
 "last_seen": "2026-10-09"
 }
 },
+"mrdig": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
 "mrdo": {
 "dist:mrdo": {
 "core": "dist:mrdo",
@@ -59951,6 +60202,20 @@
 "first_repo": "MiSTer-devel/Arcade-MrJong_MiSTer",
 "first_path": "releases/Mr. Jong.mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-09"
+}
+},
+"mrkicker": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -62605,6 +62870,34 @@
 "first_repo": "MiSTer-devel/Arcade-TropicalAngel_MiSTer",
 "first_path": "releases/_alternatives/New Tropical Angel.mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-09"
+}
+},
+"newxpang": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
+"newxpanga": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -69388,6 +69681,20 @@
 "last_seen": "2026-10-09"
 }
 },
+"poosho": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
 "pootan": {
 "dist:pooyan": {
 "core": "dist:pooyan",
@@ -71005,6 +71312,34 @@
 "first_repo": "MiSTer-devel/Saturn_MiSTer",
 "first_path": "releases/mra/Puyo Puyo Sun (J 961115 V0.001).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-09"
+}
+},
+"puzlbang": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
+"puzlbanga": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -74813,13 +75148,13 @@
 "relief": {
 "dist:reliefpitcher": {
 "core": "dist:reliefpitcher",
-"date": "2026-10-08",
+"date": "2026-10-07",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": false,
-"first_repo": "MiSTer-devel/Distribution_MiSTer",
-"first_path": "_Arcade/Relief Pitcher.mra",
+"first_repo": "MiSTer-devel/Arcade-ReliefPitcher_MiSTer",
+"first_path": "releases/Relief Pitcher.mra",
 "first_recorded": "2026-10-08",
 "last_seen": "2026-10-09"
 }
@@ -74827,13 +75162,13 @@
 "relief2": {
 "dist:reliefpitcher": {
 "core": "dist:reliefpitcher",
-"date": "2026-10-08",
+"date": "2026-10-07",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": true,
-"first_repo": "MiSTer-devel/Distribution_MiSTer",
-"first_path": "_Arcade/_alternatives/_Relief Pitcher/Relief Pitcher (rev C).mra",
+"first_repo": "MiSTer-devel/Arcade-ReliefPitcher_MiSTer",
+"first_path": "releases/_alternatives/_Relief Pitcher/Relief Pitcher (rev C).mra",
 "first_recorded": "2026-10-08",
 "last_seen": "2026-10-09"
 }
@@ -74841,13 +75176,13 @@
 "relief3": {
 "dist:reliefpitcher": {
 "core": "dist:reliefpitcher",
-"date": "2026-10-08",
+"date": "2026-10-07",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": true,
-"first_repo": "MiSTer-devel/Distribution_MiSTer",
-"first_path": "_Arcade/_alternatives/_Relief Pitcher/Relief Pitcher (rev B).mra",
+"first_repo": "MiSTer-devel/Arcade-ReliefPitcher_MiSTer",
+"first_path": "releases/_alternatives/_Relief Pitcher/Relief Pitcher (rev B).mra",
 "first_recorded": "2026-10-08",
 "last_seen": "2026-10-09"
 }
@@ -85553,6 +85888,18 @@
 }
 },
 "soccerss": {
+"ppriest:konamigxt34": {
+"core": "ppriest:konamigxt34",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"first_path": "releases/Soccer Superstars (ver EAC).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "repo:konamigxt34": {
 "core": "repo:konamigxt34",
 "date": "2026-10-08",
@@ -85567,6 +85914,18 @@
 }
 },
 "soccerssa": {
+"ppriest:konamigxt34": {
+"core": "ppriest:konamigxt34",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"first_path": "releases/_alternatives/_Soccer Superstars (ver EAC)/Soccer Superstars (ver AAA).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "repo:konamigxt34": {
 "core": "repo:konamigxt34",
 "date": "2026-10-08",
@@ -85581,6 +85940,18 @@
 }
 },
 "soccerssj": {
+"ppriest:konamigxt34": {
+"core": "ppriest:konamigxt34",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"first_path": "releases/_alternatives/_Soccer Superstars (ver EAC)/Soccer Superstars (ver JAC).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "repo:konamigxt34": {
 "core": "repo:konamigxt34",
 "date": "2026-10-08",
@@ -85595,6 +85966,18 @@
 }
 },
 "soccerssja": {
+"ppriest:konamigxt34": {
+"core": "ppriest:konamigxt34",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"first_path": "releases/_alternatives/_Soccer Superstars (ver EAC)/Soccer Superstars (ver JAA).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "repo:konamigxt34": {
 "core": "repo:konamigxt34",
 "date": "2026-10-08",
@@ -85609,6 +85992,18 @@
 }
 },
 "soccerssu": {
+"ppriest:konamigxt34": {
+"core": "ppriest:konamigxt34",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"first_path": "releases/_alternatives/_Soccer Superstars (ver EAC)/Soccer Superstars (ver UAC).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "repo:konamigxt34": {
 "core": "repo:konamigxt34",
 "date": "2026-10-08",
@@ -85619,6 +86014,20 @@
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/_alternatives/_Soccer Superstars (ver EAC)/Soccer Superstars (ver UAC).mra",
 "first_recorded": "2026-10-08",
+"last_seen": "2026-10-09"
+}
+},
+"sokobanle": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-09",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_homebrew/Sokoban LE.mra",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -87448,6 +87857,20 @@
 "last_seen": "2026-10-09"
 }
 },
+"speccies2": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-09",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_homebrew/The Speccies 2.mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
 "spectar": {
 "dist:exidy2": {
 "core": "dist:exidy2",
@@ -88001,6 +88424,20 @@
 "first_repo": "MiSTer-devel/Arcade-QBert_MiSTer",
 "first_path": "releases/Faster, Harder, More Challenging Q`Bert (prototype).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-09"
+}
+},
+"sqij": {
+"repo:taitol": {
+"core": "repo:taitol",
+"date": "2026-10-09",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+"first_path": "mra/_homebrew/SQIJ 2018.mra",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -91007,6 +91444,20 @@
 "first_repo": "RodimusFVC/Arcade-SpaceInvaders_MiSTer",
 "first_path": "releases/_alternatives/_Space Invaders/Super Invasion (Electromar, Spanish).mra",
 "first_recorded": "2026-10-05",
+"last_seen": "2026-10-09"
+}
+},
+"suplup": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -96306,6 +96757,20 @@
 "last_seen": "2026-10-09"
 }
 },
+"toyland": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
 "tp2m32": {
 "ppriest:jalecoms32": {
 "core": "ppriest:jalecoms32",
@@ -98460,6 +98925,48 @@
 "last_seen": "2026-10-09"
 }
 },
+"vamphalf": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
+"vamphalfk": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
+"vamphalfr1": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
 "vampj": {
 "jt:jtcps2": {
 "core": "jt:jtcps2",
@@ -99467,13 +99974,13 @@
 "victorba": {
 "dist:victory": {
 "core": "dist:victory",
-"date": "2026-10-07",
+"date": "2026-10-06",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": true,
-"first_repo": "MiSTer-devel/Distribution_MiSTer",
-"first_path": "_Arcade/_alternatives/_Victory/Victor Banana.mra",
+"first_repo": "MiSTer-devel/Arcade-Victory_MiSTer",
+"first_path": "releases/_alternatives/_Victory/Victor Banana.mra",
 "first_recorded": "2026-10-07",
 "last_seen": "2026-10-09"
 }
@@ -99481,13 +99988,13 @@
 "victory": {
 "dist:victory": {
 "core": "dist:victory",
-"date": "2026-10-07",
+"date": "2026-10-06",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": false,
-"first_repo": "MiSTer-devel/Distribution_MiSTer",
-"first_path": "_Arcade/Victory (Exidy).mra",
+"first_repo": "MiSTer-devel/Arcade-Victory_MiSTer",
+"first_path": "releases/Victory (Exidy).mra",
 "first_recorded": "2026-10-07",
 "last_seen": "2026-10-09"
 }
@@ -101990,6 +102497,20 @@
 "last_seen": "2026-10-09"
 }
 },
+"wivernwg": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
 "wizdfire": {
 "coinop:wizdfire": {
 "core": "coinop:wizdfire",
@@ -102267,6 +102788,20 @@
 "first_repo": "MiSTer-devel/Arcade-Pacman_MiSTer",
 "first_path": "releases/Woodpecker.mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-09"
+}
+},
+"worldadv": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -102785,6 +103320,34 @@
 "first_repo": "Mezzow/Arcade-SystemC2_MiSTer",
 "first_path": "releases/Waku Waku Pajero.mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-09"
+}
+},
+"wyvernwg": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
+"wyvernwga": {
+"ppriest:vamphalf": {
+"core": "ppriest:vamphalf",
+"date": "2026-10-09",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -104463,6 +105026,162 @@
 "first_repo": "MiSTer-devel/Arcade-SegaG80V_MiSTer",
 "first_path": "development/Zektor (revision B).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-09"
+}
+},
+"zeroteam": {
+"meat:zeroteam": {
+"core": "meat:zeroteam",
+"date": "2026-10-09",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Zero Team USA (4 players).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
+"ongo:zeroteam": {
+"core": "ongo:zeroteam",
+"date": "2026-10-09",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Zero Team USA (4 players).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
+"zeroteama": {
+"meat:zeroteam": {
+"core": "meat:zeroteam",
+"date": "2026-10-09",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Japan, earlier, set 1).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
+"ongo:zeroteam": {
+"core": "ongo:zeroteam",
+"date": "2026-10-09",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Japan, earlier, set 1).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
+"zeroteamb": {
+"meat:zeroteam": {
+"core": "meat:zeroteam",
+"date": "2026-10-09",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Japan, later batteryless).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
+"ongo:zeroteam": {
+"core": "ongo:zeroteam",
+"date": "2026-10-09",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Japan, later batteryless).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
+"zeroteamc": {
+"meat:zeroteam": {
+"core": "meat:zeroteam",
+"date": "2026-10-09",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Taiwan).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
+"ongo:zeroteam": {
+"core": "ongo:zeroteam",
+"date": "2026-10-09",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Taiwan).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
+"zeroteamd": {
+"meat:zeroteam": {
+"core": "meat:zeroteam",
+"date": "2026-10-09",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Korea).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
+"ongo:zeroteam": {
+"core": "ongo:zeroteam",
+"date": "2026-10-09",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Korea).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+}
+},
+"zeroteame": {
+"meat:zeroteam": {
+"core": "meat:zeroteam",
+"date": "2026-10-09",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Japan, earlier, set 2).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
+"ongo:zeroteam": {
+"core": "ongo:zeroteam",
+"date": "2026-10-09",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Japan, earlier, set 2).mra",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -106700,6 +107419,12 @@
 "congo": {
 "dist": "Isometric Platform"
 },
+"coolmini": {
+"ppriest": "Arcade"
+},
+"coolminii": {
+"ppriest": "Arcade"
+},
 "coozumou": {
 "dist": "Sports"
 },
@@ -107469,6 +108194,9 @@
 "dist": "Sports / Baseball",
 "repo": "Shooter"
 },
+"dquizgo2": {
+"ppriest": "Arcade"
+},
 "draco": {
 "jlrh": "Shooter",
 "ongo": "Shooter"
@@ -107533,6 +108261,9 @@
 },
 "dsoccr94k": {
 "dist": "Shooter"
+},
+"dtfamily": {
+"ppriest": "Arcade"
 },
 "dzigzag": {
 "repo": "Maze"
@@ -109368,6 +110099,12 @@
 "repo": "Arcade",
 "ppriest": "Arcade"
 },
+"jmpbreak": {
+"ppriest": "Arcade"
+},
+"jmpbreaka": {
+"ppriest": "Arcade"
+},
 "joemac": {
 "coinop": "Platform"
 },
@@ -109827,6 +110564,15 @@
 "dist": "Maze",
 "repo": "Shooter"
 },
+"luplup": {
+"ppriest": "Arcade"
+},
+"luplup10": {
+"ppriest": "Arcade"
+},
+"luplup29": {
+"ppriest": "Arcade"
+},
 "lwings": {
 "arcfpga": "Shooter"
 },
@@ -110124,6 +110870,12 @@
 "ongo": "Arcade",
 "kuze": "Arcade"
 },
+"misncrft": {
+"ppriest": "Shooter"
+},
+"misncrfta": {
+"ppriest": "Shooter"
+},
 "missmw96": {
 "bazset": "Puzzle / Adult"
 },
@@ -110279,6 +111031,9 @@
 "mranger": {
 "dist": "Shooter - Horizontal"
 },
+"mrdig": {
+"ppriest": "Arcade"
+},
 "mrdo": {
 "dist": "Maze"
 },
@@ -110299,6 +111054,9 @@
 },
 "mrjong": {
 "dist": "Puzzle"
+},
+"mrkicker": {
+"ppriest": "Arcade"
 },
 "mrkougar": {
 "repo": "Shooter"
@@ -110549,6 +111307,12 @@
 },
 "newtangl": {
 "dist": "Sports"
+},
+"newxpang": {
+"ppriest": "Arcade"
+},
+"newxpanga": {
+"ppriest": "Arcade"
 },
 "nextfase": {
 "dist": "Shooter - Gallery"
@@ -111460,6 +112224,9 @@
 "ponpokov": {
 "dist": "Platform - Climb"
 },
+"poosho": {
+"ppriest": "Arcade"
+},
 "pootan": {
 "dist": "Shooter - Gallery"
 },
@@ -111616,6 +112383,12 @@
 "ongo": "Arcade",
 "arcfpga": "Arcade",
 "repo": "Arcade"
+},
+"puzlbang": {
+"ppriest": "Arcade"
+},
+"puzlbanga": {
+"ppriest": "Arcade"
 },
 "puzldama": {
 "ongo": "Arcade",
@@ -113207,19 +113980,24 @@
 "dist": "Maze"
 },
 "soccerss": {
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "soccerssa": {
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "soccerssj": {
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "soccerssja": {
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "soccerssu": {
-"repo": "Arcade"
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "sokonuke": {
 "ongo": "Arcade",
@@ -113796,6 +114574,9 @@
 },
 "supinvsion": {
 "repo": "Shooter"
+},
+"suplup": {
+"ppriest": "Arcade"
 },
 "supmodel": {
 "bazset": "Puzzle / Adult"
@@ -114420,6 +115201,9 @@
 "dist": "Sports / Baseball",
 "repo": "Shooter"
 },
+"toyland": {
+"ppriest": "Arcade"
+},
 "tp84": {
 "dist": "Shooter - Multidirectional"
 },
@@ -114664,6 +115448,15 @@
 "valkyrie": {
 "ongo": "Arcade",
 "kuze": "Arcade"
+},
+"vamphalf": {
+"ppriest": "Platform"
+},
+"vamphalfk": {
+"ppriest": "Platform"
+},
+"vamphalfr1": {
+"ppriest": "Platform"
 },
 "vandyke": {
 "ongo": "Shooter",
@@ -114995,6 +115788,9 @@
 "repo": "Arcade",
 "ppriest": "Arcade"
 },
+"wivernwg": {
+"ppriest": "Shooter"
+},
 "wizdfire": {
 "coinop": "Hack &amp; Slash"
 },
@@ -115015,6 +115811,9 @@
 },
 "woodpeck": {
 "dist": "Platform - Climb"
+},
+"worldadv": {
+"ppriest": "Arcade"
 },
 "wow": {
 "dist": "Shooter - Multidirectional"
@@ -115072,6 +115871,12 @@
 "ongo": "Arcade",
 "arcfpga": "Arcade",
 "repo": "Arcade"
+},
+"wyvernwg": {
+"ppriest": "Shooter"
+},
+"wyvernwga": {
+"ppriest": "Shooter"
 },
 "xensad": {
 "dist": "Maze"
@@ -115187,6 +115992,30 @@
 "zektor": {
 "dist": "Shooter",
 "repo": "Shooter"
+},
+"zeroteam": {
+"ongo": "Beat em up",
+"meat": "Beat em up"
+},
+"zeroteama": {
+"ongo": "Beat em up",
+"meat": "Beat em up"
+},
+"zeroteamb": {
+"ongo": "Beat em up",
+"meat": "Beat em up"
+},
+"zeroteamc": {
+"ongo": "Beat em up",
+"meat": "Beat em up"
+},
+"zeroteamd": {
+"ongo": "Beat em up",
+"meat": "Beat em up"
+},
+"zeroteame": {
+"ongo": "Beat em up",
+"meat": "Beat em up"
 },
 "zerotime": {
 "dist": "Shooter - Gallery",

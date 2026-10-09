@@ -13,7 +13,7 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (84)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (86)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
@@ -61,6 +61,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `mimonkey` | Mighty Monkey | 1982 | Shooter / Flying Horizontal (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |
 | `minefld` | Minefield | 1983 | Shooter / Driving Horizontal (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |
 | `missile` | Missile Command (rev 3, A035467-02/04 PCBs) | 1980 | Shooter / Command (catver) | MissileCommand |
+| `misncrft` | Mission Craft (version 2.7) | 2000 | Shooter / Flying Vertical (catver) | Vamphalf |
 | `mrviking` | Mister Viking (315-5041) | 1984 | Shooter / Walking (catver) | SEGASYS1 |
 | `mpatrol` | Moon Patrol | 1982 | Shooter / Driving Horizontal (catver) | MoonPatrol |
 | `mshuttle` | Moon Shuttle (US? set 1) | 1981 | Shooter / Flying Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
@@ -103,6 +104,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `vsskykid` | Vs. Super SkyKid | 1985 | Shooter / Flying Horizontal (catver) | VSnes |
 | `supxevs` | Vs. Super Xevious | 1986 | Shooter / Flying Vertical (catver) | VSnes |
 | `wwestern` | Wild Western (set 1) | 1982 | Shooter / Misc. Vertical (catver) | TaitoSJ |
+| `wivernwg` | Wivern Wings | 2001 | Shooter / Flying Vertical (catver) | Vamphalf |
 
 ## C. Deck games with no set in MAME 0289 (4)
 

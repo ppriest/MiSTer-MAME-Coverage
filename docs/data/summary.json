@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-09T08:49:48+00:00",
+  "generated": "2026-10-09T11:57:46+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-09T08:10:59+00:00",
+  "mister_generated": "2026-10-09T11:57:18+00:00",
   "alamone_generated": "2026-10-05T11:12:58+00:00",
   "ledger_updated": "2026-10-09",
   "ledger_runs": [
-   {
-    "date": "2026-10-09",
-    "note": "alamone 2026-10-05",
-    "cores": 7,
-    "sets": 0,
-    "pairs": 135,
-    "dates_improved": 0,
-    "cores_removed": 11
-   },
    {
     "date": "2026-10-09",
     "note": "alamone 2026-10-05",
@@ -51,6 +42,15 @@
     "pairs": 21,
     "dates_improved": 3,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-09",
+    "note": "alamone 2026-10-05",
+    "cores": 4,
+    "sets": 36,
+    "pairs": 47,
+    "dates_improved": 5,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
    "catver_entries": 37998,
    "mad_entries": 2995,
-   "mra_entries": 3082,
+   "mra_entries": 3115,
    "unmapped": [
     {
      "raw": "not classified",
@@ -75,7 +75,7 @@
     }
    ]
   },
-  "mame_added_updated": "2026-10-08",
+  "mame_added_updated": "2026-10-09",
   "hbmame": {
    "tag": "tag2893",
    "version": "0.289.3",
@@ -2202,7 +2202,7 @@
     "source": "ongo",
     "repo": "meathax/meatcores",
     "dirs": null,
-    "mras": 118
+    "mras": 125
    },
    {
     "source": "ongo",
@@ -2307,6 +2307,30 @@
     "mras": 2
    },
    {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-OffTheWall_MiSTer",
+    "dirs": null,
+    "mras": 2
+   },
+   {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-ReliefPitcher_MiSTer",
+    "dirs": null,
+    "mras": 3
+   },
+   {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-Shuuz_MiSTer",
+    "dirs": null,
+    "mras": 2
+   },
+   {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-Victory_MiSTer",
+    "dirs": null,
+    "mras": 2
+   },
+   {
     "source": "repo",
     "repo": "rmonic79/Arcade-Darius_MiSTer",
     "dirs": null,
@@ -2384,7 +2408,7 @@
     "dirs": [
      "mra"
     ],
-    "mras": 35
+    "mras": 38
    },
    {
     "source": "dist",
@@ -2395,21 +2419,49 @@
   ],
   "repo_errors": [
    [
+    "harlock74/Arcade-CloakDagger_MiSTer",
+    "fatal: could not read Username for 'https://github.com': No such device or address"
+   ],
+   [
+    "Kyp069/zx48-MiSTer",
+    "fatal: could not read Username for 'https://github.com': No such device or address"
+   ],
+   [
+    "blahm1d/wolf-unit",
+    "fatal: could not read Username for 'https://github.com': No such device or address"
+   ],
+   [
+    "kandowontu/BrickBoy_MiSTer",
+    "fatal: could not read Username for 'https://github.com': No such device or address"
+   ],
+   [
+    "meathax/Bucky",
+    "fatal: could not read Username for 'https://github.com': No such device or address"
+   ],
+   [
+    "meathax/mrdo",
+    "fatal: could not read Username for 'https://github.com': No such device or address"
+   ],
+   [
+    "meathax/s24",
+    "fatal: could not read Username for 'https://github.com': No such device or address"
+   ],
+   [
     "https://mister.blahm1d.com/db.json.zip",
-    "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    "HTTP Error 403: Forbidden"
    ]
   ],
   "counts": {
    "titles": 6824,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 1966,
+   "working_arcade_titles_covered": 1980,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5159,
+   "working_arcade_sets_covered": 5186,
    "working_arcade_titles_source": 1727,
-   "working_arcade_titles_binary_only": 239,
-   "cores": 568,
-   "binary_only_cores": 138,
-   "unmatched_sets": 411
+   "working_arcade_titles_binary_only": 253,
+   "cores": 571,
+   "binary_only_cores": 141,
+   "unmatched_sets": 414
   }
  },
  "cores": [
@@ -2891,6 +2943,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-09",
+   "aliases": [],
    "last_seen": "2026-10-09",
    "binary_only": true,
    "nsets": 7,
@@ -8124,7 +8177,7 @@
    "binary_only": false,
    "nsets": 3,
    "ntitles": 1,
-   "first_date": "2026-10-08"
+   "first_date": "2026-10-07"
   },
   {
    "id": "dist:ringking",
@@ -9551,7 +9604,7 @@
    "binary_only": false,
    "nsets": 2,
    "ntitles": 1,
-   "first_date": "2026-10-07"
+   "first_date": "2026-10-06"
   },
   {
    "id": "dist:vindicators",
@@ -13777,6 +13830,28 @@
    "first_date": "2026-07-28"
   },
   {
+   "id": "meat:zeroteam",
+   "name": "ZeroTeam",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-ZeroTeam.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-09",
+   "last_seen": "2026-10-09",
+   "binary_only": true,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": "2026-10-09"
+  },
+  {
    "id": "ongo:battlantis",
    "name": "Battlantis",
    "source": "ongo",
@@ -14605,6 +14680,28 @@
    "first_date": "2026-09-19"
   },
   {
+   "id": "ppriest:konamigxt34",
+   "name": "KonamiGXT34",
+   "source": "ppriest",
+   "source_title": "ppriest (MiSTer_ppriest)",
+   "channel": null,
+   "rbf": "KonamiGXT34.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-09",
+   "last_seen": "2026-10-09",
+   "binary_only": false,
+   "nsets": 5,
+   "ntitles": 1,
+   "first_date": "2026-10-08"
+  },
+  {
    "id": "ppriest:seta",
    "name": "Seta",
    "source": "ppriest",
@@ -14649,6 +14746,28 @@
    "nsets": 10,
    "ntitles": 6,
    "first_date": "2026-03-13"
+  },
+  {
+   "id": "ppriest:vamphalf",
+   "name": "Vamphalf",
+   "source": "ppriest",
+   "source_title": "ppriest (MiSTer_ppriest)",
+   "channel": null,
+   "rbf": "Vamphalf.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-09",
+   "last_seen": "2026-10-09",
+   "binary_only": true,
+   "nsets": 27,
+   "ntitles": 14,
+   "first_date": "2026-10-09"
   },
   {
    "id": "repo:10yardfight",
@@ -16064,6 +16183,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-09",
+   "aliases": [],
    "last_seen": "2026-10-09",
    "binary_only": false,
    "nsets": 11,
@@ -17109,7 +17229,7 @@
    "cores": [
     "dist:reliefpitcher"
    ],
-   "first": "2026-10-08"
+   "first": "2026-10-07"
   },
   {
    "sourcefile": "atari/runaway.cpp",
@@ -18726,7 +18846,7 @@
    "cores": [
     "dist:victory"
    ],
-   "first": "2026-10-07"
+   "first": "2026-10-06"
   },
   {
    "sourcefile": "f32/crospang.cpp",
@@ -20079,6 +20199,7 @@
    "sets_covered": 27,
    "cores": [
     "ppriest:konamigx",
+    "ppriest:konamigxt34",
     "repo:konamigxt34"
    ],
    "first": "2026-09-19"
@@ -21673,11 +21794,13 @@
   {
    "sourcefile": "misc/vamphalf.cpp",
    "titles": 18,
-   "covered": 0,
+   "covered": 14,
    "sets": 31,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 27,
+   "cores": [
+    "ppriest:vamphalf"
+   ],
+   "first": "2026-10-09"
   },
   {
    "sourcefile": "misc/vampire.cpp",
@@ -23553,6 +23676,7 @@
    "sets_covered": 32,
    "cores": [
     "dist:raiden2",
+    "meat:zeroteam",
     "repo:raiden2"
    ],
    "first": "2026-08-09"
@@ -29076,6 +29200,13 @@
    "desc": "Snowy Day Pacman"
   },
   {
+   "set": "sokobanle",
+   "cores": [
+    "repo:taitol"
+   ],
+   "hbmame": false
+  },
+  {
    "set": "solomonjs01",
    "cores": [
     "dist:solomonskey"
@@ -29128,6 +29259,23 @@
    "parent": "salamand",
    "manufacturer": "Konami",
    "desc": "Salamander (version YY 0.7.2.2)"
+  },
+  {
+   "set": "speccies2",
+   "cores": [
+    "repo:taitol"
+   ],
+   "hbmame": false
+  },
+  {
+   "set": "sqij",
+   "cores": [
+    "repo:taitol"
+   ],
+   "hbmame": true,
+   "year": "2018",
+   "manufacturer": "Sokurah",
+   "desc": "SQIJ!"
   },
   {
    "set": "ssf2t_3",
