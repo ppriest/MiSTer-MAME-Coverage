@@ -1,6 +1,7 @@
 """HBMAME (homebrew and hacks) set names, so MiSTer sets that MAME does not know can be labelled.
 
-HBMAME publishes no machine list, so the set names are read from the ``GAME(...)`` lines of its
+Preferred source: the ``hbmame.exe -listxml`` that .github/workflows/hbmame.yml publishes as a
+release asset (HBMAME is Windows-only, so it runs on a Windows runner). Until one exists, the set names are read from the ``GAME(...)`` lines of its
 driver sources (``src/hbmame/drivers``) at the newest release tag of github.com/Robbbert/hbmame
 (``tag2893`` = 0.289.3). The same lines carry the metadata a ``-listxml`` would (year, parent,
 manufacturer, description), which is stored per set. HBMAME ships Windows binaries only,
@@ -90,13 +91,56 @@ def version_of(tag: str) -> str:
     return f"0.{m.group(1)}" + (f".{m.group(2)}" if m.group(2) else "")
 
 
+LISTXML_URL = "https://github.com/ppriest/MiSTer-MAME-Coverage/releases/download/hbmame-listxml/hbmame-lx.zip"
+
+
+def from_listxml(cur: dict, force: bool) -> dict | None:
+    """Use the ``hbmame.exe -listxml`` published by .github/workflows/hbmame.yml, when there is one."""
+    import urllib.request
+
+    from . import mame as mame_mod
+    try:
+        req = urllib.request.Request(LISTXML_URL, method="HEAD")
+        with urllib.request.urlopen(req, timeout=60) as r:
+            size = int(r.headers.get("Content-Length") or 0)
+    except Exception:
+        return None
+    if not force and cur.get("asset") == size and cur.get("from") == "listxml":
+        print(f"[hbmame] listxml unchanged ({len(cur['sets'])} sets)")
+        return cur
+    dest = os.path.join(paths.CACHE, "hbmame-lx.zip")
+    os.makedirs(paths.CACHE, exist_ok=True)
+    try:
+        with urllib.request.urlopen(LISTXML_URL, timeout=300) as r, open(dest, "wb") as f:
+            shutil.copyfileobj(r, f)
+        parsed = mame_mod.parse_listxml(dest)
+    except Exception as e:
+        print(f"[hbmame] listxml unusable ({e}); falling back to the driver sources")
+        return None
+    sets = {n: {k: v for k, v in {"year": m["year"], "parent": m["cloneof"], "manufacturer": m["manufacturer"],
+                                  "desc": m["desc"], "source": m["sourcefile"]}.items() if v}
+            for n, m in sorted(parsed["machines"].items())}
+    if len(sets) < 1000:
+        return None
+    out = {"from": "listxml", "tag": parsed.get("build"), "version": parsed.get("build"), "asset": size,
+           "updated": dt.date.today().isoformat(), "sets": sets}
+    with open(FILE, "w", encoding="utf-8") as f:
+        json.dump(out, f)
+        f.write("\n")
+    print(f"[hbmame] -listxml {parsed.get('build')}: {len(sets)} sets")
+    return out
+
+
 def build(force: bool = False) -> dict:
     cur = load()
+    got = from_listxml(cur, force)
+    if got:
+        return got
     tag = latest_tag()
     if not tag:
         print("[hbmame] cannot list tags; keeping", cur.get("tag"))
         return cur
-    if tag == cur.get("tag") and not force:
+    if tag == cur.get("tag") and cur.get("from") != "listxml" and not force:
         print(f"[hbmame] {tag} already read ({len(cur['sets'])} sets)")
         return cur
     d = os.path.join(paths.CACHE, "hbmame")
@@ -125,7 +169,7 @@ def build(force: bool = False) -> dict:
     if len(names) < 1000:
         print(f"[hbmame] only {len(names)} sets parsed; keeping", cur.get("tag"))
         return cur
-    out = {"tag": tag, "version": version_of(tag), "updated": dt.date.today().isoformat(), "sets": dict(sorted(names.items()))}
+    out = {"from": "source", "tag": tag, "version": version_of(tag), "updated": dt.date.today().isoformat(), "sets": dict(sorted(names.items()))}
     with open(FILE, "w", encoding="utf-8") as f:
         json.dump(out, f)
         f.write("\n")
