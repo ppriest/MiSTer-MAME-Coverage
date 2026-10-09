@@ -106,7 +106,7 @@ core takes over). Sets are those the PR's `mame2mra.toml` selects, checked again
 clone, redone only when a newer tag appears) into `data/hbmame.json`. `report` flags every
 unmatched set that exists there (`unmatched[].hbmame`, `meta.hbmame`); the Unmatched tab labels
 them **homebrew/hacks** and has a show / hide / only filter. HBMAME publishes no machine list, so
-hacks defined outside `src/hbmame/drivers` are not seen.
+hacks defined outside `src/hbmame/drivers` are not seen. The same lines carry what a `-listxml` would (year, parent, manufacturer, description), stored per set and shown on the Unmatched tab. HBMAME is only released as Windows binaries, so `-listxml` itself cannot be run in CI; MAME's own metadata still comes from its `-listxml` release asset.
 
 ## Databases tab
 
