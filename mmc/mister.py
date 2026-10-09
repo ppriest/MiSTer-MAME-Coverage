@@ -184,6 +184,8 @@ DB_SOURCES = {
     "arcfpga": "https://raw.githubusercontent.com/bmo00/arcfpga-mister-db/db/db.json.zip",
     "blahm1d": "https://mister.blahm1d.com/db.json.zip",
     "shmupfan": "https://raw.githubusercontent.com/shmupfan/Distribution/main/db.json",   # plain JSON, not zipped
+    "blackwine": "https://raw.githubusercontent.com/TheJesusFish/Blackwine-SegaSystem1-2_MiSTer/db/db.json.zip",
+    "rmcores": "https://raw.githubusercontent.com/rmonic79/rmcores/db/db.json.zip",
     # bazset's binary-only cores (Patreon: patreon.com/cw/bazset); a standard Downloader database repository
     "bazset": "https://raw.githubusercontent.com/bazset/MiSTer_BAZSET/db/db.json.zip",
     # ppriest's own cores, rebuilt daily from his public non-archived core repositories
@@ -226,6 +228,8 @@ SOURCE_PAGES = {
     "blahm1d": "https://www.patreon.com/cw/blahm1d",
     "shmupfan": "https://github.com/shmupfan/Distribution",
     "bazset": "https://github.com/bazset/MiSTer_BAZSET",
+    "blackwine": "https://github.com/TheJesusFish/Blackwine-SegaSystem1-2_MiSTer",
+    "rmcores": "https://github.com/rmonic79/rmcores",
     "ppriest": "https://github.com/ppriest/MiSTer_ppriest",
     "jtpr": "https://github.com/jotego/jtcores/tree/andrea-cores/cores",
     "repo": None,
@@ -245,6 +249,8 @@ DB_TITLES = {
     "blahm1d": "blahm1d",
     "shmupfan": "shmupfan (Distribution)",
     "bazset": "bazset (MiSTer_BAZSET)",
+    "blackwine": "Blackwine Sega System 1/2 (TheJesusFish)",
+    "rmcores": "rmcores (rmonic79)",
     "jtpr": "jtcores unreleased (PRs, branches)",
     "ppriest": "ppriest (MiSTer_ppriest)",
     "repo": "GitHub repository only",

@@ -29,7 +29,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `bucky` | Bucky O'Hare (ver EAB) | 1992 | Shooter / Walking (catver) | Bucky |
 | `bullet` | Bullet (FD1094 317-0041) | 1987 | Shooter / Walking (catver) | jts16b |
 | `calibr50` | Caliber 50 (Ver. 1.01) | 1989 | Shooter / Walking (catver) | jtcal50, SetaDowntown |
-| `choplift` | Choplifter (8751 315-5151) | 1985 | Shooter / Flying Horizontal (catver) | SegaSys1+2 (TheJesusFish) |
+| `choplift` | Choplifter (8751 315-5151) | 1985 | Shooter / Flying Horizontal (catver) | Blackwine-SegaSystem1-2, SegaSys1+2 (TheJesusFish) |
 | `colony7` | Colony 7 (set 1) | 1981 | Shooter / Command (catver) | Defender |
 | `commando` | Commando (World) | 1985 | Shooter / Walking (catver) | jtcommnd |
 | `dcon` | D-Con | 1992 | Shooter / Command (catver) | DCon |
