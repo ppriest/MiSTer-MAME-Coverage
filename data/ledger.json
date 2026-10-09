@@ -273,6 +273,15 @@
 "pairs": 0,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-09",
+"note": "alamone 2026-10-05",
+"cores": 2,
+"sets": 0,
+"pairs": 21,
+"dates_improved": 3,
+"cores_removed": 0
 }
 ]
 },
@@ -657,6 +666,24 @@
 "note": null,
 "first_recorded": "2026-10-08",
 "aliases": [],
+"last_seen": "2026-10-09"
+},
+"blackwine:blackwine-segasystem1-2": {
+"id": "blackwine:blackwine-segasystem1-2",
+"name": "Blackwine-SegaSystem1-2",
+"source": "blackwine",
+"source_title": "Blackwine Sega System 1/2 (TheJesusFish)",
+"channel": null,
+"rbf": "Blackwine-SegaSystem1-2.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 },
 "blahm1d:blahm1d_exidy440": {
@@ -2488,7 +2515,8 @@
 ],
 "note": null,
 "aliases": [
-"ongo:rmboogiewings"
+"ongo:rmboogiewings",
+"rmcores:rmboogiewings"
 ],
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
@@ -4497,7 +4525,8 @@
 ],
 "note": null,
 "aliases": [
-"ongo:rmnightslashers"
+"ongo:rmnightslashers",
+"rmcores:rmnightslashers"
 ],
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
@@ -4938,7 +4967,8 @@
 ],
 "note": null,
 "aliases": [
-"ongo:rmraiden"
+"ongo:rmraiden",
+"rmcores:rmraiden"
 ],
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
@@ -5339,7 +5369,8 @@
 ],
 "note": null,
 "aliases": [
-"ongo:rmseibucupsoccer"
+"ongo:rmseibucupsoccer",
+"rmcores:rmseibucupsoccer"
 ],
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
@@ -5799,7 +5830,8 @@
 ],
 "note": null,
 "aliases": [
-"ongo:rmtaitoasuka"
+"ongo:rmtaitoasuka",
+"rmcores:rmtaitoasuka"
 ],
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
@@ -12371,6 +12403,24 @@
 "note": null,
 "first_recorded": "2026-10-08",
 "last_seen": "2026-10-08"
+},
+"rmcores:rmgalivan": {
+"id": "rmcores:rmgalivan",
+"name": "rmGalivan",
+"source": "rmcores",
+"source_title": "rmcores (rmonic79)",
+"channel": null,
+"rbf": "rmGalivan.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
 },
 "shmupfan:1945kiii": {
 "id": "shmupfan:1945kiii",
@@ -21965,6 +22015,18 @@
 }
 },
 "brain": {
+"blackwine:blackwine-segasystem1-2": {
+"core": "blackwine:blackwine-segasystem1-2",
+"date": "2023-04-05",
+"date_quality": "git",
+"via": "blackwine",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Brain.mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:blackwine-segasystem1-2": {
 "core": "ongo:blackwine-segasystem1-2",
 "date": "2023-04-05",
@@ -25243,6 +25305,18 @@
 }
 },
 "chopliftu": {
+"blackwine:blackwine-segasystem1-2": {
+"core": "blackwine:blackwine-segasystem1-2",
+"date": "2023-04-05",
+"date_quality": "git",
+"via": "blackwine",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Choplifter (unprotected).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:blackwine-segasystem1-2": {
 "core": "ongo:blackwine-segasystem1-2",
 "date": "2023-04-05",
@@ -28839,6 +28913,18 @@
 }
 },
 "dakkochn": {
+"blackwine:blackwine-segasystem1-2": {
+"core": "blackwine:blackwine-segasystem1-2",
+"date": "2023-04-05",
+"date_quality": "git",
+"via": "blackwine",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Dakkochan House (MC-8123).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:blackwine-segasystem1-2": {
 "core": "ongo:blackwine-segasystem1-2",
 "date": "2023-04-05",
@@ -28994,6 +29080,18 @@
 "first_path": "releases/Ufo Robo Dangar (4-07-1987).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
+},
+"rmcores:rmgalivan": {
+"core": "rmcores:rmgalivan",
+"date": "2022-09-05",
+"date_quality": "git",
+"via": "rmcores",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-Galivan_MiSTer",
+"first_path": "releases/Ufo Robo Dangar (4-07-1987).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
 }
 },
 "dangara": {
@@ -29007,6 +29105,18 @@
 "first_repo": "rmonic79/rmcores",
 "first_path": "_Arcade/_rmCores/_alternatives/_rm Ufo Robo Dangar/rm Ufo Robo Dangar (12-1-1986).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-09"
+},
+"rmcores:rmgalivan": {
+"core": "rmcores:rmgalivan",
+"date": "2026-09-17",
+"date_quality": "git",
+"via": "rmcores",
+"wip": false,
+"alt": true,
+"first_repo": "rmonic79/rmcores",
+"first_path": "_Arcade/_rmCores/_alternatives/_rm Ufo Robo Dangar/rm Ufo Robo Dangar (12-1-1986).mra",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -29022,6 +29132,18 @@
 "first_path": "_Arcade/_rmCores/_alternatives/_rm Ufo Robo Dangar/rm Ufo Robo Dangar (9-26-1986, bootleg set 1).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
+},
+"rmcores:rmgalivan": {
+"core": "rmcores:rmgalivan",
+"date": "2026-09-17",
+"date_quality": "git",
+"via": "rmcores",
+"wip": false,
+"alt": true,
+"first_repo": "rmonic79/rmcores",
+"first_path": "_Arcade/_rmCores/_alternatives/_rm Ufo Robo Dangar/rm Ufo Robo Dangar (9-26-1986, bootleg set 1).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
 }
 },
 "dangarbt": {
@@ -29036,6 +29158,18 @@
 "first_path": "_Arcade/_rmCores/_alternatives/_rm Ufo Robo Dangar/rm Ufo Robo Dangar (9-26-1986, bootleg set 2).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
+},
+"rmcores:rmgalivan": {
+"core": "rmcores:rmgalivan",
+"date": "2026-09-17",
+"date_quality": "git",
+"via": "rmcores",
+"wip": false,
+"alt": true,
+"first_repo": "rmonic79/rmcores",
+"first_path": "_Arcade/_rmCores/_alternatives/_rm Ufo Robo Dangar/rm Ufo Robo Dangar (9-26-1986, bootleg set 2).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
 }
 },
 "dangarj": {
@@ -29049,6 +29183,18 @@
 "first_repo": "rmonic79/rmcores",
 "first_path": "_Arcade/_rmCores/_alternatives/_rm Ufo Robo Dangar/rm Ufo Robo Dangar (9-26-1986, Japan).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-09"
+},
+"rmcores:rmgalivan": {
+"core": "rmcores:rmgalivan",
+"date": "2026-09-17",
+"date_quality": "git",
+"via": "rmcores",
+"wip": false,
+"alt": true,
+"first_repo": "rmonic79/rmcores",
+"first_path": "_Arcade/_rmCores/_alternatives/_rm Ufo Robo Dangar/rm Ufo Robo Dangar (9-26-1986, Japan).mra",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -40720,6 +40866,18 @@
 "first_path": "releases/Galivan.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
+},
+"rmcores:rmgalivan": {
+"core": "rmcores:rmgalivan",
+"date": "2022-08-31",
+"date_quality": "git",
+"via": "rmcores",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-Galivan_MiSTer",
+"first_path": "releases/Galivan.mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
 }
 },
 "galivan2": {
@@ -40734,6 +40892,18 @@
 "first_path": "_Arcade/_rmCores/_alternatives/_rm Cosmo Police Galivan/rm Cosmo Police Galivan (12-16-1985).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
+},
+"rmcores:rmgalivan": {
+"core": "rmcores:rmgalivan",
+"date": "2026-09-17",
+"date_quality": "git",
+"via": "rmcores",
+"wip": false,
+"alt": true,
+"first_repo": "rmonic79/rmcores",
+"first_path": "_Arcade/_rmCores/_alternatives/_rm Cosmo Police Galivan/rm Cosmo Police Galivan (12-16-1985).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
 }
 },
 "galivan3": {
@@ -40747,6 +40917,18 @@
 "first_repo": "rmonic79/rmcores",
 "first_path": "_Arcade/_rmCores/_alternatives/_rm Cosmo Police Galivan/rm Cosmo Police Galivan (12-11-1985).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-09"
+},
+"rmcores:rmgalivan": {
+"core": "rmcores:rmgalivan",
+"date": "2026-09-17",
+"date_quality": "git",
+"via": "rmcores",
+"wip": false,
+"alt": true,
+"first_repo": "rmonic79/rmcores",
+"first_path": "_Arcade/_rmCores/_alternatives/_rm Cosmo Police Galivan/rm Cosmo Police Galivan (12-11-1985).mra",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -41475,6 +41657,18 @@
 }
 },
 "gardia": {
+"blackwine:blackwine-segasystem1-2": {
+"core": "blackwine:blackwine-segasystem1-2",
+"date": "2023-04-05",
+"date_quality": "git",
+"via": "blackwine",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Gardia (317-0006).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:blackwine-segasystem1-2": {
 "core": "ongo:blackwine-segasystem1-2",
 "date": "2023-04-05",
@@ -47225,6 +47419,18 @@
 }
 },
 "hvymetal": {
+"blackwine:blackwine-segasystem1-2": {
+"core": "blackwine:blackwine-segasystem1-2",
+"date": "2023-04-05",
+"date_quality": "git",
+"via": "blackwine",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Heavy Metal (315-5135).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:blackwine-segasystem1-2": {
 "core": "ongo:blackwine-segasystem1-2",
 "date": "2023-04-05",
@@ -62680,6 +62886,18 @@
 "first_path": "_Arcade/_rmCores/rm Ninja Emaki (US).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
+},
+"rmcores:rmgalivan": {
+"core": "rmcores:rmgalivan",
+"date": "2026-09-17",
+"date_quality": "git",
+"via": "rmcores",
+"wip": false,
+"alt": false,
+"first_repo": "rmonic79/rmcores",
+"first_path": "_Arcade/_rmCores/rm Ninja Emaki (US).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
 }
 },
 "ninjemat": {
@@ -62693,6 +62911,18 @@
 "first_repo": "rmonic79/rmcores",
 "first_path": "_Arcade/_rmCores/_alternatives/_rm Ninja Emaki/rm Ninja Emaki (Tecfri license).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-09"
+},
+"rmcores:rmgalivan": {
+"core": "rmcores:rmgalivan",
+"date": "2026-09-17",
+"date_quality": "git",
+"via": "rmcores",
+"wip": false,
+"alt": true,
+"first_repo": "rmonic79/rmcores",
+"first_path": "_Arcade/_rmCores/_alternatives/_rm Ninja Emaki/rm Ninja Emaki (Tecfri license).mra",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -62781,6 +63011,18 @@
 }
 },
 "nobb": {
+"blackwine:blackwine-segasystem1-2": {
+"core": "blackwine:blackwine-segasystem1-2",
+"date": "2023-04-05",
+"date_quality": "git",
+"via": "blackwine",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Noboranka (bootleg).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:blackwine-segasystem1-2": {
 "core": "ongo:blackwine-segasystem1-2",
 "date": "2023-04-05",
@@ -62989,7 +63231,7 @@
 },
 "dist:nightslashers": {
 "core": "dist:nightslashers",
-"date": "2026-07-07",
+"date": "2026-07-02",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
@@ -63027,7 +63269,7 @@
 },
 "dist:nightslashers": {
 "core": "dist:nightslashers",
-"date": "2026-07-07",
+"date": "2026-07-02",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
@@ -63065,7 +63307,7 @@
 },
 "dist:nightslashers": {
 "core": "dist:nightslashers",
-"date": "2026-07-07",
+"date": "2026-07-02",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
@@ -101333,6 +101575,18 @@
 }
 },
 "wbmlvcd": {
+"blackwine:blackwine-segasystem1-2": {
+"core": "blackwine:blackwine-segasystem1-2",
+"date": "2023-04-05",
+"date_quality": "git",
+"via": "blackwine",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Wonder Boy in Monster Land.mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
+},
 "ongo:blackwine-segasystem1-2": {
 "core": "ongo:blackwine-segasystem1-2",
 "date": "2023-04-05",
@@ -104024,6 +104278,18 @@
 "first_path": "_Arcade/_rmCores/_alternatives/_rm Ninja Emaki/rm Youma Ninpou Chou (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
+},
+"rmcores:rmgalivan": {
+"core": "rmcores:rmgalivan",
+"date": "2026-09-17",
+"date_quality": "git",
+"via": "rmcores",
+"wip": false,
+"alt": true,
+"first_repo": "rmonic79/rmcores",
+"first_path": "_Arcade/_rmCores/_alternatives/_rm Ninja Emaki/rm Youma Ninpou Chou (Japan).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
 }
 },
 "youma2": {
@@ -104037,6 +104303,18 @@
 "first_repo": "rmonic79/rmcores",
 "first_path": "_Arcade/_rmCores/_alternatives/_rm Ninja Emaki/rm Youma Ninpou Chou (Japan, alt).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-09"
+},
+"rmcores:rmgalivan": {
+"core": "rmcores:rmgalivan",
+"date": "2026-09-17",
+"date_quality": "git",
+"via": "rmcores",
+"wip": false,
+"alt": true,
+"first_repo": "rmonic79/rmcores",
+"first_path": "_Arcade/_rmCores/_alternatives/_rm Ninja Emaki/rm Youma Ninpou Chou (Japan, alt).mra",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -104052,6 +104330,18 @@
 "first_path": "_Arcade/_rmCores/_alternatives/_rm Ninja Emaki/rm Youma Ninpou Chou (Game Electronics bootleg, set 1).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
+},
+"rmcores:rmgalivan": {
+"core": "rmcores:rmgalivan",
+"date": "2026-09-17",
+"date_quality": "git",
+"via": "rmcores",
+"wip": false,
+"alt": true,
+"first_repo": "rmonic79/rmcores",
+"first_path": "_Arcade/_rmCores/_alternatives/_rm Ninja Emaki/rm Youma Ninpou Chou (Game Electronics bootleg, set 1).mra",
+"first_recorded": "2026-10-09",
+"last_seen": "2026-10-09"
 }
 },
 "youmab2": {
@@ -104065,6 +104355,18 @@
 "first_repo": "rmonic79/rmcores",
 "first_path": "_Arcade/_rmCores/_alternatives/_rm Ninja Emaki/rm Youma Ninpou Chou (Game Electronics bootleg, set 2).mra",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-09"
+},
+"rmcores:rmgalivan": {
+"core": "rmcores:rmgalivan",
+"date": "2026-09-17",
+"date_quality": "git",
+"via": "rmcores",
+"wip": false,
+"alt": true,
+"first_repo": "rmonic79/rmcores",
+"first_path": "_Arcade/_rmCores/_alternatives/_rm Ninja Emaki/rm Youma Ninpou Chou (Game Electronics bootleg, set 2).mra",
+"first_recorded": "2026-10-09",
 "last_seen": "2026-10-09"
 }
 },
@@ -105071,15 +105373,18 @@
 },
 "asuka": {
 "dist": "Action",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "asukaj": {
 "dist": "Action",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "asukaja": {
 "dist": "Action",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "asurabld": {
 "dist": "Fight"
@@ -105632,38 +105937,46 @@
 },
 "bonzeadv": {
 "dist": "Platform",
-"ongo": "Platform"
+"ongo": "Platform",
+"rmcores": "Platform"
 },
 "bonzeadvo": {
 "dist": "Platform",
-"ongo": "Platform"
+"ongo": "Platform",
+"rmcores": "Platform"
 },
 "bonzeadvp": {
 "dist": "Platform",
-"ongo": "Platform"
+"ongo": "Platform",
+"rmcores": "Platform"
 },
 "bonzeadvp2": {
 "dist": "Platform",
-"ongo": "Platform"
+"ongo": "Platform",
+"rmcores": "Platform"
 },
 "bonzeadvu": {
 "dist": "Platform",
-"ongo": "Platform"
+"ongo": "Platform",
+"rmcores": "Platform"
 },
 "boogwing": {
 "dist": "Action",
 "coinop": "Shoot &apos;Em Up",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "boogwinga": {
 "dist": "Action",
 "coinop": "Shoot &apos;Em Up",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "boogwingu": {
 "dist": "Action",
 "coinop": "Shoot &apos;Em Up",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "boothill": {
 "dist": "Shooter - Multidirectional",
@@ -105719,7 +106032,8 @@
 },
 "brain": {
 "repo": "Shooter",
-"ongo": "Shooter"
+"ongo": "Shooter",
+"blackwine": "Shooter"
 },
 "brakman": {
 "dist": "Maze"
@@ -105834,55 +106148,68 @@
 },
 "cadash": {
 "dist": "Action / RPG",
-"ongo": "Action / RPG"
+"ongo": "Action / RPG",
+"rmcores": "Action / RPG"
 },
 "cadashf": {
 "dist": "Action / RPG",
-"ongo": "Action / RPG"
+"ongo": "Action / RPG",
+"rmcores": "Action / RPG"
 },
 "cadashg": {
 "dist": "Action / RPG",
-"ongo": "Action / RPG"
+"ongo": "Action / RPG",
+"rmcores": "Action / RPG"
 },
 "cadashgo": {
 "dist": "Action / RPG",
-"ongo": "Action / RPG"
+"ongo": "Action / RPG",
+"rmcores": "Action / RPG"
 },
 "cadashi": {
 "dist": "Action / RPG",
-"ongo": "Action / RPG"
+"ongo": "Action / RPG",
+"rmcores": "Action / RPG"
 },
 "cadashj": {
 "dist": "Action / RPG",
-"ongo": "Action / RPG"
+"ongo": "Action / RPG",
+"rmcores": "Action / RPG"
 },
 "cadashj1": {
 "dist": "Action / RPG",
-"ongo": "Action / RPG"
+"ongo": "Action / RPG",
+"rmcores": "Action / RPG"
 },
 "cadashjo": {
 "dist": "Action / RPG",
-"ongo": "Action / RPG"
+"ongo": "Action / RPG",
+"rmcores": "Action / RPG"
 },
 "cadashp": {
 "dist": "Action / RPG",
-"ongo": "Action / RPG"
+"ongo": "Action / RPG",
+"rmcores": "Action / RPG"
 },
 "cadashs": {
 "dist": "Action / RPG",
-"ongo": "Action / RPG"
+"ongo": "Action / RPG",
+"rmcores": "Action / RPG"
 },
 "cadashso": {
 "dist": "Action / RPG",
-"ongo": "Action / RPG"
+"ongo": "Action / RPG",
+"rmcores": "Action / RPG"
 },
 "cadashu": {
 "dist": "Action / RPG",
-"ongo": "Action / RPG"
+"ongo": "Action / RPG",
+"rmcores": "Action / RPG"
 },
 "cadashu1": {
 "dist": "Action / RPG",
-"ongo": "Action / RPG"
+"ongo": "Action / RPG",
+"rmcores": "Action / RPG"
 },
 "calibr50": {
 "repo": "Arcade",
@@ -106144,7 +106471,8 @@
 },
 "chopliftu": {
 "repo": "Shooter",
-"ongo": "Shooter"
+"ongo": "Shooter",
+"blackwine": "Shooter"
 },
 "chtpac": {
 "dist": "Maze"
@@ -106563,15 +106891,18 @@
 },
 "cupsoc": {
 "dist": "Sports",
-"ongo": "Sports"
+"ongo": "Sports",
+"rmcores": "Sports"
 },
 "cupsoca": {
 "dist": "Sports",
-"ongo": "Sports"
+"ongo": "Sports",
+"rmcores": "Sports"
 },
 "cupsocb": {
 "dist": "Sports",
-"ongo": "Sports"
+"ongo": "Sports",
+"rmcores": "Sports"
 },
 "curvebal": {
 "dist": "Platform"
@@ -106606,19 +106937,24 @@
 },
 "dangar": {
 "dist": "Platform",
-"ongo": "Shoot"
+"ongo": "Shoot",
+"rmcores": "Shoot"
 },
 "dangara": {
-"ongo": "Shoot"
+"ongo": "Shoot",
+"rmcores": "Shoot"
 },
 "dangarb": {
-"ongo": "Shoot"
+"ongo": "Shoot",
+"rmcores": "Shoot"
 },
 "dangarbt": {
-"ongo": "Shoot"
+"ongo": "Shoot",
+"rmcores": "Shoot"
 },
 "dangarj": {
-"ongo": "Shoot"
+"ongo": "Shoot",
+"rmcores": "Shoot"
 },
 "dangerex": {
 "repo": "Shooter"
@@ -107212,19 +107548,23 @@
 },
 "earthjkr": {
 "dist": "Action",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "earthjkra": {
 "dist": "Action",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "earthjkrb": {
 "dist": "Action",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "earthjkrp": {
 "dist": "Action",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "ebases": {
 "dist": "Sports"
@@ -107399,7 +107739,8 @@
 },
 "eto": {
 "dist": "Puzzle",
-"ongo": "Puzzle"
+"ongo": "Puzzle",
+"rmcores": "Puzzle"
 },
 "europac": {
 "dist": "Maze"
@@ -107995,13 +108336,16 @@
 },
 "galivan": {
 "dist": "Platform",
-"ongo": "Shoot"
+"ongo": "Shoot",
+"rmcores": "Shoot"
 },
 "galivan2": {
-"ongo": "Shoot"
+"ongo": "Shoot",
+"rmcores": "Shoot"
 },
 "galivan3": {
-"ongo": "Shoot"
+"ongo": "Shoot",
+"rmcores": "Shoot"
 },
 "galkamika": {
 "repo": "Shooter"
@@ -108014,7 +108358,8 @@
 },
 "galmedes": {
 "dist": "Action",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "galmonst": {
 "dist": "Space / Invaders",
@@ -108053,7 +108398,8 @@
 },
 "gardia": {
 "repo": "Shooter",
-"ongo": "Shooter"
+"ongo": "Shooter",
+"blackwine": "Shooter"
 },
 "gatedoom": {
 "coinop": "Hack &amp; Slash"
@@ -108718,7 +109064,8 @@
 },
 "hvymetal": {
 "repo": "Shooter",
-"ongo": "Shooter"
+"ongo": "Shooter",
+"blackwine": "Shooter"
 },
 "hwrace": {
 "dist": "Racing"
@@ -108996,11 +109343,13 @@
 },
 "jigkmgri": {
 "dist": "Platform",
-"ongo": "Platform"
+"ongo": "Platform",
+"rmcores": "Platform"
 },
 "jigkmgria": {
 "dist": "Platform",
-"ongo": "Platform"
+"ongo": "Platform",
+"rmcores": "Platform"
 },
 "jin": {
 "dist": "Puzzle"
@@ -109802,7 +110151,8 @@
 },
 "mofflott": {
 "dist": "Action",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "monkelf": {
 "ongo": "Arcade",
@@ -110241,10 +110591,12 @@
 "repo": "Fighter"
 },
 "ninjemak": {
-"ongo": "Platform"
+"ongo": "Platform",
+"rmcores": "Platform"
 },
 "ninjemat": {
-"ongo": "Platform"
+"ongo": "Platform",
+"rmcores": "Platform"
 },
 "nitrobal": {
 "coinop": "Run &amp; Gun"
@@ -110260,7 +110612,8 @@
 },
 "nobb": {
 "repo": "Shooter",
-"ongo": "Shooter"
+"ongo": "Shooter",
+"blackwine": "Shooter"
 },
 "nomnlnd": {
 "dist": "War"
@@ -110306,19 +110659,23 @@
 },
 "nslasher": {
 "dist": "Action",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "nslasherj": {
 "dist": "Action",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "nslashers": {
 "dist": "Action",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "nslasheru": {
 "dist": "Action",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "numanath": {
 "ongo": "Sports",
@@ -110380,15 +110737,18 @@
 },
 "olysoc92": {
 "dist": "Sports",
-"ongo": "Sports"
+"ongo": "Sports",
+"rmcores": "Sports"
 },
 "olysoc92a": {
 "dist": "Sports",
-"ongo": "Sports"
+"ongo": "Sports",
+"rmcores": "Sports"
 },
 "olysoc92b": {
 "dist": "Sports",
-"ongo": "Sports"
+"ongo": "Sports",
+"rmcores": "Sports"
 },
 "omegab": {
 "dist": "Shooter - Gallery",
@@ -111350,17 +111710,20 @@
 "ragtime": {
 "dist": "Action",
 "coinop": "Shoot &apos;Em Up",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "ragtimea": {
 "dist": "Action",
 "coinop": "Shoot &apos;Em Up",
-"ongo": "Action"
+"ongo": "Action",
+"rmcores": "Action"
 },
 "raiden": {
 "dist": "Shoot",
 "ongo": "Shoot",
-"repo": "Shoot"
+"repo": "Shoot",
+"rmcores": "Shoot"
 },
 "raiden2": {
 "dist": "Shoot",
@@ -111449,7 +111812,8 @@
 "raidenb": {
 "dist": "Shoot",
 "ongo": "Shoot",
-"repo": "Shoot"
+"repo": "Shoot",
+"rmcores": "Shoot"
 },
 "raidendx": {
 "dist": "Shoot",
@@ -111498,22 +111862,26 @@
 "raidenj": {
 "dist": "Shoot",
 "ongo": "Shoot",
-"repo": "Shoot"
+"repo": "Shoot",
+"rmcores": "Shoot"
 },
 "raidenk": {
 "dist": "Shoot",
 "ongo": "Shoot",
-"repo": "Shoot"
+"repo": "Shoot",
+"rmcores": "Shoot"
 },
 "raident": {
 "dist": "Shoot",
 "ongo": "Shoot",
-"repo": "Shoot"
+"repo": "Shoot",
+"rmcores": "Shoot"
 },
 "raidenu": {
 "dist": "Shoot",
 "ongo": "Shoot",
-"repo": "Shoot"
+"repo": "Shoot",
+"rmcores": "Shoot"
 },
 "raiders5": {
 "dist": "Platform - Climb"
@@ -114798,16 +115166,20 @@
 "dist": "Shooter - Vertical"
 },
 "youma": {
-"ongo": "Platform"
+"ongo": "Platform",
+"rmcores": "Platform"
 },
 "youma2": {
-"ongo": "Platform"
+"ongo": "Platform",
+"rmcores": "Platform"
 },
 "youmab": {
-"ongo": "Platform"
+"ongo": "Platform",
+"rmcores": "Platform"
 },
 "youmab2": {
-"ongo": "Platform"
+"ongo": "Platform",
+"rmcores": "Platform"
 },
 "zaxxon": {
 "dist": "Shooter - Isometric"

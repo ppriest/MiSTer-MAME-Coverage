@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-09T08:08:45+00:00",
+  "generated": "2026-10-09T08:11:03+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-09T08:05:55+00:00",
+  "mister_generated": "2026-10-09T08:10:59+00:00",
   "alamone_generated": "2026-10-05T11:12:58+00:00",
   "ledger_updated": "2026-10-09",
   "ledger_runs": [
-   {
-    "date": "2026-10-09",
-    "note": "alamone 2026-10-05",
-    "cores": 3,
-    "sets": 1,
-    "pairs": 24,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-09",
     "note": "alamone 2026-10-05",
@@ -50,6 +41,15 @@
     "sets": 0,
     "pairs": 0,
     "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-09",
+    "note": "alamone 2026-10-05",
+    "cores": 2,
+    "sets": 0,
+    "pairs": 21,
+    "dates_improved": 3,
     "cores_removed": 0
    }
   ],
@@ -89,6 +89,8 @@
    "blahm1d": "blahm1d",
    "shmupfan": "shmupfan (Distribution)",
    "bazset": "bazset (MiSTer_BAZSET)",
+   "blackwine": "Blackwine Sega System 1/2 (TheJesusFish)",
+   "rmcores": "rmcores (rmonic79)",
    "jtpr": "jtcores unreleased (PRs, branches)",
    "ppriest": "ppriest (MiSTer_ppriest)",
    "repo": "GitHub repository only"
@@ -141,6 +143,14 @@
    "bazset": {
     "page": "https://github.com/bazset/MiSTer_BAZSET",
     "db_url": "https://raw.githubusercontent.com/bazset/MiSTer_BAZSET/db/db.json.zip"
+   },
+   "blackwine": {
+    "page": "https://github.com/TheJesusFish/Blackwine-SegaSystem1-2_MiSTer",
+    "db_url": "https://raw.githubusercontent.com/TheJesusFish/Blackwine-SegaSystem1-2_MiSTer/db/db.json.zip"
+   },
+   "rmcores": {
+    "page": "https://github.com/rmonic79/rmcores",
+    "db_url": "https://raw.githubusercontent.com/rmonic79/rmcores/db/db.json.zip"
    },
    "jtpr": {
     "page": "https://github.com/jotego/jtcores/tree/andrea-cores/cores",
@@ -2392,7 +2402,7 @@
    "working_arcade_titles_source": 1727,
    "working_arcade_titles_binary_only": 239,
    "cores": 568,
-   "binary_only_cores": 137,
+   "binary_only_cores": 138,
    "unmatched_sets": 411
   }
  },
@@ -2858,6 +2868,28 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-06"
+  },
+  {
+   "id": "blackwine:blackwine-segasystem1-2",
+   "name": "Blackwine-SegaSystem1-2",
+   "source": "blackwine",
+   "source_title": "Blackwine Sega System 1/2 (TheJesusFish)",
+   "channel": null,
+   "rbf": "Blackwine-SegaSystem1-2.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-09",
+   "last_seen": "2026-10-09",
+   "binary_only": true,
+   "nsets": 7,
+   "ntitles": 7,
+   "first_date": "2023-04-05"
   },
   {
    "id": "blahm1d:blahm1d_exidy440",
@@ -5060,7 +5092,8 @@
    ],
    "note": null,
    "aliases": [
-    "ongo:rmboogiewings"
+    "ongo:rmboogiewings",
+    "rmcores:rmboogiewings"
    ],
    "first_recorded": "2026-10-04",
    "last_seen": "2026-10-09",
@@ -7453,14 +7486,15 @@
    ],
    "note": null,
    "aliases": [
-    "ongo:rmnightslashers"
+    "ongo:rmnightslashers",
+    "rmcores:rmnightslashers"
    ],
    "first_recorded": "2026-10-04",
    "last_seen": "2026-10-09",
    "binary_only": false,
    "nsets": 4,
    "ntitles": 1,
-   "first_date": "2026-07-07"
+   "first_date": "2026-07-02"
   },
   {
    "id": "dist:ninjakun",
@@ -7978,7 +8012,8 @@
    ],
    "note": null,
    "aliases": [
-    "ongo:rmraiden"
+    "ongo:rmraiden",
+    "rmcores:rmraiden"
    ],
    "first_recorded": "2026-10-04",
    "last_seen": "2026-10-09",
@@ -8455,7 +8490,8 @@
    ],
    "note": null,
    "aliases": [
-    "ongo:rmseibucupsoccer"
+    "ongo:rmseibucupsoccer",
+    "rmcores:rmseibucupsoccer"
    ],
    "first_recorded": "2026-10-04",
    "last_seen": "2026-10-09",
@@ -9003,7 +9039,8 @@
    ],
    "note": null,
    "aliases": [
-    "ongo:rmtaitoasuka"
+    "ongo:rmtaitoasuka",
+    "rmcores:rmtaitoasuka"
    ],
    "first_recorded": "2026-10-04",
    "last_seen": "2026-10-09",
@@ -13757,29 +13794,6 @@
    "first_date": "2026-08-08"
   },
   {
-   "id": "ongo:blackwine-segasystem1-2",
-   "name": "Blackwine-SegaSystem1-2",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Blackwine-SegaSystem1-2.rbf",
-   "repo": "TheJesusFish/Blackwine-SegaSystem1-2_MiSTer",
-   "url": "https://github.com/TheJesusFish/Blackwine-SegaSystem1-2_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-09",
-   "binary_only": true,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2023-04-05"
-  },
-  {
    "id": "ongo:crystal",
    "name": "Crystal",
    "source": "ongo",
@@ -14192,29 +14206,6 @@
    "nsets": 9,
    "ntitles": 3,
    "first_date": "2026-08-22"
-  },
-  {
-   "id": "ongo:rmgalivan",
-   "name": "rmGalivan",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "rmGalivan.rbf",
-   "repo": "rmonic79/rmcores",
-   "url": "https://github.com/rmonic79/rmcores",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-09",
-   "binary_only": false,
-   "nsets": 9,
-   "ntitles": 3,
-   "first_date": "2026-09-17"
   },
   {
    "id": "ongo:system12",
@@ -16050,6 +16041,28 @@
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2026-09-24"
+  },
+  {
+   "id": "rmcores:rmgalivan",
+   "name": "rmGalivan",
+   "source": "rmcores",
+   "source_title": "rmcores (rmonic79)",
+   "channel": null,
+   "rbf": "rmGalivan.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-09",
+   "last_seen": "2026-10-09",
+   "binary_only": false,
+   "nsets": 11,
+   "ntitles": 3,
+   "first_date": "2022-08-31"
   },
   {
    "id": "shmupfan:1945kiii",
@@ -22146,7 +22159,7 @@
    "sets_covered": 11,
    "cores": [
     "dist:galivan",
-    "ongo:rmgalivan"
+    "rmcores:rmgalivan"
    ],
    "first": "2022-08-31"
   },
@@ -23329,8 +23342,8 @@
    "sets": 92,
    "sets_covered": 27,
    "cores": [
+    "blackwine:blackwine-segasystem1-2",
     "dist:segasys1",
-    "ongo:blackwine-segasystem1-2",
     "repo:segasys1+2"
    ],
    "first": "2020-01-03"
