@@ -682,6 +682,44 @@
   $("#vote-cancel").addEventListener("click", () => vd.close());
   document.addEventListener("click", ev => { const b = ev.target.closest("button.plus1"); if (b) { ev.stopPropagation(); openVote(b.dataset.kind, b.dataset.key); } });
 
+  // ---------- screenshot preview on hover: title screen + in-game shot, loaded only when you rest on a title ----------
+  // File names are hashed (tools/shots.py); data/images.json says which sets have which image.
+  const IMAGE_BASE = ($('meta[name="image-base"]') || {}).content?.replace(/\/+$/, "") || "";
+  if (IMAGE_BASE && matchMedia("(hover: hover)").matches) {
+    const card = $("#shot"), figs = Array.from(card.querySelectorAll("figure")), cap = card.querySelector(".cap");
+    const HOVER_ON = "#titles-table tbody tr[data-t] td:nth-child(2), #titles-table tbody tr[data-t] td:nth-child(3), #wl-titles a[data-wl-title]";
+    let timer, cur = null, images = null;
+    fetch("data/images.json").then(r => r.ok ? r.json() : null).then(d => { images = d; }).catch(() => { /* no screenshots published */ });
+    const hide = () => { clearTimeout(timer); cur = null; card.hidden = true; };
+    const place = ev => { const w = card.offsetWidth || 500, h = card.offsetHeight || 220; let x = ev.clientX + 18, y = ev.clientY + 14; if (x + w > innerWidth - 8) x = ev.clientX - w - 18; if (y + h > innerHeight - 8) y = innerHeight - h - 8; card.style.left = Math.max(8, x) + "px"; card.style.top = Math.max(8, y) + "px"; };
+    function show(key, label, ev) {
+      const have = images && images[key]; if (!have) return;
+      cur = key; let pending = 0, ok = 0; cap.textContent = label;
+      const shown = figs.filter(f => have[f.dataset.kind]); pending = shown.length;
+      figs.forEach(f => { f.hidden = true; });
+      shown.forEach(f => {
+        const img = f.querySelector("img");
+        const done = good => {
+          if (cur !== key) return;
+          if (good) { f.hidden = false; ok++; if (card.hidden) card.hidden = false; place(ev); }
+          if (--pending === 0 && ok === 0) hide();
+        };
+        img.onload = () => done(true); img.onerror = () => done(false);
+        img.src = `${IMAGE_BASE}/${have[f.dataset.kind]}.webp`;
+      });
+    }
+    document.addEventListener("mouseover", ev => {
+      const a = ev.target.closest(HOVER_ON); if (!a) return;
+      const key = a.closest("tr[data-t]")?.dataset.t || a.dataset.wlTitle; if (!key || key === cur) return;
+      if (!(images && images[key])) return;
+      const t = S.titles.find(x => x.name === key);
+      clearTimeout(timer); timer = setTimeout(() => show(key, t ? `${t.desc} (${t.year}, ${t.manufacturer})` : key, ev), 250);
+    });
+    document.addEventListener("mousemove", ev => { if (!card.hidden) place(ev); });
+    document.addEventListener("mouseout", ev => { if (ev.target.closest(HOVER_ON)) hide(); });
+    addEventListener("scroll", () => { if (!card.hidden) hide(); }, { passive: true });
+  }
+
   // ---------- databases ----------
   function renderDatabases() {
     const info = S.data.meta.source_info || {}, titles = S.data.meta.sources || {};

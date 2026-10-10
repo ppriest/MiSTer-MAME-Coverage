@@ -140,6 +140,26 @@ titles by votes, with recent voters and last-vote dates.
   nickname stripped to 32 characters, same-origin requests only, 60 votes per hour per visitor.
 * The page works without the API: if `/api/wishlist` is unreachable, the +1 buttons are greyed out (the tooltip and the Wishlist tab say why). `GET /api/health` reports whether `DATABASE_URL` is set and the database answers, which is the first thing to open when the buttons are grey.
 
+## Screenshots on hover
+
+Hovering a title (Titles grid, Wishlist titles) shows its **title screen** and an **in-game shot** side by
+side, loaded only then, and only for sets that have them. The images live in a bucket, not in this
+repository or the Vercel deploy: Cloudflare R2 is the best fit (free egress, about 10 GB free), Vercel Blob
+the simplest from inside Vercel.
+
+1. Put one image per parent set in `snaps/title/<set>.png` and `snaps/ingame/<set>.png`.
+2. `IMAGE_SALT=<private string> python3 tools/shots.py --src snaps --out upload` resizes them to
+   320 px WebP, names each file by a keyed hash of kind and set (so names cannot be guessed from MAME set
+   names) and writes `docs/data/images.json` ({set: {title, ingame}}), which the page uses to know what
+   exists. Commit `images.json`; keep `IMAGE_SALT` private.
+3. Upload `upload/` to the bucket with a long cache lifetime
+   (`Cache-Control: public,max-age=31536000,immutable`) and put the bucket's public URL in
+   `<meta name="image-base" content="…">` in `docs/index.html`. With the meta empty the feature is off.
+
+Hashed names deter guessing and bulk scraping; they do not hide the files from someone who watches the page's
+requests. For real hotlink protection add a referer rule on the bucket (Cloudflare WAF custom rule, or a
+Worker in front of R2). Hover only exists on devices with a pointer.
+
 ## Databases tab
 
 One row per source (`DB_TITLES`): cores, working arcade titles and sets loaded by at least one core

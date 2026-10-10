@@ -1,0 +1,98 @@
+#!/usr/bin/env python3
+"""Prepare the screenshots shown when hovering a title on the page.
+
+    IMAGE_SALT=<secret> python3 tools/shots.py --src ./snaps --out ./upload
+
+``--src`` holds two folders, ``title/`` and ``ingame/``, with one image per parent set named
+``<set>.png`` (or .jpg/.webp). Each is resized to a small WebP (``--width``, default 320 px) and written to
+``--out`` under a *hashed* file name, ``HMAC-SHA256(IMAGE_SALT, "<kind>/<set>")`` (first 24 hex digits),
+so the bucket's file names cannot be guessed from the MAME set names. ``docs/data/images.json`` records
+which sets have which image ({set: {"title": hash, "ingame": hash}}); the page reads it, builds
+``<image-base>/<hash>.webp`` and never probes for images that do not exist. Upload ``--out`` to the bucket
+(for example ``rclone copy ./upload r2:mister-shots --header-upload "Cache-Control: public,max-age=31536000,immutable"``)
+and put its public URL in the ``image-base`` meta tag of ``docs/index.html``.
+
+Keep IMAGE_SALT private (not in the repository): with it, the names are reproducible; without it they are not.
+Hashed names deter guessing and bulk scraping, not a determined visitor, who can still read the file names the
+page requests; add a referer rule on the bucket (e.g. Cloudflare WAF) if you want real hotlink protection.
+Needs Pillow (``pip install pillow``).
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import hmac
+import json
+import os
+import sys
+
+from PIL import Image
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+KINDS = ("title", "ingame")
+EXTS = (".png", ".jpg", ".jpeg", ".webp")
+
+
+def name_hash(salt: str, kind: str, key: str) -> str:
+    return hmac.new(salt.encode(), f"{kind}/{key}".encode(), hashlib.sha256).hexdigest()[:24]
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
+    ap.add_argument("--src", required=True)
+    ap.add_argument("--out", required=True)
+    ap.add_argument("--width", type=int, default=320)
+    ap.add_argument("--quality", type=int, default=78)
+    ap.add_argument("--index", default=os.path.join(ROOT, "docs", "data", "images.json"))
+    ap.add_argument("--keys", default=os.path.join(ROOT, "docs", "data", "keys.json"), help="only sets that are titles in keys.json")
+    a = ap.parse_args()
+    salt = os.environ.get("IMAGE_SALT")
+    if not salt:
+        ap.error("set IMAGE_SALT (a private string) so the file names cannot be guessed")
+    try:
+        with open(a.keys, encoding="utf-8") as f:
+            titles = set(json.load(f)["titles"])
+    except OSError:
+        titles = None
+    try:
+        with open(a.index, encoding="utf-8") as f:
+            index = json.load(f)
+    except (OSError, ValueError):
+        index = {}
+    os.makedirs(a.out, exist_ok=True)
+    done = skipped = ignored = 0
+    for kind in KINDS:
+        folder = os.path.join(a.src, kind)
+        if not os.path.isdir(folder):
+            print(f"no {kind}/ folder in {a.src}", file=sys.stderr)
+            continue
+        for fn in sorted(os.listdir(folder)):
+            key, ext = os.path.splitext(fn)
+            if ext.lower() not in EXTS:
+                continue
+            key = key.lower()
+            if titles is not None and key not in titles:
+                ignored += 1
+                continue
+            h = name_hash(salt, kind, key)
+            dest = os.path.join(a.out, h + ".webp")
+            src = os.path.join(folder, fn)
+            if not (os.path.exists(dest) and os.path.getmtime(dest) >= os.path.getmtime(src)):
+                with Image.open(src) as im:
+                    im = im.convert("RGB")
+                    if im.width > a.width:
+                        im = im.resize((a.width, round(im.height * a.width / im.width)), Image.LANCZOS)
+                    im.save(dest, "WEBP", quality=a.quality, method=6)
+                done += 1
+            else:
+                skipped += 1
+            index.setdefault(key, {})[kind] = h
+    with open(a.index, "w", encoding="utf-8") as f:
+        json.dump(dict(sorted(index.items())), f, separators=(",", ":"))
+        f.write("\n")
+    print(f"{done} written, {skipped} unchanged, {ignored} ignored (not a known title); {len(index)} sets in {a.index}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

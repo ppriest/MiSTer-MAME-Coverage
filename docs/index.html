@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Where the screenshots live: <base>/title/<set>.webp and <base>/ingame/<set>.webp; empty switches the hover preview off. -->
+<meta name="image-base" content="">
 <title>MiSTer MAME Coverage</title>
 <meta name="description" content="Which MAME arcade titles are playable on MiSTer FPGA cores, which remain, and how coverage grew over time.">
 <link rel="canonical" href="https://mister-mame-coverage-docs.vercel.app/">
@@ -296,6 +298,7 @@
 </main>
 
 <div class="tooltip" id="tooltip" hidden></div>
+<div class="shot" id="shot" hidden><div class="pair"><figure data-kind="title"><img alt="Title screen"><figcaption>Title</figcaption></figure><figure data-kind="ingame"><img alt="In-game screenshot"><figcaption>In game</figcaption></figure></div><div class="cap"></div></div>
   <dialog id="vote-dialog">
     <form method="dialog" id="vote-form">
       <h3 id="vote-title">Request a port</h3>
