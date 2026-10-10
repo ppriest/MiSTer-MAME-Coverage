@@ -147,11 +147,15 @@ side, loaded only then, and only for sets that have them. The images live in a b
 repository or the Vercel deploy: Cloudflare R2 is the best fit (free egress, about 10 GB free), Vercel Blob
 the simplest from inside Vercel.
 
-1. Put one image per parent set in `snaps/title/<set>.png` and `snaps/ingame/<set>.png`.
-2. `IMAGE_SALT=<private string> python3 tools/shots.py --src snaps --out upload` resizes them to
-   320 px WebP, names each file by a keyed hash of kind and set (so names cannot be guessed from MAME set
-   names) and writes `docs/data/images.json` ({set: {title, ingame}}), which the page uses to know what
-   exists. Commit `images.json`; keep `IMAGE_SALT` private.
+1. Put one image per parent set in `<folder>/title/<set>.png` and `<folder>/ingame/<set>.png`. The folder is
+   **on your own machine, anywhere** (`--src ~/mame-snaps`); the images never go into git. (`snaps/` and
+   `upload/` inside a clone are git-ignored in case you use them.)
+2. `IMAGE_SALT=<private string> python3 tools/shots.py --src <folder> --out <upload-folder>` copies them **unchanged
+   (native size, no re-encoding)** under a keyed hash of kind and set plus the original extension (so names
+   cannot be guessed from MAME set names) and writes `docs/data/images.json`
+   ({set: {title: "<hash>.png", ingame: "<hash>.png"}}), which the page uses to know what exists. Commit
+   `images.json`; keep `IMAGE_SALT` private. The hover card shows them at native size, only shrunk to fit the
+   window.
 3. Upload `upload/` to the bucket with a long cache lifetime
    (`Cache-Control: public,max-age=31536000,immutable`) and put the bucket's public URL in
    `<meta name="image-base" content="…">` in `docs/index.html`. With the meta empty the feature is off.

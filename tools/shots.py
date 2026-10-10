@@ -4,18 +4,17 @@
     IMAGE_SALT=<secret> python3 tools/shots.py --src ./snaps --out ./upload
 
 ``--src`` holds two folders, ``title/`` and ``ingame/``, with one image per parent set named
-``<set>.png`` (or .jpg/.webp). Each is resized to a small WebP (``--width``, default 320 px) and written to
-``--out`` under a *hashed* file name, ``HMAC-SHA256(IMAGE_SALT, "<kind>/<set>")`` (first 24 hex digits),
-so the bucket's file names cannot be guessed from the MAME set names. ``docs/data/images.json`` records
-which sets have which image ({set: {"title": hash, "ingame": hash}}); the page reads it, builds
-``<image-base>/<hash>.webp`` and never probes for images that do not exist. Upload ``--out`` to the bucket
+``<set>.png`` (or .jpg/.webp). Each is copied unchanged (native size, no re-encoding) to ``--out`` under a
+*hashed* file name, ``HMAC-SHA256(IMAGE_SALT, "<kind>/<set>")`` (first 24 hex digits) plus its extension, so the
+bucket's file names cannot be guessed from the MAME set names. ``docs/data/images.json`` records which sets have
+which image ({set: {"title": "<hash>.png", "ingame": "<hash>.png"}}); the page reads it, builds
+``<image-base>/<file>`` and never probes for images that do not exist. Upload ``--out`` to the bucket
 (for example ``rclone copy ./upload r2:mister-shots --header-upload "Cache-Control: public,max-age=31536000,immutable"``)
 and put its public URL in the ``image-base`` meta tag of ``docs/index.html``.
 
 Keep IMAGE_SALT private (not in the repository): with it, the names are reproducible; without it they are not.
 Hashed names deter guessing and bulk scraping, not a determined visitor, who can still read the file names the
 page requests; add a referer rule on the bucket (e.g. Cloudflare WAF) if you want real hotlink protection.
-Needs Pillow (``pip install pillow``).
 """
 from __future__ import annotations
 
@@ -24,9 +23,8 @@ import hashlib
 import hmac
 import json
 import os
+import shutil
 import sys
-
-from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KINDS = ("title", "ingame")
@@ -41,8 +39,6 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--src", required=True)
     ap.add_argument("--out", required=True)
-    ap.add_argument("--width", type=int, default=320)
-    ap.add_argument("--quality", type=int, default=78)
     ap.add_argument("--index", default=os.path.join(ROOT, "docs", "data", "images.json"))
     ap.add_argument("--keys", default=os.path.join(ROOT, "docs", "data", "keys.json"), help="only sets that are titles in keys.json")
     a = ap.parse_args()
@@ -74,15 +70,11 @@ def main() -> int:
             if titles is not None and key not in titles:
                 ignored += 1
                 continue
-            h = name_hash(salt, kind, key)
-            dest = os.path.join(a.out, h + ".webp")
+            h = name_hash(salt, kind, key) + ext.lower()
+            dest = os.path.join(a.out, h)
             src = os.path.join(folder, fn)
-            if not (os.path.exists(dest) and os.path.getmtime(dest) >= os.path.getmtime(src)):
-                with Image.open(src) as im:
-                    im = im.convert("RGB")
-                    if im.width > a.width:
-                        im = im.resize((a.width, round(im.height * a.width / im.width)), Image.LANCZOS)
-                    im.save(dest, "WEBP", quality=a.quality, method=6)
+            if not (os.path.exists(dest) and os.path.getmtime(dest) >= os.path.getmtime(src) and os.path.getsize(dest) == os.path.getsize(src)):
+                shutil.copyfile(src, dest)
                 done += 1
             else:
                 skipped += 1

@@ -170,8 +170,8 @@ button.plus1:disabled:hover { background: var(--surface); color: var(--muted); }
 /* screenshot preview on hover: the title screen and an in-game shot side by side */
 .shot { position: fixed; z-index: 30; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 6px 24px rgba(0,0,0,.25); padding: 6px; pointer-events: none; }
 .shot .pair { display: flex; gap: 6px; }
-.shot figure { margin: 0; width: 240px; }
+.shot figure { margin: 0; max-width: 46vw; }
 .shot figure[hidden] { display: none; }
-.shot img { display: block; width: 100%; height: auto; min-height: 60px; border-radius: 4px; background: var(--surface-2); }
+.shot img { display: block; width: auto; height: auto; max-width: 100%; max-height: 70vh; border-radius: 4px; background: var(--surface-2); }  /* native size, only shrunk to fit the window */
 .shot figcaption { font-size: 10px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-top: 2px; }
 .shot .cap { font-size: 12px; color: var(--text-2); margin-top: 4px; }

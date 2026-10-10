@@ -705,7 +705,7 @@
           if (--pending === 0 && ok === 0) hide();
         };
         img.onload = () => done(true); img.onerror = () => done(false);
-        img.src = `${IMAGE_BASE}/${have[f.dataset.kind]}.webp`;
+        img.src = `${IMAGE_BASE}/${have[f.dataset.kind]}`;
       });
     }
     document.addEventListener("mouseover", ev => {
