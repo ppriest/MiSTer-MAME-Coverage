@@ -187,3 +187,5 @@ p.zapcopy { margin: 4px 0 8px; }
 a.zapset { display: inline-block; text-decoration: none; margin-left: 0; }
 .top .sub { display: inline; margin-right: 8px; }
 .top .zapset { margin-top: 4px; vertical-align: baseline; }
+.top .issue { margin-top: 6px; }
+.top .issue .zapset { margin-top: 0; }
