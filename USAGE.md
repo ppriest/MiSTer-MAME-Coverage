@@ -126,7 +126,7 @@ nickname (default "Anonymous", remembered in the browser) and the **Wishlist** t
 titles by votes, with recent voters and last-vote dates.
 
 * **Server side:** Node.js (CommonJS) serverless functions in `docs/api/` (Vercel's root directory is
-  `docs/`), storage in Neon Postgres (Vercel Marketplace; `DATABASE_URL` is injected). The `votes` table
+  `docs/`), storage in Neon Postgres (Vercel Marketplace; `DATABASE_URL` is injected; with a custom integration prefix the first `postgres://` variable, pooled ones first, is used). The `votes` table
   (`kind, key, ip_hash, nickname, created_at, updated_at`, primary key `kind+key+ip_hash`) is created on
   first use. Dependencies: `docs/package.json`.
 * **Endpoints:** `POST /api/vote {kind, key, nickname}` upserts the caller's vote (a repeat vote only

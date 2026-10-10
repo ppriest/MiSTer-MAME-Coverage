@@ -4,7 +4,24 @@
 const crypto = require("crypto");
 const { neon } = require("@neondatabase/serverless");
 
-const url = process.env.DATABASE_URL || process.env.POSTGRES_URL || process.env.POSTGRES_URL_NON_POOLING;
+// The Neon integration injects DATABASE_URL, but a custom prefix (STORAGE_DATABASE_URL, …) is possible, so
+// fall back to any environment variable that holds a postgres:// URL (pooled ones first).
+function findDbUrl() {
+  const e = process.env;
+  const named = e.DATABASE_URL || e.POSTGRES_URL || e.POSTGRES_PRIVATE_URL;
+  if (named) return named;
+  const urls = Object.entries(e).filter(([, v]) => /^postgres(ql)?:\/\//i.test(v || ""));
+  const rank = ([k]) => (/(UNPOOLED|NON_POOLING|DIRECT)/i.test(k) ? 2 : /(DATABASE_URL|POSTGRES_URL)$/i.test(k) ? 0 : 1);
+  urls.sort((a, b) => rank(a) - rank(b));
+  return urls.length ? urls[0][1] : undefined;
+}
+const dbVar = () => {
+  const e = process.env;
+  for (const k of ["DATABASE_URL", "POSTGRES_URL", "POSTGRES_PRIVATE_URL"]) if (e[k]) return k;
+  const hit = Object.entries(e).find(([, v]) => v === findDbUrl());
+  return hit ? hit[0] : null;
+};
+const url = findDbUrl();
 const sql = url ? neon(url) : null;
 
 // VOTE_SALT is the HMAC key; without it one is derived from the database URL (a secret as well).
@@ -84,4 +101,4 @@ const hasDb = () => !!url;
 // A short, secret-free reason for an error response (the full error goes to the function log).
 const why = e => String((e && e.message) || e).replace(/postgres(ql)?:\/\/\S+/gi, "<url>").slice(0, 200);
 
-module.exports = { why, hasDb, ensure, ipHash, json, sameOrigin, cleanNickname, KEY_RE, knownKeys, readBody };
+module.exports = { dbVar, why, hasDb, ensure, ipHash, json, sameOrigin, cleanNickname, KEY_RE, knownKeys, readBody };
