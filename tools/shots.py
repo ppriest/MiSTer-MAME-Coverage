@@ -7,10 +7,10 @@
 ``<set>.png`` (or .jpg/.webp). Each is copied unchanged (native size, no re-encoding) to ``--out`` under a
 *hashed* file name, ``HMAC-SHA256(IMAGE_SALT, "<kind>/<set>")`` (first 24 hex digits) plus its extension, so the
 bucket's file names cannot be guessed from the MAME set names. ``data/images.json`` records which sets have
-which image ({set: {"title": "<hash>.png", "ingame": "<hash>.png"}}); ``mmc report`` merges it into each title of coverage.json (``img``), and the page builds
-``<image-base>/<file>`` and never probes for images that do not exist. Upload ``--out`` to the bucket
-(for example ``rclone copy ./upload r2:mister-shots --header-upload "Cache-Control: public,max-age=31536000,immutable"``)
-and put its public URL in the ``image-base`` meta tag of ``docs/index.html``.
+which image ({set: {"title": "<hash>.png", "ingame": "<hash>.png"}}); ``mmc report`` merges it into each title of
+coverage.json (``img``), and the page builds ``<image-base>/<file>`` and never probes for images that do not exist.
+Upload the files images.json names (``tools/blob_upload.mjs`` for Vercel Blob) and put the bucket's public URL in
+the ``image-base`` meta tag of ``docs/index.html``.
 
 Keep IMAGE_SALT private (not in the repository): with it, the names are reproducible; without it they are not.
 Hashed names deter guessing and bulk scraping, not a determined visitor, who can still read the file names the
@@ -42,7 +42,7 @@ def main() -> int:
     ap.add_argument("--index", default=os.path.join(ROOT, "data", "images.json"))
     ap.add_argument("--keys", default=os.path.join(ROOT, "docs", "data", "keys.json"), help="only sets that are titles in keys.json")
     a = ap.parse_args()
-    salt = os.environ.get("IMAGE_SALT")
+    salt = os.environ.get("IMAGE_SALT", "").strip()   # a CRLF env file would otherwise add "\r" and change every name
     if not salt:
         ap.error("set IMAGE_SALT (a private string) so the file names cannot be guessed")
     try:
@@ -50,11 +50,7 @@ def main() -> int:
             titles = set(json.load(f)["titles"])
     except OSError:
         titles = None
-    try:
-        with open(a.index, encoding="utf-8") as f:
-            index = json.load(f)
-    except (OSError, ValueError):
-        index = {}
+    index: dict[str, dict[str, str]] = {}    # rebuilt from --src every run, so it names only files this run wrote
     os.makedirs(a.out, exist_ok=True)
     done = skipped = ignored = 0
     for kind in KINDS:
@@ -79,10 +75,15 @@ def main() -> int:
             else:
                 skipped += 1
             index.setdefault(key, {})[kind] = h
-    with open(a.index, "w", encoding="utf-8") as f:
+    with open(a.index, "w", encoding="utf-8", newline="\n") as f:
         json.dump(dict(sorted(index.items())), f, separators=(",", ":"))
         f.write("\n")
-    print(f"{done} written, {skipped} unchanged, {ignored} ignored (not a known title); {len(index)} sets in {a.index}")
+    named = {f for v in index.values() for f in v.values()}
+    stale = [f for f in os.listdir(a.out) if os.path.splitext(f)[1].lower() in EXTS and f not in named]
+    per_kind = ", ".join(f"{sum(1 for v in index.values() if k in v)} {k}" for k in KINDS)
+    print(f"{done} written, {skipped} unchanged, {ignored} ignored (not a known title); {len(index)} sets ({per_kind}) in {a.index}")
+    if stale:
+        print(f"{len(stale)} files in {a.out} are not in the index (older runs); they are not uploaded")
     return 0
 
 

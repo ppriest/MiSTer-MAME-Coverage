@@ -143,28 +143,30 @@ titles by votes, with recent voters and last-vote dates.
 ## Screenshots on hover
 
 Hovering a title (Titles grid, Wishlist titles) shows its **title screen** and an **in-game shot** side by
-side, loaded only then, and only for sets that have them. The images live in a bucket, not in this
-repository or the Vercel deploy (Vercel Blob, or Cloudflare R2).
+side, loaded only then, and only for sets that have them. The images live in a Vercel Blob store, not in this
+repository or the Vercel deploy. The project skill `.claude/skills/mame-screenshots` runs the whole refresh;
+the steps, all in a work folder **outside the repository** (`<work>`):
 
-1. Put one image per parent set in `<folder>/title/<set>.png` and `<folder>/ingame/<set>.png`. The folder is
-   **on your own machine, anywhere** (`--src ~/mame-snaps`); the images never go into git. (`snaps/` and
-   `upload/` inside a clone are git-ignored in case you use them.)
-2. `IMAGE_SALT=<private string> python3 tools/shots.py --src <folder> --out <upload-folder>` copies them **unchanged
-   (native size, no re-encoding)** under a keyed hash of kind and set plus the original extension (so names
-   cannot be guessed from MAME set names) and writes `data/images.json`
-   ({set: {title: "<hash>.png", ingame: "<hash>.png"}}), which the page uses to know what exists. Commit
-   `data/images.json` (it is merged into each title of `coverage.json` as `img` by `mmc report`, which the daily build does); keep `IMAGE_SALT` private. The hover card shows them at native size, only shrunk to fit the
-   window.
-3. Upload the output folder to a bucket with a long cache lifetime and put the bucket's public URL in
-   `<meta name="image-base" content="…">` in `docs/index.html` (with the meta empty the feature is off).
-   * **Vercel Blob** (what the project uses): `cd tools && npm install && BLOB_READ_WRITE_TOKEN=… node
-     blob_upload.mjs <upload-folder>` uploads with the hashed names, a one-year immutable cache and a manifest
-     so re-runs send only new files; it prints the base URL. **Every uploaded file is one metered operation**:
-     two screenshots per title is about 14,000 files, far above the free (Hobby) plan's monthly allowance, so
-     do the first upload on a plan that includes enough operations (Pro) and later runs only send changes.
-   * **Cloudflare R2 + rclone** is the cheaper long-term alternative (S3-compatible, free egress, 1 million
-     writes a month free): `rclone copy <upload-folder> r2:<bucket> --header-upload "Cache-Control: public,
-     max-age=31536000, immutable" --transfers 16 --checkers 32 --fast-list --size-only`.
+1. `python3 tools/snaps_fetch.py --work <work>` downloads the Progetto-SNAPS Snap and Titles packs (newest full
+   set, then the update zips after it) and extracts them to `<work>/src/ingame/<set>.png` and
+   `<work>/src/title/<set>.png`, updates overwriting. `src/versions.json` records the MAME version reached, so
+   later runs download only the new update zips. Needs 7-Zip or bsdtar for the full sets' inner `.7z`.
+2. `IMAGE_SALT=<private string> python3 tools/shots.py --src <work>/src --out <work>/upload` copies the images of
+   sets in `keys.json` **unchanged (native size, no re-encoding)** under a keyed hash of kind and set plus the
+   extension (so names cannot be guessed from MAME set names) and rewrites `data/images.json`
+   ({set: {title: "<hash>.png", ingame: "<hash>.png"}}). `mmc report` (the daily build) merges it into each title
+   of `coverage.json` as `img`, which the page uses to know what exists. Keep `IMAGE_SALT` private and
+   unchanged: a new salt renames every file.
+3. `cd tools && npm install && BLOB_READ_WRITE_TOKEN=… node blob_upload.mjs <work>/upload` uploads the files
+   `images.json` names to a public Blob store (hashed names, one-year cache; `--dry-run` counts, `--limit N`
+   caps; each file is one Blob advanced operation, of which Hobby includes 2,000 a month, so the first upload of
+   about 14,000 files needs Pro) and prints the store's base URL. Put it in
+   `<meta name="image-base" content="…">` in `docs/index.html`; with the meta empty the feature is off. Commit
+   only `data/images.json` and `docs/index.html`.
+
+   Cloudflare R2 is the cheaper long-term alternative (free egress, 1 million writes a month free):
+   `rclone copy <work>/upload r2:<bucket> --header-upload "Cache-Control: public, max-age=31536000, immutable"
+   --transfers 16 --checkers 32 --fast-list --size-only`.
 
 Hashed names deter guessing and bulk scraping; they do not hide the files from someone who watches the page's
 requests. For real hotlink protection add a referer rule on the bucket (Cloudflare WAF custom rule, or a
