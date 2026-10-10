@@ -426,8 +426,8 @@
         <td title="${esc(t.genre_raw ? t.genre_raw + " (" + t.genre_source + ")" : "no category in any source")}">${esc(t.genre || "")}${t.mature ? ' <span class="flag">18+</span>' : ""}</td>
         <td class="set">${esc(t.sourcefile)}</td>
         <td class="num" title="sets covered / sets">${ncov}/${nsets}${(f.work === "working" ? t.support_working : t.support) === "binary" ? ' <span class="flag" title="binary-only: every core loading it is distributed without public source">bin</span>' : ""}</td>
-        <td>${t.cores.map(id => badge(id)).join("")}</td>
         <td class="num">${t.date || ""}</td>
+        <td>${t.cores.map(id => badge(id)).join("")}</td>
         <td class="act">${ncov < nsets ? plus1("title", t.name) : ""}</td>
       </tr>${S.open.has(t.name) ? detailRow(t) : ""}`;
     }).join("");
