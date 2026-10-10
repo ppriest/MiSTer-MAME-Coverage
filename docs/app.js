@@ -704,10 +704,24 @@
     if (!/^[a-z]+:\/\//i.test(host)) host = "http://" + host;
     if (!/:\d+$/.test(host)) host += ":7497";
     // Opened as a navigation, not fetch(): an https page may not fetch() a plain-http LAN address, but it may open one.
-    const w = window.open(`${host.replace(/\/$/, "")}/run/${encodeURIComponent(b.dataset.launch)}`, "zaparoo", "popup,width=420,height=240");
-    // Zaparoo answers with an empty page when it accepts the request and with an error text ("Forbidden", ...) when it
-    // refuses. A cross-origin popup cannot be read, so leave it open for the person to look at.
-    if (!w) { b.textContent = "popup blocked"; setTimeout(() => { b.textContent = "▶"; }, 2500); }
+    const base = host.replace(/\/$/, ""), script = b.dataset.launch, done = (txt, title) => { b.textContent = txt; b.title = title; setTimeout(() => { b.textContent = "▶"; b.title = "launch on my MiSTer via Zaparoo"; }, 6000); };
+    b.textContent = "…";
+    // Preferred: Zaparoo's JSON-RPC `run`, which waits for the launch and says whether it worked. Browsers only allow this from an
+    // https page when the site may load insecure content and Zaparoo lists this origin in allowed_origins; if the request cannot be
+    // made at all, fall back to opening the /run/ URL, whose response a page cannot read (so that popup is left open, never auto-closed).
+    fetch(base + "/api/v0.1", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ jsonrpc: "2.0", id: String(Date.now()), method: "run", params: { text: script } }) })
+      .then(async r => {
+        let j = null; try { j = await r.json(); } catch (e) { /* not JSON */ }
+        if (j && j.error) done("✗", `Zaparoo: ${j.error.message || "error"}`);
+        else if (j && "result" in j) done("✓", "launched");
+        else done("✗", `Zaparoo answered HTTP ${r.status}`);
+      })
+      .catch(() => {
+        const w = window.open(`${base}/run/${encodeURIComponent(script)}`, "zaparoo", "popup,width=420,height=240");
+        if (!w) done("popup blocked", "allow popups for this site");
+        else done("▶", "sent via popup; its page shows any error");
+      });
   });
   document.addEventListener("click", ev => { const b = ev.target.closest("button.plus1"); if (b) { ev.stopPropagation(); openVote(b.dataset.kind, b.dataset.key); } });
 
