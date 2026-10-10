@@ -27,19 +27,40 @@ const sql = url ? neon(url) : null;
 // VOTE_SALT is the HMAC key; without it one is derived from the database URL (a secret as well).
 const SALT = process.env.VOTE_SALT || (url ? crypto.createHash("sha256").update(url).digest("hex") : "");
 
+// Creating the table is racy when several cold function instances start together: concurrent
+// CREATE TABLE IF NOT EXISTS can fail with "duplicate key ... pg_type_typname_nsp_index". So look first,
+// create only when missing, and treat a lost race ("already exists" / duplicate key) as success.
+const lostRace = e => /already exists|duplicate key|pg_type_typname_nsp_index|tuple concurrently updated/i.test(String((e && e.message) || e));
+
+async function ddl(run) {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try { return await run(); } catch (e) { if (!lostRace(e)) throw e; await new Promise(r => setTimeout(r, 50 * (attempt + 1))); }
+  }
+}
+
+async function init() {
+  const [{ t }] = await sql`SELECT to_regclass('public.votes') AS t`;
+  if (!t) {
+    await ddl(() => sql`CREATE TABLE IF NOT EXISTS votes (
+      kind        text NOT NULL CHECK (kind IN ('title', 'driver')),
+      key         text NOT NULL,
+      ip_hash     text NOT NULL,
+      nickname    text NOT NULL DEFAULT 'Anonymous',
+      created_at  timestamptz NOT NULL DEFAULT now(),
+      updated_at  timestamptz NOT NULL DEFAULT now(),
+      PRIMARY KEY (kind, key, ip_hash)
+    )`);
+  }
+  const [{ i }] = await sql`SELECT to_regclass('public.votes_ip_time') AS i`;
+  if (!i) await ddl(() => sql`CREATE INDEX IF NOT EXISTS votes_ip_time ON votes (ip_hash, updated_at)`);
+  return sql;
+}
+
 let ready;
 function ensure() {
   if (!sql) throw new Error("no database configured");
-  ready = ready || sql`CREATE TABLE IF NOT EXISTS votes (
-    kind        text NOT NULL CHECK (kind IN ('title', 'driver')),
-    key         text NOT NULL,
-    ip_hash     text NOT NULL,
-    nickname    text NOT NULL DEFAULT 'Anonymous',
-    created_at  timestamptz NOT NULL DEFAULT now(),
-    updated_at  timestamptz NOT NULL DEFAULT now(),
-    PRIMARY KEY (kind, key, ip_hash)
-  )`.then(() => sql`CREATE INDEX IF NOT EXISTS votes_ip_time ON votes (ip_hash, updated_at)`);
-  return ready.then(() => sql);
+  if (!ready) ready = init().catch(e => { ready = undefined; throw e; });   // a failed start is retried by the next request
+  return ready;
 }
 
 function clientIp(req) {
