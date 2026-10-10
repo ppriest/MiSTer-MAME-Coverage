@@ -183,3 +183,4 @@ button.zapset { font: inherit; font-size: 12px; padding: 2px 10px; border: 1px s
 pre.zapcfg { white-space: pre-wrap; overflow-wrap: anywhere; background: var(--bg, #0001); border: 1px solid var(--border, #8884); border-radius: 6px; padding: 6px 10px; font-size: 12px; overflow-x: auto; user-select: all; }
 #zap-dialog { width: min(480px, calc(100vw - 32px)); box-sizing: border-box; }
 #zap-dialog input { width: 100%; box-sizing: border-box; }
+p.zapcopy { margin: 4px 0 8px; }

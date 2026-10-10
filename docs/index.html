@@ -308,7 +308,8 @@
       <p class="muted small">Zaparoo only accepts launches from other devices once you allow them. On the MiSTer's SD card, edit <code>zaparoo/config.toml</code> (in the <code>/media/fat</code> share) and add this, then restart Zaparoo Core:</p>
       <pre class="zapcfg" id="zap-cfg">[service]
 allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre>
-      <p class="muted small">The file may already have a <code>[service]</code> section: add the <code>allow_run</code> line to it rather than adding a second <code>[service]</code> header (a duplicate section stops Zaparoo from loading). Without the line the launch popup shows "remote access disabled for this transport". <button type="button" id="zap-copy">Copy</button></p>
+      <p class="zapcopy"><button type="button" id="zap-copy">Copy</button></p>
+      <p class="muted small">The file may already have a <code>[service]</code> section: add the <code>allow_run</code> line to it rather than adding a second <code>[service]</code> header (a duplicate section stops Zaparoo from loading). Without the line the launch popup shows "remote access disabled for this transport".</p>
       <label>Local MiSTer IP address <input id="zap-host" placeholder="192.168.1.50" autocomplete="off"></label>
       <div class="vote-actions"><span class="spacer"></span><button type="button" id="zap-cancel">Cancel</button><button type="submit" class="primary">Save</button></div>
     </form>
