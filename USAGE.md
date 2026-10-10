@@ -144,7 +144,7 @@ titles by votes, with recent voters and last-vote dates.
 
 Hovering a title (Titles grid, Wishlist titles) shows its **title screen** and an **in-game shot** side by
 side, loaded only then, and only for sets that have them. The images live in a bucket, not in this
-repository or the Vercel deploy: Cloudflare R2 is the best fit (free egress, about 10 GB free).
+repository or the Vercel deploy (Vercel Blob, or Cloudflare R2).
 
 1. Put one image per parent set in `<folder>/title/<set>.png` and `<folder>/ingame/<set>.png`. The folder is
    **on your own machine, anywhere** (`--src ~/mame-snaps`); the images never go into git. (`snaps/` and
@@ -156,12 +156,15 @@ repository or the Vercel deploy: Cloudflare R2 is the best fit (free egress, abo
    `images.json`; keep `IMAGE_SALT` private. The hover card shows them at native size, only shrunk to fit the
    window.
 3. Upload the output folder to a bucket with a long cache lifetime and put the bucket's public URL in
-   `<meta name="image-base" content="…">` in `docs/index.html`. Use **Cloudflare R2** (S3-compatible, free
-   egress, 10 GB and 1 million writes a month free) with rclone, which batches the transfers:
-   `rclone copy <upload-folder> r2:<bucket> --header-upload "Cache-Control: public, max-age=31536000, immutable"
-   --transfers 16 --checkers 32 --fast-list --size-only` (re-runs send only new files). **Vercel Blob is a poor
-   fit**: every uploaded file is one metered operation and the free plan allows only a couple of thousand a
-   month, far fewer than the ~14,000 files two screenshots per title need. With the meta empty the feature is off.
+   `<meta name="image-base" content="…">` in `docs/index.html` (with the meta empty the feature is off).
+   * **Vercel Blob** (what the project uses): `cd tools && npm install && BLOB_READ_WRITE_TOKEN=… node
+     blob_upload.mjs <upload-folder>` uploads with the hashed names, a one-year immutable cache and a manifest
+     so re-runs send only new files; it prints the base URL. **Every uploaded file is one metered operation**:
+     two screenshots per title is about 14,000 files, far above the free (Hobby) plan's monthly allowance, so
+     do the first upload on a plan that includes enough operations (Pro) and later runs only send changes.
+   * **Cloudflare R2 + rclone** is the cheaper long-term alternative (S3-compatible, free egress, 1 million
+     writes a month free): `rclone copy <upload-folder> r2:<bucket> --header-upload "Cache-Control: public,
+     max-age=31536000, immutable" --transfers 16 --checkers 32 --fast-list --size-only`.
 
 Hashed names deter guessing and bulk scraping; they do not hide the files from someone who watches the page's
 requests. For real hotlink protection add a referer rule on the bucket (Cloudflare WAF custom rule, or a

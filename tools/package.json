@@ -1,0 +1,7 @@
+{
+  "name": "mister-mame-coverage-tools",
+  "private": true,
+  "type": "module",
+  "description": "Local helper scripts (blob_upload.mjs)",
+  "dependencies": { "@vercel/blob": "^1.0.0" }
+}
