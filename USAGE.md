@@ -156,9 +156,13 @@ the simplest from inside Vercel.
    ({set: {title: "<hash>.png", ingame: "<hash>.png"}}), which the page uses to know what exists. Commit
    `images.json`; keep `IMAGE_SALT` private. The hover card shows them at native size, only shrunk to fit the
    window.
-3. Upload `upload/` to the bucket with a long cache lifetime
-   (`Cache-Control: public,max-age=31536000,immutable`) and put the bucket's public URL in
-   `<meta name="image-base" content="…">` in `docs/index.html`. With the meta empty the feature is off.
+3. Upload the output folder to a bucket with a long cache lifetime and put the bucket's public URL in
+   `<meta name="image-base" content="…">` in `docs/index.html`. Use **Cloudflare R2** (S3-compatible, free
+   egress, 10 GB and 1 million writes a month free) with rclone, which batches the transfers:
+   `rclone copy <upload-folder> r2:<bucket> --header-upload "Cache-Control: public, max-age=31536000, immutable"
+   --transfers 16 --checkers 32 --fast-list --size-only` (re-runs send only new files). **Vercel Blob is a poor
+   fit**: every uploaded file is one metered operation and the free plan allows only a couple of thousand a
+   month, far fewer than the ~14,000 files two screenshots per title need. With the meta empty the feature is off.
 
 Hashed names deter guessing and bulk scraping; they do not hide the files from someone who watches the page's
 requests. For real hotlink protection add a referer rule on the bucket (Cloudflare WAF custom rule, or a
