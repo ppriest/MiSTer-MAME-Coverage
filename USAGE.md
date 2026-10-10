@@ -140,6 +140,38 @@ titles by votes, with recent voters and last-vote dates.
   nickname stripped to 32 characters, same-origin requests only, 60 votes per hour per visitor.
 * The page works without the API: if `/api/wishlist` is unreachable, the +1 buttons are greyed out (the tooltip and the Wishlist tab say why). `GET /api/health` reports whether `DATABASE_URL` is set and the database answers, which is the first thing to open when the buttons are grey.
 
+## Screenshots on hover
+
+Hovering a title (Titles grid, Wishlist titles) shows its **title screen** and an **in-game shot** side by
+side, loaded only then, and only for sets that have them. The images live in a Vercel Blob store, not in this
+repository or the Vercel deploy. The project skill `.claude/skills/mame-screenshots` runs the whole refresh;
+the steps, all in a work folder **outside the repository** (`<work>`):
+
+1. `python3 tools/snaps_fetch.py --work <work>` downloads the Progetto-SNAPS Snap and Titles packs (newest full
+   set, then the update zips after it) and extracts them to `<work>/src/ingame/<set>.png` and
+   `<work>/src/title/<set>.png`, updates overwriting. `src/versions.json` records the MAME version reached, so
+   later runs download only the new update zips. Needs 7-Zip or bsdtar for the full sets' inner `.7z`.
+2. `IMAGE_SALT=<private string> python3 tools/shots.py --src <work>/src --out <work>/upload` copies the images of
+   sets in `keys.json` **unchanged (native size, no re-encoding)** under a keyed hash of kind and set plus the
+   extension (so names cannot be guessed from MAME set names) and rewrites `data/images.json`
+   ({set: {title: "<hash>.png", ingame: "<hash>.png"}}). `mmc report` (the daily build) merges it into each title
+   of `coverage.json` as `img`, which the page uses to know what exists. Keep `IMAGE_SALT` private and
+   unchanged: a new salt renames every file.
+3. `cd tools && npm install && BLOB_READ_WRITE_TOKEN=… node blob_upload.mjs <work>/upload` uploads the files
+   `images.json` names to a public Blob store (hashed names, one-year cache; `--dry-run` counts, `--limit N`
+   caps; each file is one Blob advanced operation, of which Hobby includes 2,000 a month, so the first upload of
+   about 14,000 files needs Pro) and prints the store's base URL. Put it in
+   `<meta name="image-base" content="…">` in `docs/index.html`; with the meta empty the feature is off. Commit
+   only `data/images.json` and `docs/index.html`.
+
+   Cloudflare R2 is the cheaper long-term alternative (free egress, 1 million writes a month free):
+   `rclone copy <work>/upload r2:<bucket> --header-upload "Cache-Control: public, max-age=31536000, immutable"
+   --transfers 16 --checkers 32 --fast-list --size-only`.
+
+Hashed names deter guessing and bulk scraping; they do not hide the files from someone who watches the page's
+requests. For real hotlink protection add a referer rule on the bucket (Cloudflare WAF custom rule, or a
+Worker in front of R2). Hover only exists on devices with a pointer.
+
 ## Databases tab
 
 One row per source (`DB_TITLES`): cores, working arcade titles and sets loaded by at least one core

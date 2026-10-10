@@ -14,6 +14,16 @@ from . import paths
 def write(result: dict) -> None:
     os.makedirs(os.path.join(paths.DOCS, "data"), exist_ok=True)
     full = os.path.join(paths.DOCS, "data", "coverage.json")
+    # Hover screenshots: data/images.json ({set: {title, ingame}}, written by tools/shots.py with hashed file
+    # names) is merged into each title as ``img``, so the page needs no extra file.
+    try:
+        with open(os.path.join(paths.DATA, "images.json"), encoding="utf-8") as f:
+            images = json.load(f)
+    except (OSError, ValueError):
+        images = {}
+    for t in result["titles"]:
+        if t["name"] in images:
+            t["img"] = images[t["name"]]
     with open(full, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, separators=(",", ":"))
     summary = {

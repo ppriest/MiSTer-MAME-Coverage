@@ -36,6 +36,7 @@ a { color: var(--accent); }
 .wrap { max-width: 1400px; margin: 0 auto; padding: 0 16px; }
 .top { border-bottom: 1px solid var(--line); padding: 20px 0 14px; }
 .top h1 { margin: 0; font-size: 22px; font-weight: 650; letter-spacing: -0.01em; }
+.top .tagline { margin: 4px 0 2px; font-size: 15px; font-weight: 450; line-height: 1.35; color: var(--text); }
 .top .vs { color: var(--muted); font-weight: 400; }
 .sub { margin: 4px 0 0; color: var(--text-2); }
 .muted { color: var(--muted); }
@@ -166,3 +167,12 @@ button.plus1 .n::before { content: "\00b7"; margin: 0 4px; }
 .vote-actions button.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); font-weight: 600; }
 button.plus1:disabled { opacity: .45; cursor: not-allowed; border-color: var(--muted); color: var(--muted); }
 button.plus1:disabled:hover { background: var(--surface); color: var(--muted); }
+
+/* screenshot preview on hover: the title screen and an in-game shot side by side */
+.shot { position: fixed; z-index: 30; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 6px 24px rgba(0,0,0,.25); padding: 6px; pointer-events: none; }
+.shot .pair { display: flex; gap: 6px; }
+.shot figure { margin: 0; max-width: 46vw; }
+.shot figure[hidden] { display: none; }
+.shot img { display: block; width: auto; height: auto; max-width: 100%; max-height: 70vh; border-radius: 4px; background: var(--surface-2); }  /* native size, only shrunk to fit the window */
+.shot figcaption { font-size: 10px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-top: 2px; }
+.shot .cap { font-size: 12px; color: var(--text-2); margin-top: 4px; }
