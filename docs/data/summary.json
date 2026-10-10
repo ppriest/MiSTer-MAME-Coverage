@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-10T19:53:18+00:00",
+  "generated": "2026-10-10T21:58:21+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-10T19:52:45+00:00",
+  "mister_generated": "2026-10-10T21:57:50+00:00",
   "alamone_generated": "2026-10-05T11:12:58+00:00",
   "ledger_updated": "2026-10-10",
   "ledger_runs": [
-   {
-    "date": "2026-10-10",
-    "note": "alamone 2026-10-05",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0,
-    "cores_removed": 1
-   },
    {
     "date": "2026-10-10",
     "note": "alamone 2026-10-05",
@@ -50,6 +41,15 @@
     "sets": 23,
     "pairs": 40,
     "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-10",
+    "note": "alamone 2026-10-05",
+    "cores": 8,
+    "sets": 0,
+    "pairs": 40,
+    "dates_improved": 39,
     "cores_removed": 0
    }
   ],
@@ -210,7 +210,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1045
+    "mras": 1082
    },
    {
     "source": "dist",
@@ -1908,7 +1908,7 @@
     "source": "ongo",
     "repo": "Eggsecutioner528/Battlantis_Mister_Core",
     "dirs": null,
-    "mras": 3
+    "mras": 1
    },
    {
     "source": "ongo",
@@ -2490,7 +2490,7 @@
    "working_arcade_titles_source": 1738,
    "working_arcade_titles_binary_only": 262,
    "cores": 580,
-   "binary_only_cores": 148,
+   "binary_only_cores": 156,
    "unmatched_sets": 415
   }
  },
@@ -2656,7 +2656,7 @@
    "binary_only": true,
    "nsets": 1,
    "ntitles": 1,
-   "first_date": "2026-10-08"
+   "first_date": "2026-10-10"
   },
   {
    "id": "bazset:cadash_bazset",
@@ -2702,7 +2702,7 @@
    "binary_only": true,
    "nsets": 1,
    "ntitles": 1,
-   "first_date": "2026-10-08"
+   "first_date": "2026-10-10"
   },
   {
    "id": "bazset:continental_circus",
@@ -2955,7 +2955,7 @@
    "binary_only": true,
    "nsets": 1,
    "ntitles": 1,
-   "first_date": "2026-10-08"
+   "first_date": "2026-10-10"
   },
   {
    "id": "bazset:shogunwarriors_bazset",
@@ -2973,6 +2973,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-10",
+   "aliases": [],
    "last_seen": "2026-10-10",
    "binary_only": true,
    "nsets": 1,
@@ -3018,6 +3019,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-10",
+   "aliases": [],
    "last_seen": "2026-10-10",
    "binary_only": true,
    "nsets": 1,
@@ -9294,6 +9296,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-10",
+   "aliases": [],
    "last_seen": "2026-10-10",
    "binary_only": false,
    "nsets": 0,
@@ -14838,6 +14841,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-10",
+   "aliases": [],
    "last_seen": "2026-10-10",
    "binary_only": false,
    "nsets": 0,
@@ -14883,6 +14887,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-10",
+   "aliases": [],
    "last_seen": "2026-10-10",
    "binary_only": true,
    "nsets": 3,
@@ -14956,7 +14961,7 @@
    "binary_only": true,
    "nsets": 31,
    "ntitles": 18,
-   "first_date": "2026-10-09"
+   "first_date": "2026-10-10"
   },
   {
    "id": "repo:10yardfight",
@@ -15603,6 +15608,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-10",
+   "aliases": [],
    "last_seen": "2026-10-10",
    "binary_only": false,
    "nsets": 6,
@@ -15625,6 +15631,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-10",
+   "aliases": [],
    "last_seen": "2026-10-10",
    "binary_only": false,
    "nsets": 3,
@@ -15772,6 +15779,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-10",
+   "aliases": [],
    "last_seen": "2026-10-10",
    "binary_only": false,
    "nsets": 2,
@@ -22043,7 +22051,7 @@
    "cores": [
     "ppriest:vamphalf"
    ],
-   "first": "2026-10-09"
+   "first": "2026-10-10"
   },
   {
    "sourcefile": "misc/vampire.cpp",

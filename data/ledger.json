@@ -345,6 +345,15 @@
 "pairs": 40,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-10",
+"note": "alamone 2026-10-05",
+"cores": 8,
+"sets": 0,
+"pairs": 40,
+"dates_improved": 39,
+"cores_removed": 0
 }
 ]
 },
@@ -747,6 +756,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-10",
+"aliases": [],
 "last_seen": "2026-10-10"
 },
 "bazset:superman_bazset": {
@@ -784,6 +794,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-10",
+"aliases": [],
 "last_seen": "2026-10-10"
 },
 "bazset:volfied": {
@@ -6032,6 +6043,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-10",
+"aliases": [],
 "last_seen": "2026-10-10"
 },
 "dist:tankbattalion": {
@@ -10018,6 +10030,132 @@
 "aliases": [],
 "last_seen": "2026-10-10"
 },
+"ongo:bazset_bonksadventure": {
+"id": "ongo:bazset_bonksadventure",
+"name": "bazset_BonksAdventure",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "bazset_BonksAdventure.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ongo:bazset_brapboys": {
+"id": "ongo:bazset_brapboys",
+"name": "bazset_BRapBoys",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "bazset_BRapBoys.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ongo:bazset_chasehq": {
+"id": "ongo:bazset_chasehq",
+"name": "bazset_ChaseHQ",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "bazset_ChaseHQ.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ongo:bazset_continentalcircus": {
+"id": "ongo:bazset_continentalcircus",
+"name": "bazset_ContinentalCircus",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "bazset_ContinentalCircus.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ongo:bazset_krull": {
+"id": "ongo:bazset_krull",
+"name": "bazset_Krull",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "bazset_Krull.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ongo:bazset_sci": {
+"id": "ongo:bazset_sci",
+"name": "bazset_SCI",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "bazset_SCI.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ongo:bazset_shogunwarriors": {
+"id": "ongo:bazset_shogunwarriors",
+"name": "bazset_ShogunWarriors",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "bazset_ShogunWarriors.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ongo:blackwine-segasystem1-2": {
 "id": "ongo:blackwine-segasystem1-2",
 "name": "Blackwine-SegaSystem1-2",
@@ -10528,6 +10666,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-10",
+"aliases": [],
 "last_seen": "2026-10-10"
 },
 "ongo:konamigxt34": {
@@ -11119,6 +11258,24 @@
 "aliases": [],
 "last_seen": "2026-10-04"
 },
+"ongo:vamphalf": {
+"id": "ongo:vamphalf",
+"name": "Vamphalf",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Vamphalf.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ongo:viostorm": {
 "id": "ongo:viostorm",
 "name": "Arcade-VioStorm",
@@ -11458,6 +11615,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-10",
+"aliases": [],
 "last_seen": "2026-10-10"
 },
 "ppriest:konamigxt34": {
@@ -11495,6 +11653,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-10",
+"aliases": [],
 "last_seen": "2026-10-10"
 },
 "ppriest:seta": {
@@ -12099,6 +12258,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-10",
+"aliases": [],
 "last_seen": "2026-10-10"
 },
 "repo:monstermaulers": {
@@ -12117,6 +12277,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-10",
+"aliases": [],
 "last_seen": "2026-10-10"
 },
 "repo:namco_na1_na2": {
@@ -12240,6 +12401,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-10",
+"aliases": [],
 "last_seen": "2026-10-10"
 },
 "repo:penguinkunwars": {
@@ -16318,15 +16480,28 @@
 }
 },
 "aoh": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Age Of Heroes - Silkroad 2 (v0.63 - 2001-02-07).mra",
+"mra": "_Arcade/Age Of Heroes - Silkroad 2 (v0.63 - 2001-02-07).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
 "date": "2026-10-10",
-"date_quality": "observed",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Age Of Heroes - Silkroad 2 (v0.63 - 2001-02-07).mra",
 "first_recorded": "2026-10-10",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Age Of Heroes - Silkroad 2 (v0.63 - 2001-02-07).mra"
@@ -19728,7 +19903,7 @@
 "first_path": "Battlantis.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-10",
-"mra": "_Arcade/Battlantis (version G).mra"
+"mra": "_Arcade/Battlantis.mra"
 }
 },
 "battlntsa": {
@@ -22428,15 +22603,28 @@
 "bazset:bonksadventure": {
 "core": "bazset:bonksadventure",
 "date": "2026-10-10",
-"date_quality": "observed",
+"date_quality": "git",
 "via": "bazset",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Bonk's Adventure - Arcade Version (US, China, Korea).mra",
 "first_recorded": "2026-10-10",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_BAZSET/Bonk's Adventure (World).mra"
+},
+"ongo:bazset_bonksadventure": {
+"core": "ongo:bazset_bonksadventure",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Bonk's Adventure - Arcade Version (US, China, Korea).mra",
+"mra": "_Arcade/Bonk's Adventure - Arcade Version (US, China, Korea).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
 }
 },
 "bonzeadv": {
@@ -22612,15 +22800,28 @@
 }
 },
 "boonggab": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Boong-Ga Boong-Ga (Spank'em!).mra",
+"mra": "_Arcade/Boong-Ga Boong-Ga (Spank'em!).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
 "date": "2026-10-10",
-"date_quality": "observed",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Boong-Ga Boong-Ga (Spank'em!).mra",
 "first_recorded": "2026-10-10",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Boong-Ga Boong-Ga (Spank'em!).mra"
@@ -23107,16 +23308,29 @@
 "brapboys": {
 "bazset:brapboys_bazset": {
 "core": "bazset:brapboys_bazset",
-"date": "2026-10-08",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "bazset",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/B.Rap Boys (World).mra",
 "first_recorded": "2026-10-08",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_BAZSET/B.Rap Boys (World).mra"
+},
+"ongo:bazset_brapboys": {
+"core": "ongo:bazset_brapboys",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/B.Rap Boys (World).mra",
+"mra": "_Arcade/B.Rap Boys (World).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
 }
 },
 "brdrline": {
@@ -26200,16 +26414,29 @@
 "chasehq": {
 "bazset:chase_hq_bazset": {
 "core": "bazset:chase_hq_bazset",
-"date": "2026-10-08",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "bazset",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Chase H.Q. (World).mra",
 "first_recorded": "2026-10-08",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_BAZSET/Chase HQ (World).mra"
+},
+"ongo:bazset_chasehq": {
+"core": "ongo:bazset_chasehq",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Chase H.Q. (World).mra",
+"mra": "_Arcade/Chase H.Q. (World).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
 }
 },
 "checkman": {
@@ -28310,15 +28537,28 @@
 "bazset:continental_circus": {
 "core": "bazset:continental_circus",
 "date": "2026-10-10",
-"date_quality": "observed",
+"date_quality": "git",
 "via": "bazset",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Continental Circus (World).mra",
 "first_recorded": "2026-10-10",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_BAZSET/Continental Circus (World).mra"
+},
+"ongo:bazset_continentalcircus": {
+"core": "ongo:bazset_continentalcircus",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Continental Circus (World).mra",
+"mra": "_Arcade/Continental Circus (World).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
 }
 },
 "contra": {
@@ -28436,30 +28676,56 @@
 }
 },
 "coolmini": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Cool Minigame Collection.mra",
+"mra": "_Arcade/Cool Minigame Collection.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Cool Minigame Collection.mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Cool Minigame Collection.mra"
 }
 },
 "coolminii": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Cool Minigame Collection/Cool Minigame Collection (Italy).mra",
+"mra": "_Arcade/_alternatives/_Cool Minigame Collection/Cool Minigame Collection (Italy).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Cool Minigame Collection/Cool Minigame Collection (Italy).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_alternatives/_Cool Minigame Collection/Cool Minigame Collection (Italy).mra"
@@ -35431,15 +35697,28 @@
 }
 },
 "dquizgo2": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Date Quiz Go Go Episode 2.mra",
+"mra": "_Arcade/Date Quiz Go Go Episode 2.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Date Quiz Go Go Episode 2.mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Date Quiz Go Go Episode 2.mra"
@@ -36150,15 +36429,28 @@
 }
 },
 "dtfamily": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Diet Family.mra",
+"mra": "_Arcade/Diet Family.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Diet Family.mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Diet Family.mra"
@@ -39720,15 +40012,28 @@
 }
 },
 "finalgdr": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Final Godori (Korea, version 2.20.5915).mra",
+"mra": "_Arcade/Final Godori (Korea, version 2.20.5915).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
 "date": "2026-10-10",
-"date_quality": "observed",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Final Godori (Korea, version 2.20.5915).mra",
 "first_recorded": "2026-10-10",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Final Godori (Korea, version 2.20.5915).mra"
@@ -52637,30 +52942,56 @@
 }
 },
 "jmpbreak": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Jumping Break (set 1).mra",
+"mra": "_Arcade/Jumping Break (set 1).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Jumping Break (set 1).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Jumping Break (set 1).mra"
 }
 },
 "jmpbreaka": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Jumping Break/Jumping Break (set 2).mra",
+"mra": "_Arcade/_alternatives/_Jumping Break/Jumping Break (set 2).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Jumping Break/Jumping Break (set 2).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_alternatives/_Jumping Break/Jumping Break (set 2).mra"
@@ -56519,6 +56850,19 @@
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Krull.mra"
 },
+"ongo:bazset_krull": {
+"core": "ongo:bazset_krull",
+"date": "2026-09-11",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Krull.mra",
+"mra": "_Arcade/Krull.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ongo:krull": {
 "core": "ongo:krull",
 "date": "2026-09-11",
@@ -58604,45 +58948,84 @@
 }
 },
 "luplup": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 3.0 - 990128).mra",
+"mra": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 3.0 - 990128).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 3.0 - 990128).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 3.0 - 990128).mra"
 }
 },
 "luplup10": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 1.05 - 981214).mra",
+"mra": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 1.05 - 981214).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 1.05 - 981214).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 1.05 - 981214).mra"
 }
 },
 "luplup29": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 2.9 - 990108).mra",
+"mra": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 2.9 - 990108).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 2.9 - 990108).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 2.9 - 990108).mra"
@@ -61775,30 +62158,56 @@
 }
 },
 "misncrft": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Mission Craft (version 2.7).mra",
+"mra": "_Arcade/Mission Craft (version 2.7).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Mission Craft (version 2.7).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Mission Craft (version 2.7).mra"
 }
 },
 "misncrfta": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Mission Craft/Mission Craft (version 2.4).mra",
+"mra": "_Arcade/_alternatives/_Mission Craft/Mission Craft (version 2.4).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Mission Craft/Mission Craft (version 2.4).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_alternatives/_Mission Craft/Mission Craft (version 2.4).mra"
@@ -63564,15 +63973,28 @@
 }
 },
 "mrdig": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Mr. Dig.mra",
+"mra": "_Arcade/Mr. Dig.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Mr. Dig.mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Mr. Dig.mra"
@@ -63684,30 +64106,56 @@
 }
 },
 "mrkicker": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Mr. Kicker (F-E1-16-010 PCB).mra",
+"mra": "_Arcade/Mr. Kicker (F-E1-16-010 PCB).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Mr. Kicker (F-E1-16-010 PCB).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Mr. Kicker (F-E1-16-010 PCB).mra"
 }
 },
 "mrkickera": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Mr. Kicker/Mr. Kicker (SEMICOM-003b PCB).mra",
+"mra": "_Arcade/_alternatives/_Mr. Kicker/Mr. Kicker (SEMICOM-003b PCB).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
 "date": "2026-10-10",
-"date_quality": "observed",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Mr. Kicker/Mr. Kicker (SEMICOM-003b PCB).mra",
 "first_recorded": "2026-10-10",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_alternatives/_Mr. Kicker/Mr. Kicker (SEMICOM-003b PCB).mra"
@@ -66535,30 +66983,56 @@
 }
 },
 "newxpang": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/New Cross Pang (set 1).mra",
+"mra": "_Arcade/New Cross Pang (set 1).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/New Cross Pang (set 1).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/New Cross Pang (set 1).mra"
 }
 },
 "newxpanga": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_New Cross Pang/New Cross Pang (set 2).mra",
+"mra": "_Arcade/_alternatives/_New Cross Pang/New Cross Pang (set 2).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_New Cross Pang/New Cross Pang (set 2).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_alternatives/_New Cross Pang/New Cross Pang (set 2).mra"
@@ -73867,15 +74341,28 @@
 }
 },
 "poosho": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Poosho Poosho.mra",
+"mra": "_Arcade/Poosho Poosho.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Poosho Poosho.mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Poosho Poosho.mra"
@@ -75603,30 +76090,56 @@
 }
 },
 "puzlbang": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Puzzle Bang Bang (Korea, version 2.9 - 990108).mra",
+"mra": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Puzzle Bang Bang (Korea, version 2.9 - 990108).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Puzzle Bang Bang (Korea, version 2.9 - 990108).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Puzzle Bang Bang (Korea, version 2.9 - 990108).mra"
 }
 },
 "puzlbanga": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Puzzle Bang Bang (Korea, version 2.8 - 990106).mra",
+"mra": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Puzzle Bang Bang (Korea, version 2.8 - 990106).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Puzzle Bang Bang (Korea, version 2.8 - 990106).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_alternatives/_Super Lup Lup Puzzle - Zhuan Zhuan Puzzle/Puzzle Bang Bang (Korea, version 2.8 - 990106).mra"
@@ -84193,16 +84706,29 @@
 "sci": {
 "bazset:sci_bazset": {
 "core": "bazset:sci_bazset",
-"date": "2026-10-08",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "bazset",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Special Criminal Investigation (World set 1).mra",
 "first_recorded": "2026-10-08",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_BAZSET/SCI (World).mra"
+},
+"ongo:bazset_sci": {
+"core": "ongo:bazset_sci",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Special Criminal Investigation (World set 1).mra",
+"mra": "_Arcade/Special Criminal Investigation (World set 1).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
 }
 },
 "scobra": {
@@ -89167,13 +89693,26 @@
 "bazset:shogunwarriors_bazset": {
 "core": "bazset:shogunwarriors_bazset",
 "date": "2026-10-10",
-"date_quality": "observed",
+"date_quality": "git",
 "via": "bazset",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Shogun Warriors (World).mra",
 "mra": "_Arcade/_BAZSET/Shogun Warriors (World).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ongo:bazset_shogunwarriors": {
+"core": "ongo:bazset_shogunwarriors",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Shogun Warriors (World).mra",
+"mra": "_Arcade/Shogun Warriors (World).mra",
 "first_recorded": "2026-10-10",
 "last_seen": "2026-10-10"
 }
@@ -91581,15 +92120,28 @@
 }
 },
 "solitaire": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Solitaire (version 2.5).mra",
+"mra": "_Arcade/Solitaire (version 2.5).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
 "date": "2026-10-10",
-"date_quality": "observed",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Solitaire (version 2.5).mra",
 "first_recorded": "2026-10-10",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Solitaire (version 2.5).mra"
@@ -97185,15 +97737,28 @@
 }
 },
 "suplup": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Super Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 4.0 - 990518).mra",
+"mra": "_Arcade/Super Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 4.0 - 990518).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Super Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 4.0 - 990518).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Super Lup Lup Puzzle - Zhuan Zhuan Puzzle (version 4.0 - 990518).mra"
@@ -102880,15 +103445,28 @@
 }
 },
 "toyland": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Toy Land Adventure.mra",
+"mra": "_Arcade/Toy Land Adventure.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Toy Land Adventure.mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Toy Land Adventure.mra"
@@ -105192,45 +105770,84 @@
 }
 },
 "vamphalf": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Vamf x1-2 (Europe, version 1.1.0908).mra",
+"mra": "_Arcade/Vamf x1-2 (Europe, version 1.1.0908).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Vamf x1-2 (Europe, version 1.1.0908).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Vamf x1-2 (Europe, version 1.1.0908).mra"
 }
 },
 "vamphalfk": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Vamf x1-2/Vamp x1-2 (Korea, version 1.1.0908).mra",
+"mra": "_Arcade/_alternatives/_Vamf x1-2/Vamp x1-2 (Korea, version 1.1.0908).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Vamf x1-2/Vamp x1-2 (Korea, version 1.1.0908).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_alternatives/_Vamf x1-2/Vamp x1-2 (Korea, version 1.1.0908).mra"
 }
 },
 "vamphalfr1": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Vamf x1-2/Vamf x1-2 (Europe, version 1.0.0903).mra",
+"mra": "_Arcade/_alternatives/_Vamf x1-2/Vamf x1-2 (Europe, version 1.0.0903).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Vamf x1-2/Vamf x1-2 (Europe, version 1.0.0903).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_alternatives/_Vamf x1-2/Vamf x1-2 (Europe, version 1.0.0903).mra"
@@ -109133,15 +109750,28 @@
 }
 },
 "wivernwg": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Wivern Wings.mra",
+"mra": "_Arcade/Wivern Wings.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Wivern Wings.mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Wivern Wings.mra"
@@ -109446,15 +110076,28 @@
 }
 },
 "worldadv": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/World Adventure.mra",
+"mra": "_Arcade/World Adventure.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/World Adventure.mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/World Adventure.mra"
@@ -110014,30 +110657,56 @@
 }
 },
 "wyvernwg": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Wivern Wings/Wyvern Wings (set 1).mra",
+"mra": "_Arcade/_alternatives/_Wivern Wings/Wyvern Wings (set 1).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Wivern Wings/Wyvern Wings (set 1).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_alternatives/_Wivern Wings/Wyvern Wings (set 1).mra"
 }
 },
 "wyvernwga": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Wivern Wings/Wyvern Wings (set 2).mra",
+"mra": "_Arcade/_alternatives/_Wivern Wings/Wyvern Wings (set 2).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
-"date": "2026-10-09",
-"date_quality": "observed",
+"date": "2026-10-10",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Wivern Wings/Wyvern Wings (set 2).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_alternatives/_Wivern Wings/Wyvern Wings (set 2).mra"
@@ -111516,15 +112185,28 @@
 }
 },
 "yorijori": {
+"ongo:vamphalf": {
+"core": "ongo:vamphalf",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Yori Jori Kuk Kuk.mra",
+"mra": "_Arcade/Yori Jori Kuk Kuk.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:vamphalf": {
 "core": "ppriest:vamphalf",
 "date": "2026-10-10",
-"date_quality": "observed",
+"date_quality": "git",
 "via": "ppriest",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Yori Jori Kuk Kuk.mra",
 "first_recorded": "2026-10-10",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Yori Jori Kuk Kuk.mra"
@@ -112844,7 +113526,8 @@
 "repo": "Shooter"
 },
 "aoh": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "apb": {
 "dist": "Arcade"
@@ -113589,7 +114272,8 @@
 "repo": "Shooter"
 },
 "bonkadv": {
-"bazset": "Platform"
+"bazset": "Platform",
+"ongo": "Platform"
 },
 "bonzeadv": {
 "dist": "Platform",
@@ -113635,7 +114319,8 @@
 "rmcores": "Action"
 },
 "boonggab": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "boothill": {
 "dist": "Shooter - Multidirectional",
@@ -113698,7 +114383,8 @@
 "dist": "Maze"
 },
 "brapboys": {
-"bazset": "Beat'em Up"
+"bazset": "Beat'em Up",
+"ongo": "Beat'em Up"
 },
 "breakout": {
 "dist": "Ball and Paddle"
@@ -114360,10 +115046,12 @@
 "dist": "Isometric Platform"
 },
 "coolmini": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "coolminii": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "coozumou": {
 "dist": "Sports"
@@ -115144,7 +115832,8 @@
 "repo": "Shooter"
 },
 "dquizgo2": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "draco": {
 "jlrh": "Shooter",
@@ -115212,7 +115901,8 @@
 "dist": "Shooter"
 },
 "dtfamily": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "dzigzag": {
 "repo": "Maze"
@@ -115577,7 +116267,8 @@
 "kuze": "Arcade"
 },
 "finalgdr": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "finalizr": {
 "dist": "Shooter - Vertical"
@@ -117058,10 +117749,12 @@
 "ppriest": "Arcade"
 },
 "jmpbreak": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "jmpbreaka": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "joemac": {
 "coinop": "Platform"
@@ -117523,13 +118216,16 @@
 "repo": "Shooter"
 },
 "luplup": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "luplup10": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "luplup29": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "lwings": {
 "arcfpga": "Shooter"
@@ -117829,10 +118525,12 @@
 "kuze": "Arcade"
 },
 "misncrft": {
-"ppriest": "Shooter"
+"ppriest": "Shooter",
+"ongo": "Shooter"
 },
 "misncrfta": {
-"ppriest": "Shooter"
+"ppriest": "Shooter",
+"ongo": "Shooter"
 },
 "missmw96": {
 "bazset": "Puzzle / Adult"
@@ -117990,7 +118688,8 @@
 "dist": "Shooter - Horizontal"
 },
 "mrdig": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "mrdo": {
 "dist": "Maze"
@@ -118014,10 +118713,12 @@
 "dist": "Puzzle"
 },
 "mrkicker": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "mrkickera": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "mrkougar": {
 "repo": "Shooter"
@@ -118270,10 +118971,12 @@
 "dist": "Sports"
 },
 "newxpang": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "newxpanga": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "nextfase": {
 "dist": "Shooter - Gallery"
@@ -119192,7 +119895,8 @@
 "dist": "Platform - Climb"
 },
 "poosho": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "pootan": {
 "dist": "Shooter - Gallery"
@@ -119352,10 +120056,12 @@
 "repo": "Arcade"
 },
 "puzlbang": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "puzlbanga": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "puzldama": {
 "ongo": "Arcade",
@@ -120758,7 +121464,8 @@
 "ongo": "Puzzle"
 },
 "shogwarr": {
-"bazset": "Fighter"
+"bazset": "Fighter",
+"ongo": "Fighter"
 },
 "shollow": {
 "dist": "Shooter - Gallery"
@@ -121015,7 +121722,8 @@
 "repo": "Shooter"
 },
 "solitaire": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "solomon": {
 "dist": "Platform - Climb"
@@ -121582,7 +122290,8 @@
 "repo": "Shooter"
 },
 "suplup": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "supmodel": {
 "bazset": "Puzzle / Adult"
@@ -122217,7 +122926,8 @@
 "repo": "Shooter"
 },
 "toyland": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "tp84": {
 "dist": "Shooter - Multidirectional"
@@ -122465,13 +123175,16 @@
 "kuze": "Arcade"
 },
 "vamphalf": {
-"ppriest": "Platform"
+"ppriest": "Platform",
+"ongo": "Platform"
 },
 "vamphalfk": {
-"ppriest": "Platform"
+"ppriest": "Platform",
+"ongo": "Platform"
 },
 "vamphalfr1": {
-"ppriest": "Platform"
+"ppriest": "Platform",
+"ongo": "Platform"
 },
 "vandyke": {
 "ongo": "Shooter",
@@ -122829,7 +123542,8 @@
 "ppriest": "Arcade"
 },
 "wivernwg": {
-"ppriest": "Shooter"
+"ppriest": "Shooter",
+"ongo": "Shooter"
 },
 "wizdfire": {
 "coinop": "Hack &amp; Slash"
@@ -122853,7 +123567,8 @@
 "dist": "Platform - Climb"
 },
 "worldadv": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "wow": {
 "dist": "Shooter - Multidirectional"
@@ -122913,10 +123628,12 @@
 "repo": "Arcade"
 },
 "wyvernwg": {
-"ppriest": "Shooter"
+"ppriest": "Shooter",
+"ongo": "Shooter"
 },
 "wyvernwga": {
-"ppriest": "Shooter"
+"ppriest": "Shooter",
+"ongo": "Shooter"
 },
 "xensad": {
 "dist": "Maze"
@@ -123000,7 +123717,8 @@
 "meat": "Driving"
 },
 "yorijori": {
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "yosakdon": {
 "dist": "Sports / Shooting",
