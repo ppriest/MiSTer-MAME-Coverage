@@ -176,3 +176,7 @@ button.plus1:disabled:hover { background: var(--surface); color: var(--muted); }
 .shot img { display: block; width: auto; height: auto; max-width: 100%; max-height: 70vh; border-radius: 4px; background: var(--surface-2); }  /* native size, only shrunk to fit the window */
 .shot figcaption { font-size: 10px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-top: 2px; }
 .shot .cap { font-size: 12px; color: var(--text-2); margin-top: 4px; }
+
+button.launch { font: inherit; font-size: 11px; padding: 0 6px; border: 1px solid var(--accent); border-radius: 10px; background: var(--surface); color: var(--accent); cursor: pointer; }
+button.launch:hover { background: var(--accent); color: var(--surface); }
+button.zapset { font: inherit; font-size: 12px; padding: 2px 10px; border: 1px solid var(--accent); border-radius: 12px; background: var(--surface); color: var(--accent); cursor: pointer; }

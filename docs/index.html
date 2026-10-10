@@ -16,6 +16,7 @@
     <h1>MiSTer <span class="vs">×</span> MAME arcade coverage</h1>
     <h2 class="tagline">See what Arcade PCB titles are covered by MAME, MiSTer, and request support on MiSTer where missing</h2>
     <p class="sub" id="subtitle">Loading data…</p>
+    <button type="button" id="zap-settings" class="zapset" title="set your MiSTer address for Zaparoo launch">⚙ MiSTer address</button>
   </div>
 </header>
 
@@ -300,6 +301,14 @@
 
 <div class="tooltip" id="tooltip" hidden></div>
 <div class="shot" id="shot" hidden><div class="pair"><figure data-kind="title"><img alt="Title screen"><figcaption>Title</figcaption></figure><figure data-kind="ingame"><img alt="In-game screenshot"><figcaption>In game</figcaption></figure></div><div class="cap"></div></div>
+  <dialog id="zap-dialog">
+    <form method="dialog" id="zap-form">
+      <h3>Launch on my MiSTer</h3>
+      <p class="muted small">Enter your MiSTer's local IP address or hostname (Zaparoo Core, port 7497 by default). It is saved only in this browser and never sent to this site. Zaparoo must have <code>allow_run</code> set for remote requests.</p>
+      <label>MiSTer address <input id="zap-host" placeholder="192.168.1.50" autocomplete="off"></label>
+      <div class="vote-actions"><span class="spacer"></span><button type="button" id="zap-cancel">Cancel</button><button type="submit" class="primary">Save</button></div>
+    </form>
+  </dialog>
   <dialog id="vote-dialog">
     <form method="dialog" id="vote-form">
       <h3 id="vote-title">Request a port</h3>
