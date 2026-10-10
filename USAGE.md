@@ -151,9 +151,9 @@ repository or the Vercel deploy (Vercel Blob, or Cloudflare R2).
    `upload/` inside a clone are git-ignored in case you use them.)
 2. `IMAGE_SALT=<private string> python3 tools/shots.py --src <folder> --out <upload-folder>` copies them **unchanged
    (native size, no re-encoding)** under a keyed hash of kind and set plus the original extension (so names
-   cannot be guessed from MAME set names) and writes `docs/data/images.json`
+   cannot be guessed from MAME set names) and writes `data/images.json`
    ({set: {title: "<hash>.png", ingame: "<hash>.png"}}), which the page uses to know what exists. Commit
-   `images.json`; keep `IMAGE_SALT` private. The hover card shows them at native size, only shrunk to fit the
+   `data/images.json` (it is merged into each title of `coverage.json` as `img` by `mmc report`, which the daily build does); keep `IMAGE_SALT` private. The hover card shows them at native size, only shrunk to fit the
    window.
 3. Upload the output folder to a bucket with a long cache lifetime and put the bucket's public URL in
    `<meta name="image-base" content="…">` in `docs/index.html` (with the meta empty the feature is off).

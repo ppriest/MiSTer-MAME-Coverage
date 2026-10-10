@@ -6,8 +6,8 @@
 ``--src`` holds two folders, ``title/`` and ``ingame/``, with one image per parent set named
 ``<set>.png`` (or .jpg/.webp). Each is copied unchanged (native size, no re-encoding) to ``--out`` under a
 *hashed* file name, ``HMAC-SHA256(IMAGE_SALT, "<kind>/<set>")`` (first 24 hex digits) plus its extension, so the
-bucket's file names cannot be guessed from the MAME set names. ``docs/data/images.json`` records which sets have
-which image ({set: {"title": "<hash>.png", "ingame": "<hash>.png"}}); the page reads it, builds
+bucket's file names cannot be guessed from the MAME set names. ``data/images.json`` records which sets have
+which image ({set: {"title": "<hash>.png", "ingame": "<hash>.png"}}); ``mmc report`` merges it into each title of coverage.json (``img``), and the page builds
 ``<image-base>/<file>`` and never probes for images that do not exist. Upload ``--out`` to the bucket
 (for example ``rclone copy ./upload r2:mister-shots --header-upload "Cache-Control: public,max-age=31536000,immutable"``)
 and put its public URL in the ``image-base`` meta tag of ``docs/index.html``.
@@ -39,7 +39,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--src", required=True)
     ap.add_argument("--out", required=True)
-    ap.add_argument("--index", default=os.path.join(ROOT, "docs", "data", "images.json"))
+    ap.add_argument("--index", default=os.path.join(ROOT, "data", "images.json"))
     ap.add_argument("--keys", default=os.path.join(ROOT, "docs", "data", "keys.json"), help="only sets that are titles in keys.json")
     a = ap.parse_args()
     salt = os.environ.get("IMAGE_SALT")
