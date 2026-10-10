@@ -36,6 +36,7 @@ a { color: var(--accent); }
 .wrap { max-width: 1400px; margin: 0 auto; padding: 0 16px; }
 .top { border-bottom: 1px solid var(--line); padding: 20px 0 14px; }
 .top h1 { margin: 0; font-size: 22px; font-weight: 650; letter-spacing: -0.01em; }
+.top .tagline { margin: 4px 0 2px; font-size: 15px; font-weight: 450; line-height: 1.35; color: var(--text); }
 .top .vs { color: var(--muted); font-weight: 400; }
 .sub { margin: 4px 0 0; color: var(--text-2); }
 .muted { color: var(--muted); }
