@@ -300,6 +300,24 @@
 "pairs": 25,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-10",
+"note": "alamone 2026-10-05",
+"cores": 0,
+"sets": 0,
+"pairs": 0,
+"dates_improved": 0,
+"cores_removed": 1
+},
+{
+"date": "2026-10-10",
+"note": "alamone 2026-10-05",
+"cores": 0,
+"sets": 0,
+"pairs": 0,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -398,6 +416,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-10",
+"aliases": [],
 "last_seen": "2026-10-10"
 },
 "bazset:bonzeadventure_bazset": {
@@ -492,6 +511,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-10",
+"aliases": [],
 "last_seen": "2026-10-10"
 },
 "bazset:earthjoker_bazset": {
@@ -10427,6 +10447,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-10",
+"aliases": [],
 "last_seen": "2026-10-10"
 },
 "ongo:krull": {
@@ -10673,6 +10694,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-10",
+"aliases": [],
 "last_seen": "2026-10-10"
 },
 "ongo:model1": {
@@ -11328,8 +11350,8 @@
 "source_title": "ppriest (MiSTer_ppriest)",
 "channel": null,
 "rbf": "KonamiGXT34.rbf",
-"repo": null,
-"url": null,
+"repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
 "build_date": null,
 "status": null,
 "reading": null,
@@ -11862,25 +11884,6 @@
 ],
 "note": null,
 "first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-10"
-},
-"repo:konamigxt34": {
-"id": "repo:konamigxt34",
-"name": "KonamiGXT34",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": null,
-"rbf": "KonamiGXT34.rbf",
-"repo": "ppriest/Arcade-KonamiGX_MiSTer",
-"url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": null,
-"first_recorded": "2026-10-08",
 "aliases": [],
 "last_seen": "2026-10-10"
 },
@@ -86164,18 +86167,6 @@
 "first_path": "releases/Soccer Superstars (ver EAC).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10"
-},
-"repo:konamigxt34": {
-"core": "repo:konamigxt34",
-"date": "2026-10-08",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
-"first_path": "releases/Soccer Superstars (ver EAC).mra",
-"first_recorded": "2026-10-08",
-"last_seen": "2026-10-10"
 }
 },
 "soccerssa": {
@@ -86201,18 +86192,6 @@
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/_alternatives/_Soccer Superstars (ver EAC)/Soccer Superstars (ver AAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-10"
-},
-"repo:konamigxt34": {
-"core": "repo:konamigxt34",
-"date": "2026-10-08",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
-"first_path": "releases/_alternatives/_Soccer Superstars (ver EAC)/Soccer Superstars (ver AAA).mra",
-"first_recorded": "2026-10-08",
 "last_seen": "2026-10-10"
 }
 },
@@ -86240,18 +86219,6 @@
 "first_path": "releases/_alternatives/_Soccer Superstars (ver EAC)/Soccer Superstars (ver JAC).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10"
-},
-"repo:konamigxt34": {
-"core": "repo:konamigxt34",
-"date": "2026-10-08",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
-"first_path": "releases/_alternatives/_Soccer Superstars (ver EAC)/Soccer Superstars (ver JAC).mra",
-"first_recorded": "2026-10-08",
-"last_seen": "2026-10-10"
 }
 },
 "soccerssja": {
@@ -86278,18 +86245,6 @@
 "first_path": "releases/_alternatives/_Soccer Superstars (ver EAC)/Soccer Superstars (ver JAA).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-10"
-},
-"repo:konamigxt34": {
-"core": "repo:konamigxt34",
-"date": "2026-10-08",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
-"first_path": "releases/_alternatives/_Soccer Superstars (ver EAC)/Soccer Superstars (ver JAA).mra",
-"first_recorded": "2026-10-08",
-"last_seen": "2026-10-10"
 }
 },
 "soccerssu": {
@@ -86315,18 +86270,6 @@
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/_alternatives/_Soccer Superstars (ver EAC)/Soccer Superstars (ver UAC).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-10"
-},
-"repo:konamigxt34": {
-"core": "repo:konamigxt34",
-"date": "2026-10-08",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
-"first_path": "releases/_alternatives/_Soccer Superstars (ver EAC)/Soccer Superstars (ver UAC).mra",
-"first_recorded": "2026-10-08",
 "last_seen": "2026-10-10"
 }
 },

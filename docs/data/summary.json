@@ -1,30 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-10T09:32:29+00:00",
+  "generated": "2026-10-10T09:54:32+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-10T09:32:07+00:00",
+  "mister_generated": "2026-10-10T09:54:27+00:00",
   "alamone_generated": "2026-10-05T11:12:58+00:00",
   "ledger_updated": "2026-10-10",
   "ledger_runs": [
-   {
-    "date": "2026-10-09",
-    "note": "alamone 2026-10-05",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
-   {
-    "date": "2026-10-09",
-    "note": "alamone 2026-10-05",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-09",
     "note": "alamone 2026-10-05",
@@ -49,6 +31,24 @@
     "cores": 4,
     "sets": 14,
     "pairs": 25,
+    "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-10",
+    "note": "alamone 2026-10-05",
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
+    "dates_improved": 0,
+    "cores_removed": 1
+   },
+   {
+    "date": "2026-10-10",
+    "note": "alamone 2026-10-05",
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
     "dates_improved": 0,
     "cores_removed": 0
    }
@@ -2395,34 +2395,6 @@
   ],
   "repo_errors": [
    [
-    "harlock74/Arcade-CloakDagger_MiSTer",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "Kyp069/zx48-MiSTer",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "blahm1d/wolf-unit",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "kandowontu/BrickBoy_MiSTer",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "meathax/Bucky",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "meathax/mrdo",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
-    "meathax/s24",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
-   ],
-   [
     "https://mister.blahm1d.com/db.json.zip",
     "<urlopen error Tunnel connection failed: 403 Forbidden>"
    ]
@@ -2435,7 +2407,7 @@
    "working_arcade_sets_covered": 5198,
    "working_arcade_titles_source": 1731,
    "working_arcade_titles_binary_only": 259,
-   "cores": 573,
+   "cores": 572,
    "binary_only_cores": 144,
    "unmatched_sets": 414
   }
@@ -2551,6 +2523,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-10",
+   "aliases": [],
    "last_seen": "2026-10-10",
    "binary_only": true,
    "nsets": 1,
@@ -2665,6 +2638,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-10",
+   "aliases": [],
    "last_seen": "2026-10-10",
    "binary_only": true,
    "nsets": 1,
@@ -14707,8 +14681,8 @@
    "source_title": "ppriest (MiSTer_ppriest)",
    "channel": null,
    "rbf": "KonamiGXT34.rbf",
-   "repo": null,
-   "url": null,
+   "repo": "ppriest/Arcade-KonamiGX_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
    "build_date": null,
    "status": null,
    "reading": null,
@@ -15347,29 +15321,6 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-28"
-  },
-  {
-   "id": "repo:konamigxt34",
-   "name": "KonamiGXT34",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": null,
-   "rbf": "KonamiGXT34.rbf",
-   "repo": "ppriest/Arcade-KonamiGX_MiSTer",
-   "url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-08",
-   "aliases": [],
-   "last_seen": "2026-10-10",
-   "binary_only": false,
-   "nsets": 5,
-   "ntitles": 1,
-   "first_date": "2026-10-08"
   },
   {
    "id": "repo:leland",
@@ -20227,8 +20178,7 @@
    "sets_covered": 27,
    "cores": [
     "ppriest:konamigx",
-    "ppriest:konamigxt34",
-    "repo:konamigxt34"
+    "ppriest:konamigxt34"
    ],
    "first": "2026-09-19"
   },
