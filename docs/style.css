@@ -164,3 +164,5 @@ button.plus1 .n::before { content: "\00b7"; margin: 0 4px; }
 .vote-actions .spacer { flex: 1; }
 .vote-actions button { font: inherit; font-size: 13px; padding: 5px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--text); cursor: pointer; }
 .vote-actions button.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); font-weight: 600; }
+button.plus1:disabled { opacity: .45; cursor: not-allowed; border-color: var(--muted); color: var(--muted); }
+button.plus1:disabled:hover { background: var(--surface); color: var(--muted); }

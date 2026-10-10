@@ -138,7 +138,7 @@ titles by votes, with recent voters and last-vote dates.
   resets who counts as "the same visitor".
 * **Checks:** `kind` and `key` format, the key must exist in `data/keys.json` (written by `mmc report`),
   nickname stripped to 32 characters, same-origin requests only, 60 votes per hour per visitor.
-* The page works without the API: if `/api/wishlist` is unreachable, the +1 buttons are hidden.
+* The page works without the API: if `/api/wishlist` is unreachable, the +1 buttons are greyed out (the tooltip and the Wishlist tab say why). `GET /api/health` reports whether `DATABASE_URL` is set and the database answers, which is the first thing to open when the buttons are grey.
 
 ## Databases tab
 

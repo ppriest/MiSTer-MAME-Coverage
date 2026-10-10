@@ -79,4 +79,6 @@ async function readBody(req) {
   try { return JSON.parse(Buffer.concat(chunks).toString("utf8") || "{}"); } catch (e) { return {}; }
 }
 
-module.exports = { ensure, ipHash, json, sameOrigin, cleanNickname, KEY_RE, knownKeys, readBody };
+const hasDb = () => !!url;
+
+module.exports = { hasDb, ensure, ipHash, json, sameOrigin, cleanNickname, KEY_RE, knownKeys, readBody };

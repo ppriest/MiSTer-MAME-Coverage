@@ -601,7 +601,7 @@
   // ---------- wishlist (votes live in the /api functions; the page works without them) ----------
   S.api = { ok: false, votes: { title: new Map(), driver: new Map() }, mine: { title: new Set(), driver: new Set() }, list: { titles: [], drivers: [] } };
   const plus1 = (kind, key) => {
-    if (!S.api.ok) return "";
+    if (!S.api.ok) return S.api.tried ? `<button type="button" class="plus1" disabled title="the wishlist service is not reachable (${esc(S.api.error || "unknown")}); see /api/health">+1</button>` : "";
     const n = S.api.votes[kind].get(key) || 0, voted = S.api.mine[kind].has(key);
     return `<button type="button" class="plus1${voted ? " voted" : ""}" data-kind="${kind}" data-key="${esc(key)}" title="${voted ? "you asked for this; click to change or withdraw" : "ask for this to be ported to MiSTer"}">+1${n ? `<span class="n">${n}</span>` : ""}</button>`;
   };
@@ -619,13 +619,14 @@
       S.api.votes = { title: new Map(w.titles.map(x => [x.key, x.votes])), driver: new Map(w.drivers.map(x => [x.key, x.votes])) };
       S.api.mine = { title: new Set(m.titles), driver: new Set(m.drivers) };
       S.api.ok = true;
-    } catch (e) { S.api.ok = false; }
+    } catch (e) { S.api.ok = false; S.api.error = String(e.message || e); console.warn("wishlist API unavailable:", S.api.error); }
+    S.api.tried = true;
   }
   const ago = iso => iso ? iso.slice(0, 10) : "";
   const voters = v => (v.voters || []).map(x => `<span class="badge" title="${esc(x.at)}">${esc(x.nickname)}</span>`).join("") + (v.votes > (v.voters || []).length ? ` <span class="flag">+${v.votes - v.voters.length} more</span>` : "");
   function renderWishlist() {
     const note = $("#wishlist-note");
-    if (!S.api.ok) { $("#wl-drivers tbody").innerHTML = ""; $("#wl-titles tbody").innerHTML = '<tr><td colspan="9" class="muted">The wishlist service is not reachable right now.</td></tr>'; return; }
+    if (!S.api.ok) { $("#wl-drivers tbody").innerHTML = ""; $("#wl-titles tbody").innerHTML = '<tr><td colspan="9" class="muted">The wishlist service is not reachable right now (' + esc(S.api.error || "unknown") + '). Open /api/health to see what is missing.</td></tr>'; return; }
     const none = c => `<tr><td colspan="${c}" class="muted">No requests yet.</td></tr>`;
     const dr = S.api.list.drivers;
     $("#wl-drivers tbody").innerHTML = dr.length ? dr.map((v, i) => { const d = S.driverByFile[v.key]; return `<tr>
@@ -744,7 +745,7 @@
     readHash();
     S.booting = false;
     applyTitles(); applyDrivers(); applyCores(); renderDatabases(); applyUnmatched();
-    loadWishlist().then(() => { if (S.api.ok) { applyTitles(); applyDrivers(); } renderWishlist(); });
+    loadWishlist().then(() => { applyTitles(); applyDrivers(); renderWishlist(); });
     // A pasted or back/forward hash applies without a reload (writeHash uses replaceState, so
     // the page's own filter changes do not fire this).
     addEventListener("hashchange", () => { S.booting = true; resetControls(); readHash(); S.booting = false; applyTitles(); applyDrivers(); applyCores(); applyUnmatched(); });
