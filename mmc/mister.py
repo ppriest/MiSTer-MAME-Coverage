@@ -63,6 +63,10 @@ EXTRA_REPOS = [
     ("repo", "kyledlester/MiSTer_Nostradamus", ["MRA"]),   # was Nostradamus_Magical_Cat_Adventure_MiSTer
     ("ppriest", "ppriest/Arcade-HyperNG64_MiSTer", None),
     ("repo", "decoryah/Arcade-TaitoLSystem_MiSTer", ["mra"]),
+    ("repo", "decoryah/Arcade-OhMyGod_MiSTer", ["mra"]),
+    ("repo", "decoryah/Arcade-MonsterMaulers_MiSTer", ["mra"]),
+    ("repo", "decoryah/Arcade-Gaiapolis_MiSTer", ["mra"]),
+    ("repo", "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer", ["mra"]),
 ]
 
 # Core records that a better-sourced record replaces. They are removed from the ledger together with
