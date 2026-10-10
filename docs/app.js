@@ -692,11 +692,12 @@
   }
   // Zaparoo launch: the address lives only in this browser's localStorage.
   const zd = $("#zap-dialog"), zget = () => { try { return localStorage.getItem("zaparoo-host") || ""; } catch (e) { return ""; } };
-  const zopen = () => { $("#zap-host").value = zget(); zd.showModal(); };
+  const nget = () => { try { return localStorage.getItem("wl-nick") || ""; } catch (e) { return ""; } };
+  const zopen = () => { $("#zap-host").value = zget(); $("#set-nick").value = nget(); zd.showModal(); };
   $("#zap-settings").addEventListener("click", zopen);
   $("#zap-copy").addEventListener("click", ev => { const b = ev.target; try { navigator.clipboard.writeText($("#zap-cfg").textContent).then(() => { b.textContent = "Copied"; }); } catch (e) { /* clipboard unavailable */ } });
   $("#zap-cancel").addEventListener("click", () => zd.close());
-  $("#zap-form").addEventListener("submit", () => { try { localStorage.setItem("zaparoo-host", $("#zap-host").value.trim()); } catch (e) { /* storage unavailable */ } });
+  $("#zap-form").addEventListener("submit", () => { try { localStorage.setItem("zaparoo-host", $("#zap-host").value.trim()); localStorage.setItem("wl-nick", $("#set-nick").value.trim() || "Anonymous"); } catch (e) { /* storage unavailable */ } });
   document.addEventListener("click", ev => {
     const b = ev.target.closest("button.launch"); if (!b) return;
     ev.stopPropagation();

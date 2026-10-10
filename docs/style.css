@@ -184,3 +184,7 @@ pre.zapcfg { white-space: pre-wrap; overflow-wrap: anywhere; background: var(--b
 #zap-dialog { width: min(630px, calc(100vw - 32px)); max-width: 630px; box-sizing: border-box; }
 #zap-dialog input { width: 100%; box-sizing: border-box; }
 p.zapcopy { margin: 4px 0 8px; }
+.top .wrap { position: relative; }
+button.gear { position: absolute; top: 0; right: 16px; width: 34px; height: 34px; font-size: 20px; line-height: 1; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); color: var(--text-2); cursor: pointer; }
+button.gear:hover { color: var(--accent); border-color: var(--accent); }
+#zap-dialog h4 { margin: 14px 0 0; font-size: 14px; }

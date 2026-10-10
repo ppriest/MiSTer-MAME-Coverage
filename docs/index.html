@@ -13,10 +13,10 @@
 <body>
 <header class="top">
   <div class="wrap">
+    <button type="button" id="zap-settings" class="gear" title="Settings" aria-label="Settings">⚙</button>
     <h1>MiSTer <span class="vs">×</span> MAME arcade coverage</h1>
     <h2 class="tagline">See what Arcade PCB titles are covered by MAME, MiSTer, and request support on MiSTer where missing</h2>
     <p class="sub" id="subtitle">Loading data…</p>
-    <button type="button" id="zap-settings" class="zapset" title="set your local MiSTer IP address for Zaparoo launch">⚙ Local MiSTer IP address</button>
   </div>
 </header>
 
@@ -303,7 +303,10 @@
 <div class="shot" id="shot" hidden><div class="pair"><figure data-kind="title"><img alt="Title screen"><figcaption>Title</figcaption></figure><figure data-kind="ingame"><img alt="In-game screenshot"><figcaption>In game</figcaption></figure></div><div class="cap"></div></div>
   <dialog id="zap-dialog">
     <form method="dialog" id="zap-form">
-      <h3>Launch on my MiSTer</h3>
+      <h3>Settings</h3>
+      <label>Your nickname <input id="set-nick" maxlength="32" autocomplete="nickname" placeholder="Anonymous"></label>
+      <p class="muted small">Shown next to your wishlist votes. Saved only in this browser.</p>
+      <h4>Launch on my MiSTer (Zaparoo)</h4>
       <p class="muted small">Enter your MiSTer's local IP address or hostname (Zaparoo Core, port 7497 by default). It is saved only in this browser and never sent to this site. </p>
       <p class="muted small">Zaparoo only accepts launches from other devices once you allow them. On the MiSTer's SD card, edit <code>zaparoo/config.toml</code> (in the <code>/media/fat</code> share) and add this, then restart Zaparoo Core:</p>
       <pre class="zapcfg" id="zap-cfg">[service]
