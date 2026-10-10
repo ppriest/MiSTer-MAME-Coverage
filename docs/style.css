@@ -184,3 +184,4 @@ pre.zapcfg { white-space: pre-wrap; overflow-wrap: anywhere; background: var(--b
 #zap-dialog { width: min(630px, calc(100vw - 32px)); max-width: 630px; box-sizing: border-box; }
 #zap-dialog input { width: 100%; box-sizing: border-box; }
 p.zapcopy { margin: 4px 0 8px; }
+a.zapset { display: inline-block; text-decoration: none; margin-left: 6px; }
