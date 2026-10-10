@@ -24,6 +24,11 @@ def write(result: dict) -> None:
     }
     with open(os.path.join(paths.DOCS, "data", "summary.json"), "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=1)
+    # The titles and drivers a wishlist vote may name (the /api/vote function checks against this file).
+    keys = {"titles": sorted(t["name"] for t in result["titles"]),
+            "drivers": sorted({t["sourcefile"] for t in result["titles"] if t["sourcefile"]} | {d["sourcefile"] for d in result["drivers"]})}
+    with open(os.path.join(paths.DOCS, "data", "keys.json"), "w", encoding="utf-8") as f:
+        json.dump(keys, f, separators=(",", ":"))
     g = result["meta"].get("genre", {})
     if g.get("unmapped"):
         print(f"[report] genre strings not in data/genre_map.json (mapped to default): "

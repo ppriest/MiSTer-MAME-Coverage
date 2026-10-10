@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-10T11:13:07+00:00",
+  "generated": "2026-10-10T11:54:52+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-10T11:12:54+00:00",
+  "mister_generated": "2026-10-10T09:54:27+00:00",
   "alamone_generated": "2026-10-05T11:12:58+00:00",
   "ledger_updated": "2026-10-10",
   "ledger_runs": [
@@ -2307,30 +2307,6 @@
     "mras": 2
    },
    {
-    "source": "dist",
-    "repo": "MiSTer-devel/Arcade-OffTheWall_MiSTer",
-    "dirs": null,
-    "mras": 2
-   },
-   {
-    "source": "dist",
-    "repo": "MiSTer-devel/Arcade-ReliefPitcher_MiSTer",
-    "dirs": null,
-    "mras": 3
-   },
-   {
-    "source": "dist",
-    "repo": "MiSTer-devel/Arcade-Shuuz_MiSTer",
-    "dirs": null,
-    "mras": 2
-   },
-   {
-    "source": "dist",
-    "repo": "MiSTer-devel/Arcade-Victory_MiSTer",
-    "dirs": null,
-    "mras": 2
-   },
-   {
     "source": "repo",
     "repo": "rmonic79/Arcade-Darius_MiSTer",
     "dirs": null,
@@ -2419,36 +2395,8 @@
   ],
   "repo_errors": [
    [
-    "harlock74/Arcade-CloakDagger_MiSTer",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
-   ],
-   [
-    "Kyp069/zx48-MiSTer",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
-   ],
-   [
-    "blahm1d/wolf-unit",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
-   ],
-   [
-    "kandowontu/BrickBoy_MiSTer",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
-   ],
-   [
-    "meathax/Bucky",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
-   ],
-   [
-    "meathax/mrdo",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
-   ],
-   [
-    "meathax/s24",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
-   ],
-   [
     "https://mister.blahm1d.com/db.json.zip",
-    "HTTP Error 403: Forbidden"
+    "<urlopen error Tunnel connection failed: 403 Forbidden>"
    ]
   ],
   "counts": {

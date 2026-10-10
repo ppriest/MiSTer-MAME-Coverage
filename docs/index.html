@@ -25,6 +25,7 @@
     <button role="tab" data-tab="drivers">Drivers</button>
     <button role="tab" data-tab="cores">Cores</button>
     <button role="tab" data-tab="databases">Databases</button>
+    <button role="tab" data-tab="wishlist">Wishlist</button>
     <button role="tab" data-tab="unmatched">Unmatched</button>
     <button role="tab" data-tab="about">About</button>
   </nav>
@@ -163,7 +164,7 @@
     <div class="tablewrap">
       <table class="grid" id="titles-table">
         <thead><tr>
-          <th></th><th>Title</th><th>Set</th><th>Year</th><th>Manufacturer</th><th>Genre</th><th>Driver</th><th>Sets</th><th>Cores</th><th>On MiSTer since</th>
+          <th></th><th>Title</th><th>Set</th><th>Year</th><th>Manufacturer</th><th>Genre</th><th>MAME Driver</th><th>Sets</th><th>On MiSTer since</th><th>Cores</th><th title="request a port">+1</th>
         </tr></thead>
         <tbody></tbody>
       </table>
@@ -200,7 +201,7 @@
     <p class="count" id="drivers-count"></p>
     <div class="tablewrap">
       <table class="grid" id="drivers-table">
-        <thead><tr><th>Driver</th><th>Titles covered</th><th></th><th>Sets covered</th><th class="gcol">Genre titles</th><th class="gcol">Genre sets</th><th>Cores</th><th>First on MiSTer</th></tr></thead>
+        <thead><tr><th>MAME Driver</th><th>Titles covered</th><th></th><th>Sets covered</th><th class="gcol">Genre titles</th><th class="gcol">Genre sets</th><th>Cores</th><th>First on MiSTer</th><th title="request a port">+1</th></tr></thead>
         <tbody></tbody>
       </table>
     </div>
@@ -231,6 +232,14 @@
         <tbody></tbody>
       </table>
     </div>
+  </section>
+
+  <section id="tab-wishlist" class="tab" role="tabpanel" hidden>
+    <p class="muted" id="wishlist-note">Titles and drivers people would like to see on MiSTer, most requested first. Use the <b>+1</b> button next to any title or driver that is not fully on MiSTer to add your vote.</p>
+    <h2 class="wl-h">Drivers</h2>
+    <div class="tablewrap"><table class="grid" id="wl-drivers"><thead><tr><th>#</th><th>MAME Driver</th><th>On MiSTer</th><th>Votes</th><th>Recent voters</th><th>Last vote</th></tr></thead><tbody></tbody></table></div>
+    <h2 class="wl-h">Titles</h2>
+    <div class="tablewrap"><table class="grid" id="wl-titles"><thead><tr><th>#</th><th>Title</th><th>Set</th><th>Year</th><th>Manufacturer</th><th>Sets on MiSTer</th><th>Votes</th><th>Recent voters</th><th>Last vote</th></tr></thead><tbody></tbody></table></div>
   </section>
 
   <section id="tab-databases" class="tab" role="tabpanel" hidden>
@@ -287,6 +296,21 @@
 </main>
 
 <div class="tooltip" id="tooltip" hidden></div>
+  <dialog id="vote-dialog">
+    <form method="dialog" id="vote-form">
+      <h3 id="vote-title">Request a port</h3>
+      <p class="muted" id="vote-what"></p>
+      <label>Your nickname <input id="vote-nick" maxlength="32" autocomplete="nickname" value="Anonymous"></label>
+      <p class="muted small">Shown next to your vote. Your IP address is kept only as an irreversible hash, to stop duplicate votes.</p>
+      <p class="vote-err" id="vote-err" hidden></p>
+      <div class="vote-actions">
+        <button type="button" id="vote-withdraw" hidden>Withdraw my vote</button>
+        <span class="spacer"></span>
+        <button type="button" id="vote-cancel">Cancel</button>
+        <button type="submit" id="vote-ok" class="primary">+1</button>
+      </div>
+    </form>
+  </dialog>
 <script src="app.js"></script>
 </body>
 </html>
