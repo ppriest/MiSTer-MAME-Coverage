@@ -12,7 +12,7 @@ Shape::
     {"meta": {"created", "updated", "runs": [...]},
      "cores": {core id: {...metadata..., "first_recorded", "last_seen"}},
      "support": {set name: {core id: {"date", "date_quality", "via", "wip", "alt",
-                                      "first_repo", "first_path", "first_recorded", "last_seen"}}}}
+                                      "first_repo", "first_path", "mra", "first_recorded", "last_seen"}}}}
 
 Merge rules: a new (set, core) pair is added; an existing one keeps the earliest date (a git
 date beats an approximate build date) and gets ``last_seen`` bumped; nothing is ever deleted,
@@ -99,6 +99,8 @@ def merge(ledger: dict, observed: dict, note: str = "") -> dict:
             if better(rec, old):
                 old.update({k: rec[k] for k in ("date", "date_quality", "first_repo", "first_path") if k in rec})
                 updated_dates += 1
+            if rec.get("mra"):                  # the MRA as it is now, not as first added
+                old["mra"] = rec["mra"]
             old["wip"] = old.get("wip", False) and rec.get("wip", False)
             old["alt"] = old.get("alt", False) and rec.get("alt", False)
             old["last_seen"] = today
