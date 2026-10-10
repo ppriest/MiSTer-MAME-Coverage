@@ -705,10 +705,9 @@
     if (!/:\d+$/.test(host)) host += ":7497";
     // Opened as a navigation, not fetch(): an https page may not fetch() a plain-http LAN address, but it may open one.
     const w = window.open(`${host.replace(/\/$/, "")}/run/${encodeURIComponent(b.dataset.launch)}`, "zaparoo", "popup,width=420,height=240");
-    // Zaparoo answers with an empty page when it accepts the request, and an error text when it refuses; give the error a moment to be read.
-    if (!w) { b.textContent = "popup blocked"; return; }
-    b.textContent = "sent…";
-    setTimeout(() => { try { if (!w.document.body.innerText.trim()) w.close(); } catch (e) { w.close(); } b.textContent = "▶"; }, 1500);
+    // Zaparoo answers with an empty page when it accepts the request and with an error text ("Forbidden", ...) when it
+    // refuses. A cross-origin popup cannot be read, so leave it open for the person to look at.
+    if (!w) { b.textContent = "popup blocked"; setTimeout(() => { b.textContent = "▶"; }, 2500); }
   });
   document.addEventListener("click", ev => { const b = ev.target.closest("button.plus1"); if (b) { ev.stopPropagation(); openVote(b.dataset.kind, b.dataset.key); } });
 
