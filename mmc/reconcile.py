@@ -253,12 +253,24 @@ def observe(mister: dict) -> dict:
         cores[target].setdefault("aliases", []).append(cid)
         del cores[cid]
     # 2c. A developer's own database wins over a loose repository record of the same repository.
-    db_cores = {(c["repo"].lower(), _stem_key(mister_mod.norm_rbf(c["rbf"]) or "")) for c in cores.values()
-                if c["source"] in mister_mod.DB_SOURCES and c.get("repo")}
+    # (a database core made from MRAs alone has no repository; it inherits the one of the loose record it replaces)
+    def owner_of(url: str) -> str:
+        m = re.match(r"https://[^/]+/([^/]+)/", url or "")
+        return m.group(1).lower() if m else ""
+
+    db_cores = {}
     for cid, c in cores.items():
-        if c["source"] == "repo" and c.get("repo") and \
-                (c["repo"].lower(), _stem_key(mister_mod.norm_rbf(c["rbf"]) or "")) in db_cores:
+        if c["source"] in mister_mod.DB_SOURCES:
+            db_cores.setdefault((owner_of(mister_mod.DB_SOURCES[c["source"]]), _stem_key(mister_mod.norm_rbf(c["rbf"]) or "")), []).append(c)
+    for cid, c in cores.items():
+        if c["source"] != "repo" or not c.get("repo"):
+            continue
+        hit = db_cores.get((c["repo"].split("/")[0].lower(), _stem_key(mister_mod.norm_rbf(c["rbf"]) or "")))
+        if hit:
             excluded.add(cid)
+            for h in hit:
+                if not h.get("repo"):
+                    h["repo"], h["url"] = c["repo"], c.get("url")
     # MRA <category> tags, per set and source (kept in the ledger for the genre step).
     categories: dict[str, dict[str, str]] = collections.defaultdict(dict)
     for m in mister["mras"]:
