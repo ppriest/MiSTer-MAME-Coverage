@@ -1,7 +1,7 @@
 // POST   /api/vote  {kind, key, nickname}  -> upsert this visitor's vote for a title or a driver
 // DELETE /api/vote  {kind, key}            -> withdraw it
 // One vote per (kind, key, IP hash): voting again only updates the nickname.
-const { ensure, ipHash, json, sameOrigin, cleanNickname, KEY_RE, knownKeys, readBody } = require("./_lib");
+const { why, ensure, ipHash, json, sameOrigin, cleanNickname, KEY_RE, knownKeys, readBody } = require("./_lib");
 
 const PER_HOUR = 60;
 
@@ -29,6 +29,7 @@ module.exports = async (req, res) => {
     const [{ votes }] = await sql`SELECT count(*)::int AS votes FROM votes WHERE kind = ${kind} AND key = ${key}`;
     return json(res, 200, { kind, key, votes, voted: req.method !== "DELETE" });
   } catch (e) {
-    return json(res, 500, { error: "vote failed" });
+    console.error("vote:", e);
+    return json(res, 500, { error: "vote failed", detail: why(e) });
   }
 };

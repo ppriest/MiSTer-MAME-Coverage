@@ -81,4 +81,7 @@ async function readBody(req) {
 
 const hasDb = () => !!url;
 
-module.exports = { hasDb, ensure, ipHash, json, sameOrigin, cleanNickname, KEY_RE, knownKeys, readBody };
+// A short, secret-free reason for an error response (the full error goes to the function log).
+const why = e => String((e && e.message) || e).replace(/postgres(ql)?:\/\/\S+/gi, "<url>").slice(0, 200);
+
+module.exports = { why, hasDb, ensure, ipHash, json, sameOrigin, cleanNickname, KEY_RE, knownKeys, readBody };

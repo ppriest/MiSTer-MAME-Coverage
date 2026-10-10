@@ -1,7 +1,7 @@
 // GET /api/wishlist -> {titles: [...], drivers: [...]}, each [{key, votes, first_vote, last_vote, voters: [{nickname, at}]}],
 // most votes first. `at` / first_vote / last_vote are ISO timestamps (the votes table keeps created_at and updated_at).
 // Public and cacheable; which items the caller voted for is /api/mine.
-const { ensure, json } = require("./_lib");
+const { why, ensure, json } = require("./_lib");
 
 module.exports = async (req, res) => {
   if (req.method !== "GET") { res.setHeader("Allow", "GET"); return json(res, 405, { error: "method not allowed" }); }
@@ -20,6 +20,7 @@ module.exports = async (req, res) => {
     }));
     return json(res, 200, { titles: pick("title"), drivers: pick("driver") }, "public, s-maxage=20, stale-while-revalidate=60");
   } catch (e) {
-    return json(res, 500, { error: "wishlist unavailable" });
+    console.error("wishlist:", e);
+    return json(res, 500, { error: "wishlist unavailable", detail: why(e) });
   }
 };
