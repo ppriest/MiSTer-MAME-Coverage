@@ -693,10 +693,12 @@
   // Zaparoo launch: the address lives only in this browser's localStorage.
   const zd = $("#zap-dialog"), zget = () => { try { return localStorage.getItem("zaparoo-host") || ""; } catch (e) { return ""; } };
   const zopen = () => { $("#zap-host").value = zget(); zd.showModal(); };
+  const zlabel = () => { const h = zget(); $("#zap-settings").textContent = h ? `⚙ Local MiSTer: ${h}` : "⚙ Local MiSTer IP address"; };
+  zlabel();
   $("#zap-settings").addEventListener("click", zopen);
   $("#zap-copy").addEventListener("click", ev => { const b = ev.target; try { navigator.clipboard.writeText($("#zap-cfg").textContent).then(() => { b.textContent = "Copied"; }); } catch (e) { /* clipboard unavailable */ } });
   $("#zap-cancel").addEventListener("click", () => zd.close());
-  $("#zap-form").addEventListener("submit", () => { try { localStorage.setItem("zaparoo-host", $("#zap-host").value.trim()); } catch (e) { /* storage unavailable */ } });
+  $("#zap-form").addEventListener("submit", () => { try { localStorage.setItem("zaparoo-host", $("#zap-host").value.trim()); } catch (e) { /* storage unavailable */ } zlabel(); });
   document.addEventListener("click", ev => {
     const b = ev.target.closest("button.launch"); if (!b) return;
     ev.stopPropagation();
