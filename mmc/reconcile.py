@@ -150,12 +150,18 @@ def observe(mister: dict) -> dict:
     # set name -> {core id -> support record}
     support: dict[str, dict[str, dict]] = collections.defaultdict(dict)
 
+    mra_rank: dict[tuple[str, str], tuple[bool, bool]] = {}      # (set, core) -> (alt, wip) of the MRA kept in "mra"
+
     def add(setn: str, cid: str, date: str | None, quality: str, via: str, wip: bool = False, alt: bool = False,
-            first_repo: str | None = None, first_path: str | None = None):
+            first_repo: str | None = None, first_path: str | None = None, mra: str | None = None):
         rec = support[setn].get(cid)
+        if mra and (rec is None or not rec.get("mra") or (alt, wip) < mra_rank[(setn, cid)]):
+            mra_rank[(setn, cid)] = (alt, wip)
+            if rec is not None:
+                rec["mra"] = mra
         if rec is None:
             support[setn][cid] = {"core": cid, "date": date, "date_quality": quality, "via": via, "wip": wip, "alt": alt,
-                                  "first_repo": first_repo, "first_path": first_path}
+                                  "first_repo": first_repo, "first_path": first_path, "mra": mra}
             return
         if date and (rec["date"] is None or date < rec["date"] or (rec["date_quality"] != "git" and quality == "git")):
             rec.update(date=date, date_quality=quality, first_repo=first_repo, first_path=first_path)
@@ -191,7 +197,8 @@ def observe(mister: dict) -> dict:
         if not m["repo"].startswith("db:"):
             core_repos[cid].add(m["repo"])
         date, quality, frepo, fpath = dated(m)
-        add(m["setname"], cid, date, quality, m["source"], m.get("wip", False), m.get("alt", False), frepo, fpath)
+        add(m["setname"], cid, date, quality, m["source"], m.get("wip", False), m.get("alt", False), frepo, fpath,
+            mister_mod.installed_path(m))
     excluded: set[str] = set()
     for m in held:
         stem = mister_mod.norm_rbf(m.get("rbf"))
@@ -200,7 +207,8 @@ def observe(mister: dict) -> dict:
             excluded.add(core_id(m["source"], m.get("rbf")))
             continue
         date, quality, frepo, fpath = dated(m)
-        add(m["setname"], cid, date, quality, m["source"], m.get("wip", False), m.get("alt", False), frepo, fpath)
+        add(m["setname"], cid, date, quality, m["source"], m.get("wip", False), m.get("alt", False), frepo, fpath,
+            mister_mod.installed_path(m))
     # 1b. Cores of open jotego/jtcores pull requests (source available, nothing published yet).
     for pc in mister_mod.load_pending():
         cid = f"jtpr:{pc['name'].lower()}"
@@ -247,7 +255,7 @@ def observe(mister: dict) -> dict:
                 rec = recs.pop(cid)
                 target = alias[cid]
                 add(setn, target, rec["date"], rec["date_quality"], rec["via"], rec["wip"], rec["alt"],
-                    rec.get("first_repo"), rec.get("first_path"))
+                    rec.get("first_repo"), rec.get("first_path"), rec.get("mra"))
     for cid, target in alias.items():
         core_repos[target] |= core_repos.pop(cid, set())
         cores[target].setdefault("aliases", []).append(cid)
@@ -357,7 +365,7 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
             "parent": name == parent,
             "mame_added": added.get(name, (None, None))[0],
             "mame_date": added.get(name, (None, None))[1],
-            "cores": [{k: r.get(k) for k in ("core", "date", "date_quality", "via", "wip", "alt")}
+            "cores": [{k: r.get(k) for k in ("core", "date", "date_quality", "via", "wip", "alt", "mra")}
                       for r in sorted(recs.values(), key=lambda r: (r["date"] or "9999", r["core"]))],
             "date": earliest(all_recs.values()),
             "support": support_of(all_recs),

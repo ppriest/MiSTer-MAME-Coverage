@@ -420,7 +420,7 @@
       const cls = ncov === 0 ? "uncovered" : ncov < nsets ? "partial" : "covered";
       return `<tr class="${cls}${t.working ? "" : " nw"}" data-t="${esc(t.name)}">
         <td class="exp" title="show sets">${S.open.has(t.name) ? "▾" : "▸"}</td>
-        <td>${esc(t.desc)}</td>
+        <td>${esc(t.desc)}${t.cores.length ? ` <button type="button" class="launch" data-launch="${esc(launchScript(t))}" title="launch on my MiSTer via Zaparoo">▶</button>` : ""}</td>
         <td class="set">${esc(t.name)}</td>
         <td class="num">${esc(t.year)}</td>
         <td>${esc(t.manufacturer)}</td>
@@ -680,6 +680,37 @@
   $("#vote-form").addEventListener("submit", ev => { ev.preventDefault(); sendVote("POST").catch(voteErr); });
   $("#vote-withdraw").addEventListener("click", () => sendVote("DELETE").catch(voteErr));
   $("#vote-cancel").addEventListener("click", () => vd.close());
+  // ZapScript for a title: the exact MRA of the best set/core pair (parents first, no alternatives or WIP), else a title lookup.
+  function launchScript(t) {
+    let best = null, rank = 9;
+    for (const s of t.sets) for (const c of s.cores || []) {
+      if (!c.mra) continue;
+      const r = (c.alt ? 2 : 0) + (c.wip ? 1 : 0) + (s.parent ? 0 : 4);
+      if (r < rank) { rank = r; best = c.mra; }
+    }
+    return best ? best : "**launch.title:Arcade/" + t.desc;
+  }
+  // Zaparoo launch: the address lives only in this browser's localStorage.
+  const zd = $("#zap-dialog"), zget = () => { try { return localStorage.getItem("zaparoo-host") || ""; } catch (e) { return ""; } };
+  const zopen = () => { $("#zap-host").value = zget(); zd.showModal(); };
+  const zlabel = () => { const h = zget(); $("#zap-settings").textContent = h ? `⚙ Local MiSTer: ${h}` : "⚙ Local MiSTer IP address"; };
+  zlabel();
+  $("#zap-settings").addEventListener("click", zopen);
+  $("#zap-copy").addEventListener("click", ev => { const b = ev.target; try { navigator.clipboard.writeText($("#zap-cfg").textContent).then(() => { b.textContent = "Copied"; }); } catch (e) { /* clipboard unavailable */ } });
+  $("#zap-cancel").addEventListener("click", () => zd.close());
+  $("#zap-form").addEventListener("submit", () => { try { localStorage.setItem("zaparoo-host", $("#zap-host").value.trim()); } catch (e) { /* storage unavailable */ } zlabel(); });
+  document.addEventListener("click", ev => {
+    const b = ev.target.closest("button.launch"); if (!b) return;
+    ev.stopPropagation();
+    let host = zget(); if (!host) { zopen(); return; }
+    if (!/^[a-z]+:\/\//i.test(host)) host = "http://" + host;
+    if (!/:\d+$/.test(host)) host += ":7497";
+    // Opened as a navigation, not fetch(): an https page may not fetch() a plain-http LAN address, but it may open one.
+    const w = window.open(`${host.replace(/\/$/, "")}/run/${encodeURIComponent(b.dataset.launch)}`, "zaparoo", "popup,width=420,height=240");
+    // Zaparoo answers with an empty page when it accepts the request and with an error text ("Forbidden", ...) when it
+    // refuses. A cross-origin popup cannot be read, so leave it open for the person to look at.
+    if (!w) { b.textContent = "popup blocked"; setTimeout(() => { b.textContent = "▶"; }, 2500); }
+  });
   document.addEventListener("click", ev => { const b = ev.target.closest("button.plus1"); if (b) { ev.stopPropagation(); openVote(b.dataset.kind, b.dataset.key); } });
 
   // ---------- screenshot preview on hover: title screen + in-game shot, loaded only when you rest on a title ----------

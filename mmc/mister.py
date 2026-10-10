@@ -466,6 +466,15 @@ def norm_rbf(rbf: str | None) -> str | None:
     return s
 
 
+def installed_path(m: dict) -> str | None:
+    """Where the downloader puts an MRA on the SD card (what Zaparoo launches): developer databases
+    already list ``_Arcade/...``; repository MRAs are copied flat into ``_Arcade``."""
+    p = m.get("path") or ""
+    if not p.lower().endswith(".mra"):
+        return None
+    return p if p.startswith("_Arcade/") else "_Arcade/" + p.rsplit("/", 1)[-1]
+
+
 def _wip(path: str) -> bool:
     return bool(re.search(r"wip|experimental|unstable|beta|alpha|test", path, re.I))
 

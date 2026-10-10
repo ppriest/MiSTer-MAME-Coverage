@@ -154,13 +154,13 @@ button.plus1 .n { font-weight: 400; opacity: .85; }
 button.plus1 .n::before { content: "\00b7"; margin: 0 4px; }
 .grid td.act { text-align: right; white-space: nowrap; }
 .wl-h { font-size: 15px; margin: 18px 0 6px; }
-#vote-dialog { border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--text); padding: 16px 20px; max-width: 420px; width: calc(100% - 32px); }
-#vote-dialog::backdrop { background: rgba(0,0,0,.35); }
-#vote-dialog h3 { margin: 0 0 4px; }
-#vote-dialog label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--text-2); margin-top: 10px; }
-#vote-dialog input { font: inherit; font-size: 14px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--text); }
-#vote-dialog .small { font-size: 11px; }
-#vote-dialog .vote-err { color: var(--accent-2); font-size: 12px; margin: 6px 0 0; }
+#vote-dialog, #zap-dialog { border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--text); padding: 16px 20px; max-width: 420px; width: calc(100% - 32px); }
+#vote-dialog::backdrop, #zap-dialog::backdrop { background: rgba(0,0,0,.35); }
+#vote-dialog h3, #zap-dialog h3 { margin: 0 0 4px; }
+#vote-dialog label, #zap-dialog label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--text-2); margin-top: 10px; }
+#vote-dialog input, #zap-dialog input { font: inherit; font-size: 14px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--text); }
+#vote-dialog .small, #zap-dialog .small { font-size: 11px; }
+#vote-dialog .vote-err, #zap-dialog .vote-err { color: var(--accent-2); font-size: 12px; margin: 6px 0 0; }
 .vote-actions { display: flex; gap: 8px; align-items: center; margin-top: 12px; }
 .vote-actions .spacer { flex: 1; }
 .vote-actions button { font: inherit; font-size: 13px; padding: 5px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--text); cursor: pointer; }
@@ -176,3 +176,11 @@ button.plus1:disabled:hover { background: var(--surface); color: var(--muted); }
 .shot img { display: block; width: auto; height: auto; max-width: 100%; max-height: 70vh; border-radius: 4px; background: var(--surface-2); }  /* native size, only shrunk to fit the window */
 .shot figcaption { font-size: 10px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-top: 2px; }
 .shot .cap { font-size: 12px; color: var(--text-2); margin-top: 4px; }
+
+button.launch { font: inherit; font-size: 11px; padding: 0 6px; border: 1px solid var(--accent); border-radius: 10px; background: var(--surface); color: var(--accent); cursor: pointer; }
+button.launch:hover { background: var(--accent); color: var(--surface); }
+button.zapset { font: inherit; font-size: 12px; padding: 2px 10px; border: 1px solid var(--accent); border-radius: 12px; background: var(--surface); color: var(--accent); cursor: pointer; }
+pre.zapcfg { white-space: pre-wrap; overflow-wrap: anywhere; background: var(--bg, #0001); border: 1px solid var(--border, #8884); border-radius: 6px; padding: 6px 10px; font-size: 12px; overflow-x: auto; user-select: all; }
+#zap-dialog { width: min(630px, calc(100vw - 32px)); max-width: 630px; box-sizing: border-box; }
+#zap-dialog input { width: 100%; box-sizing: border-box; }
+p.zapcopy { margin: 4px 0 8px; }
