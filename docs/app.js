@@ -46,6 +46,7 @@
     $$(".tabs button").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === name));
     $$(".tab").forEach(t => t.hidden = t.id !== "tab-" + name);
     if (update) writeHash();
+    if (name === "wishlist" && S.api && S.api.tried) refreshWishlist();   // fresh votes whenever the tab is opened
   }
   $$(".tabs button").forEach(b => b.addEventListener("click", () => showTab(b.dataset.tab)));
 
@@ -612,15 +613,20 @@
     });
   }
   const jget = async url => { const r = await fetch(url, { headers: { Accept: "application/json" } }); if (!r.ok) throw new Error(r.status); return r.json(); };
-  async function loadWishlist() {
+  async function loadWishlist(fresh = false) {
     try {
-      const [w, m] = await Promise.all([jget("api/wishlist"), jget("api/mine")]);
+      const [w, m] = await Promise.all([jget("api/wishlist" + (fresh ? "?_=" + Date.now() : "")), jget("api/mine")]);
       S.api.list = w;
       S.api.votes = { title: new Map(w.titles.map(x => [x.key, x.votes])), driver: new Map(w.drivers.map(x => [x.key, x.votes])) };
       S.api.mine = { title: new Set(m.titles), driver: new Set(m.drivers) };
       S.api.ok = true;
     } catch (e) { S.api.ok = false; S.api.error = String(e.message || e); console.warn("wishlist API unavailable:", S.api.error); }
     S.api.tried = true;
+  }
+  let wlBusy = false;
+  async function refreshWishlist() {
+    if (wlBusy) return; wlBusy = true;
+    try { await loadWishlist(true); renderWishlist(); refreshPlus1(); } finally { wlBusy = false; }
   }
   const ago = iso => iso ? iso.slice(0, 10) : "";
   const voters = v => (v.voters || []).map(x => `<span class="badge" title="${esc(x.at)}">${esc(x.nickname)}</span>`).join("") + (v.votes > (v.voters || []).length ? ` <span class="flag">+${v.votes - v.voters.length} more</span>` : "");
@@ -668,7 +674,7 @@
     S.api.mine[voting.kind][out.voted ? "add" : "delete"](voting.key);
     try { if (out.voted) localStorage.setItem("wl-nick", $("#vote-nick").value.trim() || "Anonymous"); } catch (e) { /* storage unavailable */ }
     vd.close(); refreshPlus1();
-    await loadWishlist(); renderWishlist(); refreshPlus1();
+    await loadWishlist(true); renderWishlist(); refreshPlus1();
   }
   const voteErr = e => { $("#vote-err").textContent = `Could not save: ${e.message}`; $("#vote-err").hidden = false; };
   $("#vote-form").addEventListener("submit", ev => { ev.preventDefault(); sendVote("POST").catch(voteErr); });
