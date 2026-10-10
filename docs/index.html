@@ -305,7 +305,7 @@
     <form method="dialog" id="zap-form">
       <h3>Launch on my MiSTer</h3>
       <p class="muted small">Enter your MiSTer's local IP address or hostname (Zaparoo Core, port 7497 by default). It is saved only in this browser and never sent to this site. </p>
-      <p class="muted small">Zaparoo only accepts launches from other devices once you allow them. In Zaparoo's <code>config.toml</code> on the MiSTer, add this, then restart Zaparoo Core:</p>
+      <p class="muted small">Zaparoo only accepts launches from other devices once you allow them. On the MiSTer's SD card, edit <code>zaparoo/config.toml</code> (in the <code>/media/fat</code> share) and add this, then restart Zaparoo Core:</p>
       <pre class="zapcfg" id="zap-cfg">[service]
 allow_run = ['^launch\.title:Arcade/.*']</pre>
       <p class="muted small">Without it the launch popup shows "remote access disabled for this transport". <button type="button" id="zap-copy">Copy</button></p>
