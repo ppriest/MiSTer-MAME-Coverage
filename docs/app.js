@@ -691,14 +691,16 @@
     return best ? best : "**launch.title:Arcade/" + t.desc;
   }
   // Zaparoo launch: the address lives only in this browser's localStorage.
-  const zd = $("#zap-dialog"), zget = () => { try { return localStorage.getItem("zaparoo-host") || ""; } catch (e) { return ""; } };
+  // Accepts "192.168.1.5", "http://192.168.1.5/", "http://192.168.1.5:7497/path": keeps just host[:port].
+  const zhost = s => { s = (s || "").trim(); if (!s) return ""; try { return new URL(/^[a-z][a-z0-9+.-]*:\/\//i.test(s) ? s : "http://" + s).host || s; } catch (e) { return s.replace(/^[a-z]+:\/\//i, "").replace(/[\/?#].*$/, ""); } };
+  const zd = $("#zap-dialog"), zget = () => { try { return zhost(localStorage.getItem("zaparoo-host")); } catch (e) { return ""; } };
   const zopen = () => { $("#zap-host").value = zget(); zd.showModal(); };
   const zlabel = () => { const h = zget(); $("#zap-settings").textContent = h ? `⚙ Local MiSTer: ${h}` : "⚙ Local MiSTer IP address"; };
   zlabel();
   $("#zap-settings").addEventListener("click", zopen);
   $("#zap-copy").addEventListener("click", ev => { const b = ev.target; try { navigator.clipboard.writeText($("#zap-cfg").textContent).then(() => { b.textContent = "Copied"; }); } catch (e) { /* clipboard unavailable */ } });
   $("#zap-cancel").addEventListener("click", () => zd.close());
-  $("#zap-form").addEventListener("submit", () => { try { localStorage.setItem("zaparoo-host", $("#zap-host").value.trim()); } catch (e) { /* storage unavailable */ } zlabel(); });
+  $("#zap-form").addEventListener("submit", () => { try { localStorage.setItem("zaparoo-host", zhost($("#zap-host").value)); } catch (e) { /* storage unavailable */ } zlabel(); });
   document.addEventListener("click", ev => {
     const b = ev.target.closest("button.launch"); if (!b) return;
     ev.stopPropagation();
