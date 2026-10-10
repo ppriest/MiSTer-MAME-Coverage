@@ -1,6 +1,6 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-10-09 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (317 games).
+Generated 2026-10-10 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (317 games).
 
 **Agreement:** 307 of 309 deck titles are Shmup in our data (99.4%).
 
@@ -13,7 +13,7 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (86)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (87)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
@@ -33,6 +33,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `colony7` | Colony 7 (set 1) | 1981 | Shooter / Command (catver) | Defender |
 | `commando` | Commando (World) | 1985 | Shooter / Walking (catver) | jtcommnd |
 | `dcon` | D-Con | 1992 | Shooter / Command (catver) | DCon |
+| `dambustr` | Dambusters (US, set 1) | 1981 | Shooter / Flying Horizontal (catver) | Galaxian |
 | `dangerex` | Danger Express (prototype) | 1992 | Shooter / Misc. Vertical (catver) | Atari-G42 (Gm0rk) |
 | `dariusgx` | Darius Gaiden - Silver Hawk Extra Version (Ver 2.7J 1995/03/06) (Official Hack) | 1994 | Shooter / Flying Horizontal (catver) | Rayforce (spacestate1) |
 | `defender` | Defender (Red label) | 1980 | Shooter / Flying Horizontal (catver) | Defender |
