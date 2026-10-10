@@ -1074,6 +1074,10 @@
   "MiSTer-devel/Distribution_MiSTer",
   "MiSTer-devel/MRA-Alternatives_MiSTer"
  ],
+ "dist:tank": [
+  "MiSTer-devel/Arcade-Tank_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer"
+ ],
  "dist:tankbattalion": [
   "MiSTer-devel/Arcade-TankBattalion_MiSTer",
   "MiSTer-devel/Distribution_MiSTer"
@@ -1788,6 +1792,9 @@
  "ongo:killerinstinct": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:konamigxt1": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:konamigxt34": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -1989,6 +1996,9 @@
   "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-KonamiGX_MiSTer"
  ],
+ "repo:konamigxt1": [
+  "ppriest/Arcade-KonamiGX_MiSTer"
+ ],
  "repo:konamigxt34": [
   "ppriest/Arcade-KonamiGX_MiSTer"
  ],
@@ -1999,6 +2009,12 @@
   "MiSTer-devel/Arcade-MarbleMadness2_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
   "kandowontu2/Arcade-MarbleMadness2_MiSTer"
+ ],
+ "repo:mcatadv": [
+  "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer"
+ ],
+ "repo:monstermaulers": [
+  "decoryah/Arcade-MonsterMaulers_MiSTer"
  ],
  "repo:namco_na1_na2": [
   "OngoGablogian/MiSTer_Ongo",
@@ -2020,6 +2036,9 @@
   "OngoGablogian/MiSTer_Ongo",
   "kyledlester/MiSTer_Nostradamus",
   "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer"
+ ],
+ "repo:ohmygod": [
+  "decoryah/Arcade-OhMyGod_MiSTer"
  ],
  "repo:penguinkunwars": [
   "MrX-8B/MiSTer-Arcade-PenguinKunWars"

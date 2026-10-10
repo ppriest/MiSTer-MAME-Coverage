@@ -336,6 +336,15 @@
 "pairs": 0,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-10",
+"note": "alamone 2026-10-05",
+"cores": 9,
+"sets": 23,
+"pairs": 40,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -722,6 +731,24 @@
 "aliases": [],
 "last_seen": "2026-10-10"
 },
+"bazset:shogunwarriors_bazset": {
+"id": "bazset:shogunwarriors_bazset",
+"name": "ShogunWarriors_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "ShogunWarriors_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "bazset:superman_bazset": {
 "id": "bazset:superman_bazset",
 "name": "Superman_bazset",
@@ -739,6 +766,24 @@
 "note": null,
 "first_recorded": "2026-10-08",
 "aliases": [],
+"last_seen": "2026-10-10"
+},
+"bazset:twinhawk_bazset": {
+"id": "bazset:twinhawk_bazset",
+"name": "TwinHawk_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "TwinHawk_bazset.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
 "last_seen": "2026-10-10"
 },
 "bazset:volfied": {
@@ -5971,6 +6016,24 @@
 "aliases": [],
 "last_seen": "2026-10-10"
 },
+"dist:tank": {
+"id": "dist:tank",
+"name": "Tank",
+"source": "dist",
+"source_title": "MiSTer official distribution",
+"channel": null,
+"rbf": "Tank.rbf",
+"repo": "MiSTer-devel/Distribution_MiSTer",
+"url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "dist:tankbattalion": {
 "id": "dist:tankbattalion",
 "name": "TankBattalion",
@@ -10449,6 +10512,24 @@
 "aliases": [],
 "last_seen": "2026-10-10"
 },
+"ongo:konamigxt1": {
+"id": "ongo:konamigxt1",
+"name": "KonamiGXT1",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "KonamiGXT1.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ongo:konamigxt34": {
 "id": "ongo:konamigxt34",
 "name": "KonamiGXT34",
@@ -11361,6 +11442,24 @@
 "aliases": [],
 "last_seen": "2026-10-10"
 },
+"ppriest:konamigxt1": {
+"id": "ppriest:konamigxt1",
+"name": "KonamiGXT1",
+"source": "ppriest",
+"source_title": "ppriest (MiSTer_ppriest)",
+"channel": null,
+"rbf": "KonamiGXT1.rbf",
+"repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "ppriest:konamigxt34": {
 "id": "ppriest:konamigxt34",
 "name": "KonamiGXT34",
@@ -11378,6 +11477,24 @@
 "note": null,
 "first_recorded": "2026-10-09",
 "aliases": [],
+"last_seen": "2026-10-10"
+},
+"ppriest:nixpirates": {
+"id": "ppriest:nixpirates",
+"name": "NixPirates",
+"source": "ppriest",
+"source_title": "ppriest (MiSTer_ppriest)",
+"channel": null,
+"rbf": "NixPirates.rbf",
+"repo": null,
+"url": null,
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
 "last_seen": "2026-10-10"
 },
 "ppriest:seta": {
@@ -11966,6 +12083,42 @@
 "aliases": [],
 "last_seen": "2026-10-10"
 },
+"repo:mcatadv": {
+"id": "repo:mcatadv",
+"name": "mcatadv",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": null,
+"rbf": "mcatadv.rbf",
+"repo": "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
+"url": "https://github.com/decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"repo:monstermaulers": {
+"id": "repo:monstermaulers",
+"name": "monstermaulers",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": null,
+"rbf": "monstermaulers.rbf",
+"repo": "decoryah/Arcade-MonsterMaulers_MiSTer",
+"url": "https://github.com/decoryah/Arcade-MonsterMaulers_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "repo:namco_na1_na2": {
 "id": "repo:namco_na1_na2",
 "name": "Namco_NA1_NA2 (kyledlester)",
@@ -12069,6 +12222,24 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-10-10"
+},
+"repo:ohmygod": {
+"id": "repo:ohmygod",
+"name": "ohmygod",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": null,
+"rbf": "ohmygod.rbf",
+"repo": "decoryah/Arcade-OhMyGod_MiSTer",
+"url": "https://github.com/decoryah/Arcade-OhMyGod_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-10",
 "last_seen": "2026-10-10"
 },
 "repo:penguinkunwars": {
@@ -25024,6 +25195,19 @@
 }
 },
 "catt": {
+"repo:mcatadv": {
+"core": "repo:mcatadv",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"first_path": "mra/Catt (Japan).mra",
+"mra": "_Arcade/Catt (Japan).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "repo:nostradamus": {
 "core": "repo:nostradamus",
 "date": "2026-10-02",
@@ -30148,6 +30332,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Zeroize (DECO).mra"
+}
+},
+"dadandrn": {
+"repo:monstermaulers": {
+"core": "repo:monstermaulers",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-MonsterMaulers_MiSTer",
+"first_path": "mra/Kyukyoku Sentai Dadandarn (Japan ver JAA).mra",
+"mra": "_Arcade/Kyukyoku Sentai Dadandarn (Japan ver JAA).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
 }
 },
 "daimakai": {
@@ -44671,6 +44870,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Gemini Wing.mra"
+}
+},
+"genix": {
+"ppriest:nixpirates": {
+"core": "ppriest:nixpirates",
+"date": "2026-10-10",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Genix Family.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
 }
 },
 "genpeitd": {
@@ -60162,6 +60376,19 @@
 }
 },
 "mcatadv": {
+"repo:mcatadv": {
+"core": "repo:mcatadv",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"first_path": "mra/Magical Cat Adventure.mra",
+"mra": "_Arcade/Magical Cat Adventure.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "repo:nostradamus": {
 "core": "repo:nostradamus",
 "date": "2026-10-02",
@@ -60177,6 +60404,19 @@
 }
 },
 "mcatadvj": {
+"repo:mcatadv": {
+"core": "repo:mcatadv",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"first_path": "mra/Magical Cat Adventure (Japan).mra",
+"mra": "_Arcade/Magical Cat Adventure (Japan).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "repo:nostradamus": {
 "core": "repo:nostradamus",
 "date": "2026-10-02",
@@ -61982,6 +62222,36 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Mars Matrix Hyper Solid Shooting (Japan 000412) (Trap15 Improvement v1.0.0).mra"
+}
+},
+"mmaulers": {
+"repo:monstermaulers": {
+"core": "repo:monstermaulers",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-MonsterMaulers_MiSTer",
+"first_path": "mra/Monster Maulers (World ver EAA).mra",
+"mra": "_Arcade/Monster Maulers (World ver EAA).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+}
+},
+"mmaulersu": {
+"repo:monstermaulers": {
+"core": "repo:monstermaulers",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-MonsterMaulers_MiSTer",
+"first_path": "mra/Monster Maulers (USA ver UAA).mra",
+"mra": "_Arcade/Monster Maulers (USA ver UAA).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
 }
 },
 "mmaze": {
@@ -65421,6 +65691,21 @@
 "mra": "_Arcade/_alternatives/_Name That Tune/Name That Tune (Bally, 3-23-86).mra"
 }
 },
+"naname": {
+"repo:ohmygod": {
+"core": "repo:ohmygod",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-OhMyGod_MiSTer",
+"first_path": "mra/Naname de Magic! (Japan).mra",
+"mra": "_Arcade/Naname de Magic! (Japan).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+}
+},
 "narc": {
 "blahm1d:blahm1d_narc": {
 "core": "blahm1d:blahm1d_narc",
@@ -66778,6 +67063,19 @@
 }
 },
 "nost": {
+"repo:mcatadv": {
+"core": "repo:mcatadv",
+"date": "2026-10-01",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"first_path": "mra/Nostradamus.mra",
+"mra": "_Arcade/Nostradamus.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "repo:nostradamus": {
 "core": "repo:nostradamus",
 "date": "2026-10-01",
@@ -66793,6 +67091,19 @@
 }
 },
 "nostj": {
+"repo:mcatadv": {
+"core": "repo:mcatadv",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"first_path": "mra/Nostradamus (Japan).mra",
+"mra": "_Arcade/Nostradamus (Japan).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "repo:nostradamus": {
 "core": "repo:nostradamus",
 "date": "2026-10-02",
@@ -66808,6 +67119,19 @@
 }
 },
 "nostk": {
+"repo:mcatadv": {
+"core": "repo:mcatadv",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"first_path": "mra/Nostradamus Yeeon (Korea).mra",
+"mra": "_Arcade/Nostradamus Yeeon (Korea).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "repo:nostradamus": {
 "core": "repo:nostradamus",
 "date": "2026-10-02",
@@ -67627,6 +67951,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Oh! Bakyuuun (Japan, OB1-VER.A).mra"
+}
+},
+"ohmygod": {
+"repo:ohmygod": {
+"core": "repo:ohmygod",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-OhMyGod_MiSTer",
+"first_path": "mra/Oh My God! (Japan).mra",
+"mra": "_Arcade/Oh My God! (Japan).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
 }
 },
 "oisipuzl": {
@@ -71979,6 +72318,36 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_alternatives/_Pipi & Bibis/Pipi & Bibis - Whoopee!! (Z80 sound cpu, set 2).mra"
+}
+},
+"pirates": {
+"ppriest:nixpirates": {
+"core": "ppriest:nixpirates",
+"date": "2026-10-10",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Pirates (set 1).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+}
+},
+"piratesb": {
+"ppriest:nixpirates": {
+"core": "ppriest:nixpirates",
+"date": "2026-10-10",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Pirates/Pirates (set 2).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
 }
 },
 "piratpet": {
@@ -76430,6 +76799,62 @@
 "mra": "_Arcade/_alternatives/_Racing Hero/Racing Hero (bootleg decrypted).mra"
 }
 },
+"racinfrc": {
+"ongo:konamigxt1": {
+"core": "ongo:konamigxt1",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Racin' Force (ver EAC).mra",
+"mra": "_Arcade/Racin' Force (ver EAC).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ppriest:konamigxt1": {
+"core": "ppriest:konamigxt1",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Racin' Force (ver EAC).mra",
+"mra": "_Arcade/Racin' Force (ver EAC).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+}
+},
+"racinfrcu": {
+"ongo:konamigxt1": {
+"core": "ongo:konamigxt1",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Racin' Force/Racin' Force (ver UAB).mra",
+"mra": "_Arcade/_alternatives/_Racin' Force/Racin' Force (ver UAB).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ppriest:konamigxt1": {
+"core": "ppriest:konamigxt1",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Racin' Force/Racin' Force (ver UAB).mra",
+"mra": "_Arcade/_alternatives/_Racin' Force (ver EAC)/Racin' Force (ver UAB).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+}
+},
 "radarscp": {
 "dist:donkeykong": {
 "core": "dist:donkeykong",
@@ -80774,6 +81199,21 @@
 "mra": "_Arcade/Robo Wres 2001.mra"
 }
 },
+"rockclim": {
+"dist:galaxian": {
+"core": "dist:galaxian",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "RodimusFVC/Arcade-Galaxian_MiSTer",
+"first_path": "releases/Rock Climber.mra",
+"mra": "_Arcade/Rock Climber.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+}
+},
 "rockman2j": {
 "jt:jtcps2": {
 "core": "jt:jtcps2",
@@ -81567,6 +82007,34 @@
 "mra": "_Arcade/Run and Gun (ver EAA 1993 10.8).mra"
 }
 },
+"rungun2": {
+"ongo:konamigxt34": {
+"core": "ongo:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Run and Gun 2 (ver UAA).mra",
+"mra": "_Arcade/Run and Gun 2 (ver UAA).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ppriest:konamigxt34": {
+"core": "ppriest:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Run and Gun 2 (ver UAA).mra",
+"mra": "_Arcade/Run and Gun 2 (ver UAA).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+}
+},
 "runguna": {
 "jt:jtrungun": {
 "core": "jt:jtrungun",
@@ -81730,6 +82198,34 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Rush & Crash (Japan).mra"
+}
+},
+"rushhero": {
+"ongo:konamigxt34": {
+"core": "ongo:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Rushing Heroes (ver UAB).mra",
+"mra": "_Arcade/Rushing Heroes (ver UAB).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ppriest:konamigxt34": {
+"core": "ppriest:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Rushing Heroes (ver UAB).mra",
+"mra": "_Arcade/Rushing Heroes (ver UAB).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
 }
 },
 "rvschool": {
@@ -88667,6 +89163,21 @@
 "last_seen": "2026-10-10"
 }
 },
+"shogwarr": {
+"bazset:shogunwarriors_bazset": {
+"core": "bazset:shogunwarriors_bazset",
+"date": "2026-10-10",
+"date_quality": "observed",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_BAZSET/Shogun Warriors (World).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+}
+},
 "shollow": {
 "dist:mcr2": {
 "core": "dist:mcr2",
@@ -90097,6 +90608,34 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Sky Soldiers (US).mra"
+}
+},
+"slamdnk2": {
+"ongo:konamigxt34": {
+"core": "ongo:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Run and Gun 2/Slam Dunk 2 (ver JAA).mra",
+"mra": "_Arcade/_alternatives/_Run and Gun 2/Slam Dunk 2 (ver JAA).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ppriest:konamigxt34": {
+"core": "ppriest:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Run and Gun 2/Slam Dunk 2 (ver JAA).mra",
+"mra": "_Arcade/_alternatives/_Run and Gun 2 (ver UAA)/Slam Dunk 2 (ver JAA).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
 }
 },
 "slammast": {
@@ -97675,6 +98214,21 @@
 "mra": "_Arcade/Tangram Q.mra"
 }
 },
+"tank": {
+"dist:tank": {
+"core": "dist:tank",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "dist",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Distribution_MiSTer",
+"first_path": "_Arcade/Tank.mra",
+"mra": "_Arcade/Tank.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+}
+},
 "tankbatt": {
 "dist:tankbattalion": {
 "core": "dist:tankbattalion",
@@ -97688,6 +98242,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Tank Battalion.mra"
+}
+},
+"tankc": {
+"dist:tank": {
+"core": "dist:tank",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "dist",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Distribution_MiSTer",
+"first_path": "_Arcade/_alternatives/_Tank/Tank Cocktail.mra",
+"mra": "_Arcade/_alternatives/_Tank/Tank Cocktail.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
 }
 },
 "tankfrce": {
@@ -97733,6 +98302,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/Tank Force (Japan).mra"
+}
+},
+"tankii": {
+"dist:tank": {
+"core": "dist:tank",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "dist",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Distribution_MiSTer",
+"first_path": "_Arcade/Tank II.mra",
+"mra": "_Arcade/Tank II.mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
 }
 },
 "tantr": {
@@ -103897,6 +104481,19 @@
 }
 },
 "twinhawk": {
+"bazset:twinhawk_bazset": {
+"core": "bazset:twinhawk_bazset",
+"date": "2026-08-14",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Twin Hawk (World).mra",
+"mra": "_Arcade/_BAZSET/Twin Hawk (US).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
 "jt:jttaitox": {
 "core": "jt:jttaitox",
 "date": "2026-08-30",
@@ -107398,6 +107995,146 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-10",
 "mra": "_Arcade/_Nintendo VS. System/Vs. Mahjong (Japan).mra"
+}
+},
+"vsnetscr": {
+"ongo:konamigxt34": {
+"core": "ongo:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Versus Net Soccer (ver EAD).mra",
+"mra": "_Arcade/Versus Net Soccer (ver EAD).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ppriest:konamigxt34": {
+"core": "ppriest:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Versus Net Soccer (ver EAD).mra",
+"mra": "_Arcade/Versus Net Soccer (ver EAD).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+}
+},
+"vsnetscra": {
+"ongo:konamigxt34": {
+"core": "ongo:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Versus Net Soccer/Versus Net Soccer (ver AAA).mra",
+"mra": "_Arcade/_alternatives/_Versus Net Soccer/Versus Net Soccer (ver AAA).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ppriest:konamigxt34": {
+"core": "ppriest:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Versus Net Soccer/Versus Net Soccer (ver AAA).mra",
+"mra": "_Arcade/_alternatives/_Versus Net Soccer (ver EAD)/Versus Net Soccer (ver AAA).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+}
+},
+"vsnetscreb": {
+"ongo:konamigxt34": {
+"core": "ongo:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Versus Net Soccer/Versus Net Soccer (ver EAB).mra",
+"mra": "_Arcade/_alternatives/_Versus Net Soccer/Versus Net Soccer (ver EAB).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ppriest:konamigxt34": {
+"core": "ppriest:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Versus Net Soccer/Versus Net Soccer (ver EAB).mra",
+"mra": "_Arcade/_alternatives/_Versus Net Soccer (ver EAD)/Versus Net Soccer (ver EAB).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+}
+},
+"vsnetscrj": {
+"ongo:konamigxt34": {
+"core": "ongo:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Versus Net Soccer/Versus Net Soccer (ver JAB).mra",
+"mra": "_Arcade/_alternatives/_Versus Net Soccer/Versus Net Soccer (ver JAB).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ppriest:konamigxt34": {
+"core": "ppriest:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Versus Net Soccer/Versus Net Soccer (ver JAB).mra",
+"mra": "_Arcade/_alternatives/_Versus Net Soccer (ver EAD)/Versus Net Soccer (ver JAB).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+}
+},
+"vsnetscru": {
+"ongo:konamigxt34": {
+"core": "ongo:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Versus Net Soccer/Versus Net Soccer (ver UAB).mra",
+"mra": "_Arcade/_alternatives/_Versus Net Soccer/Versus Net Soccer (ver UAB).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
+},
+"ppriest:konamigxt34": {
+"core": "ppriest:konamigxt34",
+"date": "2026-10-10",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Versus Net Soccer/Versus Net Soccer (ver UAB).mra",
+"mra": "_Arcade/_alternatives/_Versus Net Soccer (ver EAD)/Versus Net Soccer (ver UAB).mra",
+"first_recorded": "2026-10-10",
+"last_seen": "2026-10-10"
 }
 },
 "vspinbal": {
@@ -115456,6 +116193,9 @@
 "gemini": {
 "dist": "Shooter - Vertical"
 },
+"genix": {
+"ppriest": "Shooter"
+},
 "geostorm": {
 "dist": "Shooter"
 },
@@ -118221,6 +118961,12 @@
 "pipibibsa": {
 "coinop": "Platform"
 },
+"pirates": {
+"ppriest": "Shooter"
+},
+"piratesb": {
+"ppriest": "Shooter"
+},
 "piratpet": {
 "dist": "Platform"
 },
@@ -118691,6 +119437,16 @@
 },
 "racherod": {
 "dist": "Shooter / Flight"
+},
+"racinfrc": {
+"ongo": "Arcade",
+"repo": "Arcade",
+"ppriest": "Arcade"
+},
+"racinfrcu": {
+"ongo": "Arcade",
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "radarscp": {
 "dist": "Shooter - Gallery"
@@ -119322,6 +120078,9 @@
 "ongo": "Sports",
 "meat": "Sports"
 },
+"rockclim": {
+"repo": "Platform - Climb"
+},
 "rocktcnvy": {
 "repo": "Shooter"
 },
@@ -119404,8 +120163,18 @@
 "rtypeu": {
 "dist": "Shooter"
 },
+"rungun2": {
+"ongo": "Arcade",
+"repo": "Arcade",
+"ppriest": "Arcade"
+},
 "rushatck": {
 "dist": "Run 'n' Gun - Horizontal"
+},
+"rushhero": {
+"ongo": "Arcade",
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "rvschool": {
 "ongo": "Fighting"
@@ -119988,6 +120757,9 @@
 "shngmtkb": {
 "ongo": "Puzzle"
 },
+"shogwarr": {
+"bazset": "Fighter"
+},
 "shollow": {
 "dist": "Shooter - Gallery"
 },
@@ -120139,6 +120911,11 @@
 },
 "skysmash": {
 "dist": "Shoot"
+},
+"slamdnk2": {
+"ongo": "Arcade",
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "slapfighb1": {
 "dist": "Shooter"
@@ -120922,8 +121699,17 @@
 "tangramq": {
 "repo": "Puzzle"
 },
+"tank": {
+"dist": "Shooter / Maze"
+},
 "tankbatt": {
 "dist": "Maze"
+},
+"tankc": {
+"dist": "Shooter / Maze"
+},
+"tankii": {
+"dist": "Shooter / Maze"
 },
 "tantr": {
 "ongo": "Arcade",
@@ -121943,6 +122729,31 @@
 },
 "vsav_5": {
 "ongo": "Fighting"
+},
+"vsnetscr": {
+"ongo": "Arcade",
+"repo": "Arcade",
+"ppriest": "Arcade"
+},
+"vsnetscra": {
+"ongo": "Arcade",
+"repo": "Arcade",
+"ppriest": "Arcade"
+},
+"vsnetscreb": {
+"ongo": "Arcade",
+"repo": "Arcade",
+"ppriest": "Arcade"
+},
+"vsnetscrj": {
+"ongo": "Arcade",
+"repo": "Arcade",
+"ppriest": "Arcade"
+},
+"vsnetscru": {
+"ongo": "Arcade",
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "vueloesp": {
 "repo": "Shooter"

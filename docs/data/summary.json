@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-10T13:46:44+00:00",
+  "generated": "2026-10-10T19:53:18+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-10T09:54:27+00:00",
+  "mister_generated": "2026-10-10T19:52:45+00:00",
   "alamone_generated": "2026-10-05T11:12:58+00:00",
   "ledger_updated": "2026-10-10",
   "ledger_runs": [
-   {
-    "date": "2026-10-10",
-    "note": "alamone 2026-10-05",
-    "cores": 4,
-    "sets": 14,
-    "pairs": 25,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-10",
     "note": "alamone 2026-10-05",
@@ -51,6 +42,15 @@
     "pairs": 0,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-10",
+    "note": "alamone 2026-10-05",
+    "cores": 9,
+    "sets": 23,
+    "pairs": 40,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
    "catver_entries": 37998,
    "mad_entries": 2995,
-   "mra_entries": 3128,
+   "mra_entries": 3146,
    "unmapped": [
     {
      "raw": "not classified",
@@ -77,10 +77,10 @@
   },
   "mame_added_updated": "2026-10-10",
   "hbmame": {
-   "tag": "0.289.3 (2026-09-29)",
-   "version": "0.289.3 (2026-09-29)",
+   "tag": "tag2893",
+   "version": "0.289.3",
    "updated": "2026-10-10",
-   "sets": 8452
+   "sets": 9711
   },
   "sources": {
    "dist": "MiSTer official distribution",
@@ -178,7 +178,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1807
+    "mras": 1810
    },
    {
     "source": "dist",
@@ -210,7 +210,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1027
+    "mras": 1045
    },
    {
     "source": "dist",
@@ -1632,7 +1632,7 @@
     "source": "repo",
     "repo": "RodimusFVC/Arcade-Galaxian_MiSTer",
     "dirs": null,
-    "mras": 347
+    "mras": 348
    },
    {
     "source": "repo",
@@ -1806,13 +1806,13 @@
     "source": "repo",
     "repo": "ppriest/Arcade-JalecoMS32_MiSTer",
     "dirs": null,
-    "mras": 53
+    "mras": 21
    },
    {
     "source": "repo",
     "repo": "ppriest/Arcade-KonamiGX_MiSTer",
     "dirs": null,
-    "mras": 27
+    "mras": 37
    },
    {
     "source": "repo",
@@ -2307,6 +2307,36 @@
     "mras": 2
    },
    {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-OffTheWall_MiSTer",
+    "dirs": null,
+    "mras": 2
+   },
+   {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-ReliefPitcher_MiSTer",
+    "dirs": null,
+    "mras": 3
+   },
+   {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-Shuuz_MiSTer",
+    "dirs": null,
+    "mras": 2
+   },
+   {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-Tank_MiSTer",
+    "dirs": null,
+    "mras": 3
+   },
+   {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-Victory_MiSTer",
+    "dirs": null,
+    "mras": 2
+   },
+   {
     "source": "repo",
     "repo": "rmonic79/Arcade-Darius_MiSTer",
     "dirs": null,
@@ -2387,6 +2417,30 @@
     "mras": 38
    },
    {
+    "source": "repo",
+    "repo": "decoryah/Arcade-OhMyGod_MiSTer",
+    "dirs": [
+     "mra"
+    ],
+    "mras": 2
+   },
+   {
+    "source": "repo",
+    "repo": "decoryah/Arcade-MonsterMaulers_MiSTer",
+    "dirs": [
+     "mra"
+    ],
+    "mras": 3
+   },
+   {
+    "source": "repo",
+    "repo": "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
+    "dirs": [
+     "mra"
+    ],
+    "mras": 6
+   },
+   {
     "source": "dist",
     "repo": "MiSTer-devel/NeoGeo_MiSTer",
     "dirs": [],
@@ -2395,21 +2449,49 @@
   ],
   "repo_errors": [
    [
+    "harlock74/Arcade-CloakDagger_MiSTer",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "Kyp069/zx48-MiSTer",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "blahm1d/wolf-unit",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "kandowontu/BrickBoy_MiSTer",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/Bucky",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/mrdo",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "meathax/s24",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
     "https://mister.blahm1d.com/db.json.zip",
     "<urlopen error Tunnel connection failed: 403 Forbidden>"
    ]
   ],
   "counts": {
-   "titles": 6824,
+   "titles": 6825,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 1990,
+   "working_arcade_titles_covered": 2000,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5198,
-   "working_arcade_titles_source": 1731,
-   "working_arcade_titles_binary_only": 259,
-   "cores": 572,
-   "binary_only_cores": 144,
-   "unmatched_sets": 414
+   "working_arcade_sets_covered": 5216,
+   "working_arcade_titles_source": 1738,
+   "working_arcade_titles_binary_only": 262,
+   "cores": 580,
+   "binary_only_cores": 148,
+   "unmatched_sets": 415
   }
  },
  "cores": [
@@ -2876,6 +2958,28 @@
    "first_date": "2026-10-08"
   },
   {
+   "id": "bazset:shogunwarriors_bazset",
+   "name": "ShogunWarriors_bazset",
+   "source": "bazset",
+   "source_title": "bazset (MiSTer_BAZSET)",
+   "channel": null,
+   "rbf": "ShogunWarriors_bazset.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-10",
+   "last_seen": "2026-10-10",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-10"
+  },
+  {
    "id": "bazset:superman_bazset",
    "name": "Superman_bazset",
    "source": "bazset",
@@ -2897,6 +3001,28 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-18"
+  },
+  {
+   "id": "bazset:twinhawk_bazset",
+   "name": "TwinHawk_bazset",
+   "source": "bazset",
+   "source_title": "bazset (MiSTer_BAZSET)",
+   "channel": null,
+   "rbf": "TwinHawk_bazset.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-10",
+   "last_seen": "2026-10-10",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-08-14"
   },
   {
    "id": "bazset:volfied",
@@ -6373,8 +6499,8 @@
    "aliases": [],
    "last_seen": "2026-10-10",
    "binary_only": false,
-   "nsets": 345,
-   "ntitles": 75,
+   "nsets": 346,
+   "ntitles": 76,
    "first_date": "2019-12-18"
   },
   {
@@ -9151,6 +9277,28 @@
    "nsets": 28,
    "ntitles": 15,
    "first_date": "2023-06-17"
+  },
+  {
+   "id": "dist:tank",
+   "name": "Tank",
+   "source": "dist",
+   "source_title": "MiSTer official distribution",
+   "channel": null,
+   "rbf": "Tank.rbf",
+   "repo": "MiSTer-devel/Distribution_MiSTer",
+   "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-10",
+   "last_seen": "2026-10-10",
+   "binary_only": false,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": "2026-10-10"
   },
   {
    "id": "dist:tankbattalion",
@@ -14675,6 +14823,28 @@
    "first_date": "2026-09-19"
   },
   {
+   "id": "ppriest:konamigxt1",
+   "name": "KonamiGXT1",
+   "source": "ppriest",
+   "source_title": "ppriest (MiSTer_ppriest)",
+   "channel": null,
+   "rbf": "KonamiGXT1.rbf",
+   "repo": "ppriest/Arcade-KonamiGX_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-10",
+   "last_seen": "2026-10-10",
+   "binary_only": false,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": "2026-10-10"
+  },
+  {
    "id": "ppriest:konamigxt34",
    "name": "KonamiGXT34",
    "source": "ppriest",
@@ -14693,9 +14863,31 @@
    "aliases": [],
    "last_seen": "2026-10-10",
    "binary_only": false,
-   "nsets": 5,
-   "ntitles": 1,
+   "nsets": 13,
+   "ntitles": 4,
    "first_date": "2026-10-08"
+  },
+  {
+   "id": "ppriest:nixpirates",
+   "name": "NixPirates",
+   "source": "ppriest",
+   "source_title": "ppriest (MiSTer_ppriest)",
+   "channel": null,
+   "rbf": "NixPirates.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-10",
+   "last_seen": "2026-10-10",
+   "binary_only": true,
+   "nsets": 3,
+   "ntitles": 2,
+   "first_date": "2026-10-10"
   },
   {
    "id": "ppriest:seta",
@@ -15396,6 +15588,50 @@
    "first_date": "2026-07-29"
   },
   {
+   "id": "repo:mcatadv",
+   "name": "mcatadv",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "mcatadv.rbf",
+   "repo": "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-10",
+   "last_seen": "2026-10-10",
+   "binary_only": false,
+   "nsets": 6,
+   "ntitles": 2,
+   "first_date": "2026-10-01"
+  },
+  {
+   "id": "repo:monstermaulers",
+   "name": "monstermaulers",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "monstermaulers.rbf",
+   "repo": "decoryah/Arcade-MonsterMaulers_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-MonsterMaulers_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-10",
+   "last_seen": "2026-10-10",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 1,
+   "first_date": "2026-10-10"
+  },
+  {
    "id": "repo:namco_na1_na2",
    "name": "Namco_NA1_NA2 (kyledlester)",
    "source": "repo",
@@ -15519,6 +15755,28 @@
    "nsets": 6,
    "ntitles": 2,
    "first_date": "2026-10-01"
+  },
+  {
+   "id": "repo:ohmygod",
+   "name": "ohmygod",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "ohmygod.rbf",
+   "repo": "decoryah/Arcade-OhMyGod_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-OhMyGod_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-10",
+   "last_seen": "2026-10-10",
+   "binary_only": false,
+   "nsets": 2,
+   "ntitles": 2,
+   "first_date": "2026-10-10"
   },
   {
    "id": "repo:penguinkunwars",
@@ -17461,11 +17719,13 @@
   {
    "sourcefile": "atlus/ohmygod.cpp",
    "titles": 2,
-   "covered": 0,
+   "covered": 2,
    "sets": 2,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 2,
+   "cores": [
+    "repo:ohmygod"
+   ],
+   "first": "2026-10-10"
   },
   {
    "sourcefile": "atlus/patapata.cpp",
@@ -19059,11 +19319,13 @@
   {
    "sourcefile": "galaxian/galaxian_rockclim.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 1,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 1,
+   "cores": [
+    "dist:galaxian"
+   ],
+   "first": "2026-10-10"
   },
   {
    "sourcefile": "galaxian/galaxold.cpp",
@@ -19738,12 +20000,13 @@
   {
    "sourcefile": "kaneko/kaneko16.cpp",
    "titles": 12,
-   "covered": 6,
+   "covered": 7,
    "sets": 37,
-   "sets_covered": 6,
+   "sets_covered": 7,
    "cores": [
     "bazset:bonksadventure",
     "bazset:brapboys_bazset",
+    "bazset:shogunwarriors_bazset",
     "ongo:kaneko16"
    ],
    "first": "2026-08-20"
@@ -20173,9 +20436,9 @@
   {
    "sourcefile": "konami/konamigx.cpp",
    "titles": 15,
-   "covered": 12,
+   "covered": 15,
    "sets": 35,
-   "sets_covered": 27,
+   "sets_covered": 35,
    "cores": [
     "ppriest:konamigx",
     "ppriest:konamigxt34"
@@ -20300,16 +20563,17 @@
   {
    "sourcefile": "konami/mystwarr.cpp",
    "titles": 6,
-   "covered": 5,
+   "covered": 6,
    "sets": 31,
-   "sets_covered": 21,
+   "sets_covered": 24,
    "cores": [
     "coinop:metamrph",
     "coinop:mystwarr",
     "jlrh:ffmtlchamp",
     "jlrh:ffmystwarr",
     "meat:viostorm",
-    "repo:gaiapolis"
+    "repo:gaiapolis",
+    "repo:monstermaulers"
    ],
    "first": "2026-08-22"
   },
@@ -21347,6 +21611,7 @@
    "sets": 6,
    "sets_covered": 6,
    "cores": [
+    "repo:mcatadv",
     "repo:nostradamus"
    ],
    "first": "2026-10-01"
@@ -22536,11 +22801,13 @@
   {
    "sourcefile": "nix/pirates.cpp",
    "titles": 2,
-   "covered": 0,
+   "covered": 2,
    "sets": 3,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 3,
+   "cores": [
+    "ppriest:nixpirates"
+   ],
+   "first": "2026-10-10"
   },
   {
    "sourcefile": "nmk/ddealer.cpp",
@@ -24824,10 +25091,11 @@
    "cores": [
     "bazset:gigandes_bazset",
     "bazset:superman_bazset",
+    "bazset:twinhawk_bazset",
     "jt:jttaitox",
     "repo:twinhawk"
    ],
-   "first": "2026-08-18"
+   "first": "2026-08-14"
   },
   {
    "sourcefile": "taito/taito_z.cpp",
@@ -26256,6 +26524,7 @@
    ],
    "hbmame": true,
    "year": "2021",
+   "parent": "neogeo",
    "manufacturer": "Kako Eimon",
    "desc": "Abyssal Infants"
   },
@@ -26391,6 +26660,7 @@
    ],
    "hbmame": true,
    "year": "2017",
+   "parent": "neogeo",
    "manufacturer": "BEY",
    "desc": "Bad Apple demo (v1)"
   },
@@ -26616,14 +26886,22 @@
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": false
+   "hbmame": true,
+   "year": "1981",
+   "parent": "ckong",
+   "manufacturer": "bootleg",
+   "desc": "Crazy Kong Part II -1"
   },
   {
    "set": "ckonga3",
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": false
+   "hbmame": true,
+   "year": "1981",
+   "parent": "ckong",
+   "manufacturer": "bootleg",
+   "desc": "Crazy Kong Part II -2"
   },
   {
    "set": "ckongfix",
@@ -26646,6 +26924,7 @@
    ],
    "hbmame": true,
    "year": "2000",
+   "parent": "neogeo",
    "manufacturer": "Jeff Kurtz",
    "desc": "Columns (NeoGeo)(Homebrew)"
   },
@@ -26656,6 +26935,7 @@
    ],
    "hbmame": true,
    "year": "2013",
+   "parent": "neogeo",
    "manufacturer": "Le Cortex",
    "desc": "Crouching Pony Hidden Dragon Demo"
   },
@@ -27211,6 +27491,7 @@
    ],
    "hbmame": true,
    "year": "2024",
+   "parent": "neogeo",
    "manufacturer": "Pixelheart / ChipsOnSteroids",
    "desc": "Gladmort"
   },
@@ -27515,6 +27796,7 @@
    ],
    "hbmame": true,
    "year": "2014",
+   "parent": "neogeo",
    "manufacturer": "Neobitz",
    "desc": "Knight's Chance"
   },
@@ -27574,6 +27856,7 @@
    ],
    "hbmame": true,
    "year": "2021",
+   "parent": "neogeo",
    "manufacturer": "Blastar",
    "desc": "Looptris (2021-12-26)"
   },
@@ -27768,6 +28051,7 @@
    ],
    "hbmame": true,
    "year": "2015",
+   "parent": "neogeo",
    "manufacturer": "Kannagi",
    "desc": "Neo Fight"
   },
@@ -27778,6 +28062,7 @@
    ],
    "hbmame": true,
    "year": "2012",
+   "parent": "neogeo",
    "manufacturer": "Sebastian Mihai",
    "desc": "Neo Thunder"
   },
@@ -27824,6 +28109,7 @@
    ],
    "hbmame": true,
    "year": "2020",
+   "parent": "neogeo",
    "manufacturer": "OzzyOuzo",
    "desc": "New! Super Mario Bros."
   },
@@ -29009,7 +29295,11 @@
    "cores": [
     "jt:jtcps1"
    ],
-   "hbmame": false
+   "hbmame": true,
+   "year": "2021",
+   "parent": "sf2ce",
+   "manufacturer": "Zero800",
+   "desc": "Street Fighter II: Dream Battle (Mix 1.0)"
   },
   {
    "set": "sfa2_1",
@@ -29204,7 +29494,7 @@
    "year": "2007",
    "parent": "salamand",
    "manufacturer": "Konami",
-   "desc": "Salamander (version YY 0.7.3)"
+   "desc": "Salamander (version YY 0.7.3) "
   },
   {
    "set": "spcloneo",
@@ -29354,12 +29644,20 @@
    "desc": "SvC Chaos Remix Ultra (v1.2)"
   },
   {
+   "set": "tankc",
+   "cores": [
+    "dist:tank"
+   ],
+   "hbmame": false
+  },
+  {
    "set": "teot",
    "cores": [
     "dist:neogeo"
    ],
    "hbmame": true,
    "year": "2022",
+   "parent": "neogeo",
    "manufacturer": "OzzyOuzo",
    "desc": "The Eye of Typhoon (Tsunami Edition, beta 7, 2022-07-31)"
   },
@@ -29412,6 +29710,7 @@
    ],
    "hbmame": true,
    "year": "2011",
+   "parent": "neogeo",
    "manufacturer": "FACE Corporation / N.C.I - Le Cortex",
    "desc": "Treasure of the Caribbean"
   },
@@ -29870,6 +30169,7 @@
    ],
    "hbmame": true,
    "year": "2025",
+   "parent": "neogeo",
    "manufacturer": "Blastar",
    "desc": "World Racer (2025-11-14)"
   },
