@@ -144,8 +144,7 @@ titles by votes, with recent voters and last-vote dates.
 
 Hovering a title (Titles grid, Wishlist titles) shows its **title screen** and an **in-game shot** side by
 side, loaded only then, and only for sets that have them. The images live in a bucket, not in this
-repository or the Vercel deploy: Cloudflare R2 is the best fit (free egress, about 10 GB free), Vercel Blob
-the simplest from inside Vercel.
+repository or the Vercel deploy: Cloudflare R2 is the best fit (free egress, about 10 GB free).
 
 1. Put one image per parent set in `<folder>/title/<set>.png` and `<folder>/ingame/<set>.png`. The folder is
    **on your own machine, anywhere** (`--src ~/mame-snaps`); the images never go into git. (`snaps/` and
