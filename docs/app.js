@@ -428,6 +428,7 @@
         <td class="num" title="sets covered / sets">${ncov}/${nsets}${(f.work === "working" ? t.support_working : t.support) === "binary" ? ' <span class="flag" title="binary-only: every core loading it is distributed without public source">bin</span>' : ""}</td>
         <td>${t.cores.map(id => badge(id)).join("")}</td>
         <td class="num">${t.date || ""}</td>
+        <td class="act">${ncov < nsets ? plus1("title", t.name) : ""}</td>
       </tr>${S.open.has(t.name) ? detailRow(t) : ""}`;
     }).join("");
     $("#titles-table tbody").insertAdjacentHTML("beforeend", html);
@@ -442,12 +443,12 @@
       <td class="status-${esc(s.status)}">${esc(s.status)}${s.working ? "" : " (not working)"}</td>
       <td>${s.cores.length ? s.cores.map(r => badge(r.core, r) + `<span class="flag">${r.date ? r.date + (r.date_quality !== "git" ? "≈" : "") : ""}</span> `).join("") : '<span class="muted">—</span>'}</td>
     </tr>`).join("");
-    return `<tr class="detail"><td colspan="10"><table><thead><tr><th>Set</th><th>Description</th><th>MAME</th><th>Cores (date first seen; ≈ approximate)</th></tr></thead><tbody>${rows}</tbody></table></td></tr>`;
+    return `<tr class="detail"><td colspan="11"><table><thead><tr><th>Set</th><th>Description</th><th>MAME</th><th>Cores (date first seen; ≈ approximate)</th></tr></thead><tbody>${rows}</tbody></table></td></tr>`;
   }
 
   $("#titles-table").addEventListener("click", ev => {
     const tr = ev.target.closest("tr[data-t]"); if (!tr) return;
-    if (ev.target.closest("a")) return;
+    if (ev.target.closest("a, button")) return;
     const name = tr.dataset.t, t = S.titles.find(x => x.name === name);
     if (S.open.has(name)) { S.open.delete(name); tr.nextElementSibling?.classList.contains("detail") && tr.nextElementSibling.remove(); tr.firstElementChild.textContent = "▸"; }
     else { S.open.add(name); tr.insertAdjacentHTML("afterend", detailRow(t)); tr.firstElementChild.textContent = "▾"; }
@@ -554,7 +555,8 @@
       <td class="num">${d.sets_covered}/${d.sets}</td>
       ${genre ? `<td class="num" title="${esc(genre)} titles on MiSTer / in the driver">${g.covered}/${g.titles}</td><td class="num" title="${esc(genre)} sets on MiSTer / in the driver">${g.sets_covered}/${g.sets}</td>` : ""}
       <td>${d.cores.map(id => badge(id)).join("")}${(d.cores_claimed || []).map(id => badge(id)).join("")}</td>
-      <td class="num">${d.first || ""}</td></tr>`; }).join("");
+      <td class="num">${d.first || ""}</td>
+      <td class="act">${d.covered < d.titles ? plus1("driver", d.sourcefile) : ""}</td></tr>`; }).join("");
   }
   $("#drivers-table").addEventListener("click", ev => {
     const a = ev.target.closest("a[data-drv]"); if (!a) return; ev.preventDefault();
@@ -595,6 +597,83 @@
   ["c-q", "c-src", "c-bin", "c-sort"].forEach(id => $("#" + id).addEventListener(id === "c-q" ? "input" : "change", applyCores));
   $("#c-dir").addEventListener("click", () => { S.dir.c *= -1; $("#c-dir").textContent = S.dir.c > 0 ? "↑" : "↓"; applyCores(); });
   $("#c-reset").addEventListener("click", () => { CORE_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.c = 1; $("#c-dir").textContent = "↑"; applyCores(); });
+
+  // ---------- wishlist (votes live in the /api functions; the page works without them) ----------
+  S.api = { ok: false, votes: { title: new Map(), driver: new Map() }, mine: { title: new Set(), driver: new Set() }, list: { titles: [], drivers: [] } };
+  const plus1 = (kind, key) => {
+    if (!S.api.ok) return "";
+    const n = S.api.votes[kind].get(key) || 0, voted = S.api.mine[kind].has(key);
+    return `<button type="button" class="plus1${voted ? " voted" : ""}" data-kind="${kind}" data-key="${esc(key)}" title="${voted ? "you asked for this; click to change or withdraw" : "ask for this to be ported to MiSTer"}">+1${n ? `<span class="n">${n}</span>` : ""}</button>`;
+  };
+  function refreshPlus1() {
+    $$("button.plus1").forEach(b => {
+      const kind = b.dataset.kind, key = b.dataset.key, n = S.api.votes[kind].get(key) || 0, voted = S.api.mine[kind].has(key);
+      b.classList.toggle("voted", voted); b.innerHTML = `+1${n ? `<span class="n">${n}</span>` : ""}`;
+    });
+  }
+  const jget = async url => { const r = await fetch(url, { headers: { Accept: "application/json" } }); if (!r.ok) throw new Error(r.status); return r.json(); };
+  async function loadWishlist() {
+    try {
+      const [w, m] = await Promise.all([jget("api/wishlist"), jget("api/mine")]);
+      S.api.list = w;
+      S.api.votes = { title: new Map(w.titles.map(x => [x.key, x.votes])), driver: new Map(w.drivers.map(x => [x.key, x.votes])) };
+      S.api.mine = { title: new Set(m.titles), driver: new Set(m.drivers) };
+      S.api.ok = true;
+    } catch (e) { S.api.ok = false; }
+  }
+  const ago = iso => iso ? iso.slice(0, 10) : "";
+  const voters = v => (v.voters || []).map(x => `<span class="badge" title="${esc(x.at)}">${esc(x.nickname)}</span>`).join("") + (v.votes > (v.voters || []).length ? ` <span class="flag">+${v.votes - v.voters.length} more</span>` : "");
+  function renderWishlist() {
+    const note = $("#wishlist-note");
+    if (!S.api.ok) { $("#wl-drivers tbody").innerHTML = ""; $("#wl-titles tbody").innerHTML = '<tr><td colspan="9" class="muted">The wishlist service is not reachable right now.</td></tr>'; return; }
+    const none = c => `<tr><td colspan="${c}" class="muted">No requests yet.</td></tr>`;
+    const dr = S.api.list.drivers;
+    $("#wl-drivers tbody").innerHTML = dr.length ? dr.map((v, i) => { const d = S.driverByFile[v.key]; return `<tr>
+      <td class="num">${i + 1}</td><td class="set"><a href="#" data-wl-drv="${esc(v.key)}">${esc(v.key)}</a></td>
+      <td class="num">${d ? `${d.covered}/${d.titles}` : ""}</td><td class="act">${plus1("driver", v.key)}</td>
+      <td>${voters(v)}</td><td class="num" title="first vote ${esc(ago(v.first_vote))}">${esc(ago(v.last_vote))}</td></tr>`; }).join("") : none(6);
+    const ti = S.api.list.titles;
+    $("#wl-titles tbody").innerHTML = ti.length ? ti.map((v, i) => { const t = S.titles.find(x => x.name === v.key); return `<tr>
+      <td class="num">${i + 1}</td><td>${t ? `<a href="#" data-wl-title="${esc(v.key)}">${esc(t.desc)}</a>` : ""}</td><td class="set">${esc(v.key)}</td>
+      <td class="num">${t ? esc(t.year) : ""}</td><td>${t ? esc(t.manufacturer) : ""}</td><td class="num">${t ? `${t.ncovered_working}/${t.nworking}` : ""}</td>
+      <td class="act">${plus1("title", v.key)}</td><td>${voters(v)}</td><td class="num" title="first vote ${esc(ago(v.first_vote))}">${esc(ago(v.last_vote))}</td></tr>`; }).join("") : none(9);
+  }
+  $("#tab-wishlist").addEventListener("click", ev => {
+    const d = ev.target.closest("a[data-wl-drv]"), t = ev.target.closest("a[data-wl-title]");
+    if (!d && !t) return; ev.preventDefault();
+    clearIds(FILTER_IDS.filter(id => id !== "f-q" && id !== "f-sort"));
+    if (d) $("#f-drv").value = d.dataset.wlDrv; else $("#f-q").value = t.dataset.wlTitle;
+    $("#f-cat").value = "all"; $("#f-work").value = "all"; applyTitles(); showTab("titles");
+  });
+  // the +1 dialog
+  const vd = $("#vote-dialog"); let voting = null;
+  function openVote(kind, key) {
+    const label = kind === "title" ? ((S.titles.find(x => x.name === key) || {}).desc || key) : key;
+    voting = { kind, key };
+    let nick = "Anonymous"; try { nick = localStorage.getItem("wl-nick") || nick; } catch (e) { /* storage unavailable */ }
+    const voted = S.api.mine[kind].has(key);
+    $("#vote-title").textContent = voted ? "Your request" : "Request a port";
+    $("#vote-what").textContent = `${kind === "title" ? "Title" : "Driver"}: ${label}${kind === "title" ? " (" + key + ")" : ""}`;
+    $("#vote-nick").value = nick; $("#vote-err").hidden = true;
+    $("#vote-ok").textContent = voted ? "Update" : "+1"; $("#vote-withdraw").hidden = !voted;
+    vd.showModal(); $("#vote-nick").select();
+  }
+  async function sendVote(method) {
+    const body = { kind: voting.kind, key: voting.key, nickname: $("#vote-nick").value };
+    const r = await fetch("api/vote", { method, headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    const out = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(out.error || r.status);
+    S.api.votes[voting.kind].set(voting.key, out.votes);
+    S.api.mine[voting.kind][out.voted ? "add" : "delete"](voting.key);
+    try { if (out.voted) localStorage.setItem("wl-nick", $("#vote-nick").value.trim() || "Anonymous"); } catch (e) { /* storage unavailable */ }
+    vd.close(); refreshPlus1();
+    await loadWishlist(); renderWishlist(); refreshPlus1();
+  }
+  const voteErr = e => { $("#vote-err").textContent = `Could not save: ${e.message}`; $("#vote-err").hidden = false; };
+  $("#vote-form").addEventListener("submit", ev => { ev.preventDefault(); sendVote("POST").catch(voteErr); });
+  $("#vote-withdraw").addEventListener("click", () => sendVote("DELETE").catch(voteErr));
+  $("#vote-cancel").addEventListener("click", () => vd.close());
+  document.addEventListener("click", ev => { const b = ev.target.closest("button.plus1"); if (b) { ev.stopPropagation(); openVote(b.dataset.kind, b.dataset.key); } });
 
   // ---------- databases ----------
   function renderDatabases() {
@@ -665,6 +744,7 @@
     readHash();
     S.booting = false;
     applyTitles(); applyDrivers(); applyCores(); renderDatabases(); applyUnmatched();
+    loadWishlist().then(() => { if (S.api.ok) { applyTitles(); applyDrivers(); } renderWishlist(); });
     // A pasted or back/forward hash applies without a reload (writeHash uses replaceState, so
     // the page's own filter changes do not fire this).
     addEventListener("hashchange", () => { S.booting = true; resetControls(); readHash(); S.booting = false; applyTitles(); applyDrivers(); applyCores(); applyUnmatched(); });

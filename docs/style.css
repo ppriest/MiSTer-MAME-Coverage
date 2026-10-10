@@ -144,3 +144,23 @@ svg .band { fill: var(--text-2); fill-opacity: 0.08; }
 .panel fieldset { border: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: end; min-width: 0; }
 .panel legend { font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); padding: 0; margin-bottom: 4px; width: 100%; float: left; }
 .panel legend + * { clear: both; }
+
+/* wishlist: +1 buttons, vote dialog, wishlist tables */
+button.plus1 { font: inherit; font-size: 12px; font-weight: 600; padding: 1px 8px; border: 1px solid var(--accent); border-radius: 12px; background: var(--surface); color: var(--accent); cursor: pointer; white-space: nowrap; }
+button.plus1:hover { background: var(--accent); color: var(--surface); }
+button.plus1.voted { background: var(--accent); color: var(--surface); }
+button.plus1 .n { font-weight: 400; opacity: .85; }
+button.plus1 .n::before { content: "\00b7"; margin: 0 4px; }
+.grid td.act { text-align: right; white-space: nowrap; }
+.wl-h { font-size: 15px; margin: 18px 0 6px; }
+#vote-dialog { border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--text); padding: 16px 20px; max-width: 420px; width: calc(100% - 32px); }
+#vote-dialog::backdrop { background: rgba(0,0,0,.35); }
+#vote-dialog h3 { margin: 0 0 4px; }
+#vote-dialog label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--text-2); margin-top: 10px; }
+#vote-dialog input { font: inherit; font-size: 14px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--text); }
+#vote-dialog .small { font-size: 11px; }
+#vote-dialog .vote-err { color: var(--accent-2); font-size: 12px; margin: 6px 0 0; }
+.vote-actions { display: flex; gap: 8px; align-items: center; margin-top: 12px; }
+.vote-actions .spacer { flex: 1; }
+.vote-actions button { font: inherit; font-size: 13px; padding: 5px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--text); cursor: pointer; }
+.vote-actions button.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); font-weight: 600; }

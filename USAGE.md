@@ -118,6 +118,28 @@ control values: not on MiSTer, partly covered, drivers with no core, binary-only
 month, vertical not on MiSTer); edit the `PRESETS` list in `docs/app.js` to change them. The
 state is still the URL hash, so links keep working.
 
+## Wishlist (votes)
+
+Visitors can ask for a title or a driver to be ported with the **+1** button (shown on the Titles and
+Drivers grids when it is not fully on MiSTer, and on the Wishlist tab). It opens a dialog for a
+nickname (default "Anonymous", remembered in the browser) and the **Wishlist** tab lists drivers and
+titles by votes, with recent voters and last-vote dates.
+
+* **Server side:** Node.js (CommonJS) serverless functions in `docs/api/` (Vercel's root directory is
+  `docs/`), storage in Neon Postgres (Vercel Marketplace; `DATABASE_URL` is injected). The `votes` table
+  (`kind, key, ip_hash, nickname, created_at, updated_at`, primary key `kind+key+ip_hash`) is created on
+  first use. Dependencies: `docs/package.json`.
+* **Endpoints:** `POST /api/vote {kind, key, nickname}` upserts the caller's vote (a repeat vote only
+  updates the nickname and `updated_at`); `DELETE /api/vote {kind, key}` withdraws it, and only matches a
+  row with the same IP hash that created it; `GET /api/wishlist` (public, cached 20 s) lists titles and
+  drivers by votes; `GET /api/mine` (never cached) lists what the caller voted for.
+* **IP addresses** are never stored: the voter is `HMAC-SHA256(ip, VOTE_SALT)` (truncated). `VOTE_SALT` is an
+  optional environment variable; without it a key derived from the database URL is used. Changing it
+  resets who counts as "the same visitor".
+* **Checks:** `kind` and `key` format, the key must exist in `data/keys.json` (written by `mmc report`),
+  nickname stripped to 32 characters, same-origin requests only, 60 votes per hour per visitor.
+* The page works without the API: if `/api/wishlist` is unreachable, the +1 buttons are hidden.
+
 ## Databases tab
 
 One row per source (`DB_TITLES`): cores, working arcade titles and sets loaded by at least one core

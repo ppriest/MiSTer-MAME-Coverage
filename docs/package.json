@@ -1,0 +1,8 @@
+{
+  "name": "mister-mame-coverage-docs",
+  "private": true,
+  "description": "Static page plus the wishlist API (docs/api) deployed on Vercel",
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.4"
+  }
+}
