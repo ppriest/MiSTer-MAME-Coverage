@@ -180,3 +180,4 @@ button.plus1:disabled:hover { background: var(--surface); color: var(--muted); }
 button.launch { font: inherit; font-size: 11px; padding: 0 6px; border: 1px solid var(--accent); border-radius: 10px; background: var(--surface); color: var(--accent); cursor: pointer; }
 button.launch:hover { background: var(--accent); color: var(--surface); }
 button.zapset { font: inherit; font-size: 12px; padding: 2px 10px; border: 1px solid var(--accent); border-radius: 12px; background: var(--surface); color: var(--accent); cursor: pointer; }
+pre.zapcfg { background: var(--bg, #0001); border: 1px solid var(--border, #8884); border-radius: 6px; padding: 6px 10px; font-size: 12px; overflow-x: auto; user-select: all; }
