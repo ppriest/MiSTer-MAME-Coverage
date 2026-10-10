@@ -555,8 +555,8 @@
       <td><span class="pct" title="${pct(d.covered, d.titles)}"><i style="width:${(100 * d.covered / d.titles).toFixed(1)}%"></i></span></td>
       <td class="num">${d.sets_covered}/${d.sets}</td>
       ${genre ? `<td class="num" title="${esc(genre)} titles on MiSTer / in the driver">${g.covered}/${g.titles}</td><td class="num" title="${esc(genre)} sets on MiSTer / in the driver">${g.sets_covered}/${g.sets}</td>` : ""}
-      <td>${d.cores.map(id => badge(id)).join("")}${(d.cores_claimed || []).map(id => badge(id)).join("")}</td>
       <td class="num">${d.first || ""}</td>
+      <td>${d.cores.map(id => badge(id)).join("")}${(d.cores_claimed || []).map(id => badge(id)).join("")}</td>
       <td class="act">${d.covered < d.titles ? plus1("driver", d.sourcefile) : ""}</td></tr>`; }).join("");
   }
   $("#drivers-table").addEventListener("click", ev => {
