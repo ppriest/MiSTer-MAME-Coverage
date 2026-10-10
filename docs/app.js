@@ -763,10 +763,12 @@
     });
     const rows = Array.from(agg).sort((a, b) => b[1].titles - a[1].titles);
     const link = u => u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https:\/\//, ""))}</a>` : '<span class="muted">—</span>';
+    // The database's text is its own URL; the link opens it in the Downloader DB inspector.
+    const dbLink = u => u ? `<a href="https://theypsilon.github.io/DB-Inspector_MiSTer/#db=${u}" target="_blank" rel="noopener" title="inspect this database">${esc(u.replace(/^https:\/\//, ""))}</a>` : '<span class="muted">—</span>';
     $("#databases-table tbody").innerHTML = rows.map(([k, a]) => `<tr>
       <td><a href="#" data-db="${esc(k)}">${esc(titles[k])}</a></td>
       <td class="num">${fmt(a.cores)}</td><td class="num">${fmt(a.titles)}</td><td class="num">${fmt(a.sets)}</td>
-      <td class="set">${link((info[k] || {}).page)}</td><td class="set">${link((info[k] || {}).db_url)}</td></tr>`).join("");
+      <td class="set">${link((info[k] || {}).page)}</td><td class="set">${dbLink((info[k] || {}).db_url)}</td></tr>`).join("");
   }
   $("#databases-table").addEventListener("click", ev => {
     const a = ev.target.closest("a[data-db]"); if (!a) return; ev.preventDefault();

@@ -184,3 +184,12 @@ pre.zapcfg { white-space: pre-wrap; overflow-wrap: anywhere; background: var(--b
 #zap-dialog { width: min(630px, calc(100vw - 32px)); max-width: 630px; box-sizing: border-box; }
 #zap-dialog input { width: 100%; box-sizing: border-box; }
 p.zapcopy { margin: 4px 0 8px; }
+a.zapset { display: inline-block; text-decoration: none; margin-left: 0; }
+.top .sub { display: inline; margin-right: 8px; }
+.top .zapset { margin-top: 4px; vertical-align: baseline; }
+.top .issue { margin-top: 6px; }
+.top .issue a { color: var(--accent); text-decoration: underline; }
+/* external links get a small "opens elsewhere" icon */
+a[href^="http"]:not(.no-ext)::after { content: ""; display: inline-block; width: .7em; height: .7em; margin-left: .25em; vertical-align: baseline; background: currentColor; opacity: .7;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 2h5v5M14 2 7 9M12 10v4H2V4h4'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 2h5v5M14 2 7 9M12 10v4H2V4h4'/%3E%3C/svg%3E") center / contain no-repeat; }
