@@ -62,6 +62,7 @@ EXTRA_REPOS = [
     ("repo", "kyledlester/Namco_NB1_MiSTer", ["MRA"]),
     ("repo", "kyledlester/MiSTer_Nostradamus", ["MRA"]),   # was Nostradamus_Magical_Cat_Adventure_MiSTer
     ("ppriest", "ppriest/Arcade-HyperNG64_MiSTer", None),
+    ("repo", "MiSTer-devel/Arcade-KillerInstinct_MiSTer", ["releases"]),   # official core; neither the distribution nor alamone lists it yet
     ("repo", "decoryah/Arcade-TaitoLSystem_MiSTer", ["mra"]),
     ("repo", "decoryah/Arcade-OhMyGod_MiSTer", ["mra"]),
     ("repo", "decoryah/Arcade-MonsterMaulers_MiSTer", ["mra"]),

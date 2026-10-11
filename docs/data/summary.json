@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-11T09:08:14+00:00",
+  "generated": "2026-10-11T09:48:25+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-11T09:07:46+00:00",
+  "mister_generated": "2026-10-11T09:47:57+00:00",
   "alamone_generated": "2026-10-05T11:12:58+00:00",
   "ledger_updated": "2026-10-11",
   "ledger_runs": [
-   {
-    "date": "2026-10-10",
-    "note": "alamone 2026-10-05",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-10",
     "note": "mra paths",
@@ -50,6 +41,15 @@
     "sets": 47,
     "pairs": 59,
     "dates_improved": 67,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-11",
+    "note": "alamone 2026-10-05",
+    "cores": 1,
+    "sets": 0,
+    "pairs": 2,
+    "dates_improved": 0,
     "cores_removed": 0
    }
   ],
@@ -2416,6 +2416,14 @@
    },
    {
     "source": "repo",
+    "repo": "MiSTer-devel/Arcade-KillerInstinct_MiSTer",
+    "dirs": [
+     "releases"
+    ],
+    "mras": 8
+   },
+   {
+    "source": "repo",
     "repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
     "dirs": [
      "mra"
@@ -2455,10 +2463,6 @@
   ],
   "repo_errors": [
    [
-    "jotego/jtcores",
-    "Could not access submodule 'modules/jt12'"
-   ],
-   [
     "harlock74/Arcade-CloakDagger_MiSTer",
     "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
@@ -2497,8 +2501,8 @@
    "working_arcade_titles_covered": 2009,
    "working_arcade_sets": 9981,
    "working_arcade_sets_covered": 5263,
-   "working_arcade_titles_source": 1780,
-   "working_arcade_titles_binary_only": 229,
+   "working_arcade_titles_source": 1782,
+   "working_arcade_titles_binary_only": 227,
    "cores": 581,
    "binary_only_cores": 136,
    "unmatched_sets": 415
@@ -13632,6 +13636,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-11",
+   "aliases": [],
    "last_seen": "2026-10-11",
    "binary_only": true,
    "nsets": 5,
@@ -14235,29 +14240,6 @@
    "nsets": 4,
    "ntitles": 4,
    "first_date": "2026-08-20"
-  },
-  {
-   "id": "ongo:killerinstinct",
-   "name": "KillerInstinct",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "KillerInstinct.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-11",
-   "binary_only": true,
-   "nsets": 2,
-   "ntitles": 2,
-   "first_date": "2026-08-17"
   },
   {
    "id": "ongo:lastduel",
@@ -15550,6 +15532,28 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-28"
+  },
+  {
+   "id": "repo:killerinstinct",
+   "name": "KillerInstinct",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "KillerInstinct.rbf",
+   "repo": "MiSTer-devel/Arcade-KillerInstinct_MiSTer",
+   "url": "https://github.com/MiSTer-devel/Arcade-KillerInstinct_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-11",
+   "last_seen": "2026-10-11",
+   "binary_only": false,
+   "nsets": 2,
+   "ntitles": 2,
+   "first_date": "2026-08-26"
   },
   {
    "id": "repo:leland",
@@ -23336,7 +23340,7 @@
    "sets": 3,
    "sets_covered": 2,
    "cores": [
-    "ongo:killerinstinct"
+    "repo:killerinstinct"
    ],
    "first": "2026-08-17"
   },
