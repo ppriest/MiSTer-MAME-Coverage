@@ -363,6 +363,15 @@
 "pairs": 59,
 "dates_improved": 67,
 "cores_removed": 0
+},
+{
+"date": "2026-10-11",
+"note": "alamone 2026-10-05",
+"cores": 1,
+"sets": 0,
+"pairs": 2,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -9690,6 +9699,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-11",
+"aliases": [],
 "last_seen": "2026-10-11"
 },
 "meat:mcr68": {
@@ -10605,6 +10615,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-11",
+"aliases": [],
 "last_seen": "2026-10-11"
 },
 "ongo:intrepid": {
@@ -10832,6 +10843,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-11",
+"aliases": [],
 "last_seen": "2026-10-11"
 },
 "ongo:meathax_namcond1": {
@@ -12250,6 +12262,24 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-10-11"
+},
+"repo:killerinstinct": {
+"id": "repo:killerinstinct",
+"name": "KillerInstinct",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": null,
+"rbf": "KillerInstinct.rbf",
+"repo": "MiSTer-devel/Arcade-KillerInstinct_MiSTer",
+"url": "https://github.com/MiSTer-devel/Arcade-KillerInstinct_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-11",
 "last_seen": "2026-10-11"
 },
 "repo:leland": {
@@ -55823,6 +55853,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-11",
 "mra": "_Arcade/Killer Instinct (v1.5d).mra"
+},
+"repo:killerinstinct": {
+"core": "repo:killerinstinct",
+"date": "2026-08-26",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Killer Instinct.mra",
+"mra": "_Arcade/Killer Instinct (v1.5d).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
 }
 },
 "kinst2": {
@@ -55838,6 +55881,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-11",
 "mra": "_Arcade/Killer Instinct 2 (v1.4).mra"
+},
+"repo:killerinstinct": {
+"core": "repo:killerinstinct",
+"date": "2026-08-26",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Killer Instinct 2.mra",
+"mra": "_Arcade/Killer Instinct 2 (v1.4).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
 }
 },
 "kirarast": {
@@ -118922,10 +118978,12 @@
 "repo": "Shoot'em up"
 },
 "kinst": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"repo": "Fighter"
 },
 "kinst2": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"repo": "Fighter"
 },
 "knckhead": {
 "ongo": "Fighter",
