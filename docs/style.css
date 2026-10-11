@@ -200,3 +200,8 @@ a[href^="http"]:not(.no-ext)::after { content: ""; display: inline-block; width:
 .top .issue a { color: #fff; text-shadow: 0 1px 2px rgba(0, 30, 60, .45); }
 .top button.zapset { color: #fff; border-color: rgba(255, 255, 255, .75); background: rgba(255, 255, 255, .16); text-shadow: 0 1px 2px rgba(0, 30, 60, .4); box-shadow: 0 1px 3px rgba(0, 30, 60, .35); cursor: pointer; }
 .top button.zapset:hover { background: rgba(255, 255, 255, .28); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; margin: 8px 0 0; }
+.seg button { font: inherit; padding: 5px 14px; border: 0; background: var(--surface); color: var(--text-2); cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button.on { background: var(--accent); color: #fff; }
+.seg .n { opacity: .8; font-weight: 400; }
