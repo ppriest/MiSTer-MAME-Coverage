@@ -1,6 +1,6 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-10-10 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (317 games).
+Generated 2026-10-11 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (317 games).
 
 **Agreement:** 307 of 309 deck titles are Shmup in our data (99.4%).
 
@@ -13,7 +13,7 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (87)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (90)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
@@ -39,6 +39,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `defender` | Defender (Red label) | 1980 | Shooter / Flying Horizontal (catver) | Defender |
 | `desertbr` | Desert Breaker (World) (FD1094 317-0196) | 1992 | Shooter / Walking (catver) | jts18 |
 | `devilw` | Devil World | 1987 | Shooter / Walking (catver) | jttwin16 |
+| `dogfight` | Dog Fight (Thunderbolt) | 1983 | Shooter / Flying (catver) | Vastar |
 | `cexplore` | Explorer (DECO Cassette) (US) | 1982 | Shooter / Flying Vertical (catver) | DECOCassette |
 | `fhawk` | Fighting Hawk (World) | 1988 | Shooter / Flying Vertical (catver) | taitol |
 | `frontlin` | Front Line (AA1, 4 PCB version) | 1982 | Shooter / Walking (catver) | TaitoSJ |
@@ -55,6 +56,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `kikikai` | KiKi KaiKai | 1986 | Shooter / Walking (catver) | kikikai, Kikikaikai (alpuy) |
 | `lasthope` | Last Hope (bootleg AES to MVS conversion, no coin support) | 2005 | Shooter / Flying Horizontal (catver) | NeoGeo |
 | `mariner` | Mariner | 1981 | Shooter / Misc. Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
+| `markham` | Markham | 1983 | Shooter / Flying Horizontal (catver) | IkkiSunsoft |
 | `mayday` | Mayday (set 1) | 1980 | Shooter / Flying Horizontal (catver) | Defender |
 | `megaphx` | Mega Phoenix | 1991 | Shooter / Flying Vertical (catver) | ffmegaphx |
 | `mercs` | Mercs (World 900302) | 1990 | Shooter / Walking (catver) | jtcps1 |
@@ -106,6 +108,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `supxevs` | Vs. Super Xevious | 1986 | Shooter / Flying Vertical (catver) | VSnes |
 | `wwestern` | Wild Western (set 1) | 1982 | Shooter / Misc. Vertical (catver) | TaitoSJ |
 | `wivernwg` | Wivern Wings | 2001 | Shooter / Flying Vertical (catver) | Vamphalf |
+| `zodiack` | Zodiack | 1983 | Shooter / Flying Vertical (catver) | Vastar |
 
 ## C. Deck games with no set in MAME 0289 (4)
 

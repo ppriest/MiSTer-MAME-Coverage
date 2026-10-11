@@ -617,6 +617,8 @@ def scan_databases(workers: int = 8) -> tuple[list[dict], list[tuple[str, str]]]
                     return p, None, str(e).splitlines()[0]
             return p, dest, None
 
+        furls = {p: furl for p, furl, _dest in jobs}
+        db_owner = (re.match(r"https://[^/]+/([^/]+)/", url) or [None, ""])[1].lower()
         with cf.ThreadPoolExecutor(workers) as ex:
             for p, dest, err in ex.map(get, jobs):
                 if err:
@@ -626,6 +628,10 @@ def scan_databases(workers: int = 8) -> tuple[list[dict], list[tuple[str, str]]]
                 if not rec.get("setname"):
                     continue
                 rec.update(path=p, repo=f"db:{src}", source=src, wip=_wip(p), alt="_alternatives" in p.lower())
+                # A developer's own database serves each MRA from his core's repository: that is the core's source repository.
+                hit = re.match(r"https://raw\.githubusercontent\.com/([^/]+)/([^/]+)/", furls.get(p, ""))
+                if hit and hit.group(1).lower() == db_owner:
+                    rec["src_repo"] = f"{hit.group(1)}/{hit.group(2)}"
                 mras.append(rec)
         print(f"[mister] database {src}: {sum(1 for m in mras if m['source'] == src)} MRAs")
     return mras, errors

@@ -133,8 +133,8 @@ def resolve_core(m: dict, cores, by_repo, by_rbf, repo_count) -> str:
             "id": cid, "name": m.get("rbf") or "?", "source": src,
             "source_title": mister_mod.DB_TITLES.get(src, src), "channel": None,
             "rbf": (m.get("rbf") or "") + ".rbf",
-            "repo": owned["repo"] if owned else None if m["repo"].startswith("db:") else m["repo"],
-            "url": owned["url"] if owned else None if m["repo"].startswith("db:") else f"https://github.com/{m['repo']}", "build_date": None, "status": None,
+            "repo": owned["repo"] if owned else m.get("src_repo") if m["repo"].startswith("db:") else m["repo"],
+            "url": owned["url"] if owned else (f"https://github.com/{m['src_repo']}" if m.get("src_repo") else None) if m["repo"].startswith("db:") else f"https://github.com/{m['repo']}", "build_date": None, "status": None,
             "reading": None, "score": None, "mame_drivers": [], "note": None, "alamone_sets": [],
         }
     return cid
