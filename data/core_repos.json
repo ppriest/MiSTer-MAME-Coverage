@@ -1800,6 +1800,9 @@
  "ongo:ikacore_cv1k": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:ikkisunsoft": [
+  "meathax/meatcores"
+ ],
  "ongo:intrepid": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -1829,6 +1832,9 @@
  "ongo:madgear": [
   "OngoGablogian/MiSTer_Ongo",
   "fiermanb/LastDuel-MadGear_MiSTer"
+ ],
+ "ongo:meathax_ikkisunsoft": [
+  "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_namcond1": [
   "OngoGablogian/MiSTer_Ongo"
@@ -1896,7 +1902,8 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:vamphalf": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "ppriest/Arcade-Vamphalf_MiSTer"
  ],
  "ongo:vsnes": [
   "OngoGablogian/MiSTer_Ongo"
