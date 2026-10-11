@@ -420,7 +420,8 @@
       const cls = ncov === 0 ? "uncovered" : ncov < nsets ? "partial" : "covered";
       return `<tr class="${cls}${t.working ? "" : " nw"}" data-t="${esc(t.name)}">
         <td class="exp" title="show sets">${S.open.has(t.name) ? "▾" : "▸"}</td>
-        <td>${esc(t.desc)}${t.cores.length ? ` <button type="button" class="launch" data-launch="${esc(launchScript(t))}" title="launch on my MiSTer via Zaparoo">▶</button>` : ""}</td>
+        <td class="act">${t.cores.length ? `<button type="button" class="launch" data-launch="${esc(launchScript(t))}" title="launch on my MiSTer via Zaparoo">▶</button>` : ""}</td>
+        <td>${esc(t.desc)}</td>
         <td class="set">${esc(t.name)}</td>
         <td class="num">${esc(t.year)}</td>
         <td>${esc(t.manufacturer)}</td>
@@ -444,7 +445,7 @@
       <td class="status-${esc(s.status)}">${esc(s.status)}${s.working ? "" : " (not working)"}</td>
       <td>${s.cores.length ? s.cores.map(r => badge(r.core, r) + `<span class="flag">${r.date ? r.date + (r.date_quality !== "git" ? "≈" : "") : ""}</span> `).join("") : '<span class="muted">—</span>'}</td>
     </tr>`).join("");
-    return `<tr class="detail"><td colspan="11"><table><thead><tr><th>Set</th><th>Description</th><th>MAME</th><th>Cores (date first seen; ≈ approximate)</th></tr></thead><tbody>${rows}</tbody></table></td></tr>`;
+    return `<tr class="detail"><td colspan="12"><table><thead><tr><th>Set</th><th>Description</th><th>MAME</th><th>Cores (date first seen; ≈ approximate)</th></tr></thead><tbody>${rows}</tbody></table></td></tr>`;
   }
 
   $("#titles-table").addEventListener("click", ev => {
@@ -720,7 +721,7 @@
   const IMAGE_BASE = ($('meta[name="image-base"]') || {}).content?.replace(/\/+$/, "") || "";
   if (IMAGE_BASE && matchMedia("(hover: hover)").matches) {
     const card = $("#shot"), figs = Array.from(card.querySelectorAll("figure")), cap = card.querySelector(".cap");
-    const HOVER_ON = "#titles-table tbody tr[data-t] td:nth-child(2), #titles-table tbody tr[data-t] td:nth-child(3), #wl-titles a[data-wl-title]";
+    const HOVER_ON = "#titles-table tbody tr[data-t] td:nth-child(3), #titles-table tbody tr[data-t] td:nth-child(4), #wl-titles a[data-wl-title]";
     let timer, cur = null, byName = null;
     const imgs = key => { byName = byName || new Map(S.titles.map(t => [t.name, t])); return (byName.get(key) || {}).img; };   // title.img = {title, ingame} file names
     const hide = () => { clearTimeout(timer); cur = null; card.hidden = true; };
