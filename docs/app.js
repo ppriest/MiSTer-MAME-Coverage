@@ -631,21 +631,32 @@
   }
   const ago = iso => iso ? iso.slice(0, 10) : "";
   const voters = v => (v.voters || []).map(x => `<span class="badge" title="${esc(x.at)}">${esc(x.nickname)}</span>`).join("") + (v.votes > (v.voters || []).length ? ` <span class="flag">+${v.votes - v.voters.length} more</span>` : "");
+  // A request is fulfilled once its title (every working set) or driver (every title) is on MiSTer.
+  S.wlView = "requested";
+  const titleDone = v => { const t = S.titles.find(x => x.name === v.key); return !!t && (t.nworking ? t.ncovered_working >= t.nworking : t.ncovered >= t.nsets); };
+  const driverDone = v => { const d = S.driverByFile[v.key]; return !!d && d.titles > 0 && d.covered >= d.titles; };
   function renderWishlist() {
     const note = $("#wishlist-note");
     if (!S.api.ok) { $("#wl-drivers tbody").innerHTML = ""; $("#wl-titles tbody").innerHTML = '<tr><td colspan="9" class="muted">The wishlist service is not reachable right now (' + esc(S.api.error || "unknown") + '). Open /api/health to see what is missing.</td></tr>'; return; }
-    const none = c => `<tr><td colspan="${c}" class="muted">No requests yet.</td></tr>`;
-    const dr = S.api.list.drivers;
+    const fulfilled = S.wlView === "fulfilled";
+    const none = c => `<tr><td colspan="${c}" class="muted">${fulfilled ? "Nothing fulfilled yet." : "No requests yet."}</td></tr>`;
+    const all = { drivers: S.api.list.drivers, titles: S.api.list.titles };
+    const nFul = all.drivers.filter(driverDone).length + all.titles.filter(titleDone).length;
+    $("#wl-n-fulfilled").textContent = `(${nFul})`; $("#wl-n-requested").textContent = `(${all.drivers.length + all.titles.length - nFul})`;
+    $$("#wl-view button").forEach(b => { const on = b.dataset.view === S.wlView; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
+    const action = (kind, v, done) => done ? `<span class="n" title="votes">${v.votes ?? ""}</span>` : plus1(kind, v.key);
+    const dr = all.drivers.filter(v => driverDone(v) === fulfilled);
     $("#wl-drivers tbody").innerHTML = dr.length ? dr.map((v, i) => { const d = S.driverByFile[v.key]; return `<tr>
       <td class="num">${i + 1}</td><td class="set"><a href="#" data-wl-drv="${esc(v.key)}">${esc(v.key)}</a></td>
-      <td class="num">${d ? `${d.covered}/${d.titles}` : ""}</td><td class="act">${plus1("driver", v.key)}</td>
+      <td class="num">${d ? `${d.covered}/${d.titles}` : ""}</td><td class="act">${action("driver", v, fulfilled)}</td>
       <td>${voters(v)}</td><td class="num" title="first vote ${esc(ago(v.first_vote))}">${esc(ago(v.last_vote))}</td></tr>`; }).join("") : none(6);
-    const ti = S.api.list.titles;
+    const ti = all.titles.filter(v => titleDone(v) === fulfilled);
     $("#wl-titles tbody").innerHTML = ti.length ? ti.map((v, i) => { const t = S.titles.find(x => x.name === v.key); return `<tr>
       <td class="num">${i + 1}</td><td>${t ? `<a href="#" data-wl-title="${esc(v.key)}">${esc(t.desc)}</a>` : ""}</td><td class="set">${esc(v.key)}</td>
       <td class="num">${t ? esc(t.year) : ""}</td><td>${t ? esc(t.manufacturer) : ""}</td><td class="num">${t ? `${t.ncovered_working}/${t.nworking}` : ""}</td>
-      <td class="act">${plus1("title", v.key)}</td><td>${voters(v)}</td><td class="num" title="first vote ${esc(ago(v.first_vote))}">${esc(ago(v.last_vote))}</td></tr>`; }).join("") : none(9);
+      <td class="act">${action("title", v, fulfilled)}</td><td>${voters(v)}</td><td class="num" title="first vote ${esc(ago(v.first_vote))}">${esc(ago(v.last_vote))}</td></tr>`; }).join("") : none(9);
   }
+  $("#wl-view").addEventListener("click", ev => { const b = ev.target.closest("button[data-view]"); if (!b) return; S.wlView = b.dataset.view; renderWishlist(); refreshPlus1(); });
   $("#tab-wishlist").addEventListener("click", ev => {
     const d = ev.target.closest("a[data-wl-drv]"), t = ev.target.closest("a[data-wl-title]");
     if (!d && !t) return; ev.preventDefault();
