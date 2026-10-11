@@ -372,6 +372,15 @@
 "pairs": 2,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-11",
+"note": "alamone 2026-10-05",
+"cores": 1,
+"sets": 25,
+"pairs": 25,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -11606,6 +11615,24 @@
 "aliases": [],
 "last_seen": "2026-10-11"
 },
+"ppriest:eolith": {
+"id": "ppriest:eolith",
+"name": "Eolith",
+"source": "ppriest",
+"source_title": "ppriest (MiSTer_ppriest)",
+"channel": null,
+"rbf": "Eolith.rbf",
+"repo": "ppriest/Arcade-Eolith_MiSTer",
+"url": "https://github.com/ppriest/Arcade-Eolith_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+},
 "ppriest:hyperng64": {
 "id": "ppriest:hyperng64",
 "name": "HyperNG64",
@@ -12280,6 +12307,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-11",
+"aliases": [],
 "last_seen": "2026-10-11"
 },
 "repo:leland": {
@@ -25227,6 +25255,21 @@
 "mra": "_Arcade/_alternatives/_Ponpoko/Candory (Ponpoko bootleg with Mario).mra"
 }
 },
+"candy": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Candy Candy.mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
 "cane": {
 "dist:spaceinvaders": {
 "core": "dist:spaceinvaders",
@@ -29644,6 +29687,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-11",
 "mra": "_Arcade/_alternatives/_Pac-Man/Crazy Pac - HBMame.mra"
+}
+},
+"crazywar": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Crazy War.mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
 }
 },
 "crbaloon": {
@@ -41599,6 +41657,36 @@
 "mra": "_Arcade/Forgotten Worlds (USA, B-Board 88618B-2, Rev. E).mra"
 }
 },
+"fort2b": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Fortress 2 Blue Arcade (World) (ver 1.01 - pcb ver 3.05).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
+"fort2ba": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Fortress 2 Blue Arcade (World) (ver 1.01 - pcb ver 3.05)/Fortress 2 Blue Arcade (Korea) (ver 1.00 - pcb ver 3.05).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
 "fourtrax": {
 "kuze:namcos2_std": {
 "core": "kuze:namcos2_std",
@@ -45808,6 +45896,21 @@
 "mra": "_Arcade/Goalie Ghost.mra"
 }
 },
+"ggreats2": {
+"ppriest:konamigxt1": {
+"core": "ppriest:konamigxt1",
+"date": "2026-10-11",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"first_path": "releases/_Unsupported/Golfing Greats 2 (ver JAC).mra",
+"mra": "_Arcade/_Unsupported/Golfing Greats 2 (ver JAC).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
 "gground": {
 "meat:segasystem24": {
 "core": "meat:segasystem24",
@@ -49844,6 +49947,96 @@
 "mra": "_Arcade/Hammerin' Harry (US, M84 hardware).mra"
 }
 },
+"hidctch2": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Hidden Catch 2 (pcb ver 3.03) (Kor-Eng) (AT89c52 protected).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
+"hidctch2a": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Hidden Catch 2 (pcb ver 3.03) (Kor-Eng) (AT89c52 protected)/Hidden Catch 2 (pcb ver 1.00) (Kor-Eng-Jpn-Chi).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
+"hidctch3": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Hidden Catch 3 (ver 1.00 - pcb ver 3.05).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
+"hidnc2k": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Hidden Catch 2000 (AT89c52 protected).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
+"hidnctch": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Hidden Catch (World) - Tul Lin Gu Lim Chat Ki '98 (Korea) (pcb ver 3.03).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
+"hidnctcha": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Hidden Catch (World) - Tul Lin Gu Lim Chat Ki '98 (Korea) (pcb ver 3.03)/Hidden Catch (World) - Tul Lin Gu Lim Chat Ki '98 (Korea) (pcb ver 3.02).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
 "higemaru": {
 "jt:jt1942": {
 "core": "jt:jt1942",
@@ -53019,6 +53212,36 @@
 "last_seen": "2026-10-11"
 }
 },
+"ironfort": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Iron Fortress.mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
+"ironfortc": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Iron Fortress/Gongtit Jiucoi Iron Fortress (Hong Kong).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
 "ironhors": {
 "dist:ironhorse": {
 "core": "dist:ironhorse",
@@ -56045,6 +56268,21 @@
 "mra": "_Arcade/_alternatives/_Klax/Klax (Japan, version 4).mra"
 }
 },
+"klondkp": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/KlonDike+.mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
 "knckhead": {
 "repo:namco_na1_na2": {
 "core": "repo:namco_na1_na2",
@@ -57954,6 +58192,51 @@
 "last_seen": "2026-10-11"
 }
 },
+"landbrk": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Land Breaker (World) - Miss Tang Ja Ru Gi (Korea) (pcb ver 3.02).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
+"landbrka": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Land Breaker (World) - Miss Tang Ja Ru Gi (Korea) (pcb ver 3.02)/Land Breaker (World) - Miss Tang Ja Ru Gi (Korea) (pcb ver 3.03) (AT89c52 protected).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
+"landbrkb": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Land Breaker (World) - Miss Tang Ja Ru Gi (Korea) (pcb ver 3.02)/Land Breaker (World) - Miss Tang Ja Ru Gi (Korea) (pcb ver 1.0) (AT89c52 protected).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
 "landmakr": {
 "ongo:taitof3": {
 "core": "ongo:taitof3",
@@ -58790,6 +59073,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-11",
 "mra": "_Arcade/Light Bringer.mra"
+}
+},
+"linkypip": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Linky Pipe.mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
 }
 },
 "liquidk": {
@@ -67730,6 +68028,21 @@
 "mra": "_Arcade/NeoGeo Pocket Color.mra"
 }
 },
+"nhidctch": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/New Hidden Catch (World) - New Tul Lin Gu Lim Chat Ki '98 (Korea) (pcb ver 3.02).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
 "nibbler": {
 "dist:snk6502": {
 "core": "dist:snk6502",
@@ -69480,6 +69793,36 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-11",
 "mra": "_Arcade/_alternatives/_Opa Opa/Opa Opa (Rev A, unprotected).mra"
+}
+},
+"opengolf": {
+"ppriest:konamigxt1": {
+"core": "ppriest:konamigxt1",
+"date": "2026-10-11",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"first_path": "releases/_Unsupported/Konami's Open Golf Championship (ver EAE).mra",
+"mra": "_Arcade/_Unsupported/Konami's Open Golf Championship (ver EAE).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
+"opengolf2": {
+"ppriest:konamigxt1": {
+"core": "ppriest:konamigxt1",
+"date": "2026-10-11",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"first_path": "releases/_Unsupported/Konami's Open Golf Championship (ver EAD).mra",
+"mra": "_Arcade/_Unsupported/Konami's Open Golf Championship (ver EAD).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
 }
 },
 "openice": {
@@ -72657,6 +73000,36 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-11",
 "mra": "_Arcade/Peek-a-Boo! (North America, ver 1.0).mra"
+}
+},
+"penfan": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Penfan Girls - Step1. Mild Mind (set 1).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
+"penfana": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Penfan Girls - Step1. Mild Mind (set 1)/Penfan Girls - Step1. Mild Mind (set 2).mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
 }
 },
 "pengman": {
@@ -76982,6 +77355,21 @@
 "first_repo": "MiSTer-devel/NeoGeo_MiSTer",
 "first_path": "releases/romsets.xml",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-11"
+}
+},
+"puzzlekg": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Puzzle King (Dance & Puzzle).mra",
+"first_recorded": "2026-10-11",
 "last_seen": "2026-10-11"
 }
 },
@@ -97223,6 +97611,21 @@
 "mra": "_Arcade/_alternatives/_Saint Dragon/Saint Dragon (Set 2).mra"
 }
 },
+"stealsee": {
+"ppriest:eolith": {
+"core": "ppriest:eolith",
+"date": "2026-10-11",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Steal See.mra",
+"first_recorded": "2026-10-11",
+"last_seen": "2026-10-11"
+}
+},
 "steelwkr": {
 "dist:spaceinvaders": {
 "core": "dist:spaceinvaders",
@@ -115576,6 +115979,9 @@
 "candory": {
 "dist": "Platform - Climb"
 },
+"candy": {
+"ppriest": "Puzzle"
+},
 "cane": {
 "repo": "Shooter"
 },
@@ -116157,6 +116563,9 @@
 },
 "crazypac": {
 "dist": "Maze"
+},
+"crazywar": {
+"ppriest": "Shooter"
 },
 "crbaloon": {
 "dist": "Maze"
@@ -117465,6 +117874,12 @@
 "foodfc": {
 "dist": "Arena"
 },
+"fort2b": {
+"ppriest": "Shooter"
+},
+"fort2ba": {
+"ppriest": "Shooter"
+},
 "fourtrax": {
 "ongo": "Arcade",
 "kuze": "Arcade"
@@ -117957,6 +118372,10 @@
 "ongo": "Shooter / Flight",
 "repo": "Shooter / Flight"
 },
+"ggreats2": {
+"repo": "Arcade",
+"ppriest": "Arcade"
+},
 "ghostmun": {
 "repo": "Shooter"
 },
@@ -118371,6 +118790,24 @@
 "hharryu": {
 "dist": "Platformer"
 },
+"hidctch2": {
+"ppriest": "Puzzle"
+},
+"hidctch2a": {
+"ppriest": "Puzzle"
+},
+"hidctch3": {
+"ppriest": "Puzzle"
+},
+"hidnc2k": {
+"ppriest": "Puzzle"
+},
+"hidnctch": {
+"ppriest": "Puzzle"
+},
+"hidnctcha": {
+"ppriest": "Puzzle"
+},
 "hipai": {
 "dist": "Mahjong"
 },
@@ -118735,6 +119172,12 @@
 "ongo": "Arcade",
 "meat": "Arcade"
 },
+"ironfort": {
+"ppriest": "Shooter"
+},
+"ironfortc": {
+"ppriest": "Shooter"
+},
 "ironhors": {
 "dist": "Platformer"
 },
@@ -118985,6 +119428,9 @@
 "ongo": "Fighter",
 "repo": "Fighter"
 },
+"klondkp": {
+"ppriest": "Card"
+},
 "knckhead": {
 "ongo": "Fighter",
 "repo": "Fighter"
@@ -119101,6 +119547,15 @@
 "dist": "Racing",
 "repo": "Shooter"
 },
+"landbrk": {
+"ppriest": "Puzzle"
+},
+"landbrka": {
+"ppriest": "Puzzle"
+},
+"landbrkb": {
+"ppriest": "Puzzle"
+},
 "laser": {
 "repo": "Shooter"
 },
@@ -119181,6 +119636,9 @@
 },
 "lifefrcej": {
 "dist": "Shmup"
+},
+"linkypip": {
+"ppriest": "Puzzle"
 },
 "lizwiz": {
 "dist": "Arena"
@@ -120043,6 +120501,9 @@
 "nextfase": {
 "dist": "Shooter - Gallery"
 },
+"nhidctch": {
+"ppriest": "Puzzle"
+},
 "nibbler": {
 "dist": "Maze"
 },
@@ -120285,6 +120746,14 @@
 },
 "opaopan": {
 "dist": "Maze"
+},
+"opengolf": {
+"repo": "Arcade",
+"ppriest": "Arcade"
+},
+"opengolf2": {
+"repo": "Arcade",
+"ppriest": "Arcade"
 },
 "orbite": {
 "repo": "Shooter"
@@ -120610,6 +121079,12 @@
 "peekaboou": {
 "ongo": "Arcade",
 "kuze": "Arcade"
+},
+"penfan": {
+"ppriest": "Puzzle"
+},
+"penfana": {
+"ppriest": "Puzzle"
 },
 "pengman": {
 "dist": "Maze"
@@ -121157,6 +121632,9 @@
 "puzlwrld": {
 "ongo": "Shooter",
 "kuze": "Shooter"
+},
+"puzzlekg": {
+"ppriest": "Puzzle"
 },
 "pwrinst2": {
 "dist": "Fighting"
@@ -123249,6 +123727,9 @@
 },
 "starwars": {
 "dist": "Shooter"
+},
+"stealsee": {
+"ppriest": "Puzzle"
 },
 "steelwkr": {
 "dist": "Platform",

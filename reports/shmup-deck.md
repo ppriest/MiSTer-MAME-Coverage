@@ -13,7 +13,7 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (90)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (91)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
@@ -42,6 +42,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `dogfight` | Dog Fight (Thunderbolt) | 1983 | Shooter / Flying (catver) | Vastar |
 | `cexplore` | Explorer (DECO Cassette) (US) | 1982 | Shooter / Flying Vertical (catver) | DECOCassette |
 | `fhawk` | Fighting Hawk (World) | 1988 | Shooter / Flying Vertical (catver) | taitol |
+| `fort2b` | Fortress 2 Blue Arcade (World) (ver 1.01 / pcb ver 3.05) | 2001 | Shooter / Command (catver) | Eolith |
 | `frontlin` | Front Line (AA1, 4 PCB version) | 1982 | Shooter / Walking (catver) | TaitoSJ |
 | `fnkyfish` | Funky Fish | 1981 | Shooter / Misc. Horizontal (catver) | Kangaroo |
 | `gground` | Gain Ground (World, 3 Players, Floppy Based, FD1094 317-0058-03d Rev A) | 1988 | Shooter / Walking (catver) | SegaSystem24 |
