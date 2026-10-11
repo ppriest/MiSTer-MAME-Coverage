@@ -381,6 +381,15 @@
 "pairs": 25,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-11",
+"note": "alamone 2026-10-05",
+"cores": 0,
+"sets": 0,
+"pairs": 0,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -11631,6 +11640,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-11",
+"aliases": [],
 "last_seen": "2026-10-11"
 },
 "ppriest:hyperng64": {
