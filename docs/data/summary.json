@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated": "2026-10-12T12:58:25+00:00",
+  "generated": "2026-10-12T20:57:25+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-12T12:58:08+00:00",
-  "alamone_generated": "2026-10-12T11:06:33+00:00",
+  "mister_generated": "2026-10-11T12:41:36+00:00",
+  "alamone_generated": "2026-10-05T11:12:58+00:00",
   "ledger_updated": "2026-10-12",
   "ledger_runs": [
    {
@@ -178,7 +178,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1871
+    "mras": 1867
    },
    {
     "source": "dist",
@@ -194,7 +194,7 @@
     "dirs": [
      "mra"
     ],
-    "mras": 1281
+    "mras": 1261
    },
    {
     "source": "coinop",
@@ -210,7 +210,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1089
+    "mras": 1085
    },
    {
     "source": "dist",
@@ -850,12 +850,6 @@
    },
    {
     "source": "dist",
-    "repo": "MiSTer-devel/Arcade-MarbleMadness2_MiSTer",
-    "dirs": null,
-    "mras": 2
-   },
-   {
-    "source": "dist",
     "repo": "MiSTer-devel/Arcade-MarioBros_MiSTer",
     "dirs": null,
     "mras": 1
@@ -910,12 +904,6 @@
    },
    {
     "source": "dist",
-    "repo": "MiSTer-devel/Arcade-OffTheWall_MiSTer",
-    "dirs": null,
-    "mras": 2
-   },
-   {
-    "source": "dist",
     "repo": "MiSTer-devel/Arcade-Pacman_MiSTer",
     "dirs": null,
     "mras": 20
@@ -960,7 +948,7 @@
     "source": "dist",
     "repo": "MiSTer-devel/Arcade-PolePosition_MiSTer",
     "dirs": null,
-    "mras": 15
+    "mras": 11
    },
    {
     "source": "dist",
@@ -1036,31 +1024,25 @@
    },
    {
     "source": "dist",
-    "repo": "MiSTer-devel/Arcade-RallyX_MiSTer",
-    "dirs": null,
-    "mras": 2
-   },
-   {
-    "source": "dist",
     "repo": "MiSTer-devel/Arcade-Rampart_MiSTer",
     "dirs": null,
     "mras": 4
    },
    {
     "source": "dist",
-    "repo": "MiSTer-devel/Arcade-ReliefPitcher_MiSTer",
-    "dirs": null,
-    "mras": 3
-   },
-   {
-    "source": "dist",
-    "repo": "MiSTer-devel/Arcade-RingKing_MiSTer",
+    "repo": "MiSTer-devel/Arcade-RiverPatrol_MiSTer",
     "dirs": null,
     "mras": 1
    },
    {
     "source": "dist",
-    "repo": "MiSTer-devel/Arcade-RiverPatrol_MiSTer",
+    "repo": "MiSTer-devel/Arcade-RallyX_MiSTer",
+    "dirs": null,
+    "mras": 2
+   },
+   {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-RingKing_MiSTer",
     "dirs": null,
     "mras": 1
    },
@@ -1153,12 +1135,6 @@
     "repo": "MiSTer-devel/Arcade-SegaXBoard_MiSTer",
     "dirs": null,
     "mras": 25
-   },
-   {
-    "source": "dist",
-    "repo": "MiSTer-devel/Arcade-Shuuz_MiSTer",
-    "dirs": null,
-    "mras": 2
    },
    {
     "source": "dist",
@@ -1282,12 +1258,6 @@
    },
    {
     "source": "dist",
-    "repo": "MiSTer-devel/Arcade-Tank_MiSTer",
-    "dirs": null,
-    "mras": 3
-   },
-   {
-    "source": "dist",
     "repo": "MiSTer-devel/Arcade-TankBattalion_MiSTer",
     "dirs": null,
     "mras": 1
@@ -1399,12 +1369,6 @@
     "repo": "MiSTer-devel/Arcade-VBall_MiSTer",
     "dirs": null,
     "mras": 1
-   },
-   {
-    "source": "dist",
-    "repo": "MiSTer-devel/Arcade-Victory_MiSTer",
-    "dirs": null,
-    "mras": 2
    },
    {
     "source": "dist",
@@ -1594,12 +1558,6 @@
    },
    {
     "source": "jlrh",
-    "repo": "jlrh/snk-fpga",
-    "dirs": null,
-    "mras": 10
-   },
-   {
-    "source": "jlrh",
     "repo": "jlrh/seibu-fpga",
     "dirs": null,
     "mras": 9
@@ -1615,12 +1573,6 @@
     "repo": "jlrh/taito-fpga",
     "dirs": null,
     "mras": 1
-   },
-   {
-    "source": "jlrh",
-    "repo": "jlrh/technos-fpga",
-    "dirs": null,
-    "mras": 3
    },
    {
     "source": "arcfpga",
@@ -1639,12 +1591,6 @@
     "repo": "Gm0rk/Arcade-Atari-G42_MiSTer",
     "dirs": null,
     "mras": 5
-   },
-   {
-    "source": "repo",
-    "repo": "Kuba-J/wolf-unit",
-    "dirs": null,
-    "mras": 7
    },
    {
     "source": "repo",
@@ -1686,7 +1632,7 @@
     "source": "repo",
     "repo": "RodimusFVC/Arcade-Galaxian_MiSTer",
     "dirs": null,
-    "mras": 352
+    "mras": 348
    },
    {
     "source": "repo",
@@ -1702,15 +1648,15 @@
    },
    {
     "source": "repo",
-    "repo": "RodimusFVC/Arcade-Universal_MiSTer",
-    "dirs": null,
-    "mras": 35
-   },
-   {
-    "source": "repo",
     "repo": "TheJesusFish/Arcade-SegaSys1-2_MiSTer",
     "dirs": null,
     "mras": 6
+   },
+   {
+    "source": "repo",
+    "repo": "Usquebagh/Arcade-Cinematronics_MiSTer",
+    "dirs": null,
+    "mras": 3
    },
    {
     "source": "repo",
@@ -1744,63 +1690,39 @@
    },
    {
     "source": "repo",
-    "repo": "blahm1dplays/Arcade-BlackWidow_MiSTer",
-    "dirs": null,
-    "mras": 2
-   },
-   {
-    "source": "repo",
-    "repo": "blahm1dplays/Arcade-MajorHavoc_MiSTer",
-    "dirs": null,
-    "mras": 1
-   },
-   {
-    "source": "repo",
-    "repo": "blahm1dplays/Arcade-NightSlashers_MiSTer",
-    "dirs": null,
-    "mras": 3
-   },
-   {
-    "source": "repo",
-    "repo": "blahm1dplays/Arcade-Tempest_MiSTer",
-    "dirs": null,
-    "mras": 1
-   },
-   {
-    "source": "repo",
     "repo": "cavemanxzx/MiSTer-Arcade-SuperBagman",
     "dirs": null,
     "mras": 3
    },
    {
     "source": "repo",
-    "repo": "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
-    "dirs": null,
-    "mras": 6
-   },
-   {
-    "source": "repo",
-    "repo": "decoryah/Arcade-MetamorphicForce_MiSTer",
-    "dirs": null,
-    "mras": 5
-   },
-   {
-    "source": "repo",
-    "repo": "decoryah/Arcade-MonsterMaulers_MiSTer",
+    "repo": "decoryah/Arcade-Gaiapolis_MiSTer",
     "dirs": null,
     "mras": 3
    },
    {
     "source": "repo",
-    "repo": "decoryah/Arcade-OhMyGod_MiSTer",
+    "repo": "derpyder/Arcade-BlackWidow_MiSTer",
     "dirs": null,
     "mras": 2
    },
    {
     "source": "repo",
-    "repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+    "repo": "derpyder/Arcade-MajorHavoc_MiSTer",
     "dirs": null,
-    "mras": 38
+    "mras": 1
+   },
+   {
+    "source": "repo",
+    "repo": "derpyder/Arcade-NightSlashers_MiSTer",
+    "dirs": null,
+    "mras": 3
+   },
+   {
+    "source": "repo",
+    "repo": "derpyder/Arcade-Tempest_MiSTer",
+    "dirs": null,
+    "mras": 1
    },
    {
     "source": "repo",
@@ -1822,39 +1744,21 @@
    },
    {
     "source": "repo",
-    "repo": "harlock74/Arcade-10YardFight_MiSTer",
-    "dirs": null,
-    "mras": 1
-   },
-   {
-    "source": "repo",
-    "repo": "harlock74/Arcade-Intrepid_MiSTer",
-    "dirs": null,
-    "mras": 1
-   },
-   {
-    "source": "repo",
-    "repo": "harlock74/Arcade-RoundUp_MiSTer",
-    "dirs": null,
-    "mras": 1
-   },
-   {
-    "source": "repo",
-    "repo": "harlock74/Arcade-SuperMouse_MiSTer",
-    "dirs": null,
-    "mras": 1
-   },
-   {
-    "source": "repo",
-    "repo": "harlock74/Arcade-ThePit_MiSTer",
+    "repo": "harlock74/Arcade-CloakDagger_MiSTer",
     "dirs": null,
     "mras": 0
    },
    {
     "source": "repo",
-    "repo": "kyledlester/BrezzaSoft_Crystal_System_MiSTer",
+    "repo": "kandowontu2/Arcade-GundamEX_MiSTer",
     "dirs": null,
-    "mras": 5
+    "mras": 2
+   },
+   {
+    "source": "repo",
+    "repo": "kandowontu2/Arcade-MarbleMadness2_MiSTer",
+    "dirs": null,
+    "mras": 2
    },
    {
     "source": "repo",
@@ -1870,6 +1774,18 @@
    },
    {
     "source": "repo",
+    "repo": "kyledlester/Namco_NB1_MiSTer",
+    "dirs": null,
+    "mras": 15
+   },
+   {
+    "source": "repo",
+    "repo": "kyledlester/Namco_NB2_MiSTer",
+    "dirs": null,
+    "mras": 6
+   },
+   {
+    "source": "repo",
     "repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
     "dirs": null,
     "mras": 6
@@ -1882,9 +1798,9 @@
    },
    {
     "source": "repo",
-    "repo": "ppriest/Arcade-Eolith_MiSTer",
+    "repo": "ppriest/Arcade-HyperNG64_MiSTer",
     "dirs": null,
-    "mras": 23
+    "mras": 7
    },
    {
     "source": "repo",
@@ -1894,21 +1810,15 @@
    },
    {
     "source": "repo",
-    "repo": "ppriest/Arcade-NixPirates_MiSTer",
+    "repo": "ppriest/Arcade-KonamiGX_MiSTer",
     "dirs": null,
-    "mras": 3
+    "mras": 40
    },
    {
     "source": "repo",
     "repo": "ppriest/Arcade-Seta_MiSTer",
     "dirs": null,
     "mras": 44
-   },
-   {
-    "source": "repo",
-    "repo": "ppriest/Arcade-Vamphalf_MiSTer",
-    "dirs": null,
-    "mras": 33
    },
    {
     "source": "repo",
@@ -1930,15 +1840,33 @@
    },
    {
     "source": "repo",
+    "repo": "rossops/Arcade-SegaYBoard_MiSTer",
+    "dirs": null,
+    "mras": 19
+   },
+   {
+    "source": "repo",
+    "repo": "shmupfan/Arcade-1945kIII_MiSTer",
+    "dirs": null,
+    "mras": 6
+   },
+   {
+    "source": "repo",
     "repo": "shmupfan/Arcade-DEC8_MiSTer",
     "dirs": null,
     "mras": 10
    },
    {
     "source": "repo",
-    "repo": "shmupfan/Arcade-TaitoGNET_MiSTer",
+    "repo": "shmupfan/Arcade-Dooyong_MiSTer",
     "dirs": null,
-    "mras": 58
+    "mras": 25
+   },
+   {
+    "source": "repo",
+    "repo": "shmupfan/Arcade-Tecmo16_MiSTer",
+    "dirs": null,
+    "mras": 7
    },
    {
     "source": "repo",
@@ -1963,42 +1891,6 @@
     "repo": "srg320/Arcade-SKNS_MiSTer",
     "dirs": null,
     "mras": 40
-   },
-   {
-    "source": "repo",
-    "repo": "yaguboo/Arcade-HeavySmash_MiSTer",
-    "dirs": null,
-    "mras": 3
-   },
-   {
-    "source": "repo",
-    "repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-    "dirs": null,
-    "mras": 19
-   },
-   {
-    "source": "repo",
-    "repo": "yaguboo/Arcade-NamcoNA2_MiSTer",
-    "dirs": null,
-    "mras": 21
-   },
-   {
-    "source": "repo",
-    "repo": "yaguboo/Arcade-PowerInstinct_MiSTer",
-    "dirs": null,
-    "mras": 4
-   },
-   {
-    "source": "repo",
-    "repo": "yaguboo/Arcade-PowerSpikes_MiSTer",
-    "dirs": null,
-    "mras": 4
-   },
-   {
-    "source": "repo",
-    "repo": "yaguboo/Arcade-ShadowForce_MiSTer",
-    "dirs": null,
-    "mras": 3
    },
    {
     "source": "repo",
@@ -2200,9 +2092,9 @@
    },
    {
     "source": "ongo",
-    "repo": "bazset/MiSTer_BAZSET",
+    "repo": "blahm1d/wolf-unit",
     "dirs": null,
-    "mras": 31
+    "mras": 0
    },
    {
     "source": "ongo",
@@ -2290,15 +2182,9 @@
    },
    {
     "source": "ongo",
-    "repo": "kyledlester/Namco_NB1_MiSTer",
+    "repo": "kyledlester/BrezzaSoft_Crystal_System_MiSTer",
     "dirs": null,
-    "mras": 15
-   },
-   {
-    "source": "ongo",
-    "repo": "kyledlester/Namco_NB2_MiSTer",
-    "dirs": null,
-    "mras": 6
+    "mras": 5
    },
    {
     "source": "ongo",
@@ -2316,7 +2202,7 @@
     "source": "ongo",
     "repo": "meathax/meatcores",
     "dirs": null,
-    "mras": 137
+    "mras": 125
    },
    {
     "source": "ongo",
@@ -2374,21 +2260,15 @@
    },
    {
     "source": "ongo",
-    "repo": "ppriest/Arcade-KonamiGX_MiSTer",
+    "repo": "ppriest/Arcade-Vamphalf_MiSTer",
     "dirs": null,
-    "mras": 40
+    "mras": 33
    },
    {
     "source": "ongo",
     "repo": "rmonic79/rmcores",
     "dirs": null,
     "mras": 67
-   },
-   {
-    "source": "ongo",
-    "repo": "rossops/Arcade-SegaYBoard_MiSTer",
-    "dirs": null,
-    "mras": 19
    },
    {
     "source": "ongo",
@@ -2427,10 +2307,40 @@
     "mras": 1
    },
    {
-    "source": "shmupfan",
-    "repo": "shmupfan/Arcade-1945kIII_MiSTer",
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-MarbleMadness2_MiSTer",
     "dirs": null,
-    "mras": 6
+    "mras": 2
+   },
+   {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-OffTheWall_MiSTer",
+    "dirs": null,
+    "mras": 2
+   },
+   {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-ReliefPitcher_MiSTer",
+    "dirs": null,
+    "mras": 3
+   },
+   {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-Shuuz_MiSTer",
+    "dirs": null,
+    "mras": 2
+   },
+   {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-Tank_MiSTer",
+    "dirs": null,
+    "mras": 3
+   },
+   {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-Victory_MiSTer",
+    "dirs": null,
+    "mras": 2
    },
    {
     "source": "repo",
@@ -2443,12 +2353,6 @@
     "repo": "rmonic79/Arcade-Darius2NinjaWarriors_MiSTer",
     "dirs": null,
     "mras": 5
-   },
-   {
-    "source": "shmupfan",
-    "repo": "shmupfan/Arcade-Dooyong_MiSTer",
-    "dirs": null,
-    "mras": 25
    },
    {
     "source": "repo",
@@ -2482,9 +2386,9 @@
    },
    {
     "source": "shmupfan",
-    "repo": "shmupfan/Arcade-Tecmo16_MiSTer",
+    "repo": "shmupfan/Arcade-TaitoGNET_MiSTer",
     "dirs": null,
-    "mras": 7
+    "mras": 58
    },
    {
     "source": "repo",
@@ -2511,12 +2415,6 @@
     "mras": 2
    },
    {
-    "source": "ppriest",
-    "repo": "ppriest/Arcade-HyperNG64_MiSTer",
-    "dirs": null,
-    "mras": 7
-   },
-   {
     "source": "repo",
     "repo": "MiSTer-devel/Arcade-KillerInstinct_MiSTer",
     "dirs": [
@@ -2526,11 +2424,35 @@
    },
    {
     "source": "repo",
-    "repo": "decoryah/Arcade-Gaiapolis_MiSTer",
+    "repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+    "dirs": [
+     "mra"
+    ],
+    "mras": 38
+   },
+   {
+    "source": "repo",
+    "repo": "decoryah/Arcade-OhMyGod_MiSTer",
+    "dirs": [
+     "mra"
+    ],
+    "mras": 2
+   },
+   {
+    "source": "repo",
+    "repo": "decoryah/Arcade-MonsterMaulers_MiSTer",
     "dirs": [
      "mra"
     ],
     "mras": 3
+   },
+   {
+    "source": "repo",
+    "repo": "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
+    "dirs": [
+     "mra"
+    ],
+    "mras": 6
    },
    {
     "source": "dist",
@@ -2541,28 +2463,36 @@
   ],
   "repo_errors": [
    [
+    "harlock74/Arcade-CloakDagger_MiSTer",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
     "Kyp069/zx48-MiSTer",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+   ],
+   [
+    "blahm1d/wolf-unit",
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "kandowontu/BrickBoy_MiSTer",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "meathax/Bucky",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "meathax/mrdo",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "meathax/s24",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "https://mister.blahm1d.com/db.json.zip",
-    "HTTP Error 403: Forbidden"
+    "<urlopen error Tunnel connection failed: 403 Forbidden>"
    ]
   ],
   "counts": {

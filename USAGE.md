@@ -358,6 +358,10 @@ data refresh goes live on its own. The data files are plain URLs next to the pag
 (`https://mister-mame-coverage-docs.vercel.app/data/coverage.json`) and can be consumed by other
 tools. Nothing in the page depends on the host: any static file server pointed at `docs/` works.
 
+`index.html` links `style.css` and `app.js` with a `?v=<content hash>` query so a cached copy is never
+reused after a change. `mmc report` (the daily refresh) re-stamps it; after editing `docs/style.css` or
+`docs/app.js` by hand, run `python -m mmc.cachebust` and commit `docs/index.html` with the change.
+
 Locally, serve the folder over HTTP (`python -m http.server -d docs 8000`); browsers refuse
 `fetch()` of the JSON from `file://`.
 

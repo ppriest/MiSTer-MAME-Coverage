@@ -8,10 +8,11 @@ import os
 import subprocess
 import sys
 
-from . import paths
+from . import cachebust, paths
 
 
 def write(result: dict) -> None:
+    cachebust.stamp()
     os.makedirs(os.path.join(paths.DOCS, "data"), exist_ok=True)
     full = os.path.join(paths.DOCS, "data", "coverage.json")
     # Hover screenshots: data/images.json ({set: {title, ingame}}, written by tools/shots.py with hashed file
