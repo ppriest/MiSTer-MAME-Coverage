@@ -1,6 +1,6 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-10-11 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (317 games).
+Generated 2026-10-12 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (317 games).
 
 **Agreement:** 307 of 309 deck titles are Shmup in our data (99.4%).
 
@@ -41,7 +41,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `devilw` | Devil World | 1987 | Shooter / Walking (catver) | jttwin16 |
 | `dogfight` | Dog Fight (Thunderbolt) | 1983 | Shooter / Flying (catver) | Vastar |
 | `cexplore` | Explorer (DECO Cassette) (US) | 1982 | Shooter / Flying Vertical (catver) | DECOCassette |
-| `fhawk` | Fighting Hawk (World) | 1988 | Shooter / Flying Vertical (catver) | taitol |
+| `fhawk` | Fighting Hawk (World) | 1988 | Shooter / Flying Vertical (catver) | taitol (decoryah) |
 | `fort2b` | Fortress 2 Blue Arcade (World) (ver 1.01 / pcb ver 3.05) | 2001 | Shooter / Command (catver) | Eolith |
 | `frontlin` | Front Line (AA1, 4 PCB version) | 1982 | Shooter / Walking (catver) | TaitoSJ |
 | `fnkyfish` | Funky Fish | 1981 | Shooter / Misc. Horizontal (catver) | Kangaroo |
