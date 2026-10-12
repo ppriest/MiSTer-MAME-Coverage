@@ -822,7 +822,7 @@
 
   // ---------- boot ----------
   ALL_IDS.forEach(id => { const el = $("#" + id); el.dataset.default = el.value; });
-  fetch("data/coverage.json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(data => {
+  fetch("data/coverage.json", { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(data => {
     S.data = data; S.titles = data.titles; data.cores.forEach(c => S.cores[c.id] = c);
     S.driverByFile = {}; data.drivers.forEach(d => S.driverByFile[d.sourcefile] = d);
     const c = data.meta.counts;
