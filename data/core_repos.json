@@ -1811,6 +1811,9 @@
  "ongo:bazset_kanekofamily": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:bazset_kickle": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:bazset_krull": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -1904,6 +1907,9 @@
  "ongo:kanekofamily": [
   "bazset/MiSTer_BAZSET"
  ],
+ "ongo:kickle": [
+  "bazset/MiSTer_BAZSET"
+ ],
  "ongo:killerinstinct": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -1941,6 +1947,9 @@
  "ongo:meathax_narc": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:meathax_nintendo8080": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:meathax_segasystem24": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -1974,6 +1983,9 @@
  ],
  "ongo:night_striker_bazset": [
   "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:nintendo8080": [
+  "meathax/meatcores"
  ],
  "ongo:nss_bazset": [
   "OngoGablogian/MiSTer_Ongo"
@@ -2335,6 +2347,9 @@
  ],
  "repo:twinhawk": [
   "bazset/Twin-Hawk-FPGA"
+ ],
+ "repo:universal": [
+  "RodimusFVC/Arcade-Universal_MiSTer"
  ],
  "repo:universal_testbuild": [
   "RodimusFVC/Arcade-Universal_MiSTer"
