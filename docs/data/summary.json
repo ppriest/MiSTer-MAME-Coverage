@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-14T10:03:56+00:00",
+  "generated": "2026-10-14T20:55:51+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-14T10:03:28+00:00",
+  "mister_generated": "2026-10-14T20:55:18+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-14",
   "ledger_runs": [
-   {
-    "date": "2026-10-11",
-    "note": "alamone 2026-10-05",
-    "cores": 1,
-    "sets": 25,
-    "pairs": 25,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-11",
     "note": "alamone 2026-10-05",
@@ -51,6 +42,15 @@
     "pairs": 25,
     "dates_improved": 5,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-14",
+    "note": "alamone 2026-10-12",
+    "cores": 5,
+    "sets": 19,
+    "pairs": 64,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
    "catver_entries": 37998,
    "mad_entries": 2995,
-   "mra_entries": 3302,
+   "mra_entries": 3321,
    "unmapped": [
     {
      "raw": "not classified",
@@ -70,6 +70,10 @@
      "sets": 3
     },
     {
+     "raw": "music",
+     "sets": 1
+    },
+    {
      "raw": "minigames",
      "sets": 1
     }
@@ -77,10 +81,10 @@
   },
   "mame_added_updated": "2026-10-14",
   "hbmame": {
-   "tag": "0.289.3 (2026-09-29)",
-   "version": "0.289.3 (2026-09-29)",
-   "updated": "2026-10-12",
-   "sets": 8452
+   "tag": "tag2893",
+   "version": "0.289.3",
+   "updated": "2026-10-14",
+   "sets": 9711
   },
   "sources": {
    "dist": "MiSTer official distribution",
@@ -194,7 +198,7 @@
     "dirs": [
      "mra"
     ],
-    "mras": 1276
+    "mras": 0
    },
    {
     "source": "coinop",
@@ -210,7 +214,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1118
+    "mras": 1148
    },
    {
     "source": "dist",
@@ -2538,6 +2542,22 @@
    },
    {
     "source": "repo",
+    "repo": "XelaNotPu/SYSTEM11_MiSTer-Supporter",
+    "dirs": [
+     "releases/_Arcade"
+    ],
+    "mras": 35
+   },
+   {
+    "source": "repo",
+    "repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
+    "dirs": [
+     "_Arcade"
+    ],
+    "mras": 5
+   },
+   {
+    "source": "repo",
     "repo": "decoryah/Arcade-Gaiapolis_MiSTer",
     "dirs": [
      "mra"
@@ -2553,40 +2573,44 @@
   ],
   "repo_errors": [
    [
+    "jotego/jtbin",
+    "fatal: fetch-pack: invalid index-pack output"
+   ],
+   [
     "Kyp069/zx48-MiSTer",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "kandowontu/BrickBoy_MiSTer",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "meathax/Bucky",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "meathax/mrdo",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "meathax/s24",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "https://mister.blahm1d.com/db.json.zip",
-    "HTTP Error 403: Forbidden"
+    "<urlopen error Tunnel connection failed: 403 Forbidden>"
    ]
   ],
   "counts": {
    "titles": 6825,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2056,
+   "working_arcade_titles_covered": 2068,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5370,
-   "working_arcade_titles_source": 1817,
-   "working_arcade_titles_binary_only": 239,
-   "cores": 609,
-   "binary_only_cores": 189,
+   "working_arcade_sets_covered": 5389,
+   "working_arcade_titles_source": 1818,
+   "working_arcade_titles_binary_only": 250,
+   "cores": 611,
+   "binary_only_cores": 192,
    "unmatched_sets": 435
   }
  },
@@ -2931,6 +2955,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-14",
+   "aliases": [],
    "last_seen": "2026-10-14",
    "binary_only": true,
    "nsets": 1,
@@ -13744,6 +13769,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-14",
+   "aliases": [],
    "last_seen": "2026-10-14",
    "binary_only": true,
    "nsets": 3,
@@ -13993,6 +14019,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-14",
+   "aliases": [],
    "last_seen": "2026-10-14",
    "binary_only": false,
    "nsets": 1,
@@ -14776,6 +14803,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-14",
+   "aliases": [],
    "last_seen": "2026-10-14",
    "binary_only": false,
    "nsets": 3,
@@ -14967,6 +14995,28 @@
    "first_date": "2026-07-05"
   },
   {
+   "id": "ongo:xnsystem12",
+   "name": "XNSYSTEM12",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "XNSYSTEM12.rbf",
+   "repo": "OngoGablogian/MiSTer_Ongo",
+   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "binary_only": true,
+   "nsets": 54,
+   "ntitles": 26,
+   "first_date": "2026-08-02"
+  },
+  {
    "id": "ongo:xnsystem22",
    "name": "XNSYSTEM22",
    "source": "ongo",
@@ -15128,6 +15178,28 @@
    "first_date": "2026-10-10"
   },
   {
+   "id": "ppriest:gstream",
+   "name": "GStream",
+   "source": "ppriest",
+   "source_title": "ppriest (MiSTer_ppriest)",
+   "channel": null,
+   "rbf": "GStream.rbf",
+   "repo": "ppriest/Arcade-GStream_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-GStream_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-14"
+  },
+  {
    "id": "ppriest:hyperng64",
    "name": "HyperNG64",
    "source": "ppriest",
@@ -15281,6 +15353,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-14",
+   "aliases": [],
    "last_seen": "2026-10-14",
    "binary_only": false,
    "nsets": 6,
@@ -17202,7 +17275,8 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
-   "last_seen": "2026-10-08",
+   "aliases": [],
+   "last_seen": "2026-10-14",
    "binary_only": false,
    "nsets": 35,
    "ntitles": 11,
@@ -17224,7 +17298,8 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-08",
-   "last_seen": "2026-10-08",
+   "aliases": [],
+   "last_seen": "2026-10-14",
    "binary_only": false,
    "nsets": 5,
    "ntitles": 2,
@@ -23139,11 +23214,12 @@
   {
    "sourcefile": "namco/namcos12.cpp",
    "titles": 26,
-   "covered": 15,
+   "covered": 26,
    "sets": 59,
-   "sets_covered": 41,
+   "sets_covered": 59,
    "cores": [
     "ongo:system12",
+    "ongo:xnsystem12",
     "repo:xnsystem11"
    ],
    "first": "2026-07-14"
@@ -24074,11 +24150,13 @@
   {
    "sourcefile": "promat/gstream.cpp",
    "titles": 2,
-   "covered": 0,
+   "covered": 1,
    "sets": 3,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 1,
+   "cores": [
+    "ppriest:gstream"
+   ],
+   "first": "2026-10-14"
   },
   {
    "sourcefile": "psikyo/psikyo.cpp",
@@ -27415,6 +27493,7 @@
    ],
    "hbmame": true,
    "year": "2021",
+   "parent": "neogeo",
    "manufacturer": "Kako Eimon",
    "desc": "Abyssal Infants"
   },
@@ -27550,6 +27629,7 @@
    ],
    "hbmame": true,
    "year": "2017",
+   "parent": "neogeo",
    "manufacturer": "BEY",
    "desc": "Bad Apple demo (v1)"
   },
@@ -27775,14 +27855,22 @@
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": false
+   "hbmame": true,
+   "year": "1981",
+   "parent": "ckong",
+   "manufacturer": "bootleg",
+   "desc": "Crazy Kong Part II -1"
   },
   {
    "set": "ckonga3",
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": false
+   "hbmame": true,
+   "year": "1981",
+   "parent": "ckong",
+   "manufacturer": "bootleg",
+   "desc": "Crazy Kong Part II -2"
   },
   {
    "set": "ckongfix",
@@ -27805,6 +27893,7 @@
    ],
    "hbmame": true,
    "year": "2000",
+   "parent": "neogeo",
    "manufacturer": "Jeff Kurtz",
    "desc": "Columns (NeoGeo)(Homebrew)"
   },
@@ -27815,6 +27904,7 @@
    ],
    "hbmame": true,
    "year": "2013",
+   "parent": "neogeo",
    "manufacturer": "Le Cortex",
    "desc": "Crouching Pony Hidden Dragon Demo"
   },
@@ -28381,6 +28471,7 @@
    ],
    "hbmame": true,
    "year": "2024",
+   "parent": "neogeo",
    "manufacturer": "Pixelheart / ChipsOnSteroids",
    "desc": "Gladmort"
   },
@@ -28685,6 +28776,7 @@
    ],
    "hbmame": true,
    "year": "2014",
+   "parent": "neogeo",
    "manufacturer": "Neobitz",
    "desc": "Knight's Chance"
   },
@@ -28744,6 +28836,7 @@
    ],
    "hbmame": true,
    "year": "2021",
+   "parent": "neogeo",
    "manufacturer": "Blastar",
    "desc": "Looptris (2021-12-26)"
   },
@@ -28978,6 +29071,7 @@
    ],
    "hbmame": true,
    "year": "2015",
+   "parent": "neogeo",
    "manufacturer": "Kannagi",
    "desc": "Neo Fight"
   },
@@ -28988,6 +29082,7 @@
    ],
    "hbmame": true,
    "year": "2012",
+   "parent": "neogeo",
    "manufacturer": "Sebastian Mihai",
    "desc": "Neo Thunder"
   },
@@ -29034,6 +29129,7 @@
    ],
    "hbmame": true,
    "year": "2020",
+   "parent": "neogeo",
    "manufacturer": "OzzyOuzo",
    "desc": "New! Super Mario Bros."
   },
@@ -30240,7 +30336,11 @@
    "cores": [
     "jt:jtcps1"
    ],
-   "hbmame": false
+   "hbmame": true,
+   "year": "2021",
+   "parent": "sf2ce",
+   "manufacturer": "Zero800",
+   "desc": "Street Fighter II: Dream Battle (Mix 1.0)"
   },
   {
    "set": "sfa2_1",
@@ -30474,7 +30574,7 @@
    "year": "2007",
    "parent": "salamand",
    "manufacturer": "Konami",
-   "desc": "Salamander (version YY 0.7.3)"
+   "desc": "Salamander (version YY 0.7.3) "
   },
   {
    "set": "spcloneo",
@@ -30684,6 +30784,7 @@
    ],
    "hbmame": true,
    "year": "2022",
+   "parent": "neogeo",
    "manufacturer": "OzzyOuzo",
    "desc": "The Eye of Typhoon (Tsunami Edition, beta 7, 2022-07-31)"
   },
@@ -30736,6 +30837,7 @@
    ],
    "hbmame": true,
    "year": "2011",
+   "parent": "neogeo",
    "manufacturer": "FACE Corporation / N.C.I - Le Cortex",
    "desc": "Treasure of the Caribbean"
   },
@@ -31208,6 +31310,7 @@
    ],
    "hbmame": true,
    "year": "2025",
+   "parent": "neogeo",
    "manufacturer": "Blastar",
    "desc": "World Racer (2025-11-14)"
   },

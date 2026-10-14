@@ -13,7 +13,7 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (94)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (95)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
@@ -47,6 +47,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `fort2b` | Fortress 2 Blue Arcade (World) (ver 1.01 / pcb ver 3.05) | 2001 | Shooter / Command (catver) | Eolith |
 | `frontlin` | Front Line (AA1, 4 PCB version) | 1982 | Shooter / Walking (catver) | TaitoSJ |
 | `fnkyfish` | Funky Fish | 1981 | Shooter / Misc. Horizontal (catver) | Kangaroo |
+| `gstream` | G-Stream G2020 | 2002 | Shooter / Flying Vertical (catver) | GStream |
 | `gground` | Gain Ground (World, 3 Players, Floppy Based, FD1094 317-0058-03d Rev A) | 1988 | Shooter / Walking (catver) | SegaSystem24 |
 | `gbusters` | Gang Busters (set 1) | 1988 | Shooter / Walking (catver) | jtaliens |
 | `gondo` | Gondomania (World) | 1987 | Shooter / Flying Vertical (catver) | dec8 |
