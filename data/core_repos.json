@@ -1789,6 +1789,9 @@
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
+ "ongo:argus": [
+  "meathax/meatcores"
+ ],
  "ongo:asuka_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
@@ -1897,6 +1900,9 @@
  "ongo:intrepid": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:juezhan_tianhuang_b03": [
+  "bazset/MiSTer_BAZSET"
+ ],
  "ongo:jvmomoko": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -1941,6 +1947,9 @@
  "ongo:meathax_ikkisunsoft": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:meathax_mysteriousstones": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:meathax_namcond1": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -1968,6 +1977,13 @@
  "ongo:model1": [
   "OngoGablogian/MiSTer_Ongo",
   "alphanu1/sega-model1-mister"
+ ],
+ "ongo:model2": [
+  "OngoGablogian/MiSTer_Ongo",
+  "alphanu1/sega-model2-mister"
+ ],
+ "ongo:mysteriousstones": [
+  "meathax/meatcores"
  ],
  "ongo:namco_nb1": [
   "OngoGablogian/MiSTer_Ongo",
@@ -2004,6 +2020,10 @@
  ],
  "ongo:rmgalivan": [
   "rmonic79/rmcores"
+ ],
+ "ongo:rshark": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/R_Shark_Super_X_MiSTer"
  ],
  "ongo:sci_bazset": [
   "bazset/MiSTer_BAZSET"
@@ -2204,6 +2224,9 @@
  "repo:konamigxt34": [
   "ppriest/Arcade-KonamiGX_MiSTer"
  ],
+ "repo:limenko": [
+  "ppriest/Arcade-Vamphalf_MiSTer"
+ ],
  "repo:majorhavoc": [
   "blahm1dplays/Arcade-MajorHavoc_MiSTer",
   "derpyder/Arcade-MajorHavoc_MiSTer"
@@ -2217,7 +2240,8 @@
   "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer"
  ],
  "repo:metamorphicforce": [
-  "decoryah/Arcade-MetamorphicForce_MiSTer"
+  "decoryah/Arcade-MetamorphicForce_MiSTer",
+  "meathax/meatcores"
  ],
  "repo:monstermaulers": [
   "decoryah/Arcade-MonsterMaulers_MiSTer"
