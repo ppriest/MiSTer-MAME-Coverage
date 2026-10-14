@@ -1811,6 +1811,9 @@
  "ongo:bazset_continentalcircus": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:bazset_juezhantianhuang": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:bazset_kanekofamily": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -1937,12 +1940,18 @@
   "OngoGablogian/MiSTer_Ongo",
   "fiermanb/LastDuel-MadGear_MiSTer"
  ],
+ "ongo:limenko": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:madgear": [
   "OngoGablogian/MiSTer_Ongo",
   "fiermanb/LastDuel-MadGear_MiSTer"
  ],
  "ongo:mazeofflott_bazset": [
   "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:meathax_argus": [
+  "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_ikkisunsoft": [
   "OngoGablogian/MiSTer_Ongo"
@@ -2083,6 +2092,9 @@
   "XelaNotPu/BreakThru_MiSTer"
  ],
  "ongo:xnsuper22": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:xnsystem12": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:xnsystem22": [

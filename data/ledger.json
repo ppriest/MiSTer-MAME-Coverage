@@ -417,6 +417,15 @@
 "pairs": 25,
 "dates_improved": 5,
 "cores_removed": 0
+},
+{
+"date": "2026-10-14",
+"note": "alamone 2026-10-12",
+"cores": 5,
+"sets": 19,
+"pairs": 64,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -705,6 +714,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-14",
+"aliases": [],
 "last_seen": "2026-10-14"
 },
 "bazset:kanekofamily": {
@@ -9766,6 +9776,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-14",
+"aliases": [],
 "last_seen": "2026-10-14"
 },
 "meat:bucky": {
@@ -9975,6 +9986,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-14",
+"aliases": [],
 "last_seen": "2026-10-14"
 },
 "meat:namcond1": {
@@ -10341,6 +10353,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-14",
+"aliases": [],
 "last_seen": "2026-10-14"
 },
 "ongo:asuka_bazset": {
@@ -10474,6 +10487,24 @@
 "note": null,
 "first_recorded": "2026-10-10",
 "aliases": [],
+"last_seen": "2026-10-14"
+},
+"ongo:bazset_juezhantianhuang": {
+"id": "ongo:bazset_juezhantianhuang",
+"name": "bazset_JuezhanTianhuang",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "bazset_JuezhanTianhuang.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-14",
 "last_seen": "2026-10-14"
 },
 "ongo:bazset_kanekofamily": {
@@ -11214,6 +11245,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-14",
+"aliases": [],
 "last_seen": "2026-10-14"
 },
 "ongo:jvmomoko": {
@@ -11425,6 +11457,24 @@
 "aliases": [],
 "last_seen": "2026-10-14"
 },
+"ongo:limenko": {
+"id": "ongo:limenko",
+"name": "Limenko",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Limenko.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+},
 "ongo:madgear": {
 "id": "ongo:madgear",
 "name": "madgear",
@@ -11463,6 +11513,24 @@
 "aliases": [],
 "last_seen": "2026-10-14"
 },
+"ongo:meathax_argus": {
+"id": "ongo:meathax_argus",
+"name": "Meathax_Argus",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Meathax_Argus.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+},
 "ongo:meathax_ikkisunsoft": {
 "id": "ongo:meathax_ikkisunsoft",
 "name": "Meathax_IkkiSunsoft",
@@ -11498,6 +11566,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-14",
+"aliases": [],
 "last_seen": "2026-10-14"
 },
 "ongo:meathax_namcond1": {
@@ -11725,6 +11794,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-14",
+"aliases": [],
 "last_seen": "2026-10-14"
 },
 "ongo:mysteriousstones": {
@@ -11743,6 +11813,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-14",
+"aliases": [],
 "last_seen": "2026-10-14"
 },
 "ongo:namco_nb1": {
@@ -12391,6 +12462,24 @@
 "aliases": [],
 "last_seen": "2026-10-14"
 },
+"ongo:xnsystem12": {
+"id": "ongo:xnsystem12",
+"name": "XNSYSTEM12",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "XNSYSTEM12.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+},
 "ongo:xnsystem22": {
 "id": "ongo:xnsystem22",
 "name": "XNSYSTEM22",
@@ -12562,6 +12651,24 @@
 "aliases": [],
 "last_seen": "2026-10-14"
 },
+"ppriest:gstream": {
+"id": "ppriest:gstream",
+"name": "GStream",
+"source": "ppriest",
+"source_title": "ppriest (MiSTer_ppriest)",
+"channel": null,
+"rbf": "GStream.rbf",
+"repo": "ppriest/Arcade-GStream_MiSTer",
+"url": "https://github.com/ppriest/Arcade-GStream_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+},
 "ppriest:hyperng64": {
 "id": "ppriest:hyperng64",
 "name": "HyperNG64",
@@ -12692,6 +12799,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-14",
+"aliases": [],
 "last_seen": "2026-10-14"
 },
 "ppriest:nixpirates": {
@@ -14305,7 +14413,8 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"aliases": [],
+"last_seen": "2026-10-14"
 },
 "repo:xnsystemfl": {
 "id": "repo:xnsystemfl",
@@ -14323,7 +14432,8 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"aliases": [],
+"last_seen": "2026-10-14"
 },
 "rmcores:rmgalivan": {
 "id": "rmcores:rmgalivan",
@@ -16906,7 +17016,7 @@
 "first_path": "mra/Aliens (World set 1).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
-"mra": "_Arcade/Aliens (World set 1).mra"
+"mra": "_Arcade/Aliens (World set 1, JP palette - NIKNAK 2026).mra"
 }
 },
 "aliens2": {
@@ -18130,6 +18240,21 @@
 "mra": "_Arcade/_alternatives/_APB/APB - All Points Bulletin (German).mra"
 }
 },
+"aplarail": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Attack Pla Rail (Japan, AP1-VER.A).mra",
+"mra": "_Arcade/Attack Pla Rail (Japan, AP1-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+}
+},
 "aponow": {
 "dist:galaxian": {
 "core": "dist:galaxian",
@@ -18213,6 +18338,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Aqua Rush (Japan, AQ1-VER.A1).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-18",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Aqua Rush (Japan AQ1-VER.A1).mra",
+"mra": "_Arcade/Aqua Rush (Japan, AQ1-VER.A1).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "arabfgt": {
@@ -18514,6 +18652,19 @@
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Argus.mra",
 "mra": "_Arcade/_MeatCores/Argus.mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+},
+"ongo:meathax_argus": {
+"core": "ongo:meathax_argus",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Argus.mra",
+"mra": "_Arcade/Argus.mra",
 "first_recorded": "2026-10-14",
 "last_seen": "2026-10-14"
 }
@@ -25705,7 +25856,7 @@
 "first_path": "mra/_alternatives/_Bubble Bobble/Bubble Bobble (Japan, Ver 0.1).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
-"mra": "_Arcade/Bubble Bobble (Japan, Ver 0.1).mra"
+"mra": "_Arcade/Pixel Bubble.mra"
 }
 },
 "bublbobl1": {
@@ -26196,6 +26347,19 @@
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Butasan - Pig's & Bomber's.mra",
 "mra": "_Arcade/_MeatCores/Butasan - Pig's & Bomber's.mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+},
+"ongo:meathax_argus": {
+"core": "ongo:meathax_argus",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Butasan - Pig's & Bomber's (Japan, English).mra",
+"mra": "_Arcade/Butasan - Pig's & Bomber's (Japan, English).mra",
 "first_recorded": "2026-10-14",
 "last_seen": "2026-10-14"
 }
@@ -32924,7 +33088,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Dancing Eyes (World DC2-VER.B).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Dancing Eyes (DC2-VER.B).mra"
 }
 },
 "danceyesj": {
@@ -32951,7 +33116,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Dancing Eyes/Dancing Eyes (Japan DC1-VER.A).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Dancing Eyes (Japan DC1-VER.A).mra"
 }
 },
 "danceyesu": {
@@ -32978,7 +33144,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Dancing Eyes/Dancing Eyes (US DC3-VER.C).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Dancing Eyes (US DC3-VER.C).mra"
 }
 },
 "danchih": {
@@ -39001,7 +39168,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Dunk Mania (World DM2-VER.C).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Dunk Mania (DM2-VER.C).mra"
 }
 },
 "dunkmniajc": {
@@ -39028,7 +39196,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Dunk Mania/Dunk Mania (Japan DM1-VER.C).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Dunk Mania (Japan DM1-VER.C).mra"
 }
 },
 "dunkshot": {
@@ -39167,6 +39336,19 @@
 }
 },
 "dynabomb": {
+"ongo:limenko": {
+"core": "ongo:limenko",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-Vamphalf_MiSTer",
+"first_path": "releases/Dynamite Bomber (Korea, Rev 1.5).mra",
+"mra": "_Arcade/Dynamite Bomber (Korea, Rev 1.5).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+},
 "ppriest:limenko": {
 "core": "ppriest:limenko",
 "date": "2026-10-13",
@@ -39208,7 +39390,7 @@
 "first_path": "mra/CPS1/Dynasty Wars -USA, B-Board 89624B- -.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
-"mra": "_Arcade/Dynasty Wars (USA, B-Board 89624B-x).mra"
+"mra": "_Arcade/Dynasty Wars (USA, B-Board 89624B-).mra"
 }
 },
 "dynwara": {
@@ -39760,6 +39942,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Ehrgeiz (World, EG2-VER.A).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Ehrgeiz (World, EG2-VER.A).mra",
+"mra": "_Arcade/Ehrgeiz (World, EG2-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "ehrgeizja": {
@@ -39775,6 +39970,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Ehrgeiz/Ehrgeiz (Japan, EG1-VER.A).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Ehrgeiz/Ehrgeiz (Japan, EG1-VER.A).mra",
+"mra": "_Arcade/_alternatives/_Ehrgeiz/Ehrgeiz (Japan, EG1-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "ehrgeizua": {
@@ -39790,6 +39998,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Ehrgeiz/Ehrgeiz (US, EG3-VER.A).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Ehrgeiz/Ehrgeiz (US, EG3-VER.A).mra",
+"mra": "_Arcade/_alternatives/_Ehrgeiz/Ehrgeiz (US, EG3-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "eightfrc": {
@@ -42433,6 +42654,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Fighting Layer (Asia, FTL3-VER.A).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Fighting Layer (Asia, FTL3-VER.A).mra",
+"mra": "_Arcade/Fighting Layer (Asia, FTL3-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "fgtlayerja": {
@@ -42448,6 +42682,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Fighting Layer/Fighting Layer (Japan, FTL0-VER.A).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Fighting Layer/Fighting Layer (Japan, FTL0-VER.A).mra",
+"mra": "_Arcade/_alternatives/_Fighting Layer/Fighting Layer (Japan, FTL0-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "fhawk": {
@@ -42665,7 +42912,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Final Lap R (Rev. B).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/_XelaNotPu/Final Lap R (Rev. B).mra"
 }
 },
 "finalapr1": {
@@ -42704,7 +42952,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Final Lap R/Final Lap R.mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/_XelaNotPu/_alternatives/_Final Lap R/Final Lap R.mra"
 }
 },
 "finalaprj": {
@@ -42743,7 +42992,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Final Lap R/Final Lap R (Japan Rev. C).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/_XelaNotPu/_alternatives/_Final Lap R/Final Lap R (Japan Rev. C).mra"
 }
 },
 "finalaprj1": {
@@ -42782,7 +43032,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Final Lap R/Final Lap R (Japan Rev. B).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/_XelaNotPu/_alternatives/_Final Lap R/Final Lap R (Japan Rev. B).mra"
 }
 },
 "finalb": {
@@ -45096,6 +45347,21 @@
 "first_path": "releases/_alternatives/_SRD Mission/F-X (Bootleg Of S.R.D. Mission).mra",
 "mra": "_Arcade/_alternatives/_SRD Mission/F-X (Bootleg Of S.R.D. Mission).mra",
 "first_recorded": "2026-10-11",
+"last_seen": "2026-10-14"
+}
+},
+"g13knd": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Golgo 13 Kiseki no Dandou (Japan, GLS1-VER.A).mra",
+"mra": "_Arcade/Golgo 13 Kiseki no Dandou (Japan, GLS1-VER.A).mra",
+"first_recorded": "2026-10-14",
 "last_seen": "2026-10-14"
 }
 },
@@ -48309,7 +48575,7 @@
 "alt": false,
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/_Unsupported/Golfing Greats 2 (ver JAC).mra",
-"mra": "_Arcade/Golfing Greats 2 (ver JAC).mra",
+"mra": "_Arcade/_alternatives/_Konami's Open Golf Championship/Golfing Greats 2 (ver JAC).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-14"
 },
@@ -48353,6 +48619,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Gain Ground (World, 3 Players, Floppy Based, FD1094 317-0058-03d Rev A).mra"
+}
+},
+"ghlpanic": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Ghoul Panic (World, OB2-VER.A).mra",
+"mra": "_Arcade/Ghoul Panic (World, OB2-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "ghostlop": {
@@ -49155,7 +49436,7 @@
 "first_path": "rom/mra/Ghosts'n Goblins.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
-"mra": "_Arcade/Ghosts'n Goblins (World set 1).mra"
+"mra": "_Arcade/Ghosts'n Goblins.mra"
 }
 },
 "gnga": {
@@ -49453,6 +49734,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Golden Axe (set 5, US) (FD1094 317-0122).mra"
+}
+},
+"golgo13": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Golgo 13 (Japan, GLG1-VER.A).mra",
+"mra": "_Arcade/Golgo 13 (Japan, GLG1-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "gollygho": {
@@ -50457,6 +50753,21 @@
 "mra": "_Arcade/Great Sluggers (Japan).mra"
 }
 },
+"gstream": {
+"ppriest:gstream": {
+"core": "ppriest:gstream",
+"date": "2026-10-14",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/G-Stream G2020.mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+}
+},
 "gteikoku": {
 "dist:galaxian": {
 "core": "dist:galaxian",
@@ -50715,6 +51026,21 @@
 "mra": "_Arcade/_alternatives/_Nitro Ball/Gun Ball (Japan).mra"
 }
 },
+"gunbarl": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Gunbarl (Japan, GNB4-VER.A).mra",
+"mra": "_Arcade/Gunbarl (Japan, GNB4-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+}
+},
 "gunbarla": {
 "ongo:system11": {
 "core": "ongo:system11",
@@ -50739,7 +51065,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Point Blank 2/Gunbarl (Japan GNB1-VER.A).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Gunbarl (Japan GNB1-VER.A).mra"
 }
 },
 "gunbird": {
@@ -51812,7 +52139,7 @@
 "date_quality": "git",
 "via": "jt",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
 "first_path": "releases/_alternatives/_Hang-On/Hang-On (original).mra",
 "first_recorded": "2026-10-04",
@@ -51840,7 +52167,7 @@
 "date_quality": "git",
 "via": "jt",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
 "first_path": "releases/_alternatives/_Hang-On/Hang-On (Rev A, ride-on).mra",
 "first_recorded": "2026-10-04",
@@ -53471,6 +53798,19 @@
 }
 },
 "hrthouse": {
+"ongo:limenko": {
+"core": "ongo:limenko",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-Vamphalf_MiSTer",
+"first_path": "releases/To Heart House.mra",
+"mra": "_Arcade/To Heart House.mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+},
 "ppriest:limenko": {
 "core": "ppriest:limenko",
 "date": "2026-10-13",
@@ -53497,7 +53837,7 @@
 "first_path": "mra/CPS2/Hyper Street Fighter II The Anniversary Edition (USA 040202).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
-"mra": "_Arcade/Hyper Street Fighter II The Anniversary Edition (USA 040202).mra"
+"mra": "_Arcade/Hyper Street Fighter II Stage Event Round (USA 040202).mra"
 }
 },
 "hsf2a": {
@@ -57515,6 +57855,19 @@
 "first_recorded": "2026-10-14",
 "last_seen": "2026-10-14"
 },
+"ongo:bazset_juezhantianhuang": {
+"core": "ongo:bazset_juezhantianhuang",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Juezhan Tianhuang.mra",
+"mra": "_Arcade/Juezhan Tianhuang.mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+},
 "ongo:juezhan_tianhuang_b03": {
 "core": "ongo:juezhan_tianhuang_b03",
 "date": "2026-10-13",
@@ -57674,6 +58027,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_In The Hunt/Kaitei Daisensou (Japan).mra"
+}
+},
+"kaiunqz": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Kaiun Quiz (Japan, KW1-VER.A).mra",
+"mra": "_Arcade/Kaiun Quiz (Japan, KW1-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "kamakazi3": {
@@ -58066,6 +58434,36 @@
 "first_repo": "MiSTer-devel/NeoGeo_MiSTer",
 "first_path": "releases/romsets.xml",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-14"
+}
+},
+"kartduel": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Kart Duel (World, KTD2-VER.A).mra",
+"mra": "_Arcade/Kart Duel (World, KTD2-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+}
+},
+"kartduelja": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Kart Duel/Kart Duel (Japan, KTD1-VER.A).mra",
+"mra": "_Arcade/_alternatives/_Kart Duel/Kart Duel (Japan, KTD1-VER.A).mra",
+"first_recorded": "2026-10-14",
 "last_seen": "2026-10-14"
 }
 },
@@ -61770,6 +62168,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Libero Grande (World, LG2-VER.A).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Libero Grande (World LG2-VER.A).mra",
+"mra": "_Arcade/Libero Grande (World, LG2-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "lbowling": {
@@ -62066,6 +62477,19 @@
 }
 },
 "legendoh": {
+"ongo:limenko": {
+"core": "ongo:limenko",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-Vamphalf_MiSTer",
+"first_path": "releases/Legend of Heroes.mra",
+"mra": "_Arcade/Legend of Heroes.mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+},
 "ppriest:limenko": {
 "core": "ppriest:limenko",
 "date": "2026-10-13",
@@ -63926,7 +64350,7 @@
 "first_path": "rom/mra/_alternatives/_Ghosts'n Goblins/Makai-Mura (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
-"mra": "_Arcade/Makaimura (Japan revision A).mra"
+"mra": "_Arcade/Makai-Mura (Japan).mra"
 }
 },
 "makaimurb": {
@@ -65122,6 +65546,21 @@
 "first_repo": "RodimusFVC/Arcade-Galaxian_MiSTer",
 "first_path": "releases/_alternatives/_Galaxian/Macro-Cosm Wars (Bootleg Of Galaxian).mra",
 "first_recorded": "2026-10-05",
+"last_seen": "2026-10-14"
+}
+},
+"mdhorse": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Derby Quiz My Dream Horse (Japan, MDH1-VER.A2).mra",
+"mra": "_Arcade/Derby Quiz My Dream Horse (Japan, MDH1-VER.A2).mra",
+"first_recorded": "2026-10-14",
 "last_seen": "2026-10-14"
 }
 },
@@ -66960,7 +67399,7 @@
 "first_path": "mra/CPS2/Mars Matrix Hyper Solid Shooting (USA 000412).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
-"mra": "_Arcade/Mars Matrix Hyper Solid Shooting (USA 000412).mra"
+"mra": "_Arcade/Mars Matrix Hyper Solid Shooting (USA 000412) (Trap15 Improvement v1.0.0).mra"
 }
 },
 "mmatrixa": {
@@ -68612,6 +69051,21 @@
 "last_seen": "2026-10-14"
 }
 },
+"mrdrillr": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Mr. Driller/Mr. Driller (US, DRI3-VER.A2).mra",
+"mra": "_Arcade/_alternatives/_Mr. Driller/Mr. Driller (US, DRI3-VER.A2).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+}
+},
 "mrdrillrja2": {
 "ongo:system12": {
 "core": "ongo:system12",
@@ -68625,6 +69079,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Mr. Driller (Japan, DRI1-VER.A2).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-18",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Mr. Driller (Japan, DRI1-VER.A2).mra",
+"mra": "_Arcade/Mr. Driller (Japan, DRI1-VER.A2).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "mrdu": {
@@ -70548,7 +71015,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Kosodate Quiz My Angel 3 (Japan KQT1-VER.A).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Kosodate Quiz My Angel 3 (KQT1-VER.A).mra"
 }
 },
 "myfairld": {
@@ -73451,6 +73919,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Oh! Bakyuuun (Japan, OB1-VER.A).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Oh! Bakyuuun (Japan OB1-VER.A).mra",
+"mra": "_Arcade/Oh! Bakyuuun (Japan, OB1-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "ohmygod": {
@@ -73809,7 +74290,7 @@
 "alt": false,
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/_Unsupported/Konami's Open Golf Championship (ver EAD).mra",
-"mra": "_Arcade/Konami's Open Golf Championship (ver EAD).mra",
+"mra": "_Arcade/_alternatives/_Konami's Open Golf Championship/Konami's Open Golf Championship (ver EAD).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-14"
 },
@@ -74530,7 +75011,7 @@
 "first_path": "mra/Out Run (sitdown-upright, Rev B).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
-"mra": "_Arcade/Out Run (sitdown-upright, Rev B).mra"
+"mra": "_Arcade/Out Run (sitdownupright, Rev B).mra"
 }
 },
 "outrundx": {
@@ -75112,6 +75593,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Paca Paca Passion (Japan, PPP1-VER.A2).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-18",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Paca Paca Passion (Japan PPP1-VER.A2).mra",
+"mra": "_Arcade/Paca Paca Passion (Japan, PPP1-VER.A2).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "pacapp2": {
@@ -75127,6 +75621,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Paca Paca Passion 2 (Japan, PKS1-VER.A).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-18",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Paca Paca Passion 2 (Japan PKS1-VER.A).mra",
+"mra": "_Arcade/Paca Paca Passion 2 (Japan, PKS1-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "pacappsp": {
@@ -75142,6 +75649,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Paca Paca Passion Special (Japan, PSP1-VER.A).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-18",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Paca Paca Passion Special (Japan PSP1-VER.A).mra",
+"mra": "_Arcade/Paca Paca Passion Special (Japan, PSP1-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "pacbaby": {
@@ -79303,7 +79823,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Pocket Racer (Japan PKR1-VER.B).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Pocket Racer (Japan PKR1-VER.B).mra"
 }
 },
 "pokonyan": {
@@ -80435,7 +80956,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Prime Goal EX (Japan PG1-VER.A).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Prime Goal EX (PG1-VER.A).mra"
 }
 },
 "primrag2": {
@@ -80576,7 +81098,7 @@
 "first_path": "mra/CPS2/Progear (USA 010117).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
-"mra": "_Arcade/Progear (USA 010117).mra"
+"mra": "_Arcade/Progear (Europe 010117).mra"
 }
 },
 "progear_1": {
@@ -81009,6 +81531,21 @@
 "mra": "_Arcade/Point Blank (World, GN2 Rev B, set 1).mra"
 }
 },
+"ptblank2": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Point Blank 2 (World, GNB5-VER.A).mra",
+"mra": "_Arcade/Point Blank 2 (World, GNB5-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+}
+},
 "ptblank2a": {
 "ongo:system11": {
 "core": "ongo:system11",
@@ -81033,7 +81570,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Point Blank 2 (World GNB2-VER.A).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Point Blank 2 (World GNB2-VER.A).mra"
 }
 },
 "ptblank2b": {
@@ -81060,7 +81598,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Point Blank 2/Point Blank 2 (World GNB2-VER.A alt).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Point Blank 2 (World GNB2-VER.A alt).mra"
 }
 },
 "ptblank2c": {
@@ -81087,7 +81626,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Point Blank 2/Point Blank 2 (World unknown version).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Point Blank 2 (World unknown version).mra"
 }
 },
 "ptblank2ua": {
@@ -81114,7 +81654,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Point Blank 2/Point Blank 2 (US GNB3-VER.A).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Point Blank 2 (US GNB3-VER.A).mra"
 }
 },
 "ptblanka": {
@@ -82112,7 +82653,7 @@
 "date_quality": "git",
 "via": "jt",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/_alternatives/_Wardner/Pyros (US).mra",
 "first_recorded": "2026-10-04",
@@ -90128,6 +90669,19 @@
 }
 },
 "sb2003": {
+"ongo:limenko": {
+"core": "ongo:limenko",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-Vamphalf_MiSTer",
+"first_path": "releases/Super Bubble 2003 (World, Ver 1.0).mra",
+"mra": "_Arcade/Super Bubble 2003 (World, Ver 1.0).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+},
 "ppriest:limenko": {
 "core": "ppriest:limenko",
 "date": "2026-10-13",
@@ -92962,7 +93516,7 @@
 "first_path": "mra/CPS1/Street Fighter II'  Hyper Fighting -World 921209-.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
-"mra": "_Arcade/Street Fighter II' Hyper Fighting (World 921209).mra"
+"mra": "_Arcade/Street Fighter II Hyper Fighting Stage Select Event Mode (World 921209).mra"
 }
 },
 "sf2hfj": {
@@ -97209,7 +97763,7 @@
 "date_quality": "git",
 "via": "jt",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_Sky Kid/Sky Kid (CUS60 version).mra",
 "first_recorded": "2026-10-04",
@@ -97254,7 +97808,7 @@
 "date_quality": "git",
 "via": "jt",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_Sky Kid/Sky Kid (old version).mra",
 "first_recorded": "2026-10-04",
@@ -97269,7 +97823,7 @@
 "date_quality": "git",
 "via": "jt",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_Sky Kid/Sky Kid (Sipem).mra",
 "first_recorded": "2026-10-04",
@@ -98882,6 +99436,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Soul Calibur (World, SOC12-VER.A2).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Soul Calibur (World SOC12-VER.A2).mra",
+"mra": "_Arcade/Soul Calibur (World, SOC12-VER.A2).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "soulclbrab": {
@@ -98897,6 +99464,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (Asia, SOC14-VER.B).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (Asia, SOC14-VER.B).mra",
+"mra": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (Asia, SOC14-VER.B).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "soulclbrac": {
@@ -98912,6 +99492,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (Asia, SOC14-VER.C).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (Asia, SOC14-VER.C).mra",
+"mra": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (Asia, SOC14-VER.C).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "soulclbrja2": {
@@ -98927,6 +99520,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (Japan, SOC11-VER.A2).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (Japan, SOC11-VER.A2).mra",
+"mra": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (Japan, SOC11-VER.A2).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "soulclbrjb": {
@@ -98942,6 +99548,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (Japan, SOC11-VER.B).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (Japan, SOC11-VER.B).mra",
+"mra": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (Japan, SOC11-VER.B).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "soulclbrjc": {
@@ -98957,6 +99576,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (Japan, SOC11-VER.C).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (Japan, SOC11-VER.C).mra",
+"mra": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (Japan, SOC11-VER.C).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "soulclbrub": {
@@ -98972,6 +99604,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (US, SOC13-VER.B).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (US, SOC13-VER.B).mra",
+"mra": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (US, SOC13-VER.B).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "soulclbruc": {
@@ -98987,6 +99632,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (US, SOC13-VER.C).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (US, SOC13-VER.C).mra",
+"mra": "_Arcade/_alternatives/_Soul Calibur/Soul Calibur (US, SOC13-VER.C).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "souledge": {
@@ -99013,7 +99671,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Soul Edge Ver. II (Asia SO4-VER.C).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Soul Edge Ver. II (SO4-VER.C).mra"
 }
 },
 "souledgea": {
@@ -99040,7 +99699,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Soul Edge/Soul Edge (World SO2-VER.A).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Soul Edge (World SO2-VER.A).mra"
 }
 },
 "souledgeja": {
@@ -99067,7 +99727,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Soul Edge/Soul Edge (Japan SO1-VER.A).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Soul Edge (Japan SO1-VER.A).mra"
 }
 },
 "souledgeua": {
@@ -99094,7 +99755,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Soul Edge/Soul Edge (US SO3-VER.A).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Soul Edge (US SO3-VER.A).mra"
 }
 },
 "souledgeuc": {
@@ -99121,7 +99783,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Soul Edge/Soul Edge Ver. II (US SO3-VER.C).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Soul Edge Ver. II (US SO3-VER.C).mra"
 }
 },
 "soutenry": {
@@ -100528,7 +101191,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Speed Racer.mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/_XelaNotPu/Speed Racer.mra"
 }
 },
 "spelunk2": {
@@ -100588,7 +101252,7 @@
 "first_path": "mra/CPS2/Super Puzzle Fighter II Turbo (Euro 960529).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
-"mra": "_Arcade/Super Puzzle Fighter II Turbo (Europe 960529).mra"
+"mra": "_Arcade/Super Puzzle Fighter II X' Prime (Euro 2100823).mra"
 }
 },
 "spf2ta": {
@@ -100962,6 +101626,19 @@
 }
 },
 "spotty": {
+"ongo:limenko": {
+"core": "ongo:limenko",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-Vamphalf_MiSTer",
+"first_path": "releases/Spotty (Ver. 2.0.2).mra",
+"mra": "_Arcade/Spotty (Ver. 2.0.2).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+},
 "ppriest:limenko": {
 "core": "ppriest:limenko",
 "date": "2026-10-13",
@@ -102878,7 +103555,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Star Sweep (World STP2-VER.A).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Star Sweep (STP1-VER.A).mra"
 }
 },
 "starswepj": {
@@ -102905,7 +103583,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Star Sweep/Star Sweep (Japan STP1-VER.A).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Star Sweep (Japan STP1-VER.A).mra"
 }
 },
 "startrek": {
@@ -105490,6 +106169,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Super World Stadium '98 (Japan, SS81-VER.A).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Super World Stadium '98 (Japan SS81-VER.A).mra",
+"mra": "_Arcade/Super World Stadium '98 (Japan, SS81-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "sws99": {
@@ -105505,6 +106197,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Super World Stadium '99 (Japan, SS91-VER.A3).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Super World Stadium '99 (Japan SS91-VER.A3).mra",
+"mra": "_Arcade/Super World Stadium '99 (Japan, SS91-VER.A3).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "sxevious": {
@@ -106424,6 +107129,21 @@
 "mra": "_Arcade/Technical Bowling (J 971212 V1.000).mra"
 }
 },
+"technodr": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Techno Drive (Japan, TH1-VER.B).mra",
+"mra": "_Arcade/Techno Drive (Japan, TH1-VER.B).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+}
+},
 "techromn": {
 "ongo:zn2capcom": {
 "core": "ongo:zn2capcom",
@@ -106598,7 +107318,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Tekken (World TE2 Ver.C).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Tekken (TE2 Ver.C).mra"
 }
 },
 "tekken2": {
@@ -106625,7 +107346,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Tekken 2 Ver.B (World TES2-VER.D).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Tekken 2 Ver.B (TES2-VER.D).mra"
 }
 },
 "tekken2a": {
@@ -106652,7 +107374,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Tekken 2/Tekken 2 (World TES2-VER.A).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Tekken 2 (World TES2-VER.A).mra"
 }
 },
 "tekken2b": {
@@ -106679,7 +107402,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Tekken 2 Ver.B (World TES2 Ver.B).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Tekken 2 Ver.B (World TES2-VER.B).mra"
 }
 },
 "tekken2jb": {
@@ -106706,7 +107430,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Tekken 2/Tekken 2 Ver.B (Japan TES1-VER.B).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Tekken 2 Ver.B (Japan TES1-VER.B).mra"
 }
 },
 "tekken2jc": {
@@ -106733,7 +107458,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Tekken 2/Tekken 2 Ver.B (Japan TES1-VER.C).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Tekken 2 Ver.B (Japan TES1-VER.C).mra"
 }
 },
 "tekken2ua": {
@@ -106760,7 +107486,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Tekken 2/Tekken 2 (US TES3-VER.A).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Tekken 2 (US TES3-VER.A).mra"
 }
 },
 "tekken2ub": {
@@ -106787,7 +107514,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Tekken 2/Tekken 2 Ver.B (US TES3-VER.B).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Tekken 2 Ver.B (US TES3-VER.B).mra"
 }
 },
 "tekken2ud": {
@@ -106814,7 +107542,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Tekken 2/Tekken 2 Ver.B (US TES3-VER.D).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Tekken 2 Ver.B (US TES3-VER.D).mra"
 }
 },
 "tekken3": {
@@ -106830,6 +107559,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Tekken 3 (World, TET2-VER.E1).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-02",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Tekken 3 (World TET2-VER.E1).mra",
+"mra": "_Arcade/Tekken 3 (World, TET2-VER.E1).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "tekken3a": {
@@ -106845,6 +107587,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (World, TET2-VER.A).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-02",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (World, TET2-VER.A).mra",
+"mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (World, TET2-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "tekken3b": {
@@ -106860,6 +107615,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (World, TET2-VER.B).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-02",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (World, TET2-VER.B).mra",
+"mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (World, TET2-VER.B).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "tekken3c": {
@@ -106875,6 +107643,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (World, TET2-VER.C).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-02",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (World, TET2-VER.C).mra",
+"mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (World, TET2-VER.C).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "tekken3d": {
@@ -106890,6 +107671,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (World, TET2-VER.D).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-02",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (World, TET2-VER.D).mra",
+"mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (World, TET2-VER.D).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "tekken3ja": {
@@ -106905,6 +107699,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (Japan, TET1-VER.A).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-02",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (Japan, TET1-VER.A).mra",
+"mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (Japan, TET1-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "tekken3jd": {
@@ -106920,6 +107727,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (Japan, TET1-VER.D).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-02",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (Japan, TET1-VER.D).mra",
+"mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (Japan, TET1-VER.D).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "tekken3je1": {
@@ -106935,6 +107755,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (Japan, TET1-VER.E1).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-02",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (Japan, TET1-VER.E1).mra",
+"mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (Japan, TET1-VER.E1).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "tekken3ua": {
@@ -106950,6 +107783,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (US, TET3-VER.A).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-02",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (US, TET3-VER.A).mra",
+"mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (US, TET3-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "tekken3ud": {
@@ -106965,6 +107811,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (US, TET3-VER.D).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-02",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (US, TET3-VER.D).mra",
+"mra": "_Arcade/_alternatives/_Tekken 3/Tekken 3 (US, TET3-VER.D).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "tekkenac": {
@@ -106991,7 +107850,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Tekken/Tekken (Asia TE4 Ver.C).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Tekken (Asia TE4 Ver.C).mra"
 }
 },
 "tekkenb": {
@@ -107018,7 +107878,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Tekken/Tekken (World TE2 Ver.B).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Tekken (World TE2 Ver.B).mra"
 }
 },
 "tekkenjb": {
@@ -107045,7 +107906,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Tekken/Tekken (Japan TE1 Ver.B).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Tekken (Japan TE1 Ver.B).mra"
 }
 },
 "tektagt": {
@@ -107061,6 +107923,34 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Tekken Tag Tournament (World, TEG2-VER.C1, set 1).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-18",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Tekken Tag Tournament (World TEG2-VER.C1).mra",
+"mra": "_Arcade/Tekken Tag Tournament (World, TEG2-VER.C1, set 1).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+}
+},
+"tektagtc1a": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Tekken Tag Tournament/Tekken Tag Tournament (World, TEG2-VER.C1, set 2).mra",
+"mra": "_Arcade/_alternatives/_Tekken Tag Tournament/Tekken Tag Tournament (World, TEG2-VER.C1, set 2).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "tektagtjc1": {
@@ -107076,6 +107966,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Tekken Tag Tournament/Tekken Tag Tournament (Japan, TEG1-VER.C1).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-18",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Tekken Tag Tournament/Tekken Tag Tournament (Japan TEG1-VER.C1).mra",
+"mra": "_Arcade/_alternatives/_Tekken Tag Tournament/Tekken Tag Tournament (Japan, TEG1-VER.C1).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "tektagtub": {
@@ -107091,6 +107994,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Tekken Tag Tournament/Tekken Tag Tournament (US, TEG3-VER.B).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-18",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Tekken Tag Tournament/Tekken Tag Tournament (US TEG3-VER.B).mra",
+"mra": "_Arcade/_alternatives/_Tekken Tag Tournament/Tekken Tag Tournament (US, TEG3-VER.B).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "tektagtuc1": {
@@ -107106,6 +108022,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Tekken Tag Tournament/Tekken Tag Tournament (US, TEG3-VER.C1).mra"
+},
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-08-18",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Tekken Tag Tournament/Tekken Tag Tournament (US TEG3-VER.C1).mra",
+"mra": "_Arcade/_alternatives/_Tekken Tag Tournament/Tekken Tag Tournament (US, TEG3-VER.C1).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "teljan": {
@@ -107179,6 +108108,36 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/_alternatives/_Tengai/Sengoku Blade - Sengoku Ace Episode II (Japan).mra"
+}
+},
+"tenkomor": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Tenkomori Shooting (World, TKM2-VER.A1).mra",
+"mra": "_Arcade/Tenkomori Shooting (World, TKM2-VER.A1).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+}
+},
+"tenkomorja1": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Tenkomori Shooting/Tenkomori Shooting (Japan, TKM1-VER.A1).mra",
+"mra": "_Arcade/_alternatives/_Tenkomori Shooting/Tenkomori Shooting (Japan, TKM1-VER.A1).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "teot": {
@@ -109870,7 +110829,7 @@
 "first_path": "mra/_alternatives/_Tokio/Tokio - Scramble Formation (newer).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
-"mra": "_Arcade/Tokio - Scramble Formation (newer).mra"
+"mra": "_Arcade/Tokio  Scramble Formation (newer).mra"
 }
 },
 "tokiob": {
@@ -110402,6 +111361,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Total Carnage (rev LA1 03-10-92).mra"
+}
+},
+"toukon3": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Shin Nihon Pro Wrestling Toukon Retsuden 3 Arcade Edition (Japan, TR1-VER.A).mra",
+"mra": "_Arcade/Shin Nihon Pro Wrestling Toukon Retsuden 3 Arcade Edition (Japan, TR1-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "toutrun": {
@@ -111227,6 +112201,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-14",
 "mra": "_Arcade/Top Ranking Stars.mra"
+}
+},
+"truckk": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Truck Kyosokyoku (US, TKK2-VER.A).mra",
+"mra": "_Arcade/Truck Kyosokyoku (US, TKK2-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
 }
 },
 "trukker": {
@@ -112543,6 +113532,21 @@
 "mra": "_Arcade/Ultimate Ecology (Japan 931203).mra"
 }
 },
+"ujlnow": {
+"ongo:xnsystem12": {
+"core": "ongo:xnsystem12",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Um Jammer Lammy NOW! (Japan, UL1-VER.A).mra",
+"mra": "_Arcade/Um Jammer Lammy NOW! (Japan, UL1-VER.A).mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+}
+},
 "ultennis": {
 "meat:stoneball": {
 "core": "meat:stoneball",
@@ -112880,6 +113884,19 @@
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Valtric.mra",
 "mra": "_Arcade/_MeatCores/Valtric.mra",
+"first_recorded": "2026-10-14",
+"last_seen": "2026-10-14"
+},
+"ongo:meathax_argus": {
+"core": "ongo:meathax_argus",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Valtric.mra",
+"mra": "_Arcade/Valtric.mra",
 "first_recorded": "2026-10-14",
 "last_seen": "2026-10-14"
 }
@@ -116374,7 +117391,7 @@
 "date_quality": "git",
 "via": "jt",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/_alternatives/_Wardner/Wardner no Mori (Japan).mra",
 "first_recorded": "2026-10-04",
@@ -118121,7 +119138,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Xevious 3D-G (World XV32-VER.B).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Xevious 3D-G (XV32-VER.B).mra"
 }
 },
 "xevi3dga": {
@@ -118148,7 +119166,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Xevious 3D-G/Xevious 3D-G (World XV32-VER.A).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Xevious 3D-G (World XV32-VER.A).mra"
 }
 },
 "xevi3dgj": {
@@ -118175,7 +119194,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Xevious 3D-G/Xevious 3D-G (Japan XV31-VER.A).mra",
 "first_recorded": "2026-10-08",
-"last_seen": "2026-10-08"
+"last_seen": "2026-10-14",
+"mra": "_Arcade/Xevious 3D-G (Japan XV31-VER.A).mra"
 }
 },
 "xeviblk": {
@@ -121011,6 +122031,9 @@
 "apbg": {
 "dist": "Arcade"
 },
+"aplarail": {
+"ongo": "Shooting"
+},
 "aponow": {
 "dist": "Shooter - Horizontal",
 "repo": "Shooter"
@@ -123454,7 +124477,8 @@
 },
 "dynabomb": {
 "repo": "Arcade",
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "dzigzag": {
 "repo": "Maze"
@@ -124134,6 +125158,9 @@
 "fx": {
 "dist": "Shooter"
 },
+"g13knd": {
+"ongo": "Shooting"
+},
 "gaia": {
 "dist": "Fighting"
 },
@@ -124509,6 +125536,9 @@
 "ppriest": "Arcade",
 "ongo": "Arcade"
 },
+"ghlpanic": {
+"ongo": "Shooter"
+},
 "ghostmun": {
 "repo": "Shooter"
 },
@@ -124619,6 +125649,9 @@
 "repo": "Arcade",
 "ppriest": "Arcade"
 },
+"golgo13": {
+"ongo": "Shooting"
+},
 "gollygho": {
 "ongo": "Arcade",
 "kuze": "Arcade"
@@ -124708,6 +125741,9 @@
 "grobda3": {
 "dist": "Shooter - Multidirectional"
 },
+"gstream": {
+"ppriest": "Shooter"
+},
 "gteikoku": {
 "dist": "Shooter - Gallery",
 "repo": "Shooter"
@@ -124735,6 +125771,9 @@
 },
 "gunball": {
 "coinop": "Run &amp; Gun"
+},
+"gunbarl": {
+"ongo": "Shooter"
 },
 "gunbird": {
 "dist": "Shoot 'Em Up"
@@ -125050,7 +126089,8 @@
 },
 "hrthouse": {
 "repo": "Arcade",
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "hunchbgb": {
 "repo": "Shooter"
@@ -125514,6 +126554,9 @@
 "kaiteids": {
 "dist": "Shooter"
 },
+"kaiunqz": {
+"ongo": "Quiz"
+},
 "kamakazi3": {
 "dist": "Shooter - Gallery",
 "repo": "Shooter"
@@ -125538,6 +126581,12 @@
 },
 "kangaroob": {
 "dist": "Platform"
+},
+"kartduel": {
+"ongo": "Racing"
+},
+"kartduelja": {
+"ongo": "Racing"
 },
 "kbash": {
 "slop": "Beat 'em up",
@@ -125800,7 +126849,8 @@
 },
 "legendoh": {
 "repo": "Arcade",
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "legion": {
 "coinop": "Shoot 'em up"
@@ -126146,6 +127196,9 @@
 "mcwars": {
 "repo": "Shooter"
 },
+"mdhorse": {
+"ongo": "Quiz"
+},
 "megaforc": {
 "dist": "Shooter - Vertical"
 },
@@ -126441,6 +127494,9 @@
 },
 "mrdoy": {
 "repo": "Maze"
+},
+"mrdrillr": {
+"ongo": "Puzzle"
 },
 "mrdrillrja2": {
 "ongo": "Puzzle"
@@ -127873,6 +128929,9 @@
 "shmupfan": "Shooter",
 "repo": "Shooter"
 },
+"ptblank2": {
+"ongo": "Shooter"
+},
 "puck255": {
 "dist": "Maze"
 },
@@ -128965,7 +130024,8 @@
 },
 "sb2003": {
 "repo": "Arcade",
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "sb2003a": {
 "repo": "Arcade",
@@ -129948,7 +131008,8 @@
 },
 "spotty": {
 "repo": "Arcade",
-"ppriest": "Arcade"
+"ppriest": "Arcade",
+"ongo": "Arcade"
 },
 "sprglbpg": {
 "dist": "Platform - Climb"
@@ -130525,6 +131586,9 @@
 "ongo": "Shooter",
 "kuze": "Shooter"
 },
+"technodr": {
+"ongo": "Racing"
+},
 "techromn": {
 "ongo": "Fighting"
 },
@@ -130589,6 +131653,9 @@
 "tektagt": {
 "ongo": "Fighting"
 },
+"tektagtc1a": {
+"ongo": "Fighting"
+},
 "tektagtjc1": {
 "ongo": "Fighting"
 },
@@ -130607,6 +131674,12 @@
 },
 "tengaij": {
 "dist": "Shoot 'Em Up"
+},
+"tenkomor": {
+"ongo": "Shooter"
+},
+"tenkomorja1": {
+"ongo": "Shooter"
 },
 "terracre": {
 "coinop": "Shoot 'em up"
@@ -130927,6 +132000,9 @@
 "dist": "Sports / Baseball",
 "repo": "Shooter"
 },
+"toukon3": {
+"ongo": "Sports"
+},
 "toyland": {
 "ppriest": "Arcade",
 "ongo": "Arcade",
@@ -130985,6 +132061,9 @@
 },
 "troopy": {
 "repo": "Shooter"
+},
+"truckk": {
+"ongo": "Racing"
 },
 "trukker": {
 "dist": "Maze"
@@ -131134,6 +132213,9 @@
 },
 "uccopsu": {
 "dist": "Fighter"
+},
+"ujlnow": {
+"ongo": "Music"
 },
 "ultra2": {
 "dist": "Maze"
