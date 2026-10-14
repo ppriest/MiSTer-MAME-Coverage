@@ -64,6 +64,15 @@ EXTRA_REPOS = [
     ("ppriest", "ppriest/Arcade-HyperNG64_MiSTer", None),
     ("repo", "MiSTer-devel/Arcade-KillerInstinct_MiSTer", ["releases"]),   # official core; neither the distribution nor alamone lists it yet
     ("repo", "decoryah/Arcade-TaitoLSystem_MiSTer", ["mra"]),
+    # XelaNotPu (github.com/XelaNotPu; supporter builds also on patreon.com/cw/XelaNotPu). SYSTEM12_MiSTer holds only a README so far.
+    ("repo", "XelaNotPu/SYSTEM11_MiSTer", ["releases/_Arcade"]),
+    ("repo", "XelaNotPu/SYSTEM11_MiSTer-Supporter", ["releases/_Arcade"]),
+    ("repo", "XelaNotPu/SYSTEMFL_MiSTer-Supporter", ["_Arcade"]),
+    ("repo", "XelaNotPu/ZN1_MiSTer", ["release/_Arcade"]),
+    ("repo", "XelaNotPu/ZN1-Capcom_MiSTer", ["releases/_Arcade"]),
+    ("repo", "XelaNotPu/ZN1-TaitoFX1B_MiSTer", ["releases/_Arcade"]),
+    ("repo", "XelaNotPu/ZN2-Capcom_MiSTer", ["releases/_Arcade"]),
+    ("repo", "XelaNotPu/BreakThru_MiSTer", ["RELEASE/_Arcade"]),
     ("repo", "decoryah/Arcade-OhMyGod_MiSTer", ["mra"]),
     ("repo", "decoryah/Arcade-MonsterMaulers_MiSTer", ["mra"]),
     ("repo", "decoryah/Arcade-Gaiapolis_MiSTer", ["mra"]),
