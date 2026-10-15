@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-15T09:45:56+00:00",
+  "generated": "2026-10-15T21:24:58+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-15T09:45:28+00:00",
+  "mister_generated": "2026-10-15T21:24:25+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-15",
   "ledger_runs": [
-   {
-    "date": "2026-10-12",
-    "note": "alamone 2026-10-12",
-    "cores": 46,
-    "sets": 46,
-    "pairs": 231,
-    "dates_improved": 48,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-13",
     "note": "alamone 2026-10-12",
@@ -51,6 +42,15 @@
     "pairs": 57,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-15",
+    "note": "alamone 2026-10-12",
+    "cores": 10,
+    "sets": 14,
+    "pairs": 138,
+    "dates_improved": 0,
+    "cores_removed": 2
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
    "catver_entries": 37998,
    "mad_entries": 2995,
-   "mra_entries": 3350,
+   "mra_entries": 3364,
    "unmapped": [
     {
      "raw": "not classified",
@@ -81,10 +81,10 @@
   },
   "mame_added_updated": "2026-10-15",
   "hbmame": {
-   "tag": "0.289.3 (2026-09-29)",
-   "version": "0.289.3 (2026-09-29)",
+   "tag": "tag2893",
+   "version": "0.289.3",
    "updated": "2026-10-15",
-   "sets": 8452
+   "sets": 9711
   },
   "sources": {
    "dist": "MiSTer official distribution",
@@ -103,6 +103,7 @@
    "rmcores": "rmcores (rmonic79)",
    "jtpr": "jtcores unreleased (PRs, branches)",
    "ppriest": "ppriest (MiSTer_ppriest)",
+   "kyle": "kyledlester (GitHub repositories)",
    "repo": "GitHub repository only"
   },
   "source_info": {
@@ -170,6 +171,10 @@
     "page": "https://github.com/ppriest/MiSTer_ppriest",
     "db_url": "https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip"
    },
+   "kyle": {
+    "page": "https://github.com/kyledlester?tab=repositories",
+    "db_url": null
+   },
    "repo": {
     "page": null,
     "db_url": null
@@ -214,7 +219,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1149
+    "mras": 1155
    },
    {
     "source": "dist",
@@ -1630,7 +1635,7 @@
     "source": "arcfpga",
     "repo": "bmo00/arcfpga-cores",
     "dirs": null,
-    "mras": 1410
+    "mras": 1518
    },
    {
     "source": "repo",
@@ -1855,27 +1860,35 @@
     "mras": 0
    },
    {
-    "source": "repo",
+    "source": "kyle",
     "repo": "kyledlester/BrezzaSoft_Crystal_System_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "MRA"
+    ],
     "mras": 5
    },
    {
-    "source": "repo",
+    "source": "kyle",
     "repo": "kyledlester/MiSTer_Neratte_Chu",
-    "dirs": null,
+    "dirs": [
+     "MRA"
+    ],
     "mras": 1
    },
    {
-    "source": "repo",
+    "source": "kyle",
     "repo": "kyledlester/Namco_NA1_NA2_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "MRA"
+    ],
     "mras": 21
    },
    {
-    "source": "repo",
+    "source": "kyle",
     "repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "MRA"
+    ],
     "mras": 6
    },
    {
@@ -2305,21 +2318,27 @@
     "mras": 187
    },
    {
-    "source": "ongo",
+    "source": "kyle",
     "repo": "kyledlester/Namco_NB1_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "MRA"
+    ],
     "mras": 15
    },
    {
-    "source": "ongo",
+    "source": "kyle",
     "repo": "kyledlester/Namco_NB2_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "MRA"
+    ],
     "mras": 6
    },
    {
-    "source": "ongo",
+    "source": "kyle",
     "repo": "kyledlester/R_Shark_Super_X_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "MRA"
+    ],
     "mras": 4
    },
    {
@@ -2485,7 +2504,7 @@
     "mras": 0
    },
    {
-    "source": "repo",
+    "source": "kyle",
     "repo": "kyledlester/MiSTer_Nostradamus",
     "dirs": null,
     "mras": 6
@@ -2531,6 +2550,46 @@
     "repo": "MiSTer-devel/Arcade-gng_MiSTer",
     "dirs": null,
     "mras": 2
+   },
+   {
+    "source": "kyle",
+    "repo": "kyledlester/Konami_GV_MiSTer",
+    "dirs": [
+     "MRA"
+    ],
+    "mras": 14
+   },
+   {
+    "source": "kyle",
+    "repo": "kyledlester/ZN1_MiSTer",
+    "dirs": [
+     "release/_Arcade"
+    ],
+    "mras": 51
+   },
+   {
+    "source": "kyle",
+    "repo": "kyledlester/Arcade-SeibuSPI_MiSTer",
+    "dirs": [
+     "releases"
+    ],
+    "mras": 49
+   },
+   {
+    "source": "kyle",
+    "repo": "kyledlester/Brave_Blade_MiSTer",
+    "dirs": [
+     "MRA"
+    ],
+    "mras": 4
+   },
+   {
+    "source": "kyle",
+    "repo": "kyledlester/Arcade-TaitoB_MiSTer",
+    "dirs": [
+     "releases"
+    ],
+    "mras": 39
    },
    {
     "source": "ppriest",
@@ -2580,39 +2639,39 @@
   "repo_errors": [
    [
     "Kyp069/zx48-MiSTer",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "kandowontu/BrickBoy_MiSTer",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "meathax/Bucky",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "meathax/mrdo",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "meathax/s24",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "https://mister.blahm1d.com/db.json.zip",
-    "HTTP Error 403: Forbidden"
+    "<urlopen error Tunnel connection failed: 403 Forbidden>"
    ]
   ],
   "counts": {
    "titles": 6825,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2076,
+   "working_arcade_titles_covered": 2085,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5417,
-   "working_arcade_titles_source": 1818,
+   "working_arcade_sets_covered": 5428,
+   "working_arcade_titles_source": 1827,
    "working_arcade_titles_binary_only": 258,
-   "cores": 618,
-   "binary_only_cores": 206,
+   "cores": 622,
+   "binary_only_cores": 207,
    "unmatched_sets": 436
   }
  },
@@ -3899,8 +3958,10 @@
    "score": null,
    "mame_drivers": [],
    "note": null,
+   "aliases": [
+    "ongo:meathax_darkmist"
+   ],
    "first_recorded": "2026-10-06",
-   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": true,
    "nsets": 1,
@@ -10196,6 +10257,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": true,
    "nsets": 4,
@@ -10372,6 +10434,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": true,
    "nsets": 4,
@@ -10544,6 +10607,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": true,
    "nsets": 2,
@@ -10783,6 +10847,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": true,
    "nsets": 7,
@@ -10830,6 +10895,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": true,
    "nsets": 4,
@@ -10958,6 +11024,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": true,
    "nsets": 2,
@@ -13836,6 +13903,204 @@
    "first_date": null
   },
   {
+   "id": "kyle:braveblade",
+   "name": "BraveBlade",
+   "source": "kyle",
+   "source_title": "kyledlester (GitHub repositories)",
+   "channel": null,
+   "rbf": "BraveBlade.rbf",
+   "repo": "kyledlester/Brave_Blade_MiSTer",
+   "url": "https://github.com/kyledlester/Brave_Blade_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 4,
+   "ntitles": 1,
+   "first_date": "2026-07-18"
+  },
+  {
+   "id": "kyle:konamigv",
+   "name": "KonamiGV",
+   "source": "kyle",
+   "source_title": "kyledlester (GitHub repositories)",
+   "channel": null,
+   "rbf": "KonamiGV.rbf",
+   "repo": "kyledlester/Konami_GV_MiSTer",
+   "url": "https://github.com/kyledlester/Konami_GV_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 11,
+   "ntitles": 9,
+   "first_date": "2026-10-12"
+  },
+  {
+   "id": "kyle:namco_nb1",
+   "name": "Namco_NB1",
+   "source": "kyle",
+   "source_title": "kyledlester (GitHub repositories)",
+   "channel": null,
+   "rbf": "Namco_NB1.rbf",
+   "repo": "kyledlester/Namco_NB1_MiSTer",
+   "url": "https://github.com/kyledlester/Namco_NB1_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 15,
+   "ntitles": 8,
+   "first_date": "2026-09-30"
+  },
+  {
+   "id": "kyle:namco_nb2",
+   "name": "Namco_NB2",
+   "source": "kyle",
+   "source_title": "kyledlester (GitHub repositories)",
+   "channel": null,
+   "rbf": "Namco_NB2.rbf",
+   "repo": "kyledlester/Namco_NB2_MiSTer",
+   "url": "https://github.com/kyledlester/Namco_NB2_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 6,
+   "ntitles": 2,
+   "first_date": "2026-10-04"
+  },
+  {
+   "id": "kyle:rshark",
+   "name": "RShark",
+   "source": "kyle",
+   "source_title": "kyledlester (GitHub repositories)",
+   "channel": null,
+   "rbf": "RShark.rbf",
+   "repo": "kyledlester/R_Shark_Super_X_MiSTer",
+   "url": "https://github.com/kyledlester/R_Shark_Super_X_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 4,
+   "ntitles": 2,
+   "first_date": "2026-10-01"
+  },
+  {
+   "id": "kyle:taitob",
+   "name": "TaitoB",
+   "source": "kyle",
+   "source_title": "kyledlester (GitHub repositories)",
+   "channel": null,
+   "rbf": "TaitoB.rbf",
+   "repo": "kyledlester/Arcade-TaitoB_MiSTer",
+   "url": "https://github.com/kyledlester/Arcade-TaitoB_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 35,
+   "ntitles": 14,
+   "first_date": "2026-09-02"
+  },
+  {
+   "id": "kyle:xnzn1",
+   "name": "XNZN1",
+   "source": "kyle",
+   "source_title": "kyledlester (GitHub repositories)",
+   "channel": null,
+   "rbf": "XNZN1.rbf",
+   "repo": "kyledlester/ZN1_MiSTer",
+   "url": "https://github.com/kyledlester/ZN1_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 41,
+   "ntitles": 19,
+   "first_date": "2026-07-18"
+  },
+  {
+   "id": "kyle:xnzn1fxa",
+   "name": "XNZN1FXA",
+   "source": "kyle",
+   "source_title": "kyledlester (GitHub repositories)",
+   "channel": null,
+   "rbf": "XNZN1FXA.rbf",
+   "repo": "kyledlester/ZN1_MiSTer",
+   "url": "https://github.com/kyledlester/ZN1_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 1,
+   "first_date": "2026-07-18"
+  },
+  {
+   "id": "kyle:xnzn1rz",
+   "name": "XNZN1RZ",
+   "source": "kyle",
+   "source_title": "kyledlester (GitHub repositories)",
+   "channel": null,
+   "rbf": "XNZN1RZ.rbf",
+   "repo": "kyledlester/ZN1_MiSTer",
+   "url": "https://github.com/kyledlester/ZN1_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 7,
+   "ntitles": 2,
+   "first_date": "2026-07-18"
+  },
+  {
    "id": "meat:alpha68kn",
    "name": "Alpha68kN",
    "source": "meat",
@@ -14053,6 +14318,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": true,
    "nsets": 5,
@@ -15059,29 +15325,6 @@
    "first_date": "2026-08-30"
   },
   {
-   "id": "ongo:taitob",
-   "name": "TaitoB",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "TaitoB.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-15",
-   "binary_only": false,
-   "nsets": 35,
-   "ntitles": 14,
-   "first_date": "2026-09-02"
-  },
-  {
    "id": "ongo:vsnes",
    "name": "VSnes",
    "source": "ongo",
@@ -15195,52 +15438,6 @@
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-13"
-  },
-  {
-   "id": "ongo:xnzn1",
-   "name": "XNZN1",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "XNZN1.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-15",
-   "binary_only": false,
-   "nsets": 51,
-   "ntitles": 22,
-   "first_date": "2026-07-18"
-  },
-  {
-   "id": "ongo:xnzn1taitofx1b",
-   "name": "XNZN1TaitoFX1B",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "XNZN1TaitoFX1B.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-15",
-   "binary_only": false,
-   "nsets": 12,
-   "ntitles": 3,
-   "first_date": "2026-07-18"
   },
   {
    "id": "ongo:zn1capcom",
@@ -16459,56 +16656,6 @@
    "nsets": 21,
    "ntitles": 10,
    "first_date": "2026-09-25"
-  },
-  {
-   "id": "repo:namco_nb1",
-   "name": "Namco_NB1 (kyledlester)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Namco_NB1_20261002.rbf",
-   "repo": "kyledlester/Namco_NB1_MiSTer",
-   "url": "https://github.com/kyledlester/Namco_NB1_MiSTer",
-   "build_date": "2026-10-02",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 36,
-   "mame_drivers": [
-    "namco/namconb1.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-11",
-   "binary_only": false,
-   "nsets": 15,
-   "ntitles": 8,
-   "first_date": "2026-09-30"
-  },
-  {
-   "id": "repo:namco_nb2",
-   "name": "Namco_NB2 (kyledlester)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Namco_NB2_20261004.rbf",
-   "repo": "kyledlester/Namco_NB2_MiSTer",
-   "url": "https://github.com/kyledlester/Namco_NB2_MiSTer",
-   "build_date": "2026-10-04",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 27,
-   "mame_drivers": [
-    "namco/namconb1.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-05",
-   "aliases": [],
-   "last_seen": "2026-10-11",
-   "binary_only": false,
-   "nsets": 6,
-   "ntitles": 2,
-   "first_date": "2026-10-04"
   },
   {
    "id": "repo:namcona2",
@@ -19858,6 +20005,7 @@
    "sets": 24,
    "sets_covered": 24,
    "cores": [
+    "kyle:rshark",
     "shmupfan:dooyong"
    ],
    "first": "2026-09-28"
@@ -21511,11 +21659,13 @@
   {
    "sourcefile": "konami/konamigv.cpp",
    "titles": 9,
-   "covered": 0,
+   "covered": 9,
    "sets": 11,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 11,
+   "cores": [
+    "kyle:konamigv"
+   ],
+   "first": "2026-10-12"
   },
   {
    "sourcefile": "konami/konamigx.cpp",
@@ -23323,8 +23473,8 @@
    "sets": 21,
    "sets_covered": 21,
    "cores": [
-    "repo:namco_nb1",
-    "repo:namco_nb2"
+    "kyle:namco_nb1",
+    "kyle:namco_nb2"
    ],
    "first": "2026-09-30"
   },
@@ -24690,7 +24840,7 @@
    "cores": [
     "jt:jts16",
     "jt:jts16b",
-    "ongo:taitob"
+    "kyle:taitob"
    ],
    "first": "2021-06-11"
   },
@@ -25386,9 +25536,11 @@
    "sets": 104,
    "sets_covered": 97,
    "cores": [
+    "kyle:braveblade",
+    "kyle:xnzn1",
+    "kyle:xnzn1fxa",
+    "kyle:xnzn1rz",
     "meat:primal2",
-    "ongo:xnzn1",
-    "ongo:xnzn1taitofx1b",
     "ongo:zn1capcom",
     "ongo:zn2capcom"
    ],
@@ -26134,7 +26286,7 @@
    "sets": 35,
    "sets_covered": 33,
    "cores": [
-    "ongo:taitob"
+    "kyle:taitob"
    ],
    "first": "2026-09-02"
   },
@@ -27663,6 +27815,7 @@
    ],
    "hbmame": true,
    "year": "2021",
+   "parent": "neogeo",
    "manufacturer": "Kako Eimon",
    "desc": "Abyssal Infants"
   },
@@ -27798,6 +27951,7 @@
    ],
    "hbmame": true,
    "year": "2017",
+   "parent": "neogeo",
    "manufacturer": "BEY",
    "desc": "Bad Apple demo (v1)"
   },
@@ -28023,14 +28177,22 @@
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": false
+   "hbmame": true,
+   "year": "1981",
+   "parent": "ckong",
+   "manufacturer": "bootleg",
+   "desc": "Crazy Kong Part II -1"
   },
   {
    "set": "ckonga3",
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": false
+   "hbmame": true,
+   "year": "1981",
+   "parent": "ckong",
+   "manufacturer": "bootleg",
+   "desc": "Crazy Kong Part II -2"
   },
   {
    "set": "ckongfix",
@@ -28053,6 +28215,7 @@
    ],
    "hbmame": true,
    "year": "2000",
+   "parent": "neogeo",
    "manufacturer": "Jeff Kurtz",
    "desc": "Columns (NeoGeo)(Homebrew)"
   },
@@ -28063,6 +28226,7 @@
    ],
    "hbmame": true,
    "year": "2013",
+   "parent": "neogeo",
    "manufacturer": "Le Cortex",
    "desc": "Crouching Pony Hidden Dragon Demo"
   },
@@ -28629,6 +28793,7 @@
    ],
    "hbmame": true,
    "year": "2024",
+   "parent": "neogeo",
    "manufacturer": "Pixelheart / ChipsOnSteroids",
    "desc": "Gladmort"
   },
@@ -28933,6 +29098,7 @@
    ],
    "hbmame": true,
    "year": "2014",
+   "parent": "neogeo",
    "manufacturer": "Neobitz",
    "desc": "Knight's Chance"
   },
@@ -28992,6 +29158,7 @@
    ],
    "hbmame": true,
    "year": "2021",
+   "parent": "neogeo",
    "manufacturer": "Blastar",
    "desc": "Looptris (2021-12-26)"
   },
@@ -29233,6 +29400,7 @@
    ],
    "hbmame": true,
    "year": "2015",
+   "parent": "neogeo",
    "manufacturer": "Kannagi",
    "desc": "Neo Fight"
   },
@@ -29243,6 +29411,7 @@
    ],
    "hbmame": true,
    "year": "2012",
+   "parent": "neogeo",
    "manufacturer": "Sebastian Mihai",
    "desc": "Neo Thunder"
   },
@@ -29289,6 +29458,7 @@
    ],
    "hbmame": true,
    "year": "2020",
+   "parent": "neogeo",
    "manufacturer": "OzzyOuzo",
    "desc": "New! Super Mario Bros."
   },
@@ -30495,7 +30665,11 @@
    "cores": [
     "jt:jtcps1"
    ],
-   "hbmame": false
+   "hbmame": true,
+   "year": "2021",
+   "parent": "sf2ce",
+   "manufacturer": "Zero800",
+   "desc": "Street Fighter II: Dream Battle (Mix 1.0)"
   },
   {
    "set": "sfa2_1",
@@ -30729,7 +30903,7 @@
    "year": "2007",
    "parent": "salamand",
    "manufacturer": "Konami",
-   "desc": "Salamander (version YY 0.7.3)"
+   "desc": "Salamander (version YY 0.7.3) "
   },
   {
    "set": "spcloneo",
@@ -30939,6 +31113,7 @@
    ],
    "hbmame": true,
    "year": "2022",
+   "parent": "neogeo",
    "manufacturer": "OzzyOuzo",
    "desc": "The Eye of Typhoon (Tsunami Edition, beta 7, 2022-07-31)"
   },
@@ -30991,6 +31166,7 @@
    ],
    "hbmame": true,
    "year": "2011",
+   "parent": "neogeo",
    "manufacturer": "FACE Corporation / N.C.I - Le Cortex",
    "desc": "Treasure of the Caribbean"
   },
@@ -31463,6 +31639,7 @@
    ],
    "hbmame": true,
    "year": "2025",
+   "parent": "neogeo",
    "manufacturer": "Blastar",
    "desc": "World Racer (2025-11-14)"
   },
