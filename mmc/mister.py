@@ -61,6 +61,9 @@ EXTRA_REPOS = [
     # Cores not yet catalogued by alamone or any database (add new ones here).
     # kyledlester's repositories are one source ("kyle", see OWNER_SOURCES); these are the known ones and where their MRAs are
     # (any further repository of his with "mister" in its name is found through the GitHub API when it is reachable).
+    ("rossops", "rossops/Arcade-SegaXBoard_MiSTer", ["releases"]),
+    ("rossops", "rossops/Arcade-SegaYBoard_MiSTer", ["releases"]),
+    ("rossops", "rossops/Arcade-SegaSpaceHarrier_MiSTer", ["releases"]),   # rossops/s32 (Sega System 32) has MRAs but no build yet
     ("kyle", "kyledlester/Konami_GV_MiSTer", ["MRA"]),
     ("kyle", "kyledlester/Namco_NA1_NA2_MiSTer", ["MRA"]),
     ("kyle", "kyledlester/Namco_NB1_MiSTer", ["MRA"]),
@@ -99,10 +102,14 @@ SUPERSEDED_CORES = {
     # kyledlester's repositories became the "kyle" source
     "repo:namco_na1_na2": "kyle:namco_na1_na2", "repo:namco_nb1": "kyle:namco_nb1", "repo:namco_nb2": "kyle:namco_nb2",
     "repo:nerattechu": "kyle:nerattechu", "repo:nostradamus": "kyle:nostradamus", "repo:crystal": "kyle:crystal",
+    # XelaNotPu's repositories became the "xela" source
+    "repo:xnsystem11": "xela:xnsystem11", "repo:xnsystemfl": "xela:xnsystemfl",
 }
 
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
-OWNER_SOURCES = {"kyledlester": "kyle"}
+OWNER_SOURCES = {"kyledlester": "kyle", "rossops": "rossops", "xelanotpu": "xela"}
+# Repositories of those owners that are not cores (forks of the shared MRA collection, a game runtime): never scanned.
+OWNER_SKIP = {"rossops/mra-alternatives_mister", "rossops/bennugd_mister"}
 
 # A core is "binary-only" when no public source is known for it: none of the repositories tied to
 # it (its linked ``repo`` and the repositories its MRAs were first seen in) contains HDL source, or
@@ -266,6 +273,8 @@ SOURCE_PAGES = {
     "rmcores": "https://github.com/rmonic79/rmcores",
     "ppriest": "https://github.com/ppriest/MiSTer_ppriest",
     "kyle": "https://github.com/kyledlester?tab=repositories",
+    "rossops": "https://github.com/rossops?tab=repositories",
+    "xela": "https://github.com/XelaNotPu?tab=repositories",
     "jtpr": "https://github.com/jotego/jtcores/tree/andrea-cores/cores",
     "repo": None,
 }
@@ -289,6 +298,8 @@ DB_TITLES = {
     "jtpr": "jtcores unreleased (PRs, branches)",
     "ppriest": "ppriest (MiSTer_ppriest)",
     "kyle": "kyledlester (GitHub repositories)",
+    "rossops": "rossops (GitHub repositories)",
+    "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
     "repo": "GitHub repository only",
 }
 
@@ -369,7 +380,7 @@ def owner_repos(owner: str) -> list[str]:
             req.add_header("Authorization", "Bearer " + os.environ["GITHUB_TOKEN"])
         with urllib.request.urlopen(req, timeout=30) as r:
             repos = json.load(r)
-        names = sorted(f"{x['full_name']}" for x in repos if "mister" in x["name"].lower() and not x.get("archived"))
+        names = sorted(x["full_name"] for x in repos if "mister" in x["name"].lower() and not x.get("archived") and x["full_name"].lower() not in OWNER_SKIP)
         with open(cache, "w", encoding="utf-8") as f:
             json.dump(names, f)
         return names
@@ -726,7 +737,9 @@ def repo_plan(alamone: dict) -> list[tuple[str, str, list[str] | None]]:
     known_dirs = {full: dirs for _s, full, dirs in EXTRA_REPOS}
     for full, (src, dirs) in list(plan.items()):
         owner = full.split("/")[0].lower()
-        if owner in OWNER_SOURCES:
+        if full.lower() in OWNER_SKIP:
+            del plan[full]
+        elif owner in OWNER_SOURCES:
             plan[full] = (OWNER_SOURCES[owner], dirs or known_dirs.get(full))
     return [(src, full, dirs) for full, (src, dirs) in plan.items()]
 
