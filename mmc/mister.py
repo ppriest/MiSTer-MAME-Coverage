@@ -104,6 +104,8 @@ SUPERSEDED_CORES = {
     "repo:nerattechu": "kyle:nerattechu", "repo:nostradamus": "kyle:nostradamus", "repo:crystal": "kyle:crystal",
     # XelaNotPu's repositories became the "xela" source
     "repo:xnsystem11": "xela:xnsystem11", "repo:xnsystemfl": "xela:xnsystemfl",
+    # rossops's repositories became the "rossops" source
+    "repo:segaspaceharrier": "rossops:segaspaceharrier", "repo:segayboard": "rossops:segayboard",
 }
 
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
