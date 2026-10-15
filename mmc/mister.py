@@ -98,7 +98,7 @@ SUPERSEDED_CORES = {
     "repo:hyperng64": "ppriest:hyperng64",      # old id -> replacement
     # kyledlester's repositories became the "kyle" source
     "repo:namco_na1_na2": "kyle:namco_na1_na2", "repo:namco_nb1": "kyle:namco_nb1", "repo:namco_nb2": "kyle:namco_nb2",
-    "repo:nerattechu": "kyle:nerattechu", "repo:nostradamus": "kyle:nostradamus",
+    "repo:nerattechu": "kyle:nerattechu", "repo:nostradamus": "kyle:nostradamus", "repo:crystal": "kyle:crystal",
 }
 
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.

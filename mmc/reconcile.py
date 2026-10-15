@@ -29,15 +29,17 @@ def core_registry(mister: dict) -> tuple[dict[str, dict], dict[str, str], dict[t
     by_repo: dict[str, str] = {}
     by_rbf: dict[tuple[str, str], str] = {}
     for c in mister["cores"]:
-        cid = core_id(c["db"], c["rbf"])
+        # A loose repository of a developer whose repositories form one source (mister.OWNER_SOURCES) belongs to it.
+        db = mister_mod.OWNER_SOURCES.get((c.get("repo") or "").split("/")[0].lower(), c["db"]) if c["db"] == "repo" else c["db"]
+        cid = core_id(db, c["rbf"])
         if cid in cores:  # same build listed twice (channels); keep the first
             continue
         sc = c.get("score") or {}
         cores[cid] = {
             "id": cid,
             "name": c["core"],
-            "source": c["db"],
-            "source_title": mister_mod.DB_TITLES.get(c["db"], c["db"]),
+            "source": db,
+            "source_title": mister_mod.DB_TITLES.get(db, db),
             "channel": c.get("channel"),
             "rbf": c["rbf"],
             "repo": c.get("repo"),
@@ -54,7 +56,7 @@ def core_registry(mister: dict) -> tuple[dict[str, dict], dict[str, str], dict[t
             by_repo.setdefault(c["repo"], cid)
         stem = mister_mod.norm_rbf(c["rbf"])
         if stem:
-            by_rbf.setdefault((c["db"], stem), cid)
+            by_rbf.setdefault((db, stem), cid)
             by_rbf.setdefault(("*", stem), cid)
     return cores, by_repo, by_rbf
 
