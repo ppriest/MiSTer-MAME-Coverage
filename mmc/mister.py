@@ -59,8 +59,20 @@ EXTRA_REPOS = [
     ("jt", "MiSTer-devel/Arcade-gng_MiSTer", None),
     ("jt", "jotego/jtcores", ["rom/mra"]),
     # Cores not yet catalogued by alamone or any database (add new ones here).
-    ("repo", "kyledlester/Namco_NB1_MiSTer", ["MRA"]),
-    ("repo", "kyledlester/MiSTer_Nostradamus", ["MRA"]),   # was Nostradamus_Magical_Cat_Adventure_MiSTer
+    # kyledlester's repositories are one source ("kyle", see OWNER_SOURCES); these are the known ones and where their MRAs are
+    # (any further repository of his with "mister" in its name is found through the GitHub API when it is reachable).
+    ("kyle", "kyledlester/Konami_GV_MiSTer", ["MRA"]),
+    ("kyle", "kyledlester/Namco_NA1_NA2_MiSTer", ["MRA"]),
+    ("kyle", "kyledlester/Namco_NB1_MiSTer", ["MRA"]),
+    ("kyle", "kyledlester/Namco_NB2_MiSTer", ["MRA"]),
+    ("kyle", "kyledlester/BrezzaSoft_Crystal_System_MiSTer", ["MRA"]),
+    ("kyle", "kyledlester/MiSTer_Neratte_Chu", ["MRA"]),
+    ("kyle", "kyledlester/R_Shark_Super_X_MiSTer", ["MRA"]),
+    ("kyle", "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer", ["MRA"]),
+    ("kyle", "kyledlester/ZN1_MiSTer", ["release/_Arcade"]),          # fork of XelaNotPu/ZN1_MiSTer, adding music
+    ("kyle", "kyledlester/Arcade-SeibuSPI_MiSTer", ["releases"]),     # fork of zakk4223's SeibuSPI core
+    ("kyle", "kyledlester/Brave_Blade_MiSTer", ["MRA"]),              # fork of ZN1_MiSTer
+    ("kyle", "kyledlester/Arcade-TaitoB_MiSTer", ["releases"]),       # fork of Mezzow's Taito B core
     ("ppriest", "ppriest/Arcade-HyperNG64_MiSTer", None),
     ("repo", "MiSTer-devel/Arcade-KillerInstinct_MiSTer", ["releases"]),   # official core; neither the distribution nor alamone lists it yet
     ("repo", "decoryah/Arcade-TaitoLSystem_MiSTer", ["mra"]),
@@ -82,7 +94,15 @@ EXTRA_REPOS = [
 # Core records that a better-sourced record replaces. They are removed from the ledger together with
 # their set/core pairs (see ledger.merge), but only once the replacement is actually observed (the
 # ppriest database is unreachable while MiSTer_ppriest is private); it carries the same sets.
-SUPERSEDED_CORES = {"repo:hyperng64": "ppriest:hyperng64"}      # old id -> replacement
+SUPERSEDED_CORES = {
+    "repo:hyperng64": "ppriest:hyperng64",      # old id -> replacement
+    # kyledlester's repositories became the "kyle" source
+    "repo:namco_na1_na2": "kyle:namco_na1_na2", "repo:namco_nb1": "kyle:namco_nb1", "repo:namco_nb2": "kyle:namco_nb2",
+    "repo:nerattechu": "kyle:nerattechu", "repo:nostradamus": "kyle:nostradamus", "repo:crystal": "kyle:crystal",
+}
+
+# Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
+OWNER_SOURCES = {"kyledlester": "kyle"}
 
 # A core is "binary-only" when no public source is known for it: none of the repositories tied to
 # it (its linked ``repo`` and the repositories its MRAs were first seen in) contains HDL source, or
@@ -245,6 +265,7 @@ SOURCE_PAGES = {
     "blackwine": "https://github.com/TheJesusFish/Blackwine-SegaSystem1-2_MiSTer",
     "rmcores": "https://github.com/rmonic79/rmcores",
     "ppriest": "https://github.com/ppriest/MiSTer_ppriest",
+    "kyle": "https://github.com/kyledlester?tab=repositories",
     "jtpr": "https://github.com/jotego/jtcores/tree/andrea-cores/cores",
     "repo": None,
 }
@@ -267,6 +288,7 @@ DB_TITLES = {
     "rmcores": "rmcores (rmonic79)",
     "jtpr": "jtcores unreleased (PRs, branches)",
     "ppriest": "ppriest (MiSTer_ppriest)",
+    "kyle": "kyledlester (GitHub repositories)",
     "repo": "GitHub repository only",
 }
 
@@ -335,6 +357,28 @@ def deck_repos() -> dict[str, str]:
             full = m.group(1)
             out[full] = "shmupfan" if full.lower().startswith("shmupfan/") else "repo"
     return out
+
+
+def owner_repos(owner: str) -> list[str]:
+    """``owner/repo`` of the owner's public repositories with "mister" in the name (GitHub API; cached; [] when unreachable)."""
+    import urllib.error
+    cache = os.path.join(paths.CACHE, f"owner_{owner}.json")
+    try:
+        req = urllib.request.Request(f"https://api.github.com/users/{owner}/repos?per_page=100", headers={"Accept": "application/vnd.github+json"})
+        if os.environ.get("GITHUB_TOKEN"):
+            req.add_header("Authorization", "Bearer " + os.environ["GITHUB_TOKEN"])
+        with urllib.request.urlopen(req, timeout=30) as r:
+            repos = json.load(r)
+        names = sorted(f"{x['full_name']}" for x in repos if "mister" in x["name"].lower() and not x.get("archived"))
+        with open(cache, "w", encoding="utf-8") as f:
+            json.dump(names, f)
+        return names
+    except Exception:
+        try:
+            with open(cache, encoding="utf-8") as f:
+                return json.load(f)
+        except (OSError, ValueError):
+            return []
 
 
 def ongo_repos() -> list[str]:
@@ -674,6 +718,16 @@ def repo_plan(alamone: dict) -> list[tuple[str, str, list[str] | None]]:
     for src, full, _file, _core in ROMSET_FILES:
         if full not in plan:
             plan[full] = (src, [])
+    # A developer's repositories are one source: new "mister" repositories are picked up from the GitHub API (when
+    # reachable) and every repository of the owner is labelled with the owner's source, keeping any known MRA folder.
+    for owner in OWNER_SOURCES:
+        for full in owner_repos(owner):
+            plan.setdefault(full, (OWNER_SOURCES[owner], None))
+    known_dirs = {full: dirs for _s, full, dirs in EXTRA_REPOS}
+    for full, (src, dirs) in list(plan.items()):
+        owner = full.split("/")[0].lower()
+        if owner in OWNER_SOURCES:
+            plan[full] = (OWNER_SOURCES[owner], dirs or known_dirs.get(full))
     return [(src, full, dirs) for full, (src, dirs) in plan.items()]
 
 

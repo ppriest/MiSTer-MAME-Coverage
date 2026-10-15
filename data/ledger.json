@@ -435,6 +435,24 @@
 "pairs": 57,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-15",
+"note": "alamone 2026-10-12",
+"cores": 10,
+"sets": 14,
+"pairs": 138,
+"dates_improved": 0,
+"cores_removed": 2
+},
+{
+"date": "2026-10-15",
+"note": "alamone 2026-10-12",
+"cores": 4,
+"sets": 0,
+"pairs": 32,
+"dates_improved": 0,
+"cores_removed": 4
 }
 ]
 },
@@ -1501,8 +1519,10 @@
 "score": null,
 "mame_drivers": [],
 "note": null,
+"aliases": [
+"ongo:meathax_darkmist"
+],
 "first_recorded": "2026-10-06",
-"aliases": [],
 "last_seen": "2026-10-15"
 },
 "coinop:darkseal": {
@@ -6778,6 +6798,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "jlrh:ffasterix": {
@@ -6926,6 +6947,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "jlrh:ffdeadang": {
@@ -7070,6 +7092,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "jlrh:ffhotchase": {
@@ -7269,6 +7292,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "jlrh:ffshadfrce": {
@@ -7308,6 +7332,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "jlrh:ffsquash": {
@@ -7416,6 +7441,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "jlrh:ffwecleman": {
@@ -9833,6 +9859,257 @@
 "aliases": [],
 "last_seen": "2026-10-15"
 },
+"kyle:braveblade": {
+"id": "kyle:braveblade",
+"name": "BraveBlade",
+"source": "kyle",
+"source_title": "kyledlester (GitHub repositories)",
+"channel": null,
+"rbf": "BraveBlade.rbf",
+"repo": "kyledlester/Brave_Blade_MiSTer",
+"url": "https://github.com/kyledlester/Brave_Blade_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-15",
+"aliases": [],
+"last_seen": "2026-10-15"
+},
+"kyle:crystal": {
+"id": "kyle:crystal",
+"name": "Crystal (kyledlester)",
+"source": "kyle",
+"source_title": "kyledlester (GitHub repositories)",
+"channel": "repository only",
+"rbf": "Crystal_20261009.rbf",
+"repo": "kyledlester/BrezzaSoft_Crystal_System_MiSTer",
+"url": "https://github.com/kyledlester/BrezzaSoft_Crystal_System_MiSTer",
+"build_date": "2026-10-09",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 34,
+"mame_drivers": [
+"misc/crystal.cpp"
+],
+"note": null,
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
+"kyle:konamigv": {
+"id": "kyle:konamigv",
+"name": "KonamiGV",
+"source": "kyle",
+"source_title": "kyledlester (GitHub repositories)",
+"channel": null,
+"rbf": "KonamiGV.rbf",
+"repo": "kyledlester/Konami_GV_MiSTer",
+"url": "https://github.com/kyledlester/Konami_GV_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-15",
+"aliases": [],
+"last_seen": "2026-10-15"
+},
+"kyle:namco_na1_na2": {
+"id": "kyle:namco_na1_na2",
+"name": "Namco_NA1_NA2 (kyledlester)",
+"source": "kyle",
+"source_title": "kyledlester (GitHub repositories)",
+"channel": "repository only",
+"rbf": "Namco_NA1_NA2_20260927.rbf",
+"repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"url": "https://github.com/kyledlester/Namco_NA1_NA2_MiSTer",
+"build_date": "2026-09-28",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 33,
+"mame_drivers": [
+"namco/namcona1.cpp"
+],
+"note": null,
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
+"kyle:namco_nb1": {
+"id": "kyle:namco_nb1",
+"name": "Namco_NB1",
+"source": "kyle",
+"source_title": "kyledlester (GitHub repositories)",
+"channel": null,
+"rbf": "Namco_NB1.rbf",
+"repo": "kyledlester/Namco_NB1_MiSTer",
+"url": "https://github.com/kyledlester/Namco_NB1_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-15",
+"aliases": [],
+"last_seen": "2026-10-15"
+},
+"kyle:namco_nb2": {
+"id": "kyle:namco_nb2",
+"name": "Namco_NB2",
+"source": "kyle",
+"source_title": "kyledlester (GitHub repositories)",
+"channel": null,
+"rbf": "Namco_NB2.rbf",
+"repo": "kyledlester/Namco_NB2_MiSTer",
+"url": "https://github.com/kyledlester/Namco_NB2_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-15",
+"aliases": [],
+"last_seen": "2026-10-15"
+},
+"kyle:nerattechu": {
+"id": "kyle:nerattechu",
+"name": "NeratteChu (kyledlester)",
+"source": "kyle",
+"source_title": "kyledlester (GitHub repositories)",
+"channel": "repository only",
+"rbf": "NeratteChu_20260929.rbf",
+"repo": "kyledlester/MiSTer_Neratte_Chu",
+"url": "https://github.com/kyledlester/MiSTer_Neratte_Chu",
+"build_date": "2026-09-29",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 28,
+"mame_drivers": [
+"seta/simple_st0016.cpp"
+],
+"note": null,
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
+"kyle:nostradamus": {
+"id": "kyle:nostradamus",
+"name": "Nostradamus (kyledlester)",
+"source": "kyle",
+"source_title": "kyledlester (GitHub repositories)",
+"channel": "repository only",
+"rbf": "Nostradamus_20261003.rbf",
+"repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"url": "https://github.com/kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+"build_date": "2026-10-03",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 26,
+"mame_drivers": [
+"misc/mcatadv.cpp"
+],
+"note": null,
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
+"kyle:rshark": {
+"id": "kyle:rshark",
+"name": "RShark",
+"source": "kyle",
+"source_title": "kyledlester (GitHub repositories)",
+"channel": null,
+"rbf": "RShark.rbf",
+"repo": "kyledlester/R_Shark_Super_X_MiSTer",
+"url": "https://github.com/kyledlester/R_Shark_Super_X_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-15",
+"aliases": [],
+"last_seen": "2026-10-15"
+},
+"kyle:taitob": {
+"id": "kyle:taitob",
+"name": "TaitoB",
+"source": "kyle",
+"source_title": "kyledlester (GitHub repositories)",
+"channel": null,
+"rbf": "TaitoB.rbf",
+"repo": "kyledlester/Arcade-TaitoB_MiSTer",
+"url": "https://github.com/kyledlester/Arcade-TaitoB_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-15",
+"aliases": [],
+"last_seen": "2026-10-15"
+},
+"kyle:xnzn1": {
+"id": "kyle:xnzn1",
+"name": "XNZN1",
+"source": "kyle",
+"source_title": "kyledlester (GitHub repositories)",
+"channel": null,
+"rbf": "XNZN1.rbf",
+"repo": "kyledlester/ZN1_MiSTer",
+"url": "https://github.com/kyledlester/ZN1_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-15",
+"aliases": [],
+"last_seen": "2026-10-15"
+},
+"kyle:xnzn1fxa": {
+"id": "kyle:xnzn1fxa",
+"name": "XNZN1FXA",
+"source": "kyle",
+"source_title": "kyledlester (GitHub repositories)",
+"channel": null,
+"rbf": "XNZN1FXA.rbf",
+"repo": "kyledlester/ZN1_MiSTer",
+"url": "https://github.com/kyledlester/ZN1_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-15",
+"aliases": [],
+"last_seen": "2026-10-15"
+},
+"kyle:xnzn1rz": {
+"id": "kyle:xnzn1rz",
+"name": "XNZN1RZ",
+"source": "kyle",
+"source_title": "kyledlester (GitHub repositories)",
+"channel": null,
+"rbf": "XNZN1RZ.rbf",
+"repo": "kyledlester/ZN1_MiSTer",
+"url": "https://github.com/kyledlester/ZN1_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-15",
+"aliases": [],
+"last_seen": "2026-10-15"
+},
 "meat:alpha68kn": {
 "id": "meat:alpha68kn",
 "name": "Arcade-Alpha68kN",
@@ -10019,6 +10296,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "meat:i-robot": {
@@ -11058,6 +11336,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "ongo:ffbbusters": {
@@ -11114,6 +11393,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "ongo:ffdeadang": {
@@ -11170,6 +11450,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "ongo:ffhotchase": {
@@ -11264,6 +11545,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "ongo:ffshadfrce": {
@@ -11301,6 +11583,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "ongo:fftrckydoc": {
@@ -11319,6 +11602,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "ongo:ffwecleman": {
@@ -11413,6 +11697,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "ongo:ikacore_cv1k": {
@@ -11792,6 +12077,25 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-14",
+"aliases": [],
+"last_seen": "2026-10-15"
+},
+"ongo:meathax_heavyunit": {
+"id": "ongo:meathax_heavyunit",
+"name": "Meathax_HeavyUnit",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Meathax_HeavyUnit.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-15",
 "aliases": [],
 "last_seen": "2026-10-15"
 },
@@ -13333,27 +13637,6 @@
 "aliases": [],
 "last_seen": "2026-10-15"
 },
-"repo:crystal": {
-"id": "repo:crystal",
-"name": "Crystal (kyledlester)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Crystal_20261009.rbf",
-"repo": "kyledlester/BrezzaSoft_Crystal_System_MiSTer",
-"url": "https://github.com/kyledlester/BrezzaSoft_Crystal_System_MiSTer",
-"build_date": "2026-10-09",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 34,
-"mame_drivers": [
-"misc/crystal.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-12",
-"aliases": [],
-"last_seen": "2026-10-15"
-},
 "repo:demoderby": {
 "id": "repo:demoderby",
 "name": "Arcade-DemoDerby (alanswx)",
@@ -13837,69 +14120,6 @@
 "aliases": [],
 "last_seen": "2026-10-15"
 },
-"repo:namco_na1_na2": {
-"id": "repo:namco_na1_na2",
-"name": "Namco_NA1_NA2 (kyledlester)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Namco_NA1_NA2_20260927.rbf",
-"repo": "kyledlester/Namco_NA1_NA2_MiSTer",
-"url": "https://github.com/kyledlester/Namco_NA1_NA2_MiSTer",
-"build_date": "2026-09-28",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 33,
-"mame_drivers": [
-"namco/namcona1.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"id": "repo:namco_nb1",
-"name": "Namco_NB1 (kyledlester)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Namco_NB1_20261002.rbf",
-"repo": "kyledlester/Namco_NB1_MiSTer",
-"url": "https://github.com/kyledlester/Namco_NB1_MiSTer",
-"build_date": "2026-10-02",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 36,
-"mame_drivers": [
-"namco/namconb1.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-11"
-},
-"repo:namco_nb2": {
-"id": "repo:namco_nb2",
-"name": "Namco_NB2 (kyledlester)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Namco_NB2_20261004.rbf",
-"repo": "kyledlester/Namco_NB2_MiSTer",
-"url": "https://github.com/kyledlester/Namco_NB2_MiSTer",
-"build_date": "2026-10-04",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 27,
-"mame_drivers": [
-"namco/namconb1.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-05",
-"aliases": [],
-"last_seen": "2026-10-11"
-},
 "repo:namcona2": {
 "id": "repo:namcona2",
 "name": "NamcoNA2 (yaguboo)",
@@ -13918,48 +14138,6 @@
 ],
 "note": null,
 "first_recorded": "2026-10-12",
-"aliases": [],
-"last_seen": "2026-10-15"
-},
-"repo:nerattechu": {
-"id": "repo:nerattechu",
-"name": "NeratteChu (kyledlester)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "NeratteChu_20260929.rbf",
-"repo": "kyledlester/MiSTer_Neratte_Chu",
-"url": "https://github.com/kyledlester/MiSTer_Neratte_Chu",
-"build_date": "2026-09-29",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 28,
-"mame_drivers": [
-"seta/simple_st0016.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-05",
-"aliases": [],
-"last_seen": "2026-10-15"
-},
-"repo:nostradamus": {
-"id": "repo:nostradamus",
-"name": "Nostradamus (kyledlester)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Nostradamus_20261003.rbf",
-"repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
-"url": "https://github.com/kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
-"build_date": "2026-10-03",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 26,
-"mame_drivers": [
-"misc/mcatadv.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-04",
 "aliases": [],
 "last_seen": "2026-10-15"
 },
@@ -15565,6 +15743,19 @@
 }
 },
 "1on1gov": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/1 on 1 Government (Japan).mra",
+"mra": "_Arcade/1 on 1 Government (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -16439,6 +16630,19 @@
 }
 },
 "aerofgts": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Aero Fighters Special (USA).mra",
+"mra": "_Arcade/Aero Fighters Special (USA).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -16454,6 +16658,19 @@
 }
 },
 "aerofgtst": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Aero Fighters Special/Aero Fighters Special (Taiwan).mra",
+"mra": "_Arcade/Aero Fighters Special (Taiwan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -19561,6 +19778,19 @@
 }
 },
 "ashura": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Ashura Blaster (World).mra",
+"mra": "_Arcade/Ashura Blaster (World).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -19576,6 +19806,19 @@
 }
 },
 "ashuraj": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Ashura Blaster/Ashura Blaster (Japan).mra",
+"mra": "_Arcade/Ashura Blaster (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -19591,6 +19834,19 @@
 }
 },
 "ashurau": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Ashura Blaster/Ashura Blaster (US).mra",
+"mra": "_Arcade/Ashura Blaster (US).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -22548,6 +22804,19 @@
 }
 },
 "beastrzr": {
+"kyle:xnzn1rz": {
+"core": "kyle:xnzn1rz",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Bloody Roar/Beastorizer (USA).mra",
+"mra": "_Arcade/Beastorizer (USA).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -22563,6 +22832,19 @@
 }
 },
 "beastrzra": {
+"kyle:xnzn1rz": {
+"core": "kyle:xnzn1rz",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Bloody Roar/Beastorizer USA (Jun 21 1997).mra",
+"mra": "_Arcade/Beastorizer USA (Jun 21 1997).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -23361,8 +23643,8 @@
 }
 },
 "bkrtmaq": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -23370,9 +23652,9 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Bakuretsu Quiz Ma-Q Dai Bouken (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Bakuretsu Quiz Ma-Q Dai Bouken (Japan).mra"
+"mra": "_Arcade/Bakuretsu Quiz Ma-Q Dai Bouken (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -23553,6 +23835,19 @@
 }
 },
 "bldyroar": {
+"kyle:xnzn1rz": {
+"core": "kyle:xnzn1rz",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Bloody Roar (Japan, Jun 21 1997).mra",
+"mra": "_Arcade/Bloody Roar (Japan, Jun 21 1997).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -23568,6 +23863,19 @@
 }
 },
 "bldyror2": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Bloody Roar 2 (World).mra",
+"mra": "_Arcade/Bloody Roar 2 (World).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -23583,6 +23891,19 @@
 }
 },
 "bldyror2a": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Bloody Roar 2/Bloody Roar 2 (Asia).mra",
+"mra": "_Arcade/Bloody Roar 2 (Asia).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -23598,6 +23919,19 @@
 }
 },
 "bldyror2j": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Bloody Roar 2/Bloody Roar 2 (Japan).mra",
+"mra": "_Arcade/Bloody Roar 2 (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -23613,6 +23947,19 @@
 }
 },
 "bldyror2u": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Bloody Roar 2/Bloody Roar 2 (USA).mra",
+"mra": "_Arcade/Bloody Roar 2 (USA).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -25829,6 +26176,32 @@
 }
 },
 "brvblade": {
+"kyle:braveblade": {
+"core": "kyle:braveblade",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Brave Blade (World).mra",
+"mra": "_Arcade/Brave Blade (World) (with music).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
+"kyle:xnzn1rz": {
+"core": "kyle:xnzn1rz",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Brave Blade (World).mra",
+"mra": "_Arcade/Brave Blade (World).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -25844,6 +26217,32 @@
 }
 },
 "brvbladea": {
+"kyle:braveblade": {
+"core": "kyle:braveblade",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Asia).mra",
+"mra": "_Arcade/Brave Blade (Asia) (with music).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
+"kyle:xnzn1rz": {
+"core": "kyle:xnzn1rz",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Asia).mra",
+"mra": "_Arcade/Brave Blade (Asia).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -25859,6 +26258,32 @@
 }
 },
 "brvbladej": {
+"kyle:braveblade": {
+"core": "kyle:braveblade",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Japan).mra",
+"mra": "_Arcade/Brave Blade (Japan) (with music).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
+"kyle:xnzn1rz": {
+"core": "kyle:xnzn1rz",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Japan).mra",
+"mra": "_Arcade/Brave Blade (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -25874,6 +26299,32 @@
 }
 },
 "brvbladeu": {
+"kyle:braveblade": {
+"core": "kyle:braveblade",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (USA).mra",
+"mra": "_Arcade/Brave Blade (USA) (with music).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
+"kyle:xnzn1rz": {
+"core": "kyle:xnzn1rz",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (USA).mra",
+"mra": "_Arcade/Brave Blade (USA).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -25927,6 +26378,21 @@
 "first_repo": "MiSTer-devel/NeoGeo_MiSTer",
 "first_path": "releases/romsets.xml",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-15"
+}
+},
+"btchamp": {
+"kyle:konamigv": {
+"core": "kyle:konamigv",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Konami_GV_MiSTer",
+"first_path": "MRA/Beat the Champ (GV053 UAA01).mra",
+"mra": "_Arcade/Beat the Champ (GV053 UAA01).mra",
+"first_recorded": "2026-10-15",
 "last_seen": "2026-10-15"
 }
 },
@@ -26367,6 +26833,19 @@
 }
 },
 "bublbust": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Puzzle Bobble/Bubble Buster (USA, B-System).mra",
+"mra": "_Arcade/Bubble Buster (USA, B-System).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -27782,6 +28261,19 @@
 }
 },
 "catt": {
+"kyle:nostradamus": {
+"core": "kyle:nostradamus",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/MiSTer_Nostradamus",
+"first_path": "mra/Catt (Japan).mra",
+"mra": "_Arcade/_alternatives/_Magical Cat Adventure/Catt (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "repo:mcatadv": {
 "core": "repo:mcatadv",
 "date": "2026-10-02",
@@ -27794,19 +28286,6 @@
 "mra": "_Arcade/Catt (Japan).mra",
 "first_recorded": "2026-10-10",
 "last_seen": "2026-10-15"
-},
-"repo:nostradamus": {
-"core": "repo:nostradamus",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/MiSTer_Nostradamus",
-"first_path": "mra/Catt (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/_alternatives/_Magical Cat Adventure/Catt (Japan).mra"
 }
 },
 "cavelon": {
@@ -28530,8 +29009,8 @@
 }
 },
 "cgangpzl": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -28539,9 +29018,9 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Cosmo Gang the Puzzle/Cosmo Gang the Puzzle (US).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/_alternatives/_Cosmo Gang the Puzzle/Cosmo Gang the Puzzle (US).mra"
+"mra": "_Arcade/_alternatives/_Cosmo Gang the Puzzle/Cosmo Gang the Puzzle (US).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -28558,8 +29037,8 @@
 }
 },
 "cgangpzlj": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -28567,9 +29046,9 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Cosmo Gang the Puzzle (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Cosmo Gang the Puzzle (Japan).mra"
+"mra": "_Arcade/Cosmo Gang the Puzzle (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -31969,6 +32448,19 @@
 }
 },
 "crimec": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Crime City (World).mra",
+"mra": "_Arcade/Crime City (World).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -31984,6 +32476,19 @@
 }
 },
 "crimecj": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Crime City/Crime City (Japan).mra",
+"mra": "_Arcade/Crime City (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -31999,6 +32504,19 @@
 }
 },
 "crimecu": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Crime City/Crime City (US).mra",
+"mra": "_Arcade/Crime City (US).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -32220,6 +32738,19 @@
 }
 },
 "crysking": {
+"kyle:crystal": {
+"core": "kyle:crystal",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/BrezzaSoft_Crystal_System_MiSTer",
+"first_path": "MRA/The Crystal of Kings.mra",
+"mra": "_Arcade/The Crystal of Kings.mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "meat:crystalsystem": {
 "core": "meat:crystalsystem",
 "date": "2026-10-04",
@@ -32258,19 +32789,6 @@
 "first_recorded": "2026-10-08",
 "last_seen": "2026-10-11",
 "mra": "_Arcade/_MeatCores/The Crystal of Kings.mra"
-},
-"repo:crystal": {
-"core": "repo:crystal",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/BrezzaSoft_Crystal_System_MiSTer",
-"first_path": "mra/The Crystal of Kings.mra",
-"mra": "_Arcade/The Crystal of Kings.mra",
-"first_recorded": "2026-10-12",
-"last_seen": "2026-10-15"
 }
 },
 "crzcross": {
@@ -37791,6 +38309,19 @@
 }
 },
 "doapp": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Dead or Alive ++ (Japan USA Export).mra",
+"mra": "_Arcade/Dead or Alive ++ (Japan USA Export).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -37806,6 +38337,19 @@
 }
 },
 "doappk": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Dead or Alive ++/Dead or Alive ++ (Korea).mra",
+"mra": "_Arcade/Dead or Alive ++ (Korea).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -40843,8 +41387,8 @@
 }
 },
 "emeralda": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -40852,9 +41396,9 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Emeraldia/Emeraldia (World).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/_alternatives/_Emeraldia/Emeraldia (World).mra"
+"mra": "_Arcade/_alternatives/_Emeraldia/Emeraldia (World).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -40871,8 +41415,8 @@
 }
 },
 "emeraldaj": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -40880,9 +41424,9 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Emeraldia/Emeraldia (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/_alternatives/_Emeraldia/Emeraldia (Japan).mra"
+"mra": "_Arcade/_alternatives/_Emeraldia/Emeraldia (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -40899,8 +41443,8 @@
 }
 },
 "emeraldajb": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -40908,9 +41452,9 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Emeraldia (Japan Version B).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Emeraldia (Japan Version B).mra"
+"mra": "_Arcade/Emeraldia (Japan Version B).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -40927,8 +41471,8 @@
 }
 },
 "emeraldajd": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -40936,9 +41480,9 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Emeraldia/Emeraldia (Japan Version D).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/_alternatives/_Emeraldia/Emeraldia (Japan Version D).mra"
+"mra": "_Arcade/_alternatives/_Emeraldia/Emeraldia (Japan Version D).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -41615,6 +42159,19 @@
 }
 },
 "evosocc": {
+"kyle:crystal": {
+"core": "kyle:crystal",
+"date": "2026-10-07",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Evolution Soccer.mra",
+"mra": "_Arcade/Evolution Soccer.mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:crystal": {
 "core": "ongo:crystal",
 "date": "2026-10-07",
@@ -41627,19 +42184,6 @@
 "first_recorded": "2026-10-08",
 "last_seen": "2026-10-11",
 "mra": "_Arcade/Evolution Soccer.mra"
-},
-"repo:crystal": {
-"core": "repo:crystal",
-"date": "2026-10-07",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Evolution Soccer.mra",
-"mra": "_Arcade/Evolution Soccer.mra",
-"first_recorded": "2026-10-12",
-"last_seen": "2026-10-15"
 }
 },
 "excitebk": {
@@ -41985,8 +42529,8 @@
 }
 },
 "exvania": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -41994,9 +42538,9 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Exvania/Exvania (World).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/_alternatives/_Exvania/Exvania (World).mra"
+"mra": "_Arcade/_alternatives/_Exvania/Exvania (World).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -42013,8 +42557,8 @@
 }
 },
 "exvaniaj": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -42022,9 +42566,9 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Exvania (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Exvania (Japan).mra"
+"mra": "_Arcade/Exvania (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -42170,8 +42714,8 @@
 }
 },
 "fa": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -42179,9 +42723,9 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/F-A (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/F-A (Japan).mra"
+"mra": "_Arcade/F-A (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -43104,8 +43648,8 @@
 }
 },
 "fghtatck": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -43113,9 +43657,9 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_F-A/Fighter & Attacker (US).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/_alternatives/_F-A/Fighter & Attacker (US).mra"
+"mra": "_Arcade/_alternatives/_F-A/Fighter & Attacker (US).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -44140,6 +44684,19 @@
 }
 },
 "flamegun": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Flame Gunner (Export).mra",
+"mra": "_Arcade/Flame Gunner (Export).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -44155,6 +44712,19 @@
 }
 },
 "flamegunj": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Flame Gunner/Flame Gunner (Japan).mra",
+"mra": "_Arcade/Flame Gunner (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -45540,6 +46110,19 @@
 }
 },
 "ftimpact": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Fighters Impact/Fighters' Impact (Ver 2.02O).mra",
+"mra": "_Arcade/Fighters' Impact (Ver 2.02O).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -45568,6 +46151,19 @@
 }
 },
 "ftimpactj": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Fighters Impact/Fighters' Impact (Ver 2.02J).mra",
+"mra": "_Arcade/Fighters' Impact (Ver 2.02J).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -45596,6 +46192,19 @@
 }
 },
 "ftimpactu": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Fighters' Impact (Ver 2.02A).mra",
+"mra": "_Arcade/Fighters' Impact (Ver 2.02A).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -45624,6 +46233,19 @@
 }
 },
 "ftimpcta": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Fighters Impact/Fighters Impact A (Ver 2.00J).mra",
+"mra": "_Arcade/Fighters Impact A (Ver 2.00J).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -48714,6 +49336,19 @@
 }
 },
 "gdarius": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_G-Darius/G-Darius (Ver 2.02O).mra",
+"mra": "_Arcade/G-Darius (Ver 2.02O).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -48742,6 +49377,19 @@
 }
 },
 "gdarius2": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/G-Darius Ver.2 (Ver 2.03J).mra",
+"mra": "_Arcade/G-Darius Ver.2 (Ver 2.03J).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -48770,6 +49418,19 @@
 }
 },
 "gdariusj": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_G-Darius/G-Darius (Ver 2.01J).mra",
+"mra": "_Arcade/G-Darius (Ver 2.01J).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -48798,6 +49459,19 @@
 }
 },
 "gdariusu": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_G-Darius/G-Darius (Ver 2.02A).mra",
+"mra": "_Arcade/G-Darius (Ver 2.02A).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -49783,6 +50457,19 @@
 }
 },
 "glpracr2": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Gallop Racer 2 (Export).mra",
+"mra": "_Arcade/Gallop Racer 2 (Export).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -49798,6 +50485,19 @@
 }
 },
 "glpracr2j": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Gallop Racer 2/Gallop Racer 2 (Japan).mra",
+"mra": "_Arcade/Gallop Racer 2 (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -49813,6 +50513,19 @@
 }
 },
 "glpracr3": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Gallop Racer 3 (Export).mra",
+"mra": "_Arcade/Gallop Racer 3 (Export).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -49828,6 +50541,19 @@
 }
 },
 "glpracr3j": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Gallop Racer 3/Gallop Racer 3 (Japan).mra",
+"mra": "_Arcade/Gallop Racer 3 (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -51132,6 +51858,19 @@
 }
 },
 "gslgr94j": {
+"kyle:namco_nb1": {
+"core": "kyle:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/_alternatives/_Great Sluggers '94/Great Sluggers '94 (Japan).mra",
+"mra": "_Arcade/Great Sluggers '94 (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb1": {
 "core": "ongo:namco_nb1",
 "date": "2026-10-02",
@@ -51144,22 +51883,22 @@
 "mra": "_Arcade/_alternatives/_Great Sluggers '94/Great Sluggers '94 (Japan).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"core": "repo:namco_nb1",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Namco_NB1_MiSTer",
-"first_path": "MRA/_alternatives/_Great Sluggers '94/Great Sluggers '94 (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Great Sluggers '94/Great Sluggers '94 (Japan).mra"
 }
 },
 "gslgr94u": {
+"kyle:namco_nb1": {
+"core": "kyle:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/Great Sluggers '94.mra",
+"mra": "_Arcade/Great Sluggers '94.mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb1": {
 "core": "ongo:namco_nb1",
 "date": "2026-10-02",
@@ -51172,22 +51911,22 @@
 "mra": "_Arcade/Great Sluggers '94.mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"core": "repo:namco_nb1",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Namco_NB1_MiSTer",
-"first_path": "MRA/Great Sluggers '94.mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/Great Sluggers '94.mra"
 }
 },
 "gslgr94ua": {
+"kyle:namco_nb1": {
+"core": "kyle:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/_alternatives/_Great Sluggers '94/Great Sluggers '94 (prototype).mra",
+"mra": "_Arcade/Great Sluggers '94 (prototype).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb1": {
 "core": "ongo:namco_nb1",
 "date": "2026-10-02",
@@ -51200,22 +51939,22 @@
 "mra": "_Arcade/_alternatives/_Great Sluggers '94/Great Sluggers '94 (prototype).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"core": "repo:namco_nb1",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Namco_NB1_MiSTer",
-"first_path": "MRA/_alternatives/_Great Sluggers '94/Great Sluggers '94 (prototype).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Great Sluggers '94/Great Sluggers '94 (prototype).mra"
 }
 },
 "gslugrsj": {
+"kyle:namco_nb1": {
+"core": "kyle:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/Great Sluggers (Japan).mra",
+"mra": "_Arcade/Great Sluggers (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb1": {
 "core": "ongo:namco_nb1",
 "date": "2026-10-02",
@@ -51228,19 +51967,6 @@
 "mra": "_Arcade/Great Sluggers (Japan).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"core": "repo:namco_nb1",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Namco_NB1_MiSTer",
-"first_path": "MRA/Great Sluggers (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/Great Sluggers (Japan).mra"
 }
 },
 "gstream": {
@@ -51635,6 +52361,19 @@
 }
 },
 "gunbuletj": {
+"kyle:namco_nb1": {
+"core": "kyle:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/_alternatives/_Point Blank/Gun Bullet (Japan, GN1).mra",
+"mra": "_Arcade/Gun Bullet (Japan, GN1).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb1": {
 "core": "ongo:namco_nb1",
 "date": "2026-10-02",
@@ -51647,22 +52386,22 @@
 "mra": "_Arcade/_alternatives/_Point Blank/Gun Bullet (Japan, GN1).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"core": "repo:namco_nb1",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Namco_NB1_MiSTer",
-"first_path": "MRA/_alternatives/_Point Blank/Gun Bullet (Japan, GN1).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Point Blank/Gun Bullet (Japan, GN1).mra"
 }
 },
 "gunbuletw": {
+"kyle:namco_nb1": {
+"core": "kyle:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/_alternatives/_Point Blank/Gun Bullet (World, GN3 Rev B).mra",
+"mra": "_Arcade/Gun Bullet (World, GN3 Rev B).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb1": {
 "core": "ongo:namco_nb1",
 "date": "2026-10-02",
@@ -51675,19 +52414,6 @@
 "mra": "_Arcade/_alternatives/_Point Blank/Gun Bullet (World, GN3 Rev B).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"core": "repo:namco_nb1",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Namco_NB1_MiSTer",
-"first_path": "MRA/_alternatives/_Point Blank/Gun Bullet (World, GN3 Rev B).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Point Blank/Gun Bullet (World, GN3 Rev B).mra"
 }
 },
 "gunchamp": {
@@ -53685,6 +54411,19 @@
 }
 },
 "hitice": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Hit the Ice (US).mra",
+"mra": "_Arcade/Hit the Ice (US).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -53700,6 +54439,19 @@
 }
 },
 "hiticerb": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Hit the Ice/Hit the Ice (US, with riser board).mra",
+"mra": "_Arcade/Hit the Ice (US, with riser board).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -54888,6 +55640,19 @@
 }
 },
 "hvnsgate": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Heaven's Gate.mra",
+"mra": "_Arcade/Heaven's Gate.mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -55014,6 +55779,19 @@
 "mra": "_Arcade/_MeatCores/Heavy Unit.mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-15"
+},
+"ongo:meathax_heavyunit": {
+"core": "ongo:meathax_heavyunit",
+"date": "2026-10-15",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Heavy Unit (World).mra",
+"mra": "_Arcade/Heavy Unit (World).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 }
 },
 "hvyunitj": {
@@ -55040,6 +55818,19 @@
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/_alternatives/_HeavyUnit/Heavy Unit (Japan, newer).mra",
 "mra": "_Arcade/_MeatCores/_alternatives/_HeavyUnit/Heavy Unit (Japan, newer).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
+"ongo:meathax_heavyunit": {
+"core": "ongo:meathax_heavyunit",
+"date": "2026-10-15",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_HeavyUnit/Heavy Unit (Japan, newer).mra",
+"mra": "_Arcade/_alternatives/_HeavyUnit/Heavy Unit (Japan, newer).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-15"
 }
@@ -55070,6 +55861,19 @@
 "mra": "_Arcade/_MeatCores/_alternatives/_HeavyUnit/Heavy Unit (Japan, alternate ROM format).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-15"
+},
+"ongo:meathax_heavyunit": {
+"core": "ongo:meathax_heavyunit",
+"date": "2026-10-15",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_HeavyUnit/Heavy Unit (Japan, alternate ROM format).mra",
+"mra": "_Arcade/_alternatives/_HeavyUnit/Heavy Unit (Japan, alternate ROM format).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 }
 },
 "hvyunitjo": {
@@ -55098,6 +55902,19 @@
 "mra": "_Arcade/_MeatCores/_alternatives/_HeavyUnit/Heavy Unit (Japan, older).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-15"
+},
+"ongo:meathax_heavyunit": {
+"core": "ongo:meathax_heavyunit",
+"date": "2026-10-15",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_HeavyUnit/Heavy Unit (Japan, older).mra",
+"mra": "_Arcade/_alternatives/_HeavyUnit/Heavy Unit (Japan, older).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 }
 },
 "hvyunitu": {
@@ -55124,6 +55941,19 @@
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/_alternatives/_HeavyUnit/Heavy Unit (US).mra",
 "mra": "_Arcade/_MeatCores/_alternatives/_HeavyUnit/Heavy Unit (US).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
+"ongo:meathax_heavyunit": {
+"core": "ongo:meathax_heavyunit",
+"date": "2026-10-15",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_HeavyUnit/Heavy Unit -U.S.A. Version- (US).mra",
+"mra": "_Arcade/_alternatives/_HeavyUnit/Heavy Unit -U.S.A. Version- (US).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-15"
 }
@@ -55186,6 +56016,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-15",
 "mra": "_Arcade/Hydra (prototype 5-25-90).mra"
+}
+},
+"hyperath": {
+"kyle:konamigv": {
+"core": "kyle:konamigv",
+"date": "2026-10-12",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Konami_GV_MiSTer",
+"first_path": "MRA/Hyper Athlete (GV021 JAPAN 1.00).mra",
+"mra": "_Arcade/Hyper Athlete (GV021 JAPAN 1.00).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 }
 },
 "hyperspc": {
@@ -59318,6 +60163,21 @@
 "mra": "_Arcade/Karate Champ Player Vs Player (US, set 4).mra"
 }
 },
+"kdeadeye": {
+"kyle:konamigv": {
+"core": "kyle:konamigv",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Konami_GV_MiSTer",
+"first_path": "MRA/Dead Eye (GV054 UAA01).mra",
+"mra": "_Arcade/Dead Eye (GV054 UAA01).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+}
+},
 "kengo": {
 "dist:iremm72": {
 "core": "dist:iremm72",
@@ -60397,8 +61257,8 @@
 }
 },
 "knckhead": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -60406,9 +61266,9 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Knuckle Heads/Knuckle Heads (World).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/_alternatives/_Knuckle Heads/Knuckle Heads (World).mra"
+"mra": "_Arcade/_alternatives/_Knuckle Heads/Knuckle Heads (World).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -60425,8 +61285,8 @@
 }
 },
 "knckheadj": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -60434,9 +61294,9 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Knuckle Heads (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Knuckle Heads (Japan).mra"
+"mra": "_Arcade/Knuckle Heads (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -60453,8 +61313,8 @@
 }
 },
 "knckheadjp": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -60462,9 +61322,9 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Knuckle Heads/Knuckle Heads (Japan, Prototype).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/_alternatives/_Knuckle Heads/Knuckle Heads (Japan, Prototype).mra"
+"mra": "_Arcade/_alternatives/_Knuckle Heads/Knuckle Heads (Japan, Prototype).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -62257,6 +63117,21 @@
 "mra": "_Arcade/Labyrinth Runner (World Ver. K).mra"
 }
 },
+"lacrazyc": {
+"kyle:konamigv": {
+"core": "kyle:konamigv",
+"date": "2026-10-12",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Konami_GV_MiSTer",
+"first_path": "MRA/_alternatives/_Susume! Taisen Puzzle-Dama/Let's Attack Crazy Cross (GV027 ASIA 1.10).mra",
+"mra": "_Arcade/Let's Attack Crazy Cross (GV027 ASIA 1.10).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+}
+},
 "ladybug": {
 "dist:ladybug": {
 "core": "dist:ladybug",
@@ -63939,6 +64814,19 @@
 }
 },
 "lpadv": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Logic Pro Adventure (Japan).mra",
+"mra": "_Arcade/Logic Pro Adventure (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -64474,6 +65362,19 @@
 }
 },
 "machbrkr": {
+"kyle:namco_nb2": {
+"core": "kyle:namco_nb2",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB2_MiSTer",
+"first_path": "MRA/Mach Breakers (World, MB2).mra",
+"mra": "_Arcade/Mach Breakers (World, MB2).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb2": {
 "core": "ongo:namco_nb2",
 "date": "2026-10-04",
@@ -64486,22 +65387,22 @@
 "mra": "_Arcade/Mach Breakers (World, MB2).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb2": {
-"core": "repo:namco_nb2",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Namco_NB2_MiSTer",
-"first_path": "MRA/Mach Breakers (World, MB2).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/Mach Breakers (World, MB2).mra"
 }
 },
 "machbrkrj": {
+"kyle:namco_nb2": {
+"core": "kyle:namco_nb2",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB2_MiSTer",
+"first_path": "MRA/_alternatives/_Mach Breakers/Mach Breakers - Numan Athletics 2 (Japan, MB1).mra",
+"mra": "_Arcade/Mach Breakers - Numan Athletics 2 (Japan, MB1).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb2": {
 "core": "ongo:namco_nb2",
 "date": "2026-10-04",
@@ -64514,19 +65415,6 @@
 "mra": "_Arcade/_alternatives/_Mach Breakers/Mach Breakers - Numan Athletics 2 (Japan, MB1).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb2": {
-"core": "repo:namco_nb2",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Namco_NB2_MiSTer",
-"first_path": "MRA/_alternatives/_Mach Breakers/Mach Breakers - Numan Athletics 2 (Japan, MB1).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Mach Breakers/Mach Breakers - Numan Athletics 2 (Japan, MB1).mra"
 }
 },
 "macross": {
@@ -65842,6 +66730,19 @@
 }
 },
 "masterw": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Master of Weapon (World).mra",
+"mra": "_Arcade/Master of Weapon (World).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -65857,6 +66758,19 @@
 }
 },
 "masterwj": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Master of Weapon/Master of Weapon (Japan).mra",
+"mra": "_Arcade/Master of Weapon (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -65872,6 +66786,19 @@
 }
 },
 "masterwu": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Master of Weapon/Master of Weapon (US).mra",
+"mra": "_Arcade/Master of Weapon (US).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -66153,6 +67080,19 @@
 }
 },
 "mcatadv": {
+"kyle:nostradamus": {
+"core": "kyle:nostradamus",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/MiSTer_Nostradamus",
+"first_path": "mra/Magical Cat Adventure.mra",
+"mra": "_Arcade/Magical Cat Adventure.mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "repo:mcatadv": {
 "core": "repo:mcatadv",
 "date": "2026-10-02",
@@ -66165,22 +67105,22 @@
 "mra": "_Arcade/Magical Cat Adventure.mra",
 "first_recorded": "2026-10-10",
 "last_seen": "2026-10-15"
-},
-"repo:nostradamus": {
-"core": "repo:nostradamus",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/MiSTer_Nostradamus",
-"first_path": "mra/Magical Cat Adventure.mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Magical Cat Adventure.mra"
 }
 },
 "mcatadvj": {
+"kyle:nostradamus": {
+"core": "kyle:nostradamus",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/MiSTer_Nostradamus",
+"first_path": "mra/Magical Cat Adventure (Japan).mra",
+"mra": "_Arcade/_alternatives/_Magical Cat Adventure/Magical Cat Adventure (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "repo:mcatadv": {
 "core": "repo:mcatadv",
 "date": "2026-10-02",
@@ -66193,19 +67133,6 @@
 "mra": "_Arcade/Magical Cat Adventure (Japan).mra",
 "first_recorded": "2026-10-10",
 "last_seen": "2026-10-15"
-},
-"repo:nostradamus": {
-"core": "repo:nostradamus",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/MiSTer_Nostradamus",
-"first_path": "mra/Magical Cat Adventure (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/_alternatives/_Magical Cat Adventure/Magical Cat Adventure (Japan).mra"
 }
 },
 "mcwars": {
@@ -67029,6 +67956,19 @@
 }
 },
 "mfjump": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Monster Farm Jump (Japan).mra",
+"mra": "_Arcade/Monster Farm Jump (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -67074,6 +68014,19 @@
 }
 },
 "mgcldate": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Magical Date (Ver 2.02J).mra",
+"mra": "_Arcade/Magical Date (Ver 2.02J).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -67089,6 +68042,19 @@
 }
 },
 "mgcldtex": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Magical Date/Magical Date EX (Ver 2.01J).mra",
+"mra": "_Arcade/Magical Date EX (Ver 2.01J).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -72025,6 +72991,36 @@
 "mra": "_Arcade/_alternatives/_Donkey Kong/Naked Donkey Kong - HBMame.mra"
 }
 },
+"nagano98": {
+"kyle:konamigv": {
+"core": "kyle:konamigv",
+"date": "2026-10-12",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Konami_GV_MiSTer",
+"first_path": "MRA/_alternatives/_Hyper Olympic in Nagano/Nagano Winter Olympics '98 (GX720 EAA).mra",
+"mra": "_Arcade/Nagano Winter Olympics '98 (GX720 EAA).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+}
+},
+"naganoj": {
+"kyle:konamigv": {
+"core": "kyle:konamigv",
+"date": "2026-10-12",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Konami_GV_MiSTer",
+"first_path": "MRA/Hyper Olympic in Nagano (GX720 JAA).mra",
+"mra": "_Arcade/Hyper Olympic in Nagano (GX720 JAA).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+}
+},
 "nam1975": {
 "dist:neogeo": {
 "core": "dist:neogeo",
@@ -72157,6 +73153,19 @@
 }
 },
 "nastar": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Nastar (World).mra",
+"mra": "_Arcade/Nastar (World).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -72172,6 +73181,19 @@
 }
 },
 "nastarw": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Nastar/Nastar Warrior (US).mra",
+"mra": "_Arcade/Nastar Warrior (US).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -72547,6 +73569,19 @@
 }
 },
 "nebulray": {
+"kyle:namco_nb1": {
+"core": "kyle:namco_nb1",
+"date": "2026-09-30",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/Nebulas Ray (World, NR2).mra",
+"mra": "_Arcade/Nebulas Ray (World, NR2).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb1": {
 "core": "ongo:namco_nb1",
 "date": "2026-09-30",
@@ -72559,22 +73594,22 @@
 "mra": "_Arcade/Nebulas Ray (World, NR2).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"core": "repo:namco_nb1",
-"date": "2026-09-30",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Namco_NB1_MiSTer",
-"first_path": "MRA/Nebulas Ray (World, NR2).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/Nebulas Ray (World, NR2).mra"
 }
 },
 "nebulrayj": {
+"kyle:namco_nb1": {
+"core": "kyle:namco_nb1",
+"date": "2026-10-01",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/_alternatives/_Nebulas Ray/Nebulas Ray (Japan, NR1).mra",
+"mra": "_Arcade/Nebulas Ray (Japan, NR1).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb1": {
 "core": "ongo:namco_nb1",
 "date": "2026-10-01",
@@ -72587,22 +73622,22 @@
 "mra": "_Arcade/_alternatives/_Nebulas Ray/Nebulas Ray (Japan, NR1).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"core": "repo:namco_nb1",
-"date": "2026-10-01",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Namco_NB1_MiSTer",
-"first_path": "MRA/_alternatives/_Nebulas Ray/Nebulas Ray (Japan, NR1).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Nebulas Ray/Nebulas Ray (Japan, NR1).mra"
 }
 },
 "nebulrayp": {
+"kyle:namco_nb1": {
+"core": "kyle:namco_nb1",
+"date": "2026-10-01",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/_alternatives/_Nebulas Ray/Nebulas Ray (prototype).mra",
+"mra": "_Arcade/Nebulas Ray (prototype).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb1": {
 "core": "ongo:namco_nb1",
 "date": "2026-10-01",
@@ -72615,19 +73650,6 @@
 "mra": "_Arcade/_alternatives/_Nebulas Ray/Nebulas Ray (prototype).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"core": "repo:namco_nb1",
-"date": "2026-10-01",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Namco_NB1_MiSTer",
-"first_path": "MRA/_alternatives/_Nebulas Ray/Nebulas Ray (prototype).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Nebulas Ray/Nebulas Ray (prototype).mra"
 }
 },
 "nemesis": {
@@ -73706,6 +74728,19 @@
 }
 },
 "nost": {
+"kyle:nostradamus": {
+"core": "kyle:nostradamus",
+"date": "2026-10-01",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/MiSTer_Nostradamus",
+"first_path": "mra/Nostradamus.mra",
+"mra": "_Arcade/Nostradamus.mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "repo:mcatadv": {
 "core": "repo:mcatadv",
 "date": "2026-10-01",
@@ -73718,22 +74753,22 @@
 "mra": "_Arcade/Nostradamus.mra",
 "first_recorded": "2026-10-10",
 "last_seen": "2026-10-15"
-},
-"repo:nostradamus": {
-"core": "repo:nostradamus",
-"date": "2026-10-01",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/MiSTer_Nostradamus",
-"first_path": "mra/Nostradamus.mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Nostradamus.mra"
 }
 },
 "nostj": {
+"kyle:nostradamus": {
+"core": "kyle:nostradamus",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/MiSTer_Nostradamus",
+"first_path": "mra/Nostradamus (Japan).mra",
+"mra": "_Arcade/_alternatives/_Nostradamus/Nostradamus (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "repo:mcatadv": {
 "core": "repo:mcatadv",
 "date": "2026-10-02",
@@ -73746,22 +74781,22 @@
 "mra": "_Arcade/Nostradamus (Japan).mra",
 "first_recorded": "2026-10-10",
 "last_seen": "2026-10-15"
-},
-"repo:nostradamus": {
-"core": "repo:nostradamus",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/MiSTer_Nostradamus",
-"first_path": "mra/Nostradamus (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/_alternatives/_Nostradamus/Nostradamus (Japan).mra"
 }
 },
 "nostk": {
+"kyle:nostradamus": {
+"core": "kyle:nostradamus",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/MiSTer_Nostradamus",
+"first_path": "mra/Nostradamus Yeeon (Korea).mra",
+"mra": "_Arcade/_alternatives/_Nostradamus/Nostradamus Yeeon (Korea).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "repo:mcatadv": {
 "core": "repo:mcatadv",
 "date": "2026-10-02",
@@ -73774,19 +74809,6 @@
 "mra": "_Arcade/Nostradamus Yeeon (Korea).mra",
 "first_recorded": "2026-10-10",
 "last_seen": "2026-10-15"
-},
-"repo:nostradamus": {
-"core": "repo:nostradamus",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/MiSTer_Nostradamus",
-"first_path": "mra/Nostradamus Yeeon (Korea).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/_alternatives/_Nostradamus/Nostradamus Yeeon (Korea).mra"
 }
 },
 "nouryoku": {
@@ -73880,18 +74902,18 @@
 }
 },
 "nratechu": {
-"repo:nerattechu": {
-"core": "repo:nerattechu",
-"date": "2026-09-28",
+"kyle:nerattechu": {
+"core": "kyle:nerattechu",
+"date": "2026-09-29",
 "date_quality": "git",
 "via": "ongo",
 "wip": false,
 "alt": false,
 "first_repo": "kyledlester/MiSTer_Neratte_Chu",
-"first_path": "mra/Neratte Chu (ver. 1.10).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Neratte Chu (ver. 1.10).mra"
+"first_path": "MRA/Neratte Chu (ver. 1.10).mra",
+"mra": "_Arcade/Neratte Chu (ver. 1.10).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 }
 },
 "nslasher": {
@@ -74134,8 +75156,8 @@
 }
 },
 "numanath": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -74143,9 +75165,9 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Numan Athletics/Numan Athletics (World).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/_alternatives/_Numan Athletics/Numan Athletics (World).mra"
+"mra": "_Arcade/_alternatives/_Numan Athletics/Numan Athletics (World).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -74162,8 +75184,8 @@
 }
 },
 "numanathj": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -74171,9 +75193,9 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Numan Athletics (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Numan Athletics (Japan).mra"
+"mra": "_Arcade/Numan Athletics (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -74470,6 +75492,19 @@
 }
 },
 "officeye": {
+"kyle:crystal": {
+"core": "kyle:crystal",
+"date": "2026-10-07",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Office Yeoin Cheonha (version 1.2).mra",
+"mra": "_Arcade/Office Yeoin Cheonha (version 1.2).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:crystal": {
 "core": "ongo:crystal",
 "date": "2026-10-07",
@@ -74482,19 +75517,6 @@
 "first_recorded": "2026-10-08",
 "last_seen": "2026-10-11",
 "mra": "_Arcade/Office Yeoin Cheonha (version 1.2).mra"
-},
-"repo:crystal": {
-"core": "repo:crystal",
-"date": "2026-10-07",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Office Yeoin Cheonha (version 1.2).mra",
-"mra": "_Arcade/Office Yeoin Cheonha (version 1.2).mra",
-"first_recorded": "2026-10-12",
-"last_seen": "2026-10-15"
 }
 },
 "offroad": {
@@ -75617,6 +76639,19 @@
 }
 },
 "outfxies": {
+"kyle:namco_nb2": {
+"core": "kyle:namco_nb2",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB2_MiSTer",
+"first_path": "MRA/The Outfoxies (World, OU2).mra",
+"mra": "_Arcade/The Outfoxies (World, OU2).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb2": {
 "core": "ongo:namco_nb2",
 "date": "2026-10-04",
@@ -75629,22 +76664,22 @@
 "mra": "_Arcade/The Outfoxies (World, OU2).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb2": {
-"core": "repo:namco_nb2",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Namco_NB2_MiSTer",
-"first_path": "MRA/The Outfoxies (World, OU2).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/The Outfoxies (World, OU2).mra"
 }
 },
 "outfxiesa": {
+"kyle:namco_nb2": {
+"core": "kyle:namco_nb2",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB2_MiSTer",
+"first_path": "MRA/_alternatives/_The Outfoxies/The Outfoxies (Korea).mra",
+"mra": "_Arcade/The Outfoxies (Korea).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb2": {
 "core": "ongo:namco_nb2",
 "date": "2026-10-04",
@@ -75657,22 +76692,22 @@
 "mra": "_Arcade/_alternatives/_The Outfoxies/The Outfoxies (Korea).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb2": {
-"core": "repo:namco_nb2",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Namco_NB2_MiSTer",
-"first_path": "MRA/_alternatives/_The Outfoxies/The Outfoxies (Korea).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_The Outfoxies/The Outfoxies (Korea).mra"
 }
 },
 "outfxiesj": {
+"kyle:namco_nb2": {
+"core": "kyle:namco_nb2",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB2_MiSTer",
+"first_path": "MRA/_alternatives/_The Outfoxies/The Outfoxies (Japan, OU1).mra",
+"mra": "_Arcade/The Outfoxies (Japan, OU1).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb2": {
 "core": "ongo:namco_nb2",
 "date": "2026-10-04",
@@ -75685,22 +76720,22 @@
 "mra": "_Arcade/_alternatives/_The Outfoxies/The Outfoxies (Japan, OU1).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb2": {
-"core": "repo:namco_nb2",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Namco_NB2_MiSTer",
-"first_path": "MRA/_alternatives/_The Outfoxies/The Outfoxies (Japan, OU1).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_The Outfoxies/The Outfoxies (Japan, OU1).mra"
 }
 },
 "outfxiesja": {
+"kyle:namco_nb2": {
+"core": "kyle:namco_nb2",
+"date": "2026-10-04",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB2_MiSTer",
+"first_path": "MRA/_alternatives/_The Outfoxies/The Outfoxies (Japan, OU1, alternate GFX ROMs).mra",
+"mra": "_Arcade/The Outfoxies (Japan, OU1, alternate GFX ROMs).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb2": {
 "core": "ongo:namco_nb2",
 "date": "2026-10-04",
@@ -75713,19 +76748,6 @@
 "mra": "_Arcade/_alternatives/_The Outfoxies/The Outfoxies (Japan, OU1, alternate GFX ROMs).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb2": {
-"core": "repo:namco_nb2",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Namco_NB2_MiSTer",
-"first_path": "MRA/_alternatives/_The Outfoxies/The Outfoxies (Japan, OU1, alternate GFX ROMs).mra",
-"first_recorded": "2026-10-05",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_The Outfoxies/The Outfoxies (Japan, OU1, alternate GFX ROMs).mra"
 }
 },
 "outrun": {
@@ -77992,6 +79014,19 @@
 }
 },
 "pbobble": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Puzzle Bobble (Japan, B-System).mra",
+"mra": "_Arcade/Puzzle Bobble (Japan, B-System).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -81527,6 +82562,21 @@
 "mra": "_Arcade/_alternatives/_P.O.W. - Prisoners of War/Datsugoku - Prisoners of War (Japan).mra"
 }
 },
+"powyak96": {
+"kyle:konamigv": {
+"core": "kyle:konamigv",
+"date": "2026-10-12",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Konami_GV_MiSTer",
+"first_path": "MRA/Jikkyou Powerful Pro Yakyuu '96 (GV017 JAPAN 1.03).mra",
+"mra": "_Arcade/Jikkyou Powerful Pro Yakyuu '96 (GV017 JAPAN 1.03).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+}
+},
 "pplusad": {
 "dist:pacman": {
 "core": "dist:pacman",
@@ -82143,6 +83193,19 @@
 }
 },
 "psyforce": {
+"kyle:xnzn1fxa": {
+"core": "kyle:xnzn1fxa",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Psychic Force (Ver 2.4O).mra",
+"mra": "_Arcade/Psychic Force (Ver 2.4O).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -82158,6 +83221,19 @@
 }
 },
 "psyforcej": {
+"kyle:xnzn1fxa": {
+"core": "kyle:xnzn1fxa",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Psychic Force/Psychic Force (Ver 2.4J).mra",
+"mra": "_Arcade/Psychic Force (Ver 2.4J).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -82173,6 +83249,19 @@
 }
 },
 "psyforcex": {
+"kyle:xnzn1fxa": {
+"core": "kyle:xnzn1fxa",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Psychic Force/Psychic Force EX (Ver 2.0J).mra",
+"mra": "_Arcade/Psychic Force EX (Ver 2.0J).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -82233,6 +83322,19 @@
 }
 },
 "ptblank": {
+"kyle:namco_nb1": {
+"core": "kyle:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/Point Blank (World, GN2 Rev B, set 1).mra",
+"mra": "_Arcade/Point Blank (World, GN2 Rev B, set 1).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb1": {
 "core": "ongo:namco_nb1",
 "date": "2026-10-02",
@@ -82245,19 +83347,6 @@
 "mra": "_Arcade/Point Blank (World, GN2 Rev B, set 1).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"core": "repo:namco_nb1",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Namco_NB1_MiSTer",
-"first_path": "MRA/Point Blank (World, GN2 Rev B, set 1).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/Point Blank (World, GN2 Rev B, set 1).mra"
 }
 },
 "ptblank2": {
@@ -82388,6 +83477,19 @@
 }
 },
 "ptblanka": {
+"kyle:namco_nb1": {
+"core": "kyle:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/_alternatives/_Point Blank/Point Blank (World, GN2 Rev B, set 2).mra",
+"mra": "_Arcade/Point Blank (World, GN2 Rev B, set 2).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb1": {
 "core": "ongo:namco_nb1",
 "date": "2026-10-02",
@@ -82400,19 +83502,6 @@
 "mra": "_Arcade/_alternatives/_Point Blank/Point Blank (World, GN2 Rev B, set 2).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"core": "repo:namco_nb1",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Namco_NB1_MiSTer",
-"first_path": "MRA/_alternatives/_Point Blank/Point Blank (World, GN2 Rev B, set 2).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Point Blank/Point Blank (World, GN2 Rev B, set 2).mra"
 }
 },
 "puchicar": {
@@ -84039,8 +85128,8 @@
 }
 },
 "quiztou": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -84048,9 +85137,9 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Nettou! Gekitou! Quiztou!! (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Nettou! Gekitou! Quiztou!! (Japan).mra"
+"mra": "_Arcade/Nettou! Gekitou! Quiztou!! (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -84127,6 +85216,19 @@
 }
 },
 "qzshowby": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Quiz Sekai wa SHOW by shobai (Japan).mra",
+"mra": "_Arcade/Quiz Sekai wa SHOW by shobai (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -85554,6 +86656,19 @@
 }
 },
 "rambo3": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Rambo III (Europe).mra",
+"mra": "_Arcade/Rambo III (Europe).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -85569,6 +86684,19 @@
 }
 },
 "rambo3p": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Rambo III/Rambo III (Europe, Proto).mra",
+"mra": "_Arcade/Rambo III (Europe, Proto).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -85584,6 +86712,19 @@
 }
 },
 "rambo3u": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Rambo III/Rambo III (US).mra",
+"mra": "_Arcade/Rambo III (US).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -85809,6 +86950,19 @@
 }
 },
 "rastsag2": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Rastan Saga 2 (Japan).mra",
+"mra": "_Arcade/Rastan Saga 2 (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -85985,6 +87139,19 @@
 }
 },
 "raystorm": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Ray Storm (Ver 2.06A).mra",
+"mra": "_Arcade/Ray Storm (Ver 2.06A).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -86013,6 +87180,19 @@
 }
 },
 "raystormj": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Ray Storm/Ray Storm (Ver 2.05J).mra",
+"mra": "_Arcade/Ray Storm (Ver 2.05J).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -86041,6 +87221,19 @@
 }
 },
 "raystormo": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Ray Storm/Ray Storm (Ver 2.05O).mra",
+"mra": "_Arcade/Ray Storm (Ver 2.05O).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -86069,6 +87262,19 @@
 }
 },
 "raystormu": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Ray Storm/Ray Storm (Ver 2.05A).mra",
+"mra": "_Arcade/Ray Storm (Ver 2.05A).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -86812,6 +88018,19 @@
 }
 },
 "realpunc": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Real Puncher (World, v2.12O).mra",
+"mra": "_Arcade/Real Puncher (World, v2.12O).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -86827,6 +88046,19 @@
 }
 },
 "realpuncj": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Real Puncher/Real Puncher (Japan, v2.12J).mra",
+"mra": "_Arcade/Real Puncher (Japan, v2.12J).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -89239,6 +90471,19 @@
 }
 },
 "rshark": {
+"kyle:rshark": {
+"core": "kyle:rshark",
+"date": "2026-10-01",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/R-Shark (set 1).mra",
+"mra": "_Arcade/R-Shark (set 1).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:rshark": {
 "core": "ongo:rshark",
 "date": "2026-09-29",
@@ -89282,6 +90527,19 @@
 }
 },
 "rsharka": {
+"kyle:rshark": {
+"core": "kyle:rshark",
+"date": "2026-10-01",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/R-Shark (set 2).mra",
+"mra": "_Arcade/R-Shark (set 2).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:rshark": {
 "core": "ongo:rshark",
 "date": "2026-09-30",
@@ -89994,6 +91252,19 @@
 }
 },
 "ryujin": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Ryu Jin (Japan, ET910000B PCB).mra",
+"mra": "_Arcade/Ryu Jin (Japan, ET910000B PCB).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -90009,6 +91280,19 @@
 }
 },
 "ryujina": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Ryu Jin/Ryu Jin (Japan, ET910000A PCB).mra",
+"mra": "_Arcade/Ryu Jin (Japan, ET910000A PCB).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -91824,6 +93108,19 @@
 }
 },
 "sbm": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Sonic Blast Man (US).mra",
+"mra": "_Arcade/Sonic Blast Man (US).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -91839,6 +93136,19 @@
 }
 },
 "sbmj": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Sonic Blast Man/Sonic Blast Man (Japan).mra",
+"mra": "_Arcade/Sonic Blast Man (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -93673,6 +94983,19 @@
 }
 },
 "selfeena": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Sel Feena.mra",
+"mra": "_Arcade/Sel Feena.mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -95225,6 +96548,19 @@
 }
 },
 "sfchamp": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Super Football Champ (Ver 2.5O).mra",
+"mra": "_Arcade/Super Football Champ (Ver 2.5O).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -95240,6 +96576,19 @@
 }
 },
 "sfchampj": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Super Football Champ/Super Football Champ (Ver 2.4J).mra",
+"mra": "_Arcade/Super Football Champ (Ver 2.4J).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -95255,6 +96604,19 @@
 }
 },
 "sfchampo": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Super Football Champ/Super Football Champ (Ver 2.4O).mra",
+"mra": "_Arcade/Super Football Champ (Ver 2.4O).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -95270,6 +96632,19 @@
 }
 },
 "sfchampu": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Super Football Champ/Super Football Champ (Ver 2.4A).mra",
+"mra": "_Arcade/Super Football Champ (Ver 2.4A).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -97298,6 +98673,19 @@
 }
 },
 "shngmtkb": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Shanghai Matekibuyuu (Japan).mra",
+"mra": "_Arcade/Shanghai Matekibuyuu (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -97712,6 +99100,19 @@
 }
 },
 "silentd": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Silent Dragon (World).mra",
+"mra": "_Arcade/Silent Dragon (World).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -97727,6 +99128,19 @@
 }
 },
 "silentdj": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Silent Dragon/Silent Dragon (Japan).mra",
+"mra": "_Arcade/Silent Dragon (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -97742,6 +99156,19 @@
 }
 },
 "silentdu": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Silent Dragon/Silent Dragon (US).mra",
+"mra": "_Arcade/Silent Dragon (US).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -97812,6 +99239,21 @@
 "first_recorded": "2026-10-05",
 "last_seen": "2026-10-15",
 "mra": "_Arcade/Silver Land (Hack Of River Patrol).mra"
+}
+},
+"simpbowl": {
+"kyle:konamigv": {
+"core": "kyle:konamigv",
+"date": "2026-10-12",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Konami_GV_MiSTer",
+"first_path": "MRA/The Simpsons Bowling (GQ829 UAA).mra",
+"mra": "_Arcade/The Simpsons Bowling (GQ829 UAA).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 }
 },
 "simpsons": {
@@ -99575,6 +101017,19 @@
 }
 },
 "sncwgltd": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Sonic Wings Limited (Japan).mra",
+"mra": "_Arcade/Sonic Wings Limited (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -100992,6 +102447,19 @@
 }
 },
 "spacedx": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Space Invaders DX (US, v2.1).mra",
+"mra": "_Arcade/Space Invaders DX (US, v2.1).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -101007,6 +102475,19 @@
 }
 },
 "spacedxj": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Space Invaders DX/Space Invaders DX (Japan, v2.1).mra",
+"mra": "_Arcade/Space Invaders DX (Japan, v2.1).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -101022,6 +102503,19 @@
 }
 },
 "spacedxo": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Space Invaders DX/Space Invaders DX (Japan, v2.0).mra",
+"mra": "_Arcade/Space Invaders DX (Japan, v2.0).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -106107,6 +107601,19 @@
 }
 },
 "superx": {
+"kyle:rshark": {
+"core": "kyle:rshark",
+"date": "2026-10-01",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Super-X (NTC).mra",
+"mra": "_Arcade/Super-X (NTC).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:rshark": {
 "core": "ongo:rshark",
 "date": "2026-09-30",
@@ -106150,6 +107657,19 @@
 }
 },
 "superxm": {
+"kyle:rshark": {
+"core": "kyle:rshark",
+"date": "2026-10-01",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
+"first_path": "releases/mra/Super-X (Mitchell).mra",
+"mra": "_Arcade/Super-X (Mitchell).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:rshark": {
 "core": "ongo:rshark",
 "date": "2026-09-30",
@@ -106547,6 +108067,21 @@
 "mra": "_Arcade/Survival Arts.mra"
 }
 },
+"susume": {
+"kyle:konamigv": {
+"core": "kyle:konamigv",
+"date": "2026-10-12",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Konami_GV_MiSTer",
+"first_path": "MRA/Susume! Taisen Puzzle-Dama (GV027 JAPAN 1.20).mra",
+"mra": "_Arcade/Susume! Taisen Puzzle-Dama (GV027 JAPAN 1.20).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+}
+},
 "sutapper": {
 "dist:mcr3": {
 "core": "dist:mcr3",
@@ -106866,8 +108401,8 @@
 }
 },
 "swcourt": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -106875,9 +108410,9 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Super World Court/Super World Court (World).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/_alternatives/_Super World Court/Super World Court (World).mra"
+"mra": "_Arcade/_alternatives/_Super World Court/Super World Court (World).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -106894,8 +108429,8 @@
 }
 },
 "swcourtb": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -106903,9 +108438,9 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Super World Court/Super World Court (World, bootleg).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/_alternatives/_Super World Court/Super World Court (World, bootleg).mra"
+"mra": "_Arcade/_alternatives/_Super World Court/Super World Court (World, bootleg).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -106922,8 +108457,8 @@
 }
 },
 "swcourtj": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -106931,9 +108466,9 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Super World Court (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Super World Court (Japan).mra"
+"mra": "_Arcade/Super World Court (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -107082,6 +108617,19 @@
 }
 },
 "sws95": {
+"kyle:namco_nb1": {
+"core": "kyle:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/Super World Stadium '95 (Japan).mra",
+"mra": "_Arcade/Super World Stadium '95 (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb1": {
 "core": "ongo:namco_nb1",
 "date": "2026-10-02",
@@ -107094,22 +108642,22 @@
 "mra": "_Arcade/Super World Stadium '95 (Japan).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"core": "repo:namco_nb1",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Namco_NB1_MiSTer",
-"first_path": "MRA/Super World Stadium '95 (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/Super World Stadium '95 (Japan).mra"
 }
 },
 "sws96": {
+"kyle:namco_nb1": {
+"core": "kyle:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/Super World Stadium '96 (Japan).mra",
+"mra": "_Arcade/Super World Stadium '96 (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb1": {
 "core": "ongo:namco_nb1",
 "date": "2026-10-02",
@@ -107122,22 +108670,22 @@
 "mra": "_Arcade/Super World Stadium '96 (Japan).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"core": "repo:namco_nb1",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Namco_NB1_MiSTer",
-"first_path": "MRA/Super World Stadium '96 (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/Super World Stadium '96 (Japan).mra"
 }
 },
 "sws97": {
+"kyle:namco_nb1": {
+"core": "kyle:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/Super World Stadium '97 (Japan).mra",
+"mra": "_Arcade/Super World Stadium '97 (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb1": {
 "core": "ongo:namco_nb1",
 "date": "2026-10-02",
@@ -107150,19 +108698,6 @@
 "mra": "_Arcade/Super World Stadium '97 (Japan).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"core": "repo:namco_nb1",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Namco_NB1_MiSTer",
-"first_path": "MRA/Super World Stadium '97 (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/Super World Stadium '97 (Japan).mra"
 }
 },
 "sws98": {
@@ -107866,6 +109401,19 @@
 }
 },
 "tblkkuzu": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/The Block Kuzushi (Japan).mra",
+"mra": "_Arcade/The Block Kuzushi (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -109418,6 +110966,19 @@
 }
 },
 "tetrist": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Tetris (Japan, Taito B-System, Nastar Conversion Kit).mra",
+"mra": "_Arcade/Tetris (Japan, Taito B-System, Nastar Conversion Kit).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -109433,6 +110994,19 @@
 }
 },
 "tetrista": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Tetris/Tetris (Japan, Taito B-System, Master of Weapon Conversion Kit).mra",
+"mra": "_Arcade/Tetris (Japan, Taito B-System, Master of Weapon Conversion Kit).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -110653,8 +112227,8 @@
 }
 },
 "tinklpit": {
-"repo:namco_na1_na2": {
-"core": "repo:namco_na1_na2",
+"kyle:namco_na1_na2": {
+"core": "kyle:namco_na1_na2",
 "date": "2026-09-25",
 "date_quality": "git",
 "via": "ongo",
@@ -110662,9 +112236,9 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Tinkle Pit (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Tinkle Pit (Japan).mra"
+"mra": "_Arcade/Tinkle Pit (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 },
 "repo:namcona2": {
 "core": "repo:namcona2",
@@ -111526,6 +113100,66 @@
 "mra": "_Arcade/Teenage Mutant Ninja Turtles (US 4 Players, version H).mra"
 }
 },
+"tmosh": {
+"kyle:konamigv": {
+"core": "kyle:konamigv",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Konami_GV_MiSTer",
+"first_path": "MRA/Tokimeki Memorial Oshiete Your Heart (GQ673 JAA).mra",
+"mra": "_Arcade/Tokimeki Memorial Oshiete Your Heart (GQ673 JAA).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+}
+},
+"tmoshs": {
+"kyle:konamigv": {
+"core": "kyle:konamigv",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Konami_GV_MiSTer",
+"first_path": "MRA/Tokimeki Memorial Oshiete Your Heart Seal Version (GE755 JAA).mra",
+"mra": "_Arcade/Tokimeki Memorial Oshiete Your Heart Seal Version (GE755 JAA).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+}
+},
+"tmoshsp": {
+"kyle:konamigv": {
+"core": "kyle:konamigv",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Konami_GV_MiSTer",
+"first_path": "MRA/Tokimeki Memorial Oshiete Your Heart Seal Version Plus (GE756 JAB).mra",
+"mra": "_Arcade/Tokimeki Memorial Oshiete Your Heart Seal Version Plus (GE756 JAB).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+}
+},
+"tmoshspa": {
+"kyle:konamigv": {
+"core": "kyle:konamigv",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "kyledlester/Konami_GV_MiSTer",
+"first_path": "MRA/_alternatives/_Tokimeki Memorial Oshiete Your Heart Seal Version Plus/Tokimeki Memorial Oshiete Your Heart Seal Version Plus (GE756 JAA).mra",
+"mra": "_Arcade/Tokimeki Memorial Oshiete Your Heart Seal Version Plus (GE756 JAA).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+}
+},
 "tndrcade": {
 "ppriest:setadowntown": {
 "core": "ppriest:setadowntown",
@@ -111960,6 +113594,19 @@
 }
 },
 "tondemo": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Tondemo Crisis (Japan).mra",
+"mra": "_Arcade/Tondemo Crisis (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -112065,6 +113712,19 @@
 }
 },
 "topbladv": {
+"kyle:crystal": {
+"core": "kyle:crystal",
+"date": "2026-10-07",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Top Blade V.mra",
+"mra": "_Arcade/Top Blade V.mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:crystal": {
 "core": "ongo:crystal",
 "date": "2026-10-07",
@@ -112077,19 +113737,6 @@
 "first_recorded": "2026-10-08",
 "last_seen": "2026-10-11",
 "mra": "_Arcade/Top Blade V.mra"
-},
-"repo:crystal": {
-"core": "repo:crystal",
-"date": "2026-10-07",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Top Blade V.mra",
-"mra": "_Arcade/Top Blade V.mra",
-"first_recorded": "2026-10-12",
-"last_seen": "2026-10-15"
 }
 },
 "topgun": {
@@ -114000,6 +115647,19 @@
 }
 },
 "twcupmil": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Tecmo World Cup Millennium (Japan).mra",
+"mra": "_Arcade/Tecmo World Cup Millennium (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:xnzn1": {
 "core": "ongo:xnzn1",
 "date": "2026-07-18",
@@ -116660,6 +118320,19 @@
 }
 },
 "viofight": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Violence Fight (World).mra",
+"mra": "_Arcade/Violence Fight (World).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-02",
@@ -116675,6 +118348,19 @@
 }
 },
 "viofightj": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Violence Fight/Violence Fight (Japan).mra",
+"mra": "_Arcade/Violence Fight (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -116690,6 +118376,19 @@
 }
 },
 "viofightu": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Violence Fight/Violence Fight (US).mra",
+"mra": "_Arcade/Violence Fight (US).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -117915,6 +119614,19 @@
 }
 },
 "vshoot": {
+"kyle:namco_nb1": {
+"core": "kyle:namco_nb1",
+"date": "2026-10-02",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Namco_NB1_MiSTer",
+"first_path": "MRA/J-League Soccer V-Shoot (Japan).mra",
+"mra": "_Arcade/J-League Soccer V-Shoot (Japan).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:namco_nb1": {
 "core": "ongo:namco_nb1",
 "date": "2026-10-02",
@@ -117927,19 +119639,6 @@
 "mra": "_Arcade/J-League Soccer V-Shoot (Japan).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:namco_nb1": {
-"core": "repo:namco_nb1",
-"date": "2026-10-02",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Namco_NB1_MiSTer",
-"first_path": "MRA/J-League Soccer V-Shoot (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/J-League Soccer V-Shoot (Japan).mra"
 }
 },
 "vsmahjng": {
@@ -118721,6 +120420,21 @@
 "first_path": "cores/wecleman/mra/WEC Le Mans 24 (FF, Konami, 1986).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+}
+},
+"weddingr": {
+"kyle:konamigv": {
+"core": "kyle:konamigv",
+"date": "2026-10-12",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "kyledlester/Konami_GV_MiSTer",
+"first_path": "MRA/Wedding Rhapsody (GX624 JAA).mra",
+"mra": "_Arcade/Wedding Rhapsody (GX624 JAA).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
 }
 },
 "wexpress": {
@@ -121878,6 +123592,19 @@
 }
 },
 "yukiwo": {
+"kyle:taitob": {
+"core": "kyle:taitob",
+"date": "2026-09-03",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Master of Weapon/Yukiwo (World, prototype).mra",
+"mra": "_Arcade/Yukiwo (World, prototype).mra",
+"first_recorded": "2026-10-15",
+"last_seen": "2026-10-15"
+},
 "ongo:taitob": {
 "core": "ongo:taitob",
 "date": "2026-09-03",
@@ -122767,7 +124494,8 @@
 "dist": "Sports"
 },
 "1on1gov": {
-"ongo": "Sports"
+"ongo": "Sports",
+"kyle": "Sports"
 },
 "280zzzap": {
 "dist": "Racing",
@@ -122887,10 +124615,12 @@
 "repo": "Racing"
 },
 "aerofgts": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "aerofgtst": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "aerolitos": {
 "dist": "Shooter - Multidirectional"
@@ -122994,11 +124724,13 @@
 },
 "altair": {
 "jlrh": "Shooter",
-"ongo": "Shooter"
+"ongo": "Shooter",
+"arcfpga": "Shooter"
 },
 "altair2": {
 "jlrh": "Shooter",
-"ongo": "Shooter"
+"ongo": "Shooter",
+"arcfpga": "Shooter"
 },
 "amatelas": {
 "coinop": "Shoot 'em up"
@@ -123436,27 +125168,33 @@
 },
 "batlball": {
 "ongo": "Puzzle",
-"repo": "Puzzle"
+"repo": "Puzzle",
+"kyle": "Puzzle"
 },
 "batlballa": {
 "ongo": "Puzzle",
-"repo": "Puzzle"
+"repo": "Puzzle",
+"kyle": "Puzzle"
 },
 "batlballe": {
 "ongo": "Puzzle",
-"repo": "Puzzle"
+"repo": "Puzzle",
+"kyle": "Puzzle"
 },
 "batlballo": {
 "ongo": "Puzzle",
-"repo": "Puzzle"
+"repo": "Puzzle",
+"kyle": "Puzzle"
 },
 "batlballpt": {
 "ongo": "Puzzle",
-"repo": "Puzzle"
+"repo": "Puzzle",
+"kyle": "Puzzle"
 },
 "batlballu": {
 "ongo": "Puzzle",
-"repo": "Puzzle"
+"repo": "Puzzle",
+"kyle": "Puzzle"
 },
 "batman": {
 "dist": "Platform",
@@ -123549,10 +125287,12 @@
 "dist": "Platform - Climb"
 },
 "beastrzr": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"kyle": "Fighter"
 },
 "beastrzra": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"kyle": "Fighter"
 },
 "berzerk": {
 "dist": "Shooter - Multidirectional"
@@ -123658,7 +125398,8 @@
 },
 "bkrtmaq": {
 "ongo": "Quiz",
-"repo": "Quiz"
+"repo": "Quiz",
+"kyle": "Quiz"
 },
 "blandia": {
 "ongo": "Arcade",
@@ -123683,19 +125424,24 @@
 "ongo": "Shooter / Flying Horizontal"
 },
 "bldyroar": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"kyle": "Fighter"
 },
 "bldyror2": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"kyle": "Fighter"
 },
 "bldyror2a": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"kyle": "Fighter"
 },
 "bldyror2j": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"kyle": "Fighter"
 },
 "bldyror2u": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"kyle": "Fighter"
 },
 "blkbustr": {
 "dist": "Puzzle"
@@ -123967,16 +125713,23 @@
 "dist": "Shooter"
 },
 "brvblade": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "brvbladea": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "brvbladej": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "brvbladeu": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
+},
+"btchamp": {
+"kyle": "Sports"
 },
 "btime": {
 "dist": "Platform - Climb"
@@ -124211,7 +125964,8 @@
 },
 "catt": {
 "repo": "Platform",
-"ongo": "Platform"
+"ongo": "Platform",
+"kyle": "Platform"
 },
 "cavelon": {
 "dist": "Maze - Horizontal",
@@ -124327,11 +126081,13 @@
 },
 "cgangpzl": {
 "ongo": "Puzzle",
-"repo": "Puzzle"
+"repo": "Puzzle",
+"kyle": "Puzzle"
 },
 "cgangpzlj": {
 "ongo": "Puzzle",
-"repo": "Puzzle"
+"repo": "Puzzle",
+"kyle": "Puzzle"
 },
 "cgraplop": {
 "dist": "Action"
@@ -124773,7 +126529,8 @@
 "crysking": {
 "ongo": "Fighter / Hack and Slash",
 "meat": "Beat'em Up",
-"repo": "Fighter / Hack and Slash"
+"repo": "Fighter / Hack and Slash",
+"kyle": "Fighter / Hack and Slash"
 },
 "crzcross": {
 "ongo": "Arcade",
@@ -125132,7 +126889,8 @@
 },
 "destryer": {
 "jlrh": "Shooter",
-"ongo": "Shooter"
+"ongo": "Shooter",
+"arcfpga": "Shooter"
 },
 "devilfsg": {
 "dist": "Maze"
@@ -125347,10 +127105,12 @@
 "dist": "LaserDisc"
 },
 "doapp": {
-"ongo": "Fighting"
+"ongo": "Fighting",
+"kyle": "Fighting"
 },
 "doappk": {
-"ongo": "Fighting"
+"ongo": "Fighting",
+"kyle": "Fighting"
 },
 "docastle": {
 "ongo": "Platform",
@@ -125506,7 +127266,8 @@
 },
 "draco": {
 "jlrh": "Shooter",
-"ongo": "Shooter"
+"ongo": "Shooter",
+"arcfpga": "Shooter"
 },
 "dragoona": {
 "ongo": "Arcade",
@@ -125668,7 +127429,8 @@
 },
 "ejanhs": {
 "ongo": "Mahjong",
-"repo": "Mahjong"
+"repo": "Mahjong",
+"kyle": "Mahjong"
 },
 "elecyoyo": {
 "dist": "Maze"
@@ -125707,19 +127469,23 @@
 },
 "emeralda": {
 "ongo": "Puzzle",
-"repo": "Puzzle"
+"repo": "Puzzle",
+"kyle": "Puzzle"
 },
 "emeraldaj": {
 "ongo": "Puzzle",
-"repo": "Puzzle"
+"repo": "Puzzle",
+"kyle": "Puzzle"
 },
 "emeraldajb": {
 "ongo": "Puzzle",
-"repo": "Puzzle"
+"repo": "Puzzle",
+"kyle": "Puzzle"
 },
 "emeraldajd": {
 "ongo": "Puzzle",
-"repo": "Puzzle"
+"repo": "Puzzle",
+"kyle": "Puzzle"
 },
 "endurobl": {
 "repo": "Racing / Driving"
@@ -125792,7 +127558,8 @@
 },
 "evosocc": {
 "ongo": "Sports / Soccer",
-"repo": "Sports / Soccer"
+"repo": "Sports / Soccer",
+"kyle": "Sports / Soccer"
 },
 "excthour": {
 "coinop": "Sports"
@@ -125837,11 +127604,13 @@
 },
 "exvania": {
 "ongo": "Maze",
-"repo": "Maze"
+"repo": "Maze",
+"kyle": "Maze"
 },
 "exvaniaj": {
 "ongo": "Maze",
-"repo": "Maze"
+"repo": "Maze",
+"kyle": "Maze"
 },
 "eyes": {
 "dist": "Maze"
@@ -125854,7 +127623,8 @@
 },
 "fa": {
 "ongo": "Shoot 'em Up",
-"repo": "Shoot 'em Up"
+"repo": "Shooter",
+"kyle": "Shoot 'em Up"
 },
 "falcon": {
 "dist": "Shooter - Gallery"
@@ -125924,7 +127694,8 @@
 },
 "fghtatck": {
 "ongo": "Shoot 'em Up",
-"repo": "Shoot 'em Up"
+"repo": "Shooter",
+"kyle": "Shoot 'em Up"
 },
 "fgtlayer": {
 "ongo": "Fighting"
@@ -126078,10 +127849,12 @@
 "ongo": "Run and gun"
 },
 "flamegun": {
-"ongo": "Action"
+"ongo": "Action",
+"kyle": "Action"
 },
 "flamegunj": {
-"ongo": "Action"
+"ongo": "Action",
+"kyle": "Action"
 },
 "flashgal": {
 "dist": "Shooter"
@@ -126215,16 +127988,20 @@
 "dist": "Maze"
 },
 "ftimpact": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"kyle": "Fighter"
 },
 "ftimpactj": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"kyle": "Fighter"
 },
 "ftimpactu": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"kyle": "Fighter"
 },
 "ftimpcta": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"kyle": "Fighter"
 },
 "futari10": {
 "ongo": "Shooter"
@@ -126593,16 +128370,20 @@
 "dist": "Run 'n' Gun - Horizontal"
 },
 "gdarius": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "gdarius2": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "gdariusj": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "gdariusu": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "gemini": {
 "dist": "Shooter - Vertical"
@@ -126706,16 +128487,20 @@
 "ongo": "Sports"
 },
 "glpracr2": {
-"ongo": "Racing"
+"ongo": "Racing",
+"kyle": "Racing"
 },
 "glpracr2j": {
-"ongo": "Racing"
+"ongo": "Racing",
+"kyle": "Racing"
 },
 "glpracr3": {
-"ongo": "Racing"
+"ongo": "Racing",
+"kyle": "Racing"
 },
 "glpracr3j": {
-"ongo": "Racing"
+"ongo": "Racing",
+"kyle": "Racing"
 },
 "glpracrj": {
 "ongo": "Sports"
@@ -127239,7 +129024,8 @@
 "repo": "Shooter"
 },
 "hvnsgate": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"kyle": "Fighter"
 },
 "hvymetal": {
 "repo": "Shooter",
@@ -127277,6 +129063,9 @@
 },
 "hydrap2": {
 "repo": "Racing"
+},
+"hyperath": {
+"kyle": "Sports"
 },
 "hyperspc": {
 "dist": "Shooter - Multidirectional"
@@ -127727,6 +129516,9 @@
 "slop": "Beat 'em up",
 "ongo": "Beat 'em up"
 },
+"kdeadeye": {
+"kyle": "Shooter"
+},
 "kick": {
 "dist": "Ball and Paddle"
 },
@@ -127789,15 +129581,18 @@
 },
 "knckhead": {
 "ongo": "Fighter",
-"repo": "Fighter"
+"repo": "Fighter",
+"kyle": "Fighter"
 },
 "knckheadj": {
 "ongo": "Fighter",
-"repo": "Fighter"
+"repo": "Fighter",
+"kyle": "Fighter"
 },
 "knckheadjp": {
 "ongo": "Fighter",
-"repo": "Fighter"
+"repo": "Fighter",
+"kyle": "Fighter"
 },
 "knockout": {
 "repo": "Shooter"
@@ -127885,6 +129680,9 @@
 "kyukaidko": {
 "ongo": "Arcade",
 "kuze": "Arcade"
+},
+"lacrazyc": {
+"kyle": "Puzzle"
 },
 "ladybug": {
 "dist": "Maze",
@@ -128062,7 +129860,8 @@
 "dist": "Puzzle"
 },
 "lpadv": {
-"ongo": "Puzzle"
+"ongo": "Puzzle",
+"kyle": "Puzzle"
 },
 "lrescue": {
 "dist": "Lander",
@@ -128314,11 +130113,13 @@
 },
 "mcatadv": {
 "repo": "Platform",
-"ongo": "Platform"
+"ongo": "Platform",
+"kyle": "Platform"
 },
 "mcatadvj": {
 "repo": "Platform",
-"ongo": "Platform"
+"ongo": "Platform",
+"kyle": "Platform"
 },
 "mcwars": {
 "repo": "Shooter"
@@ -128379,13 +130180,16 @@
 "dist": "Fighting"
 },
 "mfjump": {
-"ongo": "Action"
+"ongo": "Action",
+"kyle": "Action"
 },
 "mgcldate": {
-"ongo": "Puzzle"
+"ongo": "Puzzle",
+"kyle": "Puzzle"
 },
 "mgcldtex": {
-"ongo": "Puzzle"
+"ongo": "Puzzle",
+"kyle": "Puzzle"
 },
 "mgcrystl": {
 "ongo": "Platform"
@@ -128848,6 +130652,12 @@
 "nadkong": {
 "dist": "Platform - Climb"
 },
+"nagano98": {
+"kyle": "Sports"
+},
+"naganoj": {
+"kyle": "Sports"
+},
 "namcosil": {
 "dist": "Maze"
 },
@@ -129033,15 +130843,18 @@
 },
 "nost": {
 "repo": "Shooter",
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "nostj": {
 "repo": "Shooter",
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "nostk": {
 "repo": "Shooter",
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "nouryoku": {
 "ongo": "Shooter",
@@ -129065,7 +130878,8 @@
 },
 "nratechu": {
 "ongo": "Puzzle",
-"repo": "Puzzle"
+"repo": "Puzzle",
+"kyle": "Puzzle"
 },
 "nslasher": {
 "dist": "Action",
@@ -129089,11 +130903,13 @@
 },
 "numanath": {
 "ongo": "Sports",
-"repo": "Sports"
+"repo": "Sports",
+"kyle": "Sports"
 },
 "numanathj": {
 "ongo": "Sports",
-"repo": "Sports"
+"repo": "Sports",
+"kyle": "Sports"
 },
 "numcrash": {
 "dist": "Platform"
@@ -129116,7 +130932,8 @@
 },
 "officeye": {
 "ongo": "Puzzle / Party",
-"repo": "Puzzle / Party"
+"repo": "Puzzle / Party",
+"kyle": "Puzzle / Party"
 },
 "offroad": {
 "dist": "Driving",
@@ -130001,6 +131818,9 @@
 "ongo": "Fighting",
 "kuze": "Fighting"
 },
+"powyak96": {
+"kyle": "Sports"
+},
 "pplusad": {
 "dist": "Maze / Pac-Man"
 },
@@ -130043,13 +131863,16 @@
 "dist": "Action / Maze Vertical"
 },
 "psyforce": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"kyle": "Fighter"
 },
 "psyforcej": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"kyle": "Fighter"
 },
 "psyforcex": {
-"ongo": "Fighter"
+"ongo": "Fighter",
+"kyle": "Fighter"
 },
 "psyvaria": {
 "shmupfan": "Shooter",
@@ -130189,7 +132012,8 @@
 },
 "quiztou": {
 "ongo": "Quiz",
-"repo": "Quiz"
+"repo": "Quiz",
+"kyle": "Quiz"
 },
 "qzkklgy2": {
 "ongo": "Arcade",
@@ -130464,16 +132288,20 @@
 "repo": "Shoot"
 },
 "raystorm": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "raystormj": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "raystormo": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "raystormu": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "rbtapper": {
 "dist": "Action"
@@ -130499,98 +132327,121 @@
 },
 "rdft": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdft2": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdft2a": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdft2aa": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdft2it": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdft2j": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdft2ja": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdft2jb": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdft2jc": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdft2s": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdft2t": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdft2u": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdft2us": {
 "repo": "Shooter"
 },
 "rdfta": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdftadia": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdftau": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdftauge": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdftgb": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdftgr": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdftit": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdftj": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdftja": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdfts": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rdftu": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "reactor": {
 "dist": "Shooter"
@@ -130700,15 +132551,18 @@
 },
 "rfjet": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rfjeta": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rfjetj": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rfjets": {
 "repo": "Shooter"
@@ -130718,11 +132572,13 @@
 },
 "rfjett": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "rfjetu": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "ribbit": {
 "ongo": "Arcade",
@@ -130908,13 +132764,15 @@
 "repo": "Shooter"
 },
 "rshark": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "rshark_kyledlester": {
 "ongo": "Shooter"
 },
 "rsharka": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "rsharka_kyledlester": {
 "ongo": "Shooter"
@@ -131384,11 +133242,13 @@
 },
 "senkyu": {
 "ongo": "Puzzle",
-"repo": "Puzzle"
+"repo": "Puzzle",
+"kyle": "Puzzle"
 },
 "senkyua": {
 "ongo": "Puzzle",
-"repo": "Puzzle"
+"repo": "Puzzle",
+"kyle": "Puzzle"
 },
 "sexyparo": {
 "ongo": "Arcade",
@@ -131443,16 +133303,20 @@
 "ongo": "Fighting"
 },
 "sfchamp": {
-"ongo": "Sports"
+"ongo": "Sports",
+"kyle": "Sports"
 },
 "sfchampj": {
-"ongo": "Sports"
+"ongo": "Sports",
+"kyle": "Sports"
 },
 "sfchampo": {
-"ongo": "Sports"
+"ongo": "Sports",
+"kyle": "Sports"
 },
 "sfchampu": {
-"ongo": "Sports"
+"ongo": "Sports",
+"kyle": "Sports"
 },
 "sfex": {
 "ongo": "Fighting"
@@ -131624,7 +133488,8 @@
 "ongo": "Platform"
 },
 "shngmtkb": {
-"ongo": "Puzzle"
+"ongo": "Puzzle",
+"kyle": "Puzzle"
 },
 "shogwarr": {
 "bazset": "Fighter",
@@ -131683,6 +133548,9 @@
 "silvland": {
 "dist": "Sports",
 "repo": "Shooter"
+},
+"simpbowl": {
+"kyle": "Sports"
 },
 "sindbadm": {
 "repo": "Action"
@@ -131827,7 +133695,8 @@
 "repo": "Maze"
 },
 "sncwgltd": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "sngkace": {
 "dist": "Shoot 'Em Up"
@@ -132502,13 +134371,15 @@
 "repo": "Shooter"
 },
 "superx": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "superx_kyledlester": {
 "ongo": "Shooter"
 },
 "superxm": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"kyle": "Shooter"
 },
 "superxm_kyledlester": {
 "ongo": "Shooter"
@@ -132538,6 +134409,9 @@
 },
 "suprlocoo": {
 "dist": "Labyrinth / Maze"
+},
+"susume": {
+"kyle": "Puzzle"
 },
 "sutapper": {
 "dist": "Action"
@@ -132576,15 +134450,18 @@
 },
 "swcourt": {
 "ongo": "Sports",
-"repo": "Sports"
+"repo": "Sports",
+"kyle": "Sports"
 },
 "swcourtb": {
 "ongo": "Sports",
-"repo": "Sports"
+"repo": "Sports",
+"kyle": "Sports"
 },
 "swcourtj": {
 "ongo": "Sports",
-"repo": "Sports"
+"repo": "Sports",
+"kyle": "Sports"
 },
 "swimmer": {
 "repo": "Action"
@@ -132718,7 +134595,8 @@
 "repo": "Shooter"
 },
 "tblkkuzu": {
-"ongo": "Puzzle"
+"ongo": "Puzzle",
+"kyle": "Puzzle"
 },
 "tbyahhoo": {
 "ongo": "Arcade",
@@ -133038,7 +134916,8 @@
 },
 "tinklpit": {
 "ongo": "Action",
-"repo": "Action"
+"repo": "Maze",
+"kyle": "Action"
 },
 "tinstar": {
 "dist": "Action"
@@ -133108,6 +134987,18 @@
 "tmntuc": {
 "repo": "Beat 'em up"
 },
+"tmosh": {
+"kyle": "Simulation"
+},
+"tmoshs": {
+"kyle": "Simulation"
+},
+"tmoshsp": {
+"kyle": "Simulation"
+},
+"tmoshspa": {
+"kyle": "Simulation"
+},
 "tndrcade": {
 "ongo": "Arcade",
 "repo": "Arcade",
@@ -133143,11 +135034,13 @@
 "kuze": "Shooter"
 },
 "tondemo": {
-"ongo": "Action"
+"ongo": "Action",
+"kyle": "Action"
 },
 "topbladv": {
 "ongo": "Action",
-"repo": "Action"
+"repo": "Action",
+"kyle": "Action"
 },
 "topgunbl": {
 "dist": "Shooter - Multidirectional"
@@ -133320,7 +135213,8 @@
 "dist": "Maze"
 },
 "twcupmil": {
-"ongo": "Sports"
+"ongo": "Sports",
+"kyle": "Sports"
 },
 "twinactn": {
 "ongo": "Shooter",
@@ -133619,51 +135513,63 @@
 },
 "viprp1": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "viprp1h": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "viprp1hk": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "viprp1j": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "viprp1k": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "viprp1oj": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "viprp1ot": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "viprp1pt": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "viprp1s": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "viprp1t": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "viprp1u": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "viprp1ua": {
 "ongo": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"kyle": "Shooter"
 },
 "vivdolls": {
 "dist": "Puzzle"
@@ -133788,6 +135694,9 @@
 },
 "wboy": {
 "dist": "Platform"
+},
+"weddingr": {
+"kyle": "Quiz"
 },
 "wexpress": {
 "dist": "Platform / Fighter Scrolling"

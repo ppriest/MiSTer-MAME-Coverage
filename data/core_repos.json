@@ -80,6 +80,7 @@
  ],
  "coinop:darkmist": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
  "coinop:darkseal": [
@@ -1685,6 +1686,50 @@
  "kuze:sdramtest": [
   "kuzearcade/Arcade-NMK16_MiSTer"
  ],
+ "kyle:braveblade": [
+  "kyledlester/Brave_Blade_MiSTer"
+ ],
+ "kyle:crystal": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/BrezzaSoft_Crystal_System_MiSTer"
+ ],
+ "kyle:konamigv": [
+  "kyledlester/Konami_GV_MiSTer"
+ ],
+ "kyle:namco_na1_na2": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/Namco_NA1_NA2_MiSTer"
+ ],
+ "kyle:namco_nb1": [
+  "kyledlester/Namco_NB1_MiSTer"
+ ],
+ "kyle:namco_nb2": [
+  "kyledlester/Namco_NB2_MiSTer"
+ ],
+ "kyle:nerattechu": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/MiSTer_Neratte_Chu"
+ ],
+ "kyle:nostradamus": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/MiSTer_Nostradamus",
+  "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer"
+ ],
+ "kyle:rshark": [
+  "kyledlester/R_Shark_Super_X_MiSTer"
+ ],
+ "kyle:taitob": [
+  "kyledlester/Arcade-TaitoB_MiSTer"
+ ],
+ "kyle:xnzn1": [
+  "kyledlester/ZN1_MiSTer"
+ ],
+ "kyle:xnzn1fxa": [
+  "kyledlester/ZN1_MiSTer"
+ ],
+ "kyle:xnzn1rz": [
+  "kyledlester/ZN1_MiSTer"
+ ],
  "meat:alpha68kn": [
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
@@ -1973,6 +2018,9 @@
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:meathax_argus": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:meathax_heavyunit": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_ikkisunsoft": [
@@ -2350,6 +2398,7 @@
  ],
  "repo:seibuspi": [
   "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/Arcade-SeibuSPI_MiSTer",
   "zakk4223/Arcade-SeibuSPI_MiSTer"
  ],
  "repo:seta": [
