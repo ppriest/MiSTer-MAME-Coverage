@@ -960,7 +960,8 @@
  ],
  "dist:segaxboard": [
   "MiSTer-devel/Arcade-SegaXBoard_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "rossops/Arcade-SegaXBoard_MiSTer"
  ],
  "dist:seibucupsoccer": [
   "MiSTer-devel/Arcade-SeibuCupSoccer_MiSTer",
@@ -2474,6 +2475,12 @@
  "repo:xnsystemfl": [
   "XelaNotPu/SYSTEMFL_MiSTer-Supporter"
  ],
+ "rossops:segaspaceharrier": [
+  "rossops/Arcade-SegaSpaceHarrier_MiSTer"
+ ],
+ "rossops:segayboard": [
+  "rossops/Arcade-SegaYBoard_MiSTer"
+ ],
  "shmupfan:1945kiii": [
   "shmupfan/Arcade-1945kIII_MiSTer"
  ],
@@ -2513,5 +2520,29 @@
  "slop:knucklebash": [
   "TheJesusFish/Arcade-KnuckleBash_MiSTer",
   "TheJesusFish/Slop-Core"
+ ],
+ "xela:system11": [
+  "XelaNotPu/SYSTEM11_MiSTer"
+ ],
+ "xela:xnbrkthru": [
+  "XelaNotPu/BreakThru_MiSTer"
+ ],
+ "xela:xnsystem11": [
+  "XelaNotPu/SYSTEM11_MiSTer-Supporter"
+ ],
+ "xela:xnsystemfl": [
+  "XelaNotPu/SYSTEMFL_MiSTer-Supporter"
+ ],
+ "xela:xnzn1": [
+  "XelaNotPu/ZN1_MiSTer"
+ ],
+ "xela:xnzn1taitofx1b": [
+  "XelaNotPu/ZN1-TaitoFX1B_MiSTer"
+ ],
+ "xela:zn1capcom": [
+  "XelaNotPu/ZN1-Capcom_MiSTer"
+ ],
+ "xela:zn2capcom": [
+  "XelaNotPu/ZN2-Capcom_MiSTer"
  ]
 }
