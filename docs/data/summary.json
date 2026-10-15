@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-15T21:29:59+00:00",
+  "generated": "2026-10-15T22:29:08+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-15T21:29:33+00:00",
+  "mister_generated": "2026-10-15T22:28:40+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-15",
   "ledger_runs": [
-   {
-    "date": "2026-10-14",
-    "note": "alamone 2026-10-12",
-    "cores": 9,
-    "sets": 18,
-    "pairs": 25,
-    "dates_improved": 5,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-14",
     "note": "alamone 2026-10-12",
@@ -51,6 +42,15 @@
     "pairs": 32,
     "dates_improved": 0,
     "cores_removed": 4
+   },
+   {
+    "date": "2026-10-15",
+    "note": "alamone 2026-10-12",
+    "cores": 10,
+    "sets": 0,
+    "pairs": 220,
+    "dates_improved": 0,
+    "cores_removed": 2
    }
   ],
   "genre": {
@@ -104,6 +104,8 @@
    "jtpr": "jtcores unreleased (PRs, branches)",
    "ppriest": "ppriest (MiSTer_ppriest)",
    "kyle": "kyledlester (GitHub repositories)",
+   "rossops": "rossops (GitHub repositories)",
+   "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
    "repo": "GitHub repository only"
   },
   "source_info": {
@@ -173,6 +175,14 @@
    },
    "kyle": {
     "page": "https://github.com/kyledlester?tab=repositories",
+    "db_url": null
+   },
+   "rossops": {
+    "page": "https://github.com/rossops?tab=repositories",
+    "db_url": null
+   },
+   "xela": {
+    "page": "https://github.com/XelaNotPu?tab=repositories",
     "db_url": null
    },
    "repo": {
@@ -1940,9 +1950,11 @@
     "mras": 1
    },
    {
-    "source": "repo",
+    "source": "rossops",
     "repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "releases"
+    ],
     "mras": 13
    },
    {
@@ -2162,39 +2174,51 @@
     "mras": 88
    },
    {
-    "source": "ongo",
+    "source": "xela",
     "repo": "XelaNotPu/BreakThru_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "RELEASE/_Arcade"
+    ],
     "mras": 5
    },
    {
-    "source": "ongo",
+    "source": "xela",
     "repo": "XelaNotPu/SYSTEM11_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "releases/_Arcade"
+    ],
     "mras": 35
    },
    {
-    "source": "ongo",
+    "source": "xela",
     "repo": "XelaNotPu/ZN1-Capcom_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "releases/_Arcade"
+    ],
     "mras": 17
    },
    {
-    "source": "ongo",
+    "source": "xela",
     "repo": "XelaNotPu/ZN1-TaitoFX1B_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "releases/_Arcade"
+    ],
     "mras": 12
    },
    {
-    "source": "ongo",
+    "source": "xela",
     "repo": "XelaNotPu/ZN1_MiSTer",
-    "dirs": null,
-    "mras": 102
+    "dirs": [
+     "release/_Arcade"
+    ],
+    "mras": 51
    },
    {
-    "source": "ongo",
+    "source": "xela",
     "repo": "XelaNotPu/ZN2-Capcom_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "releases/_Arcade"
+    ],
     "mras": 28
    },
    {
@@ -2426,9 +2450,11 @@
     "mras": 67
    },
    {
-    "source": "ongo",
+    "source": "rossops",
     "repo": "rossops/Arcade-SegaYBoard_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "releases"
+    ],
     "mras": 19
    },
    {
@@ -2552,6 +2578,14 @@
     "mras": 2
    },
    {
+    "source": "rossops",
+    "repo": "rossops/Arcade-SegaXBoard_MiSTer",
+    "dirs": [
+     "releases"
+    ],
+    "mras": 25
+   },
+   {
     "source": "kyle",
     "repo": "kyledlester/Konami_GV_MiSTer",
     "dirs": [
@@ -2606,7 +2640,7 @@
     "mras": 8
    },
    {
-    "source": "repo",
+    "source": "xela",
     "repo": "XelaNotPu/SYSTEM11_MiSTer-Supporter",
     "dirs": [
      "releases/_Arcade"
@@ -2614,7 +2648,7 @@
     "mras": 35
    },
    {
-    "source": "repo",
+    "source": "xela",
     "repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
     "dirs": [
      "_Arcade"
@@ -2670,7 +2704,7 @@
    "working_arcade_sets_covered": 5428,
    "working_arcade_titles_source": 1827,
    "working_arcade_titles_binary_only": 258,
-   "cores": 622,
+   "cores": 627,
    "binary_only_cores": 207,
    "unmatched_sets": 436
   }
@@ -13943,6 +13977,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": false,
    "nsets": 3,
@@ -13990,6 +14025,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": false,
    "nsets": 21,
@@ -14060,6 +14096,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": false,
    "nsets": 1,
@@ -14084,6 +14121,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": false,
    "nsets": 6,
@@ -15476,29 +15514,6 @@
    "first_date": "2025-06-25"
   },
   {
-   "id": "ongo:xnbrkthru",
-   "name": "xnbrkthru",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "xnbrkthru.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-15",
-   "binary_only": false,
-   "nsets": 5,
-   "ntitles": 1,
-   "first_date": "2026-07-05"
-  },
-  {
    "id": "ongo:xnsystem12",
    "name": "XNSYSTEM12",
    "source": "ongo",
@@ -15543,52 +15558,6 @@
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-13"
-  },
-  {
-   "id": "ongo:zn1capcom",
-   "name": "ZN1Capcom",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "ZN1Capcom.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-15",
-   "binary_only": false,
-   "nsets": 17,
-   "ntitles": 5,
-   "first_date": "2026-08-29"
-  },
-  {
-   "id": "ongo:zn2capcom",
-   "name": "ZN2Capcom",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "ZN2Capcom.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-15",
-   "binary_only": false,
-   "nsets": 28,
-   "ntitles": 7,
-   "first_date": "2026-08-29"
   },
   {
    "id": "ppriest:ballysente",
@@ -17570,52 +17539,6 @@
    "first_date": "2026-07-28"
   },
   {
-   "id": "repo:xnsystem11",
-   "name": "XNSYSTEM11",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": null,
-   "rbf": "XNSYSTEM11.rbf",
-   "repo": "XelaNotPu/SYSTEM11_MiSTer-Supporter",
-   "url": "https://github.com/XelaNotPu/SYSTEM11_MiSTer-Supporter",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-08",
-   "aliases": [],
-   "last_seen": "2026-10-15",
-   "binary_only": false,
-   "nsets": 35,
-   "ntitles": 11,
-   "first_date": "2026-09-12"
-  },
-  {
-   "id": "repo:xnsystemfl",
-   "name": "XNSYSTEMFL_20260923",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": null,
-   "rbf": "Arcade-XNSYSTEMFL_20260923.rbf",
-   "repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
-   "url": "https://github.com/XelaNotPu/SYSTEMFL_MiSTer-Supporter",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-08",
-   "aliases": [],
-   "last_seen": "2026-10-15",
-   "binary_only": false,
-   "nsets": 5,
-   "ntitles": 2,
-   "first_date": "2026-09-24"
-  },
-  {
    "id": "rmcores:rmgalivan",
    "name": "rmGalivan",
    "source": "rmcores",
@@ -17637,6 +17560,52 @@
    "nsets": 11,
    "ntitles": 3,
    "first_date": "2022-08-31"
+  },
+  {
+   "id": "rossops:segaspaceharrier",
+   "name": "SegaSpaceHarrier (rossops)",
+   "source": "rossops",
+   "source_title": "rossops (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "Arcade-SegaSpaceHarrier_20261004.rbf",
+   "repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
+   "url": "https://github.com/rossops/Arcade-SegaSpaceHarrier_MiSTer",
+   "build_date": "2026-10-03",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 29,
+   "mame_drivers": [
+    "sega/segahang.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 13,
+   "ntitles": 3,
+   "first_date": "2026-08-31"
+  },
+  {
+   "id": "rossops:segayboard",
+   "name": "SegaYBoard",
+   "source": "rossops",
+   "source_title": "rossops (GitHub repositories)",
+   "channel": null,
+   "rbf": "SegaYBoard.rbf",
+   "repo": "rossops/Arcade-SegaYBoard_MiSTer",
+   "url": "https://github.com/rossops/Arcade-SegaYBoard_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 19,
+   "ntitles": 5,
+   "first_date": "2026-08-27"
   },
   {
    "id": "shmupfan:1945kiii",
@@ -17927,6 +17896,182 @@
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-28"
+  },
+  {
+   "id": "xela:system11",
+   "name": "SYSTEM11",
+   "source": "xela",
+   "source_title": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
+   "channel": null,
+   "rbf": "SYSTEM11.rbf",
+   "repo": "XelaNotPu/SYSTEM11_MiSTer",
+   "url": "https://github.com/XelaNotPu/SYSTEM11_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 35,
+   "ntitles": 11,
+   "first_date": "2026-08-21"
+  },
+  {
+   "id": "xela:xnbrkthru",
+   "name": "xnbrkthru",
+   "source": "xela",
+   "source_title": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
+   "channel": null,
+   "rbf": "xnbrkthru.rbf",
+   "repo": "XelaNotPu/BreakThru_MiSTer",
+   "url": "https://github.com/XelaNotPu/BreakThru_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 5,
+   "ntitles": 1,
+   "first_date": "2026-07-05"
+  },
+  {
+   "id": "xela:xnsystem11",
+   "name": "XNSYSTEM11",
+   "source": "xela",
+   "source_title": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
+   "channel": null,
+   "rbf": "XNSYSTEM11.rbf",
+   "repo": "XelaNotPu/SYSTEM11_MiSTer-Supporter",
+   "url": "https://github.com/XelaNotPu/SYSTEM11_MiSTer-Supporter",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 35,
+   "ntitles": 11,
+   "first_date": "2026-08-21"
+  },
+  {
+   "id": "xela:xnsystemfl",
+   "name": "XNSYSTEMFL_20260923",
+   "source": "xela",
+   "source_title": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
+   "channel": null,
+   "rbf": "Arcade-XNSYSTEMFL_20260923.rbf",
+   "repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
+   "url": "https://github.com/XelaNotPu/SYSTEMFL_MiSTer-Supporter",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 5,
+   "ntitles": 2,
+   "first_date": "2026-09-24"
+  },
+  {
+   "id": "xela:xnzn1",
+   "name": "XNZN1",
+   "source": "xela",
+   "source_title": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
+   "channel": null,
+   "rbf": "XNZN1.rbf",
+   "repo": "XelaNotPu/ZN1_MiSTer",
+   "url": "https://github.com/XelaNotPu/ZN1_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 51,
+   "ntitles": 22,
+   "first_date": "2026-07-18"
+  },
+  {
+   "id": "xela:xnzn1taitofx1b",
+   "name": "XNZN1TaitoFX1B",
+   "source": "xela",
+   "source_title": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
+   "channel": null,
+   "rbf": "XNZN1TaitoFX1B.rbf",
+   "repo": "XelaNotPu/ZN1-TaitoFX1B_MiSTer",
+   "url": "https://github.com/XelaNotPu/ZN1-TaitoFX1B_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 12,
+   "ntitles": 3,
+   "first_date": "2026-07-18"
+  },
+  {
+   "id": "xela:zn1capcom",
+   "name": "ZN1Capcom",
+   "source": "xela",
+   "source_title": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
+   "channel": null,
+   "rbf": "ZN1Capcom.rbf",
+   "repo": "XelaNotPu/ZN1-Capcom_MiSTer",
+   "url": "https://github.com/XelaNotPu/ZN1-Capcom_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 17,
+   "ntitles": 5,
+   "first_date": "2026-08-29"
+  },
+  {
+   "id": "xela:zn2capcom",
+   "name": "ZN2Capcom",
+   "source": "xela",
+   "source_title": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
+   "channel": null,
+   "rbf": "ZN2Capcom.rbf",
+   "repo": "XelaNotPu/ZN2-Capcom_MiSTer",
+   "url": "https://github.com/XelaNotPu/ZN2-Capcom_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-15",
+   "last_seen": "2026-10-15",
+   "binary_only": false,
+   "nsets": 28,
+   "ntitles": 7,
+   "first_date": "2026-08-29"
   }
  ],
  "drivers": [
@@ -19510,7 +19655,7 @@
    "sets": 6,
    "sets_covered": 5,
    "cores": [
-    "ongo:xnbrkthru"
+    "xela:xnbrkthru"
    ],
    "first": "2026-07-05"
   },
@@ -23455,7 +23600,7 @@
    "sets_covered": 5,
    "cores": [
     "jtpr:jtsysfl",
-    "repo:xnsystemfl"
+    "xela:xnsystemfl"
    ],
    "first": "2026-09-23"
   },
@@ -23522,7 +23667,8 @@
    "sets": 30,
    "sets_covered": 30,
    "cores": [
-    "repo:xnsystem11"
+    "xela:system11",
+    "xela:xnsystem11"
    ],
    "first": "2026-07-13"
   },
@@ -23535,7 +23681,8 @@
    "cores": [
     "ongo:system12",
     "ongo:xnsystem12",
-    "repo:xnsystem11"
+    "xela:system11",
+    "xela:xnsystem11"
    ],
    "first": "2026-07-14"
   },
@@ -24811,7 +24958,8 @@
    "sets_covered": 13,
    "cores": [
     "jt:jtharier",
-    "repo:segaspaceharrier"
+    "repo:segaspaceharrier",
+    "rossops:segaspaceharrier"
    ],
    "first": "2026-08-31"
   },
@@ -24924,7 +25072,8 @@
    "sets": 21,
    "sets_covered": 19,
    "cores": [
-    "repo:segayboard"
+    "repo:segayboard",
+    "rossops:segayboard"
    ],
    "first": "2026-08-27"
   },
@@ -25546,8 +25695,10 @@
     "kyle:xnzn1fxa",
     "kyle:xnzn1rz",
     "meat:primal2",
-    "ongo:zn1capcom",
-    "ongo:zn2capcom"
+    "xela:xnzn1",
+    "xela:xnzn1taitofx1b",
+    "xela:zn1capcom",
+    "xela:zn2capcom"
    ],
    "first": "2026-07-18"
   },
