@@ -22,11 +22,13 @@
   function resetControls() {
     ALL_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; });
     S.dir = { t: 1, d: -1, c: 1 };
+    S.wlView = "requested";
   }
   function readHash() {
     const p = new URLSearchParams(location.hash.slice(1));
     for (const id of ALL_IDS) if (p.has(id)) { const el = $("#" + id); if (el) el.value = p.get(id); }
     for (const [k, d] of Object.entries(DIRS)) if (p.has(k)) S.dir[d] = +p.get(k) || S.dir[d];
+    S.wlView = p.get("wl") === "fulfilled" ? "fulfilled" : "requested";   // Wishlist: Requested / Fulfilled
     if (p.has("tab")) showTab(p.get("tab"), false);
     $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓"; $("#d-dir").textContent = S.dir.d > 0 ? "↑" : "↓"; $("#c-dir").textContent = S.dir.c > 0 ? "↑" : "↓";
   }
@@ -38,6 +40,7 @@
     for (const [k, d] of Object.entries(DIRS)) if (S.dir[d] !== defaults[d]) p.set(k, S.dir[d]);
     const tab = $(".tabs [aria-selected=true]").dataset.tab;
     if (tab !== "titles") p.set("tab", tab);
+    if (S.wlView === "fulfilled") p.set("wl", "fulfilled");
     history.replaceState(null, "", "#" + p.toString());
   }
 
@@ -637,6 +640,7 @@
   const driverDone = v => { const d = S.driverByFile[v.key]; return !!d && d.titles > 0 && d.covered >= d.titles; };
   function renderWishlist() {
     const note = $("#wishlist-note");
+    $$("#wl-view button").forEach(b => { const on = b.dataset.view === S.wlView; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
     if (!S.api.ok) { $("#wl-drivers tbody").innerHTML = ""; $("#wl-titles tbody").innerHTML = '<tr><td colspan="9" class="muted">The wishlist service is not reachable right now (' + esc(S.api.error || "unknown") + '). Open /api/health to see what is missing.</td></tr>'; return; }
     const fulfilled = S.wlView === "fulfilled";
     const none = c => `<tr><td colspan="${c}" class="muted">${fulfilled ? "Nothing fulfilled yet." : "No requests yet."}</td></tr>`;
@@ -656,7 +660,7 @@
       <td class="num">${t ? esc(t.year) : ""}</td><td>${t ? esc(t.manufacturer) : ""}</td><td class="num">${t ? `${t.ncovered_working}/${t.nworking}` : ""}</td>
       <td class="act">${action("title", v, fulfilled)}</td><td>${voters(v)}</td><td class="num" title="first vote ${esc(ago(v.first_vote))}">${esc(ago(v.last_vote))}</td></tr>`; }).join("") : none(9);
   }
-  $("#wl-view").addEventListener("click", ev => { const b = ev.target.closest("button[data-view]"); if (!b) return; S.wlView = b.dataset.view; renderWishlist(); refreshPlus1(); });
+  $("#wl-view").addEventListener("click", ev => { const b = ev.target.closest("button[data-view]"); if (!b) return; S.wlView = b.dataset.view; writeHash(); renderWishlist(); refreshPlus1(); });
   $("#tab-wishlist").addEventListener("click", ev => {
     const d = ev.target.closest("a[data-wl-drv]"), t = ev.target.closest("a[data-wl-title]");
     if (!d && !t) return; ev.preventDefault();
@@ -839,6 +843,6 @@
     loadWishlist().then(() => { applyTitles(); applyDrivers(); renderWishlist(); });
     // A pasted or back/forward hash applies without a reload (writeHash uses replaceState, so
     // the page's own filter changes do not fire this).
-    addEventListener("hashchange", () => { S.booting = true; resetControls(); readHash(); S.booting = false; applyTitles(); applyDrivers(); applyCores(); applyUnmatched(); });
+    addEventListener("hashchange", () => { S.booting = true; resetControls(); readHash(); S.booting = false; applyTitles(); applyDrivers(); applyCores(); applyUnmatched(); if (S.api && S.api.list) { renderWishlist(); refreshPlus1(); } });
   }).catch(err => { $("#subtitle").textContent = "Could not load data/coverage.json (" + err + "). Serve this folder over HTTP; browsers block fetch() from file://."; });
 })();
