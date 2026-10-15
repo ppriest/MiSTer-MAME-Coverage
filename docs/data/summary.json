@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-15T22:29:08+00:00",
+  "generated": "2026-10-15T22:34:45+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-15T22:28:40+00:00",
+  "mister_generated": "2026-10-15T22:34:19+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-15",
   "ledger_runs": [
-   {
-    "date": "2026-10-14",
-    "note": "alamone 2026-10-12",
-    "cores": 5,
-    "sets": 19,
-    "pairs": 64,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-15",
     "note": "alamone 2026-10-12",
@@ -49,6 +40,15 @@
     "cores": 10,
     "sets": 0,
     "pairs": 220,
+    "dates_improved": 0,
+    "cores_removed": 2
+   },
+   {
+    "date": "2026-10-15",
+    "note": "alamone 2026-10-12",
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
     "dates_improved": 0,
     "cores_removed": 2
    }
@@ -2704,7 +2704,7 @@
    "working_arcade_sets_covered": 5428,
    "working_arcade_titles_source": 1827,
    "working_arcade_titles_binary_only": 258,
-   "cores": 627,
+   "cores": 625,
    "binary_only_cores": 207,
    "unmatched_sets": 436
   }
@@ -16983,31 +16983,6 @@
    "first_date": "2026-04-18"
   },
   {
-   "id": "repo:segaspaceharrier",
-   "name": "SegaSpaceHarrier (rossops)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-SegaSpaceHarrier_20261004.rbf",
-   "repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
-   "url": "https://github.com/rossops/Arcade-SegaSpaceHarrier_MiSTer",
-   "build_date": "2026-10-03",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 29,
-   "mame_drivers": [
-    "sega/segahang.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-15",
-   "binary_only": false,
-   "nsets": 13,
-   "ntitles": 3,
-   "first_date": "2026-08-31"
-  },
-  {
    "id": "repo:segasys1+2",
    "name": "SegaSys1+2 (TheJesusFish)",
    "source": "repo",
@@ -17056,31 +17031,6 @@
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2026-07-28"
-  },
-  {
-   "id": "repo:segayboard",
-   "name": "SegaYBoard (rossops)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-SegaYBoard_20261003.rbf",
-   "repo": "rossops/Arcade-SegaYBoard_MiSTer",
-   "url": "https://github.com/rossops/Arcade-SegaYBoard_MiSTer",
-   "build_date": "2026-10-03",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 38,
-   "mame_drivers": [
-    "sega/segaybd.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-11",
-   "binary_only": false,
-   "nsets": 19,
-   "ntitles": 5,
-   "first_date": "2026-08-27"
   },
   {
    "id": "repo:seibuspi",
@@ -17579,6 +17529,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": false,
    "nsets": 13,
@@ -17601,6 +17552,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": false,
    "nsets": 19,
@@ -17913,6 +17865,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": false,
    "nsets": 35,
@@ -17935,6 +17888,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": false,
    "nsets": 5,
@@ -17957,6 +17911,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": false,
    "nsets": 35,
@@ -17979,6 +17934,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": false,
    "nsets": 5,
@@ -18001,6 +17957,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": false,
    "nsets": 51,
@@ -18023,6 +17980,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": false,
    "nsets": 12,
@@ -18045,6 +18003,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": false,
    "nsets": 17,
@@ -18067,6 +18026,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-15",
+   "aliases": [],
    "last_seen": "2026-10-15",
    "binary_only": false,
    "nsets": 28,
@@ -24958,7 +24918,6 @@
    "sets_covered": 13,
    "cores": [
     "jt:jtharier",
-    "repo:segaspaceharrier",
     "rossops:segaspaceharrier"
    ],
    "first": "2026-08-31"
@@ -25072,7 +25031,6 @@
    "sets": 21,
    "sets_covered": 19,
    "cores": [
-    "repo:segayboard",
     "rossops:segayboard"
    ],
    "first": "2026-08-27"

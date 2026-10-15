@@ -6,14 +6,6 @@
 {
 "date": "2026-10-04",
 "note": "alamone 2026-10-01",
-"cores": 0,
-"sets": 0,
-"pairs": 0,
-"dates_improved": 0
-},
-{
-"date": "2026-10-04",
-"note": "alamone 2026-10-01",
 "cores": 1,
 "sets": 15,
 "pairs": 15,
@@ -452,6 +444,15 @@
 "cores": 10,
 "sets": 0,
 "pairs": 220,
+"dates_improved": 0,
+"cores_removed": 2
+},
+{
+"date": "2026-10-15",
+"note": "alamone 2026-10-12",
+"cores": 0,
+"sets": 0,
+"pairs": 0,
 "dates_improved": 0,
 "cores_removed": 2
 }
@@ -14378,27 +14379,6 @@
 "aliases": [],
 "last_seen": "2026-10-15"
 },
-"repo:segaspaceharrier": {
-"id": "repo:segaspaceharrier",
-"name": "Arcade-SegaSpaceHarrier (rossops)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Arcade-SegaSpaceHarrier_20261004.rbf",
-"repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
-"url": "https://github.com/rossops/Arcade-SegaSpaceHarrier_MiSTer",
-"build_date": "2026-10-03",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 29,
-"mame_drivers": [
-"sega/segahang.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-15"
-},
 "repo:segasys1+2": {
 "id": "repo:segasys1+2",
 "name": "SegaSys1+2 (TheJesusFish)",
@@ -14440,27 +14420,6 @@
 "first_recorded": "2026-10-04",
 "aliases": [],
 "last_seen": "2026-10-04"
-},
-"repo:segayboard": {
-"id": "repo:segayboard",
-"name": "Arcade-SegaYBoard (rossops)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Arcade-SegaYBoard_20261003.rbf",
-"repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"url": "https://github.com/rossops/Arcade-SegaYBoard_MiSTer",
-"build_date": "2026-10-03",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 38,
-"mame_drivers": [
-"sega/segaybd.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-11"
 },
 "repo:seibuspi": {
 "id": "repo:seibuspi",
@@ -14883,6 +14842,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "rossops:segayboard": {
@@ -14901,6 +14861,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "shmupfan:1945kiii": {
@@ -15161,6 +15122,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "xela:xnbrkthru": {
@@ -15179,6 +15141,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "xela:xnsystem11": {
@@ -15197,6 +15160,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "xela:xnsystemfl": {
@@ -15215,6 +15179,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "xela:xnzn1": {
@@ -15233,6 +15198,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "xela:xnzn1taitofx1b": {
@@ -15251,6 +15217,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "xela:zn1capcom": {
@@ -15269,6 +15236,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 },
 "xela:zn2capcom": {
@@ -15287,6 +15255,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
 "last_seen": "2026-10-15"
 }
 },
@@ -42048,19 +42017,6 @@
 }
 },
 "endurobl": {
-"repo:segaspaceharrier": {
-"core": "repo:segaspaceharrier",
-"date": "2026-09-07",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
-"first_path": "releases/_alternatives/_Enduro Racer/Enduro Racer (bootleg set 1).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Enduro Racer (bootleg set 1).mra"
-},
 "rossops:segaspaceharrier": {
 "core": "rossops:segaspaceharrier",
 "date": "2026-09-07",
@@ -42081,19 +42037,6 @@
 "date": "2026-09-07",
 "date_quality": "git",
 "via": "jt",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/Enduro Racer (Rev A, YM2151, FD1089B 317-0013A).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Enduro Racer (Rev A, YM2151, FD1089B 317-0013A).mra"
-},
-"repo:segaspaceharrier": {
-"core": "repo:segaspaceharrier",
-"date": "2026-09-07",
-"date_quality": "git",
-"via": "repo",
 "wip": false,
 "alt": false,
 "first_repo": "jotego/jtbin",
@@ -42130,19 +42073,6 @@
 "last_seen": "2026-10-15",
 "mra": "_Arcade/Enduro Racer (YM2203, FD1089B 317-0013A).mra"
 },
-"repo:segaspaceharrier": {
-"core": "repo:segaspaceharrier",
-"date": "2026-09-07",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Enduro Racer/Enduro Racer (YM2203, FD1089B 317-0013A).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Enduro Racer (YM2203, FD1089B 317-0013A).mra"
-},
 "rossops:segaspaceharrier": {
 "core": "rossops:segaspaceharrier",
 "date": "2026-09-07",
@@ -42158,19 +42088,6 @@
 }
 },
 "enduror1d": {
-"repo:segaspaceharrier": {
-"core": "repo:segaspaceharrier",
-"date": "2026-09-07",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
-"first_path": "releases/_alternatives/_Enduro Racer/Enduro Racer (bootleg, YM2203) [decrypted].mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Enduro Racer (bootleg, YM2203) [decrypted].mra"
-},
 "rossops:segaspaceharrier": {
 "core": "rossops:segaspaceharrier",
 "date": "2026-09-07",
@@ -42193,19 +42110,6 @@
 "via": "jt",
 "wip": false,
 "alt": false,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Enduro Racer/Enduro Racer (Rev A, YM2151, mask ROM sprites, FD1089B 317-0013A).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Enduro Racer (Rev A, YM2151, mask ROM sprites, FD1089B 317-0013A).mra"
-},
-"repo:segaspaceharrier": {
-"core": "repo:segaspaceharrier",
-"date": "2026-09-07",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_Enduro Racer/Enduro Racer (Rev A, YM2151, mask ROM sprites, FD1089B 317-0013A).mra",
 "first_recorded": "2026-10-04",
@@ -42240,19 +42144,6 @@
 "last_seen": "2026-10-15",
 "mra": "_Arcade/Enduro Racer (YM2151, FD1089B 317-0013A).mra"
 },
-"repo:segaspaceharrier": {
-"core": "repo:segaspaceharrier",
-"date": "2026-09-07",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Enduro Racer/Enduro Racer (YM2151, FD1089B 317-0013A).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Enduro Racer (YM2151, FD1089B 317-0013A).mra"
-},
 "rossops:segaspaceharrier": {
 "core": "rossops:segaspaceharrier",
 "date": "2026-09-07",
@@ -42268,19 +42159,6 @@
 }
 },
 "endurord": {
-"repo:segaspaceharrier": {
-"core": "repo:segaspaceharrier",
-"date": "2026-09-07",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
-"first_path": "releases/_alternatives/_Enduro Racer/Enduro Racer (bootleg of Rev A, YM2151) [decrypted].mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Enduro Racer (bootleg of Rev A, YM2151) [decrypted].mra"
-},
 "rossops:segaspaceharrier": {
 "core": "rossops:segaspaceharrier",
 "date": "2026-09-07",
@@ -50428,19 +50306,6 @@
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
 },
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-27",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/Galaxy Force II.mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/Galaxy Force 2.mra"
-},
 "rossops:segayboard": {
 "core": "rossops:segayboard",
 "date": "2026-08-27",
@@ -50468,19 +50333,6 @@
 "mra": "_Arcade/_alternatives/_Galaxy Force 2/Galaxy Force 2 (Japan).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/_alternatives/_Galaxy Force II/Galaxy Force II (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Galaxy Force 2/Galaxy Force 2 (Japan).mra"
 },
 "rossops:segayboard": {
 "core": "rossops:segayboard",
@@ -50510,19 +50362,6 @@
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
 },
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/_alternatives/_Galaxy Force II/Galaxy Force II (Japan, Rev A).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Galaxy Force 2/Galaxy Force 2 (Japan, Rev A).mra"
-},
 "rossops:segayboard": {
 "core": "rossops:segayboard",
 "date": "2026-08-29",
@@ -50550,19 +50389,6 @@
 "mra": "_Arcade/_alternatives/_Galaxy Force 2/Galaxy Force 2 (Super Deluxe unit).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/_alternatives/_Galaxy Force II/Galaxy Force II (Super Deluxe unit).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Galaxy Force 2/Galaxy Force 2 (Super Deluxe unit).mra"
 },
 "rossops:segayboard": {
 "core": "rossops:segayboard",
@@ -51179,19 +51005,6 @@
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
 },
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/G-LOC Air Battle.mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/G-LOC Air Battle (World).mra"
-},
 "rossops:segayboard": {
 "core": "rossops:segayboard",
 "date": "2026-08-29",
@@ -51219,19 +51032,6 @@
 "mra": "_Arcade/_alternatives/_G-LOC Air Battle/G-LOC Air Battle (Japan).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/_alternatives/_G-LOC Air Battle/G-LOC Air Battle (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_G-LOC Air Battle/G-LOC Air Battle (Japan).mra"
 },
 "rossops:segayboard": {
 "core": "rossops:segayboard",
@@ -51261,19 +51061,6 @@
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
 },
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/G-LOC R360.mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/G-LOC R360 (World).mra"
-},
 "rossops:segayboard": {
 "core": "rossops:segayboard",
 "date": "2026-08-29",
@@ -51302,19 +51089,6 @@
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
 },
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/_alternatives/_G-LOC R360/G-LOC R360 (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_G-LOC R360/G-LOC R360 (Japan).mra"
-},
 "rossops:segayboard": {
 "core": "rossops:segayboard",
 "date": "2026-08-29",
@@ -51342,19 +51116,6 @@
 "mra": "_Arcade/_alternatives/_G-LOC Air Battle/G-LOC Air Battle (US).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/_alternatives/_G-LOC Air Battle/G-LOC Air Battle (US).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_G-LOC Air Battle/G-LOC Air Battle (US).mra"
 },
 "rossops:segayboard": {
 "core": "rossops:segayboard",
@@ -54354,19 +54115,6 @@
 "last_seen": "2026-10-15",
 "mra": "_Arcade/Hang-On (Rev A).mra"
 },
-"repo:segaspaceharrier": {
-"core": "repo:segaspaceharrier",
-"date": "2026-08-31",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
-"first_path": "releases/Hang-On.mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Hang-On.mra"
-},
 "rossops:segaspaceharrier": {
 "core": "rossops:segaspaceharrier",
 "date": "2026-08-31",
@@ -54395,19 +54143,6 @@
 "last_seen": "2026-10-15",
 "mra": "_Arcade/Hang-On.mra"
 },
-"repo:segaspaceharrier": {
-"core": "repo:segaspaceharrier",
-"date": "2026-09-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
-"first_path": "releases/_alternatives/_Hang-On/Hang-On (original).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Hang-On (original).mra"
-},
 "rossops:segaspaceharrier": {
 "core": "rossops:segaspaceharrier",
 "date": "2026-09-03",
@@ -54430,19 +54165,6 @@
 "via": "jt",
 "wip": false,
 "alt": false,
-"first_repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
-"first_path": "releases/_alternatives/_Hang-On/Hang-On (Rev A, ride-on).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Hang-On (Rev A, ride-on).mra"
-},
-"repo:segaspaceharrier": {
-"core": "repo:segaspaceharrier",
-"date": "2026-09-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
 "first_repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
 "first_path": "releases/_alternatives/_Hang-On/Hang-On (Rev A, ride-on).mra",
 "first_recorded": "2026-10-04",
@@ -54479,19 +54201,6 @@
 }
 },
 "hangonvf": {
-"repo:segaspaceharrier": {
-"core": "repo:segaspaceharrier",
-"date": "2026-09-03",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
-"first_path": "releases/_alternatives/_Hang-On/VF (bootleg of Hang-On).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/VF (bootleg of Hang-On).mra"
-},
 "rossops:segaspaceharrier": {
 "core": "rossops:segaspaceharrier",
 "date": "2026-09-03",
@@ -80567,19 +80276,6 @@
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
 },
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/Power Drift.mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/Power Drift (World, Rev A).mra"
-},
 "rossops:segayboard": {
 "core": "rossops:segayboard",
 "date": "2026-08-29",
@@ -80607,19 +80303,6 @@
 "mra": "_Arcade/_alternatives/_Power Drift/Power Drift (World).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/_alternatives/_Power Drift/Power Drift (World).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Power Drift/Power Drift (World).mra"
 },
 "rossops:segayboard": {
 "core": "rossops:segayboard",
@@ -80649,19 +80332,6 @@
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
 },
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/_alternatives/_Power Drift/Power Drift (World, Earlier).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Power Drift/Power Drift (World, earlier).mra"
-},
 "rossops:segayboard": {
 "core": "rossops:segayboard",
 "date": "2026-08-29",
@@ -80690,19 +80360,6 @@
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
 },
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/_alternatives/_Power Drift/Power Drift (Japan, Rev C).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Power Drift/Power Drift (Japan, Rev C).mra"
-},
 "rossops:segayboard": {
 "core": "rossops:segayboard",
 "date": "2026-08-29",
@@ -80730,19 +80387,6 @@
 "mra": "_Arcade/_alternatives/_Power Drift/Power Drift (Japan, Rev B).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/_alternatives/_Power Drift/Power Drift (Japan, Rev B).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Power Drift/Power Drift (Japan, Rev B).mra"
 },
 "rossops:segayboard": {
 "core": "rossops:segayboard",
@@ -89058,19 +88702,6 @@
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
 },
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/Rail Chase.mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/Rail Chase (World).mra"
-},
 "rossops:segayboard": {
 "core": "rossops:segayboard",
 "date": "2026-08-29",
@@ -89099,19 +88730,6 @@
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
 },
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/_alternatives/_Rail Chase/Rail Chase (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Rail Chase/Rail Chase (Japan).mra"
-},
 "rossops:segayboard": {
 "core": "rossops:segayboard",
 "date": "2026-08-29",
@@ -89139,19 +88757,6 @@
 "mra": "_Arcade/_alternatives/_Rail Chase/Rail Chase (Japan, Rev B).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/_alternatives/_Rail Chase/Rail Chase (Japan, Rev B).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Rail Chase/Rail Chase (Japan, Rev B).mra"
 },
 "rossops:segayboard": {
 "core": "rossops:segayboard",
@@ -100214,19 +99819,6 @@
 "last_seen": "2026-10-15",
 "mra": "_Arcade/Space Harrier (Rev A, 8751 315-5163A).mra"
 },
-"repo:segaspaceharrier": {
-"core": "repo:segaspaceharrier",
-"date": "2026-09-05",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
-"first_path": "releases/Space Harrier (Rev A, 8751 315-5163A).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Space Harrier (Rev A, 8751 315-5163A).mra"
-},
 "rossops:segaspaceharrier": {
 "core": "rossops:segaspaceharrier",
 "date": "2026-09-05",
@@ -100249,19 +99841,6 @@
 "via": "jt",
 "wip": false,
 "alt": false,
-"first_repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
-"first_path": "releases/Space Harrier (8751 315-5163).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-15",
-"mra": "_Arcade/Space Harrier (8751 315-5163).mra"
-},
-"repo:segaspaceharrier": {
-"core": "repo:segaspaceharrier",
-"date": "2026-09-05",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
 "first_repo": "rossops/Arcade-SegaSpaceHarrier_MiSTer",
 "first_path": "releases/Space Harrier (8751 315-5163).mra",
 "first_recorded": "2026-10-04",
@@ -109060,19 +108639,6 @@
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
 },
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/Strike Fighter.mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/Strike Fighter (World).mra"
-},
 "rossops:segayboard": {
 "core": "rossops:segayboard",
 "date": "2026-08-29",
@@ -109100,19 +108666,6 @@
 "mra": "_Arcade/_alternatives/_Strike Fighter/Strike Fighter (Japan).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-15"
-},
-"repo:segayboard": {
-"core": "repo:segayboard",
-"date": "2026-08-29",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "rossops/Arcade-SegaYBoard_MiSTer",
-"first_path": "releases/_alternatives/_Strike Fighter/Strike Fighter (Japan).mra",
-"first_recorded": "2026-10-04",
-"last_seen": "2026-10-11",
-"mra": "_Arcade/_alternatives/_Strike Fighter/Strike Fighter (Japan).mra"
 },
 "rossops:segayboard": {
 "core": "rossops:segayboard",
