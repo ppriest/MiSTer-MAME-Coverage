@@ -79,7 +79,8 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:darkmist": [
-  "Coin-OpCollection/Distribution-MiSTerFPGA"
+  "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "meathax/meatcores"
  ],
  "coinop:darkseal": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
@@ -1873,7 +1874,13 @@
  "ongo:f1grpr": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:ffambush": [
+  "jlrh/jlrh-misterfpga-db"
+ ],
  "ongo:ffbbusters": [
+  "jlrh/jlrh-misterfpga-db"
+ ],
+ "ongo:ffcrzrally": [
   "jlrh/jlrh-misterfpga-db"
  ],
  "ongo:ffdeadang": [
@@ -1882,10 +1889,22 @@
  "ongo:ffgwar": [
   "jlrh/jlrh-misterfpga-db"
  ],
+ "ongo:ffholeland": [
+  "jlrh/jlrh-misterfpga-db"
+ ],
  "ongo:ffmechatt": [
   "jlrh/jlrh-misterfpga-db"
  ],
+ "ongo:ffsauro": [
+  "jlrh/jlrh-misterfpga-db"
+ ],
  "ongo:ffshadfrce": [
+  "jlrh/jlrh-misterfpga-db"
+ ],
+ "ongo:ffspeedbal": [
+  "jlrh/jlrh-misterfpga-db"
+ ],
+ "ongo:fftrckydoc": [
   "jlrh/jlrh-misterfpga-db"
  ],
  "ongo:galmedes_bazset": [
@@ -1893,6 +1912,9 @@
  ],
  "ongo:gigandes_bazset": [
   "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:heavyunit": [
+  "meathax/meatcores"
  ],
  "ongo:ikacore_cv1k": [
   "OngoGablogian/MiSTer_Ongo"
