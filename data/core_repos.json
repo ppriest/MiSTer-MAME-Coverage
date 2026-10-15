@@ -1689,14 +1689,31 @@
  "kyle:braveblade": [
   "kyledlester/Brave_Blade_MiSTer"
  ],
+ "kyle:crystal": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/BrezzaSoft_Crystal_System_MiSTer"
+ ],
  "kyle:konamigv": [
   "kyledlester/Konami_GV_MiSTer"
+ ],
+ "kyle:namco_na1_na2": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/Namco_NA1_NA2_MiSTer"
  ],
  "kyle:namco_nb1": [
   "kyledlester/Namco_NB1_MiSTer"
  ],
  "kyle:namco_nb2": [
   "kyledlester/Namco_NB2_MiSTer"
+ ],
+ "kyle:nerattechu": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/MiSTer_Neratte_Chu"
+ ],
+ "kyle:nostradamus": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/MiSTer_Nostradamus",
+  "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer"
  ],
  "kyle:rshark": [
   "kyledlester/R_Shark_Super_X_MiSTer"
