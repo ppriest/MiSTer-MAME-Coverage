@@ -2118,6 +2118,12 @@
  "ongo:simple156": [
   "meathax/meatcores"
  ],
+ "ongo:spy": [
+  "meathax/meatcores"
+ ],
+ "ongo:steelforce": [
+  "meathax/meatcores"
+ ],
  "ongo:superman_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
