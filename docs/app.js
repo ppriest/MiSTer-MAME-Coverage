@@ -398,6 +398,7 @@
     const dir = S.dir.t;
     const cmp = {
       desc: (a, b) => a.desc.localeCompare(b.desc),
+      name: (a, b) => a.name.localeCompare(b.name),
       year: (a, b) => (a.year || "").localeCompare(b.year || "") || a.desc.localeCompare(b.desc),
       manufacturer: (a, b) => a.manufacturer.localeCompare(b.manufacturer) || a.desc.localeCompare(b.desc),
       genre: (a, b) => (a.genre || "~").localeCompare(b.genre || "~") || a.desc.localeCompare(b.desc),
@@ -406,6 +407,7 @@
       nsets: (a, b) => a.nsets - b.nsets || a.desc.localeCompare(b.desc),
     }[f.sort];
     rows.sort((a, b) => dir * cmp(a, b));
+    markSort("titles-table", f.sort, dir);
     S.filtered = rows; S.shown = 0;
     renderCharts();
     $("#titles-table tbody").innerHTML = "";
@@ -550,6 +552,7 @@
       first: (a, b) => (a.first || "9999").localeCompare(b.first || "9999") || a.sourcefile.localeCompare(b.sourcefile),
     }[sort];
     rows.sort((a, b) => dir * cmp(a, b));
+    markSort("drivers-table", sort, dir);
     const grem = genre ? ` · ${fmt(rows.reduce((n, d) => n + gstat(d).titles - gstat(d).covered, 0))} ${genre} titles remaining` : "";
     writeHash();
     $("#drivers-count").textContent = `${fmt(rows.length)} drivers · ${fmt(rows.reduce((n, d) => n + d.titles - d.covered, 0))} titles remaining${grem} · click a driver to list its titles`;
@@ -584,6 +587,7 @@
       build_date: (a, b) => (a.build_date || "0000").localeCompare(b.build_date || "0000") || a.name.localeCompare(b.name),
     }[sort];
     rows.sort((a, b) => dir * cmp(a, b));
+    markSort("cores-table", sort, dir);
     writeHash();
     $("#cores-count").textContent = `${fmt(rows.length)} cores · click a core to list its titles`;
     $("#cores-table tbody").innerHTML = rows.map(c => `<tr>
@@ -707,6 +711,34 @@
     return best ? best : "**launch.title:Arcade/" + t.desc;
   }
   $("#slop-jump").addEventListener("click", ev => { ev.preventDefault(); const box = $("#slopbox"); box.open = true; box.scrollIntoView({ behavior: "smooth", block: "start" }); });
+  // ---------- clickable column headings ----------
+  // A heading with data-sort sorts its table: the first click ascending, the second descending, the active one marked with an arrow.
+  function markSort(tableId, key, dir) {
+    $$(`#${tableId} th[data-sort]`).forEach(th => {
+      const on = th.dataset.sort === key;
+      th.classList.toggle("sort-asc", on && dir > 0); th.classList.toggle("sort-desc", on && dir < 0);
+      th.setAttribute("aria-sort", on ? (dir > 0 ? "ascending" : "descending") : "none");
+    });
+  }
+  const HEAD_SORTS = {      // tables whose sort lives in a control (and the URL hash): select, direction key + button, re-render
+    "titles-table": { sel: "#f-sort", dir: "t", btn: "#f-dir", apply: () => applyTitles() },
+    "drivers-table": { sel: "#d-sort", dir: "d", btn: "#d-dir", apply: () => applyDrivers() },
+    "cores-table": { sel: "#c-sort", dir: "c", btn: "#c-dir", apply: () => applyCores() },
+  };
+  S.tsort = { "databases-table": { key: "titles", dir: -1 }, "unmatched-table": { key: "set", dir: 1 } };   // the others keep their own state
+  const TSORT_APPLY = { "databases-table": () => renderDatabases(), "unmatched-table": () => applyUnmatched() };
+  document.addEventListener("click", ev => {
+    const th = ev.target.closest("th[data-sort]"); if (!th) return;
+    const tableId = th.closest("table").id, key = th.dataset.sort, c = HEAD_SORTS[tableId];
+    if (c) {
+      if ($(c.sel).value === key) S.dir[c.dir] *= -1; else { $(c.sel).value = key; S.dir[c.dir] = 1; }
+      $(c.btn).textContent = S.dir[c.dir] > 0 ? "↑" : "↓"; c.apply();
+    } else {
+      const t = S.tsort[tableId];
+      if (t.key === key) t.dir *= -1; else { t.key = key; t.dir = 1; }
+      TSORT_APPLY[tableId]();
+    }
+  });
   // downloader.ini databases: the list published under /downloader-ini/ (built by tools/downloader_databases.py).
   const slopCopy = (btn, text, done) => { try { navigator.clipboard.writeText(text).then(() => { btn.textContent = done; }); } catch (e) { /* clipboard unavailable */ } };
   $("#slop-copy").addEventListener("click", ev => slopCopy(ev.target, $("#slop-ini").textContent, "Copied"));
@@ -791,7 +823,9 @@
       t.sets.forEach(s => { if (!s.working) return; const here = new Set(s.cores.map(r => srcOf(r.core))); here.forEach(k => { const a = agg.get(k); if (a) { a.sets++; seen.add(k); } }); });
       seen.forEach(k => agg.get(k).titles++);
     });
-    const rows = Array.from(agg).sort((a, b) => b[1].titles - a[1].titles);
+    const ts = S.tsort["databases-table"], dkey = { name: ([k]) => titles[k].toLowerCase(), cores: ([, a]) => a.cores, titles: ([, a]) => a.titles, sets: ([, a]) => a.sets }[ts.key];
+    const rows = Array.from(agg).sort((a, b) => ts.dir * ((x, y) => x < y ? -1 : x > y ? 1 : 0)(dkey(a), dkey(b)) || b[1].titles - a[1].titles);
+    markSort("databases-table", ts.key, ts.dir);
     const link = u => u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https:\/\//, ""))}</a>` : '<span class="muted">—</span>';
     // The database's text is its own URL; the link opens it in the Downloader DB inspector.
     const dbLink = u => u ? `<a href="https://theypsilon.github.io/DB-Inspector_MiSTer/#db=${u}" target="_blank" rel="noopener" title="inspect this database">${esc(u.replace(/^https:\/\//, ""))}</a>` : '<span class="muted">—</span>';
@@ -814,6 +848,9 @@
       const hay = (u.set + " " + u.cores.map(id => coreName(id) + " " + id).join(" ") + (u.hbmame ? " homebrew hacks hbmame " + (u.desc || "") + " " + (u.manufacturer || "") + " " + (u.parent || "") : "")).toLowerCase();
       return words.every(w => hay.includes(w));
     });
+    const us = S.tsort["unmatched-table"], ukey = { set: u => u.set, desc: u => (u.desc || "").toLowerCase(), year: u => u.year || "", manufacturer: u => (u.manufacturer || "").toLowerCase(), ncores: u => u.cores.length }[us.key];
+    rows.sort((a, b) => us.dir * ((x, y) => x < y ? -1 : x > y ? 1 : 0)(ukey(a), ukey(b)) || a.set.localeCompare(b.set));
+    markSort("unmatched-table", us.key, us.dir);
     const h = S.data.meta.hbmame || {}, nhb = S.data.unmatched.filter(u => u.hbmame).length;
     $("#unmatched-count").textContent = `${fmt(rows.length)} of ${fmt(S.data.unmatched.length)} sets`;
     $("#unmatched-note").textContent = "Set names found in MiSTer MRAs that do not exist in this MAME version: hacks, homebrew, renamed or removed sets, or MRA typos." +
