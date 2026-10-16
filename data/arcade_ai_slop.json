@@ -64,7 +64,7 @@
       "home": "https://github.com/jlrh/jlrh-misterfpga-db",
       "db_url": "https://raw.githubusercontent.com/jlrh/jlrh-misterfpga-db/db/db.json.zip",
       "enabled": true,
-      "note": "included by choice; 7 of 39 cores are binary-only (per MiSTer Coverage)"
+      "note": "source is available for most cores (Verilog/SystemVerilog in the SNK, Konami, Technos, Taito, Gaelco, Video System, Seibu and Cidelsa repositories); the Tecfri and Inder/Dinamic repositories hold builds and MRAs only (MiSTer Coverage flags those 7 cores binary-only)"
     },
     {
       "name": "Blackwine Sega System 1/2 (TheJesusFish)",

@@ -2,7 +2,7 @@
 
 One database to add to get access to all the AI-assisted cores that publish their own databases, so long as source-available and willing to fix reported bugs
 
-Last checked 2026-10-16 08:15 UTC.
+Last checked 2026-10-16 18:16 UTC.
 
 | Database | db_id | Cores+MRAs | Status |
 |---|---|---|---|
@@ -13,7 +13,7 @@ Last checked 2026-10-16 08:15 UTC.
 | [shmupfan (Distribution)](https://github.com/shmupfan/Distribution) | shmupfan | 111 | ok |
 | [rmcores (rmonic79)](https://github.com/rmonic79/rmcores) | rmonic79/rmcores | 74 | ok |
 | [ppriest (MiSTer_ppriest)](https://github.com/ppriest/MiSTer_ppriest) | ppriest/MiSTer_ppriest | 230 | ok |
-| [MeatCores (meathax)](https://github.com/meathax/meatcores) | meathax/meatcores | 196 | ok |
+| [MeatCores (meathax)](https://github.com/meathax/meatcores) | meathax/meatcores | 203 | ok |
 | [bazset (MiSTer_BAZSET)](https://github.com/bazset/MiSTer_BAZSET) | bazset/MiSTer_BAZSET | 59 | ok |
 | [jlrh](https://github.com/jlrh/jlrh-misterfpga-db) | jlrh/jlrh-misterfpga-db | 119 | ok |
 

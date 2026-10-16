@@ -1,6 +1,6 @@
 {
- "checked": "2026-10-16 08:15 UTC",
- "changed": true,
+ "checked": "2026-10-16 18:16 UTC",
+ "changed": false,
  "databases": 10,
  "description": "One database to add to get access to all the AI-assisted cores that publish their own databases, so long as source-available and willing to fix reported bugs",
  "install": "[arcade-ai-slop]\ndb_url = https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/db.json.zip",
