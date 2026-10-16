@@ -1,72 +1,16 @@
 {
- "checked": "2026-10-16 23:41 UTC",
+ "checked": "2026-10-16 23:50 UTC",
  "databases": 11,
  "description": "Databases to add to get the source-available AI-assisted arcade cores, from developers who are willing to fix reported bugs",
- "install": "[Gm0rk/Gm0rkCores]\ndb_url = https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip\ndescription = 'Gm0rkCores (Gm0rk)'\n\n[TheJesusFish/Slop-Core]\ndb_url = https://raw.githubusercontent.com/TheJesusFish/Slop-Core/db/db.json.zip\ndescription = 'Slop Cores (TheJesusFish)'\n\n[kuzearcade/kuzecores]\ndb_url = https://raw.githubusercontent.com/kuzearcade/kuzecores/db/db.json.zip\ndescription = 'kuzecores (kuzearcade)'\n\n[bmo00/arcfpga-mister-db]\ndb_url = https://raw.githubusercontent.com/bmo00/arcfpga-mister-db/db/db.json.zip\ndescription = 'arcfpga (bmo00)'\n\n[shmupfan]\ndb_url = https://raw.githubusercontent.com/shmupfan/Distribution/main/db.json\ndescription = 'shmupfan (Distribution)'\n\n[rmonic79/rmcores]\ndb_url = https://raw.githubusercontent.com/rmonic79/rmcores/db/db.json.zip\ndescription = 'rmcores (rmonic79)'\n\n[ppriest/MiSTer_ppriest]\ndb_url = https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip\ndescription = 'ppriest (MiSTer_ppriest)'\n\n[meathax/meatcores]\ndb_url = https://raw.githubusercontent.com/meathax/meatcores/db/db.json.zip\ndescription = 'MeatCores (meathax)'\n\n[bazset/MiSTer_BAZSET]\ndb_url = https://raw.githubusercontent.com/bazset/MiSTer_BAZSET/db/db.json.zip\ndescription = 'bazset (MiSTer_BAZSET)'\n\n[jlrh/jlrh-misterfpga-db]\ndb_url = https://raw.githubusercontent.com/jlrh/jlrh-misterfpga-db/db/db.json.zip\ndescription = 'jlrh'\n\n[kyledlester_mister]\ndb_url = https://raw.githubusercontent.com/kyledlester/MiSTer_DB/db/db.json.zip\ndescription = 'kyledlester (MiSTer_DB)'\n",
+ "install": "[bmo00/arcfpga-mister-db]\ndb_url = https://raw.githubusercontent.com/bmo00/arcfpga-mister-db/db/db.json.zip\ndescription = 'arcfpga (bmo00)'\n\n[bazset/MiSTer_BAZSET]\ndb_url = https://raw.githubusercontent.com/bazset/MiSTer_BAZSET/db/db.json.zip\ndescription = 'bazset (MiSTer_BAZSET)'\n\n[Gm0rk/Gm0rkCores]\ndb_url = https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip\ndescription = 'Gm0rkCores (Gm0rk)'\n\n[jlrh/jlrh-misterfpga-db]\ndb_url = https://raw.githubusercontent.com/jlrh/jlrh-misterfpga-db/db/db.json.zip\ndescription = 'jlrh'\n\n[kuzearcade/kuzecores]\ndb_url = https://raw.githubusercontent.com/kuzearcade/kuzecores/db/db.json.zip\ndescription = 'kuzecores (kuzearcade)'\n\n[kyledlester_mister]\ndb_url = https://raw.githubusercontent.com/kyledlester/MiSTer_DB/db/db.json.zip\ndescription = 'kyledlester (MiSTer_DB)'\n\n[meathax/meatcores]\ndb_url = https://raw.githubusercontent.com/meathax/meatcores/db/db.json.zip\ndescription = 'MeatCores (meathax)'\n\n[ppriest/MiSTer_ppriest]\ndb_url = https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip\ndescription = 'ppriest (MiSTer_ppriest)'\n\n[rmonic79/rmcores]\ndb_url = https://raw.githubusercontent.com/rmonic79/rmcores/db/db.json.zip\ndescription = 'rmcores (rmonic79)'\n\n[shmupfan]\ndb_url = https://raw.githubusercontent.com/shmupfan/Distribution/main/db.json\ndescription = 'shmupfan (Distribution)'\n\n[TheJesusFish/Slop-Core]\ndb_url = https://raw.githubusercontent.com/TheJesusFish/Slop-Core/db/db.json.zip\ndescription = 'Slop Cores (TheJesusFish)'\n",
  "ini": "arcade-ai-cores.ini",
  "sources": [
-  {
-   "name": "Gm0rkCores (Gm0rk)",
-   "home": "https://github.com/Gm0rk/Gm0rkCores",
-   "db_id": "Gm0rk/Gm0rkCores",
-   "db_url": "https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip",
-   "section": "[Gm0rk/Gm0rkCores]\ndb_url = https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip\ndescription = 'Gm0rkCores (Gm0rk)'\n",
-   "status": "ok"
-  },
-  {
-   "name": "Slop Cores (TheJesusFish)",
-   "home": "https://github.com/TheJesusFish/Slop-Core",
-   "db_id": "TheJesusFish/Slop-Core",
-   "db_url": "https://raw.githubusercontent.com/TheJesusFish/Slop-Core/db/db.json.zip",
-   "section": "[TheJesusFish/Slop-Core]\ndb_url = https://raw.githubusercontent.com/TheJesusFish/Slop-Core/db/db.json.zip\ndescription = 'Slop Cores (TheJesusFish)'\n",
-   "status": "ok"
-  },
-  {
-   "name": "kuzecores (kuzearcade)",
-   "home": "https://github.com/kuzearcade/kuzecores",
-   "db_id": "kuzearcade/kuzecores",
-   "db_url": "https://raw.githubusercontent.com/kuzearcade/kuzecores/db/db.json.zip",
-   "section": "[kuzearcade/kuzecores]\ndb_url = https://raw.githubusercontent.com/kuzearcade/kuzecores/db/db.json.zip\ndescription = 'kuzecores (kuzearcade)'\n",
-   "status": "ok"
-  },
   {
    "name": "arcfpga (bmo00)",
    "home": "https://github.com/bmo00/arcfpga-mister-db",
    "db_id": "bmo00/arcfpga-mister-db",
    "db_url": "https://raw.githubusercontent.com/bmo00/arcfpga-mister-db/db/db.json.zip",
    "section": "[bmo00/arcfpga-mister-db]\ndb_url = https://raw.githubusercontent.com/bmo00/arcfpga-mister-db/db/db.json.zip\ndescription = 'arcfpga (bmo00)'\n",
-   "status": "ok"
-  },
-  {
-   "name": "shmupfan (Distribution)",
-   "home": "https://github.com/shmupfan/Distribution",
-   "db_id": "shmupfan",
-   "db_url": "https://raw.githubusercontent.com/shmupfan/Distribution/main/db.json",
-   "section": "[shmupfan]\ndb_url = https://raw.githubusercontent.com/shmupfan/Distribution/main/db.json\ndescription = 'shmupfan (Distribution)'\n",
-   "status": "ok"
-  },
-  {
-   "name": "rmcores (rmonic79)",
-   "home": "https://github.com/rmonic79/rmcores",
-   "db_id": "rmonic79/rmcores",
-   "db_url": "https://raw.githubusercontent.com/rmonic79/rmcores/db/db.json.zip",
-   "section": "[rmonic79/rmcores]\ndb_url = https://raw.githubusercontent.com/rmonic79/rmcores/db/db.json.zip\ndescription = 'rmcores (rmonic79)'\n",
-   "status": "ok"
-  },
-  {
-   "name": "ppriest (MiSTer_ppriest)",
-   "home": "https://github.com/ppriest/MiSTer_ppriest",
-   "db_id": "ppriest/MiSTer_ppriest",
-   "db_url": "https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip",
-   "section": "[ppriest/MiSTer_ppriest]\ndb_url = https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip\ndescription = 'ppriest (MiSTer_ppriest)'\n",
-   "status": "ok"
-  },
-  {
-   "name": "MeatCores (meathax)",
-   "home": "https://github.com/meathax/meatcores",
-   "db_id": "meathax/meatcores",
-   "db_url": "https://raw.githubusercontent.com/meathax/meatcores/db/db.json.zip",
-   "section": "[meathax/meatcores]\ndb_url = https://raw.githubusercontent.com/meathax/meatcores/db/db.json.zip\ndescription = 'MeatCores (meathax)'\n",
    "status": "ok"
   },
   {
@@ -78,6 +22,14 @@
    "status": "ok"
   },
   {
+   "name": "Gm0rkCores (Gm0rk)",
+   "home": "https://github.com/Gm0rk/Gm0rkCores",
+   "db_id": "Gm0rk/Gm0rkCores",
+   "db_url": "https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip",
+   "section": "[Gm0rk/Gm0rkCores]\ndb_url = https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip\ndescription = 'Gm0rkCores (Gm0rk)'\n",
+   "status": "ok"
+  },
+  {
    "name": "jlrh",
    "home": "https://github.com/jlrh/jlrh-misterfpga-db",
    "db_id": "jlrh/jlrh-misterfpga-db",
@@ -86,11 +38,59 @@
    "status": "ok"
   },
   {
+   "name": "kuzecores (kuzearcade)",
+   "home": "https://github.com/kuzearcade/kuzecores",
+   "db_id": "kuzearcade/kuzecores",
+   "db_url": "https://raw.githubusercontent.com/kuzearcade/kuzecores/db/db.json.zip",
+   "section": "[kuzearcade/kuzecores]\ndb_url = https://raw.githubusercontent.com/kuzearcade/kuzecores/db/db.json.zip\ndescription = 'kuzecores (kuzearcade)'\n",
+   "status": "ok"
+  },
+  {
    "name": "kyledlester (MiSTer_DB)",
    "home": "https://github.com/kyledlester/MiSTer_DB",
    "db_id": "kyledlester_mister",
    "db_url": "https://raw.githubusercontent.com/kyledlester/MiSTer_DB/db/db.json.zip",
    "section": "[kyledlester_mister]\ndb_url = https://raw.githubusercontent.com/kyledlester/MiSTer_DB/db/db.json.zip\ndescription = 'kyledlester (MiSTer_DB)'\n",
+   "status": "ok"
+  },
+  {
+   "name": "MeatCores (meathax)",
+   "home": "https://github.com/meathax/meatcores",
+   "db_id": "meathax/meatcores",
+   "db_url": "https://raw.githubusercontent.com/meathax/meatcores/db/db.json.zip",
+   "section": "[meathax/meatcores]\ndb_url = https://raw.githubusercontent.com/meathax/meatcores/db/db.json.zip\ndescription = 'MeatCores (meathax)'\n",
+   "status": "ok"
+  },
+  {
+   "name": "ppriest (MiSTer_ppriest)",
+   "home": "https://github.com/ppriest/MiSTer_ppriest",
+   "db_id": "ppriest/MiSTer_ppriest",
+   "db_url": "https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip",
+   "section": "[ppriest/MiSTer_ppriest]\ndb_url = https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip\ndescription = 'ppriest (MiSTer_ppriest)'\n",
+   "status": "ok"
+  },
+  {
+   "name": "rmcores (rmonic79)",
+   "home": "https://github.com/rmonic79/rmcores",
+   "db_id": "rmonic79/rmcores",
+   "db_url": "https://raw.githubusercontent.com/rmonic79/rmcores/db/db.json.zip",
+   "section": "[rmonic79/rmcores]\ndb_url = https://raw.githubusercontent.com/rmonic79/rmcores/db/db.json.zip\ndescription = 'rmcores (rmonic79)'\n",
+   "status": "ok"
+  },
+  {
+   "name": "shmupfan (Distribution)",
+   "home": "https://github.com/shmupfan/Distribution",
+   "db_id": "shmupfan",
+   "db_url": "https://raw.githubusercontent.com/shmupfan/Distribution/main/db.json",
+   "section": "[shmupfan]\ndb_url = https://raw.githubusercontent.com/shmupfan/Distribution/main/db.json\ndescription = 'shmupfan (Distribution)'\n",
+   "status": "ok"
+  },
+  {
+   "name": "Slop Cores (TheJesusFish)",
+   "home": "https://github.com/TheJesusFish/Slop-Core",
+   "db_id": "TheJesusFish/Slop-Core",
+   "db_url": "https://raw.githubusercontent.com/TheJesusFish/Slop-Core/db/db.json.zip",
+   "section": "[TheJesusFish/Slop-Core]\ndb_url = https://raw.githubusercontent.com/TheJesusFish/Slop-Core/db/db.json.zip\ndescription = 'Slop Cores (TheJesusFish)'\n",
    "status": "ok"
   }
  ]
