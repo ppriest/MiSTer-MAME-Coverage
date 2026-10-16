@@ -221,3 +221,8 @@ ul.sloplist { margin: 6px 0; padding-left: 18px; font-size: 13px; }
 ul.sloplist li { margin: 2px 0; }
 ul.sloplist button { font: inherit; font-size: 11px; padding: 0 8px; margin-left: 6px; border: 1px solid var(--accent); border-radius: 10px; background: var(--surface); color: var(--accent); cursor: pointer; }
 #slop-ini { max-height: 190px; overflow: auto; }
+/* clickable column headings */
+.grid th[data-sort] { cursor: pointer; user-select: none; }
+.grid th[data-sort]:hover { color: var(--text); background: var(--line); }
+.grid th.sort-asc::after { content: " \25B2"; font-size: 9px; color: var(--accent); }
+.grid th.sort-desc::after { content: " \25BC"; font-size: 9px; color: var(--accent); }
