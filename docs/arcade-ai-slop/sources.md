@@ -2,7 +2,9 @@
 
 One database to add to get access to all the AI-assisted cores that publish their own databases, so long as source-available and willing to fix reported bugs
 
-Last checked 2026-10-16 18:16 UTC.
+Last checked 2026-10-16 18:39 UTC.
+
+**Don't use both this and [MiSTer_Ongo](https://github.com/OngoGablogian/MiSTer_Ongo):** they overlap heavily (it republishes many of the same cores).
 
 | Database | db_id | Cores+MRAs | Status |
 |---|---|---|---|

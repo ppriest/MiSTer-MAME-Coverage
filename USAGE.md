@@ -181,7 +181,7 @@ database into `/media/fat/downloader/` (Downloader reads those at start-up, henc
 `data/arcade_ai_slop.json` (`enabled: false` keeps a candidate documented); each build fetches every enabled database
 to read its `db_id`, keeps the previous entry of one that is unreachable, and writes `docs/arcade-ai-slop/` (db.json,
 db.json.zip, `downloader/*.ini`, `sources.md`, `status.json`). The daily refresh runs it after `mmc build` and commits
-the folder.
+the folder. It overlaps heavily with OngoGablogian's MiSTer_Ongo database, and the front-page box and `sources.md` say not to use both.
 
 ## Databases tab
 

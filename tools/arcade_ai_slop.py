@@ -154,7 +154,7 @@ def main() -> int:
 
     now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     with open(os.path.join(a.out, "sources.md"), "w", encoding="utf-8") as f:
-        f.write(f"# {own_id}\n\n{cfg.get('description', '')}\n\nLast checked {now}.\n\n| Database | db_id | Cores+MRAs | Status |\n|---|---|---|---|\n")
+        f.write(f"# {own_id}\n\n{cfg.get('description', '')}\n\nLast checked {now}.\n\n**Don't use both this and [MiSTer_Ongo](https://github.com/OngoGablogian/MiSTer_Ongo):** they overlap heavily (it republishes many of the same cores).\n\n| Database | db_id | Cores+MRAs | Status |\n|---|---|---|---|\n")
         for e in listing:
             f.write(f"| [{e['name']}]({e['home']}) | {e.get('db_id', '')} | {e.get('cores', '')} | {e['status']} |\n")
         off = [s for s in cfg["sources"] if not s.get("enabled", True)]

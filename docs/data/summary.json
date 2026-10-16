@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-16T09:38:45+00:00",
+  "generated": "2026-10-16T18:39:44+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-16T09:38:30+00:00",
+  "mister_generated": "2026-10-16T18:39:08+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-16",
   "ledger_runs": [
-   {
-    "date": "2026-10-15",
-    "note": "alamone 2026-10-12",
-    "cores": 10,
-    "sets": 14,
-    "pairs": 138,
-    "dates_improved": 0,
-    "cores_removed": 2
-   },
    {
     "date": "2026-10-15",
     "note": "alamone 2026-10-12",
@@ -51,6 +42,15 @@
     "pairs": 9,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-16",
+    "note": "alamone 2026-10-12",
+    "cores": 5,
+    "sets": 43,
+    "pairs": 69,
+    "dates_improved": 0,
+    "cores_removed": 2
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
    "catver_entries": 37998,
    "mad_entries": 2995,
-   "mra_entries": 3367,
+   "mra_entries": 3410,
    "unmapped": [
     {
      "raw": "not classified",
@@ -81,10 +81,10 @@
   },
   "mame_added_updated": "2026-10-16",
   "hbmame": {
-   "tag": "0.289.3 (2026-09-29)",
-   "version": "0.289.3 (2026-09-29)",
+   "tag": "tag2893",
+   "version": "0.289.3",
    "updated": "2026-10-16",
-   "sets": 8452
+   "sets": 9711
   },
   "sources": {
    "dist": "MiSTer official distribution",
@@ -104,6 +104,7 @@
    "jtpr": "jtcores unreleased (PRs, branches)",
    "ppriest": "ppriest (MiSTer_ppriest)",
    "kyle": "kyledlester (GitHub repositories)",
+   "gm0rk": "Gm0rkCores (Gm0rk)",
    "rossops": "rossops (GitHub repositories)",
    "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
    "repo": "GitHub repository only"
@@ -177,6 +178,10 @@
     "page": "https://github.com/kyledlester?tab=repositories",
     "db_url": null
    },
+   "gm0rk": {
+    "page": "https://github.com/Gm0rk/Gm0rkCores",
+    "db_url": "https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip"
+   },
    "rossops": {
     "page": "https://github.com/rossops?tab=repositories",
     "db_url": null
@@ -197,7 +202,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1872
+    "mras": 1873
    },
    {
     "source": "dist",
@@ -2381,7 +2386,7 @@
     "source": "ongo",
     "repo": "meathax/meatcores",
     "dirs": null,
-    "mras": 161
+    "mras": 167
    },
    {
     "source": "ongo",
@@ -2668,50 +2673,44 @@
     "repo": "MiSTer-devel/NeoGeo_MiSTer",
     "dirs": [],
     "mras": 262
-   },
-   {
-    "source": "xela",
-    "repo": "XelaNotPu/SYSTEM12_MiSTer",
-    "dirs": null,
-    "mras": 0
    }
   ],
   "repo_errors": [
    [
     "Kyp069/zx48-MiSTer",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "kandowontu/BrickBoy_MiSTer",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "meathax/Bucky",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "meathax/mrdo",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "meathax/s24",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "https://mister.blahm1d.com/db.json.zip",
-    "HTTP Error 403: Forbidden"
+    "<urlopen error Tunnel connection failed: 403 Forbidden>"
    ]
   ],
   "counts": {
    "titles": 6825,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2088,
+   "working_arcade_titles_covered": 2106,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5432,
-   "working_arcade_titles_source": 1827,
-   "working_arcade_titles_binary_only": 261,
-   "cores": 627,
-   "binary_only_cores": 211,
+   "working_arcade_sets_covered": 5471,
+   "working_arcade_titles_source": 1840,
+   "working_arcade_titles_binary_only": 266,
+   "cores": 629,
+   "binary_only_cores": 213,
    "unmatched_sets": 436
   }
  },
@@ -10205,6 +10204,72 @@
    "first_date": "2019-12-19"
   },
   {
+   "id": "gm0rk:atari-g1",
+   "name": "Atari-G1",
+   "source": "gm0rk",
+   "source_title": "Gm0rkCores (Gm0rk)",
+   "channel": null,
+   "rbf": "Atari-G1.rbf",
+   "repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
+   "url": "https://github.com/Gm0rk/Arcade-Atari-G1_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-16",
+   "last_seen": "2026-10-16",
+   "binary_only": false,
+   "nsets": 13,
+   "ntitles": 2,
+   "first_date": "2026-09-25"
+  },
+  {
+   "id": "gm0rk:atari-g42",
+   "name": "Atari-G42",
+   "source": "gm0rk",
+   "source_title": "Gm0rkCores (Gm0rk)",
+   "channel": null,
+   "rbf": "Arcade-Atari-G42.rbf",
+   "repo": "Gm0rk/Arcade-Atari-G42_MiSTer",
+   "url": "https://github.com/Gm0rk/Arcade-Atari-G42_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-16",
+   "last_seen": "2026-10-16",
+   "binary_only": false,
+   "nsets": 5,
+   "ntitles": 3,
+   "first_date": "2026-09-28"
+  },
+  {
+   "id": "gm0rk:itech8",
+   "name": "ITech8",
+   "source": "gm0rk",
+   "source_title": "Gm0rkCores (Gm0rk)",
+   "channel": null,
+   "rbf": "Arcade-ITech8.rbf",
+   "repo": "Gm0rk/Gm0rkCores",
+   "url": "https://github.com/Gm0rk/Gm0rkCores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-16",
+   "last_seen": "2026-10-16",
+   "binary_only": false,
+   "nsets": 33,
+   "ntitles": 13,
+   "first_date": "2026-10-16"
+  },
+  {
    "id": "jlrh:ffaerofgt",
    "name": "ffaerofgt",
    "source": "jlrh",
@@ -14373,6 +14438,28 @@
    "first_date": "2026-10-04"
   },
   {
+   "id": "meat:dataeastliberation",
+   "name": "DataEastLiberation",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-DataEastLiberation.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-16",
+   "last_seen": "2026-10-16",
+   "binary_only": true,
+   "nsets": 7,
+   "ntitles": 6,
+   "first_date": "2026-07-28"
+  },
+  {
    "id": "meat:docastle",
    "name": "DoCastle",
    "source": "meat",
@@ -14830,6 +14917,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-16",
+   "aliases": [],
    "last_seen": "2026-10-16",
    "binary_only": true,
    "nsets": 2,
@@ -14879,6 +14967,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-16",
+   "aliases": [],
    "last_seen": "2026-10-16",
    "binary_only": true,
    "nsets": 2,
@@ -15955,56 +16044,6 @@
    "nsets": 6,
    "ntitles": 1,
    "first_date": "2026-10-04"
-  },
-  {
-   "id": "repo:atari-g1",
-   "name": "Atari-G1 (Gm0rk)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-Atari-G1_20260926.rbf",
-   "repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
-   "url": "https://github.com/Gm0rk/Arcade-Atari-G1_MiSTer",
-   "build_date": "2026-09-27",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 34,
-   "mame_drivers": [
-    "atari/atarig1.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-16",
-   "binary_only": false,
-   "nsets": 13,
-   "ntitles": 2,
-   "first_date": "2026-09-25"
-  },
-  {
-   "id": "repo:atari-g42",
-   "name": "Atari-G42 (Gm0rk)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-Atari-G42_20260929.rbf",
-   "repo": "Gm0rk/Arcade-Atari-G42_MiSTer",
-   "url": "https://github.com/Gm0rk/Arcade-Atari-G42_MiSTer",
-   "build_date": "2026-09-29",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 37,
-   "mame_drivers": [
-    "atari/atarig42.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-05",
-   "aliases": [],
-   "last_seen": "2026-10-16",
-   "binary_only": false,
-   "nsets": 5,
-   "ntitles": 3,
-   "first_date": "2026-09-28"
   },
   {
    "id": "repo:bakraid",
@@ -18302,7 +18341,7 @@
    "sets": 13,
    "sets_covered": 13,
    "cores": [
-    "repo:atari-g1"
+    "gm0rk:atari-g1"
    ],
    "first": "2026-09-25"
   },
@@ -18313,7 +18352,7 @@
    "sets": 5,
    "sets_covered": 5,
    "cores": [
-    "repo:atari-g42"
+    "gm0rk:atari-g42"
    ],
    "first": "2026-09-28"
   },
@@ -19684,11 +19723,13 @@
   {
    "sourcefile": "dataeast/bwing.cpp",
    "titles": 2,
-   "covered": 0,
+   "covered": 2,
    "sets": 5,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 2,
+   "cores": [
+    "meat:dataeastliberation"
+   ],
+   "first": "2026-10-16"
   },
   {
    "sourcefile": "dataeast/captaven.cpp",
@@ -19968,10 +20009,11 @@
   {
    "sourcefile": "dataeast/liberate.cpp",
    "titles": 5,
-   "covered": 1,
+   "covered": 4,
    "sets": 11,
-   "sets_covered": 2,
+   "sets_covered": 6,
    "cores": [
+    "meat:dataeastliberation",
     "meat:yellowcab",
     "ongo:meathax_yellowcab"
    ],
@@ -21100,11 +21142,13 @@
   {
    "sourcefile": "itech/capbowl.cpp",
    "titles": 2,
-   "covered": 0,
+   "covered": 2,
    "sets": 6,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 6,
+   "cores": [
+    "gm0rk:itech8"
+   ],
+   "first": "2026-10-16"
   },
   {
    "sourcefile": "itech/iteagle.cpp",
@@ -21129,11 +21173,13 @@
   {
    "sourcefile": "itech/itech8.cpp",
    "titles": 11,
-   "covered": 0,
+   "covered": 11,
    "sets": 27,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 27,
+   "cores": [
+    "gm0rk:itech8"
+   ],
+   "first": "2026-10-16"
   },
   {
    "sourcefile": "jaleco/aeroboto.cpp",
@@ -27983,6 +28029,7 @@
    ],
    "hbmame": true,
    "year": "2021",
+   "parent": "neogeo",
    "manufacturer": "Kako Eimon",
    "desc": "Abyssal Infants"
   },
@@ -28118,6 +28165,7 @@
    ],
    "hbmame": true,
    "year": "2017",
+   "parent": "neogeo",
    "manufacturer": "BEY",
    "desc": "Bad Apple demo (v1)"
   },
@@ -28343,14 +28391,22 @@
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": false
+   "hbmame": true,
+   "year": "1981",
+   "parent": "ckong",
+   "manufacturer": "bootleg",
+   "desc": "Crazy Kong Part II -1"
   },
   {
    "set": "ckonga3",
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": false
+   "hbmame": true,
+   "year": "1981",
+   "parent": "ckong",
+   "manufacturer": "bootleg",
+   "desc": "Crazy Kong Part II -2"
   },
   {
    "set": "ckongfix",
@@ -28373,6 +28429,7 @@
    ],
    "hbmame": true,
    "year": "2000",
+   "parent": "neogeo",
    "manufacturer": "Jeff Kurtz",
    "desc": "Columns (NeoGeo)(Homebrew)"
   },
@@ -28383,6 +28440,7 @@
    ],
    "hbmame": true,
    "year": "2013",
+   "parent": "neogeo",
    "manufacturer": "Le Cortex",
    "desc": "Crouching Pony Hidden Dragon Demo"
   },
@@ -28949,6 +29007,7 @@
    ],
    "hbmame": true,
    "year": "2024",
+   "parent": "neogeo",
    "manufacturer": "Pixelheart / ChipsOnSteroids",
    "desc": "Gladmort"
   },
@@ -29253,6 +29312,7 @@
    ],
    "hbmame": true,
    "year": "2014",
+   "parent": "neogeo",
    "manufacturer": "Neobitz",
    "desc": "Knight's Chance"
   },
@@ -29312,6 +29372,7 @@
    ],
    "hbmame": true,
    "year": "2021",
+   "parent": "neogeo",
    "manufacturer": "Blastar",
    "desc": "Looptris (2021-12-26)"
   },
@@ -29553,6 +29614,7 @@
    ],
    "hbmame": true,
    "year": "2015",
+   "parent": "neogeo",
    "manufacturer": "Kannagi",
    "desc": "Neo Fight"
   },
@@ -29563,6 +29625,7 @@
    ],
    "hbmame": true,
    "year": "2012",
+   "parent": "neogeo",
    "manufacturer": "Sebastian Mihai",
    "desc": "Neo Thunder"
   },
@@ -29609,6 +29672,7 @@
    ],
    "hbmame": true,
    "year": "2020",
+   "parent": "neogeo",
    "manufacturer": "OzzyOuzo",
    "desc": "New! Super Mario Bros."
   },
@@ -30815,7 +30879,11 @@
    "cores": [
     "jt:jtcps1"
    ],
-   "hbmame": false
+   "hbmame": true,
+   "year": "2021",
+   "parent": "sf2ce",
+   "manufacturer": "Zero800",
+   "desc": "Street Fighter II: Dream Battle (Mix 1.0)"
   },
   {
    "set": "sfa2_1",
@@ -31049,7 +31117,7 @@
    "year": "2007",
    "parent": "salamand",
    "manufacturer": "Konami",
-   "desc": "Salamander (version YY 0.7.3)"
+   "desc": "Salamander (version YY 0.7.3) "
   },
   {
    "set": "spcloneo",
@@ -31259,6 +31327,7 @@
    ],
    "hbmame": true,
    "year": "2022",
+   "parent": "neogeo",
    "manufacturer": "OzzyOuzo",
    "desc": "The Eye of Typhoon (Tsunami Edition, beta 7, 2022-07-31)"
   },
@@ -31311,6 +31380,7 @@
    ],
    "hbmame": true,
    "year": "2011",
+   "parent": "neogeo",
    "manufacturer": "FACE Corporation / N.C.I - Le Cortex",
    "desc": "Treasure of the Caribbean"
   },
@@ -31783,6 +31853,7 @@
    ],
    "hbmame": true,
    "year": "2025",
+   "parent": "neogeo",
    "manufacturer": "Blastar",
    "desc": "World Racer (2025-11-14)"
   },
