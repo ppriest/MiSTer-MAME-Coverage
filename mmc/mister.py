@@ -240,6 +240,8 @@ DB_SOURCES = {
     "ppriest": "https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip",
     # Gm0rk's cores (Atari G1/G42, ITech8); the database is the Downloader DB-Template's, and the sources are in his own repositories
     "gm0rk": "https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip",
+    # kyledlester's cores (github.com/kyledlester/MiSTer_DB); his loose repositories are also scanned (OWNER_SOURCES)
+    "kyle": "https://raw.githubusercontent.com/kyledlester/MiSTer_DB/db/db.json.zip",
 }
 # Cores that load ROM sets from a list instead of MRAs: (source, repo, file, core name).
 ROMSET_FILES = [
@@ -280,7 +282,7 @@ SOURCE_PAGES = {
     "blackwine": "https://github.com/TheJesusFish/Blackwine-SegaSystem1-2_MiSTer",
     "rmcores": "https://github.com/rmonic79/rmcores",
     "ppriest": "https://github.com/ppriest/MiSTer_ppriest",
-    "kyle": "https://github.com/kyledlester?tab=repositories",
+    "kyle": "https://github.com/kyledlester/MiSTer_DB",
     "gm0rk": "https://github.com/Gm0rk/Gm0rkCores",
     "rossops": "https://github.com/rossops?tab=repositories",
     "xela": "https://github.com/XelaNotPu?tab=repositories",

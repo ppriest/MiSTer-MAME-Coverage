@@ -6,14 +6,6 @@
 {
 "date": "2026-10-04",
 "note": "alamone 2026-10-01",
-"cores": 11,
-"sets": 47,
-"pairs": 89,
-"dates_improved": 7
-},
-{
-"date": "2026-10-04",
-"note": "alamone 2026-10-01",
 "cores": 0,
 "sets": 0,
 "pairs": 0,
@@ -458,6 +450,15 @@
 "cores": 1,
 "sets": 0,
 "pairs": 4,
+"dates_improved": 0,
+"cores_removed": 0
+},
+{
+"date": "2026-10-16",
+"note": "alamone 2026-10-12",
+"cores": 1,
+"sets": 5,
+"pairs": 5,
 "dates_improved": 0,
 "cores_removed": 0
 }
@@ -9963,6 +9964,24 @@
 "aliases": [],
 "last_seen": "2026-10-16"
 },
+"kyle:deniam": {
+"id": "kyle:deniam",
+"name": "Deniam",
+"source": "kyle",
+"source_title": "kyledlester (GitHub repositories)",
+"channel": null,
+"rbf": "Deniam.rbf",
+"repo": "kyledlester/MiSTer_DB",
+"url": "https://github.com/kyledlester/MiSTer_DB",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
 "kyle:konamigv": {
 "id": "kyle:konamigv",
 "name": "KonamiGV",
@@ -14312,6 +14331,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-16",
+"aliases": [],
 "last_seen": "2026-10-16"
 },
 "repo:monstermaulers": {
@@ -33486,6 +33506,36 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-16",
 "mra": "_Arcade/Crack Down (World, Floppy Based, FD1094 317-0058-04c).mra"
+}
+},
+"croquis": {
+"kyle:deniam": {
+"core": "kyle:deniam",
+"date": "2026-10-16",
+"date_quality": "observed",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Logic Pro/Croquis (Korea).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+}
+},
+"croquisg": {
+"kyle:deniam": {
+"core": "kyle:deniam",
+"date": "2026-10-16",
+"date_quality": "observed",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Logic Pro/Croquis (Germany).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
 }
 },
 "crossbld": {
@@ -61551,6 +61601,21 @@
 "mra": "_Arcade/Taisen Karate Dou (Japan).mra"
 }
 },
+"karianx": {
+"kyle:deniam": {
+"core": "kyle:deniam",
+"date": "2026-10-16",
+"date_quality": "observed",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Karian Cross (Rev. 1.0).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+}
+},
 "karnov": {
 "jt:jtkarnov": {
 "core": "jt:jtkarnov",
@@ -66308,6 +66373,36 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-16",
 "mra": "_Arcade/_alternatives/_Line of Fire/Line of Fire (US, bootleg decrypted).mra"
+}
+},
+"logicpr2": {
+"kyle:deniam": {
+"core": "kyle:deniam",
+"date": "2026-10-16",
+"date_quality": "observed",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Logic Pro 2 (Japan).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+}
+},
+"logicpro": {
+"kyle:deniam": {
+"core": "kyle:deniam",
+"date": "2026-10-16",
+"date_quality": "observed",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Logic Pro (Japan).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
 }
 },
 "loht": {
@@ -130039,6 +130134,12 @@
 "crbaloon": {
 "dist": "Maze"
 },
+"croquis": {
+"kyle": "Puzzle"
+},
+"croquisg": {
+"kyle": "Puzzle"
+},
 "crossbld": {
 "dist": "Shooter"
 },
@@ -133124,6 +133225,9 @@
 "kangaroob": {
 "dist": "Platform"
 },
+"karianx": {
+"kyle": "Puzzle"
+},
 "kartduel": {
 "ongo": "Racing"
 },
@@ -133482,6 +133586,12 @@
 "loffireud": {
 "dist": "Shooter / Flight",
 "rossops": "Shooter / Flight"
+},
+"logicpr2": {
+"kyle": "Puzzle"
+},
+"logicpro": {
+"kyle": "Puzzle"
 },
 "lomakai": {
 "ongo": "Arcade",

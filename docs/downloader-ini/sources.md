@@ -2,7 +2,7 @@
 
 Databases to add to get the source-available AI-assisted arcade cores, from developers who are willing to fix reported bugs
 
-Last checked 2026-10-16 20:01 UTC.
+Last checked 2026-10-16 23:41 UTC.
 
 **Don't use both these and [MiSTer_Ongo](https://github.com/OngoGablogian/MiSTer_Ongo):** they overlap heavily (it republishes many of the same cores).
 
@@ -18,6 +18,7 @@ Last checked 2026-10-16 20:01 UTC.
 | [MeatCores (meathax)](https://github.com/meathax/meatcores) | meathax/meatcores | ok |
 | [bazset (MiSTer_BAZSET)](https://github.com/bazset/MiSTer_BAZSET) | bazset/MiSTer_BAZSET | ok |
 | [jlrh](https://github.com/jlrh/jlrh-misterfpga-db) | jlrh/jlrh-misterfpga-db | ok |
+| [kyledlester (MiSTer_DB)](https://github.com/kyledlester/MiSTer_DB) | kyledlester_mister | ok |
 
 ## Not included
 

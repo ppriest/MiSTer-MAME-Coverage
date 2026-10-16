@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-16T23:15:41+00:00",
+  "generated": "2026-10-16T23:41:46+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-16T23:15:16+00:00",
+  "mister_generated": "2026-10-16T23:41:14+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-16",
   "ledger_runs": [
-   {
-    "date": "2026-10-16",
-    "note": "alamone 2026-10-12",
-    "cores": 4,
-    "sets": 5,
-    "pairs": 9,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-16",
     "note": "alamone 2026-10-12",
@@ -51,6 +42,15 @@
     "pairs": 4,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-16",
+    "note": "alamone 2026-10-12",
+    "cores": 1,
+    "sets": 5,
+    "pairs": 5,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
    "catver_entries": 37998,
    "mad_entries": 2995,
-   "mra_entries": 3412,
+   "mra_entries": 3417,
    "unmapped": [
     {
      "raw": "not classified",
@@ -175,8 +175,8 @@
     "db_url": "https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip"
    },
    "kyle": {
-    "page": "https://github.com/kyledlester?tab=repositories",
-    "db_url": null
+    "page": "https://github.com/kyledlester/MiSTer_DB",
+    "db_url": "https://raw.githubusercontent.com/kyledlester/MiSTer_DB/db/db.json.zip"
    },
    "gm0rk": {
     "page": "https://github.com/Gm0rk/Gm0rkCores",
@@ -2706,12 +2706,12 @@
   "counts": {
    "titles": 6825,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2106,
+   "working_arcade_titles_covered": 2109,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5471,
-   "working_arcade_titles_source": 1840,
+   "working_arcade_sets_covered": 5476,
+   "working_arcade_titles_source": 1843,
    "working_arcade_titles_binary_only": 266,
-   "cores": 629,
+   "cores": 630,
    "binary_only_cores": 216,
    "unmatched_sets": 438
   }
@@ -14061,6 +14061,28 @@
    "first_date": "2026-10-06"
   },
   {
+   "id": "kyle:deniam",
+   "name": "Deniam",
+   "source": "kyle",
+   "source_title": "kyledlester (GitHub repositories)",
+   "channel": null,
+   "rbf": "Deniam.rbf",
+   "repo": "kyledlester/MiSTer_DB",
+   "url": "https://github.com/kyledlester/MiSTer_DB",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-16",
+   "last_seen": "2026-10-16",
+   "binary_only": false,
+   "nsets": 5,
+   "ntitles": 3,
+   "first_date": "2026-10-16"
+  },
+  {
    "id": "kyle:konamigv",
    "name": "KonamiGV",
    "source": "kyle",
@@ -16744,6 +16766,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-16",
+   "aliases": [],
    "last_seen": "2026-10-16",
    "binary_only": false,
    "nsets": 3,
@@ -24893,11 +24916,13 @@
   {
    "sourcefile": "sega/deniam.cpp",
    "titles": 3,
-   "covered": 0,
+   "covered": 3,
    "sets": 5,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 5,
+   "cores": [
+    "kyle:deniam"
+   ],
+   "first": "2026-10-16"
   },
   {
    "sourcefile": "sega/dotrikun.cpp",
