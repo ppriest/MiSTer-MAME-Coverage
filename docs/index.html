@@ -8,7 +8,7 @@
 <title>MiSTer MAME Coverage</title>
 <meta name="description" content="Which MAME arcade titles are playable on MiSTer FPGA cores, which remain, and how coverage grew over time.">
 <link rel="canonical" href="https://mister-mame-coverage-docs.vercel.app/">
-<link rel="stylesheet" href="style.css?v=34f613417e">
+<link rel="stylesheet" href="style.css?v=cc4dbe413a">
 </head>
 <body>
 <header class="top">
@@ -17,12 +17,24 @@
     <h2 class="tagline">See what Arcade PCB titles are covered by MAME, MiSTer, and request support on MiSTer where missing</h2>
     <p class="sub" id="subtitle">Loading data…</p>
     <button type="button" id="zap-settings" class="zapset" title="set your local MiSTer IP address for Zaparoo launch">⚙ Local MiSTer IP address</button>
-    <div class="issue"><a class="issue-link" href="https://github.com/ppriest/MiSTer-MAME-Coverage/issues" target="_blank" rel="noopener" title="report a problem or suggest something on GitHub">Create Issue / Suggestion</a></div>
+    <div class="issue"><a class="issue-link" href="https://github.com/ppriest/MiSTer-MAME-Coverage/issues" target="_blank" rel="noopener" title="report a problem or suggest something on GitHub">Create Issue / Suggestion</a> <a class="issue-link slopjump" href="#slopbox" id="slop-jump"><span class="newtag">NEW</span> Databases</a></div>
   </div>
 </header>
 
 <main class="wrap">
   <section class="tiles" id="tiles" aria-label="Headline numbers"></section>
+
+  <details class="slopbox" id="slopbox">
+    <summary><span class="newtag">NEW</span> <b>downloader.ini databases</b></summary>
+    <p class="muted" id="slop-desc">Databases to add to get the source-available AI-assisted arcade cores, from developers who are willing to fix reported bugs.</p>
+    <p class="slopwarn"><b>Don&rsquo;t use both.</b> These overlap heavily with <a href="https://github.com/OngoGablogian/MiSTer_Ongo" target="_blank" rel="noopener">OngoGablogian&rsquo;s MiSTer_Ongo</a> database (it republishes many of the same cores), so use one or the other.</p>
+    <p>Copy these sections into <code>downloader.ini</code> on your MiSTer's SD card (or <a href="downloader-ini/arcade-ai-cores.ini" download>download them as a file</a> and save it in a <code>downloader</code> folder next to <code>downloader.ini</code>), then run Downloader. Each contributor keeps their own database; come back and copy again to pick up new ones:</p>
+    <pre class="zapcfg" id="slop-ini">Loading…</pre>
+    <p class="zapcopy"><button type="button" id="slop-copy">Copy all</button></p>
+    <ul class="sloplist" id="slop-list"></ul>
+    <p class="muted small" id="slop-checked"></p>
+    <p class="muted small">Rebuilt daily with this page.</p>
+  </details>
 
 
   <nav class="tabs" role="tablist">
@@ -334,6 +346,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=3a590f0916"></script>
+<script src="app.js?v=5c9e15ecd7"></script>
 </body>
 </html>

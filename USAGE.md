@@ -172,6 +172,21 @@ Hashed names deter guessing and bulk scraping; they do not hide the files from s
 requests. For real hotlink protection add a referer rule on the bucket (Cloudflare WAF custom rule, or a
 Worker in front of R2). Hover only exists on devices with a pointer.
 
+## The downloader.ini databases list
+
+The front page carries a box ("downloader.ini databases") with the `downloader.ini` sections of the source-available AI-assisted arcade cores' databases,
+ready to copy (all at once, one at a time, or as the file `docs/downloader-ini/arcade-ai-cores.ini`, a drop-in to save in a `downloader/` folder next to `downloader.ini`). It is a list
+and not a database on purpose: Downloader databases cannot reference other databases (a database may not install
+`downloader/*.ini` drop-ins; it refuses with "Path can't contain root folders"), and merging the contributors' files into
+one would put the same files under two database ids, as MiSTer_Ongo does. Every contributor keeps their own id, and users
+re-copy the list to pick up new contributors.
+
+`tools/downloader_databases.py` builds it from `data/downloader_databases.json` (`enabled: false` keeps a candidate documented): each
+enabled source is fetched to read its `db_id` (the section name has to equal it), a source that cannot be fetched keeps its
+previous section, and one that is not a valid database is skipped. The daily refresh runs it after `mmc build` and commits
+`docs/downloader-ini/` (`arcade-ai-cores.ini`, `sources.md`, `status.json`). The box warns that the list overlaps
+heavily with OngoGablogian's MiSTer_Ongo, so use one or the other.
+
 ## Databases tab
 
 One row per source (`DB_TITLES`): cores, working arcade titles and sets loaded by at least one core
