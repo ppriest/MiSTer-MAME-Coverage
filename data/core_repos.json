@@ -2344,6 +2344,9 @@
   "decoryah/Arcade-MetamorphicForce_MiSTer",
   "meathax/meatcores"
  ],
+ "repo:model2": [
+  "alphanu1/sega-model2-mister"
+ ],
  "repo:monstermaulers": [
   "decoryah/Arcade-MonsterMaulers_MiSTer"
  ],

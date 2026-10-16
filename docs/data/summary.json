@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-16T23:10:49+00:00",
+  "generated": "2026-10-16T23:15:41+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-16T23:10:21+00:00",
+  "mister_generated": "2026-10-16T23:15:16+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-16",
   "ledger_runs": [
-   {
-    "date": "2026-10-15",
-    "note": "alamone 2026-10-12",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0,
-    "cores_removed": 2
-   },
    {
     "date": "2026-10-16",
     "note": "alamone 2026-10-12",
@@ -49,6 +40,15 @@
     "cores": 3,
     "sets": 0,
     "pairs": 20,
+    "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-16",
+    "note": "alamone 2026-10-12",
+    "cores": 1,
+    "sets": 0,
+    "pairs": 4,
     "dates_improved": 0,
     "cores_removed": 0
    }
@@ -2251,10 +2251,12 @@
     "mras": 13
    },
    {
-    "source": "ongo",
+    "source": "repo",
     "repo": "alphanu1/sega-model2-mister",
-    "dirs": null,
-    "mras": 17
+    "dirs": [
+     "releases"
+    ],
+    "mras": 8
    },
    {
     "source": "ongo",
@@ -15496,29 +15498,6 @@
    "first_date": "2026-08-15"
   },
   {
-   "id": "ongo:model2",
-   "name": "Model2",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Model2.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-14",
-   "aliases": [],
-   "last_seen": "2026-10-16",
-   "binary_only": false,
-   "nsets": 3,
-   "ntitles": 2,
-   "first_date": "2026-08-18"
-  },
-  {
    "id": "ongo:nemesis",
    "name": "nemesis",
    "source": "ongo",
@@ -16748,6 +16727,28 @@
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-09-09"
+  },
+  {
+   "id": "repo:model2",
+   "name": "Model2",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "Model2.rbf",
+   "repo": "alphanu1/sega-model2-mister",
+   "url": "https://github.com/alphanu1/sega-model2-mister",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-16",
+   "last_seen": "2026-10-16",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 2,
+   "first_date": "2026-09-30"
   },
   {
    "id": "repo:monstermaulers",
@@ -24965,7 +24966,7 @@
    "sets": 28,
    "sets_covered": 3,
    "cores": [
-    "ongo:model2"
+    "repo:model2"
    ],
    "first": "2026-08-18"
   },

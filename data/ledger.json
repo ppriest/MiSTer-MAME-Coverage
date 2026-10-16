@@ -6,14 +6,6 @@
 {
 "date": "2026-10-04",
 "note": "alamone 2026-10-01",
-"cores": 0,
-"sets": 0,
-"pairs": 0,
-"dates_improved": 0
-},
-{
-"date": "2026-10-04",
-"note": "alamone 2026-10-01",
 "cores": 11,
 "sets": 47,
 "pairs": 89,
@@ -457,6 +449,15 @@
 "cores": 3,
 "sets": 0,
 "pairs": 20,
+"dates_improved": 0,
+"cores_removed": 0
+},
+{
+"date": "2026-10-16",
+"note": "alamone 2026-10-12",
+"cores": 1,
+"sets": 0,
+"pairs": 4,
 "dates_improved": 0,
 "cores_removed": 0
 }
@@ -12239,6 +12240,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-16",
+"aliases": [],
 "last_seen": "2026-10-16"
 },
 "ongo:meathax_heavyunit": {
@@ -12409,6 +12411,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-16",
+"aliases": [],
 "last_seen": "2026-10-16"
 },
 "ongo:meathax_steelforce": {
@@ -12427,6 +12430,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-16",
+"aliases": [],
 "last_seen": "2026-10-16"
 },
 "ongo:meathax_stoneball": {
@@ -14290,6 +14294,24 @@
 "note": null,
 "first_recorded": "2026-10-12",
 "aliases": [],
+"last_seen": "2026-10-16"
+},
+"repo:model2": {
+"id": "repo:model2",
+"name": "Model2",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": null,
+"rbf": "Model2.rbf",
+"repo": "alphanu1/sega-model2-mister",
+"url": "https://github.com/alphanu1/sega-model2-mister",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 },
 "repo:monstermaulers": {
@@ -35679,6 +35701,19 @@
 "mra": "_Arcade/Daytona USA (Revision A) [15kHz CRT].mra",
 "first_recorded": "2026-10-14",
 "last_seen": "2026-10-16"
+},
+"repo:model2": {
+"core": "repo:model2",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/Daytona USA (Revision A).mra",
+"mra": "_Arcade/Daytona USA (Revision A) [15kHz CRT].mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
 }
 },
 "daytona93": {
@@ -35693,6 +35728,19 @@
 "first_path": "mra/Daytona USA (Deluxe 93).mra",
 "mra": "_Arcade/Daytona USA [15kHz CRT].mra",
 "first_recorded": "2026-10-14",
+"last_seen": "2026-10-16"
+},
+"repo:model2": {
+"core": "repo:model2",
+"date": "2026-09-30",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/Daytona USA (Deluxe 93).mra",
+"mra": "_Arcade/Daytona USA (Deluxe 93) [15kHz CRT].mra",
+"first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 }
 },
@@ -37532,6 +37580,19 @@
 "alt": false,
 "first_repo": "alphanu1/sega-model2-mister",
 "first_path": "mra/Desert Tank.mra",
+"mra": "_Arcade/Desert Tank [15kHz CRT].mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
+"repo:model2": {
+"core": "repo:model2",
+"date": "2026-10-16",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Desert Tank [15kHz CRT].mra",
 "mra": "_Arcade/Desert Tank [15kHz CRT].mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
@@ -120535,6 +120596,19 @@
 "mra": "_Arcade/Virtua Cop (Revision A) [15kHz CRT].mra",
 "first_recorded": "2026-10-14",
 "last_seen": "2026-10-16"
+},
+"repo:model2": {
+"core": "repo:model2",
+"date": "2026-10-16",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Virtua Cop (Revision A) [15kHz CRT].mra",
+"mra": "_Arcade/Virtua Cop (Revision A) [15kHz CRT].mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
 }
 },
 "vcrunchy": {
@@ -130223,10 +130297,12 @@
 "coinop": "Run &amp; Gun"
 },
 "daytona": {
-"ongo": "Driving"
+"ongo": "Driving",
+"repo": "Driving"
 },
 "daytona93": {
-"ongo": "Driving"
+"ongo": "Driving",
+"repo": "Driving"
 },
 "dblewing": {
 "coinop": "Shoot &apos;Em Up"
@@ -130332,7 +130408,8 @@
 "dist": "Beat'em up"
 },
 "desert": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"repo": "Shooter"
 },
 "desertgu": {
 "dist": "Sports / Shooting",
@@ -139137,7 +139214,8 @@
 "dist": "Sports"
 },
 "vcopa": {
-"ongo": "Shooter"
+"ongo": "Shooter",
+"repo": "Shooter"
 },
 "vcrunchy": {
 "dist": "Maze"
