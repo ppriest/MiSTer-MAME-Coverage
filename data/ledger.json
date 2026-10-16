@@ -7,14 +7,6 @@
 "date": "2026-10-04",
 "note": "alamone 2026-10-01",
 "cores": 1,
-"sets": 6,
-"pairs": 6,
-"dates_improved": 0
-},
-{
-"date": "2026-10-04",
-"note": "alamone 2026-10-01",
-"cores": 1,
 "sets": 1,
 "pairs": 1,
 "dates_improved": 0
@@ -457,6 +449,15 @@
 "pairs": 69,
 "dates_improved": 0,
 "cores_removed": 2
+},
+{
+"date": "2026-10-16",
+"note": "alamone 2026-10-12",
+"cores": 0,
+"sets": 2,
+"pairs": 2,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -6737,6 +6738,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-16",
+"aliases": [],
 "last_seen": "2026-10-16"
 },
 "gm0rk:atari-g42": {
@@ -6755,6 +6757,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-16",
+"aliases": [],
 "last_seen": "2026-10-16"
 },
 "gm0rk:itech8": {
@@ -6773,6 +6776,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-16",
+"aliases": [],
 "last_seen": "2026-10-16"
 },
 "jlrh:ffaerofgt": {
@@ -10291,6 +10295,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-16",
+"aliases": [],
 "last_seen": "2026-10-16"
 },
 "meat:docastle": {
@@ -11359,6 +11364,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-16",
+"aliases": [],
 "last_seen": "2026-10-16"
 },
 "ongo:ddragon3": {
@@ -57531,6 +57537,21 @@
 "mra": "_Arcade/_Cave CV1000/_alternatives/_Ibara Kuro Black Label/Ibara Kuro Black Label (Japan, 2006-02-06 MASTER VER.).mra"
 }
 },
+"ibarablkst": {
+"ongo:ikacore_cv1k": {
+"core": "ongo:ikacore_cv1k",
+"date": "2026-10-16",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_Cave CV1000/Ibara Kuro Black Label - Show Time (2026-10-12).mra",
+"mra": "_Arcade/_Cave CV1000/Ibara Kuro Black Label - Show Time (2026-10-12).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+}
+},
 "ibarao": {
 "ongo:ikacore_cv1k": {
 "core": "ongo:ikacore_cv1k",
@@ -70667,7 +70688,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_Cave CV1000/Muchi Muchi Pork! Roppaku (build 15).mra",
-"mra": "_Arcade/_Cave CV1000/Muchi Muchi Pork! Roppaku (build 15).mra",
+"mra": "_Arcade/_Cave CV1000/Muchi Muchi Pork! Roppaku (2026-10-14 build 15).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 }
@@ -81986,6 +82007,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-16",
 "mra": "_Arcade/_Cave CV1000/_alternatives/_Pink Sweets - Ibara Sorekara/Pink Sweets - Ibara Sorekara (Japan, 2006-04-06 MASTER VER.).mra"
+}
+},
+"pinkswtsrf": {
+"ongo:ikacore_cv1k": {
+"core": "ongo:ikacore_cv1k",
+"date": "2026-10-16",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_Cave CV1000/Pink Sweets Rosy Future (2026-10-15).mra",
+"mra": "_Arcade/_Cave CV1000/Pink Sweets Rosy Future (2026-10-15).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
 }
 },
 "pinkswtssc": {
@@ -132272,6 +132308,9 @@
 "ibarablka": {
 "ongo": "Shooter"
 },
+"ibarablkst": {
+"ongo": "Shooter"
+},
 "ibarao": {
 "ongo": "Shooter"
 },
@@ -134729,6 +134768,9 @@
 "ongo": "Shooter"
 },
 "pinkswtsb": {
+"ongo": "Shooter"
+},
+"pinkswtsrf": {
 "ongo": "Shooter"
 },
 "pinkswtssc": {
