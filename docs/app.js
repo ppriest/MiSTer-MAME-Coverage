@@ -707,10 +707,10 @@
     return best ? best : "**launch.title:Arcade/" + t.desc;
   }
   $("#slop-jump").addEventListener("click", ev => { ev.preventDefault(); const box = $("#slopbox"); box.open = true; box.scrollIntoView({ behavior: "smooth", block: "start" }); });
-  // arcade-ai-slop: the database hosted under /arcade-ai-slop/ (built by tools/arcade_ai_slop.py).
+  // downloader.ini databases: the list published under /downloader-ini/ (built by tools/downloader_databases.py).
   const slopCopy = (btn, text, done) => { try { navigator.clipboard.writeText(text).then(() => { btn.textContent = done; }); } catch (e) { /* clipboard unavailable */ } };
   $("#slop-copy").addEventListener("click", ev => slopCopy(ev.target, $("#slop-ini").textContent, "Copied"));
-  fetch("arcade-ai-slop/status.json", { cache: "no-cache" }).then(r => r.json()).then(st => {
+  fetch("downloader-ini/status.json", { cache: "no-cache" }).then(r => r.json()).then(st => {
     $("#slop-ini").textContent = st.install;
     if (st.description) $("#slop-desc").textContent = st.description + ".";
     const ok = st.sources.filter(s => s.section);

@@ -1,5 +1,4 @@
 {
-  "db_id": "arcade-ai-slop",
   "description": "Databases to add to get the source-available AI-assisted arcade cores, from developers who are willing to fix reported bugs",
   "sources": [
     {
