@@ -6,23 +6,6 @@
 {
 "date": "2026-10-04",
 "note": "alamone 2026-10-01",
-"cores": 11,
-"sets": 47,
-"pairs": 89,
-"dates_improved": 7
-},
-{
-"date": "2026-10-04",
-"note": "alamone 2026-10-01",
-"cores": 0,
-"sets": 0,
-"pairs": 0,
-"dates_improved": 0,
-"cores_removed": 8
-},
-{
-"date": "2026-10-04",
-"note": "alamone 2026-10-01",
 "cores": 0,
 "sets": 0,
 "pairs": 0,
@@ -459,6 +442,24 @@
 "sets": 0,
 "pairs": 4,
 "dates_improved": 0,
+"cores_removed": 0
+},
+{
+"date": "2026-10-16",
+"note": "alamone 2026-10-12",
+"cores": 1,
+"sets": 5,
+"pairs": 5,
+"dates_improved": 0,
+"cores_removed": 0
+},
+{
+"date": "2026-10-16",
+"note": "alamone 2026-10-12",
+"cores": 0,
+"sets": 0,
+"pairs": 0,
+"dates_improved": 6,
 "cores_removed": 0
 }
 ]
@@ -9944,22 +9945,39 @@
 },
 "kyle:crystal": {
 "id": "kyle:crystal",
-"name": "Crystal (kyledlester)",
+"name": "Crystal",
 "source": "kyle",
 "source_title": "kyledlester (GitHub repositories)",
-"channel": "repository only",
-"rbf": "Crystal_20261009.rbf",
+"channel": null,
+"rbf": "Crystal.rbf",
 "repo": "kyledlester/BrezzaSoft_Crystal_System_MiSTer",
 "url": "https://github.com/kyledlester/BrezzaSoft_Crystal_System_MiSTer",
-"build_date": "2026-10-09",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 34,
-"mame_drivers": [
-"misc/crystal.cpp"
-],
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
+"aliases": [],
+"last_seen": "2026-10-16"
+},
+"kyle:deniam": {
+"id": "kyle:deniam",
+"name": "Deniam",
+"source": "kyle",
+"source_title": "kyledlester (GitHub repositories)",
+"channel": null,
+"rbf": "Deniam.rbf",
+"repo": "kyledlester/MiSTer_DB",
+"url": "https://github.com/kyledlester/MiSTer_DB",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-16",
 "aliases": [],
 "last_seen": "2026-10-16"
 },
@@ -9970,8 +9988,8 @@
 "source_title": "kyledlester (GitHub repositories)",
 "channel": null,
 "rbf": "KonamiGV.rbf",
-"repo": "kyledlester/Konami_GV_MiSTer",
-"url": "https://github.com/kyledlester/Konami_GV_MiSTer",
+"repo": "kyledlester/MiSTer_DB",
+"url": "https://github.com/kyledlester/MiSTer_DB",
 "build_date": null,
 "status": null,
 "reading": null,
@@ -9984,20 +10002,18 @@
 },
 "kyle:namco_na1_na2": {
 "id": "kyle:namco_na1_na2",
-"name": "Namco_NA1_NA2 (kyledlester)",
+"name": "Namco_NA1_NA2",
 "source": "kyle",
 "source_title": "kyledlester (GitHub repositories)",
-"channel": "repository only",
-"rbf": "Namco_NA1_NA2_20260927.rbf",
+"channel": null,
+"rbf": "Namco_NA1_NA2.rbf",
 "repo": "kyledlester/Namco_NA1_NA2_MiSTer",
 "url": "https://github.com/kyledlester/Namco_NA1_NA2_MiSTer",
-"build_date": "2026-09-28",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 33,
-"mame_drivers": [
-"namco/namcona1.cpp"
-],
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
 "aliases": [],
@@ -10010,8 +10026,8 @@
 "source_title": "kyledlester (GitHub repositories)",
 "channel": null,
 "rbf": "Namco_NB1.rbf",
-"repo": "kyledlester/Namco_NB1_MiSTer",
-"url": "https://github.com/kyledlester/Namco_NB1_MiSTer",
+"repo": "kyledlester/MiSTer_DB",
+"url": "https://github.com/kyledlester/MiSTer_DB",
 "build_date": null,
 "status": null,
 "reading": null,
@@ -10029,8 +10045,8 @@
 "source_title": "kyledlester (GitHub repositories)",
 "channel": null,
 "rbf": "Namco_NB2.rbf",
-"repo": "kyledlester/Namco_NB2_MiSTer",
-"url": "https://github.com/kyledlester/Namco_NB2_MiSTer",
+"repo": "kyledlester/MiSTer_DB",
+"url": "https://github.com/kyledlester/MiSTer_DB",
 "build_date": null,
 "status": null,
 "reading": null,
@@ -10043,20 +10059,18 @@
 },
 "kyle:nerattechu": {
 "id": "kyle:nerattechu",
-"name": "NeratteChu (kyledlester)",
+"name": "NeratteChu",
 "source": "kyle",
 "source_title": "kyledlester (GitHub repositories)",
-"channel": "repository only",
-"rbf": "NeratteChu_20260929.rbf",
+"channel": null,
+"rbf": "NeratteChu.rbf",
 "repo": "kyledlester/MiSTer_Neratte_Chu",
 "url": "https://github.com/kyledlester/MiSTer_Neratte_Chu",
-"build_date": "2026-09-29",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 28,
-"mame_drivers": [
-"seta/simple_st0016.cpp"
-],
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
 "aliases": [],
@@ -10064,20 +10078,18 @@
 },
 "kyle:nostradamus": {
 "id": "kyle:nostradamus",
-"name": "Nostradamus (kyledlester)",
+"name": "Nostradamus",
 "source": "kyle",
 "source_title": "kyledlester (GitHub repositories)",
-"channel": "repository only",
-"rbf": "Nostradamus_20261003.rbf",
+"channel": null,
+"rbf": "Nostradamus.rbf",
 "repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
 "url": "https://github.com/kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
-"build_date": "2026-10-03",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 26,
-"mame_drivers": [
-"misc/mcatadv.cpp"
-],
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-15",
 "aliases": [],
@@ -10090,8 +10102,8 @@
 "source_title": "kyledlester (GitHub repositories)",
 "channel": null,
 "rbf": "RShark.rbf",
-"repo": "kyledlester/R_Shark_Super_X_MiSTer",
-"url": "https://github.com/kyledlester/R_Shark_Super_X_MiSTer",
+"repo": "kyledlester/MiSTer_DB",
+"url": "https://github.com/kyledlester/MiSTer_DB",
 "build_date": null,
 "status": null,
 "reading": null,
@@ -10109,8 +10121,8 @@
 "source_title": "kyledlester (GitHub repositories)",
 "channel": null,
 "rbf": "TaitoB.rbf",
-"repo": "kyledlester/Arcade-TaitoB_MiSTer",
-"url": "https://github.com/kyledlester/Arcade-TaitoB_MiSTer",
+"repo": "kyledlester/MiSTer_DB",
+"url": "https://github.com/kyledlester/MiSTer_DB",
 "build_date": null,
 "status": null,
 "reading": null,
@@ -10128,8 +10140,8 @@
 "source_title": "kyledlester (GitHub repositories)",
 "channel": null,
 "rbf": "XNZN1.rbf",
-"repo": "kyledlester/ZN1_MiSTer",
-"url": "https://github.com/kyledlester/ZN1_MiSTer",
+"repo": "kyledlester/MiSTer_DB",
+"url": "https://github.com/kyledlester/MiSTer_DB",
 "build_date": null,
 "status": null,
 "reading": null,
@@ -10147,8 +10159,8 @@
 "source_title": "kyledlester (GitHub repositories)",
 "channel": null,
 "rbf": "XNZN1FXA.rbf",
-"repo": "kyledlester/ZN1_MiSTer",
-"url": "https://github.com/kyledlester/ZN1_MiSTer",
+"repo": "kyledlester/MiSTer_DB",
+"url": "https://github.com/kyledlester/MiSTer_DB",
 "build_date": null,
 "status": null,
 "reading": null,
@@ -10166,8 +10178,8 @@
 "source_title": "kyledlester (GitHub repositories)",
 "channel": null,
 "rbf": "XNZN1RZ.rbf",
-"repo": "kyledlester/ZN1_MiSTer",
-"url": "https://github.com/kyledlester/ZN1_MiSTer",
+"repo": "kyledlester/MiSTer_DB",
+"url": "https://github.com/kyledlester/MiSTer_DB",
 "build_date": null,
 "status": null,
 "reading": null,
@@ -14312,6 +14324,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-16",
+"aliases": [],
 "last_seen": "2026-10-16"
 },
 "repo:monstermaulers": {
@@ -17020,7 +17033,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Aero Fighters Special/Aero Fighters Special (Taiwan).mra",
-"mra": "_Arcade/Aero Fighters Special (Taiwan).mra",
+"mra": "_Arcade/_alternatives/_Aero Fighters Special/Aero Fighters Special (Taiwan).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -23224,7 +23237,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Bloody Roar/Beastorizer (USA).mra",
-"mra": "_Arcade/Beastorizer (USA).mra",
+"mra": "_Arcade/_alternatives/_Bloody Roar/Beastorizer (USA).mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 },
@@ -23237,7 +23250,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Bloody Roar/Beastorizer (USA).mra",
-"mra": "_Arcade/Beastorizer (USA) (Sound).mra",
+"mra": "_Arcade/_alternatives/_Bloody Roar/Beastorizer (USA) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -23278,7 +23291,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Bloody Roar/Beastorizer USA (Jun 21 1997).mra",
-"mra": "_Arcade/Beastorizer USA (Jun 21 1997).mra",
+"mra": "_Arcade/_alternatives/_Bloody Roar/Beastorizer USA (Jun 21 1997).mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 },
@@ -23291,7 +23304,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Bloody Roar/Beastorizer USA (Jun 21 1997).mra",
-"mra": "_Arcade/Beastorizer USA (Jun 21 1997) (Sound).mra",
+"mra": "_Arcade/_alternatives/_Bloody Roar/Beastorizer USA (Jun 21 1997) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -24402,7 +24415,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Bloody Roar 2/Bloody Roar 2 (Asia).mra",
-"mra": "_Arcade/Bloody Roar 2 (Asia).mra",
+"mra": "_Arcade/_alternatives/_Bloody Roar 2/Bloody Roar 2 (Asia).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -24443,7 +24456,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Bloody Roar 2/Bloody Roar 2 (Japan).mra",
-"mra": "_Arcade/Bloody Roar 2 (Japan).mra",
+"mra": "_Arcade/_alternatives/_Bloody Roar 2/Bloody Roar 2 (Japan).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -24484,7 +24497,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Bloody Roar 2/Bloody Roar 2 (USA).mra",
-"mra": "_Arcade/Bloody Roar 2 (USA).mra",
+"mra": "_Arcade/_alternatives/_Bloody Roar 2/Bloody Roar 2 (USA).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -26914,7 +26927,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Asia).mra",
-"mra": "_Arcade/Brave Blade (Asia).mra",
+"mra": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Asia).mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 },
@@ -26927,7 +26940,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Asia).mra",
-"mra": "_Arcade/Brave Blade (Asia) (Sound).mra",
+"mra": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Asia) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -26981,7 +26994,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Japan).mra",
-"mra": "_Arcade/Brave Blade (Japan).mra",
+"mra": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Japan).mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 },
@@ -26994,7 +27007,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Japan).mra",
-"mra": "_Arcade/Brave Blade (Japan) (Sound).mra",
+"mra": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Japan) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -27048,7 +27061,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (USA).mra",
-"mra": "_Arcade/Brave Blade (USA).mra",
+"mra": "_Arcade/_alternatives/_Brave Blade/Brave Blade (USA).mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 },
@@ -27061,7 +27074,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (USA).mra",
-"mra": "_Arcade/Brave Blade (USA) (Sound).mra",
+"mra": "_Arcade/_alternatives/_Brave Blade/Brave Blade (USA) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -33488,6 +33501,36 @@
 "mra": "_Arcade/Crack Down (World, Floppy Based, FD1094 317-0058-04c).mra"
 }
 },
+"croquis": {
+"kyle:deniam": {
+"core": "kyle:deniam",
+"date": "2026-10-16",
+"date_quality": "observed",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Logic Pro/Croquis (Korea).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+}
+},
+"croquisg": {
+"kyle:deniam": {
+"core": "kyle:deniam",
+"date": "2026-10-16",
+"date_quality": "observed",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Logic Pro/Croquis (Germany).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+}
+},
 "crossbld": {
 "dist:iremm92": {
 "core": "dist:iremm92",
@@ -33609,13 +33652,13 @@
 "crysking": {
 "kyle:crystal": {
 "core": "kyle:crystal",
-"date": "2026-10-06",
+"date": "2026-10-04",
 "date_quality": "git",
 "via": "ongo",
 "wip": false,
 "alt": false,
 "first_repo": "kyledlester/BrezzaSoft_Crystal_System_MiSTer",
-"first_path": "MRA/The Crystal of Kings.mra",
+"first_path": "mra/The Crystal of Kings.mra",
 "mra": "_Arcade/The Crystal of Kings.mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
@@ -39321,7 +39364,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Dead or Alive ++/Dead or Alive ++ (Korea).mra",
-"mra": "_Arcade/Dead or Alive ++ (Korea).mra",
+"mra": "_Arcade/_alternatives/_Dead or Alive ++/Dead or Alive ++ (Korea).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -42507,7 +42550,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Emeraldia (Japan Version B).mra",
-"mra": "_Arcade/Emeraldia (Japan Version B).mra",
+"mra": "_Arcade/Emeraldia (Japan, Version B).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -42535,7 +42578,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Emeraldia/Emeraldia (Japan Version D).mra",
-"mra": "_Arcade/_alternatives/_Emeraldia/Emeraldia (Japan Version D).mra",
+"mra": "_Arcade/_alternatives/_Emeraldia/Emeraldia (Japan, Version D).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -45789,7 +45832,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Flame Gunner/Flame Gunner (Japan).mra",
-"mra": "_Arcade/Flame Gunner (Japan).mra",
+"mra": "_Arcade/_alternatives/_Flame Gunner/Flame Gunner (Japan).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -47213,7 +47256,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Fighters Impact/Fighters' Impact (Ver 2.02O).mra",
-"mra": "_Arcade/Fighters' Impact (Ver 2.02O).mra",
+"mra": "_Arcade/_alternatives/_Fighters Impact/Fighters' Impact (Ver 2.02O).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -47280,7 +47323,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Fighters Impact/Fighters' Impact (Ver 2.02J).mra",
-"mra": "_Arcade/Fighters' Impact (Ver 2.02J).mra",
+"mra": "_Arcade/_alternatives/_Fighters Impact/Fighters' Impact (Ver 2.02J).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -47414,7 +47457,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Fighters Impact/Fighters Impact A (Ver 2.00J).mra",
-"mra": "_Arcade/Fighters Impact A (Ver 2.00J).mra",
+"mra": "_Arcade/_alternatives/_Fighters Impact/Fighters Impact A (Ver 2.00J).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -50543,7 +50586,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_G-Darius/G-Darius (Ver 2.02O).mra",
-"mra": "_Arcade/G-Darius (Ver 2.02O).mra",
+"mra": "_Arcade/_alternatives/_G-Darius/G-Darius (Ver 2.02O).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -50677,7 +50720,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_G-Darius/G-Darius (Ver 2.01J).mra",
-"mra": "_Arcade/G-Darius (Ver 2.01J).mra",
+"mra": "_Arcade/_alternatives/_G-Darius/G-Darius (Ver 2.01J).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -50744,7 +50787,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_G-Darius/G-Darius (Ver 2.02A).mra",
-"mra": "_Arcade/G-Darius (Ver 2.02A).mra",
+"mra": "_Arcade/_alternatives/_G-Darius/G-Darius (Ver 2.02A).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -51822,7 +51865,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Gallop Racer 2/Gallop Racer 2 (Japan).mra",
-"mra": "_Arcade/Gallop Racer 2 (Japan).mra",
+"mra": "_Arcade/_alternatives/_Gallop Racer 2/Gallop Racer 2 (Japan).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -51904,7 +51947,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Gallop Racer 3/Gallop Racer 3 (Japan).mra",
-"mra": "_Arcade/Gallop Racer 3 (Japan).mra",
+"mra": "_Arcade/_alternatives/_Gallop Racer 3/Gallop Racer 3 (Japan).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -53292,7 +53335,7 @@
 "alt": true,
 "first_repo": "kyledlester/Namco_NB1_MiSTer",
 "first_path": "MRA/_alternatives/_Great Sluggers '94/Great Sluggers '94 (Japan).mra",
-"mra": "_Arcade/Great Sluggers '94 (Japan).mra",
+"mra": "_Arcade/_alternatives/_Great Sluggers '94/Great Sluggers '94 (Japan).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -53348,7 +53391,7 @@
 "alt": true,
 "first_repo": "kyledlester/Namco_NB1_MiSTer",
 "first_path": "MRA/_alternatives/_Great Sluggers '94/Great Sluggers '94 (prototype).mra",
-"mra": "_Arcade/Great Sluggers '94 (prototype).mra",
+"mra": "_Arcade/_alternatives/_Great Sluggers '94/Great Sluggers '94 (prototype).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -53928,7 +53971,7 @@
 "alt": true,
 "first_repo": "kyledlester/Namco_NB1_MiSTer",
 "first_path": "MRA/_alternatives/_Point Blank/Gun Bullet (Japan, GN1).mra",
-"mra": "_Arcade/Gun Bullet (Japan, GN1).mra",
+"mra": "_Arcade/_alternatives/_Point Blank/Gun Bullet (Japan, GN1).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -53956,7 +53999,7 @@
 "alt": true,
 "first_repo": "kyledlester/Namco_NB1_MiSTer",
 "first_path": "MRA/_alternatives/_Point Blank/Gun Bullet (World, GN3 Rev B).mra",
-"mra": "_Arcade/Gun Bullet (World, GN3 Rev B).mra",
+"mra": "_Arcade/_alternatives/_Point Blank/Gun Bullet (World, GN3 Rev B).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -61551,6 +61594,21 @@
 "mra": "_Arcade/Taisen Karate Dou (Japan).mra"
 }
 },
+"karianx": {
+"kyle:deniam": {
+"core": "kyle:deniam",
+"date": "2026-10-16",
+"date_quality": "observed",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Karian Cross (Rev. 1.0).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+}
+},
 "karnov": {
 "jt:jtkarnov": {
 "core": "jt:jtkarnov",
@@ -64782,7 +64840,7 @@
 "alt": true,
 "first_repo": "kyledlester/Konami_GV_MiSTer",
 "first_path": "MRA/_alternatives/_Susume! Taisen Puzzle-Dama/Let's Attack Crazy Cross (GV027 ASIA 1.10).mra",
-"mra": "_Arcade/Let's Attack Crazy Cross (GV027 ASIA 1.10).mra",
+"mra": "_Arcade/_alternatives/_Susume! Taisen Puzzle-Dama/Let's Attack Crazy Cross (GV027 ASIA 1.10).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 }
@@ -66310,6 +66368,36 @@
 "mra": "_Arcade/_alternatives/_Line of Fire/Line of Fire (US, bootleg decrypted).mra"
 }
 },
+"logicpr2": {
+"kyle:deniam": {
+"core": "kyle:deniam",
+"date": "2026-10-16",
+"date_quality": "observed",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Logic Pro 2 (Japan).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+}
+},
+"logicpro": {
+"kyle:deniam": {
+"core": "kyle:deniam",
+"date": "2026-10-16",
+"date_quality": "observed",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Logic Pro (Japan).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+}
+},
 "loht": {
 "dist:iremm72": {
 "core": "dist:iremm72",
@@ -67108,7 +67196,7 @@
 "alt": true,
 "first_repo": "kyledlester/Namco_NB2_MiSTer",
 "first_path": "MRA/_alternatives/_Mach Breakers/Mach Breakers - Numan Athletics 2 (Japan, MB1).mra",
-"mra": "_Arcade/Mach Breakers - Numan Athletics 2 (Japan, MB1).mra",
+"mra": "_Arcade/_alternatives/_Mach Breakers/Mach Breakers - Numan Athletics 2 (Japan, MB1).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -69786,7 +69874,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Magical Date/Magical Date EX (Ver 2.01J).mra",
-"mra": "_Arcade/Magical Date EX (Ver 2.01J).mra",
+"mra": "_Arcade/_alternatives/_Magical Date/Magical Date EX (Ver 2.01J).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -74803,7 +74891,7 @@
 "alt": true,
 "first_repo": "kyledlester/Konami_GV_MiSTer",
 "first_path": "MRA/_alternatives/_Hyper Olympic in Nagano/Nagano Winter Olympics '98 (GX720 EAA).mra",
-"mra": "_Arcade/Nagano Winter Olympics '98 (GX720 EAA).mra",
+"mra": "_Arcade/_alternatives/_Hyper Olympic in Nagano/Nagano Winter Olympics '98 (GX720 EAA).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 }
@@ -75408,7 +75496,7 @@
 "alt": true,
 "first_repo": "kyledlester/Namco_NB1_MiSTer",
 "first_path": "MRA/_alternatives/_Nebulas Ray/Nebulas Ray (Japan, NR1).mra",
-"mra": "_Arcade/Nebulas Ray (Japan, NR1).mra",
+"mra": "_Arcade/_alternatives/_Nebulas Ray/Nebulas Ray (Japan, NR1).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -75436,7 +75524,7 @@
 "alt": true,
 "first_repo": "kyledlester/Namco_NB1_MiSTer",
 "first_path": "MRA/_alternatives/_Nebulas Ray/Nebulas Ray (prototype).mra",
-"mra": "_Arcade/Nebulas Ray (prototype).mra",
+"mra": "_Arcade/_alternatives/_Nebulas Ray/Nebulas Ray (prototype).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -76736,13 +76824,13 @@
 "nratechu": {
 "kyle:nerattechu": {
 "core": "kyle:nerattechu",
-"date": "2026-09-29",
+"date": "2026-09-28",
 "date_quality": "git",
 "via": "ongo",
 "wip": false,
 "alt": false,
 "first_repo": "kyledlester/MiSTer_Neratte_Chu",
-"first_path": "MRA/Neratte Chu (ver. 1.10).mra",
+"first_path": "mra/Neratte Chu (ver. 1.10).mra",
 "mra": "_Arcade/Neratte Chu (ver. 1.10).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
@@ -77333,7 +77421,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Office Yeoin Cheonha (version 1.2).mra",
-"mra": "_Arcade/Office Yeoin Cheonha (version 1.2).mra",
+"mra": "_Arcade/Office Yeoin Cheonha.mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -78508,7 +78596,7 @@
 "alt": true,
 "first_repo": "kyledlester/Namco_NB2_MiSTer",
 "first_path": "MRA/_alternatives/_The Outfoxies/The Outfoxies (Korea).mra",
-"mra": "_Arcade/The Outfoxies (Korea).mra",
+"mra": "_Arcade/_alternatives/_The Outfoxies/The Outfoxies (Korea).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -78536,7 +78624,7 @@
 "alt": true,
 "first_repo": "kyledlester/Namco_NB2_MiSTer",
 "first_path": "MRA/_alternatives/_The Outfoxies/The Outfoxies (Japan, OU1).mra",
-"mra": "_Arcade/The Outfoxies (Japan, OU1).mra",
+"mra": "_Arcade/_alternatives/_The Outfoxies/The Outfoxies (Japan, OU1).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -78564,7 +78652,7 @@
 "alt": true,
 "first_repo": "kyledlester/Namco_NB2_MiSTer",
 "first_path": "MRA/_alternatives/_The Outfoxies/The Outfoxies (Japan, OU1, alternate GFX ROMs).mra",
-"mra": "_Arcade/The Outfoxies (Japan, OU1, alternate GFX ROMs).mra",
+"mra": "_Arcade/_alternatives/_The Outfoxies/The Outfoxies (Japan, OU1, alternate GFX ROMs).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -85241,7 +85329,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Psychic Force/Psychic Force (Ver 2.4J).mra",
-"mra": "_Arcade/Psychic Force (Ver 2.4J).mra",
+"mra": "_Arcade/_alternatives/_Psychic Force/Psychic Force (Ver 2.4J).mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 },
@@ -85254,7 +85342,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Psychic Force/Psychic Force (Ver 2.4J).mra",
-"mra": "_Arcade/Psychic Force (Ver 2.4J) (Sound).mra",
+"mra": "_Arcade/_alternatives/_Psychic Force/Psychic Force (Ver 2.4J) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -85295,7 +85383,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Psychic Force/Psychic Force EX (Ver 2.0J).mra",
-"mra": "_Arcade/Psychic Force EX (Ver 2.0J).mra",
+"mra": "_Arcade/_alternatives/_Psychic Force/Psychic Force EX (Ver 2.0J).mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 },
@@ -85308,7 +85396,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Psychic Force/Psychic Force EX (Ver 2.0J).mra",
-"mra": "_Arcade/Psychic Force EX (Ver 2.0J) (Sound).mra",
+"mra": "_Arcade/_alternatives/_Psychic Force/Psychic Force EX (Ver 2.0J) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -85601,7 +85689,7 @@
 "alt": true,
 "first_repo": "kyledlester/Namco_NB1_MiSTer",
 "first_path": "MRA/_alternatives/_Point Blank/Point Blank (World, GN2 Rev B, set 2).mra",
-"mra": "_Arcade/Point Blank (World, GN2 Rev B, set 2).mra",
+"mra": "_Arcade/_alternatives/_Point Blank/Point Blank (World, GN2 Rev B, set 2).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -89330,7 +89418,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Ray Storm/Ray Storm (Ver 2.05J).mra",
-"mra": "_Arcade/Ray Storm (Ver 2.05J).mra",
+"mra": "_Arcade/_alternatives/_Ray Storm/Ray Storm (Ver 2.05J).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -89397,7 +89485,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Ray Storm/Ray Storm (Ver 2.05O).mra",
-"mra": "_Arcade/Ray Storm (Ver 2.05O).mra",
+"mra": "_Arcade/_alternatives/_Ray Storm/Ray Storm (Ver 2.05O).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -89464,7 +89552,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Ray Storm/Ray Storm (Ver 2.05A).mra",
-"mra": "_Arcade/Ray Storm (Ver 2.05A).mra",
+"mra": "_Arcade/_alternatives/_Ray Storm/Ray Storm (Ver 2.05A).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -92782,13 +92870,13 @@
 "rshark": {
 "kyle:rshark": {
 "core": "kyle:rshark",
-"date": "2026-10-01",
+"date": "2026-09-29",
 "date_quality": "git",
 "via": "kyle",
 "wip": false,
 "alt": false,
-"first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
-"first_path": "releases/mra/R-Shark (set 1).mra",
+"first_repo": "kyledlester/R_Shark_Super_X_MiSTer",
+"first_path": "mra/R-Shark (set 1).mra",
 "mra": "_Arcade/R-Shark (set 1).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
@@ -92803,7 +92891,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/R-Shark (set 1).mra",
 "first_recorded": "2026-10-05",
-"last_seen": "2026-10-15",
+"last_seen": "2026-10-16",
 "mra": "_Arcade/R-Shark (set 1).mra"
 },
 "shmupfan:dooyong": {
@@ -92838,14 +92926,14 @@
 "rsharka": {
 "kyle:rshark": {
 "core": "kyle:rshark",
-"date": "2026-10-01",
+"date": "2026-09-29",
 "date_quality": "git",
 "via": "kyle",
 "wip": false,
 "alt": true,
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/R-Shark (set 2).mra",
-"mra": "_Arcade/R-Shark (set 2).mra",
+"mra": "_Arcade/_alternatives/_R-Shark/R-Shark (set 2).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -92859,7 +92947,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/R-Shark (set 2).mra",
 "first_recorded": "2026-10-05",
-"last_seen": "2026-10-15",
+"last_seen": "2026-10-16",
 "mra": "_Arcade/R-Shark (set 2).mra"
 },
 "shmupfan:dooyong": {
@@ -98946,7 +99034,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Super Football Champ/Super Football Champ (Ver 2.4J).mra",
-"mra": "_Arcade/Super Football Champ (Ver 2.4J).mra",
+"mra": "_Arcade/_alternatives/_Super Football Champ/Super Football Champ (Ver 2.4J).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -98987,7 +99075,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Super Football Champ/Super Football Champ (Ver 2.4O).mra",
-"mra": "_Arcade/Super Football Champ (Ver 2.4O).mra",
+"mra": "_Arcade/_alternatives/_Super Football Champ/Super Football Champ (Ver 2.4O).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -99028,7 +99116,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Super Football Champ/Super Football Champ (Ver 2.4A).mra",
-"mra": "_Arcade/Super Football Champ (Ver 2.4A).mra",
+"mra": "_Arcade/_alternatives/_Super Football Champ/Super Football Champ (Ver 2.4A).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -110611,7 +110699,7 @@
 "superx": {
 "kyle:rshark": {
 "core": "kyle:rshark",
-"date": "2026-10-01",
+"date": "2026-09-29",
 "date_quality": "git",
 "via": "kyle",
 "wip": false,
@@ -110632,7 +110720,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Super-X (NTC).mra",
 "first_recorded": "2026-10-05",
-"last_seen": "2026-10-15",
+"last_seen": "2026-10-16",
 "mra": "_Arcade/Super-X (NTC).mra"
 },
 "shmupfan:dooyong": {
@@ -110667,14 +110755,14 @@
 "superxm": {
 "kyle:rshark": {
 "core": "kyle:rshark",
-"date": "2026-10-01",
+"date": "2026-09-29",
 "date_quality": "git",
 "via": "kyle",
 "wip": false,
 "alt": true,
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Super-X (Mitchell).mra",
-"mra": "_Arcade/Super-X (Mitchell).mra",
+"mra": "_Arcade/_alternatives/_Super-X/Super-X (Mitchell).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -110688,7 +110776,7 @@
 "first_repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "first_path": "releases/mra/Super-X (Mitchell).mra",
 "first_recorded": "2026-10-05",
-"last_seen": "2026-10-15",
+"last_seen": "2026-10-16",
 "mra": "_Arcade/Super-X (Mitchell).mra"
 },
 "shmupfan:dooyong": {
@@ -116384,7 +116472,7 @@
 "alt": true,
 "first_repo": "kyledlester/Konami_GV_MiSTer",
 "first_path": "MRA/_alternatives/_Tokimeki Memorial Oshiete Your Heart Seal Version Plus/Tokimeki Memorial Oshiete Your Heart Seal Version Plus (GE756 JAA).mra",
-"mra": "_Arcade/Tokimeki Memorial Oshiete Your Heart Seal Version Plus (GE756 JAA).mra",
+"mra": "_Arcade/_alternatives/_Tokimeki Memorial Oshiete Your Heart Seal Version Plus/Tokimeki Memorial Oshiete Your Heart Seal Version Plus (GE756 JAA).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 }
@@ -130039,6 +130127,12 @@
 "crbaloon": {
 "dist": "Maze"
 },
+"croquis": {
+"kyle": "Puzzle"
+},
+"croquisg": {
+"kyle": "Puzzle"
+},
 "crossbld": {
 "dist": "Shooter"
 },
@@ -131168,7 +131262,7 @@
 },
 "fa": {
 "ongo": "Shoot 'em Up",
-"repo": "Shooter",
+"repo": "Shoot 'em Up",
 "kyle": "Shoot 'em Up"
 },
 "falcon": {
@@ -131239,7 +131333,7 @@
 },
 "fghtatck": {
 "ongo": "Shoot 'em Up",
-"repo": "Shooter",
+"repo": "Shoot 'em Up",
 "kyle": "Shoot 'em Up"
 },
 "fgtlayer": {
@@ -133124,6 +133218,9 @@
 "kangaroob": {
 "dist": "Platform"
 },
+"karianx": {
+"kyle": "Puzzle"
+},
 "kartduel": {
 "ongo": "Racing"
 },
@@ -133482,6 +133579,12 @@
 "loffireud": {
 "dist": "Shooter / Flight",
 "rossops": "Shooter / Flight"
+},
+"logicpr2": {
+"kyle": "Puzzle"
+},
+"logicpro": {
+"kyle": "Puzzle"
 },
 "lomakai": {
 "ongo": "Arcade",
@@ -138698,7 +138801,7 @@
 },
 "tinklpit": {
 "ongo": "Action",
-"repo": "Maze",
+"repo": "Action",
 "kyle": "Action"
 },
 "tinstar": {

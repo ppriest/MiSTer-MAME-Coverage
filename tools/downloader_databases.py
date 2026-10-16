@@ -75,6 +75,7 @@ def main() -> int:
 
     listing: list[dict] = []
     seen: dict[str, str] = {}
+    cfg["sources"].sort(key=lambda s: s["name"].casefold())     # listed alphabetically, however the file is ordered
     for s in cfg["sources"]:
         if not s.get("enabled", True):
             continue

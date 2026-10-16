@@ -59,23 +59,10 @@ EXTRA_REPOS = [
     ("jt", "MiSTer-devel/Arcade-gng_MiSTer", None),
     ("jt", "jotego/jtcores", ["rom/mra"]),
     # Cores not yet catalogued by alamone or any database (add new ones here).
-    # kyledlester's repositories are one source ("kyle", see OWNER_SOURCES); these are the known ones and where their MRAs are
     # (any further repository of his with "mister" in its name is found through the GitHub API when it is reachable).
     ("rossops", "rossops/Arcade-SegaXBoard_MiSTer", ["releases"]),
     ("rossops", "rossops/Arcade-SegaYBoard_MiSTer", ["releases"]),
     ("rossops", "rossops/Arcade-SegaSpaceHarrier_MiSTer", ["releases"]),   # rossops/s32 (Sega System 32) has MRAs but no build yet
-    ("kyle", "kyledlester/Konami_GV_MiSTer", ["MRA"]),
-    ("kyle", "kyledlester/Namco_NA1_NA2_MiSTer", ["MRA"]),
-    ("kyle", "kyledlester/Namco_NB1_MiSTer", ["MRA"]),
-    ("kyle", "kyledlester/Namco_NB2_MiSTer", ["MRA"]),
-    ("kyle", "kyledlester/BrezzaSoft_Crystal_System_MiSTer", ["MRA"]),
-    ("kyle", "kyledlester/MiSTer_Neratte_Chu", ["MRA"]),
-    ("kyle", "kyledlester/R_Shark_Super_X_MiSTer", ["MRA"]),
-    ("kyle", "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer", ["MRA"]),
-    ("kyle", "kyledlester/ZN1_MiSTer", ["release/_Arcade"]),          # fork of XelaNotPu/ZN1_MiSTer, adding music
-    ("kyle", "kyledlester/Arcade-SeibuSPI_MiSTer", ["releases"]),     # fork of zakk4223's SeibuSPI core
-    ("kyle", "kyledlester/Brave_Blade_MiSTer", ["MRA"]),              # fork of ZN1_MiSTer
-    ("kyle", "kyledlester/Arcade-TaitoB_MiSTer", ["releases"]),       # fork of Mezzow's Taito B core
     ("ppriest", "ppriest/Arcade-HyperNG64_MiSTer", None),
     ("repo", "MiSTer-devel/Arcade-KillerInstinct_MiSTer", ["releases"]),   # official core; neither the distribution nor alamone lists it yet
     ("repo", "decoryah/Arcade-TaitoLSystem_MiSTer", ["mra"]),
@@ -110,7 +97,7 @@ SUPERSEDED_CORES = {
 }
 
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
-OWNER_SOURCES = {"kyledlester": "kyle", "rossops": "rossops", "xelanotpu": "xela"}
+OWNER_SOURCES = {"rossops": "rossops", "xelanotpu": "xela"}
 # Repositories of those owners that are not cores (forks of the shared MRA collection, a game runtime): never scanned.
 OWNER_SKIP = {"rossops/mra-alternatives_mister", "rossops/bennugd_mister"}
 
@@ -240,6 +227,8 @@ DB_SOURCES = {
     "ppriest": "https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip",
     # Gm0rk's cores (Atari G1/G42, ITech8); the database is the Downloader DB-Template's, and the sources are in his own repositories
     "gm0rk": "https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip",
+    # kyledlester's cores (github.com/kyledlester/MiSTer_DB); his loose repositories are not scanned
+    "kyle": "https://raw.githubusercontent.com/kyledlester/MiSTer_DB/db/db.json.zip",
 }
 # Cores that load ROM sets from a list instead of MRAs: (source, repo, file, core name).
 ROMSET_FILES = [
@@ -280,7 +269,7 @@ SOURCE_PAGES = {
     "blackwine": "https://github.com/TheJesusFish/Blackwine-SegaSystem1-2_MiSTer",
     "rmcores": "https://github.com/rmonic79/rmcores",
     "ppriest": "https://github.com/ppriest/MiSTer_ppriest",
-    "kyle": "https://github.com/kyledlester?tab=repositories",
+    "kyle": "https://github.com/kyledlester/MiSTer_DB",
     "gm0rk": "https://github.com/Gm0rk/Gm0rkCores",
     "rossops": "https://github.com/rossops?tab=repositories",
     "xela": "https://github.com/XelaNotPu?tab=repositories",
@@ -306,7 +295,7 @@ DB_TITLES = {
     "rmcores": "rmcores (rmonic79)",
     "jtpr": "jtcores unreleased (PRs, branches)",
     "ppriest": "ppriest (MiSTer_ppriest)",
-    "kyle": "kyledlester (GitHub repositories)",
+    "kyle": "kyledlester (MiSTer_DB)",
     "gm0rk": "Gm0rkCores (Gm0rk)",
     "rossops": "rossops (GitHub repositories)",
     "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
