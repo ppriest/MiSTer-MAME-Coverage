@@ -13,7 +13,7 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (101)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (97)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
@@ -24,10 +24,8 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `aliensec` | Alien Sector | 1985 | Shooter / Flying Horizontal (catver) | jtthundr |
 | `argus` | Argus | 1986 | Shooter / Flying Vertical (catver) | Argus |
 | `robokid` | Atomic Robo-kid (World, Type-2) | 1988 | Shooter / Flying Horizontal (catver) | UPLFramebuffer |
-| `bwings` | B-Wings (Japan new Ver.) | 1984 | Shooter / Flying Vertical (catver) | DataEastLiberation |
 | `bakutotu` | Bakutotsu Kijuutei | 1988 | Shooter / Flying Horizontal (catver) | jtshouse |
 | `bchopper` | Battle Chopper (World) | 1987 | Shooter / Flying (catver) | IremM72 |
-| `boomrang` | Boomer Rang'r / Genesis (set 1) | 1983 | Shooter / Walking (catver) | DataEastLiberation |
 | `brkthru` | Break Thru (World) | 1986 | Shooter / Driving Horizontal (catver) | xnbrkthru |
 | `bucky` | Bucky O'Hare (ver EAB) | 1992 | Shooter / Walking (catver) | Bucky |
 | `bullet` | Bullet (FD1094 317-0041) | 1987 | Shooter / Walking (catver) | jts16b |
@@ -38,7 +36,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `commando` | Commando (World) | 1985 | Shooter / Walking (catver) | jtcommnd |
 | `dcon` | D-Con | 1992 | Shooter / Command (catver) | DCon |
 | `dambustr` | Dambusters (US, set 1) | 1981 | Shooter / Flying Horizontal (catver) | Galaxian |
-| `dangerex` | Danger Express (prototype) | 1992 | Shooter / Misc. Vertical (catver) | Atari-G42 |
+| `dangerex` | Danger Express (prototype) | 1992 | Shooter / Misc. Vertical (catver) | Atari-G42 (Gm0rk) |
 | `dariusgx` | Darius Gaiden - Silver Hawk Extra Version (Ver 2.7J 1995/03/06) (Official Hack) | 1994 | Shooter / Flying Horizontal (catver) | Rayforce (spacestate1) |
 | `defender` | Defender (Red label) | 1980 | Shooter / Flying Horizontal (catver) | Defender |
 | `desertbr` | Desert Breaker (World) (FD1094 317-0196) | 1992 | Shooter / Walking (catver) | jts18 |
@@ -62,7 +60,6 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `ikari` | Ikari Warriors (US JAMMA) | 1986 | Shooter / Walking (catver) | IkariWarriors |
 | `kikikai` | KiKi KaiKai | 1986 | Shooter / Walking (catver) | kikikai, Kikikaikai (alpuy) |
 | `lasthope` | Last Hope (bootleg AES to MVS conversion, no coin support) | 2005 | Shooter / Flying Horizontal (catver) | NeoGeo |
-| `liberate` | Liberation | 1984 | Shooter / Flying (catver) | DataEastLiberation |
 | `mariner` | Mariner | 1981 | Shooter / Misc. Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `markham` | Markham | 1983 | Shooter / Flying Horizontal (catver) | IkkiSunsoft |
 | `mayday` | Mayday (set 1) | 1980 | Shooter / Flying Horizontal (catver) | Defender |
@@ -118,7 +115,6 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `supxevs` | Vs. Super Xevious | 1986 | Shooter / Flying Vertical (catver) | VSnes |
 | `wwestern` | Wild Western (set 1) | 1982 | Shooter / Misc. Vertical (catver) | TaitoSJ |
 | `wivernwg` | Wivern Wings | 2001 | Shooter / Flying Vertical (catver) | Vamphalf |
-| `zaviga` | Zaviga | 1984 | Shooter / Misc. Vertical (catver) | DataEastLiberation |
 | `zodiack` | Zodiack | 1983 | Shooter / Flying Vertical (catver) | Vastar |
 
 ## C. Deck games with no set in MAME 0289 (4)
