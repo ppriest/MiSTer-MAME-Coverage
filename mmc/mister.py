@@ -131,9 +131,6 @@ SOURCE_REPOS = {
     "dist:reliefpitcher": "MiSTer-devel/Arcade-ReliefPitcher_MiSTer",
     "dist:shuuz": "MiSTer-devel/Arcade-Shuuz_MiSTer",
     "dist:victory": "MiSTer-devel/Arcade-Victory_MiSTer",
-    "gm0rk:atari-g1": "Gm0rk/Arcade-Atari-G1_MiSTer",
-    "gm0rk:atari-g42": "Gm0rk/Arcade-Atari-G42_MiSTer",
-    "gm0rk:itech8": "Gm0rk/ITech8_MiSTer",
 }
 REPO_SOURCE_FILE = os.path.join(paths.DATA, "repo_source.json")
 
@@ -237,8 +234,6 @@ DB_SOURCES = {
     # ppriest's own cores, rebuilt daily from his public non-archived core repositories
     # (github.com/ppriest/MiSTer_ppriest). Unreachable until that repository is published.
     "ppriest": "https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip",
-    # Gm0rk's cores (Atari G1/G42, ITech8); the database is the Downloader DB-Template's, and the sources are in his own repositories
-    "gm0rk": "https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip",
 }
 # Cores that load ROM sets from a list instead of MRAs: (source, repo, file, core name).
 ROMSET_FILES = [
@@ -280,7 +275,6 @@ SOURCE_PAGES = {
     "rmcores": "https://github.com/rmonic79/rmcores",
     "ppriest": "https://github.com/ppriest/MiSTer_ppriest",
     "kyle": "https://github.com/kyledlester?tab=repositories",
-    "gm0rk": "https://github.com/Gm0rk/Gm0rkCores",
     "rossops": "https://github.com/rossops?tab=repositories",
     "xela": "https://github.com/XelaNotPu?tab=repositories",
     "jtpr": "https://github.com/jotego/jtcores/tree/andrea-cores/cores",
@@ -306,7 +300,6 @@ DB_TITLES = {
     "jtpr": "jtcores unreleased (PRs, branches)",
     "ppriest": "ppriest (MiSTer_ppriest)",
     "kyle": "kyledlester (GitHub repositories)",
-    "gm0rk": "Gm0rkCores (Gm0rk)",
     "rossops": "rossops (GitHub repositories)",
     "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
     "repo": "GitHub repository only",
