@@ -706,6 +706,14 @@
     }
     return best ? best : "**launch.title:Arcade/" + t.desc;
   }
+  // arcade-ai-slop: the database hosted under /arcade-ai-slop/ (built by tools/arcade_ai_slop.py).
+  $("#slop-copy").addEventListener("click", ev => { const b = ev.target; try { navigator.clipboard.writeText($("#slop-ini").textContent).then(() => { b.textContent = "Copied"; }); } catch (e) { /* clipboard unavailable */ } });
+  fetch("arcade-ai-slop/status.json", { cache: "no-cache" }).then(r => r.json()).then(st => {
+    $("#slop-ini").textContent = st.install || $("#slop-ini").textContent;
+    if (st.description) $("#slop-desc").textContent = st.description + ".";
+    const ok = st.sources.filter(s => s.status === "ok" || s.status.startsWith("kept"));
+    $("#slop-list").innerHTML = `References ${ok.length} database${ok.length === 1 ? "" : "s"}: ` + ok.map(s => `<a href="${esc(s.home)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(", ") + `. Last checked ${esc(st.checked)}.`;
+  }).catch(() => { $("#slop-list").textContent = ""; });
   // Zaparoo launch: the address lives only in this browser's localStorage.
   // Accepts "192.168.1.5", "http://192.168.1.5/", "http://192.168.1.5:7497/path": keeps just host[:port].
   const zhost = s => { s = (s || "").trim(); if (!s) return ""; try { return new URL(/^[a-z][a-z0-9+.-]*:\/\//i.test(s) ? s : "http://" + s).host || s; } catch (e) { return s.replace(/^[a-z]+:\/\//i, "").replace(/[\/?#].*$/, ""); } };

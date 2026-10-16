@@ -172,6 +172,17 @@ Hashed names deter guessing and bulk scraping; they do not hide the files from s
 requests. For real hotlink protection add a referer rule on the bucket (Cloudflare WAF custom rule, or a
 Worker in front of R2). Hover only exists on devices with a pointer.
 
+## The arcade-ai-slop database
+
+`tools/arcade_ai_slop.py` builds a MiSTer Downloader database that is purely references to other databases, hosted
+with the page at `https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/db.json.zip` and advertised on the front
+page. Downloader has no "include another database" field, so the database installs one drop-in `.ini` per referenced
+database into `/media/fat/downloader/` (Downloader reads those at start-up, hence two runs). The list lives in
+`data/arcade_ai_slop.json` (`enabled: false` keeps a candidate documented); each build fetches every enabled database
+to read its `db_id`, keeps the previous entry of one that is unreachable, and writes `docs/arcade-ai-slop/` (db.json,
+db.json.zip, `downloader/*.ini`, `sources.md`, `status.json`). The daily refresh runs it after `mmc build` and commits
+the folder.
+
 ## Databases tab
 
 One row per source (`DB_TITLES`): cores, working arcade titles and sets loaded by at least one core

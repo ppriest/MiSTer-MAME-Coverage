@@ -210,3 +210,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 @supports (overflow-x: clip) { html, body { overflow-x: clip; } }
 main, .wrap, .tab, .tablewrap, .tiles, .tile, .filters, .panel { min-width: 0; max-width: 100%; }
 .top h1, .top .tagline, .top .sub { overflow-wrap: anywhere; }
+details.slopbox { margin: 10px 0 0; border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; background: var(--surface-2); }
+details.slopbox > summary { cursor: pointer; }
+details.slopbox[open] > summary { margin-bottom: 6px; }
+details.slopbox pre { margin: 6px 0; }

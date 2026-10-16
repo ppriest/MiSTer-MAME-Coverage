@@ -8,7 +8,7 @@
 <title>MiSTer MAME Coverage</title>
 <meta name="description" content="Which MAME arcade titles are playable on MiSTer FPGA cores, which remain, and how coverage grew over time.">
 <link rel="canonical" href="https://mister-mame-coverage-docs.vercel.app/">
-<link rel="stylesheet" href="style.css?v=34f613417e">
+<link rel="stylesheet" href="style.css?v=a7e0a352e2">
 </head>
 <body>
 <header class="top">
@@ -23,6 +23,17 @@
 
 <main class="wrap">
   <section class="tiles" id="tiles" aria-label="Headline numbers"></section>
+
+  <details class="slopbox" id="slopbox">
+    <summary><b>arcade-ai-slop</b> <span class="muted">— one MiSTer Downloader database that adds all the AI-assisted arcade cores that publish their own</span></summary>
+    <p class="muted" id="slop-desc">One database to add to get access to all the AI-assisted cores that publish their own databases, so long as source-available and willing to fix reported bugs.</p>
+    <p>Add this to <code>downloader.ini</code> on your MiSTer's SD card, then run Downloader <b>twice</b> (the first run installs the references, the second installs the cores):</p>
+    <pre class="zapcfg" id="slop-ini">[arcade-ai-slop]
+db_url = https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/db.json.zip</pre>
+    <p class="zapcopy"><button type="button" id="slop-copy">Copy</button></p>
+    <p class="muted small" id="slop-list">Loading the list of databases…</p>
+    <p class="muted small">It contains no cores itself: it installs one small drop-in file per referenced database into <code>/media/fat/downloader/</code>. Rebuilt daily with this page; <a href="arcade-ai-slop/sources.md">sources.md</a> has the full list, and databases are added in <a href="https://github.com/ppriest/MiSTer-MAME-Coverage/blob/main/data/arcade_ai_slop.json">data/arcade_ai_slop.json</a>.</p>
+  </details>
 
 
   <nav class="tabs" role="tablist">
@@ -334,6 +345,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=3a590f0916"></script>
+<script src="app.js?v=99f7fd3eb1"></script>
 </body>
 </html>

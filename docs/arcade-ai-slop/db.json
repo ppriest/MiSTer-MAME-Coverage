@@ -1,0 +1,56 @@
+{
+ "db_id": "arcade-ai-slop",
+ "db_url": "https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/db.json.zip",
+ "files": {
+  "downloader/TheJesusFish_Slop-Core.ini": {
+   "hash": "65ffa5ce7d85b5a7b47a6707d9bcd9b5",
+   "size": 148,
+   "url": "https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/downloader/TheJesusFish_Slop-Core.ini"
+  },
+  "downloader/bazset_MiSTer_BAZSET.ini": {
+   "hash": "1e9663d0be75862e37b982ce5716bab9",
+   "size": 141,
+   "url": "https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/downloader/bazset_MiSTer_BAZSET.ini"
+  },
+  "downloader/bmo00_arcfpga-mister-db.ini": {
+   "hash": "36d5a36b3bc0df0038f489b08618b9d0",
+   "size": 140,
+   "url": "https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/downloader/bmo00_arcfpga-mister-db.ini"
+  },
+  "downloader/jlrh_jlrh-misterfpga-db.ini": {
+   "hash": "1c49848917821cbfdd859dbf067d0f4e",
+   "size": 129,
+   "url": "https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/downloader/jlrh_jlrh-misterfpga-db.ini"
+  },
+  "downloader/kuzearcade_kuzecores.ini": {
+   "hash": "5ffbdad9c8a54409cc27eef08de4af7f",
+   "size": 141,
+   "url": "https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/downloader/kuzearcade_kuzecores.ini"
+  },
+  "downloader/meathax_meatcores.ini": {
+   "hash": "e3ed1d6c47319d94b3256a3fa772ed14",
+   "size": 132,
+   "url": "https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/downloader/meathax_meatcores.ini"
+  },
+  "downloader/ppriest_MiSTer_ppriest.ini": {
+   "hash": "c00354061e0859301b7a1bb5c7fae032",
+   "size": 147,
+   "url": "https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/downloader/ppriest_MiSTer_ppriest.ini"
+  },
+  "downloader/rmonic79_rmcores.ini": {
+   "hash": "f429474306f91882018de0cebf471298",
+   "size": 129,
+   "url": "https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/downloader/rmonic79_rmcores.ini"
+  },
+  "downloader/shmupfan.ini": {
+   "hash": "5a612c1788bcdc5602df03ca115b0ec8",
+   "size": 129,
+   "url": "https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/downloader/shmupfan.ini"
+  }
+ },
+ "folders": {
+  "downloader": {}
+ },
+ "timestamp": 1792137434,
+ "version": 1
+}

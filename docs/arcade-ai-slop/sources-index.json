@@ -1,0 +1,11 @@
+{
+ "downloader/TheJesusFish_Slop-Core.ini": "https://raw.githubusercontent.com/TheJesusFish/Slop-Core/db/db.json.zip",
+ "downloader/bazset_MiSTer_BAZSET.ini": "https://raw.githubusercontent.com/bazset/MiSTer_BAZSET/db/db.json.zip",
+ "downloader/bmo00_arcfpga-mister-db.ini": "https://raw.githubusercontent.com/bmo00/arcfpga-mister-db/db/db.json.zip",
+ "downloader/jlrh_jlrh-misterfpga-db.ini": "https://raw.githubusercontent.com/jlrh/jlrh-misterfpga-db/db/db.json.zip",
+ "downloader/kuzearcade_kuzecores.ini": "https://raw.githubusercontent.com/kuzearcade/kuzecores/db/db.json.zip",
+ "downloader/meathax_meatcores.ini": "https://raw.githubusercontent.com/meathax/meatcores/db/db.json.zip",
+ "downloader/ppriest_MiSTer_ppriest.ini": "https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip",
+ "downloader/rmonic79_rmcores.ini": "https://raw.githubusercontent.com/rmonic79/rmcores/db/db.json.zip",
+ "downloader/shmupfan.ini": "https://raw.githubusercontent.com/shmupfan/Distribution/main/db.json"
+}
