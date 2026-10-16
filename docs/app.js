@@ -638,10 +638,9 @@
   }
   const ago = iso => iso ? iso.slice(0, 10) : "";
   const voters = v => (v.voters || []).map(x => `<span class="badge" title="${esc(x.at)}">${esc(x.nickname)}</span>`).join("") + (v.votes > (v.voters || []).length ? ` <span class="flag">+${v.votes - v.voters.length} more</span>` : "");
-  // A request is fulfilled once its title (every working set) or driver (every title) is on MiSTer.
-  S.wlView = "requested";
-  const titleDone = v => { const t = S.titles.find(x => x.name === v.key); return !!t && (t.nworking ? t.ncovered_working >= t.nworking : t.ncovered >= t.nsets); };
-  const driverDone = v => { const d = S.driverByFile[v.key]; return !!d && d.titles > 0 && d.covered >= d.titles; };
+  // A request is fulfilled once it is on MiSTer: a title when its main (parent) set is, a driver when at least one of its titles is.
+  const titleDone = v => { const t = S.titles.find(x => x.name === v.key); if (!t) return false; const p = t.sets.find(s => s.name === t.name); return p ? p.cores.length > 0 : t.ncovered > 0; };
+  const driverDone = v => { const d = S.driverByFile[v.key]; return !!d && d.covered > 0; };
   function renderWishlist() {
     const note = $("#wishlist-note");
     $$("#wl-view button").forEach(b => { const on = b.dataset.view === S.wlView; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
