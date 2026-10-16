@@ -8,7 +8,7 @@
 <title>MiSTer MAME Coverage</title>
 <meta name="description" content="Which MAME arcade titles are playable on MiSTer FPGA cores, which remain, and how coverage grew over time.">
 <link rel="canonical" href="https://mister-mame-coverage-docs.vercel.app/">
-<link rel="stylesheet" href="style.css?v=3649d68b54">
+<link rel="stylesheet" href="style.css?v=cc4dbe413a">
 </head>
 <body>
 <header class="top">
@@ -17,7 +17,7 @@
     <h2 class="tagline">See what Arcade PCB titles are covered by MAME, MiSTer, and request support on MiSTer where missing</h2>
     <p class="sub" id="subtitle">Loading data…</p>
     <button type="button" id="zap-settings" class="zapset" title="set your local MiSTer IP address for Zaparoo launch">⚙ Local MiSTer IP address</button>
-    <div class="issue"><a class="issue-link" href="https://github.com/ppriest/MiSTer-MAME-Coverage/issues" target="_blank" rel="noopener" title="report a problem or suggest something on GitHub">Create Issue / Suggestion</a> <a class="issue-link slopjump" href="#slopbox" id="slop-jump"><span class="newtag">NEW</span> arcade-ai-slop database</a></div>
+    <div class="issue"><a class="issue-link" href="https://github.com/ppriest/MiSTer-MAME-Coverage/issues" target="_blank" rel="noopener" title="report a problem or suggest something on GitHub">Create Issue / Suggestion</a> <a class="issue-link slopjump" href="#slopbox" id="slop-jump"><span class="newtag">NEW</span> arcade-ai-slop</a></div>
   </div>
 </header>
 
@@ -25,14 +25,14 @@
   <section class="tiles" id="tiles" aria-label="Headline numbers"></section>
 
   <details class="slopbox" id="slopbox">
-    <summary><span class="newtag">NEW</span> <b>arcade-ai-slop</b> <span class="muted">— One MiSTer Downloader database to add the source-available AI-assisted arcade cores</span></summary>
-    <p class="muted" id="slop-desc">One database to add to get access to all the AI-assisted cores that publish their own databases, so long as source-available and willing to fix reported bugs.</p>
-    <p>Add this to <code>downloader.ini</code> on your MiSTer's SD card, then run Downloader:</p>
-    <p class="slopwarn"><b>Don&rsquo;t use both.</b> This overlaps heavily with <a href="https://github.com/OngoGablogian/MiSTer_Ongo" target="_blank" rel="noopener">OngoGablogian&rsquo;s MiSTer_Ongo</a> database (it republishes many of the same cores), so install one or the other.</p>
-    <pre class="zapcfg" id="slop-ini">[arcade-ai-slop]
-db_url = https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/db.json.zip</pre>
-    <p class="zapcopy"><button type="button" id="slop-copy">Copy</button></p>
-    <p class="muted small" id="slop-list">Loading the list of databases…</p>
+    <summary><span class="newtag">NEW</span> <b>arcade-ai-slop</b> <span class="muted">— Databases to add for the source-available AI-assisted arcade cores</span></summary>
+    <p class="muted" id="slop-desc">Databases to add to get the source-available AI-assisted arcade cores, from developers who are willing to fix reported bugs.</p>
+    <p class="slopwarn"><b>Don&rsquo;t use both.</b> These overlap heavily with <a href="https://github.com/OngoGablogian/MiSTer_Ongo" target="_blank" rel="noopener">OngoGablogian&rsquo;s MiSTer_Ongo</a> database (it republishes many of the same cores), so use one or the other.</p>
+    <p>Copy these sections into <code>downloader.ini</code> on your MiSTer's SD card (or <a href="arcade-ai-slop/downloader_arcade-ai-slop.ini" download>download them as a file</a> and save it next to <code>downloader.ini</code>), then run Downloader. Each contributor keeps their own database; come back and copy again to pick up new ones:</p>
+    <pre class="zapcfg" id="slop-ini">Loading…</pre>
+    <p class="zapcopy"><button type="button" id="slop-copy">Copy all</button></p>
+    <ul class="sloplist" id="slop-list"></ul>
+    <p class="muted small" id="slop-checked"></p>
     <p class="muted small">Rebuilt daily with this page.</p>
   </details>
 
@@ -346,6 +346,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=481da12735"></script>
+<script src="app.js?v=6d37084cb3"></script>
 </body>
 </html>

@@ -1,23 +1,23 @@
 # arcade-ai-slop
 
-One database to add to get access to all the AI-assisted cores that publish their own databases, so long as source-available and willing to fix reported bugs
+Databases to add to get the source-available AI-assisted arcade cores, from developers who are willing to fix reported bugs
 
-Last checked 2026-10-16 19:25 UTC. 1279 files from 10 databases.
+Last checked 2026-10-16 19:53 UTC.
 
-**Don't use both this and [MiSTer_Ongo](https://github.com/OngoGablogian/MiSTer_Ongo):** they overlap heavily (it republishes many of the same cores).
+**Don't use both these and [MiSTer_Ongo](https://github.com/OngoGablogian/MiSTer_Ongo):** they overlap heavily (it republishes many of the same cores).
 
-| Database | db_id | Files | Status |
-|---|---|---|---|
-| [Gm0rkCores (Gm0rk)](https://github.com/Gm0rk/Gm0rkCores) | Gm0rk/Gm0rkCores | 79 | ok |
-| [Slop Cores (TheJesusFish)](https://github.com/TheJesusFish/Slop-Core) | TheJesusFish/Slop-Core | 58 | ok |
-| [kuzecores (kuzearcade)](https://github.com/kuzearcade/kuzecores) | kuzearcade/kuzecores | 201 | ok |
-| [arcfpga (bmo00)](https://github.com/bmo00/arcfpga-mister-db) | bmo00/arcfpga-mister-db | 4 | ok |
-| [shmupfan (Distribution)](https://github.com/shmupfan/Distribution) | shmupfan | 111 | ok |
-| [rmcores (rmonic79)](https://github.com/rmonic79/rmcores) | rmonic79/rmcores | 74 | ok |
-| [ppriest (MiSTer_ppriest)](https://github.com/ppriest/MiSTer_ppriest) | ppriest/MiSTer_ppriest | 230 | ok |
-| [MeatCores (meathax)](https://github.com/meathax/meatcores) | meathax/meatcores | 306 | ok |
-| [bazset (MiSTer_BAZSET)](https://github.com/bazset/MiSTer_BAZSET) | bazset/MiSTer_BAZSET | 95 | ok |
-| [jlrh](https://github.com/jlrh/jlrh-misterfpga-db) | jlrh/jlrh-misterfpga-db | 121 | ok |
+| Database | db_id | Status |
+|---|---|---|
+| [Gm0rkCores (Gm0rk)](https://github.com/Gm0rk/Gm0rkCores) | Gm0rk/Gm0rkCores | ok |
+| [Slop Cores (TheJesusFish)](https://github.com/TheJesusFish/Slop-Core) | TheJesusFish/Slop-Core | ok |
+| [kuzecores (kuzearcade)](https://github.com/kuzearcade/kuzecores) | kuzearcade/kuzecores | ok |
+| [arcfpga (bmo00)](https://github.com/bmo00/arcfpga-mister-db) | bmo00/arcfpga-mister-db | ok |
+| [shmupfan (Distribution)](https://github.com/shmupfan/Distribution) | shmupfan | ok |
+| [rmcores (rmonic79)](https://github.com/rmonic79/rmcores) | rmonic79/rmcores | ok |
+| [ppriest (MiSTer_ppriest)](https://github.com/ppriest/MiSTer_ppriest) | ppriest/MiSTer_ppriest | ok |
+| [MeatCores (meathax)](https://github.com/meathax/meatcores) | meathax/meatcores | ok |
+| [bazset (MiSTer_BAZSET)](https://github.com/bazset/MiSTer_BAZSET) | bazset/MiSTer_BAZSET | ok |
+| [jlrh](https://github.com/jlrh/jlrh-misterfpga-db) | jlrh/jlrh-misterfpga-db | ok |
 
 ## Not included
 

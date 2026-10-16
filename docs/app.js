@@ -708,13 +708,16 @@
   }
   $("#slop-jump").addEventListener("click", ev => { ev.preventDefault(); const box = $("#slopbox"); box.open = true; box.scrollIntoView({ behavior: "smooth", block: "start" }); });
   // arcade-ai-slop: the database hosted under /arcade-ai-slop/ (built by tools/arcade_ai_slop.py).
-  $("#slop-copy").addEventListener("click", ev => { const b = ev.target; try { navigator.clipboard.writeText($("#slop-ini").textContent).then(() => { b.textContent = "Copied"; }); } catch (e) { /* clipboard unavailable */ } });
+  const slopCopy = (btn, text, done) => { try { navigator.clipboard.writeText(text).then(() => { btn.textContent = done; }); } catch (e) { /* clipboard unavailable */ } };
+  $("#slop-copy").addEventListener("click", ev => slopCopy(ev.target, $("#slop-ini").textContent, "Copied"));
   fetch("arcade-ai-slop/status.json", { cache: "no-cache" }).then(r => r.json()).then(st => {
-    $("#slop-ini").textContent = st.install || $("#slop-ini").textContent;
+    $("#slop-ini").textContent = st.install;
     if (st.description) $("#slop-desc").textContent = st.description + ".";
-    const ok = st.sources.filter(s => s.status === "ok" || s.status.startsWith("kept"));
-    $("#slop-list").innerHTML = `Carries the files of ${ok.length} database${ok.length === 1 ? "" : "s"}: ` + ok.map(s => `<a href="${esc(s.home)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(", ") + `. Last checked ${esc(st.checked)}.`;
-  }).catch(() => { $("#slop-list").textContent = ""; });
+    const ok = st.sources.filter(s => s.section);
+    $("#slop-list").innerHTML = ok.map((s, i) => `<li><a href="${esc(s.home)}" target="_blank" rel="noopener">${esc(s.name)}</a> <code>${esc(s.db_id)}</code> <button type="button" data-i="${i}">Copy section</button></li>`).join("");
+    $("#slop-list").addEventListener("click", ev => { const b = ev.target.closest("button[data-i]"); if (b) slopCopy(b, ok[+b.dataset.i].section, "Copied"); });
+    $("#slop-checked").textContent = `${ok.length} database${ok.length === 1 ? "" : "s"}. Last checked ${st.checked}.`;
+  }).catch(() => { $("#slop-ini").textContent = ""; });
   // Zaparoo launch: the address lives only in this browser's localStorage.
   // Accepts "192.168.1.5", "http://192.168.1.5/", "http://192.168.1.5:7497/path": keeps just host[:port].
   const zhost = s => { s = (s || "").trim(); if (!s) return ""; try { return new URL(/^[a-z][a-z0-9+.-]*:\/\//i.test(s) ? s : "http://" + s).host || s; } catch (e) { return s.replace(/^[a-z]+:\/\//i, "").replace(/[\/?#].*$/, ""); } };

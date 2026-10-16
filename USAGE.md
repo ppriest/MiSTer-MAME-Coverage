@@ -172,20 +172,20 @@ Hashed names deter guessing and bulk scraping; they do not hide the files from s
 requests. For real hotlink protection add a referer rule on the bucket (Cloudflare WAF custom rule, or a
 Worker in front of R2). Hover only exists on devices with a pointer.
 
-## The arcade-ai-slop database
+## The arcade-ai-slop list
 
-`tools/arcade_ai_slop.py` builds a MiSTer Downloader database that merges the files of many other databases, hosted with
-the page at `https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/db.json.zip` and advertised on the front page.
-Downloader databases cannot reference other databases (a database may not install `downloader/*.ini` drop-ins; Downloader
-refuses it with "Path can't contain root folders"), so the contributors' databases are *merged*: each enabled source in
-`data/arcade_ai_slop.json` is fetched and its `files` and `folders` are folded into one `db.json`. Nothing is copied: every
-entry keeps the source's md5, size and an absolute URL (its `base_files_url` plus the path, or its own per-file `url`), and tags
-are re-numbered into one `tag_dictionary`. The first source in the list wins a path two sources both ship (listed in
-`sources.md`); a source that cannot be fetched keeps what it contributed last time; one that uses zip archives or is not a valid
-database is skipped. The daily refresh runs the builder after `mmc build` and commits `docs/arcade-ai-slop/` (db.json,
-db.json.zip, `sources.md`, `status.json`, `sources-index.json`), so a new contributor is one edit to the list and users only
-ever add the one database. It overlaps heavily with OngoGablogian's MiSTer_Ongo database, and the front-page box and
-`sources.md` say not to use both.
+The front page carries a box with the `downloader.ini` sections of the source-available AI-assisted arcade cores' databases,
+ready to copy (all at once, one at a time, or as the file `docs/arcade-ai-slop/downloader_arcade-ai-slop.ini`). It is a list
+and not a database on purpose: Downloader databases cannot reference other databases (a database may not install
+`downloader/*.ini` drop-ins; it refuses with "Path can't contain root folders"), and merging the contributors' files into
+one would put the same files under two database ids, as MiSTer_Ongo does. Every contributor keeps their own id, and users
+re-copy the list to pick up new contributors.
+
+`tools/arcade_ai_slop.py` builds it from `data/arcade_ai_slop.json` (`enabled: false` keeps a candidate documented): each
+enabled source is fetched to read its `db_id` (the section name has to equal it), a source that cannot be fetched keeps its
+previous section, and one that is not a valid database is skipped. The daily refresh runs it after `mmc build` and commits
+`docs/arcade-ai-slop/` (`downloader_arcade-ai-slop.ini`, `sources.md`, `status.json`). The box warns that the list overlaps
+heavily with OngoGablogian's MiSTer_Ongo, so use one or the other.
 
 ## Databases tab
 

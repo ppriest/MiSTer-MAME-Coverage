@@ -1,6 +1,6 @@
 {
   "db_id": "arcade-ai-slop",
-  "description": "One database to add to get access to all the AI-assisted cores that publish their own databases, so long as source-available and willing to fix reported bugs",
+  "description": "Databases to add to get the source-available AI-assisted arcade cores, from developers who are willing to fix reported bugs",
   "sources": [
     {
       "name": "Gm0rkCores (Gm0rk)",
