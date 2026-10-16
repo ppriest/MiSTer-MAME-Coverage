@@ -1,0 +1,84 @@
+{
+  "db_id": "arcade-ai-slop",
+  "description": "One database to add to get access to all the AI-assisted cores that publish their own databases, so long as source-available and willing to fix reported bugs",
+  "sources": [
+    {
+      "name": "Gm0rkCores (Gm0rk)",
+      "home": "https://github.com/Gm0rk/Gm0rkCores",
+      "db_url": "https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip",
+      "enabled": true,
+      "note": "Atari G1, G42 and ITech8 cores; GPL sources in Gm0rk's own repositories"
+    },
+    {
+      "name": "Slop Cores (TheJesusFish)",
+      "home": "https://github.com/TheJesusFish/Slop-Core",
+      "db_url": "https://raw.githubusercontent.com/TheJesusFish/Slop-Core/db/db.json.zip",
+      "enabled": true
+    },
+    {
+      "name": "kuzecores (kuzearcade)",
+      "home": "https://github.com/kuzearcade/kuzecores",
+      "db_url": "https://raw.githubusercontent.com/kuzearcade/kuzecores/db/db.json.zip",
+      "enabled": true
+    },
+    {
+      "name": "arcfpga (bmo00)",
+      "home": "https://github.com/bmo00/arcfpga-mister-db",
+      "db_url": "https://raw.githubusercontent.com/bmo00/arcfpga-mister-db/db/db.json.zip",
+      "enabled": true
+    },
+    {
+      "name": "shmupfan (Distribution)",
+      "home": "https://github.com/shmupfan/Distribution",
+      "db_url": "https://raw.githubusercontent.com/shmupfan/Distribution/main/db.json",
+      "enabled": true
+    },
+    {
+      "name": "rmcores (rmonic79)",
+      "home": "https://github.com/rmonic79/rmcores",
+      "db_url": "https://raw.githubusercontent.com/rmonic79/rmcores/db/db.json.zip",
+      "enabled": true
+    },
+    {
+      "name": "ppriest (MiSTer_ppriest)",
+      "home": "https://github.com/ppriest/MiSTer_ppriest",
+      "db_url": "https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip",
+      "enabled": true
+    },
+    {
+      "name": "MeatCores (meathax)",
+      "home": "https://github.com/meathax/meatcores",
+      "db_url": "https://raw.githubusercontent.com/meathax/meatcores/db/db.json.zip",
+      "enabled": true,
+      "note": "included by choice; most of its cores are binary-only (22 of 31 per MiSTer Coverage)"
+    },
+    {
+      "name": "bazset (MiSTer_BAZSET)",
+      "home": "https://github.com/bazset/MiSTer_BAZSET",
+      "db_url": "https://raw.githubusercontent.com/bazset/MiSTer_BAZSET/db/db.json.zip",
+      "enabled": true,
+      "note": "included by choice; binary-only Patreon cores"
+    },
+    {
+      "name": "jlrh",
+      "home": "https://github.com/jlrh/jlrh-misterfpga-db",
+      "db_url": "https://raw.githubusercontent.com/jlrh/jlrh-misterfpga-db/db/db.json.zip",
+      "enabled": true,
+      "note": "source is available for most cores (Verilog/SystemVerilog in the SNK, Konami, Technos, Taito, Gaelco, Video System, Seibu and Cidelsa repositories); the Tecfri and Inder/Dinamic repositories hold builds and MRAs only (MiSTer Coverage flags those 7 cores binary-only)"
+    },
+    {
+      "name": "Blackwine Sega System 1/2 (TheJesusFish)",
+      "home": "https://github.com/TheJesusFish/Blackwine-SegaSystem1-2_MiSTer",
+      "db_url": "https://raw.githubusercontent.com/TheJesusFish/Blackwine-SegaSystem1-2_MiSTer/db/db.json.zip",
+      "enabled": false,
+      "note": "binary-only per MiSTer Coverage"
+    },
+    {
+      "name": "blahm1d",
+      "home": "https://www.patreon.com/cw/blahm1d",
+      "db_url": "https://mister.blahm1d.com/db.json.zip",
+      "enabled": false,
+      "note": "binary-only Patreon cores"
+    }
+  ]
+}
