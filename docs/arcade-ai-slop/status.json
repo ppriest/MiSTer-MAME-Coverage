@@ -1,10 +1,16 @@
 {
- "checked": "2026-10-16 07:57 UTC",
+ "checked": "2026-10-16 08:15 UTC",
  "changed": true,
- "databases": 9,
+ "databases": 10,
  "description": "One database to add to get access to all the AI-assisted cores that publish their own databases, so long as source-available and willing to fix reported bugs",
  "install": "[arcade-ai-slop]\ndb_url = https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/db.json.zip",
  "sources": [
+  {
+   "name": "Gm0rkCores (Gm0rk)",
+   "home": "https://github.com/Gm0rk/Gm0rkCores",
+   "db_id": "Gm0rk/Gm0rkCores",
+   "status": "ok"
+  },
   {
    "name": "Slop Cores (TheJesusFish)",
    "home": "https://github.com/TheJesusFish/Slop-Core",

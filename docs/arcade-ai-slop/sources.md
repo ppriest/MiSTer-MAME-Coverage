@@ -2,10 +2,11 @@
 
 One database to add to get access to all the AI-assisted cores that publish their own databases, so long as source-available and willing to fix reported bugs
 
-Last checked 2026-10-16 07:57 UTC.
+Last checked 2026-10-16 08:15 UTC.
 
 | Database | db_id | Cores+MRAs | Status |
 |---|---|---|---|
+| [Gm0rkCores (Gm0rk)](https://github.com/Gm0rk/Gm0rkCores) | Gm0rk/Gm0rkCores | 58 | ok |
 | [Slop Cores (TheJesusFish)](https://github.com/TheJesusFish/Slop-Core) | TheJesusFish/Slop-Core | 58 | ok |
 | [kuzecores (kuzearcade)](https://github.com/kuzearcade/kuzecores) | kuzearcade/kuzecores | 201 | ok |
 | [arcfpga (bmo00)](https://github.com/bmo00/arcfpga-mister-db) | bmo00/arcfpga-mister-db | 4 | ok |

@@ -3,6 +3,13 @@
   "description": "One database to add to get access to all the AI-assisted cores that publish their own databases, so long as source-available and willing to fix reported bugs",
   "sources": [
     {
+      "name": "Gm0rkCores (Gm0rk)",
+      "home": "https://github.com/Gm0rk/Gm0rkCores",
+      "db_url": "https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip",
+      "enabled": true,
+      "note": "Atari G1, G42 and ITech8 cores; GPL sources in Gm0rk's own repositories"
+    },
+    {
       "name": "Slop Cores (TheJesusFish)",
       "home": "https://github.com/TheJesusFish/Slop-Core",
       "db_url": "https://raw.githubusercontent.com/TheJesusFish/Slop-Core/db/db.json.zip",

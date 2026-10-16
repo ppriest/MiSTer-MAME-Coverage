@@ -2,6 +2,11 @@
  "db_id": "arcade-ai-slop",
  "db_url": "https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/db.json.zip",
  "files": {
+  "downloader/Gm0rk_Gm0rkCores.ini": {
+   "hash": "c7cbfd6ac2417c76493280b936b98634",
+   "size": 129,
+   "url": "https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/downloader/Gm0rk_Gm0rkCores.ini"
+  },
   "downloader/TheJesusFish_Slop-Core.ini": {
    "hash": "65ffa5ce7d85b5a7b47a6707d9bcd9b5",
    "size": 148,
@@ -51,6 +56,6 @@
  "folders": {
   "downloader": {}
  },
- "timestamp": 1792137434,
+ "timestamp": 1792138500,
  "version": 1
 }
