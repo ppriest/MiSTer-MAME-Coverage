@@ -6,14 +6,6 @@
 {
 "date": "2026-10-04",
 "note": "alamone 2026-10-01",
-"cores": 1,
-"sets": 1,
-"pairs": 1,
-"dates_improved": 0
-},
-{
-"date": "2026-10-04",
-"note": "alamone 2026-10-01",
 "cores": 0,
 "sets": 0,
 "pairs": 0,
@@ -456,6 +448,15 @@
 "cores": 0,
 "sets": 2,
 "pairs": 2,
+"dates_improved": 0,
+"cores_removed": 0
+},
+{
+"date": "2026-10-16",
+"note": "alamone 2026-10-12",
+"cores": 3,
+"sets": 0,
+"pairs": 20,
 "dates_improved": 0,
 "cores_removed": 0
 }
@@ -12222,6 +12223,24 @@
 "aliases": [],
 "last_seen": "2026-10-16"
 },
+"ongo:meathax_dataeastliberation": {
+"id": "ongo:meathax_dataeastliberation",
+"name": "Meathax_DataEastLiberation",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Meathax_DataEastLiberation.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
 "ongo:meathax_heavyunit": {
 "id": "ongo:meathax_heavyunit",
 "name": "Meathax_HeavyUnit",
@@ -12373,6 +12392,42 @@
 "first_recorded": "2026-10-06",
 "aliases": [],
 "last_seen": "2026-10-11"
+},
+"ongo:meathax_spy": {
+"id": "ongo:meathax_spy",
+"name": "Meathax_SPY",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Meathax_SPY.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
+"ongo:meathax_steelforce": {
+"id": "ongo:meathax_steelforce",
+"name": "Meathax_SteelForce",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Meathax_SteelForce.rbf",
+"repo": "OngoGablogian/MiSTer_Ongo",
+"url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
 },
 "ongo:meathax_stoneball": {
 "id": "ongo:meathax_stoneball",
@@ -23138,6 +23193,19 @@
 }
 },
 "beastrzr": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Bloody Roar/Beastorizer (USA).mra",
+"mra": "_Arcade/Beastorizer (USA).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
 "kyle:xnzn1rz": {
 "core": "kyle:xnzn1rz",
 "date": "2026-07-18",
@@ -23147,7 +23215,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Bloody Roar/Beastorizer (USA).mra",
-"mra": "_Arcade/Beastorizer (USA).mra",
+"mra": "_Arcade/Beastorizer (USA) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -23179,6 +23247,19 @@
 }
 },
 "beastrzra": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Bloody Roar/Beastorizer USA (Jun 21 1997).mra",
+"mra": "_Arcade/Beastorizer USA (Jun 21 1997).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
 "kyle:xnzn1rz": {
 "core": "kyle:xnzn1rz",
 "date": "2026-07-18",
@@ -23188,7 +23269,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Bloody Roar/Beastorizer USA (Jun 21 1997).mra",
-"mra": "_Arcade/Beastorizer USA (Jun 21 1997).mra",
+"mra": "_Arcade/Beastorizer USA (Jun 21 1997) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -24195,6 +24276,19 @@
 }
 },
 "bldyroar": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Bloody Roar (Japan, Jun 21 1997).mra",
+"mra": "_Arcade/Bloody Roar (Japan, Jun 21 1997).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
 "kyle:xnzn1rz": {
 "core": "kyle:xnzn1rz",
 "date": "2026-07-18",
@@ -24204,7 +24298,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Bloody Roar (Japan, Jun 21 1997).mra",
-"mra": "_Arcade/Bloody Roar (Japan, Jun 21 1997).mra",
+"mra": "_Arcade/Bloody Roar (Japan, Jun 21 1997) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -25843,6 +25937,19 @@
 "mra": "_Arcade/_MeatCores/Boomer Rang'r - Genesis.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
+},
+"ongo:meathax_dataeastliberation": {
+"core": "ongo:meathax_dataeastliberation",
+"date": "2026-10-16",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Boomer Rang'r - Genesis (set 1).mra",
+"mra": "_Arcade/Boomer Rang'r - Genesis (set 1).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
 }
 },
 "boonggab": {
@@ -26709,6 +26816,19 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Brave Blade (World).mra",
+"mra": "_Arcade/Brave Blade (World).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
 "kyle:xnzn1rz": {
 "core": "kyle:xnzn1rz",
 "date": "2026-07-18",
@@ -26718,7 +26838,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Brave Blade (World).mra",
-"mra": "_Arcade/Brave Blade (World).mra",
+"mra": "_Arcade/Brave Blade (World) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -26763,6 +26883,19 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Asia).mra",
+"mra": "_Arcade/Brave Blade (Asia).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
 "kyle:xnzn1rz": {
 "core": "kyle:xnzn1rz",
 "date": "2026-07-18",
@@ -26772,7 +26905,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Asia).mra",
-"mra": "_Arcade/Brave Blade (Asia).mra",
+"mra": "_Arcade/Brave Blade (Asia) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -26817,6 +26950,19 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Japan).mra",
+"mra": "_Arcade/Brave Blade (Japan).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
 "kyle:xnzn1rz": {
 "core": "kyle:xnzn1rz",
 "date": "2026-07-18",
@@ -26826,7 +26972,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Japan).mra",
-"mra": "_Arcade/Brave Blade (Japan).mra",
+"mra": "_Arcade/Brave Blade (Japan) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -26871,6 +27017,19 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (USA).mra",
+"mra": "_Arcade/Brave Blade (USA).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
 "kyle:xnzn1rz": {
 "core": "kyle:xnzn1rz",
 "date": "2026-07-18",
@@ -26880,7 +27039,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Brave Blade/Brave Blade (USA).mra",
-"mra": "_Arcade/Brave Blade (USA).mra",
+"mra": "_Arcade/Brave Blade (USA) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -27860,6 +28019,19 @@
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/B-Wings.mra",
 "mra": "_Arcade/_MeatCores/B-Wings.mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
+"ongo:meathax_dataeastliberation": {
+"core": "ongo:meathax_dataeastliberation",
+"date": "2026-10-16",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/B-Wings (Japan new Ver.).mra",
+"mra": "_Arcade/B-Wings (Japan new Ver.).mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 }
@@ -40927,6 +41099,19 @@
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Dual Assault.mra",
 "mra": "_Arcade/_MeatCores/Dual Assault.mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
+"ongo:meathax_dataeastliberation": {
+"core": "ongo:meathax_dataeastliberation",
+"date": "2026-10-16",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Dual Assault.mra",
+"mra": "_Arcade/Dual Assault.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 }
@@ -65721,6 +65906,19 @@
 "mra": "_Arcade/_MeatCores/Liberation.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
+},
+"ongo:meathax_dataeastliberation": {
+"core": "ongo:meathax_dataeastliberation",
+"date": "2026-10-16",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Liberation.mra",
+"mra": "_Arcade/Liberation.mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
 }
 },
 "lifefrce": {
@@ -71733,6 +71931,19 @@
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Mortal Race.mra",
 "mra": "_Arcade/_MeatCores/Mortal Race.mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
+"ongo:meathax_steelforce": {
+"core": "ongo:meathax_steelforce",
+"date": "2026-10-16",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Mortal Race.mra",
+"mra": "_Arcade/Mortal Race.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 },
@@ -84726,6 +84937,19 @@
 "mra": "_Arcade/_MeatCores/Pro Sports.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
+},
+"ongo:meathax_dataeastliberation": {
+"core": "ongo:meathax_dataeastliberation",
+"date": "2026-10-16",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Pro Sports - Bowling, Tennis, and Golf.mra",
+"mra": "_Arcade/Pro Sports - Bowling, Tennis, and Golf.mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
 }
 },
 "pspikes": {
@@ -84893,6 +85117,19 @@
 }
 },
 "psyforce": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Psychic Force (Ver 2.4O).mra",
+"mra": "_Arcade/Psychic Force (Ver 2.4O).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
 "kyle:xnzn1fxa": {
 "core": "kyle:xnzn1fxa",
 "date": "2026-07-18",
@@ -84902,7 +85139,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Psychic Force (Ver 2.4O).mra",
-"mra": "_Arcade/Psychic Force (Ver 2.4O).mra",
+"mra": "_Arcade/Psychic Force (Ver 2.4O) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -84934,6 +85171,19 @@
 }
 },
 "psyforcej": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Psychic Force/Psychic Force (Ver 2.4J).mra",
+"mra": "_Arcade/Psychic Force (Ver 2.4J).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
 "kyle:xnzn1fxa": {
 "core": "kyle:xnzn1fxa",
 "date": "2026-07-18",
@@ -84943,7 +85193,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Psychic Force/Psychic Force (Ver 2.4J).mra",
-"mra": "_Arcade/Psychic Force (Ver 2.4J).mra",
+"mra": "_Arcade/Psychic Force (Ver 2.4J) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -84975,6 +85225,19 @@
 }
 },
 "psyforcex": {
+"kyle:xnzn1": {
+"core": "kyle:xnzn1",
+"date": "2026-07-18",
+"date_quality": "git",
+"via": "kyle",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Psychic Force/Psychic Force EX (Ver 2.0J).mra",
+"mra": "_Arcade/Psychic Force EX (Ver 2.0J).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
 "kyle:xnzn1fxa": {
 "core": "kyle:xnzn1fxa",
 "date": "2026-07-18",
@@ -84984,7 +85247,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Psychic Force/Psychic Force EX (Ver 2.0J).mra",
-"mra": "_Arcade/Psychic Force EX (Ver 2.0J).mra",
+"mra": "_Arcade/Psychic Force EX (Ver 2.0J) (Sound).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-16"
 },
@@ -106687,6 +106950,19 @@
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 },
+"ongo:meathax_spy": {
+"core": "ongo:meathax_spy",
+"date": "2026-10-16",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/S.P.Y. - Special Project Y. (World ver. N).mra",
+"mra": "_Arcade/S.P.Y. - Special Project Y. (World ver. N).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
 "ongo:spy": {
 "core": "ongo:spy",
 "date": "2026-10-16",
@@ -106742,6 +107018,19 @@
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/_alternatives/_S.P.Y/S.P.Y. - Special Project Y. (US ver. M).mra",
 "mra": "_Arcade/_MeatCores/_alternatives/_S.P.Y/S.P.Y. - Special Project Y. (US ver. M).mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
+"ongo:meathax_spy": {
+"core": "ongo:meathax_spy",
+"date": "2026-10-16",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_S.P.Y. - Special Project Y/S.P.Y. - Special Project Y. (US ver. M).mra",
+"mra": "_Arcade/_alternatives/_S.P.Y. - Special Project Y/S.P.Y. - Special Project Y. (US ver. M).mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 },
@@ -108934,6 +109223,19 @@
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Steel Force.mra",
 "mra": "_Arcade/_MeatCores/Steel Force.mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
+"ongo:meathax_steelforce": {
+"core": "ongo:meathax_steelforce",
+"date": "2026-10-16",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Steel Force.mra",
+"mra": "_Arcade/Steel Force.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 },
@@ -126342,6 +126644,19 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Yellow Cab (Japan).mra",
 "mra": "_Arcade/_MeatCores/Yellow Cab.mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
+},
+"ongo:meathax_dataeastliberation": {
+"core": "ongo:meathax_dataeastliberation",
+"date": "2026-07-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Yellow Cab (Japan).mra",
+"mra": "_Arcade/Yellow Cab (Japan).mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 },

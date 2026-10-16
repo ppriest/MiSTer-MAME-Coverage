@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-16T21:56:54+00:00",
+  "generated": "2026-10-16T23:10:49+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-16T21:56:27+00:00",
+  "mister_generated": "2026-10-16T23:10:21+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-16",
   "ledger_runs": [
-   {
-    "date": "2026-10-15",
-    "note": "alamone 2026-10-12",
-    "cores": 10,
-    "sets": 0,
-    "pairs": 220,
-    "dates_improved": 0,
-    "cores_removed": 2
-   },
    {
     "date": "2026-10-15",
     "note": "alamone 2026-10-12",
@@ -49,6 +40,15 @@
     "cores": 0,
     "sets": 2,
     "pairs": 2,
+    "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-16",
+    "note": "alamone 2026-10-12",
+    "cores": 3,
+    "sets": 0,
+    "pairs": 20,
     "dates_improved": 0,
     "cores_removed": 0
    }
@@ -234,7 +234,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1161
+    "mras": 1169
    },
    {
     "source": "dist",
@@ -2604,7 +2604,7 @@
     "dirs": [
      "release/_Arcade"
     ],
-    "mras": 51
+    "mras": 61
    },
    {
     "source": "kyle",
@@ -2710,7 +2710,7 @@
    "working_arcade_titles_source": 1840,
    "working_arcade_titles_binary_only": 266,
    "cores": 629,
-   "binary_only_cores": 213,
+   "binary_only_cores": 216,
    "unmatched_sets": 438
   }
  },
@@ -14267,8 +14267,8 @@
    "aliases": [],
    "last_seen": "2026-10-16",
    "binary_only": false,
-   "nsets": 41,
-   "ntitles": 19,
+   "nsets": 51,
+   "ntitles": 22,
    "first_date": "2026-07-18"
   },
   {
