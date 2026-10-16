@@ -88,6 +88,7 @@ EXTRA_REPOS = [
     ("repo", "XelaNotPu/ZN1-TaitoFX1B_MiSTer", ["releases/_Arcade"]),
     ("repo", "XelaNotPu/ZN2-Capcom_MiSTer", ["releases/_Arcade"]),
     ("repo", "XelaNotPu/BreakThru_MiSTer", ["RELEASE/_Arcade"]),
+    ("repo", "alphanu1/sega-model2-mister", ["releases"]),    # Sega Model 2 (Daytona USA, Desert Tank, Virtua Cop); beta
     ("repo", "decoryah/Arcade-OhMyGod_MiSTer", ["mra"]),
     ("repo", "decoryah/Arcade-MonsterMaulers_MiSTer", ["mra"]),
     ("repo", "decoryah/Arcade-Gaiapolis_MiSTer", ["mra"]),
@@ -733,7 +734,7 @@ def repo_plan(alamone: dict) -> list[tuple[str, str, list[str] | None]]:
         if full not in plan and full not in SKIP_REPOS:
             plan[full] = (src, None)
     for src, full, dirs in EXTRA_REPOS:
-        if full not in plan:
+        if full not in plan or plan[full][0] == "ongo":    # a repository listed here is the developer's own source, not MiSTer_Ongo's copy
             plan[full] = (src, dirs)
     for src, full, _file, _core in ROMSET_FILES:
         if full not in plan:

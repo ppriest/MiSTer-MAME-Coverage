@@ -125,6 +125,8 @@ def resolve_core(m: dict, cores, by_repo, by_rbf, repo_count) -> str:
         if t["source"] == "repo" and t.get("repo") and src in mister_mod.DB_SOURCES and \
                 f"/{t['repo'].split('/')[0].lower()}/" in url:
             owned = t        # the developer's database wins: a core of its own (repo record is dropped)
+        elif t["source"] == "ongo" and src == "repo":
+            pass             # a loose repository's own MRAs make a core of its own: MiSTer_Ongo only republishes it (and is hidden then)
         else:
             return target
     if rid and repo_count.get(m["repo"], 0) == 1 and not stem:

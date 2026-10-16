@@ -1,39 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-16T18:39:44+00:00",
+  "generated": "2026-10-16T23:15:41+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-16T18:39:08+00:00",
+  "mister_generated": "2026-10-16T23:15:16+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-16",
   "ledger_runs": [
-   {
-    "date": "2026-10-15",
-    "note": "alamone 2026-10-12",
-    "cores": 4,
-    "sets": 0,
-    "pairs": 32,
-    "dates_improved": 0,
-    "cores_removed": 4
-   },
-   {
-    "date": "2026-10-15",
-    "note": "alamone 2026-10-12",
-    "cores": 10,
-    "sets": 0,
-    "pairs": 220,
-    "dates_improved": 0,
-    "cores_removed": 2
-   },
-   {
-    "date": "2026-10-15",
-    "note": "alamone 2026-10-12",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0,
-    "cores_removed": 2
-   },
    {
     "date": "2026-10-16",
     "note": "alamone 2026-10-12",
@@ -51,6 +24,33 @@
     "pairs": 69,
     "dates_improved": 0,
     "cores_removed": 2
+   },
+   {
+    "date": "2026-10-16",
+    "note": "alamone 2026-10-12",
+    "cores": 0,
+    "sets": 2,
+    "pairs": 2,
+    "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-16",
+    "note": "alamone 2026-10-12",
+    "cores": 3,
+    "sets": 0,
+    "pairs": 20,
+    "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-16",
+    "note": "alamone 2026-10-12",
+    "cores": 1,
+    "sets": 0,
+    "pairs": 4,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
    "catver_entries": 37998,
    "mad_entries": 2995,
-   "mra_entries": 3410,
+   "mra_entries": 3412,
    "unmapped": [
     {
      "raw": "not classified",
@@ -234,7 +234,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1155
+    "mras": 1169
    },
    {
     "source": "dist",
@@ -2251,10 +2251,12 @@
     "mras": 13
    },
    {
-    "source": "ongo",
+    "source": "repo",
     "repo": "alphanu1/sega-model2-mister",
-    "dirs": null,
-    "mras": 17
+    "dirs": [
+     "releases"
+    ],
+    "mras": 8
    },
    {
     "source": "ongo",
@@ -2604,7 +2606,7 @@
     "dirs": [
      "release/_Arcade"
     ],
-    "mras": 51
+    "mras": 61
    },
    {
     "source": "kyle",
@@ -2710,8 +2712,8 @@
    "working_arcade_titles_source": 1840,
    "working_arcade_titles_binary_only": 266,
    "cores": 629,
-   "binary_only_cores": 213,
-   "unmatched_sets": 436
+   "binary_only_cores": 216,
+   "unmatched_sets": 438
   }
  },
  "cores": [
@@ -10219,6 +10221,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-16",
+   "aliases": [],
    "last_seen": "2026-10-16",
    "binary_only": false,
    "nsets": 13,
@@ -10241,6 +10244,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-16",
+   "aliases": [],
    "last_seen": "2026-10-16",
    "binary_only": false,
    "nsets": 5,
@@ -10263,6 +10267,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-16",
+   "aliases": [],
    "last_seen": "2026-10-16",
    "binary_only": false,
    "nsets": 33,
@@ -14264,8 +14269,8 @@
    "aliases": [],
    "last_seen": "2026-10-16",
    "binary_only": false,
-   "nsets": 41,
-   "ntitles": 19,
+   "nsets": 51,
+   "ntitles": 22,
    "first_date": "2026-07-18"
   },
   {
@@ -14453,6 +14458,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-16",
+   "aliases": [],
    "last_seen": "2026-10-16",
    "binary_only": true,
    "nsets": 7,
@@ -15490,29 +15496,6 @@
    "nsets": 8,
    "ntitles": 3,
    "first_date": "2026-08-15"
-  },
-  {
-   "id": "ongo:model2",
-   "name": "Model2",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Model2.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-14",
-   "aliases": [],
-   "last_seen": "2026-10-16",
-   "binary_only": false,
-   "nsets": 3,
-   "ntitles": 2,
-   "first_date": "2026-08-18"
   },
   {
    "id": "ongo:nemesis",
@@ -16744,6 +16727,28 @@
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-09-09"
+  },
+  {
+   "id": "repo:model2",
+   "name": "Model2",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "Model2.rbf",
+   "repo": "alphanu1/sega-model2-mister",
+   "url": "https://github.com/alphanu1/sega-model2-mister",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-16",
+   "last_seen": "2026-10-16",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 2,
+   "first_date": "2026-09-30"
   },
   {
    "id": "repo:monstermaulers",
@@ -24961,7 +24966,7 @@
    "sets": 28,
    "sets_covered": 3,
    "cores": [
-    "ongo:model2"
+    "repo:model2"
    ],
    "first": "2026-08-18"
   },
@@ -29190,6 +29195,13 @@
    "hbmame": false
   },
   {
+   "set": "ibarablkst",
+   "cores": [
+    "ongo:ikacore_cv1k"
+   ],
+   "hbmame": false
+  },
+  {
    "set": "imgfightb",
    "cores": [
     "dist:iremm72"
@@ -30230,6 +30242,13 @@
    "parent": "pickin",
    "manufacturer": "Pi",
    "desc": "Pickin' (Color Hack)"
+  },
+  {
+   "set": "pinkswtsrf",
+   "cores": [
+    "ongo:ikacore_cv1k"
+   ],
+   "hbmame": false
   },
   {
    "set": "pm1000",
