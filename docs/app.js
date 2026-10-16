@@ -713,7 +713,7 @@
     $("#slop-ini").textContent = st.install || $("#slop-ini").textContent;
     if (st.description) $("#slop-desc").textContent = st.description + ".";
     const ok = st.sources.filter(s => s.status === "ok" || s.status.startsWith("kept"));
-    $("#slop-list").innerHTML = `References ${ok.length} database${ok.length === 1 ? "" : "s"}: ` + ok.map(s => `<a href="${esc(s.home)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(", ") + `. Last checked ${esc(st.checked)}.`;
+    $("#slop-list").innerHTML = `Carries the files of ${ok.length} database${ok.length === 1 ? "" : "s"}: ` + ok.map(s => `<a href="${esc(s.home)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(", ") + `. Last checked ${esc(st.checked)}.`;
   }).catch(() => { $("#slop-list").textContent = ""; });
   // Zaparoo launch: the address lives only in this browser's localStorage.
   // Accepts "192.168.1.5", "http://192.168.1.5/", "http://192.168.1.5:7497/path": keeps just host[:port].

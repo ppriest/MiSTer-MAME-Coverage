@@ -174,14 +174,18 @@ Worker in front of R2). Hover only exists on devices with a pointer.
 
 ## The arcade-ai-slop database
 
-`tools/arcade_ai_slop.py` builds a MiSTer Downloader database that is purely references to other databases, hosted
-with the page at `https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/db.json.zip` and advertised on the front
-page. Downloader has no "include another database" field, so the database installs one drop-in `.ini` per referenced
-database into `/media/fat/downloader/` (Downloader reads those at start-up, hence two runs). The list lives in
-`data/arcade_ai_slop.json` (`enabled: false` keeps a candidate documented); each build fetches every enabled database
-to read its `db_id`, keeps the previous entry of one that is unreachable, and writes `docs/arcade-ai-slop/` (db.json,
-db.json.zip, `downloader/*.ini`, `sources.md`, `status.json`). The daily refresh runs it after `mmc build` and commits
-the folder. It overlaps heavily with OngoGablogian's MiSTer_Ongo database, and the front-page box and `sources.md` say not to use both.
+`tools/arcade_ai_slop.py` builds a MiSTer Downloader database that merges the files of many other databases, hosted with
+the page at `https://mister-mame-coverage-docs.vercel.app/arcade-ai-slop/db.json.zip` and advertised on the front page.
+Downloader databases cannot reference other databases (a database may not install `downloader/*.ini` drop-ins; Downloader
+refuses it with "Path can't contain root folders"), so the contributors' databases are *merged*: each enabled source in
+`data/arcade_ai_slop.json` is fetched and its `files` and `folders` are folded into one `db.json`. Nothing is copied: every
+entry keeps the source's md5, size and an absolute URL (its `base_files_url` plus the path, or its own per-file `url`), and tags
+are re-numbered into one `tag_dictionary`. The first source in the list wins a path two sources both ship (listed in
+`sources.md`); a source that cannot be fetched keeps what it contributed last time; one that uses zip archives or is not a valid
+database is skipped. The daily refresh runs the builder after `mmc build` and commits `docs/arcade-ai-slop/` (db.json,
+db.json.zip, `sources.md`, `status.json`, `sources-index.json`), so a new contributor is one edit to the list and users only
+ever add the one database. It overlaps heavily with OngoGablogian's MiSTer_Ongo database, and the front-page box and
+`sources.md` say not to use both.
 
 ## Databases tab
 
