@@ -706,6 +706,7 @@
     }
     return best ? best : "**launch.title:Arcade/" + t.desc;
   }
+  $("#slop-jump").addEventListener("click", ev => { ev.preventDefault(); const box = $("#slopbox"); box.open = true; box.scrollIntoView({ behavior: "smooth", block: "start" }); });
   // arcade-ai-slop: the database hosted under /arcade-ai-slop/ (built by tools/arcade_ai_slop.py).
   $("#slop-copy").addEventListener("click", ev => { const b = ev.target; try { navigator.clipboard.writeText($("#slop-ini").textContent).then(() => { b.textContent = "Copied"; }); } catch (e) { /* clipboard unavailable */ } });
   fetch("arcade-ai-slop/status.json", { cache: "no-cache" }).then(r => r.json()).then(st => {
