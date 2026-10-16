@@ -451,11 +451,11 @@
 {
 "date": "2026-10-16",
 "note": "alamone 2026-10-12",
-"cores": 7,
-"sets": 41,
-"pairs": 63,
+"cores": 4,
+"sets": 5,
+"pairs": 9,
 "dates_improved": 0,
-"cores_removed": 2
+"cores_removed": 0
 }
 ]
 },
@@ -6718,60 +6718,6 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
-"last_seen": "2026-10-16"
-},
-"gm0rk:atari-g1": {
-"id": "gm0rk:atari-g1",
-"name": "Atari-G1",
-"source": "gm0rk",
-"source_title": "Gm0rkCores (Gm0rk)",
-"channel": null,
-"rbf": "Atari-G1.rbf",
-"repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
-"url": "https://github.com/Gm0rk/Arcade-Atari-G1_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": null,
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-},
-"gm0rk:atari-g42": {
-"id": "gm0rk:atari-g42",
-"name": "Arcade-Atari-G42",
-"source": "gm0rk",
-"source_title": "Gm0rkCores (Gm0rk)",
-"channel": null,
-"rbf": "Arcade-Atari-G42.rbf",
-"repo": "Gm0rk/Arcade-Atari-G42_MiSTer",
-"url": "https://github.com/Gm0rk/Arcade-Atari-G42_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": null,
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-},
-"gm0rk:itech8": {
-"id": "gm0rk:itech8",
-"name": "Arcade-ITech8",
-"source": "gm0rk",
-"source_title": "Gm0rkCores (Gm0rk)",
-"channel": null,
-"rbf": "Arcade-ITech8.rbf",
-"repo": "Gm0rk/Gm0rkCores",
-"url": "https://github.com/Gm0rk/Gm0rkCores",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": null,
-"first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 },
 "jlrh:ffaerofgt": {
@@ -13602,6 +13548,48 @@
 "aliases": [],
 "last_seen": "2026-10-16"
 },
+"repo:atari-g1": {
+"id": "repo:atari-g1",
+"name": "Arcade-Atari-G1 (Gm0rk)",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": "repository only",
+"rbf": "Arcade-Atari-G1_20260926.rbf",
+"repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
+"url": "https://github.com/Gm0rk/Arcade-Atari-G1_MiSTer",
+"build_date": "2026-09-27",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 34,
+"mame_drivers": [
+"atari/atarig1.cpp"
+],
+"note": null,
+"first_recorded": "2026-10-04",
+"aliases": [],
+"last_seen": "2026-10-16"
+},
+"repo:atari-g42": {
+"id": "repo:atari-g42",
+"name": "Arcade-Atari-G42 (Gm0rk)",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": "repository only",
+"rbf": "Arcade-Atari-G42_20260929.rbf",
+"repo": "Gm0rk/Arcade-Atari-G42_MiSTer",
+"url": "https://github.com/Gm0rk/Arcade-Atari-G42_MiSTer",
+"build_date": "2026-09-29",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 37,
+"mame_drivers": [
+"atari/atarig42.cpp"
+],
+"note": null,
+"first_recorded": "2026-10-05",
+"aliases": [],
+"last_seen": "2026-10-16"
+},
 "repo:bakraid": {
 "id": "repo:bakraid",
 "name": "Arcade-Bakraid (zakk4223)",
@@ -19757,51 +19745,6 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-16",
 "mra": "_Arcade/_alternatives/_Arkanoid/Arkanoid (Tayto bootleg, harder).mra"
-}
-},
-"arlingtn": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": false,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/Arlington Horse Racing (v1.40-D).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"arlingtna": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Arlington Horse Racing/Arlington Horse Racing (v1.21-D).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"arlingtni": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Arlington Horse Racing/Arlington Horse Racing (v1.21-I).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
 }
 },
 "armedf": {
@@ -26190,21 +26133,6 @@
 "last_seen": "2026-10-16"
 }
 },
-"bowlrama": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": false,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/Bowl-O-Rama (Rev 1.0).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
 "boxyboy": {
 "jt:jtshouse": {
 "core": "jt:jtshouse",
@@ -28414,66 +28342,6 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-16",
 "mra": "_Arcade/Canyon Bomber.mra"
-}
-},
-"capbowl": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": false,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/Capcom Bowling (set 1).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"capbowl2": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Capcom Bowling/Capcom Bowling (set 2).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"capbowl3": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Capcom Bowling/Capcom Bowling (set 3).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"capbowl4": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Capcom Bowling/Capcom Bowling (set 4).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
 }
 },
 "capitol": {
@@ -31224,21 +31092,6 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-16",
 "mra": "_Arcade/Clay Pigeon (version 2.0).mra"
-}
-},
-"clbowl": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Capcom Bowling/Coors Light Bowling.mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
 }
 },
 "cleansweept": {
@@ -34951,18 +34804,18 @@
 }
 },
 "dangerex": {
-"gm0rk:atari-g42": {
-"core": "gm0rk:atari-g42",
+"repo:atari-g42": {
+"core": "repo:atari-g42",
 "date": "2026-09-28",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
 "alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G42_MiSTer",
 "first_path": "mra/Danger Express (prototype).mra",
-"mra": "_Arcade/_Gm0rkCores/Danger Express (prototype).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-05",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Danger Express (prototype).mra"
 }
 },
 "dangseed": {
@@ -37245,6 +37098,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-16",
 "mra": "_Arcade/_alternatives/_Denjin Makai/Denjin Makai (set 2).mra"
+}
+},
+"desert": {
+"ongo:model2": {
+"core": "ongo:model2",
+"date": "2026-09-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "mra/Desert Tank.mra",
+"mra": "_Arcade/Desert Tank [15kHz CRT].mra",
+"first_recorded": "2026-10-16",
+"last_seen": "2026-10-16"
 }
 },
 "desertbr": {
@@ -52074,36 +51942,6 @@
 "last_seen": "2026-10-16"
 }
 },
-"gpgolf": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": false,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/Golden Par Golf (Joystick, v1.1).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"gpgolfa": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Golden Par Golf/Golden Par Golf (Joystick, v1.0).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
 "gpilots": {
 "dist:neogeo": {
 "core": "dist:neogeo",
@@ -52652,21 +52490,6 @@
 "mra": "_Arcade/Grind Stormer (older set).mra"
 }
 },
-"grmatch": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": false,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/Grudge Match (Yankee Game Technology).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
 "grobda": {
 "dist:druaga": {
 "core": "dist:druaga",
@@ -53125,139 +52948,19 @@
 "last_seen": "2026-10-16"
 }
 },
-"gtg": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": false,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/Golden Tee Golf (Joystick, v3.3).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"gtg2": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": false,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/Golden Tee Golf II (Trackball, v2.2).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"gtg2j": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Golden Tee Golf II/Golden Tee Golf II (Joystick, v1.0).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"gtg2t": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Golden Tee Golf II/Golden Tee Golf II (Trackball, v1.1).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"gtgj31": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Golden Tee Golf/Golden Tee Golf (Joystick, v3.1).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"gtgt10": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Golden Tee Golf/Golden Tee Golf (Trackball, v1.0).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"gtgt20": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Golden Tee Golf/Golden Tee Golf (Trackball, v2.0).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"gtgt21": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Golden Tee Golf/Golden Tee Golf (Trackball, v2.1).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
 "guardian": {
-"gm0rk:atari-g42": {
-"core": "gm0rk:atari-g42",
+"repo:atari-g42": {
+"core": "repo:atari-g42",
 "date": "2026-09-28",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
 "alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G42_MiSTer",
 "first_path": "mra/Guardians of the 'Hood.mra",
-"mra": "_Arcade/_Gm0rkCores/Guardians of the 'Hood.mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-05",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Guardians of the 'Hood.mra"
 }
 },
 "gulfstrm": {
@@ -55553,7 +55256,7 @@
 "date_quality": "git",
 "via": "jt",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/Hishou Zame (Japan).mra",
 "mra": "_Arcade/Hishou Zame (Japan).mra",
@@ -56409,36 +56112,6 @@
 "mra": "_Arcade/Hyper Street Fighter II The Anniversary Edition (Japan 031222).mra"
 }
 },
-"hstennis": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": false,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/Hot Shots Tennis (v1.1).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"hstennis10": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Hot Shots Tennis/Hot Shots Tennis (v1.0).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
 "htheroj": {
 "dist:taitof2": {
 "core": "dist:taitof2",
@@ -57183,48 +56856,48 @@
 }
 },
 "hydra": {
-"gm0rk:atari-g1": {
-"core": "gm0rk:atari-g1",
+"repo:atari-g1": {
+"core": "repo:atari-g1",
 "date": "2026-09-25",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
 "alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
 "first_path": "mra/Hydra.mra",
-"mra": "_Arcade/_Gm0rkCores/Hydra.mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Hydra.mra"
 }
 },
 "hydrap": {
-"gm0rk:atari-g1": {
-"core": "gm0rk:atari-g1",
+"repo:atari-g1": {
+"core": "repo:atari-g1",
 "date": "2026-09-25",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
 "first_path": "mra/Hydra (prototype 5-14-1990).mra",
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Hydra/Hydra (prototype 5-14-90).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Hydra (prototype 5-14-90).mra"
 }
 },
 "hydrap2": {
-"gm0rk:atari-g1": {
-"core": "gm0rk:atari-g1",
+"repo:atari-g1": {
+"core": "repo:atari-g1",
 "date": "2026-09-25",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
 "first_path": "mra/Hydra (prototype 5-25-1990).mra",
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Hydra/Hydra (prototype 5-25-90).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Hydra (prototype 5-25-90).mra"
 }
 },
 "hyperath": {
@@ -63999,7 +63672,7 @@
 "date_quality": "git",
 "via": "jt",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Kyukyoku Tiger (Japan, 2P Co-op).mra",
 "mra": "_Arcade/Kyukyoku Tiger (Japan, 2 player cooperative).mra",
@@ -64042,7 +63715,7 @@
 "date_quality": "git",
 "via": "jt",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Twin Cobra/Kyukyoku Tiger (Japan, 1P Set).mra",
 "mra": "_Arcade/Kyukyoku Tiger (Japan, 2 player alternate).mra",
@@ -74993,21 +74666,6 @@
 "last_seen": "2026-10-16"
 }
 },
-"neckneck": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": false,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/Neck-N-Neck (v1.2).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
 "nemesis": {
 "ongo:nemesis": {
 "core": "ongo:nemesis",
@@ -75644,21 +75302,6 @@
 "first_path": "_Arcade/_BAZSET/Night Striker (World).mra",
 "mra": "_Arcade/_BAZSET/Night Striker (World).mra",
 "first_recorded": "2026-10-12",
-"last_seen": "2026-10-16"
-}
-},
-"ninclown": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": false,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/Ninja Clowns (27 oct 91).mra",
-"first_recorded": "2026-10-16",
 "last_seen": "2026-10-16"
 }
 },
@@ -80905,36 +80548,6 @@
 "mra": "_Arcade/Peek-a-Boo! (North America, ver 1.0).mra"
 }
 },
-"peggle": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": false,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/Peggle (Joystick, v1.0).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"pegglet": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Peggle/Peggle (Trackball, v1.0).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
 "penfan": {
 "ppriest:eolith": {
 "core": "ppriest:eolith",
@@ -82025,153 +81638,153 @@
 }
 },
 "pitfight": {
-"gm0rk:atari-g1": {
-"core": "gm0rk:atari-g1",
+"repo:atari-g1": {
+"core": "repo:atari-g1",
 "date": "2026-09-25",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
 "alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
 "first_path": "mra/Pit Fighter (rev 9).mra",
-"mra": "_Arcade/_Gm0rkCores/Pit Fighter (rev 9).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Pit Fighter (rev 9).mra"
 }
 },
 "pitfight1p2": {
-"gm0rk:atari-g1": {
-"core": "gm0rk:atari-g1",
+"repo:atari-g1": {
+"core": "repo:atari-g1",
 "date": "2026-09-25",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
 "first_path": "mra/Pit Fighter (rev 1, 2 players).mra",
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Pit Fighter/Pit Fighter (rev 1, 2 players).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Pit Fighter (rev 1, 2 players).mra"
 }
 },
 "pitfight2": {
-"gm0rk:atari-g1": {
-"core": "gm0rk:atari-g1",
+"repo:atari-g1": {
+"core": "repo:atari-g1",
 "date": "2026-09-25",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
 "first_path": "mra/Pit Fighter (rev 2).mra",
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Pit Fighter/Pit Fighter (rev 2).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Pit Fighter (rev 2).mra"
 }
 },
 "pitfight3": {
-"gm0rk:atari-g1": {
-"core": "gm0rk:atari-g1",
+"repo:atari-g1": {
+"core": "repo:atari-g1",
 "date": "2026-09-25",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
 "first_path": "mra/Pit Fighter (rev 3).mra",
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Pit Fighter/Pit Fighter (rev 3).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Pit Fighter (rev 3).mra"
 }
 },
 "pitfight4": {
-"gm0rk:atari-g1": {
-"core": "gm0rk:atari-g1",
+"repo:atari-g1": {
+"core": "repo:atari-g1",
 "date": "2026-09-25",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
 "first_path": "mra/Pit Fighter (rev 4).mra",
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Pit Fighter/Pit Fighter (rev 4).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Pit Fighter (rev 4).mra"
 }
 },
 "pitfight5": {
-"gm0rk:atari-g1": {
-"core": "gm0rk:atari-g1",
+"repo:atari-g1": {
+"core": "repo:atari-g1",
 "date": "2026-09-25",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
 "first_path": "mra/Pit Fighter (rev 5).mra",
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Pit Fighter/Pit Fighter (rev 5).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Pit Fighter (rev 5).mra"
 }
 },
 "pitfight6": {
-"gm0rk:atari-g1": {
-"core": "gm0rk:atari-g1",
+"repo:atari-g1": {
+"core": "repo:atari-g1",
 "date": "2026-09-25",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
 "first_path": "mra/Pit Fighter (rev 6).mra",
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Pit Fighter/Pit Fighter (rev 6).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Pit Fighter (rev 6).mra"
 }
 },
 "pitfight7": {
-"gm0rk:atari-g1": {
-"core": "gm0rk:atari-g1",
+"repo:atari-g1": {
+"core": "repo:atari-g1",
 "date": "2026-09-25",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
 "first_path": "mra/Pit Fighter (rev 7).mra",
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Pit Fighter/Pit Fighter (rev 7).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Pit Fighter (rev 7).mra"
 }
 },
 "pitfightb": {
-"gm0rk:atari-g1": {
-"core": "gm0rk:atari-g1",
+"repo:atari-g1": {
+"core": "repo:atari-g1",
 "date": "2026-09-25",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
 "first_path": "mra/Pit Fighter (bootleg).mra",
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Pit Fighter/Pit Fighter (bootleg).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Pit Fighter (bootleg).mra"
 }
 },
 "pitfightj": {
-"gm0rk:atari-g1": {
-"core": "gm0rk:atari-g1",
+"repo:atari-g1": {
+"core": "repo:atari-g1",
 "date": "2026-09-25",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
 "first_path": "mra/Pit Fighter (Japan rev 3, 2 players).mra",
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Pit Fighter/Pit Fighter (Japan rev 3, 2 players).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-04",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Pit Fighter (Japan rev 3, 2 players).mra"
 }
 },
 "pkladies": {
@@ -83044,21 +82657,6 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-16",
 "mra": "_Arcade/Pokonyan! Balloon (Japan 940322).mra"
-}
-},
-"pokrdice": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": false,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/Poker Dice (v1.7).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
 }
 },
 "polaris": {
@@ -90667,96 +90265,6 @@
 "mra": "_Arcade/Riddle of Pythagoras (Japan).mra"
 }
 },
-"rimrockn": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": false,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/Rim Rockin' Basketball (v2.2).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"rimrockn12": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Rim Rockin' Basketball/Rim Rockin' Basketball (v1.2).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"rimrockn12b": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Rim Rockin' Basketball/Rim Rockin' Basketball (v1.2, bootleg).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"rimrockn15": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Rim Rockin' Basketball/Rim Rockin' Basketball (v1.5).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"rimrockn16": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Rim Rockin' Basketball/Rim Rockin' Basketball (v1.6).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"rimrockn20": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Rim Rockin' Basketball/Rim Rockin' Basketball (v2.0).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
 "ringdest": {
 "jt:jtcps2": {
 "core": "jt:jtcps2",
@@ -91234,48 +90742,48 @@
 }
 },
 "roadriot": {
-"gm0rk:atari-g42": {
-"core": "gm0rk:atari-g42",
+"repo:atari-g42": {
+"core": "repo:atari-g42",
 "date": "2026-09-28",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
 "alt": false,
 "first_repo": "Gm0rk/Arcade-Atari-G42_MiSTer",
 "first_path": "mra/Road Riot 4WD (04 Dec 1991, conversion kit).mra",
-"mra": "_Arcade/_Gm0rkCores/Road Riot 4WD (04 Dec 1991, conversion kit).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-05",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Road Riot 4WD (04 Dec 1991, conversion kit).mra"
 }
 },
 "roadriota": {
-"gm0rk:atari-g42": {
-"core": "gm0rk:atari-g42",
+"repo:atari-g42": {
+"core": "repo:atari-g42",
 "date": "2026-09-28",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "Gm0rk/Arcade-Atari-G42_MiSTer",
 "first_path": "mra/Road Riot 4WD (13 Nov 1991, conversion kit).mra",
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Road Riot 4WD/Road Riot 4WD (13 Nov 1991, conversion kit).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-05",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Road Riot 4WD (13 Nov 1991, conversion kit).mra"
 }
 },
 "roadriotb": {
-"gm0rk:atari-g42": {
-"core": "gm0rk:atari-g42",
+"repo:atari-g42": {
+"core": "repo:atari-g42",
 "date": "2026-09-28",
 "date_quality": "git",
-"via": "gm0rk",
+"via": "repo",
 "wip": false,
 "alt": true,
 "first_repo": "Gm0rk/Arcade-Atari-G42_MiSTer",
 "first_path": "mra/Road Riot 4WD (04 Jun 1991, dedicated twin).mra",
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Road Riot 4WD/Road Riot 4WD (04 Jun 1991, dedicated twin).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
+"first_recorded": "2026-10-05",
+"last_seen": "2026-10-16",
+"mra": "_Arcade/Road Riot 4WD (04 Jun 1991, dedicated twin).mra"
 }
 },
 "roadrunm": {
@@ -102404,7 +101912,7 @@
 "date_quality": "git",
 "via": "jt",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/_alternatives/_Flying Shark/Sky Shark (US, Set 1).mra",
 "mra": "_Arcade/Sky Shark (US, set 1).mra",
@@ -102447,7 +101955,7 @@
 "date_quality": "git",
 "via": "jt",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/_alternatives/_Flying Shark/Sky Shark (US, Set 2).mra",
 "mra": "_Arcade/Sky Shark (US, set 2).mra",
@@ -102477,7 +101985,7 @@
 "date_quality": "git",
 "via": "jt",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_Flying Shark/Sky Shark (bootleg).mra",
 "mra": "_Arcade/Sky Shark (bootleg).mra",
@@ -108876,36 +108384,6 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-16",
 "mra": "_Arcade/Koutetsu Yousai Strahl (Japan, bootleg).mra"
-}
-},
-"stratab": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": false,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/Strata Bowling (V3).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"stratab1": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Strata Bowling/Strata Bowling (V1).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
 }
 },
 "stratgys": {
@@ -118507,7 +117985,7 @@
 "date_quality": "git",
 "via": "jt",
 "wip": false,
-"alt": true,
+"alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Twin Cobra/Twin Cobra (US).mra",
 "mra": "_Arcade/Twin Cobra (US).mra",
@@ -119998,7 +119476,7 @@
 "alt": false,
 "first_repo": "alphanu1/sega-model2-mister",
 "first_path": "mra/Virtua Cop.mra",
-"mra": "_Arcade/Virtua Cop (Revision A).mra",
+"mra": "_Arcade/Virtua Cop (Revision A) [15kHz CRT].mra",
 "first_recorded": "2026-10-14",
 "last_seen": "2026-10-16"
 }
@@ -123175,36 +122653,6 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-16",
 "mra": "_Arcade/_alternatives/_Express Raider/Western Express (Japan, rev 4).mra"
-}
-},
-"wfortune": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": false,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/Wheel Of Fortune (set 1).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
-}
-},
-"wfortunea": {
-"gm0rk:itech8": {
-"core": "gm0rk:itech8",
-"date": "2026-10-16",
-"date_quality": "observed",
-"via": "gm0rk",
-"wip": false,
-"alt": true,
-"first_repo": null,
-"first_path": null,
-"mra": "_Arcade/_Gm0rkCores/_alternatives/_Wheel Of Fortune/Wheel Of Fortune (set 2).mra",
-"first_recorded": "2026-10-16",
-"last_seen": "2026-10-16"
 }
 },
 "wh1": {
@@ -127713,15 +127161,6 @@
 "arktayt2": {
 "dist": "Ball and Paddle"
 },
-"arlingtn": {
-"gm0rk": "Sports / Horse Racing"
-},
-"arlingtna": {
-"gm0rk": "Sports / Horse Racing"
-},
-"arlingtni": {
-"gm0rk": "Sports / Horse Racing"
-},
 "armedf": {
 "coinop": "Shoot 'em up"
 },
@@ -128508,9 +127947,6 @@
 "dist": "Sports / Bowling",
 "repo": "Shooter"
 },
-"bowlrama": {
-"gm0rk": "Sports / Bowling"
-},
 "bradley": {
 "dist": "Army / Tank 3D"
 },
@@ -128742,18 +128178,6 @@
 },
 "canyon": {
 "dist": "Shooter - Gallery"
-},
-"capbowl": {
-"gm0rk": "Sports / Bowling"
-},
-"capbowl2": {
-"gm0rk": "Sports / Bowling"
-},
-"capbowl3": {
-"gm0rk": "Sports / Bowling"
-},
-"capbowl4": {
-"gm0rk": "Sports / Bowling"
 },
 "capitol": {
 "dist": "Shooter - Gallery"
@@ -129115,9 +128539,6 @@
 },
 "claypign": {
 "ongo": "Shooter / Lightgun"
-},
-"clbowl": {
-"gm0rk": "Sports / Bowling"
 },
 "cleansweept": {
 "dist": "Maze"
@@ -129547,8 +128968,7 @@
 "rmcores": "Shoot"
 },
 "dangerex": {
-"repo": "Shooter",
-"gm0rk": "Shooter"
+"repo": "Shooter"
 },
 "darius": {
 "dist": "Shooter",
@@ -129721,6 +129141,9 @@
 },
 "denjinmka": {
 "dist": "Beat'em up"
+},
+"desert": {
+"ongo": "Shooter"
 },
 "desertgu": {
 "dist": "Sports / Shooting",
@@ -131426,12 +130849,6 @@
 "gorodki": {
 "dist": "Action"
 },
-"gpgolf": {
-"gm0rk": "Sports / Golf"
-},
-"gpgolfa": {
-"gm0rk": "Sports / Golf"
-},
 "gpriderjs": {
 "dist": "Shooter / Flight",
 "rossops": "Shooter / Flight"
@@ -131502,9 +130919,6 @@
 "slop": "Shoot'em up",
 "ongo": "Shoot'em up"
 },
-"grmatch": {
-"gm0rk": "Sports / Wrestling"
-},
 "grobda": {
 "dist": "Shooter - Multidirectional"
 },
@@ -131533,33 +130947,8 @@
 "dist": "Shooter - Gallery",
 "repo": "Shooter"
 },
-"gtg": {
-"gm0rk": "Sports / Golf"
-},
-"gtg2": {
-"gm0rk": "Sports / Golf"
-},
-"gtg2j": {
-"gm0rk": "Sports / Golf"
-},
-"gtg2t": {
-"gm0rk": "Sports / Golf"
-},
-"gtgj31": {
-"gm0rk": "Sports / Golf"
-},
-"gtgt10": {
-"gm0rk": "Sports / Golf"
-},
-"gtgt20": {
-"gm0rk": "Sports / Golf"
-},
-"gtgt21": {
-"gm0rk": "Sports / Golf"
-},
 "guardian": {
-"repo": "Fighter",
-"gm0rk": "Fighter"
+"repo": "Fighter"
 },
 "gulfwar2": {
 "dist": "Shoot'em up"
@@ -131902,12 +131291,6 @@
 "ppriest": "Arcade",
 "ongo": "Arcade"
 },
-"hstennis": {
-"gm0rk": "Sports / Tennis"
-},
-"hstennis10": {
-"gm0rk": "Sports / Tennis"
-},
 "hunchbgb": {
 "repo": "Shooter"
 },
@@ -131981,16 +131364,13 @@
 "dist": "Racing"
 },
 "hydra": {
-"repo": "Racing",
-"gm0rk": "Racing"
+"repo": "Racing"
 },
 "hydrap": {
-"repo": "Racing",
-"gm0rk": "Racing"
+"repo": "Racing"
 },
 "hydrap2": {
-"repo": "Racing",
-"gm0rk": "Racing"
+"repo": "Racing"
 },
 "hyperath": {
 "kyle": "Sports"
@@ -133640,9 +133020,6 @@
 "nebulbee": {
 "repo": "Shooter"
 },
-"neckneck": {
-"gm0rk": "Sports / Horse Racing"
-},
 "nemesis": {
 "ongo": "Shooter"
 },
@@ -133720,9 +133097,6 @@
 "nightrai": {
 "shmupfan": "Shooter",
 "repo": "Shooter"
-},
-"ninclown": {
-"gm0rk": "Fighter"
 },
 "ninjakd2": {
 "dist": "Platform"
@@ -134320,12 +133694,6 @@
 "ongo": "Arcade",
 "kuze": "Arcade"
 },
-"peggle": {
-"gm0rk": "Puzzle / Pachinko"
-},
-"pegglet": {
-"gm0rk": "Puzzle / Pachinko"
-},
 "penfan": {
 "ppriest": "Puzzle",
 "repo": "Puzzle"
@@ -134500,44 +133868,34 @@
 "dist": "Platform"
 },
 "pitfight": {
-"repo": "Fighter",
-"gm0rk": "Fighter"
+"repo": "Fighter"
 },
 "pitfight1p2": {
-"repo": "Fighter",
-"gm0rk": "Fighter"
+"repo": "Fighter"
 },
 "pitfight2": {
-"repo": "Fighter",
-"gm0rk": "Fighter"
+"repo": "Fighter"
 },
 "pitfight3": {
-"repo": "Fighter",
-"gm0rk": "Fighter"
+"repo": "Fighter"
 },
 "pitfight4": {
-"repo": "Fighter",
-"gm0rk": "Fighter"
+"repo": "Fighter"
 },
 "pitfight5": {
-"repo": "Fighter",
-"gm0rk": "Fighter"
+"repo": "Fighter"
 },
 "pitfight6": {
-"repo": "Fighter",
-"gm0rk": "Fighter"
+"repo": "Fighter"
 },
 "pitfight7": {
-"repo": "Fighter",
-"gm0rk": "Fighter"
+"repo": "Fighter"
 },
 "pitfightb": {
-"repo": "Fighter",
-"gm0rk": "Fighter"
+"repo": "Fighter"
 },
 "pitfightj": {
-"repo": "Fighter",
-"gm0rk": "Fighter"
+"repo": "Fighter"
 },
 "pkunwar": {
 "dist": "Maze / Penguin",
@@ -134656,9 +134014,6 @@
 },
 "pmgrenp": {
 "dist": "Maze / Pac-Man"
-},
-"pokrdice": {
-"gm0rk": "Casino / Dice"
 },
 "polaris": {
 "dist": "Army / Submarine",
@@ -135586,24 +134941,6 @@
 "ridleofp": {
 "dist": "Ball and Paddle"
 },
-"rimrockn": {
-"gm0rk": "Sports / Basketball"
-},
-"rimrockn12": {
-"gm0rk": "Sports / Basketball"
-},
-"rimrockn12b": {
-"gm0rk": "Sports / Basketball"
-},
-"rimrockn15": {
-"gm0rk": "Sports / Basketball"
-},
-"rimrockn16": {
-"gm0rk": "Sports / Basketball"
-},
-"rimrockn20": {
-"gm0rk": "Sports / Basketball"
-},
 "ringking": {
 "dist": "Sports"
 },
@@ -135644,16 +134981,13 @@
 "dist": "Arcade"
 },
 "roadriot": {
-"repo": "Racing",
-"gm0rk": "Racing"
+"repo": "Racing"
 },
 "roadriota": {
-"repo": "Racing",
-"gm0rk": "Racing"
+"repo": "Racing"
 },
 "roadriotb": {
-"repo": "Racing",
-"gm0rk": "Racing"
+"repo": "Racing"
 },
 "roadrunm": {
 "dist": "Sports / Shooting",
@@ -137326,12 +136660,6 @@
 "ongo": "Shooter",
 "kuze": "Shooter"
 },
-"stratab": {
-"gm0rk": "Sports / Bowling"
-},
-"stratab1": {
-"gm0rk": "Sports / Bowling"
-},
 "stratgys": {
 "dist": "Shooter - Multidirectional",
 "repo": "Shooter"
@@ -138782,12 +138110,6 @@
 },
 "wexpress": {
 "dist": "Platform / Fighter Scrolling"
-},
-"wfortune": {
-"gm0rk": "Quiz"
-},
-"wfortunea": {
-"gm0rk": "Quiz"
 },
 "whodunit": {
 "ongo": "Shooter / Lightgun"
