@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated": "2026-10-17T09:11:38+00:00",
+  "generated": "2026-10-17T12:20:41+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-17T09:11:14+00:00",
+  "mister_generated": "2026-10-17T12:20:02+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-17",
   "ledger_runs": [
@@ -13,15 +13,6 @@
     "cores": 0,
     "sets": 0,
     "pairs": 0,
-    "dates_improved": 6,
-    "cores_removed": 0
-   },
-   {
-    "date": "2026-10-16",
-    "note": "alamone 2026-10-12",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
     "dates_improved": 0,
     "cores_removed": 0
    },
@@ -51,6 +42,15 @@
     "pairs": 0,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-17",
+    "note": "alamone 2026-10-12",
+    "cores": 7,
+    "sets": 7,
+    "pairs": 64,
+    "dates_improved": 0,
+    "cores_removed": 6
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
    "catver_entries": 37998,
    "mad_entries": 2995,
-   "mra_entries": 3417,
+   "mra_entries": 3424,
    "unmapped": [
     {
      "raw": "not classified",
@@ -81,10 +81,10 @@
   },
   "mame_added_updated": "2026-10-17",
   "hbmame": {
-   "tag": "0.289.3 (2026-09-29)",
-   "version": "0.289.3 (2026-09-29)",
+   "tag": "tag2893",
+   "version": "0.289.3",
    "updated": "2026-10-17",
-   "sets": 8452
+   "sets": 9711
   },
   "sources": {
    "dist": "MiSTer official distribution",
@@ -105,6 +105,7 @@
    "ppriest": "ppriest (Tourniquet)",
    "kyle": "kyledlester (MiSTer_DB)",
    "gm0rk": "Gm0rkCores (Gm0rk)",
+   "decoryah": "decoryah (GitHub repositories)",
    "rossops": "rossops (GitHub repositories)",
    "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
    "repo": "GitHub repository only"
@@ -181,6 +182,10 @@
    "gm0rk": {
     "page": "https://github.com/Gm0rk/Gm0rkCores",
     "db_url": "https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip"
+   },
+   "decoryah": {
+    "page": "https://github.com/decoryah?tab=repositories",
+    "db_url": null
    },
    "rossops": {
     "page": "https://github.com/rossops?tab=repositories",
@@ -1797,33 +1802,41 @@
     "mras": 3
    },
    {
-    "source": "repo",
+    "source": "decoryah",
     "repo": "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "mra"
+    ],
     "mras": 6
    },
    {
-    "source": "repo",
+    "source": "decoryah",
     "repo": "decoryah/Arcade-MetamorphicForce_MiSTer",
     "dirs": null,
     "mras": 5
    },
    {
-    "source": "repo",
+    "source": "decoryah",
     "repo": "decoryah/Arcade-MonsterMaulers_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "mra"
+    ],
     "mras": 3
    },
    {
-    "source": "repo",
+    "source": "decoryah",
     "repo": "decoryah/Arcade-OhMyGod_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "mra"
+    ],
     "mras": 2
    },
    {
-    "source": "repo",
+    "source": "decoryah",
     "repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
-    "dirs": null,
+    "dirs": [
+     "mra"
+    ],
     "mras": 38
    },
    {
@@ -2621,7 +2634,7 @@
     "mras": 5
    },
    {
-    "source": "repo",
+    "source": "decoryah",
     "repo": "decoryah/Arcade-Gaiapolis_MiSTer",
     "dirs": [
      "mra"
@@ -2633,49 +2646,43 @@
     "repo": "MiSTer-devel/NeoGeo_MiSTer",
     "dirs": [],
     "mras": 262
-   },
-   {
-    "source": "xela",
-    "repo": "XelaNotPu/SYSTEM12_MiSTer",
-    "dirs": null,
-    "mras": 0
    }
   ],
   "repo_errors": [
    [
     "Kyp069/zx48-MiSTer",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "kandowontu/BrickBoy_MiSTer",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "meathax/Bucky",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "meathax/mrdo",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "meathax/s24",
-    "fatal: could not read Username for 'https://github.com': No such device or address"
+    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
    ],
    [
     "https://mister.blahm1d.com/db.json.zip",
-    "HTTP Error 403: Forbidden"
+    "<urlopen error Tunnel connection failed: 403 Forbidden>"
    ]
   ],
   "counts": {
    "titles": 6825,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2109,
+   "working_arcade_titles_covered": 2114,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5476,
-   "working_arcade_titles_source": 1843,
+   "working_arcade_sets_covered": 5483,
+   "working_arcade_titles_source": 1848,
    "working_arcade_titles_binary_only": 266,
-   "cores": 630,
+   "cores": 631,
    "binary_only_cores": 216,
    "unmatched_sets": 438
   }
@@ -4938,6 +4945,148 @@
    "nsets": 13,
    "ntitles": 4,
    "first_date": "2022-09-22"
+  },
+  {
+   "id": "decoryah:gaiapolis",
+   "name": "gaiapolis",
+   "source": "decoryah",
+   "source_title": "decoryah (GitHub repositories)",
+   "channel": null,
+   "rbf": "gaiapolis.rbf",
+   "repo": "decoryah/Arcade-Gaiapolis_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-Gaiapolis_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 1,
+   "first_date": "2026-10-04"
+  },
+  {
+   "id": "decoryah:mcatadv",
+   "name": "mcatadv (decoryah)",
+   "source": "decoryah",
+   "source_title": "decoryah (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "mcatadv_20261005.rbf",
+   "repo": "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
+   "build_date": "2026-10-05",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 31,
+   "mame_drivers": [
+    "misc/mcatadv.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 6,
+   "ntitles": 2,
+   "first_date": "2026-10-05"
+  },
+  {
+   "id": "decoryah:metamorphicforce",
+   "name": "metamorphicforce (decoryah)",
+   "source": "decoryah",
+   "source_title": "decoryah (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "metamorphicforce_20261011.rbf",
+   "repo": "decoryah/Arcade-MetamorphicForce_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-MetamorphicForce_MiSTer",
+   "build_date": "2026-10-11",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 25,
+   "mame_drivers": [
+    "konami/mystwarr.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 5,
+   "ntitles": 1,
+   "first_date": "2026-09-09"
+  },
+  {
+   "id": "decoryah:monstermaulers",
+   "name": "monstermaulers (decoryah)",
+   "source": "decoryah",
+   "source_title": "decoryah (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "monstermaulers_20261011.rbf",
+   "repo": "decoryah/Arcade-MonsterMaulers_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-MonsterMaulers_MiSTer",
+   "build_date": "2026-10-11",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 28,
+   "mame_drivers": [
+    "konami/mystwarr.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 1,
+   "first_date": "2026-10-10"
+  },
+  {
+   "id": "decoryah:ohmygod",
+   "name": "ohmygod (decoryah)",
+   "source": "decoryah",
+   "source_title": "decoryah (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "ohmygod_20261010.rbf",
+   "repo": "decoryah/Arcade-OhMyGod_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-OhMyGod_MiSTer",
+   "build_date": "2026-10-10",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 34,
+   "mame_drivers": [
+    "atlus/ohmygod.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 2,
+   "ntitles": 2,
+   "first_date": "2026-10-10"
+  },
+  {
+   "id": "decoryah:taitol",
+   "name": "taitol (decoryah)",
+   "source": "decoryah",
+   "source_title": "decoryah (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "taitol_20261007.rbf",
+   "repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-TaitoLSystem_MiSTer",
+   "build_date": "2026-10-09",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 32,
+   "mame_drivers": [
+    "taito/taito_l.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 35,
+   "ntitles": 13,
+   "first_date": "2026-10-05"
   },
   {
    "id": "dist:actfancer",
@@ -15684,6 +15833,28 @@
    "first_date": "2026-09-26"
   },
   {
+   "id": "ppriest:dreamworld",
+   "name": "DreamWorld",
+   "source": "ppriest",
+   "source_title": "ppriest (Tourniquet)",
+   "channel": null,
+   "rbf": "DreamWorld.rbf",
+   "repo": "ppriest/Arcade-DreamWorld_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-DreamWorld_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 7,
+   "ntitles": 5,
+   "first_date": "2026-10-17"
+  },
+  {
    "id": "ppriest:eolith",
    "name": "Eolith",
    "source": "ppriest",
@@ -16233,29 +16404,6 @@
    "first_date": "2026-10-03"
   },
   {
-   "id": "repo:gaiapolis",
-   "name": "gaiapolis",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": null,
-   "rbf": "gaiapolis.rbf",
-   "repo": "decoryah/Arcade-Gaiapolis_MiSTer",
-   "url": "https://github.com/decoryah/Arcade-Gaiapolis_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-05",
-   "aliases": [],
-   "last_seen": "2026-10-17",
-   "binary_only": false,
-   "nsets": 3,
-   "ntitles": 1,
-   "first_date": "2026-10-04"
-  },
-  {
    "id": "repo:galaga_testbuild",
    "name": "Galaga_TestBuild (RodimusFVC)",
    "source": "repo",
@@ -16658,56 +16806,6 @@
    "first_date": "2026-07-29"
   },
   {
-   "id": "repo:mcatadv",
-   "name": "mcatadv (decoryah)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "mcatadv_20261005.rbf",
-   "repo": "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
-   "url": "https://github.com/decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
-   "build_date": "2026-10-05",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 31,
-   "mame_drivers": [
-    "misc/mcatadv.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-10",
-   "aliases": [],
-   "last_seen": "2026-10-17",
-   "binary_only": false,
-   "nsets": 6,
-   "ntitles": 2,
-   "first_date": "2026-10-01"
-  },
-  {
-   "id": "repo:metamorphicforce",
-   "name": "metamorphicforce (decoryah)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "metamorphicforce_20261011.rbf",
-   "repo": "decoryah/Arcade-MetamorphicForce_MiSTer",
-   "url": "https://github.com/decoryah/Arcade-MetamorphicForce_MiSTer",
-   "build_date": "2026-10-11",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 25,
-   "mame_drivers": [
-    "konami/mystwarr.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-12",
-   "aliases": [],
-   "last_seen": "2026-10-17",
-   "binary_only": false,
-   "nsets": 5,
-   "ntitles": 1,
-   "first_date": "2026-09-09"
-  },
-  {
    "id": "repo:model2",
    "name": "Model2",
    "source": "repo",
@@ -16729,31 +16827,6 @@
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2026-09-30"
-  },
-  {
-   "id": "repo:monstermaulers",
-   "name": "monstermaulers (decoryah)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "monstermaulers_20261011.rbf",
-   "repo": "decoryah/Arcade-MonsterMaulers_MiSTer",
-   "url": "https://github.com/decoryah/Arcade-MonsterMaulers_MiSTer",
-   "build_date": "2026-10-11",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 28,
-   "mame_drivers": [
-    "konami/mystwarr.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-10",
-   "aliases": [],
-   "last_seen": "2026-10-17",
-   "binary_only": false,
-   "nsets": 3,
-   "ntitles": 1,
-   "first_date": "2026-10-10"
   },
   {
    "id": "repo:namcona2",
@@ -16779,31 +16852,6 @@
    "nsets": 21,
    "ntitles": 10,
    "first_date": "2026-09-25"
-  },
-  {
-   "id": "repo:ohmygod",
-   "name": "ohmygod (decoryah)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "ohmygod_20261010.rbf",
-   "repo": "decoryah/Arcade-OhMyGod_MiSTer",
-   "url": "https://github.com/decoryah/Arcade-OhMyGod_MiSTer",
-   "build_date": "2026-10-10",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 34,
-   "mame_drivers": [
-    "atlus/ohmygod.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-10",
-   "aliases": [],
-   "last_seen": "2026-10-17",
-   "binary_only": false,
-   "nsets": 2,
-   "ntitles": 2,
-   "first_date": "2026-10-10"
   },
   {
    "id": "repo:penguinkunwars",
@@ -17360,31 +17408,6 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-31"
-  },
-  {
-   "id": "repo:taitol",
-   "name": "taitol (decoryah)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "taitol_20261007.rbf",
-   "repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
-   "url": "https://github.com/decoryah/Arcade-TaitoLSystem_MiSTer",
-   "build_date": "2026-10-09",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 32,
-   "mame_drivers": [
-    "taito/taito_l.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-06",
-   "aliases": [],
-   "last_seen": "2026-10-17",
-   "binary_only": false,
-   "nsets": 35,
-   "ntitles": 13,
-   "first_date": "2026-10-05"
   },
   {
    "id": "repo:tempest",
@@ -19121,7 +19144,7 @@
    "sets": 2,
    "sets_covered": 2,
    "cores": [
-    "repo:ohmygod"
+    "decoryah:ohmygod"
    ],
    "first": "2026-10-10"
   },
@@ -21997,12 +22020,12 @@
    "cores": [
     "coinop:metamrph",
     "coinop:mystwarr",
+    "decoryah:gaiapolis",
+    "decoryah:metamorphicforce",
+    "decoryah:monstermaulers",
     "jlrh:ffmtlchamp",
     "jlrh:ffmystwarr",
-    "meat:viostorm",
-    "repo:gaiapolis",
-    "repo:metamorphicforce",
-    "repo:monstermaulers"
+    "meat:viostorm"
    ],
    "first": "2026-08-22"
   },
@@ -22749,11 +22772,13 @@
   {
    "sourcefile": "misc/dreamwld.cpp",
    "titles": 5,
-   "covered": 0,
+   "covered": 5,
    "sets": 7,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 7,
+   "cores": [
+    "ppriest:dreamworld"
+   ],
+   "first": "2026-10-17"
   },
   {
    "sourcefile": "misc/efdt.cpp",
@@ -23047,8 +23072,8 @@
    "sets": 6,
    "sets_covered": 6,
    "cores": [
-    "kyle:nostradamus",
-    "repo:mcatadv"
+    "decoryah:mcatadv",
+    "kyle:nostradamus"
    ],
    "first": "2026-10-01"
   },
@@ -26531,7 +26556,7 @@
    "sets": 36,
    "sets_covered": 35,
    "cores": [
-    "repo:taitol"
+    "decoryah:taitol"
    ],
    "first": "2026-10-05"
   },
@@ -28016,6 +28041,7 @@
    ],
    "hbmame": true,
    "year": "2021",
+   "parent": "neogeo",
    "manufacturer": "Kako Eimon",
    "desc": "Abyssal Infants"
   },
@@ -28151,6 +28177,7 @@
    ],
    "hbmame": true,
    "year": "2017",
+   "parent": "neogeo",
    "manufacturer": "BEY",
    "desc": "Bad Apple demo (v1)"
   },
@@ -28376,14 +28403,22 @@
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": false
+   "hbmame": true,
+   "year": "1981",
+   "parent": "ckong",
+   "manufacturer": "bootleg",
+   "desc": "Crazy Kong Part II -1"
   },
   {
    "set": "ckonga3",
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": false
+   "hbmame": true,
+   "year": "1981",
+   "parent": "ckong",
+   "manufacturer": "bootleg",
+   "desc": "Crazy Kong Part II -2"
   },
   {
    "set": "ckongfix",
@@ -28406,6 +28441,7 @@
    ],
    "hbmame": true,
    "year": "2000",
+   "parent": "neogeo",
    "manufacturer": "Jeff Kurtz",
    "desc": "Columns (NeoGeo)(Homebrew)"
   },
@@ -28416,6 +28452,7 @@
    ],
    "hbmame": true,
    "year": "2013",
+   "parent": "neogeo",
    "manufacturer": "Le Cortex",
    "desc": "Crouching Pony Hidden Dragon Demo"
   },
@@ -28982,6 +29019,7 @@
    ],
    "hbmame": true,
    "year": "2024",
+   "parent": "neogeo",
    "manufacturer": "Pixelheart / ChipsOnSteroids",
    "desc": "Gladmort"
   },
@@ -29293,6 +29331,7 @@
    ],
    "hbmame": true,
    "year": "2014",
+   "parent": "neogeo",
    "manufacturer": "Neobitz",
    "desc": "Knight's Chance"
   },
@@ -29352,6 +29391,7 @@
    ],
    "hbmame": true,
    "year": "2021",
+   "parent": "neogeo",
    "manufacturer": "Blastar",
    "desc": "Looptris (2021-12-26)"
   },
@@ -29593,6 +29633,7 @@
    ],
    "hbmame": true,
    "year": "2015",
+   "parent": "neogeo",
    "manufacturer": "Kannagi",
    "desc": "Neo Fight"
   },
@@ -29603,6 +29644,7 @@
    ],
    "hbmame": true,
    "year": "2012",
+   "parent": "neogeo",
    "manufacturer": "Sebastian Mihai",
    "desc": "Neo Thunder"
   },
@@ -29649,6 +29691,7 @@
    ],
    "hbmame": true,
    "year": "2020",
+   "parent": "neogeo",
    "manufacturer": "OzzyOuzo",
    "desc": "New! Super Mario Bros."
   },
@@ -30862,7 +30905,11 @@
    "cores": [
     "jt:jtcps1"
    ],
-   "hbmame": false
+   "hbmame": true,
+   "year": "2021",
+   "parent": "sf2ce",
+   "manufacturer": "Zero800",
+   "desc": "Street Fighter II: Dream Battle (Mix 1.0)"
   },
   {
    "set": "sfa2_1",
@@ -31051,7 +31098,7 @@
   {
    "set": "sokobanle",
    "cores": [
-    "repo:taitol"
+    "decoryah:taitol"
    ],
    "hbmame": false
   },
@@ -31096,7 +31143,7 @@
    "year": "2007",
    "parent": "salamand",
    "manufacturer": "Konami",
-   "desc": "Salamander (version YY 0.7.3)"
+   "desc": "Salamander (version YY 0.7.3) "
   },
   {
    "set": "spcloneo",
@@ -31112,14 +31159,14 @@
   {
    "set": "speccies2",
    "cores": [
-    "repo:taitol"
+    "decoryah:taitol"
    ],
    "hbmame": false
   },
   {
    "set": "sqij",
    "cores": [
-    "repo:taitol"
+    "decoryah:taitol"
    ],
    "hbmame": true,
    "year": "2018",
@@ -31306,6 +31353,7 @@
    ],
    "hbmame": true,
    "year": "2022",
+   "parent": "neogeo",
    "manufacturer": "OzzyOuzo",
    "desc": "The Eye of Typhoon (Tsunami Edition, beta 7, 2022-07-31)"
   },
@@ -31358,6 +31406,7 @@
    ],
    "hbmame": true,
    "year": "2011",
+   "parent": "neogeo",
    "manufacturer": "FACE Corporation / N.C.I - Le Cortex",
    "desc": "Treasure of the Caribbean"
   },
@@ -31830,6 +31879,7 @@
    ],
    "hbmame": true,
    "year": "2025",
+   "parent": "neogeo",
    "manufacturer": "Blastar",
    "desc": "World Racer (2025-11-14)"
   },
