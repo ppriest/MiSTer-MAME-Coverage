@@ -63,7 +63,7 @@
       "note": "included by choice; most of its cores are binary-only (22 of 31 per MiSTer Coverage)"
     },
     {
-      "name": "ppriest (MiSTer_ppriest)",
+      "name": "ppriest (Tourniquet)",
       "home": "https://github.com/ppriest/MiSTer_ppriest",
       "db_url": "https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip",
       "enabled": true

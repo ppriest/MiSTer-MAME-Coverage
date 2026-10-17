@@ -301,6 +301,9 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
     """Join MAME with the ledger: every arcade set, which cores load it, and since when."""
     machines = mame["machines"]
     cores = ledger["cores"]
+    for c in cores.values():            # a core no longer observed keeps its last title otherwise
+        if c.get("source") in mister_mod.DB_TITLES:
+            c["source_title"] = mister_mod.DB_TITLES[c["source"]]
     support = ledger["support"]
     mister_meta = mister_meta or {}
     genres, genre_summary = genre_mod.resolve(machines, ledger.get("categories", {}))

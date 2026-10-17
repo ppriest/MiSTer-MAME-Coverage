@@ -2,7 +2,7 @@
 
 Databases to add to get the source-available AI-assisted arcade cores, from developers who are willing to fix reported bugs
 
-Last checked 2026-10-16 23:50 UTC.
+Last checked 2026-10-17 00:05 UTC.
 
 **Don't use both these and [MiSTer_Ongo](https://github.com/OngoGablogian/MiSTer_Ongo):** they overlap heavily (it republishes many of the same cores).
 
@@ -15,7 +15,7 @@ Last checked 2026-10-16 23:50 UTC.
 | [kuzecores (kuzearcade)](https://github.com/kuzearcade/kuzecores) | kuzearcade/kuzecores | ok |
 | [kyledlester (MiSTer_DB)](https://github.com/kyledlester/MiSTer_DB) | kyledlester_mister | ok |
 | [MeatCores (meathax)](https://github.com/meathax/meatcores) | meathax/meatcores | ok |
-| [ppriest (MiSTer_ppriest)](https://github.com/ppriest/MiSTer_ppriest) | ppriest/MiSTer_ppriest | ok |
+| [ppriest (Tourniquet)](https://github.com/ppriest/MiSTer_ppriest) | ppriest/MiSTer_ppriest | ok |
 | [rmcores (rmonic79)](https://github.com/rmonic79/rmcores) | rmonic79/rmcores | ok |
 | [shmupfan (Distribution)](https://github.com/shmupfan/Distribution) | shmupfan | ok |
 | [Slop Cores (TheJesusFish)](https://github.com/TheJesusFish/Slop-Core) | TheJesusFish/Slop-Core | ok |
