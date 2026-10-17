@@ -277,8 +277,8 @@
   const CORE_SERIES = [
     { src: "dist", color: "var(--accent)" },
     { src: "jt", color: "var(--accent-2)" },
-    { src: "coinop", color: "var(--accent-3)" },
-    { src: null, color: "var(--muted)", label: "Unofficial" },
+    { src: "coinop", color: "var(--muted)" },
+    { src: null, color: "var(--accent-3)", label: "Unofficial" },
   ];
   function renderCoresChart() {
     const titles = S.data.meta.sources || {};
