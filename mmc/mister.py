@@ -101,7 +101,7 @@ SUPERSEDED_CORES = {
 }
 
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
-OWNER_SOURCES = {"decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela"}
+OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela"}
 # Repositories of those owners that are not cores (forks of the shared MRA collection, a game runtime): never scanned.
 OWNER_SKIP = {"rossops/mra-alternatives_mister", "rossops/bennugd_mister"}
 
@@ -275,6 +275,7 @@ SOURCE_PAGES = {
     "ppriest": "https://github.com/ppriest/MiSTer_ppriest",
     "kyle": "https://github.com/kyledlester/MiSTer_DB",
     "gm0rk": "https://github.com/Gm0rk/Gm0rkCores",
+    "usquebagh": "https://github.com/Usquebagh?tab=repositories",
     "decoryah": "https://github.com/decoryah?tab=repositories",
     "rossops": "https://github.com/rossops?tab=repositories",
     "xela": "https://github.com/XelaNotPu?tab=repositories",
@@ -302,6 +303,7 @@ DB_TITLES = {
     "ppriest": "ppriest (Tourniquet)",
     "kyle": "kyledlester (MiSTer_DB)",
     "gm0rk": "Gm0rkCores (Gm0rk)",
+    "usquebagh": "Usquebagh (GitHub repositories)",
     "decoryah": "decoryah (GitHub repositories)",
     "rossops": "rossops (GitHub repositories)",
     "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
