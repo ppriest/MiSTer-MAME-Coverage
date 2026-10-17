@@ -294,7 +294,7 @@ DB_TITLES = {
     "blackwine": "Blackwine Sega System 1/2 (TheJesusFish)",
     "rmcores": "rmcores (rmonic79)",
     "jtpr": "jtcores unreleased (PRs, branches)",
-    "ppriest": "ppriest (MiSTer_ppriest)",
+    "ppriest": "ppriest (Tourniquet)",
     "kyle": "kyledlester (MiSTer_DB)",
     "gm0rk": "Gm0rkCores (Gm0rk)",
     "rossops": "rossops (GitHub repositories)",
