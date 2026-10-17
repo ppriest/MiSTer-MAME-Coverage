@@ -93,6 +93,8 @@ SUPERSEDED_CORES = {
     "repo:nerattechu": "kyle:nerattechu", "repo:nostradamus": "kyle:nostradamus", "repo:crystal": "kyle:crystal",
     # XelaNotPu's repositories became the "xela" source
     "repo:xnsystem11": "xela:xnsystem11", "repo:xnsystemfl": "xela:xnsystemfl",
+    # Usquebagh's repositories became the "usquebagh" source
+    "repo:cinematronics": "usquebagh:cinematronics", "repo:firetrap": "usquebagh:firetrap", "repo:jedi": "usquebagh:jedi",
     # decoryah's repositories became the "decoryah" source
     "repo:gaiapolis": "decoryah:gaiapolis", "repo:mcatadv": "decoryah:mcatadv", "repo:metamorphicforce": "decoryah:metamorphicforce",
     "repo:monstermaulers": "decoryah:monstermaulers", "repo:ohmygod": "decoryah:ohmygod", "repo:taitol": "decoryah:taitol",
