@@ -8,7 +8,7 @@
 <title>MiSTer MAME Coverage</title>
 <meta name="description" content="Which MAME arcade titles are playable on MiSTer FPGA cores, which remain, and how coverage grew over time.">
 <link rel="canonical" href="https://mister-mame-coverage-docs.vercel.app/">
-<link rel="stylesheet" href="style.css?v=a26a2aa32a">
+<link rel="stylesheet" href="style.css?v=be673edafd">
 </head>
 <body>
 <header class="top">
@@ -169,13 +169,13 @@
       <div class="chart-body" id="chart-genre"></div>
       <div class="legend" id="legend-genre"></div>
     </figure>
-    <figure class="chart" id="fig-genre-pct">
+    <figure class="chart" id="fig-cores">
       <figcaption>
-        <strong>Share on MiSTer by genre</strong>
-        <span class="muted">percentage of each genre's filtered titles with an MRA on any core; the overall share is the vertical line</span>
+        <strong>Cores over time, by database</strong>
+        <span class="muted">cumulative number of cores since 2018, each dated by its first MRA; official distribution at the bottom, then JTCORES, Coin-Op Collection and all the others. Not affected by the filters</span>
       </figcaption>
-      <div class="chart-body" id="chart-genre-pct"></div>
-      <div class="legend" id="legend-genre-pct"></div>
+      <div class="chart-body" id="chart-cores"></div>
+      <div class="legend" id="legend-cores"></div>
     </figure>
     </section>
     </details>
@@ -345,6 +345,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=22b5d94f46"></script>
+<script src="app.js?v=a6a689cb21"></script>
 </body>
 </html>
