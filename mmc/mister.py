@@ -443,7 +443,7 @@ def sync_repo(full: str, dirs: list[str] | None = None, fetch_existing: bool = T
             if head:
                 git("reset", "-q", "--soft", head, cwd=d)
         # Sparse checkout of just the MRA files keeps the lazy blob fetch to one batch per repo.
-        mras = [p for p in ls_files(d) if p.lower().endswith(".mra")]
+        mras = [p for p in ls_files(d) if is_launcher(p)]
         if dirs is not None and dirs != ["."]:
             mras = [p for p in mras if any(p.startswith(x.rstrip("/") + "/") for x in dirs)]
         mras += [f for _s, r, f, _c in ROMSET_FILES if r == full]
@@ -476,7 +476,7 @@ def mra_history(d: str, dirs: list[str] | None = None) -> list[tuple[str, str, s
         if line.startswith("\x00"):
             commit, date = line[1:].split(" ", 1)
             continue
-        if not line or not line.lower().endswith(".mra") or date is None:
+        if not line or not is_launcher(line) or date is None:
             continue
         if line not in first or date < first[line][0]:
             first[line] = (date, commit)
@@ -505,6 +505,20 @@ def read_blobs(d: str, specs: list[str]) -> dict[str, bytes | None]:
 
 # --- MRA parsing -----------------------------------------------------------------------------
 
+# .mgl launchers name a set folder, not always a MAME set: map the ones we know to the MAME set whose ROMs they load.
+MGL_SETNAMES = {"battletoads": "btoads"}     # Ongo's Battletoads.mgl: the btoads dumps (btc0-p0/p1/s) as loose files in games/Battletoads
+
+
+def is_launcher(path: str) -> bool:
+    """An arcade game launcher: an ``.mra``, or an ``.mgl`` (MiSTer Game Launcher; arcade ones are told apart by their rbf)."""
+    return path.lower().endswith((".mra", ".mgl"))
+
+
+def keep_launcher(path: str, rec: dict) -> bool:
+    """An .mgl counts only when it starts an arcade core (Ongo's repository has console and computer ones too)."""
+    return not path.lower().endswith(".mgl") or (rec.get("rbf") or "").lower().lstrip("/").startswith("_arcade/")
+
+
 _TAG = re.compile(r"<(setname|rbf|name|mameversion|year|manufacturer|parent|category)\b[^>]*>\s*(.*?)\s*</\1>", re.S | re.I)
 
 
@@ -517,6 +531,7 @@ def parse_mra_text(s: str) -> dict:
         if k not in rec:
             rec[k] = re.sub(r"\s+", " ", m.group(2)).strip()
     setn = rec.get("setname", "").lower()
+    setn = MGL_SETNAMES.get(setn, setn)
     rec["setname"] = setn if re.fullmatch(r"[a-z0-9_]{1,32}", setn) else None
     rec["rbf"] = rec.get("rbf") or None
     return rec
@@ -548,7 +563,7 @@ def installed_path(m: dict) -> str | None:
     """Where the downloader puts an MRA on the SD card (what Zaparoo launches): developer databases
     already list ``_Arcade/...``; repository MRAs are copied flat into ``_Arcade``."""
     p = m.get("path") or ""
-    if not p.lower().endswith(".mra"):
+    if not is_launcher(p):
         return None
     return p if p.startswith("_Arcade/") else "_Arcade/" + p.rsplit("/", 1)[-1]
 
@@ -577,7 +592,7 @@ def scan_repo(source: str, full: str, dirs: list[str] | None) -> dict:
     empty = {"repo": full, "source": source, "mras": [], "history": []}
     if not os.path.isdir(os.path.join(d, ".git")):
         return empty
-    paths_ = [p for p in ls_files(d) if p.lower().endswith(".mra")]
+    paths_ = [p for p in ls_files(d) if is_launcher(p)]
     if dirs is not None and dirs != ["."]:
         paths_ = [p for p in paths_ if any(p.startswith(x.rstrip("/") + "/") for x in dirs)]
     multi = full in MULTI_PLATFORM
@@ -590,7 +605,7 @@ def scan_repo(source: str, full: str, dirs: list[str] | None) -> dict:
         if not os.path.exists(fp):
             continue
         rec = parse_mra(fp)
-        if not rec.get("setname"):
+        if not rec.get("setname") or not keep_launcher(p, rec):
             continue
         rec.update(path=p, repo=full, source=source, wip=_wip(p), alt="_alternatives" in p.lower())
         if multi:
@@ -677,7 +692,7 @@ def scan_databases(workers: int = 8) -> tuple[list[dict], list[tuple[str, str]]]
         base = db.get("base_files_url") or ""
         jobs = []
         for p, m in db.get("files", {}).items():
-            if p.startswith("_Arcade/") and p.lower().endswith(".mra"):
+            if p.startswith("_Arcade/") and is_launcher(p):
                 furl = m.get("url") or base + urllib.parse.quote(p)
                 key = hashlib.sha1(p.encode()).hexdigest()[:16] + "_" + str(m.get("hash", ""))[:8]
                 jobs.append((p, furl, os.path.join(cache_dir, src, key + ".mra")))
@@ -699,7 +714,7 @@ def scan_databases(workers: int = 8) -> tuple[list[dict], list[tuple[str, str]]]
                     errors.append((f"{src}:{p}", err))
                     continue
                 rec = parse_mra(dest)
-                if not rec.get("setname"):
+                if not rec.get("setname") or not keep_launcher(p, rec):
                     continue
                 rec.update(path=p, repo=f"db:{src}", source=src, wip=_wip(p), alt="_alternatives" in p.lower())
                 # A developer's own database serves each MRA from his core's repository: that is the core's source repository.
