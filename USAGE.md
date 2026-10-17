@@ -309,7 +309,7 @@ the curated list in [shmupfan/shmup-deck](https://github.com/shmupfan/shmup-deck
 (`shmup_deck/app/games.json`, every shoot 'em up it knows a MiSTer core for, with MAME set names).
 `report` runs it after writing the data, so `reports/shmup-deck.md` is always current. It prints (A) deck games we do not call Shmup, grouped by raw category so you can tell a wrong
 category from a wrong single game, (B) titles we call Shmup, on MiSTer, that the deck lacks, and
-(C) deck sets unknown to this MAME version. The same report is written to `reports/shmup-deck.md`
+(C) deck sets unknown to this MAME version. Rows (and a lead-in list) that were not in the previous report are marked **NEW**: the report file being overwritten is the baseline, or pass `--since <git ref>` to compare with an older one. The same report is written to `reports/shmup-deck.md`
 (committed, so the latest comparison is readable on GitHub). `--write-overrides` records the games in (A) as Shmup
 in `data/genre_overrides.json` (`--keep-raw CATEGORY` excludes a raw category from that). Run
 `python -m mmc report` afterwards.

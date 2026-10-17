@@ -8,7 +8,7 @@
 <title>MiSTer MAME Coverage</title>
 <meta name="description" content="Which MAME arcade titles are playable on MiSTer FPGA cores, which remain, and how coverage grew over time.">
 <link rel="canonical" href="https://mister-mame-coverage-docs.vercel.app/">
-<link rel="stylesheet" href="style.css?v=a26a2aa32a">
+<link rel="stylesheet" href="style.css?v=be673edafd">
 </head>
 <body>
 <header class="top">
@@ -153,13 +153,13 @@
       <div class="chart-body" id="chart-time"></div>
       <div class="legend" id="legend-time"></div>
     </figure>
-    <figure class="chart" id="fig-year">
+    <figure class="chart" id="fig-cores">
       <figcaption>
-        <strong>Coverage by release year</strong>
-        <span class="muted">filtered titles, grouped by the year MAME gives the parent set</span>
+        <strong>Cores over time, by database</strong>
+        <span class="muted">cumulative number of cores since October 2019, each dated by its first MRA; official distribution at the bottom, then JTCORES, Coin-Op Collection and the unofficial rest. Not affected by the filters</span>
       </figcaption>
-      <div class="chart-body" id="chart-year"></div>
-      <div class="legend" id="legend-year"></div>
+      <div class="chart-body" id="chart-cores"></div>
+      <div class="legend" id="legend-cores"></div>
     </figure>
     <figure class="chart" id="fig-genre">
       <figcaption>
@@ -169,13 +169,13 @@
       <div class="chart-body" id="chart-genre"></div>
       <div class="legend" id="legend-genre"></div>
     </figure>
-    <figure class="chart" id="fig-genre-pct">
+    <figure class="chart" id="fig-year">
       <figcaption>
-        <strong>Share on MiSTer by genre</strong>
-        <span class="muted">percentage of each genre's filtered titles with an MRA on any core; the overall share is the vertical line</span>
+        <strong>Coverage by release year</strong>
+        <span class="muted">filtered titles, grouped by the year MAME gives the parent set</span>
       </figcaption>
-      <div class="chart-body" id="chart-genre-pct"></div>
-      <div class="legend" id="legend-genre-pct"></div>
+      <div class="chart-body" id="chart-year"></div>
+      <div class="legend" id="legend-year"></div>
     </figure>
     </section>
     </details>
@@ -345,6 +345,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=22b5d94f46"></script>
+<script src="app.js?v=bfe6fea466"></script>
 </body>
 </html>

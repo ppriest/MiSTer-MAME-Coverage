@@ -117,7 +117,7 @@
       box.open = open;
     }
     S.chartsLock = false;
-    if (enabled) { renderTimeChart(); renderYearChart(); renderGenreChart(); renderGenrePctChart(); }
+    if (enabled) { renderTimeChart(); renderYearChart(); renderGenreChart(); renderCoresChart(); }
   }
 
   function monthKey(d) { return d.slice(0, 7); }
@@ -272,40 +272,63 @@
     });
   }
 
-  function renderGenrePctChart() {
-    const sc = chartScope();
-    const titles = sc.titles;
-    const bins = new Map();
-    titles.forEach(t => { const k = t.genre || "(none)"; const b = bins.get(k) || { k, covered: 0, total: 0 }; b.total++; if (sc.covered(t)) b.covered++; bins.set(k, b); });
-    const rows = Array.from(bins.values()).map(r => ({ ...r, p: r.covered / r.total })).sort((a, b) => b.p - a.p || b.total - a.total);
-    if (!rows.length) { $("#chart-genre-pct").innerHTML = '<p class="muted">no titles match</p>'; $("#legend-genre-pct").innerHTML = ""; return; }
-    const overall = titles.filter(sc.covered).length / titles.length;
-    const W = 640, rowH = 18, m = { t: 6, r: 110, b: 22, l: 96 };
-    const H = m.t + rows.length * rowH + m.b;
-    const x = v => m.l + (W - m.l - m.r) * v;
-    const bars = rows.map((r, i) => {
-      const y0 = m.t + i * rowH + 2, h = rowH - 4;
-      return `<g class="bar" data-i="${i}">
-        <text x="${m.l - 6}" y="${y0 + h - 4}" text-anchor="end">${esc(r.k)}</text>
-        <rect x="${m.l}" y="${y0}" width="${Math.max(0, x(r.p) - m.l)}" height="${h}" fill="var(--accent)" rx="2"/>
-        <text x="${x(r.p) + 5}" y="${y0 + h - 4}" fill="var(--text)">${(100 * r.p).toFixed(0)}% <tspan fill="var(--text-2)">of ${fmt(r.total)}</tspan></text>
-        <rect x="${m.l}" y="${y0 - 2}" width="${W - m.l - m.r}" height="${rowH}" fill="transparent"/>
-      </g>`;
-    }).join("");
-    const ticks = [0, 0.25, 0.5, 0.75, 1];
-    $("#chart-genre-pct").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Percentage of titles on MiSTer by genre">
-      <g class="grid">${ticks.map(v => `<line x1="${x(v)}" x2="${x(v)}" y1="${m.t}" y2="${H - m.b}"/>`).join("")}</g>
-      ${bars}
-      <line class="ref-line" x1="${x(overall)}" x2="${x(overall)}" y1="${m.t}" y2="${H - m.b}"/>
-      ${ticks.map(v => `<text x="${x(v)}" y="${H - 6}" text-anchor="middle">${100 * v}%</text>`).join("")}
-    </svg>`;
-    $("#legend-genre-pct").innerHTML = `<span><i style="background:var(--accent)"></i>share of the genre's titles on MiSTer</span><span><i class="line" style="background:var(--text-2)"></i>all genres: ${(100 * overall).toFixed(1)}%</span><span class="muted">click a genre to filter to it</span>`;
-    $$("#chart-genre-pct .bar").forEach(g => {
-      const r = rows[+g.dataset.i];
-      g.addEventListener("mousemove", ev => showTip(`<b>${esc(r.k)}</b><br>${(100 * r.p).toFixed(1)}% on MiSTer: ${fmt(r.covered)} of ${fmt(r.total)}<br>remaining: ${fmt(r.total - r.covered)}`, ev.clientX, ev.clientY));
-      g.addEventListener("mouseleave", hideTip);
-      g.addEventListener("click", () => { $("#f-genre").value = r.k; applyTitles(); showTab("titles"); });
+  // Cores over time, stacked: the three big databases from the bottom, everything else on top. A core is
+  // dated by its first MRA. Not filtered: it counts cores, not titles.
+  const CORE_SERIES = [
+    { src: "dist", color: "var(--accent)" },
+    { src: "jt", color: "var(--accent-2)" },
+    { src: "coinop", color: "var(--muted)" },
+    { src: null, color: "var(--accent-3)", label: "Unofficial" },
+  ];
+  function renderCoresChart() {
+    const titles = S.data.meta.sources || {};
+    const series = CORE_SERIES.map(sr => ({ ...sr, label: sr.label || (titles[sr.src] || sr.src), keys: [] }));
+    let undated = 0;
+    Object.values(S.cores).forEach(c => {
+      if (!c.first_date) { undated++; return; }
+      (series.find(sr => sr.src === c.source) || series[3]).keys.push(monthKey(c.first_date));
     });
+    const first = "2019-10", last = monthKey(new Date().toISOString());
+    const months = []; for (let k = first; k <= last; k = addMonths(k, 1)) months.push(k);
+    series.forEach(sr => {
+      const m = new Map(months.map(k => [k, 0])); let c = 0;
+      sr.keys.forEach(k => { if (k < first) c++; else if (m.has(k)) m.set(k, m.get(k) + 1); });
+      sr.cum = months.map(k => (c += m.get(k)));
+    });
+    // cumulative tops, bottom to top
+    const tops = months.map((_, i) => { let t = 0; return series.map(sr => (t += sr.cum[i])); });
+    const total = tops.at(-1).at(-1);
+    const W = 640, H = 260, m = { t: 22, r: 16, b: 28, l: 48 };
+    const step = Math.max(1, Math.ceil(total / 4 / 50) * 50);
+    const ymax = Math.ceil(total / step) * step;
+    const x = i => m.l + (W - m.l - m.r) * (i / Math.max(1, months.length - 1));
+    const y = v => m.t + (H - m.t - m.b) * (1 - v / ymax);
+    const area = j => {
+      const top = months.map((_, i) => `${x(i).toFixed(1)} ${y(tops[i][j]).toFixed(1)}`);
+      const bot = months.map((_, i) => `${x(i).toFixed(1)} ${y(j ? tops[i][j - 1] : 0).toFixed(1)}`).reverse();
+      return "M" + top.join("L") + "L" + bot.join("L") + "Z";
+    };
+    const yTicks = []; for (let v = 0; v <= ymax; v += step) yTicks.push(v);
+    const years = months.map((k, i) => [k, i]).filter(([k]) => k.endsWith("-01"));
+    $("#chart-cores").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Number of cores over time by database, stacked">
+      <g class="grid">${yTicks.map(v => `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/>`).join("")}</g>
+      ${yTicks.map(v => `<text x="${m.l - 6}" y="${y(v) + 4}" text-anchor="end">${fmt(v)}</text>`).join("")}
+      ${years.map(([k, i]) => `<text x="${x(i)}" y="${H - 8}" text-anchor="middle">${k.slice(0, 4)}</text>`).join("")}
+      ${series.map((sr, j) => `<path d="${area(j)}" fill="${sr.color}" fill-opacity=".85" stroke="var(--surface)" stroke-width="1"/>`).join("")}
+      <text x="${x(months.length - 1) - 4}" y="${y(total) - 7}" text-anchor="end" fill="var(--text)">${fmt(total)} cores</text>
+      <line class="hover-line" id="cores-hover" x1="0" x2="0" y1="${m.t}" y2="${y(0)}" visibility="hidden"/>
+      <rect x="${m.l}" y="${m.t}" width="${W - m.l - m.r}" height="${H - m.t - m.b}" fill="transparent" id="cores-hit"/>
+    </svg>`;
+    $("#legend-cores").innerHTML = series.slice().reverse().map(sr => `<span><i style="background:${sr.color}"></i>${esc(sr.label)}: ${fmt(sr.cum.at(-1))} (${pct(sr.cum.at(-1), total)})</span>`).join("")
+      + (undated ? `<span class="muted">${fmt(undated)} cores without an MRA date are not counted</span>` : "");
+    const hit = $("#cores-hit"), hl = $("#cores-hover"), svgEl = $("#chart-cores svg");
+    hit.addEventListener("mousemove", ev => {
+      const r = svgEl.getBoundingClientRect(), px = (ev.clientX - r.left) * W / r.width;
+      const i = Math.max(0, Math.min(months.length - 1, Math.round((px - m.l) / (W - m.l - m.r) * (months.length - 1))));
+      hl.setAttribute("x1", x(i)); hl.setAttribute("x2", x(i)); hl.setAttribute("visibility", "visible");
+      showTip(`<b>${months[i]}</b>: ${fmt(tops[i].at(-1))} cores<br>` + series.slice().reverse().map(sr => `${esc(sr.label)}: ${fmt(sr.cum[i])} (${pct(sr.cum[i], tops[i].at(-1))})`).join("<br>"), ev.clientX, ev.clientY);
+    });
+    hit.addEventListener("mouseleave", () => { hl.setAttribute("visibility", "hidden"); hideTip(); });
   }
 
   // ---------- titles ----------
