@@ -19,15 +19,6 @@
 "sets": 4,
 "pairs": 4,
 "dates_improved": 0,
-"cores_removed": 1
-},
-{
-"date": "2026-10-05",
-"note": "alamone 2026-10-05",
-"cores": 1,
-"sets": 4,
-"pairs": 4,
-"dates_improved": 0,
 "cores_removed": 0
 },
 {
@@ -437,6 +428,15 @@
 },
 {
 "date": "2026-10-16",
+"note": "alamone 2026-10-12",
+"cores": 0,
+"sets": 0,
+"pairs": 0,
+"dates_improved": 0,
+"cores_removed": 0
+},
+{
+"date": "2026-10-17",
 "note": "alamone 2026-10-12",
 "cores": 0,
 "sets": 0,

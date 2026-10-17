@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-17T00:10:05+00:00",
+  "generated": "2026-10-17T09:11:38+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-17T00:09:39+00:00",
+  "mister_generated": "2026-10-17T09:11:14+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-17",
   "ledger_runs": [
-   {
-    "date": "2026-10-16",
-    "note": "alamone 2026-10-12",
-    "cores": 1,
-    "sets": 5,
-    "pairs": 5,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-16",
     "note": "alamone 2026-10-12",
@@ -27,6 +18,15 @@
    },
    {
     "date": "2026-10-16",
+    "note": "alamone 2026-10-12",
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
+    "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-17",
     "note": "alamone 2026-10-12",
     "cores": 0,
     "sets": 0,
@@ -81,10 +81,10 @@
   },
   "mame_added_updated": "2026-10-17",
   "hbmame": {
-   "tag": "tag2893",
-   "version": "0.289.3",
-   "updated": "2026-10-16",
-   "sets": 9711
+   "tag": "0.289.3 (2026-09-29)",
+   "version": "0.289.3 (2026-09-29)",
+   "updated": "2026-10-17",
+   "sets": 8452
   },
   "sources": {
    "dist": "MiSTer official distribution",
@@ -2052,7 +2052,19 @@
    },
    {
     "source": "ongo",
+    "repo": "GalaxyBrian/Ibara_Showtime_Patcher",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "ongo",
     "repo": "GalaxyBrian/Muchi_Muchi_Pork_Roppaku",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "ongo",
+    "repo": "GalaxyBrian/Pink_Sweets_Rosy_Future",
     "dirs": null,
     "mras": 0
    },
@@ -2621,32 +2633,38 @@
     "repo": "MiSTer-devel/NeoGeo_MiSTer",
     "dirs": [],
     "mras": 262
+   },
+   {
+    "source": "xela",
+    "repo": "XelaNotPu/SYSTEM12_MiSTer",
+    "dirs": null,
+    "mras": 0
    }
   ],
   "repo_errors": [
    [
     "Kyp069/zx48-MiSTer",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+    "fatal: could not read Username for 'https://github.com': No such device or address"
    ],
    [
     "kandowontu/BrickBoy_MiSTer",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+    "fatal: could not read Username for 'https://github.com': No such device or address"
    ],
    [
     "meathax/Bucky",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+    "fatal: could not read Username for 'https://github.com': No such device or address"
    ],
    [
     "meathax/mrdo",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+    "fatal: could not read Username for 'https://github.com': No such device or address"
    ],
    [
     "meathax/s24",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+    "fatal: could not read Username for 'https://github.com': No such device or address"
    ],
    [
     "https://mister.blahm1d.com/db.json.zip",
-    "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    "HTTP Error 403: Forbidden"
    ]
   ],
   "counts": {
@@ -27998,7 +28016,6 @@
    ],
    "hbmame": true,
    "year": "2021",
-   "parent": "neogeo",
    "manufacturer": "Kako Eimon",
    "desc": "Abyssal Infants"
   },
@@ -28134,7 +28151,6 @@
    ],
    "hbmame": true,
    "year": "2017",
-   "parent": "neogeo",
    "manufacturer": "BEY",
    "desc": "Bad Apple demo (v1)"
   },
@@ -28360,22 +28376,14 @@
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": true,
-   "year": "1981",
-   "parent": "ckong",
-   "manufacturer": "bootleg",
-   "desc": "Crazy Kong Part II -1"
+   "hbmame": false
   },
   {
    "set": "ckonga3",
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": true,
-   "year": "1981",
-   "parent": "ckong",
-   "manufacturer": "bootleg",
-   "desc": "Crazy Kong Part II -2"
+   "hbmame": false
   },
   {
    "set": "ckongfix",
@@ -28398,7 +28406,6 @@
    ],
    "hbmame": true,
    "year": "2000",
-   "parent": "neogeo",
    "manufacturer": "Jeff Kurtz",
    "desc": "Columns (NeoGeo)(Homebrew)"
   },
@@ -28409,7 +28416,6 @@
    ],
    "hbmame": true,
    "year": "2013",
-   "parent": "neogeo",
    "manufacturer": "Le Cortex",
    "desc": "Crouching Pony Hidden Dragon Demo"
   },
@@ -28976,7 +28982,6 @@
    ],
    "hbmame": true,
    "year": "2024",
-   "parent": "neogeo",
    "manufacturer": "Pixelheart / ChipsOnSteroids",
    "desc": "Gladmort"
   },
@@ -29288,7 +29293,6 @@
    ],
    "hbmame": true,
    "year": "2014",
-   "parent": "neogeo",
    "manufacturer": "Neobitz",
    "desc": "Knight's Chance"
   },
@@ -29348,7 +29352,6 @@
    ],
    "hbmame": true,
    "year": "2021",
-   "parent": "neogeo",
    "manufacturer": "Blastar",
    "desc": "Looptris (2021-12-26)"
   },
@@ -29590,7 +29593,6 @@
    ],
    "hbmame": true,
    "year": "2015",
-   "parent": "neogeo",
    "manufacturer": "Kannagi",
    "desc": "Neo Fight"
   },
@@ -29601,7 +29603,6 @@
    ],
    "hbmame": true,
    "year": "2012",
-   "parent": "neogeo",
    "manufacturer": "Sebastian Mihai",
    "desc": "Neo Thunder"
   },
@@ -29648,7 +29649,6 @@
    ],
    "hbmame": true,
    "year": "2020",
-   "parent": "neogeo",
    "manufacturer": "OzzyOuzo",
    "desc": "New! Super Mario Bros."
   },
@@ -30862,11 +30862,7 @@
    "cores": [
     "jt:jtcps1"
    ],
-   "hbmame": true,
-   "year": "2021",
-   "parent": "sf2ce",
-   "manufacturer": "Zero800",
-   "desc": "Street Fighter II: Dream Battle (Mix 1.0)"
+   "hbmame": false
   },
   {
    "set": "sfa2_1",
@@ -31100,7 +31096,7 @@
    "year": "2007",
    "parent": "salamand",
    "manufacturer": "Konami",
-   "desc": "Salamander (version YY 0.7.3) "
+   "desc": "Salamander (version YY 0.7.3)"
   },
   {
    "set": "spcloneo",
@@ -31310,7 +31306,6 @@
    ],
    "hbmame": true,
    "year": "2022",
-   "parent": "neogeo",
    "manufacturer": "OzzyOuzo",
    "desc": "The Eye of Typhoon (Tsunami Edition, beta 7, 2022-07-31)"
   },
@@ -31363,7 +31358,6 @@
    ],
    "hbmame": true,
    "year": "2011",
-   "parent": "neogeo",
    "manufacturer": "FACE Corporation / N.C.I - Le Cortex",
    "desc": "Treasure of the Caribbean"
   },
@@ -31836,7 +31830,6 @@
    ],
    "hbmame": true,
    "year": "2025",
-   "parent": "neogeo",
    "manufacturer": "Blastar",
    "desc": "World Racer (2025-11-14)"
   },
