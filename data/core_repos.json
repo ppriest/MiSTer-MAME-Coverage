@@ -214,6 +214,25 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA",
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "decoryah:gaiapolis": [
+  "decoryah/Arcade-Gaiapolis_MiSTer"
+ ],
+ "decoryah:mcatadv": [
+  "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer"
+ ],
+ "decoryah:metamorphicforce": [
+  "decoryah/Arcade-MetamorphicForce_MiSTer",
+  "meathax/meatcores"
+ ],
+ "decoryah:monstermaulers": [
+  "decoryah/Arcade-MonsterMaulers_MiSTer"
+ ],
+ "decoryah:ohmygod": [
+  "decoryah/Arcade-OhMyGod_MiSTer"
+ ],
+ "decoryah:taitol": [
+  "decoryah/Arcade-TaitoLSystem_MiSTer"
+ ],
  "dist:actfancer": [
   "MiSTer-devel/Arcade-ActFancer_MISTer",
   "MiSTer-devel/Distribution_MiSTer",

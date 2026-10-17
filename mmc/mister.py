@@ -65,7 +65,7 @@ EXTRA_REPOS = [
     ("rossops", "rossops/Arcade-SegaSpaceHarrier_MiSTer", ["releases"]),   # rossops/s32 (Sega System 32) has MRAs but no build yet
     ("ppriest", "ppriest/Arcade-HyperNG64_MiSTer", None),
     ("repo", "MiSTer-devel/Arcade-KillerInstinct_MiSTer", ["releases"]),   # official core; neither the distribution nor alamone lists it yet
-    ("repo", "decoryah/Arcade-TaitoLSystem_MiSTer", ["mra"]),
+    ("decoryah", "decoryah/Arcade-TaitoLSystem_MiSTer", ["mra"]),
     # XelaNotPu (github.com/XelaNotPu; supporter builds also on patreon.com/cw/XelaNotPu). SYSTEM12_MiSTer holds only a README so far.
     ("repo", "XelaNotPu/SYSTEM11_MiSTer", ["releases/_Arcade"]),
     ("repo", "XelaNotPu/SYSTEM11_MiSTer-Supporter", ["releases/_Arcade"]),
@@ -76,10 +76,11 @@ EXTRA_REPOS = [
     ("repo", "XelaNotPu/ZN2-Capcom_MiSTer", ["releases/_Arcade"]),
     ("repo", "XelaNotPu/BreakThru_MiSTer", ["RELEASE/_Arcade"]),
     ("repo", "alphanu1/sega-model2-mister", ["releases"]),    # Sega Model 2 (Daytona USA, Desert Tank, Virtua Cop); beta
-    ("repo", "decoryah/Arcade-OhMyGod_MiSTer", ["mra"]),
-    ("repo", "decoryah/Arcade-MonsterMaulers_MiSTer", ["mra"]),
-    ("repo", "decoryah/Arcade-Gaiapolis_MiSTer", ["mra"]),
-    ("repo", "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer", ["mra"]),
+    ("decoryah", "decoryah/Arcade-OhMyGod_MiSTer", ["mra"]),
+    ("decoryah", "decoryah/Arcade-MonsterMaulers_MiSTer", ["mra"]),
+    ("decoryah", "decoryah/Arcade-Gaiapolis_MiSTer", ["mra"]),
+    ("decoryah", "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer", ["mra"]),
+    ("decoryah", "decoryah/Arcade-MetamorphicForce_MiSTer", None),
 ]
 
 # Core records that a better-sourced record replaces. They are removed from the ledger together with
@@ -92,12 +93,15 @@ SUPERSEDED_CORES = {
     "repo:nerattechu": "kyle:nerattechu", "repo:nostradamus": "kyle:nostradamus", "repo:crystal": "kyle:crystal",
     # XelaNotPu's repositories became the "xela" source
     "repo:xnsystem11": "xela:xnsystem11", "repo:xnsystemfl": "xela:xnsystemfl",
+    # decoryah's repositories became the "decoryah" source
+    "repo:gaiapolis": "decoryah:gaiapolis", "repo:mcatadv": "decoryah:mcatadv", "repo:metamorphicforce": "decoryah:metamorphicforce",
+    "repo:monstermaulers": "decoryah:monstermaulers", "repo:ohmygod": "decoryah:ohmygod", "repo:taitol": "decoryah:taitol",
     # rossops's repositories became the "rossops" source
     "repo:segaspaceharrier": "rossops:segaspaceharrier", "repo:segayboard": "rossops:segayboard",
 }
 
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
-OWNER_SOURCES = {"rossops": "rossops", "xelanotpu": "xela"}
+OWNER_SOURCES = {"decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela"}
 # Repositories of those owners that are not cores (forks of the shared MRA collection, a game runtime): never scanned.
 OWNER_SKIP = {"rossops/mra-alternatives_mister", "rossops/bennugd_mister"}
 
@@ -271,6 +275,7 @@ SOURCE_PAGES = {
     "ppriest": "https://github.com/ppriest/MiSTer_ppriest",
     "kyle": "https://github.com/kyledlester/MiSTer_DB",
     "gm0rk": "https://github.com/Gm0rk/Gm0rkCores",
+    "decoryah": "https://github.com/decoryah?tab=repositories",
     "rossops": "https://github.com/rossops?tab=repositories",
     "xela": "https://github.com/XelaNotPu?tab=repositories",
     "jtpr": "https://github.com/jotego/jtcores/tree/andrea-cores/cores",
@@ -297,6 +302,7 @@ DB_TITLES = {
     "ppriest": "ppriest (Tourniquet)",
     "kyle": "kyledlester (MiSTer_DB)",
     "gm0rk": "Gm0rkCores (Gm0rk)",
+    "decoryah": "decoryah (GitHub repositories)",
     "rossops": "rossops (GitHub repositories)",
     "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
     "repo": "GitHub repository only",

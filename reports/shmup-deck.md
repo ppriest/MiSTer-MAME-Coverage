@@ -13,7 +13,7 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (101)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (103)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
@@ -26,6 +26,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `robokid` | Atomic Robo-kid (World, Type-2) | 1988 | Shooter / Flying Horizontal (catver) | UPLFramebuffer |
 | `bwings` | B-Wings (Japan new Ver.) | 1984 | Shooter / Flying Vertical (catver) | DataEastLiberation |
 | `bakutotu` | Bakutotsu Kijuutei | 1988 | Shooter / Flying Horizontal (catver) | jtshouse |
+| `baryon` | Baryon - Future Assault (set 1) | 1997 | Shooter / Flying Vertical (catver) | DreamWorld |
 | `bchopper` | Battle Chopper (World) | 1987 | Shooter / Flying (catver) | IremM72 |
 | `boomrang` | Boomer Rang'r / Genesis (set 1) | 1983 | Shooter / Walking (catver) | DataEastLiberation |
 | `brkthru` | Break Thru (World) | 1986 | Shooter / Driving Horizontal (catver) | xnbrkthru |
@@ -50,6 +51,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `frontlin` | Front Line (AA1, 4 PCB version) | 1982 | Shooter / Walking (catver) | TaitoSJ |
 | `fnkyfish` | Funky Fish | 1981 | Shooter / Misc. Horizontal (catver) | Kangaroo |
 | `gstream` | G-Stream G2020 | 2002 | Shooter / Flying Vertical (catver) | GStream |
+| `gaialast` | Gaia - The Last Choice of Earth | 1999 | Shooter / Flying Vertical (catver) | DreamWorld |
 | `gground` | Gain Ground (World, 3 Players, Floppy Based, FD1094 317-0058-03d Rev A) | 1988 | Shooter / Walking (catver) | SegaSystem24 |
 | `gbusters` | Gang Busters (set 1) | 1988 | Shooter / Walking (catver) | jtaliens |
 | `gondo` | Gondomania (World) | 1987 | Shooter / Flying Vertical (catver) | dec8 |
