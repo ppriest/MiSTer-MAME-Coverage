@@ -4,6 +4,19 @@ Generated 2026-10-17 by `tools/reconcile_shmups.py` from MAME 0289 data and [shm
 
 **Agreement:** 307 of 309 deck titles are Shmup in our data (99.4%).
 
+## New since the previous report
+
+**8 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
+
+- `bwings` B-Wings (Japan new Ver.) (1984; Shooter / Flying Vertical)
+- `baryon` Baryon - Future Assault (set 1) (1997; Shooter / Flying Vertical)
+- `boomrang` Boomer Rang'r / Genesis (set 1) (1983; Shooter / Walking)
+- `gaialast` Gaia - The Last Choice of Earth (1999; Shooter / Flying Vertical)
+- `hvyunit` Heavy Unit (World) (1988; Shooter / Flying Horizontal)
+- `liberate` Liberation (1984; Shooter / Flying)
+- `sauro` Sauro (set 1) (1987; Shooter / Flying Horizontal)
+- `zaviga` Zaviga (1984; Shooter / Misc. Vertical)
+
 ## A. Deck games our data does not call Shmup (2)
 
 Grouped by the raw category our genre came from. Rows marked *kept* are vehicle or isometric shooters this project keeps out of Shmup on purpose.
@@ -19,16 +32,21 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
+| **NEW** `bwings` | B-Wings (Japan new Ver.) | 1984 | Shooter / Flying Vertical (catver) | DataEastLiberation |
+| **NEW** `baryon` | Baryon - Future Assault (set 1) | 1997 | Shooter / Flying Vertical (catver) | DreamWorld |
+| **NEW** `boomrang` | Boomer Rang'r / Genesis (set 1) | 1983 | Shooter / Walking (catver) | DataEastLiberation |
+| **NEW** `gaialast` | Gaia - The Last Choice of Earth | 1999 | Shooter / Flying Vertical (catver) | DreamWorld |
+| **NEW** `hvyunit` | Heavy Unit (World) | 1988 | Shooter / Flying Horizontal (catver) | HeavyUnit |
+| **NEW** `liberate` | Liberation | 1984 | Shooter / Flying (catver) | DataEastLiberation |
+| **NEW** `sauro` | Sauro (set 1) | 1987 | Shooter / Flying Horizontal (catver) | ffsauro |
+| **NEW** `zaviga` | Zaviga | 1984 | Shooter / Misc. Vertical (catver) | DataEastLiberation |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
 | `aliensec` | Alien Sector | 1985 | Shooter / Flying Horizontal (catver) | jtthundr |
 | `argus` | Argus | 1986 | Shooter / Flying Vertical (catver) | Argus |
 | `robokid` | Atomic Robo-kid (World, Type-2) | 1988 | Shooter / Flying Horizontal (catver) | UPLFramebuffer |
-| `bwings` | B-Wings (Japan new Ver.) | 1984 | Shooter / Flying Vertical (catver) | DataEastLiberation |
 | `bakutotu` | Bakutotsu Kijuutei | 1988 | Shooter / Flying Horizontal (catver) | jtshouse |
-| `baryon` | Baryon - Future Assault (set 1) | 1997 | Shooter / Flying Vertical (catver) | DreamWorld |
 | `bchopper` | Battle Chopper (World) | 1987 | Shooter / Flying (catver) | IremM72 |
-| `boomrang` | Boomer Rang'r / Genesis (set 1) | 1983 | Shooter / Walking (catver) | DataEastLiberation |
 | `brkthru` | Break Thru (World) | 1986 | Shooter / Driving Horizontal (catver) | xnbrkthru |
 | `bucky` | Bucky O'Hare (ver EAB) | 1992 | Shooter / Walking (catver) | Bucky |
 | `bullet` | Bullet (FD1094 317-0041) | 1987 | Shooter / Walking (catver) | jts16b |
@@ -51,7 +69,6 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `frontlin` | Front Line (AA1, 4 PCB version) | 1982 | Shooter / Walking (catver) | TaitoSJ |
 | `fnkyfish` | Funky Fish | 1981 | Shooter / Misc. Horizontal (catver) | Kangaroo |
 | `gstream` | G-Stream G2020 | 2002 | Shooter / Flying Vertical (catver) | GStream |
-| `gaialast` | Gaia - The Last Choice of Earth | 1999 | Shooter / Flying Vertical (catver) | DreamWorld |
 | `gground` | Gain Ground (World, 3 Players, Floppy Based, FD1094 317-0058-03d Rev A) | 1988 | Shooter / Walking (catver) | SegaSystem24 |
 | `gbusters` | Gang Busters (set 1) | 1988 | Shooter / Walking (catver) | jtaliens |
 | `gondo` | Gondomania (World) | 1987 | Shooter / Flying Vertical (catver) | dec8 |
@@ -59,12 +76,10 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `gundhara` | Gundhara | 1995 | Shooter / Walking (catver) | Seta |
 | `heatbrl` | Heated Barrel (World version 3) | 1992 | Shooter / Walking (catver) | HeatedBarrel |
 | `hbarrel` | Heavy Barrel (World) | 1987 | Shooter / Walking (catver) | jtninja |
-| `hvyunit` | Heavy Unit (World) | 1988 | Shooter / Flying Horizontal (catver) | HeavyUnit |
 | `ikari3` | Ikari III - The Rescue (World version 1, 8-Way Joystick) | 1989 | Shooter / Walking (catver) | SNK68 |
 | `ikari` | Ikari Warriors (US JAMMA) | 1986 | Shooter / Walking (catver) | IkariWarriors |
 | `kikikai` | KiKi KaiKai | 1986 | Shooter / Walking (catver) | kikikai, Kikikaikai (alpuy) |
 | `lasthope` | Last Hope (bootleg AES to MVS conversion, no coin support) | 2005 | Shooter / Flying Horizontal (catver) | NeoGeo |
-| `liberate` | Liberation | 1984 | Shooter / Flying (catver) | DataEastLiberation |
 | `mariner` | Mariner | 1981 | Shooter / Misc. Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `markham` | Markham | 1983 | Shooter / Flying Horizontal (catver) | IkkiSunsoft |
 | `mayday` | Mayday (set 1) | 1980 | Shooter / Flying Horizontal (catver) | Defender |
@@ -91,7 +106,6 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `redclash` | Red Clash | 1981 | Shooter / Flying Vertical (catver) | Universal |
 | `rescue` | Rescue | 1982 | Shooter / Flying (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |
 | `searchar` | SAR - Search And Rescue (World) | 1989 | Shooter / Walking (catver) | SNK68 |
-| `sauro` | Sauro (set 1) | 1987 | Shooter / Flying Horizontal (catver) | ffsauro |
 | `scotrsht` | Scooter Shooter | 1985 | Shooter / Flying (catver) | ScooterShooter |
 | `scorpion` | Scorpion (set 1) | 1982 | Shooter / Flying Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `sfposeid` | Sea Fighter Poseidon | 1984 | Shooter / Misc. Horizontal (catver) | TaitoSJ |
@@ -120,7 +134,6 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `supxevs` | Vs. Super Xevious | 1986 | Shooter / Flying Vertical (catver) | VSnes |
 | `wwestern` | Wild Western (set 1) | 1982 | Shooter / Misc. Vertical (catver) | TaitoSJ |
 | `wivernwg` | Wivern Wings | 2001 | Shooter / Flying Vertical (catver) | Vamphalf |
-| `zaviga` | Zaviga | 1984 | Shooter / Misc. Vertical (catver) | DataEastLiberation |
 | `zodiack` | Zodiack | 1983 | Shooter / Flying Vertical (catver) | Vastar |
 
 ## C. Deck games with no set in MAME 0289 (4)

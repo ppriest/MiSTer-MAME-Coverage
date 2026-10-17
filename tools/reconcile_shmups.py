@@ -24,6 +24,8 @@ import argparse
 import collections
 import json
 import os
+import re
+import subprocess
 import sys
 import urllib.request
 
@@ -45,6 +47,50 @@ def load_deck(path: str | None) -> list[dict]:
         return json.loads(r.read().decode("utf-8"))
 
 
+def new_section(prev, new_a: set[str], new_b: set[str], ours: list[dict], not_shmup: list) -> list[str]:
+    """Markdown lead-in listing what appeared since the previous report (empty when there is nothing to compare with)."""
+    if prev is None:
+        return []
+    out = ["## New since the previous report", ""]
+    if not (new_a or new_b):
+        return out + ["Nothing new: the same titles disagree as before.", ""]
+    if new_b:
+        out += [f"**{len(new_b)} title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):", ""]
+        out += [f"- `{t['name']}` {t['desc']} ({t['year']}; {t['genre_raw']})" for t in ours if t["name"] in new_b]
+        out.append("")
+    if new_a:
+        out += [f"**{len(new_a)} deck game(s) we do not call Shmup:**", ""]
+        out += [f"- `{t['name']}` {t['desc']} (ours: {t['genre']}; {t['genre_raw']})" for t, _ in not_shmup if t["name"] in new_a]
+        out.append("")
+    return out
+
+
+def previous_sets(markdown: str, since: str | None) -> tuple[set[str], set[str]] | None:
+    """(A sets, B sets) listed by the previous report: the file about to be overwritten, or its version at git ref `since`."""
+    rel = os.path.relpath(markdown, ROOT)
+    if since:
+        r = subprocess.run(["git", "show", f"{since}:{rel}"], cwd=ROOT, capture_output=True, text=True)
+        text = r.stdout if r.returncode == 0 else ""
+    elif os.path.exists(markdown):
+        with open(markdown, encoding="utf-8") as f:
+            text = f.read()
+    else:
+        text = ""
+    if not text:
+        return None
+    sections: dict[str, set[str]] = {"A": set(), "B": set()}
+    cur = None
+    for line in text.splitlines():
+        m = re.match(r"## ([ABC])\. ", line)
+        if m:
+            cur = m.group(1)
+        elif cur in sections:
+            m = re.match(r"\| (?:\*\*NEW\*\* )?`([^`]+)`", line)
+            if m:
+                sections[cur].add(m.group(1))
+    return sections["A"], sections["B"]
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--deck", help="local games.json instead of downloading it")
@@ -55,6 +101,8 @@ def main() -> int:
                     help="in section B also list Shmup titles that are not on MiSTer")
     ap.add_argument("--markdown", default=REPORT, metavar="PATH",
                     help=f"also write the report as Markdown (default: {os.path.relpath(REPORT, ROOT)}; '' to skip)")
+    ap.add_argument("--since", metavar="GIT_REF",
+                    help="mark rows as new relative to the report at this git ref (default: the report file being overwritten)")
     ap.add_argument("--keep-raw", action="append", default=None, metavar="CATEGORY",
                     help="raw categories whose placement we keep even when the deck disagrees "
                          "(repeatable; default: none)")
@@ -95,6 +143,15 @@ def main() -> int:
     mame = cov["meta"]["mame_version"]
     kept = lambda t: (t["genre_raw"] or "").lower() in keep_raw
 
+    # --- what is new since the previous report ---------------------------------------------------
+    prev = previous_sets(a.markdown, a.since) if a.markdown else None
+    new_a = {t["name"] for t, _ in not_shmup if prev and t["name"] not in prev[0]}
+    new_b = {t["name"] for t in ours if prev and t["name"] not in prev[1]}
+    if prev:
+        ours.sort(key=lambda t: (t["name"] not in new_b, t["desc"].lower()))       # new ones first
+        not_shmup.sort(key=lambda x: (x[0]["name"] not in new_a, x[0]["genre"] or "", x[0]["genre_raw"] or "", x[0]["desc"]))
+    mark = lambda name, new: "**NEW** " if name in new else ""
+
     # --- terminal -------------------------------------------------------------------------------
     print(f"Deck: {len(deck)} games -> {len(deck_titles)} MAME titles; {len(unknown)} not in MAME {mame}")
     print(f"\nA. Deck games our data does not call Shmup: {len(not_shmup)}")
@@ -103,13 +160,15 @@ def main() -> int:
     print()
     for t, cards in not_shmup:
         names = ", ".join(sorted({c["title"] for c in cards}))
-        print(f"   {t['name']:<10} {t['desc'][:48]:<48} ours: {str(t['genre']):<10} raw: {t['genre_raw']!r} ({t['genre_source']})   deck: {names}{'  [kept]' if kept(t) else ''}")
+        print(f"   {t['name']:<10} {t['desc'][:48]:<48} ours: {str(t['genre']):<10} raw: {t['genre_raw']!r} ({t['genre_source']})   deck: {names}{'  [kept]' if kept(t) else ''}{'  <-- NEW' if t['name'] in new_a else ''}")
     print(f"\nB. Titles we call Shmup{'' if a.include_uncovered else ', on MiSTer,'} that the deck does not list: {len(ours)}")
     for t in ours:
-        print(f"   {t['name']:<10} {t['desc'][:48]:<48} {t['year']:<5} raw: {t['genre_raw']!r} ({t['genre_source']})   cores: {', '.join(t['cores'])}")
+        print(f"   {t['name']:<10} {t['desc'][:48]:<48} {t['year']:<5} raw: {t['genre_raw']!r} ({t['genre_source']})   cores: {', '.join(t['cores'])}{'  <-- NEW' if t['name'] in new_b else ''}")
     print(f"\nC. Deck games with no set in MAME {mame}: {len(unknown)}")
     for i, title in unknown:
         print(f"   {i:<12} {title}")
+    if prev:
+        print(f"\nNew since the previous report: {len(new_b)} Shmup title(s) of ours the deck lacks, {len(new_a)} deck game(s) we do not call Shmup")
     print(f"\nAgreement: {agree}/{len(deck_titles)} deck titles are Shmup in our data "
           f"({100 * agree / max(1, len(deck_titles)):.1f}%); {len(ours)} of ours missing from the deck.")
 
@@ -121,19 +180,20 @@ def main() -> int:
               f"[shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` ({len(deck)} games).", "",
               f"**Agreement:** {agree} of {len(deck_titles)} deck titles are Shmup in our data "
               f"({100 * agree / max(1, len(deck_titles)):.1f}%).", "",
+              *new_section(prev, new_a, new_b, ours, not_shmup),
               f"## A. Deck games our data does not call Shmup ({len(not_shmup)})", "",
               "Grouped by the raw category our genre came from. Rows marked *kept* are vehicle or isometric "
               "shooters this project keeps out of Shmup on purpose.", "",
               "| Set | Title | Our genre | Raw category (source) | Deck title | |", "|---|---|---|---|---|---|"]
         for t, cards in not_shmup:
             names = ", ".join(sorted({c["title"] for c in cards}))
-            md.append(f"| `{t['name']}` | {t['desc']} | {t['genre']} | {t['genre_raw']} ({t['genre_source']}) | {names} | {'kept' if kept(t) else ''} |")
+            md.append(f"| {mark(t['name'], new_a)}`{t['name']}` | {t['desc']} | {t['genre']} | {t['genre_raw']} ({t['genre_source']}) | {names} | {'kept' if kept(t) else ''} |")
         md += ["", f"## B. Titles we call Shmup, on MiSTer, that the deck does not list ({len(ours)})", "",
                "Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.", "",
                "| Set | Title | Year | Raw category (source) | Cores |", "|---|---|---|---|---|"]
         for t in ours:
             cores = ", ".join(core_name.get(c, c) for c in t["cores"])
-            md.append(f"| `{t['name']}` | {t['desc']} | {t['year']} | {t['genre_raw']} ({t['genre_source']}) | {cores} |")
+            md.append(f"| {mark(t['name'], new_b)}`{t['name']}` | {t['desc']} | {t['year']} | {t['genre_raw']} ({t['genre_source']}) | {cores} |")
         md += ["", f"## C. Deck games with no set in MAME {mame} ({len(unknown)})", "",
                "| Deck id | Title |", "|---|---|"]
         for i, title in unknown:
