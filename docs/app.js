@@ -319,14 +319,14 @@
       <line class="hover-line" id="cores-hover" x1="0" x2="0" y1="${m.t}" y2="${y(0)}" visibility="hidden"/>
       <rect x="${m.l}" y="${m.t}" width="${W - m.l - m.r}" height="${H - m.t - m.b}" fill="transparent" id="cores-hit"/>
     </svg>`;
-    $("#legend-cores").innerHTML = series.slice().reverse().map(sr => `<span><i style="background:${sr.color}"></i>${esc(sr.label)}: ${fmt(sr.cum.at(-1))}</span>`).join("")
+    $("#legend-cores").innerHTML = series.slice().reverse().map(sr => `<span><i style="background:${sr.color}"></i>${esc(sr.label)}: ${fmt(sr.cum.at(-1))} (${pct(sr.cum.at(-1), total)})</span>`).join("")
       + (undated ? `<span class="muted">${fmt(undated)} cores without an MRA date are not counted</span>` : "");
     const hit = $("#cores-hit"), hl = $("#cores-hover"), svgEl = $("#chart-cores svg");
     hit.addEventListener("mousemove", ev => {
       const r = svgEl.getBoundingClientRect(), px = (ev.clientX - r.left) * W / r.width;
       const i = Math.max(0, Math.min(months.length - 1, Math.round((px - m.l) / (W - m.l - m.r) * (months.length - 1))));
       hl.setAttribute("x1", x(i)); hl.setAttribute("x2", x(i)); hl.setAttribute("visibility", "visible");
-      showTip(`<b>${months[i]}</b>: ${fmt(tops[i].at(-1))} cores<br>` + series.slice().reverse().map(sr => `${esc(sr.label)}: ${fmt(sr.cum[i])}`).join("<br>"), ev.clientX, ev.clientY);
+      showTip(`<b>${months[i]}</b>: ${fmt(tops[i].at(-1))} cores<br>` + series.slice().reverse().map(sr => `${esc(sr.label)}: ${fmt(sr.cum[i])} (${pct(sr.cum[i], tops[i].at(-1))})`).join("<br>"), ev.clientX, ev.clientY);
     });
     hit.addEventListener("mouseleave", () => { hl.setAttribute("visibility", "hidden"); hideTip(); });
   }
