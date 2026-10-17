@@ -1960,6 +1960,18 @@
  "ongo:ddragon3": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:deniam": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/Deniam_MiSTer_FPGA"
+ ],
+ "ongo:djmain": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA"
+ ],
+ "ongo:djmainsd": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA"
+ ],
  "ongo:earthjoker_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
@@ -2168,6 +2180,9 @@
   "kyledlester/R_Shark_Super_X_MiSTer"
  ],
  "ongo:sci_bazset": [
+  "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:segasys1_b23_full": [
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:segayboard": [

@@ -6,10 +6,7 @@ Generated 2026-10-17 by `tools/reconcile_shmups.py` from MAME 0289 data and [shm
 
 ## New since the previous report
 
-**2 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
-
-- `skyalert` Sky Alert (1992; Shooter / Flying Vertical)
-- `vmetal` Varia Metal (1995; Shooter / Flying Vertical)
+Nothing new: the same titles disagree as before.
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -26,8 +23,6 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
-| **NEW** `skyalert` | Sky Alert | 1992 | Shooter / Flying Vertical (catver) | metro |
-| **NEW** `vmetal` | Varia Metal | 1995 | Shooter / Flying Vertical (catver) | metro |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
 | `aliensec` | Alien Sector | 1985 | Shooter / Flying Horizontal (catver) | jtthundr |
@@ -43,7 +38,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `bullet` | Bullet (FD1094 317-0041) | 1987 | Shooter / Walking (catver) | jts16b |
 | `butasan` | Butasan - Pig's & Bomber's (Japan, English) | 1987 | Shooter / Walking (catver) | Argus |
 | `calibr50` | Caliber 50 (Ver. 1.01) | 1989 | Shooter / Walking (catver) | jtcal50, SetaDowntown |
-| `choplift` | Choplifter (8751 315-5151) | 1985 | Shooter / Flying Horizontal (catver) | Blackwine-SegaSystem1-2, SegaSys1+2 (TheJesusFish) |
+| `choplift` | Choplifter (8751 315-5151) | 1985 | Shooter / Flying Horizontal (catver) | SEGASYS1_B23_FULL_20261013, Blackwine-SegaSystem1-2, SegaSys1+2 (TheJesusFish) |
 | `colony7` | Colony 7 (set 1) | 1981 | Shooter / Command (catver) | Defender |
 | `commando` | Commando (World) | 1985 | Shooter / Walking (catver) | jtcommnd |
 | `dcon` | D-Con | 1992 | Shooter / Command (catver) | DCon |
@@ -107,6 +102,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `seganinj` | Sega Ninja (315-5102) | 1985 | Shooter / Walking (catver) | SEGASYS1 |
 | `shocktro` | Shock Troopers (set 1) | 1997 | Shooter / Walking (catver) | NeoGeo |
 | `shocktr2` | Shock Troopers - 2nd Squad | 1998 | Shooter / Walking (catver) | NeoGeo |
+| `skyalert` | Sky Alert | 1992 | Shooter / Flying Vertical (catver) | metro |
 | `skyskipr` | Sky Skipper | 1981 | Shooter / Flying (catver) | Popeye |
 | `amazon` | Soldier Girl Amazon | 1986 | Shooter / Walking (catver) | terracresta |
 | `stargate` | Stargate | 1981 | Shooter / Flying (catver) | Robotron |
@@ -122,6 +118,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `totcarn` | Total Carnage (rev LA1 03/10/92) | 1992 | Shooter / Walking (catver) | blahm1d_yunitadpcm |
 | `tricktrp` | Trick Trap (World?) | 1987 | Shooter / Walking (catver) | jtlabrun |
 | `valkyrie` | Valkyrie no Densetsu (Japan) | 1989 | Shooter / Walking (catver) | NamcoS2_STD |
+| `vmetal` | Varia Metal | 1995 | Shooter / Flying Vertical (catver) | metro |
 | `victroad` | Victory Road | 1986 | Shooter / Walking (catver) | IkariWarriors |
 | `vsgradus` | Vs. Gradius (US, set GR E) | 1986 | Shooter / Flying Horizontal (catver) | VSnes |
 | `bnglngby` | Vs. Raid on Bungeling Bay (RD4-2 B) | 1985 | Shooter / Flying (catver) | VSnes |

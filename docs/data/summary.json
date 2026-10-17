@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-17T18:57:00+00:00",
+  "generated": "2026-10-17T20:07:17+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-17T18:56:36+00:00",
+  "mister_generated": "2026-10-17T20:06:52+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-17",
   "ledger_runs": [
-   {
-    "date": "2026-10-17",
-    "note": "alamone 2026-10-12",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-17",
     "note": "alamone 2026-10-12",
@@ -51,6 +42,15 @@
     "pairs": 137,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-17",
+    "note": "alamone 2026-10-12",
+    "cores": 5,
+    "sets": 1,
+    "pairs": 49,
+    "dates_improved": 41,
+    "cores_removed": 3
    }
   ],
   "genre": {
@@ -248,7 +248,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1169
+    "mras": 1210
    },
    {
     "source": "dist",
@@ -2288,7 +2288,7 @@
     "source": "ongo",
     "repo": "bazset/MiSTer_BAZSET",
     "dirs": null,
-    "mras": 35
+    "mras": 39
    },
    {
     "source": "ongo",
@@ -2373,6 +2373,18 @@
     "repo": "kuzearcade/kuzecores",
     "dirs": null,
     "mras": 187
+   },
+   {
+    "source": "ongo",
+    "repo": "kyledlester/Deniam_MiSTer_FPGA",
+    "dirs": null,
+    "mras": 5
+   },
+   {
+    "source": "ongo",
+    "repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
+    "dirs": null,
+    "mras": 36
    },
    {
     "source": "ongo",
@@ -2746,12 +2758,12 @@
   "counts": {
    "titles": 6825,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2160,
+   "working_arcade_titles_covered": 2161,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5555,
-   "working_arcade_titles_source": 1895,
-   "working_arcade_titles_binary_only": 265,
-   "cores": 650,
+   "working_arcade_sets_covered": 5556,
+   "working_arcade_titles_source": 1897,
+   "working_arcade_titles_binary_only": 264,
+   "cores": 648,
    "binary_only_cores": 220,
    "unmatched_sets": 438
   }
@@ -2867,6 +2879,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": true,
    "nsets": 1,
@@ -3309,6 +3322,28 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-07"
+  },
+  {
+   "id": "bazset:segasys1_b23_full",
+   "name": "SEGASYS1_B23_FULL_20261013",
+   "source": "bazset",
+   "source_title": "bazset (MiSTer_BAZSET)",
+   "channel": null,
+   "rbf": "Arcade-SEGASYS1_B23_FULL_20261013.rbf",
+   "repo": "bazset/MiSTer_BAZSET",
+   "url": "https://github.com/bazset/MiSTer_BAZSET",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 4,
+   "ntitles": 4,
+   "first_date": "2020-01-03"
   },
   {
    "id": "bazset:shogunwarriors_bazset",
@@ -5076,6 +5111,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 5,
@@ -5098,6 +5134,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 3,
@@ -5170,6 +5207,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 34,
@@ -5192,6 +5230,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 5,
@@ -5214,6 +5253,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 3,
@@ -5311,6 +5351,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 7,
@@ -14439,11 +14480,12 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 18,
    "ntitles": 17,
-   "first_date": "2026-10-17"
+   "first_date": "2026-10-15"
   },
   {
    "id": "kyle:djmainsd",
@@ -14461,11 +14503,12 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 18,
    "ntitles": 17,
-   "first_date": "2026-10-17"
+   "first_date": "2026-10-15"
   },
   {
    "id": "kyle:konamigv",
@@ -16531,31 +16574,6 @@
    "first_date": "2026-06-01"
   },
   {
-   "id": "repo:cinematronics",
-   "name": "Cinematronics (Usquebagh)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-Cinematronics_20261004.rbf",
-   "repo": "Usquebagh/Arcade-Cinematronics_MiSTer",
-   "url": "https://github.com/Usquebagh/Arcade-Cinematronics_MiSTer",
-   "build_date": "2026-10-04",
-   "status": "analyzed",
-   "reading": "not enough evidence",
-   "score": 27,
-   "mame_drivers": [
-    "cinematronics/cinemat.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-05",
-   "aliases": [],
-   "last_seen": "2026-10-11",
-   "binary_only": false,
-   "nsets": 3,
-   "ntitles": 3,
-   "first_date": "2026-10-04"
-  },
-  {
    "id": "repo:cloakanddagger",
    "name": "CloakAndDagger (harlock74)",
    "source": "repo",
@@ -16654,31 +16672,6 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2020-07-14"
-  },
-  {
-   "id": "repo:firetrap",
-   "name": "FireTrap (Usquebagh)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-FireTrap_20261003.rbf",
-   "repo": "Usquebagh/Arcade-FireTrap_MiSTer",
-   "url": "https://github.com/Usquebagh/Arcade-FireTrap_MiSTer",
-   "build_date": "2026-10-03",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 32,
-   "mame_drivers": [
-    "dataeast/firetrap.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-05",
-   "aliases": [],
-   "last_seen": "2026-10-17",
-   "binary_only": false,
-   "nsets": 3,
-   "ntitles": 1,
-   "first_date": "2026-10-03"
   },
   {
    "id": "repo:galaga_testbuild",
@@ -16885,31 +16878,6 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-17"
-  },
-  {
-   "id": "repo:jedi",
-   "name": "Jedi (Usquebagh)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-Jedi_20261002.rbf",
-   "repo": "Usquebagh/Arcade-Jedi_MiSTer",
-   "url": "https://github.com/Usquebagh/Arcade-Jedi_MiSTer",
-   "build_date": "2026-10-02",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 25,
-   "mame_drivers": [
-    "atari/jedi.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-05",
-   "aliases": [],
-   "last_seen": "2026-10-17",
-   "binary_only": false,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-09-30"
   },
   {
    "id": "repo:jtnslasher",
@@ -18240,6 +18208,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 3,
@@ -18264,6 +18233,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 3,
@@ -18286,6 +18256,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 1,
@@ -18310,6 +18281,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 1,
@@ -18332,6 +18304,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 2,
@@ -18354,6 +18327,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 1,
@@ -18376,6 +18350,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 6,
@@ -18398,6 +18373,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 8,
@@ -18420,6 +18396,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": true,
    "nsets": 1,
@@ -18442,6 +18419,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": true,
    "nsets": 10,
@@ -19229,7 +19207,6 @@
    "sets": 1,
    "sets_covered": 1,
    "cores": [
-    "repo:jedi",
     "usquebagh:jedi"
    ],
    "first": "2026-09-30"
@@ -20083,7 +20060,6 @@
    "sets": 26,
    "sets_covered": 8,
    "cores": [
-    "repo:cinematronics",
     "usquebagh:cinematronics",
     "usquebagh:starcastle"
    ],
@@ -20453,7 +20429,6 @@
    "sets": 4,
    "sets_covered": 3,
    "cores": [
-    "repo:firetrap",
     "usquebagh:firetrap"
    ],
    "first": "2026-10-03"
@@ -22186,7 +22161,7 @@
     "kyle:djmain",
     "kyle:djmainsd"
    ],
-   "first": "2026-10-17"
+   "first": "2026-10-15"
   },
   {
    "sourcefile": "konami/fastlane.cpp",
@@ -25713,10 +25688,11 @@
   {
    "sourcefile": "sega/system1.cpp",
    "titles": 28,
-   "covered": 25,
+   "covered": 26,
    "sets": 92,
-   "sets_covered": 27,
+   "sets_covered": 28,
    "cores": [
+    "bazset:segasys1_b23_full",
     "blackwine:blackwine-segasystem1-2",
     "dist:segasys1",
     "repo:segasys1+2"
