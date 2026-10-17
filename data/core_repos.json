@@ -217,12 +217,27 @@
  "decoryah:gaiapolis": [
   "decoryah/Arcade-Gaiapolis_MiSTer"
  ],
+ "decoryah:heavyunit": [
+  "decoryah/Arcade-HeavyUnit_MiSTer"
+ ],
+ "decoryah:jchan": [
+  "decoryah/Arcade-JackieChan_MiSTer"
+ ],
  "decoryah:mcatadv": [
   "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer"
  ],
  "decoryah:metamorphicforce": [
   "decoryah/Arcade-MetamorphicForce_MiSTer",
   "meathax/meatcores"
+ ],
+ "decoryah:metro": [
+  "decoryah/Arcade-Metro_MiSTer"
+ ],
+ "decoryah:metrod64": [
+  "decoryah/Arcade-Metro_MiSTer"
+ ],
+ "decoryah:metrof64": [
+  "decoryah/Arcade-Metro_MiSTer"
  ],
  "decoryah:monstermaulers": [
   "decoryah/Arcade-MonsterMaulers_MiSTer"
@@ -232,6 +247,9 @@
  ],
  "decoryah:taitol": [
   "decoryah/Arcade-TaitoLSystem_MiSTer"
+ ],
+ "decoryah:violentstorm": [
+  "decoryah/Arcade-ViolentStorm_MiSTer"
  ],
  "dist:actfancer": [
   "MiSTer-devel/Arcade-ActFancer_MISTer",
@@ -316,7 +334,8 @@
  "dist:blackwidow": [
   "MiSTer-devel/Arcade-BlackWidow_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "Usquebagh/MiSTer_misc"
  ],
  "dist:blasteroids": [
   "MiSTer-devel/Arcade-Blasteroids_MiSTer",
@@ -538,7 +557,8 @@
  "dist:expressraider": [
   "MiSTer-devel/Arcade-ExpressRaider_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "Usquebagh/MiSTer_misc"
  ],
  "dist:finalizer": [
   "MiSTer-devel/Arcade-Finalizer_MiSTer",
@@ -661,7 +681,8 @@
  "dist:jackal": [
   "MiSTer-devel/Arcade-Jackal_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "Usquebagh/MiSTer_misc"
  ],
  "dist:jailbreak": [
   "MiSTer-devel/Arcade-Jailbreak_MiSTer",
@@ -980,6 +1001,7 @@
  "dist:segaxboard": [
   "MiSTer-devel/Arcade-SegaXBoard_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
+  "Usquebagh/MiSTer_misc",
   "rossops/Arcade-SegaXBoard_MiSTer"
  ],
  "dist:seibucupsoccer": [
@@ -1017,7 +1039,8 @@
  ],
  "dist:snk6502": [
   "MiSTer-devel/Arcade-SNK6502_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "Usquebagh/MiSTer_misc"
  ],
  "dist:snk_triplez80": [
   "MiSTer-devel/Arcade-SNK_TripleZ80_MiSTer",
@@ -1098,7 +1121,8 @@
  "dist:taitosj": [
   "MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "Usquebagh/MiSTer_misc"
  ],
  "dist:tank": [
   "MiSTer-devel/Arcade-Tank_MiSTer",
@@ -1397,6 +1421,7 @@
  ],
  "jt:jtcps1": [
   "Toryalai1/Arcade_Offset",
+  "Usquebagh/MiSTer_misc",
   "jotego/jtbin"
  ],
  "jt:jtcps15": [
@@ -1407,6 +1432,7 @@
  "jt:jtcps2": [
   "OngoGablogian/MiSTer_Ongo",
   "Toryalai1/Arcade_Offset",
+  "Usquebagh/MiSTer_misc",
   "jotego/jtbin"
  ],
  "jt:jtcps3": [
@@ -1768,6 +1794,7 @@
  ],
  "meat:docastle": [
   "OngoGablogian/MiSTer_Ongo",
+  "Usquebagh/MiSTer_misc",
   "meathax/meatcores"
  ],
  "meat:drmicro": [
@@ -1799,6 +1826,7 @@
   "meathax/meatcores"
  ],
  "meat:narc": [
+  "Usquebagh/MiSTer_misc",
   "meathax/meatcores"
  ],
  "meat:primal2": [
@@ -1864,6 +1892,9 @@
  "ongo:battlantis": [
   "Eggsecutioner528/Battlantis_Mister_Core",
   "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:bazbirdtry": [
+  "bazset/MiSTer_BAZSET"
  ],
  "ongo:bazset_bonksadventure": [
   "OngoGablogian/MiSTer_Ongo"
@@ -2419,6 +2450,7 @@
   "spacestate1/Arcade-taitoF3_MiSTer"
  ],
  "repo:rayforce_20260908b": [
+  "Usquebagh/MiSTer_misc",
   "spacestate1/Arcade-taitoF3_MiSTer"
  ],
  "repo:roundup": [
@@ -2516,6 +2548,7 @@
   "XelaNotPu/SYSTEMFL_MiSTer-Supporter"
  ],
  "rossops:segaspaceharrier": [
+  "Usquebagh/MiSTer_misc",
   "rossops/Arcade-SegaSpaceHarrier_MiSTer"
  ],
  "rossops:segayboard": [
@@ -2560,6 +2593,41 @@
  "slop:knucklebash": [
   "TheJesusFish/Arcade-KnuckleBash_MiSTer",
   "TheJesusFish/Slop-Core"
+ ],
+ "usquebagh:cinematronics": [
+  "Usquebagh/Arcade-Cinematronics_MiSTer",
+  "Usquebagh/MiSTer_misc"
+ ],
+ "usquebagh:firetrap": [
+  "Usquebagh/Arcade-FireTrap_MiSTer",
+  "Usquebagh/MiSTer_misc"
+ ],
+ "usquebagh:hunchback": [
+  "Usquebagh/Arcade-Hunchback_MiSTer",
+  "Usquebagh/MiSTer_misc"
+ ],
+ "usquebagh:jedi": [
+  "OngoGablogian/MiSTer_Ongo",
+  "Usquebagh/Arcade-Jedi_MiSTer"
+ ],
+ "usquebagh:millipede": [
+  "Usquebagh/Arcade-Millipede_MiSTer",
+  "Usquebagh/MiSTer_misc"
+ ],
+ "usquebagh:s32goldenaxe": [
+  "Usquebagh/MiSTer_misc"
+ ],
+ "usquebagh:segayboard": [
+  "Usquebagh/MiSTer_misc"
+ ],
+ "usquebagh:starcastle": [
+  "Usquebagh/MiSTer_misc"
+ ],
+ "usquebagh:umk3_srt_erase": [
+  "Usquebagh/MiSTer_misc"
+ ],
+ "usquebagh:vsnes": [
+  "Usquebagh/MiSTer_misc"
  ],
  "xela:system11": [
   "XelaNotPu/SYSTEM11_MiSTer"

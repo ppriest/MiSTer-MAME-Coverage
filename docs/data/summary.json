@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-17T12:20:41+00:00",
+  "generated": "2026-10-17T18:57:00+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-17T12:20:02+00:00",
+  "mister_generated": "2026-10-17T18:56:36+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-17",
   "ledger_runs": [
-   {
-    "date": "2026-10-16",
-    "note": "alamone 2026-10-12",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-17",
     "note": "alamone 2026-10-12",
@@ -51,6 +42,15 @@
     "pairs": 64,
     "dates_improved": 0,
     "cores_removed": 6
+   },
+   {
+    "date": "2026-10-17",
+    "note": "alamone 2026-10-12",
+    "cores": 20,
+    "sets": 78,
+    "pairs": 137,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
    "catver_entries": 37998,
    "mad_entries": 2995,
-   "mra_entries": 3424,
+   "mra_entries": 3451,
    "unmapped": [
     {
      "raw": "not classified",
@@ -68,6 +68,10 @@
     {
      "raw": "electromechanical/kiddy ride",
      "sets": 3
+    },
+    {
+     "raw": "music/rhythm",
+     "sets": 2
     },
     {
      "raw": "music",
@@ -81,10 +85,10 @@
   },
   "mame_added_updated": "2026-10-17",
   "hbmame": {
-   "tag": "tag2893",
-   "version": "0.289.3",
+   "tag": "0.289.3 (2026-09-29)",
+   "version": "0.289.3 (2026-09-29)",
    "updated": "2026-10-17",
-   "sets": 9711
+   "sets": 8452
   },
   "sources": {
    "dist": "MiSTer official distribution",
@@ -105,6 +109,7 @@
    "ppriest": "ppriest (Tourniquet)",
    "kyle": "kyledlester (MiSTer_DB)",
    "gm0rk": "Gm0rkCores (Gm0rk)",
+   "usquebagh": "Usquebagh (GitHub repositories)",
    "decoryah": "decoryah (GitHub repositories)",
    "rossops": "rossops (GitHub repositories)",
    "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
@@ -182,6 +187,10 @@
    "gm0rk": {
     "page": "https://github.com/Gm0rk/Gm0rkCores",
     "db_url": "https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip"
+   },
+   "usquebagh": {
+    "page": "https://github.com/Usquebagh?tab=repositories",
+    "db_url": null
    },
    "decoryah": {
     "page": "https://github.com/decoryah?tab=repositories",
@@ -857,7 +866,7 @@
     "source": "dist",
     "repo": "MiSTer-devel/Arcade-LaserdiscGames_MiSTer",
     "dirs": null,
-    "mras": 23
+    "mras": 24
    },
    {
     "source": "dist",
@@ -1742,13 +1751,13 @@
     "mras": 6
    },
    {
-    "source": "repo",
+    "source": "usquebagh",
     "repo": "Usquebagh/Arcade-FireTrap_MiSTer",
     "dirs": null,
     "mras": 3
    },
    {
-    "source": "repo",
+    "source": "usquebagh",
     "repo": "Usquebagh/Arcade-Jedi_MiSTer",
     "dirs": null,
     "mras": 1
@@ -2279,7 +2288,7 @@
     "source": "ongo",
     "repo": "bazset/MiSTer_BAZSET",
     "dirs": null,
-    "mras": 34
+    "mras": 35
    },
    {
     "source": "ongo",
@@ -2646,44 +2655,104 @@
     "repo": "MiSTer-devel/NeoGeo_MiSTer",
     "dirs": [],
     "mras": 262
+   },
+   {
+    "source": "usquebagh",
+    "repo": "Usquebagh/Arcade-Cinematronics_MiSTer",
+    "dirs": null,
+    "mras": 3
+   },
+   {
+    "source": "usquebagh",
+    "repo": "Usquebagh/Arcade-Hunchback_MiSTer",
+    "dirs": null,
+    "mras": 1
+   },
+   {
+    "source": "usquebagh",
+    "repo": "Usquebagh/Arcade-Millipede_MiSTer",
+    "dirs": null,
+    "mras": 2
+   },
+   {
+    "source": "usquebagh",
+    "repo": "Usquebagh/MiSTer-BDSM",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "usquebagh",
+    "repo": "Usquebagh/MiSTer_misc",
+    "dirs": null,
+    "mras": 73
+   },
+   {
+    "source": "decoryah",
+    "repo": "decoryah/Arcade-HeavyUnit_MiSTer",
+    "dirs": null,
+    "mras": 5
+   },
+   {
+    "source": "decoryah",
+    "repo": "decoryah/Arcade-JackieChan_MiSTer",
+    "dirs": null,
+    "mras": 3
+   },
+   {
+    "source": "decoryah",
+    "repo": "decoryah/Arcade-Metro_MiSTer",
+    "dirs": null,
+    "mras": 47
+   },
+   {
+    "source": "decoryah",
+    "repo": "decoryah/Arcade-ViolentStorm_MiSTer",
+    "dirs": null,
+    "mras": 7
+   },
+   {
+    "source": "xela",
+    "repo": "XelaNotPu/SYSTEM12_MiSTer",
+    "dirs": null,
+    "mras": 0
    }
   ],
   "repo_errors": [
    [
     "Kyp069/zx48-MiSTer",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+    "fatal: could not read Username for 'https://github.com': No such device or address"
    ],
    [
     "kandowontu/BrickBoy_MiSTer",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+    "fatal: could not read Username for 'https://github.com': No such device or address"
    ],
    [
     "meathax/Bucky",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+    "fatal: could not read Username for 'https://github.com': No such device or address"
    ],
    [
     "meathax/mrdo",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+    "fatal: could not read Username for 'https://github.com': No such device or address"
    ],
    [
     "meathax/s24",
-    "fatal: could not read Username for 'https://github.com': terminal prompts disabled"
+    "fatal: could not read Username for 'https://github.com': No such device or address"
    ],
    [
     "https://mister.blahm1d.com/db.json.zip",
-    "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    "HTTP Error 403: Forbidden"
    ]
   ],
   "counts": {
    "titles": 6825,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2114,
+   "working_arcade_titles_covered": 2160,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5483,
-   "working_arcade_titles_source": 1848,
-   "working_arcade_titles_binary_only": 266,
-   "cores": 631,
-   "binary_only_cores": 216,
+   "working_arcade_sets_covered": 5555,
+   "working_arcade_titles_source": 1895,
+   "working_arcade_titles_binary_only": 265,
+   "cores": 650,
+   "binary_only_cores": 220,
    "unmatched_sets": 438
   }
  },
@@ -2781,6 +2850,28 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-19"
+  },
+  {
+   "id": "bazset:bazbirdtry",
+   "name": "bazbirdtry",
+   "source": "bazset",
+   "source_title": "bazset (MiSTer_BAZSET)",
+   "channel": null,
+   "rbf": "bazbirdtry.rbf",
+   "repo": "bazset/MiSTer_BAZSET",
+   "url": "https://github.com/bazset/MiSTer_BAZSET",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-17"
   },
   {
    "id": "bazset:bonksadventure",
@@ -4962,11 +5053,56 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-10-04"
+  },
+  {
+   "id": "decoryah:heavyunit",
+   "name": "heavyunit",
+   "source": "decoryah",
+   "source_title": "decoryah (GitHub repositories)",
+   "channel": null,
+   "rbf": "heavyunit.rbf",
+   "repo": "decoryah/Arcade-HeavyUnit_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-HeavyUnit_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 5,
+   "ntitles": 1,
+   "first_date": "2026-10-15"
+  },
+  {
+   "id": "decoryah:jchan",
+   "name": "jchan",
+   "source": "decoryah",
+   "source_title": "decoryah (GitHub repositories)",
+   "channel": null,
+   "rbf": "jchan.rbf",
+   "repo": "decoryah/Arcade-JackieChan_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-JackieChan_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 2,
+   "first_date": "2026-10-14"
   },
   {
    "id": "decoryah:mcatadv",
@@ -4986,6 +5122,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 6,
@@ -5010,11 +5147,78 @@
    ],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-09-09"
+  },
+  {
+   "id": "decoryah:metro",
+   "name": "metro",
+   "source": "decoryah",
+   "source_title": "decoryah (GitHub repositories)",
+   "channel": null,
+   "rbf": "metro.rbf",
+   "repo": "decoryah/Arcade-Metro_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-Metro_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 34,
+   "ntitles": 15,
+   "first_date": "2026-10-13"
+  },
+  {
+   "id": "decoryah:metrod64",
+   "name": "metrod64",
+   "source": "decoryah",
+   "source_title": "decoryah (GitHub repositories)",
+   "channel": null,
+   "rbf": "metrod64.rbf",
+   "repo": "decoryah/Arcade-Metro_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-Metro_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 5,
+   "ntitles": 4,
+   "first_date": "2026-10-13"
+  },
+  {
+   "id": "decoryah:metrof64",
+   "name": "metrof64",
+   "source": "decoryah",
+   "source_title": "decoryah (GitHub repositories)",
+   "channel": null,
+   "rbf": "metrof64.rbf",
+   "repo": "decoryah/Arcade-Metro_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-Metro_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 2,
+   "first_date": "2026-10-13"
   },
   {
    "id": "decoryah:monstermaulers",
@@ -5034,6 +5238,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 3,
@@ -5058,6 +5263,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 2,
@@ -5082,11 +5288,34 @@
    ],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 35,
    "ntitles": 13,
    "first_date": "2026-10-05"
+  },
+  {
+   "id": "decoryah:violentstorm",
+   "name": "violentstorm",
+   "source": "decoryah",
+   "source_title": "decoryah (GitHub repositories)",
+   "channel": null,
+   "rbf": "violentstorm.rbf",
+   "repo": "decoryah/Arcade-ViolentStorm_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-ViolentStorm_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 7,
+   "ntitles": 1,
+   "first_date": "2026-10-12"
   },
   {
    "id": "dist:actfancer",
@@ -14195,6 +14424,50 @@
    "first_date": "2026-10-16"
   },
   {
+   "id": "kyle:djmain",
+   "name": "DJMain",
+   "source": "kyle",
+   "source_title": "kyledlester (MiSTer_DB)",
+   "channel": null,
+   "rbf": "DJMain.rbf",
+   "repo": "kyledlester/MiSTer_DB",
+   "url": "https://github.com/kyledlester/MiSTer_DB",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 18,
+   "ntitles": 17,
+   "first_date": "2026-10-17"
+  },
+  {
+   "id": "kyle:djmainsd",
+   "name": "DJMainSD",
+   "source": "kyle",
+   "source_title": "kyledlester (MiSTer_DB)",
+   "channel": null,
+   "rbf": "DJMainSD.rbf",
+   "repo": "kyledlester/MiSTer_DB",
+   "url": "https://github.com/kyledlester/MiSTer_DB",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 18,
+   "ntitles": 17,
+   "first_date": "2026-10-17"
+  },
+  {
    "id": "kyle:konamigv",
    "name": "KonamiGV",
    "source": "kyle",
@@ -14609,7 +14882,8 @@
    "mame_drivers": [],
    "note": "",
    "aliases": [
-    "ongo:meathax_docastle"
+    "ongo:meathax_docastle",
+    "usquebagh:universal_docastle"
    ],
    "first_recorded": "2026-10-04",
    "last_seen": "2026-10-17",
@@ -14856,8 +15130,10 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "aliases": [
+    "usquebagh:narc-v9"
+   ],
    "first_recorded": "2026-10-04",
-   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": true,
    "nsets": 1,
@@ -15736,8 +16012,8 @@
    "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": true,
-   "nsets": 52,
-   "ntitles": 34,
+   "nsets": 42,
+   "ntitles": 32,
    "first_date": "2025-12-22"
   },
   {
@@ -15848,6 +16124,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 7,
@@ -17044,7 +17321,8 @@
    ],
    "note": null,
    "aliases": [
-    "repo:rayforce"
+    "repo:rayforce",
+    "usquebagh:rayforce"
    ],
    "first_recorded": "2026-10-04",
    "last_seen": "2026-10-17",
@@ -17947,6 +18225,230 @@
    "first_date": "2026-08-28"
   },
   {
+   "id": "usquebagh:cinematronics",
+   "name": "Cinematronics",
+   "source": "usquebagh",
+   "source_title": "Usquebagh (GitHub repositories)",
+   "channel": null,
+   "rbf": "Cinematronics.rbf",
+   "repo": "Usquebagh/Arcade-Cinematronics_MiSTer",
+   "url": "https://github.com/Usquebagh/Arcade-Cinematronics_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 3,
+   "first_date": "2026-10-04"
+  },
+  {
+   "id": "usquebagh:firetrap",
+   "name": "FireTrap (Usquebagh)",
+   "source": "usquebagh",
+   "source_title": "Usquebagh (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "Arcade-FireTrap_20261003.rbf",
+   "repo": "Usquebagh/Arcade-FireTrap_MiSTer",
+   "url": "https://github.com/Usquebagh/Arcade-FireTrap_MiSTer",
+   "build_date": "2026-10-03",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 32,
+   "mame_drivers": [
+    "dataeast/firetrap.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 1,
+   "first_date": "2026-10-03"
+  },
+  {
+   "id": "usquebagh:hunchback",
+   "name": "hunchback_20261017",
+   "source": "usquebagh",
+   "source_title": "Usquebagh (GitHub repositories)",
+   "channel": null,
+   "rbf": "hunchback_20261017.rbf",
+   "repo": "Usquebagh/Arcade-Hunchback_MiSTer",
+   "url": "https://github.com/Usquebagh/Arcade-Hunchback_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-11"
+  },
+  {
+   "id": "usquebagh:jedi",
+   "name": "Jedi (Usquebagh)",
+   "source": "usquebagh",
+   "source_title": "Usquebagh (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "Arcade-Jedi_20261002.rbf",
+   "repo": "Usquebagh/Arcade-Jedi_MiSTer",
+   "url": "https://github.com/Usquebagh/Arcade-Jedi_MiSTer",
+   "build_date": "2026-10-02",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 25,
+   "mame_drivers": [
+    "atari/jedi.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-09-30"
+  },
+  {
+   "id": "usquebagh:millipede",
+   "name": "Millipede",
+   "source": "usquebagh",
+   "source_title": "Usquebagh (GitHub repositories)",
+   "channel": null,
+   "rbf": "Millipede.rbf",
+   "repo": "Usquebagh/Arcade-Millipede_MiSTer",
+   "url": "https://github.com/Usquebagh/Arcade-Millipede_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 2,
+   "ntitles": 1,
+   "first_date": "2026-10-11"
+  },
+  {
+   "id": "usquebagh:s32goldenaxe",
+   "name": "s32GoldenAxe",
+   "source": "usquebagh",
+   "source_title": "Usquebagh (GitHub repositories)",
+   "channel": null,
+   "rbf": "s32GoldenAxe.rbf",
+   "repo": "Usquebagh/MiSTer_misc",
+   "url": "https://github.com/Usquebagh/MiSTer_misc",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-15"
+  },
+  {
+   "id": "usquebagh:segayboard",
+   "name": "SegaYBoard",
+   "source": "usquebagh",
+   "source_title": "Usquebagh (GitHub repositories)",
+   "channel": null,
+   "rbf": "SegaYBoard.rbf",
+   "repo": "Usquebagh/MiSTer_misc",
+   "url": "https://github.com/Usquebagh/MiSTer_misc",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 6,
+   "ntitles": 5,
+   "first_date": "2026-10-15"
+  },
+  {
+   "id": "usquebagh:starcastle",
+   "name": "StarCastle",
+   "source": "usquebagh",
+   "source_title": "Usquebagh (GitHub repositories)",
+   "channel": null,
+   "rbf": "StarCastle.rbf",
+   "repo": "Usquebagh/MiSTer_misc",
+   "url": "https://github.com/Usquebagh/MiSTer_misc",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 8,
+   "ntitles": 8,
+   "first_date": "2026-10-04"
+  },
+  {
+   "id": "usquebagh:umk3_srt_erase",
+   "name": "UMK3_SRT_ERASE",
+   "source": "usquebagh",
+   "source_title": "Usquebagh (GitHub repositories)",
+   "channel": null,
+   "rbf": "Arcade-UMK3_SRT_ERASE.rbf",
+   "repo": "Usquebagh/MiSTer_misc",
+   "url": "https://github.com/Usquebagh/MiSTer_misc",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-15"
+  },
+  {
+   "id": "usquebagh:vsnes",
+   "name": "VSnes",
+   "source": "usquebagh",
+   "source_title": "Usquebagh (GitHub repositories)",
+   "channel": null,
+   "rbf": "VSnes.rbf",
+   "repo": "Usquebagh/MiSTer_misc",
+   "url": "https://github.com/Usquebagh/MiSTer_misc",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": true,
+   "nsets": 10,
+   "ntitles": 9,
+   "first_date": "2026-10-15"
+  },
+  {
    "id": "xela:system11",
    "name": "SYSTEM11",
    "source": "xela",
@@ -18544,12 +19046,13 @@
   {
    "sourcefile": "atari/centiped.cpp",
    "titles": 6,
-   "covered": 2,
+   "covered": 3,
    "sets": 18,
-   "sets_covered": 6,
+   "sets_covered": 8,
    "cores": [
     "dist:centipede",
-    "dist:galaxian"
+    "dist:galaxian",
+    "usquebagh:millipede"
    ],
    "first": "2021-02-14"
   },
@@ -18726,7 +19229,8 @@
    "sets": 1,
    "sets_covered": 1,
    "cores": [
-    "repo:jedi"
+    "repo:jedi",
+    "usquebagh:jedi"
    ],
    "first": "2026-09-30"
   },
@@ -19575,11 +20079,13 @@
   {
    "sourcefile": "cinematronics/cinemat.cpp",
    "titles": 15,
-   "covered": 3,
+   "covered": 8,
    "sets": 26,
-   "sets_covered": 3,
+   "sets_covered": 8,
    "cores": [
-    "repo:cinematronics"
+    "repo:cinematronics",
+    "usquebagh:cinematronics",
+    "usquebagh:starcastle"
    ],
    "first": "2026-10-04"
   },
@@ -19831,10 +20337,11 @@
   {
    "sourcefile": "dataeast/dec0.cpp",
    "titles": 9,
-   "covered": 7,
+   "covered": 8,
    "sets": 35,
-   "sets_covered": 26,
+   "sets_covered": 27,
    "cores": [
+    "bazset:bazbirdtry",
     "jt:jtcop",
     "jt:jtmidres",
     "jt:jtninja",
@@ -19946,7 +20453,8 @@
    "sets": 4,
    "sets_covered": 3,
    "cores": [
-    "repo:firetrap"
+    "repo:firetrap",
+    "usquebagh:firetrap"
    ],
    "first": "2026-10-03"
   },
@@ -21429,6 +21937,7 @@
    "sets": 5,
    "sets_covered": 5,
    "cores": [
+    "decoryah:heavyunit",
     "meat:heavyunit"
    ],
    "first": "2026-10-15"
@@ -21436,11 +21945,13 @@
   {
    "sourcefile": "kaneko/jchan.cpp",
    "titles": 2,
-   "covered": 0,
+   "covered": 2,
    "sets": 3,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 3,
+   "cores": [
+    "decoryah:jchan"
+   ],
+   "first": "2026-10-14"
   },
   {
    "sourcefile": "kaneko/kaneko16.cpp",
@@ -21668,11 +22179,14 @@
   {
    "sourcefile": "konami/djmain.cpp",
    "titles": 17,
-   "covered": 0,
+   "covered": 17,
    "sets": 29,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 18,
+   "cores": [
+    "kyle:djmain",
+    "kyle:djmainsd"
+   ],
+   "first": "2026-10-17"
   },
   {
    "sourcefile": "konami/fastlane.cpp",
@@ -22023,6 +22537,7 @@
     "decoryah:gaiapolis",
     "decoryah:metamorphicforce",
     "decoryah:monstermaulers",
+    "decoryah:violentstorm",
     "jlrh:ffmtlchamp",
     "jlrh:ffmystwarr",
     "meat:viostorm"
@@ -22470,11 +22985,15 @@
   {
    "sourcefile": "metro/metro.cpp",
    "titles": 20,
-   "covered": 0,
+   "covered": 20,
    "sets": 42,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 42,
+   "cores": [
+    "decoryah:metro",
+    "decoryah:metrod64",
+    "decoryah:metrof64"
+   ],
+   "first": "2026-10-13"
   },
   {
    "sourcefile": "metro/rabbit.cpp",
@@ -22699,10 +23218,11 @@
    "titles": 16,
    "covered": 3,
    "sets": 34,
-   "sets_covered": 6,
+   "sets_covered": 7,
    "cores": [
     "dist:galaxian",
-    "repo:galaxian_testbuild"
+    "repo:galaxian_testbuild",
+    "usquebagh:hunchback"
    ],
    "first": "2026-09-30"
   },
@@ -24252,7 +24772,8 @@
    "sets": 54,
    "sets_covered": 52,
    "cores": [
-    "ongo:vsnes"
+    "ongo:vsnes",
+    "usquebagh:vsnes"
    ],
    "first": "2025-12-22"
   },
@@ -25121,7 +25642,8 @@
    "sets_covered": 48,
    "cores": [
     "meat:segasystem32",
-    "meat:segasystem32multi"
+    "meat:segasystem32multi",
+    "usquebagh:s32goldenaxe"
    ],
    "first": "2026-07-18"
   },
@@ -25143,7 +25665,8 @@
    "sets": 21,
    "sets_covered": 19,
    "cores": [
-    "rossops:segayboard"
+    "rossops:segayboard",
+    "usquebagh:segayboard"
    ],
    "first": "2026-08-27"
   },
@@ -27788,7 +28311,8 @@
    "sets_covered": 7,
    "cores": [
     "blahm1d:blahm1d_wolfunit",
-    "repo:wolfunit"
+    "repo:wolfunit",
+    "usquebagh:umk3_srt_erase"
    ],
    "first": "2026-07-20"
   },
@@ -28041,7 +28565,6 @@
    ],
    "hbmame": true,
    "year": "2021",
-   "parent": "neogeo",
    "manufacturer": "Kako Eimon",
    "desc": "Abyssal Infants"
   },
@@ -28177,7 +28700,6 @@
    ],
    "hbmame": true,
    "year": "2017",
-   "parent": "neogeo",
    "manufacturer": "BEY",
    "desc": "Bad Apple demo (v1)"
   },
@@ -28403,22 +28925,14 @@
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": true,
-   "year": "1981",
-   "parent": "ckong",
-   "manufacturer": "bootleg",
-   "desc": "Crazy Kong Part II -1"
+   "hbmame": false
   },
   {
    "set": "ckonga3",
    "cores": [
     "dist:crazykong"
    ],
-   "hbmame": true,
-   "year": "1981",
-   "parent": "ckong",
-   "manufacturer": "bootleg",
-   "desc": "Crazy Kong Part II -2"
+   "hbmame": false
   },
   {
    "set": "ckongfix",
@@ -28441,7 +28955,6 @@
    ],
    "hbmame": true,
    "year": "2000",
-   "parent": "neogeo",
    "manufacturer": "Jeff Kurtz",
    "desc": "Columns (NeoGeo)(Homebrew)"
   },
@@ -28452,7 +28965,6 @@
    ],
    "hbmame": true,
    "year": "2013",
-   "parent": "neogeo",
    "manufacturer": "Le Cortex",
    "desc": "Crouching Pony Hidden Dragon Demo"
   },
@@ -29019,7 +29531,6 @@
    ],
    "hbmame": true,
    "year": "2024",
-   "parent": "neogeo",
    "manufacturer": "Pixelheart / ChipsOnSteroids",
    "desc": "Gladmort"
   },
@@ -29331,7 +29842,6 @@
    ],
    "hbmame": true,
    "year": "2014",
-   "parent": "neogeo",
    "manufacturer": "Neobitz",
    "desc": "Knight's Chance"
   },
@@ -29391,7 +29901,6 @@
    ],
    "hbmame": true,
    "year": "2021",
-   "parent": "neogeo",
    "manufacturer": "Blastar",
    "desc": "Looptris (2021-12-26)"
   },
@@ -29633,7 +30142,6 @@
    ],
    "hbmame": true,
    "year": "2015",
-   "parent": "neogeo",
    "manufacturer": "Kannagi",
    "desc": "Neo Fight"
   },
@@ -29644,7 +30152,6 @@
    ],
    "hbmame": true,
    "year": "2012",
-   "parent": "neogeo",
    "manufacturer": "Sebastian Mihai",
    "desc": "Neo Thunder"
   },
@@ -29691,7 +30198,6 @@
    ],
    "hbmame": true,
    "year": "2020",
-   "parent": "neogeo",
    "manufacturer": "OzzyOuzo",
    "desc": "New! Super Mario Bros."
   },
@@ -30905,11 +31411,7 @@
    "cores": [
     "jt:jtcps1"
    ],
-   "hbmame": true,
-   "year": "2021",
-   "parent": "sf2ce",
-   "manufacturer": "Zero800",
-   "desc": "Street Fighter II: Dream Battle (Mix 1.0)"
+   "hbmame": false
   },
   {
    "set": "sfa2_1",
@@ -31143,7 +31645,7 @@
    "year": "2007",
    "parent": "salamand",
    "manufacturer": "Konami",
-   "desc": "Salamander (version YY 0.7.3) "
+   "desc": "Salamander (version YY 0.7.3)"
   },
   {
    "set": "spcloneo",
@@ -31353,7 +31855,6 @@
    ],
    "hbmame": true,
    "year": "2022",
-   "parent": "neogeo",
    "manufacturer": "OzzyOuzo",
    "desc": "The Eye of Typhoon (Tsunami Edition, beta 7, 2022-07-31)"
   },
@@ -31406,7 +31907,6 @@
    ],
    "hbmame": true,
    "year": "2011",
-   "parent": "neogeo",
    "manufacturer": "FACE Corporation / N.C.I - Le Cortex",
    "desc": "Treasure of the Caribbean"
   },
@@ -31879,7 +32379,6 @@
    ],
    "hbmame": true,
    "year": "2025",
-   "parent": "neogeo",
    "manufacturer": "Blastar",
    "desc": "World Racer (2025-11-14)"
   },
