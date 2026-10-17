@@ -304,6 +304,8 @@ Local corrections go in **`data/genre_overrides.json`**:
 - `"sets": {set name: genre}` forces a final common genre, applied after the map; a parent's entry
   cascades to its clones; the source reads `override`.
 
+**Driver hardware (the ▸ on the Drivers tab).** `tools/hardware.py` (run by `report`) writes `docs/data/hardware.json` for every driver with a title on MiSTer, and the page loads it the first time a driver is opened. Primary source: MAME's `-listxml` (the `<chip>` declarations of every set of the driver: CPUs and sound chips, their clocks, how many per machine) plus the other devices and slots the machines declare. A chip, clock or device that not every set of the driver has is marked *in N of M sets*: a variant or an option. Secondary source: the hardware comments and ASCII diagrams in the driver's own source file (fetched from GitHub at the `mame<version>` tag and cached in `work/cache/mamesrc/`), kept as written in a nested "Notes from the driver source" fold; they are picked by looking for diagrams and for several chip, clock and board words, so an occasional comment is missed or an unrelated one included. The `-listxml` parse is cached per MAME version (`work/cache/hardware_<version>.json`).
+
 **Checking Shmup against shmup-deck.** `tools/reconcile_shmups.py` compares our Shmup titles with
 the curated list in [shmupfan/shmup-deck](https://github.com/shmupfan/shmup-deck)
 (`shmup_deck/app/games.json`, every shoot 'em up it knows a MiSTer core for, with MAME set names).

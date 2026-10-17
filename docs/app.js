@@ -580,7 +580,7 @@
     writeHash();
     $("#drivers-count").textContent = `${fmt(rows.length)} drivers · ${fmt(rows.reduce((n, d) => n + d.titles - d.covered, 0))} titles remaining${grem} · click a driver to list its titles`;
     $("#drivers-table tbody").innerHTML = rows.map(d => { const g = gstat(d); return `<tr class="${d.covered === 0 ? "uncovered" : d.covered < d.titles ? "partial" : "covered"}" data-d="${esc(d.sourcefile)}">
-      <td class="set"><a href="#" data-drv="${esc(d.sourcefile)}">${esc(d.sourcefile)}</a></td>
+      <td class="set">${d.covered > 0 ? `<button type="button" class="hwtoggle" aria-expanded="false" data-hw="${esc(d.sourcefile)}" title="hardware: CPUs, sound chips, clocks, options">▸</button>` : ""}<a href="#" data-drv="${esc(d.sourcefile)}">${esc(d.sourcefile)}</a></td>
       <td class="num">${d.covered}/${d.titles}</td>
       <td><span class="pct" title="${pct(d.covered, d.titles)}"><i style="width:${(100 * d.covered / d.titles).toFixed(1)}%"></i></span></td>
       <td class="num">${d.sets_covered}/${d.sets}</td>
@@ -588,8 +588,66 @@
       <td class="num">${d.first || ""}</td>
       <td>${d.cores.map(id => badge(id)).join("")}${(d.cores_claimed || []).map(id => badge(id)).join("")}</td>
       <td class="act">${d.covered < d.titles ? plus1("driver", d.sourcefile) : ""}</td></tr>`; }).join("");
+    S.hwOpen.forEach(f => { const b = $(`#drivers-table .hwtoggle[data-hw="${CSS.escape(f)}"]`); if (b) showHardware(b, true); });
+  }
+
+  // ---------- driver hardware (twist-open on the Drivers tab) ----------
+  // docs/data/hardware.json (tools/hardware.py): per supported driver, the CPUs, sound chips, other devices and slots
+  // MAME declares for its sets, and the hardware comments of the driver source. Loaded on the first twist-open.
+  S.hwOpen = new Set();
+  function loadHardware() {
+    if (!S.hwPromise) S.hwPromise = fetch("data/hardware.json", { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+    return S.hwPromise;
+  }
+  function clockText(hz) {
+    if (!hz) return "";
+    const n = v => String(+v.toFixed(6));
+    return hz >= 1e6 ? `${n(hz / 1e6)} MHz` : hz >= 1e3 ? `${n(hz / 1e3)} kHz` : `${hz} Hz`;
+  }
+  function hwRows(rows, total, withClock) {
+    return rows.map(r => {
+      const clocks = (r.clocks || []).filter(c => c[0]);
+      const multi = clocks.length > 1;
+      const clock = withClock && clocks.length ? clocks.map(c => clockText(c[0]) + (multi ? ` <span class="muted">(${fmt(c[1])} ${c[1] === 1 ? "set" : "sets"})</span>` : "")).join(", ") : "";
+      const opt = r.sets < total ? `<span class="opt" title="${r.sets} of the driver's ${total} sets have it: a variant, or optional">in ${fmt(r.sets)} of ${fmt(total)} sets</span>` : "";
+      return `<li><span class="chipname">${r.count > 1 ? r.count + " × " : ""}${esc(r.name)}</span>${clock ? ` <span class="clock">${clock}</span>` : ""} ${opt}</li>`;
+    }).join("");
+  }
+  function hardwareHtml(file, h) {
+    const d = h.drivers[file];
+    if (!d) return '<p class="muted">no hardware information for this driver</p>';
+    const sect = (title, html) => html ? `<div class="hwsect"><h4>${title}</h4><ul>${html}</ul></div>` : "";
+    const slots = Object.entries(d.slots || {}).map(([k, v]) => `<li><span class="chipname">${esc(k)}</span> <span class="muted">${v.map(esc).join(", ")}</span></li>`).join("");
+    const notes = (d.notes || []).length
+      ? `<details class="hwnotes"><summary>Notes from the driver source <span class="muted">(comments and diagrams, as written)</span></summary>${d.notes.map(n => `<pre>${esc(n)}</pre>`).join("")}</details>` : "";
+    const src = `https://github.com/mamedev/mame/blob/${h.tag}/src/mame/${file}`;
+    return `<div class="hwgrid">
+        ${sect("CPUs", hwRows(d.cpus, d.sets, true))}
+        ${sect("Sound", hwRows(d.sound, d.sets, true))}
+        ${sect("Other devices", hwRows(d.devices, d.sets, false))}
+        ${sect("Selectable options (slots)", slots)}
+      </div>
+      <p class="muted hwsrc">From MAME ${esc(h.mame)}'s declarations for the driver's ${fmt(d.sets)} ${d.sets === 1 ? "set" : "sets"}; a chip marked <span class="opt">in N of M sets</span> is a variant or optional. Source: <a href="${esc(src)}" target="_blank" rel="noopener">${esc(file)}</a>.</p>
+      ${notes}`;
+  }
+  function showHardware(btn, open) {
+    const tr = btn.closest("tr"), file = btn.dataset.hw;
+    let next = tr.nextElementSibling;
+    const has = next && next.classList.contains("hw");
+    if (!open) { if (has) next.remove(); btn.setAttribute("aria-expanded", "false"); S.hwOpen.delete(file); return; }
+    S.hwOpen.add(file);
+    btn.setAttribute("aria-expanded", "true");
+    if (has) return;
+    const row = document.createElement("tr");
+    row.className = "hw";
+    row.innerHTML = `<td colspan="${tr.cells.length}"><p class="muted">loading…</p></td>`;
+    tr.after(row);
+    loadHardware().then(h => { row.firstElementChild.innerHTML = hardwareHtml(file, h); },
+      e => { row.firstElementChild.innerHTML = `<p class="muted">hardware information is not available (${esc(String(e.message || e))})</p>`; });
   }
   $("#drivers-table").addEventListener("click", ev => {
+    const hb = ev.target.closest("button.hwtoggle");
+    if (hb) { showHardware(hb, hb.getAttribute("aria-expanded") !== "true"); return; }
     const a = ev.target.closest("a[data-drv]"); if (!a) return; ev.preventDefault();
     $("#f-drv").value = a.dataset.drv; $("#f-cov").value = "all"; $("#f-genre").value = $("#d-genre").value; applyTitles(); showTab("titles");
   });
