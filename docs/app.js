@@ -278,7 +278,7 @@
     { src: "dist", color: "var(--accent)" },
     { src: "jt", color: "var(--accent-2)" },
     { src: "coinop", color: "var(--accent-3)" },
-    { src: null, color: "var(--muted)", label: "Other (all remaining databases and repositories)" },
+    { src: null, color: "var(--muted)", label: "Unofficial" },
   ];
   function renderCoresChart() {
     const titles = S.data.meta.sources || {};
@@ -288,7 +288,7 @@
       if (!c.first_date) { undated++; return; }
       (series.find(sr => sr.src === c.source) || series[3]).keys.push(monthKey(c.first_date));
     });
-    const first = "2018-01", last = monthKey(new Date().toISOString());
+    const first = "2019-10", last = monthKey(new Date().toISOString());
     const months = []; for (let k = first; k <= last; k = addMonths(k, 1)) months.push(k);
     series.forEach(sr => {
       const m = new Map(months.map(k => [k, 0])); let c = 0;
