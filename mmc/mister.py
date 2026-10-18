@@ -22,6 +22,7 @@ import os
 import re
 import shutil
 import subprocess
+import time
 import urllib.request
 
 from . import paths
@@ -253,7 +254,10 @@ MULTI_PLATFORM = {"bmo00/arcfpga-cores"}
 PULL_REFS = {"jotego/jtbin"}
 
 # jtcores is enormous; clone it without any blobs and let git fetch the few historical MRAs lazily.
-FILTER_OVERRIDES = {"jotego/jtcores": "blob:none"}
+# jtbin carries every build binary of every commit (5 GB with the default filter) but only its MRAs matter: blobs come on demand.
+FILTER_OVERRIDES = {"jotego/jtcores": "blob:none", "jotego/jtbin": "blob:none"}
+# Repositories that change daily and are big or noisy are fetched again only after this many days (clones and the checked-out MRAs stay).
+REFRESH_DAYS = {"jotego/": 7}
 
 WIKI_REPO = "https://github.com/MiSTer-devel/Wiki_MiSTer.wiki.git"
 
@@ -442,13 +446,17 @@ def sync_repo(full: str, dirs: list[str] | None = None, fetch_existing: bool = T
             if _filter_key(have) != _filter_key(filt):  # cloned with another filter: start over
                 shutil.rmtree(d)
         fetched = False
+        mark = os.path.join(d, ".git", "mmc-fetched")
+        days = next((n for pre, n in REFRESH_DAYS.items() if full.startswith(pre)), 0)
         if not os.path.isdir(os.path.join(d, ".git")):
             os.makedirs(paths.REPOS, exist_ok=True)
             git("clone", "-q", f"--filter={filt}", "--no-checkout", url, d)
-        elif fetch_existing:
+            open(mark, "w").close()
+        elif fetch_existing and not (days and os.path.exists(mark) and time.time() - os.path.getmtime(mark) < days * 86400):
             git("fetch", "-q", f"--filter={filt}", "origin", cwd=d)
             fetched = True
-        if full in PULL_REFS and (fetch_existing or not git("rev-parse", "-q", "--verify", "refs/remotes/origin/pr/1", cwd=d, check=False).stdout):
+            open(mark, "w").close()
+        if full in PULL_REFS and (fetched or not git("rev-parse", "-q", "--verify", "refs/remotes/origin/pr/1", cwd=d, check=False).stdout):
             git("fetch", "-q", f"--filter={filt}", "origin", "+refs/pull/*/head:refs/remotes/origin/pr/*", cwd=d, check=False)
             head = git("symbolic-ref", "refs/remotes/origin/HEAD", cwd=d, check=False).stdout.strip()
             if head:

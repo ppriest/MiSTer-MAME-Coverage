@@ -26,6 +26,16 @@ jobs:
         with:
           path: work/cache/mame*
           key: mame-lx-${{ hashFiles('mmc/mame.py') }}
+      - name: Week of the year (for the jotego cache)
+        id: week
+        run: echo "week=$(date -u +%G-%V)" >> "$GITHUB_OUTPUT"
+      # jotego's repositories are fetched again only once a week (mmc.mister.REFRESH_DAYS): a new week starts from last week's copy
+      - name: Cache jotego repositories
+        uses: actions/cache@v4
+        with:
+          path: work/repos/jotego__*
+          key: jotego-repos-${{ steps.week.outputs.week }}
+          restore-keys: jotego-repos-
       - name: Build and commit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
