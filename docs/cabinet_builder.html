@@ -13,34 +13,35 @@
 <style>
 /* A cabinet's channel strip: the game list on the left, the ten channels on the right. */
 :root {
-  --bg: #f4f2f0;
-  --panel: #ffffff;
-  --ink: #1d1b1a;
-  --muted: #6b6461;
-  --line: #ddd7d3;
-  --accent: #c8102e;        /* the cabinet's red */
+  /* the main site's palette (docs/style.css) */
+  --bg: #fcfcfb;
+  --panel: #f3f2ef;
+  --ink: #0b0b0b;
+  --muted: #52514e;
+  --line: #e4e2dc;
+  --accent: #2a78d6;
   --accent-ink: #ffffff;
-  --chan: #1d6b3a;          /* the BIOS menu's green */
+  --chan: #008300;          /* channels 2-10 */
   --chan-ink: #ffffff;
-  --warn: #9a5b00;
-  --field: #fbfaf9;
+  --warn: #c98500;
+  --field: #fcfcfb;
   --mono: ui-monospace, "Cascadia Mono", Consolas, "Liberation Mono", monospace;
-  --sans: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #161414;
-    --panel: #201d1d;
-    --ink: #ece7e4;
-    --muted: #a39b97;
-    --line: #3a3433;
-    --accent: #e0363f;
+    --bg: #1a1a19;
+    --panel: #232322;
+    --ink: #ffffff;
+    --muted: #c3c2b7;
+    --line: #363633;
+    --accent: #3987e5;
     --accent-ink: #ffffff;
-    --chan: #2f8f52;
+    --chan: #199e70;
     --chan-ink: #ffffff;
-    --warn: #e0a24a;
-    --field: #191717;
+    --warn: #eda100;
+    --field: #1a1a19;
     color-scheme: dark;
   }
 }
@@ -54,6 +55,8 @@ header { max-width: 1180px; margin: 0 auto 16px; display: flex; flex-wrap: wrap;
 h1 { margin: 0; font-size: 22px; letter-spacing: 0.01em; text-wrap: balance; }
 h1 span { color: var(--accent); }
 header p { margin: 0; color: var(--muted); }
+header p.about { flex-basis: 100%; font-size: 13px; }
+header p.about a { color: var(--accent); }
 main { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
 @media (max-width: 860px) { main { grid-template-columns: minmax(0, 1fr); } }
 section { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
@@ -107,6 +110,8 @@ pre { margin: 8px 0 0; max-height: 40vh; overflow: auto; background: var(--field
 <header>
   <h1>PlayChoice-10 <span>Cabinet Builder</span></h1>
   <p>Pick up to ten games, put them in channel order, download the <code>.mra</code>.</p>
+  <p class="about">For the <a href="https://github.com/ppriest/Arcade-PlayChoice10_MiSTer" target="_blank" rel="noopener"><strong>MiSTer Nintendo PlayChoice-10 arcade core</strong></a>.
+    Upload the result from this to somewhere under "_Arcade" on your MiSTer.</p>
 </header>
 <main>
   <section aria-labelledby="h-games">
