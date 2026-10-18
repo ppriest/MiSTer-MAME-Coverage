@@ -605,9 +605,32 @@ def parse_mra_text(s: str) -> dict:
     return rec
 
 
+# PlayChoice-10 cabinets: every MRA says <setname>playch10</setname> (the BIOS board), the games are the pc_* zips of the <rom zip="..."> entries.
+_ROM_ZIP = re.compile(r"<rom\b[^>]*?\bzip\s*=\s*\"([^\"]*)\"", re.I)
+MULTISET_MRA = {"playch10": "pc_"}
+
+
+def mra_records(s: str) -> list[dict]:
+    """The records an MRA stands for: one, except where its <setname> is a shared board (``MULTISET_MRA``): then the board's own
+    set plus one per game zip of the matching prefix (set name = zip name without ``.zip``)."""
+    rec = parse_mra_text(s)
+    prefix = MULTISET_MRA.get(rec.get("setname") or "")
+    if not prefix:
+        return [rec]
+    body = re.sub(r"<!--.*?-->", "", s, flags=re.S)
+    games = sorted({z.strip().lower()[:-4] for m in _ROM_ZIP.finditer(body) for z in m.group(1).split("|")
+                    if z.strip().lower().startswith(prefix) and z.strip().lower().endswith(".zip")})
+    return [rec] + [dict(rec, setname=g) for g in games if re.fullmatch(r"[a-z0-9_]{1,32}", g)]
+
+
 def parse_mra(path: str) -> dict:
     with open(path, encoding="utf-8", errors="replace") as f:
         return parse_mra_text(f.read())
+
+
+def parse_mra_file(path: str) -> list[dict]:
+    with open(path, encoding="utf-8", errors="replace") as f:
+        return mra_records(f.read())
 
 
 def norm_rbf(rbf: str | None) -> str | None:
@@ -672,13 +695,13 @@ def scan_repo(source: str, full: str, dirs: list[str] | None) -> dict:
         fp = os.path.join(d, p)
         if not os.path.exists(fp):
             continue
-        rec = parse_mra(fp)
-        if not rec.get("setname") or not keep_launcher(p, rec):
-            continue
-        rec.update(path=p, repo=full, source=source, wip=_wip(p), alt="_alternatives" in p.lower())
-        if multi:
-            rec["mister_build"] = _CORE_DIR.match(p).group(1) in mister_dirs
-        mras.append(rec)
+        for rec in parse_mra_file(fp):
+            if not rec.get("setname") or not keep_launcher(p, rec):
+                continue
+            rec.update(path=p, repo=full, source=source, wip=_wip(p), alt="_alternatives" in p.lower())
+            if multi:
+                rec["mister_build"] = _CORE_DIR.match(p).group(1) in mister_dirs
+            mras.append(rec)
     # History: (path, date, setname) for every add, reading the file as it was when added.
     adds = mra_history(d, dirs)
     cache_file = os.path.join(paths.CACHE, "history", full.replace("/", "__") + ".json")
@@ -686,14 +709,22 @@ def scan_repo(source: str, full: str, dirs: list[str] | None) -> dict:
     if os.path.exists(cache_file):
         with open(cache_file, encoding="utf-8") as f:
             cache = json.load(f)
-    specs = [f"{c}:{p}" for p, _dt, c in adds if cache.get(f"{c}:{p}") is None]     # a missing set name is parsed again
+    specs = [f"{c}:{p}" for p, _dt, c in adds if cache.get(f"{c}:{p}") is None or (isinstance(cache.get(f"{c}:{p}"), str) and cache[f"{c}:{p}"] in MULTISET_MRA)]     # a missing set name is parsed again
     for i in range(0, len(specs), 2000):
         for spec, blob in read_blobs(d, specs[i:i + 2000]).items():
-            cache[spec] = parse_mra_text(blob.decode("utf-8", errors="replace")).get("setname") if blob else None
+            recs = mra_records(blob.decode("utf-8", errors="replace")) if blob else []
+            names = [r.get("setname") for r in recs if r.get("setname")]
+            cache[spec] = (names[0] if len(names) == 1 else names) if names else None       # a list for a multi-set MRA
     os.makedirs(os.path.dirname(cache_file), exist_ok=True)
     with open(cache_file, "w", encoding="utf-8") as f:
         json.dump(cache, f)
-    history = [(p, date, SETNAME_ALIASES.get(cache.get(f"{c}:{p}"), cache.get(f"{c}:{p}"))) for p, date, c in adds if not multi or _CORE_DIR.match(p)]
+    history = []
+    for p, date, c in adds:
+        if multi and not _CORE_DIR.match(p):
+            continue
+        v = cache.get(f"{c}:{p}")
+        for n in (v if isinstance(v, list) else [v]):
+            history.append((p, date, SETNAME_ALIASES.get(n, n)))
     for src, r, f, core in ROMSET_FILES:
         if r == full:
             m, h = scan_romsets(d, src, full, f, core)
@@ -781,15 +812,15 @@ def scan_databases(workers: int = 8) -> tuple[list[dict], list[tuple[str, str]]]
                 if err:
                     errors.append((f"{src}:{p}", err))
                     continue
-                rec = parse_mra(dest)
-                if not rec.get("setname") or not keep_launcher(p, rec):
-                    continue
-                rec.update(path=p, repo=f"db:{src}", source=src, wip=_wip(p), alt="_alternatives" in p.lower())
-                # A developer's own database serves each MRA from his core's repository: that is the core's source repository.
-                hit = re.match(r"https://raw\.githubusercontent\.com/([^/]+)/([^/]+)/", furls.get(p, ""))
-                if hit and hit.group(1).lower() == db_owner:
-                    rec["src_repo"] = f"{hit.group(1)}/{hit.group(2)}"
-                mras.append(rec)
+                for rec in parse_mra_file(dest):
+                    if not rec.get("setname") or not keep_launcher(p, rec):
+                        continue
+                    rec.update(path=p, repo=f"db:{src}", source=src, wip=_wip(p), alt="_alternatives" in p.lower())
+                    # A developer's own database serves each MRA from his core's repository: that is the core's source repository.
+                    hit = re.match(r"https://raw\.githubusercontent\.com/([^/]+)/([^/]+)/", furls.get(p, ""))
+                    if hit and hit.group(1).lower() == db_owner:
+                        rec["src_repo"] = f"{hit.group(1)}/{hit.group(2)}"
+                    mras.append(rec)
         print(f"[mister] database {src}: {sum(1 for m in mras if m['source'] == src)} MRAs")
     return mras, errors
 

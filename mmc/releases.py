@@ -119,10 +119,10 @@ def scan_release(full: str, source: str) -> dict:
                 continue
             fp = os.path.join(root, n)
             rel = os.path.relpath(fp, tree).replace(os.sep, "/")
-            rec = mister_mod.parse_mra(fp)
-            if not rec.get("setname") or not mister_mod.keep_launcher(n, rec):
-                continue
-            rec.update(path=rel, repo=full, source=source, wip=mister_mod._wip(rel), alt="_alternatives" in rel.lower())
-            mras.append(rec)
-            history.append((rel, date, rec["setname"]))
+            for rec in mister_mod.parse_mra_file(fp):
+                if not rec.get("setname") or not mister_mod.keep_launcher(n, rec):
+                    continue
+                rec.update(path=rel, repo=full, source=source, wip=mister_mod._wip(rel), alt="_alternatives" in rel.lower())
+                mras.append(rec)
+                history.append((rel, date, rec["setname"]))
     return {"repo": full, "source": source, "mras": mras, "history": history, "release": meta.get("tag")}

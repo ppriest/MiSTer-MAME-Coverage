@@ -497,6 +497,10 @@
     $("#titles-more").textContent = `Show more (${fmt(S.filtered.length - S.shown)} left)`;
   }
 
+  // PlayChoice-10 cabinet builder (a subpage) is offered for playch10 and its pc_* sets, and for a core that carries them.
+  const isPc10 = n => n === "playch10" || /^pc_/.test(n);
+  const cabinetLink = `<p class="muted">PlayChoice-10: <a href="cabinet_builder.html">build a cabinet .mra</a> (pick up to ten games for the channels)</p>`;
+
   function detailRow(t) {
     const rows = t.sets.map(s => `<tr${s.working ? "" : ' class="nw"'}>
       <td class="set">${esc(s.name)}</td><td>${esc(s.desc)}</td>
@@ -504,6 +508,7 @@
       <td>${s.cores.length ? s.cores.map(r => badge(r.core, r) + `<span class="flag">${r.date ? r.date + (r.date_quality !== "git" ? "≈" : "") : ""}</span> `).join("") : '<span class="muted">—</span>'}</td>
     </tr>`).join("");
     return `<tr class="detail"><td colspan="12"><table><thead><tr><th>Set</th><th>Description</th><th>MAME</th><th>Cores (date first seen; ≈ approximate)</th></tr></thead><tbody>${rows}</tbody></table>
+      ${t.sets.some(x => isPc10(x.name)) ? cabinetLink : ""}
       ${t.sourcefile ? `<div class="hwslot" data-hwfile="${esc(t.sourcefile)}"></div>` : ""}${galleryHtml([t], true)}</td></tr>`;
   }
 
@@ -750,6 +755,7 @@
     const rest = drivers.length > 3 ? `<p class="muted">and ${drivers.length - 3} more drivers: ${drivers.slice(3).map(([d]) => esc(d)).join(", ")}</p>` : "";
     return `<tr class="detail"><td colspan="10">
       <p class="muted">${esc(c.source_title)}${c.url ? ` · <a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.repo)}</a>` : ""}${c.binary_only ? " · binary-only" : ""} · ${fmt(ts.length)} ${ts.length === 1 ? "title" : "titles"}, ${fmt(c.nsets)} sets</p>
+      ${/playch/i.test(c.name + " " + (c.rbf || "")) || ts.some(t => t.sets.some(x => isPc10(x.name))) ? cabinetLink : ""}
       ${hw}${rest}${galleryHtml(ts)}</td></tr>`;
   }
   $("#cores-table").addEventListener("click", ev => {
