@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-18T13:31:59+00:00",
+  "generated": "2026-10-18T14:22:54+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-18T13:31:47+00:00",
+  "mister_generated": "2026-10-18T14:22:49+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-18",
   "ledger_runs": [
-   {
-    "date": "2026-10-18",
-    "note": "alamone 2026-10-12",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-18",
     "note": "alamone 2026-10-12",
@@ -49,6 +40,15 @@
     "cores": 6,
     "sets": 1,
     "pairs": 34,
+    "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-18",
+    "note": "alamone 2026-10-12",
+    "cores": 6,
+    "sets": 13,
+    "pairs": 45,
     "dates_improved": 0,
     "cores_removed": 0
    }
@@ -2288,7 +2288,7 @@
     "source": "ongo",
     "repo": "bazset/MiSTer_BAZSET",
     "dirs": null,
-    "mras": 40
+    "mras": 41
    },
    {
     "source": "ongo",
@@ -2669,6 +2669,12 @@
     "mras": 3
    },
    {
+    "source": "repo",
+    "repo": "iequalshane/MegaPlay_MiSTer_Beta",
+    "dirs": [],
+    "mras": 0
+   },
+   {
     "source": "dist",
     "repo": "MiSTer-devel/NeoGeo_MiSTer",
     "dirs": [],
@@ -2786,14 +2792,14 @@
   "counts": {
    "titles": 6825,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2168,
+   "working_arcade_titles_covered": 2178,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5584,
+   "working_arcade_sets_covered": 5594,
    "working_arcade_titles_source": 1902,
-   "working_arcade_titles_binary_only": 266,
-   "cores": 646,
-   "binary_only_cores": 226,
-   "unmatched_sets": 427
+   "working_arcade_titles_binary_only": 276,
+   "cores": 648,
+   "binary_only_cores": 228,
+   "unmatched_sets": 428
   }
  },
  "cores": [
@@ -2861,6 +2867,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-18",
+   "aliases": [],
    "last_seen": "2026-10-18",
    "binary_only": true,
    "nsets": 1,
@@ -15629,6 +15636,28 @@
    "first_date": "2026-10-12"
   },
   {
+   "id": "ongo:bazturtship",
+   "name": "bazturtship",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "bazturtship.rbf",
+   "repo": "bazset/MiSTer_BAZSET",
+   "url": "https://github.com/bazset/MiSTer_BAZSET",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-18"
+  },
+  {
    "id": "ongo:ctribe",
    "name": "ctribe_mister",
    "source": "ongo",
@@ -17032,6 +17061,28 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-29"
+  },
+  {
+   "id": "repo:megaplay",
+   "name": "MegaPlay",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "MegaPlay.rbf",
+   "repo": "iequalshane/MegaPlay_MiSTer_Beta",
+   "url": "https://github.com/iequalshane/MegaPlay_MiSTer_Beta",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "binary_only": true,
+   "nsets": 9,
+   "ntitles": 9,
+   "first_date": "2026-06-25"
   },
   {
    "id": "repo:model2",
@@ -19946,11 +19997,12 @@
   {
    "sourcefile": "capcom/sidearms.cpp",
    "titles": 4,
-   "covered": 1,
+   "covered": 2,
    "sets": 13,
-   "sets_covered": 4,
+   "sets_covered": 5,
    "cores": [
-    "jt:jtsarms"
+    "jt:jtsarms",
+    "ongo:bazturtship"
    ],
    "first": "2020-08-10"
   },
@@ -25433,11 +25485,13 @@
   {
    "sourcefile": "sega/megaplay.cpp",
    "titles": 9,
-   "covered": 0,
+   "covered": 9,
    "sets": 10,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 9,
+   "cores": [
+    "repo:megaplay"
+   ],
+   "first": "2026-06-25"
   },
   {
    "sourcefile": "sega/model1.cpp",
@@ -29938,6 +29992,13 @@
    "set": "montest",
    "cores": [
     "dist:neogeo"
+   ],
+   "hbmame": false
+  },
+  {
+   "set": "mp_4cart_test3",
+   "cores": [
+    "repo:megaplay"
    ],
    "hbmame": false
   },
