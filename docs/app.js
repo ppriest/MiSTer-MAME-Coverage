@@ -1179,6 +1179,17 @@
     dlg.addEventListener("close", () => { img.removeAttribute("src"); cv.hidden = true; img.style.opacity = ""; });
   })();
 
+  // ---------- sticky header strip ----------
+  // When the page scrolls only the bottom of the heading stays on screen: the row with "Create Issue / Suggestion" and "Databases".
+  // The header is sticky with a negative top, so everything above that row slides out of view.
+  (function () {
+    const head = $("header.top"), row = head && $(".issue", head);
+    if (!head || !row) return;
+    const fit = () => { head.style.top = -Math.max(0, Math.round(row.getBoundingClientRect().top - head.getBoundingClientRect().top - 3)) + "px"; };
+    fit();
+    if (window.ResizeObserver) new ResizeObserver(fit).observe(head); else addEventListener("resize", fit);
+  })();
+
   // ---------- databases ----------
   function renderDatabases() {
     const info = S.data.meta.source_info || {}, titles = S.data.meta.sources || {};

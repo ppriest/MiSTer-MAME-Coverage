@@ -308,3 +308,7 @@ h3.hwdrv { margin: 14px 0 6px; font-size: 13px; text-transform: none; letter-spa
 body.chart-zoomed { overflow: hidden; }
 #chart-genre svg { max-width: none; }
 .chart:not(.zoomed) #chart-genre svg { max-width: 640px; }
+
+/* the heading's bottom strip stays on screen when the page scrolls (its top offset is set in app.js) */
+header.top { position: sticky; top: 0; z-index: 20; }
+.tooltip { z-index: 25; }
