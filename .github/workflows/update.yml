@@ -26,6 +26,19 @@ jobs:
         with:
           path: work/cache/mame*
           key: mame-lx-${{ hashFiles('mmc/mame.py') }}
+      # The repository checkouts (current commit only), the unpacked releases and the MRA history cache make a run
+      # incremental: without them every run clones all ~400 repositories again. A new key per run saves the updated
+      # state; restore-keys takes the newest earlier one.
+      - name: Cache repository checkouts
+        uses: actions/cache@v4
+        with:
+          path: |
+            work/repos
+            work/releases
+            work/cache/history
+          key: repos-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            repos-${{ runner.os }}-
       - name: Build and commit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
