@@ -71,7 +71,10 @@
     const c = S.cores[id] || { name: id, source: id.split(":")[0], source_title: "" };
     const title = `${c.binary_only ? "binary-only · " : ""}${c.source_title || c.source}${c.repo ? " · " + c.repo : ""}${extra && extra.date ? " · since " + extra.date + (extra.date_quality !== "git" ? " (approx.)" : "") : ""}`;
     const cls = ["badge", "src-" + c.source, extra && extra.wip ? "wip" : ""].join(" ");
-    return `<span class="${cls}" title="${esc(title)}">${esc(c.name)}${c.binary_only ? ' <span class="flag">bin</span>' : ""}${extra && extra.alt ? ' <span class="flag">alt</span>' : ""}${extra && extra.wip ? ' <span class="flag">wip</span>' : ""}</span>`;
+    const inner = `${esc(c.name)}${c.binary_only ? ' <span class="flag">bin</span>' : ""}${extra && extra.alt ? ' <span class="flag">alt</span>' : ""}${extra && extra.wip ? ' <span class="flag">wip</span>' : ""}`;
+    // a core links to its source: its repository, else the page of its database
+    const href = c.url || ((S.data && S.data.meta.source_info || {})[c.source] || {}).page;
+    return href ? `<a class="${cls}" href="${esc(href)}" target="_blank" rel="noopener" title="${esc(title)}">${inner}</a>` : `<span class="${cls}" title="${esc(title)}">${inner}</span>`;
   }
 
   // ---------- tiles ----------

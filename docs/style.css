@@ -111,6 +111,8 @@ svg .band { fill: var(--text-2); fill-opacity: 0.08; }
 .set { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
 .badge { display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--line); color: var(--text-2); margin: 1px 3px 1px 0; white-space: nowrap; }
 .badge.src-dist { border-color: var(--accent); }
+a.badge { text-decoration: none; }
+a.badge:hover { text-decoration: underline; background: var(--surface); color: var(--text); }
 .badge.src-jt { border-color: var(--accent-3); }
 .badge.src-coinop { border-color: var(--warn); }
 .badge.src-ongo { border-color: var(--accent-2); }
