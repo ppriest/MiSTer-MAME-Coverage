@@ -245,6 +245,9 @@
  "decoryah:ohmygod": [
   "decoryah/Arcade-OhMyGod_MiSTer"
  ],
+ "decoryah:pgm2": [
+  "decoryah/Arcade-IGSPGM2_MiSTer"
+ ],
  "decoryah:taitol": [
   "decoryah/Arcade-TaitoLSystem_MiSTer"
  ],
@@ -1826,6 +1829,7 @@
   "meathax/meatcores"
  ],
  "meat:narc": [
+  "OngoGablogian/MiSTer_Ongo",
   "Usquebagh/MiSTer_misc",
   "meathax/meatcores"
  ],
@@ -1894,7 +1898,8 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:battletoads": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
  ],
  "ongo:bazbirdtry": [
   "bazset/MiSTer_BAZSET"
@@ -2090,6 +2095,9 @@
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:meathax_argus": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:meathax_battletoads": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_dataeastliberation": [
@@ -2458,6 +2466,9 @@
  ],
  "repo:penguinkunwars": [
   "MrX-8B/MiSTer-Arcade-PenguinKunWars"
+ ],
+ "repo:polyplay": [
+  "Niels3RT/PolyPlay_MiSTer"
  ],
  "repo:powerins": [
   "yaguboo/Arcade-PowerInstinct_MiSTer"
