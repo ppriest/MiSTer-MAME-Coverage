@@ -273,7 +273,7 @@
   }
 
   // Cores over time, stacked: the three big databases from the bottom, everything else on top. A core is
-  // dated by its first MRA. Not filtered: it counts cores, not titles.
+  // dated by its first MRA. It follows the Titles filters: the cores that load at least one set of a filtered title.
   const CORE_SERIES = [
     { src: "dist", color: "var(--accent)" },
     { src: "jt", color: "var(--accent-2)" },
@@ -284,7 +284,9 @@
     const titles = S.data.meta.sources || {};
     const series = CORE_SERIES.map(sr => ({ ...sr, label: sr.label || (titles[sr.src] || sr.src), keys: [] }));
     let undated = 0;
-    Object.values(S.cores).forEach(c => {
+    const sc = chartScope(), ids = new Set();
+    sc.titles.forEach(t => t.sets.forEach(s => { if (sc.setOk(s) && sc.setCovered(s)) s.cores.forEach(r => ids.add(r.core)); }));
+    Array.from(ids).map(id => S.cores[id]).filter(Boolean).forEach(c => {
       if (!c.first_date) { undated++; return; }
       (series.find(sr => sr.src === c.source) || series[3]).keys.push(monthKey(c.first_date));
     });

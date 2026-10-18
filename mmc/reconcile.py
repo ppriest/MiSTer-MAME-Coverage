@@ -190,11 +190,15 @@ def observe(mister: dict) -> dict:
     stems: dict[str, str] = {}        # rbf stem -> core id, from MRAs that are plainly MiSTer
     core_repos: dict[str, set[str]] = collections.defaultdict(set)   # core id -> repositories its MRAs live in
     held: list[dict] = []
+    ignored_cores: set[str] = set()
     for m in mister["mras"]:
         if m.get("mister_build") is False:
             held.append(m)
             continue
         cid = resolve_core(m, cores, by_repo, by_rbf, repo_count)
+        if m["setname"] in mister_mod.IGNORED_SETS:          # test entries
+            ignored_cores.add(cid)
+            continue
         stem = mister_mod.norm_rbf(m.get("rbf"))
         if stem and m["source"] != "arcfpga":
             stems.setdefault(stem, cid)
@@ -233,6 +237,9 @@ def observe(mister: dict) -> dict:
     excluded -= set(cores)            # a core alamone knows as a MiSTer build is never excluded
     # a superseded record goes only when its replacement was observed, so no support is lost
     excluded |= {old for old, new in mister_mod.SUPERSEDED_CORES.items() if new in cores}
+    # a core whose only MRAs were test entries is no core at all
+    excluded |= {cid for cid in ignored_cores if not any(cid in per for per in support.values())}
+    excluded |= mister_mod.IGNORED_CORES
 
     # 2. Sets alamone attributes to cores we have no MRA checkout for (developer databases).
     for cid, c in cores.items():

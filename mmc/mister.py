@@ -505,8 +505,19 @@ def read_blobs(d: str, specs: list[str]) -> dict[str, bytes | None]:
 
 # --- MRA parsing -----------------------------------------------------------------------------
 
-# .mgl launchers name a set folder, not always a MAME set: map the ones we know to the MAME set whose ROMs they load.
-MGL_SETNAMES = {"battletoads": "btoads"}     # Ongo's Battletoads.mgl: the btoads dumps (btc0-p0/p1/s) as loose files in games/Battletoads
+# MRA/.mgl set names that are not MAME's: map them to the MAME set they load.
+SETNAME_ALIASES = {
+    # .mgl launchers name a set folder: Ongo's Battletoads.mgl loads the btoads dumps (btc0-p0/p1/s) as loose files in games/Battletoads
+    "battletoads": "btoads",
+    # sets renamed in a developer's MRAs because they would clash with another core's MRA for the same set
+    "rshark_kyledlester": "rshark", "rsharka_kyledlester": "rsharka", "superx_kyledlester": "superx", "superxm_kyledlester": "superxm",
+    "narc_meathax": "narc", "narc_blahm1d": "narc",
+}
+
+
+# MRAs that are test or placeholder entries, not games: never counted (nor kept in the ledger).
+IGNORED_SETS = {"noromname", "romname", "sdramtest", "m2tiles", "twinbeeb"}
+IGNORED_CORES = {"arcfpga:test_arc"}          # a test core with no sets of its own
 
 
 def is_launcher(path: str) -> bool:
@@ -531,7 +542,7 @@ def parse_mra_text(s: str) -> dict:
         if k not in rec:
             rec[k] = re.sub(r"\s+", " ", m.group(2)).strip()
     setn = rec.get("setname", "").lower()
-    setn = MGL_SETNAMES.get(setn, setn)
+    setn = SETNAME_ALIASES.get(setn, setn)
     rec["setname"] = setn if re.fullmatch(r"[a-z0-9_]{1,32}", setn) else None
     rec["rbf"] = rec.get("rbf") or None
     return rec
@@ -625,7 +636,7 @@ def scan_repo(source: str, full: str, dirs: list[str] | None) -> dict:
     os.makedirs(os.path.dirname(cache_file), exist_ok=True)
     with open(cache_file, "w", encoding="utf-8") as f:
         json.dump(cache, f)
-    history = [(p, date, cache.get(f"{c}:{p}")) for p, date, c in adds if not multi or _CORE_DIR.match(p)]
+    history = [(p, date, SETNAME_ALIASES.get(cache.get(f"{c}:{p}"), cache.get(f"{c}:{p}"))) for p, date, c in adds if not multi or _CORE_DIR.match(p)]
     for src, r, f, core in ROMSET_FILES:
         if r == full:
             m, h = scan_romsets(d, src, full, f, core)
