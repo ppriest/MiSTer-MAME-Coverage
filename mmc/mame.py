@@ -102,6 +102,7 @@ def _machine_record(el: ET.Element) -> dict:
         "coins": int(inp.get("coins")) if inp is not None and inp.get("coins") else 0,
         "players": int(inp.get("players")) if inp is not None and inp.get("players") else 0,
         "display": disp.get("type") if disp is not None else None,
+        "screens": len(el.findall("display")),
         "rotate": int(disp.get("rotate")) if disp is not None and disp.get("rotate") else None,
         "width": int(disp.get("width")) if disp is not None and disp.get("width") else None,
         "height": int(disp.get("height")) if disp is not None and disp.get("height") else None,
@@ -118,7 +119,9 @@ def load_mame(version: str | None, refresh: bool = False) -> dict:
     cache = os.path.join(paths.CACHE, f"mame{version}.json")
     if os.path.exists(cache) and not refresh:
         with open(cache, encoding="utf-8") as f:
-            return json.load(f)
+            data = json.load(f)
+        if "screens" in next(iter(data["machines"].values()), {"screens": 0}):        # older caches lack the screen count
+            return data
     zp = fetch_listxml(version)
     print(f"[mame] parsing {zp} (this takes a few minutes)")
     data = parse_listxml(zp)

@@ -410,6 +410,7 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
             "status": pm["status"],
             "rotate": pm["rotate"],
             "display": pm["display"],
+            **({"screens": pm["screens"]} if pm.get("screens", 0) > 1 else {}),      # multi-screen machines (Darius: 3)
             "cpus": pm["cpus"],
             "players": pm["players"],
             "nsets": len(sets),
