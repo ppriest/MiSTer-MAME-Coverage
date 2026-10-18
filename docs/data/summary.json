@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-18T12:31:27+00:00",
+  "generated": "2026-10-18T12:45:05+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-18T12:31:03+00:00",
+  "mister_generated": "2026-10-18T12:44:59+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-18",
   "ledger_runs": [
-   {
-    "date": "2026-10-18",
-    "note": "alamone 2026-10-12",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-18",
     "note": "alamone 2026-10-12",
@@ -41,6 +32,15 @@
     "sets": 0,
     "pairs": 32,
     "dates_improved": 25,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-18",
+    "note": "alamone 2026-10-12",
+    "cores": 4,
+    "sets": 0,
+    "pairs": 32,
+    "dates_improved": 0,
     "cores_removed": 0
    },
    {
