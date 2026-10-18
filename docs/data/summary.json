@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-18T09:38:53+00:00",
+  "generated": "2026-10-18T09:58:03+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-18T09:38:26+00:00",
+  "mister_generated": "2026-10-18T09:57:59+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-18",
   "ledger_runs": [
-   {
-    "date": "2026-10-17",
-    "note": "alamone 2026-10-12",
-    "cores": 7,
-    "sets": 22,
-    "pairs": 56,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-18",
     "note": "alamone 2026-10-12",
@@ -50,6 +41,15 @@
     "sets": 0,
     "pairs": 0,
     "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-18",
+    "note": "alamone 2026-10-12",
+    "cores": 4,
+    "sets": 0,
+    "pairs": 32,
+    "dates_improved": 25,
     "cores_removed": 0
    }
   ],
@@ -216,7 +216,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1873
+    "mras": 1880
    },
    {
     "source": "dist",
@@ -2786,7 +2786,7 @@
    "working_arcade_titles_source": 1902,
    "working_arcade_titles_binary_only": 265,
    "cores": 645,
-   "binary_only_cores": 225,
+   "binary_only_cores": 224,
    "unmatched_sets": 427
   }
  },
@@ -3202,10 +3202,10 @@
    "first_recorded": "2026-10-08",
    "aliases": [],
    "last_seen": "2026-10-18",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 1,
    "ntitles": 1,
-   "first_date": "2026-09-11"
+   "first_date": "2026-07-17"
   },
   {
    "id": "bazset:mazeofflott_bazset",
@@ -6380,7 +6380,7 @@
    "binary_only": false,
    "nsets": 1,
    "ntitles": 1,
-   "first_date": "2026-10-03"
+   "first_date": "2026-02-16"
   },
   {
    "id": "dist:crazyballoon",
@@ -9611,7 +9611,7 @@
    "binary_only": false,
    "nsets": 1,
    "ntitles": 1,
-   "first_date": "2026-10-03"
+   "first_date": "2026-06-17"
   },
   {
    "id": "dist:spaceinvaders",
@@ -18471,7 +18471,7 @@
    "binary_only": false,
    "nsets": 5,
    "ntitles": 2,
-   "first_date": "2026-09-24"
+   "first_date": "2026-09-23"
   },
   {
    "id": "xela:xnzn1",
@@ -24696,7 +24696,7 @@
    "cores": [
     "dist:spacefirebird"
    ],
-   "first": "2026-10-03"
+   "first": "2026-06-17"
   },
   {
    "sourcefile": "nintendo/vsnes.cpp",
@@ -27900,7 +27900,7 @@
    "cores": [
     "dist:cosmicguerilla"
    ],
-   "first": "2026-10-03"
+   "first": "2026-02-16"
   },
   {
    "sourcefile": "universal/docastle.cpp",
