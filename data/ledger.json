@@ -4,15 +4,6 @@
 "updated": "2026-10-18",
 "runs": [
 {
-"date": "2026-10-07",
-"note": "alamone 2026-10-05",
-"cores": 3,
-"sets": 35,
-"pairs": 35,
-"dates_improved": 2,
-"cores_removed": 0
-},
-{
 "date": "2026-10-08",
 "note": "alamone 2026-10-05",
 "cores": 10,
@@ -461,6 +452,15 @@
 "pairs": 36,
 "dates_improved": 3,
 "cores_removed": 5
+},
+{
+"date": "2026-10-18",
+"note": "alamone 2026-10-12",
+"cores": 0,
+"sets": 0,
+"pairs": 0,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -2564,6 +2564,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-18",
+"aliases": [],
 "last_seen": "2026-10-18"
 },
 "decoryah:taitol": {
@@ -10506,6 +10507,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-18",
+"aliases": [],
 "last_seen": "2026-10-18"
 },
 "meat:bucky": {
@@ -12625,6 +12627,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-18",
+"aliases": [],
 "last_seen": "2026-10-18"
 },
 "ongo:meathax_dataeastliberation": {

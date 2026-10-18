@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-18T08:28:54+00:00",
+  "generated": "2026-10-18T08:55:16+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-18T08:28:37+00:00",
+  "mister_generated": "2026-10-18T08:54:58+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-18",
   "ledger_runs": [
-   {
-    "date": "2026-10-17",
-    "note": "alamone 2026-10-12",
-    "cores": 7,
-    "sets": 7,
-    "pairs": 64,
-    "dates_improved": 0,
-    "cores_removed": 6
-   },
    {
     "date": "2026-10-17",
     "note": "alamone 2026-10-12",
@@ -51,6 +42,15 @@
     "pairs": 36,
     "dates_improved": 3,
     "cores_removed": 5
+   },
+   {
+    "date": "2026-10-18",
+    "note": "alamone 2026-10-12",
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -5326,6 +5326,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-18",
+   "aliases": [],
    "last_seen": "2026-10-18",
    "binary_only": false,
    "nsets": 21,
@@ -14784,6 +14785,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-18",
+   "aliases": [],
    "last_seen": "2026-10-18",
    "binary_only": true,
    "nsets": 1,
