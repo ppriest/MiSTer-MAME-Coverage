@@ -284,3 +284,9 @@ h3.hwdrv { margin: 14px 0 6px; font-size: 13px; text-transform: none; letter-spa
 #lightbox button.lb-fx:disabled { opacity: .5; cursor: default; }
 #lightbox .lb-crt { position: absolute; inset: 0; cursor: zoom-out; border-radius: 4px; }
 #lightbox .lb-scan.vert { background: repeating-linear-gradient(to right, rgba(0,0,0,0) 0, rgba(0,0,0,0) calc(var(--ph, 4px) * .45), rgba(0,0,0,.42) calc(var(--ph, 4px) * .45), rgba(0,0,0,.42) var(--ph, 4px)); }
+
+/* multi-screen shots in a gallery: one panel per display */
+.gallery figure[data-n] { cursor: zoom-in; }
+.gallery .multi { display: grid; gap: 4px; }
+.gallery .scr { position: relative; display: block; overflow: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; }
+.gallery .scr img { position: absolute; top: 0; left: 0; display: block; min-height: 0; border: 0; border-radius: 0; cursor: zoom-in; }

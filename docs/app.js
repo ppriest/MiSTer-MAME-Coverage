@@ -627,7 +627,7 @@
       : withImg.slice().sort((x, y) => (y.covered - x.covered) || x.desc.localeCompare(y.desc)).map(t => ({ t, k: t.img.ingame ? "ingame" : "title" }));
     const shown = items.slice(0, SHOT_MAX);
     const note = items.length > shown.length ? ` <span class="muted">(first ${shown.length} of ${fmt(items.length)})</span>` : "";
-    return `<div class="gallery-box"><h4>Screenshots${note}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure title="${esc(t.desc)} (${esc(t.year)})">
+    return `<div class="gallery-box"><h4>Screenshots${note}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure title="${esc(t.desc)} (${esc(t.year)})" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}">
       <img loading="lazy" src="${esc(IMAGE_BASE + "/" + t.img[k])}" alt="${esc(t.desc)}" onerror="this.closest('figure').remove()">
       <figcaption>${esc(t.desc)}${both ? ` <span class="muted">${k === "title" ? "title screen" : "in game"}</span>` : ""}</figcaption></figure>`).join("")}</div></div>`;
   }
@@ -955,28 +955,69 @@
     const r = img.naturalWidth / img.naturalHeight;
     return r >= 1 && r <= 2.3 ? 4 / 3 : r >= 0.43 && r < 1 ? 3 / 4 : 0;      // 0 = multi-screen strips (8:3, 4:1 and wider/taller), left as they are
   };
+  // Multi-screen machines (the title's `screens` from MAME's -listxml, `rotate` for the orientation of each screen): a shot may show
+  // all of the screens or only some, side by side or stacked. Work out how many it shows from its proportions, and show each as its
+  // own 4:3 (or 3:4) display.
+  const LB_GAP = 0.03;                                       // the gap between displays, in display widths (or heights)
+  function inferScreens(ratio, n, port) {
+    const pr = port ? 3 / 4 : 4 / 3;
+    let best = { k: 1, horiz: true, d: Math.abs(Math.log(ratio / pr)) };
+    for (let k = 2; k <= n; k++) {
+      const dh = Math.abs(Math.log(ratio / (k * pr))), dv = Math.abs(Math.log(ratio / (pr / k)));
+      if (dh < best.d) best = { k, horiz: true, d: dh };
+      if (dv < best.d) best = { k, horiz: false, d: dv };
+    }
+    return best;
+  }
+  const fitBox = (ratio, maxW, maxH) => { const w = Math.min(maxW, maxH * ratio); return [w, w / ratio]; };
   function fitLightbox(img) {                       // the zoomed shot: as large as the window allows, in its shown shape
     if (!img.naturalWidth) return;
-    const ratio = nearShape(img) || img.naturalWidth / img.naturalHeight;
+    const dlg = img.closest("dialog");
+    const n = dlg.dataset.broken ? 1 : +img.dataset.n || 1, port = img.dataset.port === "1";
+    const nat = img.naturalWidth / img.naturalHeight;
+    const inf = n > 1 ? inferScreens(nat, n, port) : { k: 1, horiz: true };
+    img.dataset.k = inf.k; img.dataset.horiz = inf.horiz ? 1 : 0;
+    const pr = port ? 3 / 4 : 4 / 3, span = inf.k + (inf.k - 1) * LB_GAP;
+    const ratio = inf.k > 1 ? (inf.horiz ? span * pr : pr / span) : nearShape(img) || nat;
     const maxW = Math.max(200, innerWidth - (innerWidth <= 640 ? 112 : 150)), maxH = Math.max(150, innerHeight - 64);
-    const w = Math.min(maxW, maxH * ratio);
-    const h = w / ratio;
+    const [w, h] = fitBox(ratio, maxW, maxH);
     img.style.width = Math.round(w) + "px"; img.style.height = Math.round(h) + "px";
-    const vert = ratio < 1;                                                // a 3:4 (rotated) display: its scanlines run vertically
-    const pitch = vert ? w / img.naturalWidth : h / img.naturalHeight;     // screen pixels per scanline
+    const vert = inf.k > 1 ? port : ratio < 1;                             // a 3:4 (rotated) display: its scanlines run vertically
+    const pitch = vert ? w / img.naturalWidth : h / img.naturalHeight;     // screen pixels per scanline (flat, single display)
     const sl = img.parentElement.querySelector(".lb-scan");
     sl.classList.toggle("vert", vert);
-    sl.style.setProperty("--ph", pitch.toFixed(3) + "px"); sl.hidden = pitch < 2;      // too fine to draw when shrunk
+    sl.style.setProperty("--ph", pitch.toFixed(3) + "px"); sl.hidden = inf.k > 1 || pitch < 2;      // too fine to draw when shrunk
     document.dispatchEvent(new Event("lb-render"));
   }
   document.addEventListener("load", ev => {          // load does not bubble: capture it
     const img = ev.target;
-    if (!(img instanceof HTMLImageElement) || !img.naturalWidth) return;
-    const shape = nearShape(img);
-    if (img.closest(".gallery")) img.style.aspectRatio = shape ? String(shape) : "";
-    else if (img.closest("#shot")) { img.style.width = shape ? img.naturalWidth + "px" : ""; img.style.aspectRatio = shape ? String(shape) : ""; }
-    else if (img.closest("#lightbox")) fitLightbox(img);
+    if (!(img instanceof HTMLImageElement) || !img.naturalWidth || img.dataset.crop) return;
+    const fig = img.closest(".gallery figure");
+    if (fig) {
+      const n = +fig.dataset.n || 1, port = fig.dataset.port === "1", inf = n > 1 ? inferScreens(img.naturalWidth / img.naturalHeight, n, port) : { k: 1 };
+      if (inf.k > 1) { splitFigure(fig, img, inf.k, inf.horiz, port); return; }
+      const shape = nearShape(img);
+      img.style.aspectRatio = shape ? String(shape) : "";
+    } else if (img.closest("#shot")) {
+      const shape = nearShape(img);
+      img.style.width = shape ? img.naturalWidth + "px" : ""; img.style.aspectRatio = shape ? String(shape) : "";
+    } else if (img.closest("#lightbox")) fitLightbox(img);
   }, true);
+  // A gallery shot of k displays becomes k panels, each showing its part of the picture at the shape of one display.
+  function splitFigure(fig, img, k, horiz, port) {
+    const box = document.createElement("div");
+    box.className = "multi " + (horiz ? "h" : "v");
+    box.style.gridTemplateColumns = horiz ? `repeat(${k}, 1fr)` : "1fr";
+    for (let i = 0; i < k; i++) {
+      const scr = document.createElement("span"), part = document.createElement("img");
+      scr.className = "scr"; scr.style.aspectRatio = port ? "3 / 4" : "4 / 3";
+      part.dataset.crop = "1"; part.alt = img.alt; part.src = img.currentSrc || img.src;
+      if (horiz) { part.style.width = k * 100 + "%"; part.style.height = "100%"; part.style.left = -i * 100 + "%"; }
+      else { part.style.width = "100%"; part.style.height = k * 100 + "%"; part.style.top = -i * 100 + "%"; }
+      scr.appendChild(part); box.appendChild(scr);
+    }
+    img.replaceWith(box);
+  }
   addEventListener("resize", () => { const lb = $("#lightbox img"); if (lb && $("#lightbox").open) fitLightbox(lb); });
 
   // ---------- click-to-zoom on gallery screenshots ----------
@@ -993,7 +1034,7 @@
     const stored = k => { try { return localStorage.getItem(k) !== "0"; } catch (e) { return true; } };
     const store = (k, on) => { try { localStorage.setItem(k, on ? "1" : "0"); } catch (e) { /* ignore */ } };
     let scan = stored("lb-scanlines"), crt = stored("lb-crt"), crtBroken = false;
-    const label = () => { fxScan.textContent = scan ? "Scanlines: on" : "Scanlines: off"; fxCrt.textContent = crtBroken ? "CRT curve: unavailable" : crt ? "CRT curve: on" : "CRT curve: off"; fxCrt.disabled = crtBroken; };
+    const label = () => { fxScan.textContent = scan ? "Scanlines: on" : "Scanlines: off"; fxCrt.textContent = crtBroken ? "CRT curve: unavailable" : crt ? "CRT curve: on" : "CRT curve: off"; fxCrt.disabled = crtBroken; if (crtBroken) dlg.dataset.broken = "1"; };
     const setScan = on => { scan = on; store("lb-scanlines", on); label(); render(); };
     const setCrt = on => { crt = on; store("lb-crt", on); label(); render(); };
 
@@ -1006,19 +1047,31 @@
       const sh = (type, src) => { const x = gl.createShader(type); gl.shaderSource(x, src); gl.compileShader(x); if (!gl.getShaderParameter(x, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(x)); return x; };
       prog = gl.createProgram();
       gl.attachShader(prog, sh(gl.VERTEX_SHADER, "attribute vec2 p; varying vec2 uv; void main(){ uv = p * .5 + .5; gl_Position = vec4(p, 0., 1.); }"));
-      gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, `precision mediump float; varying vec2 uv; uniform sampler2D tex; uniform float rows; uniform float scan; uniform float vert;
+      gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, `precision mediump float; varying vec2 uv; uniform sampler2D tex;
+        uniform float n; uniform float horiz; uniform float gap; uniform float curve; uniform float rows; uniform float scan; uniform float vert;
         void main(){
-          vec2 c = uv * 2. - 1.;
-          vec2 o = abs(c.yx) / vec2(6., 4.);
-          vec2 s = (c + c * o * o) * .5 + .5;                     // barrel: the corners fall off the glass
+          // n displays side by side (horiz) or stacked, each its own CRT; a is the position along the row of displays
+          float a = horiz > .5 ? uv.x : 1. - uv.y;
+          float b = horiz > .5 ? uv.y : uv.x;
+          float pw = (1. - gap * (n - 1.)) / n;
+          float idx = floor(a / (pw + gap));
+          float loc = a - idx * (pw + gap);
+          if (idx >= n || loc > pw) { gl_FragColor = vec4(0.); return; }       // between the displays: transparent
+          loc /= pw;
+          vec2 p = horiz > .5 ? vec2(loc, b) : vec2(b, 1. - loc);               // this display, origin bottom left
+          vec2 c = p * 2. - 1.;
+          vec2 o = abs(c.yx) / vec2(6., 4.) * curve;
+          vec2 s = (c + c * o * o) * .5 + .5;                                  // barrel: the corners fall off the glass
           float e = min(min(s.x, 1. - s.x), min(s.y, 1. - s.y));
-          if (e < 0.) { gl_FragColor = vec4(0.); return; }          // off the glass: transparent
-          vec3 col = texture2D(tex, vec2(s.x, 1. - s.y)).rgb;
+          if (e < 0.) { gl_FragColor = vec4(0.); return; }                    // off the glass: transparent
+          vec2 q = vec2(s.x, 1. - s.y);                                        // in the display, origin top left
+          vec2 t = horiz > .5 ? vec2((idx + q.x) / n, q.y) : vec2(q.x, (idx + q.y) / n);
+          vec3 col = texture2D(tex, t).rgb;
           col *= 1. - scan * .5 * (1. - sin(3.14159 * fract(mix(s.y, s.x, vert) * rows)));
           float v = 16. * s.x * s.y * (1. - s.x) * (1. - s.y);
-          col *= .55 + .45 * pow(v, .25);                           // vignette
-          float a = smoothstep(0., .004, e);                          // a soft edge to the screen
-          gl_FragColor = vec4(col * 1.08 * a, a);                     // premultiplied
+          col *= .55 + .45 * pow(v, .25);                                       // vignette
+          float al = smoothstep(0., .004, e);                                   // a soft edge to the screen
+          gl_FragColor = vec4(col * 1.08 * al, al);                             // premultiplied
         }`));
       gl.linkProgram(prog);
       if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(prog));
@@ -1034,7 +1087,8 @@
     function render() {
       const sl = dlg.querySelector(".lb-scan");
       sl.style.display = scan && !sl.hidden && !(crt && !crtBroken && !cv.hidden) ? "" : "none";
-      if (!crt || crtBroken || !img.src || !img.naturalWidth || !dlg.open) { flat(); sl.style.display = scan && !sl.hidden ? "" : "none"; return; }
+      const k = +img.dataset.k || 1;                                      // displays in this shot
+      if ((!crt && k < 2) || crtBroken || !img.src || !img.naturalWidth || !dlg.open) { flat(); sl.style.display = scan && !sl.hidden ? "" : "none"; return; }
       const url = img.currentSrc || img.src;
       const draw = () => {
         try {
@@ -1046,11 +1100,15 @@
           gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
           gl.bindTexture(gl.TEXTURE_2D, tex);
           gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, texImg);      // throws SecurityError when the host sends no CORS headers
-          const vert = h > w;                                                        // rotated display: vertical scanlines
-          const pitch = vert ? w / texImg.naturalWidth : h / texImg.naturalHeight;
-          gl.uniform1f(gl.getUniformLocation(prog, "rows"), vert ? texImg.naturalWidth : texImg.naturalHeight);
-          gl.uniform1f(gl.getUniformLocation(prog, "vert"), vert ? 1 : 0);
-          gl.uniform1f(gl.getUniformLocation(prog, "scan"), scan && pitch >= 2 ? 1 : 0);
+          const horiz = img.dataset.horiz !== "0", gapP = k > 1 ? LB_GAP : 0;
+          const pw = 1 / (k + (k - 1) * gapP);                                       // a display's share of the row of displays
+          const vert = k > 1 ? img.dataset.port === "1" : h > w;                     // rotated display: vertical scanlines
+          const dispW = k > 1 && horiz ? w * pw : w, dispH = k > 1 && !horiz ? h * pw : h;    // one display on screen
+          const srcW = k > 1 && horiz ? texImg.naturalWidth / k : texImg.naturalWidth, srcH = k > 1 && !horiz ? texImg.naturalHeight / k : texImg.naturalHeight;
+          const pitch = vert ? dispW / srcW : dispH / srcH;
+          const u = (name, v) => gl.uniform1f(gl.getUniformLocation(prog, name), v);
+          u("n", k); u("horiz", horiz ? 1 : 0); u("gap", gapP * pw); u("curve", crt ? 1 : 0);
+          u("rows", vert ? srcW : srcH); u("vert", vert ? 1 : 0); u("scan", scan && pitch >= 2 ? 1 : 0);
           gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
           cv.hidden = false; img.style.opacity = "0";
           sl.style.display = "none";
@@ -1066,14 +1124,15 @@
     label();
     const show = n => {
       i = (n + set.length) % set.length;
-      const el = set[i];
-      img.src = el.currentSrc || el.src; img.alt = el.alt;
-      cap.textContent = el.closest("figure")?.querySelector("figcaption")?.textContent || el.alt;
+      const fig = set[i];
+      img.dataset.n = fig.dataset.n || "1"; img.dataset.port = fig.dataset.port || "0";
+      img.src = fig.dataset.src; img.alt = fig.querySelector("img")?.alt || "";
+      cap.textContent = fig.querySelector("figcaption")?.textContent || img.alt;
       dlg.classList.toggle("single", set.length < 2);
     };
     document.addEventListener("click", ev => {
-      const t = ev.target.closest(".gallery img"); if (!t) return;
-      set = Array.from(t.closest(".gallery").querySelectorAll("img"));
+      const t = ev.target.closest(".gallery figure"); if (!t || !t.dataset.src) return;
+      set = Array.from(t.closest(".gallery").querySelectorAll("figure"));
       show(set.indexOf(t)); dlg.showModal();
     });
     dlg.addEventListener("click", ev => {
