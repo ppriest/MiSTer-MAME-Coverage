@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-18T09:28:35+00:00",
+  "generated": "2026-10-18T09:38:53+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-18T09:28:09+00:00",
+  "mister_generated": "2026-10-18T09:38:26+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-18",
   "ledger_runs": [
-   {
-    "date": "2026-10-17",
-    "note": "alamone 2026-10-12",
-    "cores": 5,
-    "sets": 1,
-    "pairs": 49,
-    "dates_improved": 41,
-    "cores_removed": 3
-   },
    {
     "date": "2026-10-17",
     "note": "alamone 2026-10-12",
@@ -33,6 +24,15 @@
     "pairs": 36,
     "dates_improved": 3,
     "cores_removed": 5
+   },
+   {
+    "date": "2026-10-18",
+    "note": "alamone 2026-10-12",
+    "cores": 0,
+    "sets": 0,
+    "pairs": 0,
+    "dates_improved": 0,
+    "cores_removed": 0
    },
    {
     "date": "2026-10-18",
@@ -2785,7 +2785,7 @@
    "working_arcade_sets_covered": 5583,
    "working_arcade_titles_source": 1902,
    "working_arcade_titles_binary_only": 265,
-   "cores": 649,
+   "cores": 645,
    "binary_only_cores": 225,
    "unmatched_sets": 427
   }
@@ -16579,31 +16579,6 @@
    "first_date": "2026-09-27"
   },
   {
-   "id": "repo:crystal",
-   "name": "Crystal (kyledlester)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Crystal_20261009.rbf",
-   "repo": "kyledlester/BrezzaSoft_Crystal_System_MiSTer",
-   "url": "https://github.com/kyledlester/BrezzaSoft_Crystal_System_MiSTer",
-   "build_date": "2026-10-09",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 34,
-   "mame_drivers": [
-    "misc/crystal.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-17",
-   "aliases": [],
-   "last_seen": "2026-10-18",
-   "binary_only": false,
-   "nsets": 3,
-   "ntitles": 3,
-   "first_date": "2026-10-04"
-  },
-  {
    "id": "repo:demoderby",
    "name": "DemoDerby (alanswx)",
    "source": "repo",
@@ -17054,31 +17029,6 @@
    "first_date": "2026-09-30"
   },
   {
-   "id": "repo:namco_na1_na2",
-   "name": "Namco_NA1_NA2 (kyledlester)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Namco_NA1_NA2_20260927.rbf",
-   "repo": "kyledlester/Namco_NA1_NA2_MiSTer",
-   "url": "https://github.com/kyledlester/Namco_NA1_NA2_MiSTer",
-   "build_date": "2026-09-28",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 33,
-   "mame_drivers": [
-    "namco/namcona1.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-17",
-   "aliases": [],
-   "last_seen": "2026-10-18",
-   "binary_only": false,
-   "nsets": 21,
-   "ntitles": 10,
-   "first_date": "2026-09-25"
-  },
-  {
    "id": "repo:namcona2",
    "name": "NamcoNA2 (yaguboo)",
    "source": "repo",
@@ -17102,56 +17052,6 @@
    "nsets": 21,
    "ntitles": 10,
    "first_date": "2026-09-25"
-  },
-  {
-   "id": "repo:nerattechu",
-   "name": "NeratteChu (kyledlester)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "NeratteChu_20260929.rbf",
-   "repo": "kyledlester/MiSTer_Neratte_Chu",
-   "url": "https://github.com/kyledlester/MiSTer_Neratte_Chu",
-   "build_date": "2026-09-29",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 28,
-   "mame_drivers": [
-    "seta/simple_st0016.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-17",
-   "aliases": [],
-   "last_seen": "2026-10-18",
-   "binary_only": false,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-09-28"
-  },
-  {
-   "id": "repo:nostradamus",
-   "name": "Nostradamus (kyledlester)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Nostradamus_20261003.rbf",
-   "repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
-   "url": "https://github.com/kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
-   "build_date": "2026-10-03",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 26,
-   "mame_drivers": [
-    "misc/mcatadv.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-17",
-   "aliases": [],
-   "last_seen": "2026-10-18",
-   "binary_only": false,
-   "nsets": 6,
-   "ntitles": 2,
-   "first_date": "2026-10-01"
   },
   {
    "id": "repo:penguinkunwars",
@@ -23233,8 +23133,7 @@
    "sets_covered": 3,
    "cores": [
     "kyle:crystal",
-    "meat:crystalsystem",
-    "repo:crystal"
+    "meat:crystalsystem"
    ],
    "first": "2026-10-04"
   },
@@ -23627,8 +23526,7 @@
    "sets_covered": 6,
    "cores": [
     "decoryah:mcatadv",
-    "kyle:nostradamus",
-    "repo:nostradamus"
+    "kyle:nostradamus"
    ],
    "first": "2026-10-01"
   },
@@ -24237,7 +24135,6 @@
    "sets_covered": 21,
    "cores": [
     "kyle:namco_na1_na2",
-    "repo:namco_na1_na2",
     "repo:namcona2"
    ],
    "first": "2026-09-25"
@@ -26096,8 +25993,7 @@
    "sets": 3,
    "sets_covered": 1,
    "cores": [
-    "kyle:nerattechu",
-    "repo:nerattechu"
+    "kyle:nerattechu"
    ],
    "first": "2026-09-28"
   },
