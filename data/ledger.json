@@ -24,15 +24,6 @@
 {
 "date": "2026-10-08",
 "note": "alamone 2026-10-05",
-"cores": 0,
-"sets": 0,
-"pairs": 0,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
-"date": "2026-10-08",
-"note": "alamone 2026-10-05",
 "cores": 3,
 "sets": 5,
 "pairs": 45,
@@ -460,6 +451,15 @@
 "sets": 0,
 "pairs": 0,
 "dates_improved": 0,
+"cores_removed": 0
+},
+{
+"date": "2026-10-18",
+"note": "alamone 2026-10-12",
+"cores": 4,
+"sets": 0,
+"pairs": 32,
+"dates_improved": 25,
 "cores_removed": 0
 }
 ]
@@ -18126,13 +18126,13 @@
 "alcon": {
 "dist:slapfight": {
 "core": "dist:slapfight",
-"date": "2026-10-03",
+"date": "2026-08-29",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": false,
-"first_repo": "MiSTer-devel/Distribution_MiSTer",
-"first_path": "_Arcade/Alcon Bootleg.mra",
+"first_repo": "MiSTer-devel/Arcade-SlapFight_MiSTer",
+"first_path": "releases/Alcon Bootleg.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Alcon Bootleg.mra"
@@ -22397,13 +22397,13 @@
 "bagmans4": {
 "dist:bagman": {
 "core": "dist:bagman",
-"date": null,
-"date_quality": "none",
+"date": "2026-09-28",
+"date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "MiSTer-devel/MRA-Alternatives_MiSTer",
+"first_path": "_alternatives/_Bagman/Bagman (Stern Electronics, set 2).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/_alternatives/_Bagman/Bagman (Stern Electronics, set 2).mra"
@@ -30618,25 +30618,25 @@
 },
 "dist:scramble": {
 "core": "dist:scramble",
-"date": "2026-10-03",
+"date": "2026-04-12",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": false,
-"first_repo": "MiSTer-devel/Distribution_MiSTer",
-"first_path": "_Arcade/Cavelon.mra",
+"first_repo": "MiSTer-devel/Arcade-Scramble_MiSTer",
+"first_path": "releases/Cavelon.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Cavelon.mra"
 },
 "repo:galaxian_testbuild": {
 "core": "repo:galaxian_testbuild",
-"date": "2026-09-30",
+"date": "2026-04-12",
 "date_quality": "git-other",
 "via": "repo",
 "wip": false,
 "alt": false,
-"first_repo": "RodimusFVC/Arcade-Galaxian_MiSTer",
+"first_repo": "MiSTer-devel/Arcade-Scramble_MiSTer",
 "first_path": "releases/Cavelon.mra",
 "first_recorded": "2026-10-05",
 "last_seen": "2026-10-18"
@@ -33838,13 +33838,13 @@
 "congo": {
 "dist:congobongo": {
 "core": "dist:congobongo",
-"date": "2026-10-03",
+"date": "2026-08-29",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": false,
-"first_repo": "MiSTer-devel/Distribution_MiSTer",
-"first_path": "_Arcade/Congo Bongo.mra",
+"first_repo": "MiSTer-devel/Arcade-CongoBongo_MiSTer",
+"first_path": "releases/Congo Bongo.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Congo Bongo.mra"
@@ -34209,13 +34209,13 @@
 "cosmicg": {
 "dist:cosmicguerilla": {
 "core": "dist:cosmicguerilla",
-"date": "2026-10-03",
+"date": "2026-02-16",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": false,
-"first_repo": "MiSTer-devel/Distribution_MiSTer",
-"first_path": "_Arcade/Cosmic Guerilla.mra",
+"first_repo": "MiSTer-devel/Arcade-CosmicGuerilla_MiSTer",
+"first_path": "releases/Cosmic Guerilla.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Cosmic Guerilla.mra"
@@ -37634,13 +37634,13 @@
 "ddonpachscb": {
 "dist:cave": {
 "core": "dist:cave",
-"date": null,
-"date_quality": "none",
+"date": "2026-10-18",
+"date_quality": "git",
 "via": "ongo",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/DoDonPachi (Ship Color No BGM).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/DoDonPachi (Ship Color No BGM).mra"
@@ -46713,13 +46713,13 @@
 },
 "xela:xnsystemfl": {
 "core": "xela:xnsystemfl",
-"date": "2026-09-24",
+"date": "2026-09-23",
 "date_quality": "git",
 "via": "xela",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Final Lap R (Rev. B).mra",
+"first_repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
+"first_path": "_Arcade/_XelaNotPu/Final Lap R (Rev. B).mra",
 "mra": "_Arcade/_XelaNotPu/Final Lap R (Rev. B).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-18"
@@ -46753,13 +46753,13 @@
 },
 "xela:xnsystemfl": {
 "core": "xela:xnsystemfl",
-"date": "2026-09-24",
+"date": "2026-09-23",
 "date_quality": "git",
 "via": "xela",
 "wip": false,
 "alt": true,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Final Lap R/Final Lap R.mra",
+"first_repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
+"first_path": "_Arcade/_XelaNotPu/_alternatives/_Final Lap R/Final Lap R.mra",
 "mra": "_Arcade/_XelaNotPu/_alternatives/_Final Lap R/Final Lap R.mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-18"
@@ -46793,13 +46793,13 @@
 },
 "xela:xnsystemfl": {
 "core": "xela:xnsystemfl",
-"date": "2026-09-24",
+"date": "2026-09-23",
 "date_quality": "git",
 "via": "xela",
 "wip": false,
 "alt": true,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Final Lap R/Final Lap R (Japan Rev. C).mra",
+"first_repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
+"first_path": "_Arcade/_XelaNotPu/_alternatives/_Final Lap R/Final Lap R (Japan Rev. C).mra",
 "mra": "_Arcade/_XelaNotPu/_alternatives/_Final Lap R/Final Lap R (Japan Rev. C).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-18"
@@ -46833,13 +46833,13 @@
 },
 "xela:xnsystemfl": {
 "core": "xela:xnsystemfl",
-"date": "2026-09-24",
+"date": "2026-09-23",
 "date_quality": "git",
 "via": "xela",
 "wip": false,
 "alt": true,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Final Lap R/Final Lap R (Japan Rev. B).mra",
+"first_repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
+"first_path": "_Arcade/_XelaNotPu/_alternatives/_Final Lap R/Final Lap R (Japan Rev. B).mra",
 "mra": "_Arcade/_XelaNotPu/_alternatives/_Final Lap R/Final Lap R (Japan Rev. B).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-18"
@@ -49903,26 +49903,26 @@
 "galagao": {
 "dist:galaga": {
 "core": "dist:galaga",
-"date": "2026-10-04",
+"date": "2026-09-28",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": true,
-"first_repo": "RodimusFVC/Arcade-Galaga_MiSTer",
-"first_path": "releases/_alternatives/_Galaga/Galaga (Namco).mra",
+"first_repo": "MiSTer-devel/MRA-Alternatives_MiSTer",
+"first_path": "_alternatives/_Galaga/Galaga (Namco).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/_alternatives/_Galaga/Galaga (Namco).mra"
 },
 "repo:galaga_testbuild": {
 "core": "repo:galaga_testbuild",
-"date": "2026-10-04",
+"date": "2026-09-28",
 "date_quality": "git-other",
 "via": "repo",
 "wip": false,
 "alt": false,
-"first_repo": "RodimusFVC/Arcade-Galaga_MiSTer",
-"first_path": "releases/_alternatives/_Galaga/Galaga (Namco).mra",
+"first_repo": "MiSTer-devel/MRA-Alternatives_MiSTer",
+"first_path": "_alternatives/_Galaga/Galaga (Namco).mra",
 "first_recorded": "2026-10-05",
 "last_seen": "2026-10-18"
 }
@@ -50998,13 +50998,13 @@
 "gallopm72": {
 "dist:iremm72": {
 "core": "dist:iremm72",
-"date": "2026-10-03",
+"date": "2026-09-19",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": false,
-"first_repo": "MiSTer-devel/Distribution_MiSTer",
-"first_path": "_Arcade/Gallop - Armed Police Unit (Japan, M72 hardware).mra",
+"first_repo": "MiSTer-devel/Arcade-IremM72_MiSTer",
+"first_path": "releases/Gallop - Armed Police Unit (Japan, M72 hardware).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Gallop - Armed Police Unit (Japan, M72 hardware).mra"
@@ -66716,26 +66716,26 @@
 "krull": {
 "bazset:krull_bazset": {
 "core": "bazset:krull_bazset",
-"date": "2026-09-11",
+"date": "2026-07-17",
 "date_quality": "git",
 "via": "bazset",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Krull.mra",
+"first_repo": "MiSTer-devel/Arcade-QBert_MiSTer",
+"first_path": "unreleased/Krull.mra",
 "first_recorded": "2026-10-08",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/_BAZSET/Krull.mra"
 },
 "dist:qbert": {
 "core": "dist:qbert",
-"date": "2026-09-11",
+"date": "2026-07-17",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Krull.mra",
+"first_repo": "MiSTer-devel/Arcade-QBert_MiSTer",
+"first_path": "unreleased/Krull.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Krull.mra"
@@ -69511,13 +69511,13 @@
 "lwingsb": {
 "jt:jtsectnz": {
 "core": "jt:jtsectnz",
-"date": "2026-08-26",
+"date": "2021-04-19",
 "date_quality": "git",
 "via": "jt",
 "wip": false,
 "alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/sectnz/releases/mra/alternatives/_Legendary Wings/Legendary Wings (bootleg).mra",
+"first_repo": "jotego/jtbin",
+"first_path": "mra/_alternatives/_Legendary Wings/Legendary Wings (bootleg).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Legendary Wings (bootleg).mra"
@@ -69526,13 +69526,13 @@
 "lwingsj": {
 "jt:jtsectnz": {
 "core": "jt:jtsectnz",
-"date": "2024-09-20",
+"date": "2021-04-19",
 "date_quality": "git",
 "via": "jt",
 "wip": false,
 "alt": false,
 "first_repo": "jotego/jtbin",
-"first_path": "mra/_alternatives/_Legendary Wings/Ares no Tsubasa (Japan, rev. B).mra",
+"first_path": "mra/_alternatives/_Legendary Wings/Ares no Tsubasa (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Ares no Tsubasa (Japan, rev. B).mra"
@@ -69541,13 +69541,13 @@
 "lwingsja": {
 "jt:jtsectnz": {
 "core": "jt:jtsectnz",
-"date": "2026-08-26",
+"date": "2021-04-19",
 "date_quality": "git",
 "via": "jt",
 "wip": false,
 "alt": false,
-"first_repo": "bmo00/arcfpga-cores",
-"first_path": "cores/sectnz/releases/mra/alternatives/_Legendary Wings/Ares no Tsubasa (Japan, rev. A).mra",
+"first_repo": "jotego/jtbin",
+"first_path": "mra/_alternatives/_Legendary Wings/Ares no Tsubasa (Japan, rev. A).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Ares no Tsubasa (Japan, rev. A).mra"
@@ -79309,7 +79309,7 @@
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-NinjaKun_MiSTer",
 "first_path": "releases/Nova 2001 (Hack).mra",
-"mra": "_Arcade/Nova 2001 (Japan, hack).mra",
+"mra": "_Arcade/_alternatives/_Nova 2001/Nova 2001 (Japan, hack).mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-10-18"
 }
@@ -79324,7 +79324,7 @@
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-UPLFramebuffer_MiSTer",
 "first_path": "releases/_alternatives/_Nova 2001/Nova 2001 (US).mra",
-"mra": "_Arcade/Nova 2001 (US).mra",
+"mra": "_Arcade/_alternatives/_Nova 2001/Nova 2001 (US).mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-10-18"
 }
@@ -84423,13 +84423,13 @@
 "pengob": {
 "dist:pengo": {
 "core": "dist:pengo",
-"date": null,
-"date_quality": "none",
+"date": "2026-09-28",
+"date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": true,
-"first_repo": null,
-"first_path": null,
+"first_repo": "MiSTer-devel/MRA-Alternatives_MiSTer",
+"first_path": "_alternatives/_Pengo/Pengo (set 2).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/_alternatives/_Pengo/Pengo (set 2).mra"
@@ -85708,7 +85708,7 @@
 "alt": true,
 "first_repo": "MrX-8B/MiSTer-Arcade-PenguinKunWars",
 "first_path": "releases/Penguin-Kun_Wars_Japan.mra",
-"mra": "_Arcade/Penguin-Kun Wars (Japan, set 1).mra",
+"mra": "_Arcade/_alternatives/_Penguin-Kun Wars/Penguin-Kun Wars (Japan, set 1).mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-10-18"
 },
@@ -85736,7 +85736,7 @@
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-UPLFramebuffer_MiSTer",
 "first_path": "releases/_alternatives/_Penguin-Kun Wars/Penguin-Kun Wars (Japan, set 2).mra",
-"mra": "_Arcade/Penguin-Kun Wars (Japan, set 2).mra",
+"mra": "_Arcade/_alternatives/_Penguin-Kun Wars/Penguin-Kun Wars (Japan, set 2).mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-10-18"
 }
@@ -86830,13 +86830,13 @@
 "pollenangel": {
 "dist:pacman": {
 "core": "dist:pacman",
-"date": null,
-"date_quality": "none",
+"date": "2026-10-18",
+"date_quality": "git",
 "via": "ongo",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Pollen Angel.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Pollen Angel.mra"
@@ -92010,7 +92010,7 @@
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-UPLFramebuffer_MiSTer",
 "first_path": "releases/_alternatives/_Raiders5/Raiders5 (Japan, set 1).mra",
-"mra": "_Arcade/Raiders5 (Japan, set 1).mra",
+"mra": "_Arcade/_alternatives/_Raiders5/Raiders5 (Japan, set 1).mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-10-18"
 }
@@ -92025,7 +92025,7 @@
 "alt": true,
 "first_repo": "MiSTer-devel/Arcade-UPLFramebuffer_MiSTer",
 "first_path": "releases/_alternatives/_Raiders5/Raiders5 (Japan, set 2, bootleg).mra",
-"mra": "_Arcade/Raiders5 (Japan, set 2, bootleg).mra",
+"mra": "_Arcade/_alternatives/_Raiders5/Raiders5 (Japan, set 2, bootleg).mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-10-18"
 }
@@ -103267,13 +103267,13 @@
 "sfyumeji": {
 "jt:jtsf": {
 "core": "jt:jtsf",
-"date": null,
-"date_quality": "none",
+"date": "2026-08-30",
+"date_quality": "git",
 "via": "ongo",
 "wip": false,
 "alt": false,
-"first_repo": null,
-"first_path": null,
+"first_repo": "Toryalai1/Arcade_Offset",
+"first_path": "release/_Arcade Offset/_Capcom M68000/Street Fighter (US, set 1) [yumeji sf1++].mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Street Fighter (US, set 1) [yumeji sf1++].mra"
@@ -108713,13 +108713,13 @@
 "spacefb": {
 "dist:spacefirebird": {
 "core": "dist:spacefirebird",
-"date": "2026-10-03",
+"date": "2026-06-17",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": false,
-"first_repo": "MiSTer-devel/Distribution_MiSTer",
-"first_path": "_Arcade/Space Firebird.mra",
+"first_repo": "MiSTer-devel/Arcade-SpaceFirebird_MiSTer",
+"first_path": "releases/Space Firebird.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Space Firebird.mra"
@@ -109866,13 +109866,13 @@
 },
 "xela:xnsystemfl": {
 "core": "xela:xnsystemfl",
-"date": "2026-09-24",
+"date": "2026-09-23",
 "date_quality": "git",
 "via": "xela",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Speed Racer.mra",
+"first_repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
+"first_path": "_Arcade/_XelaNotPu/Speed Racer.mra",
 "mra": "_Arcade/_XelaNotPu/Speed Racer.mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-18"
@@ -119935,13 +119935,13 @@
 "tnk3j": {
 "dist:tnkiii": {
 "core": "dist:tnkiii",
-"date": "2026-10-03",
+"date": "2026-04-27",
 "date_quality": "git",
 "via": "dist",
 "wip": false,
 "alt": true,
-"first_repo": "MiSTer-devel/Distribution_MiSTer",
-"first_path": "_Arcade/_alternatives/_TNKIII/T.A.N.K_Japan.mra",
+"first_repo": "MiSTer-devel/Arcade-TNKIII_MiSTer",
+"first_path": "releases/_alternatives/_TNKIII/T.A.N.K_Japan.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/_alternatives/_TNKIII/T.A.N.K_Japan.mra"
@@ -138395,7 +138395,7 @@
 "dist": "Platform"
 },
 "ninjakun": {
-"dist": "Platform - Climb"
+"dist": "Platform"
 },
 "ninjaw": {
 "dist": "Fighter",
@@ -138472,7 +138472,7 @@
 "kuze": "Shooter"
 },
 "nova2001": {
-"dist": "Platform - Climb"
+"dist": "Shooter"
 },
 "nova2001h": {
 "dist": "Platform - Climb"
@@ -139211,7 +139211,7 @@
 "gm0rk": "Fighter"
 },
 "pkunwar": {
-"dist": "Maze / Penguin",
+"dist": "Sports",
 "repo": "Maze / Penguin"
 },
 "pkunwarj": {
@@ -139916,7 +139916,7 @@
 "rmcores": "Shoot"
 },
 "raiders5": {
-"dist": "Platform - Climb"
+"dist": "Maze"
 },
 "raiders5t": {
 "dist": "Maze"
