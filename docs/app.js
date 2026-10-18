@@ -1001,7 +1001,7 @@
     // is a separate CORS image so a host without CORS headers only loses the curve, never the zoom.
     let gl = null, prog = null, tex = null, texSrc = "", texImg = null;
     const initGl = () => {
-      gl = cv.getContext("webgl", { premultipliedAlpha: false, antialias: false });
+      gl = cv.getContext("webgl", { alpha: true, premultipliedAlpha: true, antialias: false });
       if (!gl) throw new Error("no WebGL");
       const sh = (type, src) => { const x = gl.createShader(type); gl.shaderSource(x, src); gl.compileShader(x); if (!gl.getShaderParameter(x, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(x)); return x; };
       prog = gl.createProgram();
@@ -1011,12 +1011,14 @@
           vec2 c = uv * 2. - 1.;
           vec2 o = abs(c.yx) / vec2(6., 4.);
           vec2 s = (c + c * o * o) * .5 + .5;                     // barrel: the corners fall off the glass
-          if (s.x < 0. || s.x > 1. || s.y < 0. || s.y > 1.) { gl_FragColor = vec4(0., 0., 0., 1.); return; }
+          float e = min(min(s.x, 1. - s.x), min(s.y, 1. - s.y));
+          if (e < 0.) { gl_FragColor = vec4(0.); return; }          // off the glass: transparent
           vec3 col = texture2D(tex, vec2(s.x, 1. - s.y)).rgb;
           col *= 1. - scan * .5 * (1. - sin(3.14159 * fract(mix(s.y, s.x, vert) * rows)));
           float v = 16. * s.x * s.y * (1. - s.x) * (1. - s.y);
           col *= .55 + .45 * pow(v, .25);                           // vignette
-          gl_FragColor = vec4(col * 1.08, 1.);
+          float a = smoothstep(0., .004, e);                          // a soft edge to the screen
+          gl_FragColor = vec4(col * 1.08 * a, a);                     // premultiplied
         }`));
       gl.linkProgram(prog);
       if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(prog));
@@ -1040,6 +1042,7 @@
           const dpr = Math.min(2, devicePixelRatio || 1), w = img.clientWidth, h = img.clientHeight;
           cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); cv.style.width = w + "px"; cv.style.height = h + "px";
           gl.viewport(0, 0, cv.width, cv.height);
+          gl.clearColor(0, 0, 0, 0); gl.clear(gl.COLOR_BUFFER_BIT);
           gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
           gl.bindTexture(gl.TEXTURE_2D, tex);
           gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, texImg);      // throws SecurityError when the host sends no CORS headers
