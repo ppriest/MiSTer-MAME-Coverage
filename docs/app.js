@@ -953,7 +953,7 @@
   // shape, whatever the pixel aspect of the capture; obviously different ones (multi-screen, 8:3 and so on) keep their own.
   const nearShape = img => {
     const r = img.naturalWidth / img.naturalHeight;
-    return r >= 1.15 && r <= 1.65 ? 4 / 3 : r >= 0.6 && r <= 0.87 ? 3 / 4 : 0;
+    return r >= 1.15 && r <= 1.9 ? 4 / 3 : r >= 0.52 && r <= 0.87 ? 3 / 4 : 0;      // 384x224 (1.71) and 224x384 (0.58) rasters count: they are 4:3 and 3:4 on the monitor
   };
   function fitLightbox(img) {                       // the zoomed shot: as large as the window allows, in its shown shape
     if (!img.naturalWidth) return;
