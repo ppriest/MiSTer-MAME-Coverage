@@ -249,10 +249,38 @@ ul.sloplist button { font: inherit; font-size: 11px; padding: 0 8px; margin-left
 .gallery-box { margin-top: 12px; }
 .gallery-box h4, h3.hwdrv { margin: 0 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-2); }
 h3.hwdrv { margin: 14px 0 6px; font-size: 13px; text-transform: none; letter-spacing: 0; color: var(--text); }
-.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; align-items: start; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(225px, 1fr)); gap: 8px; align-items: start; }
 .gallery figure { margin: 0; min-width: 0; }
 .gallery img { display: block; width: 100%; height: auto; min-height: 60px; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; }   /* natural aspect ratio: shots may be landscape or portrait */
 .gallery figcaption { font-size: 11px; line-height: 1.25; margin-top: 2px; color: var(--text-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .hwslot:empty { display: none; }
 #titles-table tr.detail .hwslot, #cores-table tr.detail .hwslot { margin-top: 12px; }
 #cores-table td.exp { cursor: pointer; width: 1.2em; color: var(--text-2); }
+
+/* the +1 pill in the Wishlist tab: the same look as the +1 buttons */
+.tabs .tab-plus1 { display: inline-block; margin-left: 6px; padding: 0 7px; font-size: 11px; font-weight: 700; line-height: 17px; border: 1px solid var(--accent); border-radius: 10px; color: var(--accent); background: var(--surface); vertical-align: 1px; }
+.tabs button[aria-selected="true"] .tab-plus1 { background: var(--accent); color: var(--surface); }
+
+/* click-to-zoom */
+.gallery img { cursor: zoom-in; }
+#lightbox { border: 0; padding: 0; background: transparent; max-width: 100vw; max-height: 100vh; width: 100vw; height: 100vh; color: #fff; }
+#lightbox::backdrop { background: rgba(0, 0, 0, .86); }
+#lightbox[open] { display: flex; align-items: center; justify-content: center; gap: 12px; }
+#lightbox figure { margin: 0; max-width: calc(100vw - 150px); max-height: 100vh; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+#lightbox img { max-width: 100%; max-height: calc(100vh - 64px); object-fit: fill; border-radius: 4px; background: #000; cursor: zoom-out; image-rendering: pixelated; }   /* nearest neighbour: hard pixels */
+#lightbox figcaption { font-size: 14px; text-align: center; color: #e8e8e8; }
+#lightbox button { background: rgba(255, 255, 255, .14); color: #fff; border: 0; border-radius: 50%; width: 44px; height: 44px; font-size: 28px; line-height: 1; cursor: pointer; flex: none; }
+#lightbox button:hover, #lightbox button:focus-visible { background: rgba(255, 255, 255, .3); outline: none; }
+#lightbox .lb-close { position: fixed; top: 14px; right: 14px; }
+#lightbox.single .lb-prev, #lightbox.single .lb-next { visibility: hidden; }
+@media (max-width: 640px) { #lightbox figure { max-width: calc(100vw - 112px); } #lightbox button { width: 36px; height: 36px; } }
+
+#lightbox .lb-frame { position: relative; line-height: 0; }
+#lightbox .lb-scan { position: absolute; inset: 0; pointer-events: none; border-radius: 4px;
+  background: repeating-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) calc(var(--ph, 4px) * .45), rgba(0,0,0,.42) calc(var(--ph, 4px) * .45), rgba(0,0,0,.42) var(--ph, 4px)); }
+#lightbox .lb-scan[hidden], #lightbox.noscan .lb-scan { display: none; }
+#lightbox .lb-fxs { position: fixed; bottom: 12px; right: 14px; display: flex; gap: 8px; }
+#lightbox button.lb-fx { width: auto; height: auto; border-radius: 16px; padding: 6px 12px; font-size: 12px; }
+#lightbox button.lb-fx:disabled { opacity: .5; cursor: default; }
+#lightbox .lb-crt { position: absolute; inset: 0; cursor: zoom-out; border-radius: 4px; }
+#lightbox .lb-scan.vert { background: repeating-linear-gradient(to right, rgba(0,0,0,0) 0, rgba(0,0,0,0) calc(var(--ph, 4px) * .45), rgba(0,0,0,.42) calc(var(--ph, 4px) * .45), rgba(0,0,0,.42) var(--ph, 4px)); }
