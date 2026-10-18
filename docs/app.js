@@ -652,7 +652,7 @@
     const slots = Object.entries(d.slots || {}).map(([k, v]) => `<li><span class="chipname">${esc(k)}</span> <span class="muted">${v.map(esc).join(", ")}</span></li>`).join("");
     const notes = (d.notes || []).length
       ? `<details class="hwnotes"><summary>Notes from the driver source <span class="muted">(comments and diagrams, as written)</span></summary>${d.notes.map(n => `<pre>${esc(n)}</pre>`).join("")}</details>` : "";
-    const src = `https://github.com/mamedev/mame/blob/${h.tag}/src/mame/${file}`;
+    const src = `https://github.com/mamedev/mame/blob/master/src/mame/${file}`;
     return `<div class="hwgrid">
         ${sect("CPUs", hwRows(d.cpus, d.sets, true))}
         ${sect("Sound", hwRows(d.sound, d.sets, true))}
