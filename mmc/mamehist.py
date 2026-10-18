@@ -23,6 +23,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import os
+import time
 import re
 import subprocess
 import urllib.request
@@ -118,6 +119,9 @@ def fetch_lst(v: int) -> str | None:
     dest = os.path.join(LST_DIR, f"mame0{v}.lst")
     if os.path.exists(dest) and os.path.getsize(dest) > 1000:
         return dest
+    miss = dest + ".missing"              # a release with no mame.lst is not asked for again for a week
+    if os.path.exists(miss) and time.time() - os.path.getmtime(miss) < 7 * 86400:
+        return None
     try:
         with urllib.request.urlopen(LST_URL.format(v=v), timeout=60) as r, open(dest, "wb") as f:
             f.write(r.read())
@@ -125,6 +129,10 @@ def fetch_lst(v: int) -> str | None:
     except Exception:
         if os.path.exists(dest):
             os.remove(dest)
+        try:
+            open(miss, "w").close()
+        except OSError:
+            pass
         return None
 
 
