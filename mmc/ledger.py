@@ -113,6 +113,15 @@ def merge(ledger: dict, observed: dict, note: str = "") -> dict:
         for setn in list(ledger["support"]):
             if ledger["support"][setn].pop(cid, None) is not None and not ledger["support"][setn]:
                 del ledger["support"][setn]
+    # A superseded core goes once its replacement is in the ledger (it need not be observed this run: a database can be
+    # unreachable for a while). The sets only the old record supports move to the replacement, so no support is lost.
+    for old, new in mister_mod.SUPERSEDED_CORES.items():
+        if old in ledger["cores"] and new in ledger["cores"]:
+            del ledger["cores"][old]
+            for per in ledger["support"].values():
+                rec = per.pop(old, None)
+                if rec is not None:
+                    per.setdefault(new, rec)
     # set names that are retired: test entries, and names mapped to a MAME set (the support moves to the MAME name)
     for setn in set(mister_mod.IGNORED_SETS) | set(mister_mod.SETNAME_ALIASES):
         ledger["support"].pop(setn, None)
