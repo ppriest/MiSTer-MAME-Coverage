@@ -236,6 +236,8 @@ DB_SOURCES = {
     "gm0rk": "https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip",
     # kyledlester's cores (github.com/kyledlester/MiSTer_DB); his loose repositories are not scanned
     "kyle": "https://raw.githubusercontent.com/kyledlester/MiSTer_DB/db/db.json.zip",
+    # decoryah's cores (github.com/decoryah/MiSTer_decoryah, rebuilt every 6 hours); his repositories are still scanned too (OWNER_SOURCES)
+    "decoryah": "https://raw.githubusercontent.com/decoryah/MiSTer_decoryah/db/db.json.zip",
 }
 # Cores that load ROM sets from a list instead of MRAs: (source, repo, file, core name).
 ROMSET_FILES = [
@@ -281,7 +283,7 @@ SOURCE_PAGES = {
     "kyle": "https://github.com/kyledlester/MiSTer_DB",
     "gm0rk": "https://github.com/Gm0rk/Gm0rkCores",
     "usquebagh": "https://github.com/Usquebagh?tab=repositories",
-    "decoryah": "https://github.com/decoryah?tab=repositories",
+    "decoryah": "https://github.com/decoryah/MiSTer_decoryah",
     "rossops": "https://github.com/rossops?tab=repositories",
     "xela": "https://github.com/XelaNotPu?tab=repositories",
     "jtpr": "https://github.com/jotego/jtcores/tree/andrea-cores/cores",
@@ -309,7 +311,7 @@ DB_TITLES = {
     "kyle": "kyledlester (MiSTer_DB)",
     "gm0rk": "Gm0rkCores (Gm0rk)",
     "usquebagh": "Usquebagh (GitHub repositories)",
-    "decoryah": "decoryah (GitHub repositories)",
+    "decoryah": "decoryah (MiSTer_decoryah)",
     "rossops": "rossops (GitHub repositories)",
     "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
     "repo": "GitHub repository only",
