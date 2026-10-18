@@ -7,15 +7,6 @@
 "date": "2026-10-09",
 "note": "alamone 2026-10-05",
 "cores": 3,
-"sets": 7,
-"pairs": 9,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
-"date": "2026-10-09",
-"note": "alamone 2026-10-05",
-"cores": 3,
 "sets": 1,
 "pairs": 24,
 "dates_improved": 0,
@@ -461,6 +452,15 @@
 "pairs": 34,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-18",
+"note": "alamone 2026-10-12",
+"cores": 6,
+"sets": 13,
+"pairs": 45,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -521,6 +521,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-18",
+"aliases": [],
 "last_seen": "2026-10-18"
 },
 "bazset:asuka_bazset": {
@@ -11182,6 +11183,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-18",
+"aliases": [],
 "last_seen": "2026-10-18"
 },
 "ongo:argus": {
@@ -11505,6 +11507,24 @@
 "note": null,
 "first_recorded": "2026-10-10",
 "aliases": [],
+"last_seen": "2026-10-18"
+},
+"ongo:bazturtship": {
+"id": "ongo:bazturtship",
+"name": "bazturtship",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "bazturtship.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-18",
 "last_seen": "2026-10-18"
 },
 "ongo:blackwine-segasystem1-2": {
@@ -14670,6 +14690,24 @@
 "first_recorded": "2026-10-05",
 "aliases": [],
 "last_seen": "2026-10-11"
+},
+"repo:megaplay": {
+"id": "repo:megaplay",
+"name": "MegaPlay",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": null,
+"rbf": "MegaPlay.rbf",
+"repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"url": "https://github.com/iequalshane/MegaPlay_MiSTer_Beta",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 },
 "repo:model2": {
 "id": "repo:model2",
@@ -74757,6 +74795,186 @@
 "last_seen": "2026-10-18"
 }
 },
+"mp_4cart_test3": {
+"repo:megaplay": {
+"core": "repo:megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "repo",
+"wip": true,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - 4 Cart Test.mra",
+"mra": "_Arcade/Sega Mega Play - 4 Cart Test.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"mp_bio": {
+"repo:megaplay": {
+"core": "repo:megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "repo",
+"wip": true,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Bio-hazard Battle.mra",
+"mra": "_Arcade/Sega Mega Play - Bio-hazard Battle.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"mp_col3": {
+"repo:megaplay": {
+"core": "repo:megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "repo",
+"wip": true,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Columns III.mra",
+"mra": "_Arcade/Sega Mega Play - Columns III.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"mp_gaxe2": {
+"repo:megaplay": {
+"core": "repo:megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "repo",
+"wip": true,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Golden Axe II (Rev B).mra",
+"mra": "_Arcade/Sega Mega Play - Golden Axe II (Rev B).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"mp_gslam": {
+"repo:megaplay": {
+"core": "repo:megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "repo",
+"wip": true,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Grand Slam.mra",
+"mra": "_Arcade/Sega Mega Play - Grand Slam.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"mp_gunhe": {
+"repo:megaplay": {
+"core": "repo:megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "repo",
+"wip": true,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Gunstar Heroes.mra",
+"mra": "_Arcade/Sega Mega Play - Gunstar Heroes.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"mp_mazin": {
+"repo:megaplay": {
+"core": "repo:megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "repo",
+"wip": true,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Mazin Wars.mra",
+"mra": "_Arcade/Sega Mega Play - Mazin Wars.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"mp_shnb3": {
+"repo:megaplay": {
+"core": "repo:megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "repo",
+"wip": true,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Shinobi III.mra",
+"mra": "_Arcade/Sega Mega Play - Shinobi III.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"mp_soni2": {
+"repo:megaplay": {
+"core": "repo:megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "repo",
+"wip": true,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Sonic The Hedgehog 2.mra",
+"mra": "_Arcade/Sega Mega Play - Sonic The Hedgehog 2.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"mp_sonic": {
+"repo:megaplay": {
+"core": "repo:megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "repo",
+"wip": true,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Sonic The Hedgehog.mra",
+"mra": "_Arcade/Sega Mega Play - Sonic The Hedgehog.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"mp_sor2": {
+"repo:megaplay": {
+"core": "repo:megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "repo",
+"wip": true,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Streets of Rage II.mra",
+"mra": "_Arcade/Sega Mega Play - Streets of Rage II.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"mp_twcup": {
+"repo:megaplay": {
+"core": "repo:megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "repo",
+"wip": true,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Tecmo World Cup.mra",
+"mra": "_Arcade/Sega Mega Play - Tecmo World Cup.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
 "mpang": {
 "jt:jtcps2": {
 "core": "jt:jtcps2",
@@ -122467,6 +122685,21 @@
 "first_repo": "MiSTer-devel/Arcade-Scramble_MiSTer",
 "first_path": "releases/Turtles.mra",
 "first_recorded": "2026-10-05",
+"last_seen": "2026-10-18"
+}
+},
+"turtship": {
+"ongo:bazturtship": {
+"core": "ongo:bazturtship",
+"date": "2026-10-18",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Turtle Ship (North America).mra",
+"mra": "_Arcade/_BAZSET/Turtle Ship (North America).mra",
+"first_recorded": "2026-10-18",
 "last_seen": "2026-10-18"
 }
 },

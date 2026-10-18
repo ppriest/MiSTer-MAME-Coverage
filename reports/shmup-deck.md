@@ -6,7 +6,9 @@ Generated 2026-10-18 by `tools/reconcile_shmups.py` from MAME 0289 data and [shm
 
 ## New since the previous report
 
-Nothing new: the same titles disagree as before.
+**1 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
+
+- `turtship` Turtle Ship (North America) (1988; Shooter / Flying Horizontal)
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -17,12 +19,13 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (105)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (106)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
+| **NEW** `turtship` | Turtle Ship (North America) | 1988 | Shooter / Flying Horizontal (catver) | bazturtship |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
 | `aliensec` | Alien Sector | 1985 | Shooter / Flying Horizontal (catver) | jtthundr |

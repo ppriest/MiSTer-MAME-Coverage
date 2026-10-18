@@ -1940,6 +1940,9 @@
  "ongo:bazset_shogunwarriors": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:bazturtship": [
+  "bazset/MiSTer_BAZSET"
+ ],
  "ongo:blackwine-segasystem1-2": [
   "TheJesusFish/Blackwine-SegaSystem1-2_MiSTer"
  ],
@@ -2425,6 +2428,9 @@
  ],
  "repo:mcatadv": [
   "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer"
+ ],
+ "repo:megaplay": [
+  "iequalshane/MegaPlay_MiSTer_Beta"
  ],
  "repo:metamorphicforce": [
   "decoryah/Arcade-MetamorphicForce_MiSTer",
