@@ -948,6 +948,30 @@
     addEventListener("scroll", () => { if (!card.hidden) hide(); }, { passive: true });
   }
 
+  // ---------- screenshot proportions ----------
+  // Shots whose proportions are close to 4:3 (landscape) or 3:4 (portrait), as most arcade shots are, are shown at exactly that
+  // shape, whatever the pixel aspect of the capture; obviously different ones (multi-screen, 8:3 and so on) keep their own.
+  const nearShape = img => {
+    const r = img.naturalWidth / img.naturalHeight;
+    return r >= 1.15 && r <= 1.65 ? 4 / 3 : r >= 0.6 && r <= 0.87 ? 3 / 4 : 0;
+  };
+  function fitLightbox(img) {                       // the zoomed shot: as large as the window allows, in its shown shape
+    if (!img.naturalWidth) return;
+    const ratio = nearShape(img) || img.naturalWidth / img.naturalHeight;
+    const maxW = Math.max(200, innerWidth - (innerWidth <= 640 ? 112 : 150)), maxH = Math.max(150, innerHeight - 64);
+    const w = Math.min(maxW, maxH * ratio);
+    img.style.width = Math.round(w) + "px"; img.style.height = Math.round(w / ratio) + "px";
+  }
+  document.addEventListener("load", ev => {          // load does not bubble: capture it
+    const img = ev.target;
+    if (!(img instanceof HTMLImageElement) || !img.naturalWidth) return;
+    const shape = nearShape(img);
+    if (img.closest(".gallery")) img.style.aspectRatio = shape ? String(shape) : "";
+    else if (img.closest("#shot")) { img.style.width = shape ? img.naturalWidth + "px" : ""; img.style.aspectRatio = shape ? String(shape) : ""; }
+    else if (img.closest("#lightbox")) fitLightbox(img);
+  }, true);
+  addEventListener("resize", () => { const lb = $("#lightbox img"); if (lb && $("#lightbox").open) fitLightbox(lb); });
+
   // ---------- click-to-zoom on gallery screenshots ----------
   // A click opens the shot large in a modal dialog; ← → (or the buttons) step through the same gallery, Esc or a click outside closes.
   (function () {
