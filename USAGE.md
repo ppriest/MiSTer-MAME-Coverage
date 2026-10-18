@@ -95,9 +95,14 @@ whenever it is set.
 
 `data/pending_cores.json` lists source-available cores that sit in open pull requests of
 `jotego/jtcores` and have no published MRA or build yet (name, PR number, date of the core's first
-commit, MAME sets; `pr` or, for cores on a branch such as `andrea-cores`, `branch`). `observe` turns each into a `jtpr:<name>` core with those sets. When a PR
-merges, set `"merged": true` (the placeholder is then removed from the ledger and the real `jt:`
-core takes over). Sets are those the PR's `mame2mra.toml` selects, checked against MAME by hand.
+commit, MAME sets; `pr` or, for cores on a branch such as `andrea-cores`, `branch`). `observe` turns each into a `jtpr:<name>` core with those sets.
+
+`build` keeps the file current (`mmc/jtprs.py`, needs the GitHub API; `GITHUB_TOKEN` in CI, skipped with `--no-sync`, and on any failure the file is left alone):
+every open PR that adds a `cores/<name>/cfg/mame2mra.toml` becomes an entry, with the PR title as game, the first commit's date, and the sets of the
+`[parse] sourcefile` drivers minus `skip.setnames` (and bootlegs when `skip.bootlegs`) taken from MAME; such entries carry `"sets_auto": true`, an
+approximation of what mame2mra selects. Replace the list by a hand-checked one (and drop the flag) when it is wrong; existing entries are never rewritten.
+An entry whose PR has merged or closed gets `"merged": true` (the placeholder is removed from the ledger and the real `jt:` core takes over).
+Cores on a branch (`branch` instead of `pr`) are still maintained by hand.
 
 ## HBMAME (homebrew and hacks)
 
