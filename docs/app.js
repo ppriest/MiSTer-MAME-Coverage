@@ -949,11 +949,11 @@
   }
 
   // ---------- screenshot proportions ----------
-  // Shots whose proportions are close to 4:3 (landscape) or 3:4 (portrait), as most arcade shots are, are shown at exactly that
-  // shape, whatever the pixel aspect of the capture; obviously different ones (multi-screen, 8:3 and so on) keep their own.
+  // A single-screen shot is 4:3 (landscape) or 3:4 (portrait) on the monitor, whatever the pixel aspect of the capture (there is no
+  // 16:9), so it is shown at exactly that shape; only multi-screen shots (8:3, 4:1 and the like) keep their own.
   const nearShape = img => {
     const r = img.naturalWidth / img.naturalHeight;
-    return r >= 1.15 && r <= 1.9 ? 4 / 3 : r >= 0.52 && r <= 0.87 ? 3 / 4 : 0;      // 384x224 (1.71) and 224x384 (0.58) rasters count: they are 4:3 and 3:4 on the monitor
+    return r >= 1 && r <= 2.3 ? 4 / 3 : r >= 0.43 && r < 1 ? 3 / 4 : 0;      // 0 = multi-screen strips (8:3, 4:1 and wider/taller), left as they are
   };
   function fitLightbox(img) {                       // the zoomed shot: as large as the window allows, in its shown shape
     if (!img.naturalWidth) return;
