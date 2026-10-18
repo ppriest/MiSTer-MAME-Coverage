@@ -258,5 +258,5 @@ h3.hwdrv { margin: 14px 0 6px; font-size: 13px; text-transform: none; letter-spa
 #cores-table td.exp { cursor: pointer; width: 1.2em; color: var(--text-2); }
 
 /* the +1 pill in the Wishlist tab: the same look as the +1 buttons */
-.tabs .tab-plus1 { display: inline-block; margin-right: 6px; padding: 0 7px; font-size: 11px; font-weight: 700; line-height: 17px; border: 1px solid var(--accent); border-radius: 10px; color: var(--accent); background: var(--surface); vertical-align: 1px; }
+.tabs .tab-plus1 { display: inline-block; margin-left: 6px; padding: 0 7px; font-size: 11px; font-weight: 700; line-height: 17px; border: 1px solid var(--accent); border-radius: 10px; color: var(--accent); background: var(--surface); vertical-align: 1px; }
 .tabs button[aria-selected="true"] .tab-plus1 { background: var(--accent); color: var(--surface); }
