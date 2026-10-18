@@ -960,7 +960,11 @@
     const ratio = nearShape(img) || img.naturalWidth / img.naturalHeight;
     const maxW = Math.max(200, innerWidth - (innerWidth <= 640 ? 112 : 150)), maxH = Math.max(150, innerHeight - 64);
     const w = Math.min(maxW, maxH * ratio);
-    img.style.width = Math.round(w) + "px"; img.style.height = Math.round(w / ratio) + "px";
+    const h = w / ratio;
+    img.style.width = Math.round(w) + "px"; img.style.height = Math.round(h) + "px";
+    const pitch = h / img.naturalHeight;                                   // screen pixels per source row
+    const sl = img.parentElement.querySelector(".lb-scan");
+    sl.style.setProperty("--ph", pitch.toFixed(3) + "px"); sl.hidden = pitch < 2;      // too fine to draw when shrunk
   }
   document.addEventListener("load", ev => {          // load does not bubble: capture it
     const img = ev.target;
@@ -977,10 +981,14 @@
   (function () {
     const dlg = document.createElement("dialog");
     dlg.id = "lightbox"; dlg.setAttribute("aria-label", "Screenshot");
-    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><img alt=""><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button>';
+    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><div class="lb-frame"><img alt=""><span class="lb-scan"></span></div><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button><button type="button" class="lb-fx" title="scanlines (S)"></button>';
     document.body.appendChild(dlg);
-    const img = dlg.querySelector("img"), cap = dlg.querySelector("figcaption");
+    const img = dlg.querySelector("img"), cap = dlg.querySelector("figcaption"), fx = dlg.querySelector(".lb-fx");
     let set = [], i = 0;
+    // Scanlines over the zoomed shot (one dark line per pixel row of the original); the choice is remembered.
+    let scan = true; try { scan = localStorage.getItem("lb-scanlines") !== "0"; } catch (e) { /* storage unavailable */ }
+    const setScan = on => { scan = on; dlg.classList.toggle("noscan", !on); fx.textContent = on ? "Scanlines: on" : "Scanlines: off"; try { localStorage.setItem("lb-scanlines", on ? "1" : "0"); } catch (e) { /* ignore */ } };
+    setScan(scan);
     const show = n => {
       i = (n + set.length) % set.length;
       const el = set[i];
@@ -996,12 +1004,14 @@
     dlg.addEventListener("click", ev => {
       if (ev.target.closest(".lb-prev")) show(i - 1);
       else if (ev.target.closest(".lb-next")) show(i + 1);
+      else if (ev.target.closest(".lb-fx")) setScan(!scan);
       else if (ev.target.closest(".lb-close") || ev.target === dlg) dlg.close();      // the backdrop is the dialog itself
       else if (ev.target === img) dlg.close();
     });
     dlg.addEventListener("keydown", ev => {
       if (ev.key === "ArrowLeft" && set.length > 1) { ev.preventDefault(); show(i - 1); }
       else if (ev.key === "ArrowRight" && set.length > 1) { ev.preventDefault(); show(i + 1); }
+      else if (ev.key === "s" || ev.key === "S") setScan(!scan);
     });
     dlg.addEventListener("close", () => { img.removeAttribute("src"); });
   })();
