@@ -2,7 +2,7 @@
 
 Databases to add to get the source-available AI-assisted arcade cores, from developers who are willing to fix reported bugs
 
-Last checked 2026-10-18 09:58 UTC.
+Last checked 2026-10-18 12:06 UTC.
 
 **Don't use both these and [MiSTer_Ongo](https://github.com/OngoGablogian/MiSTer_Ongo):** they overlap heavily (it republishes many of the same cores).
 
@@ -10,6 +10,7 @@ Last checked 2026-10-18 09:58 UTC.
 |---|---|---|
 | [arcfpga (bmo00)](https://github.com/bmo00/arcfpga-mister-db) | bmo00/arcfpga-mister-db | ok |
 | [bazset (MiSTer_BAZSET)](https://github.com/bazset/MiSTer_BAZSET) | bazset/MiSTer_BAZSET | ok |
+| [decoryah (MiSTer_decoryah)](https://github.com/decoryah/MiSTer_decoryah) | decoryah/MiSTer_decoryah | ok |
 | [Gm0rkCores (Gm0rk)](https://github.com/Gm0rk/Gm0rkCores) | Gm0rk/Gm0rkCores | ok |
 | [jlrh](https://github.com/jlrh/jlrh-misterfpga-db) | jlrh/jlrh-misterfpga-db | ok |
 | [kuzecores (kuzearcade)](https://github.com/kuzearcade/kuzecores) | kuzearcade/kuzecores | ok |
