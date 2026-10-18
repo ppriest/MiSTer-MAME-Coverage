@@ -704,7 +704,7 @@
     if (has) return;
     const row = document.createElement("tr");
     row.className = "hw";
-    row.innerHTML = `<td colspan="${tr.cells.length}"><div class="hwslot" data-hwfile="${esc(file)}"></div>${galleryHtml(S.titles.filter(t => t.sourcefile === file))}</td>`;
+    row.innerHTML = `<td colspan="${tr.cells.length}">${/(^|\/)playch10\.cpp$/.test(file) ? cabinetLink : ""}<div class="hwslot" data-hwfile="${esc(file)}"></div>${galleryHtml(S.titles.filter(t => t.sourcefile === file))}</td>`;
     tr.after(row);
     fillHardware(row);
   }

@@ -324,3 +324,4 @@ header.top { position: sticky; top: 0; z-index: 20; }
 .top .issue { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; }
 .top .issue .issue-title { margin-right: 0; }
 .top .issue .slopjump { margin-left: 0; }
+#drivers-table td.set { white-space: nowrap; }
