@@ -656,7 +656,7 @@
     return `<div class="hwgrid">
         ${sect("CPUs", hwRows(d.cpus, d.sets, true))}
         ${sect("Sound", hwRows(d.sound, d.sets, true))}
-        ${sect("Other devices", hwRows(d.devices, d.sets, false))}
+        ${sect("Other devices", hwRows(d.devices.filter(r => !/^neocart_/.test(r.name)), d.sets, false))}
         ${sect("Selectable options (slots)", slots)}
       </div>
       <p class="muted hwsrc">From MAME ${esc(h.mame)}'s declarations for the driver's ${fmt(d.sets)} ${d.sets === 1 ? "set" : "sets"}; a chip marked <span class="opt">in N of M sets</span> is a variant or optional. Source: <a href="${esc(src)}" target="_blank" rel="noopener">${esc(file)}</a>.</p>

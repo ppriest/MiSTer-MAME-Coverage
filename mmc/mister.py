@@ -256,8 +256,7 @@ PULL_REFS = {"jotego/jtbin"}
 # jtcores is enormous; clone it without any blobs and let git fetch the few historical MRAs lazily.
 # jtbin carries every build binary of every commit (5 GB with the default filter) but only its MRAs matter: blobs come on demand.
 FILTER_OVERRIDES = {"jotego/jtcores": "blob:none", "jotego/jtbin": "blob:none"}
-# Repositories that change daily and are big or noisy are fetched again only after this many days (clones and the checked-out MRAs stay).
-REFRESH_DAYS = {"jotego/": 7}
+
 
 WIKI_REPO = "https://github.com/MiSTer-devel/Wiki_MiSTer.wiki.git"
 
@@ -462,20 +461,16 @@ def sync_repo(full: str, dirs: list[str] | None = None, fetch_existing: bool = T
             if _filter_key(have) != _filter_key(filt):  # cloned with another filter: start over
                 shutil.rmtree(d)
         fetched = False
-        mark = os.path.join(d, ".git", "mmc-fetched")
-        days = next((n for pre, n in REFRESH_DAYS.items() if full.startswith(pre)), 0)
         if not os.path.isdir(os.path.join(d, ".git")):
             os.makedirs(paths.REPOS, exist_ok=True)
             # A repository the ledger knows is cloned at its current commit only (its history was read before and the ledger
             # keeps the earliest dates); a new one gets its whole history once, to date its MRAs.
             depth = ["--depth=1"] if KNOWN_REPOS is not None and full in KNOWN_REPOS else []
             git("clone", "-q", f"--filter={filt}", *depth, "--no-checkout", url, d)
-            open(mark, "w").close()
-        elif fetch_existing and not (days and os.path.exists(mark) and time.time() - os.path.getmtime(mark) < days * 86400):
+        elif fetch_existing:
             shallow = ["--depth=1"] if os.path.exists(os.path.join(d, ".git", "shallow")) else []
             git("fetch", "-q", f"--filter={filt}", *shallow, "origin", cwd=d)
             fetched = True
-            open(mark, "w").close()
         if full in PULL_REFS and (fetched or not git("rev-parse", "-q", "--verify", "refs/remotes/origin/pr/1", cwd=d, check=False).stdout):
             shallow = ["--depth=1"] if os.path.exists(os.path.join(d, ".git", "shallow")) else []
             git("fetch", "-q", f"--filter={filt}", *shallow, "origin", "+refs/pull/*/head:refs/remotes/origin/pr/*", cwd=d, check=False)
