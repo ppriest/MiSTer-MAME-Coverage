@@ -123,6 +123,24 @@
     if (enabled) { renderTimeChart(); renderYearChart(); renderGenreChart(); renderCoresChart(); }
   }
 
+  // The charts are drawn at the width they are shown at (their text stays the same size), up to 640: four fit in a row on a wide screen.
+  const zoomed = sel => !!$(sel).closest(".chart.zoomed");
+  const chartW = sel => Math.max(240, Math.min(zoomed(sel) ? 2000 : 640, Math.round(($(sel) && $(sel).clientWidth) || 640)));
+  const chartH = (sel, W) => zoomed(sel) ? Math.max(300, Math.min(innerHeight - 190, Math.round(W * .5))) : 260;
+  function redrawCharts() { if (S.data && $("#charts-box").open && !S.chartsLock) { renderTimeChart(); renderYearChart(); renderGenreChart(); renderCoresChart(); } }
+  // Full-screen zoom of one chart: the figure itself covers the window (so its hover and drag still work) and is drawn again, larger.
+  function zoomChart(fig, on) {
+    fig.classList.toggle("zoomed", on);
+    document.body.classList.toggle("chart-zoomed", on);
+    const b = fig.querySelector(".chart-zoom"); b.textContent = on ? "×" : "⤢"; b.title = on ? "close" : "full screen"; b.setAttribute("aria-label", on ? "Close the full-screen chart" : "Show this chart full screen");
+    hideTip();
+    requestAnimationFrame(redrawCharts);
+  }
+  document.addEventListener("click", ev => { const b = ev.target.closest(".chart-zoom"); if (b) { const fig = b.closest(".chart"); zoomChart(fig, !fig.classList.contains("zoomed")); } });
+  document.addEventListener("keydown", ev => { if (ev.key === "Escape") { const fig = $(".chart.zoomed"); if (fig) zoomChart(fig, false); } });
+  let chartResize = 0, chartBucket = "";
+  addEventListener("resize", () => { clearTimeout(chartResize); chartResize = setTimeout(() => { const b = chartW("#chart-time") + "/" + innerHeight; if (b !== chartBucket) { chartBucket = b; redrawCharts(); } }, 150); });
+
   function monthKey(d) { return d.slice(0, 7); }
   function addMonths(key, n) { let [y, m] = key.split("-").map(Number); m += n; y += Math.floor((m - 1) / 12); m = ((m - 1) % 12 + 12) % 12 + 1; return `${y}-${String(m).padStart(2, "0")}`; }
 
@@ -146,7 +164,7 @@
     const rows = months.map((k, i) => ({ k, mame: inMame[i], mister: onMister[i] }));
     const total = sets.length;
 
-    const W = 640, H = 260, m = { t: 22, r: 16, b: 28, l: 48 };
+    const W = chartW("#chart-time"), H = chartH("#chart-time", W), m = { t: 22, r: 16, b: 28, l: 48 };
     const x = i => m.l + (W - m.l - m.r) * (i / Math.max(1, rows.length - 1));
     const y = v => m.t + (H - m.t - m.b) * (1 - v / total);
     const path = key => rows.map((r, i) => (i ? "L" : "M") + x(i).toFixed(1) + " " + y(r[key]).toFixed(1)).join("");
@@ -209,7 +227,7 @@
     const order = Array.from(bins.keys()).sort((a, b) => (a === "≤1974" ? -1 : b === "≤1974" ? 1 : a === "n/a" ? 1 : b === "n/a" ? -1 : a.localeCompare(b)));
     const rows = order.map(k => bins.get(k));
     const max = Math.max(...rows.map(r => r.total));
-    const W = 640, H = 260, m = { t: 12, r: 10, b: 30, l: 40 };
+    const W = chartW("#chart-year"), H = chartH("#chart-year", W), m = { t: 12, r: 10, b: 30, l: 40 };
     const bw = (W - m.l - m.r) / rows.length;
     const y = v => m.t + (H - m.t - m.b) * (1 - v / max);
     const yTicks = [0, 0.25, 0.5, 0.75, 1].map(f => Math.round(max * f));
@@ -222,7 +240,7 @@
         <rect x="${x0 - 1}" y="${m.t}" width="${w + 2}" height="${H - m.t - m.b}" fill="transparent"/>
       </g>`;
     }).join("");
-    const labelEvery = rows.length > 20 ? 3 : rows.length > 12 ? 2 : 1;
+    const labelEvery = Math.max(1, Math.ceil(34 / bw));        // a label is about 34 px wide: skip as many bars as needed
     $("#chart-year").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Covered and not covered titles by release year">
       <g class="grid">${yTicks.map(v => `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/>`).join("")}</g>
       ${yTicks.map(v => `<text x="${m.l - 6}" y="${y(v) + 4}" text-anchor="end">${fmt(v)}</text>`).join("")}
@@ -246,7 +264,7 @@
     const rows = Array.from(bins.values()).sort((a, b) => b.total - a.total);
     if (!rows.length) { $("#chart-genre").innerHTML = '<p class="muted">no titles match</p>'; $("#legend-genre").innerHTML = ""; return; }
     const max = Math.max(...rows.map(r => r.total));
-    const W = 640, rowH = 18, m = { t: 6, r: 56, b: 22, l: 96 };
+    const W = chartW("#chart-genre"), rowH = zoomed("#chart-genre") ? Math.max(18, Math.min(34, Math.floor((innerHeight - 230) / rows.length))) : 18, m = { t: 6, r: 56, b: 22, l: 96 };
     const H = m.t + rows.length * rowH + m.b;
     const x = v => m.l + (W - m.l - m.r) * v / max;
     const xTicks = [0, 0.25, 0.5, 0.75, 1].map(f => Math.round(max * f));
@@ -303,7 +321,7 @@
     // cumulative tops, bottom to top
     const tops = months.map((_, i) => { let t = 0; return series.map(sr => (t += sr.cum[i])); });
     const total = tops.at(-1).at(-1);
-    const W = 640, H = 260, m = { t: 22, r: 16, b: 28, l: 48 };
+    const W = chartW("#chart-cores"), H = chartH("#chart-cores", W), m = { t: 22, r: 16, b: 28, l: 48 };
     const step = Math.max(1, Math.ceil(total / 4 / 50) * 50);
     const ymax = Math.ceil(total / step) * step;
     const x = i => m.l + (W - m.l - m.r) * (i / Math.max(1, months.length - 1));
@@ -1225,7 +1243,7 @@
     $("#mame-ver").textContent = data.meta.mame_version.replace(/^0/, "0.");
     renderTiles(); populateSelects(); renderStatic();
     const box = $("#charts-box");
-    box.addEventListener("toggle", () => { if (S.chartsLock || box.classList.contains("disabled")) return; try { localStorage.setItem("charts-open", box.open ? "1" : "0"); } catch (e) { /* ignore */ } });
+    box.addEventListener("toggle", () => { if (S.chartsLock || box.classList.contains("disabled")) return; if (box.open) redrawCharts(); try { localStorage.setItem("charts-open", box.open ? "1" : "0"); } catch (e) { /* ignore */ } });
     box.querySelector("summary").addEventListener("click", ev => { if (box.classList.contains("disabled")) ev.preventDefault(); });
     S.booting = true;   // the hash is read once; applying the tabs must not rewrite it half-read
     readHash();
