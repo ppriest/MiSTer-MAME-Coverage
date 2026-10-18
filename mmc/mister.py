@@ -419,6 +419,15 @@ def repo_dir(full: str) -> str:
     return os.path.join(paths.REPOS, full.replace("/", "__"))
 
 
+def _filter_key(f: str) -> str:
+    """git stores ``blob:limit=1m`` as ``blob:limit=1048576``: compare filters in one spelling (they were deleted and cloned again on every run)."""
+    m = re.fullmatch(r"blob:limit=(\d+)([kmg]?)", f.strip().lower())
+    return f"blob:limit={int(m.group(1)) * {'': 1, 'k': 1 << 10, 'm': 1 << 20, 'g': 1 << 30}[m.group(2)]}" if m else f.strip().lower()
+
+
+SYNC_VERSION = 1      # bump when what sync_repo checks out changes (invalidates the per-repository stamps)
+
+
 def sync_repo(full: str, dirs: list[str] | None = None, fetch_existing: bool = True) -> tuple[str, str | None]:
     """Clone (blob-less) or update ``owner/repo`` and check out only its MRA files.
 
@@ -430,18 +439,31 @@ def sync_repo(full: str, dirs: list[str] | None = None, fetch_existing: bool = T
         filt = FILTER_OVERRIDES.get(full, CLONE_FILTER)
         if os.path.isdir(os.path.join(d, ".git")):
             have = git("config", "remote.origin.partialclonefilter", cwd=d, check=False).stdout.strip()
-            if have != filt:  # cloned with another filter: start over
+            if _filter_key(have) != _filter_key(filt):  # cloned with another filter: start over
                 shutil.rmtree(d)
+        fetched = False
         if not os.path.isdir(os.path.join(d, ".git")):
             os.makedirs(paths.REPOS, exist_ok=True)
             git("clone", "-q", f"--filter={filt}", "--no-checkout", url, d)
         elif fetch_existing:
             git("fetch", "-q", f"--filter={filt}", "origin", cwd=d)
+            fetched = True
         if full in PULL_REFS and (fetch_existing or not git("rev-parse", "-q", "--verify", "refs/remotes/origin/pr/1", cwd=d, check=False).stdout):
             git("fetch", "-q", f"--filter={filt}", "origin", "+refs/pull/*/head:refs/remotes/origin/pr/*", cwd=d, check=False)
             head = git("symbolic-ref", "refs/remotes/origin/HEAD", cwd=d, check=False).stdout.strip()
             if head:
                 git("reset", "-q", "--soft", head, cwd=d)
+        if fetched:                           # a fetch only moves origin/*: bring the checked-out commit along
+            git("reset", "-q", "--soft", "refs/remotes/origin/HEAD", cwd=d, check=False)
+        # Nothing to do when the commit, the folders and the sparse list are what the last sync left (one git call per repository).
+        stamp = os.path.join(d, ".git", "mmc-sync")
+        key = json.dumps([git("rev-parse", "HEAD", cwd=d, check=False).stdout.strip(), dirs, sorted(f for _s, r, f, _c in ROMSET_FILES if r == full), SYNC_VERSION])
+        try:
+            with open(stamp, encoding="utf-8") as f:
+                if f.read() == key and os.path.exists(os.path.join(d, ".git", "info", "sparse-checkout")):
+                    return full, None
+        except OSError:
+            pass
         # Sparse checkout of just the MRA files keeps the lazy blob fetch to one batch per repo.
         mras = [p for p in ls_files(d) if is_launcher(p)]
         if dirs is not None and dirs != ["."]:
@@ -451,6 +473,8 @@ def sync_repo(full: str, dirs: list[str] | None = None, fetch_existing: bool = T
         with open(os.path.join(d, ".git", "info", "sparse-checkout"), "w", encoding="utf-8") as f:
             f.write("".join("/" + p.replace("[", "\\[").replace("]", "\\]") + "\n" for p in mras) or "/nonexistent\n")
         git("checkout", "-q", "--force", cwd=d)
+        with open(stamp, "w", encoding="utf-8") as f:
+            f.write(key)
         return full, None
     except subprocess.CalledProcessError as e:
         return full, (e.stderr or str(e)).strip().splitlines()[-1] if (e.stderr or "").strip() else str(e)
