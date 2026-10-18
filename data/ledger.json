@@ -4,15 +4,6 @@
 "updated": "2026-10-18",
 "runs": [
 {
-"date": "2026-10-08",
-"note": "alamone 2026-10-05",
-"cores": 3,
-"sets": 5,
-"pairs": 45,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
 "date": "2026-10-09",
 "note": "alamone 2026-10-05",
 "cores": 3,
@@ -461,6 +452,15 @@
 "pairs": 32,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-18",
+"note": "alamone 2026-10-12",
+"cores": 6,
+"sets": 1,
+"pairs": 34,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -503,6 +503,24 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-10-18"
+},
+"bazset:aqua_jack": {
+"id": "bazset:aqua_jack",
+"name": "Aqua_Jack",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Aqua_Jack.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-18",
 "last_seen": "2026-10-18"
 },
 "bazset:asuka_bazset": {
@@ -2354,7 +2372,7 @@
 "id": "decoryah:gaiapolis",
 "name": "gaiapolis",
 "source": "decoryah",
-"source_title": "decoryah (MiSTer_decoryah)",
+"source_title": "decoryah",
 "channel": null,
 "rbf": "gaiapolis.rbf",
 "repo": "decoryah/Arcade-Gaiapolis_MiSTer",
@@ -2373,7 +2391,7 @@
 "id": "decoryah:heavyunit",
 "name": "heavyunit",
 "source": "decoryah",
-"source_title": "decoryah (MiSTer_decoryah)",
+"source_title": "decoryah",
 "channel": null,
 "rbf": "heavyunit.rbf",
 "repo": "decoryah/Arcade-HeavyUnit_MiSTer",
@@ -2392,7 +2410,7 @@
 "id": "decoryah:jchan",
 "name": "jchan",
 "source": "decoryah",
-"source_title": "decoryah (MiSTer_decoryah)",
+"source_title": "decoryah",
 "channel": null,
 "rbf": "jchan.rbf",
 "repo": "decoryah/Arcade-JackieChan_MiSTer",
@@ -2411,7 +2429,7 @@
 "id": "decoryah:mcatadv",
 "name": "mcatadv (decoryah)",
 "source": "decoryah",
-"source_title": "decoryah (MiSTer_decoryah)",
+"source_title": "decoryah",
 "channel": "repository only",
 "rbf": "mcatadv_20261005.rbf",
 "repo": "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
@@ -2432,7 +2450,7 @@
 "id": "decoryah:metamorphicforce",
 "name": "metamorphicforce (decoryah)",
 "source": "decoryah",
-"source_title": "decoryah (MiSTer_decoryah)",
+"source_title": "decoryah",
 "channel": "repository only",
 "rbf": "metamorphicforce_20261011.rbf",
 "repo": "decoryah/Arcade-MetamorphicForce_MiSTer",
@@ -2453,7 +2471,7 @@
 "id": "decoryah:metro",
 "name": "metro",
 "source": "decoryah",
-"source_title": "decoryah (MiSTer_decoryah)",
+"source_title": "decoryah",
 "channel": null,
 "rbf": "metro.rbf",
 "repo": "decoryah/Arcade-Metro_MiSTer",
@@ -2472,7 +2490,7 @@
 "id": "decoryah:metrod64",
 "name": "metrod64",
 "source": "decoryah",
-"source_title": "decoryah (MiSTer_decoryah)",
+"source_title": "decoryah",
 "channel": null,
 "rbf": "metrod64.rbf",
 "repo": "decoryah/Arcade-Metro_MiSTer",
@@ -2491,7 +2509,7 @@
 "id": "decoryah:metrof64",
 "name": "metrof64",
 "source": "decoryah",
-"source_title": "decoryah (MiSTer_decoryah)",
+"source_title": "decoryah",
 "channel": null,
 "rbf": "metrof64.rbf",
 "repo": "decoryah/Arcade-Metro_MiSTer",
@@ -2510,7 +2528,7 @@
 "id": "decoryah:monstermaulers",
 "name": "monstermaulers (decoryah)",
 "source": "decoryah",
-"source_title": "decoryah (MiSTer_decoryah)",
+"source_title": "decoryah",
 "channel": "repository only",
 "rbf": "monstermaulers_20261011.rbf",
 "repo": "decoryah/Arcade-MonsterMaulers_MiSTer",
@@ -2531,7 +2549,7 @@
 "id": "decoryah:ohmygod",
 "name": "ohmygod (decoryah)",
 "source": "decoryah",
-"source_title": "decoryah (MiSTer_decoryah)",
+"source_title": "decoryah",
 "channel": "repository only",
 "rbf": "ohmygod_20261010.rbf",
 "repo": "decoryah/Arcade-OhMyGod_MiSTer",
@@ -2552,7 +2570,7 @@
 "id": "decoryah:pgm2",
 "name": "PGM2",
 "source": "decoryah",
-"source_title": "decoryah (MiSTer_decoryah)",
+"source_title": "decoryah",
 "channel": null,
 "rbf": "PGM2.rbf",
 "repo": "decoryah/Arcade-IGSPGM2_MiSTer",
@@ -2571,7 +2589,7 @@
 "id": "decoryah:taitol",
 "name": "taitol (decoryah)",
 "source": "decoryah",
-"source_title": "decoryah (MiSTer_decoryah)",
+"source_title": "decoryah",
 "channel": "repository only",
 "rbf": "taitol_20261007.rbf",
 "repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
@@ -2592,7 +2610,7 @@
 "id": "decoryah:violentstorm",
 "name": "violentstorm",
 "source": "decoryah",
-"source_title": "decoryah (MiSTer_decoryah)",
+"source_title": "decoryah",
 "channel": null,
 "rbf": "violentstorm.rbf",
 "repo": "decoryah/Arcade-ViolentStorm_MiSTer",
@@ -11146,6 +11164,24 @@
 "ongo:meathax_zeroteam"
 ],
 "first_recorded": "2026-10-09",
+"last_seen": "2026-10-18"
+},
+"ongo:aqua_jack": {
+"id": "ongo:aqua_jack",
+"name": "Aqua_Jack",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Aqua_Jack.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-18",
 "last_seen": "2026-10-18"
 },
 "ongo:argus": {
@@ -19756,6 +19792,34 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Appoooh.mra"
+}
+},
+"aquajack": {
+"bazset:aqua_jack": {
+"core": "bazset:aqua_jack",
+"date": "2026-10-18",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Aqua Jack (World).mra",
+"mra": "_Arcade/_BAZSET/Aqua Jack (World).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"ongo:aqua_jack": {
+"core": "ongo:aqua_jack",
+"date": "2026-10-18",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Aqua Jack (World).mra",
+"mra": "_Arcade/_BAZSET/Aqua Jack (World).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 }
 },
 "aquario": {
@@ -105340,7 +105404,7 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/The Simpsons (4 Players World, set 1).mra",
-"mra": "_Arcade/_MeatCores/The Simpsons.mra",
+"mra": "_Arcade/_MeatCores/Simpsons.mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-18"
 }
