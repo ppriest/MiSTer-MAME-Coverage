@@ -1185,7 +1185,11 @@
   (function () {
     const head = $("header.top"), row = head && $(".issue", head);
     if (!head || !row) return;
-    const fit = () => { head.style.top = -Math.max(0, Math.round(row.getBoundingClientRect().top - head.getBoundingClientRect().top)) + "px"; };
+    // Once the heading has slid up to this strip, the title joins the row in front of the links.
+    const fit = () => { head.style.top = -Math.max(0, Math.round(row.getBoundingClientRect().top - head.getBoundingClientRect().top)) + "px"; onScroll(); };
+    const onScroll = () => head.classList.toggle("stuck", scrollY > 0 && scrollY >= -parseFloat(head.style.top || "0") - 1);
+    addEventListener("scroll", onScroll, { passive: true });
+    row.querySelector(".issue-title").addEventListener("click", ev => { ev.preventDefault(); scrollTo({ top: 0, behavior: "smooth" }); });
     fit();
     if (window.ResizeObserver) new ResizeObserver(fit).observe(head); else addEventListener("resize", fit);
   })();
