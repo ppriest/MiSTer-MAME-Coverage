@@ -275,6 +275,8 @@ h3.hwdrv { margin: 14px 0 6px; font-size: 13px; text-transform: none; letter-spa
 #lightbox button { background: rgba(255, 255, 255, .14); color: #fff; border: 0; border-radius: 50%; width: 44px; height: 44px; font-size: 28px; line-height: 1; cursor: pointer; flex: none; }
 #lightbox button:hover, #lightbox button:focus-visible { background: rgba(255, 255, 255, .3); outline: none; }
 #lightbox .lb-close { position: fixed; top: 14px; right: 14px; }
+#lightbox .lb-play { position: fixed; top: 14px; left: 14px; font-size: 20px; padding-left: 8px; }
+#lightbox .lb-play[hidden] { display: none; }
 #lightbox.single .lb-prev, #lightbox.single .lb-next { visibility: hidden; }
 @media (max-width: 640px) { #lightbox figure { max-width: calc(100vw - 112px); } #lightbox button { width: 36px; height: 36px; } }
 

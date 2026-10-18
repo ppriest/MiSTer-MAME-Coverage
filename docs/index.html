@@ -8,7 +8,10 @@
 <title>MiSTer MAME Coverage</title>
 <meta name="description" content="Which MAME arcade titles are playable on MiSTer FPGA cores, which remain, and how coverage grew over time.">
 <link rel="canonical" href="https://mister-mame-coverage-docs.vercel.app/">
-<link rel="stylesheet" href="style.css?v=e19e67ad21">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css?v=7a8bada8a8">
 </head>
 <body>
 <header class="top">
@@ -294,6 +297,7 @@
   <section id="tab-about" class="tab" role="tabpanel" hidden>
     <h2>What this is</h2>
     <p>A comparison of the arcade machines MAME emulates with the ROM sets MiSTer FPGA cores can load, to show what is still missing on MiSTer. Everything on this page is computed by a Python script (<a href="https://github.com/ppriest/MiSTer-MAME-Coverage">source</a>) and served as static files.</p>
+    <p class="muted">The favicon is <a href="https://github.com/baxysquare/mister_kun" target="_blank" rel="noopener">MiSTer-Kun</a>, the MiSTer mascot created by HeWhoisRed and remastered by baxysquare, used under its licence (a gift to the MiSTer community; credit appreciated).</p>
     <h2>How it is built</h2>
     <ul>
       <li><strong>MAME side.</strong> The <code>-listxml</code> output mamedev attaches to each release. A machine counts as <em>arcade</em> when it is runnable, takes coins, has a video display and is not flagged mechanical; gambling boards (by driver folder, driver file or words such as poker, slot, bingo in the title) and mahjong boards are categorised separately and left out of the headline counts. <em>Working</em> means MAME does not flag it <code>MACHINE_NOT_WORKING</code> (listxml <code>emulation="preliminary"</code>). Not-working sets are kept in the data but excluded from every default count.</li>
@@ -349,6 +353,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=cea88d4de0"></script>
+<script src="app.js?v=4a61083219"></script>
 </body>
 </html>

@@ -477,7 +477,7 @@
       const cls = ncov === 0 ? "uncovered" : ncov < nsets ? "partial" : "covered";
       return `<tr class="${cls}${t.working ? "" : " nw"}" data-t="${esc(t.name)}">
         <td class="exp" title="show sets">${S.open.has(t.name) ? "▾" : "▸"}</td>
-        <td class="act">${t.cores.length ? `<button type="button" class="launch" data-launch="${esc(launchScript(t))}" title="launch on my MiSTer via Zaparoo">▶</button>` : ""}</td>
+        <td class="act">${t.cores.length ? `<button type="button" class="launch" data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}" title="launch on my MiSTer via Zaparoo">▶</button>` : ""}</td>
         <td>${esc(t.desc)}</td>
         <td class="set">${esc(t.name)}</td>
         <td class="num">${esc(t.year)}</td>
@@ -654,7 +654,7 @@
       : withImg.slice().sort((x, y) => (y.covered - x.covered) || x.desc.localeCompare(y.desc)).map(t => ({ t, k: t.img.ingame ? "ingame" : "title" }));
     const shown = items.slice(0, SHOT_MAX);
     const note = items.length > shown.length ? ` <span class="muted">(first ${shown.length} of ${fmt(items.length)})</span>` : "";
-    return `<div class="gallery-box"><h4>Screenshots${note}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure title="${esc(t.desc)} (${esc(t.year)})" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}">
+    return `<div class="gallery-box"><h4>Screenshots${note}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure title="${esc(t.desc)} (${esc(t.year)})" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
       <img loading="lazy" src="${esc(IMAGE_BASE + "/" + t.img[k])}" alt="${esc(t.desc)}" onerror="this.closest('figure').remove()">
       <figcaption>${esc(t.desc)}${both ? ` <span class="muted">${k === "title" ? "title screen" : "in game"}</span>` : ""}</figcaption></figure>`).join("")}</div></div>`;
   }
@@ -929,10 +929,24 @@
     if (!/^[a-z]+:\/\//i.test(host)) host = "http://" + host;
     if (!/:\d+$/.test(host)) host += ":7497";
     // Opened as a navigation, not fetch(): an https page may not fetch() a plain-http LAN address, but it may open one.
-    const w = window.open(`${host.replace(/\/$/, "")}/run/${encodeURIComponent(b.dataset.launch)}`, "zaparoo", "popup,width=420,height=240");
+    const url = `${host.replace(/\/$/, "")}/run/${encodeURIComponent(b.dataset.launch)}`;
+    const w = window.open("", "zaparoo", "popup,width=420,height=240");
+    if (w) {
+      // The popup says what is being launched (a blank page of ours), then moves on to the Zaparoo request, which answers with
+      // a page we cannot change.
+      try {
+        const name = b.dataset.title || "this game";
+        w.document.title = `Launching ${name}`;
+        w.document.body.setAttribute("style", "margin:0;display:flex;align-items:center;justify-content:center;height:100vh;background:#0e7cb6;color:#fff;font:600 17px system-ui,sans-serif;text-align:center;padding:0 18px;box-sizing:border-box");
+        w.document.body.textContent = `Launching \u2018${name}\u2019 via Zaparoo\u2026`;
+        setTimeout(() => { try { w.location.href = url; } catch (e) { /* closed */ } }, 900);
+      } catch (e) { w.location.href = url; }      // an earlier launch window is still open on the MiSTer's address: just reuse it
+    }
     // Zaparoo answers with an empty page when it accepts the request and with an error text ("Forbidden", ...) when it
-    // refuses. A cross-origin popup cannot be read, so leave it open for the person to look at.
-    if (!w) { b.textContent = "popup blocked"; setTimeout(() => { b.textContent = "▶"; }, 2500); }
+    // refuses; a cross-origin popup cannot be read, so it is simply closed after a moment (the page that opened it may close it).
+    if (!w) { b.textContent = "popup blocked"; setTimeout(() => { b.textContent = "▶"; }, 2500); return; }
+    b.textContent = "…";
+    setTimeout(() => { try { w.close(); } catch (e) { /* already closed */ } b.textContent = "▶"; }, 3200);
   });
   document.addEventListener("click", ev => { const b = ev.target.closest("button.plus1"); if (b) { ev.stopPropagation(); openVote(b.dataset.kind, b.dataset.key); } });
 
@@ -1052,7 +1066,7 @@
   (function () {
     const dlg = document.createElement("dialog");
     dlg.id = "lightbox"; dlg.setAttribute("aria-label", "Screenshot");
-    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><div class="lb-frame"><img alt=""><span class="lb-scan"></span><canvas class="lb-crt" hidden></canvas></div><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button><span class="lb-fxs"><button type="button" class="lb-fx" data-fx="scan" title="scanlines (S)"></button><button type="button" class="lb-fx" data-fx="crt" title="CRT curve (C)"></button></span>';
+    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-play launch" aria-label="Play on my MiSTer via Zaparoo" title="play on my MiSTer via Zaparoo" hidden>▶</button><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><div class="lb-frame"><img alt=""><span class="lb-scan"></span><canvas class="lb-crt" hidden></canvas></div><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button><span class="lb-fxs"><button type="button" class="lb-fx" data-fx="scan" title="scanlines (S)"></button><button type="button" class="lb-fx" data-fx="crt" title="CRT curve (C)"></button></span>';
     document.body.appendChild(dlg);
     const img = dlg.querySelector("img"), cap = dlg.querySelector("figcaption"), cv = dlg.querySelector(".lb-crt");
     const fxScan = dlg.querySelector('[data-fx="scan"]'), fxCrt = dlg.querySelector('[data-fx="crt"]');
@@ -1153,6 +1167,8 @@
       i = (n + set.length) % set.length;
       const fig = set[i];
       img.dataset.n = fig.dataset.n || "1"; img.dataset.port = fig.dataset.port || "0";
+      const play = dlg.querySelector(".lb-play");                                // the same launch as the ▶ in the titles table
+      play.hidden = !fig.dataset.launch; play.dataset.launch = fig.dataset.launch || ""; play.dataset.title = fig.dataset.title || ""; play.textContent = "▶";
       img.src = fig.dataset.src; img.alt = fig.querySelector("img")?.alt || "";
       cap.textContent = fig.querySelector("figcaption")?.textContent || img.alt;
       dlg.classList.toggle("single", set.length < 2);
