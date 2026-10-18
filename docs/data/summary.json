@@ -1,30 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-18T09:58:03+00:00",
+  "generated": "2026-10-18T12:45:05+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-18T09:57:59+00:00",
+  "mister_generated": "2026-10-18T12:44:59+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-18",
   "ledger_runs": [
-   {
-    "date": "2026-10-18",
-    "note": "alamone 2026-10-12",
-    "cores": 3,
-    "sets": 6,
-    "pairs": 36,
-    "dates_improved": 3,
-    "cores_removed": 5
-   },
-   {
-    "date": "2026-10-18",
-    "note": "alamone 2026-10-12",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-18",
     "note": "alamone 2026-10-12",
@@ -50,6 +32,24 @@
     "sets": 0,
     "pairs": 32,
     "dates_improved": 25,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-18",
+    "note": "alamone 2026-10-12",
+    "cores": 4,
+    "sets": 0,
+    "pairs": 32,
+    "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-18",
+    "note": "alamone 2026-10-12",
+    "cores": 4,
+    "sets": 0,
+    "pairs": 32,
+    "dates_improved": 0,
     "cores_removed": 0
    }
   ],
@@ -110,7 +110,7 @@
    "kyle": "kyledlester (MiSTer_DB)",
    "gm0rk": "Gm0rkCores (Gm0rk)",
    "usquebagh": "Usquebagh (GitHub repositories)",
-   "decoryah": "decoryah (GitHub repositories)",
+   "decoryah": "decoryah (MiSTer_decoryah)",
    "rossops": "rossops (GitHub repositories)",
    "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
    "repo": "GitHub repository only"
@@ -193,8 +193,8 @@
     "db_url": null
    },
    "decoryah": {
-    "page": "https://github.com/decoryah?tab=repositories",
-    "db_url": null
+    "page": "https://github.com/decoryah/MiSTer_decoryah",
+    "db_url": "https://raw.githubusercontent.com/decoryah/MiSTer_decoryah/db/db.json.zip"
    },
    "rossops": {
     "page": "https://github.com/rossops?tab=repositories",
@@ -2426,7 +2426,7 @@
     "source": "ongo",
     "repo": "meathax/meatcores",
     "dirs": null,
-    "mras": 168
+    "mras": 159
    },
    {
     "source": "ongo",
@@ -2727,6 +2727,12 @@
     "repo": "decoryah/Arcade-ViolentStorm_MiSTer",
     "dirs": null,
     "mras": 7
+   },
+   {
+    "source": "decoryah",
+    "repo": "decoryah/MiSTer_decoryah",
+    "dirs": null,
+    "mras": 0
    },
    {
     "source": "xela",
@@ -5076,7 +5082,7 @@
    "id": "decoryah:gaiapolis",
    "name": "gaiapolis",
    "source": "decoryah",
-   "source_title": "decoryah (GitHub repositories)",
+   "source_title": "decoryah (MiSTer_decoryah)",
    "channel": null,
    "rbf": "gaiapolis.rbf",
    "repo": "decoryah/Arcade-Gaiapolis_MiSTer",
@@ -5099,7 +5105,7 @@
    "id": "decoryah:heavyunit",
    "name": "heavyunit",
    "source": "decoryah",
-   "source_title": "decoryah (GitHub repositories)",
+   "source_title": "decoryah (MiSTer_decoryah)",
    "channel": null,
    "rbf": "heavyunit.rbf",
    "repo": "decoryah/Arcade-HeavyUnit_MiSTer",
@@ -5122,7 +5128,7 @@
    "id": "decoryah:jchan",
    "name": "jchan",
    "source": "decoryah",
-   "source_title": "decoryah (GitHub repositories)",
+   "source_title": "decoryah (MiSTer_decoryah)",
    "channel": null,
    "rbf": "jchan.rbf",
    "repo": "decoryah/Arcade-JackieChan_MiSTer",
@@ -5145,7 +5151,7 @@
    "id": "decoryah:mcatadv",
    "name": "mcatadv (decoryah)",
    "source": "decoryah",
-   "source_title": "decoryah (GitHub repositories)",
+   "source_title": "decoryah (MiSTer_decoryah)",
    "channel": "repository only",
    "rbf": "mcatadv_20261005.rbf",
    "repo": "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
@@ -5170,7 +5176,7 @@
    "id": "decoryah:metamorphicforce",
    "name": "metamorphicforce (decoryah)",
    "source": "decoryah",
-   "source_title": "decoryah (GitHub repositories)",
+   "source_title": "decoryah (MiSTer_decoryah)",
    "channel": "repository only",
    "rbf": "metamorphicforce_20261011.rbf",
    "repo": "decoryah/Arcade-MetamorphicForce_MiSTer",
@@ -5195,7 +5201,7 @@
    "id": "decoryah:metro",
    "name": "metro",
    "source": "decoryah",
-   "source_title": "decoryah (GitHub repositories)",
+   "source_title": "decoryah (MiSTer_decoryah)",
    "channel": null,
    "rbf": "metro.rbf",
    "repo": "decoryah/Arcade-Metro_MiSTer",
@@ -5218,7 +5224,7 @@
    "id": "decoryah:metrod64",
    "name": "metrod64",
    "source": "decoryah",
-   "source_title": "decoryah (GitHub repositories)",
+   "source_title": "decoryah (MiSTer_decoryah)",
    "channel": null,
    "rbf": "metrod64.rbf",
    "repo": "decoryah/Arcade-Metro_MiSTer",
@@ -5241,7 +5247,7 @@
    "id": "decoryah:metrof64",
    "name": "metrof64",
    "source": "decoryah",
-   "source_title": "decoryah (GitHub repositories)",
+   "source_title": "decoryah (MiSTer_decoryah)",
    "channel": null,
    "rbf": "metrof64.rbf",
    "repo": "decoryah/Arcade-Metro_MiSTer",
@@ -5264,7 +5270,7 @@
    "id": "decoryah:monstermaulers",
    "name": "monstermaulers (decoryah)",
    "source": "decoryah",
-   "source_title": "decoryah (GitHub repositories)",
+   "source_title": "decoryah (MiSTer_decoryah)",
    "channel": "repository only",
    "rbf": "monstermaulers_20261011.rbf",
    "repo": "decoryah/Arcade-MonsterMaulers_MiSTer",
@@ -5289,7 +5295,7 @@
    "id": "decoryah:ohmygod",
    "name": "ohmygod (decoryah)",
    "source": "decoryah",
-   "source_title": "decoryah (GitHub repositories)",
+   "source_title": "decoryah (MiSTer_decoryah)",
    "channel": "repository only",
    "rbf": "ohmygod_20261010.rbf",
    "repo": "decoryah/Arcade-OhMyGod_MiSTer",
@@ -5314,7 +5320,7 @@
    "id": "decoryah:pgm2",
    "name": "PGM2",
    "source": "decoryah",
-   "source_title": "decoryah (GitHub repositories)",
+   "source_title": "decoryah (MiSTer_decoryah)",
    "channel": null,
    "rbf": "PGM2.rbf",
    "repo": "decoryah/Arcade-IGSPGM2_MiSTer",
@@ -5337,7 +5343,7 @@
    "id": "decoryah:taitol",
    "name": "taitol (decoryah)",
    "source": "decoryah",
-   "source_title": "decoryah (GitHub repositories)",
+   "source_title": "decoryah (MiSTer_decoryah)",
    "channel": "repository only",
    "rbf": "taitol_20261007.rbf",
    "repo": "decoryah/Arcade-TaitoLSystem_MiSTer",
@@ -5362,7 +5368,7 @@
    "id": "decoryah:violentstorm",
    "name": "violentstorm",
    "source": "decoryah",
-   "source_title": "decoryah (GitHub repositories)",
+   "source_title": "decoryah (MiSTer_decoryah)",
    "channel": null,
    "rbf": "violentstorm.rbf",
    "repo": "decoryah/Arcade-ViolentStorm_MiSTer",
