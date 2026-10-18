@@ -77,6 +77,12 @@
     return href ? `<a class="${cls}" href="${esc(href)}" target="_blank" rel="noopener" title="${esc(title)}">${inner}</a>` : `<span class="${cls}" title="${esc(title)}">${inner}</span>`;
   }
 
+  // The source column's pill links to the source's page (its database's repository or a developer's profile).
+  function sourceBadge(c) {
+    const page = ((S.data && S.data.meta.source_info || {})[c.source] || {}).page || c.url;     // a loose repository has no database page: its own repository
+    return page ? `<a class="badge src-${esc(c.source)}" href="${esc(page)}" target="_blank" rel="noopener" title="open ${esc(c.source_title)}">${esc(c.source_title)}</a>` : `<span class="badge src-${esc(c.source)}">${esc(c.source_title)}</span>`;
+  }
+
   // ---------- tiles ----------
   function renderTiles() {
     const c = S.data.meta.counts;
@@ -726,7 +732,7 @@
     $("#cores-table tbody").innerHTML = rows.map(c => `<tr data-c="${esc(c.id)}">
       <td class="exp" title="show details">${S.openCores.has(c.id) ? "▾" : "▸"}</td>
       <td><a href="#" data-core="${esc(c.id)}">${esc(c.name)}</a>${c.binary_only ? ' <span class="flag" title="binary-only: no public source known">bin</span>' : ""}${c.channel && c.channel !== "default" ? ` <span class="flag">${esc(c.channel)}</span>` : ""}</td>
-      <td><span class="badge src-${esc(c.source)}">${esc(c.source_title)}</span></td>
+      <td>${sourceBadge(c)}</td>
       <td class="set">${c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.repo)}</a>` : '<span class="muted">not published</span>'}</td>
       <td class="set">${(c.mame_drivers || []).map(esc).join("<br>")}</td>
       <td class="num">${c.ntitles}</td><td class="num">${c.nsets}</td>
