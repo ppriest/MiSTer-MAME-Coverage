@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-18T14:22:54+00:00",
+  "generated": "2026-10-18T19:35:57+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-18T14:22:49+00:00",
+  "mister_generated": "2026-10-18T19:35:31+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-18",
   "ledger_runs": [
-   {
-    "date": "2026-10-18",
-    "note": "alamone 2026-10-12",
-    "cores": 4,
-    "sets": 0,
-    "pairs": 32,
-    "dates_improved": 25,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-18",
     "note": "alamone 2026-10-12",
@@ -51,6 +42,15 @@
     "pairs": 45,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-18",
+    "note": "alamone 2026-10-12",
+    "cores": 14,
+    "sets": 97,
+    "pairs": 184,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
    "catver_entries": 37998,
    "mad_entries": 2995,
-   "mra_entries": 3458,
+   "mra_entries": 3467,
    "unmapped": [
     {
      "raw": "not classified",
@@ -2426,7 +2426,7 @@
     "source": "ongo",
     "repo": "meathax/meatcores",
     "dirs": null,
-    "mras": 168
+    "mras": 178
    },
    {
     "source": "ongo",
@@ -2792,13 +2792,13 @@
   "counts": {
    "titles": 6825,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2178,
+   "working_arcade_titles_covered": 2245,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5594,
-   "working_arcade_titles_source": 1902,
-   "working_arcade_titles_binary_only": 276,
-   "cores": 648,
-   "binary_only_cores": 228,
+   "working_arcade_sets_covered": 5690,
+   "working_arcade_titles_source": 1970,
+   "working_arcade_titles_binary_only": 275,
+   "cores": 655,
+   "binary_only_cores": 231,
    "unmatched_sets": 428
   }
  },
@@ -2919,6 +2919,28 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-17"
+  },
+  {
+   "id": "bazset:bazturtship",
+   "name": "bazturtship",
+   "source": "bazset",
+   "source_title": "bazset (MiSTer_BAZSET)",
+   "channel": null,
+   "rbf": "bazturtship.rbf",
+   "repo": "bazset/MiSTer_BAZSET",
+   "url": "https://github.com/bazset/MiSTer_BAZSET",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-18"
   },
   {
    "id": "bazset:bonksadventure",
@@ -13865,6 +13887,55 @@
    "first_date": "2026-09-23"
   },
   {
+   "id": "jtpr:jtargus",
+   "name": "jtargus",
+   "source": "jtpr",
+   "source_title": "jtcores unreleased (PRs, branches)",
+   "channel": null,
+   "rbf": "jtargus.rbf",
+   "repo": "jotego/jtcores",
+   "url": "https://github.com/jotego/jtcores/pull/1388",
+   "build_date": null,
+   "status": "open PR",
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": "Argus core vibe coded by Fulvio",
+   "aliases": [
+    "ongo:meathax_argus",
+    "ongo:argus",
+    "meat:argus"
+   ],
+   "first_recorded": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "binary_only": false,
+   "nsets": 4,
+   "ntitles": 3,
+   "first_date": "2026-04-30"
+  },
+  {
+   "id": "jtpr:jtblkpan",
+   "name": "jtblkpan",
+   "source": "jtpr",
+   "source_title": "jtcores unreleased (PRs, branches)",
+   "channel": null,
+   "rbf": "jtblkpan.rbf",
+   "repo": "jotego/jtcores",
+   "url": "https://github.com/jotego/jtcores/pull/1637",
+   "build_date": null,
+   "status": "open PR",
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": "feat(nemesis,blkpan): Konami GX400 and GX604 cores",
+   "first_recorded": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "binary_only": false,
+   "nsets": 23,
+   "ntitles": 13,
+   "first_date": "2026-08-25"
+  },
+  {
    "id": "jtpr:jtf1grpr",
    "name": "jtf1grpr",
    "source": "jtpr",
@@ -13936,6 +14007,53 @@
    "first_date": "2026-09-04"
   },
   {
+   "id": "jtpr:jtnemesis",
+   "name": "jtnemesis",
+   "source": "jtpr",
+   "source_title": "jtcores unreleased (PRs, branches)",
+   "channel": null,
+   "rbf": "jtnemesis.rbf",
+   "repo": "jotego/jtcores",
+   "url": "https://github.com/jotego/jtcores/pull/1637",
+   "build_date": null,
+   "status": "open PR",
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": "feat(nemesis,blkpan): Konami GX400 and GX604 cores",
+   "aliases": [
+    "ongo:nemesis"
+   ],
+   "first_recorded": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "binary_only": false,
+   "nsets": 23,
+   "ntitles": 13,
+   "first_date": "2023-10-02"
+  },
+  {
+   "id": "jtpr:jtpopeye",
+   "name": "jtpopeye",
+   "source": "jtpr",
+   "source_title": "jtcores unreleased (PRs, branches)",
+   "channel": null,
+   "rbf": "jtpopeye.rbf",
+   "repo": "jotego/jtcores",
+   "url": "https://github.com/jotego/jtcores/pull/1678",
+   "build_date": null,
+   "status": "open PR",
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": "New  Core: Popeye",
+   "first_recorded": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "binary_only": false,
+   "nsets": 9,
+   "ntitles": 2,
+   "first_date": "2026-10-18"
+  },
+  {
    "id": "jtpr:jtpspike",
    "name": "jtpspike",
    "source": "jtpr",
@@ -13961,6 +14079,28 @@
    "first_date": "2026-09-16"
   },
   {
+   "id": "jtpr:jtseicro",
+   "name": "jtseicro",
+   "source": "jtpr",
+   "source_title": "jtcores unreleased (PRs, branches)",
+   "channel": null,
+   "rbf": "jtseicro.rbf",
+   "repo": "jotego/jtcores",
+   "url": "https://github.com/jotego/jtcores/pull/1675",
+   "build_date": null,
+   "status": "open PR",
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": "feat(): Seicross - Radical Radial - Frisky tom",
+   "first_recorded": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "binary_only": false,
+   "nsets": 10,
+   "ntitles": 3,
+   "first_date": "2026-10-15"
+  },
+  {
    "id": "jtpr:jtsysfl",
    "name": "jtsysfl",
    "source": "jtpr",
@@ -13982,6 +14122,28 @@
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2026-10-03"
+  },
+  {
+   "id": "jtpr:jttaitob",
+   "name": "jttaitob",
+   "source": "jtpr",
+   "source_title": "jtcores unreleased (PRs, branches)",
+   "channel": null,
+   "rbf": "jttaitob.rbf",
+   "repo": "jotego/jtcores",
+   "url": "https://github.com/jotego/jtcores/pull/1514",
+   "build_date": null,
+   "status": "open PR",
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": "feat(): Add taito-b system core",
+   "first_recorded": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "binary_only": false,
+   "nsets": 7,
+   "ntitles": 3,
+   "first_date": "2026-08-07"
   },
   {
    "id": "kuze:ginganin",
@@ -15220,6 +15382,28 @@
    "first_date": "2026-09-22"
   },
   {
+   "id": "meat:pwb351024a",
+   "name": "PWB351024A",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-PWB351024A.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "binary_only": true,
+   "nsets": 9,
+   "ntitles": 2,
+   "first_date": "2026-10-19"
+  },
+  {
    "id": "meat:segasystem24",
    "name": "SegaSystem24",
    "source": "meat",
@@ -15636,28 +15820,6 @@
    "first_date": "2026-10-12"
   },
   {
-   "id": "ongo:bazturtship",
-   "name": "bazturtship",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "bazturtship.rbf",
-   "repo": "bazset/MiSTer_BAZSET",
-   "url": "https://github.com/bazset/MiSTer_BAZSET",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-18",
-   "last_seen": "2026-10-18",
-   "binary_only": true,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-10-18"
-  },
-  {
    "id": "ongo:ctribe",
    "name": "ctribe_mister",
    "source": "ongo",
@@ -15955,29 +16117,6 @@
    "nsets": 8,
    "ntitles": 3,
    "first_date": "2026-08-15"
-  },
-  {
-   "id": "ongo:nemesis",
-   "name": "nemesis",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "nemesis.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-18",
-   "binary_only": true,
-   "nsets": 2,
-   "ntitles": 1,
-   "first_date": "2022-07-16"
   },
   {
    "id": "ongo:punchout_test",
@@ -16415,6 +16554,28 @@
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2026-10-10"
+  },
+  {
+   "id": "ppriest:playchoice10",
+   "name": "PlayChoice10",
+   "source": "ppriest",
+   "source_title": "ppriest (Tourniquet)",
+   "channel": null,
+   "rbf": "PlayChoice10.rbf",
+   "repo": "ppriest/Arcade-PlayChoice10_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-PlayChoice10_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-18",
+   "last_seen": "2026-10-18",
+   "binary_only": false,
+   "nsets": 56,
+   "ntitles": 54,
+   "first_date": "2026-10-18"
   },
   {
    "id": "ppriest:seta",
@@ -17078,6 +17239,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-18",
+   "aliases": [],
    "last_seen": "2026-10-18",
    "binary_only": true,
    "nsets": 9,
@@ -20001,8 +20163,8 @@
    "sets": 13,
    "sets_covered": 5,
    "cores": [
-    "jt:jtsarms",
-    "ongo:bazturtship"
+    "bazset:bazturtship",
+    "jt:jtsarms"
    ],
    "first": "2020-08-10"
   },
@@ -21724,11 +21886,12 @@
    "titles": 3,
    "covered": 3,
    "sets": 4,
-   "sets_covered": 3,
+   "sets_covered": 4,
    "cores": [
+    "jtpr:jtargus",
     "meat:argus"
    ],
-   "first": "2026-10-14"
+   "first": "2026-04-30"
   },
   {
    "sourcefile": "jaleco/blueprnt.cpp",
@@ -22491,11 +22654,13 @@
   {
    "sourcefile": "konami/mainevt.cpp",
    "titles": 2,
-   "covered": 0,
+   "covered": 2,
    "sets": 9,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 9,
+   "cores": [
+    "meat:pwb351024a"
+   ],
+   "first": "2026-10-19"
   },
   {
    "sourcefile": "konami/megazone.cpp",
@@ -22560,14 +22725,15 @@
   {
    "sourcefile": "konami/nemesis.cpp",
    "titles": 13,
-   "covered": 5,
+   "covered": 13,
    "sets": 23,
-   "sets_covered": 10,
+   "sets_covered": 23,
    "cores": [
     "dist:bubsysrom",
     "dist:salamander",
     "jlrh:ffkonamigt",
-    "ongo:nemesis"
+    "jtpr:jtblkpan",
+    "jtpr:jtnemesis"
    ],
    "first": "2022-07-16"
   },
@@ -24590,11 +24756,13 @@
   {
    "sourcefile": "nichibutsu/seicross.cpp",
    "titles": 3,
-   "covered": 0,
+   "covered": 3,
    "sets": 10,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 10,
+   "cores": [
+    "jtpr:jtseicro"
+   ],
+   "first": "2026-10-15"
   },
   {
    "sourcefile": "nichibutsu/shettle.cpp",
@@ -24730,20 +24898,23 @@
   {
    "sourcefile": "nintendo/playch10.cpp",
    "titles": 54,
-   "covered": 0,
+   "covered": 54,
    "sets": 56,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 56,
+   "cores": [
+    "ppriest:playchoice10"
+   ],
+   "first": "2026-10-18"
   },
   {
    "sourcefile": "nintendo/popeye.cpp",
    "titles": 2,
    "covered": 2,
    "sets": 10,
-   "sets_covered": 2,
+   "sets_covered": 9,
    "cores": [
-    "dist:popeye"
+    "dist:popeye",
+    "jtpr:jtpopeye"
    ],
    "first": "2020-03-03"
   },
@@ -25602,6 +25773,7 @@
    "cores": [
     "jt:jts16",
     "jt:jts16b",
+    "jtpr:jttaitob",
     "kyle:taitob"
    ],
    "first": "2021-06-11"
@@ -27053,9 +27225,10 @@
    "sets": 35,
    "sets_covered": 33,
    "cores": [
+    "jtpr:jttaitob",
     "kyle:taitob"
    ],
-   "first": "2026-09-02"
+   "first": "2026-08-07"
   },
   {
    "sourcefile": "taito/taito_f2.cpp",

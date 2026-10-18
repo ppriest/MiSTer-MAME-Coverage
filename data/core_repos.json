@@ -1659,6 +1659,14 @@
  "jtpr:jtarblst": [
   "jotego/jtcores"
  ],
+ "jtpr:jtargus": [
+  "OngoGablogian/MiSTer_Ongo",
+  "jotego/jtcores",
+  "meathax/meatcores"
+ ],
+ "jtpr:jtblkpan": [
+  "jotego/jtcores"
+ ],
  "jtpr:jtf1grpr": [
   "OngoGablogian/MiSTer_Ongo",
   "jotego/jtcores"
@@ -1669,11 +1677,25 @@
  "jtpr:jtmnymny": [
   "jotego/jtcores"
  ],
+ "jtpr:jtnemesis": [
+  "GX400-Friends/gx400-bin",
+  "OngoGablogian/MiSTer_Ongo",
+  "jotego/jtcores"
+ ],
+ "jtpr:jtpopeye": [
+  "jotego/jtcores"
+ ],
  "jtpr:jtpspike": [
   "OngoGablogian/MiSTer_Ongo",
   "jotego/jtcores"
  ],
+ "jtpr:jtseicro": [
+  "jotego/jtcores"
+ ],
  "jtpr:jtsysfl": [
+  "jotego/jtcores"
+ ],
+ "jtpr:jttaitob": [
   "jotego/jtcores"
  ],
  "kuze:ginganin": [
@@ -2191,6 +2213,9 @@
  ],
  "ongo:punchout_test": [
   "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:pwb351024a": [
+  "meathax/meatcores"
  ],
  "ongo:rainbowislands_bazset": [
   "bazset/MiSTer_BAZSET"

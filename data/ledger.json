@@ -6,15 +6,6 @@
 {
 "date": "2026-10-09",
 "note": "alamone 2026-10-05",
-"cores": 3,
-"sets": 1,
-"pairs": 24,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
-"date": "2026-10-09",
-"note": "alamone 2026-10-05",
 "cores": 7,
 "sets": 0,
 "pairs": 135,
@@ -461,6 +452,15 @@
 "pairs": 45,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-18",
+"note": "alamone 2026-10-12",
+"cores": 14,
+"sets": 97,
+"pairs": 184,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -560,6 +560,24 @@
 "note": null,
 "first_recorded": "2026-10-17",
 "aliases": [],
+"last_seen": "2026-10-18"
+},
+"bazset:bazturtship": {
+"id": "bazset:bazturtship",
+"name": "bazturtship",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "bazturtship.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-18",
 "last_seen": "2026-10-18"
 },
 "bazset:bonksadventure": {
@@ -9722,6 +9740,47 @@
 "aliases": [],
 "last_seen": "2026-10-18"
 },
+"jtpr:jtargus": {
+"id": "jtpr:jtargus",
+"name": "jtargus",
+"source": "jtpr",
+"source_title": "jtcores unreleased (PRs, branches)",
+"channel": null,
+"rbf": "jtargus.rbf",
+"repo": "jotego/jtcores",
+"url": "https://github.com/jotego/jtcores/pull/1388",
+"build_date": null,
+"status": "open PR",
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": "Argus core vibe coded by Fulvio",
+"aliases": [
+"ongo:meathax_argus",
+"ongo:argus",
+"meat:argus"
+],
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtblkpan": {
+"id": "jtpr:jtblkpan",
+"name": "jtblkpan",
+"source": "jtpr",
+"source_title": "jtcores unreleased (PRs, branches)",
+"channel": null,
+"rbf": "jtblkpan.rbf",
+"repo": "jotego/jtcores",
+"url": "https://github.com/jotego/jtcores/pull/1637",
+"build_date": null,
+"status": "open PR",
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": "feat(nemesis,blkpan): Konami GX400 and GX604 cores",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "jtpr:jtf1grpr": {
 "id": "jtpr:jtf1grpr",
 "name": "jtf1grpr",
@@ -9781,6 +9840,45 @@
 "aliases": [],
 "last_seen": "2026-10-18"
 },
+"jtpr:jtnemesis": {
+"id": "jtpr:jtnemesis",
+"name": "jtnemesis",
+"source": "jtpr",
+"source_title": "jtcores unreleased (PRs, branches)",
+"channel": null,
+"rbf": "jtnemesis.rbf",
+"repo": "jotego/jtcores",
+"url": "https://github.com/jotego/jtcores/pull/1637",
+"build_date": null,
+"status": "open PR",
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": "feat(nemesis,blkpan): Konami GX400 and GX604 cores",
+"aliases": [
+"ongo:nemesis"
+],
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtpopeye": {
+"id": "jtpr:jtpopeye",
+"name": "jtpopeye",
+"source": "jtpr",
+"source_title": "jtcores unreleased (PRs, branches)",
+"channel": null,
+"rbf": "jtpopeye.rbf",
+"repo": "jotego/jtcores",
+"url": "https://github.com/jotego/jtcores/pull/1678",
+"build_date": null,
+"status": "open PR",
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": "New  Core: Popeye",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "jtpr:jtpspike": {
 "id": "jtpr:jtpspike",
 "name": "jtpspike",
@@ -9802,6 +9900,24 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-18"
 },
+"jtpr:jtseicro": {
+"id": "jtpr:jtseicro",
+"name": "jtseicro",
+"source": "jtpr",
+"source_title": "jtcores unreleased (PRs, branches)",
+"channel": null,
+"rbf": "jtseicro.rbf",
+"repo": "jotego/jtcores",
+"url": "https://github.com/jotego/jtcores/pull/1675",
+"build_date": null,
+"status": "open PR",
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": "feat(): Seicross - Radical Radial - Frisky tom",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "jtpr:jtsysfl": {
 "id": "jtpr:jtsysfl",
 "name": "jtsysfl",
@@ -9819,6 +9935,24 @@
 "note": "Speed Racer, Final Lap R",
 "first_recorded": "2026-10-09",
 "aliases": [],
+"last_seen": "2026-10-18"
+},
+"jtpr:jttaitob": {
+"id": "jtpr:jttaitob",
+"name": "jttaitob",
+"source": "jtpr",
+"source_title": "jtcores unreleased (PRs, branches)",
+"channel": null,
+"rbf": "jttaitob.rbf",
+"repo": "jotego/jtcores",
+"url": "https://github.com/jotego/jtcores/pull/1514",
+"build_date": null,
+"status": "open PR",
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": "feat(): Add taito-b system core",
+"first_recorded": "2026-10-18",
 "last_seen": "2026-10-18"
 },
 "kuze:ginganin": {
@@ -10857,6 +10991,24 @@
 "aliases": [],
 "last_seen": "2026-10-18"
 },
+"meat:pwb351024a": {
+"id": "meat:pwb351024a",
+"name": "Arcade-PWB351024A",
+"source": "meat",
+"source_title": "MeatCores (meathax)",
+"channel": null,
+"rbf": "Arcade-PWB351024A.rbf",
+"repo": "meathax/meatcores",
+"url": "https://github.com/meathax/meatcores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "meat:segasystem24": {
 "id": "meat:segasystem24",
 "name": "Arcade-SegaSystem24",
@@ -11525,6 +11677,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-18",
+"aliases": [],
 "last_seen": "2026-10-18"
 },
 "ongo:blackwine-segasystem1-2": {
@@ -13237,6 +13390,24 @@
 "aliases": [],
 "last_seen": "2026-10-18"
 },
+"ongo:pwb351024a": {
+"id": "ongo:pwb351024a",
+"name": "Arcade-PWB351024A",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Arcade-PWB351024A.rbf",
+"repo": "meathax/meatcores",
+"url": "https://github.com/meathax/meatcores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "ongo:rainbowislands_bazset": {
 "id": "ongo:rainbowislands_bazset",
 "name": "RainbowIslands_bazset._20261008",
@@ -14149,6 +14320,24 @@
 "aliases": [],
 "last_seen": "2026-10-18"
 },
+"ppriest:playchoice10": {
+"id": "ppriest:playchoice10",
+"name": "PlayChoice10",
+"source": "ppriest",
+"source_title": "ppriest (Tourniquet)",
+"channel": null,
+"rbf": "PlayChoice10.rbf",
+"repo": "ppriest/Arcade-PlayChoice10_MiSTer",
+"url": "https://github.com/ppriest/Arcade-PlayChoice10_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "ppriest:seta": {
 "id": "ppriest:seta",
 "name": "Seta",
@@ -14707,6 +14896,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-18",
+"aliases": [],
 "last_seen": "2026-10-18"
 },
 "repo:model2": {
@@ -20179,6 +20369,19 @@
 }
 },
 "argus": {
+"jtpr:jtargus": {
+"core": "jtpr:jtargus",
+"date": "2026-04-30",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1388",
+"mra": "_Arcade/Argus.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "meat:argus": {
 "core": "meat:argus",
 "date": "2026-10-14",
@@ -25376,6 +25579,34 @@
 "last_seen": "2026-10-18"
 }
 },
+"blkpnthr": {
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
 "blktiger": {
 "jt:jtbtiger": {
 "core": "jt:jtbtiger",
@@ -28611,6 +28842,118 @@
 "last_seen": "2026-10-18"
 }
 },
+"bs_gradius": {
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"bs_gwarrior": {
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"bs_rf2": {
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"bs_twinbee": {
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
 "bstars": {
 "dist:neogeo": {
 "core": "dist:neogeo",
@@ -29496,6 +29839,19 @@
 }
 },
 "butasan": {
+"jtpr:jtargus": {
+"core": "jtpr:jtargus",
+"date": "2026-04-30",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1388",
+"mra": "_Arcade/Butasan - Pig's & Bomber's (Japan, English).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "meat:argus": {
 "core": "meat:argus",
 "date": "2026-10-14",
@@ -29533,6 +29889,21 @@
 "first_path": "_Arcade/Butasan - Pig's & Bomber's (Japan, English).mra",
 "mra": "_Arcade/Butasan - Pig's & Bomber's (Japan, English).mra",
 "first_recorded": "2026-10-14",
+"last_seen": "2026-10-18"
+}
+},
+"butasanj": {
+"jtpr:jtargus": {
+"core": "jtpr:jtargus",
+"date": "2026-04-30",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1388",
+"mra": null,
+"first_recorded": "2026-10-18",
 "last_seen": "2026-10-18"
 }
 },
@@ -32532,6 +32903,62 @@
 "mra": "_Arcade/Circus Charlie (Centuri, earlier).mra"
 }
 },
+"citybomb": {
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"citybombj": {
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
 "citycon": {
 "dist:cityconnection": {
 "core": "dist:cityconnection",
@@ -34905,6 +35332,19 @@
 }
 },
 "crimec": {
+"jtpr:jttaitob": {
+"core": "jtpr:jttaitob",
+"date": "2026-08-07",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1514",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "kyle:taitob": {
 "core": "kyle:taitob",
 "date": "2026-09-02",
@@ -34933,6 +35373,19 @@
 }
 },
 "crimecj": {
+"jtpr:jttaitob": {
+"core": "jtpr:jttaitob",
+"date": "2026-08-07",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1514",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "kyle:taitob": {
 "core": "kyle:taitob",
 "date": "2026-09-03",
@@ -34961,6 +35414,19 @@
 }
 },
 "crimecu": {
+"jtpr:jttaitob": {
+"core": "jtpr:jttaitob",
+"date": "2026-08-07",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1514",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "kyle:taitob": {
 "core": "kyle:taitob",
 "date": "2026-09-03",
@@ -39580,6 +40046,118 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Devil World.mra"
+}
+},
+"devstors": {
+"meat:pwb351024a": {
+"core": "meat:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Devastators.mra",
+"mra": "_Arcade/_MeatCores/Devastators.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"ongo:pwb351024a": {
+"core": "ongo:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Devastators.mra",
+"mra": "_Arcade/_MeatCores/Devastators.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"devstors2": {
+"meat:pwb351024a": {
+"core": "meat:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Devastators/Devastators (ver. 2).mra",
+"mra": "_Arcade/_MeatCores/_alternatives/_Devastators/Devastators (ver. 2).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"ongo:pwb351024a": {
+"core": "ongo:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Devastators/Devastators (ver. 2).mra",
+"mra": "_Arcade/_MeatCores/_alternatives/_Devastators/Devastators (ver. 2).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"devstorsv": {
+"meat:pwb351024a": {
+"core": "meat:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Devastators/Devastators (ver. V).mra",
+"mra": "_Arcade/_MeatCores/_alternatives/_Devastators/Devastators (ver. V).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"ongo:pwb351024a": {
+"core": "ongo:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Devastators/Devastators (ver. V).mra",
+"mra": "_Arcade/_MeatCores/_alternatives/_Devastators/Devastators (ver. V).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"devstorsx": {
+"meat:pwb351024a": {
+"core": "meat:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Devastators/Devastators (ver. X).mra",
+"mra": "_Arcade/_MeatCores/_alternatives/_Devastators/Devastators (ver. X).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"ongo:pwb351024a": {
+"core": "ongo:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Devastators/Devastators (ver. X).mra",
+"mra": "_Arcade/_MeatCores/_alternatives/_Devastators/Devastators (ver. X).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 }
 },
 "devzone": {
@@ -48329,6 +48907,51 @@
 "mra": "_Arcade/Frenzy (Rev RA1).mra"
 }
 },
+"friskyt": {
+"jtpr:jtseicro": {
+"core": "jtpr:jtseicro",
+"date": "2026-10-15",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1675",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"friskyta": {
+"jtpr:jtseicro": {
+"core": "jtpr:jtseicro",
+"date": "2026-10-15",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1675",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"friskytb": {
+"jtpr:jtseicro": {
+"core": "jtpr:jtseicro",
+"date": "2026-10-15",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1675",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
 "frogf": {
 "dist:galaxian": {
 "core": "dist:galaxian",
@@ -51906,6 +52529,34 @@
 "last_seen": "2026-10-18"
 }
 },
+"garuka": {
+"meat:pwb351024a": {
+"core": "meat:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Devastators/Garuka (Japan ver. W).mra",
+"mra": "_Arcade/_MeatCores/_alternatives/_Devastators/Garuka (Japan ver. W).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"ongo:pwb351024a": {
+"core": "ongo:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_Devastators/Garuka (Japan ver. W).mra",
+"mra": "_Arcade/_MeatCores/_alternatives/_Devastators/Garuka (Japan ver. W).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
 "gatedoom": {
 "coinop:darkseal": {
 "core": "coinop:darkseal",
@@ -54531,6 +55182,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Gradius.mra"
+},
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 }
 },
 "gradius2": {
@@ -56561,6 +57238,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Galactic Warriors.mra"
+},
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 }
 },
 "gyrodine": {
@@ -57340,6 +58043,62 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Haunted Castle (version K).mra"
+}
+},
+"hcrash": {
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"hcrashc": {
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 }
 },
 "headon": {
@@ -64965,6 +65724,34 @@
 "mra": "_Arcade/_alternatives/_Ryuusei Janshi Kirara Star (ver 1.0, 92047-01 version)/Ryuusei Janshi Kirara Star (ver 1.0, 91022-10 version).mra"
 }
 },
+"kittenk": {
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
 "kiwames": {
 "dist:st-v": {
 "core": "dist:st-v",
@@ -66003,6 +66790,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Konami GT (FF, Konami, 1985).mra"
+},
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 },
 "ongo:ffkonamigt": {
 "core": "ongo:ffkonamigt",
@@ -68596,6 +69409,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/_alternatives/_Salamander/Lifeforce (US).mra"
+},
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 }
 },
 "lifefrcej": {
@@ -68611,6 +69450,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/_alternatives/_Salamander/Lifeforce (Japan).mra"
+},
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 }
 },
 "lightbr": {
@@ -70125,6 +70990,90 @@
 "first_repo": "MiSTer-devel/NeoGeo_MiSTer",
 "first_path": "releases/romsets.xml",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-18"
+}
+},
+"mainevt": {
+"meat:pwb351024a": {
+"core": "meat:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/The Main Event.mra",
+"mra": "_Arcade/_MeatCores/The Main Event.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"ongo:pwb351024a": {
+"core": "ongo:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/The Main Event.mra",
+"mra": "_Arcade/_MeatCores/The Main Event.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"mainevt2p": {
+"meat:pwb351024a": {
+"core": "meat:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_The Main Event/The Main Event (2 Players ver. X).mra",
+"mra": "_Arcade/_MeatCores/_alternatives/_The Main Event/The Main Event (2 Players ver. X).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"ongo:pwb351024a": {
+"core": "ongo:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_The Main Event/The Main Event (2 Players ver. X).mra",
+"mra": "_Arcade/_MeatCores/_alternatives/_The Main Event/The Main Event (2 Players ver. X).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"mainevto": {
+"meat:pwb351024a": {
+"core": "meat:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_The Main Event/The Main Event (4 Players ver. F).mra",
+"mra": "_Arcade/_MeatCores/_alternatives/_The Main Event/The Main Event (4 Players ver. F).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"ongo:pwb351024a": {
+"core": "ongo:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_The Main Event/The Main Event (4 Players ver. F).mra",
+"mra": "_Arcade/_MeatCores/_alternatives/_The Main Event/The Main Event (4 Players ver. F).mra",
+"first_recorded": "2026-10-18",
 "last_seen": "2026-10-18"
 }
 },
@@ -77823,6 +78772,19 @@
 }
 },
 "nastar": {
+"jtpr:jttaitob": {
+"core": "jtpr:jttaitob",
+"date": "2026-08-07",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1514",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "kyle:taitob": {
 "core": "kyle:taitob",
 "date": "2026-09-02",
@@ -77851,6 +78813,19 @@
 }
 },
 "nastarw": {
+"jtpr:jttaitob": {
+"core": "jtpr:jttaitob",
+"date": "2026-08-07",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1514",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "kyle:taitob": {
 "core": "kyle:taitob",
 "date": "2026-09-03",
@@ -78338,6 +79313,32 @@
 }
 },
 "nemesis": {
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2023-10-02",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "GX400-Friends/gx400-bin",
+"first_path": "releases/Nemesis (ROM Version).mra",
+"mra": "_Arcade/Nemesis (ROM Version).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "ongo:nemesis": {
 "core": "ongo:nemesis",
 "date": "2022-07-16",
@@ -78353,6 +79354,32 @@
 }
 },
 "nemesisuk": {
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2023-10-02",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "GX400-Friends/gx400-bin",
+"first_path": "releases/_alternatives/_Nemesis/Nemesis (World, ROM Version).mra",
+"mra": "_Arcade/_alternatives/_Nemesis/Nemesis (World, ROM Version).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "ongo:nemesis": {
 "core": "ongo:nemesis",
 "date": "2022-07-16",
@@ -80172,6 +81199,34 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/_alternatives/_Pac-Man/New Puc2 (Set 2) - HBMame.mra"
+}
+},
+"nyanpani": {
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 }
 },
 "nycaptor": {
@@ -84189,6 +85244,846 @@
 "last_seen": "2026-10-18"
 }
 },
+"pc_1942": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/1942 (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_bball": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Baseball (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_bfght": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Balloon Fight (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_bload": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Bases Loaded (Prototype, PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_bstar": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Baseball Stars- Be a Champ! (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_cntra": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Contra (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_cshwk": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Captain Sky Hawk (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_cvnia": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Castlevania (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_dbldr": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Double Dribble (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_ddrgn": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Double Dragon (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_drmro": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dr. Mario (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_duckh": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Duck Hunt (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_ebike": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Excitebike (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_ftqst": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Uncle Fester's Quest- The Addams Family (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_gntlt": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Gauntlet (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_golf": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Golf (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_goons": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/The Goonies (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_grdue": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Gradius/Gradius (PlayChoice-10, older).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_grdus": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Gradius (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_hgaly": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Hogan's Alley (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_kngfu": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Kung Fu (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_mario": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Mario Bros. (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_miket": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Mike Tyson's Punch-Out!! (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_mman3": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Mega Man III (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_moglf": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Mario's Open Golf (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_mtoid": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Metroid (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_ngai2": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Ninja Gaiden Episode II- The Dark Sword of Chaos (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_ngai3": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Ninja Gaiden Episode III- The Ancient Ship of Doom (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_ngaid": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Ninja Gaiden (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_pinbt": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/PinBot (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_pwbld": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Power Blade (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_pwrst": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Pro Wrestling (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_radr2": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Rad Racer II (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_radrc": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Rad Racer (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_rcpam": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/R.C. Pro-Am (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_rkats": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Rockin' Kats (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_rnatk": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Rush'n Attack (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_rrngr": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Chip'n Dale- Rescue Rangers (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_rygar": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Rygar (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_sjetm": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Solar Jetman (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_smb": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/PlayChoice-10 (three channels).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_smb2": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Super Mario Bros. 2 (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_smb3": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/PlayChoice-10 (three channels).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_suprc": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Super C (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_tbowl": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Tecmo Bowl (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_tenis": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Tennis (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_tkfld": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Track & Field (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_tmnt": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Teenage Mutant Ninja Turtles (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_tmnt2": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Teenage Mutant Ninja Turtles II- The Arcade Game (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_trjan": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Trojan (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_ttoon": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Tiny Toon Adventures (prototype) (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_vball": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Volley Ball (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_virus": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Dr. Mario/Virus (Dr. Mario prototype, PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_wcup": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Nintendo World Cup (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_wgnmn": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Wild Gunman (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"pc_ynoid": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Yo! Noid (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
 "pcktgal": {
 "jt:jtpktgal": {
 "core": "jt:jtpktgal",
@@ -86038,6 +87933,21 @@
 "mra": "_Arcade/Playball (Prototype).mra"
 }
 },
+"playch10": {
+"ppriest:playchoice10": {
+"core": "ppriest:playchoice10",
+"date": "2026-10-18",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/1942 (PlayChoice-10).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
 "plegends": {
 "dist:cave": {
 "core": "dist:cave",
@@ -87445,6 +89355,124 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Popeye (Rev D).mra"
+},
+"jtpr:jtpopeye": {
+"core": "jtpr:jtpopeye",
+"date": "2026-10-18",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1678",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"popeyeb2": {
+"jtpr:jtpopeye": {
+"core": "jtpr:jtpopeye",
+"date": "2026-10-18",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1678",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"popeyeb3": {
+"jtpr:jtpopeye": {
+"core": "jtpr:jtpopeye",
+"date": "2026-10-18",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1678",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"popeyebl": {
+"jtpr:jtpopeye": {
+"core": "jtpr:jtpopeye",
+"date": "2026-10-18",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1678",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"popeyef": {
+"jtpr:jtpopeye": {
+"core": "jtpr:jtpopeye",
+"date": "2026-10-18",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1678",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"popeyej": {
+"jtpr:jtpopeye": {
+"core": "jtpr:jtpopeye",
+"date": "2026-10-18",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1678",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"popeyejo": {
+"jtpr:jtpopeye": {
+"core": "jtpr:jtpopeye",
+"date": "2026-10-18",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1678",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"popeyeu": {
+"jtpr:jtpopeye": {
+"core": "jtpr:jtpopeye",
+"date": "2026-10-18",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1678",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 }
 },
 "popflamn": {
@@ -91153,6 +93181,36 @@
 "mra": "_Arcade/Rad Rally.mra"
 }
 },
+"radrad": {
+"jtpr:jtseicro": {
+"core": "jtpr:jtseicro",
+"date": "2026-10-15",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1675",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"radradj": {
+"jtpr:jtseicro": {
+"core": "jtpr:jtseicro",
+"date": "2026-10-15",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1675",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
 "radrj": {
 "meat:segasystem32": {
 "core": "meat:segasystem32",
@@ -92712,6 +94770,19 @@
 }
 },
 "rastsag2": {
+"jtpr:jttaitob": {
+"core": "jtpr:jttaitob",
+"date": "2026-08-07",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1514",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "kyle:taitob": {
 "core": "kyle:taitob",
 "date": "2026-09-02",
@@ -94660,6 +96731,34 @@
 "mra": "_Arcade/_alternatives/_Rezon/Rezon (earlier).mra"
 }
 },
+"rf2": {
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
 "rfjet": {
 "repo:seibuspi": {
 "core": "repo:seibuspi",
@@ -95074,6 +97173,34 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Ring King (US set 1).mra"
+}
+},
+"ringohja": {
+"meat:pwb351024a": {
+"core": "meat:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_The Main Event/Ring no Ohja (Japan 2 Players ver. N).mra",
+"mra": "_Arcade/_MeatCores/_alternatives/_The Main Event/Ring no Ohja (Japan 2 Players ver. N).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"ongo:pwb351024a": {
+"core": "ongo:pwb351024a",
+"date": "2026-10-19",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/_alternatives/_The Main Event/Ring no Ohja (Japan 2 Players ver. N).mra",
+"mra": "_Arcade/_MeatCores/_alternatives/_The Main Event/Ring no Ohja (Japan 2 Players ver. N).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 }
 },
 "ringrage": {
@@ -97999,6 +100126,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Salamander (version D).mra"
+},
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 }
 },
 "salamandj": {
@@ -98014,6 +100167,60 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/_alternatives/_Salamander/Salamander (version J).mra"
+},
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"salamandt": {
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 }
 },
 "salmndr2": {
@@ -100985,6 +103192,51 @@
 "mra": "_Arcade/Section Z (Japan, rev. A).mra"
 }
 },
+"sectrzon": {
+"jtpr:jtseicro": {
+"core": "jtpr:jtseicro",
+"date": "2026-10-15",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1675",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"sectrzona": {
+"jtpr:jtseicro": {
+"core": "jtpr:jtseicro",
+"date": "2026-10-15",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1675",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"sectrzont": {
+"jtpr:jtseicro": {
+"core": "jtpr:jtseicro",
+"date": "2026-10-15",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1675",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
 "seganinj": {
 "dist:segasys1": {
 "core": "dist:segasys1",
@@ -100998,6 +103250,36 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Sega Ninja (315-5102).mra"
+}
+},
+"seicross": {
+"jtpr:jtseicro": {
+"core": "jtpr:jtseicro",
+"date": "2026-10-15",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1675",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+}
+},
+"seicrossa": {
+"jtpr:jtseicro": {
+"core": "jtpr:jtseicro",
+"date": "2026-10-15",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1675",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 }
 },
 "selfeena": {
@@ -105650,7 +107932,7 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_The Simpsons/The Simpsons (2 Players World, set 1).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_The Simpsons/The Simpsons (2 Players World, set 1).mra",
+"mra": "_Arcade/_MeatCores/The Simpsons.mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-18"
 }
@@ -106752,6 +109034,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Sky Skipper.mra"
+},
+"jtpr:jtpopeye": {
+"core": "jtpr:jtpopeye",
+"date": "2026-10-18",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1678",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 }
 },
 "skysmash": {
@@ -117917,6 +120212,19 @@
 }
 },
 "tetrist": {
+"jtpr:jttaitob": {
+"core": "jtpr:jttaitob",
+"date": "2026-08-07",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1514",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "kyle:taitob": {
 "core": "kyle:taitob",
 "date": "2026-09-02",
@@ -122689,6 +124997,19 @@
 }
 },
 "turtship": {
+"bazset:bazturtship": {
+"core": "bazset:bazturtship",
+"date": "2026-10-18",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Turtle Ship (North America).mra",
+"mra": "_Arcade/_BAZSET/Turtle Ship (North America).mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "ongo:bazturtship": {
 "core": "ongo:bazturtship",
 "date": "2026-10-18",
@@ -122847,6 +125168,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/TwinBee.mra"
+},
+"jtpr:jtblkpan": {
+"core": "jtpr:jtblkpan",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
+"jtpr:jtnemesis": {
+"core": "jtpr:jtnemesis",
+"date": "2026-08-25",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1637",
+"mra": null,
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
 }
 },
 "twincobr": {
@@ -123757,6 +126104,19 @@
 }
 },
 "valtric": {
+"jtpr:jtargus": {
+"core": "jtpr:jtargus",
+"date": "2026-04-30",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1388",
+"mra": "_Arcade/Valtric.mra",
+"first_recorded": "2026-10-18",
+"last_seen": "2026-10-18"
+},
 "meat:argus": {
 "core": "meat:argus",
 "date": "2026-10-14",
@@ -134626,6 +136986,22 @@
 "devilfshv": {
 "repo": "Shooter"
 },
+"devstors": {
+"ongo": "Shooter",
+"meat": "Shooter"
+},
+"devstors2": {
+"ongo": "Shooter",
+"meat": "Shooter"
+},
+"devstorsv": {
+"ongo": "Shooter",
+"meat": "Shooter"
+},
+"devstorsx": {
+"ongo": "Shooter",
+"meat": "Shooter"
+},
 "devzone": {
 "dist": "Space",
 "repo": "Shooter"
@@ -136027,6 +138403,10 @@
 "repo": "Shooter",
 "ongo": "Shooter",
 "blackwine": "Shooter"
+},
+"garuka": {
+"ongo": "Shooter",
+"meat": "Shooter"
 },
 "gatedoom": {
 "coinop": "Hack &amp; Slash"
@@ -137860,6 +140240,18 @@
 "mahoudai": {
 "coinop": "Shoot'em up",
 "repo": "Shoot'em up"
+},
+"mainevt": {
+"ongo": "Wrestling",
+"meat": "Wrestling"
+},
+"mainevt2p": {
+"ongo": "Wrestling",
+"meat": "Wrestling"
+},
+"mainevto": {
+"ongo": "Wrestling",
+"meat": "Wrestling"
 },
 "majtitl2": {
 "dist": "Sports"
@@ -140614,6 +143006,10 @@
 },
 "ringking": {
 "dist": "Sports"
+},
+"ringohja": {
+"ongo": "Wrestling",
+"meat": "Wrestling"
 },
 "ripoff": {
 "repo": "Shooter",
