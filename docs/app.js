@@ -654,7 +654,7 @@
       : withImg.slice().sort((x, y) => (y.covered - x.covered) || x.desc.localeCompare(y.desc)).map(t => ({ t, k: t.img.ingame ? "ingame" : "title" }));
     const shown = items.slice(0, SHOT_MAX);
     const note = items.length > shown.length ? ` <span class="muted">(first ${shown.length} of ${fmt(items.length)})</span>` : "";
-    return `<div class="gallery-box"><h4>Screenshots${note}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure title="${esc(t.desc)} (${esc(t.year)})" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}">
+    return `<div class="gallery-box"><h4>Screenshots${note}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure title="${esc(t.desc)} (${esc(t.year)})" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}"` : ""}>
       <img loading="lazy" src="${esc(IMAGE_BASE + "/" + t.img[k])}" alt="${esc(t.desc)}" onerror="this.closest('figure').remove()">
       <figcaption>${esc(t.desc)}${both ? ` <span class="muted">${k === "title" ? "title screen" : "in game"}</span>` : ""}</figcaption></figure>`).join("")}</div></div>`;
   }
@@ -1054,7 +1054,7 @@
   (function () {
     const dlg = document.createElement("dialog");
     dlg.id = "lightbox"; dlg.setAttribute("aria-label", "Screenshot");
-    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><div class="lb-frame"><img alt=""><span class="lb-scan"></span><canvas class="lb-crt" hidden></canvas></div><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button><span class="lb-fxs"><button type="button" class="lb-fx" data-fx="scan" title="scanlines (S)"></button><button type="button" class="lb-fx" data-fx="crt" title="CRT curve (C)"></button></span>';
+    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-play launch" aria-label="Play on my MiSTer via Zaparoo" title="play on my MiSTer via Zaparoo" hidden>▶</button><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><div class="lb-frame"><img alt=""><span class="lb-scan"></span><canvas class="lb-crt" hidden></canvas></div><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button><span class="lb-fxs"><button type="button" class="lb-fx" data-fx="scan" title="scanlines (S)"></button><button type="button" class="lb-fx" data-fx="crt" title="CRT curve (C)"></button></span>';
     document.body.appendChild(dlg);
     const img = dlg.querySelector("img"), cap = dlg.querySelector("figcaption"), cv = dlg.querySelector(".lb-crt");
     const fxScan = dlg.querySelector('[data-fx="scan"]'), fxCrt = dlg.querySelector('[data-fx="crt"]');
@@ -1155,6 +1155,8 @@
       i = (n + set.length) % set.length;
       const fig = set[i];
       img.dataset.n = fig.dataset.n || "1"; img.dataset.port = fig.dataset.port || "0";
+      const play = dlg.querySelector(".lb-play");                                // the same launch as the ▶ in the titles table
+      play.hidden = !fig.dataset.launch; play.dataset.launch = fig.dataset.launch || ""; play.textContent = "▶";
       img.src = fig.dataset.src; img.alt = fig.querySelector("img")?.alt || "";
       cap.textContent = fig.querySelector("figcaption")?.textContent || img.alt;
       dlg.classList.toggle("single", set.length < 2);
