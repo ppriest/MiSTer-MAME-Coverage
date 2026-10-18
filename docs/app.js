@@ -962,8 +962,10 @@
     const w = Math.min(maxW, maxH * ratio);
     const h = w / ratio;
     img.style.width = Math.round(w) + "px"; img.style.height = Math.round(h) + "px";
-    const pitch = h / img.naturalHeight;                                   // screen pixels per source row
+    const vert = ratio < 1;                                                // a 3:4 (rotated) display: its scanlines run vertically
+    const pitch = vert ? w / img.naturalWidth : h / img.naturalHeight;     // screen pixels per scanline
     const sl = img.parentElement.querySelector(".lb-scan");
+    sl.classList.toggle("vert", vert);
     sl.style.setProperty("--ph", pitch.toFixed(3) + "px"); sl.hidden = pitch < 2;      // too fine to draw when shrunk
     document.dispatchEvent(new Event("lb-render"));
   }
@@ -1004,14 +1006,14 @@
       const sh = (type, src) => { const x = gl.createShader(type); gl.shaderSource(x, src); gl.compileShader(x); if (!gl.getShaderParameter(x, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(x)); return x; };
       prog = gl.createProgram();
       gl.attachShader(prog, sh(gl.VERTEX_SHADER, "attribute vec2 p; varying vec2 uv; void main(){ uv = p * .5 + .5; gl_Position = vec4(p, 0., 1.); }"));
-      gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, `precision mediump float; varying vec2 uv; uniform sampler2D tex; uniform float rows; uniform float scan;
+      gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, `precision mediump float; varying vec2 uv; uniform sampler2D tex; uniform float rows; uniform float scan; uniform float vert;
         void main(){
           vec2 c = uv * 2. - 1.;
           vec2 o = abs(c.yx) / vec2(6., 4.);
           vec2 s = (c + c * o * o) * .5 + .5;                     // barrel: the corners fall off the glass
           if (s.x < 0. || s.x > 1. || s.y < 0. || s.y > 1.) { gl_FragColor = vec4(0., 0., 0., 1.); return; }
           vec3 col = texture2D(tex, vec2(s.x, 1. - s.y)).rgb;
-          col *= 1. - scan * .5 * (1. - sin(3.14159 * fract(s.y * rows)));
+          col *= 1. - scan * .5 * (1. - sin(3.14159 * fract(mix(s.y, s.x, vert) * rows)));
           float v = 16. * s.x * s.y * (1. - s.x) * (1. - s.y);
           col *= .55 + .45 * pow(v, .25);                           // vignette
           gl_FragColor = vec4(col * 1.08, 1.);
@@ -1041,8 +1043,10 @@
           gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
           gl.bindTexture(gl.TEXTURE_2D, tex);
           gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, texImg);      // throws SecurityError when the host sends no CORS headers
-          const pitch = h / texImg.naturalHeight;
-          gl.uniform1f(gl.getUniformLocation(prog, "rows"), texImg.naturalHeight);
+          const vert = h > w;                                                        // rotated display: vertical scanlines
+          const pitch = vert ? w / texImg.naturalWidth : h / texImg.naturalHeight;
+          gl.uniform1f(gl.getUniformLocation(prog, "rows"), vert ? texImg.naturalWidth : texImg.naturalHeight);
+          gl.uniform1f(gl.getUniformLocation(prog, "vert"), vert ? 1 : 0);
           gl.uniform1f(gl.getUniformLocation(prog, "scan"), scan && pitch >= 2 ? 1 : 0);
           gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
           cv.hidden = false; img.style.opacity = "0";
