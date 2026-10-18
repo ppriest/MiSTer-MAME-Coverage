@@ -82,6 +82,7 @@ EXTRA_REPOS = [
     ("decoryah", "decoryah/Arcade-Gaiapolis_MiSTer", ["mra"]),
     ("decoryah", "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer", ["mra"]),
     ("decoryah", "decoryah/Arcade-MetamorphicForce_MiSTer", None),
+    ("repo", "iequalshane/MegaPlay_MiSTer_Beta", []),      # the cores are in its releases (RELEASE_REPOS); the tree only gives the HDL check
 ]
 
 # Core records that a better-sourced record replaces. They are removed from the ledger together with
@@ -243,6 +244,9 @@ DB_SOURCES = {
 ROMSET_FILES = [
     ("dist", "MiSTer-devel/NeoGeo_MiSTer", "releases/romsets.xml", "NeoGeo"),
 ]
+
+# Repositories that publish their cores as release assets (a zip with the MRAs and the .rbf), not in the tree: see mmc/releases.py.
+RELEASE_REPOS = {"iequalshane/MegaPlay_MiSTer_Beta": "repo"}      # repository -> source
 
 # Repositories that publish cores for several FPGA boards. Their MRAs are only MiSTer coverage
 # where the repository's own cores.json lists a "mister" release for the core, or where the MRA
@@ -858,6 +862,15 @@ def build_mister(refresh: bool = False, no_sync: bool = False, fetch_existing: b
         print(f"[mister] syncing {len(plan)} repositories")
         errors = sync_all(plan, workers, fetch_existing)
     scans = scan_all(plan, workers)
+    from . import releases
+    for full, src in RELEASE_REPOS.items():
+        if not no_sync:
+            err = releases.sync_release(full)
+            if err:
+                errors.append((full, "release: " + err))
+                print(f"[mister] {full}: release: {err}")
+        scans.append(releases.scan_release(full, src))
+        print(f"[mister] release {full}: {len(scans[-1]['mras'])} MRAs ({scans[-1].get('release') or 'none downloaded'})")
     db_mras, db_errors = scan_databases(workers)
     errors = errors + db_errors
 
