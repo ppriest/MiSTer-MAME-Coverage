@@ -8,7 +8,7 @@
 <title>MiSTer MAME Coverage</title>
 <meta name="description" content="Which MAME arcade titles are playable on MiSTer FPGA cores, which remain, and how coverage grew over time.">
 <link rel="canonical" href="https://mister-mame-coverage-docs.vercel.app/">
-<link rel="stylesheet" href="style.css?v=be673edafd">
+<link rel="stylesheet" href="style.css?v=d6d2e857cf">
 </head>
 <body>
 <header class="top">
@@ -156,7 +156,7 @@
     <figure class="chart" id="fig-cores">
       <figcaption>
         <strong>Cores over time, by database</strong>
-        <span class="muted">cumulative number of cores since October 2019, each dated by its first MRA; official distribution at the bottom, then JTCORES, Coin-Op Collection and the unofficial rest. Not affected by the filters</span>
+        <span class="muted">cumulative number of cores since October 2019, each dated by its first MRA; official distribution at the bottom, then JTCORES, Coin-Op Collection and the unofficial rest. Counts the cores that load at least one set of the filtered titles</span>
       </figcaption>
       <div class="chart-body" id="chart-cores"></div>
       <div class="legend" id="legend-cores"></div>
@@ -244,7 +244,7 @@
     <p class="count" id="cores-count"></p>
     <div class="tablewrap">
       <table class="grid" id="cores-table">
-        <thead><tr><th data-sort="name">Core</th><th data-sort="source">Source</th><th>Repository</th><th>MAME drivers</th><th data-sort="ntitles">Titles</th><th data-sort="nsets">Sets</th><th data-sort="first_date">First MRA</th><th data-sort="build_date">Latest build</th><th>Verified against</th></tr></thead>
+        <thead><tr><th></th><th data-sort="name">Core</th><th data-sort="source">Source</th><th>Repository</th><th>MAME drivers</th><th data-sort="ntitles">Titles</th><th data-sort="nsets">Sets</th><th data-sort="first_date">First MRA</th><th data-sort="build_date">Latest build</th><th>Verified against</th></tr></thead>
         <tbody></tbody>
       </table>
     </div>
@@ -345,6 +345,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=bfe6fea466"></script>
+<script src="app.js?v=2c1bdf0e02"></script>
 </body>
 </html>

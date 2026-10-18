@@ -273,7 +273,7 @@
   }
 
   // Cores over time, stacked: the three big databases from the bottom, everything else on top. A core is
-  // dated by its first MRA. Not filtered: it counts cores, not titles.
+  // dated by its first MRA. It follows the Titles filters: the cores that load at least one set of a filtered title.
   const CORE_SERIES = [
     { src: "dist", color: "var(--accent)" },
     { src: "jt", color: "var(--accent-2)" },
@@ -284,7 +284,9 @@
     const titles = S.data.meta.sources || {};
     const series = CORE_SERIES.map(sr => ({ ...sr, label: sr.label || (titles[sr.src] || sr.src), keys: [] }));
     let undated = 0;
-    Object.values(S.cores).forEach(c => {
+    const sc = chartScope(), ids = new Set();
+    sc.titles.forEach(t => t.sets.forEach(s => { if (sc.setOk(s) && sc.setCovered(s)) s.cores.forEach(r => ids.add(r.core)); }));
+    Array.from(ids).map(id => S.cores[id]).filter(Boolean).forEach(c => {
       if (!c.first_date) { undated++; return; }
       (series.find(sr => sr.src === c.source) || series[3]).keys.push(monthKey(c.first_date));
     });
@@ -462,6 +464,7 @@
       </tr>${S.open.has(t.name) ? detailRow(t) : ""}`;
     }).join("");
     $("#titles-table tbody").insertAdjacentHTML("beforeend", html);
+    fillHardware($("#titles-table tbody"));
     S.shown += slice.length;
     $("#titles-more").hidden = S.shown >= S.filtered.length;
     $("#titles-more").textContent = `Show more (${fmt(S.filtered.length - S.shown)} left)`;
@@ -473,7 +476,8 @@
       <td class="status-${esc(s.status)}">${esc(s.status)}${s.working ? "" : " (not working)"}</td>
       <td>${s.cores.length ? s.cores.map(r => badge(r.core, r) + `<span class="flag">${r.date ? r.date + (r.date_quality !== "git" ? "≈" : "") : ""}</span> `).join("") : '<span class="muted">—</span>'}</td>
     </tr>`).join("");
-    return `<tr class="detail"><td colspan="12"><table><thead><tr><th>Set</th><th>Description</th><th>MAME</th><th>Cores (date first seen; ≈ approximate)</th></tr></thead><tbody>${rows}</tbody></table></td></tr>`;
+    return `<tr class="detail"><td colspan="12"><table><thead><tr><th>Set</th><th>Description</th><th>MAME</th><th>Cores (date first seen; ≈ approximate)</th></tr></thead><tbody>${rows}</tbody></table>
+      ${t.sourcefile ? `<div class="hwslot" data-hwfile="${esc(t.sourcefile)}"></div>` : ""}${galleryHtml([t], true)}</td></tr>`;
   }
 
   $("#titles-table").addEventListener("click", ev => {
@@ -481,7 +485,7 @@
     if (ev.target.closest("a, button")) return;
     const name = tr.dataset.t, t = S.titles.find(x => x.name === name);
     if (S.open.has(name)) { S.open.delete(name); tr.nextElementSibling?.classList.contains("detail") && tr.nextElementSibling.remove(); tr.firstElementChild.textContent = "▸"; }
-    else { S.open.add(name); tr.insertAdjacentHTML("afterend", detailRow(t)); tr.firstElementChild.textContent = "▾"; }
+    else { S.open.add(name); tr.insertAdjacentHTML("afterend", detailRow(t)); tr.firstElementChild.textContent = "▾"; fillHardware(tr.nextElementSibling); document.dispatchEvent(new Event("shot-hide")); }
   });
   $("#titles-more").addEventListener("click", renderMoreTitles);
   $("#f-dir").addEventListener("click", () => { S.dir.t *= -1; $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓"; applyTitles(); });
@@ -580,7 +584,7 @@
     writeHash();
     $("#drivers-count").textContent = `${fmt(rows.length)} drivers · ${fmt(rows.reduce((n, d) => n + d.titles - d.covered, 0))} titles remaining${grem} · click a driver to list its titles`;
     $("#drivers-table tbody").innerHTML = rows.map(d => { const g = gstat(d); return `<tr class="${d.covered === 0 ? "uncovered" : d.covered < d.titles ? "partial" : "covered"}" data-d="${esc(d.sourcefile)}">
-      <td class="set"><a href="#" data-drv="${esc(d.sourcefile)}">${esc(d.sourcefile)}</a></td>
+      <td class="set">${d.covered > 0 ? `<button type="button" class="hwtoggle" aria-expanded="false" data-hw="${esc(d.sourcefile)}" title="hardware: CPUs, sound chips, clocks, options">▸</button>` : ""}<a href="#" data-drv="${esc(d.sourcefile)}">${esc(d.sourcefile)}</a></td>
       <td class="num">${d.covered}/${d.titles}</td>
       <td><span class="pct" title="${pct(d.covered, d.titles)}"><i style="width:${(100 * d.covered / d.titles).toFixed(1)}%"></i></span></td>
       <td class="num">${d.sets_covered}/${d.sets}</td>
@@ -588,8 +592,93 @@
       <td class="num">${d.first || ""}</td>
       <td>${d.cores.map(id => badge(id)).join("")}${(d.cores_claimed || []).map(id => badge(id)).join("")}</td>
       <td class="act">${d.covered < d.titles ? plus1("driver", d.sourcefile) : ""}</td></tr>`; }).join("");
+    S.hwOpen.forEach(f => { const b = $(`#drivers-table .hwtoggle[data-hw="${CSS.escape(f)}"]`); if (b) showHardware(b, true); });
+  }
+
+  // ---------- driver hardware (twist-open on the Drivers tab) ----------
+  // docs/data/hardware/<first letter of the driver path>.json (made from a local MAME, see docs/data/hardware/README.md): per
+  // driver, the CPUs, sound chips, other devices and slots MAME declares for its sets, and the hardware comments of the driver
+  // source. Each part is loaded on the first twist-open of one of its drivers.
+  S.hwOpen = new Set(); S.hwShards = {};
+  function loadHardware(file) {
+    const c = file.slice(0, 1).toLowerCase(), k = c >= "a" && c <= "z" ? c : "0";      // the key rule of the data files
+    if (!S.hwShards[k]) S.hwShards[k] = fetch(`data/hardware/${k}.json`, { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+    return S.hwShards[k];
+  }
+  // Fills the .hwslot placeholders under root with the hardware summary of their driver.
+  function fillHardware(root) {
+    root.querySelectorAll(".hwslot[data-hwfile]:not([data-filled])").forEach(el => {
+      el.dataset.filled = "1";
+      const file = el.dataset.hwfile;
+      el.innerHTML = '<p class="muted">loading hardware…</p>';
+      loadHardware(file).then(h => { el.innerHTML = hardwareHtml(file, h); },
+        e => { el.innerHTML = `<p class="muted">hardware information is not available (${esc(String(e.message || e))})</p>`; });
+    });
+  }
+  // Screenshot gallery: at most SHOT_MAX images, beneath the other information of a twist-open. For one title both of its
+  // shots; for a driver or a core one shot per title (in-game, else title screen), titles on MiSTer first.
+  const SHOT_MAX = 50;
+  function galleryHtml(titles, both) {
+    if (!IMAGE_BASE) return "";
+    const withImg = titles.filter(t => t.img && (t.img.ingame || t.img.title));
+    if (!withImg.length) return "";
+    const items = both
+      ? withImg.flatMap(t => ["title", "ingame"].filter(k => t.img[k]).map(k => ({ t, k })))
+      : withImg.slice().sort((x, y) => (y.covered - x.covered) || x.desc.localeCompare(y.desc)).map(t => ({ t, k: t.img.ingame ? "ingame" : "title" }));
+    const shown = items.slice(0, SHOT_MAX);
+    const note = items.length > shown.length ? ` <span class="muted">(first ${shown.length} of ${fmt(items.length)})</span>` : "";
+    return `<div class="gallery-box"><h4>Screenshots${note}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure title="${esc(t.desc)} (${esc(t.year)})">
+      <img loading="lazy" src="${esc(IMAGE_BASE + "/" + t.img[k])}" alt="${esc(t.desc)}" onerror="this.closest('figure').remove()">
+      <figcaption>${esc(t.desc)}${both ? ` <span class="muted">${k === "title" ? "title screen" : "in game"}</span>` : ""}</figcaption></figure>`).join("")}</div></div>`;
+  }
+  function clockText(hz) {
+    if (!hz) return "";
+    const n = v => String(+v.toFixed(6));
+    return hz >= 1e6 ? `${n(hz / 1e6)} MHz` : hz >= 1e3 ? `${n(hz / 1e3)} kHz` : `${hz} Hz`;
+  }
+  function hwRows(rows, total, withClock) {
+    return rows.map(r => {
+      const clocks = (r.clocks || []).filter(c => c[0]);
+      const multi = clocks.length > 1;
+      const clock = withClock && clocks.length ? clocks.map(c => clockText(c[0]) + (multi ? ` <span class="muted">(${fmt(c[1])} ${c[1] === 1 ? "set" : "sets"})</span>` : "")).join(", ") : "";
+      const opt = r.sets < total ? `<span class="opt" title="${r.sets} of the driver's ${total} sets have it: a variant, or optional">in ${fmt(r.sets)} of ${fmt(total)} sets</span>` : "";
+      return `<li><span class="chipname">${r.count > 1 ? r.count + " × " : ""}${esc(r.name)}</span>${clock ? ` <span class="clock">${clock}</span>` : ""} ${opt}</li>`;
+    }).join("");
+  }
+  function hardwareHtml(file, h) {
+    const d = h.drivers[file];
+    if (!d) return '<p class="muted">no hardware information for this driver</p>';
+    const sect = (title, html) => html ? `<div class="hwsect"><h4>${title}</h4><ul>${html}</ul></div>` : "";
+    const slots = Object.entries(d.slots || {}).map(([k, v]) => `<li><span class="chipname">${esc(k)}</span> <span class="muted">${v.map(esc).join(", ")}</span></li>`).join("");
+    const notes = (d.notes || []).length
+      ? `<details class="hwnotes"><summary>Notes from the driver source <span class="muted">(comments and diagrams, as written)</span></summary>${d.notes.map(n => `<pre>${esc(n)}</pre>`).join("")}</details>` : "";
+    const src = `https://github.com/mamedev/mame/blob/${h.tag}/src/mame/${file}`;
+    return `<div class="hwgrid">
+        ${sect("CPUs", hwRows(d.cpus, d.sets, true))}
+        ${sect("Sound", hwRows(d.sound, d.sets, true))}
+        ${sect("Other devices", hwRows(d.devices, d.sets, false))}
+        ${sect("Selectable options (slots)", slots)}
+      </div>
+      <p class="muted hwsrc">From MAME ${esc(h.mame)}'s declarations for the driver's ${fmt(d.sets)} ${d.sets === 1 ? "set" : "sets"}; a chip marked <span class="opt">in N of M sets</span> is a variant or optional. Source: <a href="${esc(src)}" target="_blank" rel="noopener">${esc(file)}</a>.</p>
+      ${notes}`;
+  }
+  function showHardware(btn, open) {
+    const tr = btn.closest("tr"), file = btn.dataset.hw;
+    let next = tr.nextElementSibling;
+    const has = next && next.classList.contains("hw");
+    if (!open) { if (has) next.remove(); btn.setAttribute("aria-expanded", "false"); S.hwOpen.delete(file); return; }
+    S.hwOpen.add(file);
+    btn.setAttribute("aria-expanded", "true");
+    if (has) return;
+    const row = document.createElement("tr");
+    row.className = "hw";
+    row.innerHTML = `<td colspan="${tr.cells.length}"><div class="hwslot" data-hwfile="${esc(file)}"></div>${galleryHtml(S.titles.filter(t => t.sourcefile === file))}</td>`;
+    tr.after(row);
+    fillHardware(row);
   }
   $("#drivers-table").addEventListener("click", ev => {
+    const hb = ev.target.closest("button.hwtoggle");
+    if (hb) { showHardware(hb, hb.getAttribute("aria-expanded") !== "true"); return; }
     const a = ev.target.closest("a[data-drv]"); if (!a) return; ev.preventDefault();
     $("#f-drv").value = a.dataset.drv; $("#f-cov").value = "all"; $("#f-genre").value = $("#d-genre").value; applyTitles(); showTab("titles");
   });
@@ -613,16 +702,39 @@
     markSort("cores-table", sort, dir);
     writeHash();
     $("#cores-count").textContent = `${fmt(rows.length)} cores · click a core to list its titles`;
-    $("#cores-table tbody").innerHTML = rows.map(c => `<tr>
+    $("#cores-table tbody").innerHTML = rows.map(c => `<tr data-c="${esc(c.id)}">
+      <td class="exp" title="show details">${S.openCores.has(c.id) ? "▾" : "▸"}</td>
       <td><a href="#" data-core="${esc(c.id)}">${esc(c.name)}</a>${c.binary_only ? ' <span class="flag" title="binary-only: no public source known">bin</span>' : ""}${c.channel && c.channel !== "default" ? ` <span class="flag">${esc(c.channel)}</span>` : ""}</td>
       <td><span class="badge src-${esc(c.source)}">${esc(c.source_title)}</span></td>
       <td class="set">${c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.repo)}</a>` : '<span class="muted">not published</span>'}</td>
       <td class="set">${(c.mame_drivers || []).map(esc).join("<br>")}</td>
       <td class="num">${c.ntitles}</td><td class="num">${c.nsets}</td>
       <td class="num">${c.first_date || ""}</td><td class="num">${c.build_date || ""}</td>
-      <td>${c.reading ? esc(c.reading) + (c.score != null ? ` <span class="flag">${c.score}</span>` : "") : '<span class="muted">' + esc(c.status || "") + "</span>"}</td></tr>`).join("");
+      <td>${c.reading ? esc(c.reading) + (c.score != null ? ` <span class="flag">${c.score}</span>` : "") : '<span class="muted">' + esc(c.status || "") + "</span>"}</td></tr>${S.openCores.has(c.id) ? coreDetail(c) : ""}`).join("");
+    fillHardware($("#cores-table tbody"));
+  }
+  // Twist-open of a core: what it is, the hardware of the system(s) it implements, then screenshots of its titles.
+  S.openCores = new Set();
+  function coreDetail(c) {
+    const ts = S.titles.filter(t => t.cores.includes(c.id));
+    const byDrv = new Map(); ts.forEach(t => { if (t.sourcefile) byDrv.set(t.sourcefile, (byDrv.get(t.sourcefile) || 0) + 1); });
+    const drivers = Array.from(byDrv).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+    const hw = drivers.slice(0, 3).map(([d, n]) => `<h3 class="hwdrv"><a href="#" data-drv="${esc(d)}">${esc(d)}</a> <span class="muted">(${fmt(n)} ${n === 1 ? "title" : "titles"} on this core)</span></h3><div class="hwslot" data-hwfile="${esc(d)}"></div>`).join("");
+    const rest = drivers.length > 3 ? `<p class="muted">and ${drivers.length - 3} more drivers: ${drivers.slice(3).map(([d]) => esc(d)).join(", ")}</p>` : "";
+    return `<tr class="detail"><td colspan="10">
+      <p class="muted">${esc(c.source_title)}${c.url ? ` · <a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.repo)}</a>` : ""}${c.binary_only ? " · binary-only" : ""} · ${fmt(ts.length)} ${ts.length === 1 ? "title" : "titles"}, ${fmt(c.nsets)} sets</p>
+      ${hw}${rest}${galleryHtml(ts)}</td></tr>`;
   }
   $("#cores-table").addEventListener("click", ev => {
+    const tr = ev.target.closest("tr[data-c]");
+    if (tr && !ev.target.closest("a, button")) {
+      const id = tr.dataset.c, c = S.cores[id];
+      if (S.openCores.has(id)) { S.openCores.delete(id); tr.nextElementSibling?.classList.contains("detail") && tr.nextElementSibling.remove(); tr.firstElementChild.textContent = "▸"; }
+      else { S.openCores.add(id); tr.insertAdjacentHTML("afterend", coreDetail(c)); tr.firstElementChild.textContent = "▾"; fillHardware(tr.nextElementSibling); }
+      return;
+    }
+    const d = ev.target.closest("a[data-drv]");
+    if (d) { ev.preventDefault(); $("#f-drv").value = d.dataset.drv; $("#f-cov").value = "all"; $("#f-genre").value = ""; applyTitles(); showTab("titles"); return; }
     const a = ev.target.closest("a[data-core]"); if (!a) return; ev.preventDefault();
     $("#f-core").value = a.dataset.core; $("#f-cov").value = "all"; $("#f-cat").value = "all"; $("#f-work").value = "all"; applyTitles(); showTab("titles");
   });
@@ -826,10 +938,11 @@
     document.addEventListener("mouseover", ev => {
       const a = ev.target.closest(HOVER_ON); if (!a) return;
       const key = a.closest("tr[data-t]")?.dataset.t || a.dataset.wlTitle; if (!key || key === cur) return;
-      if (!imgs(key)) return;
+      if (!imgs(key) || (a.closest("#titles-table") && S.open.has(key))) return;       // a twisted-open title shows its screenshots instead
       const t = S.titles.find(x => x.name === key);
       clearTimeout(timer); timer = setTimeout(() => show(key, t ? `${t.desc} (${t.year}, ${t.manufacturer})` : key, ev), 250);
     });
+    document.addEventListener("shot-hide", hide);
     document.addEventListener("mousemove", ev => { if (!card.hidden) place(ev); });
     document.addEventListener("mouseout", ev => { if (ev.target.closest(HOVER_ON)) hide(); });
     addEventListener("scroll", () => { if (!card.hidden) hide(); }, { passive: true });

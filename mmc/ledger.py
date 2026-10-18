@@ -25,7 +25,7 @@ import datetime as dt
 import json
 import os
 
-from . import paths
+from . import mister as mister_mod, paths
 
 LEDGER = os.path.join(paths.DATA, "ledger.json")
 
@@ -113,6 +113,9 @@ def merge(ledger: dict, observed: dict, note: str = "") -> dict:
         for setn in list(ledger["support"]):
             if ledger["support"][setn].pop(cid, None) is not None and not ledger["support"][setn]:
                 del ledger["support"][setn]
+    # set names that are retired: test entries, and names mapped to a MAME set (the support moves to the MAME name)
+    for setn in set(mister_mod.IGNORED_SETS) | set(mister_mod.SETNAME_ALIASES):
+        ledger["support"].pop(setn, None)
     cats = ledger.setdefault("categories", {})
     for setn, per_src in observed.get("categories", {}).items():
         cats.setdefault(setn, {}).update(per_src)
