@@ -948,6 +948,40 @@
     addEventListener("scroll", () => { if (!card.hidden) hide(); }, { passive: true });
   }
 
+  // ---------- click-to-zoom on gallery screenshots ----------
+  // A click opens the shot large in a modal dialog; ← → (or the buttons) step through the same gallery, Esc or a click outside closes.
+  (function () {
+    const dlg = document.createElement("dialog");
+    dlg.id = "lightbox"; dlg.setAttribute("aria-label", "Screenshot");
+    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><img alt=""><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button>';
+    document.body.appendChild(dlg);
+    const img = dlg.querySelector("img"), cap = dlg.querySelector("figcaption");
+    let set = [], i = 0;
+    const show = n => {
+      i = (n + set.length) % set.length;
+      const el = set[i];
+      img.src = el.currentSrc || el.src; img.alt = el.alt;
+      cap.textContent = el.closest("figure")?.querySelector("figcaption")?.textContent || el.alt;
+      dlg.classList.toggle("single", set.length < 2);
+    };
+    document.addEventListener("click", ev => {
+      const t = ev.target.closest(".gallery img"); if (!t) return;
+      set = Array.from(t.closest(".gallery").querySelectorAll("img"));
+      show(set.indexOf(t)); dlg.showModal();
+    });
+    dlg.addEventListener("click", ev => {
+      if (ev.target.closest(".lb-prev")) show(i - 1);
+      else if (ev.target.closest(".lb-next")) show(i + 1);
+      else if (ev.target.closest(".lb-close") || ev.target === dlg) dlg.close();      // the backdrop is the dialog itself
+      else if (ev.target === img) dlg.close();
+    });
+    dlg.addEventListener("keydown", ev => {
+      if (ev.key === "ArrowLeft" && set.length > 1) { ev.preventDefault(); show(i - 1); }
+      else if (ev.key === "ArrowRight" && set.length > 1) { ev.preventDefault(); show(i + 1); }
+    });
+    dlg.addEventListener("close", () => { img.removeAttribute("src"); });
+  })();
+
   // ---------- databases ----------
   function renderDatabases() {
     const info = S.data.meta.source_info || {}, titles = S.data.meta.sources || {};

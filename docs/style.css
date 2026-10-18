@@ -260,3 +260,17 @@ h3.hwdrv { margin: 14px 0 6px; font-size: 13px; text-transform: none; letter-spa
 /* the +1 pill in the Wishlist tab: the same look as the +1 buttons */
 .tabs .tab-plus1 { display: inline-block; margin-left: 6px; padding: 0 7px; font-size: 11px; font-weight: 700; line-height: 17px; border: 1px solid var(--accent); border-radius: 10px; color: var(--accent); background: var(--surface); vertical-align: 1px; }
 .tabs button[aria-selected="true"] .tab-plus1 { background: var(--accent); color: var(--surface); }
+
+/* click-to-zoom */
+.gallery img { cursor: zoom-in; }
+#lightbox { border: 0; padding: 0; background: transparent; max-width: 100vw; max-height: 100vh; width: 100vw; height: 100vh; color: #fff; }
+#lightbox::backdrop { background: rgba(0, 0, 0, .86); }
+#lightbox[open] { display: flex; align-items: center; justify-content: center; gap: 12px; }
+#lightbox figure { margin: 0; max-width: calc(100vw - 150px); max-height: 100vh; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+#lightbox img { max-width: 100%; max-height: calc(100vh - 64px); object-fit: contain; border-radius: 4px; background: #000; cursor: zoom-out; image-rendering: auto; }
+#lightbox figcaption { font-size: 14px; text-align: center; color: #e8e8e8; }
+#lightbox button { background: rgba(255, 255, 255, .14); color: #fff; border: 0; border-radius: 50%; width: 44px; height: 44px; font-size: 28px; line-height: 1; cursor: pointer; flex: none; }
+#lightbox button:hover, #lightbox button:focus-visible { background: rgba(255, 255, 255, .3); outline: none; }
+#lightbox .lb-close { position: fixed; top: 14px; right: 14px; }
+#lightbox.single .lb-prev, #lightbox.single .lb-next { visibility: hidden; }
+@media (max-width: 640px) { #lightbox figure { max-width: calc(100vw - 112px); } #lightbox button { width: 36px; height: 36px; } }
