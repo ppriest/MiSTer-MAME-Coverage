@@ -1185,7 +1185,7 @@
   (function () {
     const head = $("header.top"), row = head && $(".issue", head);
     if (!head || !row) return;
-    const fit = () => { head.style.top = -Math.max(0, Math.round(row.getBoundingClientRect().top - head.getBoundingClientRect().top - 3)) + "px"; };
+    const fit = () => { head.style.top = -Math.max(0, Math.round(row.getBoundingClientRect().top - head.getBoundingClientRect().top)) + "px"; };
     fit();
     if (window.ResizeObserver) new ResizeObserver(fit).observe(head); else addEventListener("resize", fit);
   })();
