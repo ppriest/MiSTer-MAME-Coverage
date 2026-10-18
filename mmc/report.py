@@ -50,12 +50,6 @@ def write(result: dict) -> None:
         r = subprocess.run([sys.executable, tool], capture_output=True, text=True, check=False)
         last = (r.stdout.strip().splitlines() or [""])[-1]
         print(f"[report] {last}" if r.returncode == 0 else f"[report] reconcile_shmups.py failed: {(r.stderr or r.stdout).strip().splitlines()[-1:]}")
-    # Hardware summary of the supported drivers (docs/data/hardware.json): -listxml chips plus the driver sources' comments.
-    tool = os.path.join(paths.ROOT, "tools", "hardware.py")
-    if os.path.exists(tool):
-        r = subprocess.run([sys.executable, tool], capture_output=True, text=True, check=False)
-        last = (r.stdout.strip().splitlines() or [""])[-1]
-        print(f"[report] {last}" if r.returncode == 0 else f"[report] hardware.py failed: {(r.stderr or r.stdout).strip().splitlines()[-1:]}")
     c = result["meta"]["counts"]
     print(f"[report] wrote {full} ({os.path.getsize(full) // 1024} KB)")
     print(f"[report] working arcade titles: {c['working_arcade_titles_covered']}/{c['working_arcade_titles']} covered; "

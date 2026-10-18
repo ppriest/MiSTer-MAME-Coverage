@@ -196,7 +196,7 @@ def observe(mister: dict) -> dict:
             held.append(m)
             continue
         cid = resolve_core(m, cores, by_repo, by_rbf, repo_count)
-        if m["setname"] in mister_mod.IGNORED_SETS:          # test entries
+        if m["setname"] in mister_mod.IGNORED_SETS or cid in mister_mod.IGNORED_CORES:          # test entries, ignored cores
             ignored_cores.add(cid)
             continue
         stem = mister_mod.norm_rbf(m.get("rbf"))

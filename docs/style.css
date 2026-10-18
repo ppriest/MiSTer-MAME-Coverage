@@ -244,3 +244,15 @@ ul.sloplist button { font: inherit; font-size: 11px; padding: 0 8px; margin-left
 .hwnotes { margin-top: 8px; }
 .hwnotes summary { cursor: pointer; font-weight: 600; }
 .hwnotes pre { margin: 8px 0 0; padding: 8px 10px; max-height: 320px; overflow: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; font-size: 11px; line-height: 1.35; max-width: 100%; }
+
+/* gallery and hardware blocks inside twist-opens (titles, drivers, cores) */
+.gallery-box { margin-top: 12px; }
+.gallery-box h4, h3.hwdrv { margin: 0 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-2); }
+h3.hwdrv { margin: 14px 0 6px; font-size: 13px; text-transform: none; letter-spacing: 0; color: var(--text); }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.gallery figure { margin: 0; min-width: 0; }
+.gallery img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; }
+.gallery figcaption { font-size: 11px; line-height: 1.25; margin-top: 2px; color: var(--text-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hwslot:empty { display: none; }
+#titles-table tr.detail .hwslot, #cores-table tr.detail .hwslot { margin-top: 12px; }
+#cores-table td.exp { cursor: pointer; width: 1.2em; color: var(--text-2); }

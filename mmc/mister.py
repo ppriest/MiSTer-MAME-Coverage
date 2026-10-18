@@ -517,7 +517,8 @@ SETNAME_ALIASES = {
 
 # MRAs that are test or placeholder entries, not games: never counted (nor kept in the ledger).
 IGNORED_SETS = {"noromname", "romname", "sdramtest", "m2tiles", "twinbeeb"}
-IGNORED_CORES = {"arcfpga:test_arc"}          # a test core with no sets of its own
+# Not included at all: test cores, and pre-CPU games that are not in MAME (their sets go with them).
+IGNORED_CORES = {"arcfpga:test_arc", "kuze:sdramtest", "dist:bubsys", "dist:spacerace", "dist:computerspace"}
 
 
 def is_launcher(path: str) -> bool:
@@ -542,6 +543,8 @@ def parse_mra_text(s: str) -> dict:
         if k not in rec:
             rec[k] = re.sub(r"\s+", " ", m.group(2)).strip()
     setn = rec.get("setname", "").lower()
+    if not re.fullmatch(r"[a-z0-9_]{1,32}", setn) and re.fullmatch(r"[a-z0-9_ ]{1,40}", setn):
+        setn = setn.replace(" ", "")          # "Poly Play 2c" is meant as MAME's polyplay2c
     setn = SETNAME_ALIASES.get(setn, setn)
     rec["setname"] = setn if re.fullmatch(r"[a-z0-9_]{1,32}", setn) else None
     rec["rbf"] = rec.get("rbf") or None
@@ -629,7 +632,7 @@ def scan_repo(source: str, full: str, dirs: list[str] | None) -> dict:
     if os.path.exists(cache_file):
         with open(cache_file, encoding="utf-8") as f:
             cache = json.load(f)
-    specs = [f"{c}:{p}" for p, _dt, c in adds if f"{c}:{p}" not in cache]
+    specs = [f"{c}:{p}" for p, _dt, c in adds if cache.get(f"{c}:{p}") is None]     # a missing set name is parsed again
     for i in range(0, len(specs), 2000):
         for spec, blob in read_blobs(d, specs[i:i + 2000]).items():
             cache[spec] = parse_mra_text(blob.decode("utf-8", errors="replace")).get("setname") if blob else None
