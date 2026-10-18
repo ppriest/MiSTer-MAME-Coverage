@@ -79,7 +79,7 @@ svg .axis line, svg .axis path { stroke: var(--line); }
 svg .hover-line { stroke: var(--text-2); stroke-width: 1; }
 
 .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin: 8px 0 14px; overflow-x: auto; }
-.tabs button { background: none; border: none; border-bottom: 2px solid transparent; padding: 8px 12px; color: var(--text-2); font: inherit; cursor: pointer; }
+.tabs button { background: none; border: none; border-bottom: 2px solid transparent; padding: 8px 12px; color: var(--text-2); font: inherit; cursor: pointer; white-space: nowrap; flex: none; }
 .tabs button[aria-selected="true"] { color: var(--text); border-bottom-color: var(--accent); font-weight: 600; }
 
 .filters { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: end; margin-bottom: 10px; }
