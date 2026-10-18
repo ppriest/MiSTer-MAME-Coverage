@@ -35,7 +35,7 @@ DECK_CORES = "https://raw.githubusercontent.com/shmupfan/shmup-deck/main/shmup_d
 
 # Blobs up to this size come with the clone: every MRA (a few KB) but no core build (.rbf, MBs).
 # With them local, the content of an MRA that was later renamed or deleted can still be read.
-CLONE_FILTER = "blob:limit=1m"
+CLONE_FILTER = "blob:none"          # trees only; the few files we read (MRAs) are fetched in one batch by the sparse checkout
 
 # Repositories whose git history is the primary record of MRA availability. ``dirs`` are the
 # folders that hold MRAs (sparse checkout + history scan), ``source`` the label shown on the page.
@@ -429,6 +429,22 @@ def _filter_key(f: str) -> str:
     return f"blob:limit={int(m.group(1)) * {'': 1, 'k': 1 << 10, 'm': 1 << 20, 'g': 1 << 30}[m.group(2)]}" if m else f.strip().lower()
 
 
+KNOWN_REPOS: set[str] | None = None     # repositories the ledger already knows (set by build_mister): their history was read before
+
+
+def known_repos() -> set[str]:
+    """Repositories that already hold cores or first-seen dates in the ledger: for those, the current commit is all a daily run needs."""
+    try:
+        with open(os.path.join(paths.DATA, "ledger.json"), encoding="utf-8") as f:
+            led = json.load(f)
+    except (OSError, ValueError):
+        return set()
+    out = {c["repo"] for c in led["cores"].values() if c.get("repo")}
+    for per in led["support"].values():
+        out.update(r["first_repo"] for r in per.values() if r.get("first_repo"))
+    return out
+
+
 SYNC_VERSION = 1      # bump when what sync_repo checks out changes (invalidates the per-repository stamps)
 
 
@@ -450,14 +466,19 @@ def sync_repo(full: str, dirs: list[str] | None = None, fetch_existing: bool = T
         days = next((n for pre, n in REFRESH_DAYS.items() if full.startswith(pre)), 0)
         if not os.path.isdir(os.path.join(d, ".git")):
             os.makedirs(paths.REPOS, exist_ok=True)
-            git("clone", "-q", f"--filter={filt}", "--no-checkout", url, d)
+            # A repository the ledger knows is cloned at its current commit only (its history was read before and the ledger
+            # keeps the earliest dates); a new one gets its whole history once, to date its MRAs.
+            depth = ["--depth=1"] if KNOWN_REPOS is not None and full in KNOWN_REPOS else []
+            git("clone", "-q", f"--filter={filt}", *depth, "--no-checkout", url, d)
             open(mark, "w").close()
         elif fetch_existing and not (days and os.path.exists(mark) and time.time() - os.path.getmtime(mark) < days * 86400):
-            git("fetch", "-q", f"--filter={filt}", "origin", cwd=d)
+            shallow = ["--depth=1"] if os.path.exists(os.path.join(d, ".git", "shallow")) else []
+            git("fetch", "-q", f"--filter={filt}", *shallow, "origin", cwd=d)
             fetched = True
             open(mark, "w").close()
         if full in PULL_REFS and (fetched or not git("rev-parse", "-q", "--verify", "refs/remotes/origin/pr/1", cwd=d, check=False).stdout):
-            git("fetch", "-q", f"--filter={filt}", "origin", "+refs/pull/*/head:refs/remotes/origin/pr/*", cwd=d, check=False)
+            shallow = ["--depth=1"] if os.path.exists(os.path.join(d, ".git", "shallow")) else []
+            git("fetch", "-q", f"--filter={filt}", *shallow, "origin", "+refs/pull/*/head:refs/remotes/origin/pr/*", cwd=d, check=False)
             head = git("symbolic-ref", "refs/remotes/origin/HEAD", cwd=d, check=False).stdout.strip()
             if head:
                 git("reset", "-q", "--soft", head, cwd=d)
@@ -834,6 +855,8 @@ def build_mister(refresh: bool = False, no_sync: bool = False, fetch_existing: b
     alamone = load_alamone()
     plan = repo_plan(alamone)
     errors = []
+    global KNOWN_REPOS
+    KNOWN_REPOS = known_repos()
     if not no_sync:
         print(f"[mister] syncing {len(plan)} repositories")
         errors = sync_all(plan, workers, fetch_existing)
