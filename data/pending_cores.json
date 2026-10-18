@@ -85,5 +85,141 @@
    "finalaprj1"
   ],
   "merged": false
+ },
+ {
+  "name": "jtpopeye",
+  "game": "New  Core: Popeye",
+  "pr": 1678,
+  "date": "2026-10-18",
+  "sets": [
+   "popeye",
+   "popeyeb2",
+   "popeyeb3",
+   "popeyebl",
+   "popeyef",
+   "popeyej",
+   "popeyejo",
+   "popeyeu",
+   "skyskipr"
+  ],
+  "sets_auto": true,
+  "merged": false
+ },
+ {
+  "name": "jtseicro",
+  "game": "feat(): Seicross - Radical Radial - Frisky tom",
+  "pr": 1675,
+  "date": "2026-10-15",
+  "sets": [
+   "friskyt",
+   "friskyta",
+   "friskytb",
+   "radrad",
+   "radradj",
+   "sectrzon",
+   "sectrzona",
+   "sectrzont",
+   "seicross",
+   "seicrossa"
+  ],
+  "sets_auto": true,
+  "merged": false
+ },
+ {
+  "name": "jtblkpan",
+  "game": "feat(nemesis,blkpan): Konami GX400 and GX604 cores",
+  "pr": 1637,
+  "date": "2026-08-25",
+  "sets": [
+   "blkpnthr",
+   "bs_gradius",
+   "bs_gwarrior",
+   "bs_rf2",
+   "bs_twinbee",
+   "citybomb",
+   "citybombj",
+   "gradius",
+   "gwarrior",
+   "hcrash",
+   "hcrashc",
+   "kittenk",
+   "konamigt",
+   "lifefrce",
+   "lifefrcej",
+   "nemesis",
+   "nemesisuk",
+   "nyanpani",
+   "rf2",
+   "salamand",
+   "salamandj",
+   "salamandt",
+   "twinbee"
+  ],
+  "sets_auto": true,
+  "merged": false
+ },
+ {
+  "name": "jtnemesis",
+  "game": "feat(nemesis,blkpan): Konami GX400 and GX604 cores",
+  "pr": 1637,
+  "date": "2026-08-25",
+  "sets": [
+   "blkpnthr",
+   "bs_gradius",
+   "bs_gwarrior",
+   "bs_rf2",
+   "bs_twinbee",
+   "citybomb",
+   "citybombj",
+   "gradius",
+   "gwarrior",
+   "hcrash",
+   "hcrashc",
+   "kittenk",
+   "konamigt",
+   "lifefrce",
+   "lifefrcej",
+   "nemesis",
+   "nemesisuk",
+   "nyanpani",
+   "rf2",
+   "salamand",
+   "salamandj",
+   "salamandt",
+   "twinbee"
+  ],
+  "sets_auto": true,
+  "merged": false
+ },
+ {
+  "name": "jttaitob",
+  "game": "feat(): Add taito-b system core",
+  "pr": 1514,
+  "date": "2026-08-07",
+  "sets": [
+   "crimec",
+   "crimecj",
+   "crimecu",
+   "nastar",
+   "nastarw",
+   "rastsag2",
+   "tetrist"
+  ],
+  "sets_auto": true,
+  "merged": false
+ },
+ {
+  "name": "jtargus",
+  "game": "Argus core vibe coded by Fulvio",
+  "pr": 1388,
+  "date": "2026-04-30",
+  "sets": [
+   "argus",
+   "butasan",
+   "butasanj",
+   "valtric"
+  ],
+  "sets_auto": true,
+  "merged": false
  }
 ]

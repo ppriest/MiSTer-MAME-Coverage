@@ -6,9 +6,12 @@ Generated 2026-10-18 by `tools/reconcile_shmups.py` from MAME 0289 data and [shm
 
 ## New since the previous report
 
-**1 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
+**4 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
 
-- `turtship` Turtle Ship (North America) (1988; Shooter / Flying Horizontal)
+- `pc_1942` 1942 (PlayChoice-10) (1987; Shooter / Flying Vertical)
+- `pc_cshwk` Captain Sky Hawk (PlayChoice-10) (1989; Shooter / Flying Vertical)
+- `pc_grdus` Gradius (PlayChoice-10) (1986; Shooter / Flying Horizontal)
+- `seicross` Seicross (set 1) (1984; Shooter / Driving Horizontal)
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -19,17 +22,20 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (106)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (110)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
-| **NEW** `turtship` | Turtle Ship (North America) | 1988 | Shooter / Flying Horizontal (catver) | bazturtship |
+| **NEW** `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
+| **NEW** `pc_cshwk` | Captain Sky Hawk (PlayChoice-10) | 1989 | Shooter / Flying Vertical (catver) | PlayChoice10 |
+| **NEW** `pc_grdus` | Gradius (PlayChoice-10) | 1986 | Shooter / Flying Horizontal (catver) | PlayChoice10 |
+| **NEW** `seicross` | Seicross (set 1) | 1984 | Shooter / Driving Horizontal (catver) | jtseicro |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
 | `aliensec` | Alien Sector | 1985 | Shooter / Flying Horizontal (catver) | jtthundr |
-| `argus` | Argus | 1986 | Shooter / Flying Vertical (catver) | Argus |
+| `argus` | Argus | 1986 | Shooter / Flying Vertical (catver) | jtargus, Argus |
 | `robokid` | Atomic Robo-kid (World, Type-2) | 1988 | Shooter / Flying Horizontal (catver) | UPLFramebuffer |
 | `bwings` | B-Wings (Japan new Ver.) | 1984 | Shooter / Flying Vertical (catver) | DataEastLiberation |
 | `bakutotu` | Bakutotsu Kijuutei | 1988 | Shooter / Flying Horizontal (catver) | jtshouse |
@@ -39,7 +45,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `brkthru` | Break Thru (World) | 1986 | Shooter / Driving Horizontal (catver) | xnbrkthru |
 | `bucky` | Bucky O'Hare (ver EAB) | 1992 | Shooter / Walking (catver) | Bucky |
 | `bullet` | Bullet (FD1094 317-0041) | 1987 | Shooter / Walking (catver) | jts16b |
-| `butasan` | Butasan - Pig's & Bomber's (Japan, English) | 1987 | Shooter / Walking (catver) | Argus |
+| `butasan` | Butasan - Pig's & Bomber's (Japan, English) | 1987 | Shooter / Walking (catver) | jtargus, Argus |
 | `calibr50` | Caliber 50 (Ver. 1.01) | 1989 | Shooter / Walking (catver) | jtcal50, SetaDowntown |
 | `choplift` | Choplifter (8751 315-5151) | 1985 | Shooter / Flying Horizontal (catver) | SEGASYS1_B23_FULL_20261013, Blackwine-SegaSystem1-2, SegaSys1+2 (TheJesusFish) |
 | `colony7` | Colony 7 (set 1) | 1981 | Shooter / Command (catver) | Defender |
@@ -106,7 +112,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `shocktro` | Shock Troopers (set 1) | 1997 | Shooter / Walking (catver) | NeoGeo |
 | `shocktr2` | Shock Troopers - 2nd Squad | 1998 | Shooter / Walking (catver) | NeoGeo |
 | `skyalert` | Sky Alert | 1992 | Shooter / Flying Vertical (catver) | metro |
-| `skyskipr` | Sky Skipper | 1981 | Shooter / Flying (catver) | Popeye |
+| `skyskipr` | Sky Skipper | 1981 | Shooter / Flying (catver) | Popeye, jtpopeye |
 | `amazon` | Soldier Girl Amazon | 1986 | Shooter / Walking (catver) | terracresta |
 | `stargate` | Stargate | 1981 | Shooter / Flying (catver) | Robotron |
 | `strkforc` | Strike Force (rev 1 02/25/91) | 1991 | Shooter / Flying (catver) | blahm1d_yunit |
@@ -120,6 +126,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `timesold` | Time Soldiers (US Rev 3) | 1987 | Shooter / Walking (catver) | Alpha68k |
 | `totcarn` | Total Carnage (rev LA1 03/10/92) | 1992 | Shooter / Walking (catver) | blahm1d_yunitadpcm |
 | `tricktrp` | Trick Trap (World?) | 1987 | Shooter / Walking (catver) | jtlabrun |
+| `turtship` | Turtle Ship (North America) | 1988 | Shooter / Flying Horizontal (catver) | bazturtship |
 | `valkyrie` | Valkyrie no Densetsu (Japan) | 1989 | Shooter / Walking (catver) | NamcoS2_STD |
 | `vmetal` | Varia Metal | 1995 | Shooter / Flying Vertical (catver) | metro |
 | `victroad` | Victory Road | 1986 | Shooter / Walking (catver) | IkariWarriors |
