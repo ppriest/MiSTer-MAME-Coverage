@@ -29,7 +29,7 @@
       "note": "binary-only Patreon cores"
     },
     {
-      "name": "decoryah (MiSTer_decoryah)",
+      "name": "decoryah",
       "home": "https://github.com/decoryah/MiSTer_decoryah",
       "db_url": "https://raw.githubusercontent.com/decoryah/MiSTer_decoryah/db/db.json.zip",
       "enabled": true,
@@ -56,7 +56,7 @@
       "enabled": true
     },
     {
-      "name": "kyledlester (MiSTer_DB)",
+      "name": "kyledlester",
       "home": "https://github.com/kyledlester/MiSTer_DB",
       "db_url": "https://raw.githubusercontent.com/kyledlester/MiSTer_DB/db/db.json.zip",
       "enabled": true,
