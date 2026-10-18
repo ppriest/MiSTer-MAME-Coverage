@@ -21,6 +21,7 @@ from . import mister as mister_mod
 from . import paths
 from . import ledger as ledger_mod
 from . import hbmame as hbmame_mod
+from . import jtprs
 from . import mamehist
 from . import reconcile, report
 
@@ -43,6 +44,9 @@ def main(argv=None) -> int:
         mame = mame_mod.load_mame(a.mame_version, refresh=a.refresh_mame)
         print(f"[mame] {mame['build']}: {len(mame['machines'])} machines")
     if a.step in ("mister", "build"):
+        if a.step == "build" and not a.no_sync:
+            for line in jtprs.sync(mame["machines"]):
+                print(f"[jtprs] {line}")
         mister = mister_mod.build_mister(no_sync=a.no_sync, fetch_existing=not a.no_fetch, workers=a.workers)
         with open(mister_cache, "w", encoding="utf-8") as f:
             json.dump(mister, f, ensure_ascii=False)
