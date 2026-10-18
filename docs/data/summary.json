@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-17T20:07:17+00:00",
+  "generated": "2026-10-17T21:49:57+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-17T20:06:52+00:00",
+  "mister_generated": "2026-10-17T21:49:38+00:00",
   "alamone_generated": "2026-10-12T11:06:33+00:00",
   "ledger_updated": "2026-10-17",
   "ledger_runs": [
-   {
-    "date": "2026-10-17",
-    "note": "alamone 2026-10-12",
-    "cores": 0,
-    "sets": 0,
-    "pairs": 0,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-17",
     "note": "alamone 2026-10-12",
@@ -51,6 +42,15 @@
     "pairs": 49,
     "dates_improved": 41,
     "cores_removed": 3
+   },
+   {
+    "date": "2026-10-17",
+    "note": "alamone 2026-10-12",
+    "cores": 7,
+    "sets": 22,
+    "pairs": 56,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -248,7 +248,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1210
+    "mras": 1260
    },
    {
     "source": "dist",
@@ -2753,18 +2753,22 @@
    [
     "https://mister.blahm1d.com/db.json.zip",
     "HTTP Error 403: Forbidden"
+   ],
+   [
+    "https://raw.githubusercontent.com/kyledlester/MiSTer_DB/db/db.json.zip",
+    "HTTP Error 404: Not Found"
    ]
   ],
   "counts": {
    "titles": 6825,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2161,
+   "working_arcade_titles_covered": 2167,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5556,
+   "working_arcade_sets_covered": 5578,
    "working_arcade_titles_source": 1897,
-   "working_arcade_titles_binary_only": 264,
-   "cores": 648,
-   "binary_only_cores": 220,
+   "working_arcade_titles_binary_only": 270,
+   "cores": 654,
+   "binary_only_cores": 223,
    "unmatched_sets": 438
   }
  },
@@ -3339,6 +3343,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-17",
+   "aliases": [],
    "last_seen": "2026-10-17",
    "binary_only": false,
    "nsets": 4,
@@ -15623,6 +15628,28 @@
    "first_date": "2026-08-08"
   },
   {
+   "id": "ongo:battletoads",
+   "name": "Battletoads",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "Battletoads.rbf",
+   "repo": "OngoGablogian/MiSTer_Ongo",
+   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2023-04-11"
+  },
+  {
    "id": "ongo:bazset_kickle",
    "name": "bazset_kickle",
    "source": "ongo",
@@ -15966,6 +15993,28 @@
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-07-16"
+  },
+  {
+   "id": "ongo:pgm2",
+   "name": "PGM2",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "PGM2.rbf",
+   "repo": "OngoGablogian/MiSTer_Ongo",
+   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": true,
+   "nsets": 21,
+   "ntitles": 5,
+   "first_date": "2026-10-17"
   },
   {
    "id": "ongo:punchout_test",
@@ -16624,6 +16673,30 @@
    "first_date": "2026-09-27"
   },
   {
+   "id": "repo:crystal",
+   "name": "Crystal (kyledlester)",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": "repository only",
+   "rbf": "Crystal_20261009.rbf",
+   "repo": "kyledlester/BrezzaSoft_Crystal_System_MiSTer",
+   "url": "https://github.com/kyledlester/BrezzaSoft_Crystal_System_MiSTer",
+   "build_date": "2026-10-09",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 34,
+   "mame_drivers": [
+    "misc/crystal.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 3,
+   "first_date": "2026-10-04"
+  },
+  {
    "id": "repo:demoderby",
    "name": "DemoDerby (alanswx)",
    "source": "repo",
@@ -17074,6 +17147,30 @@
    "first_date": "2026-09-30"
   },
   {
+   "id": "repo:namco_na1_na2",
+   "name": "Namco_NA1_NA2 (kyledlester)",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": "repository only",
+   "rbf": "Namco_NA1_NA2_20260927.rbf",
+   "repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+   "url": "https://github.com/kyledlester/Namco_NA1_NA2_MiSTer",
+   "build_date": "2026-09-28",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 33,
+   "mame_drivers": [
+    "namco/namcona1.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 21,
+   "ntitles": 10,
+   "first_date": "2026-09-25"
+  },
+  {
    "id": "repo:namcona2",
    "name": "NamcoNA2 (yaguboo)",
    "source": "repo",
@@ -17097,6 +17194,54 @@
    "nsets": 21,
    "ntitles": 10,
    "first_date": "2026-09-25"
+  },
+  {
+   "id": "repo:nerattechu",
+   "name": "NeratteChu (kyledlester)",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": "repository only",
+   "rbf": "NeratteChu_20260929.rbf",
+   "repo": "kyledlester/MiSTer_Neratte_Chu",
+   "url": "https://github.com/kyledlester/MiSTer_Neratte_Chu",
+   "build_date": "2026-09-29",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 28,
+   "mame_drivers": [
+    "seta/simple_st0016.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-09-28"
+  },
+  {
+   "id": "repo:nostradamus",
+   "name": "Nostradamus (kyledlester)",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": "repository only",
+   "rbf": "Nostradamus_20261003.rbf",
+   "repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+   "url": "https://github.com/kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
+   "build_date": "2026-10-03",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 26,
+   "mame_drivers": [
+    "misc/mcatadv.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-17",
+   "last_seen": "2026-10-17",
+   "binary_only": false,
+   "nsets": 6,
+   "ntitles": 2,
+   "first_date": "2026-10-01"
   },
   {
    "id": "repo:penguinkunwars",
@@ -21465,11 +21610,13 @@
   {
    "sourcefile": "igs/pgm2.cpp",
    "titles": 5,
-   "covered": 0,
+   "covered": 5,
    "sets": 21,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 21,
+   "cores": [
+    "ongo:pgm2"
+   ],
+   "first": "2026-10-17"
   },
   {
    "sourcefile": "irem/m10.cpp",
@@ -23175,7 +23322,8 @@
    "sets_covered": 3,
    "cores": [
     "kyle:crystal",
-    "meat:crystalsystem"
+    "meat:crystalsystem",
+    "repo:crystal"
    ],
    "first": "2026-10-04"
   },
@@ -23568,7 +23716,8 @@
    "sets_covered": 6,
    "cores": [
     "decoryah:mcatadv",
-    "kyle:nostradamus"
+    "kyle:nostradamus",
+    "repo:nostradamus"
    ],
    "first": "2026-10-01"
   },
@@ -24177,6 +24326,7 @@
    "sets_covered": 21,
    "cores": [
     "kyle:namco_na1_na2",
+    "repo:namco_na1_na2",
     "repo:namcona2"
    ],
    "first": "2026-09-25"
@@ -25249,11 +25399,13 @@
   {
    "sourcefile": "rare/btoads.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 1,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 1,
+   "cores": [
+    "ongo:battletoads"
+   ],
+   "first": "2023-04-11"
   },
   {
    "sourcefile": "rare/kinst.cpp",
@@ -26033,7 +26185,8 @@
    "sets": 3,
    "sets_covered": 1,
    "cores": [
-    "kyle:nerattechu"
+    "kyle:nerattechu",
+    "repo:nerattechu"
    ],
    "first": "2026-09-28"
   },

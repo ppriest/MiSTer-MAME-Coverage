@@ -1893,8 +1893,14 @@
   "Eggsecutioner528/Battlantis_Mister_Core",
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:battletoads": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:bazbirdtry": [
   "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:bazset_bazbirdtry": [
+  "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_bonksadventure": [
   "OngoGablogian/MiSTer_Ongo"
@@ -2163,6 +2169,9 @@
  "ongo:ordyne_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
+ "ongo:pgm2": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:pspike": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2326,6 +2335,7 @@
   "shmupfan/Arcade-Dooyong_MiSTer"
  ],
  "repo:eolith": [
+  "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-Eolith_MiSTer"
  ],
  "repo:firetrap": [
@@ -2435,6 +2445,7 @@
   "kyledlester/MiSTer_Neratte_Chu"
  ],
  "repo:nixpirates": [
+  "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-NixPirates_MiSTer"
  ],
  "repo:nostradamus": [
