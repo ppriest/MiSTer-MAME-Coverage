@@ -965,6 +965,7 @@
     const pitch = h / img.naturalHeight;                                   // screen pixels per source row
     const sl = img.parentElement.querySelector(".lb-scan");
     sl.style.setProperty("--ph", pitch.toFixed(3) + "px"); sl.hidden = pitch < 2;      // too fine to draw when shrunk
+    document.dispatchEvent(new Event("lb-render"));
   }
   document.addEventListener("load", ev => {          // load does not bubble: capture it
     const img = ev.target;
@@ -981,14 +982,81 @@
   (function () {
     const dlg = document.createElement("dialog");
     dlg.id = "lightbox"; dlg.setAttribute("aria-label", "Screenshot");
-    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><div class="lb-frame"><img alt=""><span class="lb-scan"></span></div><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button><button type="button" class="lb-fx" title="scanlines (S)"></button>';
+    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><div class="lb-frame"><img alt=""><span class="lb-scan"></span><canvas class="lb-crt" hidden></canvas></div><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button><span class="lb-fxs"><button type="button" class="lb-fx" data-fx="scan" title="scanlines (S)"></button><button type="button" class="lb-fx" data-fx="crt" title="CRT curve (C)"></button></span>';
     document.body.appendChild(dlg);
-    const img = dlg.querySelector("img"), cap = dlg.querySelector("figcaption"), fx = dlg.querySelector(".lb-fx");
+    const img = dlg.querySelector("img"), cap = dlg.querySelector("figcaption"), cv = dlg.querySelector(".lb-crt");
+    const fxScan = dlg.querySelector('[data-fx="scan"]'), fxCrt = dlg.querySelector('[data-fx="crt"]');
     let set = [], i = 0;
-    // Scanlines over the zoomed shot (one dark line per pixel row of the original); the choice is remembered.
-    let scan = true; try { scan = localStorage.getItem("lb-scanlines") !== "0"; } catch (e) { /* storage unavailable */ }
-    const setScan = on => { scan = on; dlg.classList.toggle("noscan", !on); fx.textContent = on ? "Scanlines: on" : "Scanlines: off"; try { localStorage.setItem("lb-scanlines", on ? "1" : "0"); } catch (e) { /* ignore */ } };
-    setScan(scan);
+    // Scanlines (one dark line per pixel row of the original) and a CRT curve over the zoomed shot; the choices are remembered.
+    const stored = k => { try { return localStorage.getItem(k) !== "0"; } catch (e) { return true; } };
+    const store = (k, on) => { try { localStorage.setItem(k, on ? "1" : "0"); } catch (e) { /* ignore */ } };
+    let scan = stored("lb-scanlines"), crt = stored("lb-crt"), crtBroken = false;
+    const label = () => { fxScan.textContent = scan ? "Scanlines: on" : "Scanlines: off"; fxCrt.textContent = crtBroken ? "CRT curve: unavailable" : crt ? "CRT curve: on" : "CRT curve: off"; fxCrt.disabled = crtBroken; };
+    const setScan = on => { scan = on; store("lb-scanlines", on); label(); render(); };
+    const setCrt = on => { crt = on; store("lb-crt", on); label(); render(); };
+
+    // The curve is a WebGL shader (barrel distortion, scanlines that follow it, a vignette, nearest-neighbour sampling). Its texture
+    // is a separate CORS image so a host without CORS headers only loses the curve, never the zoom.
+    let gl = null, prog = null, tex = null, texSrc = "", texImg = null;
+    const initGl = () => {
+      gl = cv.getContext("webgl", { premultipliedAlpha: false, antialias: false });
+      if (!gl) throw new Error("no WebGL");
+      const sh = (type, src) => { const x = gl.createShader(type); gl.shaderSource(x, src); gl.compileShader(x); if (!gl.getShaderParameter(x, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(x)); return x; };
+      prog = gl.createProgram();
+      gl.attachShader(prog, sh(gl.VERTEX_SHADER, "attribute vec2 p; varying vec2 uv; void main(){ uv = p * .5 + .5; gl_Position = vec4(p, 0., 1.); }"));
+      gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, `precision mediump float; varying vec2 uv; uniform sampler2D tex; uniform float rows; uniform float scan;
+        void main(){
+          vec2 c = uv * 2. - 1.;
+          vec2 o = abs(c.yx) / vec2(6., 4.);
+          vec2 s = (c + c * o * o) * .5 + .5;                     // barrel: the corners fall off the glass
+          if (s.x < 0. || s.x > 1. || s.y < 0. || s.y > 1.) { gl_FragColor = vec4(0., 0., 0., 1.); return; }
+          vec3 col = texture2D(tex, vec2(s.x, 1. - s.y)).rgb;
+          col *= 1. - scan * .5 * (1. - sin(3.14159 * fract(s.y * rows)));
+          float v = 16. * s.x * s.y * (1. - s.x) * (1. - s.y);
+          col *= .55 + .45 * pow(v, .25);                           // vignette
+          gl_FragColor = vec4(col * 1.08, 1.);
+        }`));
+      gl.linkProgram(prog);
+      if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(prog));
+      gl.useProgram(prog);
+      const buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
+      const loc = gl.getAttribLocation(prog, "p"); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+      tex = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, tex);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    };
+    const flat = () => { cv.hidden = true; img.style.opacity = ""; };       // the plain zoom (with the CSS scanline overlay)
+    function render() {
+      const sl = dlg.querySelector(".lb-scan");
+      sl.style.display = scan && !sl.hidden && !(crt && !crtBroken && !cv.hidden) ? "" : "none";
+      if (!crt || crtBroken || !img.src || !img.naturalWidth || !dlg.open) { flat(); sl.style.display = scan && !sl.hidden ? "" : "none"; return; }
+      const url = img.currentSrc || img.src;
+      const draw = () => {
+        try {
+          if (!gl) initGl();
+          const dpr = Math.min(2, devicePixelRatio || 1), w = img.clientWidth, h = img.clientHeight;
+          cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); cv.style.width = w + "px"; cv.style.height = h + "px";
+          gl.viewport(0, 0, cv.width, cv.height);
+          gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+          gl.bindTexture(gl.TEXTURE_2D, tex);
+          gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, texImg);      // throws SecurityError when the host sends no CORS headers
+          const pitch = h / texImg.naturalHeight;
+          gl.uniform1f(gl.getUniformLocation(prog, "rows"), texImg.naturalHeight);
+          gl.uniform1f(gl.getUniformLocation(prog, "scan"), scan && pitch >= 2 ? 1 : 0);
+          gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+          cv.hidden = false; img.style.opacity = "0";
+          sl.style.display = "none";
+        } catch (e) { crtBroken = true; label(); flat(); sl.style.display = scan && !sl.hidden ? "" : "none"; }
+      };
+      if (texSrc === url && texImg && texImg.complete && texImg.naturalWidth) { draw(); return; }
+      texSrc = url; texImg = new Image(); texImg.crossOrigin = "anonymous";
+      texImg.onload = () => { if (texSrc === url) draw(); };
+      texImg.onerror = () => { if (texSrc === url) { crtBroken = true; label(); flat(); } };
+      texImg.src = url;
+    }
+    document.addEventListener("lb-render", render);
+    label();
     const show = n => {
       i = (n + set.length) % set.length;
       const el = set[i];
@@ -1004,16 +1072,18 @@
     dlg.addEventListener("click", ev => {
       if (ev.target.closest(".lb-prev")) show(i - 1);
       else if (ev.target.closest(".lb-next")) show(i + 1);
-      else if (ev.target.closest(".lb-fx")) setScan(!scan);
+      else if (ev.target.closest('[data-fx="scan"]')) setScan(!scan);
+      else if (ev.target.closest('[data-fx="crt"]')) setCrt(!crt);
       else if (ev.target.closest(".lb-close") || ev.target === dlg) dlg.close();      // the backdrop is the dialog itself
-      else if (ev.target === img) dlg.close();
+      else if (ev.target === img || ev.target === cv) dlg.close();
     });
     dlg.addEventListener("keydown", ev => {
       if (ev.key === "ArrowLeft" && set.length > 1) { ev.preventDefault(); show(i - 1); }
       else if (ev.key === "ArrowRight" && set.length > 1) { ev.preventDefault(); show(i + 1); }
       else if (ev.key === "s" || ev.key === "S") setScan(!scan);
+      else if (ev.key === "c" || ev.key === "C") { if (!crtBroken) setCrt(!crt); }
     });
-    dlg.addEventListener("close", () => { img.removeAttribute("src"); });
+    dlg.addEventListener("close", () => { img.removeAttribute("src"); cv.hidden = true; img.style.opacity = ""; });
   })();
 
   // ---------- databases ----------
