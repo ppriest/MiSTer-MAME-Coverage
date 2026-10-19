@@ -1,45 +1,62 @@
 {
  "blahm1d:blahm1d_exidy440": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "blahm1d/MiSTer-cores"
  ],
  "blahm1d:blahm1d_gladiator": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "blahm1d/MiSTer-cores"
  ],
  "blahm1d:blahm1d_invasion": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "blahm1d/MiSTer-cores"
  ],
  "blahm1d:blahm1d_legendofkage": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "blahm1d/MiSTer-cores"
  ],
  "blahm1d:blahm1d_mk4": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "blahm1d/MiSTer-cores"
  ],
  "blahm1d:blahm1d_narc": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "blahm1d/MiSTer-cores"
+ ],
+ "blahm1d:blahm1d_nightslashers": [
+  "blahm1d/MiSTer-cores"
  ],
  "blahm1d:blahm1d_tunit": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "blahm1d/MiSTer-cores"
  ],
  "blahm1d:blahm1d_tunitdcs": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "blahm1d/MiSTer-cores"
  ],
  "blahm1d:blahm1d_vunit": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "blahm1d/MiSTer-cores"
  ],
  "blahm1d:blahm1d_wargods": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "blahm1d/MiSTer-cores"
  ],
  "blahm1d:blahm1d_wolfunit": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "blahm1d/MiSTer-cores"
  ],
  "blahm1d:blahm1d_xunit": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "blahm1d/MiSTer-cores"
  ],
  "blahm1d:blahm1d_yunit": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "blahm1d/MiSTer-cores"
  ],
  "blahm1d:blahm1d_yunitadpcm": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "blahm1d/MiSTer-cores"
  ],
  "coinop:alpha68k": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
@@ -233,10 +250,19 @@
  "decoryah:metro": [
   "decoryah/Arcade-Metro_MiSTer"
  ],
+ "decoryah:metro_20261018c": [
+  "decoryah/Arcade-Metro_MiSTer"
+ ],
  "decoryah:metrod64": [
   "decoryah/Arcade-Metro_MiSTer"
  ],
+ "decoryah:metrod64_20261018c": [
+  "decoryah/Arcade-Metro_MiSTer"
+ ],
  "decoryah:metrof64": [
+  "decoryah/Arcade-Metro_MiSTer"
+ ],
+ "decoryah:metrof64_20261014c": [
   "decoryah/Arcade-Metro_MiSTer"
  ],
  "decoryah:monstermaulers": [
@@ -246,6 +272,10 @@
   "decoryah/Arcade-OhMyGod_MiSTer"
  ],
  "decoryah:pgm2": [
+  "decoryah/Arcade-IGSPGM2_MiSTer"
+ ],
+ "decoryah:pgm2_20261017e": [
+  "OngoGablogian/MiSTer_Ongo",
   "decoryah/Arcade-IGSPGM2_MiSTer"
  ],
  "decoryah:taitol": [
@@ -416,7 +446,8 @@
  "dist:centipede": [
   "MiSTer-devel/Arcade-Centipede_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "RodimusFVC/Arcade-Centipede_MiSTer"
  ],
  "dist:chameleon": [
   "MiSTer-devel/Arcade-Chameleon_MiSTer",
@@ -1251,6 +1282,10 @@
   "jlrh/cidelsa-fpga",
   "jlrh/jlrh-misterfpga-db"
  ],
+ "jlrh:ffambush": [
+  "jlrh/jlrh-misterfpga-db",
+  "jlrh/tecfri-fpga"
+ ],
  "jlrh:ffasterix": [
   "jlrh/jlrh-misterfpga-db",
   "jlrh/konami-fpga"
@@ -1275,6 +1310,10 @@
   "jlrh/jlrh-misterfpga-db",
   "jlrh/konami-fpga"
  ],
+ "jlrh:ffcrzrally": [
+  "jlrh/jlrh-misterfpga-db",
+  "jlrh/tecfri-fpga"
+ ],
  "jlrh:ffdeadang": [
   "jlrh/jlrh-misterfpga-db",
   "jlrh/seibu-fpga"
@@ -1298,6 +1337,10 @@
  "jlrh:ffgwar": [
   "jlrh/jlrh-misterfpga-db",
   "jlrh/snk-fpga"
+ ],
+ "jlrh:ffholeland": [
+  "jlrh/jlrh-misterfpga-db",
+  "jlrh/tecfri-fpga"
  ],
  "jlrh:ffhotchase": [
   "jlrh/jlrh-misterfpga-db",
@@ -1335,9 +1378,17 @@
   "jlrh/jlrh-misterfpga-db",
   "jlrh/konami-fpga"
  ],
+ "jlrh:ffsauro": [
+  "jlrh/jlrh-misterfpga-db",
+  "jlrh/tecfri-fpga"
+ ],
  "jlrh:ffshadfrce": [
   "jlrh/jlrh-misterfpga-db",
   "jlrh/technos-fpga"
+ ],
+ "jlrh:ffspeedbal": [
+  "jlrh/jlrh-misterfpga-db",
+  "jlrh/tecfri-fpga"
  ],
  "jlrh:ffsquash": [
   "jlrh/gaelco-fpga",
@@ -1354,6 +1405,10 @@
  "jlrh:ffthoop2": [
   "jlrh/gaelco-fpga",
   "jlrh/jlrh-misterfpga-db"
+ ],
+ "jlrh:fftrckydoc": [
+  "jlrh/jlrh-misterfpga-db",
+  "jlrh/tecfri-fpga"
  ],
  "jlrh:ffwecleman": [
   "jlrh/jlrh-misterfpga-db",
@@ -1810,11 +1865,30 @@
   "meathax/appoooh",
   "meathax/meatcores"
  ],
+ "meat:arbalester": [
+  "meathax/meatcores"
+ ],
+ "meat:argus": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
+ "meat:battletoads": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/BattletoadsMain",
+  "meathax/meatcores"
+ ],
+ "meat:blackpanther": [
+  "meathax/meatcores"
+ ],
  "meat:bucky": [
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
  "meat:crystalsystem": [
+  "meathax/meatcores"
+ ],
+ "meat:dataeastliberation": [
+  "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
  "meat:docastle": [
@@ -1829,6 +1903,10 @@
  ],
  "meat:escapekids": [
   "meathax/escapekids",
+  "meathax/meatcores"
+ ],
+ "meat:heavyunit": [
+  "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
  "meat:i-robot": [
@@ -1847,6 +1925,13 @@
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
+ "meat:metamorphicforce": [
+  "meathax/meatcores"
+ ],
+ "meat:mysteriousstones": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
  "meat:namcond1": [
   "meathax/meatcores"
  ],
@@ -1855,7 +1940,15 @@
   "Usquebagh/MiSTer_misc",
   "meathax/meatcores"
  ],
+ "meat:nintendo8080": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
  "meat:primal2": [
+  "meathax/meatcores"
+ ],
+ "meat:pwb351024a": [
+  "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
  "meat:segasystem24": [
@@ -1878,9 +1971,17 @@
  "meat:simpsons": [
   "meathax/meatcores"
  ],
+ "meat:spy": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
  "meat:ssv": [
   "OngoGablogian/MiSTer_Ongo",
   "meathax/SVV",
+  "meathax/meatcores"
+ ],
+ "meat:steelforce": [
+  "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
  "meat:stoneball": [
@@ -1929,6 +2030,9 @@
  "ongo:bazbirdtry": [
   "bazset/MiSTer_BAZSET"
  ],
+ "ongo:bazset_aquajack": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:bazset_bazbirdtry": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -1960,6 +2064,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_shogunwarriors": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:bazset_turtleship": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazturtship": [
@@ -2020,6 +2127,9 @@
  ],
  "ongo:expro02_bazset": [
   "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:exterminator": [
+  "meathax/meatcores"
  ],
  "ongo:f1grpr": [
   "OngoGablogian/MiSTer_Ongo"
@@ -2334,6 +2444,10 @@
  "repo:1945kiii": [
   "shmupfan/Arcade-1945kIII_MiSTer"
  ],
+ "repo:alpha68k": [
+  "furrtek/Arcade-TMNT_MiSTer",
+  "va7deo/alpha68k"
+ ],
  "repo:atari-g1": [
   "Gm0rk/Arcade-Atari-G1_MiSTer"
  ],
@@ -2350,12 +2464,28 @@
  "repo:batrider": [
   "zakk4223/Arcade-Raizing_MiSTer"
  ],
+ "repo:battlantis_20261018c": [
+  "Eggsecutioner528/Battlantis_Mister_Core",
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "repo:blackwidow": [
   "blahm1dplays/Arcade-BlackWidow_MiSTer",
   "derpyder/Arcade-BlackWidow_MiSTer"
  ],
+ "repo:bladesofsteel": [
+  "Eggsecutioner528/Mister-FPGA-Blades-of-Steel"
+ ],
+ "repo:braveblade": [
+  "kyledlester/Brave_Blade_MiSTer"
+ ],
+ "repo:breakout": [
+  "KrishRVH/faithful-breakout-rust"
+ ],
  "repo:cinematronics": [
   "Usquebagh/Arcade-Cinematronics_MiSTer"
+ ],
+ "repo:cloakanddagger": [
+  "harlock74/Arcade-CloakDagger_MiSTer"
  ],
  "repo:crazyclimber": [
   "RodimusFVC/Arcade-CrazyClimber_MiSTer"
@@ -2367,15 +2497,36 @@
  "repo:dec8": [
   "shmupfan/Arcade-DEC8_MiSTer"
  ],
+ "repo:demonwld": [
+  "va7deo/demonswld"
+ ],
+ "repo:deniam": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/Deniam_MiSTer_FPGA"
+ ],
+ "repo:djmain": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA"
+ ],
+ "repo:djmainsd": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA"
+ ],
  "repo:donkeykong3": [
   "gaz68/Arcade-DonkeyKong3_MiSTer_WIP"
  ],
  "repo:dooyong": [
   "shmupfan/Arcade-Dooyong_MiSTer"
  ],
+ "repo:dreamworld": [
+  "ppriest/Arcade-DreamWorld_MiSTer"
+ ],
  "repo:eolith": [
   "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-Eolith_MiSTer"
+ ],
+ "repo:exidy_testbuild": [
+  "RodimusFVC/Arcade-Exidy_MiSTer"
  ],
  "repo:firetrap": [
   "Usquebagh/Arcade-FireTrap_MiSTer"
@@ -2383,8 +2534,17 @@
  "repo:gaiapolis": [
   "decoryah/Arcade-Gaiapolis_MiSTer"
  ],
+ "repo:galaga": [
+  "RodimusFVC/Arcade-Galaga_MiSTer"
+ ],
  "repo:garegga": [
   "zakk4223/Arcade-Raizing_MiSTer"
+ ],
+ "repo:gottlieb_testbuild": [
+  "RodimusFVC/Arcade-Gottlieb_MiSTer"
+ ],
+ "repo:gstream": [
+  "ppriest/Arcade-GStream_MiSTer"
  ],
  "repo:gundamex": [
   "kandowontu2/Arcade-GundamEX_MiSTer"
@@ -2406,6 +2566,9 @@
   "OngoGablogian/MiSTer_Ongo",
   "harlock74/Arcade-Intrepid_MiSTer"
  ],
+ "repo:itech8": [
+  "Gm0rk/ITech8_MiSTer"
+ ],
  "repo:jalecoms32": [
   "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-JalecoMS32_MiSTer"
@@ -2418,9 +2581,16 @@
   "OngoGablogian/MiSTer_Ongo",
   "Usquebagh/Arcade-Jedi_MiSTer"
  ],
+ "repo:jtmissw96": [
+  "dnhkng/MissWorld96_MiSTer"
+ ],
  "repo:jtnslasher": [
   "blahm1dplays/Arcade-NightSlashers_MiSTer",
   "derpyder/Arcade-NightSlashers_MiSTer"
+ ],
+ "repo:kaneko16": [
+  "OngoGablogian/MiSTer_Ongo",
+  "alphanu1/kaneko16-mister"
  ],
  "repo:kikikaikai": [
   "alpuy/Arcade-Kikikaikai_MiSTer"
@@ -2428,19 +2598,33 @@
  "repo:killerinstinct": [
   "MiSTer-devel/Arcade-KillerInstinct_MiSTer"
  ],
+ "repo:konamigv": [
+  "kyledlester/Konami_GV_MiSTer"
+ ],
  "repo:konamigx": [
   "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-KonamiGX_MiSTer",
   "yaguboo/Arcade-KonamiGX_MiSTer"
  ],
  "repo:konamigxt1": [
+  "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-KonamiGX_MiSTer"
  ],
  "repo:konamigxt34": [
+  "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-KonamiGX_MiSTer"
  ],
+ "repo:lastduel": [
+  "OngoGablogian/MiSTer_Ongo",
+  "fiermanb/LastDuel-MadGear_MiSTer"
+ ],
  "repo:limenko": [
+  "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-Vamphalf_MiSTer"
+ ],
+ "repo:madgear": [
+  "OngoGablogian/MiSTer_Ongo",
+  "fiermanb/LastDuel-MadGear_MiSTer"
  ],
  "repo:majorhavoc": [
   "blahm1dplays/Arcade-MajorHavoc_MiSTer",
@@ -2457,12 +2641,21 @@
  "repo:megaplay": [
   "iequalshane/MegaPlay_MiSTer_Beta"
  ],
+ "repo:megasys1_a": [
+  "va7deo/MegaSys1_A"
+ ],
  "repo:metamorphicforce": [
   "decoryah/Arcade-MetamorphicForce_MiSTer",
   "meathax/meatcores"
  ],
+ "repo:model1": [
+  "OngoGablogian/MiSTer_Ongo",
+  "alphanu1/sega-model1-mister"
+ ],
  "repo:model2": [
-  "alphanu1/sega-model2-mister"
+  "OngoGablogian/MiSTer_Ongo",
+  "alphanu1/sega-model2-mister",
+  "retrorepair/sega-model2-mister"
  ],
  "repo:monstermaulers": [
   "decoryah/Arcade-MonsterMaulers_MiSTer"
@@ -2498,8 +2691,15 @@
  "repo:ohmygod": [
   "decoryah/Arcade-OhMyGod_MiSTer"
  ],
+ "repo:outrunners": [
+  "bonna79/s32multi-mycore"
+ ],
  "repo:penguinkunwars": [
   "MrX-8B/MiSTer-Arcade-PenguinKunWars"
+ ],
+ "repo:playchoice10": [
+  "OngoGablogian/MiSTer_Ongo",
+  "ppriest/Arcade-PlayChoice10_MiSTer"
  ],
  "repo:polyplay": [
   "Niels3RT/PolyPlay_MiSTer"
@@ -2510,12 +2710,24 @@
  "repo:powerspikes": [
   "yaguboo/Arcade-PowerSpikes_MiSTer"
  ],
+ "repo:prehisle": [
+  "va7deo/PrehistoricIsle"
+ ],
  "repo:propcycle": [
   "spacestate1/Arcade_namco22_MiSTer"
+ ],
+ "repo:rabbitpunch": [
+  "mlc4050/Arcade-RabbitPunch_MiSTer"
+ ],
+ "repo:rackemup_20261010_v1.1": [
+  "Eggsecutioner528/Rack-em-up"
  ],
  "repo:raiden2": [
   "rmonic79/Arcade-Raiden2_MiSTer",
   "spacestate1/Arcade-Raiden2_MiSTer"
+ ],
+ "repo:rallybike": [
+  "va7deo/rallybike"
  ],
  "repo:rayforce": [
   "spacestate1/Arcade-taitoF3_MiSTer"
@@ -2524,8 +2736,20 @@
   "Usquebagh/MiSTer_misc",
   "spacestate1/Arcade-taitoF3_MiSTer"
  ],
+ "repo:rmgalivan": [
+  "rmonic79/rm-Galivan_MiSTer",
+  "rmonic79/rmcores"
+ ],
  "repo:roundup": [
   "harlock74/Arcade-RoundUp_MiSTer"
+ ],
+ "repo:rshark": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/R_Shark_Super_X_MiSTer"
+ ],
+ "repo:s32": [
+  "RetroShrimp/Arcade-SegaSystem32_MiSTer",
+  "Usquebagh/MiSTer_misc"
  ],
  "repo:segag80": [
   "RodimusFVC/Arcade-SegaG80_MiSTer"
@@ -2535,6 +2759,9 @@
  ],
  "repo:segasys1+2": [
   "TheJesusFish/Arcade-SegaSys1-2_MiSTer"
+ ],
+ "repo:segasystem32multi": [
+  "bonna79/s32multi-mycore"
  ],
  "repo:segayboard": [
   "OngoGablogian/MiSTer_Ongo",
@@ -2560,15 +2787,36 @@
   "OngoGablogian/MiSTer_Ongo",
   "srg320/Arcade-SKNS_MiSTer"
  ],
+ "repo:snk68": [
+  "va7deo/SNK68"
+ ],
+ "repo:stadiumhero": [
+  "yaguboo/Arcade-StadiumHero_MiSTer"
+ ],
+ "repo:starcastle": [
+  "Usquebagh/MiSTer_misc",
+  "Videodr0me/Arcade-StarCastle_MiSTer"
+ ],
  "repo:superbagman": [
   "cavemanxzx/MiSTer-Arcade-SuperBagman"
+ ],
+ "repo:superman": [
+  "bazset/MiSTer_BAZSET",
+  "diegov-au/Superman_MiSTer"
  ],
  "repo:supermouse": [
   "harlock74/Arcade-SuperMouse_MiSTer"
  ],
+ "repo:superslams": [
+  "yaguboo/Arcade-SuperSlams_MiSTer"
+ ],
  "repo:systemc2": [
   "Mezzow/Arcade-SystemC2_MiSTer",
   "OngoGablogian/MiSTer_Ongo"
+ ],
+ "repo:syvalion": [
+  "OngoGablogian/MiSTer_Ongo",
+  "diegov-au/Syvalion_MiSTer"
  ],
  "repo:taitoair": [
   "retrogarage/tas-mister"
@@ -2590,6 +2838,10 @@
   "blahm1dplays/Arcade-Tempest_MiSTer",
   "derpyder/Arcade-Tempest_MiSTer"
  ],
+ "repo:tenkomori": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/Tenkomori_Shooting_MiSTer"
+ ],
  "repo:thepit": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2609,20 +2861,35 @@
   "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-Vamphalf_MiSTer"
  ],
+ "repo:vimana": [
+  "va7deo/vimana"
+ ],
+ "repo:williams_testbuild": [
+  "RodimusFVC/Arcade-Williams_MiSTer"
+ ],
  "repo:wolfunit": [
   "Kuba-J/wolf-unit"
  ],
+ "repo:worldrally": [
+  "danisandoval/wrallyc_MisterFPGA"
+ ],
  "repo:xnsystem11": [
-  "XelaNotPu/SYSTEM11_MiSTer-Supporter"
+  "XelaNotPu/SYSTEM11_MiSTer-Supporter",
+  "misteraddons/SYSTEM11_MiSTer"
  ],
  "repo:xnsystemfl": [
   "XelaNotPu/SYSTEMFL_MiSTer-Supporter"
+ ],
+ "repo:zerowing": [
+  "va7deo/zerowing"
  ],
  "rossops:segaspaceharrier": [
   "Usquebagh/MiSTer_misc",
   "rossops/Arcade-SegaSpaceHarrier_MiSTer"
  ],
  "rossops:segayboard": [
+  "OngoGablogian/MiSTer_Ongo",
+  "Usquebagh/MiSTer_misc",
   "rossops/Arcade-SegaYBoard_MiSTer"
  ],
  "shmupfan:1945kiii": [
@@ -2701,27 +2968,34 @@
   "Usquebagh/MiSTer_misc"
  ],
  "xela:system11": [
+  "OngoGablogian/MiSTer_Ongo",
   "XelaNotPu/SYSTEM11_MiSTer"
  ],
  "xela:xnbrkthru": [
+  "OngoGablogian/MiSTer_Ongo",
   "XelaNotPu/BreakThru_MiSTer"
  ],
  "xela:xnsystem11": [
   "XelaNotPu/SYSTEM11_MiSTer-Supporter"
  ],
  "xela:xnsystemfl": [
+  "OngoGablogian/MiSTer_Ongo",
   "XelaNotPu/SYSTEMFL_MiSTer-Supporter"
  ],
  "xela:xnzn1": [
+  "OngoGablogian/MiSTer_Ongo",
   "XelaNotPu/ZN1_MiSTer"
  ],
  "xela:xnzn1taitofx1b": [
+  "OngoGablogian/MiSTer_Ongo",
   "XelaNotPu/ZN1-TaitoFX1B_MiSTer"
  ],
  "xela:zn1capcom": [
+  "OngoGablogian/MiSTer_Ongo",
   "XelaNotPu/ZN1-Capcom_MiSTer"
  ],
  "xela:zn2capcom": [
+  "OngoGablogian/MiSTer_Ongo",
   "XelaNotPu/ZN2-Capcom_MiSTer"
  ]
 }
