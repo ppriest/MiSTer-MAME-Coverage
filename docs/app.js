@@ -23,12 +23,15 @@
     ALL_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; });
     S.dir = { t: 1, d: -1, c: 1 };
     S.wlView = "requested";
+    S.tview = "list"; S.gkind = "ingame";
   }
   function readHash() {
     const p = new URLSearchParams(location.hash.slice(1));
     for (const id of ALL_IDS) if (p.has(id)) { const el = $("#" + id); if (el) el.value = p.get(id); }
     for (const [k, d] of Object.entries(DIRS)) if (p.has(k)) S.dir[d] = +p.get(k) || S.dir[d];
     S.wlView = p.get("wl") === "fulfilled" ? "fulfilled" : "requested";   // Wishlist: Requested / Fulfilled
+    S.tview = p.get("view") === "gallery" ? "gallery" : "list";            // Titles: List / Gallery
+    S.gkind = p.get("shot") === "title" ? "title" : "ingame";              // Gallery: In game / Title screen
     if (p.has("tab")) showTab(p.get("tab"), false);
     $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓"; $("#d-dir").textContent = S.dir.d > 0 ? "↑" : "↓"; $("#c-dir").textContent = S.dir.c > 0 ? "↑" : "↓";
   }
@@ -41,6 +44,8 @@
     const tab = $(".tabs [aria-selected=true]").dataset.tab;
     if (tab !== "titles") p.set("tab", tab);
     if (S.wlView === "fulfilled") p.set("wl", "fulfilled");
+    if (S.tview === "gallery") p.set("view", "gallery");
+    if (S.gkind === "title") p.set("shot", "title");
     history.replaceState(null, "", "#" + p.toString());
   }
 
@@ -477,9 +482,7 @@
   // The same filtered, sorted titles as tiles: the in-game shot (or the title screen: a toggle), in the 4:3 / 3:4 shape of the twist-open
   // galleries (multi-screen shots split into displays), a little info under each tile, and a click zooms like any gallery shot.
   const GPAGE = 60;
-  const store2 = (k, v) => { try { localStorage.setItem(k, v); } catch (e) { /* ignore */ } };
-  const load2 = (k, d) => { try { return localStorage.getItem(k) || d; } catch (e) { return d; } };
-  S.tview = load2("titles-view", "list"); S.gkind = load2("titles-shot", "ingame"); S.gshown = 0; S.gfiltered = [];
+  S.tview = S.tview || "list"; S.gkind = S.gkind || "ingame"; S.gshown = 0; S.gfiltered = [];       // both live in the URL hash (view=gallery, shot=title)
   function syncTitlesView() {
     if (!IMAGE_BASE) S.tview = "list";
     const g = S.tview === "gallery";
@@ -514,8 +517,8 @@
     $("#titles-more").hidden = S.gshown >= S.gfiltered.length;
     $("#titles-more").textContent = `Show more (${fmt(S.gfiltered.length - S.gshown)} left)`;
   }
-  $("#t-view").addEventListener("click", ev => { const b = ev.target.closest("button[data-view]"); if (!b || b.disabled) return; S.tview = b.dataset.view; store2("titles-view", S.tview); applyTitles(); });
-  $("#g-kind").addEventListener("click", ev => { const b = ev.target.closest("button[data-kind]"); if (!b) return; S.gkind = b.dataset.kind; store2("titles-shot", S.gkind); applyTitles(); });
+  $("#t-view").addEventListener("click", ev => { const b = ev.target.closest("button[data-view]"); if (!b || b.disabled) return; S.tview = b.dataset.view; applyTitles(); });
+  $("#g-kind").addEventListener("click", ev => { const b = ev.target.closest("button[data-kind]"); if (!b) return; S.gkind = b.dataset.kind; applyTitles(); });
 
   function renderMoreTitles() {
     const f = readFilters();
