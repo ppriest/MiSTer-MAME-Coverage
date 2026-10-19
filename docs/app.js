@@ -67,6 +67,15 @@
     tip.style.top = (y + 14 + h > innerHeight ? y - h - 10 : y + 14) + "px";
   }
   const hideTip = () => { tip.hidden = true; };
+  // The charts redraw themselves (a click on a bar applies a filter and rebuilds the chart under the pointer, so no mouseleave ever
+  // arrives; a touch has no mouseleave at all). So the tooltip also goes whenever the pointer is anywhere but over a chart, on any
+  // press, scroll or key, when the pointer leaves the window, and when the chart is redrawn.
+  document.addEventListener("mouseover", ev => { if (!tip.hidden && !ev.target.closest("svg")) hideTip(); });
+  document.addEventListener("pointerdown", ev => { if (!tip.hidden && (ev.pointerType !== "mouse" || !ev.target.closest("svg"))) hideTip(); });
+  document.addEventListener("keydown", hideTip);
+  document.documentElement.addEventListener("mouseleave", hideTip);
+  addEventListener("scroll", hideTip, { passive: true });
+  addEventListener("blur", hideTip);
 
   // ---------- helpers over the data ----------
   const isArcadeWorking = t => t.category === "arcade" && t.working;
@@ -138,7 +147,7 @@
   const zoomed = sel => !!$(sel).closest(".chart.zoomed");
   const chartW = sel => Math.max(240, Math.min(zoomed(sel) ? 2000 : 640, Math.round(($(sel) && $(sel).clientWidth) || 640)));
   const chartH = (sel, W) => zoomed(sel) ? Math.max(300, Math.min(innerHeight - 190, Math.round(W * .5))) : 260;
-  function redrawCharts() { if (S.data && $("#charts-box").open && !S.chartsLock) { renderTimeChart(); renderYearChart(); renderGenreChart(); renderCoresChart(); } }
+  function redrawCharts() { hideTip(); if (S.data && $("#charts-box").open && !S.chartsLock) { renderTimeChart(); renderYearChart(); renderGenreChart(); renderCoresChart(); } }
   // Full-screen zoom of one chart: the figure itself covers the window (so its hover and drag still work) and is drawn again, larger.
   function zoomChart(fig, on) {
     fig.classList.toggle("zoomed", on);
@@ -264,7 +273,7 @@
       const r = rows[+g.dataset.i];
       g.addEventListener("mousemove", ev => showTip(`<b>${r.k}</b><br>on MiSTer: ${fmt(r.covered)} of ${fmt(r.total)} (${pct(r.covered, r.total)})<br>remaining: ${fmt(r.total - r.covered)}`, ev.clientX, ev.clientY));
       g.addEventListener("mouseleave", hideTip);
-      g.addEventListener("click", () => { const y0 = r.k === "≤1974" ? "" : r.k === "2006+" ? "2006" : r.k === "n/a" ? "" : r.k; const y1 = r.k === "≤1974" ? "1974" : r.k === "2006+" ? "" : y0; $("#f-y0").value = y0; $("#f-y1").value = y1; applyTitles(); showTab("titles"); });
+      g.addEventListener("click", () => { hideTip(); const y0 = r.k === "≤1974" ? "" : r.k === "2006+" ? "2006" : r.k === "n/a" ? "" : r.k; const y1 = r.k === "≤1974" ? "1974" : r.k === "2006+" ? "" : y0; $("#f-y0").value = y0; $("#f-y1").value = y1; applyTitles(); showTab("titles"); });
     });
   }
 
@@ -300,7 +309,7 @@
       const r = rows[+g.dataset.i];
       g.addEventListener("mousemove", ev => showTip(`<b>${esc(r.k)}</b><br>on MiSTer: ${fmt(r.covered)} of ${fmt(r.total)} (${pct(r.covered, r.total)})<br>remaining: ${fmt(r.total - r.covered)}`, ev.clientX, ev.clientY));
       g.addEventListener("mouseleave", hideTip);
-      g.addEventListener("click", () => { $("#f-genre").value = r.k; applyTitles(); showTab("titles"); });
+      g.addEventListener("click", () => { hideTip(); $("#f-genre").value = r.k; applyTitles(); showTab("titles"); });
     });
   }
 
