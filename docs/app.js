@@ -698,9 +698,10 @@
     const tr = btn.closest("tr"), file = btn.dataset.hw;
     let next = tr.nextElementSibling;
     const has = next && next.classList.contains("hw");
-    if (!open) { if (has) next.remove(); btn.setAttribute("aria-expanded", "false"); S.hwOpen.delete(file); return; }
+    if (!open) { if (has) next.remove(); btn.setAttribute("aria-expanded", "false"); btn.textContent = "▸"; S.hwOpen.delete(file); return; }
     S.hwOpen.add(file);
     btn.setAttribute("aria-expanded", "true");
+    btn.textContent = "▾";
     if (has) return;
     const row = document.createElement("tr");
     row.className = "hw";
