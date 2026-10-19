@@ -11,7 +11,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=2fb7ff3bbd">
+<link rel="stylesheet" href="style.css?v=9e8da7af3f">
 </head>
 <body>
 <header class="top">
@@ -186,6 +186,11 @@
     </figure>
     </section>
     </details>
+    <div class="viewbar">
+      <span class="seg" id="t-view" role="group" aria-label="Titles view"><button type="button" data-view="list" class="on" aria-pressed="true">List</button><button type="button" data-view="gallery" aria-pressed="false">Gallery</button></span>
+      <span class="seg" id="g-kind" role="group" aria-label="Screenshot" hidden><button type="button" data-kind="ingame" class="on" aria-pressed="true">In game</button><button type="button" data-kind="title" aria-pressed="false">Title screen</button></span>
+    </div>
+    <div id="titles-gallery" hidden></div>
     <div class="tablewrap">
       <table class="grid" id="titles-table">
         <thead><tr><th></th><th class="launchcol"></th><th data-sort="desc">Title</th><th data-sort="name">Set</th><th data-sort="year">Year</th><th data-sort="manufacturer">Manufacturer</th><th data-sort="genre">Genre</th><th data-sort="sourcefile">MAME Driver</th><th data-sort="nsets">Sets</th><th data-sort="date">On MiSTer since</th><th>Cores</th><th title="request a port">+1</th></tr></thead>
@@ -353,6 +358,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=74fad3101f"></script>
+<script src="app.js?v=434b3859bd"></script>
 </body>
 </html>

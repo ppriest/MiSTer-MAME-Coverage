@@ -464,10 +464,58 @@
     renderCharts();
     $("#titles-table tbody").innerHTML = "";
     $("#titles-count").textContent = `${fmt(rows.length)} titles` + (f.work === "working" ? ` · ${fmt(rows.reduce((n, t) => n + t.nworking, 0))} working sets` : ` · ${fmt(rows.reduce((n, t) => n + t.nsets, 0))} sets`);
-    renderMoreTitles();
+    syncTitlesView();
+    S.gshown = 0; $("#titles-gallery").innerHTML = "";
+    if (S.tview === "gallery") S.gfiltered = rows.filter(t => t.img && (t.img.ingame || t.img.title)); else S.gfiltered = [];
+    if (S.tview === "gallery") { renderMoreGallery(); $("#titles-count").textContent += ` · ${fmt(S.gfiltered.length)} with screenshots`; }
+    else renderMoreTitles();
     renderChips();
     writeHash();
   }
+
+  // ---------- gallery view of the titles ----------
+  // The same filtered, sorted titles as tiles: the in-game shot (or the title screen: a toggle), in the 4:3 / 3:4 shape of the twist-open
+  // galleries (multi-screen shots split into displays), a little info under each tile, and a click zooms like any gallery shot.
+  const GPAGE = 60;
+  const store2 = (k, v) => { try { localStorage.setItem(k, v); } catch (e) { /* ignore */ } };
+  const load2 = (k, d) => { try { return localStorage.getItem(k) || d; } catch (e) { return d; } };
+  S.tview = load2("titles-view", "list"); S.gkind = load2("titles-shot", "ingame"); S.gshown = 0; S.gfiltered = [];
+  function syncTitlesView() {
+    if (!IMAGE_BASE) S.tview = "list";
+    const g = S.tview === "gallery";
+    $("#t-view").querySelectorAll("button").forEach(b => { const on = b.dataset.view === S.tview; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
+    $("#t-view").querySelector('[data-view="gallery"]').disabled = !IMAGE_BASE;
+    $("#g-kind").hidden = !g;
+    $("#g-kind").querySelectorAll("button").forEach(b => { const on = b.dataset.kind === S.gkind; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
+    $("#titles-table").closest(".tablewrap").hidden = g;
+    $("#titles-gallery").hidden = !g;
+    if (g) $("#titles-more").hidden = true;
+  }
+  function tileHtml(t, f) {
+    const k = t.img[S.gkind] ? S.gkind : S.gkind === "ingame" ? "title" : "ingame";     // the other kind when this one has no shot
+    const nsets = f.work === "working" ? t.nworking : t.nsets, ncov = f.work === "working" ? t.ncovered_working : t.ncovered;
+    const cls = ncov === 0 ? "uncovered" : ncov < nsets ? "partial" : "covered";
+    return `<figure class="tile ${cls}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
+      <img loading="lazy" src="${esc(IMAGE_BASE + "/" + t.img[k])}" alt="${esc(t.desc)}" onerror="this.closest('figure').remove()">
+      <figcaption class="tt" title="${esc(t.desc)}">${esc(t.desc)}</figcaption>
+      <div class="pub" title="${esc(t.manufacturer)}">${esc(t.manufacturer)}${t.year ? ` · ${esc(t.year)}` : ""}</div>
+      <div class="trow"><span class="gen" title="${esc(t.genre || "")}">${esc(t.genre || "")}${t.mature ? ' <span class="flag">18+</span>' : ""}</span>
+        <span class="tact">${t.cores.length ? `<button type="button" class="launch" data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}" title="launch on my MiSTer via Zaparoo">▶</button>` : ""}${ncov < nsets ? plus1("title", t.name) : ""}</span></div>
+    </figure>`;
+  }
+  function renderMoreGallery() {
+    const f = readFilters();
+    const slice = S.gfiltered.slice(S.gshown, S.gshown + GPAGE);
+    $("#titles-gallery").insertAdjacentHTML("beforeend", slice.length || S.gshown ? `<div class="gallery tiles">${slice.map(t => tileHtml(t, f)).join("")}</div>` : '<p class="muted">no titles with screenshots match the filters</p>');
+    S.gshown += slice.length;
+    // one grid, so the zoom steps through every tile loaded so far
+    const grids = $("#titles-gallery").querySelectorAll(".gallery.tiles");
+    if (grids.length > 1) { const first = grids[0]; for (let i = 1; i < grids.length; i++) { while (grids[i].firstChild) first.appendChild(grids[i].firstChild); grids[i].remove(); } }
+    $("#titles-more").hidden = S.gshown >= S.gfiltered.length;
+    $("#titles-more").textContent = `Show more (${fmt(S.gfiltered.length - S.gshown)} left)`;
+  }
+  $("#t-view").addEventListener("click", ev => { const b = ev.target.closest("button[data-view]"); if (!b || b.disabled) return; S.tview = b.dataset.view; store2("titles-view", S.tview); applyTitles(); });
+  $("#g-kind").addEventListener("click", ev => { const b = ev.target.closest("button[data-kind]"); if (!b) return; S.gkind = b.dataset.kind; store2("titles-shot", S.gkind); applyTitles(); });
 
   function renderMoreTitles() {
     const f = readFilters();
@@ -519,7 +567,7 @@
     if (S.open.has(name)) { S.open.delete(name); tr.nextElementSibling?.classList.contains("detail") && tr.nextElementSibling.remove(); tr.firstElementChild.textContent = "▸"; }
     else { S.open.add(name); tr.insertAdjacentHTML("afterend", detailRow(t)); tr.firstElementChild.textContent = "▾"; fillHardware(tr.nextElementSibling); document.dispatchEvent(new Event("shot-hide")); }
   });
-  $("#titles-more").addEventListener("click", renderMoreTitles);
+  $("#titles-more").addEventListener("click", () => S.tview === "gallery" ? renderMoreGallery() : renderMoreTitles());
   $("#f-dir").addEventListener("click", () => { S.dir.t *= -1; $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓"; applyTitles(); });
   $("#f-reset").addEventListener("click", () => { FILTER_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.t = 1; $("#f-dir").textContent = "↑"; applyTitles(); });
   // ---------- active-filter chips, quick filters, collapsible panel ----------
@@ -1181,6 +1229,7 @@
       dlg.classList.toggle("single", set.length < 2);
     };
     document.addEventListener("click", ev => {
+      if (ev.target.closest("button, a")) return;                // a tile's Play and +1 are not a zoom
       const t = ev.target.closest(".gallery figure"); if (!t || !t.dataset.src) return;
       set = Array.from(t.closest(".gallery").querySelectorAll("figure"));
       show(set.indexOf(t)); dlg.showModal();
