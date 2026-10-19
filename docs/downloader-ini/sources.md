@@ -2,7 +2,7 @@
 
 Databases to add to get the source-available AI-assisted arcade cores, from developers who are willing to fix reported bugs
 
-Last checked 2026-10-18 19:36 UTC.
+Last checked 2026-10-19 10:44 UTC.
 
 **Don't use both these and [MiSTer_Ongo](https://github.com/OngoGablogian/MiSTer_Ongo):** they overlap heavily (it republishes many of the same cores).
 

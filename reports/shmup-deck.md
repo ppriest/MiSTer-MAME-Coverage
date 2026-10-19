@@ -1,17 +1,14 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-10-18 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (317 games).
+Generated 2026-10-19 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (317 games).
 
 **Agreement:** 307 of 309 deck titles are Shmup in our data (99.4%).
 
 ## New since the previous report
 
-**4 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
+**1 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
 
-- `pc_1942` 1942 (PlayChoice-10) (1987; Shooter / Flying Vertical)
-- `pc_cshwk` Captain Sky Hawk (PlayChoice-10) (1989; Shooter / Flying Vertical)
-- `pc_grdus` Gradius (PlayChoice-10) (1986; Shooter / Flying Horizontal)
-- `seicross` Seicross (set 1) (1984; Shooter / Driving Horizontal)
+- `rabiolep` Rabio Lepus (Japan) (1987; Shooter / Flying Horizontal)
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -22,16 +19,14 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (110)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (111)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
-| **NEW** `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
-| **NEW** `pc_cshwk` | Captain Sky Hawk (PlayChoice-10) | 1989 | Shooter / Flying Vertical (catver) | PlayChoice10 |
-| **NEW** `pc_grdus` | Gradius (PlayChoice-10) | 1986 | Shooter / Flying Horizontal (catver) | PlayChoice10 |
-| **NEW** `seicross` | Seicross (set 1) | 1984 | Shooter / Driving Horizontal (catver) | jtseicro |
+| **NEW** `rabiolep` | Rabio Lepus (Japan) | 1987 | Shooter / Flying Horizontal (catver) | RabbitPunch (mlc4050) |
+| `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
 | `aliensec` | Alien Sector | 1985 | Shooter / Flying Horizontal (catver) | jtthundr |
@@ -42,19 +37,20 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `baryon` | Baryon - Future Assault (set 1) | 1997 | Shooter / Flying Vertical (catver) | DreamWorld |
 | `bchopper` | Battle Chopper (World) | 1987 | Shooter / Flying (catver) | IremM72 |
 | `boomrang` | Boomer Rang'r / Genesis (set 1) | 1983 | Shooter / Walking (catver) | DataEastLiberation |
-| `brkthru` | Break Thru (World) | 1986 | Shooter / Driving Horizontal (catver) | xnbrkthru |
+| `brkthru` | Break Thru (World) | 1986 | Shooter / Driving Horizontal (catver) | xnbrkthru (XelaNotPu) |
 | `bucky` | Bucky O'Hare (ver EAB) | 1992 | Shooter / Walking (catver) | Bucky |
 | `bullet` | Bullet (FD1094 317-0041) | 1987 | Shooter / Walking (catver) | jts16b |
 | `butasan` | Butasan - Pig's & Bomber's (Japan, English) | 1987 | Shooter / Walking (catver) | jtargus, Argus |
 | `calibr50` | Caliber 50 (Ver. 1.01) | 1989 | Shooter / Walking (catver) | jtcal50, SetaDowntown |
-| `choplift` | Choplifter (8751 315-5151) | 1985 | Shooter / Flying Horizontal (catver) | SEGASYS1_B23_FULL_20261013, Blackwine-SegaSystem1-2, SegaSys1+2 (TheJesusFish) |
-| `colony7` | Colony 7 (set 1) | 1981 | Shooter / Command (catver) | Defender |
+| `pc_cshwk` | Captain Sky Hawk (PlayChoice-10) | 1989 | Shooter / Flying Vertical (catver) | PlayChoice10 |
+| `choplift` | Choplifter (8751 315-5151) | 1985 | Shooter / Flying Horizontal (catver) | SEGASYS1_B23_FULL, Blackwine-SegaSystem1-2, SegaSys1+2 (TheJesusFish) |
+| `colony7` | Colony 7 (set 1) | 1981 | Shooter / Command (catver) | Defender, Williams_TestBuild (RodimusFVC) |
 | `commando` | Commando (World) | 1985 | Shooter / Walking (catver) | jtcommnd |
 | `dcon` | D-Con | 1992 | Shooter / Command (catver) | DCon |
-| `dambustr` | Dambusters (US, set 1) | 1981 | Shooter / Flying Horizontal (catver) | Galaxian |
+| `dambustr` | Dambusters (US, set 1) | 1981 | Shooter / Flying Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `dangerex` | Danger Express (prototype) | 1992 | Shooter / Misc. Vertical (catver) | Atari-G42 |
 | `dariusgx` | Darius Gaiden - Silver Hawk Extra Version (Ver 2.7J 1995/03/06) (Official Hack) | 1994 | Shooter / Flying Horizontal (catver) | Rayforce (spacestate1) |
-| `defender` | Defender (Red label) | 1980 | Shooter / Flying Horizontal (catver) | Defender |
+| `defender` | Defender (Red label) | 1980 | Shooter / Flying Horizontal (catver) | Defender, Williams_TestBuild (RodimusFVC) |
 | `desertbr` | Desert Breaker (World) (FD1094 317-0196) | 1992 | Shooter / Walking (catver) | jts18 |
 | `devilw` | Devil World | 1987 | Shooter / Walking (catver) | jttwin16 |
 | `dogfight` | Dog Fight (Thunderbolt) | 1983 | Shooter / Flying (catver) | Vastar |
@@ -68,19 +64,20 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `gground` | Gain Ground (World, 3 Players, Floppy Based, FD1094 317-0058-03d Rev A) | 1988 | Shooter / Walking (catver) | SegaSystem24 |
 | `gbusters` | Gang Busters (set 1) | 1988 | Shooter / Walking (catver) | jtaliens |
 | `gondo` | Gondomania (World) | 1987 | Shooter / Flying Vertical (catver) | dec8 |
+| `pc_grdus` | Gradius (PlayChoice-10) | 1986 | Shooter / Flying Horizontal (catver) | PlayChoice10 |
 | `gwar` | Guerrilla War (US) | 1987 | Shooter / Walking (catver) | ffgwar |
 | `gundhara` | Gundhara | 1995 | Shooter / Walking (catver) | Seta |
 | `heatbrl` | Heated Barrel (World version 3) | 1992 | Shooter / Walking (catver) | HeatedBarrel |
 | `hbarrel` | Heavy Barrel (World) | 1987 | Shooter / Walking (catver) | jtninja |
-| `hvyunit` | Heavy Unit (World) | 1988 | Shooter / Flying Horizontal (catver) | heavyunit, HeavyUnit |
-| `ikari3` | Ikari III - The Rescue (World version 1, 8-Way Joystick) | 1989 | Shooter / Walking (catver) | SNK68 |
+| `hvyunit` | Heavy Unit (World) | 1988 | Shooter / Flying Horizontal (catver) | heavyunit (decoryah), HeavyUnit |
+| `ikari3` | Ikari III - The Rescue (World version 1, 8-Way Joystick) | 1989 | Shooter / Walking (catver) | SNK68, SNK68 (va7deo) |
 | `ikari` | Ikari Warriors (US JAMMA) | 1986 | Shooter / Walking (catver) | IkariWarriors |
 | `kikikai` | KiKi KaiKai | 1986 | Shooter / Walking (catver) | kikikai, Kikikaikai (alpuy) |
 | `lasthope` | Last Hope (bootleg AES to MVS conversion, no coin support) | 2005 | Shooter / Flying Horizontal (catver) | NeoGeo |
 | `liberate` | Liberation | 1984 | Shooter / Flying (catver) | DataEastLiberation |
 | `mariner` | Mariner | 1981 | Shooter / Misc. Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `markham` | Markham | 1983 | Shooter / Flying Horizontal (catver) | IkkiSunsoft |
-| `mayday` | Mayday (set 1) | 1980 | Shooter / Flying Horizontal (catver) | Defender |
+| `mayday` | Mayday (set 1) | 1980 | Shooter / Flying Horizontal (catver) | Defender, Williams_TestBuild (RodimusFVC) |
 | `megaphx` | Mega Phoenix | 1991 | Shooter / Flying Vertical (catver) | ffmegaphx |
 | `mercs` | Mercs (World 900302) | 1990 | Shooter / Walking (catver) | jtcps1 |
 | `metlhawk` | Metal Hawk (Rev C) | 1988 | Shooter / Flying (catver) | NamcoS2_MH |
@@ -101,34 +98,35 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `phantom2` | Phantom II | 1979 | Shooter / Flying Vertical (catver) | SpaceInvaders, SpaceInvaders_TestBuild (RodimusFVC) |
 | `pballoon` | Pioneer Balloon | 1982 | Shooter / Flying Horizontal (catver) | SNK6502 |
 | `rampart` | Rampart (Trackball) | 1990 | Shooter / Command (catver) | Rampart |
-| `redclash` | Red Clash | 1981 | Shooter / Flying Vertical (catver) | Universal |
+| `redclash` | Red Clash | 1981 | Shooter / Flying Vertical (catver) | Universal, Universal_TestBuild (RodimusFVC) |
 | `rescue` | Rescue | 1982 | Shooter / Flying (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |
-| `searchar` | SAR - Search And Rescue (World) | 1989 | Shooter / Walking (catver) | SNK68 |
+| `searchar` | SAR - Search And Rescue (World) | 1989 | Shooter / Walking (catver) | SNK68, SNK68 (va7deo) |
 | `sauro` | Sauro (set 1) | 1987 | Shooter / Flying Horizontal (catver) | ffsauro |
 | `scotrsht` | Scooter Shooter | 1985 | Shooter / Flying (catver) | ScooterShooter |
 | `scorpion` | Scorpion (set 1) | 1982 | Shooter / Flying Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `sfposeid` | Sea Fighter Poseidon | 1984 | Shooter / Misc. Horizontal (catver) | TaitoSJ |
 | `seganinj` | Sega Ninja (315-5102) | 1985 | Shooter / Walking (catver) | SEGASYS1 |
+| `seicross` | Seicross (set 1) | 1984 | Shooter / Driving Horizontal (catver) | jtseicro |
 | `shocktro` | Shock Troopers (set 1) | 1997 | Shooter / Walking (catver) | NeoGeo |
 | `shocktr2` | Shock Troopers - 2nd Squad | 1998 | Shooter / Walking (catver) | NeoGeo |
-| `skyalert` | Sky Alert | 1992 | Shooter / Flying Vertical (catver) | metro |
+| `skyalert` | Sky Alert | 1992 | Shooter / Flying Vertical (catver) | metro, metro (decoryah) |
 | `skyskipr` | Sky Skipper | 1981 | Shooter / Flying (catver) | Popeye, jtpopeye |
 | `amazon` | Soldier Girl Amazon | 1986 | Shooter / Walking (catver) | terracresta |
-| `stargate` | Stargate | 1981 | Shooter / Flying (catver) | Robotron |
+| `stargate` | Stargate | 1981 | Shooter / Flying (catver) | Robotron, Williams_TestBuild (RodimusFVC) |
 | `strkforc` | Strike Force (rev 1 02/25/91) | 1991 | Shooter / Flying (catver) | blahm1d_yunit |
 | `superbik` | Superbike | 1983 | Shooter / Driving Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
-| `syvalion` | Syvalion (Japan) | 1988 | Shooter / Flying Horizontal (catver) | Syvalion |
+| `syvalion` | Syvalion (Japan) | 1988 | Shooter / Flying Horizontal (catver) | Syvalion (diegov-au) |
 | `tacscan` | Tac/Scan | 1982 | Shooter / Flying Vertical (catver) | SegaG80V, SegaG80 (RodimusFVC) |
 | `tazmania` | Tazz-Mania (set 1) | 1982 | Shooter / Walking (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |
 | `thndrbld` | Thunder Blade (upright) (FD1094 317-0056) | 1987 | Shooter / Flying (catver) | SegaXBoard |
 | `thndzone` | Thunder Zone (World, Rev 1) | 1991 | Shooter / Walking (catver) | thndzone |
 | `timefgtr` | Time Fighter (Time Pilot conversion on Galaxian hardware) | 198? | Shooter / Flying (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
-| `timesold` | Time Soldiers (US Rev 3) | 1987 | Shooter / Walking (catver) | Alpha68k |
+| `timesold` | Time Soldiers (US Rev 3) | 1987 | Shooter / Walking (catver) | Alpha68k, Alpha68k (va7deo) |
 | `totcarn` | Total Carnage (rev LA1 03/10/92) | 1992 | Shooter / Walking (catver) | blahm1d_yunitadpcm |
 | `tricktrp` | Trick Trap (World?) | 1987 | Shooter / Walking (catver) | jtlabrun |
 | `turtship` | Turtle Ship (North America) | 1988 | Shooter / Flying Horizontal (catver) | bazturtship |
 | `valkyrie` | Valkyrie no Densetsu (Japan) | 1989 | Shooter / Walking (catver) | NamcoS2_STD |
-| `vmetal` | Varia Metal | 1995 | Shooter / Flying Vertical (catver) | metro |
+| `vmetal` | Varia Metal | 1995 | Shooter / Flying Vertical (catver) | metro, metro (decoryah) |
 | `victroad` | Victory Road | 1986 | Shooter / Walking (catver) | IkariWarriors |
 | `vsgradus` | Vs. Gradius (US, set GR E) | 1986 | Shooter / Flying Horizontal (catver) | VSnes |
 | `bnglngby` | Vs. Raid on Bungeling Bay (RD4-2 B) | 1985 | Shooter / Flying (catver) | VSnes |
