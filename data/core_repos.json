@@ -231,6 +231,9 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA",
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "decoryah:crospang": [
+  "decoryah/Arcade-CrossPang_MiSTer"
+ ],
  "decoryah:gaiapolis": [
   "decoryah/Arcade-Gaiapolis_MiSTer"
  ],
@@ -1878,6 +1881,7 @@
   "meathax/meatcores"
  ],
  "meat:blackpanther": [
+  "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
  "meat:bucky": [
@@ -2241,6 +2245,9 @@
  "ongo:meathax_dataeastliberation": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:meathax_exterminator": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:meathax_heavyunit": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2275,6 +2282,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_yellowcab": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:meathax_zaccaria": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_zeroteam": [
@@ -2409,10 +2419,16 @@
  "ongo:xnsystem12": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:xnsystem21": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:xnsystem22": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:xnsystemfl": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:xnwinrun": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:xnzn1": [
@@ -2422,6 +2438,9 @@
  "ongo:xnzn1taitofx1b": [
   "OngoGablogian/MiSTer_Ongo",
   "XelaNotPu/ZN1-TaitoFX1B_MiSTer"
+ ],
+ "ongo:zaccaria": [
+  "meathax/meatcores"
  ],
  "ongo:zeroteam": [
   "meathax/meatcores"

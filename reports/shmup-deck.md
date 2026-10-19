@@ -6,9 +6,7 @@ Generated 2026-10-19 by `tools/reconcile_shmups.py` from MAME 0289 data and [shm
 
 ## New since the previous report
 
-**1 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
-
-- `rabiolep` Rabio Lepus (Japan) (1987; Shooter / Flying Horizontal)
+Nothing new: the same titles disagree as before.
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -25,7 +23,6 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
-| **NEW** `rabiolep` | Rabio Lepus (Japan) | 1987 | Shooter / Flying Horizontal (catver) | RabbitPunch (mlc4050) |
 | `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
@@ -97,6 +94,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `orbitron` | Orbitron | 1982 | Shooter / Command (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `phantom2` | Phantom II | 1979 | Shooter / Flying Vertical (catver) | SpaceInvaders, SpaceInvaders_TestBuild (RodimusFVC) |
 | `pballoon` | Pioneer Balloon | 1982 | Shooter / Flying Horizontal (catver) | SNK6502 |
+| `rabiolep` | Rabio Lepus (Japan) | 1987 | Shooter / Flying Horizontal (catver) | RabbitPunch (mlc4050) |
 | `rampart` | Rampart (Trackball) | 1990 | Shooter / Command (catver) | Rampart |
 | `redclash` | Red Clash | 1981 | Shooter / Flying Vertical (catver) | Universal, Universal_TestBuild (RodimusFVC) |
 | `rescue` | Rescue | 1982 | Shooter / Flying (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |

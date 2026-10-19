@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-19T10:44:04+00:00",
+  "generated": "2026-10-19T21:41:03+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-19T10:43:52+00:00",
+  "mister_generated": "2026-10-19T21:40:39+00:00",
   "alamone_generated": "2026-10-19T09:14:45+00:00",
   "ledger_updated": "2026-10-19",
   "ledger_runs": [
-   {
-    "date": "2026-10-18",
-    "note": "alamone 2026-10-12",
-    "cores": 4,
-    "sets": 0,
-    "pairs": 32,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-18",
     "note": "alamone 2026-10-12",
@@ -51,15 +42,24 @@
     "pairs": 582,
     "dates_improved": 118,
     "cores_removed": 1
+   },
+   {
+    "date": "2026-10-19",
+    "note": "alamone 2026-10-19",
+    "cores": 14,
+    "sets": 26,
+    "pairs": 87,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
    "overrides": 0,
    "local_categories": 1,
-   "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5291 sets, 5291 used); mame2016: catver_mame2016.ini (37065 sets, 32707 used)",
-   "catver_entries": 37998,
+   "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5376 sets, 5376 used); mame2016: catver_mame2016.ini (37065 sets, 32647 used)",
+   "catver_entries": 38023,
    "mad_entries": 2995,
-   "mra_entries": 3560,
+   "mra_entries": 3579,
    "unmapped": [
     {
      "raw": "not classified",
@@ -248,7 +248,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1332
+    "mras": 1347
    },
    {
     "source": "dist",
@@ -2756,7 +2756,7 @@
     "source": "ongo",
     "repo": "meathax/meatcores",
     "dirs": null,
-    "mras": 182
+    "mras": 184
    },
    {
     "source": "ongo",
@@ -2968,6 +2968,12 @@
    },
    {
     "source": "decoryah",
+    "repo": "decoryah/Arcade-CrossPang_MiSTer",
+    "dirs": null,
+    "mras": 6
+   },
+   {
+    "source": "decoryah",
     "repo": "decoryah/MiSTer_decoryah",
     "dirs": null,
     "mras": 0
@@ -3024,13 +3030,13 @@
   "counts": {
    "titles": 6826,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2274,
+   "working_arcade_titles_covered": 2286,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5784,
-   "working_arcade_titles_source": 2028,
-   "working_arcade_titles_binary_only": 246,
-   "cores": 699,
-   "binary_only_cores": 235,
+   "working_arcade_sets_covered": 5809,
+   "working_arcade_titles_source": 2033,
+   "working_arcade_titles_binary_only": 253,
+   "cores": 704,
+   "binary_only_cores": 241,
    "unmatched_sets": 430
   }
  },
@@ -5363,6 +5369,28 @@
    "first_date": "2022-09-22"
   },
   {
+   "id": "decoryah:crospang",
+   "name": "crospang",
+   "source": "decoryah",
+   "source_title": "decoryah",
+   "channel": null,
+   "rbf": "crospang.rbf",
+   "repo": "decoryah/Arcade-CrossPang_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-CrossPang_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-19",
+   "last_seen": "2026-10-19",
+   "binary_only": false,
+   "nsets": 6,
+   "ntitles": 4,
+   "first_date": "2026-10-19"
+  },
+  {
    "id": "decoryah:gaiapolis",
    "name": "gaiapolis (decoryah)",
    "source": "decoryah",
@@ -5728,8 +5756,8 @@
    ],
    "note": null,
    "aliases": [
-    "ongo:pgm2",
-    "decoryah:pgm2"
+    "decoryah:pgm2",
+    "ongo:pgm2"
    ],
    "first_recorded": "2026-10-19",
    "last_seen": "2026-10-19",
@@ -15322,6 +15350,7 @@
    "mame_drivers": [],
    "note": "",
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 2,
@@ -15393,6 +15422,9 @@
    "score": null,
    "mame_drivers": [],
    "note": "",
+   "aliases": [
+    "ongo:meathax_blackpanther"
+   ],
    "first_recorded": "2026-10-19",
    "last_seen": "2026-10-19",
    "binary_only": true,
@@ -15464,6 +15496,7 @@
    "mame_drivers": [],
    "note": "",
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": true,
    "nsets": 1,
@@ -15591,6 +15624,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": true,
    "nsets": 1,
@@ -15613,6 +15647,7 @@
    "mame_drivers": [],
    "note": "",
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": true,
    "nsets": 0,
@@ -15760,6 +15795,7 @@
    "mame_drivers": [],
    "note": "",
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": true,
    "nsets": 5,
@@ -16263,6 +16299,28 @@
    "first_date": "2026-07-28"
   },
   {
+   "id": "meat:zaccaria",
+   "name": "Zaccaria",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-Zaccaria.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-19",
+   "last_seen": "2026-10-19",
+   "binary_only": true,
+   "nsets": 2,
+   "ntitles": 2,
+   "first_date": "2026-10-19"
+  },
+  {
    "id": "meat:zeroteam",
    "name": "ZeroTeam",
    "source": "meat",
@@ -16656,6 +16714,28 @@
    "first_date": "2026-08-02"
   },
   {
+   "id": "ongo:xnsystem21",
+   "name": "XNSYSTEM21",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "XNSYSTEM21.rbf",
+   "repo": "OngoGablogian/MiSTer_Ongo",
+   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-19",
+   "last_seen": "2026-10-19",
+   "binary_only": true,
+   "nsets": 7,
+   "ntitles": 4,
+   "first_date": "2026-10-19"
+  },
+  {
    "id": "ongo:xnsystem22",
    "name": "XNSYSTEM22",
    "source": "ongo",
@@ -16677,6 +16757,28 @@
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-13"
+  },
+  {
+   "id": "ongo:xnwinrun",
+   "name": "XNWINRUN",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "XNWINRUN.rbf",
+   "repo": "OngoGablogian/MiSTer_Ongo",
+   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-19",
+   "last_seen": "2026-10-19",
+   "binary_only": true,
+   "nsets": 3,
+   "ntitles": 3,
+   "first_date": "2026-10-19"
   },
   {
    "id": "ppriest:ballysente",
@@ -16909,6 +17011,28 @@
    "first_date": "2026-10-08"
   },
   {
+   "id": "ppriest:lethalenforcers",
+   "name": "LethalEnforcers",
+   "source": "ppriest",
+   "source_title": "ppriest (Tourniquet)",
+   "channel": null,
+   "rbf": "LethalEnforcers.rbf",
+   "repo": "ppriest/Arcade-LethalEnforcers_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-LethalEnforcers_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-19",
+   "last_seen": "2026-10-19",
+   "binary_only": false,
+   "nsets": 9,
+   "ntitles": 1,
+   "first_date": "2026-10-19"
+  },
+  {
    "id": "ppriest:limenko",
    "name": "Limenko",
    "source": "ppriest",
@@ -17089,6 +17213,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 15,
@@ -17216,6 +17341,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 1,
@@ -17240,6 +17366,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 4,
@@ -17264,6 +17391,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 1,
@@ -17289,6 +17417,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 25,
@@ -17388,6 +17517,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 5,
@@ -17412,6 +17542,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 5,
@@ -17436,6 +17567,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 18,
@@ -17460,6 +17592,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 18,
@@ -17543,6 +17676,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 29,
@@ -17802,6 +17936,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 1,
@@ -17851,6 +17986,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 4,
@@ -17923,6 +18059,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 11,
@@ -17947,6 +18084,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 3,
@@ -17994,6 +18132,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 6,
@@ -18091,6 +18230,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 22,
@@ -18115,6 +18255,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 8,
@@ -18187,6 +18328,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 1,
@@ -18309,6 +18451,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 4,
@@ -18383,6 +18526,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 2,
@@ -18459,6 +18603,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 1,
@@ -18536,6 +18681,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 4,
@@ -18638,6 +18784,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 3,
@@ -18762,6 +18909,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 15,
@@ -18813,6 +18961,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 1,
@@ -18837,6 +18986,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 8,
@@ -18911,8 +19061,8 @@
    ],
    "note": null,
    "aliases": [
-    "ongo:superman_bazset",
-    "bazset:superman_bazset"
+    "bazset:superman_bazset",
+    "ongo:superman_bazset"
    ],
    "first_recorded": "2026-10-19",
    "last_seen": "2026-10-19",
@@ -18989,6 +19139,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 1,
@@ -19038,6 +19189,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 4,
@@ -19115,6 +19267,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 2,
@@ -19269,6 +19422,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 11,
@@ -19345,6 +19499,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 1,
@@ -19367,6 +19522,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 0,
@@ -19391,6 +19547,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-19",
+   "aliases": [],
    "last_seen": "2026-10-19",
    "binary_only": false,
    "nsets": 13,
@@ -22611,11 +22768,13 @@
   {
    "sourcefile": "f32/crospang.cpp",
    "titles": 4,
-   "covered": 0,
+   "covered": 4,
    "sets": 6,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 6,
+   "cores": [
+    "decoryah:crospang"
+   ],
+   "first": "2026-10-19"
   },
   {
    "sourcefile": "f32/f-32.cpp",
@@ -24068,11 +24227,13 @@
   {
    "sourcefile": "konami/lethal.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 9,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 9,
+   "cores": [
+    "ppriest:lethalenforcers"
+   ],
+   "first": "2026-10-19"
   },
   {
    "sourcefile": "konami/mainevt.cpp",
@@ -25905,20 +26066,24 @@
   {
    "sourcefile": "namco/namcos21.cpp",
    "titles": 3,
-   "covered": 0,
+   "covered": 3,
    "sets": 3,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 3,
+   "cores": [
+    "ongo:xnwinrun"
+   ],
+   "first": "2026-10-19"
   },
   {
    "sourcefile": "namco/namcos21_c67.cpp",
    "titles": 4,
-   "covered": 0,
+   "covered": 4,
    "sets": 7,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 7,
+   "cores": [
+    "ongo:xnsystem21"
+   ],
+   "first": "2026-10-19"
   },
   {
    "sourcefile": "namco/namcos22.cpp",
@@ -30188,7 +30353,8 @@
    "sets": 6,
    "sets_covered": 6,
    "cores": [
-    "jtpr:jtmnymny"
+    "jtpr:jtmnymny",
+    "meat:zaccaria"
    ],
    "first": "2026-09-04"
   }
