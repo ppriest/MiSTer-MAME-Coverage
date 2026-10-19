@@ -23,12 +23,15 @@
     ALL_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; });
     S.dir = { t: 1, d: -1, c: 1 };
     S.wlView = "requested";
+    S.tview = "list"; S.gkind = "ingame";
   }
   function readHash() {
     const p = new URLSearchParams(location.hash.slice(1));
     for (const id of ALL_IDS) if (p.has(id)) { const el = $("#" + id); if (el) el.value = p.get(id); }
     for (const [k, d] of Object.entries(DIRS)) if (p.has(k)) S.dir[d] = +p.get(k) || S.dir[d];
     S.wlView = p.get("wl") === "fulfilled" ? "fulfilled" : "requested";   // Wishlist: Requested / Fulfilled
+    S.tview = p.get("view") === "gallery" ? "gallery" : "list";            // Titles: List / Gallery
+    S.gkind = p.get("shot") === "title" ? "title" : "ingame";              // Gallery: In game / Title screen
     if (p.has("tab")) showTab(p.get("tab"), false);
     $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓"; $("#d-dir").textContent = S.dir.d > 0 ? "↑" : "↓"; $("#c-dir").textContent = S.dir.c > 0 ? "↑" : "↓";
   }
@@ -41,6 +44,8 @@
     const tab = $(".tabs [aria-selected=true]").dataset.tab;
     if (tab !== "titles") p.set("tab", tab);
     if (S.wlView === "fulfilled") p.set("wl", "fulfilled");
+    if (S.tview === "gallery") p.set("view", "gallery");
+    if (S.gkind === "title") p.set("shot", "title");
     history.replaceState(null, "", "#" + p.toString());
   }
 
@@ -477,9 +482,7 @@
   // The same filtered, sorted titles as tiles: the in-game shot (or the title screen: a toggle), in the 4:3 / 3:4 shape of the twist-open
   // galleries (multi-screen shots split into displays), a little info under each tile, and a click zooms like any gallery shot.
   const GPAGE = 60;
-  const store2 = (k, v) => { try { localStorage.setItem(k, v); } catch (e) { /* ignore */ } };
-  const load2 = (k, d) => { try { return localStorage.getItem(k) || d; } catch (e) { return d; } };
-  S.tview = load2("titles-view", "list"); S.gkind = load2("titles-shot", "ingame"); S.gshown = 0; S.gfiltered = [];
+  S.tview = S.tview || "list"; S.gkind = S.gkind || "ingame"; S.gshown = 0; S.gfiltered = [];       // both live in the URL hash (view=gallery, shot=title)
   function syncTitlesView() {
     if (!IMAGE_BASE) S.tview = "list";
     const g = S.tview === "gallery";
@@ -495,7 +498,7 @@
     const k = t.img[S.gkind] ? S.gkind : S.gkind === "ingame" ? "title" : "ingame";     // the other kind when this one has no shot
     const nsets = f.work === "working" ? t.nworking : t.nsets, ncov = f.work === "working" ? t.ncovered_working : t.ncovered;
     const cls = ncov === 0 ? "uncovered" : ncov < nsets ? "partial" : "covered";
-    return `<figure class="tile ${cls}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
+    return `<figure class="tile ${cls}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" ${altAttrs(t, k)} data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
       <img loading="lazy" src="${esc(IMAGE_BASE + "/" + t.img[k])}" alt="${esc(t.desc)}" onerror="this.closest('figure').remove()">
       <figcaption class="tt" title="${esc(t.desc)}">${esc(t.desc)}</figcaption>
       <div class="pub" title="${esc(t.manufacturer)}">${esc(t.manufacturer)}${t.year ? ` · ${esc(t.year)}` : ""}</div>
@@ -514,8 +517,8 @@
     $("#titles-more").hidden = S.gshown >= S.gfiltered.length;
     $("#titles-more").textContent = `Show more (${fmt(S.gfiltered.length - S.gshown)} left)`;
   }
-  $("#t-view").addEventListener("click", ev => { const b = ev.target.closest("button[data-view]"); if (!b || b.disabled) return; S.tview = b.dataset.view; store2("titles-view", S.tview); applyTitles(); });
-  $("#g-kind").addEventListener("click", ev => { const b = ev.target.closest("button[data-kind]"); if (!b) return; S.gkind = b.dataset.kind; store2("titles-shot", S.gkind); applyTitles(); });
+  $("#t-view").addEventListener("click", ev => { const b = ev.target.closest("button[data-view]"); if (!b || b.disabled) return; S.tview = b.dataset.view; applyTitles(); });
+  $("#g-kind").addEventListener("click", ev => { const b = ev.target.closest("button[data-kind]"); if (!b) return; S.gkind = b.dataset.kind; applyTitles(); });
 
   function renderMoreTitles() {
     const f = readFilters();
@@ -698,6 +701,8 @@
   // Screenshot gallery: at most SHOT_MAX images, beneath the other information of a twist-open. For one title both of its
   // shots; for a driver or a core one shot per title (in-game, else title screen), titles on MiSTer first.
   const SHOT_MAX = 50;
+  // The shot's kind and the other kind's URL (if the title has both): the zoomed view can switch between title screen and in game.
+  const altAttrs = (t, k) => { const o = k === "ingame" ? "title" : "ingame"; return `data-kind="${k}"${t.img[o] ? ` data-alt="${esc(IMAGE_BASE + "/" + t.img[o])}"` : ""}`; };
   function galleryHtml(titles, both) {
     if (!IMAGE_BASE) return "";
     const withImg = titles.filter(t => t.img && (t.img.ingame || t.img.title));
@@ -707,7 +712,7 @@
       : withImg.slice().sort((x, y) => (y.covered - x.covered) || x.desc.localeCompare(y.desc)).map(t => ({ t, k: t.img.ingame ? "ingame" : "title" }));
     const shown = items.slice(0, SHOT_MAX);
     const note = items.length > shown.length ? ` <span class="muted">(first ${shown.length} of ${fmt(items.length)})</span>` : "";
-    return `<div class="gallery-box"><h4>Screenshots${note}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure title="${esc(t.desc)} (${esc(t.year)})" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
+    return `<div class="gallery-box"><h4>Screenshots${note}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure title="${esc(t.desc)} (${esc(t.year)})" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" ${altAttrs(t, k)} data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
       <img loading="lazy" src="${esc(IMAGE_BASE + "/" + t.img[k])}" alt="${esc(t.desc)}" onerror="this.closest('figure').remove()">
       <figcaption>${esc(t.desc)}${both ? ` <span class="muted">${k === "title" ? "title screen" : "in game"}</span>` : ""}</figcaption></figure>`).join("")}</div></div>`;
   }
@@ -1121,11 +1126,11 @@
   (function () {
     const dlg = document.createElement("dialog");
     dlg.id = "lightbox"; dlg.setAttribute("aria-label", "Screenshot");
-    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-play launch" aria-label="Play on my MiSTer via Zaparoo" title="play on my MiSTer via Zaparoo" hidden>▶</button><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><div class="lb-frame"><img alt=""><span class="lb-scan"></span><canvas class="lb-crt" hidden></canvas></div><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button><span class="lb-fxs"><button type="button" class="lb-fx" data-fx="scan" title="scanlines (S)"></button><button type="button" class="lb-fx" data-fx="crt" title="CRT curve (C)"></button></span>';
+    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-play launch" aria-label="Play on my MiSTer via Zaparoo" title="play on my MiSTer via Zaparoo" hidden>▶</button><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><div class="lb-frame"><img alt=""><span class="lb-scan"></span><canvas class="lb-crt" hidden></canvas></div><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button><span class="lb-fxs"><button type="button" class="lb-fx" data-fx="kind" title="title screen / in game (T)" hidden></button><button type="button" class="lb-fx" data-fx="scan" title="scanlines (S)"></button><button type="button" class="lb-fx" data-fx="crt" title="CRT curve (C)"></button></span>';
     document.body.appendChild(dlg);
     const img = dlg.querySelector("img"), cap = dlg.querySelector("figcaption"), cv = dlg.querySelector(".lb-crt");
     const fxScan = dlg.querySelector('[data-fx="scan"]'), fxCrt = dlg.querySelector('[data-fx="crt"]');
-    let set = [], i = 0;
+    let set = [], i = 0, lbKind = "", shownKind = "";
     // Scanlines (one dark line per pixel row of the original) and a CRT curve over the zoomed shot; the choices are remembered.
     const stored = k => { try { return localStorage.getItem(k) !== "0"; } catch (e) { return true; } };
     const store = (k, on) => { try { localStorage.setItem(k, on ? "1" : "0"); } catch (e) { /* ignore */ } };
@@ -1224,19 +1229,29 @@
       img.dataset.n = fig.dataset.n || "1"; img.dataset.port = fig.dataset.port || "0";
       const play = dlg.querySelector(".lb-play");                                // the same launch as the ▶ in the titles table
       play.hidden = !fig.dataset.launch; play.dataset.launch = fig.dataset.launch || ""; play.dataset.title = fig.dataset.title || ""; play.textContent = "▶";
-      img.src = fig.dataset.src; img.alt = fig.querySelector("img")?.alt || "";
+      // title screen or in game: the kind chosen in the zoom sticks while stepping through the set, where a shot of that kind exists
+      const kinds = { [fig.dataset.kind || "x"]: fig.dataset.src, ...(fig.dataset.alt ? { [fig.dataset.kind === "title" ? "ingame" : "title"]: fig.dataset.alt } : {}) };
+      const cur = shownKind = kinds[lbKind] ? lbKind : fig.dataset.kind || "";
+      const kindBtn = dlg.querySelector('[data-fx="kind"]');
+      kindBtn.hidden = !fig.dataset.alt; kindBtn.textContent = cur === "title" ? "Show in game" : "Show title screen";
+      img.src = kinds[cur] || fig.dataset.src; img.alt = fig.querySelector("img")?.alt || "";
       cap.textContent = fig.querySelector("figcaption")?.textContent || img.alt;
       dlg.classList.toggle("single", set.length < 2);
+    };
+    const toggleKind = () => {
+      const fig = set[i]; if (!fig || !fig.dataset.alt) return;
+      lbKind = shownKind === "title" ? "ingame" : "title"; show(i);
     };
     document.addEventListener("click", ev => {
       if (ev.target.closest("button, a")) return;                // a tile's Play and +1 are not a zoom
       const t = ev.target.closest(".gallery figure"); if (!t || !t.dataset.src) return;
       set = Array.from(t.closest(".gallery").querySelectorAll("figure"));
-      show(set.indexOf(t)); dlg.showModal();
+      lbKind = t.dataset.kind || ""; show(set.indexOf(t)); dlg.showModal();
     });
     dlg.addEventListener("click", ev => {
       if (ev.target.closest(".lb-prev")) show(i - 1);
       else if (ev.target.closest(".lb-next")) show(i + 1);
+      else if (ev.target.closest('[data-fx="kind"]')) toggleKind();
       else if (ev.target.closest('[data-fx="scan"]')) setScan(!scan);
       else if (ev.target.closest('[data-fx="crt"]')) setCrt(!crt);
       else if (ev.target.closest(".lb-close") || ev.target === dlg) dlg.close();      // the backdrop is the dialog itself
@@ -1245,6 +1260,7 @@
     dlg.addEventListener("keydown", ev => {
       if (ev.key === "ArrowLeft" && set.length > 1) { ev.preventDefault(); show(i - 1); }
       else if (ev.key === "ArrowRight" && set.length > 1) { ev.preventDefault(); show(i + 1); }
+      else if (ev.key === "t" || ev.key === "T") toggleKind();
       else if (ev.key === "s" || ev.key === "S") setScan(!scan);
       else if (ev.key === "c" || ev.key === "C") { if (!crtBroken) setCrt(!crt); }
     });
