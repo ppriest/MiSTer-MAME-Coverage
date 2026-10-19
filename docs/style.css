@@ -325,3 +325,19 @@ header.top { position: sticky; top: 0; z-index: 20; }
 .top .issue .issue-title { margin-right: 0; }
 .top .issue .slopjump { margin-left: 0; }
 #drivers-table td.set { white-space: nowrap; }
+
+/* gallery view of the titles */
+.viewbar { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: center; }
+.viewbar .seg { margin: 0 0 8px; }
+.seg button:disabled { opacity: .5; cursor: default; }
+.gallery.tiles { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px 10px; }
+.gallery .tile { display: flex; flex-direction: column; gap: 2px; border-left: 3px solid var(--line); padding-left: 6px; }
+.gallery .tile.covered { border-left-color: var(--accent-3); }
+.gallery .tile.partial { border-left-color: var(--warn); }
+.gallery .tile.uncovered { border-left-color: var(--bad); }
+.gallery .tile figcaption.tt { margin-top: 4px; font-size: 13px; font-weight: 600; color: var(--text); }
+.gallery .tile .pub, .gallery .tile .gen { font-size: 11px; line-height: 1.3; color: var(--text-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.gallery .tile .trow { display: flex; align-items: center; justify-content: space-between; gap: 6px; min-height: 24px; }
+.gallery .tile .tact { display: inline-flex; gap: 4px; flex: none; }
+.gallery .tile .tact button.launch { padding: 1px 8px; }
+@media (max-width: 640px) { .gallery.tiles { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); } }
