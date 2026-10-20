@@ -1291,11 +1291,11 @@
       lbKind = shownKind === "title" ? "ingame" : "title"; show(i);
     };
     // Clicking the screen turns the display over like a card: it rotates edge-on, the other kind of shot (title screen / in game)
-    // is swapped in, and it turns back, so the two shots are the two sides of the screen. A title with one shot only just closes.
+    // is swapped in, and it turns back, so the two shots are the two sides of the screen. A title with one shot only does nothing.
     let flipping = false;
     const flip = async () => {
       const fig = set[i];
-      if (!fig || !fig.dataset.alt) { dlg.close(); return; }
+      if (!fig || !fig.dataset.alt) return;                      // only one shot: nothing to turn over
       if (flipping) return;
       const frame = dlg.querySelector(".lb-frame");
       if (matchMedia("(prefers-reduced-motion: reduce)").matches || !frame.animate) { toggleKind(); return; }
