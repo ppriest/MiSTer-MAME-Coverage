@@ -1181,7 +1181,15 @@
           float v = 16. * s.x * s.y * (1. - s.x) * (1. - s.y);
           col *= .55 + .45 * pow(v, .25);                                       // vignette
           float al = smoothstep(0., .004, e);                                   // a soft edge to the screen
-          gl_FragColor = vec4(col * 1.08 * al, al);                             // premultiplied
+          // The glass: a curved front surface lit from above left. Its normal tilts outward from the centre (c), so a broad soft
+          // highlight sits up and to the left, a tighter one inside it, and the curved rim catches a little light.
+          vec3 nrm = normalize(vec3(c * .42 * curve, 1.));
+          vec3 hv = normalize(normalize(vec3(-.5, .55, .7)) + vec3(0., 0., 1.));
+          float nh = max(dot(nrm, hv), 0.);
+          float glare = .07 * pow(nh, 14.) + .09 * pow(nh, 90.);               // broad sheen + hot spot
+          glare += .035 * smoothstep(.05, 0., e);                                // the rim of the tube
+          glare *= .6 + .4 * (1. - dot(col, vec3(.333)));                       // shows less over bright picture
+          gl_FragColor = vec4((col * 1.08 + vec3(glare)) * al, al);              // premultiplied
         }`));
       gl.linkProgram(prog);
       if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(prog));
