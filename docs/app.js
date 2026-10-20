@@ -1172,7 +1172,7 @@
           vec2 c = p * 2. - 1.;
           // The glass is a rounded rectangle (hs = half its size in half-heights, rho = the corner radius). The whole picture is fitted
           // into it, not clipped by it: each point is pushed out along its ray from the centre by tS / tO (the distance to the square
-          // over the distance to the rounded outline), but only close to the edge (the factor fades in from 72% of the way out), so
+          // over the distance to the rounded outline), but only close to the edge (the factor fades in from 60% of the way out), so
           // the distortion stays in the very corners: the picture's corners are squeezed round into the curve.
           vec2 hs = vec2(asp, 1.), qd = c * hs;
           float len = length(qd);
@@ -1181,9 +1181,9 @@
             vec2 d = abs(qd) / len;
             float tS = min(hs.x / max(d.x, 1e-5), hs.y / max(d.y, 1e-5));
             tO = tS;
-            vec2 m = hs - .075;
-            if (d.x * tS > m.x && d.y * tS > m.y) { float bb = dot(d, m); tO = bb + sqrt(max(bb * bb - dot(m, m) + .075 * .075, 0.)); }
-            lam = 1. + (tS / tO - 1.) * smoothstep(.72, 1., len / tO);       // the squeeze fades in over the last stretch to the glass edge only
+            vec2 m = hs - .13;
+            if (d.x * tS > m.x && d.y * tS > m.y) { float bb = dot(d, m); tO = bb + sqrt(max(bb * bb - dot(m, m) + .13 * .13, 0.)); }
+            lam = 1. + (tS / tO - 1.) * smoothstep(.6, 1., len / tO);       // the squeeze fades in over the last stretch to the glass edge only
           }
           float e = (tO - len) * .5;                                            // distance inside the glass edge, in display heights
           if (e < 0.) { gl_FragColor = vec4(0.); return; }                    // outside the rounded corner: transparent
@@ -1205,7 +1205,7 @@
           vec3 hv = normalize(normalize(vec3(-.5, .55, .7)) + vec3(0., 0., 1.));
           float nh = max(dot(nrm, hv), 0.);
           float glare = .16 * pow(nh, 8.) + .38 * pow(nh, 60.);                // broad sheen + hot spot
-          glare += .12 * smoothstep(.05, .01, e) * smoothstep(0., .008, e);      // the rim of the tube
+          glare += .22 * smoothstep(.06, .008, e) * smoothstep(0., .008, e);      // the rim of the tube
           col = 1. - (1. - col * 1.08) * (1. - glare);                          // screen blend: shows over bright picture too
           gl_FragColor = vec4(col * al, al);                                        // premultiplied
         }`));
