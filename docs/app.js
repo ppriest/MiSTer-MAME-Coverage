@@ -1138,7 +1138,7 @@
   (function () {
     const dlg = document.createElement("dialog");
     dlg.id = "lightbox"; dlg.setAttribute("aria-label", "Screenshot");
-    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-play launch" aria-label="Play on my MiSTer via Zaparoo" title="play on my MiSTer via Zaparoo" hidden>▶</button><aside class="lb-side lb-left" aria-label="Title, sets and cores"></aside><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><div class="lb-frame"><img alt=""><span class="lb-scan"></span><canvas class="lb-crt" hidden></canvas></div><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button><aside class="lb-side lb-right" aria-label="Hardware"></aside><span class="lb-fxs"><button type="button" class="lb-fx" data-fx="info" title="show or hide the details beside the screen (I)"></button><button type="button" class="lb-fx" data-fx="kind" title="title screen / in game (T)" hidden></button><button type="button" class="lb-fx" data-fx="scan" title="scanlines (S)"></button><button type="button" class="lb-fx" data-fx="crt" title="CRT curve (C)"></button></span>';
+    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-play launch" aria-label="Play on my MiSTer via Zaparoo" title="play on my MiSTer via Zaparoo" hidden>▶</button><aside class="lb-side lb-left" aria-label="Title, sets and cores"></aside><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><div class="lb-frame"><img alt=""><span class="lb-scan"></span><canvas class="lb-crt" hidden></canvas></div><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button><aside class="lb-side lb-right" aria-label="Hardware"></aside><span class="lb-fxs"><button type="button" class="lb-fx" data-fx="info" title="show or hide the details beside the screen (I)"></button><button type="button" class="lb-fx" data-fx="scan" title="scanlines (S)"></button><button type="button" class="lb-fx" data-fx="crt" title="CRT curve (C)"></button></span>';
     document.body.appendChild(dlg);
     const img = dlg.querySelector("img"), cap = dlg.querySelector("figcaption"), cv = dlg.querySelector(".lb-crt");
     const fxScan = dlg.querySelector('[data-fx="scan"]'), fxCrt = dlg.querySelector('[data-fx="crt"]');
@@ -1256,8 +1256,7 @@
       // title screen or in game: the kind chosen in the zoom sticks while stepping through the set, where a shot of that kind exists
       const kinds = { [fig.dataset.kind || "x"]: fig.dataset.src, ...(fig.dataset.alt ? { [fig.dataset.kind === "title" ? "ingame" : "title"]: fig.dataset.alt } : {}) };
       const cur = shownKind = kinds[lbKind] ? lbKind : fig.dataset.kind || "";
-      const kindBtn = dlg.querySelector('[data-fx="kind"]');
-      kindBtn.hidden = !fig.dataset.alt; kindBtn.textContent = cur === "title" ? "Show in game" : "Show title screen";
+      dlg.classList.toggle("flippable", !!fig.dataset.alt);
       img.src = kinds[cur] || fig.dataset.src; img.alt = fig.querySelector("img")?.alt || "";
       cap.textContent = fig.querySelector("figcaption")?.textContent || img.alt;
       dlg.classList.toggle("single", set.length < 2);
@@ -1291,6 +1290,24 @@
       const fig = set[i]; if (!fig || !fig.dataset.alt) return;
       lbKind = shownKind === "title" ? "ingame" : "title"; show(i);
     };
+    // Clicking the screen turns the display over like a card: it rotates edge-on, the other kind of shot (title screen / in game)
+    // is swapped in, and it turns back, so the two shots are the two sides of the screen. A title with one shot only just closes.
+    let flipping = false;
+    const flip = async () => {
+      const fig = set[i];
+      if (!fig || !fig.dataset.alt) { dlg.close(); return; }
+      if (flipping) return;
+      const frame = dlg.querySelector(".lb-frame");
+      if (matchMedia("(prefers-reduced-motion: reduce)").matches || !frame.animate) { toggleKind(); return; }
+      flipping = true;
+      const turn = (from, to, ease) => frame.animate([{ transform: `perspective(1400px) rotateY(${from}deg)` }, { transform: `perspective(1400px) rotateY(${to}deg)` }], { duration: 220, easing: ease, fill: "forwards" }).finished;
+      try {
+        await turn(0, 90, "ease-in");
+        const loaded = new Promise(res => { img.addEventListener("load", res, { once: true }); setTimeout(res, 600); });
+        toggleKind(); await loaded;
+        await turn(-90, 0, "ease-out");
+      } finally { frame.getAnimations().forEach(a => a.cancel()); flipping = false; }
+    };
     document.addEventListener("click", ev => {
       if (ev.target.closest("button, a")) return;                // a tile's Play and +1 are not a zoom
       const t = ev.target.closest(".gallery figure"); if (!t || !t.dataset.src) return;
@@ -1300,17 +1317,16 @@
     dlg.addEventListener("click", ev => {
       if (ev.target.closest(".lb-prev")) show(i - 1);
       else if (ev.target.closest(".lb-next")) show(i + 1);
-      else if (ev.target.closest('[data-fx="kind"]')) toggleKind();
       else if (ev.target.closest('[data-fx="info"]')) setInfo(!info);
       else if (ev.target.closest('[data-fx="scan"]')) setScan(!scan);
       else if (ev.target.closest('[data-fx="crt"]')) setCrt(!crt);
       else if (ev.target.closest(".lb-close") || ev.target === dlg) dlg.close();      // the backdrop is the dialog itself
-      else if (ev.target === img || ev.target === cv) dlg.close();
+      else if (ev.target === img || ev.target === cv) flip();
     });
     dlg.addEventListener("keydown", ev => {
       if (ev.key === "ArrowLeft" && set.length > 1) { ev.preventDefault(); show(i - 1); }
       else if (ev.key === "ArrowRight" && set.length > 1) { ev.preventDefault(); show(i + 1); }
-      else if (ev.key === "t" || ev.key === "T") toggleKind();
+      else if (ev.key === "t" || ev.key === "T") { if (set[i] && set[i].dataset.alt) flip(); }
       else if (ev.key === "i" || ev.key === "I") { if (innerWidth >= LB_SIDE_MIN) setInfo(!info); }
       else if (ev.key === "s" || ev.key === "S") setScan(!scan);
       else if (ev.key === "c" || ev.key === "C") { if (!crtBroken) setCrt(!crt); }

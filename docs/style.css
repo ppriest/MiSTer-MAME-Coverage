@@ -361,3 +361,5 @@ header.top { position: sticky; top: 0; z-index: 20; }
 #lightbox .lb-side .hwsrc { margin-top: 10px; }
 #lightbox .lb-left { left: 14px; }
 #lightbox .lb-right { right: 14px; }
+#lightbox.flippable img, #lightbox.flippable .lb-crt { cursor: pointer; }
+#lightbox .lb-frame { backface-visibility: hidden; }
