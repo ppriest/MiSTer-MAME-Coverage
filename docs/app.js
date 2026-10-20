@@ -578,7 +578,7 @@
     if (ev.target.closest("a, button")) return;
     const name = tr.dataset.t, t = S.titles.find(x => x.name === name);
     if (S.open.has(name)) { S.open.delete(name); tr.nextElementSibling?.classList.contains("detail") && tr.nextElementSibling.remove(); tr.firstElementChild.textContent = "▸"; }
-    else { S.open.add(name); tr.insertAdjacentHTML("afterend", detailRow(t)); tr.firstElementChild.textContent = "▾"; fillHardware(tr.nextElementSibling); document.dispatchEvent(new Event("shot-hide")); }
+    else { S.open.add(name); tr.insertAdjacentHTML("afterend", detailRow(t)); tr.firstElementChild.textContent = "▾"; fillHardware(tr.nextElementSibling); }
   });
   $("#titles-more").addEventListener("click", () => S.tview === "gallery" ? renderMoreGallery() : renderMoreTitles());
   $("#f-dir").addEventListener("click", () => { S.dir.t *= -1; $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓"; applyTitles(); });
@@ -1026,44 +1026,8 @@
   });
   document.addEventListener("click", ev => { const b = ev.target.closest("button.plus1"); if (b) { ev.stopPropagation(); openVote(b.dataset.kind, b.dataset.key); } });
 
-  // ---------- screenshot preview on hover: title screen + in-game shot, loaded only when you rest on a title ----------
-  // File names are hashed (tools/shots.py); each title's `img` (from data/images.json) names its images.
+  // File names are hashed (tools/shots.py); each title's `img` (from data/images.json) names its images. Empty switches the galleries off.
   const IMAGE_BASE = ($('meta[name="image-base"]') || {}).content?.replace(/\/+$/, "") || "";
-  if (IMAGE_BASE && matchMedia("(hover: hover)").matches) {
-    const card = $("#shot"), figs = Array.from(card.querySelectorAll("figure")), cap = card.querySelector(".cap");
-    const HOVER_ON = "#titles-table tbody tr[data-t] td:nth-child(3), #titles-table tbody tr[data-t] td:nth-child(4), #wl-titles a[data-wl-title]";
-    let timer, cur = null, byName = null;
-    const imgs = key => { byName = byName || new Map(S.titles.map(t => [t.name, t])); return (byName.get(key) || {}).img; };   // title.img = {title, ingame} file names
-    const hide = () => { clearTimeout(timer); cur = null; card.hidden = true; };
-    const place = ev => { const w = card.offsetWidth || 500, h = card.offsetHeight || 220; let x = ev.clientX + 18, y = ev.clientY + 14; if (x + w > innerWidth - 8) x = ev.clientX - w - 18; if (y + h > innerHeight - 8) y = innerHeight - h - 8; card.style.left = Math.max(8, x) + "px"; card.style.top = Math.max(8, y) + "px"; };
-    function show(key, label, ev) {
-      const have = imgs(key); if (!have) return;
-      cur = key; let pending = 0, ok = 0; cap.textContent = label;
-      const shown = figs.filter(f => have[f.dataset.kind]); pending = shown.length;
-      figs.forEach(f => { f.hidden = true; });
-      shown.forEach(f => {
-        const img = f.querySelector("img");
-        const done = good => {
-          if (cur !== key) return;
-          if (good) { f.hidden = false; ok++; if (card.hidden) card.hidden = false; place(ev); }
-          if (--pending === 0 && ok === 0) hide();
-        };
-        img.onload = () => done(true); img.onerror = () => done(false);
-        img.src = `${IMAGE_BASE}/${have[f.dataset.kind]}`;
-      });
-    }
-    document.addEventListener("mouseover", ev => {
-      const a = ev.target.closest(HOVER_ON); if (!a) return;
-      const key = a.closest("tr[data-t]")?.dataset.t || a.dataset.wlTitle; if (!key || key === cur) return;
-      if (!imgs(key) || (a.closest("#titles-table") && S.open.has(key))) return;       // a twisted-open title shows its screenshots instead
-      const t = S.titles.find(x => x.name === key);
-      clearTimeout(timer); timer = setTimeout(() => show(key, t ? `${t.desc} (${t.year}, ${t.manufacturer})` : key, ev), 250);
-    });
-    document.addEventListener("shot-hide", hide);
-    document.addEventListener("mousemove", ev => { if (!card.hidden) place(ev); });
-    document.addEventListener("mouseout", ev => { if (ev.target.closest(HOVER_ON)) hide(); });
-    addEventListener("scroll", () => { if (!card.hidden) hide(); }, { passive: true });
-  }
 
   // ---------- screenshot proportions ----------
   // A single-screen shot is 4:3 (landscape) or 3:4 (portrait) on the monitor, whatever the pixel aspect of the capture (there is no
@@ -1117,9 +1081,6 @@
       if (inf.k > 1) { splitFigure(fig, img, inf.k, inf.horiz, port); return; }
       const shape = nearShape(img);
       img.style.aspectRatio = shape ? String(shape) : "";
-    } else if (img.closest("#shot")) {
-      const shape = nearShape(img);
-      img.style.width = shape ? img.naturalWidth + "px" : ""; img.style.aspectRatio = shape ? String(shape) : "";
     } else if (img.closest("#lightbox")) fitLightbox(img);
   }, true);
   // A gallery shot of k displays becomes k panels, each showing its part of the picture at the shape of one display.
