@@ -511,6 +511,7 @@
       <img loading="lazy" src="${esc(IMAGE_BASE + "/" + t.img[k])}" alt="${esc(t.desc)}" onerror="this.closest('figure').remove()">
       <figcaption class="tt" title="${esc(t.desc)}">${esc(t.desc)}</figcaption>
       <div class="pub" title="${esc(t.manufacturer)}">${esc(t.manufacturer)}${t.year ? ` · ${esc(t.year)}` : ""}</div>
+      <div class="sys set" title="MAME driver (the system): ${esc(t.sourcefile)}">${esc(t.sourcefile)}</div>
       <div class="trow"><span class="gen" title="${esc(t.genre || "")}">${esc(t.genre || "")}${t.mature ? ' <span class="flag">18+</span>' : ""}</span>
         <span class="tact">${t.cores.length ? `<button type="button" class="launch" data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}" title="launch on my MiSTer via Zaparoo">▶</button>` : ""}${ncov < nsets ? plus1("title", t.name) : ""}</span></div>
     </figure>`;
