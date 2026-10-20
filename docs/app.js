@@ -1158,7 +1158,7 @@
       prog = gl.createProgram();
       gl.attachShader(prog, sh(gl.VERTEX_SHADER, "attribute vec2 p; varying vec2 uv; void main(){ uv = p * .5 + .5; gl_Position = vec4(p, 0., 1.); }"));
       gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, `precision mediump float; varying vec2 uv; uniform sampler2D tex;
-        uniform float n; uniform float horiz; uniform float gap; uniform float curve; uniform float rows; uniform float scan; uniform float vert;
+        uniform float n; uniform float horiz; uniform float gap; uniform float curve; uniform float rows; uniform float scan; uniform float vert; uniform float asp;
         void main(){
           // n displays side by side (horiz) or stacked, each its own CRT; a is the position along the row of displays
           float a = horiz > .5 ? uv.x : 1. - uv.y;
@@ -1172,22 +1172,26 @@
           vec2 c = p * 2. - 1.;
           vec2 o = abs(c.yx) / vec2(6., 4.) * curve;
           vec2 s = (c + c * o * o) * .5 + .5;                                  // barrel: the corners fall off the glass
-          float e = min(min(s.x, 1. - s.x), min(s.y, 1. - s.y));
-          if (e < 0.) { gl_FragColor = vec4(0.); return; }                    // off the glass: transparent
+          // distance (in display heights) from the rounded edge of the glass, positive inside; asp = on-screen width / height
+          vec2 pp = (s - .5) * vec2(asp, 1.);
+          vec2 dq = abs(pp) - (vec2(asp, 1.) * .5 - .075);
+          float e = .075 - (length(max(dq, 0.)) + min(max(dq.x, dq.y), 0.));
+          if (e < 0.) { gl_FragColor = vec4(0.); return; }                    // off the glass or in a rounded corner: transparent
           vec2 q = vec2(s.x, 1. - s.y);                                        // in the display, origin top left
           vec2 t = horiz > .5 ? vec2((idx + q.x) / n, q.y) : vec2(q.x, (idx + q.y) / n);
           vec3 col = texture2D(tex, t).rgb;
           col *= 1. - scan * .5 * (1. - sin(3.14159 * fract(mix(s.y, s.x, vert) * rows)));
           float v = 16. * s.x * s.y * (1. - s.x) * (1. - s.y);
           col *= .55 + .45 * pow(v, .25);                                       // vignette
-          float al = smoothstep(0., .004, e);                                   // a soft edge to the screen
+          col *= .66 + .34 * smoothstep(0., .11, e);                            // roll-off: the picture dims toward all four edges
+          float al = smoothstep(0., .006, e);                                   // a soft edge to the screen
           // The glass: a curved front surface lit from above left. Its normal tilts outward from the centre (c), so a broad soft
           // highlight sits up and to the left, a tighter one inside it, and the curved rim catches a little light.
           vec3 nrm = normalize(vec3(c * .42 * curve, 1.));
           vec3 hv = normalize(normalize(vec3(-.5, .55, .7)) + vec3(0., 0., 1.));
           float nh = max(dot(nrm, hv), 0.);
           float glare = .07 * pow(nh, 14.) + .09 * pow(nh, 90.);               // broad sheen + hot spot
-          glare += .035 * smoothstep(.05, 0., e);                                // the rim of the tube
+          glare += .035 * smoothstep(.04, .01, e) * smoothstep(0., .01, e);      // the rim of the tube
           glare *= .6 + .4 * (1. - dot(col, vec3(.333)));                       // shows less over bright picture
           gl_FragColor = vec4((col * 1.08 + vec3(glare)) * al, al);              // premultiplied
         }`));
@@ -1226,7 +1230,7 @@
           const pitch = vert ? dispW / srcW : dispH / srcH;
           const u = (name, v) => gl.uniform1f(gl.getUniformLocation(prog, name), v);
           u("n", k); u("horiz", horiz ? 1 : 0); u("gap", gapP * pw); u("curve", crt ? 1 : 0);
-          u("rows", vert ? srcW : srcH); u("vert", vert ? 1 : 0); u("scan", scan && pitch >= 2 ? 1 : 0);
+          u("rows", vert ? srcW : srcH); u("vert", vert ? 1 : 0); u("scan", scan && pitch >= 2 ? 1 : 0); u("asp", dispW / dispH);
           gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
           cv.hidden = false; img.style.opacity = "0";
           sl.style.display = "none";
