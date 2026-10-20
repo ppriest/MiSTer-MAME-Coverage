@@ -932,6 +932,12 @@
   $("#vote-withdraw").addEventListener("click", () => sendVote("DELETE").catch(voteErr));
   $("#vote-cancel").addEventListener("click", () => vd.close());
   // ZapScript for a title: the exact MRA of the best set/core pair (parents first, no alternatives or WIP), else a title lookup.
+  // The launch script of one set: the MRA of the best core record that carries it (as launchScript does for a whole title).
+  function setLaunch(s) {
+    let best = null, rank = 9;
+    for (const c of s.cores || []) { if (!c.mra) continue; const r = (c.alt ? 2 : 0) + (c.wip ? 1 : 0); if (r < rank) { rank = r; best = c.mra; } }
+    return best ? best : "**launch.title:Arcade/" + s.desc;
+  }
   function launchScript(t) {
     let best = null, rank = 9;
     for (const s of t.sets) for (const c of s.cores || []) {
@@ -1276,7 +1282,7 @@
       const t = S.titles.find(x => x.name === name), L = dlg.querySelector(".lb-left"), R = dlg.querySelector(".lb-right");
       if (!t) { L.innerHTML = R.innerHTML = ""; return; }
       const nsets = t.sets.length;
-      const sets = t.sets.map(x => `<li${x.working ? "" : ' class="nw"'}><span class="set">${esc(x.name)}</span> ${esc(x.desc)}
+      const sets = t.sets.map(x => `<li${x.working ? "" : ' class="nw"'}>${x.cores.length ? `<button type="button" class="launch" data-launch="${esc(setLaunch(x))}" data-title="${esc(x.desc)}" title="launch this set on my MiSTer via Zaparoo">▶</button>` : ""}<span class="set">${esc(x.name)}</span> ${esc(x.desc)}
         <div class="muted">${esc(x.status)}${x.working ? "" : " (not working)"}</div>
         <div>${x.cores.length ? x.cores.map(r => badge(r.core, r) + `<span class="flag">${r.date ? r.date + (r.date_quality !== "git" ? "≈" : "") : ""}</span> `).join("") : '<span class="muted">not on MiSTer</span>'}</div></li>`).join("");
       L.innerHTML = `<h4>${esc(t.desc)}</h4><p class="muted">${esc(t.manufacturer)}${t.year ? " · " + esc(t.year) : ""}${t.genre ? " · " + esc(t.genre) : ""}<br><span class="set">${esc(t.sourcefile)}</span></p>
