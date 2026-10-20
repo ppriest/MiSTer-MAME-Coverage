@@ -1170,31 +1170,13 @@
           loc /= pw;
           vec2 p = horiz > .5 ? vec2(loc, b) : vec2(b, 1. - loc);               // this display, origin bottom left
           vec2 c = p * 2. - 1.;
-          // The glass is a CRT tube face: the picture square u in [-1,1] is bowed outward on every side (the edges bulge, the corners
-          // are pulled in), so the screen outline is that curved shape and the whole picture is inside it. Invert the bow by fixed-
-          // point iteration to find, for this point of the screen, its place u0 in the picture.
-          vec2 kk = vec2(.03, .055) * curve;
-          vec2 u0 = c;
-          for (int i = 0; i < 5; i++) u0 = c / (1. - kk * u0.yx * u0.yx);
-          // The corners of that outline are rounded: hs = half the picture's size in half-heights, rho = the corner radius. Near
-          // the corners the picture is pushed out along its ray from the centre by tS / tO (distance to the square over distance to
-          // the rounded outline), fading in over the last stretch only, so the corners of the picture are squeezed round into the
-          // curve and nothing is clipped; the rest is untouched.
-          vec2 hs = vec2(asp, 1.), qd = u0 * hs;
-          float len = length(qd);
-          float tO = 1., lam = 1.;
-          if (len > 1e-5) {
-            vec2 d = abs(qd) / len;
-            float tS = min(hs.x / max(d.x, 1e-5), hs.y / max(d.y, 1e-5));
-            tO = tS;
-            vec2 m = hs - .13;
-            if (d.x * tS > m.x && d.y * tS > m.y) { float bb = dot(d, m); tO = bb + sqrt(max(bb * bb - dot(m, m) + .13 * .13, 0.)); }
-            lam = 1. + (tS / tO - 1.) * smoothstep(.6, 1., len / tO);
-          }
-          float e = (tO - len) * .5;                                            // distance inside the glass edge, in display heights
-          if (e < 0.) { gl_FragColor = vec4(0.); return; }                    // outside the tube face: transparent
-          vec2 u = u0 * lam;                                                    // the place in the picture, [-1,1]
-          vec2 s = u * .5 + .5;
+          vec2 o = abs(c.yx) / vec2(6., 4.) * curve;
+          vec2 s = (c + c * o * o) * .5 + .5;                                  // barrel: the corners fall off the glass
+          // distance (in display heights) from the rounded edge of the glass, positive inside; asp = on-screen width / height
+          vec2 pp = (s - .5) * vec2(asp, 1.);
+          vec2 dq = abs(pp) - (vec2(asp, 1.) * .5 - .0375);
+          float e = .0375 - (length(max(dq, 0.)) + min(max(dq.x, dq.y), 0.));
+          if (e < 0.) { gl_FragColor = vec4(0.); return; }                    // off the glass or in a rounded corner: transparent
           vec2 q = vec2(s.x, 1. - s.y);                                        // in the display, origin top left
           vec2 t = horiz > .5 ? vec2((idx + q.x) / n, q.y) : vec2(q.x, (idx + q.y) / n);
           vec3 col = texture2D(tex, t).rgb;
@@ -1208,10 +1190,10 @@
           vec3 nrm = normalize(vec3(c * .42 * curve, 1.));
           vec3 hv = normalize(normalize(vec3(-.5, .55, .7)) + vec3(0., 0., 1.));
           float nh = max(dot(nrm, hv), 0.);
-          float glare = .16 * pow(nh, 8.) + .38 * pow(nh, 60.);                // broad sheen + hot spot
-          glare += .22 * smoothstep(.06, .008, e) * smoothstep(0., .008, e);      // the rim of the tube
-          col = 1. - (1. - col * 1.08) * (1. - glare);                          // screen blend: shows over bright picture too
-          gl_FragColor = vec4(col * al, al);                                        // premultiplied
+          float glare = .07 * pow(nh, 14.) + .09 * pow(nh, 90.);               // broad sheen + hot spot
+          glare += .035 * smoothstep(.04, .01, e) * smoothstep(0., .01, e);      // the rim of the tube
+          glare *= .6 + .4 * (1. - dot(col, vec3(.333)));                       // shows less over bright picture
+          gl_FragColor = vec4((col * 1.08 + vec3(glare)) * al, al);              // premultiplied
         }`));
       gl.linkProgram(prog);
       if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(prog));
