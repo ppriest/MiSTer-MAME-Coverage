@@ -363,3 +363,5 @@ header.top { position: sticky; top: 0; z-index: 20; }
 #lightbox .lb-right { right: 14px; }
 #lightbox.flippable img, #lightbox.flippable .lb-crt { cursor: pointer; }
 #lightbox .lb-frame { backface-visibility: hidden; }
+/* the zoom fills the window and never scrolls: the turning screen may stick out of it for a moment, which must not bring up a scrollbar (that moved the arrows) */
+#lightbox { overflow: hidden; }

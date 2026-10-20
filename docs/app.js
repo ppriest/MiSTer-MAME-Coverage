@@ -1300,7 +1300,7 @@
       const frame = dlg.querySelector(".lb-frame");
       if (matchMedia("(prefers-reduced-motion: reduce)").matches || !frame.animate) { toggleKind(); return; }
       flipping = true;
-      const turn = (from, to, ease) => frame.animate([{ transform: `perspective(1400px) rotateY(${from}deg)` }, { transform: `perspective(1400px) rotateY(${to}deg)` }], { duration: 220, easing: ease, fill: "forwards" }).finished;
+      const turn = (from, to, ease) => frame.animate([{ transform: `perspective(2200px) rotateY(${from}deg)` }, { transform: `perspective(2200px) rotateY(${to}deg)` }], { duration: 220, easing: ease, fill: "forwards" }).finished;
       try {
         await turn(0, 90, "ease-in");
         const loaded = new Promise(res => { img.addEventListener("load", res, { once: true }); setTimeout(res, 600); });
