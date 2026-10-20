@@ -1172,7 +1172,8 @@
           vec2 c = p * 2. - 1.;
           // The glass is a rounded rectangle (hs = half its size in half-heights, rho = the corner radius). The whole picture is fitted
           // into it, not clipped by it: each point is pushed out along its ray from the centre by tS / tO (the distance to the square
-          // over the distance to the rounded outline), so the corners of the picture are squeezed round into the curve.
+          // over the distance to the rounded outline), but only close to the edge (the factor fades in from 72% of the way out), so
+          // the distortion stays in the very corners: the picture's corners are squeezed round into the curve.
           vec2 hs = vec2(asp, 1.), qd = c * hs;
           float len = length(qd);
           float tO = 1., lam = 1.;
@@ -1182,7 +1183,7 @@
             tO = tS;
             vec2 m = hs - .075;
             if (d.x * tS > m.x && d.y * tS > m.y) { float bb = dot(d, m); tO = bb + sqrt(max(bb * bb - dot(m, m) + .075 * .075, 0.)); }
-            lam = tS / tO;
+            lam = 1. + (tS / tO - 1.) * smoothstep(.72, 1., len / tO);       // the squeeze fades in over the last stretch to the glass edge only
           }
           float e = (tO - len) * .5;                                            // distance inside the glass edge, in display heights
           if (e < 0.) { gl_FragColor = vec4(0.); return; }                    // outside the rounded corner: transparent
