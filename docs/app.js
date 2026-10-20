@@ -1174,8 +1174,8 @@
           vec2 s = (c + c * o * o) * .5 + .5;                                  // barrel: the corners fall off the glass
           // distance (in display heights) from the rounded edge of the glass, positive inside; asp = on-screen width / height
           vec2 pp = (s - .5) * vec2(asp, 1.);
-          vec2 dq = abs(pp) - (vec2(asp, 1.) * .5 - .075);
-          float e = .075 - (length(max(dq, 0.)) + min(max(dq.x, dq.y), 0.));
+          vec2 dq = abs(pp) - (vec2(asp, 1.) * .5 - .0375);
+          float e = .0375 - (length(max(dq, 0.)) + min(max(dq.x, dq.y), 0.));
           if (e < 0.) { gl_FragColor = vec4(0.); return; }                    // off the glass or in a rounded corner: transparent
           vec2 q = vec2(s.x, 1. - s.y);                                        // in the display, origin top left
           vec2 t = horiz > .5 ? vec2((idx + q.x) / n, q.y) : vec2(q.x, (idx + q.y) / n);
@@ -1183,7 +1183,7 @@
           col *= 1. - scan * .5 * (1. - sin(3.14159 * fract(mix(s.y, s.x, vert) * rows)));
           float v = 16. * s.x * s.y * (1. - s.x) * (1. - s.y);
           col *= .55 + .45 * pow(v, .25);                                       // vignette
-          col *= .66 + .34 * smoothstep(0., .11, e);                            // roll-off: the picture dims toward all four edges
+          col *= .83 + .17 * smoothstep(0., .11, e);                            // roll-off: the picture dims toward all four edges
           float al = smoothstep(0., .006, e);                                   // a soft edge to the screen
           // The glass: a curved front surface lit from above left. Its normal tilts outward from the centre (c), so a broad soft
           // highlight sits up and to the left, a tighter one inside it, and the curved rim catches a little light.
