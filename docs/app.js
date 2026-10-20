@@ -1170,11 +1170,17 @@
           loc /= pw;
           vec2 p = horiz > .5 ? vec2(loc, b) : vec2(b, 1. - loc);               // this display, origin bottom left
           vec2 c = p * 2. - 1.;
-          // The glass is a rounded rectangle (hs = half its size in half-heights, rho = the corner radius). The whole picture is fitted
-          // into it, not clipped by it: each point is pushed out along its ray from the centre by tS / tO (the distance to the square
-          // over the distance to the rounded outline), but only close to the edge (the factor fades in from 60% of the way out), so
-          // the distortion stays in the very corners: the picture's corners are squeezed round into the curve.
-          vec2 hs = vec2(asp, 1.), qd = c * hs;
+          // The glass is a CRT tube face: the picture square u in [-1,1] is bowed outward on every side (the edges bulge, the corners
+          // are pulled in), so the screen outline is that curved shape and the whole picture is inside it. Invert the bow by fixed-
+          // point iteration to find, for this point of the screen, its place u0 in the picture.
+          vec2 kk = vec2(.03, .055) * curve;
+          vec2 u0 = c;
+          for (int i = 0; i < 5; i++) u0 = c / (1. - kk * u0.yx * u0.yx);
+          // The corners of that outline are rounded: hs = half the picture's size in half-heights, rho = the corner radius. Near
+          // the corners the picture is pushed out along its ray from the centre by tS / tO (distance to the square over distance to
+          // the rounded outline), fading in over the last stretch only, so the corners of the picture are squeezed round into the
+          // curve and nothing is clipped; the rest is untouched.
+          vec2 hs = vec2(asp, 1.), qd = u0 * hs;
           float len = length(qd);
           float tO = 1., lam = 1.;
           if (len > 1e-5) {
@@ -1183,13 +1189,11 @@
             tO = tS;
             vec2 m = hs - .13;
             if (d.x * tS > m.x && d.y * tS > m.y) { float bb = dot(d, m); tO = bb + sqrt(max(bb * bb - dot(m, m) + .13 * .13, 0.)); }
-            lam = 1. + (tS / tO - 1.) * smoothstep(.6, 1., len / tO);       // the squeeze fades in over the last stretch to the glass edge only
+            lam = 1. + (tS / tO - 1.) * smoothstep(.6, 1., len / tO);
           }
           float e = (tO - len) * .5;                                            // distance inside the glass edge, in display heights
-          if (e < 0.) { gl_FragColor = vec4(0.); return; }                    // outside the rounded corner: transparent
-          vec2 u = c * lam;                                                     // the picture square, [-1,1]
-          // barrel: lines bow outward, but the picture's edges stay on the glass's edges (so nothing is cut off)
-          u += .15 * curve * vec2(u.x * (1. - u.x * u.x) * u.y * u.y, u.y * (1. - u.y * u.y) * u.x * u.x);
+          if (e < 0.) { gl_FragColor = vec4(0.); return; }                    // outside the tube face: transparent
+          vec2 u = u0 * lam;                                                    // the place in the picture, [-1,1]
           vec2 s = u * .5 + .5;
           vec2 q = vec2(s.x, 1. - s.y);                                        // in the display, origin top left
           vec2 t = horiz > .5 ? vec2((idx + q.x) / n, q.y) : vec2(q.x, (idx + q.y) / n);
