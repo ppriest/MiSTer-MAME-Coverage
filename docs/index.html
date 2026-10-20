@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Where the screenshots live: the hashed file names in each title's `img` (data/images.json, see tools/shots.py); empty switches the hover preview off. -->
+<!-- Where the screenshots live: the hashed file names in each title's `img` (data/images.json, see tools/shots.py); empty switches the galleries off. -->
 <meta name="image-base" content="https://pzavtoalc1fbu6xg.public.blob.vercel-storage.com">
 <title>MiSTer MAME Coverage</title>
 <meta name="description" content="Which MAME arcade titles are playable on MiSTer FPGA cores, which remain, and how coverage grew over time.">
@@ -11,7 +11,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=6ad64302c8">
+<link rel="stylesheet" href="style.css?v=f415e7dd03">
 </head>
 <body>
 <header class="top">
@@ -329,7 +329,6 @@
 </main>
 
 <div class="tooltip" id="tooltip" hidden></div>
-<div class="shot" id="shot" hidden><div class="pair"><figure data-kind="title"><img alt="Title screen"><figcaption>Title</figcaption></figure><figure data-kind="ingame"><img alt="In-game screenshot"><figcaption>In game</figcaption></figure></div><div class="cap"></div></div>
   <dialog id="zap-dialog">
     <form method="dialog" id="zap-form">
       <h3>Launch on my MiSTer</h3>
@@ -358,6 +357,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=366b3956ec"></script>
+<script src="app.js?v=e00edbceb5"></script>
 </body>
 </html>

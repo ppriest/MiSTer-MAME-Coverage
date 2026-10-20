@@ -578,7 +578,7 @@
     if (ev.target.closest("a, button")) return;
     const name = tr.dataset.t, t = S.titles.find(x => x.name === name);
     if (S.open.has(name)) { S.open.delete(name); tr.nextElementSibling?.classList.contains("detail") && tr.nextElementSibling.remove(); tr.firstElementChild.textContent = "▸"; }
-    else { S.open.add(name); tr.insertAdjacentHTML("afterend", detailRow(t)); tr.firstElementChild.textContent = "▾"; fillHardware(tr.nextElementSibling); document.dispatchEvent(new Event("shot-hide")); }
+    else { S.open.add(name); tr.insertAdjacentHTML("afterend", detailRow(t)); tr.firstElementChild.textContent = "▾"; fillHardware(tr.nextElementSibling); }
   });
   $("#titles-more").addEventListener("click", () => S.tview === "gallery" ? renderMoreGallery() : renderMoreTitles());
   $("#f-dir").addEventListener("click", () => { S.dir.t *= -1; $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓"; applyTitles(); });
@@ -932,6 +932,12 @@
   $("#vote-withdraw").addEventListener("click", () => sendVote("DELETE").catch(voteErr));
   $("#vote-cancel").addEventListener("click", () => vd.close());
   // ZapScript for a title: the exact MRA of the best set/core pair (parents first, no alternatives or WIP), else a title lookup.
+  // The launch script of one set: the MRA of the best core record that carries it (as launchScript does for a whole title).
+  function setLaunch(s) {
+    let best = null, rank = 9;
+    for (const c of s.cores || []) { if (!c.mra) continue; const r = (c.alt ? 2 : 0) + (c.wip ? 1 : 0); if (r < rank) { rank = r; best = c.mra; } }
+    return best ? best : "**launch.title:Arcade/" + s.desc;
+  }
   function launchScript(t) {
     let best = null, rank = 9;
     for (const s of t.sets) for (const c of s.cores || []) {
@@ -1020,44 +1026,8 @@
   });
   document.addEventListener("click", ev => { const b = ev.target.closest("button.plus1"); if (b) { ev.stopPropagation(); openVote(b.dataset.kind, b.dataset.key); } });
 
-  // ---------- screenshot preview on hover: title screen + in-game shot, loaded only when you rest on a title ----------
-  // File names are hashed (tools/shots.py); each title's `img` (from data/images.json) names its images.
+  // File names are hashed (tools/shots.py); each title's `img` (from data/images.json) names its images. Empty switches the galleries off.
   const IMAGE_BASE = ($('meta[name="image-base"]') || {}).content?.replace(/\/+$/, "") || "";
-  if (IMAGE_BASE && matchMedia("(hover: hover)").matches) {
-    const card = $("#shot"), figs = Array.from(card.querySelectorAll("figure")), cap = card.querySelector(".cap");
-    const HOVER_ON = "#titles-table tbody tr[data-t] td:nth-child(3), #titles-table tbody tr[data-t] td:nth-child(4), #wl-titles a[data-wl-title]";
-    let timer, cur = null, byName = null;
-    const imgs = key => { byName = byName || new Map(S.titles.map(t => [t.name, t])); return (byName.get(key) || {}).img; };   // title.img = {title, ingame} file names
-    const hide = () => { clearTimeout(timer); cur = null; card.hidden = true; };
-    const place = ev => { const w = card.offsetWidth || 500, h = card.offsetHeight || 220; let x = ev.clientX + 18, y = ev.clientY + 14; if (x + w > innerWidth - 8) x = ev.clientX - w - 18; if (y + h > innerHeight - 8) y = innerHeight - h - 8; card.style.left = Math.max(8, x) + "px"; card.style.top = Math.max(8, y) + "px"; };
-    function show(key, label, ev) {
-      const have = imgs(key); if (!have) return;
-      cur = key; let pending = 0, ok = 0; cap.textContent = label;
-      const shown = figs.filter(f => have[f.dataset.kind]); pending = shown.length;
-      figs.forEach(f => { f.hidden = true; });
-      shown.forEach(f => {
-        const img = f.querySelector("img");
-        const done = good => {
-          if (cur !== key) return;
-          if (good) { f.hidden = false; ok++; if (card.hidden) card.hidden = false; place(ev); }
-          if (--pending === 0 && ok === 0) hide();
-        };
-        img.onload = () => done(true); img.onerror = () => done(false);
-        img.src = `${IMAGE_BASE}/${have[f.dataset.kind]}`;
-      });
-    }
-    document.addEventListener("mouseover", ev => {
-      const a = ev.target.closest(HOVER_ON); if (!a) return;
-      const key = a.closest("tr[data-t]")?.dataset.t || a.dataset.wlTitle; if (!key || key === cur) return;
-      if (!imgs(key) || (a.closest("#titles-table") && S.open.has(key))) return;       // a twisted-open title shows its screenshots instead
-      const t = S.titles.find(x => x.name === key);
-      clearTimeout(timer); timer = setTimeout(() => show(key, t ? `${t.desc} (${t.year}, ${t.manufacturer})` : key, ev), 250);
-    });
-    document.addEventListener("shot-hide", hide);
-    document.addEventListener("mousemove", ev => { if (!card.hidden) place(ev); });
-    document.addEventListener("mouseout", ev => { if (ev.target.closest(HOVER_ON)) hide(); });
-    addEventListener("scroll", () => { if (!card.hidden) hide(); }, { passive: true });
-  }
 
   // ---------- screenshot proportions ----------
   // A single-screen shot is 4:3 (landscape) or 3:4 (portrait) on the monitor, whatever the pixel aspect of the capture (there is no
@@ -1111,9 +1081,6 @@
       if (inf.k > 1) { splitFigure(fig, img, inf.k, inf.horiz, port); return; }
       const shape = nearShape(img);
       img.style.aspectRatio = shape ? String(shape) : "";
-    } else if (img.closest("#shot")) {
-      const shape = nearShape(img);
-      img.style.width = shape ? img.naturalWidth + "px" : ""; img.style.aspectRatio = shape ? String(shape) : "";
     } else if (img.closest("#lightbox")) fitLightbox(img);
   }, true);
   // A gallery shot of k displays becomes k panels, each showing its part of the picture at the shape of one display.
@@ -1138,7 +1105,7 @@
   (function () {
     const dlg = document.createElement("dialog");
     dlg.id = "lightbox"; dlg.setAttribute("aria-label", "Screenshot");
-    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-play launch" aria-label="Play on my MiSTer via Zaparoo" title="play on my MiSTer via Zaparoo" hidden>▶</button><aside class="lb-side lb-left" aria-label="Title, sets and cores"></aside><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><div class="lb-frame"><img alt=""><span class="lb-scan"></span><canvas class="lb-crt" hidden></canvas></div><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button><aside class="lb-side lb-right" aria-label="Hardware"></aside><span class="lb-fxs"><button type="button" class="lb-fx" data-fx="info" title="show or hide the details beside the screen (I)"></button><button type="button" class="lb-fx" data-fx="kind" title="title screen / in game (T)" hidden></button><button type="button" class="lb-fx" data-fx="scan" title="scanlines (S)"></button><button type="button" class="lb-fx" data-fx="crt" title="CRT curve (C)"></button></span>';
+    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-play launch" aria-label="Play on my MiSTer via Zaparoo" title="play on my MiSTer via Zaparoo" hidden>▶</button><aside class="lb-side lb-left" aria-label="Title, sets and cores"></aside><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><div class="lb-frame"><img alt=""><span class="lb-scan"></span><canvas class="lb-crt" hidden></canvas></div><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button><aside class="lb-side lb-right" aria-label="Hardware"></aside><span class="lb-fxs"><button type="button" class="lb-fx" data-fx="info" title="show or hide the details beside the screen (I)"></button><button type="button" class="lb-fx" data-fx="scan" title="scanlines (S)"></button><button type="button" class="lb-fx" data-fx="crt" title="CRT curve (C)"></button></span>';
     document.body.appendChild(dlg);
     const img = dlg.querySelector("img"), cap = dlg.querySelector("figcaption"), cv = dlg.querySelector(".lb-crt");
     const fxScan = dlg.querySelector('[data-fx="scan"]'), fxCrt = dlg.querySelector('[data-fx="crt"]');
@@ -1256,8 +1223,7 @@
       // title screen or in game: the kind chosen in the zoom sticks while stepping through the set, where a shot of that kind exists
       const kinds = { [fig.dataset.kind || "x"]: fig.dataset.src, ...(fig.dataset.alt ? { [fig.dataset.kind === "title" ? "ingame" : "title"]: fig.dataset.alt } : {}) };
       const cur = shownKind = kinds[lbKind] ? lbKind : fig.dataset.kind || "";
-      const kindBtn = dlg.querySelector('[data-fx="kind"]');
-      kindBtn.hidden = !fig.dataset.alt; kindBtn.textContent = cur === "title" ? "Show in game" : "Show title screen";
+      dlg.classList.toggle("flippable", !!fig.dataset.alt);
       img.src = kinds[cur] || fig.dataset.src; img.alt = fig.querySelector("img")?.alt || "";
       cap.textContent = fig.querySelector("figcaption")?.textContent || img.alt;
       dlg.classList.toggle("single", set.length < 2);
@@ -1277,7 +1243,7 @@
       const t = S.titles.find(x => x.name === name), L = dlg.querySelector(".lb-left"), R = dlg.querySelector(".lb-right");
       if (!t) { L.innerHTML = R.innerHTML = ""; return; }
       const nsets = t.sets.length;
-      const sets = t.sets.map(x => `<li${x.working ? "" : ' class="nw"'}><span class="set">${esc(x.name)}</span> ${esc(x.desc)}
+      const sets = t.sets.map(x => `<li${x.working ? "" : ' class="nw"'}>${x.cores.length ? `<button type="button" class="launch" data-launch="${esc(setLaunch(x))}" data-title="${esc(x.desc)}" title="launch this set on my MiSTer via Zaparoo">▶</button>` : ""}<span class="set">${esc(x.name)}</span> ${esc(x.desc)}
         <div class="muted">${esc(x.status)}${x.working ? "" : " (not working)"}</div>
         <div>${x.cores.length ? x.cores.map(r => badge(r.core, r) + `<span class="flag">${r.date ? r.date + (r.date_quality !== "git" ? "≈" : "") : ""}</span> `).join("") : '<span class="muted">not on MiSTer</span>'}</div></li>`).join("");
       L.innerHTML = `<h4>${esc(t.desc)}</h4><p class="muted">${esc(t.manufacturer)}${t.year ? " · " + esc(t.year) : ""}${t.genre ? " · " + esc(t.genre) : ""}<br><span class="set">${esc(t.sourcefile)}</span></p>
@@ -1291,6 +1257,24 @@
       const fig = set[i]; if (!fig || !fig.dataset.alt) return;
       lbKind = shownKind === "title" ? "ingame" : "title"; show(i);
     };
+    // Clicking the screen turns the display over like a card: it rotates edge-on, the other kind of shot (title screen / in game)
+    // is swapped in, and it turns back, so the two shots are the two sides of the screen. A title with one shot only does nothing.
+    let flipping = false;
+    const flip = async () => {
+      const fig = set[i];
+      if (!fig || !fig.dataset.alt) return;                      // only one shot: nothing to turn over
+      if (flipping) return;
+      const frame = dlg.querySelector(".lb-frame");
+      if (matchMedia("(prefers-reduced-motion: reduce)").matches || !frame.animate) { toggleKind(); return; }
+      flipping = true;
+      const turn = (from, to, ease) => frame.animate([{ transform: `perspective(2200px) rotateY(${from}deg)` }, { transform: `perspective(2200px) rotateY(${to}deg)` }], { duration: 220, easing: ease, fill: "forwards" }).finished;
+      try {
+        await turn(0, 90, "ease-in");
+        const loaded = new Promise(res => { img.addEventListener("load", res, { once: true }); setTimeout(res, 600); });
+        toggleKind(); await loaded;
+        await turn(-90, 0, "ease-out");
+      } finally { frame.getAnimations().forEach(a => a.cancel()); flipping = false; }
+    };
     document.addEventListener("click", ev => {
       if (ev.target.closest("button, a")) return;                // a tile's Play and +1 are not a zoom
       const t = ev.target.closest(".gallery figure"); if (!t || !t.dataset.src) return;
@@ -1300,17 +1284,16 @@
     dlg.addEventListener("click", ev => {
       if (ev.target.closest(".lb-prev")) show(i - 1);
       else if (ev.target.closest(".lb-next")) show(i + 1);
-      else if (ev.target.closest('[data-fx="kind"]')) toggleKind();
       else if (ev.target.closest('[data-fx="info"]')) setInfo(!info);
       else if (ev.target.closest('[data-fx="scan"]')) setScan(!scan);
       else if (ev.target.closest('[data-fx="crt"]')) setCrt(!crt);
       else if (ev.target.closest(".lb-close") || ev.target === dlg) dlg.close();      // the backdrop is the dialog itself
-      else if (ev.target === img || ev.target === cv) dlg.close();
+      else if (ev.target === img || ev.target === cv) flip();
     });
     dlg.addEventListener("keydown", ev => {
       if (ev.key === "ArrowLeft" && set.length > 1) { ev.preventDefault(); show(i - 1); }
       else if (ev.key === "ArrowRight" && set.length > 1) { ev.preventDefault(); show(i + 1); }
-      else if (ev.key === "t" || ev.key === "T") toggleKind();
+      else if (ev.key === "t" || ev.key === "T") { if (set[i] && set[i].dataset.alt) flip(); }
       else if (ev.key === "i" || ev.key === "I") { if (innerWidth >= LB_SIDE_MIN) setInfo(!info); }
       else if (ev.key === "s" || ev.key === "S") setScan(!scan);
       else if (ev.key === "c" || ev.key === "C") { if (!crtBroken) setCrt(!crt); }

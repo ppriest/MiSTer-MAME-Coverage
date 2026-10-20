@@ -172,13 +172,6 @@ button.plus1:disabled { opacity: .45; cursor: not-allowed; border-color: var(--m
 button.plus1:disabled:hover { background: var(--surface); color: var(--muted); }
 
 /* screenshot preview on hover: the title screen and an in-game shot side by side */
-.shot { position: fixed; z-index: 30; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 6px 24px rgba(0,0,0,.25); padding: 6px; pointer-events: none; }
-.shot .pair { display: flex; gap: 6px; }
-.shot figure { margin: 0; max-width: 46vw; }
-.shot figure[hidden] { display: none; }
-.shot img { display: block; width: auto; height: auto; max-width: 100%; max-height: 70vh; border-radius: 4px; background: var(--surface-2); }  /* native size, only shrunk to fit the window */
-.shot figcaption { font-size: 10px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-top: 2px; }
-.shot .cap { font-size: 12px; color: var(--text-2); margin-top: 4px; }
 
 button.launch { font: inherit; font-size: 11px; padding: 0 6px; border: 1px solid var(--accent); border-radius: 10px; background: var(--surface); color: var(--accent); cursor: pointer; }
 button.launch:hover { background: var(--accent); color: var(--surface); }
@@ -361,3 +354,9 @@ header.top { position: sticky; top: 0; z-index: 20; }
 #lightbox .lb-side .hwsrc { margin-top: 10px; }
 #lightbox .lb-left { left: 14px; }
 #lightbox .lb-right { right: 14px; }
+#lightbox.flippable img, #lightbox.flippable .lb-crt { cursor: pointer; }
+#lightbox .lb-frame { backface-visibility: hidden; }
+/* the zoom fills the window and never scrolls: the turning screen may stick out of it for a moment, which must not bring up a scrollbar (that moved the arrows) */
+#lightbox { overflow: hidden; }
+#lightbox .lb-side button.launch { float: right; width: auto; height: auto; margin: 0 0 4px 8px; padding: 1px 9px; border-radius: 11px; font-size: 12px; line-height: 1.3; background: var(--surface); color: var(--accent); border: 1px solid var(--accent); }
+#lightbox .lb-side button.launch:hover, #lightbox .lb-side button.launch:focus-visible { background: var(--accent); color: #111; }
