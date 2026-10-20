@@ -507,7 +507,7 @@
     const k = t.img[S.gkind] ? S.gkind : S.gkind === "ingame" ? "title" : "ingame";     // the other kind when this one has no shot
     const nsets = f.work === "working" ? t.nworking : t.nsets, ncov = f.work === "working" ? t.ncovered_working : t.ncovered;
     const cls = ncov === 0 ? "uncovered" : ncov < nsets ? "partial" : "covered";
-    return `<figure class="tile ${cls}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" ${altAttrs(t, k)} data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
+    return `<figure class="tile ${cls}" data-t="${esc(t.name)}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" ${altAttrs(t, k)} data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
       <img loading="lazy" src="${esc(IMAGE_BASE + "/" + t.img[k])}" alt="${esc(t.desc)}" onerror="this.closest('figure').remove()">
       <figcaption class="tt" title="${esc(t.desc)}">${esc(t.desc)}</figcaption>
       <div class="pub" title="${esc(t.manufacturer)}">${esc(t.manufacturer)}${t.year ? ` · ${esc(t.year)}` : ""}</div>
@@ -722,7 +722,7 @@
       : withImg.slice().sort((x, y) => (y.covered - x.covered) || x.desc.localeCompare(y.desc)).map(t => ({ t, k: t.img.ingame ? "ingame" : "title" }));
     const shown = items.slice(0, SHOT_MAX);
     const note = items.length > shown.length ? ` <span class="muted">(first ${shown.length} of ${fmt(items.length)})</span>` : "";
-    return `<div class="gallery-box"><h4>Screenshots${note}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure title="${esc(t.desc)} (${esc(t.year)})" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" ${altAttrs(t, k)} data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
+    return `<div class="gallery-box"><h4>Screenshots${note}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure title="${esc(t.desc)} (${esc(t.year)})" data-t="${esc(t.name)}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" ${altAttrs(t, k)} data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
       <img loading="lazy" src="${esc(IMAGE_BASE + "/" + t.img[k])}" alt="${esc(t.desc)}" onerror="this.closest('figure').remove()">
       <figcaption>${esc(t.desc)}${both ? ` <span class="muted">${k === "title" ? "title screen" : "in game"}</span>` : ""}</figcaption></figure>`).join("")}</div></div>`;
   }
@@ -1069,6 +1069,7 @@
   // Multi-screen machines (the title's `screens` from MAME's -listxml, `rotate` for the orientation of each screen): a shot may show
   // all of the screens or only some, side by side or stacked. Work out how many it shows from its proportions, and show each as its
   // own 4:3 (or 3:4) display.
+  const LB_SIDE = 280, LB_SIDE_MIN = 1180;                   // width of each details panel; the window width from which they are shown
   const LB_GAP = 0.03;                                       // the gap between displays, in display widths (or heights)
   function inferScreens(ratio, n, port) {
     const pr = port ? 3 / 4 : 4 / 3;
@@ -1090,7 +1091,8 @@
     img.dataset.k = inf.k; img.dataset.horiz = inf.horiz ? 1 : 0;
     const pr = port ? 3 / 4 : 4 / 3, span = inf.k + (inf.k - 1) * LB_GAP;
     const ratio = inf.k > 1 ? (inf.horiz ? span * pr : pr / span) : nearShape(img) || nat;
-    const maxW = Math.max(200, innerWidth - (innerWidth <= 640 ? 112 : 150)), maxH = Math.max(150, innerHeight - 64);
+    const side = dlg.classList.contains("info") ? 2 * (LB_SIDE + 12) : 0;                // the details panels beside the screen
+    const maxW = Math.max(200, innerWidth - (innerWidth <= 640 ? 112 : 150) - side), maxH = Math.max(150, innerHeight - 64);
     const [w, h] = fitBox(ratio, maxW, maxH);
     img.style.width = Math.round(w) + "px"; img.style.height = Math.round(h) + "px";
     const vert = inf.k > 1 ? port : ratio < 1;                             // a 3:4 (rotated) display: its scanlines run vertically
@@ -1136,7 +1138,7 @@
   (function () {
     const dlg = document.createElement("dialog");
     dlg.id = "lightbox"; dlg.setAttribute("aria-label", "Screenshot");
-    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-play launch" aria-label="Play on my MiSTer via Zaparoo" title="play on my MiSTer via Zaparoo" hidden>▶</button><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><div class="lb-frame"><img alt=""><span class="lb-scan"></span><canvas class="lb-crt" hidden></canvas></div><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button><span class="lb-fxs"><button type="button" class="lb-fx" data-fx="kind" title="title screen / in game (T)" hidden></button><button type="button" class="lb-fx" data-fx="scan" title="scanlines (S)"></button><button type="button" class="lb-fx" data-fx="crt" title="CRT curve (C)"></button></span>';
+    dlg.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-play launch" aria-label="Play on my MiSTer via Zaparoo" title="play on my MiSTer via Zaparoo" hidden>▶</button><aside class="lb-side lb-left" aria-label="Title, sets and cores"></aside><button type="button" class="lb-prev" aria-label="Previous">‹</button><figure><div class="lb-frame"><img alt=""><span class="lb-scan"></span><canvas class="lb-crt" hidden></canvas></div><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next">›</button><aside class="lb-side lb-right" aria-label="Hardware"></aside><span class="lb-fxs"><button type="button" class="lb-fx" data-fx="info" title="show or hide the details beside the screen (I)"></button><button type="button" class="lb-fx" data-fx="kind" title="title screen / in game (T)" hidden></button><button type="button" class="lb-fx" data-fx="scan" title="scanlines (S)"></button><button type="button" class="lb-fx" data-fx="crt" title="CRT curve (C)"></button></span>';
     document.body.appendChild(dlg);
     const img = dlg.querySelector("img"), cap = dlg.querySelector("figcaption"), cv = dlg.querySelector(".lb-crt");
     const fxScan = dlg.querySelector('[data-fx="scan"]'), fxCrt = dlg.querySelector('[data-fx="crt"]');
@@ -1259,7 +1261,32 @@
       img.src = kinds[cur] || fig.dataset.src; img.alt = fig.querySelector("img")?.alt || "";
       cap.textContent = fig.querySelector("figcaption")?.textContent || img.alt;
       dlg.classList.toggle("single", set.length < 2);
+      fillSide(fig.dataset.t);
     };
+    // Details beside the screen: left, the title with its cores and its sets; right, the hardware of its driver (CPUs, sound chips,
+    // devices, slots and the notes from the driver source).
+    const infoWanted = () => { try { return localStorage.getItem("lb-info") !== "0"; } catch (e) { return true; } };
+    let info = infoWanted();
+    const applyInfo = () => {
+      const on = info && innerWidth >= LB_SIDE_MIN;
+      dlg.classList.toggle("info", on);
+      const b = dlg.querySelector('[data-fx="info"]'); b.hidden = innerWidth < LB_SIDE_MIN; b.textContent = info ? "Details: on" : "Details: off";
+    };
+    const setInfo = on => { info = on; try { localStorage.setItem("lb-info", on ? "1" : "0"); } catch (e) { /* ignore */ } applyInfo(); const im = dlg.querySelector("img"); if (im.naturalWidth) fitLightbox(im); };
+    function fillSide(name) {
+      const t = S.titles.find(x => x.name === name), L = dlg.querySelector(".lb-left"), R = dlg.querySelector(".lb-right");
+      if (!t) { L.innerHTML = R.innerHTML = ""; return; }
+      const nsets = t.sets.length;
+      const sets = t.sets.map(x => `<li${x.working ? "" : ' class="nw"'}><span class="set">${esc(x.name)}</span> ${esc(x.desc)}
+        <div class="muted">${esc(x.status)}${x.working ? "" : " (not working)"}</div>
+        <div>${x.cores.length ? x.cores.map(r => badge(r.core, r) + `<span class="flag">${r.date ? r.date + (r.date_quality !== "git" ? "≈" : "") : ""}</span> `).join("") : '<span class="muted">not on MiSTer</span>'}</div></li>`).join("");
+      L.innerHTML = `<h4>${esc(t.desc)}</h4><p class="muted">${esc(t.manufacturer)}${t.year ? " · " + esc(t.year) : ""}${t.genre ? " · " + esc(t.genre) : ""}<br><span class="set">${esc(t.sourcefile)}</span></p>
+        <h5>Cores on MiSTer</h5><div>${t.cores.length ? t.cores.map(id => badge(id)).join("") : '<span class="muted">none yet</span>'}</div>
+        <h5>${nsets === 1 ? "Set" : fmt(nsets) + " sets"}</h5><ul>${sets}</ul>`;
+      R.innerHTML = `<h4>Hardware</h4>${/(^|\/)playch10\.cpp$/.test(t.sourcefile) ? cabinetLink : ""}<div class="hwslot" data-hwfile="${esc(t.sourcefile)}"></div>`;
+      fillHardware(R);
+    }
+    addEventListener("resize", () => { if (dlg.open) applyInfo(); });
     const toggleKind = () => {
       const fig = set[i]; if (!fig || !fig.dataset.alt) return;
       lbKind = shownKind === "title" ? "ingame" : "title"; show(i);
@@ -1268,12 +1295,13 @@
       if (ev.target.closest("button, a")) return;                // a tile's Play and +1 are not a zoom
       const t = ev.target.closest(".gallery figure"); if (!t || !t.dataset.src) return;
       set = Array.from(t.closest(".gallery").querySelectorAll("figure"));
-      lbKind = t.dataset.kind || ""; show(set.indexOf(t)); dlg.showModal();
+      lbKind = t.dataset.kind || ""; applyInfo(); show(set.indexOf(t)); dlg.showModal();
     });
     dlg.addEventListener("click", ev => {
       if (ev.target.closest(".lb-prev")) show(i - 1);
       else if (ev.target.closest(".lb-next")) show(i + 1);
       else if (ev.target.closest('[data-fx="kind"]')) toggleKind();
+      else if (ev.target.closest('[data-fx="info"]')) setInfo(!info);
       else if (ev.target.closest('[data-fx="scan"]')) setScan(!scan);
       else if (ev.target.closest('[data-fx="crt"]')) setCrt(!crt);
       else if (ev.target.closest(".lb-close") || ev.target === dlg) dlg.close();      // the backdrop is the dialog itself
@@ -1283,6 +1311,7 @@
       if (ev.key === "ArrowLeft" && set.length > 1) { ev.preventDefault(); show(i - 1); }
       else if (ev.key === "ArrowRight" && set.length > 1) { ev.preventDefault(); show(i + 1); }
       else if (ev.key === "t" || ev.key === "T") toggleKind();
+      else if (ev.key === "i" || ev.key === "I") { if (innerWidth >= LB_SIDE_MIN) setInfo(!info); }
       else if (ev.key === "s" || ev.key === "S") setScan(!scan);
       else if (ev.key === "c" || ev.key === "C") { if (!crtBroken) setCrt(!crt); }
     });

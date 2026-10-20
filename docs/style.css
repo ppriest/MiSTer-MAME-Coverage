@@ -342,3 +342,20 @@ header.top { position: sticky; top: 0; z-index: 20; }
 .gallery .tile .tact button.launch { padding: 1px 8px; }
 @media (max-width: 640px) { .gallery.tiles { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); } }
 .gallery .tile .sys { font-size: 10.5px; }
+
+/* details beside the zoomed screen (wide windows): the title, its cores and sets on the left, the hardware on the right */
+#lightbox .lb-side { display: none; flex: none; width: 280px; max-height: calc(100vh - 90px); overflow: auto; padding: 10px 12px; font-size: 12px; line-height: 1.35; text-align: left;
+  background: rgba(22, 22, 24, .9); border: 1px solid #3a3a38; border-radius: 8px; color: #e8e8e8; cursor: auto;
+  --text: #f1f1ee; --text-2: #c3c2b7; --muted: #9a998f; --line: #3a3a38; --surface: #1b1b1a; --surface-2: #262625; --accent: #6db0ff; --warn: #eda100; --accent-3: #3cc28f; --bad: #e66767; }
+#lightbox.info .lb-side { display: block; }
+#lightbox .lb-side h4 { margin: 0 0 4px; font-size: 14px; color: #fff; text-transform: none; letter-spacing: 0; }
+#lightbox .lb-side h5 { margin: 12px 0 4px; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-2); }
+#lightbox .lb-side p { margin: 0; }
+#lightbox .lb-side ul { margin: 0; padding: 0; list-style: none; }
+#lightbox .lb-side li { padding: 5px 0; border-top: 1px solid var(--line); }
+#lightbox .lb-side li.nw { opacity: .7; }
+#lightbox .lb-side .hwgrid { grid-template-columns: 1fr; gap: 10px; }
+#lightbox .lb-side .hwnotes pre { max-height: 220px; background: #111; border-color: var(--line); color: #ddd; }
+#lightbox .lb-side a { color: var(--accent); }
+#lightbox .lb-side .hwsect h4 { margin: 0 0 3px; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-2); font-weight: 600; }
+#lightbox .lb-side .hwsrc { margin-top: 10px; }
