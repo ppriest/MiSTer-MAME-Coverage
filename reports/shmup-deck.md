@@ -1,14 +1,12 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-10-20 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (317 games).
+Generated 2026-10-21 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
 
-**Agreement:** 307 of 309 deck titles are Shmup in our data (99.4%).
+**Agreement:** 308 of 310 deck titles are Shmup in our data (99.4%).
 
 ## New since the previous report
 
-**1 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
-
-- `xxmissio` XX Mission (1986; Shooter / Flying Vertical)
+Nothing new: the same titles disagree as before.
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -25,7 +23,6 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
-| **NEW** `xxmissio` | XX Mission | 1986 | Shooter / Flying Vertical (catver) | UPLFramebuffer |
 | `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
@@ -135,6 +132,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `supxevs` | Vs. Super Xevious | 1986 | Shooter / Flying Vertical (catver) | VSnes |
 | `wwestern` | Wild Western (set 1) | 1982 | Shooter / Misc. Vertical (catver) | TaitoSJ |
 | `wivernwg` | Wivern Wings | 2001 | Shooter / Flying Vertical (catver) | Vamphalf |
+| `xxmissio` | XX Mission | 1986 | Shooter / Flying Vertical (catver) | UPLFramebuffer |
 | `zaviga` | Zaviga | 1984 | Shooter / Misc. Vertical (catver) | DataEastLiberation |
 | `zodiack` | Zodiack | 1983 | Shooter / Flying Vertical (catver) | Vastar |
 

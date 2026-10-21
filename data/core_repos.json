@@ -271,6 +271,9 @@
  "decoryah:monstermaulers": [
   "decoryah/Arcade-MonsterMaulers_MiSTer"
  ],
+ "decoryah:mysticwarriors": [
+  "decoryah/Arcade-MysticWarriors_MiSTer"
+ ],
  "decoryah:ohmygod": [
   "decoryah/Arcade-OhMyGod_MiSTer"
  ],
@@ -280,6 +283,15 @@
  "decoryah:pgm2_20261017e": [
   "OngoGablogian/MiSTer_Ongo",
   "decoryah/Arcade-IGSPGM2_MiSTer"
+ ],
+ "decoryah:seta2": [
+  "decoryah/Arcade-Seta2_MiSTer"
+ ],
+ "decoryah:seta2grd": [
+  "decoryah/Arcade-Seta2_MiSTer"
+ ],
+ "decoryah:seta2pen": [
+  "decoryah/Arcade-Seta2_MiSTer"
  ],
  "decoryah:taitol": [
   "decoryah/Arcade-TaitoLSystem_MiSTer"
@@ -2064,6 +2076,9 @@
  "ongo:bazset_krull": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:bazset_reaktor": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:bazset_sci": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2269,6 +2284,9 @@
  "ongo:meathax_nintendo8080": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:meathax_penguin": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:meathax_segasystem24": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2328,6 +2346,9 @@
  "ongo:ordyne_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
+ "ongo:penguin": [
+  "meathax/meatcores"
+ ],
  "ongo:pgm2": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2341,6 +2362,9 @@
   "meathax/meatcores"
  ],
  "ongo:rainbowislands_bazset": [
+  "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:reaktor_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:rmgalivan": [
