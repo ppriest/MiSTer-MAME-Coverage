@@ -231,6 +231,9 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA",
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "decoryah:arcadiasystems": [
+  "decoryah/Arcade-ArcadiaSystems_MiSTer"
+ ],
  "decoryah:crospang": [
   "decoryah/Arcade-CrossPang_MiSTer"
  ],
@@ -2703,6 +2706,9 @@
   "alphanu1/sega-model2-mister",
   "retrorepair/sega-model2-mister"
  ],
+ "repo:model2a": [
+  "alphanu1/sega-model2-mister"
+ ],
  "repo:monstermaulers": [
   "decoryah/Arcade-MonsterMaulers_MiSTer"
  ],
@@ -2840,6 +2846,8 @@
   "yaguboo/Arcade-StadiumHero_MiSTer"
  ],
  "repo:starcastle": [
+  "MiSTer-devel/Arcade-StarCastle_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer",
   "Usquebagh/MiSTer_misc",
   "Videodr0me/Arcade-StarCastle_MiSTer"
  ],

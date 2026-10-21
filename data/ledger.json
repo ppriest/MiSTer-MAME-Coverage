@@ -6,15 +6,6 @@
 {
 "date": "2026-10-09",
 "note": "alamone 2026-10-05",
-"cores": 2,
-"sets": 0,
-"pairs": 21,
-"dates_improved": 3,
-"cores_removed": 0
-},
-{
-"date": "2026-10-09",
-"note": "alamone 2026-10-05",
 "cores": 4,
 "sets": 36,
 "pairs": 47,
@@ -460,6 +451,15 @@
 "sets": 13,
 "pairs": 79,
 "dates_improved": 0,
+"cores_removed": 0
+},
+{
+"date": "2026-10-21",
+"note": "alamone 2026-10-19",
+"cores": 11,
+"sets": 108,
+"pairs": 178,
+"dates_improved": 1,
 "cores_removed": 0
 }
 ]
@@ -958,6 +958,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-21",
+"aliases": [],
 "last_seen": "2026-10-21"
 },
 "bazset:sci_bazset": {
@@ -2425,6 +2426,24 @@
 "aliases": [],
 "last_seen": "2026-10-21"
 },
+"decoryah:arcadiasystems": {
+"id": "decoryah:arcadiasystems",
+"name": "arcadiasystems",
+"source": "decoryah",
+"source_title": "decoryah",
+"channel": null,
+"rbf": "arcadiasystems.rbf",
+"repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"url": "https://github.com/decoryah/Arcade-ArcadiaSystems_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+},
 "decoryah:crospang": {
 "id": "decoryah:crospang",
 "name": "crospang",
@@ -2712,6 +2731,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-21",
+"aliases": [],
 "last_seen": "2026-10-21"
 },
 "decoryah:ohmygod": {
@@ -2794,6 +2814,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-21",
+"aliases": [],
 "last_seen": "2026-10-21"
 },
 "decoryah:seta2grd": {
@@ -2812,6 +2833,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-21",
+"aliases": [],
 "last_seen": "2026-10-21"
 },
 "decoryah:seta2pen": {
@@ -2830,6 +2852,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-21",
+"aliases": [],
 "last_seen": "2026-10-21"
 },
 "decoryah:taitol": {
@@ -7269,6 +7292,24 @@
 "aliases": [],
 "last_seen": "2026-10-21"
 },
+"gm0rk:midway-y-unit": {
+"id": "gm0rk:midway-y-unit",
+"name": "Arcade-Midway-Y-Unit",
+"source": "gm0rk",
+"source_title": "Gm0rkCores (Gm0rk)",
+"channel": null,
+"rbf": "Arcade-Midway-Y-Unit.rbf",
+"repo": "Gm0rk/Gm0rkCores",
+"url": "https://github.com/Gm0rk/Gm0rkCores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+},
 "jlrh:ffaerofgt": {
 "id": "jlrh:ffaerofgt",
 "name": "ffaerofgt",
@@ -11343,6 +11384,24 @@
 "first_recorded": "2026-10-13",
 "last_seen": "2026-10-21"
 },
+"meat:penguin": {
+"id": "meat:penguin",
+"name": "Arcade-Penguin",
+"source": "meat",
+"source_title": "MeatCores (meathax)",
+"channel": null,
+"rbf": "Arcade-Penguin.rbf",
+"repo": "meathax/meatcores",
+"url": "https://github.com/meathax/meatcores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+},
 "meat:primal2": {
 "id": "meat:primal2",
 "name": "Arcade-Primal2",
@@ -12055,6 +12114,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-21",
+"aliases": [],
 "last_seen": "2026-10-21"
 },
 "ongo:bazset_sci": {
@@ -13498,6 +13558,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-21",
+"aliases": [],
 "last_seen": "2026-10-21"
 },
 "ongo:meathax_segasystem24": {
@@ -13896,6 +13957,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-21",
+"aliases": [],
 "last_seen": "2026-10-21"
 },
 "ongo:pgm2": {
@@ -14008,6 +14070,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-21",
+"aliases": [],
 "last_seen": "2026-10-21"
 },
 "ongo:rmgalivan": {
@@ -14977,6 +15040,24 @@
 "note": null,
 "first_recorded": "2026-10-10",
 "aliases": [],
+"last_seen": "2026-10-21"
+},
+"ppriest:pandora": {
+"id": "ppriest:pandora",
+"name": "Pandora",
+"source": "ppriest",
+"source_title": "ppriest (Tourniquet)",
+"channel": null,
+"rbf": "Pandora.rbf",
+"repo": "ppriest/Arcade-Pandora_MiSTer",
+"url": "https://github.com/ppriest/Arcade-Pandora_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-21",
 "last_seen": "2026-10-21"
 },
 "ppriest:playchoice10": {
@@ -15994,6 +16075,24 @@
 "note": null,
 "first_recorded": "2026-10-16",
 "aliases": [],
+"last_seen": "2026-10-21"
+},
+"repo:model2a": {
+"id": "repo:model2a",
+"name": "Model2A",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": null,
+"rbf": "Model2A.rbf",
+"repo": "alphanu1/sega-model2-mister",
+"url": "https://github.com/alphanu1/sega-model2-mister",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-21",
 "last_seen": "2026-10-21"
 },
 "repo:namcona2": {
@@ -18485,6 +18584,36 @@
 "last_seen": "2026-10-21"
 }
 },
+"3in1semi": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/New HyperMan (3-in-1 with Cookie & Bibi & HyperMan) (set 1).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"3in1semia": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_New HyperMan (3-in-1 with Cookie & Bibi & HyperMan) (set 1)/New HyperMan (3-in-1 with Cookie & Bibi & HyperMan) (set 2).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "3kokushi": {
 "decoryah:metro": {
 "core": "decoryah:metro",
@@ -18643,6 +18772,21 @@
 "first_path": "releases/4 Fun In 1.mra",
 "mra": null,
 "first_recorded": "2026-10-19",
+"last_seen": "2026-10-21"
+}
+},
+"4in1boot": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Puzzle King (PacMan 2, Tetris, HyperMan 2, Snow Bros.).mra",
+"first_recorded": "2026-10-21",
 "last_seen": "2026-10-21"
 }
 },
@@ -21774,6 +21918,336 @@
 "first_path": "_Arcade/Aqua Rush (Japan AQ1-VER.A1).mra",
 "mra": "_Arcade/Aqua Rush (Japan, AQ1-VER.A1).mra",
 "first_recorded": "2026-10-14",
+"last_seen": "2026-10-21"
+}
+},
+"ar_airh": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/SportTime Table Hockey (Arcadia, set 1, V 2.1).mra",
+"mra": "_Arcade/SportTime Table Hockey (Arcadia, set 1, V 2.1).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_airh2": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/_alternatives/_SportTime Table Hockey/SportTime Table Hockey (Arcadia, set 2).mra",
+"mra": "_Arcade/SportTime Table Hockey (Arcadia, set 2).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_argh": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/Aaargh (Arcadia).mra",
+"mra": "_Arcade/Aaargh (Arcadia).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_blast": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/Blastaball (Arcadia, V 2.1).mra",
+"mra": "_Arcade/Blastaball (Arcadia, V 2.1).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_bowl": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/SportTime Bowling (Arcadia, V 2.1).mra",
+"mra": "_Arcade/SportTime Bowling (Arcadia, V 2.1).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_dart": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/World Darts (Arcadia, set 1, V 2.1).mra",
+"mra": "_Arcade/World Darts (Arcadia, set 1, V 2.1).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_dlta": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/Delta Command (Arcadia).mra",
+"mra": "_Arcade/Delta Command (Arcadia).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_fast": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/Magic Johnson's Fast Break (Arcadia, V 2.8).mra",
+"mra": "_Arcade/Magic Johnson's Fast Break (Arcadia, V 2.8).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_fasta": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/_alternatives/_Magic Johnson's Fast Break/Magic Johnson's Fast Break (Arcadia, V 2.7).mra",
+"mra": "_Arcade/Magic Johnson's Fast Break (Arcadia, V 2.7).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_ldrb": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/Leader Board Golf (Arcadia, set 1, V 2.5).mra",
+"mra": "_Arcade/Leader Board Golf (Arcadia, set 1, V 2.5).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_ldrba": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/_alternatives/_Leader Board Golf/Leader Board Golf (Arcadia, set 2, V 2.4).mra",
+"mra": "_Arcade/Leader Board Golf (Arcadia, set 2, V 2.4).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_ldrbb": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/_alternatives/_Leader Board Golf/Leader Board Golf (Arcadia, set 3).mra",
+"mra": "_Arcade/Leader Board Golf (Arcadia, set 3).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_ninj": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/Ninja Mission (Arcadia, set 1, V 2.5).mra",
+"mra": "_Arcade/Ninja Mission (Arcadia, set 1, V 2.5).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_ninj2": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/_alternatives/_Ninja Mission/Ninja Mission (Arcadia, set 2).mra",
+"mra": "_Arcade/Ninja Mission (Arcadia, set 2).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_pm": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/Pharaohs Match (Arcadia).mra",
+"mra": "_Arcade/Pharaohs Match (Arcadia).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_rdwr": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/RoadWars (Arcadia, V 2.3).mra",
+"mra": "_Arcade/RoadWars (Arcadia, V 2.3).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_sdwr": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/Sidewinder (Arcadia, set 1, V 2.1).mra",
+"mra": "_Arcade/Sidewinder (Arcadia, set 1, V 2.1).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_sdwr2": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/_alternatives/_Sidewinder/Sidewinder (Arcadia, set 2).mra",
+"mra": "_Arcade/Sidewinder (Arcadia, set 2).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_socc": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/World Trophy Soccer (Arcadia, V 3.0).mra",
+"mra": "_Arcade/World Trophy Soccer (Arcadia, V 3.0).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_spot": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/Spot (Arcadia, V 2.0).mra",
+"mra": "_Arcade/Spot (Arcadia, V 2.0).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_sprg": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/Space Ranger (Arcadia, V 2.0).mra",
+"mra": "_Arcade/Space Ranger (Arcadia, V 2.0).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"ar_xeon": {
+"decoryah:arcadiasystems": {
+"core": "decoryah:arcadiasystems",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+"first_path": "mra/Xenon (Arcadia, V 2.3).mra",
+"mra": "_Arcade/Xenon (Arcadia, V 2.3).mra",
+"first_recorded": "2026-10-21",
 "last_seen": "2026-10-21"
 }
 },
@@ -37643,6 +38117,81 @@
 "last_seen": "2026-10-04"
 }
 },
+"cookbib2": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Cookie & Bibi 2 (English, set 1).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"cookbib2a": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Cookie & Bibi 2 (English, set 1)/Cookie & Bibi 2 (English, set 2).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"cookbib2b": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Cookie & Bibi 2 (English, set 1)/Cookie & Bibi 2 (English, set 3).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"cookbib2c": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Cookie & Bibi 2 (English, set 1)/Cookie & Bibi 2 (English - Korean).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"cookbib3": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Cookie & Bibi 3.mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "coolmini": {
 "ongo:vamphalf": {
 "core": "ongo:vamphalf",
@@ -42913,6 +43462,111 @@
 "mra": "_Arcade/DECO Widel Multigame (DECO).mra"
 }
 },
+"deerhunt": {
+"decoryah:seta2pen": {
+"core": "decoryah:seta2pen",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-Seta2_MiSTer",
+"first_path": "mra/Deer Hunting USA.mra",
+"mra": "_Arcade/Deer Hunting USA.mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"deerhunta": {
+"decoryah:seta2pen": {
+"core": "decoryah:seta2pen",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-Seta2_MiSTer",
+"first_path": "mra/_alternatives/_Deer Hunting USA/Deer Hunting USA (V4.2).mra",
+"mra": "_Arcade/Deer Hunting USA (V4.2).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"deerhuntb": {
+"decoryah:seta2pen": {
+"core": "decoryah:seta2pen",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-Seta2_MiSTer",
+"first_path": "mra/_alternatives/_Deer Hunting USA/Deer Hunting USA (V4.0).mra",
+"mra": "_Arcade/Deer Hunting USA (V4.0).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"deerhuntc": {
+"decoryah:seta2pen": {
+"core": "decoryah:seta2pen",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-Seta2_MiSTer",
+"first_path": "mra/_alternatives/_Deer Hunting USA/Deer Hunting USA (V3).mra",
+"mra": "_Arcade/Deer Hunting USA (V3).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"deerhuntd": {
+"decoryah:seta2pen": {
+"core": "decoryah:seta2pen",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-Seta2_MiSTer",
+"first_path": "mra/_alternatives/_Deer Hunting USA/Deer Hunting USA (V2).mra",
+"mra": "_Arcade/Deer Hunting USA (V2).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"deerhunte": {
+"decoryah:seta2pen": {
+"core": "decoryah:seta2pen",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-Seta2_MiSTer",
+"first_path": "mra/_alternatives/_Deer Hunting USA/Deer Hunting USA (V1).mra",
+"mra": "_Arcade/Deer Hunting USA (V1).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"deerhuntj": {
+"decoryah:seta2pen": {
+"core": "decoryah:seta2pen",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-Seta2_MiSTer",
+"first_path": "mra/_alternatives/_Deer Hunting USA/Deer Hunting USA (V4.4.1, Japan).mra",
+"mra": "_Arcade/Deer Hunting USA (V4.4.1, Japan).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "defcmnd": {
 "repo:williams_testbuild": {
 "core": "repo:williams_testbuild",
@@ -45319,6 +45973,21 @@
 "mra": "_Arcade/_alternatives/_Die Hard Arcade/Dynamite Deka (J 960515 V1.000).mra"
 }
 },
+"doaab": {
+"repo:model2a": {
+"core": "repo:model2a",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/mra/Dead or Alive (Model 2A) [15kHz CRT].mra",
+"mra": "_Arcade/Dead or Alive (Model 2A) [15kHz CRT].mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "doapp": {
 "kyle:xnzn1": {
 "core": "kyle:xnzn1",
@@ -47574,6 +48243,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/Dyna Gear.mra"
+}
+},
+"dynamcop": {
+"repo:model2a": {
+"core": "repo:model2a",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/mra/Dynamite Cop (Export, Model 2A) [15kHz CRT].mra",
+"mra": "_Arcade/Dynamite Cop (Export, Model 2A) [15kHz CRT].mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "dynwar": {
@@ -51511,6 +52195,21 @@
 "mra": "_Arcade/Final Lap (Japan, Rev C).mra"
 }
 },
+"finalttr": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Final Tetris.mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "findlove": {
 "dist:st-v": {
 "core": "dist:st-v",
@@ -53801,7 +54500,7 @@
 "first_path": "_Arcade/_MeatCores/Funky Jet (bootleg).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
-"mra": "_Arcade/_MeatCores/Funky Jet (bootleg).mra"
+"mra": "_Arcade/_MeatCores/Funky Jet.mra"
 },
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
@@ -60471,6 +61170,21 @@
 "last_seen": "2026-10-21"
 }
 },
+"gtmr": {
+"ongo:kanekofamily": {
+"core": "ongo:kanekofamily",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/1000 Miglia - Great 1000 Miles Rally.mra",
+"mra": "_Arcade/_BAZSET/1000 Miglia - Great 1000 Miles Rally.mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "guardian": {
 "gm0rk:atari-g42": {
 "core": "gm0rk:atari-g42",
@@ -61482,6 +62196,21 @@
 "first_path": "pull/1637",
 "mra": null,
 "first_recorded": "2026-10-18",
+"last_seen": "2026-10-21"
+}
+},
+"gwasu": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Gwasuwon (Korea).mra",
+"first_recorded": "2026-10-21",
 "last_seen": "2026-10-21"
 }
 },
@@ -62967,6 +63696,94 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/High Impact Football (rev LA5 02-15-91).mra"
+},
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-09-24",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": false,
+"first_repo": "blahm1d/MiSTer-cores",
+"first_path": "_Arcade/_blahm1d/High Impact Football (rev LA5 02-15-91).mra",
+"mra": "_Arcade/_Gm0rkCores/High Impact Football (rev LA5 02-15-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"hiimpact1": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_High Impact Football/High Impact Football (rev LA1 12-16-90).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"hiimpact2": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_High Impact Football/High Impact Football (rev LA2 12-26-90).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"hiimpact3": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_High Impact Football/High Impact Football (rev LA3 12-27-90).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"hiimpact4": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_High Impact Football/High Impact Football (rev LA4 02-04-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"hiimpactp": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_High Impact Football/High Impact Football (prototype, revision0 proto 8.6 12-09-90).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "hipai": {
@@ -63768,6 +64585,21 @@
 "mra": "_Arcade/Hyper Olympic '84.mra"
 }
 },
+"hpyagu98": {
+"repo:model2a": {
+"core": "repo:model2a",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/mra/Hanguk Pro Yagu 98 [15kHz CRT].mra",
+"mra": "_Arcade/Hanguk Pro Yagu 98 [15kHz CRT].mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "hrthouse": {
 "ongo:limenko": {
 "core": "ongo:limenko",
@@ -64442,7 +65274,7 @@
 "hvysmsh": {
 "meat:simple156": {
 "core": "meat:simple156",
-"date": "2026-10-21",
+"date": "2026-10-07",
 "date_quality": "git",
 "via": "ongo",
 "wip": false,
@@ -64852,6 +65684,36 @@
 "first_path": "MRA/Hyper Athlete (GV021 JAPAN 1.00).mra",
 "mra": "_Arcade/Hyper Athlete (GV021 JAPAN 1.00).mra",
 "first_recorded": "2026-10-19",
+"last_seen": "2026-10-21"
+}
+},
+"hyperpac": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Hyper Pacman.mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"hyperpacb": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Hyper Pacman/Hyper Pacman (bootleg).mra",
+"first_recorded": "2026-10-21",
 "last_seen": "2026-10-21"
 }
 },
@@ -76891,6 +77753,21 @@
 "mra": "_Arcade/_alternatives/_Mania Challenge/Mania Challenge (Set 2).mra"
 }
 },
+"manxtt": {
+"repo:model2a": {
+"core": "repo:model2a",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/mra/Manx TT Superbike - DX-Twin (Revision D) [15kHz CRT].mra",
+"mra": "_Arcade/Manx TT Superbike - DX-Twin (Revision D) [15kHz CRT].mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "manybloc": {
 "kuze:nmk16_gunnail": {
 "core": "kuze:nmk16_gunnail",
@@ -77854,6 +78731,21 @@
 "mra": "_Arcade/_alternatives/_Magical Cat Adventure/Magical Cat Adventure (Japan).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-17"
+}
+},
+"mcheonru": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Macheonlu (Korea).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "mcwars": {
@@ -79890,6 +80782,51 @@
 "mra": "_Arcade/Mortal Kombat (rev 5.5) (Wolf Unit).mra"
 }
 },
+"mkla1": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (rev 1.0 08-09-92).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"mkla2": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (rev 2.0 08-18-92).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"mkla3": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (rev 3.0 08-31-92).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "mkla4": {
 "blahm1d:blahm1d_yunitadpcm": {
 "core": "blahm1d:blahm1d_yunitadpcm",
@@ -79903,6 +80840,124 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/Mortal Kombat (rev 4.0 09-28-92).mra"
+},
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Mortal Kombat (rev 4.0 09-28-92).mra",
+"mra": "_Arcade/_Gm0rkCores/Mortal Kombat (rev 4.0 09-28-92).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"mknifty": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (Nifty Kombo, hack).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"mknifty666": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (Nifty Kombo 666, hack).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"mkprot4": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (prototype, rev 4.0 07-14-92).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"mkprot8": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (prototype, rev 8.0 07-21-92).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"mkprot9": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (prototype, rev 9.0 07-28-92).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"mkyturbo": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (Turbo 3.1 09-09-93, hack).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"mkyturboe": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (Turbo 3.0 08-31-92, hack).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "mlander": {
@@ -81292,6 +82347,36 @@
 "last_seen": "2026-10-21"
 }
 },
+"moremore": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Puzzle Express More More (Korea).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"moremorp": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Puzzle Express More More Plus.mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "mortalr": {
 "meat:steelforce": {
 "core": "meat:steelforce",
@@ -81344,6 +82429,21 @@
 "first_repo": "MiSTer-devel/NeoGeo_MiSTer",
 "first_path": "releases/romsets.xml",
 "first_recorded": "2026-10-04",
+"last_seen": "2026-10-21"
+}
+},
+"motoraid": {
+"repo:model2a": {
+"core": "repo:model2a",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/mra/Motor Raid - Twin [15kHz CRT].mra",
+"mra": "_Arcade/Motor Raid - Twin [15kHz CRT].mra",
+"first_recorded": "2026-10-21",
 "last_seen": "2026-10-21"
 }
 },
@@ -93031,6 +94131,19 @@
 "first_recorded": "2026-10-21",
 "last_seen": "2026-10-21"
 },
+"meat:penguin": {
+"core": "meat:penguin",
+"date": "2026-10-20",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-Seta2_MiSTer",
+"first_path": "mra/Penguin Brothers.mra",
+"mra": "_Arcade/_MeatCores/Penguin Brothers.mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+},
 "ongo:meathax_penguin": {
 "core": "ongo:meathax_penguin",
 "date": "2026-10-21",
@@ -94891,6 +96004,21 @@
 "first_path": "_Arcade/_alternatives/_Plasma Sword - Nightmare of Bilstein/Plasma Sword - Nightmare of Bilstein (Asia 980316).mra",
 "mra": "_Arcade/_alternatives/_Plasma Sword - Nightmare of Bilstein/Plasma Sword - Nightmare of Bilstein (Asia 980316).mra",
 "first_recorded": "2026-10-15",
+"last_seen": "2026-10-21"
+}
+},
+"pltkidsa": {
+"repo:model2a": {
+"core": "repo:model2a",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/mra/Pilot Kids (Model 2A) [15kHz CRT].mra",
+"mra": "_Arcade/Pilot Kids (Model 2A) [15kHz CRT].mra",
+"first_recorded": "2026-10-21",
 "last_seen": "2026-10-21"
 }
 },
@@ -99147,6 +100275,36 @@
 "first_repo": "decoryah/Arcade-Seta2_MiSTer",
 "first_path": "mra/Puzzle De Bowling.mra",
 "mra": "_Arcade/Puzzle De Bowling.mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"pzlbreak": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Puzzle Break (set 1).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"pzlbreaka": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Puzzle Break (set 1)/Puzzle Break (set 2).mra",
 "first_recorded": "2026-10-21",
 "last_seen": "2026-10-21"
 }
@@ -108359,6 +109517,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/_Blahm1d/Saurian Front (proto v5.0 08-07-90) [blahm1d].mra"
+},
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-09-24",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": "blahm1d/MiSTer-cores",
+"first_path": "_Arcade/_blahm1d/Saurian Front (proto v5.0 08-07-90).mra",
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Strike Force/Saurian Front (proto v5.0 8-07-90).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "sauro": {
@@ -114659,6 +115830,79 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/Super High Impact (rev LA2 10-22-91).mra"
+},
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-09-24",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": false,
+"first_repo": "blahm1d/MiSTer-cores",
+"first_path": "_Arcade/_blahm1d/Super High Impact (rev LA2 10-22-91).mra",
+"mra": "_Arcade/_Gm0rkCores/Super High Impact (rev LA2 10-22-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"shimpactl1": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Super High Impact/Super High Impact (rev LA1 09-30-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"shimpactp4": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Super High Impact/Super High Impact (prototype, proto 4.0 09-10-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"shimpactp5": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Super High Impact/Super High Impact (prototype, proto 5.0 09-15-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"shimpactp6": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Super High Impact/Super High Impact (prototype, proto 6.0 09-23-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "shinobi": {
@@ -116794,6 +118038,21 @@
 "last_seen": "2026-10-21"
 }
 },
+"skytargt": {
+"repo:model2a": {
+"core": "repo:model2a",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/mra/Sky Target [15kHz CRT].mra",
+"mra": "_Arcade/Sky Target [15kHz CRT].mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "skywolf": {
 "dist:kyugo": {
 "core": "dist:kyugo",
@@ -117135,6 +118394,79 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/Smash T.V. (rev 8.00).mra"
+},
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-09-24",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": false,
+"first_repo": "blahm1d/MiSTer-cores",
+"first_path": "_Arcade/_blahm1d/Smash T.V. (rev 8.00).mra",
+"mra": "_Arcade/_Gm0rkCores/Smash T.V. (rev 8.00).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"smashtv3": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Smash T.V_/Smash T.V. (rev 3.01).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"smashtv4": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Smash T.V_/Smash T.V. (rev 4.00).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"smashtv5": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Smash T.V_/Smash T.V. (rev 5.00).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"smashtv6": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Smash T.V_/Smash T.V. (rev 6.00).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "smbng": {
@@ -117524,6 +118856,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/_alternatives/_Snow Bros. - Nick & Tom/Snow Bros. - Nick & Tom (Set 1).mra"
+},
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
+"first_path": "_Arcade/_alternatives/_Snow Bros. - Nick & Tom/Snow Bros. - Nick & Tom (Set 1).mra",
+"mra": "_Arcade/Snow Bros. - Nick & Tom (set 1).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "snowbrosa": {
@@ -117539,6 +118884,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/_alternatives/_Snow Bros. - Nick & Tom/Snow Bros. - Nick & Tom (Set 2).mra"
+},
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
+"first_path": "_Arcade/_alternatives/_Snow Bros. - Nick & Tom/Snow Bros. - Nick & Tom (Set 2).mra",
+"mra": "_Arcade/_alternatives/_Snow Bros. - Nick & Tom (set 1)/Snow Bros. - Nick & Tom (set 2).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "snowbrosb": {
@@ -117554,6 +118912,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/_alternatives/_Snow Bros. - Nick & Tom/Snow Bros. - Nick & Tom (Set 3).mra"
+},
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
+"first_path": "_Arcade/_alternatives/_Snow Bros. - Nick & Tom/Snow Bros. - Nick & Tom (Set 3).mra",
+"mra": "_Arcade/_alternatives/_Snow Bros. - Nick & Tom (set 1)/Snow Bros. - Nick & Tom (set 3).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "snowbrosc": {
@@ -117569,6 +118940,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/_alternatives/_Snow Bros. - Nick & Tom/Snow Bros. - Nick & Tom (Set 4).mra"
+},
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
+"first_path": "_Arcade/_alternatives/_Snow Bros. - Nick & Tom/Snow Bros. - Nick & Tom (Set 4).mra",
+"mra": "_Arcade/_alternatives/_Snow Bros. - Nick & Tom (set 1)/Snow Bros. - Nick & Tom (set 4).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "snowbrosd": {
@@ -117584,6 +118968,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/_alternatives/_Snow Bros. - Nick & Tom/Snow Bros. - Nick & Tom (Dooyong License).mra"
+},
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
+"first_path": "_Arcade/_alternatives/_Snow Bros. - Nick & Tom/Snow Bros. - Nick & Tom (Dooyong License).mra",
+"mra": "_Arcade/_alternatives/_Snow Bros. - Nick & Tom (set 1)/Snow Bros. - Nick & Tom (Dooyong license).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "snowbrosj": {
@@ -117599,6 +118996,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/Snow Bros. - Nick & Tom (Japan).mra"
+},
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
+"first_path": "_Arcade/Snow Bros. - Nick & Tom (Japan).mra",
+"mra": "_Arcade/_alternatives/_Snow Bros. - Nick & Tom (set 1)/Snow Bros. - Nick & Tom (Japan).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "snowpac": {
@@ -121138,6 +122548,21 @@
 "last_seen": "2026-10-21"
 }
 },
+"srallyc": {
+"repo:model2a": {
+"core": "repo:model2a",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/mra/Sega Rally Championship - Twin-DX (Revision C) [15kHz CRT].mra",
+"mra": "_Arcade/Sega Rally Championship - Twin-DX (Revision C) [15kHz CRT].mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "sranger": {
 "ongo:meathax_suna8bit": {
 "core": "ongo:meathax_suna8bit",
@@ -122397,7 +123822,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Super Stingray (Japan).mra",
-"mra": "_Arcade/_MeatCores/Super Stingray (Japan).mra",
+"mra": "_Arcade/_MeatCores/Super Stingray.mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-21"
 }
@@ -124202,6 +125627,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/Strike Force (rev 1 02-25-91).mra"
+},
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-09-24",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": false,
+"first_repo": "blahm1d/MiSTer-cores",
+"first_path": "_Arcade/_blahm1d/Strike Force (rev 1 02-25-91).mra",
+"mra": "_Arcade/_Gm0rkCores/Strike Force (rev 1 02-25-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "strnskil": {
@@ -124373,6 +125811,21 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/_alternatives/_Idol Janshi Suchie-Pai II (ver 1.1)/Idol Janshi Suchie-Pai II (ver 1.0).mra"
+}
+},
+"suhosong": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Suhoseong (Korea).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "suikoenb": {
@@ -125344,6 +126797,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/_alternatives/_Tapper/Tapper (Suntory).mra"
+}
+},
+"sutjarod": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Sutjaro Haeyo Deluxe (Korea).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "suzuk8h2": {
@@ -128341,6 +129809,94 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/Terminator 2 - Judgment Day (rev LA4 08-03-92).mra"
+},
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-09-24",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": false,
+"first_repo": "blahm1d/MiSTer-cores",
+"first_path": "_Arcade/_blahm1d/Terminator 2 - Judgment Day (rev LA4 08-03-92).mra",
+"mra": "_Arcade/_Gm0rkCores/Terminator 2 - Judgment Day (rev LA4 08-03-92).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"term2la1": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Terminator 2 - Judgment Day/Terminator 2 - Judgment Day (rev LA1 11-01-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"term2la2": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Terminator 2 - Judgment Day/Terminator 2 - Judgment Day (rev LA2 12-09-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"term2la3": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Terminator 2 - Judgment Day/Terminator 2 - Judgment Day (rev LA3 03-27-92).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"term2lg1": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Terminator 2 - Judgment Day/Terminator 2 - Judgment Day (German, rev LG1 11-04-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"term2pa2": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Terminator 2 - Judgment Day/Terminator 2 - Judgment Day (prototype, rev PA2 10-18-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "terracre": {
@@ -131534,6 +133090,21 @@
 "mra": "_Arcade/Top Landing (World).mra"
 }
 },
+"toppyrap": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Toppy & Rappy.mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "topracer": {
 "dist:poleposition": {
 "core": "dist:poleposition",
@@ -131893,6 +133464,64 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/Total Carnage (rev LA1 03-10-92).mra"
+},
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-09-24",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": false,
+"first_repo": "blahm1d/MiSTer-cores",
+"first_path": "_Arcade/_blahm1d/Total Carnage (rev LA1 03-10-92).mra",
+"mra": "_Arcade/_Gm0rkCores/Total Carnage (rev LA1 03-10-92).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"totcarnp1": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Total Carnage/Total Carnage (prototype, proto v 1.0 01-25-92).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"totcarnp2": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Total Carnage/Total Carnage (prototype, proto v 2.0 02-10-92).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"toto": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Come Back Toto.mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "toukon3": {
@@ -132569,6 +134198,109 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/Trog (rev LA5 3-29-91).mra"
+},
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-09-24",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": false,
+"first_repo": "blahm1d/MiSTer-cores",
+"first_path": "_Arcade/_blahm1d/Trog (rev LA5 3-29-91).mra",
+"mra": "_Arcade/_Gm0rkCores/Trog (rev LA5 3-29-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"trog3": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Trog/Trog (rev LA3 2-14-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"trog3a": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Trog/Trog (rev LA3 2-10-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"trog4": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Trog/Trog (rev LA4 3-11-91).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"trogpa4": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Trog/Trog (prototype, rev 4.00 7-27-90).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"trogpa5": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Trog/Trog (prototype, rev PA5-PAC 8-28-90).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"trogpa6": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Trog/Trog (prototype, rev PA6-PAC 9-09-90).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "trojan": {
@@ -132775,6 +134507,36 @@
 "first_repo": "RodimusFVC/Arcade-Galaxian_MiSTer",
 "first_path": "releases/_alternatives/_Mr. Kougar/Troopy (Bootleg Of Mr. Kougar).mra",
 "first_recorded": "2026-10-05",
+"last_seen": "2026-10-21"
+}
+},
+"trophyh": {
+"decoryah:seta2pen": {
+"core": "decoryah:seta2pen",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-Seta2_MiSTer",
+"first_path": "mra/Trophy Hunting - Bear & Moose.mra",
+"mra": "_Arcade/Trophy Hunting - Bear & Moose.mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"trophyht": {
+"decoryah:seta2pen": {
+"core": "decoryah:seta2pen",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": true,
+"alt": true,
+"first_repo": "decoryah/Arcade-Seta2_MiSTer",
+"first_path": "mra/_alternatives/_Trophy Hunting - Bear & Moose/Trophy Hunting - Bear & Moose (location test).mra",
+"mra": "_Arcade/Trophy Hunting - Bear & Moose (location test).mra",
+"first_recorded": "2026-10-21",
 "last_seen": "2026-10-21"
 }
 },
@@ -133432,6 +135194,21 @@
 "last_seen": "2026-10-21"
 }
 },
+"turkhunt": {
+"decoryah:seta2pen": {
+"core": "decoryah:seta2pen",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-Seta2_MiSTer",
+"first_path": "mra/Turkey Hunting USA.mra",
+"mra": "_Arcade/Turkey Hunting USA.mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "turpin": {
 "dist:galaxian": {
 "core": "dist:galaxian",
@@ -133975,6 +135752,36 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-21",
 "mra": "_Arcade/Twin Hawk (US).mra"
+}
+},
+"twinkle": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Twinkle (set 1).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"twinklea": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Twinkle (set 1)/Twinkle (set 2).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
 }
 },
 "twinqix": {
@@ -135377,6 +137184,21 @@
 "mra": "_Arcade/VS Block Breaker (Asia).mra"
 }
 },
+"vcop2": {
+"repo:model2a": {
+"core": "repo:model2a",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/mra/Virtua Cop 2 [15kHz CRT].mra",
+"mra": "_Arcade/Virtua Cop 2 [15kHz CRT].mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "vcopa": {
 "ongo:model2": {
 "core": "ongo:model2",
@@ -135846,6 +137668,21 @@
 "first_path": "mra/Virtua Fighter.mra",
 "mra": "_Arcade/Virtua Fighter.mra",
 "first_recorded": "2026-10-19",
+"last_seen": "2026-10-21"
+}
+},
+"vf2": {
+"repo:model2a": {
+"core": "repo:model2a",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/mra/Virtua Fighter 2 (Version 2.1) [15kHz CRT].mra",
+"mra": "_Arcade/Virtua Fighter 2 (Version 2.1) [15kHz CRT].mra",
+"first_recorded": "2026-10-21",
 "last_seen": "2026-10-21"
 }
 },
@@ -140203,6 +142040,51 @@
 "mra": "_Arcade/Pro Yakyuu World Stadium '90 (Japan).mra"
 }
 },
+"wschamp": {
+"decoryah:seta2pen": {
+"core": "decoryah:seta2pen",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-Seta2_MiSTer",
+"first_path": "mra/Wing Shooting Championship.mra",
+"mra": "_Arcade/Wing Shooting Championship.mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"wschampa": {
+"decoryah:seta2pen": {
+"core": "decoryah:seta2pen",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-Seta2_MiSTer",
+"first_path": "mra/_alternatives/_Wing Shooting Championship/Wing Shooting Championship (V1.01).mra",
+"mra": "_Arcade/Wing Shooting Championship (V1.01).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
+"wschampb": {
+"decoryah:seta2pen": {
+"core": "decoryah:seta2pen",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-Seta2_MiSTer",
+"first_path": "mra/_alternatives/_Wing Shooting Championship/Wing Shooting Championship (V1.00).mra",
+"mra": "_Arcade/Wing Shooting Championship (V1.00).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "wwallyj": {
 "jt:jts18": {
 "core": "jt:jts18",
@@ -142573,6 +144455,21 @@
 "mra": "_Arcade/Y-Unit Test ROM (v1.40).mra"
 }
 },
+"yutnori": {
+"ppriest:pandora": {
+"core": "ppriest:pandora",
+"date": "2026-10-21",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Puzzle Yutnori (Korea).mra",
+"first_recorded": "2026-10-21",
+"last_seen": "2026-10-21"
+}
+},
 "zarzon": {
 "dist:snk6502": {
 "core": "dist:snk6502",
@@ -142699,6 +144596,21 @@
 "first_path": "releases/_alternatives/Zero (bootleg of Defender, set 2).mra",
 "mra": "_Arcade/Zero (bootleg of Defender, set 2).mra",
 "first_recorded": "2026-10-19",
+"last_seen": "2026-10-21"
+}
+},
+"zeroguna": {
+"repo:model2a": {
+"core": "repo:model2a",
+"date": "2026-10-21",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/mra/Zero Gunner (Export, Model 2A) [15kHz CRT].mra",
+"mra": "_Arcade/Zero Gunner (Export, Model 2A) [15kHz CRT].mra",
+"first_recorded": "2026-10-21",
 "last_seen": "2026-10-21"
 }
 },
@@ -143580,6 +145492,12 @@
 "280zzzapa": {
 "repo": "Shooter"
 },
+"3in1semi": {
+"ppriest": "Compilation"
+},
+"3in1semia": {
+"ppriest": "Compilation"
+},
 "3stooges": {
 "repo": "Action"
 },
@@ -143591,6 +145509,9 @@
 },
 "4in1": {
 "repo": "Shooter"
+},
+"4in1boot": {
+"ppriest": "Compilation"
 },
 "600": {
 "repo": "Shooter"
@@ -144037,7 +145958,8 @@
 },
 "armora": {
 "repo": "Shooter",
-"usquebagh": "Shooter"
+"usquebagh": "Shooter",
+"dist": "Shooter"
 },
 "armorcar": {
 "dist": "Maze",
@@ -144295,7 +146217,8 @@
 },
 "barrier": {
 "usquebagh": "Maze",
-"repo": "Maze"
+"repo": "Maze",
+"dist": "Maze"
 },
 "baryon": {
 "ppriest": "Shooter",
@@ -145736,6 +147659,21 @@
 "conquest": {
 "repo": "Shooter"
 },
+"cookbib2": {
+"ppriest": "Puzzle"
+},
+"cookbib2a": {
+"ppriest": "Puzzle"
+},
+"cookbib2b": {
+"ppriest": "Puzzle"
+},
+"cookbib2c": {
+"ppriest": "Puzzle"
+},
+"cookbib3": {
+"ppriest": "Puzzle"
+},
 "coolmini": {
 "ppriest": "Arcade",
 "ongo": "Arcade",
@@ -146529,6 +148467,9 @@
 "dlairf": {
 "dist": "LaserDisc"
 },
+"doaab": {
+"repo": "Fighter"
+},
 "doapp": {
 "ongo": "Fighting",
 "kyle": "Fighting",
@@ -146781,6 +148722,9 @@
 "repo": "Arcade",
 "ppriest": "Arcade",
 "ongo": "Arcade"
+},
+"dynamcop": {
+"repo": "Beat 'em up"
 },
 "dzigzag": {
 "repo": "Maze"
@@ -147229,6 +149173,9 @@
 "finallapjc": {
 "ongo": "Arcade",
 "kuze": "Arcade"
+},
+"finalttr": {
+"ppriest": "Puzzle"
 },
 "finehour": {
 "ongo": "Arcade",
@@ -148208,6 +150155,9 @@
 "gm0rk": "Sports / Golf",
 "repo": "Sports / Golf"
 },
+"gtmr": {
+"ongo": "Arcade"
+},
 "guardian": {
 "repo": "Fighter",
 "gm0rk": "Fighter"
@@ -148310,6 +150260,9 @@
 },
 "gwarrior": {
 "dist": "Fighting"
+},
+"gwasu": {
+"ppriest": "Puzzle"
 },
 "gyrodine": {
 "dist": "Shooter"
@@ -148466,6 +150419,24 @@
 "ongo": "Shooter",
 "meat": "Shooter"
 },
+"hiimpact": {
+"gm0rk": "Sports / Football"
+},
+"hiimpact1": {
+"gm0rk": "Sports / Football"
+},
+"hiimpact2": {
+"gm0rk": "Sports / Football"
+},
+"hiimpact3": {
+"gm0rk": "Sports / Football"
+},
+"hiimpact4": {
+"gm0rk": "Sports / Football"
+},
+"hiimpactp": {
+"gm0rk": "Sports / Football"
+},
 "hipai": {
 "dist": "Mahjong"
 },
@@ -148557,6 +150528,9 @@
 },
 "housepty": {
 "dist": "Maze"
+},
+"hpyagu98": {
+"repo": "Sports"
 },
 "hrthouse": {
 "repo": "Arcade",
@@ -148661,6 +150635,12 @@
 "hyperath": {
 "kyle": "Sports",
 "repo": "Sports"
+},
+"hyperpac": {
+"ppriest": "Maze"
+},
+"hyperpacb": {
+"ppriest": "Maze"
 },
 "hyperspc": {
 "dist": "Shooter - Multidirectional"
@@ -149722,6 +151702,9 @@
 "maniach2": {
 "coinop": "Sports"
 },
+"manxtt": {
+"repo": "Driving"
+},
 "manybloc": {
 "ongo": "Puzzle",
 "kuze": "Puzzle"
@@ -149832,6 +151815,9 @@
 "repo": "Platform",
 "ongo": "Platform",
 "kyle": "Platform"
+},
+"mcheonru": {
+"ppriest": "Mini-Games"
 },
 "mcwars": {
 "repo": "Shooter"
@@ -149970,6 +151956,39 @@
 "bazset": "Puzzle / Adult",
 "ongo": "Puzzle / Adult"
 },
+"mkla1": {
+"gm0rk": "Fighter / Versus"
+},
+"mkla2": {
+"gm0rk": "Fighter / Versus"
+},
+"mkla3": {
+"gm0rk": "Fighter / Versus"
+},
+"mkla4": {
+"gm0rk": "Fighter / Versus"
+},
+"mknifty": {
+"gm0rk": "Fighter / Versus"
+},
+"mknifty666": {
+"gm0rk": "Fighter / Versus"
+},
+"mkprot4": {
+"gm0rk": "Fighter / Versus"
+},
+"mkprot8": {
+"gm0rk": "Fighter / Versus"
+},
+"mkprot9": {
+"gm0rk": "Fighter / Versus"
+},
+"mkyturbo": {
+"gm0rk": "Fighter / Versus"
+},
+"mkyturboe": {
+"gm0rk": "Fighter / Versus"
+},
 "mlander": {
 "dist": "Space / Moon",
 "repo": "Shooter"
@@ -150103,6 +152122,15 @@
 "moonwara": {
 "dist": "Shooter - Multidirectional",
 "repo": "Shooter"
+},
+"moremore": {
+"ppriest": "Mini-Games"
+},
+"moremorp": {
+"ppriest": "Mini-Games"
+},
+"motoraid": {
+"repo": "Driving"
 },
 "motos": {
 "dist": "Arena"
@@ -151163,7 +153191,8 @@
 "repo": "Puzzle / Pachinko"
 },
 "penbros": {
-"ongo": "Platform"
+"ongo": "Platform",
+"meat": "Platform"
 },
 "penfan": {
 "ppriest": "Puzzle",
@@ -151445,6 +153474,9 @@
 "plsmaswda": {
 "ongo": "Fighting",
 "xela": "Fighting"
+},
+"pltkidsa": {
+"repo": "Shooter"
 },
 "pm1000": {
 "dist": "Maze"
@@ -151843,6 +153875,12 @@
 },
 "pyros": {
 "coinop": "Platform"
+},
+"pzlbreak": {
+"ppriest": "Puzzle"
+},
+"pzlbreaka": {
+"ppriest": "Puzzle"
 },
 "qbert": {
 "dist": "Platform - Climb",
@@ -152549,7 +154587,8 @@
 },
 "ripoff": {
 "repo": "Shooter",
-"usquebagh": "Shooter"
+"usquebagh": "Shooter",
+"dist": "Shooter"
 },
 "roadblst": {
 "dist": "Arcade"
@@ -152990,6 +155029,9 @@
 },
 "saturnzi": {
 "dist": "Maze"
+},
+"saurnfrnt": {
+"gm0rk": "Shooter / Flying"
 },
 "sauro": {
 "ongo": "Shooter",
@@ -153487,6 +155529,21 @@
 "shmupfan": "Shooter",
 "repo": "Shooter"
 },
+"shimpact": {
+"gm0rk": "Sports / Football"
+},
+"shimpactl1": {
+"gm0rk": "Sports / Football"
+},
+"shimpactp4": {
+"gm0rk": "Sports / Football"
+},
+"shimpactp5": {
+"gm0rk": "Sports / Football"
+},
+"shimpactp6": {
+"gm0rk": "Sports / Football"
+},
 "shippumd": {
 "coinop": "Shoot'em up",
 "repo": "Shoot'em up"
@@ -153674,6 +155731,9 @@
 "skysmash": {
 "dist": "Shoot"
 },
+"skytargt": {
+"repo": "Shooter"
+},
 "skywolf": {
 "dist": "Shooter"
 },
@@ -153702,6 +155762,21 @@
 },
 "smash": {
 "repo": "Driving"
+},
+"smashtv": {
+"gm0rk": "Shooter / Multi-directional"
+},
+"smashtv3": {
+"gm0rk": "Shooter / Multi-directional"
+},
+"smashtv4": {
+"gm0rk": "Shooter / Multi-directional"
+},
+"smashtv5": {
+"gm0rk": "Shooter / Multi-directional"
+},
+"smashtv6": {
+"gm0rk": "Shooter / Multi-directional"
 },
 "smgp": {
 "dist": "Shooter / Flight",
@@ -153738,22 +155813,28 @@
 "coinop": "Platform"
 },
 "snowbros": {
-"coinop": "Platform"
+"coinop": "Platform",
+"ppriest": "Platform"
 },
 "snowbrosa": {
-"coinop": "Platform"
+"coinop": "Platform",
+"ppriest": "Platform"
 },
 "snowbrosb": {
-"coinop": "Platform"
+"coinop": "Platform",
+"ppriest": "Platform"
 },
 "snowbrosc": {
-"coinop": "Platform"
+"coinop": "Platform",
+"ppriest": "Platform"
 },
 "snowbrosd": {
-"coinop": "Platform"
+"coinop": "Platform",
+"ppriest": "Platform"
 },
 "snowbrosj": {
-"coinop": "Platform"
+"coinop": "Platform",
+"ppriest": "Platform"
 },
 "snowpac": {
 "dist": "Maze"
@@ -153944,7 +156025,8 @@
 },
 "spacewar": {
 "usquebagh": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"dist": "Shooter"
 },
 "spacewr3": {
 "dist": "Space / Invaders",
@@ -154149,6 +156231,9 @@
 "sraider": {
 "repo": "Shooter"
 },
+"srallyc": {
+"repo": "Driving"
+},
 "srdmissn": {
 "dist": "Shooter"
 },
@@ -154244,7 +156329,8 @@
 },
 "starcas": {
 "repo": "Shooter - Multi-directional",
-"usquebagh": "Shooter"
+"usquebagh": "Shooter",
+"dist": "Shooter - Multi-directional"
 },
 "starfgh2": {
 "dist": "Shooter - Gallery"
@@ -154289,7 +156375,8 @@
 },
 "starhawk": {
 "usquebagh": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"dist": "Shooter"
 },
 "starjack": {
 "dist": "Shooter - Vertical"
@@ -154410,6 +156497,9 @@
 "repo": "Shooter / Flight",
 "rossops": "Shooter / Flight"
 },
+"strkforc": {
+"gm0rk": "Shooter / Flying"
+},
 "strongx": {
 "dist": "Shooter - Multidirectional",
 "repo": "Shooter"
@@ -154423,6 +156513,9 @@
 },
 "sucasino": {
 "dist": "Platform"
+},
+"suhosong": {
+"ppriest": "Casino"
 },
 "sumeltob": {
 "dist": "Maze"
@@ -154523,6 +156616,9 @@
 },
 "sutapper": {
 "dist": "Action"
+},
+"sutjarod": {
+"ppriest": "Puzzle"
 },
 "suzuk8h2": {
 "ongo": "Arcade",
@@ -154860,6 +156956,24 @@
 "ongo": "Shooter / Variety",
 "repo": "Shooter / Variety"
 },
+"term2": {
+"gm0rk": "Shooter / Gun"
+},
+"term2la1": {
+"gm0rk": "Shooter / Gun"
+},
+"term2la2": {
+"gm0rk": "Shooter / Gun"
+},
+"term2la3": {
+"gm0rk": "Shooter / Gun"
+},
+"term2lg1": {
+"gm0rk": "Shooter / Gun"
+},
+"term2pa2": {
+"gm0rk": "Shooter / Gun"
+},
 "terracre": {
 "coinop": "Shoot 'em up"
 },
@@ -155187,6 +157301,9 @@
 "dist": "Shooter - Multidirectional",
 "usquebagh": "Shooter - Multidirectional"
 },
+"toppyrap": {
+"ppriest": "Platform"
+},
 "topracer": {
 "dist": "Driving"
 },
@@ -155209,6 +157326,18 @@
 "tornbase": {
 "dist": "Sports / Baseball",
 "repo": "Shooter"
+},
+"totcarn": {
+"gm0rk": "Shooter / Multi-directional"
+},
+"totcarnp1": {
+"gm0rk": "Shooter / Multi-directional"
+},
+"totcarnp2": {
+"gm0rk": "Shooter / Multi-directional"
+},
+"toto": {
+"ppriest": "Platform"
 },
 "toukon3": {
 "ongo": "Sports"
@@ -155261,6 +157390,27 @@
 },
 "troangel": {
 "dist": "Sports"
+},
+"trog": {
+"gm0rk": "Maze / Collect"
+},
+"trog3": {
+"gm0rk": "Maze / Collect"
+},
+"trog3a": {
+"gm0rk": "Maze / Collect"
+},
+"trog4": {
+"gm0rk": "Maze / Collect"
+},
+"trogpa4": {
+"gm0rk": "Maze / Collect"
+},
+"trogpa5": {
+"gm0rk": "Maze / Collect"
+},
+"trogpa6": {
+"gm0rk": "Maze / Collect"
 },
 "tron": {
 "dist": "Shooter - Multidirectional"
@@ -155395,6 +157545,12 @@
 "ongo": "Arcade",
 "repo": "Arcade",
 "ppriest": "Arcade"
+},
+"twinkle": {
+"ppriest": "Maze"
+},
+"twinklea": {
+"ppriest": "Maze"
 },
 "twinsqua": {
 "ongo": "Arcade",
@@ -155578,6 +157734,9 @@
 "vballb": {
 "dist": "Sports"
 },
+"vcop2": {
+"repo": "Shooter / Gun"
+},
 "vcopa": {
 "ongo": "Shooter",
 "repo": "Shooter"
@@ -155631,6 +157790,9 @@
 },
 "vf": {
 "ongo": "Fighter",
+"repo": "Fighter"
+},
+"vf2": {
 "repo": "Fighter"
 },
 "vfive": {
@@ -155865,7 +158027,8 @@
 },
 "warrior": {
 "usquebagh": "Fighter",
-"repo": "Fighter"
+"repo": "Fighter",
+"dist": "Fighter"
 },
 "warriorb": {
 "dist": "Platform / Fight"
@@ -155984,7 +158147,8 @@
 },
 "wotw": {
 "usquebagh": "Shooter",
-"repo": "Shooter"
+"repo": "Shooter",
+"dist": "Shooter"
 },
 "wow": {
 "dist": "Shooter - Multidirectional"
@@ -156181,6 +158345,9 @@
 "rmcores": "Platform",
 "repo": "Platform"
 },
+"yutnori": {
+"ppriest": "Puzzle"
+},
 "zarzon": {
 "dist": "Shooter"
 },
@@ -156199,6 +158366,9 @@
 "repo": "Shooter"
 },
 "zero2": {
+"repo": "Shooter"
+},
+"zeroguna": {
 "repo": "Shooter"
 },
 "zerohour": {

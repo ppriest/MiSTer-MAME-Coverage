@@ -6,7 +6,12 @@ Generated 2026-10-21 by `tools/reconcile_shmups.py` from MAME 0289 data and [shm
 
 ## New since the previous report
 
-Nothing new: the same titles disagree as before.
+**4 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
+
+- `pltkids` Pilot Kids (Model 2B, Revision A) (1998; Shooter / Flying Horizontal)
+- `ar_sdwr` Sidewinder (Arcadia, set 1, V 2.1) (1988; Shooter / Flying Vertical)
+- `ar_sprg` Space Ranger (Arcadia, V 2.0) (1987; Shooter / Flying Horizontal)
+- `ar_xeon` Xenon (Arcadia, V 2.3) (1988; Shooter / Misc. Vertical)
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -17,12 +22,16 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (112)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (116)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
+| **NEW** `pltkids` | Pilot Kids (Model 2B, Revision A) | 1998 | Shooter / Flying Horizontal (catver) | Model2A |
+| **NEW** `ar_sdwr` | Sidewinder (Arcadia, set 1, V 2.1) | 1988 | Shooter / Flying Vertical (catver) | arcadiasystems |
+| **NEW** `ar_sprg` | Space Ranger (Arcadia, V 2.0) | 1987 | Shooter / Flying Horizontal (catver) | arcadiasystems |
+| **NEW** `ar_xeon` | Xenon (Arcadia, V 2.3) | 1988 | Shooter / Misc. Vertical (catver) | arcadiasystems |
 | `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
@@ -111,7 +120,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `skyskipr` | Sky Skipper | 1981 | Shooter / Flying (catver) | Popeye, jtpopeye |
 | `amazon` | Soldier Girl Amazon | 1986 | Shooter / Walking (catver) | terracresta |
 | `stargate` | Stargate | 1981 | Shooter / Flying (catver) | Robotron, Williams_TestBuild (RodimusFVC) |
-| `strkforc` | Strike Force (rev 1 02/25/91) | 1991 | Shooter / Flying (catver) | blahm1d_yunit |
+| `strkforc` | Strike Force (rev 1 02/25/91) | 1991 | Shooter / Flying (catver) | blahm1d_yunit, Midway-Y-Unit |
 | `superbik` | Superbike | 1983 | Shooter / Driving Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `syvalion` | Syvalion (Japan) | 1988 | Shooter / Flying Horizontal (catver) | Syvalion (diegov-au) |
 | `tacscan` | Tac/Scan | 1982 | Shooter / Flying Vertical (catver) | SegaG80V, SegaG80 (RodimusFVC) |
@@ -120,7 +129,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `thndzone` | Thunder Zone (World, Rev 1) | 1991 | Shooter / Walking (catver) | thndzone |
 | `timefgtr` | Time Fighter (Time Pilot conversion on Galaxian hardware) | 198? | Shooter / Flying (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `timesold` | Time Soldiers (US Rev 3) | 1987 | Shooter / Walking (catver) | Alpha68k, Alpha68k (va7deo) |
-| `totcarn` | Total Carnage (rev LA1 03/10/92) | 1992 | Shooter / Walking (catver) | blahm1d_yunitadpcm |
+| `totcarn` | Total Carnage (rev LA1 03/10/92) | 1992 | Shooter / Walking (catver) | blahm1d_yunitadpcm, Midway-Y-Unit |
 | `tricktrp` | Trick Trap (World?) | 1987 | Shooter / Walking (catver) | jtlabrun |
 | `turtship` | Turtle Ship (North America) | 1988 | Shooter / Flying Horizontal (catver) | bazturtship |
 | `valkyrie` | Valkyrie no Densetsu (Japan) | 1989 | Shooter / Walking (catver) | NamcoS2_STD |

@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-21T09:57:19+00:00",
+  "generated": "2026-10-21T20:10:27+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-21T09:57:07+00:00",
+  "mister_generated": "2026-10-21T20:10:13+00:00",
   "alamone_generated": "2026-10-19T09:14:45+00:00",
   "ledger_updated": "2026-10-21",
   "ledger_runs": [
-   {
-    "date": "2026-10-18",
-    "note": "alamone 2026-10-12",
-    "cores": 14,
-    "sets": 97,
-    "pairs": 184,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-19",
     "note": "alamone 2026-10-19",
@@ -51,6 +42,15 @@
     "pairs": 79,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-21",
+    "note": "alamone 2026-10-19",
+    "cores": 11,
+    "sets": 108,
+    "pairs": 178,
+    "dates_improved": 1,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5382 sets, 5382 used); mame2016: catver_mame2016.ini (37065 sets, 32638 used)",
    "catver_entries": 38020,
    "mad_entries": 2995,
-   "mra_entries": 3582,
+   "mra_entries": 3663,
    "unmapped": [
     {
      "raw": "not classified",
@@ -216,7 +216,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1882
+    "mras": 1890
    },
    {
     "source": "dist",
@@ -1944,7 +1944,7 @@
     "source": "repo",
     "repo": "alphanu1/sega-model2-mister",
     "dirs": null,
-    "mras": 17
+    "mras": 39
    },
    {
     "source": "repo",
@@ -2666,7 +2666,7 @@
     "source": "ongo",
     "repo": "bazset/MiSTer_BAZSET",
     "dirs": null,
-    "mras": 42
+    "mras": 43
    },
    {
     "source": "ongo",
@@ -2855,6 +2855,12 @@
     "mras": 1
    },
    {
+    "source": "dist",
+    "repo": "MiSTer-devel/Arcade-StarCastle_MiSTer",
+    "dirs": null,
+    "mras": 8
+   },
+   {
     "source": "repo",
     "repo": "rmonic79/Arcade-Darius_MiSTer",
     "dirs": null,
@@ -2968,6 +2974,12 @@
    },
    {
     "source": "decoryah",
+    "repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+    "dirs": null,
+    "mras": 22
+   },
+   {
+    "source": "decoryah",
     "repo": "decoryah/Arcade-CrossPang_MiSTer",
     "dirs": null,
     "mras": 6
@@ -2982,7 +2994,7 @@
     "source": "decoryah",
     "repo": "decoryah/Arcade-Seta2_MiSTer",
     "dirs": null,
-    "mras": 10
+    "mras": 23
    },
    {
     "source": "decoryah",
@@ -3042,12 +3054,12 @@
   "counts": {
    "titles": 6826,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2293,
+   "working_arcade_titles_covered": 2335,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5821,
-   "working_arcade_titles_source": 2042,
-   "working_arcade_titles_binary_only": 251,
-   "cores": 710,
+   "working_arcade_sets_covered": 5921,
+   "working_arcade_titles_source": 2092,
+   "working_arcade_titles_binary_only": 243,
+   "cores": 716,
    "binary_only_cores": 245,
    "unmatched_sets": 430
   }
@@ -3646,6 +3658,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-21",
+   "aliases": [],
    "last_seen": "2026-10-21",
    "binary_only": true,
    "nsets": 1,
@@ -5426,6 +5439,28 @@
    "first_date": "2022-09-22"
   },
   {
+   "id": "decoryah:arcadiasystems",
+   "name": "arcadiasystems",
+   "source": "decoryah",
+   "source_title": "decoryah",
+   "channel": null,
+   "rbf": "arcadiasystems.rbf",
+   "repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-ArcadiaSystems_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-21",
+   "last_seen": "2026-10-21",
+   "binary_only": false,
+   "nsets": 22,
+   "ntitles": 16,
+   "first_date": "2026-10-21"
+  },
+  {
    "id": "decoryah:crospang",
    "name": "crospang",
    "source": "decoryah",
@@ -5764,6 +5799,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-21",
+   "aliases": [],
    "last_seen": "2026-10-21",
    "binary_only": false,
    "nsets": 5,
@@ -5862,6 +5898,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-21",
+   "aliases": [],
    "last_seen": "2026-10-21",
    "binary_only": false,
    "nsets": 4,
@@ -5884,6 +5921,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-21",
+   "aliases": [],
    "last_seen": "2026-10-21",
    "binary_only": false,
    "nsets": 3,
@@ -5906,10 +5944,11 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-21",
+   "aliases": [],
    "last_seen": "2026-10-21",
    "binary_only": false,
-   "nsets": 2,
-   "ntitles": 1,
+   "nsets": 15,
+   "ntitles": 5,
    "first_date": "2026-10-20"
   },
   {
@@ -11194,6 +11233,28 @@
    "first_date": "2026-09-27"
   },
   {
+   "id": "gm0rk:midway-y-unit",
+   "name": "Midway-Y-Unit",
+   "source": "gm0rk",
+   "source_title": "Gm0rkCores (Gm0rk)",
+   "channel": null,
+   "rbf": "Arcade-Midway-Y-Unit.rbf",
+   "repo": "Gm0rk/Gm0rkCores",
+   "url": "https://github.com/Gm0rk/Gm0rkCores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-21",
+   "last_seen": "2026-10-21",
+   "binary_only": false,
+   "nsets": 45,
+   "ntitles": 8,
+   "first_date": "2026-09-24"
+  },
+  {
    "id": "jlrh:ffaerofgt",
    "name": "ffaerofgt",
    "source": "jlrh",
@@ -16048,6 +16109,28 @@
    "first_date": "2026-10-12"
   },
   {
+   "id": "meat:penguin",
+   "name": "Penguin",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-Penguin.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-21",
+   "last_seen": "2026-10-21",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-20"
+  },
+  {
    "id": "meat:primal2",
    "name": "Primal2",
    "source": "meat",
@@ -16654,6 +16737,29 @@
    "first_date": "2026-08-21"
   },
   {
+   "id": "ongo:kanekofamily",
+   "name": "KanekoFamily",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "KanekoFamily.rbf",
+   "repo": "bazset/MiSTer_BAZSET",
+   "url": "https://github.com/bazset/MiSTer_BAZSET",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-12",
+   "aliases": [],
+   "last_seen": "2026-10-21",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-21"
+  },
+  {
    "id": "ongo:meathax_namcond1",
    "name": "Meathax_NamcoND1",
    "source": "ongo",
@@ -17227,6 +17333,28 @@
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2026-10-10"
+  },
+  {
+   "id": "ppriest:pandora",
+   "name": "Pandora",
+   "source": "ppriest",
+   "source_title": "ppriest (Tourniquet)",
+   "channel": null,
+   "rbf": "Pandora.rbf",
+   "repo": "ppriest/Arcade-Pandora_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-Pandora_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-21",
+   "last_seen": "2026-10-21",
+   "binary_only": false,
+   "nsets": 28,
+   "ntitles": 16,
+   "first_date": "2026-10-06"
   },
   {
    "id": "ppriest:playchoice10",
@@ -18436,6 +18564,28 @@
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2026-08-18"
+  },
+  {
+   "id": "repo:model2a",
+   "name": "Model2A",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "Model2A.rbf",
+   "repo": "alphanu1/sega-model2-mister",
+   "url": "https://github.com/alphanu1/sega-model2-mister",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-21",
+   "last_seen": "2026-10-21",
+   "binary_only": false,
+   "nsets": 6,
+   "ntitles": 6,
+   "first_date": "2026-10-21"
   },
   {
    "id": "repo:namcona2",
@@ -20654,11 +20804,13 @@
   {
    "sourcefile": "amiga/arsystems.cpp",
    "titles": 16,
-   "covered": 0,
+   "covered": 16,
    "sets": 22,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 22,
+   "cores": [
+    "decoryah:arcadiasystems"
+   ],
+   "first": "2026-10-21"
   },
   {
    "sourcefile": "amiga/cubo.cpp",
@@ -23859,14 +24011,15 @@
   {
    "sourcefile": "kaneko/kaneko16.cpp",
    "titles": 12,
-   "covered": 8,
+   "covered": 9,
    "sets": 37,
-   "sets_covered": 8,
+   "sets_covered": 9,
    "cores": [
     "bazset:bonksadventure",
     "bazset:brapboys_bazset",
     "bazset:kanekofamily",
     "bazset:shogunwarriors_bazset",
+    "ongo:kanekofamily",
     "repo:kaneko16"
    ],
    "first": "2026-08-20"
@@ -23885,11 +24038,12 @@
   {
    "sourcefile": "kaneko/snowbros.cpp",
    "titles": 19,
-   "covered": 1,
+   "covered": 16,
    "sets": 37,
-   "sets_covered": 6,
+   "sets_covered": 28,
    "cores": [
-    "coinop:snowbros"
+    "coinop:snowbros",
+    "ppriest:pandora"
    ],
    "first": "2025-12-26"
   },
@@ -27429,11 +27583,12 @@
   {
    "sourcefile": "sega/model2.cpp",
    "titles": 11,
-   "covered": 2,
+   "covered": 8,
    "sets": 28,
-   "sets_covered": 3,
+   "sets_covered": 9,
    "cores": [
-    "repo:model2"
+    "repo:model2",
+    "repo:model2a"
    ],
    "first": "2026-08-18"
   },
@@ -27987,14 +28142,15 @@
   {
    "sourcefile": "seta/seta2.cpp",
    "titles": 13,
-   "covered": 6,
+   "covered": 10,
    "sets": 27,
-   "sets_covered": 9,
+   "sets_covered": 22,
    "cores": [
     "decoryah:seta2",
     "decoryah:seta2grd",
     "decoryah:seta2pen",
     "dist:guardians",
+    "meat:penguin",
     "repo:gundamex"
    ],
    "first": "2026-08-09"
@@ -30253,11 +30409,12 @@
    "titles": 5,
    "covered": 5,
    "sets": 45,
-   "sets_covered": 6,
+   "sets_covered": 16,
    "cores": [
     "blahm1d:blahm1d_tunit",
     "blahm1d:blahm1d_tunitdcs",
-    "blahm1d:blahm1d_yunitadpcm"
+    "blahm1d:blahm1d_yunitadpcm",
+    "gm0rk:midway-y-unit"
    ],
    "first": "2026-08-08"
   },
@@ -30302,11 +30459,12 @@
    "titles": 9,
    "covered": 9,
    "sets": 42,
-   "sets_covered": 10,
+   "sets_covered": 36,
    "cores": [
     "blahm1d:blahm1d_narc",
     "blahm1d:blahm1d_yunit",
     "blahm1d:blahm1d_yunitadpcm",
+    "gm0rk:midway-y-unit",
     "meat:narc"
    ],
    "first": "2026-07-22"
