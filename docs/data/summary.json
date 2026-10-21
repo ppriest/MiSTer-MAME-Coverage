@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-21T20:10:27+00:00",
+  "generated": "2026-10-21T21:01:48+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-21T20:10:13+00:00",
+  "mister_generated": "2026-10-21T21:01:27+00:00",
   "alamone_generated": "2026-10-19T09:14:45+00:00",
   "ledger_updated": "2026-10-21",
   "ledger_runs": [
-   {
-    "date": "2026-10-19",
-    "note": "alamone 2026-10-19",
-    "cores": 59,
-    "sets": 100,
-    "pairs": 582,
-    "dates_improved": 118,
-    "cores_removed": 1
-   },
    {
     "date": "2026-10-19",
     "note": "alamone 2026-10-19",
@@ -51,6 +42,15 @@
     "pairs": 178,
     "dates_improved": 1,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-21",
+    "note": "alamone 2026-10-19",
+    "cores": 7,
+    "sets": 35,
+    "pairs": 102,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5382 sets, 5382 used); mame2016: catver_mame2016.ini (37065 sets, 32638 used)",
    "catver_entries": 38020,
    "mad_entries": 2995,
-   "mra_entries": 3663,
+   "mra_entries": 3697,
    "unmapped": [
     {
      "raw": "not classified",
@@ -248,7 +248,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1354
+    "mras": 1412
    },
    {
     "source": "dist",
@@ -3054,13 +3054,13 @@
   "counts": {
    "titles": 6826,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2335,
+   "working_arcade_titles_covered": 2346,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 5921,
-   "working_arcade_titles_source": 2092,
-   "working_arcade_titles_binary_only": 243,
-   "cores": 716,
-   "binary_only_cores": 245,
+   "working_arcade_sets_covered": 5955,
+   "working_arcade_titles_source": 2100,
+   "working_arcade_titles_binary_only": 246,
+   "cores": 718,
+   "binary_only_cores": 246,
    "unmatched_sets": 430
   }
  },
@@ -5454,6 +5454,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-21",
+   "aliases": [],
    "last_seen": "2026-10-21",
    "binary_only": false,
    "nsets": 22,
@@ -11248,6 +11249,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-21",
+   "aliases": [],
    "last_seen": "2026-10-21",
    "binary_only": false,
    "nsets": 45,
@@ -16124,6 +16126,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-21",
+   "aliases": [],
    "last_seen": "2026-10-21",
    "binary_only": false,
    "nsets": 1,
@@ -16599,6 +16602,29 @@
    "first_date": "2026-08-27"
   },
   {
+   "id": "ongo:bazset_kanekofamily",
+   "name": "bazset_KanekoFamily",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "bazset_KanekoFamily.rbf",
+   "repo": "OngoGablogian/MiSTer_Ongo",
+   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-12",
+   "aliases": [],
+   "last_seen": "2026-10-21",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-21"
+  },
+  {
    "id": "ongo:bazset_kickle",
    "name": "bazset_kickle",
    "source": "ongo",
@@ -16944,6 +16970,29 @@
    "first_date": "2025-06-25"
   },
   {
+   "id": "ongo:xnsuper22",
+   "name": "XNSUPER22",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "XNSUPER22.rbf",
+   "repo": "OngoGablogian/MiSTer_Ongo",
+   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-21",
+   "binary_only": false,
+   "nsets": 20,
+   "ntitles": 11,
+   "first_date": "2026-10-21"
+  },
+  {
    "id": "ongo:xnsystem12",
    "name": "XNSYSTEM12",
    "source": "ongo",
@@ -17008,8 +17057,8 @@
    "aliases": [],
    "last_seen": "2026-10-21",
    "binary_only": true,
-   "nsets": 3,
-   "ntitles": 3,
+   "nsets": 17,
+   "ntitles": 6,
    "first_date": "2026-09-13"
   },
   {
@@ -17350,6 +17399,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-21",
+   "aliases": [],
    "last_seen": "2026-10-21",
    "binary_only": false,
    "nsets": 28,
@@ -18581,6 +18631,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-21",
+   "aliases": [],
    "last_seen": "2026-10-21",
    "binary_only": false,
    "nsets": 6,
@@ -24019,6 +24070,7 @@
     "bazset:brapboys_bazset",
     "bazset:kanekofamily",
     "bazset:shogunwarriors_bazset",
+    "ongo:bazset_kanekofamily",
     "ongo:kanekofamily",
     "repo:kaneko16"
    ],
@@ -26395,10 +26447,11 @@
   {
    "sourcefile": "namco/namcos22.cpp",
    "titles": 17,
-   "covered": 6,
+   "covered": 17,
    "sets": 40,
-   "sets_covered": 6,
+   "sets_covered": 40,
    "cores": [
+    "ongo:xnsuper22",
     "ongo:xnsystem22",
     "repo:propcycle"
    ],

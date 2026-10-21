@@ -6,12 +6,7 @@ Generated 2026-10-21 by `tools/reconcile_shmups.py` from MAME 0289 data and [shm
 
 ## New since the previous report
 
-**4 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
-
-- `pltkids` Pilot Kids (Model 2B, Revision A) (1998; Shooter / Flying Horizontal)
-- `ar_sdwr` Sidewinder (Arcadia, set 1, V 2.1) (1988; Shooter / Flying Vertical)
-- `ar_sprg` Space Ranger (Arcadia, V 2.0) (1987; Shooter / Flying Horizontal)
-- `ar_xeon` Xenon (Arcadia, V 2.3) (1988; Shooter / Misc. Vertical)
+Nothing new: the same titles disagree as before.
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -28,10 +23,6 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
-| **NEW** `pltkids` | Pilot Kids (Model 2B, Revision A) | 1998 | Shooter / Flying Horizontal (catver) | Model2A |
-| **NEW** `ar_sdwr` | Sidewinder (Arcadia, set 1, V 2.1) | 1988 | Shooter / Flying Vertical (catver) | arcadiasystems |
-| **NEW** `ar_sprg` | Space Ranger (Arcadia, V 2.0) | 1987 | Shooter / Flying Horizontal (catver) | arcadiasystems |
-| **NEW** `ar_xeon` | Xenon (Arcadia, V 2.3) | 1988 | Shooter / Misc. Vertical (catver) | arcadiasystems |
 | `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
@@ -102,6 +93,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `opaopa` | Opa Opa (MC-8123, 317-0042) | 1987 | Shooter / Flying Horizontal (catver) | SMS |
 | `orbitron` | Orbitron | 1982 | Shooter / Command (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `phantom2` | Phantom II | 1979 | Shooter / Flying Vertical (catver) | SpaceInvaders, SpaceInvaders_TestBuild (RodimusFVC) |
+| `pltkids` | Pilot Kids (Model 2B, Revision A) | 1998 | Shooter / Flying Horizontal (catver) | Model2A |
 | `pballoon` | Pioneer Balloon | 1982 | Shooter / Flying Horizontal (catver) | SNK6502 |
 | `rabiolep` | Rabio Lepus (Japan) | 1987 | Shooter / Flying Horizontal (catver) | RabbitPunch (mlc4050) |
 | `rampart` | Rampart (Trackball) | 1990 | Shooter / Command (catver) | Rampart |
@@ -116,9 +108,11 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `seicross` | Seicross (set 1) | 1984 | Shooter / Driving Horizontal (catver) | jtseicro |
 | `shocktro` | Shock Troopers (set 1) | 1997 | Shooter / Walking (catver) | NeoGeo |
 | `shocktr2` | Shock Troopers - 2nd Squad | 1998 | Shooter / Walking (catver) | NeoGeo |
+| `ar_sdwr` | Sidewinder (Arcadia, set 1, V 2.1) | 1988 | Shooter / Flying Vertical (catver) | arcadiasystems |
 | `skyalert` | Sky Alert | 1992 | Shooter / Flying Vertical (catver) | metro, metro (decoryah) |
 | `skyskipr` | Sky Skipper | 1981 | Shooter / Flying (catver) | Popeye, jtpopeye |
 | `amazon` | Soldier Girl Amazon | 1986 | Shooter / Walking (catver) | terracresta |
+| `ar_sprg` | Space Ranger (Arcadia, V 2.0) | 1987 | Shooter / Flying Horizontal (catver) | arcadiasystems |
 | `stargate` | Stargate | 1981 | Shooter / Flying (catver) | Robotron, Williams_TestBuild (RodimusFVC) |
 | `strkforc` | Strike Force (rev 1 02/25/91) | 1991 | Shooter / Flying (catver) | blahm1d_yunit, Midway-Y-Unit |
 | `superbik` | Superbike | 1983 | Shooter / Driving Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
@@ -141,6 +135,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `supxevs` | Vs. Super Xevious | 1986 | Shooter / Flying Vertical (catver) | VSnes |
 | `wwestern` | Wild Western (set 1) | 1982 | Shooter / Misc. Vertical (catver) | TaitoSJ |
 | `wivernwg` | Wivern Wings | 2001 | Shooter / Flying Vertical (catver) | Vamphalf |
+| `ar_xeon` | Xenon (Arcadia, V 2.3) | 1988 | Shooter / Misc. Vertical (catver) | arcadiasystems |
 | `xxmissio` | XX Mission | 1986 | Shooter / Flying Vertical (catver) | UPLFramebuffer |
 | `zaviga` | Zaviga | 1984 | Shooter / Misc. Vertical (catver) | DataEastLiberation |
 | `zodiack` | Zodiack | 1983 | Shooter / Flying Vertical (catver) | Vastar |

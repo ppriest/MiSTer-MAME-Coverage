@@ -2322,6 +2322,9 @@
   "OngoGablogian/MiSTer_Ongo",
   "alphanu1/sega-model2-mister"
  ],
+ "ongo:model2a": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:mysteriousstones": [
   "meathax/meatcores"
  ],
