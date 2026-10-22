@@ -7,6 +7,7 @@
   const fmt = n => n.toLocaleString("en-US");
   const pct = (a, b) => b ? (100 * a / b).toFixed(1) + "%" : "–";
 
+  const GALLERY_ENABLED = false;       // the Titles gallery view (List / Gallery toolbar, #view=gallery) is switched off; set true to bring it back
   const S = { data: null, cores: {}, titles: [], shown: 0, PAGE: 250, dir: { t: 1, d: -1, c: 1 }, open: new Set() };
 
   // ---------- state in the URL hash ----------
@@ -30,8 +31,8 @@
     for (const id of ALL_IDS) if (p.has(id)) { const el = $("#" + id); if (el) el.value = p.get(id); }
     for (const [k, d] of Object.entries(DIRS)) if (p.has(k)) S.dir[d] = +p.get(k) || S.dir[d];
     S.wlView = p.get("wl") === "fulfilled" ? "fulfilled" : "requested";   // Wishlist: Requested / Fulfilled
-    S.tview = p.get("view") === "gallery" ? "gallery" : "list";            // Titles: List / Gallery
-    S.gkind = p.get("shot") === "title" ? "title" : "ingame";              // Gallery: In game / Title screen
+    S.tview = GALLERY_ENABLED && p.get("view") === "gallery" ? "gallery" : "list";            // Titles: List / Gallery
+    S.gkind = GALLERY_ENABLED && p.get("shot") === "title" ? "title" : "ingame";              // Gallery: In game / Title screen
     if (p.has("tab")) showTab(p.get("tab"), false);
     $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓"; $("#d-dir").textContent = S.dir.d > 0 ? "↑" : "↓"; $("#c-dir").textContent = S.dir.c > 0 ? "↑" : "↓";
   }
@@ -493,8 +494,9 @@
   const GPAGE = 60;
   S.tview = S.tview || "list"; S.gkind = S.gkind || "ingame"; S.gshown = 0; S.gfiltered = [];       // both live in the URL hash (view=gallery, shot=title)
   function syncTitlesView() {
-    if (!IMAGE_BASE) S.tview = "list";
+    if (!IMAGE_BASE || !GALLERY_ENABLED) S.tview = "list";
     const g = S.tview === "gallery";
+    $(".viewbar").hidden = !GALLERY_ENABLED;
     $("#t-view").querySelectorAll("button").forEach(b => { const on = b.dataset.view === S.tview; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
     $("#t-view").querySelector('[data-view="gallery"]').disabled = !IMAGE_BASE;
     $("#g-kind").hidden = !g;
