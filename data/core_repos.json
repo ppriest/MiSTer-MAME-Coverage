@@ -287,6 +287,9 @@
   "OngoGablogian/MiSTer_Ongo",
   "decoryah/Arcade-IGSPGM2_MiSTer"
  ],
+ "decoryah:rabbit": [
+  "decoryah/Arcade-Rabbit_MiSTer"
+ ],
  "decoryah:seta2": [
   "decoryah/Arcade-Seta2_MiSTer"
  ],
@@ -2079,6 +2082,9 @@
  "ongo:bazset_krull": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:bazset_pushman": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:bazset_reaktor": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2090,6 +2096,9 @@
  ],
  "ongo:bazset_turtleship": [
   "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:bazsetpushman": [
+  "bazset/MiSTer_BAZSET"
  ],
  "ongo:bazturtship": [
   "bazset/MiSTer_BAZSET"
@@ -2547,6 +2556,8 @@
   "kyledlester/BrezzaSoft_Crystal_System_MiSTer"
  ],
  "repo:dec8": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores",
   "shmupfan/Arcade-DEC8_MiSTer"
  ],
  "repo:demonwld": [
