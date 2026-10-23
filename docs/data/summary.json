@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-23T20:13:24+00:00",
+  "generated": "2026-10-23T20:18:26+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-23T20:13:02+00:00",
+  "mister_generated": "2026-10-23T20:17:59+00:00",
   "alamone_generated": "2026-10-19T09:14:45+00:00",
   "ledger_updated": "2026-10-23",
   "ledger_runs": [
-   {
-    "date": "2026-10-22",
-    "note": "alamone 2026-10-19",
-    "cores": 10,
-    "sets": 11,
-    "pairs": 68,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-23",
     "note": "alamone 2026-10-19",
@@ -49,6 +40,15 @@
     "cores": 1,
     "sets": 2,
     "pairs": 2,
+    "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-23",
+    "note": "alamone 2026-10-19",
+    "cores": 0,
+    "sets": 27,
+    "pairs": 27,
     "dates_improved": 0,
     "cores_removed": 0
    }
@@ -3078,7 +3078,7 @@
     "source": "illegalmp3",
     "repo": "illegalmp3/System573_MiSTer",
     "dirs": null,
-    "mras": 1
+    "mras": 28
    }
   ],
   "repo_errors": [
@@ -3122,14 +3122,14 @@
   "counts": {
    "titles": 6826,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2424,
+   "working_arcade_titles_covered": 2428,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 6150,
-   "working_arcade_titles_source": 2181,
+   "working_arcade_sets_covered": 6154,
+   "working_arcade_titles_source": 2185,
    "working_arcade_titles_binary_only": 243,
    "cores": 748,
    "binary_only_cores": 253,
-   "unmatched_sets": 446
+   "unmatched_sets": 445
   }
  },
  "cores": [
@@ -11432,11 +11432,12 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-23",
+   "aliases": [],
    "last_seen": "2026-10-23",
    "binary_only": false,
-   "nsets": 0,
-   "ntitles": 0,
-   "first_date": null
+   "nsets": 4,
+   "ntitles": 4,
+   "first_date": "2026-06-06"
   },
   {
    "id": "jlrh:ffaerofgt",
@@ -25367,11 +25368,13 @@
   {
    "sourcefile": "konami/ksys573.cpp",
    "titles": 27,
-   "covered": 0,
+   "covered": 4,
    "sets": 70,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 4,
+   "cores": [
+    "illegalmp3:konami_system_573"
+   ],
+   "first": "2026-06-06"
   },
   {
    "sourcefile": "konami/labyrunr.cpp",
@@ -32741,13 +32744,6 @@
    "set": "hsf2j1tgouki",
    "cores": [
     "jt:jtcps2"
-   ],
-   "hbmame": false
-  },
-  {
-   "set": "hyperbbc573",
-   "cores": [
-    "illegalmp3:konami_system_573"
    ],
    "hbmame": false
   },

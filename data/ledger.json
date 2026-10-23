@@ -6,15 +6,6 @@
 {
 "date": "2026-10-10",
 "note": "alamone 2026-10-05",
-"cores": 9,
-"sets": 23,
-"pairs": 40,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
-"date": "2026-10-10",
-"note": "alamone 2026-10-05",
 "cores": 8,
 "sets": 0,
 "pairs": 40,
@@ -459,6 +450,15 @@
 "cores": 1,
 "sets": 2,
 "pairs": 2,
+"dates_improved": 0,
+"cores_removed": 0
+},
+{
+"date": "2026-10-23",
+"note": "alamone 2026-10-19",
+"cores": 0,
+"sets": 27,
+"pairs": 27,
 "dates_improved": 0,
 "cores_removed": 0
 }
@@ -7404,6 +7404,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "jlrh:ffaerofgt": {
@@ -44118,6 +44119,186 @@
 "mra": "_Arcade/_Cave CV1000/_Cave CV1000 Practice ROMs/DoDonPachi SaiDaiOuJou (Practice ROM).mra"
 }
 },
+"ddr3ma": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution 3rd Mix (Asia, 1999).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"ddr3mj": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution 3rd Mix (Japan, 1999).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"ddr3mk": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution 3rd Mix - Ver.Korea2 (Korea, 2000).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"ddr3mka": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution 3rd Mix - Ver.Korea (Korea, 2000).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"ddr3mp": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution 3rd Mix Plus (Japan, 2000).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"ddr4m": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution 4th Mix (Asia, 2000).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"ddr4mj": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution 4th Mix (Japan, 2000).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"ddr4mp": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution 4th Mix Plus (Japan, 2000).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"ddr4mps": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution 4th Mix Plus Solo (Japan, 2000).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"ddr4ms": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution 4th Mix Solo (Asia, 2000).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"ddr4msj": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution 4th Mix Solo (Japan, 2000).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"ddr5m": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution 5th Mix (Japan, 2001).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
 "ddragon": {
 "jt:jtdd": {
 "core": "jt:jtdd",
@@ -44313,6 +44494,21 @@
 "mra": "_Arcade/Double Dragon (US set 3).mra"
 }
 },
+"ddrextrm": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution Extreme (Japan, 2002).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
 "ddribble": {
 "jt:jtddrbl": {
 "core": "jt:jtddrbl",
@@ -44341,6 +44537,81 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-23",
 "mra": "_Arcade/Double Dribble (prototype).mra"
+}
+},
+"ddrmax": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/DDRMAX - Dance Dance Revolution 6th Mix (Japan, 2001).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"ddrmax2": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/DDRMAX2 - Dance Dance Revolution 7th Mix (Japan, 2002).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"ddrs2k": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution Solo 2000 (Asia, 1999).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"ddrsbm": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution Solo Bass Mix (Japan, 1999).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"ddrusa": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dance Dance Revolution USA (USA, 2000).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
 }
 },
 "ddsom": {
@@ -49316,6 +49587,66 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-23",
 "mra": "_Arcade/Dragon Saber (Japan, Rev B).mra"
+}
+},
+"dsem": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dancing Stage Euro Mix (Europe, 2000).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"dsem2": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dancing Stage Euro Mix 2 (Europe, 2002).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"dsfdct": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dancing Stage featuring Dreams Come True (Japan, 1999, Ver. JCA).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"dsfdr": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Dancing Stage Featuring Disney's Rave (Japan, 2000).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
 }
 },
 "dsmbl": {
@@ -59900,6 +60231,21 @@
 "mra": "_Arcade/Gang Busters (set 2).mra"
 }
 },
+"gchgchmp": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Gacha Gachamp (Japan, 1999).mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
 "gdarius": {
 "kyle:xnzn1": {
 "core": "kyle:xnzn1",
@@ -68182,6 +68528,21 @@
 "last_seen": "2026-10-23"
 }
 },
+"hypbbc2p": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Hyper Bishi Bashi Champ - 2 Player (Japan, 1999) [Install].mgl",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
 "hyperath": {
 "kyle:konamigv": {
 "core": "kyle:konamigv",
@@ -68210,7 +68571,7 @@
 "last_seen": "2026-10-23"
 }
 },
-"hyperbbc573": {
+"hyperbbc": {
 "illegalmp3:konami_system_573": {
 "core": "illegalmp3:konami_system_573",
 "date": "2026-06-06",
@@ -68220,7 +68581,7 @@
 "alt": false,
 "first_repo": "illegalmp3/System573_MiSTer",
 "first_path": "mra/hyperbbc573.mra",
-"mra": "_Arcade/hyperbbc573.mra",
+"mra": "_Arcade/Hyper Bishi Bashi Champ (Europe, 1998).mgl",
 "first_recorded": "2026-10-23",
 "last_seen": "2026-10-23"
 }
@@ -75045,6 +75406,21 @@
 "first_repo": null,
 "first_path": null,
 "mra": "_Arcade/_TomSVR/Komo Como (Topmar, bootleg) [TomSVR].mra",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"konam80s": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Konami 80's AC Special (Europe, 1998).mgl",
 "first_recorded": "2026-10-23",
 "last_seen": "2026-10-23"
 }
