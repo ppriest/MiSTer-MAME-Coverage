@@ -570,6 +570,7 @@ SETNAME_ALIASES = {
     # sets renamed in a developer's MRAs because they would clash with another core's MRA for the same set
     "rshark_kyledlester": "rshark", "rsharka_kyledlester": "rsharka", "superx_kyledlester": "superx", "superxm_kyledlester": "superxm",
     "narc_meathax": "narc", "narc_blahm1d": "narc",
+    "hyperbbc573": "hyperbbc",          # the System 573 core's flash-boot MRA of Hyper Bishi Bashi Champ
 }
 
 
@@ -584,9 +585,28 @@ def is_launcher(path: str) -> bool:
     return path.lower().endswith((".mra", ".mgl"))
 
 
+# Arcade cores whose .mgl launchers name an rbf outside _Arcade (the System 573 core lives under _Console), and the title each of their
+# launchers loads: they all say <setname>System573</setname>, so the MAME set is the first word of the launcher's header comment
+# ("ddrmax (DDRMAX - ...) -- PLAY launcher") or, for the few without, taken from the launcher's file name.
+ARCADE_MGL_RBFS = {"_console/konami_system_573"}
+SHARED_MGL_SETNAMES = {"system573"}
+SHARED_MGL_TITLES = {"gacha gachamp (japan, 1999)": "gchgchmp", "hyper bishi bashi champ (europe, 1998)": "hyperbbc",
+                     "hyper bishi bashi champ - 2 player (japan, 1999)": "hypbbc2p"}
+_MGL_HEAD = re.compile(r"^\s*(?:<!--\s*)?([a-z][a-z0-9_]{2,31}) \(", re.M)       # a line that starts "setname (Title..."
+
+
+def shared_mgl_set(text: str, name: str | None) -> str | None:
+    m = _MGL_HEAD.search(text.split("<mistergamedescription", 1)[0])           # the comments before the launcher itself
+    if m:
+        return m.group(1).lower()
+    key = re.sub(r"\s*\[[^\]]*\]\s*$", "", os.path.splitext(os.path.basename(name or ""))[0]).strip().lower()
+    return SHARED_MGL_TITLES.get(key)
+
+
 def keep_launcher(path: str, rec: dict) -> bool:
     """An .mgl counts only when it starts an arcade core (Ongo's repository has console and computer ones too)."""
-    return not path.lower().endswith(".mgl") or (rec.get("rbf") or "").lower().lstrip("/").startswith("_arcade/")
+    rbf = (rec.get("rbf") or "").lower().lstrip("/")
+    return not path.lower().endswith(".mgl") or rbf.startswith("_arcade/") or rbf in ARCADE_MGL_RBFS
 
 
 _TAG = re.compile(r"<(setname|rbf|name|mameversion|year|manufacturer|parent|category)\b[^>]*>\s*(.*?)\s*</\1>", re.S | re.I)
@@ -614,10 +634,13 @@ _ROM_ZIP = re.compile(r"<rom\b[^>]*?\bzip\s*=\s*\"([^\"]*)\"", re.I)
 MULTISET_MRA = {"playch10": "pc_"}
 
 
-def mra_records(s: str) -> list[dict]:
+def mra_records(s: str, name: str | None = None) -> list[dict]:
     """The records an MRA stands for: one, except where its <setname> is a shared board (``MULTISET_MRA``): then the board's own
     set plus one per game zip of the matching prefix (set name = zip name without ``.zip``)."""
     rec = parse_mra_text(s)
+    if rec.get("setname") in SHARED_MGL_SETNAMES:           # one launcher per title, all named alike: the real set is elsewhere in it
+        sn = shared_mgl_set(s, name)
+        rec["setname"] = sn if sn and re.fullmatch(r"[a-z0-9_]{1,32}", sn) else None
     prefix = MULTISET_MRA.get(rec.get("setname") or "")
     if not prefix:
         return [rec]
@@ -634,7 +657,7 @@ def parse_mra(path: str) -> dict:
 
 def parse_mra_file(path: str) -> list[dict]:
     with open(path, encoding="utf-8", errors="replace") as f:
-        return mra_records(f.read())
+        return mra_records(f.read(), path)
 
 
 def norm_rbf(rbf: str | None) -> str | None:
@@ -716,7 +739,7 @@ def scan_repo(source: str, full: str, dirs: list[str] | None) -> dict:
     specs = [f"{c}:{p}" for p, _dt, c in adds if cache.get(f"{c}:{p}") is None or (isinstance(cache.get(f"{c}:{p}"), str) and cache[f"{c}:{p}"] in MULTISET_MRA)]     # a missing set name is parsed again
     for i in range(0, len(specs), 2000):
         for spec, blob in read_blobs(d, specs[i:i + 2000]).items():
-            recs = mra_records(blob.decode("utf-8", errors="replace")) if blob else []
+            recs = mra_records(blob.decode("utf-8", errors="replace"), spec.split(":", 1)[1]) if blob else []
             names = [r.get("setname") for r in recs if r.get("setname")]
             cache[spec] = (names[0] if len(names) == 1 else names) if names else None       # a list for a multi-set MRA
     os.makedirs(os.path.dirname(cache_file), exist_ok=True)
