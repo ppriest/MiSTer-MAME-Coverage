@@ -240,6 +240,9 @@
  "decoryah:gaiapolis": [
   "decoryah/Arcade-Gaiapolis_MiSTer"
  ],
+ "decoryah:gunpey": [
+  "decoryah/Arcade-Gunpey_MiSTer"
+ ],
  "decoryah:heavyunit": [
   "decoryah/Arcade-HeavyUnit_MiSTer"
  ],
@@ -1841,6 +1844,18 @@
   "OngoGablogian/MiSTer_Ongo",
   "kyledlester/BrezzaSoft_Crystal_System_MiSTer"
  ],
+ "kyle:deniam": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/Deniam_MiSTer_FPGA"
+ ],
+ "kyle:djmain": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA"
+ ],
+ "kyle:djmainsd": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA"
+ ],
  "kyle:konamigv": [
   "kyledlester/Konami_GV_MiSTer"
  ],
@@ -1849,10 +1864,15 @@
   "kyledlester/Namco_NA1_NA2_MiSTer"
  ],
  "kyle:namco_nb1": [
+  "OngoGablogian/MiSTer_Ongo",
   "kyledlester/Namco_NB1_MiSTer"
  ],
  "kyle:namco_nb2": [
+  "OngoGablogian/MiSTer_Ongo",
   "kyledlester/Namco_NB2_MiSTer"
+ ],
+ "kyle:namco_s10": [
+  "kyledlester/Namco_System_10_MiSTer"
  ],
  "kyle:nerattechu": [
   "OngoGablogian/MiSTer_Ongo",
@@ -1864,10 +1884,15 @@
   "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer"
  ],
  "kyle:rshark": [
+  "OngoGablogian/MiSTer_Ongo",
   "kyledlester/R_Shark_Super_X_MiSTer"
  ],
  "kyle:taitob": [
   "kyledlester/Arcade-TaitoB_MiSTer"
+ ],
+ "kyle:tenkomori": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/Tenkomori_Shooting_MiSTer"
  ],
  "kyle:xnzn1": [
   "kyledlester/ZN1_MiSTer"
@@ -2222,6 +2247,9 @@
  ],
  "ongo:intrepid": [
   "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:jtarblst": [
+  "meathax/meatcores"
  ],
  "ongo:juezhan_tianhuang": [
   "bazset/MiSTer_BAZSET"
@@ -3077,7 +3105,8 @@
  ],
  "xela:xnzn1": [
   "OngoGablogian/MiSTer_Ongo",
-  "XelaNotPu/ZN1_MiSTer"
+  "XelaNotPu/ZN1_MiSTer",
+  "kyledlester/ZN1_MiSTer"
  ],
  "xela:xnzn1taitofx1b": [
   "OngoGablogian/MiSTer_Ongo",
