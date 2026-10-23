@@ -14,15 +14,6 @@
 },
 {
 "date": "2026-10-10",
-"note": "alamone 2026-10-05",
-"cores": 0,
-"sets": 0,
-"pairs": 0,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
-"date": "2026-10-10",
 "note": "mra paths",
 "cores": 0,
 "sets": 0,
@@ -460,6 +451,15 @@
 "sets": 174,
 "pairs": 349,
 "dates_improved": 39,
+"cores_removed": 0
+},
+{
+"date": "2026-10-23",
+"note": "alamone 2026-10-19",
+"cores": 8,
+"sets": 10,
+"pairs": 65,
+"dates_improved": 0,
 "cores_removed": 0
 }
 ]
@@ -1053,6 +1053,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "bazset:superman_bazset": {
@@ -10928,6 +10929,24 @@
 "aliases": [],
 "last_seen": "2026-10-17"
 },
+"meat:ah": {
+"id": "meat:ah",
+"name": "Arcade-AH",
+"source": "meat",
+"source_title": "MeatCores (meathax)",
+"channel": null,
+"rbf": "Arcade-AH.rbf",
+"repo": "meathax/meatcores",
+"url": "https://github.com/meathax/meatcores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+},
 "meat:alpha68kn": {
 "id": "meat:alpha68kn",
 "name": "Arcade-Alpha68kN",
@@ -11837,6 +11856,24 @@
 "ongo:meathax_zeroteam"
 ],
 "first_recorded": "2026-10-09",
+"last_seen": "2026-10-23"
+},
+"ongo:ah": {
+"id": "ongo:ah",
+"name": "Arcade-AH",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Arcade-AH.rbf",
+"repo": "meathax/meatcores",
+"url": "https://github.com/meathax/meatcores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-23",
 "last_seen": "2026-10-23"
 },
 "ongo:aqua_jack": {
@@ -13071,6 +13108,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "ongo:heavyunit": {
@@ -13887,6 +13925,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "ongo:millipede": {
@@ -13905,6 +13944,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "ongo:model1": {
@@ -14473,6 +14513,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "ongo:superman_bazset": {
@@ -17676,6 +17717,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_comad": {
@@ -17694,6 +17736,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_dynduke": {
@@ -17712,6 +17755,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_esd": {
@@ -17730,6 +17774,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_funybubl": {
@@ -17748,6 +17793,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_gaelco2": {
@@ -17766,6 +17812,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_galpin": {
@@ -17784,6 +17831,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_gumbo": {
@@ -17802,6 +17850,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_hdoll": {
@@ -17820,6 +17869,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_hotblk": {
@@ -17838,6 +17888,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_jpop": {
@@ -17856,6 +17907,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_madd": {
@@ -17874,6 +17926,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_missb": {
@@ -17892,6 +17945,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_nmg5": {
@@ -17910,6 +17964,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_othunder": {
@@ -17928,6 +17983,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_para": {
@@ -17946,6 +18002,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_playmark": {
@@ -17964,6 +18021,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_semicom": {
@@ -17982,6 +18040,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_splash": {
@@ -18000,6 +18059,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_sqix": {
@@ -18018,6 +18078,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_wrally": {
@@ -18036,6 +18097,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_ys16": {
@@ -18054,6 +18116,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_ys8": {
@@ -18072,6 +18135,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "tomsvr:tomsvr_zero": {
@@ -18090,6 +18154,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "usquebagh:cinematronics": {
@@ -20031,6 +20096,34 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-23",
 "mra": "_Arcade/Act-Fancer (Japan rev 1).mra"
+}
+},
+"actionhw": {
+"meat:ah": {
+"core": "meat:ah",
+"date": "2026-10-23",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Action Hollywood.mra",
+"mra": "_Arcade/_MeatCores/Action Hollywood.mra",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+},
+"ongo:ah": {
+"core": "ongo:ah",
+"date": "2026-10-23",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Action Hollywood.mra",
+"mra": "_Arcade/_MeatCores/Action Hollywood.mra",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
 }
 },
 "ad2083": {
@@ -138635,6 +138728,126 @@
 "last_seen": "2026-10-23"
 }
 },
+"touchgo": {
+"tomsvr:tomsvr_gaelco2": {
+"core": "tomsvr:tomsvr_gaelco2",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Touch and Go (World, checksum 059D0235) [TomSVR].mra",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"touchgoa": {
+"tomsvr:tomsvr_gaelco2": {
+"core": "tomsvr:tomsvr_gaelco2",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Touch and Go (World, checksum 05A0C7FB) [TomSVR].mra",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"touchgona": {
+"tomsvr:tomsvr_gaelco2": {
+"core": "tomsvr:tomsvr_gaelco2",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Touch and Go (North America, checksum 05737572) [TomSVR].mra",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"touchgonna": {
+"tomsvr:tomsvr_gaelco2": {
+"core": "tomsvr:tomsvr_gaelco2",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Touch and Go (non North America, checksum 056533F0) [TomSVR].mra",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"touchgonnaa": {
+"tomsvr:tomsvr_gaelco2": {
+"core": "tomsvr:tomsvr_gaelco2",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Touch and Go (non North America, checksum 056C2336) [TomSVR].mra",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"touchgonnab": {
+"tomsvr:tomsvr_gaelco2": {
+"core": "tomsvr:tomsvr_gaelco2",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Touch and Go (non North America, checksum 056C138F) [TomSVR].mra",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"touchgonnac": {
+"tomsvr:tomsvr_gaelco2": {
+"core": "tomsvr:tomsvr_gaelco2",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Touch and Go (non North America, checksum 056AA304) [TomSVR].mra",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
+"touchgoun": {
+"tomsvr:tomsvr_gaelco2": {
+"core": "tomsvr:tomsvr_gaelco2",
+"date": "2026-10-23",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Touch and Go (unprotected, checksum 059CC336) [TomSVR].mra",
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+}
+},
 "toukon3": {
 "ongo:xnsystem12": {
 "core": "ongo:xnsystem12",
@@ -151286,6 +151499,10 @@
 },
 "actfancrj": {
 "dist": "Platformer"
+},
+"actionhw": {
+"ongo": "Action",
+"meat": "Action"
 },
 "ad2083": {
 "repo": "Shooter"
