@@ -105,7 +105,7 @@ SUPERSEDED_CORES = {
 }
 
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
-OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr", "kyledlester": "kyle"}
+OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr", "kyledlester": "kyle", "illegalmp3": "illegalmp3"}
 # Repositories of those owners that are not cores (forks of the shared MRA collection, a game runtime): never scanned.
 OWNER_SKIP = {"rossops/mra-alternatives_mister", "rossops/bennugd_mister"}
 
@@ -287,6 +287,7 @@ SOURCE_PAGES = {
     "kyle": "https://github.com/kyledlester?tab=repositories",
     "gm0rk": "https://github.com/Gm0rk/Gm0rkCores",
     "usquebagh": "https://github.com/Usquebagh?tab=repositories",
+    "illegalmp3": "https://github.com/illegalmp3?tab=repositories",
     "decoryah": "https://github.com/decoryah/MiSTer_decoryah",
     "tomsvr": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
     "rossops": "https://github.com/rossops?tab=repositories",
@@ -316,6 +317,7 @@ DB_TITLES = {
     "kyle": "kyledlester",
     "gm0rk": "Gm0rkCores (Gm0rk)",
     "usquebagh": "Usquebagh (GitHub repositories)",
+    "illegalmp3": "illegalmp3 (GitHub repositories)",
     "decoryah": "decoryah",
     "tomsvr": "TomSVR",
     "rossops": "rossops (GitHub repositories)",
