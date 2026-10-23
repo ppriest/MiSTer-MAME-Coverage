@@ -90,7 +90,7 @@ EXTRA_REPOS = [
 # ppriest database is unreachable while MiSTer_ppriest is private); it carries the same sets.
 SUPERSEDED_CORES = {
     "repo:hyperng64": "ppriest:hyperng64",      # old id -> replacement
-    # kyledlester's repositories became the "kyle" source
+    # kyledlester's repositories became the "kyle" source (his MiSTer_DB database no longer exists: his repositories, OWNER_SOURCES, are the source)
     "repo:namco_na1_na2": "kyle:namco_na1_na2", "repo:namco_nb1": "kyle:namco_nb1", "repo:namco_nb2": "kyle:namco_nb2",
     "repo:nerattechu": "kyle:nerattechu", "repo:nostradamus": "kyle:nostradamus", "repo:crystal": "kyle:crystal",
     # XelaNotPu's repositories became the "xela" source
@@ -105,7 +105,7 @@ SUPERSEDED_CORES = {
 }
 
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
-OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr"}
+OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr", "kyledlester": "kyle"}
 # Repositories of those owners that are not cores (forks of the shared MRA collection, a game runtime): never scanned.
 OWNER_SKIP = {"rossops/mra-alternatives_mister", "rossops/bennugd_mister"}
 
@@ -235,8 +235,6 @@ DB_SOURCES = {
     "ppriest": "https://raw.githubusercontent.com/ppriest/MiSTer_ppriest/db/db.json.zip",
     # Gm0rk's cores (Atari G1/G42, ITech8); the database is the Downloader DB-Template's, and the sources are in his own repositories
     "gm0rk": "https://raw.githubusercontent.com/Gm0rk/Gm0rkCores/db/db.json.zip",
-    # kyledlester's cores (github.com/kyledlester/MiSTer_DB); his loose repositories are not scanned
-    "kyle": "https://raw.githubusercontent.com/kyledlester/MiSTer_DB/db/db.json.zip",
     # decoryah's cores (github.com/decoryah/MiSTer_decoryah, rebuilt every 6 hours); his repositories are still scanned too (OWNER_SOURCES)
     "decoryah": "https://raw.githubusercontent.com/decoryah/MiSTer_decoryah/db/db.json.zip",
     # TomSVR's cores (github.com/TomSVR-Mister/TomSVR-Arcade-Cores); his repositories are scanned too (OWNER_SOURCES)
@@ -286,7 +284,7 @@ SOURCE_PAGES = {
     "blackwine": "https://github.com/TheJesusFish/Blackwine-SegaSystem1-2_MiSTer",
     "rmcores": "https://github.com/rmonic79/rmcores",
     "ppriest": "https://github.com/ppriest/MiSTer_ppriest",
-    "kyle": "https://github.com/kyledlester/MiSTer_DB",
+    "kyle": "https://github.com/kyledlester?tab=repositories",
     "gm0rk": "https://github.com/Gm0rk/Gm0rkCores",
     "usquebagh": "https://github.com/Usquebagh?tab=repositories",
     "decoryah": "https://github.com/decoryah/MiSTer_decoryah",
