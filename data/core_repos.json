@@ -1733,7 +1733,8 @@
   "jotego/jtbin"
  ],
  "jtpr:jtarblst": [
-  "jotego/jtcores"
+  "jotego/jtcores",
+  "meathax/meatcores"
  ],
  "jtpr:jtargus": [
   "OngoGablogian/MiSTer_Ongo",
@@ -2204,6 +2205,9 @@
  "ongo:gigandes_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
+ "ongo:gm0rk_midway-y-unit": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:heavyunit": [
   "meathax/meatcores"
  ],
@@ -2323,6 +2327,13 @@
  "ongo:meathax_zeroteam": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:midway-y-unit": [
+  "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+  "Gm0rk/Gm0rkCores"
+ ],
+ "ongo:millipede": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:model1": [
   "OngoGablogian/MiSTer_Ongo",
   "alphanu1/sega-model1-mister"
@@ -2410,6 +2421,9 @@
  ],
  "ongo:steelforce": [
   "meathax/meatcores"
+ ],
+ "ongo:suck_my_bouncing_balls": [
+  "bazset/MiSTer_BAZSET"
  ],
  "ongo:superman_bazset": [
   "bazset/MiSTer_BAZSET"
@@ -2510,10 +2524,14 @@
   "va7deo/alpha68k"
  ],
  "repo:atari-g1": [
-  "Gm0rk/Arcade-Atari-G1_MiSTer"
+  "Gm0rk/Arcade-Atari-G1_MiSTer",
+  "Gm0rk/Gm0rkCores",
+  "OngoGablogian/MiSTer_Ongo"
  ],
  "repo:atari-g42": [
-  "Gm0rk/Arcade-Atari-G42_MiSTer"
+  "Gm0rk/Arcade-Atari-G42_MiSTer",
+  "Gm0rk/Gm0rkCores",
+  "OngoGablogian/MiSTer_Ongo"
  ],
  "repo:bakraid": [
   "zakk4223/Arcade-Raizing_MiSTer"
@@ -2630,7 +2648,9 @@
   "harlock74/Arcade-Intrepid_MiSTer"
  ],
  "repo:itech8": [
-  "Gm0rk/ITech8_MiSTer"
+  "Gm0rk/Gm0rkCores",
+  "Gm0rk/ITech8_MiSTer",
+  "OngoGablogian/MiSTer_Ongo"
  ],
  "repo:jalecoms32": [
   "OngoGablogian/MiSTer_Ongo",
@@ -3005,10 +3025,12 @@
   "Usquebagh/MiSTer_misc"
  ],
  "usquebagh:firetrap": [
+  "OngoGablogian/MiSTer_Ongo",
   "Usquebagh/Arcade-FireTrap_MiSTer",
   "Usquebagh/MiSTer_misc"
  ],
  "usquebagh:hunchback": [
+  "OngoGablogian/MiSTer_Ongo",
   "Usquebagh/Arcade-Hunchback_MiSTer",
   "Usquebagh/MiSTer_misc"
  ],
