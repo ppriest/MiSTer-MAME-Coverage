@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-23T19:07:35+00:00",
+  "generated": "2026-10-23T20:13:24+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-23T19:07:12+00:00",
+  "mister_generated": "2026-10-23T20:13:02+00:00",
   "alamone_generated": "2026-10-19T09:14:45+00:00",
   "ledger_updated": "2026-10-23",
   "ledger_runs": [
-   {
-    "date": "2026-10-21",
-    "note": "alamone 2026-10-19",
-    "cores": 7,
-    "sets": 35,
-    "pairs": 102,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-22",
     "note": "alamone 2026-10-19",
@@ -51,6 +42,15 @@
     "pairs": 34,
     "dates_improved": 0,
     "cores_removed": 1
+   },
+   {
+    "date": "2026-10-23",
+    "note": "alamone 2026-10-19",
+    "cores": 1,
+    "sets": 2,
+    "pairs": 2,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -118,6 +118,7 @@
    "kyle": "kyledlester",
    "gm0rk": "Gm0rkCores (Gm0rk)",
    "usquebagh": "Usquebagh (GitHub repositories)",
+   "illegalmp3": "illegalmp3 (GitHub repositories)",
    "decoryah": "decoryah",
    "tomsvr": "TomSVR",
    "rossops": "rossops (GitHub repositories)",
@@ -199,6 +200,10 @@
    },
    "usquebagh": {
     "page": "https://github.com/Usquebagh?tab=repositories",
+    "db_url": null
+   },
+   "illegalmp3": {
+    "page": "https://github.com/illegalmp3?tab=repositories",
     "db_url": null
    },
    "decoryah": {
@@ -3068,6 +3073,12 @@
     "repo": "kyledlester/ZN1_MiSTer",
     "dirs": null,
     "mras": 122
+   },
+   {
+    "source": "illegalmp3",
+    "repo": "illegalmp3/System573_MiSTer",
+    "dirs": null,
+    "mras": 1
    }
   ],
   "repo_errors": [
@@ -3116,9 +3127,9 @@
    "working_arcade_sets_covered": 6150,
    "working_arcade_titles_source": 2181,
    "working_arcade_titles_binary_only": 243,
-   "cores": 747,
+   "cores": 748,
    "binary_only_cores": 253,
-   "unmatched_sets": 445
+   "unmatched_sets": 446
   }
  },
  "cores": [
@@ -5628,6 +5639,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-23",
+   "aliases": [],
    "last_seen": "2026-10-23",
    "binary_only": false,
    "nsets": 1,
@@ -11405,6 +11417,28 @@
    "first_date": "2026-09-24"
   },
   {
+   "id": "illegalmp3:konami_system_573",
+   "name": "Konami_System_573",
+   "source": "illegalmp3",
+   "source_title": "illegalmp3 (GitHub repositories)",
+   "channel": null,
+   "rbf": "Konami_System_573.rbf",
+   "repo": "illegalmp3/System573_MiSTer",
+   "url": "https://github.com/illegalmp3/System573_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-23",
+   "last_seen": "2026-10-23",
+   "binary_only": false,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": null
+  },
+  {
    "id": "jlrh:ffaerofgt",
    "name": "ffaerofgt",
    "source": "jlrh",
@@ -15491,6 +15525,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-23",
+   "aliases": [],
    "last_seen": "2026-10-23",
    "binary_only": false,
    "nsets": 18,
@@ -15613,6 +15648,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-23",
+   "aliases": [],
    "last_seen": "2026-10-23",
    "binary_only": false,
    "nsets": 2,
@@ -16199,6 +16235,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-23",
+   "aliases": [],
    "last_seen": "2026-10-23",
    "binary_only": false,
    "nsets": 2,
@@ -32704,6 +32741,13 @@
    "set": "hsf2j1tgouki",
    "cores": [
     "jt:jtcps2"
+   ],
+   "hbmame": false
+  },
+  {
+   "set": "hyperbbc573",
+   "cores": [
+    "illegalmp3:konami_system_573"
    ],
    "hbmame": false
   },

@@ -1294,6 +1294,9 @@
   "MiSTer-devel/Distribution_MiSTer",
   "MiSTer-devel/MRA-Alternatives_MiSTer"
  ],
+ "illegalmp3:konami_system_573": [
+  "illegalmp3/System573_MiSTer"
+ ],
  "jlrh:ffaerofgt": [
   "jlrh/jlrh-misterfpga-db",
   "jlrh/videosystem-fpga"

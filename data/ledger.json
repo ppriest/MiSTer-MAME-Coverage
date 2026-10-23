@@ -5,15 +5,6 @@
 "runs": [
 {
 "date": "2026-10-10",
-"note": "mra paths",
-"cores": 0,
-"sets": 0,
-"pairs": 0,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
-"date": "2026-10-10",
 "note": "alamone 2026-10-05",
 "cores": 9,
 "sets": 23,
@@ -461,6 +452,15 @@
 "pairs": 34,
 "dates_improved": 0,
 "cores_removed": 1
+},
+{
+"date": "2026-10-23",
+"note": "alamone 2026-10-19",
+"cores": 1,
+"sets": 2,
+"pairs": 2,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -2539,6 +2539,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "decoryah:heavyunit": {
@@ -7387,6 +7388,24 @@
 "aliases": [],
 "last_seen": "2026-10-23"
 },
+"illegalmp3:konami_system_573": {
+"id": "illegalmp3:konami_system_573",
+"name": "Konami_System_573",
+"source": "illegalmp3",
+"source_title": "illegalmp3 (GitHub repositories)",
+"channel": null,
+"rbf": "Konami_System_573.rbf",
+"repo": "illegalmp3/System573_MiSTer",
+"url": "https://github.com/illegalmp3/System573_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-23",
+"last_seen": "2026-10-23"
+},
 "jlrh:ffaerofgt": {
 "id": "jlrh:ffaerofgt",
 "name": "ffaerofgt",
@@ -10826,6 +10845,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "kyle:nerattechu": {
@@ -10928,6 +10948,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "kyle:xnzn1": {
@@ -11418,6 +11439,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "meat:mcr68": {
@@ -13300,6 +13322,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-23",
+"aliases": [],
 "last_seen": "2026-10-23"
 },
 "ongo:juezhan_tianhuang": {
@@ -68184,6 +68207,21 @@
 "first_path": "MRA/Hyper Athlete (GV021 JAPAN 1.00).mra",
 "mra": "_Arcade/Hyper Athlete (GV021 JAPAN 1.00).mra",
 "first_recorded": "2026-10-19",
+"last_seen": "2026-10-23"
+}
+},
+"hyperbbc573": {
+"illegalmp3:konami_system_573": {
+"core": "illegalmp3:konami_system_573",
+"date": "2026-06-06",
+"date_quality": "git",
+"via": "illegalmp3",
+"wip": false,
+"alt": false,
+"first_repo": "illegalmp3/System573_MiSTer",
+"first_path": "mra/hyperbbc573.mra",
+"mra": "_Arcade/hyperbbc573.mra",
+"first_recorded": "2026-10-23",
 "last_seen": "2026-10-23"
 }
 },
