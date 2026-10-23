@@ -56,13 +56,6 @@
       "enabled": true
     },
     {
-      "name": "kyledlester",
-      "home": "https://github.com/kyledlester/MiSTer_DB",
-      "db_url": "https://raw.githubusercontent.com/kyledlester/MiSTer_DB/db/db.json.zip",
-      "enabled": true,
-      "note": "Konami GV, Namco NA/NB, Sony ZN-1, Taito B, Crystal System and more"
-    },
-    {
       "name": "MeatCores (meathax)",
       "home": "https://github.com/meathax/meatcores",
       "db_url": "https://raw.githubusercontent.com/meathax/meatcores/db/db.json.zip",
