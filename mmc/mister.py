@@ -105,7 +105,7 @@ SUPERSEDED_CORES = {
 }
 
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
-OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela"}
+OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr"}
 # Repositories of those owners that are not cores (forks of the shared MRA collection, a game runtime): never scanned.
 OWNER_SKIP = {"rossops/mra-alternatives_mister", "rossops/bennugd_mister"}
 
@@ -239,6 +239,8 @@ DB_SOURCES = {
     "kyle": "https://raw.githubusercontent.com/kyledlester/MiSTer_DB/db/db.json.zip",
     # decoryah's cores (github.com/decoryah/MiSTer_decoryah, rebuilt every 6 hours); his repositories are still scanned too (OWNER_SOURCES)
     "decoryah": "https://raw.githubusercontent.com/decoryah/MiSTer_decoryah/db/db.json.zip",
+    # TomSVR's cores (github.com/TomSVR-Mister/TomSVR-Arcade-Cores); his repositories are scanned too (OWNER_SOURCES)
+    "tomsvr": "https://raw.githubusercontent.com/TomSVR-Mister/TomSVR-Arcade-Cores/db/db.json.zip",
 }
 # Cores that load ROM sets from a list instead of MRAs: (source, repo, file, core name).
 ROMSET_FILES = [
@@ -288,6 +290,7 @@ SOURCE_PAGES = {
     "gm0rk": "https://github.com/Gm0rk/Gm0rkCores",
     "usquebagh": "https://github.com/Usquebagh?tab=repositories",
     "decoryah": "https://github.com/decoryah/MiSTer_decoryah",
+    "tomsvr": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
     "rossops": "https://github.com/rossops?tab=repositories",
     "xela": "https://github.com/XelaNotPu?tab=repositories",
     "jtpr": "https://github.com/jotego/jtcores/tree/andrea-cores/cores",
@@ -316,6 +319,7 @@ DB_TITLES = {
     "gm0rk": "Gm0rkCores (Gm0rk)",
     "usquebagh": "Usquebagh (GitHub repositories)",
     "decoryah": "decoryah",
+    "tomsvr": "TomSVR",
     "rossops": "rossops (GitHub repositories)",
     "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
     "repo": "GitHub repository only",
