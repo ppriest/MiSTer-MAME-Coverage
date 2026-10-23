@@ -92,6 +92,13 @@
       "home": "https://github.com/TheJesusFish/Slop-Core",
       "db_url": "https://raw.githubusercontent.com/TheJesusFish/Slop-Core/db/db.json.zip",
       "enabled": true
+    },
+    {
+      "name": "TomSVR (TomSVR-Arcade-Cores)",
+      "home": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
+      "db_url": "https://raw.githubusercontent.com/TomSVR-Mister/TomSVR-Arcade-Cores/db/db.json.zip",
+      "enabled": true,
+      "note": "TomSVR's cores (Gaelco, SemiCom, Comad, ESD, Taito and more)"
     }
   ]
 }

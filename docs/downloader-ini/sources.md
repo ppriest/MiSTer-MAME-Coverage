@@ -2,7 +2,7 @@
 
 Databases to add to get the source-available AI-assisted arcade cores, from developers who are willing to fix reported bugs
 
-Last checked 2026-10-22 09:58 UTC.
+Last checked 2026-10-23 06:30 UTC.
 
 **Don't use both these and [MiSTer_Ongo](https://github.com/OngoGablogian/MiSTer_Ongo):** they overlap heavily (it republishes many of the same cores).
 
@@ -20,6 +20,7 @@ Last checked 2026-10-22 09:58 UTC.
 | [rmcores (rmonic79)](https://github.com/rmonic79/rmcores) | rmonic79/rmcores | ok |
 | [shmupfan (Distribution)](https://github.com/shmupfan/Distribution) | shmupfan | ok |
 | [Slop Cores (TheJesusFish)](https://github.com/TheJesusFish/Slop-Core) | TheJesusFish/Slop-Core | ok |
+| [TomSVR (TomSVR-Arcade-Cores)](https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores) | TomSVR-Mister/TomSVR-Arcade-Cores | ok |
 
 ## Not included
 
