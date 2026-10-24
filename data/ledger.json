@@ -6,15 +6,6 @@
 {
 "date": "2026-10-11",
 "note": "alamone 2026-10-05",
-"cores": 3,
-"sets": 47,
-"pairs": 59,
-"dates_improved": 67,
-"cores_removed": 0
-},
-{
-"date": "2026-10-11",
-"note": "alamone 2026-10-05",
 "cores": 1,
 "sets": 0,
 "pairs": 2,
@@ -461,6 +452,15 @@
 "pairs": 13,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-24",
+"note": "alamone 2026-10-19",
+"cores": 4,
+"sets": 11,
+"pairs": 12,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -902,6 +902,24 @@
 "note": null,
 "first_recorded": "2026-10-08",
 "aliases": [],
+"last_seen": "2026-10-24"
+},
+"bazset:millemiglia2_bazset": {
+"id": "bazset:millemiglia2_bazset",
+"name": "MilleMiglia2_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "MilleMiglia2_bazset.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-24",
 "last_seen": "2026-10-24"
 },
 "bazset:night_striker_bazset": {
@@ -10928,6 +10946,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-24",
+"aliases": [],
 "last_seen": "2026-10-24"
 },
 "kyle:taitob": {
@@ -12182,6 +12201,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-24",
+"aliases": [],
 "last_seen": "2026-10-24"
 },
 "ongo:bazset_bonksadventure": {
@@ -12219,6 +12239,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-24",
+"aliases": [],
 "last_seen": "2026-10-24"
 },
 "ongo:bazset_brapboys": {
@@ -13700,6 +13721,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-24",
+"aliases": [],
 "last_seen": "2026-10-24"
 },
 "ongo:meathax_argus": {
@@ -14118,6 +14140,24 @@
 "note": null,
 "first_recorded": "2026-10-23",
 "aliases": [],
+"last_seen": "2026-10-24"
+},
+"ongo:millemiglia2_bazset": {
+"id": "ongo:millemiglia2_bazset",
+"name": "MilleMiglia2_bazset",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "MilleMiglia2_bazset.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-24",
 "last_seen": "2026-10-24"
 },
 "ongo:millipede": {
@@ -14724,6 +14764,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-24",
+"aliases": [],
 "last_seen": "2026-10-24"
 },
 "ongo:superman_bazset": {
@@ -15429,6 +15470,24 @@
 "aliases": [],
 "last_seen": "2026-10-24"
 },
+"ppriest:konamihornet": {
+"id": "ppriest:konamihornet",
+"name": "KonamiHornet",
+"source": "ppriest",
+"source_title": "ppriest (Tourniquet)",
+"channel": null,
+"rbf": "KonamiHornet.rbf",
+"repo": "ppriest/Arcade-KonamiHornet_MiSTer",
+"url": "https://github.com/ppriest/Arcade-KonamiHornet_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-24",
+"last_seen": "2026-10-24"
+},
 "ppriest:lethalenforcers": {
 "id": "ppriest:lethalenforcers",
 "name": "LethalEnforcers",
@@ -15560,6 +15619,24 @@
 "note": null,
 "first_recorded": "2026-10-09",
 "aliases": [],
+"last_seen": "2026-10-24"
+},
+"ppriest:silkroad": {
+"id": "ppriest:silkroad",
+"name": "Silkroad",
+"source": "ppriest",
+"source_title": "ppriest (Tourniquet)",
+"channel": null,
+"rbf": "Silkroad.rbf",
+"repo": "ppriest/Arcade-Silkroad_MiSTer",
+"url": "https://github.com/ppriest/Arcade-Silkroad_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-24",
 "last_seen": "2026-10-24"
 },
 "ppriest:vamphalf": {
@@ -62699,6 +62776,96 @@
 "mra": "_Arcade/Gradius III Densetsu kara Shinwa e (Japan, version S, split).mra"
 }
 },
+"gradius4": {
+"ppriest:konamihornet": {
+"core": "ppriest:konamihornet",
+"date": "2026-10-24",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Gradius IV Fukkatsu (ver JAC).mra",
+"first_recorded": "2026-10-24",
+"last_seen": "2026-10-24"
+}
+},
+"gradius4a": {
+"ppriest:konamihornet": {
+"core": "ppriest:konamihornet",
+"date": "2026-10-24",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Gradius IV/Gradius IV (ver AAC).mra",
+"first_recorded": "2026-10-24",
+"last_seen": "2026-10-24"
+}
+},
+"gradius4aa": {
+"ppriest:konamihornet": {
+"core": "ppriest:konamihornet",
+"date": "2026-10-24",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Gradius IV/Gradius IV (ver AAA).mra",
+"first_recorded": "2026-10-24",
+"last_seen": "2026-10-24"
+}
+},
+"gradius4ja": {
+"ppriest:konamihornet": {
+"core": "ppriest:konamihornet",
+"date": "2026-10-24",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Gradius IV/Gradius IV Fukkatsu (ver JAA).mra",
+"first_recorded": "2026-10-24",
+"last_seen": "2026-10-24"
+}
+},
+"gradius4u": {
+"ppriest:konamihornet": {
+"core": "ppriest:konamihornet",
+"date": "2026-10-24",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Gradius IV/Gradius IV (ver UAC).mra",
+"first_recorded": "2026-10-24",
+"last_seen": "2026-10-24"
+}
+},
+"gradius4ua": {
+"ppriest:konamihornet": {
+"core": "ppriest:konamihornet",
+"date": "2026-10-24",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Gradius IV/Gradius IV (ver UAA).mra",
+"first_recorded": "2026-10-24",
+"last_seen": "2026-10-24"
+}
+},
 "grainbow": {
 "dist:sdgundamrainbow": {
 "core": "dist:sdgundamrainbow",
@@ -63754,6 +63921,34 @@
 "first_path": "_Arcade/_BAZSET/1000 Miglia - Great 1000 Miles Rally.mra",
 "mra": "_Arcade/_BAZSET/1000 Miglia - Great 1000 Miles Rally.mra",
 "first_recorded": "2026-10-21",
+"last_seen": "2026-10-24"
+}
+},
+"gtmr2a": {
+"bazset:millemiglia2_bazset": {
+"core": "bazset:millemiglia2_bazset",
+"date": "2026-10-24",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Mille Miglia 2.mra",
+"mra": "_Arcade/_BAZSET/Mille Miglia 2.mra",
+"first_recorded": "2026-10-24",
+"last_seen": "2026-10-24"
+},
+"ongo:millemiglia2_bazset": {
+"core": "ongo:millemiglia2_bazset",
+"date": "2026-10-24",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Mille Miglia 2.mra",
+"mra": "_Arcade/_BAZSET/Mille Miglia 2.mra",
+"first_recorded": "2026-10-24",
 "last_seen": "2026-10-24"
 }
 },
@@ -90265,6 +90460,21 @@
 "mra": "_Arcade/NBA Maximum Hangtime (L1.03 06-09-97).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-10-18"
+}
+},
+"nbapbp": {
+"ppriest:konamihornet": {
+"core": "ppriest:konamihornet",
+"date": "2026-10-24",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/NBA Play By Play (ver UAB).mra",
+"first_recorded": "2026-10-24",
+"last_seen": "2026-10-24"
 }
 },
 "nbbatman": {
@@ -121956,6 +122166,36 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-24",
 "mra": "_Arcade/Silent Dragon (US).mra"
+}
+},
+"silkroad": {
+"ppriest:silkroad": {
+"core": "ppriest:silkroad",
+"date": "2026-10-24",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/The Legend of Silkroad.mra",
+"first_recorded": "2026-10-24",
+"last_seen": "2026-10-24"
+}
+},
+"silkroada": {
+"ppriest:silkroad": {
+"core": "ppriest:silkroad",
+"date": "2026-10-24",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_The Legend of Silkroad/The Legend of Silkroad (larger ROMs).mra",
+"first_recorded": "2026-10-24",
+"last_seen": "2026-10-24"
 }
 },
 "silkworm": {
@@ -157250,6 +157490,24 @@
 "gradius": {
 "dist": "Shmup"
 },
+"gradius4": {
+"ppriest": "Shooter"
+},
+"gradius4a": {
+"ppriest": "Shooter"
+},
+"gradius4aa": {
+"ppriest": "Shooter"
+},
+"gradius4ja": {
+"ppriest": "Shooter"
+},
+"gradius4u": {
+"ppriest": "Shooter"
+},
+"gradius4ua": {
+"ppriest": "Shooter"
+},
 "grainbow": {
 "dist": "Action"
 },
@@ -157378,6 +157636,10 @@
 "ongo": "Sports / Golf"
 },
 "gtmr": {
+"ongo": "Arcade",
+"bazset": "Arcade"
+},
+"gtmr2a": {
 "ongo": "Arcade",
 "bazset": "Arcade"
 },
@@ -159741,6 +160003,9 @@
 },
 "naughtyb": {
 "dist": "Shooter - Gallery"
+},
+"nbapbp": {
+"ppriest": "Sports"
 },
 "nbbatman": {
 "dist": "Fighter"
@@ -162993,6 +163258,12 @@
 },
 "sidetrac": {
 "repo": "Maze"
+},
+"silkroad": {
+"ppriest": "Fighter"
+},
+"silkroada": {
+"ppriest": "Fighter"
 },
 "silkworm": {
 "dist": "Shooter - Horizontal"

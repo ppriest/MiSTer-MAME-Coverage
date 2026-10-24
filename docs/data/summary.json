@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-24T09:24:14+00:00",
+  "generated": "2026-10-24T15:37:10+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-24T09:23:47+00:00",
+  "mister_generated": "2026-10-24T15:36:43+00:00",
   "alamone_generated": "2026-10-19T09:14:45+00:00",
   "ledger_updated": "2026-10-24",
   "ledger_runs": [
-   {
-    "date": "2026-10-23",
-    "note": "alamone 2026-10-19",
-    "cores": 8,
-    "sets": 10,
-    "pairs": 65,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-23",
     "note": "alamone 2026-10-19",
@@ -51,6 +42,15 @@
     "pairs": 13,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-24",
+    "note": "alamone 2026-10-19",
+    "cores": 4,
+    "sets": 11,
+    "pairs": 12,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5392 sets, 5392 used); mame2016: catver_mame2016.ini (37065 sets, 32637 used)",
    "catver_entries": 38029,
    "mad_entries": 2995,
-   "mra_entries": 3741,
+   "mra_entries": 3751,
    "unmapped": [
     {
      "raw": "not classified",
@@ -2708,7 +2708,7 @@
     "source": "ongo",
     "repo": "bazset/MiSTer_BAZSET",
     "dirs": null,
-    "mras": 45
+    "mras": 46
    },
    {
     "source": "ongo",
@@ -3134,13 +3134,13 @@
   "counts": {
    "titles": 6826,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2430,
+   "working_arcade_titles_covered": 2434,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 6159,
-   "working_arcade_titles_source": 2187,
-   "working_arcade_titles_binary_only": 243,
-   "cores": 749,
-   "binary_only_cores": 256,
+   "working_arcade_sets_covered": 6169,
+   "working_arcade_titles_source": 2190,
+   "working_arcade_titles_binary_only": 244,
+   "cores": 752,
+   "binary_only_cores": 258,
    "unmatched_sets": 445
   }
  },
@@ -3675,6 +3675,28 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-09-20"
+  },
+  {
+   "id": "bazset:millemiglia2_bazset",
+   "name": "MilleMiglia2_bazset",
+   "source": "bazset",
+   "source_title": "bazset (MiSTer_BAZSET)",
+   "channel": null,
+   "rbf": "MilleMiglia2_bazset.rbf",
+   "repo": "bazset/MiSTer_BAZSET",
+   "url": "https://github.com/bazset/MiSTer_BAZSET",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-24",
+   "last_seen": "2026-10-24",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-24"
   },
   {
    "id": "bazset:night_striker_bazset",
@@ -15636,6 +15658,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-24",
+   "aliases": [],
    "last_seen": "2026-10-24",
    "binary_only": false,
    "nsets": 3,
@@ -17583,6 +17606,28 @@
    "first_date": "2026-10-08"
   },
   {
+   "id": "ppriest:konamihornet",
+   "name": "KonamiHornet",
+   "source": "ppriest",
+   "source_title": "ppriest (Tourniquet)",
+   "channel": null,
+   "rbf": "KonamiHornet.rbf",
+   "repo": "ppriest/Arcade-KonamiHornet_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-KonamiHornet_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-24",
+   "last_seen": "2026-10-24",
+   "binary_only": false,
+   "nsets": 7,
+   "ntitles": 2,
+   "first_date": "2026-10-24"
+  },
+  {
    "id": "ppriest:lethalenforcers",
    "name": "LethalEnforcers",
    "source": "ppriest",
@@ -17742,6 +17787,28 @@
    "nsets": 10,
    "ntitles": 6,
    "first_date": "2026-03-13"
+  },
+  {
+   "id": "ppriest:silkroad",
+   "name": "Silkroad",
+   "source": "ppriest",
+   "source_title": "ppriest (Tourniquet)",
+   "channel": null,
+   "rbf": "Silkroad.rbf",
+   "repo": "ppriest/Arcade-Silkroad_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-Silkroad_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-24",
+   "last_seen": "2026-10-24",
+   "binary_only": false,
+   "nsets": 2,
+   "ntitles": 1,
+   "first_date": "2026-10-24"
   },
   {
    "id": "ppriest:vamphalf",
@@ -24899,13 +24966,14 @@
   {
    "sourcefile": "kaneko/kaneko16.cpp",
    "titles": 12,
-   "covered": 9,
+   "covered": 10,
    "sets": 37,
-   "sets_covered": 9,
+   "sets_covered": 10,
    "cores": [
     "bazset:bonksadventure",
     "bazset:brapboys_bazset",
     "bazset:kanekofamily",
+    "bazset:millemiglia2_bazset",
     "bazset:shogunwarriors_bazset",
     "repo:kaneko16"
    ],
@@ -25260,11 +25328,13 @@
   {
    "sourcefile": "konami/hornet.cpp",
    "titles": 2,
-   "covered": 0,
+   "covered": 2,
    "sets": 14,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 7,
+   "cores": [
+    "ppriest:konamihornet"
+   ],
+   "first": "2026-10-24"
   },
   {
    "sourcefile": "konami/hyperspt.cpp",
@@ -30958,11 +31028,13 @@
   {
    "sourcefile": "unico/silkroad.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 2,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 2,
+   "cores": [
+    "ppriest:silkroad"
+   ],
+   "first": "2026-10-24"
   },
   {
    "sourcefile": "unico/unico.cpp",
