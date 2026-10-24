@@ -7,7 +7,7 @@
   const fmt = n => n.toLocaleString("en-US");
   const pct = (a, b) => b ? (100 * a / b).toFixed(1) + "%" : "–";
 
-  const GALLERY_ENABLED = false;       // the Titles gallery view (List / Gallery toolbar, #view=gallery) is switched off; set true to bring it back
+  const GALLERY_ENABLED = true;        // the Titles gallery view (List / Gallery toolbar, #view=gallery); set false to switch it off
   const S = { data: null, cores: {}, titles: [], shown: 0, PAGE: 250, dir: { t: 1, d: -1, c: 1 }, open: new Set() };
 
   // ---------- state in the URL hash ----------
