@@ -1890,6 +1890,9 @@
   "OngoGablogian/MiSTer_Ongo",
   "kyledlester/R_Shark_Super_X_MiSTer"
  ],
+ "kyle:superdodgeball": [
+  "kyledlester/Super_Dodge_Ball_MiSTer"
+ ],
  "kyle:taitob": [
   "kyledlester/Arcade-TaitoB_MiSTer"
  ],
@@ -2090,7 +2093,13 @@
  "ongo:bazset_bazbirdtry": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:bazset_birdietry": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:bazset_bonksadventure": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:bazset_bouncingballs": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_brapboys": [
@@ -2304,6 +2313,9 @@
  "ongo:mazeofflott_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
+ "ongo:meathax_actionhollywood": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:meathax_argus": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2458,6 +2470,9 @@
  ],
  "ongo:suck_my_bouncing_balls": [
   "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:superdodgeball": [
+  "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:superman_bazset": [
   "bazset/MiSTer_BAZSET"
