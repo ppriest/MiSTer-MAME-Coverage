@@ -179,7 +179,7 @@ Worker in front of R2). Hover only exists on devices with a pointer.
 
 ## The downloader.ini databases list
 
-The front page carries a box ("downloader.ini databases") with the `downloader.ini` sections of the source-available AI-assisted arcade cores' databases,
+The Databases tab carries a box ("downloader.ini databases"; the "Downloader .ini" link in the page header switches to the tab and opens it) with the `downloader.ini` sections of the source-available AI-assisted arcade cores' databases,
 ready to copy (all at once, one at a time, or as the file `docs/downloader-ini/arcade-ai-cores.ini`, a drop-in to save in a `downloader/` folder next to `downloader.ini`). It is a list
 and not a database on purpose: Downloader databases cannot reference other databases (a database may not install
 `downloader/*.ini` drop-ins; it refuses with "Path can't contain root folders"), and merging the contributors' files into

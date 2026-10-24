@@ -949,7 +949,7 @@
     }
     return best ? best : "**launch.title:Arcade/" + t.desc;
   }
-  $("#slop-jump").addEventListener("click", ev => { ev.preventDefault(); const box = $("#slopbox"); box.open = true; box.scrollIntoView({ behavior: "smooth", block: "start" }); });
+  $("#slop-jump").addEventListener("click", ev => { ev.preventDefault(); showTab("databases"); const box = $("#slopbox"); box.open = true; box.scrollIntoView({ behavior: "smooth", block: "start" }); });
   // ---------- clickable column headings ----------
   // A heading with data-sort sorts its table: the first click ascending, the second descending, the active one marked with an arrow.
   function markSort(tableId, key, dir) {
