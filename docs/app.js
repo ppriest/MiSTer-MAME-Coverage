@@ -509,7 +509,7 @@
     const k = t.img[S.gkind] ? S.gkind : S.gkind === "ingame" ? "title" : "ingame";     // the other kind when this one has no shot
     const nsets = f.work === "working" ? t.nworking : t.nsets, ncov = f.work === "working" ? t.ncovered_working : t.ncovered;
     const cls = ncov === 0 ? "uncovered" : ncov < nsets ? "partial" : "covered";
-    return `<figure class="tile ${cls}" data-t="${esc(t.name)}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" ${altAttrs(t, k)} data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
+    return `<figure class="tile ${cls}" data-t="${esc(t.name)}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
       <img loading="lazy" src="${esc(IMAGE_BASE + "/" + t.img[k])}" alt="${esc(t.desc)}" onerror="this.closest('figure').remove()">
       <figcaption class="tt" title="${esc(t.desc)}">${esc(t.desc)}</figcaption>
       <div class="pub" title="${esc(t.manufacturer)}">${esc(t.manufacturer)}${t.year ? ` · ${esc(t.year)}` : ""}</div>
@@ -713,8 +713,6 @@
   // Screenshot gallery: at most SHOT_MAX images, beneath the other information of a twist-open. For one title both of its
   // shots; for a driver or a core one shot per title (in-game, else title screen), titles on MiSTer first.
   const SHOT_MAX = 50;
-  // The shot's kind and the other kind's URL (if the title has both): the zoomed view can switch between title screen and in game.
-  const altAttrs = (t, k) => { const o = k === "ingame" ? "title" : "ingame"; return `data-kind="${k}"${t.img[o] ? ` data-alt="${esc(IMAGE_BASE + "/" + t.img[o])}"` : ""}`; };
   function galleryHtml(titles, both) {
     if (!IMAGE_BASE) return "";
     const withImg = titles.filter(t => t.img && (t.img.ingame || t.img.title));
@@ -724,7 +722,7 @@
       : withImg.slice().sort((x, y) => (y.covered - x.covered) || x.desc.localeCompare(y.desc)).map(t => ({ t, k: t.img.ingame ? "ingame" : "title" }));
     const shown = items.slice(0, SHOT_MAX);
     const note = items.length > shown.length ? ` <span class="muted">(first ${shown.length} of ${fmt(items.length)})</span>` : "";
-    return `<div class="gallery-box"><h4>Screenshots${note}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure title="${esc(t.desc)} (${esc(t.year)})" data-t="${esc(t.name)}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" ${altAttrs(t, k)} data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
+    return `<div class="gallery-box"><h4>Screenshots${note}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure title="${esc(t.desc)} (${esc(t.year)})" data-t="${esc(t.name)}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
       <img loading="lazy" src="${esc(IMAGE_BASE + "/" + t.img[k])}" alt="${esc(t.desc)}" onerror="this.closest('figure').remove()">
       <figcaption>${esc(t.desc)}${both ? ` <span class="muted">${k === "title" ? "title screen" : "in game"}</span>` : ""}</figcaption></figure>`).join("")}</div></div>`;
   }
@@ -1112,7 +1110,7 @@
     document.body.appendChild(dlg);
     const img = dlg.querySelector("img"), cap = dlg.querySelector("figcaption"), cv = dlg.querySelector(".lb-crt");
     const fxScan = dlg.querySelector('[data-fx="scan"]'), fxCrt = dlg.querySelector('[data-fx="crt"]');
-    let set = [], i = 0, lbKind = "", shownKind = "";
+    let set = [], i = 0;
     // Scanlines (one dark line per pixel row of the original) and a CRT curve over the zoomed shot; the choices are remembered.
     const stored = k => { try { return localStorage.getItem(k) !== "0"; } catch (e) { return true; } };
     const store = (k, on) => { try { localStorage.setItem(k, on ? "1" : "0"); } catch (e) { /* ignore */ } };
@@ -1223,11 +1221,8 @@
       img.dataset.n = fig.dataset.n || "1"; img.dataset.port = fig.dataset.port || "0";
       const play = dlg.querySelector(".lb-play");                                // the same launch as the ▶ in the titles table
       play.hidden = !fig.dataset.launch; play.dataset.launch = fig.dataset.launch || ""; play.dataset.title = fig.dataset.title || ""; play.textContent = "▶";
-      // title screen or in game: the kind chosen in the zoom sticks while stepping through the set, where a shot of that kind exists
-      const kinds = { [fig.dataset.kind || "x"]: fig.dataset.src, ...(fig.dataset.alt ? { [fig.dataset.kind === "title" ? "ingame" : "title"]: fig.dataset.alt } : {}) };
-      const cur = shownKind = kinds[lbKind] ? lbKind : fig.dataset.kind || "";
-      dlg.classList.toggle("flippable", !!fig.dataset.alt);
-      img.src = kinds[cur] || fig.dataset.src; img.alt = fig.querySelector("img")?.alt || "";
+      dlg.classList.toggle("flippable", set.length > 1);
+      img.src = fig.dataset.src; img.alt = fig.querySelector("img")?.alt || "";
       cap.textContent = fig.querySelector("figcaption")?.textContent || img.alt;
       dlg.classList.toggle("single", set.length < 2);
       fillSide(fig.dataset.t);
@@ -1256,25 +1251,20 @@
       fillHardware(R);
     }
     addEventListener("resize", () => { if (dlg.open) applyInfo(); });
-    const toggleKind = () => {
-      const fig = set[i]; if (!fig || !fig.dataset.alt) return;
-      lbKind = shownKind === "title" ? "ingame" : "title"; show(i);
-    };
-    // Clicking the screen turns the display over like a card: it rotates edge-on, the other kind of shot (title screen / in game)
-    // is swapped in, and it turns back, so the two shots are the two sides of the screen. A title with one shot only does nothing.
+    // Clicking the screen goes to the next shot of the set with a turn: the display rotates edge-on, the next shot is swapped in once it
+    // has loaded, and it turns back (with two shots, the title screen and the in-game shot of one title, that is a flip between the two
+    // sides). A set of one shot does nothing.
     let flipping = false;
     const flip = async () => {
-      const fig = set[i];
-      if (!fig || !fig.dataset.alt) return;                      // only one shot: nothing to turn over
-      if (flipping) return;
+      if (set.length < 2 || flipping) return;
       const frame = dlg.querySelector(".lb-frame");
-      if (matchMedia("(prefers-reduced-motion: reduce)").matches || !frame.animate) { toggleKind(); return; }
+      if (matchMedia("(prefers-reduced-motion: reduce)").matches || !frame.animate) { show(i + 1); return; }
       flipping = true;
       const turn = (from, to, ease) => frame.animate([{ transform: `perspective(2200px) rotateY(${from}deg)` }, { transform: `perspective(2200px) rotateY(${to}deg)` }], { duration: 220, easing: ease, fill: "forwards" }).finished;
       try {
         await turn(0, 90, "ease-in");
         const loaded = new Promise(res => { img.addEventListener("load", res, { once: true }); setTimeout(res, 600); });
-        toggleKind(); await loaded;
+        show(i + 1); await loaded;
         await turn(-90, 0, "ease-out");
       } finally { frame.getAnimations().forEach(a => a.cancel()); flipping = false; }
     };
@@ -1282,7 +1272,7 @@
       if (ev.target.closest("button, a")) return;                // a tile's Play and +1 are not a zoom
       const t = ev.target.closest(".gallery figure"); if (!t || !t.dataset.src) return;
       set = Array.from(t.closest(".gallery").querySelectorAll("figure"));
-      lbKind = t.dataset.kind || ""; applyInfo(); show(set.indexOf(t)); dlg.showModal();
+      applyInfo(); show(set.indexOf(t)); dlg.showModal();
     });
     dlg.addEventListener("click", ev => {
       if (ev.target.closest(".lb-prev")) show(i - 1);
@@ -1296,7 +1286,6 @@
     dlg.addEventListener("keydown", ev => {
       if (ev.key === "ArrowLeft" && set.length > 1) { ev.preventDefault(); show(i - 1); }
       else if (ev.key === "ArrowRight" && set.length > 1) { ev.preventDefault(); show(i + 1); }
-      else if (ev.key === "t" || ev.key === "T") { if (set[i] && set[i].dataset.alt) flip(); }
       else if (ev.key === "i" || ev.key === "I") { if (innerWidth >= LB_SIDE_MIN) setInfo(!info); }
       else if (ev.key === "s" || ev.key === "S") setScan(!scan);
       else if (ev.key === "c" || ev.key === "C") { if (!crtBroken) setCrt(!crt); }
