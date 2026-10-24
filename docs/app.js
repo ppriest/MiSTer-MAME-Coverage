@@ -808,9 +808,10 @@
       <td class="set">${(c.mame_drivers || []).map(esc).join("<br>")}</td>
       <td class="num">${c.ntitles}</td><td class="num">${c.nsets}</td>
       <td class="num">${c.first_date || ""}</td><td class="num">${c.build_date || ""}</td>
-      <td>${c.reading ? esc(c.reading) + (c.score != null ? ` <span class="flag">${c.score}</span>` : "") : '<span class="muted">' + esc(c.status || "") + "</span>"}</td></tr>${S.openCores.has(c.id) ? coreDetail(c) : ""}`).join("");
+      <td>${c.reading ? `<a href="${FVA_URL}" target="_blank" rel="noopener" title="what this core's own source says it was verified against: alamone's fpga-verified-against results">${esc(c.reading)}${c.score != null ? ` <span class="flag">${c.score}</span>` : ""}</a>` : '<span class="muted">' + esc(c.status || "") + "</span>"}</td></tr>${S.openCores.has(c.id) ? coreDetail(c) : ""}`).join("");
     fillHardware($("#cores-table tbody"));
   }
+  const FVA_URL = "https://alamone.github.io/fpga-verified-against/results/";      // where the "Verified against" readings come from (alamone/fpga-verified-against)
   // Twist-open of a core: what it is, the hardware of the system(s) it implements, then screenshots of its titles.
   S.openCores = new Set();
   function coreDetail(c) {
