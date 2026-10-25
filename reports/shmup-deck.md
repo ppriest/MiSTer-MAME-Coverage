@@ -1,14 +1,12 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-10-24 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
+Generated 2026-10-25 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
 
 **Agreement:** 308 of 310 deck titles are Shmup in our data (99.4%).
 
 ## New since the previous report
 
-**1 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
-
-- `gradius4` Gradius IV: Fukkatsu (ver JAC) (1998; Shooter / Flying Horizontal)
+Nothing new: the same titles disagree as before.
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -25,7 +23,6 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
-| **NEW** `gradius4` | Gradius IV: Fukkatsu (ver JAC) | 1998 | Shooter / Flying Horizontal (catver) | KonamiHornet |
 | `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
@@ -65,6 +62,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `gbusters` | Gang Busters (set 1) | 1988 | Shooter / Walking (catver) | jtaliens |
 | `gondo` | Gondomania (World) | 1987 | Shooter / Flying Vertical (catver) | dec8 |
 | `pc_grdus` | Gradius (PlayChoice-10) | 1986 | Shooter / Flying Horizontal (catver) | PlayChoice10 |
+| `gradius4` | Gradius IV: Fukkatsu (ver JAC) | 1998 | Shooter / Flying Horizontal (catver) | KonamiHornet |
 | `gwar` | Guerrilla War (US) | 1987 | Shooter / Walking (catver) | ffgwar |
 | `gundhara` | Gundhara | 1995 | Shooter / Walking (catver) | Seta |
 | `heatbrl` | Heated Barrel (World version 3) | 1992 | Shooter / Walking (catver) | HeatedBarrel |

@@ -1469,6 +1469,9 @@
   "Toryalai1/Arcade_Offset",
   "jotego/jtbin"
  ],
+ "jt:jtarblst": [
+  "jotego/jtbin"
+ ],
  "jt:jtbiocom": [
   "jotego/jtbin"
  ],
@@ -1595,6 +1598,9 @@
   "jotego/jtbin"
  ],
  "jt:jtmx5k": [
+  "jotego/jtbin"
+ ],
+ "jt:jtnarc": [
   "jotego/jtbin"
  ],
  "jt:jtngp": [
@@ -2087,6 +2093,9 @@
  "ongo:bazbirdtry": [
   "bazset/MiSTer_BAZSET"
  ],
+ "ongo:bazdiamrun": [
+  "bazset/MiSTer_BAZSET"
+ ],
  "ongo:bazset_aquajack": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2111,6 +2120,9 @@
  "ongo:bazset_continentalcircus": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:bazset_diamondrun": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:bazset_juezhantianhuang": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2121,6 +2133,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_krull": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:bazset_millemiglia2": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_pushman": [
