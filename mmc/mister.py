@@ -129,6 +129,8 @@ SOURCE_REPOS = {
     "dist:reliefpitcher": "MiSTer-devel/Arcade-ReliefPitcher_MiSTer",
     "dist:shuuz": "MiSTer-devel/Arcade-Shuuz_MiSTer",
     "dist:victory": "MiSTer-devel/Arcade-Victory_MiSTer",
+    # asturur's builds of jotego-based cores: the source is in jotego/jtcores (the andrea-cores branch; the roundup5 branch for jtroundu)
+    "asturur:jtpspike": "jotego/jtcores", "asturur:jtsysfl": "jotego/jtcores", "asturur:jtf1grpr": "jotego/jtcores", "asturur:jtroundu": "jotego/jtcores",
     "gm0rk:atari-g1": "Gm0rk/Arcade-Atari-G1_MiSTer",
     "gm0rk:atari-g42": "Gm0rk/Arcade-Atari-G42_MiSTer",
     "gm0rk:itech8": "Gm0rk/ITech8_MiSTer",
