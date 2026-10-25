@@ -100,6 +100,8 @@ SUPERSEDED_CORES = {
     # decoryah's repositories became the "decoryah" source
     "repo:gaiapolis": "decoryah:gaiapolis", "repo:mcatadv": "decoryah:mcatadv", "repo:metamorphicforce": "decoryah:metamorphicforce",
     "repo:monstermaulers": "decoryah:monstermaulers", "repo:ohmygod": "decoryah:ohmygod", "repo:taitol": "decoryah:taitol",
+    # asturur's database publishes builds of these jotego-based cores (the "unreleased jtcores" placeholders of the andrea-cores branch)
+    "jtpr:jtpspike": "asturur:jtpspike", "jtpr:jtsysfl": "asturur:jtsysfl", "jtpr:jtf1grpr": "asturur:jtf1grpr",
     # rossops's repositories became the "rossops" source
     "repo:segaspaceharrier": "rossops:segaspaceharrier", "repo:segayboard": "rossops:segayboard",
 }
