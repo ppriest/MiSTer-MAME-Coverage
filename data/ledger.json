@@ -4,15 +4,6 @@
 "updated": "2026-10-25",
 "runs": [
 {
-"date": "2026-10-12",
-"note": "alamone 2026-10-12",
-"cores": 46,
-"sets": 46,
-"pairs": 231,
-"dates_improved": 48,
-"cores_removed": 0
-},
-{
 "date": "2026-10-13",
 "note": "alamone 2026-10-12",
 "cores": 7,
@@ -461,6 +452,15 @@
 "pairs": 25,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-25",
+"note": "alamone 2026-10-19",
+"cores": 3,
+"sets": 1,
+"pairs": 24,
+"dates_improved": 0,
+"cores_removed": 3
 }
 ]
 },
@@ -505,6 +505,42 @@
 "aliases": [],
 "last_seen": "2026-10-25"
 },
+"asturur:jtf1grpr": {
+"id": "asturur:jtf1grpr",
+"name": "jtf1grpr",
+"source": "asturur",
+"source_title": "asturur",
+"channel": null,
+"rbf": "jtf1grpr.rbf",
+"repo": "asturur/Mister-cores",
+"url": "https://github.com/asturur/Mister-cores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"asturur:jtpspike": {
+"id": "asturur:jtpspike",
+"name": "jtpspike",
+"source": "asturur",
+"source_title": "asturur",
+"channel": null,
+"rbf": "jtpspike.rbf",
+"repo": "asturur/Mister-cores",
+"url": "https://github.com/asturur/Mister-cores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
 "asturur:jtroundu": {
 "id": "asturur:jtroundu",
 "name": "jtroundu",
@@ -522,6 +558,24 @@
 "note": null,
 "first_recorded": "2026-10-25",
 "aliases": [],
+"last_seen": "2026-10-25"
+},
+"asturur:jtsysfl": {
+"id": "asturur:jtsysfl",
+"name": "jtsysfl",
+"source": "asturur",
+"source_title": "asturur",
+"channel": null,
+"rbf": "jtsysfl.rbf",
+"repo": "asturur/Mister-cores",
+"url": "https://github.com/asturur/Mister-cores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 },
 "bazset:aqua_jack": {
@@ -10257,28 +10311,6 @@
 "aliases": [],
 "last_seen": "2026-10-25"
 },
-"jtpr:jtf1grpr": {
-"id": "jtpr:jtf1grpr",
-"name": "jtf1grpr",
-"source": "jtpr",
-"source_title": "jtcores unreleased (PRs, branches)",
-"channel": null,
-"rbf": "jtf1grpr.rbf",
-"repo": "jotego/jtcores",
-"url": "https://github.com/jotego/jtcores/tree/andrea-cores/cores/f1grpr",
-"build_date": null,
-"status": "branch andrea-cores",
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": "F-1 Grand Prix",
-"aliases": [
-"ongo:f1grpr",
-"asturur:jtf1grpr"
-],
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-25"
-},
 "jtpr:jtmeikyu": {
 "id": "jtpr:jtmeikyu",
 "name": "jtmeikyu",
@@ -10357,28 +10389,6 @@
 "aliases": [],
 "last_seen": "2026-10-25"
 },
-"jtpr:jtpspike": {
-"id": "jtpr:jtpspike",
-"name": "jtpspike",
-"source": "jtpr",
-"source_title": "jtcores unreleased (PRs, branches)",
-"channel": null,
-"rbf": "jtpspike.rbf",
-"repo": "jotego/jtcores",
-"url": "https://github.com/jotego/jtcores/tree/andrea-cores/cores/pspike",
-"build_date": null,
-"status": "branch andrea-cores",
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": "Power Spikes, Aero Fighters / Sonic Wings, Turbo Force, Karate Blazers",
-"aliases": [
-"ongo:pspike",
-"asturur:jtpspike"
-],
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-25"
-},
 "jtpr:jtseicro": {
 "id": "jtpr:jtseicro",
 "name": "jtseicro",
@@ -10396,27 +10406,6 @@
 "note": "feat(): Seicross - Radical Radial - Frisky tom",
 "first_recorded": "2026-10-18",
 "aliases": [],
-"last_seen": "2026-10-25"
-},
-"jtpr:jtsysfl": {
-"id": "jtpr:jtsysfl",
-"name": "jtsysfl",
-"source": "jtpr",
-"source_title": "jtcores unreleased (PRs, branches)",
-"channel": null,
-"rbf": "jtsysfl.rbf",
-"repo": "jotego/jtcores",
-"url": "https://github.com/jotego/jtcores/tree/andrea-cores/cores/sysfl",
-"build_date": null,
-"status": "branch andrea-cores",
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": "Speed Racer, Final Lap R",
-"aliases": [
-"asturur:jtsysfl"
-],
-"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 },
 "jtpr:jttaitob": {
@@ -20749,15 +20738,15 @@
 }
 },
 "aerofgtb": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-24",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Aero Fighters/Aero Fighters (Taiwan - Japan, set 1).mra",
 "mra": "_Arcade/_alternatives/_Aero Fighters/Aero Fighters (Taiwan - Japan, set 1).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -20776,15 +20765,15 @@
 }
 },
 "aerofgtc": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-24",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Aero Fighters/Aero Fighters (Taiwan - Japan, set 2).mra",
 "mra": "_Arcade/_alternatives/_Aero Fighters/Aero Fighters (Taiwan - Japan, set 2).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -53187,15 +53176,15 @@
 }
 },
 "f1gp": {
-"jtpr:jtf1grpr": {
-"core": "jtpr:jtf1grpr",
-"date": "2026-10-03",
+"asturur:jtf1grpr": {
+"core": "asturur:jtf1grpr",
+"date": "2026-10-24",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
 "alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/F-1 Grand Prix (set 1).mra",
 "mra": "_Arcade/F-1 Grand Prix (set 1).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -53214,15 +53203,15 @@
 }
 },
 "f1gpa": {
-"jtpr:jtf1grpr": {
-"core": "jtpr:jtf1grpr",
-"date": "2026-10-03",
+"asturur:jtf1grpr": {
+"core": "asturur:jtf1grpr",
+"date": "2026-10-24",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_F-1 Grand Prix/F-1 Grand Prix (set 2).mra",
 "mra": "_Arcade/_alternatives/_F-1 Grand Prix/F-1 Grand Prix (set 2).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -54532,11 +54521,11 @@
 }
 },
 "finalapr": {
-"jtpr:jtsysfl": {
-"core": "jtpr:jtsysfl",
+"asturur:jtsysfl": {
+"core": "asturur:jtsysfl",
 "date": "2026-09-23",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
 "alt": false,
 "first_repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
@@ -54573,13 +54562,13 @@
 }
 },
 "finalapr1": {
-"jtpr:jtsysfl": {
-"core": "jtpr:jtsysfl",
+"asturur:jtsysfl": {
+"core": "asturur:jtsysfl",
 "date": "2026-09-23",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
+"alt": true,
 "first_repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
 "first_path": "_Arcade/_XelaNotPu/_alternatives/_Final Lap R/Final Lap R.mra",
 "mra": "_Arcade/_alternatives/_Final Lap R/Final Lap R.mra",
@@ -54614,13 +54603,13 @@
 }
 },
 "finalaprj": {
-"jtpr:jtsysfl": {
-"core": "jtpr:jtsysfl",
+"asturur:jtsysfl": {
+"core": "asturur:jtsysfl",
 "date": "2026-09-23",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
+"alt": true,
 "first_repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
 "first_path": "_Arcade/_XelaNotPu/_alternatives/_Final Lap R/Final Lap R (Japan Rev. C).mra",
 "mra": "_Arcade/_alternatives/_Final Lap R/Final Lap R (Japan Rev. C).mra",
@@ -54655,13 +54644,13 @@
 }
 },
 "finalaprj1": {
-"jtpr:jtsysfl": {
-"core": "jtpr:jtsysfl",
+"asturur:jtsysfl": {
+"core": "asturur:jtsysfl",
 "date": "2026-09-23",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
+"alt": true,
 "first_repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
 "first_path": "_Arcade/_XelaNotPu/_alternatives/_Final Lap R/Final Lap R (Japan Rev. B).mra",
 "mra": "_Arcade/_alternatives/_Final Lap R/Final Lap R (Japan Rev. B).mra",
@@ -73459,15 +73448,15 @@
 }
 },
 "karatblz": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-24",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
 "alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Karate Blazers (World, set 1).mra",
 "mra": "_Arcade/Karate Blazers (World, set 1).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -73486,15 +73475,15 @@
 }
 },
 "karatblza": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-24",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Karate Blazers/Karate Blazers (World, set 2).mra",
 "mra": "_Arcade/_alternatives/_Karate Blazers/Karate Blazers (World, set 2).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -73513,15 +73502,15 @@
 }
 },
 "karatblzj": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-24",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Karate Blazers/Toushin Blazers (Japan, Tecmo license).mra",
 "mra": "_Arcade/_alternatives/_Karate Blazers/Toushin Blazers (Japan, Tecmo license).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -73540,15 +73529,15 @@
 }
 },
 "karatblzt": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-24",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Karate Blazers/Karate Blazers (World, Tecmo license).mra",
 "mra": "_Arcade/_alternatives/_Karate Blazers/Karate Blazers (World, Tecmo license).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -73567,15 +73556,15 @@
 }
 },
 "karatblzu": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-24",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Karate Blazers/Karate Blazers (US).mra",
 "mra": "_Arcade/_alternatives/_Karate Blazers/Karate Blazers (US).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -104871,15 +104860,15 @@
 }
 },
 "pspikes": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-08",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
 "alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"first_repo": "yaguboo/Arcade-PowerSpikes_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Power Spikes (World).mra",
 "mra": "_Arcade/Power Spikes (World).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -104925,15 +104914,15 @@
 }
 },
 "pspikesk": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-08",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"alt": true,
+"first_repo": "yaguboo/Arcade-PowerSpikes_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Power Spikes (Korea).mra",
 "mra": "_Arcade/_alternatives/_Power Spikes/Power Spikes (Korea).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -104965,15 +104954,15 @@
 }
 },
 "pspikesu": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-08",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"alt": true,
+"first_repo": "yaguboo/Arcade-PowerSpikes_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Power Spikes (US).mra",
 "mra": "_Arcade/_alternatives/_Power Spikes/Power Spikes (US).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -126752,15 +126741,15 @@
 }
 },
 "sonicwi": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-24",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Aero Fighters/Sonic Wings (Japan).mra",
 "mra": "_Arcade/_alternatives/_Aero Fighters/Sonic Wings (Japan).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -128886,11 +128875,11 @@
 }
 },
 "speedrcr": {
-"jtpr:jtsysfl": {
-"core": "jtpr:jtsysfl",
+"asturur:jtsysfl": {
+"core": "asturur:jtsysfl",
 "date": "2026-09-23",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
 "alt": false,
 "first_repo": "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
@@ -134554,15 +134543,15 @@
 }
 },
 "svolly91": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-08",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"alt": true,
+"first_repo": "yaguboo/Arcade-PowerSpikes_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Super Volley '91 (Japan).mra",
 "mra": "_Arcade/_alternatives/_Power Spikes/Super Volley '91 (Japan).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -143480,15 +143469,15 @@
 }
 },
 "turbofrc": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-24",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
 "alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Turbo Force (World, set 1).mra",
 "mra": "_Arcade/Turbo Force (World, set 1).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -143506,31 +143495,16 @@
 "last_seen": "2026-10-09"
 }
 },
-"turbofrcj": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
-"mra": null,
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-25"
-}
-},
 "turbofrco": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-24",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Turbo Force/Turbo Force (World, set 2).mra",
 "mra": "_Arcade/_alternatives/_Turbo Force/Turbo Force (World, set 2).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -143549,15 +143523,15 @@
 }
 },
 "turbofrcu": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-24",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Turbo Force/Turbo Force (US, set 1).mra",
 "mra": "_Arcade/_alternatives/_Turbo Force/Turbo Force (US, set 1).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
@@ -143576,15 +143550,15 @@
 }
 },
 "turbofrcua": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
+"asturur:jtpspike": {
+"core": "asturur:jtpspike",
+"date": "2026-10-24",
 "date_quality": "git",
-"via": "jtpr",
+"via": "asturur",
 "wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
+"alt": true,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/_alternatives/_Turbo Force/Turbo Force (US, set 2).mra",
 "mra": "_Arcade/_alternatives/_Turbo Force/Turbo Force (US, set 2).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
