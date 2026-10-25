@@ -100,6 +100,8 @@ SUPERSEDED_CORES = {
     # decoryah's repositories became the "decoryah" source
     "repo:gaiapolis": "decoryah:gaiapolis", "repo:mcatadv": "decoryah:mcatadv", "repo:metamorphicforce": "decoryah:metamorphicforce",
     "repo:monstermaulers": "decoryah:monstermaulers", "repo:ohmygod": "decoryah:ohmygod", "repo:taitol": "decoryah:taitol",
+    # asturur's database publishes builds of these jotego-based cores (the "unreleased jtcores" placeholders of the andrea-cores branch)
+    "jtpr:jtpspike": "asturur:jtpspike", "jtpr:jtsysfl": "asturur:jtsysfl", "jtpr:jtf1grpr": "asturur:jtf1grpr",
     # rossops's repositories became the "rossops" source
     "repo:segaspaceharrier": "rossops:segaspaceharrier", "repo:segayboard": "rossops:segayboard",
 }
@@ -127,10 +129,8 @@ SOURCE_REPOS = {
     "dist:reliefpitcher": "MiSTer-devel/Arcade-ReliefPitcher_MiSTer",
     "dist:shuuz": "MiSTer-devel/Arcade-Shuuz_MiSTer",
     "dist:victory": "MiSTer-devel/Arcade-Victory_MiSTer",
-    # asturur's build of a jotego-based core: the source is in jotego/jtcores (its roundup5 branch). His other builds (jtpspike, jtsysfl,
-    # jtf1grpr) are the same builds as MiSTer_Ongo's copies, so they are merged into those records, and the source-available
-    # placeholders of the andrea-cores branch (data/pending_cores.json) stay: they are what marks those titles source-available.
-    "asturur:jtroundu": "jotego/jtcores",
+    # asturur's builds of jotego-based cores: the source is in jotego/jtcores (the andrea-cores branch; the roundup5 branch for jtroundu)
+    "asturur:jtpspike": "jotego/jtcores", "asturur:jtsysfl": "jotego/jtcores", "asturur:jtf1grpr": "jotego/jtcores", "asturur:jtroundu": "jotego/jtcores",
     "gm0rk:atari-g1": "Gm0rk/Arcade-Atari-G1_MiSTer",
     "gm0rk:atari-g42": "Gm0rk/Arcade-Atari-G42_MiSTer",
     "gm0rk:itech8": "Gm0rk/ITech8_MiSTer",

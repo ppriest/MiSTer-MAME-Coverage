@@ -85,6 +85,10 @@ def merge_duplicate_cores(cores: dict[str, dict], sets_by_core: dict[str, set[st
         key = _stem_key(mister_mod.norm_rbf(c["rbf"]) or "")
         best = None
         for kid, k in known:
+            if k["source"] == "ongo" and c["source"] != "ongo":
+                continue        # MiSTer_Ongo is an aggregator, not a source: a developer's own build never folds into its copy
+            if k["source"] == "jtpr" and c["source"] in mister_mod.DB_SOURCES:
+                continue        # a pending-core placeholder yields to a developer's published build (SUPERSEDED_CORES), it does not absorb it
             if k["source"] == "repo" and c["source"] in mister_mod.DB_SOURCES and c.get("repo") and c["repo"] == k.get("repo"):
                 continue        # the developer's database record replaces a loose repository record
             theirs = set(k["alamone_sets"]) | sets_by_core.get(kid, set())
