@@ -102,12 +102,16 @@ SUPERSEDED_CORES = {
     "repo:monstermaulers": "decoryah:monstermaulers", "repo:ohmygod": "decoryah:ohmygod", "repo:taitol": "decoryah:taitol",
     # asturur's database publishes builds of these jotego-based cores (the "unreleased jtcores" placeholders of the andrea-cores branch)
     "jtpr:jtpspike": "asturur:jtpspike", "jtpr:jtsysfl": "asturur:jtsysfl", "jtpr:jtf1grpr": "asturur:jtf1grpr",
+    # yaguboo's repositories became the "yaguboo" source
+    "repo:heavysmash": "yaguboo:heavysmash", "repo:namcona2": "yaguboo:namcona2", "repo:powerins": "yaguboo:powerins",
+    "repo:powerspikes": "yaguboo:powerspikes", "repo:shadowforce": "yaguboo:shadowforce", "repo:stadiumhero": "yaguboo:stadiumhero",
+    "repo:superslams": "yaguboo:superslams",
     # rossops's repositories became the "rossops" source
     "repo:segaspaceharrier": "rossops:segaspaceharrier", "repo:segayboard": "rossops:segayboard",
 }
 
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
-OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr", "kyledlester": "kyle", "illegalmp3": "illegalmp3"}
+OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr", "kyledlester": "kyle", "illegalmp3": "illegalmp3", "yaguboo": "yaguboo"}
 # Repositories of those owners that are not cores (forks of the shared MRA collection, a game runtime): never scanned.
 OWNER_SKIP = {"rossops/mra-alternatives_mister", "rossops/bennugd_mister"}
 
@@ -294,6 +298,7 @@ SOURCE_PAGES = {
     "gm0rk": "https://github.com/Gm0rk/Gm0rkCores",
     "usquebagh": "https://github.com/Usquebagh?tab=repositories",
     "illegalmp3": "https://github.com/illegalmp3?tab=repositories",
+    "yaguboo": "https://github.com/yaguboo?tab=repositories",
     "decoryah": "https://github.com/decoryah/MiSTer_decoryah",
     "tomsvr": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
     "asturur": "https://github.com/asturur/Mister-cores",
@@ -325,9 +330,10 @@ DB_TITLES = {
     "gm0rk": "Gm0rkCores (Gm0rk)",
     "usquebagh": "Usquebagh (GitHub repositories)",
     "illegalmp3": "illegalmp3 (GitHub repositories)",
+    "yaguboo": "yaguboo (GitHub repositories)",
     "decoryah": "decoryah",
     "tomsvr": "TomSVR",
-    "asturur": "asturur",
+    "asturur": "Andrea Bogazzi (asturur)",
     "rossops": "rossops (GitHub repositories)",
     "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
     "repo": "GitHub repository only",
