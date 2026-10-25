@@ -239,6 +239,8 @@ DB_SOURCES = {
     "decoryah": "https://raw.githubusercontent.com/decoryah/MiSTer_decoryah/db/db.json.zip",
     # TomSVR's cores (github.com/TomSVR-Mister/TomSVR-Arcade-Cores); his repositories are scanned too (OWNER_SOURCES)
     "tomsvr": "https://raw.githubusercontent.com/TomSVR-Mister/TomSVR-Arcade-Cores/db/db.json.zip",
+    # asturur's cores (github.com/asturur/Mister-cores): builds of jotego-based cores (Power Spikes, F-1 Grand Prix, Round Up 5, ...)
+    "asturur": "https://raw.githubusercontent.com/asturur/Mister-cores/db/db.json.zip",
 }
 # Cores that load ROM sets from a list instead of MRAs: (source, repo, file, core name).
 ROMSET_FILES = [
@@ -290,6 +292,7 @@ SOURCE_PAGES = {
     "illegalmp3": "https://github.com/illegalmp3?tab=repositories",
     "decoryah": "https://github.com/decoryah/MiSTer_decoryah",
     "tomsvr": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
+    "asturur": "https://github.com/asturur/Mister-cores",
     "rossops": "https://github.com/rossops?tab=repositories",
     "xela": "https://github.com/XelaNotPu?tab=repositories",
     "jtpr": "https://github.com/jotego/jtcores/tree/andrea-cores/cores",
@@ -320,6 +323,7 @@ DB_TITLES = {
     "illegalmp3": "illegalmp3 (GitHub repositories)",
     "decoryah": "decoryah",
     "tomsvr": "TomSVR",
+    "asturur": "asturur",
     "rossops": "rossops (GitHub repositories)",
     "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
     "repo": "GitHub repository only",
