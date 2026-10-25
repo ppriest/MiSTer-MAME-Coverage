@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-25T09:42:18+00:00",
+  "generated": "2026-10-25T19:41:44+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-25T09:41:49+00:00",
+  "mister_generated": "2026-10-25T19:41:21+00:00",
   "alamone_generated": "2026-10-19T09:14:45+00:00",
   "ledger_updated": "2026-10-25",
   "ledger_runs": [
-   {
-    "date": "2026-10-23",
-    "note": "alamone 2026-10-19",
-    "cores": 1,
-    "sets": 2,
-    "pairs": 2,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-23",
     "note": "alamone 2026-10-19",
@@ -51,15 +42,24 @@
     "pairs": 65,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-25",
+    "note": "alamone 2026-10-19",
+    "cores": 5,
+    "sets": 14,
+    "pairs": 22,
+    "dates_improved": 0,
+    "cores_removed": 3
    }
   ],
   "genre": {
    "overrides": 0,
    "local_categories": 1,
-   "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5392 sets, 5392 used); mame2016: catver_mame2016.ini (37065 sets, 32637 used)",
-   "catver_entries": 38029,
+   "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5441 sets, 5441 used); mame2016: catver_mame2016.ini (37065 sets, 32592 used)",
+   "catver_entries": 38033,
    "mad_entries": 2995,
-   "mra_entries": 3752,
+   "mra_entries": 3760,
    "unmapped": [
     {
      "raw": "not classified",
@@ -121,6 +121,7 @@
    "illegalmp3": "illegalmp3 (GitHub repositories)",
    "decoryah": "decoryah",
    "tomsvr": "TomSVR",
+   "asturur": "asturur",
    "rossops": "rossops (GitHub repositories)",
    "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
    "repo": "GitHub repository only"
@@ -214,6 +215,10 @@
     "page": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
     "db_url": "https://raw.githubusercontent.com/TomSVR-Mister/TomSVR-Arcade-Cores/db/db.json.zip"
    },
+   "asturur": {
+    "page": "https://github.com/asturur/Mister-cores",
+    "db_url": "https://raw.githubusercontent.com/asturur/Mister-cores/db/db.json.zip"
+   },
    "rossops": {
     "page": "https://github.com/rossops?tab=repositories",
     "db_url": null
@@ -234,7 +239,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1894
+    "mras": 1895
    },
    {
     "source": "dist",
@@ -250,7 +255,7 @@
     "dirs": [
      "mra"
     ],
-    "mras": 1289
+    "mras": 1284
    },
    {
     "source": "coinop",
@@ -1826,7 +1831,7 @@
     "source": "repo",
     "repo": "RodimusFVC/Arcade-Universal_MiSTer",
     "dirs": null,
-    "mras": 64
+    "mras": 103
    },
    {
     "source": "repo",
@@ -2308,7 +2313,7 @@
     "source": "repo",
     "repo": "ppriest/Arcade-PlayChoice10_MiSTer",
     "dirs": null,
-    "mras": 118
+    "mras": 60
    },
    {
     "source": "repo",
@@ -2552,13 +2557,13 @@
     "source": "ongo",
     "repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
     "dirs": null,
-    "mras": 46
+    "mras": 53
    },
    {
     "source": "ongo",
     "repo": "Gm0rk/Gm0rkCores",
     "dirs": null,
-    "mras": 100
+    "mras": 107
    },
    {
     "source": "ongo",
@@ -2804,7 +2809,7 @@
     "source": "ongo",
     "repo": "meathax/meatcores",
     "dirs": null,
-    "mras": 222
+    "mras": 223
    },
    {
     "source": "ongo",
@@ -3016,6 +3021,12 @@
    },
    {
     "source": "decoryah",
+    "repo": "decoryah/Arcade-Aquarium_MiSTer",
+    "dirs": null,
+    "mras": 2
+   },
+   {
+    "source": "decoryah",
     "repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
     "dirs": null,
     "mras": 22
@@ -3031,6 +3042,12 @@
     "repo": "decoryah/Arcade-Gunpey_MiSTer",
     "dirs": null,
     "mras": 1
+   },
+   {
+    "source": "decoryah",
+    "repo": "decoryah/Arcade-Hexion_MiSTer",
+    "dirs": null,
+    "mras": 2
    },
    {
     "source": "decoryah",
@@ -3134,13 +3151,13 @@
   "counts": {
    "titles": 6826,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2435,
+   "working_arcade_titles_covered": 2438,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 6175,
-   "working_arcade_titles_source": 2194,
-   "working_arcade_titles_binary_only": 241,
-   "cores": 757,
-   "binary_only_cores": 261,
+   "working_arcade_sets_covered": 6185,
+   "working_arcade_titles_source": 2193,
+   "working_arcade_titles_binary_only": 245,
+   "cores": 760,
+   "binary_only_cores": 263,
    "unmatched_sets": 445
   }
  },
@@ -3192,6 +3209,28 @@
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-26"
+  },
+  {
+   "id": "asturur:jtroundu",
+   "name": "jtroundu",
+   "source": "asturur",
+   "source_title": "asturur",
+   "channel": null,
+   "rbf": "jtroundu.rbf",
+   "repo": "asturur/Mister-cores",
+   "url": "https://github.com/asturur/Mister-cores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "binary_only": false,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": "2026-10-25"
   },
   {
    "id": "bazset:aqua_jack",
@@ -5588,6 +5627,28 @@
    "first_date": "2022-09-22"
   },
   {
+   "id": "decoryah:aquarium",
+   "name": "aquarium",
+   "source": "decoryah",
+   "source_title": "decoryah",
+   "channel": null,
+   "rbf": "aquarium.rbf",
+   "repo": "decoryah/Arcade-Aquarium_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-Aquarium_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "binary_only": false,
+   "nsets": 2,
+   "ntitles": 1,
+   "first_date": "2026-10-25"
+  },
+  {
    "id": "decoryah:arcadiasystems",
    "name": "arcadiasystems",
    "source": "decoryah",
@@ -5705,6 +5766,28 @@
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-10-15"
+  },
+  {
+   "id": "decoryah:hexion",
+   "name": "hexion",
+   "source": "decoryah",
+   "source_title": "decoryah",
+   "channel": null,
+   "rbf": "hexion.rbf",
+   "repo": "decoryah/Arcade-Hexion_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-Hexion_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "binary_only": false,
+   "nsets": 2,
+   "ntitles": 1,
+   "first_date": "2026-10-25"
   },
   {
    "id": "decoryah:jchan",
@@ -11447,7 +11530,7 @@
    "aliases": [],
    "last_seen": "2026-10-25",
    "binary_only": false,
-   "nsets": 45,
+   "nsets": 51,
    "ntitles": 8,
    "first_date": "2026-09-24"
   },
@@ -12592,6 +12675,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-25",
+   "aliases": [],
    "last_seen": "2026-10-25",
    "binary_only": false,
    "nsets": 2,
@@ -13592,6 +13676,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-25",
+   "aliases": [],
    "last_seen": "2026-10-25",
    "binary_only": false,
    "nsets": 6,
@@ -14775,31 +14860,6 @@
    "first_date": "2026-08-25"
   },
   {
-   "id": "jtpr:jtf1grpr",
-   "name": "jtf1grpr",
-   "source": "jtpr",
-   "source_title": "jtcores unreleased (PRs, branches)",
-   "channel": null,
-   "rbf": "jtf1grpr.rbf",
-   "repo": "jotego/jtcores",
-   "url": "https://github.com/jotego/jtcores/tree/andrea-cores/cores/f1grpr",
-   "build_date": null,
-   "status": "branch andrea-cores",
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": "F-1 Grand Prix",
-   "aliases": [
-    "ongo:f1grpr"
-   ],
-   "first_recorded": "2026-10-09",
-   "last_seen": "2026-10-25",
-   "binary_only": false,
-   "nsets": 2,
-   "ntitles": 1,
-   "first_date": "2026-09-16"
-  },
-  {
    "id": "jtpr:jtmeikyu",
    "name": "jtmeikyu",
    "source": "jtpr",
@@ -14894,31 +14954,6 @@
    "first_date": "2026-10-18"
   },
   {
-   "id": "jtpr:jtpspike",
-   "name": "jtpspike",
-   "source": "jtpr",
-   "source_title": "jtcores unreleased (PRs, branches)",
-   "channel": null,
-   "rbf": "jtpspike.rbf",
-   "repo": "jotego/jtcores",
-   "url": "https://github.com/jotego/jtcores/tree/andrea-cores/cores/pspike",
-   "build_date": null,
-   "status": "branch andrea-cores",
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": "Power Spikes, Aero Fighters / Sonic Wings, Turbo Force, Karate Blazers",
-   "aliases": [
-    "ongo:pspike"
-   ],
-   "first_recorded": "2026-10-09",
-   "last_seen": "2026-10-25",
-   "binary_only": false,
-   "nsets": 17,
-   "ntitles": 4,
-   "first_date": "2026-09-16"
-  },
-  {
    "id": "jtpr:jtseicro",
    "name": "jtseicro",
    "source": "jtpr",
@@ -14940,29 +14975,6 @@
    "nsets": 10,
    "ntitles": 3,
    "first_date": "2026-10-15"
-  },
-  {
-   "id": "jtpr:jtsysfl",
-   "name": "jtsysfl",
-   "source": "jtpr",
-   "source_title": "jtcores unreleased (PRs, branches)",
-   "channel": null,
-   "rbf": "jtsysfl.rbf",
-   "repo": "jotego/jtcores",
-   "url": "https://github.com/jotego/jtcores/tree/andrea-cores/cores/sysfl",
-   "build_date": null,
-   "status": "branch andrea-cores",
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": "Speed Racer, Final Lap R",
-   "first_recorded": "2026-10-09",
-   "aliases": [],
-   "last_seen": "2026-10-25",
-   "binary_only": false,
-   "nsets": 5,
-   "ntitles": 2,
-   "first_date": "2026-10-03"
   },
   {
    "id": "jtpr:jttaitob",
@@ -16347,6 +16359,28 @@
    "first_date": "2026-09-21"
   },
   {
+   "id": "meat:madmotor",
+   "name": "MadMotor",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "MadMotor.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-26"
+  },
+  {
    "id": "meat:mcr68",
    "name": "MCR68",
    "source": "meat",
@@ -17000,6 +17034,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-25",
+   "aliases": [],
    "last_seen": "2026-10-25",
    "binary_only": true,
    "nsets": 1,
@@ -17022,6 +17057,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-25",
+   "aliases": [],
    "last_seen": "2026-10-25",
    "binary_only": true,
    "nsets": 1,
@@ -17119,6 +17155,29 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2022-12-28"
+  },
+  {
+   "id": "ongo:f1grpr",
+   "name": "f1grpr",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "f1grpr.rbf",
+   "repo": "OngoGablogian/MiSTer_Ongo",
+   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-09",
+   "binary_only": true,
+   "nsets": 2,
+   "ntitles": 1,
+   "first_date": "2026-09-16"
   },
   {
    "id": "ongo:ikacore_cv1k",
@@ -17257,6 +17316,29 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-28"
+  },
+  {
+   "id": "ongo:pspike",
+   "name": "pspike",
+   "source": "ongo",
+   "source_title": "MiSTer_Ongo (OngoGablogian)",
+   "channel": null,
+   "rbf": "pspike.rbf",
+   "repo": "OngoGablogian/MiSTer_Ongo",
+   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-04",
+   "aliases": [],
+   "last_seen": "2026-10-09",
+   "binary_only": true,
+   "nsets": 12,
+   "ntitles": 3,
+   "first_date": "2026-09-16"
   },
   {
    "id": "ongo:punchout_test",
@@ -20987,6 +21069,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-25",
+   "aliases": [],
    "last_seen": "2026-10-25",
    "binary_only": false,
    "nsets": 0,
@@ -23644,11 +23727,13 @@
   {
    "sourcefile": "dataeast/madmotor.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 2,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 1,
+   "cores": [
+    "meat:madmotor"
+   ],
+   "first": "2026-10-26"
   },
   {
    "sourcefile": "dataeast/metlclsh.cpp",
@@ -24006,11 +24091,13 @@
   {
    "sourcefile": "excellent/aquarium.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 2,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 2,
+   "cores": [
+    "decoryah:aquarium"
+   ],
+   "first": "2026-10-25"
   },
   {
    "sourcefile": "excellent/d9final.cpp",
@@ -25435,11 +25522,13 @@
   {
    "sourcefile": "konami/hexion.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 2,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 2,
+   "cores": [
+    "decoryah:hexion"
+   ],
+   "first": "2026-10-25"
   },
   {
    "sourcefile": "konami/hornet.cpp",
@@ -27356,7 +27445,6 @@
    "sets": 5,
    "sets_covered": 5,
    "cores": [
-    "jtpr:jtsysfl",
     "xela:xnsystemfl"
    ],
    "first": "2026-09-23"
@@ -31400,7 +31488,7 @@
    "sets_covered": 4,
    "cores": [
     "jlrh:ffaerofgt",
-    "jtpr:jtpspike"
+    "ongo:pspike"
    ],
    "first": "2026-09-15"
   },
@@ -31420,7 +31508,7 @@
    "sets": 3,
    "sets_covered": 2,
    "cores": [
-    "jtpr:jtf1grpr"
+    "ongo:f1grpr"
    ],
    "first": "2026-09-16"
   },
@@ -31465,9 +31553,9 @@
    "titles": 6,
    "covered": 3,
    "sets": 26,
-   "sets_covered": 14,
+   "sets_covered": 13,
    "cores": [
-    "jtpr:jtpspike",
+    "ongo:pspike",
     "repo:powerspikes"
    ],
    "first": "2026-09-16"
@@ -31526,7 +31614,7 @@
    "titles": 5,
    "covered": 5,
    "sets": 45,
-   "sets_covered": 16,
+   "sets_covered": 21,
    "cores": [
     "blahm1d:blahm1d_tunit",
     "blahm1d:blahm1d_tunitdcs",
@@ -31576,7 +31664,7 @@
    "titles": 9,
    "covered": 9,
    "sets": 42,
-   "sets_covered": 41,
+   "sets_covered": 42,
    "cores": [
     "blahm1d:blahm1d_narc",
     "blahm1d:blahm1d_yunit",

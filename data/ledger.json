@@ -6,15 +6,6 @@
 {
 "date": "2026-10-11",
 "note": "alamone 2026-10-05",
-"cores": 1,
-"sets": 25,
-"pairs": 25,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
-"date": "2026-10-11",
-"note": "alamone 2026-10-05",
 "cores": 0,
 "sets": 0,
 "pairs": 0,
@@ -461,6 +452,15 @@
 "pairs": 65,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-25",
+"note": "alamone 2026-10-19",
+"cores": 5,
+"sets": 14,
+"pairs": 22,
+"dates_improved": 0,
+"cores_removed": 3
 }
 ]
 },
@@ -503,6 +503,24 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-10-25"
+},
+"asturur:jtroundu": {
+"id": "asturur:jtroundu",
+"name": "jtroundu",
+"source": "asturur",
+"source_title": "asturur",
+"channel": null,
+"rbf": "jtroundu.rbf",
+"repo": "asturur/Mister-cores",
+"url": "https://github.com/asturur/Mister-cores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 },
 "bazset:aqua_jack": {
@@ -2483,6 +2501,24 @@
 "aliases": [],
 "last_seen": "2026-10-25"
 },
+"decoryah:aquarium": {
+"id": "decoryah:aquarium",
+"name": "aquarium",
+"source": "decoryah",
+"source_title": "decoryah",
+"channel": null,
+"rbf": "aquarium.rbf",
+"repo": "decoryah/Arcade-Aquarium_MiSTer",
+"url": "https://github.com/decoryah/Arcade-Aquarium_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
 "decoryah:arcadiasystems": {
 "id": "decoryah:arcadiasystems",
 "name": "arcadiasystems",
@@ -2580,6 +2616,24 @@
 "note": null,
 "first_recorded": "2026-10-17",
 "aliases": [],
+"last_seen": "2026-10-25"
+},
+"decoryah:hexion": {
+"id": "decoryah:hexion",
+"name": "hexion",
+"source": "decoryah",
+"source_title": "decoryah",
+"channel": null,
+"rbf": "hexion.rbf",
+"repo": "decoryah/Arcade-Hexion_MiSTer",
+"url": "https://github.com/decoryah/Arcade-Hexion_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 },
 "decoryah:jchan": {
@@ -8368,6 +8422,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-25",
+"aliases": [],
 "last_seen": "2026-10-25"
 },
 "jt:jtbiocom": {
@@ -9208,6 +9263,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-25",
+"aliases": [],
 "last_seen": "2026-10-25"
 },
 "jt:jtngp": {
@@ -10198,27 +10254,6 @@
 "aliases": [],
 "last_seen": "2026-10-25"
 },
-"jtpr:jtf1grpr": {
-"id": "jtpr:jtf1grpr",
-"name": "jtf1grpr",
-"source": "jtpr",
-"source_title": "jtcores unreleased (PRs, branches)",
-"channel": null,
-"rbf": "jtf1grpr.rbf",
-"repo": "jotego/jtcores",
-"url": "https://github.com/jotego/jtcores/tree/andrea-cores/cores/f1grpr",
-"build_date": null,
-"status": "branch andrea-cores",
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": "F-1 Grand Prix",
-"aliases": [
-"ongo:f1grpr"
-],
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25"
-},
 "jtpr:jtmeikyu": {
 "id": "jtpr:jtmeikyu",
 "name": "jtmeikyu",
@@ -10297,27 +10332,6 @@
 "aliases": [],
 "last_seen": "2026-10-25"
 },
-"jtpr:jtpspike": {
-"id": "jtpr:jtpspike",
-"name": "jtpspike",
-"source": "jtpr",
-"source_title": "jtcores unreleased (PRs, branches)",
-"channel": null,
-"rbf": "jtpspike.rbf",
-"repo": "jotego/jtcores",
-"url": "https://github.com/jotego/jtcores/tree/andrea-cores/cores/pspike",
-"build_date": null,
-"status": "branch andrea-cores",
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": "Power Spikes, Aero Fighters / Sonic Wings, Turbo Force, Karate Blazers",
-"aliases": [
-"ongo:pspike"
-],
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25"
-},
 "jtpr:jtseicro": {
 "id": "jtpr:jtseicro",
 "name": "jtseicro",
@@ -10334,25 +10348,6 @@
 "mame_drivers": [],
 "note": "feat(): Seicross - Radical Radial - Frisky tom",
 "first_recorded": "2026-10-18",
-"aliases": [],
-"last_seen": "2026-10-25"
-},
-"jtpr:jtsysfl": {
-"id": "jtpr:jtsysfl",
-"name": "jtsysfl",
-"source": "jtpr",
-"source_title": "jtcores unreleased (PRs, branches)",
-"channel": null,
-"rbf": "jtsysfl.rbf",
-"repo": "jotego/jtcores",
-"url": "https://github.com/jotego/jtcores/tree/andrea-cores/cores/sysfl",
-"build_date": null,
-"status": "branch andrea-cores",
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": "Speed Racer, Final Lap R",
-"first_recorded": "2026-10-09",
 "aliases": [],
 "last_seen": "2026-10-25"
 },
@@ -11518,6 +11513,24 @@
 "aliases": [],
 "last_seen": "2026-10-25"
 },
+"meat:madmotor": {
+"id": "meat:madmotor",
+"name": "MadMotor",
+"source": "meat",
+"source_title": "MeatCores (meathax)",
+"channel": null,
+"rbf": "MadMotor.rbf",
+"repo": "meathax/meatcores",
+"url": "https://github.com/meathax/meatcores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
 "meat:mcr68": {
 "id": "meat:mcr68",
 "name": "Arcade-MCR68",
@@ -12201,6 +12214,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-25",
+"aliases": [],
 "last_seen": "2026-10-25"
 },
 "ongo:bazset_aquajack": {
@@ -12371,6 +12385,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-25",
+"aliases": [],
 "last_seen": "2026-10-25"
 },
 "ongo:bazset_juezhantianhuang": {
@@ -12465,6 +12480,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-25",
+"aliases": [],
 "last_seen": "2026-10-25"
 },
 "ongo:bazset_pushman": {
@@ -13777,6 +13793,24 @@
 "first_recorded": "2026-10-04",
 "aliases": [],
 "last_seen": "2026-10-18"
+},
+"ongo:madmotor": {
+"id": "ongo:madmotor",
+"name": "MadMotor",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "MadMotor.rbf",
+"repo": "meathax/meatcores",
+"url": "https://github.com/meathax/meatcores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 },
 "ongo:mazeofflott_bazset": {
 "id": "ongo:mazeofflott_bazset",
@@ -18327,6 +18361,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-25",
+"aliases": [],
 "last_seen": "2026-10-25"
 },
 "tomsvr:tomsvr_missb": {
@@ -20644,19 +20679,6 @@
 }
 },
 "aerofgtb": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Aero Fighters/Aero Fighters (Taiwan - Japan, set 1).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/_alternatives/_Aero Fighters/Aero Fighters (Taiwan - Japan, set 1).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -20671,19 +20693,6 @@
 }
 },
 "aerofgtc": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Aero Fighters/Aero Fighters (Taiwan - Japan, set 2).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/_alternatives/_Aero Fighters/Aero Fighters (Taiwan - Japan, set 2).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -23231,6 +23240,36 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Clockwork Aquario (prototype).mra"
+}
+},
+"aquarium": {
+"decoryah:aquarium": {
+"core": "decoryah:aquarium",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-Aquarium_MiSTer",
+"first_path": "mra/Aquarium (US).mra",
+"mra": "_Arcade/Aquarium (US).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+}
+},
+"aquariumj": {
+"decoryah:aquarium": {
+"core": "decoryah:aquarium",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-Aquarium_MiSTer",
+"first_path": "mra/_alternatives/_Aquarium/Aquarium (Japan).mra",
+"mra": "_Arcade/Aquarium (Japan).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "aquarush": {
@@ -53052,19 +53091,6 @@
 }
 },
 "f1gp": {
-"jtpr:jtf1grpr": {
-"core": "jtpr:jtf1grpr",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/F-1 Grand Prix (set 1).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/F-1 Grand Prix (set 1).mra"
-},
 "ongo:f1grpr": {
 "core": "ongo:f1grpr",
 "date": "2026-09-16",
@@ -53079,19 +53105,6 @@
 }
 },
 "f1gpa": {
-"jtpr:jtf1grpr": {
-"core": "jtpr:jtf1grpr",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_F-1 Grand Prix/F-1 Grand Prix (set 2).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/_alternatives/_F-1 Grand Prix/F-1 Grand Prix (set 2).mra"
-},
 "ongo:f1grpr": {
 "core": "ongo:f1grpr",
 "date": "2026-09-16",
@@ -54397,18 +54410,6 @@
 }
 },
 "finalapr": {
-"jtpr:jtsysfl": {
-"core": "jtpr:jtsysfl",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25"
-},
 "ongo:xnsystemfl": {
 "core": "ongo:xnsystemfl",
 "date": "2026-09-23",
@@ -54437,18 +54438,6 @@
 }
 },
 "finalapr1": {
-"jtpr:jtsysfl": {
-"core": "jtpr:jtsysfl",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25"
-},
 "ongo:xnsystemfl": {
 "core": "ongo:xnsystemfl",
 "date": "2026-09-23",
@@ -54477,18 +54466,6 @@
 }
 },
 "finalaprj": {
-"jtpr:jtsysfl": {
-"core": "jtpr:jtsysfl",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25"
-},
 "ongo:xnsystemfl": {
 "core": "ongo:xnsystemfl",
 "date": "2026-09-23",
@@ -54517,18 +54494,6 @@
 }
 },
 "finalaprj1": {
-"jtpr:jtsysfl": {
-"core": "jtpr:jtsysfl",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25"
-},
 "ongo:xnsystemfl": {
 "core": "ongo:xnsystemfl",
 "date": "2026-09-23",
@@ -66505,6 +66470,36 @@
 "last_seen": "2026-10-25"
 }
 },
+"hexion": {
+"decoryah:hexion": {
+"core": "decoryah:hexion",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-Hexion_MiSTer",
+"first_path": "mra/Hexion (Japan ver JAB).mra",
+"mra": "_Arcade/Hexion (Japan ver JAB).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+}
+},
+"hexionb": {
+"decoryah:hexion": {
+"core": "decoryah:hexion",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-Hexion_MiSTer",
+"first_path": "mra/_alternatives/_Hexion/Hexion (Asia ver AAA, bootleg).mra",
+"mra": "_Arcade/Hexion (Asia ver AAA, bootleg).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+}
+},
 "hexpool": {
 "dist:galaxian": {
 "core": "dist:galaxian",
@@ -73290,19 +73285,6 @@
 }
 },
 "karatblz": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Karate Blazers (World, set 1).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/Karate Blazers (World, set 1).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -73317,19 +73299,6 @@
 }
 },
 "karatblza": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Karate Blazers/Karate Blazers (World, set 2).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/_alternatives/_Karate Blazers/Karate Blazers (World, set 2).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -73344,19 +73313,6 @@
 }
 },
 "karatblzj": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Karate Blazers/Toushin Blazers (Japan, Tecmo license).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/_alternatives/_Karate Blazers/Toushin Blazers (Japan, Tecmo license).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -73371,19 +73327,6 @@
 }
 },
 "karatblzt": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Karate Blazers/Karate Blazers (World, Tecmo license).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/_alternatives/_Karate Blazers/Karate Blazers (World, Tecmo license).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -73398,19 +73341,6 @@
 }
 },
 "karatblzu": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Karate Blazers/Karate Blazers (US).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/_alternatives/_Karate Blazers/Karate Blazers (US).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -80539,6 +80469,34 @@
 "last_seen": "2026-10-25"
 }
 },
+"madmotor": {
+"meat:madmotor": {
+"core": "meat:madmotor",
+"date": "2026-10-26",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Mad Motor (prototype).mra",
+"mra": "_Arcade/_MeatCores/Mad Motor (prototype).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"ongo:madmotor": {
+"core": "ongo:madmotor",
+"date": "2026-10-26",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_MeatCores/Mad Motor (prototype).mra",
+"mra": "_Arcade/_MeatCores/Mad Motor (prototype).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+}
+},
 "madshark": {
 "ppriest:seta": {
 "core": "ppriest:seta",
@@ -82403,6 +82361,34 @@
 "first_repo": "MiSTer-devel/Arcade-SpaceInvaders_MiSTer",
 "first_path": "releases/Amazing Maze.mra",
 "first_recorded": "2026-10-05",
+"last_seen": "2026-10-25"
+}
+},
+"mazebl": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+"first_path": "mra/_alternatives/_Trog/Maze (Trog rev LA4 3-11-91 bootleg).mra",
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Trog/Maze (Trog rev LA4 3-11-91 bootleg).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"ongo:midway-y-unit": {
+"core": "ongo:midway-y-unit",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+"first_path": "mra/_alternatives/_Trog/Maze (Trog rev LA4 3-11-91 bootleg).mra",
+"mra": "_Arcade/Maze (Trog rev LA4 3-11-91 bootleg).mra",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -84921,6 +84907,34 @@
 "last_seen": "2026-10-25"
 }
 },
+"mkla3bl": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+"first_path": "mra/_alternatives/_Mortal Kombat/Mortal Kombat (Victor bootleg of rev 3.0 08-31-92).mra",
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (Victor bootleg of rev 3.0 08-31-92).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"ongo:midway-y-unit": {
+"core": "ongo:midway-y-unit",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+"first_path": "mra/_alternatives/_Mortal Kombat/Mortal Kombat (Victor bootleg of rev 3.0 08-31-92).mra",
+"mra": "_Arcade/Mortal Kombat (Victor bootleg of rev 3.0 08-31-92).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+}
+},
 "mkla4": {
 "blahm1d:blahm1d_yunitadpcm": {
 "core": "blahm1d:blahm1d_yunitadpcm",
@@ -85192,6 +85206,146 @@
 "first_path": "mra/_alternatives/_Mortal Kombat/Mortal Kombat (prototype, rev 9.0 07-28-92).mra",
 "mra": "_Arcade/Mortal Kombat (prototype, rev 9.0 07-28-92).mra",
 "first_recorded": "2026-10-23",
+"last_seen": "2026-10-25"
+}
+},
+"mkrep": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+"first_path": "mra/_alternatives/_Mortal Kombat/Mortal Kombat (Reptile Man hack).mra",
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (Reptile Man hack).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"ongo:midway-y-unit": {
+"core": "ongo:midway-y-unit",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+"first_path": "mra/_alternatives/_Mortal Kombat/Mortal Kombat (Reptile Man hack).mra",
+"mra": "_Arcade/Mortal Kombat (Reptile Man hack).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+}
+},
+"mkyawdim": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+"first_path": "mra/_alternatives/_Mortal Kombat/Mortal Kombat (Yawdim bootleg, set 1).mra",
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (Yawdim bootleg, set 1).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"ongo:midway-y-unit": {
+"core": "ongo:midway-y-unit",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+"first_path": "mra/_alternatives/_Mortal Kombat/Mortal Kombat (Yawdim bootleg, set 1).mra",
+"mra": "_Arcade/Mortal Kombat (Yawdim bootleg, set 1).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+}
+},
+"mkyawdim2": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+"first_path": "mra/_alternatives/_Mortal Kombat/Mortal Kombat (Yawdim bootleg, set 2).mra",
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (Yawdim bootleg, set 2).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"ongo:midway-y-unit": {
+"core": "ongo:midway-y-unit",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+"first_path": "mra/_alternatives/_Mortal Kombat/Mortal Kombat (Yawdim bootleg, set 2).mra",
+"mra": "_Arcade/Mortal Kombat (Yawdim bootleg, set 2).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+}
+},
+"mkyawdim3": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+"first_path": "mra/_alternatives/_Mortal Kombat/Mortal Kombat (Yawdim bootleg, set 3).mra",
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (Yawdim bootleg, set 3).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"ongo:midway-y-unit": {
+"core": "ongo:midway-y-unit",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+"first_path": "mra/_alternatives/_Mortal Kombat/Mortal Kombat (Yawdim bootleg, set 3).mra",
+"mra": "_Arcade/Mortal Kombat (Yawdim bootleg, set 3).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+}
+},
+"mkyawdim4": {
+"gm0rk:midway-y-unit": {
+"core": "gm0rk:midway-y-unit",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "gm0rk",
+"wip": false,
+"alt": true,
+"first_repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+"first_path": "mra/_alternatives/_Mortal Kombat/Mortal Kombat (Yawdim bootleg, set 4).mra",
+"mra": "_Arcade/_Gm0rkCores/_alternatives/_Mortal Kombat/Mortal Kombat (Yawdim bootleg, set 4).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"ongo:midway-y-unit": {
+"core": "ongo:midway-y-unit",
+"date": "2026-10-25",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+"first_path": "mra/_alternatives/_Mortal Kombat/Mortal Kombat (Yawdim bootleg, set 4).mra",
+"mra": "_Arcade/Mortal Kombat (Yawdim bootleg, set 4).mra",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -101571,7 +101725,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_Nintendo PlayChoice-10/PlayChoice-10 BIOS.mra",
-"mra": "_Arcade/1942 (PlayChoice-10).mra",
+"mra": "_Arcade/PlayChoice-10 (three channels).mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-10-25"
 }
@@ -104478,19 +104632,6 @@
 }
 },
 "pspikes": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Power Spikes (World).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/Power Spikes (World).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -104532,19 +104673,6 @@
 }
 },
 "pspikesk": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Power Spikes/Power Spikes (Korea).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/_alternatives/_Power Spikes/Power Spikes (Korea).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -104572,19 +104700,6 @@
 }
 },
 "pspikesu": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Power Spikes/Power Spikes (US).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/_alternatives/_Power Spikes/Power Spikes (US).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -113290,6 +113405,21 @@
 "first_path": "releases/Round-Up (Amenip-Centuri, roundup).mra",
 "mra": "_Arcade/Round-Up (Amenip-Centuri, roundup).mra",
 "first_recorded": "2026-10-12",
+"last_seen": "2026-10-25"
+}
+},
+"roundup5": {
+"asturur:jtroundu": {
+"core": "asturur:jtroundu",
+"date": "2026-10-25",
+"date_quality": "observed",
+"via": "asturur",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Round Up 5 - Super Delta Force.mra",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -126344,19 +126474,6 @@
 }
 },
 "sonicwi": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Aero Fighters/Sonic Wings (Japan).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/_alternatives/_Aero Fighters/Sonic Wings (Japan).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -128478,18 +128595,6 @@
 }
 },
 "speedrcr": {
-"jtpr:jtsysfl": {
-"core": "jtpr:jtsysfl",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25"
-},
 "ongo:xnsystemfl": {
 "core": "ongo:xnsystemfl",
 "date": "2026-09-23",
@@ -134145,19 +134250,6 @@
 }
 },
 "svolly91": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Power Spikes/Super Volley '91 (Japan).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/_alternatives/_Power Spikes/Super Volley '91 (Japan).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -143071,19 +143163,6 @@
 }
 },
 "turbofrc": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Turbo Force (World, set 1).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/Turbo Force (World, set 1).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -143097,34 +143176,7 @@
 "last_seen": "2026-10-09"
 }
 },
-"turbofrcj": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-10-03",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "tree/andrea-cores",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25"
-}
-},
 "turbofrco": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Turbo Force/Turbo Force (World, set 2).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/_alternatives/_Turbo Force/Turbo Force (World, set 2).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -143139,19 +143191,6 @@
 }
 },
 "turbofrcu": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Turbo Force/Turbo Force (US, set 1).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/_alternatives/_Turbo Force/Turbo Force (US, set 1).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -143166,19 +143205,6 @@
 }
 },
 "turbofrcua": {
-"jtpr:jtpspike": {
-"core": "jtpr:jtpspike",
-"date": "2026-09-16",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Turbo Force/Turbo Force (US, set 2).mra",
-"first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
-"mra": "_Arcade/_alternatives/_Turbo Force/Turbo Force (US, set 2).mra"
-},
 "ongo:pspike": {
 "core": "ongo:pspike",
 "date": "2026-09-16",
@@ -160193,6 +160219,10 @@
 "ongo": "Arcade",
 "kuze": "Arcade"
 },
+"madmotor": {
+"ongo": "Beat em up",
+"meat": "Beat em up"
+},
 "madshark": {
 "ongo": "Arcade",
 "repo": "Arcade",
@@ -160367,6 +160397,10 @@
 "maze": {
 "dist": "Maze",
 "repo": "Shooter"
+},
+"mazebl": {
+"ongo": "Maze / Collect",
+"gm0rk": "Maze / Collect"
 },
 "mazeinv": {
 "repo": "Shooter"
@@ -160544,6 +160578,10 @@
 "gm0rk": "Fighter / Versus",
 "ongo": "Fighter / Versus"
 },
+"mkla3bl": {
+"ongo": "Fighter / Versus",
+"gm0rk": "Fighter / Versus"
+},
 "mkla4": {
 "gm0rk": "Fighter / Versus",
 "ongo": "Fighter / Versus"
@@ -160567,6 +160605,26 @@
 "mkprot9": {
 "gm0rk": "Fighter / Versus",
 "ongo": "Fighter / Versus"
+},
+"mkrep": {
+"ongo": "Fighter / Versus",
+"gm0rk": "Fighter / Versus"
+},
+"mkyawdim": {
+"ongo": "Fighter / Versus",
+"gm0rk": "Fighter / Versus"
+},
+"mkyawdim2": {
+"ongo": "Fighter / Versus",
+"gm0rk": "Fighter / Versus"
+},
+"mkyawdim3": {
+"ongo": "Fighter / Versus",
+"gm0rk": "Fighter / Versus"
+},
+"mkyawdim4": {
+"ongo": "Fighter / Versus",
+"gm0rk": "Fighter / Versus"
 },
 "mkyturbo": {
 "gm0rk": "Fighter / Versus",

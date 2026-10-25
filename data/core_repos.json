@@ -231,6 +231,9 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA",
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "decoryah:aquarium": [
+  "decoryah/Arcade-Aquarium_MiSTer"
+ ],
  "decoryah:arcadiasystems": [
   "decoryah/Arcade-ArcadiaSystems_MiSTer"
  ],
@@ -245,6 +248,9 @@
  ],
  "decoryah:heavyunit": [
   "decoryah/Arcade-HeavyUnit_MiSTer"
+ ],
+ "decoryah:hexion": [
+  "decoryah/Arcade-Hexion_MiSTer"
  ],
  "decoryah:jchan": [
   "decoryah/Arcade-JackieChan_MiSTer"
@@ -2324,6 +2330,9 @@
  "ongo:madgear": [
   "OngoGablogian/MiSTer_Ongo",
   "fiermanb/LastDuel-MadGear_MiSTer"
+ ],
+ "ongo:madmotor": [
+  "meathax/meatcores"
  ],
  "ongo:mazeofflott_bazset": [
   "bazset/MiSTer_BAZSET"
