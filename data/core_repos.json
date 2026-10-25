@@ -3164,5 +3164,29 @@
  "xela:zn2capcom": [
   "OngoGablogian/MiSTer_Ongo",
   "XelaNotPu/ZN2-Capcom_MiSTer"
+ ],
+ "yaguboo:heavysmash": [
+  "yaguboo/Arcade-HeavySmash_MiSTer"
+ ],
+ "yaguboo:konamigx": [
+  "yaguboo/Arcade-KonamiGX_MiSTer"
+ ],
+ "yaguboo:namcona2": [
+  "yaguboo/Arcade-NamcoNA2_MiSTer"
+ ],
+ "yaguboo:powerins": [
+  "yaguboo/Arcade-PowerInstinct_MiSTer"
+ ],
+ "yaguboo:powerspikes": [
+  "yaguboo/Arcade-PowerSpikes_MiSTer"
+ ],
+ "yaguboo:shadowforce": [
+  "yaguboo/Arcade-ShadowForce_MiSTer"
+ ],
+ "yaguboo:stadiumhero": [
+  "yaguboo/Arcade-StadiumHero_MiSTer"
+ ],
+ "yaguboo:superslams": [
+  "yaguboo/Arcade-SuperSlams_MiSTer"
  ]
 }

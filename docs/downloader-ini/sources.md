@@ -2,14 +2,14 @@
 
 Databases to add to get the source-available AI-assisted arcade cores, from developers who are willing to fix reported bugs
 
-Last checked 2026-10-25 20:13 UTC.
+Last checked 2026-10-25 21:13 UTC.
 
 **Don't use both these and [MiSTer_Ongo](https://github.com/OngoGablogian/MiSTer_Ongo):** they overlap heavily (it republishes many of the same cores).
 
 | Database | db_id | Status |
 |---|---|---|
+| [Andrea Bogazzi (asturur)](https://github.com/asturur/Mister-cores) | asturur/Mister-cores | ok |
 | [arcfpga (bmo00)](https://github.com/bmo00/arcfpga-mister-db) | bmo00/arcfpga-mister-db | ok |
-| [asturur (Mister-cores)](https://github.com/asturur/Mister-cores) | asturur/Mister-cores | ok |
 | [bazset (MiSTer_BAZSET)](https://github.com/bazset/MiSTer_BAZSET) | bazset/MiSTer_BAZSET | ok |
 | [decoryah](https://github.com/decoryah/MiSTer_decoryah) | decoryah/MiSTer_decoryah | ok |
 | [Gm0rkCores (Gm0rk)](https://github.com/Gm0rk/Gm0rkCores) | Gm0rk/Gm0rkCores | ok |

@@ -4,15 +4,6 @@
 "updated": "2026-10-25",
 "runs": [
 {
-"date": "2026-10-13",
-"note": "alamone 2026-10-12",
-"cores": 7,
-"sets": 42,
-"pairs": 95,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
 "date": "2026-10-14",
 "note": "alamone 2026-10-12",
 "cores": 9,
@@ -461,6 +452,15 @@
 "pairs": 24,
 "dates_improved": 0,
 "cores_removed": 3
+},
+{
+"date": "2026-10-25",
+"note": "alamone 2026-10-19",
+"cores": 9,
+"sets": 1,
+"pairs": 82,
+"dates_improved": 0,
+"cores_removed": 7
 }
 ]
 },
@@ -509,7 +509,7 @@
 "id": "asturur:jtf1grpr",
 "name": "jtf1grpr",
 "source": "asturur",
-"source_title": "asturur",
+"source_title": "Andrea Bogazzi (asturur)",
 "channel": null,
 "rbf": "jtf1grpr.rbf",
 "repo": "asturur/Mister-cores",
@@ -521,13 +521,14 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-25",
+"aliases": [],
 "last_seen": "2026-10-25"
 },
 "asturur:jtpspike": {
 "id": "asturur:jtpspike",
 "name": "jtpspike",
 "source": "asturur",
-"source_title": "asturur",
+"source_title": "Andrea Bogazzi (asturur)",
 "channel": null,
 "rbf": "jtpspike.rbf",
 "repo": "asturur/Mister-cores",
@@ -539,13 +540,14 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-25",
+"aliases": [],
 "last_seen": "2026-10-25"
 },
 "asturur:jtroundu": {
 "id": "asturur:jtroundu",
 "name": "jtroundu",
 "source": "asturur",
-"source_title": "asturur",
+"source_title": "Andrea Bogazzi (asturur)",
 "channel": null,
 "rbf": "jtroundu.rbf",
 "repo": "asturur/Mister-cores",
@@ -564,7 +566,7 @@
 "id": "asturur:jtsysfl",
 "name": "jtsysfl",
 "source": "asturur",
-"source_title": "asturur",
+"source_title": "Andrea Bogazzi (asturur)",
 "channel": null,
 "rbf": "jtsysfl.rbf",
 "repo": "asturur/Mister-cores",
@@ -576,6 +578,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-25",
+"aliases": [],
 "last_seen": "2026-10-25"
 },
 "bazset:aqua_jack": {
@@ -16436,27 +16439,6 @@
 "aliases": [],
 "last_seen": "2026-10-25"
 },
-"repo:heavysmash": {
-"id": "repo:heavysmash",
-"name": "HeavySmash (yaguboo)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "HeavySmash.rbf",
-"repo": "yaguboo/Arcade-HeavySmash_MiSTer",
-"url": "https://github.com/yaguboo/Arcade-HeavySmash_MiSTer",
-"build_date": "2026-10-07",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 24,
-"mame_drivers": [
-"dataeast/hvysmsh.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-12",
-"aliases": [],
-"last_seen": "2026-10-25"
-},
 "repo:intrepid": {
 "id": "repo:intrepid",
 "name": "Arcade-Intrepid (harlock74)",
@@ -16601,6 +16583,26 @@
 "first_recorded": "2026-10-19",
 "aliases": [],
 "last_seen": "2026-10-23"
+},
+"repo:konamigx": {
+"id": "repo:konamigx",
+"name": "Arcade-KonamiGX (ppriest)",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": "repository only",
+"rbf": "Arcade-KonamiGX_20261013.rbf",
+"repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
+"build_date": "2026-10-13",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 29,
+"mame_drivers": [
+"konami/konamigx.cpp"
+],
+"note": null,
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 },
 "repo:lastduel": {
 "id": "repo:lastduel",
@@ -16806,27 +16808,6 @@
 "aliases": [],
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"id": "repo:namcona2",
-"name": "NamcoNA2 (yaguboo)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "NamcoNA2.rbf",
-"repo": "yaguboo/Arcade-NamcoNA2_MiSTer",
-"url": "https://github.com/yaguboo/Arcade-NamcoNA2_MiSTer",
-"build_date": "2026-10-15",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 25,
-"mame_drivers": [
-"namco/namcona1.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-12",
-"aliases": [],
-"last_seen": "2026-10-25"
-},
 "repo:outrunners": {
 "id": "repo:outrunners",
 "name": "outrunners",
@@ -16883,48 +16864,6 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-10-25"
-},
-"repo:powerins": {
-"id": "repo:powerins",
-"name": "PowerIns (yaguboo)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "PowerIns.rbf",
-"repo": "yaguboo/Arcade-PowerInstinct_MiSTer",
-"url": "https://github.com/yaguboo/Arcade-PowerInstinct_MiSTer",
-"build_date": "2026-10-08",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 34,
-"mame_drivers": [
-"nmk/nmk16.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-12",
-"aliases": [],
-"last_seen": "2026-10-25"
-},
-"repo:powerspikes": {
-"id": "repo:powerspikes",
-"name": "PowerSpikes (yaguboo)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "PowerSpikes.rbf",
-"repo": "yaguboo/Arcade-PowerSpikes_MiSTer",
-"url": "https://github.com/yaguboo/Arcade-PowerSpikes_MiSTer",
-"build_date": "2026-10-08",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 21,
-"mame_drivers": [
-"vsystem/pspikes.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-12",
 "aliases": [],
 "last_seen": "2026-10-25"
 },
@@ -17272,27 +17211,6 @@
 "aliases": [],
 "last_seen": "2026-10-25"
 },
-"repo:shadowforce": {
-"id": "repo:shadowforce",
-"name": "ShadowForce (yaguboo)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "ShadowForce.rbf",
-"repo": "yaguboo/Arcade-ShadowForce_MiSTer",
-"url": "https://github.com/yaguboo/Arcade-ShadowForce_MiSTer",
-"build_date": "2026-10-08",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 28,
-"mame_drivers": [
-"technos/shadfrce.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-12",
-"aliases": [],
-"last_seen": "2026-10-25"
-},
 "repo:skns": {
 "id": "repo:skns",
 "name": "Arcade-SKNS (srg320)",
@@ -17355,27 +17273,6 @@
 ],
 "note": null,
 "first_recorded": "2026-10-05",
-"aliases": [],
-"last_seen": "2026-10-25"
-},
-"repo:stadiumhero": {
-"id": "repo:stadiumhero",
-"name": "StadiumHero (yaguboo)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "StadiumHero.rbf",
-"repo": "yaguboo/Arcade-StadiumHero_MiSTer",
-"url": "https://github.com/yaguboo/Arcade-StadiumHero_MiSTer",
-"build_date": "2026-10-08",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 26,
-"mame_drivers": [
-"dataeast/stadhero.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
 "aliases": [],
 "last_seen": "2026-10-25"
 },
@@ -17507,27 +17404,6 @@
 "first_recorded": "2026-10-04",
 "aliases": [],
 "last_seen": "2026-10-04"
-},
-"repo:superslams": {
-"id": "repo:superslams",
-"name": "SuperSlams (yaguboo)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "SuperSlams.rbf",
-"repo": "yaguboo/Arcade-SuperSlams_MiSTer",
-"url": "https://github.com/yaguboo/Arcade-SuperSlams_MiSTer",
-"build_date": "2026-10-16",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 30,
-"mame_drivers": [
-"vsystem/suprslam.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
-"aliases": [],
-"last_seen": "2026-10-25"
 },
 "repo:systemc2": {
 "id": "repo:systemc2",
@@ -19018,6 +18894,169 @@
 "note": null,
 "first_recorded": "2026-10-15",
 "aliases": [],
+"last_seen": "2026-10-25"
+},
+"yaguboo:heavysmash": {
+"id": "yaguboo:heavysmash",
+"name": "HeavySmash (yaguboo)",
+"source": "yaguboo",
+"source_title": "yaguboo (GitHub repositories)",
+"channel": "repository only",
+"rbf": "HeavySmash.rbf",
+"repo": "yaguboo/Arcade-HeavySmash_MiSTer",
+"url": "https://github.com/yaguboo/Arcade-HeavySmash_MiSTer",
+"build_date": "2026-10-07",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 24,
+"mame_drivers": [
+"dataeast/hvysmsh.cpp"
+],
+"note": null,
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"id": "yaguboo:konamigx",
+"name": "KonamiGX (yaguboo)",
+"source": "yaguboo",
+"source_title": "yaguboo (GitHub repositories)",
+"channel": "repository only",
+"rbf": "KonamiGX.rbf",
+"repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"url": "https://github.com/yaguboo/Arcade-KonamiGX_MiSTer",
+"build_date": "2026-10-08",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 29,
+"mame_drivers": [
+"konami/konamigx.cpp"
+],
+"note": null,
+"aliases": [
+"ppriest:konamigx"
+],
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:namcona2": {
+"id": "yaguboo:namcona2",
+"name": "NamcoNA2 (yaguboo)",
+"source": "yaguboo",
+"source_title": "yaguboo (GitHub repositories)",
+"channel": "repository only",
+"rbf": "NamcoNA2.rbf",
+"repo": "yaguboo/Arcade-NamcoNA2_MiSTer",
+"url": "https://github.com/yaguboo/Arcade-NamcoNA2_MiSTer",
+"build_date": "2026-10-15",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 25,
+"mame_drivers": [
+"namco/namcona1.cpp"
+],
+"note": null,
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:powerins": {
+"id": "yaguboo:powerins",
+"name": "PowerIns (yaguboo)",
+"source": "yaguboo",
+"source_title": "yaguboo (GitHub repositories)",
+"channel": "repository only",
+"rbf": "PowerIns.rbf",
+"repo": "yaguboo/Arcade-PowerInstinct_MiSTer",
+"url": "https://github.com/yaguboo/Arcade-PowerInstinct_MiSTer",
+"build_date": "2026-10-08",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 34,
+"mame_drivers": [
+"nmk/nmk16.cpp"
+],
+"note": null,
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:powerspikes": {
+"id": "yaguboo:powerspikes",
+"name": "PowerSpikes (yaguboo)",
+"source": "yaguboo",
+"source_title": "yaguboo (GitHub repositories)",
+"channel": "repository only",
+"rbf": "PowerSpikes.rbf",
+"repo": "yaguboo/Arcade-PowerSpikes_MiSTer",
+"url": "https://github.com/yaguboo/Arcade-PowerSpikes_MiSTer",
+"build_date": "2026-10-08",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 21,
+"mame_drivers": [
+"vsystem/pspikes.cpp"
+],
+"note": null,
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:shadowforce": {
+"id": "yaguboo:shadowforce",
+"name": "ShadowForce (yaguboo)",
+"source": "yaguboo",
+"source_title": "yaguboo (GitHub repositories)",
+"channel": "repository only",
+"rbf": "ShadowForce.rbf",
+"repo": "yaguboo/Arcade-ShadowForce_MiSTer",
+"url": "https://github.com/yaguboo/Arcade-ShadowForce_MiSTer",
+"build_date": "2026-10-08",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 28,
+"mame_drivers": [
+"technos/shadfrce.cpp"
+],
+"note": null,
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:stadiumhero": {
+"id": "yaguboo:stadiumhero",
+"name": "StadiumHero (yaguboo)",
+"source": "yaguboo",
+"source_title": "yaguboo (GitHub repositories)",
+"channel": "repository only",
+"rbf": "StadiumHero.rbf",
+"repo": "yaguboo/Arcade-StadiumHero_MiSTer",
+"url": "https://github.com/yaguboo/Arcade-StadiumHero_MiSTer",
+"build_date": "2026-10-08",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 26,
+"mame_drivers": [
+"dataeast/stadhero.cpp"
+],
+"note": null,
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:superslams": {
+"id": "yaguboo:superslams",
+"name": "SuperSlams (yaguboo)",
+"source": "yaguboo",
+"source_title": "yaguboo (GitHub repositories)",
+"channel": "repository only",
+"rbf": "SuperSlams.rbf",
+"repo": "yaguboo/Arcade-SuperSlams_MiSTer",
+"url": "https://github.com/yaguboo/Arcade-SuperSlams_MiSTer",
+"build_date": "2026-10-16",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 30,
+"mame_drivers": [
+"vsystem/suprslam.cpp"
+],
+"note": null,
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -29098,17 +29137,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Bakuretsu Quiz Ma-Q Dai Bouken (Japan).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/Bakuretsu Quiz Ma-Q Dai Bouken (Japan).mra",
 "mra": "_Arcade/Bakuretsu Quiz Ma-Q Dai Bouken (Japan).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -37032,17 +37071,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Cosmo Gang the Puzzle/Cosmo Gang the Puzzle (US).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/_alternatives/_Cosmo Gang the Puzzle/Cosmo Gang the Puzzle (US).mra",
 "mra": "_Arcade/Cosmo Gang the Puzzle (US).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -37060,17 +37099,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Cosmo Gang the Puzzle (Japan).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/Cosmo Gang the Puzzle (Japan).mra",
 "mra": "_Arcade/Cosmo Gang the Puzzle (Japan).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -41451,6 +41490,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Crazy Cross (ver EAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Crazy Cross (ver EAA).mra",
+"mra": "_Arcade/Crazy Cross (ver EAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Crazy Cross (ver EAA).mra",
+"mra": "_Arcade/Crazy Cross (ver EAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "crzrally": {
@@ -42708,6 +42773,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Daisu-Kiss (ver JAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Daisu-Kiss (ver JAA).mra",
+"mra": "_Arcade/Daisu-Kiss (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Daisu-Kiss (ver JAA).mra",
+"mra": "_Arcade/Daisu-Kiss (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "daitorid": {
@@ -49634,6 +49725,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Dragoon Might (ver AAB).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Dragoon Might (ver AAB).mra",
+"mra": "_Arcade/Dragoon Might (ver AAB).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Dragoon Might (ver AAB).mra",
+"mra": "_Arcade/Dragoon Might (ver AAB).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "dragoonj": {
@@ -49649,6 +49766,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/_alternatives/_Dragoon Might (ver AAB)/Dragoon Might (ver JAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Dragoon Might (ver JAA).mra",
+"mra": "_Arcade/_alternatives/_Dragoon Might/Dragoon Might (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Dragoon Might (ver JAA).mra",
+"mra": "_Arcade/Dragoon Might (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "dreamwld": {
@@ -51832,17 +51975,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Emeraldia/Emeraldia (World).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/_alternatives/_Emeraldia/Emeraldia (World).mra",
 "mra": "_Arcade/Emeraldia (World).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -51860,17 +52003,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Emeraldia/Emeraldia (Japan).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/_alternatives/_Emeraldia/Emeraldia (Japan).mra",
 "mra": "_Arcade/Emeraldia (Japan).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -51888,17 +52031,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Emeraldia (Japan Version B).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/Emeraldia (Japan, Version B).mra",
 "mra": "_Arcade/Emeraldia (Japan Version B).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -51916,17 +52059,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Emeraldia/Emeraldia (Japan Version D).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/_alternatives/_Emeraldia/Emeraldia (Japan, Version D).mra",
 "mra": "_Arcade/Emeraldia (Japan Version D).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -53073,17 +53216,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Exvania/Exvania (World).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/_alternatives/_Exvania/Exvania (World).mra",
 "mra": "_Arcade/Exvania (World).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -53101,17 +53244,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Exvania (Japan).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/Exvania (Japan).mra",
 "mra": "_Arcade/Exvania (Japan).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -53258,17 +53401,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/F-A (Japan).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/F-A (Japan).mra",
 "mra": "_Arcade/F_A (Japan).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -53472,6 +53615,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Fantastic Journey (ver EAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Fantastic Journey (ver EAA).mra",
+"mra": "_Arcade/Fantastic Journey (ver EAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Fantastic Journey (ver EAA).mra",
+"mra": "_Arcade/Fantastic Journey (ver EAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "fantjoura": {
@@ -53487,6 +53656,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/_alternatives/_Fantastic Journey (ver EAA)/Fantastic Journey (ver AAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Fantastic Journey (ver AAA).mra",
+"mra": "_Arcade/_alternatives/_Fantastic Journey/Fantastic Journey (ver AAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Fantastic Journey (ver AAA).mra",
+"mra": "_Arcade/Fantastic Journey (ver AAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "fantsia2": {
@@ -54271,17 +54466,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_F-A/Fighter & Attacker (US).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/_alternatives/_F-A/Fighter & Attacker (US).mra",
 "mra": "_Arcade/Fighter & Attacker (US).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -62538,6 +62733,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/_alternatives/_Fantastic Journey (ver EAA)/Gokujou Parodius Kako no Eikou o Motomete (ver JAD).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Gokujou Parodius - Kako no Eikou o Motomete (ver JAD).mra",
+"mra": "_Arcade/_alternatives/_Fantastic Journey/Gokujou Parodius - Kako no Eikou o Motomete (ver JAD).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Gokujou Parodius - Kako no Eikou o Motomete (ver JAD).mra",
+"mra": "_Arcade/Gokujou Parodius - Kako no Eikou o Motomete (ver JAD).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "goldmedl": {
@@ -68846,47 +69067,47 @@
 "first_recorded": "2026-10-21",
 "last_seen": "2026-10-25"
 },
-"repo:heavysmash": {
-"core": "repo:heavysmash",
+"yaguboo:heavysmash": {
+"core": "yaguboo:heavysmash",
 "date": "2026-10-07",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
 "first_repo": "yaguboo/Arcade-HeavySmash_MiSTer",
 "first_path": "SD/_Arcade/_Kaze's Cores/Heavy Smash (Europe version -2, 1993_06_30).mra",
 "mra": "_Arcade/Heavy Smash (Europe version -2, 1993_06_30).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
 "hvysmsha": {
-"repo:heavysmash": {
-"core": "repo:heavysmash",
+"yaguboo:heavysmash": {
+"core": "yaguboo:heavysmash",
 "date": "2026-10-07",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
 "first_repo": "yaguboo/Arcade-HeavySmash_MiSTer",
 "first_path": "SD/_Arcade/_Kaze's Cores/Heavy Smash (Asia version -4, 1993_09_06).mra",
 "mra": "_Arcade/Heavy Smash (Asia version -4, 1993_09_06).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
 "hvysmshj": {
-"repo:heavysmash": {
-"core": "repo:heavysmash",
+"yaguboo:heavysmash": {
+"core": "yaguboo:heavysmash",
 "date": "2026-10-07",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
 "first_repo": "yaguboo/Arcade-HeavySmash_MiSTer",
 "first_path": "SD/_Arcade/_Kaze's Cores/Heavy Smash (Japan version -2, 1993_06_30).mra",
 "mra": "_Arcade/Heavy Smash (Japan version -2, 1993_06_30).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -75182,17 +75403,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Knuckle Heads/Knuckle Heads (World).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/_alternatives/_Knuckle Heads/Knuckle Heads (World).mra",
 "mra": "_Arcade/Knuckle Heads (World).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -75210,17 +75431,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Knuckle Heads (Japan).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/Knuckle Heads (Japan).mra",
 "mra": "_Arcade/Knuckle Heads (Japan).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -75238,17 +75459,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Knuckle Heads/Knuckle Heads (Japan, Prototype).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/_alternatives/_Knuckle Heads/Knuckle Heads (Japan, Prototype).mra",
 "mra": "_Arcade/Knuckle Heads (Japan, Prototype_).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -78586,6 +78807,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Lethal Enforcers II Gun Fighters (ver EAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"first_path": "releases/Lethal Enforcers II Gun Fighters (ver EAA).mra",
+"mra": "_Arcade/Lethal Enforcers II - Gun Fighters (ver EAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"first_path": "releases/Lethal Enforcers II Gun Fighters (ver EAA).mra",
+"mra": "_Arcade/Lethal Enforcers II Gun Fighters (ver EAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "le2j": {
@@ -78601,6 +78848,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II The Western (ver JAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"first_path": "releases/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II The Western (ver JAA).mra",
+"mra": "_Arcade/_alternatives/_Lethal Enforcers II - Gun Fighters/Lethal Enforcers II - The Western (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"first_path": "releases/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II The Western (ver JAA).mra",
+"mra": "_Arcade/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II The Western (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "le2u": {
@@ -78616,6 +78889,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II Gun Fighters (ver UAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"first_path": "releases/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II Gun Fighters (ver UAA).mra",
+"mra": "_Arcade/_alternatives/_Lethal Enforcers II - Gun Fighters/Lethal Enforcers II - Gun Fighters (ver UAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
+"first_path": "releases/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II Gun Fighters (ver UAA).mra",
+"mra": "_Arcade/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II Gun Fighters (ver UAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "leaguemn": {
@@ -90219,6 +90518,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/_alternatives/_Twin Bee Yahhoo! (ver JAA)/Magical Twin Bee (ver EAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Magical Twin Bee (ver EAA).mra",
+"mra": "_Arcade/_alternatives/_Twin Bee Yahhoo!/Magical Twin Bee (ver EAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Magical Twin Bee (ver EAA).mra",
+"mra": "_Arcade/Magical Twin Bee (ver EAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "mtwins": {
@@ -94045,17 +94370,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Numan Athletics/Numan Athletics (World).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/_alternatives/_Numan Athletics/Numan Athletics (World).mra",
 "mra": "_Arcade/Numan Athletics (World).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -94073,17 +94398,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Numan Athletics (Japan).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/Numan Athletics (Japan).mra",
 "mra": "_Arcade/Numan Athletics (Japan).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -104116,17 +104441,17 @@
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Power Instinct (USA).mra"
 },
-"repo:powerins": {
-"core": "repo:powerins",
-"date": "2026-10-07",
+"yaguboo:powerins": {
+"core": "yaguboo:powerins",
+"date": "2026-10-08",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_repo": "kuzearcade/kuzecores",
 "first_path": "_Arcade/Power Instinct (USA).mra",
 "mra": "_Arcade/Power Instinct (USA).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -104174,17 +104499,17 @@
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Gouketsuji Ichizoku (Japan).mra"
 },
-"repo:powerins": {
-"core": "repo:powerins",
-"date": "2026-10-07",
+"yaguboo:powerins": {
+"core": "yaguboo:powerins",
+"date": "2026-10-08",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_repo": "kuzearcade/kuzecores",
 "first_path": "_Arcade/_alternatives/_Power Instinct/Gouketsuji Ichizoku (Japan).mra",
 "mra": "_Arcade/Gouketsuji Ichizoku (Japan).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -104202,17 +104527,17 @@
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Gouketsuji Ichizoku (Japan, prototype).mra"
 },
-"repo:powerins": {
-"core": "repo:powerins",
-"date": "2026-10-07",
+"yaguboo:powerins": {
+"core": "yaguboo:powerins",
+"date": "2026-10-08",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_repo": "kuzearcade/kuzecores",
 "first_path": "_Arcade/_alternatives/_Power Instinct/Gouketsuji Ichizoku (Japan, prototype).mra",
 "mra": "_Arcade/Gouketsuji Ichizoku (Japan, prototype).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -104230,17 +104555,17 @@
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Power Instinct (USA, prototype).mra"
 },
-"repo:powerins": {
-"core": "repo:powerins",
-"date": "2026-10-07",
+"yaguboo:powerins": {
+"core": "yaguboo:powerins",
+"date": "2026-10-08",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_repo": "kuzearcade/kuzecores",
 "first_path": "_Arcade/_alternatives/_Power Instinct/Power Instinct (USA, prototype).mra",
 "mra": "_Arcade/Power Instinct (USA, prototype).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -104885,17 +105210,17 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
 },
-"repo:powerspikes": {
-"core": "repo:powerspikes",
-"date": "2026-10-07",
+"yaguboo:powerspikes": {
+"core": "yaguboo:powerspikes",
+"date": "2026-10-08",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Power Spikes (World).mra",
+"first_repo": "yaguboo/Arcade-PowerSpikes_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Power Spikes (World).mra",
 "mra": "_Arcade/Power Spikes (World).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -104939,17 +105264,17 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
 },
-"repo:powerspikes": {
-"core": "repo:powerspikes",
-"date": "2026-10-07",
+"yaguboo:powerspikes": {
+"core": "yaguboo:powerspikes",
+"date": "2026-10-08",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Power Spikes/Power Spikes (Korea).mra",
+"first_repo": "yaguboo/Arcade-PowerSpikes_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Power Spikes (Korea).mra",
 "mra": "_Arcade/Power Spikes (Korea).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -104979,17 +105304,17 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
 },
-"repo:powerspikes": {
-"core": "repo:powerspikes",
-"date": "2026-10-07",
+"yaguboo:powerspikes": {
+"core": "yaguboo:powerspikes",
+"date": "2026-10-08",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Power Spikes/Power Spikes (US).mra",
+"first_repo": "yaguboo/Arcade-PowerSpikes_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Power Spikes (US).mra",
 "mra": "_Arcade/Power Spikes (US).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -106138,6 +106463,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/_alternatives/_Crazy Cross (ver EAA)/Taisen Puzzle-dama (ver JAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Taisen Puzzle-dama (ver JAA).mra",
+"mra": "_Arcade/_alternatives/_Crazy Cross/Taisen Puzzle-dama (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Taisen Puzzle-dama (ver JAA).mra",
+"mra": "_Arcade/Taisen Puzzle-dama (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "puzlstar": {
@@ -107408,17 +107759,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Nettou! Gekitou! Quiztou!! (Japan).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/Nettou! Gekitou! Quiztou!! (Japan).mra",
 "mra": "_Arcade/Nettou! Gekitou! Quiztou!! (Japan).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -115462,6 +115813,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Salamander 2 (ver JAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Salamander 2 (ver JAA).mra",
+"mra": "_Arcade/Salamander 2 (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Salamander 2 (ver JAA).mra",
+"mra": "_Arcade/Salamander 2 (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "salmndr2a": {
@@ -115477,6 +115854,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/_alternatives/_Salamander 2 (ver JAA)/Salamander 2 (ver AAB).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Salamander 2 (ver AAB).mra",
+"mra": "_Arcade/_alternatives/_Salamander 2/Salamander 2 (ver AAB).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Salamander 2 (ver AAB).mra",
+"mra": "_Arcade/Salamander 2 (ver AAB).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "samesame": {
@@ -118902,6 +119305,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Sexy Parodius (ver JAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Sexy Parodius (ver JAA).mra",
+"mra": "_Arcade/Sexy Parodius (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Sexy Parodius (ver JAA).mra",
+"mra": "_Arcade/Sexy Parodius (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "sexyparoa": {
@@ -118917,6 +119346,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/_alternatives/_Sexy Parodius (ver JAA)/Sexy Parodius (ver AAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Sexy Parodius (ver AAA).mra",
+"mra": "_Arcade/_alternatives/_Sexy Parodius/Sexy Parodius (ver AAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Sexy Parodius (ver AAA).mra",
+"mra": "_Arcade/Sexy Parodius (ver AAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "sf": {
@@ -122097,17 +122552,17 @@
 "last_seen": "2026-10-11",
 "mra": "_Arcade/Shadow Force (FF, Technos, 1993).mra"
 },
-"repo:shadowforce": {
-"core": "repo:shadowforce",
-"date": "2026-10-07",
+"yaguboo:shadowforce": {
+"core": "yaguboo:shadowforce",
+"date": "2026-10-08",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
 "first_repo": "jlrh/technos-fpga",
 "first_path": "cores/shadfrce/mra/Shadow Force (FF, Technos, 1993).mra",
 "mra": "_Arcade/Shadow Force (World, Version 3).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -122138,17 +122593,17 @@
 "last_seen": "2026-10-11",
 "mra": "_Arcade/_alternatives/_Shadow Force/Shadow Force - Henshin Ninja (FF, Technos, 1993, Japan v2).mra"
 },
-"repo:shadowforce": {
-"core": "repo:shadowforce",
-"date": "2026-10-07",
+"yaguboo:shadowforce": {
+"core": "yaguboo:shadowforce",
+"date": "2026-10-08",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
 "first_repo": "jlrh/technos-fpga",
 "first_path": "cores/shadfrce/mra/_alternatives/_Shadow Force/Shadow Force - Henshin Ninja (FF, Technos, 1993, Japan v2).mra",
 "mra": "_Arcade/Shadow Force - Henshin Ninja (Japan, Version 2).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -122179,17 +122634,17 @@
 "last_seen": "2026-10-11",
 "mra": "_Arcade/_alternatives/_Shadow Force/Shadow Force (FF, Technos, 1993, US v2).mra"
 },
-"repo:shadowforce": {
-"core": "repo:shadowforce",
-"date": "2026-10-07",
+"yaguboo:shadowforce": {
+"core": "yaguboo:shadowforce",
+"date": "2026-10-08",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
 "first_repo": "jlrh/technos-fpga",
 "first_path": "cores/shadfrce/mra/_alternatives/_Shadow Force/Shadow Force (FF, Technos, 1993, US v2).mra",
 "mra": "_Arcade/Shadow Force (US, Version 2).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -131300,17 +131755,17 @@
 }
 },
 "stadhero": {
-"repo:stadiumhero": {
-"core": "repo:stadiumhero",
+"yaguboo:stadiumhero": {
+"core": "yaguboo:stadiumhero",
 "date": "2026-10-08",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
 "first_repo": "yaguboo/Arcade-StadiumHero_MiSTer",
 "first_path": "SD/_Arcade/_Kaze's Cores/Stadium Hero.mra",
 "mra": "_Arcade/Stadium Hero.mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -134152,17 +134607,17 @@
 }
 },
 "suprslam": {
-"repo:superslams": {
-"core": "repo:superslams",
+"yaguboo:superslams": {
+"core": "yaguboo:superslams",
 "date": "2026-10-08",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
 "first_repo": "yaguboo/Arcade-SuperSlams_MiSTer",
 "first_path": "SD/_Arcade/_Kaze's Cores/Super Slams.mra",
 "mra": "_Arcade/Super Slams.mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -134568,17 +135023,17 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
 },
-"repo:powerspikes": {
-"core": "repo:powerspikes",
-"date": "2026-10-07",
+"yaguboo:powerspikes": {
+"core": "yaguboo:powerspikes",
+"date": "2026-10-08",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Power Spikes/Super Volley '91 (Japan).mra",
+"first_repo": "yaguboo/Arcade-PowerSpikes_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Super Volley '91 (Japan).mra",
 "mra": "_Arcade/Super Volley '91 (Japan).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -134722,17 +135177,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Super World Court/Super World Court (World).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/_alternatives/_Super World Court/Super World Court (World).mra",
 "mra": "_Arcade/Super World Court (World).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -134750,17 +135205,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/_alternatives/_Super World Court/Super World Court (World, bootleg).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/_alternatives/_Super World Court/Super World Court (World, bootleg).mra",
 "mra": "_Arcade/Super World Court (World, bootleg).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -134778,17 +135233,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Super World Court (Japan).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/Super World Court (Japan).mra",
 "mra": "_Arcade/Super World Court (Japan).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -135988,6 +136443,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Twin Bee Yahhoo! (ver JAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Twin Bee Yahhoo! (ver JAA).mra",
+"mra": "_Arcade/Twin Bee Yahhoo! (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Twin Bee Yahhoo! (ver JAA).mra",
+"mra": "_Arcade/Twin Bee Yahhoo! (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "tcobra2": {
@@ -139422,17 +139903,17 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-25"
 },
-"repo:namcona2": {
-"core": "repo:namcona2",
-"date": "2026-09-25",
+"yaguboo:namcona2": {
+"core": "yaguboo:namcona2",
+"date": "2026-10-15",
 "date_quality": "git",
-"via": "repo",
+"via": "yaguboo",
 "wip": false,
 "alt": false,
-"first_repo": "OngoGablogian/MiSTer_Ongo",
-"first_path": "_Arcade/Tinkle Pit (Japan).mra",
+"first_repo": "kyledlester/Namco_NA1_NA2_MiSTer",
+"first_path": "MRA/Tinkle Pit (Japan).mra",
 "mra": "_Arcade/Tinkle Pit (Japan).mra",
-"first_recorded": "2026-10-12",
+"first_recorded": "2026-10-25",
 "last_seen": "2026-10-25"
 }
 },
@@ -139566,6 +140047,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Tokimeki Memorial Taisen Puzzle-dama (ver JAB).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Tokimeki Memorial Taisen Puzzle-dama (ver JAB).mra",
+"mra": "_Arcade/Tokimeki Memorial Taisen Puzzle-dama (ver JAB).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Tokimeki Memorial Taisen Puzzle-dama (ver JAB).mra",
+"mra": "_Arcade/Tokimeki Memorial Taisen Puzzle-dama (ver JAB).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "tknight": {
@@ -140797,6 +141304,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Taisen Tokkae-dama (ver JAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Taisen Tokkae-dama (ver JAA).mra",
+"mra": "_Arcade/Taisen Tokkae-dama (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Taisen Tokkae-dama (ver JAA).mra",
+"mra": "_Arcade/Taisen Tokkae-dama (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "tokyowar": {
@@ -149840,6 +150373,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/Winning Spike (ver EAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Winning Spike (ver EAA).mra",
+"mra": "_Arcade/Winning Spike (ver EAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Winning Spike (ver EAA).mra",
+"mra": "_Arcade/Winning Spike (ver EAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "winspikea": {
@@ -149855,6 +150414,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/_alternatives/_Winning Spike (ver EAA)/Winning Spike (ver AAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Winning Spike (ver AAA).mra",
+"mra": "_Arcade/_alternatives/_Winning Spike/Winning Spike (ver AAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Winning Spike (ver AAA).mra",
+"mra": "_Arcade/Winning Spike (ver AAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "winspikej": {
@@ -149870,6 +150455,32 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-25",
 "mra": "_Arcade/_alternatives/_Winning Spike (ver EAA)/Winning Spike (ver JAA).mra"
+},
+"repo:konamigx": {
+"core": "repo:konamigx",
+"date": "2026-10-13",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Winning Spike (ver JAA).mra",
+"mra": "_Arcade/_alternatives/_Winning Spike/Winning Spike (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
+},
+"yaguboo:konamigx": {
+"core": "yaguboo:konamigx",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "yaguboo",
+"wip": false,
+"alt": false,
+"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+"first_path": "SD/_Arcade/_Kaze's Cores/Winning Spike (ver JAA).mra",
+"mra": "_Arcade/Winning Spike (ver JAA).mra",
+"first_recorded": "2026-10-25",
+"last_seen": "2026-10-25"
 }
 },
 "winterht": {
@@ -155290,7 +155901,8 @@
 "bkrtmaq": {
 "ongo": "Quiz",
 "repo": "Quiz",
-"kyle": "Quiz"
+"kyle": "Quiz",
+"yaguboo": "Quiz"
 },
 "bladestl": {
 "repo": "Sports"
@@ -156155,12 +156767,14 @@
 "cgangpzl": {
 "ongo": "Puzzle",
 "repo": "Puzzle",
-"kyle": "Puzzle"
+"kyle": "Puzzle",
+"yaguboo": "Puzzle"
 },
 "cgangpzlj": {
 "ongo": "Puzzle",
 "repo": "Puzzle",
-"kyle": "Puzzle"
+"kyle": "Puzzle",
+"yaguboo": "Puzzle"
 },
 "cgraplop": {
 "dist": "Action"
@@ -157720,22 +158334,26 @@
 "emeralda": {
 "ongo": "Puzzle",
 "repo": "Puzzle",
-"kyle": "Puzzle"
+"kyle": "Puzzle",
+"yaguboo": "Puzzle"
 },
 "emeraldaj": {
 "ongo": "Puzzle",
 "repo": "Puzzle",
-"kyle": "Puzzle"
+"kyle": "Puzzle",
+"yaguboo": "Puzzle"
 },
 "emeraldajb": {
 "ongo": "Puzzle",
 "repo": "Puzzle",
-"kyle": "Puzzle"
+"kyle": "Puzzle",
+"yaguboo": "Puzzle"
 },
 "emeraldajd": {
 "ongo": "Puzzle",
 "repo": "Puzzle",
-"kyle": "Puzzle"
+"kyle": "Puzzle",
+"yaguboo": "Puzzle"
 },
 "endurobl": {
 "repo": "Racing / Driving",
@@ -157871,12 +158489,14 @@
 "exvania": {
 "ongo": "Maze",
 "repo": "Maze",
-"kyle": "Maze"
+"kyle": "Maze",
+"yaguboo": "Maze"
 },
 "exvaniaj": {
 "ongo": "Maze",
 "repo": "Maze",
-"kyle": "Maze"
+"kyle": "Maze",
+"yaguboo": "Maze"
 },
 "eyes": {
 "dist": "Maze"
@@ -157890,7 +158510,8 @@
 "fa": {
 "ongo": "Shoot 'em Up",
 "repo": "Shooter",
-"kyle": "Shoot 'em Up"
+"kyle": "Shoot 'em Up",
+"yaguboo": "Shooter"
 },
 "falcon": {
 "dist": "Shooter - Gallery"
@@ -157967,7 +158588,8 @@
 "fghtatck": {
 "ongo": "Shoot 'em Up",
 "repo": "Shooter",
-"kyle": "Shoot 'em Up"
+"kyle": "Shoot 'em Up",
+"yaguboo": "Shooter"
 },
 "fgtlayer": {
 "ongo": "Fighting"
@@ -160135,17 +160757,20 @@
 "knckhead": {
 "ongo": "Fighter",
 "repo": "Fighter",
-"kyle": "Fighter"
+"kyle": "Fighter",
+"yaguboo": "Fighter"
 },
 "knckheadj": {
 "ongo": "Fighter",
 "repo": "Fighter",
-"kyle": "Fighter"
+"kyle": "Fighter",
+"yaguboo": "Fighter"
 },
 "knckheadjp": {
 "ongo": "Fighter",
 "repo": "Fighter",
-"kyle": "Fighter"
+"kyle": "Fighter",
+"yaguboo": "Fighter"
 },
 "kngtmare": {
 "repo": "Action"
@@ -161747,12 +162372,14 @@
 "numanath": {
 "ongo": "Sports",
 "repo": "Sports",
-"kyle": "Sports"
+"kyle": "Sports",
+"yaguboo": "Sports"
 },
 "numanathj": {
 "ongo": "Sports",
 "repo": "Sports",
-"kyle": "Sports"
+"kyle": "Sports",
+"yaguboo": "Sports"
 },
 "numcrash": {
 "dist": "Platform"
@@ -162805,13 +163432,16 @@
 "meat": "Sports"
 },
 "pspikes": {
-"repo": "Sports"
+"repo": "Sports",
+"yaguboo": "Sports"
 },
 "pspikesk": {
-"repo": "Sports"
+"repo": "Sports",
+"yaguboo": "Sports"
 },
 "pspikesu": {
-"repo": "Sports"
+"repo": "Sports",
+"yaguboo": "Sports"
 },
 "psychic5": {
 "dist": "Action / Maze Vertical"
@@ -162995,7 +163625,8 @@
 "quiztou": {
 "ongo": "Quiz",
 "repo": "Quiz",
-"kyle": "Quiz"
+"kyle": "Quiz",
+"yaguboo": "Quiz"
 },
 "qzkklgy2": {
 "ongo": "Arcade",
@@ -165757,7 +166388,8 @@
 "dist": "Labyrinth / Maze"
 },
 "suprslam": {
-"repo": "Sports"
+"repo": "Sports",
+"yaguboo": "Sports"
 },
 "susume": {
 "kyle": "Puzzle",
@@ -165786,7 +166418,8 @@
 "kuze": "Arcade"
 },
 "svolly91": {
-"repo": "Sports"
+"repo": "Sports",
+"yaguboo": "Sports"
 },
 "swa": {
 "ongo": "Shooter",
@@ -165806,17 +166439,20 @@
 "swcourt": {
 "ongo": "Sports",
 "repo": "Sports",
-"kyle": "Sports"
+"kyle": "Sports",
+"yaguboo": "Sports"
 },
 "swcourtb": {
 "ongo": "Sports",
 "repo": "Sports",
-"kyle": "Sports"
+"kyle": "Sports",
+"yaguboo": "Sports"
 },
 "swcourtj": {
 "ongo": "Sports",
 "repo": "Sports",
-"kyle": "Sports"
+"kyle": "Sports",
+"yaguboo": "Sports"
 },
 "swimmer": {
 "repo": "Action"
@@ -166345,7 +166981,8 @@
 "tinklpit": {
 "ongo": "Action",
 "repo": "Maze",
-"kyle": "Action"
+"kyle": "Action",
+"yaguboo": "Maze"
 },
 "tinstar": {
 "dist": "Action"

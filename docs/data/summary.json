@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-25T20:13:58+00:00",
+  "generated": "2026-10-25T21:13:32+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-25T20:13:47+00:00",
+  "mister_generated": "2026-10-25T21:13:06+00:00",
   "alamone_generated": "2026-10-19T09:14:45+00:00",
   "ledger_updated": "2026-10-25",
   "ledger_runs": [
-   {
-    "date": "2026-10-24",
-    "note": "alamone 2026-10-19",
-    "cores": 4,
-    "sets": 11,
-    "pairs": 12,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-25",
     "note": "alamone 2026-10-19",
@@ -51,13 +42,22 @@
     "pairs": 24,
     "dates_improved": 0,
     "cores_removed": 3
+   },
+   {
+    "date": "2026-10-25",
+    "note": "alamone 2026-10-19",
+    "cores": 9,
+    "sets": 1,
+    "pairs": 82,
+    "dates_improved": 0,
+    "cores_removed": 7
    }
   ],
   "genre": {
    "overrides": 0,
    "local_categories": 1,
-   "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5447 sets, 5447 used); mame2016: catver_mame2016.ini (37065 sets, 32587 used)",
-   "catver_entries": 38034,
+   "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5451 sets, 5451 used); mame2016: catver_mame2016.ini (37065 sets, 32584 used)",
+   "catver_entries": 38035,
    "mad_entries": 2995,
    "mra_entries": 3760,
    "unmapped": [
@@ -119,9 +119,10 @@
    "gm0rk": "Gm0rkCores (Gm0rk)",
    "usquebagh": "Usquebagh (GitHub repositories)",
    "illegalmp3": "illegalmp3 (GitHub repositories)",
+   "yaguboo": "yaguboo (GitHub repositories)",
    "decoryah": "decoryah",
    "tomsvr": "TomSVR",
-   "asturur": "asturur",
+   "asturur": "Andrea Bogazzi (asturur)",
    "rossops": "rossops (GitHub repositories)",
    "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
    "repo": "GitHub repository only"
@@ -205,6 +206,10 @@
    },
    "illegalmp3": {
     "page": "https://github.com/illegalmp3?tab=repositories",
+    "db_url": null
+   },
+   "yaguboo": {
+    "page": "https://github.com/yaguboo?tab=repositories",
     "db_url": null
    },
    "decoryah": {
@@ -2470,49 +2475,49 @@
     "mras": 14
    },
    {
-    "source": "repo",
+    "source": "yaguboo",
     "repo": "yaguboo/Arcade-HeavySmash_MiSTer",
     "dirs": null,
     "mras": 3
    },
    {
-    "source": "repo",
+    "source": "yaguboo",
     "repo": "yaguboo/Arcade-KonamiGX_MiSTer",
     "dirs": null,
     "mras": 19
    },
    {
-    "source": "repo",
+    "source": "yaguboo",
     "repo": "yaguboo/Arcade-NamcoNA2_MiSTer",
     "dirs": null,
     "mras": 21
    },
    {
-    "source": "repo",
+    "source": "yaguboo",
     "repo": "yaguboo/Arcade-PowerInstinct_MiSTer",
     "dirs": null,
     "mras": 4
    },
    {
-    "source": "repo",
+    "source": "yaguboo",
     "repo": "yaguboo/Arcade-PowerSpikes_MiSTer",
     "dirs": null,
     "mras": 4
    },
    {
-    "source": "repo",
+    "source": "yaguboo",
     "repo": "yaguboo/Arcade-ShadowForce_MiSTer",
     "dirs": null,
     "mras": 3
    },
    {
-    "source": "repo",
+    "source": "yaguboo",
     "repo": "yaguboo/Arcade-StadiumHero_MiSTer",
     "dirs": null,
     "mras": 1
    },
    {
-    "source": "repo",
+    "source": "yaguboo",
     "repo": "yaguboo/Arcade-SuperSlams_MiSTer",
     "dirs": null,
     "mras": 1
@@ -3156,7 +3161,7 @@
    "working_arcade_sets_covered": 6185,
    "working_arcade_titles_source": 2196,
    "working_arcade_titles_binary_only": 242,
-   "cores": 761,
+   "cores": 763,
    "binary_only_cores": 263,
    "unmatched_sets": 445
   }
@@ -3214,7 +3219,7 @@
    "id": "asturur:jtf1grpr",
    "name": "jtf1grpr",
    "source": "asturur",
-   "source_title": "asturur",
+   "source_title": "Andrea Bogazzi (asturur)",
    "channel": null,
    "rbf": "jtf1grpr.rbf",
    "repo": "asturur/Mister-cores",
@@ -3226,6 +3231,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-25",
+   "aliases": [],
    "last_seen": "2026-10-25",
    "binary_only": false,
    "nsets": 2,
@@ -3236,7 +3242,7 @@
    "id": "asturur:jtpspike",
    "name": "jtpspike",
    "source": "asturur",
-   "source_title": "asturur",
+   "source_title": "Andrea Bogazzi (asturur)",
    "channel": null,
    "rbf": "jtpspike.rbf",
    "repo": "asturur/Mister-cores",
@@ -3248,6 +3254,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-25",
+   "aliases": [],
    "last_seen": "2026-10-25",
    "binary_only": false,
    "nsets": 16,
@@ -3258,7 +3265,7 @@
    "id": "asturur:jtroundu",
    "name": "jtroundu",
    "source": "asturur",
-   "source_title": "asturur",
+   "source_title": "Andrea Bogazzi (asturur)",
    "channel": null,
    "rbf": "jtroundu.rbf",
    "repo": "asturur/Mister-cores",
@@ -3281,7 +3288,7 @@
    "id": "asturur:jtsysfl",
    "name": "jtsysfl",
    "source": "asturur",
-   "source_title": "asturur",
+   "source_title": "Andrea Bogazzi (asturur)",
    "channel": null,
    "rbf": "jtsysfl.rbf",
    "repo": "asturur/Mister-cores",
@@ -3293,6 +3300,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-25",
+   "aliases": [],
    "last_seen": "2026-10-25",
    "binary_only": false,
    "nsets": 5,
@@ -18730,31 +18738,6 @@
    "first_date": "2026-09-07"
   },
   {
-   "id": "repo:heavysmash",
-   "name": "HeavySmash (yaguboo)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "HeavySmash.rbf",
-   "repo": "yaguboo/Arcade-HeavySmash_MiSTer",
-   "url": "https://github.com/yaguboo/Arcade-HeavySmash_MiSTer",
-   "build_date": "2026-10-07",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 24,
-   "mame_drivers": [
-    "dataeast/hvysmsh.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-12",
-   "aliases": [],
-   "last_seen": "2026-10-25",
-   "binary_only": false,
-   "nsets": 3,
-   "ntitles": 1,
-   "first_date": "2026-10-07"
-  },
-  {
    "id": "repo:intrepid",
    "name": "Intrepid (harlock74)",
    "source": "repo",
@@ -18926,6 +18909,30 @@
    "nsets": 11,
    "ntitles": 9,
    "first_date": "2026-10-14"
+  },
+  {
+   "id": "repo:konamigx",
+   "name": "KonamiGX (ppriest)",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": "repository only",
+   "rbf": "Arcade-KonamiGX_20261013.rbf",
+   "repo": "ppriest/Arcade-KonamiGX_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
+   "build_date": "2026-10-13",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 29,
+   "mame_drivers": [
+    "konami/konamigx.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "binary_only": false,
+   "nsets": 22,
+   "ntitles": 11,
+   "first_date": "2026-10-13"
   },
   {
    "id": "repo:lastduel",
@@ -19172,31 +19179,6 @@
    "first_date": "2026-10-21"
   },
   {
-   "id": "repo:namcona2",
-   "name": "NamcoNA2 (yaguboo)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "NamcoNA2.rbf",
-   "repo": "yaguboo/Arcade-NamcoNA2_MiSTer",
-   "url": "https://github.com/yaguboo/Arcade-NamcoNA2_MiSTer",
-   "build_date": "2026-10-15",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 25,
-   "mame_drivers": [
-    "namco/namcona1.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-12",
-   "aliases": [],
-   "last_seen": "2026-10-25",
-   "binary_only": false,
-   "nsets": 21,
-   "ntitles": 10,
-   "first_date": "2026-09-25"
-  },
-  {
    "id": "repo:outrunners",
    "name": "outrunners",
    "source": "repo",
@@ -19266,56 +19248,6 @@
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2021-03-04"
-  },
-  {
-   "id": "repo:powerins",
-   "name": "PowerIns (yaguboo)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "PowerIns.rbf",
-   "repo": "yaguboo/Arcade-PowerInstinct_MiSTer",
-   "url": "https://github.com/yaguboo/Arcade-PowerInstinct_MiSTer",
-   "build_date": "2026-10-08",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 34,
-   "mame_drivers": [
-    "nmk/nmk16.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-12",
-   "aliases": [],
-   "last_seen": "2026-10-25",
-   "binary_only": false,
-   "nsets": 4,
-   "ntitles": 1,
-   "first_date": "2026-10-07"
-  },
-  {
-   "id": "repo:powerspikes",
-   "name": "PowerSpikes (yaguboo)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "PowerSpikes.rbf",
-   "repo": "yaguboo/Arcade-PowerSpikes_MiSTer",
-   "url": "https://github.com/yaguboo/Arcade-PowerSpikes_MiSTer",
-   "build_date": "2026-10-08",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 21,
-   "mame_drivers": [
-    "vsystem/pspikes.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-12",
-   "aliases": [],
-   "last_seen": "2026-10-25",
-   "binary_only": false,
-   "nsets": 4,
-   "ntitles": 1,
-   "first_date": "2026-10-07"
   },
   {
    "id": "repo:prehisle",
@@ -19726,31 +19658,6 @@
    "first_date": "2026-08-01"
   },
   {
-   "id": "repo:shadowforce",
-   "name": "ShadowForce (yaguboo)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "ShadowForce.rbf",
-   "repo": "yaguboo/Arcade-ShadowForce_MiSTer",
-   "url": "https://github.com/yaguboo/Arcade-ShadowForce_MiSTer",
-   "build_date": "2026-10-08",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 28,
-   "mame_drivers": [
-    "technos/shadfrce.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-12",
-   "aliases": [],
-   "last_seen": "2026-10-25",
-   "binary_only": false,
-   "nsets": 3,
-   "ntitles": 1,
-   "first_date": "2026-10-07"
-  },
-  {
    "id": "repo:skns",
    "name": "SKNS (srg320)",
    "source": "repo",
@@ -19826,31 +19733,6 @@
    "nsets": 166,
    "ntitles": 51,
    "first_date": "2020-12-24"
-  },
-  {
-   "id": "repo:stadiumhero",
-   "name": "StadiumHero (yaguboo)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "StadiumHero.rbf",
-   "repo": "yaguboo/Arcade-StadiumHero_MiSTer",
-   "url": "https://github.com/yaguboo/Arcade-StadiumHero_MiSTer",
-   "build_date": "2026-10-08",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 26,
-   "mame_drivers": [
-    "dataeast/stadhero.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-10-25",
-   "binary_only": false,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-10-08"
   },
   {
    "id": "repo:starcastle",
@@ -20004,31 +19886,6 @@
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-07-19"
-  },
-  {
-   "id": "repo:superslams",
-   "name": "SuperSlams (yaguboo)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "SuperSlams.rbf",
-   "repo": "yaguboo/Arcade-SuperSlams_MiSTer",
-   "url": "https://github.com/yaguboo/Arcade-SuperSlams_MiSTer",
-   "build_date": "2026-10-16",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 30,
-   "mame_drivers": [
-    "vsystem/suprslam.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-10-25",
-   "binary_only": false,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-10-08"
   },
   {
    "id": "repo:systemc2",
@@ -21816,6 +21673,201 @@
    "nsets": 28,
    "ntitles": 7,
    "first_date": "2026-08-29"
+  },
+  {
+   "id": "yaguboo:heavysmash",
+   "name": "HeavySmash (yaguboo)",
+   "source": "yaguboo",
+   "source_title": "yaguboo (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "HeavySmash.rbf",
+   "repo": "yaguboo/Arcade-HeavySmash_MiSTer",
+   "url": "https://github.com/yaguboo/Arcade-HeavySmash_MiSTer",
+   "build_date": "2026-10-07",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 24,
+   "mame_drivers": [
+    "dataeast/hvysmsh.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 1,
+   "first_date": "2026-10-07"
+  },
+  {
+   "id": "yaguboo:konamigx",
+   "name": "KonamiGX (yaguboo)",
+   "source": "yaguboo",
+   "source_title": "yaguboo (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "KonamiGX.rbf",
+   "repo": "yaguboo/Arcade-KonamiGX_MiSTer",
+   "url": "https://github.com/yaguboo/Arcade-KonamiGX_MiSTer",
+   "build_date": "2026-10-08",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 29,
+   "mame_drivers": [
+    "konami/konamigx.cpp"
+   ],
+   "note": null,
+   "aliases": [
+    "ppriest:konamigx"
+   ],
+   "first_recorded": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "binary_only": false,
+   "nsets": 22,
+   "ntitles": 11,
+   "first_date": "2026-10-08"
+  },
+  {
+   "id": "yaguboo:namcona2",
+   "name": "NamcoNA2 (yaguboo)",
+   "source": "yaguboo",
+   "source_title": "yaguboo (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "NamcoNA2.rbf",
+   "repo": "yaguboo/Arcade-NamcoNA2_MiSTer",
+   "url": "https://github.com/yaguboo/Arcade-NamcoNA2_MiSTer",
+   "build_date": "2026-10-15",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 25,
+   "mame_drivers": [
+    "namco/namcona1.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "binary_only": false,
+   "nsets": 21,
+   "ntitles": 10,
+   "first_date": "2026-10-15"
+  },
+  {
+   "id": "yaguboo:powerins",
+   "name": "PowerIns (yaguboo)",
+   "source": "yaguboo",
+   "source_title": "yaguboo (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "PowerIns.rbf",
+   "repo": "yaguboo/Arcade-PowerInstinct_MiSTer",
+   "url": "https://github.com/yaguboo/Arcade-PowerInstinct_MiSTer",
+   "build_date": "2026-10-08",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 34,
+   "mame_drivers": [
+    "nmk/nmk16.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "binary_only": false,
+   "nsets": 4,
+   "ntitles": 1,
+   "first_date": "2026-10-08"
+  },
+  {
+   "id": "yaguboo:powerspikes",
+   "name": "PowerSpikes (yaguboo)",
+   "source": "yaguboo",
+   "source_title": "yaguboo (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "PowerSpikes.rbf",
+   "repo": "yaguboo/Arcade-PowerSpikes_MiSTer",
+   "url": "https://github.com/yaguboo/Arcade-PowerSpikes_MiSTer",
+   "build_date": "2026-10-08",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 21,
+   "mame_drivers": [
+    "vsystem/pspikes.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "binary_only": false,
+   "nsets": 4,
+   "ntitles": 1,
+   "first_date": "2026-10-08"
+  },
+  {
+   "id": "yaguboo:shadowforce",
+   "name": "ShadowForce (yaguboo)",
+   "source": "yaguboo",
+   "source_title": "yaguboo (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "ShadowForce.rbf",
+   "repo": "yaguboo/Arcade-ShadowForce_MiSTer",
+   "url": "https://github.com/yaguboo/Arcade-ShadowForce_MiSTer",
+   "build_date": "2026-10-08",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 28,
+   "mame_drivers": [
+    "technos/shadfrce.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 1,
+   "first_date": "2026-10-08"
+  },
+  {
+   "id": "yaguboo:stadiumhero",
+   "name": "StadiumHero (yaguboo)",
+   "source": "yaguboo",
+   "source_title": "yaguboo (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "StadiumHero.rbf",
+   "repo": "yaguboo/Arcade-StadiumHero_MiSTer",
+   "url": "https://github.com/yaguboo/Arcade-StadiumHero_MiSTer",
+   "build_date": "2026-10-08",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 26,
+   "mame_drivers": [
+    "dataeast/stadhero.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-08"
+  },
+  {
+   "id": "yaguboo:superslams",
+   "name": "SuperSlams (yaguboo)",
+   "source": "yaguboo",
+   "source_title": "yaguboo (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "SuperSlams.rbf",
+   "repo": "yaguboo/Arcade-SuperSlams_MiSTer",
+   "url": "https://github.com/yaguboo/Arcade-SuperSlams_MiSTer",
+   "build_date": "2026-10-16",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 30,
+   "mame_drivers": [
+    "vsystem/suprslam.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-08"
   }
  ],
  "drivers": [
@@ -23680,7 +23732,7 @@
    "sets_covered": 3,
    "cores": [
     "meat:simple156",
-    "repo:heavysmash"
+    "yaguboo:heavysmash"
    ],
    "first": "2026-10-07"
   },
@@ -23855,7 +23907,7 @@
    "sets": 1,
    "sets_covered": 1,
    "cores": [
-    "repo:stadiumhero"
+    "yaguboo:stadiumhero"
    ],
    "first": "2026-10-08"
   },
@@ -25658,7 +25710,9 @@
    "sets_covered": 35,
    "cores": [
     "ppriest:konamigx",
-    "ppriest:konamigxt34"
+    "ppriest:konamigxt34",
+    "repo:konamigx",
+    "yaguboo:konamigx"
    ],
    "first": "2026-09-19"
   },
@@ -27482,7 +27536,7 @@
    "sets_covered": 21,
    "cores": [
     "kyle:namco_na1_na2",
-    "repo:namcona2"
+    "yaguboo:namcona2"
    ],
    "first": "2026-09-25"
   },
@@ -28124,7 +28178,7 @@
     "kuze:nmk16_gunnail",
     "kuze:nmk16_macross2",
     "kuze:nmk16_raphero",
-    "repo:powerins"
+    "yaguboo:powerins"
    ],
    "first": "2026-09-06"
   },
@@ -30802,7 +30856,7 @@
    "sets_covered": 3,
    "cores": [
     "jlrh:ffshadfrce",
-    "repo:shadowforce"
+    "yaguboo:shadowforce"
    ],
    "first": "2026-10-05"
   },
@@ -31581,7 +31635,7 @@
    "sets_covered": 13,
    "cores": [
     "asturur:jtpspike",
-    "repo:powerspikes"
+    "yaguboo:powerspikes"
    ],
    "first": "2026-09-16"
   },
@@ -31603,7 +31657,7 @@
    "sets": 1,
    "sets_covered": 1,
    "cores": [
-    "repo:superslams"
+    "yaguboo:superslams"
    ],
    "first": "2026-10-08"
   },
