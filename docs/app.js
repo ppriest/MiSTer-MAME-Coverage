@@ -26,6 +26,8 @@
     S.wlView = "requested";
     S.tview = "list"; S.gkind = "ingame";
   }
+  // Clicking through from another tab starts from a clean Titles filter (a leftover search, genre, core... would hide the very titles being linked to).
+  function clearFilters() { FILTER_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); }
   function readHash() {
     const p = new URLSearchParams(location.hash.slice(1));
     for (const id of ALL_IDS) if (p.has(id)) { const el = $("#" + id); if (el) el.value = p.get(id); }
@@ -836,7 +838,7 @@
     const d = ev.target.closest("a[data-drv]");
     if (d) { ev.preventDefault(); $("#f-drv").value = d.dataset.drv; $("#f-cov").value = "all"; $("#f-genre").value = ""; applyTitles(); showTab("titles"); return; }
     const a = ev.target.closest("a[data-core]"); if (!a) return; ev.preventDefault();
-    $("#f-core").value = a.dataset.core; $("#f-cov").value = "all"; $("#f-cat").value = "all"; $("#f-work").value = "all"; applyTitles(); showTab("titles");
+    clearFilters(); $("#f-core").value = a.dataset.core; $("#f-cov").value = "all"; $("#f-cat").value = "all"; $("#f-work").value = "all"; applyTitles(); showTab("titles");
   });
   ["c-q", "c-src", "c-bin", "c-sort"].forEach(id => $("#" + id).addEventListener(id === "c-q" ? "input" : "change", applyCores));
   $("#c-dir").addEventListener("click", () => { S.dir.c *= -1; $("#c-dir").textContent = S.dir.c > 0 ? "↑" : "↓"; applyCores(); });
@@ -1344,7 +1346,7 @@
   }
   $("#databases-table").addEventListener("click", ev => {
     const a = ev.target.closest("a[data-db]"); if (!a) return; ev.preventDefault();
-    $("#f-db").value = a.dataset.db; $("#f-cov").value = "all"; $("#f-cat").value = "arcade"; $("#f-work").value = "working"; applyTitles(); showTab("titles");
+    clearFilters(); $("#f-db").value = a.dataset.db; $("#f-cov").value = "all"; $("#f-cat").value = "arcade"; $("#f-work").value = "working"; applyTitles(); showTab("titles");
   });
 
   // ---------- unmatched + about ----------
