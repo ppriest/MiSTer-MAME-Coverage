@@ -8,6 +8,13 @@
       "enabled": true
     },
     {
+      "name": "asturur (Mister-cores)",
+      "home": "https://github.com/asturur/Mister-cores",
+      "db_url": "https://raw.githubusercontent.com/asturur/Mister-cores/db/db.json.zip",
+      "enabled": true,
+      "note": "builds of jotego-based cores (Power Spikes, F-1 Grand Prix, Round Up 5, System FL, ...)"
+    },
+    {
       "name": "bazset (MiSTer_BAZSET)",
       "home": "https://github.com/bazset/MiSTer_BAZSET",
       "db_url": "https://raw.githubusercontent.com/bazset/MiSTer_BAZSET/db/db.json.zip",

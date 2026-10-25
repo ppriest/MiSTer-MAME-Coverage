@@ -100,6 +100,8 @@ SUPERSEDED_CORES = {
     # decoryah's repositories became the "decoryah" source
     "repo:gaiapolis": "decoryah:gaiapolis", "repo:mcatadv": "decoryah:mcatadv", "repo:metamorphicforce": "decoryah:metamorphicforce",
     "repo:monstermaulers": "decoryah:monstermaulers", "repo:ohmygod": "decoryah:ohmygod", "repo:taitol": "decoryah:taitol",
+    # asturur's database publishes builds of these jotego-based cores (the "unreleased jtcores" placeholders of the andrea-cores branch)
+    "jtpr:jtpspike": "asturur:jtpspike", "jtpr:jtsysfl": "asturur:jtsysfl", "jtpr:jtf1grpr": "asturur:jtf1grpr",
     # rossops's repositories became the "rossops" source
     "repo:segaspaceharrier": "rossops:segaspaceharrier", "repo:segayboard": "rossops:segayboard",
 }
@@ -127,6 +129,8 @@ SOURCE_REPOS = {
     "dist:reliefpitcher": "MiSTer-devel/Arcade-ReliefPitcher_MiSTer",
     "dist:shuuz": "MiSTer-devel/Arcade-Shuuz_MiSTer",
     "dist:victory": "MiSTer-devel/Arcade-Victory_MiSTer",
+    # asturur's builds of jotego-based cores: the source is in jotego/jtcores (the andrea-cores branch; the roundup5 branch for jtroundu)
+    "asturur:jtpspike": "jotego/jtcores", "asturur:jtsysfl": "jotego/jtcores", "asturur:jtf1grpr": "jotego/jtcores", "asturur:jtroundu": "jotego/jtcores",
     "gm0rk:atari-g1": "Gm0rk/Arcade-Atari-G1_MiSTer",
     "gm0rk:atari-g42": "Gm0rk/Arcade-Atari-G42_MiSTer",
     "gm0rk:itech8": "Gm0rk/ITech8_MiSTer",
@@ -239,6 +243,8 @@ DB_SOURCES = {
     "decoryah": "https://raw.githubusercontent.com/decoryah/MiSTer_decoryah/db/db.json.zip",
     # TomSVR's cores (github.com/TomSVR-Mister/TomSVR-Arcade-Cores); his repositories are scanned too (OWNER_SOURCES)
     "tomsvr": "https://raw.githubusercontent.com/TomSVR-Mister/TomSVR-Arcade-Cores/db/db.json.zip",
+    # asturur's cores (github.com/asturur/Mister-cores): builds of jotego-based cores (Power Spikes, F-1 Grand Prix, Round Up 5, ...)
+    "asturur": "https://raw.githubusercontent.com/asturur/Mister-cores/db/db.json.zip",
 }
 # Cores that load ROM sets from a list instead of MRAs: (source, repo, file, core name).
 ROMSET_FILES = [
@@ -290,6 +296,7 @@ SOURCE_PAGES = {
     "illegalmp3": "https://github.com/illegalmp3?tab=repositories",
     "decoryah": "https://github.com/decoryah/MiSTer_decoryah",
     "tomsvr": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
+    "asturur": "https://github.com/asturur/Mister-cores",
     "rossops": "https://github.com/rossops?tab=repositories",
     "xela": "https://github.com/XelaNotPu?tab=repositories",
     "jtpr": "https://github.com/jotego/jtcores/tree/andrea-cores/cores",
@@ -320,6 +327,7 @@ DB_TITLES = {
     "illegalmp3": "illegalmp3 (GitHub repositories)",
     "decoryah": "decoryah",
     "tomsvr": "TomSVR",
+    "asturur": "asturur",
     "rossops": "rossops (GitHub repositories)",
     "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
     "repo": "GitHub repository only",
