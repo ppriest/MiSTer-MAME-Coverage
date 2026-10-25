@@ -327,7 +327,7 @@ DB_TITLES = {
     "illegalmp3": "illegalmp3 (GitHub repositories)",
     "decoryah": "decoryah",
     "tomsvr": "TomSVR",
-    "asturur": "asturur",
+    "asturur": "Andrea Bogazzi (asturur)",
     "rossops": "rossops (GitHub repositories)",
     "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
     "repo": "GitHub repository only",
