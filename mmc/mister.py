@@ -113,14 +113,19 @@ SUPERSEDED_CORES = {
     "repo:segag80": "rodimus:segag80", "repo:spaceinvaders_testbuild": "rodimus:spaceinvaders_testbuild",
     "repo:universal": "rodimus:universal_testbuild", "repo:universal_testbuild": "rodimus:universal_testbuild",
     "repo:williams_testbuild": "rodimus:williams_testbuild",
+    # zakk4223's repositories became the "zakk" source
+    "repo:bakraid": "zakk:bakraid", "repo:batrider": "zakk:batrider", "repo:garegga": "zakk:garegga", "repo:seibuspi": "zakk:seibuspi",
     # rossops's repositories became the "rossops" source
     "repo:segaspaceharrier": "rossops:segaspaceharrier", "repo:segayboard": "rossops:segayboard",
 }
 
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
-OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr", "kyledlester": "kyle", "illegalmp3": "illegalmp3", "yaguboo": "yaguboo", "rodimusfvc": "rodimus"}
+OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr", "kyledlester": "kyle", "illegalmp3": "illegalmp3", "yaguboo": "yaguboo", "rodimusfvc": "rodimus", "zakk4223": "zakk"}
 # Repositories of those owners that are not cores (forks of the shared MRA collection, a game runtime): never scanned.
-OWNER_SKIP = {"rossops/mra-alternatives_mister", "rossops/bennugd_mister", "rodimusfvc/rodimus_mister_db"}
+OWNER_SKIP = {"rossops/mra-alternatives_mister", "rossops/bennugd_mister", "rodimusfvc/rodimus_mister_db",
+              # zakk4223's tools and non-arcade projects (a USB/IP service, a controller database, a ROM database builder, a Sun workstation)
+              "zakk4223/mister_usbip", "zakk4223/main_mister_zqol", "zakk4223/mister-gamecontrollerdb", "zakk4223/arcaderomsdb_mister",
+              "zakk4223/sunsparcstation20_mister"}
 
 # A core is "binary-only" when no public source is known for it: none of the repositories tied to
 # it (its linked ``repo`` and the repositories its MRAs were first seen in) contains HDL source, or
@@ -309,6 +314,7 @@ SOURCE_PAGES = {
     "illegalmp3": "https://github.com/illegalmp3?tab=repositories",
     "yaguboo": "https://github.com/yaguboo?tab=repositories",
     "rodimus": "https://github.com/RodimusFVC?tab=repositories",
+    "zakk": "https://github.com/zakk4223?tab=repositories",
     "decoryah": "https://github.com/decoryah/MiSTer_decoryah",
     "tomsvr": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
     "asturur": "https://github.com/asturur/Mister-cores",
@@ -342,6 +348,7 @@ DB_TITLES = {
     "illegalmp3": "illegalmp3 (GitHub repositories)",
     "yaguboo": "yaguboo (GitHub repositories)",
     "rodimus": "RodimusFVC",
+    "zakk": "zakk4223 (GitHub repositories)",
     "decoryah": "decoryah",
     "tomsvr": "TomSVR",
     "asturur": "Andrea Bogazzi (asturur)",
