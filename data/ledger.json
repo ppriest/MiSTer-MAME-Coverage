@@ -6,15 +6,6 @@
 {
 "date": "2026-10-15",
 "note": "alamone 2026-10-12",
-"cores": 10,
-"sets": 14,
-"pairs": 138,
-"dates_improved": 0,
-"cores_removed": 2
-},
-{
-"date": "2026-10-15",
-"note": "alamone 2026-10-12",
 "cores": 4,
 "sets": 0,
 "pairs": 32,
@@ -461,6 +452,15 @@
 "pairs": 212,
 "dates_improved": 394,
 "cores_removed": 4
+},
+{
+"date": "2026-10-26",
+"note": "alamone 2026-10-26",
+"cores": 6,
+"sets": 17,
+"pairs": 32,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -598,6 +598,24 @@
 "note": null,
 "first_recorded": "2026-10-25",
 "aliases": [],
+"last_seen": "2026-10-26"
+},
+"bazset:agress": {
+"id": "bazset:agress",
+"name": "Arcade-Agress",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Arcade-Agress.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-26",
 "last_seen": "2026-10-26"
 },
 "bazset:aqua_jack": {
@@ -1245,6 +1263,24 @@
 "first_recorded": "2026-10-08",
 "aliases": [],
 "last_seen": "2026-10-18"
+},
+"bazset:tee_d_off_bazset": {
+"id": "bazset:tee_d_off_bazset",
+"name": "Tee_d_Off_bazset",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Tee_d_Off_bazset.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
 },
 "bazset:twinhawk_bazset": {
 "id": "bazset:twinhawk_bazset",
@@ -12323,6 +12359,24 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-26"
 },
+"ongo:agress": {
+"id": "ongo:agress",
+"name": "Arcade-Agress",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Arcade-Agress.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+},
 "ongo:ah": {
 "id": "ongo:ah",
 "name": "Arcade-AH",
@@ -15815,6 +15869,42 @@
 "aliases": [],
 "last_seen": "2026-10-26"
 },
+"ppriest:decomlc": {
+"id": "ppriest:decomlc",
+"name": "DecoMLC",
+"source": "ppriest",
+"source_title": "ppriest (Tourniquet)",
+"channel": null,
+"rbf": "DecoMLC.rbf",
+"repo": "ppriest/Arcade-DecoMLC_MiSTer",
+"url": "https://github.com/ppriest/Arcade-DecoMLC_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+},
+"ppriest:decomlc156": {
+"id": "ppriest:decomlc156",
+"name": "DecoMLC156",
+"source": "ppriest",
+"source_title": "ppriest (Tourniquet)",
+"channel": null,
+"rbf": "DecoMLC156.rbf",
+"repo": "ppriest/Arcade-DecoMLC_MiSTer",
+"url": "https://github.com/ppriest/Arcade-DecoMLC_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+},
 "ppriest:dreamworld": {
 "id": "ppriest:dreamworld",
 "name": "DreamWorld",
@@ -18963,6 +19053,24 @@
 "aliases": [],
 "last_seen": "2026-10-26"
 },
+"tomsvr:tomsvr_megaplay": {
+"id": "tomsvr:tomsvr_megaplay",
+"name": "TomSVR_megaplay",
+"source": "tomsvr",
+"source_title": "TomSVR",
+"channel": null,
+"rbf": "TomSVR_megaplay.rbf",
+"repo": "TomSVR-Mister/TomSVR-Arcade-Cores",
+"url": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+},
 "tomsvr:tomsvr_megatech": {
 "id": "tomsvr:tomsvr_megatech",
 "name": "TomSVR_megatech",
@@ -19767,6 +19875,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-26",
+"aliases": [],
 "last_seen": "2026-10-26"
 },
 "zakk:batrider": {
@@ -19787,6 +19896,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-26",
+"aliases": [],
 "last_seen": "2026-10-26"
 },
 "zakk:garegga": {
@@ -19807,6 +19917,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-26",
+"aliases": [],
 "last_seen": "2026-10-26"
 },
 "zakk:jtf1dream": {
@@ -19825,6 +19936,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-26",
+"aliases": [],
 "last_seen": "2026-10-26"
 },
 "zakk:seibuspi": {
@@ -19845,6 +19957,7 @@
 ],
 "note": null,
 "first_recorded": "2026-10-26",
+"aliases": [],
 "last_seen": "2026-10-26"
 }
 },
@@ -21454,6 +21567,21 @@
 "last_seen": "2026-10-26"
 }
 },
+"acchi": {
+"ppriest:decomlc156": {
+"core": "ppriest:decomlc156",
+"date": "2026-10-26",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Janken Game Acchi Muite Hoi! (Japan 1.3).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+}
+},
 "aceattaca": {
 "jt:jts16": {
 "core": "jt:jts16",
@@ -22195,6 +22323,34 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-26",
 "mra": "_Arcade/Air Gallet (USA).mra"
+}
+},
+"agress": {
+"bazset:agress": {
+"core": "bazset:agress",
+"date": "2026-10-26",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Agress - Missile Daisenryaku (Japan).mra",
+"mra": "_Arcade/_BAZSET/Agress - Missile Daisenryaku (Japan).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+},
+"ongo:agress": {
+"core": "ongo:agress",
+"date": "2026-10-26",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Agress - Missile Daisenryaku (Japan).mra",
+"mra": "_Arcade/_BAZSET/Agress - Missile Daisenryaku (Japan).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
 }
 },
 "airass": {
@@ -27218,6 +27374,36 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-26",
 "mra": "_Arcade/Avengers (US).mra"
+}
+},
+"avengrgs": {
+"ppriest:decomlc": {
+"core": "ppriest:decomlc",
+"date": "2026-10-26",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Avengers In Galactic Storm (US-Europe 1.0).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+}
+},
+"avengrgsj": {
+"ppriest:decomlc": {
+"core": "ppriest:decomlc",
+"date": "2026-10-26",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Avengers In Galactic Storm (US-Europe 1.0)/Avengers In Galactic Storm (Japan 1.2).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
 }
 },
 "avsp": {
@@ -34371,6 +34557,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-26",
 "mra": "_Arcade/Burning Rival (World).mra"
+},
+"repo:s32": {
+"core": "repo:s32",
+"date": "2026-10-26",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/s32",
+"first_path": "releases/Burning Rival (World).mra",
+"mra": "_Arcade/Burning Rival.mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
 }
 },
 "brivalj": {
@@ -34386,6 +34585,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-26",
 "mra": "_Arcade/Burning Rival (Japan).mra"
+},
+"repo:s32": {
+"core": "repo:s32",
+"date": "2026-10-26",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": true,
+"first_repo": "meathax/s32",
+"first_path": "releases/_alternatives/_Burning Rival/Burning Rival (Japan).mra",
+"mra": "_Arcade/Burning Rival (Japan).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
 }
 },
 "brkthru": {
@@ -47234,6 +47446,21 @@
 "first_repo": "zakk4223/Mister-MRA",
 "first_path": "_A-F/_Clones/_Double Dragon/Double Dragon (World set 2).mra",
 "mra": "_Arcade/Double Dragon (World set 2).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+}
+},
+"ddream95": {
+"ppriest:decomlc156": {
+"core": "ppriest:decomlc156",
+"date": "2026-10-26",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Hoops '96 (Europe-Asia 2.0)/Dunk Dream '95 (Japan 1.4, EAM).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-10-26"
 }
@@ -72253,6 +72480,36 @@
 "mra": "_Arcade/_alternatives/_Hook/Hook (Japan).mra"
 }
 },
+"hoops95": {
+"ppriest:decomlc156": {
+"core": "ppriest:decomlc156",
+"date": "2026-10-26",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Hoops '96 (Europe-Asia 2.0)/Hoops (Europe-Asia 1.7).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+}
+},
+"hoops96": {
+"ppriest:decomlc156": {
+"core": "ppriest:decomlc156",
+"date": "2026-10-26",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Hoops '96 (Europe-Asia 2.0).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+}
+},
 "hopmappy": {
 "jt:jtthundr": {
 "core": "jt:jtthundr",
@@ -93161,6 +93418,19 @@
 "mra": "_Arcade/Sega Mega Play - Bio-hazard Battle.mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-10-26"
+},
+"tomsvr:tomsvr_megaplay": {
+"core": "tomsvr:tomsvr_megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Bio-hazard Battle.mra",
+"mra": "_Arcade/_TomSVR/Bio-hazard Battle (Mega Play) [TomSVR].mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
 }
 },
 "mp_col3": {
@@ -93175,6 +93445,19 @@
 "first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Columns III.mra",
 "mra": "_Arcade/Sega Mega Play - Columns III.mra",
 "first_recorded": "2026-10-18",
+"last_seen": "2026-10-26"
+},
+"tomsvr:tomsvr_megaplay": {
+"core": "tomsvr:tomsvr_megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Columns III.mra",
+"mra": "_Arcade/_TomSVR/Columns III (Mega Play) [TomSVR].mra",
+"first_recorded": "2026-10-26",
 "last_seen": "2026-10-26"
 }
 },
@@ -93191,6 +93474,34 @@
 "mra": "_Arcade/Sega Mega Play - Golden Axe II (Rev B).mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-10-26"
+},
+"tomsvr:tomsvr_megaplay": {
+"core": "tomsvr:tomsvr_megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Golden Axe II (Rev B).mra",
+"mra": "_Arcade/_TomSVR/Golden Axe II (Mega Play) (Rev B) [TomSVR].mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+}
+},
+"mp_gaxe2a": {
+"tomsvr:tomsvr_megaplay": {
+"core": "tomsvr:tomsvr_megaplay",
+"date": "2026-10-26",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Golden Axe II (Mega Play) [TomSVR].mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
 }
 },
 "mp_gslam": {
@@ -93205,6 +93516,19 @@
 "first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Grand Slam.mra",
 "mra": "_Arcade/Sega Mega Play - Grand Slam.mra",
 "first_recorded": "2026-10-18",
+"last_seen": "2026-10-26"
+},
+"tomsvr:tomsvr_megaplay": {
+"core": "tomsvr:tomsvr_megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Grand Slam.mra",
+"mra": "_Arcade/_TomSVR/Grand Slam (Mega Play) [TomSVR].mra",
+"first_recorded": "2026-10-26",
 "last_seen": "2026-10-26"
 }
 },
@@ -93221,6 +93545,19 @@
 "mra": "_Arcade/Sega Mega Play - Gunstar Heroes.mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-10-26"
+},
+"tomsvr:tomsvr_megaplay": {
+"core": "tomsvr:tomsvr_megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Gunstar Heroes.mra",
+"mra": "_Arcade/_TomSVR/Gunstar Heroes (Mega Play) [TomSVR].mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
 }
 },
 "mp_mazin": {
@@ -93235,6 +93572,19 @@
 "first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Mazin Wars.mra",
 "mra": "_Arcade/Sega Mega Play - Mazin Wars.mra",
 "first_recorded": "2026-10-18",
+"last_seen": "2026-10-26"
+},
+"tomsvr:tomsvr_megaplay": {
+"core": "tomsvr:tomsvr_megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Mazin Wars.mra",
+"mra": "_Arcade/_TomSVR/Mazin Wars - Mazin Saga (Mega Play) [TomSVR].mra",
+"first_recorded": "2026-10-26",
 "last_seen": "2026-10-26"
 }
 },
@@ -93251,6 +93601,19 @@
 "mra": "_Arcade/Sega Mega Play - Shinobi III.mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-10-26"
+},
+"tomsvr:tomsvr_megaplay": {
+"core": "tomsvr:tomsvr_megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Shinobi III.mra",
+"mra": "_Arcade/_TomSVR/Shinobi III (Mega Play) [TomSVR].mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
 }
 },
 "mp_soni2": {
@@ -93265,6 +93628,19 @@
 "first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Sonic The Hedgehog 2.mra",
 "mra": "_Arcade/Sega Mega Play - Sonic The Hedgehog 2.mra",
 "first_recorded": "2026-10-18",
+"last_seen": "2026-10-26"
+},
+"tomsvr:tomsvr_megaplay": {
+"core": "tomsvr:tomsvr_megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Sonic The Hedgehog 2.mra",
+"mra": "_Arcade/_TomSVR/Sonic The Hedgehog 2 (Mega Play) [TomSVR].mra",
+"first_recorded": "2026-10-26",
 "last_seen": "2026-10-26"
 }
 },
@@ -93281,6 +93657,19 @@
 "mra": "_Arcade/Sega Mega Play - Sonic The Hedgehog.mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-10-26"
+},
+"tomsvr:tomsvr_megaplay": {
+"core": "tomsvr:tomsvr_megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Sonic The Hedgehog.mra",
+"mra": "_Arcade/_TomSVR/Sonic The Hedgehog (Mega Play) [TomSVR].mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
 }
 },
 "mp_sor2": {
@@ -93296,6 +93685,19 @@
 "mra": "_Arcade/Sega Mega Play - Streets of Rage II.mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-10-26"
+},
+"tomsvr:tomsvr_megaplay": {
+"core": "tomsvr:tomsvr_megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Streets of Rage II.mra",
+"mra": "_Arcade/_TomSVR/Streets of Rage II (Mega Play) [TomSVR].mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
 }
 },
 "mp_twcup": {
@@ -93310,6 +93712,19 @@
 "first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Tecmo World Cup.mra",
 "mra": "_Arcade/Sega Mega Play - Tecmo World Cup.mra",
 "first_recorded": "2026-10-18",
+"last_seen": "2026-10-26"
+},
+"tomsvr:tomsvr_megaplay": {
+"core": "tomsvr:tomsvr_megaplay",
+"date": "2026-06-25",
+"date_quality": "git",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": "iequalshane/MegaPlay_MiSTer_Beta",
+"first_path": "MegaPlayBeta_20260625/_Arcade/_megaplay/Sega Mega Play - Tecmo World Cup.mra",
+"mra": "_Arcade/_TomSVR/Tecmo World Cup (Mega Play) [TomSVR].mra",
+"first_recorded": "2026-10-26",
 "last_seen": "2026-10-26"
 }
 },
@@ -134423,6 +134838,51 @@
 "last_seen": "2026-10-26"
 }
 },
+"skullfng": {
+"ppriest:decomlc156": {
+"core": "ppriest:decomlc156",
+"date": "2026-10-26",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Skull Fang (Europe 1.13).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+}
+},
+"skullfnga": {
+"ppriest:decomlc156": {
+"core": "ppriest:decomlc156",
+"date": "2026-10-26",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Skull Fang (Europe 1.13)/Skull Fang - Kuhga Gaiden (Asia 1.13).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+}
+},
+"skullfngj": {
+"ppriest:decomlc156": {
+"core": "ppriest:decomlc156",
+"date": "2026-10-26",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Skull Fang (Europe 1.13)/Skull Fang - Kuhga Gaiden (Japan 1.09).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+}
+},
 "skullxbo": {
 "dist:skullxbones": {
 "core": "dist:skullxbones",
@@ -142186,6 +142646,81 @@
 "last_seen": "2026-10-26"
 }
 },
+"stadhr96": {
+"ppriest:decomlc156": {
+"core": "ppriest:decomlc156",
+"date": "2026-10-26",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Stadium Hero '96 (Europe, EAJ, Tuning license).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+}
+},
+"stadhr96j": {
+"ppriest:decomlc156": {
+"core": "ppriest:decomlc156",
+"date": "2026-10-26",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Stadium Hero '96 (Europe, EAJ, Tuning license)/Stadium Hero '96 (Japan, EAD).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+}
+},
+"stadhr96j2": {
+"ppriest:decomlc156": {
+"core": "ppriest:decomlc156",
+"date": "2026-10-26",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Stadium Hero '96 (Europe, EAJ, Tuning license)/Stadium Hero '96 (Japan-, EAE).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+}
+},
+"stadhr96k": {
+"ppriest:decomlc156": {
+"core": "ppriest:decomlc156",
+"date": "2026-10-26",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Stadium Hero '96 (Europe, EAJ, Tuning license)/Stadium Hero '96 (Korea, Dream Island license).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+}
+},
+"stadhr96u": {
+"ppriest:decomlc156": {
+"core": "ppriest:decomlc156",
+"date": "2026-10-26",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Stadium Hero '96 (Europe, EAJ, Tuning license)/Stadium Hero '96 (USA, EAH).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+}
+},
 "stagger1": {
 "kuze:nmk16_afega": {
 "core": "kuze:nmk16_afega",
@@ -147948,6 +148483,19 @@
 }
 },
 "teedoff": {
+"bazset:tee_d_off_bazset": {
+"core": "bazset:tee_d_off_bazset",
+"date": "2026-10-26",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Tee'd Off (World).mra",
+"mra": "_Arcade/_BAZSET/Tee'd Off (World).mra",
+"first_recorded": "2026-10-26",
+"last_seen": "2026-10-26"
+},
 "ongo:tee_d_off_bazset": {
 "core": "ongo:tee_d_off_bazset",
 "date": "2026-10-25",
@@ -168197,6 +168745,9 @@
 "dist": "Shooter / Flight",
 "rossops": "Shooter / Flight"
 },
+"acchi": {
+"ppriest": "Puzzle"
+},
 "acedrive": {
 "ongo": "Arcade"
 },
@@ -168289,6 +168840,10 @@
 },
 "agalletu": {
 "dist": "Vertical Shooter"
+},
+"agress": {
+"ongo": "Arcade",
+"bazset": "Arcade"
 },
 "airass": {
 "dist": "Shooter"
@@ -168843,6 +169398,12 @@
 "avefenixrf": {
 "dist": "Shooter - Gallery",
 "rodimus": "Shooter"
+},
+"avengrgs": {
+"ppriest": "Fighter"
+},
+"avengrgsj": {
+"ppriest": "Fighter"
 },
 "avspirit": {
 "ongo": "Arcade",
@@ -171299,6 +171860,9 @@
 },
 "ddragonw1": {
 "zakk": "Fighter / Hero"
+},
+"ddream95": {
+"ppriest": "Sports"
 },
 "deathbrd": {
 "coinop": "Fighting"
@@ -174196,6 +174760,12 @@
 "hookj": {
 "dist": "Shooter",
 "zakk": "Shooter"
+},
+"hoops95": {
+"ppriest": "Sports"
+},
+"hoops96": {
+"ppriest": "Sports"
 },
 "horekid": {
 "coinop": "Platformer",
@@ -180831,6 +181401,15 @@
 "repo": "Shooter",
 "rodimus": "Shooter"
 },
+"skullfng": {
+"ppriest": "Shooter"
+},
+"skullfnga": {
+"ppriest": "Shooter"
+},
+"skullfngj": {
+"ppriest": "Shooter"
+},
 "skullxbo": {
 "dist": "Fighter",
 "ongo": "Fighter"
@@ -181645,6 +182224,21 @@
 "coinop": "Shoot'em up",
 "repo": "Shoot'em up",
 "zakk": "Shoot'em up"
+},
+"stadhr96": {
+"ppriest": "Sports"
+},
+"stadhr96j": {
+"ppriest": "Sports"
+},
+"stadhr96j2": {
+"ppriest": "Sports"
+},
+"stadhr96k": {
+"ppriest": "Sports"
+},
+"stadhr96u": {
+"ppriest": "Sports"
 },
 "stagger1": {
 "ongo": "Shooter",

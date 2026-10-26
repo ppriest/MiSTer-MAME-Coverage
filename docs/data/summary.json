@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-26T13:46:04+00:00",
+  "generated": "2026-10-26T20:41:20+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-26T13:45:40+00:00",
+  "mister_generated": "2026-10-26T20:41:00+00:00",
   "alamone_generated": "2026-10-26T09:17:05+00:00",
   "ledger_updated": "2026-10-26",
   "ledger_runs": [
-   {
-    "date": "2026-10-25",
-    "note": "alamone 2026-10-19",
-    "cores": 3,
-    "sets": 1,
-    "pairs": 24,
-    "dates_improved": 0,
-    "cores_removed": 3
-   },
    {
     "date": "2026-10-25",
     "note": "alamone 2026-10-19",
@@ -51,6 +42,15 @@
     "pairs": 212,
     "dates_improved": 394,
     "cores_removed": 4
+   },
+   {
+    "date": "2026-10-26",
+    "note": "alamone 2026-10-26",
+    "cores": 6,
+    "sets": 17,
+    "pairs": 32,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5451 sets, 5451 used); mame2016: catver_mame2016.ini (37065 sets, 32584 used)",
    "catver_entries": 38035,
    "mad_entries": 2995,
-   "mra_entries": 4123,
+   "mra_entries": 4138,
    "unmapped": [
     {
      "raw": "not classified",
@@ -1820,7 +1820,7 @@
     "source": "repo",
     "repo": "RetroShrimp/Arcade-SegaSystem32_MiSTer",
     "dirs": null,
-    "mras": 13
+    "mras": 15
    },
    {
     "source": "rodimus",
@@ -2894,7 +2894,7 @@
     "source": "ongo",
     "repo": "bazset/MiSTer_BAZSET",
     "dirs": null,
-    "mras": 51
+    "mras": 52
    },
    {
     "source": "ongo",
@@ -3428,13 +3428,13 @@
   "counts": {
    "titles": 6826,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2464,
+   "working_arcade_titles_covered": 2469,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 6457,
-   "working_arcade_titles_source": 2228,
-   "working_arcade_titles_binary_only": 236,
-   "cores": 793,
-   "binary_only_cores": 271,
+   "working_arcade_sets_covered": 6469,
+   "working_arcade_titles_source": 2241,
+   "working_arcade_titles_binary_only": 228,
+   "cores": 797,
+   "binary_only_cores": 274,
    "unmatched_sets": 515
   }
  },
@@ -3601,6 +3601,28 @@
    "nsets": 5,
    "ntitles": 2,
    "first_date": "2026-09-23"
+  },
+  {
+   "id": "bazset:agress",
+   "name": "Agress",
+   "source": "bazset",
+   "source_title": "bazset (MiSTer_BAZSET)",
+   "channel": null,
+   "rbf": "Arcade-Agress.rbf",
+   "repo": "bazset/MiSTer_BAZSET",
+   "url": "https://github.com/bazset/MiSTer_BAZSET",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-26"
   },
   {
    "id": "bazset:aqua_jack",
@@ -4383,6 +4405,28 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-18"
+  },
+  {
+   "id": "bazset:tee_d_off_bazset",
+   "name": "Tee_d_Off_bazset",
+   "source": "bazset",
+   "source_title": "bazset (MiSTer_BAZSET)",
+   "channel": null,
+   "rbf": "Tee_d_Off_bazset.rbf",
+   "repo": "bazset/MiSTer_BAZSET",
+   "url": "https://github.com/bazset/MiSTer_BAZSET",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-26"
   },
   {
    "id": "bazset:twinhawk_bazset",
@@ -17897,29 +17941,6 @@
    "first_date": "2026-08-02"
   },
   {
-   "id": "ongo:tee_d_off_bazset",
-   "name": "Tee_d_Off_bazset",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Tee_d_Off_bazset.rbf",
-   "repo": "bazset/MiSTer_BAZSET",
-   "url": "https://github.com/bazset/MiSTer_BAZSET",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-26",
-   "aliases": [],
-   "last_seen": "2026-10-26",
-   "binary_only": true,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-10-25"
-  },
-  {
    "id": "ongo:vsnes",
    "name": "VSnes",
    "source": "ongo",
@@ -18102,6 +18123,50 @@
    "nsets": 40,
    "ntitles": 26,
    "first_date": "2026-09-26"
+  },
+  {
+   "id": "ppriest:decomlc",
+   "name": "DecoMLC",
+   "source": "ppriest",
+   "source_title": "ppriest (Tourniquet)",
+   "channel": null,
+   "rbf": "DecoMLC.rbf",
+   "repo": "ppriest/Arcade-DecoMLC_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-DecoMLC_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 2,
+   "ntitles": 1,
+   "first_date": "2026-10-26"
+  },
+  {
+   "id": "ppriest:decomlc156",
+   "name": "DecoMLC156",
+   "source": "ppriest",
+   "source_title": "ppriest (Tourniquet)",
+   "channel": null,
+   "rbf": "DecoMLC156.rbf",
+   "repo": "ppriest/Arcade-DecoMLC_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-DecoMLC_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 8,
+   "ntitles": 3,
+   "first_date": "2026-10-26"
   },
   {
    "id": "ppriest:dreamworld",
@@ -19885,8 +19950,8 @@
    "first_recorded": "2026-10-19",
    "last_seen": "2026-10-26",
    "binary_only": false,
-   "nsets": 13,
-   "ntitles": 5,
+   "nsets": 15,
+   "ntitles": 6,
    "first_date": "2026-10-16"
   },
   {
@@ -21860,6 +21925,28 @@
    "first_date": "2026-10-23"
   },
   {
+   "id": "tomsvr:tomsvr_megaplay",
+   "name": "TomSVR_megaplay",
+   "source": "tomsvr",
+   "source_title": "TomSVR",
+   "channel": null,
+   "rbf": "TomSVR_megaplay.rbf",
+   "repo": "TomSVR-Mister/TomSVR-Arcade-Cores",
+   "url": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 10,
+   "ntitles": 9,
+   "first_date": "2026-06-25"
+  },
+  {
    "id": "tomsvr:tomsvr_megatech",
    "name": "TomSVR_megatech",
    "source": "tomsvr",
@@ -22819,6 +22906,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 4,
@@ -22843,6 +22931,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 8,
@@ -22867,6 +22956,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 12,
@@ -22889,6 +22979,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": true,
    "nsets": 1,
@@ -22913,6 +23004,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 51,
@@ -24690,11 +24782,14 @@
   {
    "sourcefile": "dataeast/deco_mlc.cpp",
    "titles": 4,
-   "covered": 0,
+   "covered": 4,
    "sets": 10,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 10,
+   "cores": [
+    "ppriest:decomlc",
+    "ppriest:decomlc156"
+   ],
+   "first": "2026-10-26"
   },
   {
    "sourcefile": "dataeast/decocass.cpp",
@@ -29924,9 +30019,10 @@
    "titles": 9,
    "covered": 9,
    "sets": 10,
-   "sets_covered": 9,
+   "sets_covered": 10,
    "cores": [
-    "repo:megaplay"
+    "repo:megaplay",
+    "tomsvr:tomsvr_megaplay"
    ],
    "first": "2026-06-25"
   },
@@ -31852,10 +31948,11 @@
   {
    "sourcefile": "technos/blockout.cpp",
    "titles": 2,
-   "covered": 1,
+   "covered": 2,
    "sets": 6,
-   "sets_covered": 4,
+   "sets_covered": 5,
    "cores": [
+    "bazset:agress",
     "jt:jtblkout"
    ],
    "first": "2026-08-16"
@@ -32143,8 +32240,8 @@
    "sets": 8,
    "sets_covered": 6,
    "cores": [
-    "jt:jtwc",
-    "ongo:tee_d_off_bazset"
+    "bazset:tee_d_off_bazset",
+    "jt:jtwc"
    ],
    "first": "2024-11-08"
   },
