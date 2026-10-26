@@ -8,6 +8,7 @@
   const pct = (a, b) => b ? (100 * a / b).toFixed(1) + "%" : "–";
 
   const GALLERY_ENABLED = true;        // the Titles gallery view (List / Gallery toolbar, #view=gallery); set false to switch it off
+  const DRIVER_WISHLIST = false;       // +1 on drivers and the Wishlist's Drivers table; set true to bring them back (titles only for now)
   const S = { data: null, cores: {}, titles: [], shown: 0, PAGE: 250, dir: { t: 1, d: -1, c: 1 }, open: new Set() };
 
   // ---------- state in the URL hash ----------
@@ -688,7 +689,7 @@
       ${genre ? `<td class="num" title="${esc(genre)} titles on MiSTer / in the driver">${g.covered}/${g.titles}</td><td class="num" title="${esc(genre)} sets on MiSTer / in the driver">${g.sets_covered}/${g.sets}</td>` : ""}
       <td class="num">${d.first || ""}</td>
       <td>${d.cores.map(id => badge(id)).join("")}${(d.cores_claimed || []).map(id => badge(id)).join("")}</td>
-      <td class="act">${d.covered < d.titles ? plus1("driver", d.sourcefile) : ""}</td></tr>`; }).join("");
+      ${DRIVER_WISHLIST ? `<td class="act">${d.covered < d.titles ? plus1("driver", d.sourcefile) : ""}</td>` : ""}</tr>`; }).join("");
     S.hwOpen.forEach(f => { const b = $(`#drivers-table .hwtoggle[data-hw="${CSS.escape(f)}"]`); if (b) showHardware(b, true); });
   }
 
@@ -845,6 +846,7 @@
   $("#c-reset").addEventListener("click", () => { CORE_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.c = 1; $("#c-dir").textContent = "↑"; applyCores(); });
 
   // ---------- wishlist (votes live in the /api functions; the page works without them) ----------
+  $("#d-plus1").hidden = !DRIVER_WISHLIST;
   S.api = { ok: false, votes: { title: new Map(), driver: new Map() }, mine: { title: new Set(), driver: new Set() }, list: { titles: [], drivers: [] } };
   const plus1 = (kind, key) => {
     if (!S.api.ok) return S.api.tried ? `<button type="button" class="plus1" disabled title="the wishlist service is not reachable (${esc(S.api.error || "unknown")}); see /api/health">+1</button>` : "";
@@ -880,11 +882,12 @@
   const driverDone = v => { const d = S.driverByFile[v.key]; return !!d && d.covered > 0; };
   function renderWishlist() {
     const note = $("#wishlist-note");
+    $("#wl-drivers-h").hidden = $("#wl-drivers-wrap").hidden = !DRIVER_WISHLIST;
     $$("#wl-view button").forEach(b => { const on = b.dataset.view === S.wlView; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
     if (!S.api.ok) { $("#wl-drivers tbody").innerHTML = ""; $("#wl-titles tbody").innerHTML = '<tr><td colspan="9" class="muted">The wishlist service is not reachable right now (' + esc(S.api.error || "unknown") + '). Open /api/health to see what is missing.</td></tr>'; return; }
     const fulfilled = S.wlView === "fulfilled";
     const none = c => `<tr><td colspan="${c}" class="muted">${fulfilled ? "Nothing fulfilled yet." : "No requests yet."}</td></tr>`;
-    const all = { drivers: S.api.list.drivers, titles: S.api.list.titles };
+    const all = { drivers: DRIVER_WISHLIST ? S.api.list.drivers : [], titles: S.api.list.titles };
     const nFul = all.drivers.filter(driverDone).length + all.titles.filter(titleDone).length;
     $("#wl-n-fulfilled").textContent = `(${nFul})`; $("#wl-n-requested").textContent = `(${all.drivers.length + all.titles.length - nFul})`;
     $$("#wl-view button").forEach(b => { const on = b.dataset.view === S.wlView; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
