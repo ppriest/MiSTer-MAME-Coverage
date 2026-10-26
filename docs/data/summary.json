@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-26T02:22:34+00:00",
+  "generated": "2026-10-26T10:56:00+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-26T02:22:19+00:00",
-  "alamone_generated": "2026-10-19T09:14:45+00:00",
+  "mister_generated": "2026-10-26T10:55:33+00:00",
+  "alamone_generated": "2026-10-26T09:17:05+00:00",
   "ledger_updated": "2026-10-26",
   "ledger_runs": [
-   {
-    "date": "2026-10-25",
-    "note": "alamone 2026-10-19",
-    "cores": 5,
-    "sets": 14,
-    "pairs": 22,
-    "dates_improved": 0,
-    "cores_removed": 3
-   },
    {
     "date": "2026-10-25",
     "note": "alamone 2026-10-19",
@@ -51,6 +42,15 @@
     "pairs": 1265,
     "dates_improved": 18,
     "cores_removed": 12
+   },
+   {
+    "date": "2026-10-26",
+    "note": "alamone 2026-10-26",
+    "cores": 22,
+    "sets": 23,
+    "pairs": 368,
+    "dates_improved": 49,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5451 sets, 5451 used); mame2016: catver_mame2016.ini (37065 sets, 32584 used)",
    "catver_entries": 38035,
    "mad_entries": 2995,
-   "mra_entries": 4028,
+   "mra_entries": 4040,
    "unmapped": [
     {
      "raw": "not classified",
@@ -257,7 +257,7 @@
     "dirs": [
      "."
     ],
-    "mras": 914
+    "mras": 921
    },
    {
     "source": "jt",
@@ -1311,6 +1311,12 @@
    },
    {
     "source": "dist",
+    "repo": "MiSTer-devel/Arcade-StarCastle_MiSTer",
+    "dirs": null,
+    "mras": 8
+   },
+   {
+    "source": "dist",
     "repo": "MiSTer-devel/Arcade-StarWars_MiSTer",
     "dirs": null,
     "mras": 2
@@ -1725,6 +1731,12 @@
    },
    {
     "source": "repo",
+    "repo": "Eggsecutioner528/Gondomania_Mister_Core",
+    "dirs": null,
+    "mras": 1
+   },
+   {
+    "source": "repo",
     "repo": "Eggsecutioner528/Mister-FPGA-Blades-of-Steel",
     "dirs": null,
     "mras": 1
@@ -1737,6 +1749,12 @@
    },
    {
     "source": "repo",
+    "repo": "Eggsecutioner528/SRD-Super_Real_Darvin",
+    "dirs": null,
+    "mras": 2
+   },
+   {
+    "source": "repo",
     "repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
     "dirs": null,
     "mras": 13
@@ -1746,6 +1764,12 @@
     "repo": "Gm0rk/Arcade-Atari-G42_MiSTer",
     "dirs": null,
     "mras": 5
+   },
+   {
+    "source": "repo",
+    "repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+    "dirs": null,
+    "mras": 53
    },
    {
     "source": "repo",
@@ -1791,6 +1815,12 @@
    },
    {
     "source": "rodimus",
+    "repo": "RodimusFVC/Arcade-BallyMidwayMCR_MiSTer",
+    "dirs": null,
+    "mras": 67
+   },
+   {
+    "source": "rodimus",
     "repo": "RodimusFVC/Arcade-Centipede_MiSTer",
     "dirs": null,
     "mras": 48
@@ -1827,9 +1857,39 @@
    },
    {
     "source": "rodimus",
+    "repo": "RodimusFVC/Arcade-Irem1_MiSTer",
+    "dirs": null,
+    "mras": 34
+   },
+   {
+    "source": "rodimus",
+    "repo": "RodimusFVC/Arcade-Namco6809_MiSTer",
+    "dirs": null,
+    "mras": 64
+   },
+   {
+    "source": "rodimus",
+    "repo": "RodimusFVC/Arcade-Nintendo_MiSTer",
+    "dirs": null,
+    "mras": 51
+   },
+   {
+    "source": "rodimus",
+    "repo": "RodimusFVC/Arcade-Phoenix_MiSTer",
+    "dirs": null,
+    "mras": 47
+   },
+   {
+    "source": "rodimus",
     "repo": "RodimusFVC/Arcade-SegaG80_MiSTer",
     "dirs": null,
     "mras": 16
+   },
+   {
+    "source": "rodimus",
+    "repo": "RodimusFVC/Arcade-SegaSystem1-2_MiSTer",
+    "dirs": null,
+    "mras": 92
    },
    {
     "source": "rodimus",
@@ -1848,6 +1908,12 @@
     "repo": "RodimusFVC/Arcade-Williams_MiSTer",
     "dirs": null,
     "mras": 58
+   },
+   {
+    "source": "rodimus",
+    "repo": "RodimusFVC/VCR_Robots",
+    "dirs": null,
+    "mras": 1
    },
    {
     "source": "repo",
@@ -1878,12 +1944,6 @@
     "repo": "Usquebagh/Arcade-Jedi_MiSTer",
     "dirs": null,
     "mras": 1
-   },
-   {
-    "source": "repo",
-    "repo": "Videodr0me/Arcade-StarCastle_MiSTer",
-    "dirs": null,
-    "mras": 8
    },
    {
     "source": "xela",
@@ -2029,6 +2089,24 @@
    },
    {
     "source": "decoryah",
+    "repo": "decoryah/Arcade-Aquarium_MiSTer",
+    "dirs": null,
+    "mras": 2
+   },
+   {
+    "source": "decoryah",
+    "repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
+    "dirs": null,
+    "mras": 22
+   },
+   {
+    "source": "decoryah",
+    "repo": "decoryah/Arcade-CrossPang_MiSTer",
+    "dirs": null,
+    "mras": 6
+   },
+   {
+    "source": "decoryah",
     "repo": "decoryah/Arcade-Gaiapolis_MiSTer",
     "dirs": [
      "mra"
@@ -2037,9 +2115,21 @@
    },
    {
     "source": "decoryah",
+    "repo": "decoryah/Arcade-Gunpey_MiSTer",
+    "dirs": null,
+    "mras": 1
+   },
+   {
+    "source": "decoryah",
     "repo": "decoryah/Arcade-HeavyUnit_MiSTer",
     "dirs": null,
     "mras": 5
+   },
+   {
+    "source": "decoryah",
+    "repo": "decoryah/Arcade-Hexion_MiSTer",
+    "dirs": null,
+    "mras": 2
    },
    {
     "source": "decoryah",
@@ -2083,11 +2173,29 @@
    },
    {
     "source": "decoryah",
+    "repo": "decoryah/Arcade-MysticWarriors_MiSTer",
+    "dirs": null,
+    "mras": 5
+   },
+   {
+    "source": "decoryah",
     "repo": "decoryah/Arcade-OhMyGod_MiSTer",
     "dirs": [
      "mra"
     ],
     "mras": 2
+   },
+   {
+    "source": "decoryah",
+    "repo": "decoryah/Arcade-Rabbit_MiSTer",
+    "dirs": null,
+    "mras": 4
+   },
+   {
+    "source": "decoryah",
+    "repo": "decoryah/Arcade-Seta2_MiSTer",
+    "dirs": null,
+    "mras": 23
    },
    {
     "source": "decoryah",
@@ -2147,6 +2255,12 @@
    },
    {
     "source": "repo",
+    "repo": "guljam/namco-system-10-mister-core-beta",
+    "dirs": null,
+    "mras": 7
+   },
+   {
+    "source": "repo",
     "repo": "harlock74/Arcade-10YardFight_MiSTer",
     "dirs": null,
     "mras": 1
@@ -2180,6 +2294,12 @@
     "repo": "harlock74/Arcade-ThePit_MiSTer",
     "dirs": null,
     "mras": 0
+   },
+   {
+    "source": "repo",
+    "repo": "jsmolina/Arcade-Picmatic_MiSTer",
+    "dirs": null,
+    "mras": 3
    },
    {
     "source": "repo",
@@ -2243,6 +2363,12 @@
    },
    {
     "source": "kyle",
+    "repo": "kyledlester/Namco_System_10_MiSTer",
+    "dirs": null,
+    "mras": 26
+   },
+   {
+    "source": "kyle",
     "repo": "kyledlester/Nostradamus_Magical_Cat_Adventure_MiSTer",
     "dirs": null,
     "mras": 6
@@ -2252,6 +2378,12 @@
     "repo": "kyledlester/R_Shark_Super_X_MiSTer",
     "dirs": null,
     "mras": 4
+   },
+   {
+    "source": "kyle",
+    "repo": "kyledlester/Super_Dodge_Ball_MiSTer",
+    "dirs": null,
+    "mras": 3
    },
    {
     "source": "kyle",
@@ -2270,6 +2402,12 @@
     "repo": "mlc4050/Arcade-RabbitPunch_MiSTer",
     "dirs": null,
     "mras": 5
+   },
+   {
+    "source": "repo",
+    "repo": "niknakniknak/FixItFelixArcadeForMister",
+    "dirs": null,
+    "mras": 1
    },
    {
     "source": "repo",
@@ -2315,9 +2453,27 @@
    },
    {
     "source": "repo",
+    "repo": "ppriest/Arcade-KonamiHornet_MiSTer",
+    "dirs": null,
+    "mras": 7
+   },
+   {
+    "source": "repo",
+    "repo": "ppriest/Arcade-LethalEnforcers_MiSTer",
+    "dirs": null,
+    "mras": 9
+   },
+   {
+    "source": "repo",
     "repo": "ppriest/Arcade-NixPirates_MiSTer",
     "dirs": null,
     "mras": 3
+   },
+   {
+    "source": "repo",
+    "repo": "ppriest/Arcade-Pandora_MiSTer",
+    "dirs": null,
+    "mras": 30
    },
    {
     "source": "repo",
@@ -2330,6 +2486,12 @@
     "repo": "ppriest/Arcade-Seta_MiSTer",
     "dirs": null,
     "mras": 44
+   },
+   {
+    "source": "repo",
+    "repo": "ppriest/Arcade-Silkroad_MiSTer",
+    "dirs": null,
+    "mras": 2
    },
    {
     "source": "repo",
@@ -2376,6 +2538,12 @@
      "releases"
     ],
     "mras": 19
+   },
+   {
+    "source": "repo",
+    "repo": "shimian5/Arcade-Sauro_MiSTer",
+    "dirs": null,
+    "mras": 3
    },
    {
     "source": "repo",
@@ -2562,12 +2730,6 @@
     "repo": "GalaxyBrian/Pink_Sweets_Rosy_Future",
     "dirs": null,
     "mras": 0
-   },
-   {
-    "source": "ongo",
-    "repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
-    "dirs": null,
-    "mras": 53
    },
    {
     "source": "ongo",
@@ -2798,12 +2960,6 @@
     "mras": 187
    },
    {
-    "source": "kyle",
-    "repo": "kyledlester/Super_Dodge_Ball_MiSTer",
-    "dirs": null,
-    "mras": 3
-   },
-   {
     "source": "ongo",
     "repo": "meathax/Bucky",
     "dirs": null,
@@ -2877,18 +3033,6 @@
    },
    {
     "source": "ongo",
-    "repo": "ppriest/Arcade-LethalEnforcers_MiSTer",
-    "dirs": null,
-    "mras": 9
-   },
-   {
-    "source": "ongo",
-    "repo": "ppriest/Arcade-Silkroad_MiSTer",
-    "dirs": null,
-    "mras": 2
-   },
-   {
-    "source": "ongo",
     "repo": "rmonic79/rmcores",
     "dirs": null,
     "mras": 67
@@ -2928,12 +3072,6 @@
     "repo": "MiSTer-devel/Arcade-AsteroidsDeluxe_MiSTer",
     "dirs": null,
     "mras": 1
-   },
-   {
-    "source": "dist",
-    "repo": "MiSTer-devel/Arcade-StarCastle_MiSTer",
-    "dirs": null,
-    "mras": 8
    },
    {
     "source": "repo",
@@ -3043,54 +3181,6 @@
    },
    {
     "source": "decoryah",
-    "repo": "decoryah/Arcade-Aquarium_MiSTer",
-    "dirs": null,
-    "mras": 2
-   },
-   {
-    "source": "decoryah",
-    "repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
-    "dirs": null,
-    "mras": 22
-   },
-   {
-    "source": "decoryah",
-    "repo": "decoryah/Arcade-CrossPang_MiSTer",
-    "dirs": null,
-    "mras": 6
-   },
-   {
-    "source": "decoryah",
-    "repo": "decoryah/Arcade-Gunpey_MiSTer",
-    "dirs": null,
-    "mras": 1
-   },
-   {
-    "source": "decoryah",
-    "repo": "decoryah/Arcade-Hexion_MiSTer",
-    "dirs": null,
-    "mras": 2
-   },
-   {
-    "source": "decoryah",
-    "repo": "decoryah/Arcade-MysticWarriors_MiSTer",
-    "dirs": null,
-    "mras": 5
-   },
-   {
-    "source": "decoryah",
-    "repo": "decoryah/Arcade-Rabbit_MiSTer",
-    "dirs": null,
-    "mras": 4
-   },
-   {
-    "source": "decoryah",
-    "repo": "decoryah/Arcade-Seta2_MiSTer",
-    "dirs": null,
-    "mras": 23
-   },
-   {
-    "source": "decoryah",
     "repo": "decoryah/MiSTer_decoryah",
     "dirs": null,
     "mras": 0
@@ -3115,12 +3205,6 @@
    },
    {
     "source": "kyle",
-    "repo": "kyledlester/Namco_System_10_MiSTer",
-    "dirs": null,
-    "mras": 26
-   },
-   {
-    "source": "kyle",
     "repo": "kyledlester/ZN1_MiSTer",
     "dirs": null,
     "mras": 122
@@ -3139,12 +3223,6 @@
    },
    {
     "source": "rodimus",
-    "repo": "RodimusFVC/Arcade-BallyMidwayMCR_MiSTer",
-    "dirs": null,
-    "mras": 67
-   },
-   {
-    "source": "rodimus",
     "repo": "RodimusFVC/Arcade-BluePrint_MiSTer",
     "dirs": null,
     "mras": 4
@@ -3160,12 +3238,6 @@
     "repo": "RodimusFVC/Arcade-DECOCassette_MiSTer",
     "dirs": null,
     "mras": 61
-   },
-   {
-    "source": "rodimus",
-    "repo": "RodimusFVC/Arcade-Irem1_MiSTer",
-    "dirs": null,
-    "mras": 34
    },
    {
     "source": "rodimus",
@@ -3199,18 +3271,6 @@
    },
    {
     "source": "rodimus",
-    "repo": "RodimusFVC/Arcade-Namco6809_MiSTer",
-    "dirs": null,
-    "mras": 54
-   },
-   {
-    "source": "rodimus",
-    "repo": "RodimusFVC/Arcade-Nintendo_MiSTer",
-    "dirs": null,
-    "mras": 51
-   },
-   {
-    "source": "rodimus",
     "repo": "RodimusFVC/Arcade-Pacman_MiSTer",
     "dirs": null,
     "mras": 301
@@ -3220,12 +3280,6 @@
     "repo": "RodimusFVC/Arcade-Pacman_MiSTer_Old",
     "dirs": null,
     "mras": 21
-   },
-   {
-    "source": "rodimus",
-    "repo": "RodimusFVC/Arcade-Phoenix_MiSTer",
-    "dirs": null,
-    "mras": 47
    },
    {
     "source": "rodimus",
@@ -3244,12 +3298,6 @@
     "repo": "RodimusFVC/Arcade-SNK6502_MiSTer",
     "dirs": null,
     "mras": 24
-   },
-   {
-    "source": "rodimus",
-    "repo": "RodimusFVC/Arcade-SegaSystem1-2_MiSTer",
-    "dirs": null,
-    "mras": 92
    },
    {
     "source": "rodimus",
@@ -3323,14 +3371,14 @@
   "counts": {
    "titles": 6826,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2458,
+   "working_arcade_titles_covered": 2464,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 6428,
-   "working_arcade_titles_source": 2218,
-   "working_arcade_titles_binary_only": 240,
-   "cores": 770,
+   "working_arcade_sets_covered": 6443,
+   "working_arcade_titles_source": 2228,
+   "working_arcade_titles_binary_only": 236,
+   "cores": 792,
    "binary_only_cores": 270,
-   "unmatched_sets": 456
+   "unmatched_sets": 462
   }
  },
  "cores": [
@@ -3467,6 +3515,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 4,
@@ -3581,6 +3630,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": true,
    "nsets": 1,
@@ -3994,6 +4044,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": true,
    "nsets": 1,
@@ -4108,6 +4159,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": true,
    "nsets": 1,
@@ -5980,19 +6032,48 @@
    "first_date": "2026-10-25"
   },
   {
-   "id": "decoryah:arcadiasystems",
-   "name": "arcadiasystems",
+   "id": "decoryah:aquarium_20261025c",
+   "name": "aquarium (decoryah)",
    "source": "decoryah",
    "source_title": "decoryah",
-   "channel": null,
-   "rbf": "arcadiasystems.rbf",
+   "channel": "repository only",
+   "rbf": "aquarium_20261025c.rbf",
+   "repo": "decoryah/Arcade-Aquarium_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-Aquarium_MiSTer",
+   "build_date": "2026-10-25",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 23,
+   "mame_drivers": [
+    "excellent/aquarium.cpp"
+   ],
+   "note": null,
+   "aliases": [
+    "decoryah:aquarium"
+   ],
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 2,
+   "ntitles": 1,
+   "first_date": "2026-10-25"
+  },
+  {
+   "id": "decoryah:arcadiasystems",
+   "name": "arcadiasystems (decoryah)",
+   "source": "decoryah",
+   "source_title": "decoryah",
+   "channel": "repository only",
+   "rbf": "arcadiasystems_20261021.rbf",
    "repo": "decoryah/Arcade-ArcadiaSystems_MiSTer",
    "url": "https://github.com/decoryah/Arcade-ArcadiaSystems_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-21",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 28,
+   "mame_drivers": [
+    "amiga/arsystems.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-21",
    "aliases": [],
@@ -6004,18 +6085,20 @@
   },
   {
    "id": "decoryah:crospang",
-   "name": "crospang",
+   "name": "crospang (decoryah)",
    "source": "decoryah",
    "source_title": "decoryah",
-   "channel": null,
-   "rbf": "crospang.rbf",
+   "channel": "repository only",
+   "rbf": "crospang_20261019.rbf",
    "repo": "decoryah/Arcade-CrossPang_MiSTer",
    "url": "https://github.com/decoryah/Arcade-CrossPang_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-19",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 27,
+   "mame_drivers": [
+    "f32/crospang.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-19",
    "aliases": [],
@@ -6031,10 +6114,10 @@
    "source": "decoryah",
    "source_title": "decoryah",
    "channel": "repository only",
-   "rbf": "gaiapolis_20261014.rbf",
+   "rbf": "gaiapolis_20261024.rbf",
    "repo": "decoryah/Arcade-Gaiapolis_MiSTer",
    "url": "https://github.com/decoryah/Arcade-Gaiapolis_MiSTer",
-   "build_date": "2026-10-14",
+   "build_date": "2026-10-24",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 33,
@@ -6052,18 +6135,20 @@
   },
   {
    "id": "decoryah:gunpey",
-   "name": "gunpey",
+   "name": "gunpey (decoryah)",
    "source": "decoryah",
    "source_title": "decoryah",
-   "channel": null,
-   "rbf": "gunpey.rbf",
+   "channel": "repository only",
+   "rbf": "gunpey_20261023.rbf",
    "repo": "decoryah/Arcade-Gunpey_MiSTer",
    "url": "https://github.com/decoryah/Arcade-Gunpey_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-23",
+   "status": "analyzed",
+   "reading": "both",
+   "score": 54,
+   "mame_drivers": [
+    "misc/gunpey.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-23",
    "aliases": [],
@@ -6100,18 +6185,20 @@
   },
   {
    "id": "decoryah:hexion",
-   "name": "hexion",
+   "name": "hexion (decoryah)",
    "source": "decoryah",
    "source_title": "decoryah",
-   "channel": null,
-   "rbf": "hexion.rbf",
+   "channel": "repository only",
+   "rbf": "hexion_20261025.rbf",
    "repo": "decoryah/Arcade-Hexion_MiSTer",
    "url": "https://github.com/decoryah/Arcade-Hexion_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-25",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 24,
+   "mame_drivers": [
+    "konami/hexion.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-25",
    "aliases": [],
@@ -6152,10 +6239,10 @@
    "source": "decoryah",
    "source_title": "decoryah",
    "channel": "repository only",
-   "rbf": "mcatadv_20261005.rbf",
+   "rbf": "mcatadv_20261023.rbf",
    "repo": "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
    "url": "https://github.com/decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer",
-   "build_date": "2026-10-05",
+   "build_date": "2026-10-23",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 31,
@@ -6177,10 +6264,10 @@
    "source": "decoryah",
    "source_title": "decoryah",
    "channel": "repository only",
-   "rbf": "metamorphicforce_20261014.rbf",
+   "rbf": "metamorphicforce_20261024.rbf",
    "repo": "decoryah/Arcade-MetamorphicForce_MiSTer",
    "url": "https://github.com/decoryah/Arcade-MetamorphicForce_MiSTer",
-   "build_date": "2026-10-13",
+   "build_date": "2026-10-24",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 25,
@@ -6352,10 +6439,10 @@
    "source": "decoryah",
    "source_title": "decoryah",
    "channel": "repository only",
-   "rbf": "monstermaulers_20261014.rbf",
+   "rbf": "monstermaulers_20261025.rbf",
    "repo": "decoryah/Arcade-MonsterMaulers_MiSTer",
    "url": "https://github.com/decoryah/Arcade-MonsterMaulers_MiSTer",
-   "build_date": "2026-10-13",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 28,
@@ -6373,18 +6460,20 @@
   },
   {
    "id": "decoryah:mysticwarriors",
-   "name": "mysticwarriors",
+   "name": "mysticwarriors (decoryah)",
    "source": "decoryah",
    "source_title": "decoryah",
-   "channel": null,
-   "rbf": "mysticwarriors.rbf",
+   "channel": "repository only",
+   "rbf": "mysticwarriors_20261019.rbf",
    "repo": "decoryah/Arcade-MysticWarriors_MiSTer",
    "url": "https://github.com/decoryah/Arcade-MysticWarriors_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-19",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 26,
+   "mame_drivers": [
+    "konami/mystwarr.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-21",
    "aliases": [],
@@ -6413,6 +6502,33 @@
    "note": null,
    "first_recorded": "2026-10-17",
    "aliases": [],
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 2,
+   "ntitles": 2,
+   "first_date": "2026-10-10"
+  },
+  {
+   "id": "decoryah:ohmygod_20261023b",
+   "name": "ohmygod (decoryah)",
+   "source": "decoryah",
+   "source_title": "decoryah",
+   "channel": "repository only",
+   "rbf": "ohmygod_20261023b.rbf",
+   "repo": "decoryah/Arcade-OhMyGod_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-OhMyGod_MiSTer",
+   "build_date": "2026-10-23",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 34,
+   "mame_drivers": [
+    "atlus/ohmygod.cpp"
+   ],
+   "note": null,
+   "aliases": [
+    "decoryah:ohmygod"
+   ],
+   "first_recorded": "2026-10-26",
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 2,
@@ -6472,18 +6588,20 @@
   },
   {
    "id": "decoryah:rabbit",
-   "name": "rabbit",
+   "name": "rabbit (decoryah)",
    "source": "decoryah",
    "source_title": "decoryah",
-   "channel": null,
-   "rbf": "rabbit.rbf",
+   "channel": "repository only",
+   "rbf": "rabbit_20261022.rbf",
    "repo": "decoryah/Arcade-Rabbit_MiSTer",
    "url": "https://github.com/decoryah/Arcade-Rabbit_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-22",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 32,
+   "mame_drivers": [
+    "metro/rabbit.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-22",
    "aliases": [],
@@ -6495,18 +6613,20 @@
   },
   {
    "id": "decoryah:seta2",
-   "name": "seta2",
+   "name": "seta2 (decoryah)",
    "source": "decoryah",
    "source_title": "decoryah",
-   "channel": null,
-   "rbf": "seta2.rbf",
+   "channel": "repository only",
+   "rbf": "seta2_20261021.rbf",
    "repo": "decoryah/Arcade-Seta2_MiSTer",
    "url": "https://github.com/decoryah/Arcade-Seta2_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-21",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 21,
+   "mame_drivers": [
+    "seta/seta2.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-21",
    "aliases": [],
@@ -6518,18 +6638,20 @@
   },
   {
    "id": "decoryah:seta2grd",
-   "name": "seta2grd",
+   "name": "seta2grd (decoryah)",
    "source": "decoryah",
    "source_title": "decoryah",
-   "channel": null,
-   "rbf": "seta2grd.rbf",
+   "channel": "repository only",
+   "rbf": "seta2grd_20261021.rbf",
    "repo": "decoryah/Arcade-Seta2_MiSTer",
    "url": "https://github.com/decoryah/Arcade-Seta2_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-21",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 21,
+   "mame_drivers": [
+    "seta/seta2.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-21",
    "aliases": [],
@@ -6541,18 +6663,20 @@
   },
   {
    "id": "decoryah:seta2pen",
-   "name": "seta2pen",
+   "name": "seta2pen (decoryah)",
    "source": "decoryah",
    "source_title": "decoryah",
-   "channel": null,
-   "rbf": "seta2pen.rbf",
+   "channel": "repository only",
+   "rbf": "seta2pen_20261021.rbf",
    "repo": "decoryah/Arcade-Seta2_MiSTer",
    "url": "https://github.com/decoryah/Arcade-Seta2_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-21",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 21,
+   "mame_drivers": [
+    "seta/seta2.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-21",
    "aliases": [],
@@ -6593,10 +6717,10 @@
    "source": "decoryah",
    "source_title": "decoryah",
    "channel": "repository only",
-   "rbf": "violentstorm_20261014.rbf",
+   "rbf": "violentstorm_20261025.rbf",
    "repo": "decoryah/Arcade-ViolentStorm_MiSTer",
    "url": "https://github.com/decoryah/Arcade-ViolentStorm_MiSTer",
-   "build_date": "2026-10-14",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 25,
@@ -6668,10 +6792,10 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "Arabian_20261013.rbf",
+   "rbf": "Arabian_20261025.rbf",
    "repo": "MiSTer-devel/Arcade-Arabian_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-Arabian_MiSTer",
-   "build_date": "2026-10-13",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 39,
@@ -7141,10 +7265,10 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "BluePrint_20260901.rbf",
+   "rbf": "BluePrint_20261025.rbf",
    "repo": "MiSTer-devel/Arcade-BluePrint_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-BluePrint_MiSTer",
-   "build_date": "2026-09-01",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "not enough evidence",
    "score": 46,
@@ -7469,10 +7593,10 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "ChampionBaseball_20261013.rbf",
+   "rbf": "ChampionBaseball_20261025.rbf",
    "repo": "MiSTer-devel/Arcade-ChampionBaseball_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-ChampionBaseball_MiSTer",
-   "build_date": "2026-10-13",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 37,
@@ -7814,6 +7938,28 @@
    "first_date": "2026-05-30"
   },
   {
+   "id": "dist:deco156simple",
+   "name": "Deco156Simple",
+   "source": "dist",
+   "source_title": "MiSTer official distribution",
+   "channel": null,
+   "rbf": "Deco156Simple.rbf",
+   "repo": "MiSTer-devel/MRA-Alternatives_MiSTer",
+   "url": "https://github.com/MiSTer-devel/MRA-Alternatives_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 7,
+   "ntitles": 5,
+   "first_date": "2026-10-26"
+  },
+  {
    "id": "dist:deco16",
    "name": "Deco16",
    "source": "dist",
@@ -7846,10 +7992,10 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "DECOCassette_20261013.rbf",
+   "rbf": "DECOCassette_20261025.rbf",
    "repo": "MiSTer-devel/Arcade-DECOCassette_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-DECOCassette_MiSTer",
-   "build_date": "2026-10-13",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "both",
    "score": 41,
@@ -8119,10 +8265,10 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "Escape_20260902.rbf",
+   "rbf": "Escape_20261019.rbf",
    "repo": "MiSTer-devel/Arcade-Escape_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-Escape_MiSTer",
-   "build_date": "2026-09-02",
+   "build_date": "2026-10-19",
    "status": "analyzed",
    "reading": "both",
    "score": 44,
@@ -8922,13 +9068,13 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "JunoFirst_20260825.rbf",
+   "rbf": "JunoFirst_20261025.rbf",
    "repo": "MiSTer-devel/Arcade-JunoFirst_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-JunoFirst_MiSTer",
-   "build_date": "2026-08-24",
+   "build_date": "2026-10-25",
    "status": "analyzed",
-   "reading": "both",
-   "score": 60,
+   "reading": "mostly MAME",
+   "score": 27,
    "mame_drivers": [
     "konami/junofrst.cpp"
    ],
@@ -8947,10 +9093,10 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "Kangaroo_20261013.rbf",
+   "rbf": "Kangaroo_20261025.rbf",
    "repo": "MiSTer-devel/Arcade-Kangaroo_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-Kangaroo_MiSTer",
-   "build_date": "2026-10-13",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 39,
@@ -9022,10 +9168,10 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "Kyugo_20260825.rbf",
+   "rbf": "Kyugo_20261025.rbf",
    "repo": "MiSTer-devel/Arcade-Kyugo_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-Kyugo_MiSTer",
-   "build_date": "2026-08-24",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 22,
@@ -9072,10 +9218,10 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "LaserdiscGames_20261018.rbf",
+   "rbf": "LaserdiscGames_20261025.rbf",
    "repo": "MiSTer-devel/Arcade-LaserdiscGames_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-LaserdiscGames_MiSTer",
-   "build_date": "2026-10-18",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "both",
    "score": 48,
@@ -9791,10 +9937,10 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "PolePosition_20261011.rbf",
+   "rbf": "PolePosition_20261025.rbf",
    "repo": "MiSTer-devel/Arcade-PolePosition_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-PolePosition_MiSTer",
-   "build_date": "2026-10-11",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 29,
@@ -10042,10 +10188,10 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "Qix_20261013.rbf",
+   "rbf": "Qix_20261025.rbf",
    "repo": "MiSTer-devel/Arcade-Qix_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-Qix_MiSTer",
-   "build_date": "2026-10-13",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly hardware",
    "score": 61,
@@ -10345,10 +10491,10 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "Scramble_20260408.rbf",
+   "rbf": "Scramble_20261024.rbf",
    "repo": "MiSTer-devel/Arcade-Scramble_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-Scramble_MiSTer",
-   "build_date": "2026-04-09",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "not enough evidence",
    "score": 40,
@@ -10725,10 +10871,10 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "SNK6502_20261011.rbf",
+   "rbf": "SNK6502_20261025.rbf",
    "repo": "MiSTer-devel/Arcade-SNK6502_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-SNK6502_MiSTer",
-   "build_date": "2026-10-11",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "both",
    "score": 51,
@@ -10943,6 +11089,30 @@
    "nsets": 43,
    "ntitles": 38,
    "first_date": "2025-06-13"
+  },
+  {
+   "id": "dist:starcastle",
+   "name": "StarCastle",
+   "source": "dist",
+   "source_title": "MiSTer official distribution",
+   "channel": "default",
+   "rbf": "StarCastle_20261015.rbf",
+   "repo": "MiSTer-devel/Arcade-StarCastle_MiSTer",
+   "url": "https://github.com/MiSTer-devel/Arcade-StarCastle_MiSTer",
+   "build_date": "2026-10-15",
+   "status": "analyzed",
+   "reading": "not enough evidence",
+   "score": 40,
+   "mame_drivers": [
+    "cinematronics/cinemat.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 8,
+   "ntitles": 8,
+   "first_date": "2026-10-15"
   },
   {
    "id": "dist:starforce",
@@ -11478,13 +11648,13 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "Tutankham_20260825.rbf",
+   "rbf": "Tutankham_20261025.rbf",
    "repo": "MiSTer-devel/Arcade-Tutankham_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-Tutankham_MiSTer",
-   "build_date": "2026-08-24",
+   "build_date": "2026-10-25",
    "status": "analyzed",
-   "reading": "mostly hardware",
-   "score": 62,
+   "reading": "mostly MAME",
+   "score": 38,
    "mame_drivers": [
     "konami/tutankhm.cpp"
    ],
@@ -11528,16 +11698,17 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "UPLFramebuffer_20261017.rbf",
+   "rbf": "UPLFramebuffer_20261025.rbf",
    "repo": "MiSTer-devel/Arcade-UPLFramebuffer_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-UPLFramebuffer_MiSTer",
-   "build_date": "2026-10-18",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "both",
    "score": 45,
    "mame_drivers": [
     "upl/ninjakd2.cpp",
-    "upl/nova2001.cpp"
+    "upl/nova2001.cpp",
+    "upl/xxmissio.cpp"
    ],
    "note": null,
    "first_recorded": "2026-10-04",
@@ -11554,10 +11725,10 @@
    "source": "dist",
    "source_title": "MiSTer official distribution",
    "channel": "default",
-   "rbf": "Vastar_20261011.rbf",
+   "rbf": "Vastar_20261025.rbf",
    "repo": "MiSTer-devel/Arcade-Vastar_MiSTer",
    "url": "https://github.com/MiSTer-devel/Arcade-Vastar_MiSTer",
-   "build_date": "2026-10-11",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "not enough evidence",
    "score": 15,
@@ -11850,8 +12021,8 @@
    "source_title": "Gm0rkCores (Gm0rk)",
    "channel": null,
    "rbf": "Arcade-Midway-Y-Unit.rbf",
-   "repo": "Gm0rk/Gm0rkCores",
-   "url": "https://github.com/Gm0rk/Gm0rkCores",
+   "repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+   "url": "https://github.com/Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
    "build_date": null,
    "status": null,
    "reading": null,
@@ -15940,18 +16111,20 @@
   },
   {
    "id": "kyle:namco_s10",
-   "name": "Namco_S10",
+   "name": "Namco_S10 (kyledlester)",
    "source": "kyle",
    "source_title": "kyledlester",
-   "channel": null,
-   "rbf": "Namco_S10.rbf",
+   "channel": "repository only",
+   "rbf": "Namco_S10_20261023.rbf",
    "repo": "kyledlester/Namco_System_10_MiSTer",
    "url": "https://github.com/kyledlester/Namco_System_10_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-23",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 24,
+   "mame_drivers": [
+    "namco/namcos10.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-23",
    "aliases": [],
@@ -16038,18 +16211,20 @@
   },
   {
    "id": "kyle:superdodgeball",
-   "name": "SuperDodgeBall",
+   "name": "SuperDodgeBall (kyledlester)",
    "source": "kyle",
    "source_title": "kyledlester",
-   "channel": null,
-   "rbf": "SuperDodgeBall.rbf",
+   "channel": "repository only",
+   "rbf": "SuperDodgeBall_20261023.rbf",
    "repo": "kyledlester/Super_Dodge_Ball_MiSTer",
    "url": "https://github.com/kyledlester/Super_Dodge_Ball_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-23",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 28,
+   "mame_drivers": [
+    "technos/spdodgeb.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-24",
    "aliases": [],
@@ -16181,16 +16356,16 @@
    "name": "AH",
    "source": "meat",
    "source_title": "MeatCores (meathax)",
-   "channel": null,
-   "rbf": "Arcade-AH.rbf",
-   "repo": "meathax/meatcores",
-   "url": "https://github.com/meathax/meatcores",
+   "channel": "independent database",
+   "rbf": "Arcade-AH_20261024.rbf",
+   "repo": null,
+   "url": null,
    "build_date": null,
-   "status": null,
+   "status": "source not published",
    "reading": null,
    "score": null,
    "mame_drivers": [],
-   "note": null,
+   "note": "",
    "first_recorded": "2026-10-23",
    "aliases": [],
    "last_seen": "2026-10-26",
@@ -16205,7 +16380,7 @@
    "source": "meat",
    "source_title": "MeatCores (meathax)",
    "channel": "independent database",
-   "rbf": "Arcade-Alpha68kN.rbf",
+   "rbf": "Arcade-Alpha68kN_20261011.rbf",
    "repo": null,
    "url": null,
    "build_date": null,
@@ -16305,10 +16480,10 @@
    "source": "meat",
    "source_title": "MeatCores (meathax)",
    "channel": "independent database",
-   "rbf": "Arcade-Battletoads_20261018.rbf",
+   "rbf": "Arcade-Battletoads_20261020.rbf",
    "repo": "meathax/BattletoadsMain",
    "url": "https://github.com/meathax/BattletoadsMain",
-   "build_date": "2026-10-19",
+   "build_date": "2026-10-20",
    "status": "analyzed",
    "reading": "not enough evidence",
    "score": 39,
@@ -16444,6 +16619,31 @@
    "nsets": 7,
    "ntitles": 6,
    "first_date": "2026-07-28"
+  },
+  {
+   "id": "meat:dec8",
+   "name": "DEC8",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": "independent database",
+   "rbf": "Arcade-DEC8_20261022.rbf",
+   "repo": null,
+   "url": null,
+   "build_date": null,
+   "status": "source not published",
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": "",
+   "aliases": [
+    "ongo:meathax_dec8"
+   ],
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 31,
+   "ntitles": 10,
+   "first_date": "2026-10-04"
   },
   {
    "id": "meat:docastle",
@@ -16652,7 +16852,7 @@
    "source": "meat",
    "source_title": "MeatCores (meathax)",
    "channel": "independent database",
-   "rbf": "Arcade-IkkiSunsoft.rbf",
+   "rbf": "Arcade-IkkiSunsoft_20261011.rbf",
    "repo": null,
    "url": null,
    "build_date": null,
@@ -16699,18 +16899,20 @@
    "name": "MadMotor",
    "source": "meat",
    "source_title": "MeatCores (meathax)",
-   "channel": null,
-   "rbf": "MadMotor.rbf",
-   "repo": "meathax/meatcores",
-   "url": "https://github.com/meathax/meatcores",
+   "channel": "independent database",
+   "rbf": "Arcade-MadMotor_20261025.rbf",
+   "repo": null,
+   "url": null,
    "build_date": null,
-   "status": null,
+   "status": "source not published",
    "reading": null,
    "score": null,
    "mame_drivers": [],
-   "note": null,
+   "note": "",
+   "aliases": [
+    "ongo:meathax_madmotor"
+   ],
    "first_recorded": "2026-10-25",
-   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": true,
    "nsets": 1,
@@ -16819,7 +17021,7 @@
    "source": "meat",
    "source_title": "MeatCores (meathax)",
    "channel": "independent database",
-   "rbf": "Arcade-NARC_20260801.rbf",
+   "rbf": "Arcade-NARC_20261020.rbf",
    "repo": null,
    "url": null,
    "build_date": null,
@@ -16869,18 +17071,20 @@
    "name": "Penguin",
    "source": "meat",
    "source_title": "MeatCores (meathax)",
-   "channel": null,
-   "rbf": "Arcade-Penguin.rbf",
-   "repo": "meathax/meatcores",
-   "url": "https://github.com/meathax/meatcores",
+   "channel": "independent database",
+   "rbf": "Arcade-Penguin_20261022.rbf",
+   "repo": null,
+   "url": null,
    "build_date": null,
-   "status": null,
+   "status": "source not published",
    "reading": null,
    "score": null,
    "mame_drivers": [],
-   "note": null,
+   "note": "",
+   "aliases": [
+    "ongo:meathax_penguin"
+   ],
    "first_recorded": "2026-10-21",
-   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 1,
@@ -16893,7 +17097,7 @@
    "source": "meat",
    "source_title": "MeatCores (meathax)",
    "channel": "independent database",
-   "rbf": "Arcade-Primal2.rbf",
+   "rbf": "Arcade-Primal2_20260924.rbf",
    "repo": null,
    "url": null,
    "build_date": null,
@@ -16916,7 +17120,7 @@
    "source": "meat",
    "source_title": "MeatCores (meathax)",
    "channel": "independent database",
-   "rbf": "Arcade-PWB351024A.rbf",
+   "rbf": "Arcade-PWB351024A_20261020.rbf",
    "repo": null,
    "url": null,
    "build_date": null,
@@ -17014,11 +17218,11 @@
   },
   {
    "id": "meat:simple156",
-   "name": "Simple156",
+   "name": "SIMPLE156",
    "source": "meat",
    "source_title": "MeatCores (meathax)",
    "channel": "independent database",
-   "rbf": "Arcade-Simple156_20261014.rbf",
+   "rbf": "Arcade-SIMPLE156_20261021.rbf",
    "repo": null,
    "url": null,
    "build_date": null,
@@ -17289,18 +17493,20 @@
    "name": "Zaccaria",
    "source": "meat",
    "source_title": "MeatCores (meathax)",
-   "channel": null,
-   "rbf": "Arcade-Zaccaria.rbf",
-   "repo": "meathax/meatcores",
-   "url": "https://github.com/meathax/meatcores",
+   "channel": "independent database",
+   "rbf": "Arcade-Zaccaria_20261019.rbf",
+   "repo": null,
+   "url": null,
    "build_date": null,
-   "status": null,
+   "status": "source not published",
    "reading": null,
    "score": null,
    "mame_drivers": [],
-   "note": null,
+   "note": "",
+   "aliases": [
+    "ongo:meathax_zaccaria"
+   ],
    "first_recorded": "2026-10-19",
-   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": true,
    "nsets": 2,
@@ -17647,6 +17853,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": true,
    "nsets": 1,
@@ -18276,17 +18483,17 @@
   },
   {
    "id": "repo:10yardfight",
-   "name": "10yardfight (adreeve)",
+   "name": "10YardFight (adreeve)",
    "source": "repo",
    "source_title": "GitHub repository only",
    "channel": "repository only",
-   "rbf": "10yardfight_20261003.rbf",
+   "rbf": "Arcade-10YardFight_20261022.rbf",
    "repo": "adreeve/Arcade-10YardFight_MiSTer",
    "url": "https://github.com/adreeve/Arcade-10YardFight_MiSTer",
-   "build_date": "2026-10-04",
+   "build_date": "2026-10-22",
    "status": "analyzed",
    "reading": "both",
-   "score": 41,
+   "score": 42,
    "mame_drivers": [
     "irem/m58.cpp"
    ],
@@ -18528,6 +18735,32 @@
    "first_date": "2026-07-08"
   },
   {
+   "id": "repo:dec8",
+   "name": "DEC8 (shmupfan)",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": "repository only",
+   "rbf": "Arcade-DEC8_20261004.rbf",
+   "repo": "shmupfan/Arcade-DEC8_MiSTer",
+   "url": "https://github.com/shmupfan/Arcade-DEC8_MiSTer",
+   "build_date": "2026-10-04",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 36,
+   "mame_drivers": [
+    "dataeast/ghostb.cpp",
+    "dataeast/lastmisn.cpp",
+    "dataeast/srdarwin.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 10,
+   "ntitles": 3,
+   "first_date": "2026-10-04"
+  },
+  {
    "id": "repo:demoderby",
    "name": "DemoDerby (alanswx)",
    "source": "repo",
@@ -18678,6 +18911,28 @@
    "first_date": "2020-07-14"
   },
   {
+   "id": "repo:fifelix",
+   "name": "fifelix (niknakniknak)",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": "repository only",
+   "rbf": "fifelix.rbf",
+   "repo": "niknakniknak/FixItFelixArcadeForMister",
+   "url": "https://github.com/niknakniknak/FixItFelixArcadeForMister",
+   "build_date": "2026-10-25",
+   "status": "analyzed",
+   "reading": "not enough evidence",
+   "score": 40,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": null
+  },
+  {
    "id": "repo:garegga",
    "name": "Garegga (zakk4223)",
    "source": "repo",
@@ -18701,6 +18956,30 @@
    "nsets": 12,
    "ntitles": 3,
    "first_date": "2022-07-24"
+  },
+  {
+   "id": "repo:gondomania",
+   "name": "Gondomania (Eggsecutioner528)",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": "repository only",
+   "rbf": "Gondomania_20261024.rbf",
+   "repo": "Eggsecutioner528/Gondomania_Mister_Core",
+   "url": "https://github.com/Eggsecutioner528/Gondomania_Mister_Core",
+   "build_date": "2026-10-24",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 33,
+   "mame_drivers": [
+    "dataeast/ghostb.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-04"
   },
   {
    "id": "repo:gundamex",
@@ -19177,10 +19456,10 @@
    "source": "repo",
    "source_title": "GitHub repository only",
    "channel": "repository only",
-   "rbf": "Model2_20261016.rbf",
+   "rbf": "Model2_20261025.rbf",
    "repo": "alphanu1/sega-model2-mister",
    "url": "https://github.com/alphanu1/sega-model2-mister",
-   "build_date": "2026-10-16",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 19,
@@ -19218,6 +19497,34 @@
    "nsets": 6,
    "ntitles": 6,
    "first_date": "2026-10-21"
+  },
+  {
+   "id": "repo:model2a_20261024b",
+   "name": "Model2A (alphanu1)",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": "repository only",
+   "rbf": "Model2A_20261024b.rbf",
+   "repo": "alphanu1/sega-model2-mister",
+   "url": "https://github.com/alphanu1/sega-model2-mister",
+   "build_date": "2026-10-24",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 19,
+   "mame_drivers": [
+    "sega/model2.cpp"
+   ],
+   "note": null,
+   "aliases": [
+    "ongo:model2a",
+    "repo:model2a"
+   ],
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 6,
+   "ntitles": 6,
+   "first_date": "2026-10-25"
   },
   {
    "id": "repo:outrunners",
@@ -19266,6 +19573,28 @@
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2020-05-30"
+  },
+  {
+   "id": "repo:picmatic",
+   "name": "Picmatic (jsmolina)",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": "repository only",
+   "rbf": "Picmatic_20261023.rbf",
+   "repo": "jsmolina/Arcade-Picmatic_MiSTer",
+   "url": "https://github.com/jsmolina/Arcade-Picmatic_MiSTer",
+   "build_date": "2026-10-23",
+   "status": "analyzed",
+   "reading": "mostly hardware",
+   "score": 61,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": "2026-10-24"
   },
   {
    "id": "repo:polyplay",
@@ -19371,10 +19700,10 @@
    "source": "repo",
    "source_title": "GitHub repository only",
    "channel": "repository only",
-   "rbf": "Arcade-RabbitPunch_20261018.rbf",
+   "rbf": "Arcade-RabbitPunch_20261021.rbf",
    "repo": "mlc4050/Arcade-RabbitPunch_MiSTer",
    "url": "https://github.com/mlc4050/Arcade-RabbitPunch_MiSTer",
-   "build_date": "2026-10-19",
+   "build_date": "2026-10-21",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 21,
@@ -19501,10 +19830,10 @@
    "source": "repo",
    "source_title": "GitHub repository only",
    "channel": "repository only",
-   "rbf": "Arcade-RoundUp_20261004.rbf",
+   "rbf": "Arcade-RoundUp_20261025.rbf",
    "repo": "harlock74/Arcade-RoundUp_MiSTer",
    "url": "https://github.com/harlock74/Arcade-RoundUp_MiSTer",
-   "build_date": "2026-10-11",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 31,
@@ -19551,10 +19880,10 @@
    "source": "repo",
    "source_title": "GitHub repository only",
    "channel": "repository only",
-   "rbf": "S32_20261016.rbf",
+   "rbf": "S32_20261025.rbf",
    "repo": "RetroShrimp/Arcade-SegaSystem32_MiSTer",
    "url": "https://github.com/RetroShrimp/Arcade-SegaSystem32_MiSTer",
-   "build_date": "2026-10-16",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 24,
@@ -19571,6 +19900,30 @@
    "nsets": 13,
    "ntitles": 5,
    "first_date": "2026-10-16"
+  },
+  {
+   "id": "repo:sauro",
+   "name": "Sauro (shimian5)",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": "repository only",
+   "rbf": "Arcade-Sauro_20261025.rbf",
+   "repo": "shimian5/Arcade-Sauro_MiSTer",
+   "url": "https://github.com/shimian5/Arcade-Sauro_MiSTer",
+   "build_date": "2026-10-25",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 35,
+   "mame_drivers": [
+    "tecfri/sauro.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 2,
+   "first_date": "2026-10-07"
   },
   {
    "id": "repo:segasys1+2",
@@ -19723,6 +20076,30 @@
    "first_date": "2022-09-08"
   },
   {
+   "id": "repo:srd",
+   "name": "SRD (Eggsecutioner528)",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": "repository only",
+   "rbf": "SRD_20261024.rbf",
+   "repo": "Eggsecutioner528/SRD-Super_Real_Darvin",
+   "url": "https://github.com/Eggsecutioner528/SRD-Super_Real_Darvin",
+   "build_date": "2026-10-24",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 35,
+   "mame_drivers": [
+    "dataeast/srdarwin.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 2,
+   "ntitles": 1,
+   "first_date": "2026-10-04"
+  },
+  {
    "id": "repo:starcastle",
    "name": "StarCastle (Videodr0me)",
    "source": "repo",
@@ -19831,10 +20208,10 @@
    "source": "repo",
    "source_title": "GitHub repository only",
    "channel": "repository only",
-   "rbf": "Arcade-SuperMouse_20261006.rbf",
+   "rbf": "Arcade-SuperMouse_20261025.rbf",
    "repo": "harlock74/Arcade-SuperMouse_MiSTer",
    "url": "https://github.com/harlock74/Arcade-SuperMouse_MiSTer",
-   "build_date": "2026-10-11",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 24,
@@ -19874,6 +20251,74 @@
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-07-19"
+  },
+  {
+   "id": "repo:system10",
+   "name": "SYSTEM10 (guljam)",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": "repository only",
+   "rbf": "Arcade-SYSTEM10_20261024.rbf",
+   "repo": "guljam/namco-system-10-mister-core-beta",
+   "url": "https://github.com/guljam/namco-system-10-mister-core-beta",
+   "build_date": "2026-10-24",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 39,
+   "mame_drivers": [
+    "namco/namcos10.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 6,
+   "ntitles": 4,
+   "first_date": "2026-10-19"
+  },
+  {
+   "id": "repo:system10_20261021-rev1",
+   "name": "SYSTEM10_20261021-rev1 (guljam)",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": "repository only",
+   "rbf": "Arcade-SYSTEM10_20261021-rev1.rbf",
+   "repo": "guljam/namco-system-10-mister-core-beta",
+   "url": "https://github.com/guljam/namco-system-10-mister-core-beta",
+   "build_date": "2026-10-22",
+   "status": "analyzed",
+   "reading": "both",
+   "score": 40,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": null
+  },
+  {
+   "id": "repo:system10_20261022-rev1",
+   "name": "SYSTEM10_20261022-rev1 (guljam)",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": "repository only",
+   "rbf": "Arcade-SYSTEM10_20261022-rev1.rbf",
+   "repo": "guljam/namco-system-10-mister-core-beta",
+   "url": "https://github.com/guljam/namco-system-10-mister-core-beta",
+   "build_date": "2026-10-22",
+   "status": "analyzed",
+   "reading": "both",
+   "score": 40,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": null
   },
   {
    "id": "repo:systemc2",
@@ -20009,10 +20454,10 @@
    "source": "repo",
    "source_title": "GitHub repository only",
    "channel": "repository only",
-   "rbf": "Arcade-ThePit_20260929.rbf",
+   "rbf": "Arcade-ThePit_20261025.rbf",
    "repo": "harlock74/Arcade-ThePit_MiSTer",
    "url": "https://github.com/harlock74/Arcade-ThePit_MiSTer",
-   "build_date": "2026-10-11",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 34,
@@ -20246,6 +20691,33 @@
    "first_date": "2026-10-23"
   },
   {
+   "id": "rodimus:ballymidwaymcr_testbuild",
+   "name": "BallyMidwayMCR_TestBuild (RodimusFVC)",
+   "source": "rodimus",
+   "source_title": "RodimusFVC",
+   "channel": "repository only",
+   "rbf": "BallyMidwayMCR_TestBuild.rbf",
+   "repo": "RodimusFVC/Arcade-BallyMidwayMCR_MiSTer",
+   "url": "https://github.com/RodimusFVC/Arcade-BallyMidwayMCR_MiSTer",
+   "build_date": "2026-10-25",
+   "status": "analyzed",
+   "reading": "both",
+   "score": 43,
+   "mame_drivers": [
+    "bally/mcr.cpp"
+   ],
+   "note": null,
+   "aliases": [
+    "rodimus:ballymidwaymcr"
+   ],
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 32,
+   "ntitles": 13,
+   "first_date": "2026-10-23"
+  },
+  {
    "id": "rodimus:centipede_testbuild",
    "name": "Centipede_TestBuild (RodimusFVC)",
    "source": "rodimus",
@@ -20254,7 +20726,7 @@
    "rbf": "Centipede_TestBuild.rbf",
    "repo": "RodimusFVC/Arcade-Centipede_MiSTer",
    "url": "https://github.com/RodimusFVC/Arcade-Centipede_MiSTer",
-   "build_date": "2026-10-14",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 34,
@@ -20264,6 +20736,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 25,
@@ -20276,10 +20749,10 @@
    "source": "rodimus",
    "source_title": "RodimusFVC",
    "channel": "repository only",
-   "rbf": "CrazyClimber_20261016.rbf",
+   "rbf": "CrazyClimber_20261025.rbf",
    "repo": "RodimusFVC/Arcade-CrazyClimber_MiSTer",
    "url": "https://github.com/RodimusFVC/Arcade-CrazyClimber_MiSTer",
-   "build_date": "2026-10-18",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 36,
@@ -20288,6 +20761,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 41,
@@ -20303,7 +20777,7 @@
    "rbf": "Exidy_TestBuild.rbf",
    "repo": "RodimusFVC/Arcade-Exidy_MiSTer",
    "url": "https://github.com/RodimusFVC/Arcade-Exidy_MiSTer",
-   "build_date": "2026-10-18",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "both",
    "score": 53,
@@ -20331,13 +20805,13 @@
    "source": "rodimus",
    "source_title": "RodimusFVC",
    "channel": "repository only",
-   "rbf": "Arcade-Galaga_20261016.rbf",
+   "rbf": "Galaga_20261025.rbf",
    "repo": "RodimusFVC/Arcade-Galaga_MiSTer",
    "url": "https://github.com/RodimusFVC/Arcade-Galaga_MiSTer",
-   "build_date": "2026-10-16",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "both",
-   "score": 40,
+   "score": 41,
    "mame_drivers": [
     "namco/bosco.cpp",
     "namco/digdug.cpp",
@@ -20346,6 +20820,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 29,
@@ -20361,7 +20836,7 @@
    "rbf": "Galaxian_TestBuild.rbf",
    "repo": "RodimusFVC/Arcade-Galaxian_MiSTer",
    "url": "https://github.com/RodimusFVC/Arcade-Galaxian_MiSTer",
-   "build_date": "2026-10-18",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "both",
    "score": 45,
@@ -20375,6 +20850,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 350,
@@ -20390,7 +20866,7 @@
    "rbf": "Gottlieb_TestBuild.rbf",
    "repo": "RodimusFVC/Arcade-Gottlieb_MiSTer",
    "url": "https://github.com/RodimusFVC/Arcade-Gottlieb_MiSTer",
-   "build_date": "2026-10-18",
+   "build_date": "2026-10-26",
    "status": "analyzed",
    "reading": "mostly hardware",
    "score": 66,
@@ -20431,6 +20907,36 @@
    "first_date": "2026-10-25"
   },
   {
+   "id": "rodimus:irem1_testbuild",
+   "name": "Irem1_TestBuild (RodimusFVC)",
+   "source": "rodimus",
+   "source_title": "RodimusFVC",
+   "channel": "repository only",
+   "rbf": "Irem1_TestBuild.rbf",
+   "repo": "RodimusFVC/Arcade-Irem1_MiSTer",
+   "url": "https://github.com/RodimusFVC/Arcade-Irem1_MiSTer",
+   "build_date": "2026-10-25",
+   "status": "analyzed",
+   "reading": "both",
+   "score": 46,
+   "mame_drivers": [
+    "irem/m52.cpp",
+    "irem/m57.cpp",
+    "irem/m58.cpp",
+    "irem/travrusa.cpp"
+   ],
+   "note": null,
+   "aliases": [
+    "rodimus:irem1"
+   ],
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 20,
+   "ntitles": 6,
+   "first_date": "2026-10-25"
+  },
+  {
    "id": "rodimus:konami82",
    "name": "Konami82",
    "source": "rodimus",
@@ -20446,6 +20952,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 32,
@@ -20475,6 +20982,35 @@
    "first_date": "2026-10-25"
   },
   {
+   "id": "rodimus:namco6809_testbuild",
+   "name": "Namco6809_TestBuild (RodimusFVC)",
+   "source": "rodimus",
+   "source_title": "RodimusFVC",
+   "channel": "repository only",
+   "rbf": "Namco6809_TestBuild.rbf",
+   "repo": "RodimusFVC/Arcade-Namco6809_MiSTer",
+   "url": "https://github.com/RodimusFVC/Arcade-Namco6809_MiSTer",
+   "build_date": "2026-10-26",
+   "status": "analyzed",
+   "reading": "both",
+   "score": 50,
+   "mame_drivers": [
+    "namco/gaplus.cpp",
+    "namco/mappy.cpp",
+    "namco/skykid.cpp"
+   ],
+   "note": null,
+   "aliases": [
+    "rodimus:namco6809"
+   ],
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 33,
+   "ntitles": 11,
+   "first_date": "2026-10-25"
+  },
+  {
    "id": "rodimus:nintendo",
    "name": "Nintendo",
    "source": "rodimus",
@@ -20497,15 +21033,92 @@
    "first_date": "2026-10-18"
   },
   {
+   "id": "rodimus:nintendo_testbuild",
+   "name": "Nintendo_TestBuild (RodimusFVC)",
+   "source": "rodimus",
+   "source_title": "RodimusFVC",
+   "channel": "repository only",
+   "rbf": "Nintendo_TestBuild.rbf",
+   "repo": "RodimusFVC/Arcade-Nintendo_MiSTer",
+   "url": "https://github.com/RodimusFVC/Arcade-Nintendo_MiSTer",
+   "build_date": "2026-10-25",
+   "status": "analyzed",
+   "reading": "both",
+   "score": 51,
+   "mame_drivers": [
+    "nintendo/dkong.cpp",
+    "nintendo/mario.cpp",
+    "nintendo/n8080.cpp",
+    "nintendo/popeye.cpp",
+    "nintendo/spacefb.cpp"
+   ],
+   "note": null,
+   "aliases": [
+    "rodimus:nintendo"
+   ],
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 51,
+   "ntitles": 13,
+   "first_date": "2026-10-18"
+  },
+  {
+   "id": "rodimus:phoenix_testbuild",
+   "name": "Phoenix_TestBuild (RodimusFVC)",
+   "source": "rodimus",
+   "source_title": "RodimusFVC",
+   "channel": "repository only",
+   "rbf": "Phoenix_TestBuild.rbf",
+   "repo": "RodimusFVC/Arcade-Phoenix_MiSTer",
+   "url": "https://github.com/RodimusFVC/Arcade-Phoenix_MiSTer",
+   "build_date": "2026-10-25",
+   "status": "analyzed",
+   "reading": "both",
+   "score": 41,
+   "mame_drivers": [
+    "phoenix/phoenix.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 47,
+   "ntitles": 3,
+   "first_date": "2025-11-30"
+  },
+  {
+   "id": "rodimus:robots",
+   "name": "Robots (RodimusFVC)",
+   "source": "rodimus",
+   "source_title": "RodimusFVC",
+   "channel": "repository only",
+   "rbf": "Robots_20260925.rbf",
+   "repo": "RodimusFVC/VCR_Robots",
+   "url": "https://github.com/RodimusFVC/VCR_Robots",
+   "build_date": "2026-09-25",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 31,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": null
+  },
+  {
    "id": "rodimus:segag80",
    "name": "SegaG80 (RodimusFVC)",
    "source": "rodimus",
    "source_title": "RodimusFVC",
    "channel": "repository only",
-   "rbf": "SegaG80_20261013.rbf",
+   "rbf": "SegaG80_20261025.rbf",
    "repo": "RodimusFVC/Arcade-SegaG80_MiSTer",
    "url": "https://github.com/RodimusFVC/Arcade-SegaG80_MiSTer",
-   "build_date": "2026-10-13",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "mostly MAME",
    "score": 34,
@@ -20515,6 +21128,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 16,
@@ -20544,6 +21158,33 @@
    "first_date": "2026-10-20"
   },
   {
+   "id": "rodimus:segasystem1-2_testbuild",
+   "name": "SegaSystem1-2_TestBuild (RodimusFVC)",
+   "source": "rodimus",
+   "source_title": "RodimusFVC",
+   "channel": "repository only",
+   "rbf": "SegaSystem1-2_TestBuild.rbf",
+   "repo": "RodimusFVC/Arcade-SegaSystem1-2_MiSTer",
+   "url": "https://github.com/RodimusFVC/Arcade-SegaSystem1-2_MiSTer",
+   "build_date": "2026-10-25",
+   "status": "analyzed",
+   "reading": "both",
+   "score": 48,
+   "mame_drivers": [
+    "sega/system1.cpp"
+   ],
+   "note": null,
+   "aliases": [
+    "rodimus:segasystem1-2"
+   ],
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 92,
+   "ntitles": 28,
+   "first_date": "2026-10-20"
+  },
+  {
    "id": "rodimus:spaceinvaders_testbuild",
    "name": "SpaceInvaders_TestBuild (RodimusFVC)",
    "source": "rodimus",
@@ -20552,7 +21193,7 @@
    "rbf": "SpaceInvaders_TestBuild.rbf",
    "repo": "RodimusFVC/Arcade-SpaceInvaders_MiSTer",
    "url": "https://github.com/RodimusFVC/Arcade-SpaceInvaders_MiSTer",
-   "build_date": "2026-10-18",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "both",
    "score": 47,
@@ -20563,6 +21204,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 166,
@@ -20578,14 +21220,16 @@
    "rbf": "Universal_TestBuild.rbf",
    "repo": "RodimusFVC/Arcade-Universal_MiSTer",
    "url": "https://github.com/RodimusFVC/Arcade-Universal_MiSTer",
-   "build_date": "2026-10-16",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "both",
    "score": 55,
    "mame_drivers": [
     "universal/cheekyms.cpp",
     "universal/cosmic.cpp",
+    "universal/cosmicg.cpp",
     "universal/docastle.cpp",
+    "universal/getaway.cpp",
     "universal/ladybug.cpp",
     "universal/mrdo.cpp",
     "universal/sraider.cpp",
@@ -20611,7 +21255,7 @@
    "rbf": "Williams_TestBuild.rbf",
    "repo": "RodimusFVC/Arcade-Williams_MiSTer",
    "url": "https://github.com/RodimusFVC/Arcade-Williams_MiSTer",
-   "build_date": "2026-10-18",
+   "build_date": "2026-10-25",
    "status": "analyzed",
    "reading": "both",
    "score": 59,
@@ -21404,7 +22048,7 @@
    "binary_only": false,
    "nsets": 19,
    "ntitles": 12,
-   "first_date": "2026-10-23"
+   "first_date": "2026-10-25"
   },
   {
    "id": "tomsvr:tomsvr_splash",
@@ -23211,7 +23855,8 @@
    "sets": 2,
    "sets_covered": 2,
    "cores": [
-    "decoryah:ohmygod"
+    "decoryah:ohmygod",
+    "decoryah:ohmygod_20261023b"
    ],
    "first": "2026-10-10"
   },
@@ -23267,7 +23912,8 @@
     "dist:mcr3",
     "dist:mcr3mono",
     "repo:demoderby",
-    "rodimus:ballymidwaymcr"
+    "rodimus:ballymidwaymcr",
+    "rodimus:ballymidwaymcr_testbuild"
    ],
    "first": "2020-01-12"
   },
@@ -23651,6 +24297,7 @@
    "sets": 26,
    "sets_covered": 8,
    "cores": [
+    "dist:starcastle",
     "repo:starcastle",
     "usquebagh:cinematronics",
     "usquebagh:starcastle"
@@ -23926,12 +24573,16 @@
   {
    "sourcefile": "dataeast/dec8.cpp",
    "titles": 10,
-   "covered": 5,
+   "covered": 10,
    "sets": 32,
-   "sets_covered": 18,
+   "sets_covered": 31,
    "cores": [
     "coinop:cobracom",
     "coinop:oscar",
+    "meat:dec8",
+    "repo:dec8",
+    "repo:gondomania",
+    "repo:srd",
     "shmupfan:dec8"
    ],
    "first": "2026-04-02"
@@ -24049,6 +24700,7 @@
    "sets": 6,
    "sets_covered": 3,
    "cores": [
+    "dist:deco156simple",
     "meat:simple156",
     "yaguboo:heavysmash"
    ],
@@ -24201,10 +24853,11 @@
   {
    "sourcefile": "dataeast/simpl156.cpp",
    "titles": 5,
-   "covered": 4,
+   "covered": 5,
    "sets": 11,
-   "sets_covered": 7,
+   "sets_covered": 9,
    "cores": [
+    "dist:deco156simple",
     "meat:simple156"
    ],
    "first": "2026-10-06"
@@ -24489,7 +25142,8 @@
    "sets": 2,
    "sets_covered": 2,
    "cores": [
-    "decoryah:aquarium"
+    "decoryah:aquarium",
+    "decoryah:aquarium_20261025c"
    ],
    "first": "2026-10-25"
   },
@@ -25128,7 +25782,8 @@
    "sets_covered": 4,
    "cores": [
     "dist:moonpatrol",
-    "rodimus:irem1"
+    "rodimus:irem1",
+    "rodimus:irem1_testbuild"
    ],
    "first": "2019-12-18"
   },
@@ -25140,7 +25795,8 @@
    "sets_covered": 2,
    "cores": [
     "dist:tropicalangel",
-    "rodimus:irem1"
+    "rodimus:irem1",
+    "rodimus:irem1_testbuild"
    ],
    "first": "2022-10-31"
   },
@@ -25152,7 +25808,8 @@
    "sets_covered": 6,
    "cores": [
     "repo:10yardfight",
-    "rodimus:irem1"
+    "rodimus:irem1",
+    "rodimus:irem1_testbuild"
    ],
    "first": "2026-10-04"
   },
@@ -25244,7 +25901,8 @@
    "sets_covered": 8,
    "cores": [
     "dist:traverseusa",
-    "rodimus:irem1"
+    "rodimus:irem1",
+    "rodimus:irem1_testbuild"
    ],
    "first": "2019-12-19"
   },
@@ -27832,7 +28490,8 @@
    "sets_covered": 10,
    "cores": [
     "dist:gaplus",
-    "rodimus:namco6809"
+    "rodimus:namco6809",
+    "rodimus:namco6809_testbuild"
    ],
    "first": "2020-01-01"
   },
@@ -27844,7 +28503,8 @@
    "sets_covered": 18,
    "cores": [
     "dist:druaga",
-    "rodimus:namco6809"
+    "rodimus:namco6809",
+    "rodimus:namco6809_testbuild"
    ],
    "first": "2019-12-19"
   },
@@ -27914,7 +28574,8 @@
    "sets": 18,
    "sets_covered": 18,
    "cores": [
-    "kyle:namco_s10"
+    "kyle:namco_s10",
+    "repo:system10"
    ],
    "first": "2026-10-19"
   },
@@ -28050,7 +28711,8 @@
    "sets": 5,
    "sets_covered": 5,
    "cores": [
-    "jt:jtskykid"
+    "jt:jtskykid",
+    "rodimus:namco6809_testbuild"
    ],
    "first": "2026-10-02"
   },
@@ -28339,7 +29001,8 @@
     "dist:donkeykongjunior",
     "dist:pacman",
     "repo:donkeykong3",
-    "rodimus:nintendo"
+    "rodimus:nintendo",
+    "rodimus:nintendo_testbuild"
    ],
    "first": "2020-06-19"
   },
@@ -28361,7 +29024,8 @@
    "cores": [
     "dist:donkeykong",
     "dist:mariobros",
-    "rodimus:nintendo"
+    "rodimus:nintendo",
+    "rodimus:nintendo_testbuild"
    ],
    "first": "2020-06-28"
   },
@@ -28391,7 +29055,8 @@
    "sets_covered": 11,
    "cores": [
     "meat:nintendo8080",
-    "rodimus:nintendo"
+    "rodimus:nintendo",
+    "rodimus:nintendo_testbuild"
    ],
    "first": "2026-10-12"
   },
@@ -28415,7 +29080,8 @@
    "cores": [
     "dist:popeye",
     "jtpr:jtpopeye",
-    "rodimus:nintendo"
+    "rodimus:nintendo",
+    "rodimus:nintendo_testbuild"
    ],
    "first": "2020-03-03"
   },
@@ -28447,7 +29113,8 @@
    "sets_covered": 10,
    "cores": [
     "dist:spacefirebird",
-    "rodimus:nintendo"
+    "rodimus:nintendo",
+    "rodimus:nintendo_testbuild"
    ],
    "first": "2026-06-17"
   },
@@ -28809,7 +29476,8 @@
     "dist:galaxian",
     "dist:phoenix",
     "dist:pleiads",
-    "rodimus:galaxian_testbuild"
+    "rodimus:galaxian_testbuild",
+    "rodimus:phoenix_testbuild"
    ],
    "first": "2020-05-12"
   },
@@ -29192,7 +29860,8 @@
    "sets_covered": 9,
    "cores": [
     "repo:model2",
-    "repo:model2a"
+    "repo:model2a",
+    "repo:model2a_20261024b"
    ],
    "first": "2026-08-18"
   },
@@ -29423,7 +30092,8 @@
     "blackwine:blackwine-segasystem1-2",
     "dist:segasys1",
     "repo:segasys1+2",
-    "rodimus:segasystem1-2"
+    "rodimus:segasystem1-2",
+    "rodimus:segasystem1-2_testbuild"
    ],
    "first": "2020-01-03"
   },
@@ -31065,9 +31735,10 @@
    "sets_covered": 9,
    "cores": [
     "jlrh:ffsauro",
-    "jlrh:fftrckydoc"
+    "jlrh:fftrckydoc",
+    "repo:sauro"
    ],
-   "first": "2026-10-14"
+   "first": "2026-10-07"
   },
   {
    "sourcefile": "tecfri/speedbal.cpp",
@@ -33119,6 +33790,13 @@
    "desc": "New Puck-X [f]"
   },
   {
+   "set": "felixjr",
+   "cores": [
+    "repo:fifelix"
+   ],
+   "hbmame": false
+  },
+  {
    "set": "ffae",
    "cores": [
     "jt:jtcps1"
@@ -33701,6 +34379,13 @@
    "desc": "Looptris (2021-12-26)"
   },
   {
+   "set": "marbvice",
+   "cores": [
+    "repo:picmatic"
+   ],
+   "hbmame": false
+  },
+  {
    "set": "marpy",
    "cores": [
     "dist:druaga"
@@ -33782,6 +34467,13 @@
    "set": "mrdonight",
    "cores": [
     "dist:galaxian"
+   ],
+   "hbmame": false
+  },
+  {
+   "set": "mrdrlr2j",
+   "cores": [
+    "repo:system10"
    ],
    "hbmame": false
   },
@@ -34584,6 +35276,13 @@
    "desc": "Pickin' (Color Hack)"
   },
   {
+   "set": "picmatic",
+   "cores": [
+    "repo:picmatic"
+   ],
+   "hbmame": false
+  },
+  {
    "set": "pinkswtsrf",
    "cores": [
     "ongo:ikacore_cv1k"
@@ -35001,6 +35700,13 @@
    "parent": "robotron",
    "manufacturer": "Vid Kidz",
    "desc": "Robotron: 2084 (Tie Die)"
+  },
+  {
+   "set": "robots",
+   "cores": [
+    "rodimus:robots"
+   ],
+   "hbmame": false
   },
   {
    "set": "rpdiag",
@@ -35493,7 +36199,8 @@
   {
    "set": "solarfoxc",
    "cores": [
-    "rodimus:ballymidwaymcr"
+    "rodimus:ballymidwaymcr",
+    "rodimus:ballymidwaymcr_testbuild"
    ],
    "hbmame": false
   },
@@ -35791,6 +36498,13 @@
    "set": "tetrismn",
    "cores": [
     "dist:neogeo"
+   ],
+   "hbmame": false
+  },
+  {
+   "set": "tierrassalvajes",
+   "cores": [
+    "repo:picmatic"
    ],
    "hbmame": false
   },

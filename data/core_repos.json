@@ -234,6 +234,9 @@
  "decoryah:aquarium": [
   "decoryah/Arcade-Aquarium_MiSTer"
  ],
+ "decoryah:aquarium_20261025c": [
+  "decoryah/Arcade-Aquarium_MiSTer"
+ ],
  "decoryah:arcadiasystems": [
   "decoryah/Arcade-ArcadiaSystems_MiSTer"
  ],
@@ -287,6 +290,9 @@
   "decoryah/Arcade-MysticWarriors_MiSTer"
  ],
  "decoryah:ohmygod": [
+  "decoryah/Arcade-OhMyGod_MiSTer"
+ ],
+ "decoryah:ohmygod_20261023b": [
   "decoryah/Arcade-OhMyGod_MiSTer"
  ],
  "decoryah:pgm2": [
@@ -551,6 +557,9 @@
  "dist:dcon": [
   "MiSTer-devel/Arcade-Dcon_MiSTer",
   "MiSTer-devel/Distribution_MiSTer"
+ ],
+ "dist:deco156simple": [
+  "MiSTer-devel/MRA-Alternatives_MiSTer"
  ],
  "dist:deco16": [
   "MiSTer-devel/Arcade-Deco16_Mister",
@@ -1162,6 +1171,11 @@
   "MiSTer-devel/MRA-Alternatives_MiSTer",
   "MiSTer-devel/Saturn_MiSTer",
   "Toryalai1/Arcade_Offset"
+ ],
+ "dist:starcastle": [
+  "MiSTer-devel/Arcade-StarCastle_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer",
+  "Usquebagh/MiSTer_misc"
  ],
  "dist:starforce": [
   "MiSTer-devel/Arcade-StarForce_MiSTer",
@@ -1922,6 +1936,7 @@
   "kyledlester/R_Shark_Super_X_MiSTer"
  ],
  "kyle:superdodgeball": [
+  "OngoGablogian/MiSTer_Ongo",
   "kyledlester/Super_Dodge_Ball_MiSTer"
  ],
  "kyle:taitob": [
@@ -1939,6 +1954,9 @@
  ],
  "kyle:xnzn1rz": [
   "kyledlester/ZN1_MiSTer"
+ ],
+ "meat:ah": [
+  "meathax/meatcores"
  ],
  "meat:alpha68kn": [
   "OngoGablogian/MiSTer_Ongo",
@@ -1976,6 +1994,10 @@
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
+ "meat:dec8": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
  "meat:docastle": [
   "OngoGablogian/MiSTer_Ongo",
   "Usquebagh/MiSTer_misc",
@@ -2006,6 +2028,10 @@
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
+ "meat:madmotor": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
  "meat:mcr68": [
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
@@ -2026,6 +2052,10 @@
   "meathax/meatcores"
  ],
  "meat:nintendo8080": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
+ "meat:penguin": [
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
@@ -2089,6 +2119,10 @@
   "meathax/meatcores"
  ],
  "meat:yellowcab": [
+  "meathax/meatcores"
+ ],
+ "meat:zaccaria": [
+  "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
  "meat:zeroteam": [
@@ -2725,6 +2759,9 @@
  "repo:exidy_testbuild": [
   "RodimusFVC/Arcade-Exidy_MiSTer"
  ],
+ "repo:fifelix": [
+  "niknakniknak/FixItFelixArcadeForMister"
+ ],
  "repo:firetrap": [
   "Usquebagh/Arcade-FireTrap_MiSTer"
  ],
@@ -2736,6 +2773,9 @@
  ],
  "repo:garegga": [
   "zakk4223/Arcade-Raizing_MiSTer"
+ ],
+ "repo:gondomania": [
+  "Eggsecutioner528/Gondomania_Mister_Core"
  ],
  "repo:gottlieb_testbuild": [
   "RodimusFVC/Arcade-Gottlieb_MiSTer"
@@ -2814,9 +2854,16 @@
   "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-KonamiGX_MiSTer"
  ],
+ "repo:konamihornet": [
+  "ppriest/Arcade-KonamiHornet_MiSTer"
+ ],
  "repo:lastduel": [
   "OngoGablogian/MiSTer_Ongo",
   "fiermanb/LastDuel-MadGear_MiSTer"
+ ],
+ "repo:lethalenforcers": [
+  "OngoGablogian/MiSTer_Ongo",
+  "ppriest/Arcade-LethalEnforcers_MiSTer"
  ],
  "repo:limenko": [
   "OngoGablogian/MiSTer_Ongo",
@@ -2848,6 +2895,11 @@
   "decoryah/Arcade-MetamorphicForce_MiSTer",
   "meathax/meatcores"
  ],
+ "repo:midway-y-unit": [
+  "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
+  "Gm0rk/Gm0rkCores",
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "repo:model1": [
   "OngoGablogian/MiSTer_Ongo",
   "alphanu1/sega-model1-mister"
@@ -2858,6 +2910,10 @@
   "retrorepair/sega-model2-mister"
  ],
  "repo:model2a": [
+  "alphanu1/sega-model2-mister"
+ ],
+ "repo:model2a_20261024b": [
+  "OngoGablogian/MiSTer_Ongo",
   "alphanu1/sega-model2-mister"
  ],
  "repo:monstermaulers": [
@@ -2897,8 +2953,14 @@
  "repo:outrunners": [
   "bonna79/s32multi-mycore"
  ],
+ "repo:pandora": [
+  "ppriest/Arcade-Pandora_MiSTer"
+ ],
  "repo:penguinkunwars": [
   "MrX-8B/MiSTer-Arcade-PenguinKunWars"
+ ],
+ "repo:picmatic": [
+  "jsmolina/Arcade-Picmatic_MiSTer"
  ],
  "repo:playchoice10": [
   "OngoGablogian/MiSTer_Ongo",
@@ -2954,6 +3016,10 @@
   "RetroShrimp/Arcade-SegaSystem32_MiSTer",
   "Usquebagh/MiSTer_misc"
  ],
+ "repo:sauro": [
+  "bazset/MiSTer_BAZSET",
+  "shimian5/Arcade-Sauro_MiSTer"
+ ],
  "repo:segag80": [
   "RodimusFVC/Arcade-SegaG80_MiSTer"
  ],
@@ -2986,12 +3052,19 @@
  "repo:shadowforce": [
   "yaguboo/Arcade-ShadowForce_MiSTer"
  ],
+ "repo:silkroad": [
+  "OngoGablogian/MiSTer_Ongo",
+  "ppriest/Arcade-Silkroad_MiSTer"
+ ],
  "repo:skns": [
   "OngoGablogian/MiSTer_Ongo",
   "srg320/Arcade-SKNS_MiSTer"
  ],
  "repo:snk68": [
   "va7deo/SNK68"
+ ],
+ "repo:srd": [
+  "Eggsecutioner528/SRD-Super_Real_Darvin"
  ],
  "repo:stadiumhero": [
   "yaguboo/Arcade-StadiumHero_MiSTer"
@@ -3014,6 +3087,9 @@
  ],
  "repo:superslams": [
   "yaguboo/Arcade-SuperSlams_MiSTer"
+ ],
+ "repo:system10": [
+  "guljam/namco-system-10-mister-core-beta"
  ],
  "repo:systemc2": [
   "Mezzow/Arcade-SystemC2_MiSTer",
@@ -3091,6 +3167,9 @@
  "rodimus:ballymidwaymcr": [
   "RodimusFVC/Arcade-BallyMidwayMCR_MiSTer"
  ],
+ "rodimus:ballymidwaymcr_testbuild": [
+  "RodimusFVC/Arcade-BallyMidwayMCR_MiSTer"
+ ],
  "rodimus:crazyclimber": [
   "RodimusFVC/Arcade-CrazyClimber_MiSTer"
  ],
@@ -3106,19 +3185,34 @@
  "rodimus:irem1": [
   "RodimusFVC/Arcade-Irem1_MiSTer"
  ],
+ "rodimus:irem1_testbuild": [
+  "RodimusFVC/Arcade-Irem1_MiSTer"
+ ],
  "rodimus:konami82": [
   "RodimusFVC/Arcade-Konami82_MiSTer"
  ],
  "rodimus:namco6809": [
   "RodimusFVC/Arcade-Namco6809_MiSTer"
  ],
+ "rodimus:namco6809_testbuild": [
+  "RodimusFVC/Arcade-Namco6809_MiSTer"
+ ],
  "rodimus:nintendo": [
   "RodimusFVC/Arcade-Nintendo_MiSTer"
+ ],
+ "rodimus:nintendo_testbuild": [
+  "RodimusFVC/Arcade-Nintendo_MiSTer"
+ ],
+ "rodimus:robots": [
+  "RodimusFVC/VCR_Robots"
  ],
  "rodimus:segag80": [
   "RodimusFVC/Arcade-SegaG80_MiSTer"
  ],
  "rodimus:segasystem1-2": [
+  "RodimusFVC/Arcade-SegaSystem1-2_MiSTer"
+ ],
+ "rodimus:segasystem1-2_testbuild": [
   "RodimusFVC/Arcade-SegaSystem1-2_MiSTer"
  ],
  "rodimus:universal_testbuild": [
