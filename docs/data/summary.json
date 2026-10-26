@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-26T10:56:00+00:00",
+  "generated": "2026-10-26T13:46:04+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-26T10:55:33+00:00",
+  "mister_generated": "2026-10-26T13:45:40+00:00",
   "alamone_generated": "2026-10-26T09:17:05+00:00",
   "ledger_updated": "2026-10-26",
   "ledger_runs": [
-   {
-    "date": "2026-10-25",
-    "note": "alamone 2026-10-19",
-    "cores": 3,
-    "sets": 2,
-    "pairs": 25,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-25",
     "note": "alamone 2026-10-19",
@@ -51,6 +42,15 @@
     "pairs": 368,
     "dates_improved": 49,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-26",
+    "note": "alamone 2026-10-26",
+    "cores": 5,
+    "sets": 78,
+    "pairs": 212,
+    "dates_improved": 394,
+    "cores_removed": 4
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5451 sets, 5451 used); mame2016: catver_mame2016.ini (37065 sets, 32584 used)",
    "catver_entries": 38035,
    "mad_entries": 2995,
-   "mra_entries": 4040,
+   "mra_entries": 4123,
    "unmapped": [
     {
      "raw": "not classified",
@@ -71,6 +71,10 @@
     },
     {
      "raw": "electromechanical/kiddy ride",
+     "sets": 3
+    },
+    {
+     "raw": "movie/tv/comic",
      "sets": 3
     },
     {
@@ -121,6 +125,7 @@
    "illegalmp3": "illegalmp3 (GitHub repositories)",
    "yaguboo": "yaguboo (GitHub repositories)",
    "rodimus": "RodimusFVC",
+   "zakk": "zakk4223 (GitHub repositories)",
    "decoryah": "decoryah",
    "tomsvr": "TomSVR",
    "asturur": "Andrea Bogazzi (asturur)",
@@ -217,6 +222,10 @@
     "page": "https://github.com/RodimusFVC?tab=repositories",
     "db_url": "https://raw.githubusercontent.com/RodimusFVC/Rodimus_MiSTer_DB/db/db.json.zip"
    },
+   "zakk": {
+    "page": "https://github.com/zakk4223?tab=repositories",
+    "db_url": null
+   },
    "decoryah": {
     "page": "https://github.com/decoryah/MiSTer_decoryah",
     "db_url": "https://raw.githubusercontent.com/decoryah/MiSTer_decoryah/db/db.json.zip"
@@ -249,7 +258,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1897
+    "mras": 1904
    },
    {
     "source": "dist",
@@ -2696,13 +2705,13 @@
     "mras": 1
    },
    {
-    "source": "repo",
+    "source": "zakk",
     "repo": "zakk4223/Arcade-Raizing_MiSTer",
     "dirs": null,
     "mras": 29
    },
    {
-    "source": "repo",
+    "source": "zakk",
     "repo": "zakk4223/Arcade-SeibuSPI_MiSTer",
     "dirs": null,
     "mras": 101
@@ -3277,12 +3286,6 @@
    },
    {
     "source": "rodimus",
-    "repo": "RodimusFVC/Arcade-Pacman_MiSTer_Old",
-    "dirs": null,
-    "mras": 21
-   },
-   {
-    "source": "rodimus",
     "repo": "RodimusFVC/Arcade-PolePosition_MiSTer",
     "dirs": null,
     "mras": 15
@@ -3328,6 +3331,60 @@
     "repo": "RodimusFVC/ThePokeyProject_MiSTer",
     "dirs": null,
     "mras": 0
+   },
+   {
+    "source": "zakk",
+    "repo": "zakk4223/Arcade-Battletoads_MiSTer",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "zakk",
+    "repo": "zakk4223/Arcade-IremM92_MiSTer",
+    "dirs": null,
+    "mras": 29
+   },
+   {
+    "source": "zakk",
+    "repo": "zakk4223/Arcade-TaitoF2_MiSTer",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "zakk",
+    "repo": "zakk4223/Distribution-MiSTerFPGA",
+    "dirs": null,
+    "mras": 140
+   },
+   {
+    "source": "zakk",
+    "repo": "zakk4223/MiSTer-Arcade-SuperBagman",
+    "dirs": null,
+    "mras": 2
+   },
+   {
+    "source": "zakk",
+    "repo": "zakk4223/Mister-MRA",
+    "dirs": null,
+    "mras": 517
+   },
+   {
+    "source": "zakk",
+    "repo": "zakk4223/Mister64",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "zakk",
+    "repo": "zakk4223/Update_All_MiSTer",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "zakk",
+    "repo": "zakk4223/pr4m0d-MISTer-bin",
+    "dirs": null,
+    "mras": 15
    }
   ],
   "repo_errors": [
@@ -3373,12 +3430,12 @@
    "working_arcade_titles": 3725,
    "working_arcade_titles_covered": 2464,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 6443,
+   "working_arcade_sets_covered": 6457,
    "working_arcade_titles_source": 2228,
    "working_arcade_titles_binary_only": 236,
-   "cores": 792,
-   "binary_only_cores": 270,
-   "unmatched_sets": 462
+   "cores": 793,
+   "binary_only_cores": 271,
+   "unmatched_sets": 515
   }
  },
  "cores": [
@@ -7180,7 +7237,7 @@
    "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
-   "nsets": 3,
+   "nsets": 6,
    "ntitles": 2,
    "first_date": "2020-02-16"
   },
@@ -7808,7 +7865,7 @@
    "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
-   "nsets": 10,
+   "nsets": 11,
    "ntitles": 2,
    "first_date": "2019-12-18"
   },
@@ -7944,8 +8001,8 @@
    "source_title": "MiSTer official distribution",
    "channel": null,
    "rbf": "Deco156Simple.rbf",
-   "repo": "MiSTer-devel/MRA-Alternatives_MiSTer",
-   "url": "https://github.com/MiSTer-devel/MRA-Alternatives_MiSTer",
+   "repo": "MiSTer-devel/Distribution_MiSTer",
+   "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
    "build_date": null,
    "status": null,
    "reading": null,
@@ -7953,6 +8010,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 7,
@@ -8032,9 +8090,9 @@
    "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
-   "nsets": 7,
+   "nsets": 20,
    "ntitles": 4,
-   "first_date": "2020-02-20"
+   "first_date": "2019-12-23"
   },
   {
    "id": "dist:denjinmakai",
@@ -8708,7 +8766,7 @@
    "binary_only": false,
    "nsets": 4,
    "ntitles": 1,
-   "first_date": "2021-06-05"
+   "first_date": "2020-03-03"
   },
   {
    "id": "dist:heatedbarrel",
@@ -9427,7 +9485,7 @@
    "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
-   "nsets": 12,
+   "nsets": 13,
    "ntitles": 6,
    "first_date": "2020-01-25"
   },
@@ -9502,9 +9560,9 @@
    "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
-   "nsets": 4,
+   "nsets": 5,
    "ntitles": 3,
-   "first_date": "2020-02-02"
+   "first_date": "2020-01-14"
   },
   {
    "id": "dist:missilecommand",
@@ -9779,7 +9837,7 @@
    "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
-   "nsets": 160,
+   "nsets": 161,
    "ntitles": 31,
    "first_date": "2019-12-19"
   },
@@ -10052,9 +10110,9 @@
    "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
-   "nsets": 2,
+   "nsets": 10,
    "ntitles": 2,
-   "first_date": "2020-03-03"
+   "first_date": "2019-12-27"
   },
   {
    "id": "dist:primalrage",
@@ -10508,9 +10566,9 @@
    "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
-   "nsets": 43,
+   "nsets": 80,
    "ntitles": 22,
-   "first_date": "2020-01-04"
+   "first_date": "2019-12-23"
   },
   {
    "id": "dist:sdgundamps",
@@ -11108,6 +11166,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 8,
@@ -11916,7 +11975,7 @@
    "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
-   "nsets": 3,
+   "nsets": 7,
    "ntitles": 3,
    "first_date": "2020-03-15"
   },
@@ -18532,56 +18591,6 @@
    "first_date": "2022-10-12"
   },
   {
-   "id": "repo:bakraid",
-   "name": "Bakraid (zakk4223)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-Bakraid_20220729.rbf",
-   "repo": "zakk4223/Arcade-Raizing_MiSTer",
-   "url": "https://github.com/zakk4223/Arcade-Raizing_MiSTer",
-   "build_date": "2022-07-30",
-   "status": "analyzed",
-   "reading": "not enough evidence",
-   "score": null,
-   "mame_drivers": [
-    "toaplan/raizing_batrider.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-26",
-   "binary_only": false,
-   "nsets": 4,
-   "ntitles": 1,
-   "first_date": "2022-07-24"
-  },
-  {
-   "id": "repo:batrider",
-   "name": "Batrider (zakk4223)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-Batrider_20220729.rbf",
-   "repo": "zakk4223/Arcade-Raizing_MiSTer",
-   "url": "https://github.com/zakk4223/Arcade-Raizing_MiSTer",
-   "build_date": "2022-07-30",
-   "status": "analyzed",
-   "reading": "not enough evidence",
-   "score": null,
-   "mame_drivers": [
-    "toaplan/raizing_batrider.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-26",
-   "binary_only": false,
-   "nsets": 8,
-   "ntitles": 1,
-   "first_date": "2022-07-24"
-  },
-  {
    "id": "repo:battlantis_20261018c",
    "name": "Battlantis (Eggsecutioner528)",
    "source": "repo",
@@ -18754,6 +18763,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 10,
@@ -18926,36 +18936,12 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
-  },
-  {
-   "id": "repo:garegga",
-   "name": "Garegga (zakk4223)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-Garegga_20220729.rbf",
-   "repo": "zakk4223/Arcade-Raizing_MiSTer",
-   "url": "https://github.com/zakk4223/Arcade-Raizing_MiSTer",
-   "build_date": "2022-07-30",
-   "status": "analyzed",
-   "reading": "not enough evidence",
-   "score": null,
-   "mame_drivers": [
-    "toaplan/raizing.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-26",
-   "binary_only": false,
-   "nsets": 12,
-   "ntitles": 3,
-   "first_date": "2022-07-24"
   },
   {
    "id": "repo:gondomania",
@@ -18975,6 +18961,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 1,
@@ -19590,6 +19577,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 0,
@@ -19919,6 +19907,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 3,
@@ -20001,31 +19990,6 @@
    "first_date": "2026-07-28"
   },
   {
-   "id": "repo:seibuspi",
-   "name": "SeibuSPI (zakk4223)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "SeibuSPI.rbf",
-   "repo": "zakk4223/Arcade-SeibuSPI_MiSTer",
-   "url": "https://github.com/zakk4223/Arcade-SeibuSPI_MiSTer",
-   "build_date": "2026-08-31",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 27,
-   "mame_drivers": [
-    "seibu/seibuspi.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-04",
-   "aliases": [],
-   "last_seen": "2026-10-26",
-   "binary_only": false,
-   "nsets": 51,
-   "ntitles": 5,
-   "first_date": "2026-08-01"
-  },
-  {
    "id": "repo:skns",
    "name": "SKNS (srg320)",
    "source": "repo",
@@ -20093,6 +20057,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 2,
@@ -20145,7 +20110,7 @@
    "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
-   "nsets": 3,
+   "nsets": 4,
    "ntitles": 2,
    "first_date": "2020-01-18"
   },
@@ -20270,6 +20235,7 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 6,
@@ -20292,6 +20258,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 0,
@@ -20314,6 +20281,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 0,
@@ -20741,7 +20709,7 @@
    "binary_only": false,
    "nsets": 25,
    "ntitles": 7,
-   "first_date": "2024-05-27"
+   "first_date": "2019-12-23"
   },
   {
    "id": "rodimus:crazyclimber",
@@ -20855,7 +20823,7 @@
    "binary_only": false,
    "nsets": 350,
    "ntitles": 78,
-   "first_date": "2020-06-29"
+   "first_date": "2019-12-23"
   },
   {
    "id": "rodimus:gottlieb_testbuild",
@@ -21081,11 +21049,12 @@
    ],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 47,
    "ntitles": 3,
-   "first_date": "2025-11-30"
+   "first_date": "2019-12-23"
   },
   {
    "id": "rodimus:robots",
@@ -21103,6 +21072,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-26",
+   "aliases": [],
    "last_seen": "2026-10-26",
    "binary_only": false,
    "nsets": 0,
@@ -22830,6 +22800,124 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-08"
+  },
+  {
+   "id": "zakk:bakraid",
+   "name": "Bakraid (zakk4223)",
+   "source": "zakk",
+   "source_title": "zakk4223 (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "Arcade-Bakraid_20220729.rbf",
+   "repo": "zakk4223/Arcade-Raizing_MiSTer",
+   "url": "https://github.com/zakk4223/Arcade-Raizing_MiSTer",
+   "build_date": "2022-07-30",
+   "status": "analyzed",
+   "reading": "not enough evidence",
+   "score": null,
+   "mame_drivers": [
+    "toaplan/raizing_batrider.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 4,
+   "ntitles": 1,
+   "first_date": "2022-07-11"
+  },
+  {
+   "id": "zakk:batrider",
+   "name": "Batrider (zakk4223)",
+   "source": "zakk",
+   "source_title": "zakk4223 (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "Arcade-Batrider_20220729.rbf",
+   "repo": "zakk4223/Arcade-Raizing_MiSTer",
+   "url": "https://github.com/zakk4223/Arcade-Raizing_MiSTer",
+   "build_date": "2022-07-30",
+   "status": "analyzed",
+   "reading": "not enough evidence",
+   "score": null,
+   "mame_drivers": [
+    "toaplan/raizing_batrider.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 8,
+   "ntitles": 1,
+   "first_date": "2022-06-02"
+  },
+  {
+   "id": "zakk:garegga",
+   "name": "Garegga (zakk4223)",
+   "source": "zakk",
+   "source_title": "zakk4223 (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "Arcade-Garegga_20220729.rbf",
+   "repo": "zakk4223/Arcade-Raizing_MiSTer",
+   "url": "https://github.com/zakk4223/Arcade-Raizing_MiSTer",
+   "build_date": "2022-07-30",
+   "status": "analyzed",
+   "reading": "not enough evidence",
+   "score": null,
+   "mame_drivers": [
+    "toaplan/raizing.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 12,
+   "ntitles": 3,
+   "first_date": "2022-07-22"
+  },
+  {
+   "id": "zakk:jtf1dream",
+   "name": "jtf1dream",
+   "source": "zakk",
+   "source_title": "zakk4223 (GitHub repositories)",
+   "channel": null,
+   "rbf": "jtf1dream.rbf",
+   "repo": "zakk4223/Mister-MRA",
+   "url": "https://github.com/zakk4223/Mister-MRA",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2019-12-26"
+  },
+  {
+   "id": "zakk:seibuspi",
+   "name": "SeibuSPI (zakk4223)",
+   "source": "zakk",
+   "source_title": "zakk4223 (GitHub repositories)",
+   "channel": "repository only",
+   "rbf": "SeibuSPI.rbf",
+   "repo": "zakk4223/Arcade-SeibuSPI_MiSTer",
+   "url": "https://github.com/zakk4223/Arcade-SeibuSPI_MiSTer",
+   "build_date": "2026-08-31",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 27,
+   "mame_drivers": [
+    "seibu/seibuspi.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-10-26",
+   "last_seen": "2026-10-26",
+   "binary_only": false,
+   "nsets": 51,
+   "ntitles": 5,
+   "first_date": "2026-08-01"
   }
  ],
  "drivers": [
@@ -23196,7 +23284,7 @@
    "titles": 3,
    "covered": 2,
    "sets": 9,
-   "sets_covered": 3,
+   "sets_covered": 6,
    "cores": [
     "dist:blackwidow",
     "repo:blackwidow"
@@ -23260,7 +23348,7 @@
     "rodimus:galaxian_testbuild",
     "usquebagh:millipede"
    ],
-   "first": "2021-02-14"
+   "first": "2019-12-23"
   },
   {
    "sourcefile": "atari/cloak.cpp",
@@ -23922,7 +24010,7 @@
    "titles": 8,
    "covered": 8,
    "sets": 11,
-   "sets_covered": 10,
+   "sets_covered": 11,
    "cores": [
     "dist:mcr3mono",
     "dist:mcr3scroll"
@@ -24246,7 +24334,8 @@
    "cores": [
     "bazset:bazsetpushman",
     "bazset:suck_my_bouncing_balls",
-    "jt:jttora"
+    "jt:jttora",
+    "zakk:jtf1dream"
    ],
    "first": "2019-12-22"
   },
@@ -25501,7 +25590,7 @@
    "titles": 53,
    "covered": 47,
    "sets": 270,
-   "sets_covered": 258,
+   "sets_covered": 260,
    "cores": [
     "dist:galaxian",
     "dist:scramble",
@@ -25540,7 +25629,7 @@
    "titles": 5,
    "covered": 5,
    "sets": 20,
-   "sets_covered": 18,
+   "sets_covered": 19,
    "cores": [
     "dist:galaxian",
     "dist:scramble",
@@ -27650,7 +27739,7 @@
    "cores": [
     "dist:pacman"
    ],
-   "first": "2020-01-07"
+   "first": "2019-12-23"
   },
   {
    "sourcefile": "misc/esd16.cpp",
@@ -29076,14 +29165,14 @@
    "titles": 2,
    "covered": 2,
    "sets": 10,
-   "sets_covered": 9,
+   "sets_covered": 10,
    "cores": [
     "dist:popeye",
     "jtpr:jtpopeye",
     "rodimus:nintendo",
     "rodimus:nintendo_testbuild"
    ],
-   "first": "2020-03-03"
+   "first": "2019-12-27"
   },
   {
    "sourcefile": "nintendo/punchout.cpp",
@@ -29380,7 +29469,7 @@
    "titles": 26,
    "covered": 26,
    "sets": 154,
-   "sets_covered": 153,
+   "sets_covered": 154,
    "cores": [
     "dist:galaxian",
     "dist:pacman",
@@ -29479,7 +29568,7 @@
     "rodimus:galaxian_testbuild",
     "rodimus:phoenix_testbuild"
    ],
-   "first": "2020-05-12"
+   "first": "2019-12-23"
   },
   {
    "sourcefile": "phoenix/safarir.cpp",
@@ -30134,7 +30223,7 @@
    "titles": 6,
    "covered": 4,
    "sets": 12,
-   "sets_covered": 5,
+   "sets_covered": 9,
    "cores": [
     "dist:congobongo",
     "dist:zaxxon"
@@ -30311,7 +30400,7 @@
    "sets": 59,
    "sets_covered": 51,
    "cores": [
-    "repo:seibuspi"
+    "zakk:seibuspi"
    ],
    "first": "2026-08-01"
   },
@@ -32166,9 +32255,9 @@
     "coinop:bgaregga",
     "coinop:kingdmgp",
     "coinop:sstriker",
-    "repo:garegga"
+    "zakk:garegga"
    ],
-   "first": "2022-07-24"
+   "first": "2022-07-22"
   },
   {
    "sourcefile": "toaplan/raizing_batrider.cpp",
@@ -32179,10 +32268,10 @@
    "cores": [
     "coinop:batrider",
     "coinop:bbakraid",
-    "repo:bakraid",
-    "repo:batrider"
+    "zakk:bakraid",
+    "zakk:batrider"
    ],
-   "first": "2022-07-24"
+   "first": "2022-06-02"
   },
   {
    "sourcefile": "toaplan/rallybik.cpp",
@@ -32519,7 +32608,7 @@
    "titles": 5,
    "covered": 5,
    "sets": 21,
-   "sets_covered": 17,
+   "sets_covered": 18,
    "cores": [
     "dist:bagman",
     "dist:galaxian",
@@ -33145,6 +33234,13 @@
    "desc": "Bagman Turbo (Stern set 1) [c]"
   },
   {
+   "set": "bgareggz",
+   "cores": [
+    "zakk:garegga"
+   ],
+   "hbmame": false
+  },
+  {
    "set": "bmbjckgr",
    "cores": [
     "dist:bombjack"
@@ -33237,6 +33333,17 @@
     "jt:jtbubl"
    ],
    "hbmame": false
+  },
+  {
+   "set": "bucaneerx",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "1981",
+   "parent": "puckman",
+   "manufacturer": "Bucco",
+   "desc": "Buccaneer"
   },
   {
    "set": "buglaxn",
@@ -33516,11 +33623,79 @@
    "hbmame": false
   },
   {
+   "set": "ddragonb",
+   "cores": [
+    "jt:jtdd"
+   ],
+   "hbmame": false
+  },
+  {
+   "set": "ddragonb2",
+   "cores": [
+    "jt:jtdd"
+   ],
+   "hbmame": false
+  },
+  {
+   "set": "ddragonba",
+   "cores": [
+    "jt:jtdd"
+   ],
+   "hbmame": false
+  },
+  {
+   "set": "ddragonw",
+   "cores": [
+    "jt:jtdd"
+   ],
+   "hbmame": false
+  },
+  {
+   "set": "ddragonw1",
+   "cores": [
+    "jt:jtdd"
+   ],
+   "hbmame": false
+  },
+  {
    "set": "deathsml_p",
    "cores": [
     "ongo:ikacore_cv1k"
    ],
    "hbmame": false
+  },
+  {
+   "set": "deathstar",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2017",
+   "parent": "puckman",
+   "manufacturer": "Stefano Bodrato",
+   "desc": "Death Star"
+  },
+  {
+   "set": "deathstar2",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2019",
+   "parent": "puckman",
+   "manufacturer": "Stefano Bodrato",
+   "desc": "Death Star v2"
+  },
+  {
+   "set": "defender2",
+   "cores": [
+    "dist:defender"
+   ],
+   "hbmame": true,
+   "year": "1981",
+   "parent": "defender",
+   "manufacturer": "Jeff Vavasour",
+   "desc": "Defender II"
   },
   {
    "set": "devilfsg",
@@ -33811,6 +33986,17 @@
    "hbmame": false
   },
   {
+   "set": "fpnleash",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Peter Storey",
+   "desc": "Pacman Unleashed (Flat)"
+  },
+  {
    "set": "frogfest",
    "cores": [
     "dist:neogeo"
@@ -33992,6 +34178,17 @@
    "hbmame": false
   },
   {
+   "set": "ghohunt",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2016",
+   "parent": "puckman",
+   "manufacturer": "Hurray Banana",
+   "desc": "Ghost Hunt"
+  },
+  {
    "set": "gladmort",
    "cores": [
     "dist:neogeo"
@@ -34040,6 +34237,17 @@
    "parent": "puckman",
    "manufacturer": "[Midway]",
    "desc": "Pacman (Hearts)"
+  },
+  {
+   "set": "hellowp",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2014",
+   "parent": "puckman",
+   "manufacturer": "cmonkey",
+   "desc": "Hello World (Pacman HW)"
   },
   {
    "set": "hiimpact_blahm1d",
@@ -34133,6 +34341,17 @@
    "desc": "Hangly Man Green Plus"
   },
   {
+   "set": "hmhearts",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "1981",
+   "parent": "puckman",
+   "manufacturer": "[Nittoh]",
+   "desc": "Hangly-Man (Hearts)"
+  },
+  {
    "set": "hmplus",
    "cores": [
     "dist:pacman"
@@ -34153,6 +34372,17 @@
    "parent": "puckman",
    "manufacturer": "[Nittoh]",
    "desc": "Hangly-Man (Popeye)"
+  },
+  {
+   "set": "homercid",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2005",
+   "parent": "puckman",
+   "manufacturer": "David Widel",
+   "desc": "Homercide"
   },
   {
    "set": "housepty",
@@ -34213,6 +34443,24 @@
     "dist:pacman"
    ],
    "hbmame": false
+  },
+  {
+   "set": "joustwr",
+   "cores": [
+    "dist:robotron"
+   ],
+   "hbmame": false
+  },
+  {
+   "set": "jpmmunch",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "1980",
+   "parent": "puckman",
+   "manufacturer": "JPM",
+   "desc": "Muncher"
   },
   {
    "set": "jtoutrun",
@@ -34471,6 +34719,16 @@
    "hbmame": false
   },
   {
+   "set": "mrdonm",
+   "cores": [
+    "dist:galaxian"
+   ],
+   "hbmame": true,
+   "year": "2003",
+   "manufacturer": "Krazy Ivan",
+   "desc": "Mr. Do's Nightmare"
+  },
+  {
    "set": "mrdrlr2j",
    "cores": [
     "repo:system10"
@@ -34555,6 +34813,17 @@
    "parent": "mshvsf",
    "manufacturer": "strygo",
    "desc": "Marvel Super Heroes Vs. Street Fighter (970625U, English Restoration, 2026-09-17)"
+  },
+  {
+   "set": "muckpan",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "1983",
+   "parent": "puckman",
+   "manufacturer": "E.P.",
+   "desc": "Muckpan"
   },
   {
    "set": "mushisam_p",
@@ -34650,6 +34919,17 @@
     "dist:neogeo"
    ],
    "hbmame": false
+  },
+  {
+   "set": "newpuc1",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "1983",
+   "parent": "puckman",
+   "manufacturer": "E.P.",
+   "desc": "Newpuc1 (Italian dump)"
   },
   {
    "set": "newpuck2",
@@ -34990,6 +35270,14 @@
    "desc": "Packetman"
   },
   {
+   "set": "packmanb",
+   "cores": [
+    "dist:galaxian",
+    "dist:pacman"
+   ],
+   "hbmame": false
+  },
+  {
    "set": "pacm255",
    "cores": [
     "dist:pacman"
@@ -35001,6 +35289,17 @@
    "desc": "Pacman (Fixes 255th Maze)"
   },
   {
+   "set": "pacman25",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2004",
+   "parent": "puckman",
+   "manufacturer": "Scott Lawrence",
+   "desc": "25 MAP PAC [c]"
+  },
+  {
    "set": "pacman3d",
    "cores": [
     "dist:pacman"
@@ -35010,6 +35309,17 @@
    "parent": "puckman",
    "manufacturer": "Marcel Silvius",
    "desc": "Pacman 3D"
+  },
+  {
+   "set": "pacman6",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Marcel Silvius",
+   "desc": "Pacman 6"
   },
   {
    "set": "pacmanp",
@@ -35034,6 +35344,17 @@
    "desc": "Mario Pacman"
   },
   {
+   "set": "pacminer",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2012",
+   "parent": "puckman",
+   "manufacturer": "Jim Bagley",
+   "desc": "Pac Manic Miner Man"
+  },
+  {
    "set": "pacmini",
    "cores": [
     "dist:pacman"
@@ -35054,6 +35375,17 @@
    "parent": "puckman",
    "manufacturer": "Bobby Tribble",
    "desc": "Mini Pacman 2"
+  },
+  {
+   "set": "pacmn6m2",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Marcel Silvius",
+   "desc": "Pacman 2000 (Set 2)"
   },
   {
    "set": "pacms1",
@@ -35144,6 +35476,28 @@
    "desc": "Pacman (Ms. Pacman Attack 4)"
   },
   {
+   "set": "pacmulti",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Marcel Silvius",
+   "desc": "PacMulti (Pacman)"
+  },
+  {
+   "set": "pacplusc",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "1982",
+   "parent": "puckman",
+   "manufacturer": "Bally Midway",
+   "desc": "Pacman Plus (Unencrypted) [c]"
+  },
+  {
    "set": "pacpopey",
    "cores": [
     "dist:pacman"
@@ -35153,6 +35507,17 @@
    "parent": "puckman",
    "manufacturer": "[Midway]",
    "desc": "Pacman (Popeye)"
+  },
+  {
+   "set": "pacrab",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "19??",
+   "parent": "puckman",
+   "manufacturer": "[Midway]",
+   "desc": "Pac Rabbit"
   },
   {
    "set": "pacshuf",
@@ -35188,6 +35553,17 @@
    "desc": "Pacman (Speedy)"
   },
   {
+   "set": "pactetris",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2012",
+   "parent": "puckman",
+   "manufacturer": "Ben Leperchey",
+   "desc": "Tetris on Pacman hardware (incomplete)"
+  },
+  {
    "set": "pacupacu",
    "cores": [
     "dist:pacman"
@@ -35197,6 +35573,17 @@
    "parent": "puckman",
    "manufacturer": "Sokurah",
    "desc": "Pacu Pacu (v1.0)"
+  },
+  {
+   "set": "pacweird",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Marcel Silvius",
+   "desc": "Pacman (Six Map Weird)"
   },
   {
    "set": "pacwf",
@@ -35241,6 +35628,17 @@
    "parent": "puckman",
    "manufacturer": "Scott Lawrence",
    "desc": "Pengo Man"
+  },
+  {
+   "set": "pheartb",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "1981",
+   "parent": "puckman",
+   "manufacturer": "Kamiya",
+   "desc": "Pacman Hearts 2"
   },
   {
    "set": "phoenixg",
@@ -35334,6 +35732,72 @@
    "desc": "Pac Man 4000 Plus"
   },
   {
+   "set": "pm4n1",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2007",
+   "parent": "puckman",
+   "manufacturer": "Jason Souza",
+   "desc": "Pacman 4in1 v1.0 [c]"
+  },
+  {
+   "set": "pm4n1a",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2007",
+   "parent": "puckman",
+   "manufacturer": "Jason Souza",
+   "desc": "Pacman 4in1 v1.1 [c]"
+  },
+  {
+   "set": "pm4n1b",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2007",
+   "parent": "puckman",
+   "manufacturer": "Jason Souza",
+   "desc": "Pacman 4in1 v1.2 [c]"
+  },
+  {
+   "set": "pm4n1c",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2008",
+   "parent": "puckman",
+   "manufacturer": "Jason Souza",
+   "desc": "Pacman 4in1 v2.3 [c][h]"
+  },
+  {
+   "set": "pm4n1d",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2009",
+   "parent": "puckman",
+   "manufacturer": "Jason Souza",
+   "desc": "Pacman 4in1 v3.0 [c][h]"
+  },
+  {
+   "set": "pm4n1e",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2010",
+   "parent": "puckman",
+   "manufacturer": "Jason Souza",
+   "desc": "Pacman 4in1 v3.3 [c][h]"
+  },
+  {
    "set": "pm5000p",
    "cores": [
     "dist:pacman"
@@ -35398,6 +35862,17 @@
    "parent": "puckman",
    "manufacturer": "[Midway]",
    "desc": "Pacman After Dark 2000"
+  },
+  {
+   "set": "pmad6m",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "T-Bone",
+   "desc": "Pacman 2000 After Dark"
   },
   {
    "set": "pmada",
@@ -35554,6 +36029,17 @@
    "desc": "Pac Man Green Plus"
   },
   {
+   "set": "pmheart",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "1980",
+   "parent": "puckman",
+   "manufacturer": "bootleg",
+   "desc": "Puckman Hearts"
+  },
+  {
    "set": "pollenangel",
    "cores": [
     "dist:pacman"
@@ -35649,6 +36135,28 @@
    "parent": "puckman",
    "manufacturer": "Hebus",
    "desc": "Puckmotik"
+  },
+  {
+   "set": "puckrenc",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "PacHack",
+   "desc": "Puckman Renaissance [c]"
+  },
+  {
+   "set": "punleash",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "Peter Storey",
+   "desc": "Pacman Unleashed"
   },
   {
    "set": "quizdask",
@@ -35816,6 +36324,17 @@
     "blahm1d:blahm1d_yunit"
    ],
    "hbmame": false
+  },
+  {
+   "set": "scroller",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2017",
+   "parent": "puckman",
+   "manufacturer": "Hurray Banana",
+   "desc": "Scroller"
   },
   {
    "set": "sdojak",
@@ -36130,6 +36649,13 @@
    "hbmame": false
   },
   {
+   "set": "sinistar1",
+   "cores": [
+    "dist:robotron"
+   ],
+   "hbmame": false
+  },
+  {
    "set": "sinistarsm25",
    "cores": [
     "dist:robotron"
@@ -36177,6 +36703,35 @@
     "dist:neogeo"
    ],
    "hbmame": false
+  },
+  {
+   "set": "snakes",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2019",
+   "parent": "puckman",
+   "manufacturer": "Stefano Bodrato",
+   "desc": "Snakes"
+  },
+  {
+   "set": "snakes2",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": false
+  },
+  {
+   "set": "snakeyes",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "T-Bone",
+   "desc": "Pacman 2000 (Snake Eyes Mazes)"
   },
   {
    "set": "snowpac",
@@ -36257,6 +36812,17 @@
     "decoryah:taitol"
    ],
    "hbmame": false
+  },
+  {
+   "set": "spuckman",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "1981",
+   "parent": "puckman",
+   "manufacturer": "TV Tune / Miet!o!mat",
+   "desc": "Super Puckman"
   },
   {
    "set": "sqij",
@@ -36457,6 +37023,17 @@
    "hbmame": false
   },
   {
+   "set": "tbone",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "T-Bone",
+   "desc": "Pacman 2000 (T-Bone Mazes)"
+  },
+  {
    "set": "teot",
    "cores": [
     "dist:neogeo"
@@ -36558,6 +37135,13 @@
    "desc": "Trukker"
   },
   {
+   "set": "truxton2n",
+   "cores": [
+    "coinop:truxton2"
+   ],
+   "hbmame": false
+  },
+  {
    "set": "truxton2rs",
    "cores": [
     "coinop:truxton2"
@@ -36645,6 +37229,17 @@
    "parent": "puckman",
    "manufacturer": "TwoBit Score",
    "desc": "Ultra Pacman"
+  },
+  {
+   "set": "ultrapac",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "PacFan",
+   "desc": "UltraPac"
   },
   {
    "set": "vampbh",
@@ -36753,6 +37348,28 @@
    "desc": "Vector Pacman Plus"
   },
   {
+   "set": "vectr6m",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "T-Bone",
+   "desc": "Vector Pacman 2000"
+  },
+  {
+   "set": "vectr6tb",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2000",
+   "parent": "puckman",
+   "manufacturer": "T-Bone",
+   "desc": "Vector Pacman 2000 (T-Bone Mazes)"
+  },
+  {
    "set": "vectrped",
    "cores": [
     "dist:centipede"
@@ -36817,6 +37434,17 @@
    "parent": "puckman",
    "manufacturer": "[Nittoh]",
    "desc": "Vector Hangly-Man"
+  },
+  {
+   "set": "vhangly3",
+   "cores": [
+    "dist:pacman"
+   ],
+   "hbmame": true,
+   "year": "2008",
+   "parent": "puckman",
+   "manufacturer": "Gatinho [Nittoh]",
+   "desc": "Vector Hangly-Man3"
   },
   {
    "set": "vpacbell",

@@ -60,10 +60,12 @@
  ],
  "coinop:alpha68k": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
-  "furrtek/Arcade-TMNT_MiSTer"
+  "furrtek/Arcade-TMNT_MiSTer",
+  "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:armedf": [
-  "Coin-OpCollection/Distribution-MiSTerFPGA"
+  "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:batrider": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
@@ -107,7 +109,8 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:demonwld": [
-  "Coin-OpCollection/Distribution-MiSTerFPGA"
+  "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:dietgo": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
@@ -138,7 +141,8 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:megasys1_a": [
-  "Coin-OpCollection/Distribution-MiSTerFPGA"
+  "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:metamrph": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
@@ -150,7 +154,8 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:nextspace": [
-  "Coin-OpCollection/Distribution-MiSTerFPGA"
+  "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:nitrobal": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
@@ -159,13 +164,16 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:pipibibs": [
-  "Coin-OpCollection/Distribution-MiSTerFPGA"
+  "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:prehisle": [
-  "Coin-OpCollection/Distribution-MiSTerFPGA"
+  "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:rallybike": [
-  "Coin-OpCollection/Distribution-MiSTerFPGA"
+  "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:robocop2": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
@@ -174,10 +182,12 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:snk68": [
-  "Coin-OpCollection/Distribution-MiSTerFPGA"
+  "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:snowbro2": [
-  "Coin-OpCollection/Distribution-MiSTerFPGA"
+  "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:snowbros": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
@@ -196,7 +206,8 @@
  ],
  "coinop:terracresta": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:thndzone": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
@@ -206,7 +217,8 @@
  ],
  "coinop:truxton2": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:tumblep": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
@@ -219,7 +231,8 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:vimana": [
-  "Coin-OpCollection/Distribution-MiSTerFPGA"
+  "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:wardner": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
@@ -229,7 +242,8 @@
  ],
  "coinop:zerowing": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "zakk4223/Distribution-MiSTerFPGA"
  ],
  "decoryah:aquarium": [
   "decoryah/Arcade-Aquarium_MiSTer"
@@ -381,7 +395,8 @@
  "dist:bagman": [
   "MiSTer-devel/Arcade-Bagman_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:bankpanic": [
   "MiSTer-devel/Arcade-BankPanic_MiSTer",
@@ -405,7 +420,8 @@
   "MiSTer-devel/Arcade-BlackWidow_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
   "MiSTer-devel/MRA-Alternatives_MiSTer",
-  "Usquebagh/MiSTer_misc"
+  "Usquebagh/MiSTer_misc",
+  "zakk4223/Mister-MRA"
  ],
  "dist:blasteroids": [
   "MiSTer-devel/Arcade-Blasteroids_MiSTer",
@@ -531,7 +547,8 @@
  "dist:crazykong": [
   "MiSTer-devel/Arcade-CrazyKong_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:crystalcastles": [
   "MiSTer-devel/Arcade-CrystalCastles_MiSTer",
@@ -559,6 +576,7 @@
   "MiSTer-devel/Distribution_MiSTer"
  ],
  "dist:deco156simple": [
+  "MiSTer-devel/Distribution_MiSTer",
   "MiSTer-devel/MRA-Alternatives_MiSTer"
  ],
  "dist:deco16": [
@@ -573,7 +591,8 @@
  "dist:defender": [
   "MiSTer-devel/Arcade-Defender_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:denjinmakai": [
   "MiSTer-devel/Arcade-DenjinMakai_MiSTer",
@@ -669,7 +688,8 @@
   "MiSTer-devel/Arcade-Galaxian_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
   "MiSTer-devel/MRA-Alternatives_MiSTer",
-  "RodimusFVC/Arcade-Galaxian_MiSTer"
+  "RodimusFVC/Arcade-Galaxian_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:galivan": [
   "MiSTer-devel/Arcade-Galivan_MiSTer",
@@ -701,7 +721,8 @@
  "dist:gyruss": [
   "MiSTer-devel/Arcade-Gyruss_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:heatedbarrel": [
   "MiSTer-devel/Arcade-HeatedBarrel_MiSTer",
@@ -748,7 +769,8 @@
  "dist:iremm92": [
   "MiSTer-devel/Arcade-IremM92_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Arcade-IremM92_MiSTer"
  ],
  "dist:ironhorse": [
   "MiSTer-devel/Arcade-IronHorse_MiSTer",
@@ -837,27 +859,32 @@
  "dist:mcr1": [
   "MiSTer-devel/Arcade-MCR1_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:mcr2": [
   "MiSTer-devel/Arcade-MCR2_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:mcr3": [
   "MiSTer-devel/Arcade-MCR3_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:mcr3mono": [
   "MiSTer-devel/Arcade-MCR3Mono_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:mcr3scroll": [
   "MiSTer-devel/Arcade-MCR3Scroll_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:missilecommand": [
   "MiSTer-devel/Arcade-MissileCommand_MiSTer",
@@ -912,7 +939,8 @@
   "MiSTer-devel/MRA-Alternatives_MiSTer",
   "OngoGablogian/MiSTer_Ongo",
   "RodimusFVC/Arcade-Pacman_MiSTer",
-  "RodimusFVC/Arcade-Pacman_MiSTer_Old"
+  "RodimusFVC/Arcade-Pacman_MiSTer_Old",
+  "zakk4223/Mister-MRA"
  ],
  "dist:pengo": [
   "MiSTer-devel/Arcade-Pengo_MiSTer",
@@ -965,7 +993,8 @@
  ],
  "dist:popeye": [
   "MiSTer-devel/Arcade-Popeye_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:primalrage": [
   "MiSTer-devel/Arcade-PrimalRage_MiSTer",
@@ -1035,7 +1064,8 @@
   "MiSTer-devel/Arcade-Robotron_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
   "MiSTer-devel/MRA-Alternatives_MiSTer",
-  "Toryalai1/Arcade_Offset"
+  "Toryalai1/Arcade_Offset",
+  "zakk4223/Mister-MRA"
  ],
  "dist:rshnatk": [
   "MiSTer-devel/Arcade-RushnAttack_MiSTer",
@@ -1055,7 +1085,8 @@
  "dist:scramble": [
   "MiSTer-devel/Arcade-Scramble_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:sdgundamps": [
   "MiSTer-devel/Arcade-GundamSD_MiSTer",
@@ -1074,7 +1105,8 @@
  "dist:segasys1": [
   "MiSTer-devel/Arcade-SEGASYS1_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:segavco": [
   "MiSTer-devel/Arcade-SegaVCO_MiSTer",
@@ -1159,12 +1191,14 @@
  ],
  "dist:sprint1": [
   "MiSTer-devel/Arcade-Sprint1_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:sprint2": [
   "MiSTer-devel/Arcade-Sprint2_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:st-v": [
   "MiSTer-devel/Distribution_MiSTer",
@@ -1193,7 +1227,8 @@
  "dist:superbreakout": [
   "MiSTer-devel/Arcade-SuperBreakout_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:suprloco": [
   "MiSTer-devel/Arcade-SuprLoco_MiSTer",
@@ -1259,7 +1294,8 @@
  "dist:traverseusa": [
   "MiSTer-devel/Arcade-TraverseUSA_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:triothepunch": [
   "MiSTer-devel/Arcade-TrioThePunch_MiSTer",
@@ -1283,7 +1319,8 @@
  ],
  "dist:ultratank": [
   "MiSTer-devel/Arcade-Ultratank_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:uplframebuffer": [
   "MiSTer-devel/Arcade-UPLFramebuffer_MiSTer",
@@ -1324,12 +1361,14 @@
  ],
  "dist:zaxxon": [
   "MiSTer-devel/Arcade-Zaxxon_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "dist:zigzag": [
   "MiSTer-devel/Arcade-ZigZag_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "zakk4223/Mister-MRA"
  ],
  "illegalmp3:konami_system_573": [
   "illegalmp3/System573_MiSTer"
@@ -1518,7 +1557,8 @@
   "jotego/jtbin"
  ],
  "jt:jtbtiger": [
-  "jotego/jtbin"
+  "jotego/jtbin",
+  "zakk4223/Mister-MRA"
  ],
  "jt:jtbubl": [
   "OngoGablogian/MiSTer_Ongo",
@@ -1567,7 +1607,8 @@
   "jotego/jtbin"
  ],
  "jt:jtdd": [
-  "jotego/jtbin"
+  "jotego/jtbin",
+  "zakk4223/Mister-MRA"
  ],
  "jt:jtdd2": [
   "jotego/jtbin"
@@ -3076,7 +3117,9 @@
   "Videodr0me/Arcade-StarCastle_MiSTer"
  ],
  "repo:superbagman": [
-  "cavemanxzx/MiSTer-Arcade-SuperBagman"
+  "cavemanxzx/MiSTer-Arcade-SuperBagman",
+  "zakk4223/MiSTer-Arcade-SuperBagman",
+  "zakk4223/Mister-MRA"
  ],
  "repo:superman": [
   "bazset/MiSTer_BAZSET",
@@ -3362,5 +3405,28 @@
  ],
  "yaguboo:superslams": [
   "yaguboo/Arcade-SuperSlams_MiSTer"
+ ],
+ "zakk:bakraid": [
+  "zakk4223/Arcade-Raizing_MiSTer",
+  "zakk4223/Distribution-MiSTerFPGA",
+  "zakk4223/pr4m0d-MISTer-bin"
+ ],
+ "zakk:batrider": [
+  "zakk4223/Arcade-Raizing_MiSTer",
+  "zakk4223/Distribution-MiSTerFPGA",
+  "zakk4223/pr4m0d-MISTer-bin"
+ ],
+ "zakk:garegga": [
+  "zakk4223/Arcade-Raizing_MiSTer",
+  "zakk4223/Distribution-MiSTerFPGA",
+  "zakk4223/pr4m0d-MISTer-bin"
+ ],
+ "zakk:jtf1dream": [
+  "zakk4223/Mister-MRA"
+ ],
+ "zakk:seibuspi": [
+  "OngoGablogian/MiSTer_Ongo",
+  "kyledlester/Arcade-SeibuSPI_MiSTer",
+  "zakk4223/Arcade-SeibuSPI_MiSTer"
  ]
 }

@@ -507,6 +507,15 @@
  "yaguboo/Arcade-ShadowForce_MiSTer": true,
  "yaguboo/Arcade-StadiumHero_MiSTer": true,
  "yaguboo/Arcade-SuperSlams_MiSTer": true,
+ "zakk4223/Arcade-Battletoads_MiSTer": true,
+ "zakk4223/Arcade-IremM92_MiSTer": true,
  "zakk4223/Arcade-Raizing_MiSTer": true,
- "zakk4223/Arcade-SeibuSPI_MiSTer": true
+ "zakk4223/Arcade-SeibuSPI_MiSTer": true,
+ "zakk4223/Arcade-TaitoF2_MiSTer": true,
+ "zakk4223/Distribution-MiSTerFPGA": false,
+ "zakk4223/MiSTer-Arcade-SuperBagman": true,
+ "zakk4223/Mister-MRA": false,
+ "zakk4223/Mister64": true,
+ "zakk4223/Update_All_MiSTer": false,
+ "zakk4223/pr4m0d-MISTer-bin": false
 }

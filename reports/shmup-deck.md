@@ -6,11 +6,7 @@ Generated 2026-10-26 by `tools/reconcile_shmups.py` from MAME 0289 data and [shm
 
 ## New since the previous report
 
-**3 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
-
-- `garyoret` Garyo Retsuden (Japan) (1987; Shooter / Walking)
-- `meikyuh` Meikyuu Hunter G (Japan) (1987; Shooter / Walking)
-- `ghostb` The Real Ghostbusters (US 2 Players, revision 2) (1987; Shooter / Walking)
+Nothing new: the same titles disagree as before.
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -27,9 +23,6 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
-| **NEW** `garyoret` | Garyo Retsuden (Japan) | 1987 | Shooter / Walking (catver) | DEC8 |
-| **NEW** `meikyuh` | Meikyuu Hunter G (Japan) | 1987 | Shooter / Walking (catver) | DEC8 |
-| **NEW** `ghostb` | The Real Ghostbusters (US 2 Players, revision 2) | 1987 | Shooter / Walking (catver) | DEC8 |
 | `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
@@ -68,6 +61,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `gaialast` | Gaia - The Last Choice of Earth | 1999 | Shooter / Flying Vertical (catver) | DreamWorld |
 | `gground` | Gain Ground (World, 3 Players, Floppy Based, FD1094 317-0058-03d Rev A) | 1988 | Shooter / Walking (catver) | SegaSystem24 |
 | `gbusters` | Gang Busters (set 1) | 1988 | Shooter / Walking (catver) | jtaliens |
+| `garyoret` | Garyo Retsuden (Japan) | 1987 | Shooter / Walking (catver) | DEC8 |
 | `gondo` | Gondomania (World) | 1987 | Shooter / Flying Vertical (catver) | DEC8, DEC8 (shmupfan), Gondomania (Eggsecutioner528), dec8 |
 | `pc_grdus` | Gradius (PlayChoice-10) | 1986 | Shooter / Flying Horizontal (catver) | PlayChoice10 |
 | `gradius4` | Gradius IV: Fukkatsu (ver JAC) | 1998 | Shooter / Flying Horizontal (catver) | KonamiHornet |
@@ -85,6 +79,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `markham` | Markham | 1983 | Shooter / Flying Horizontal (catver) | IkkiSunsoft |
 | `mayday` | Mayday (set 1) | 1980 | Shooter / Flying Horizontal (catver) | Defender, Williams_TestBuild (RodimusFVC) |
 | `megaphx` | Mega Phoenix | 1991 | Shooter / Flying Vertical (catver) | ffmegaphx |
+| `meikyuh` | Meikyuu Hunter G (Japan) | 1987 | Shooter / Walking (catver) | DEC8 |
 | `mercs` | Mercs (World 900302) | 1990 | Shooter / Walking (catver) | jtcps1 |
 | `metlhawk` | Metal Hawk (Rev C) | 1988 | Shooter / Flying (catver) | NamcoS2_MH |
 | `mimonkey` | Mighty Monkey | 1982 | Shooter / Flying Horizontal (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |
@@ -129,6 +124,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `syvalion` | Syvalion (Japan) | 1988 | Shooter / Flying Horizontal (catver) | Syvalion (diegov-au) |
 | `tacscan` | Tac/Scan | 1982 | Shooter / Flying Vertical (catver) | SegaG80V, SegaG80 (RodimusFVC) |
 | `tazmania` | Tazz-Mania (set 1) | 1982 | Shooter / Walking (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |
+| `ghostb` | The Real Ghostbusters (US 2 Players, revision 2) | 1987 | Shooter / Walking (catver) | DEC8 |
 | `thndrbld` | Thunder Blade (upright) (FD1094 317-0056) | 1987 | Shooter / Flying (catver) | SegaXBoard |
 | `thndzone` | Thunder Zone (World, Rev 1) | 1991 | Shooter / Walking (catver) | thndzone |
 | `timefgtr` | Time Fighter (Time Pilot conversion on Galaxian hardware) | 198? | Shooter / Flying (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
