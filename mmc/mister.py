@@ -106,14 +106,21 @@ SUPERSEDED_CORES = {
     "repo:heavysmash": "yaguboo:heavysmash", "repo:namcona2": "yaguboo:namcona2", "repo:powerins": "yaguboo:powerins",
     "repo:powerspikes": "yaguboo:powerspikes", "repo:shadowforce": "yaguboo:shadowforce", "repo:stadiumhero": "yaguboo:stadiumhero",
     "repo:superslams": "yaguboo:superslams",
+    # RodimusFVC's repositories became the "rodimus" source (his Downloader database carries the same builds)
+    "repo:centipede_testbuild": "rodimus:centipede_testbuild", "repo:crazyclimber": "rodimus:crazyclimber",
+    "repo:exidy_testbuild": "rodimus:exidy_testbuild", "repo:galaga": "rodimus:galaga", "repo:galaga_testbuild": "rodimus:galaga",
+    "repo:galaxian_testbuild": "rodimus:galaxian_testbuild", "repo:gottlieb_testbuild": "rodimus:gottlieb_testbuild",
+    "repo:segag80": "rodimus:segag80", "repo:spaceinvaders_testbuild": "rodimus:spaceinvaders_testbuild",
+    "repo:universal": "rodimus:universal_testbuild", "repo:universal_testbuild": "rodimus:universal_testbuild",
+    "repo:williams_testbuild": "rodimus:williams_testbuild",
     # rossops's repositories became the "rossops" source
     "repo:segaspaceharrier": "rossops:segaspaceharrier", "repo:segayboard": "rossops:segayboard",
 }
 
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
-OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr", "kyledlester": "kyle", "illegalmp3": "illegalmp3", "yaguboo": "yaguboo"}
+OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr", "kyledlester": "kyle", "illegalmp3": "illegalmp3", "yaguboo": "yaguboo", "rodimusfvc": "rodimus"}
 # Repositories of those owners that are not cores (forks of the shared MRA collection, a game runtime): never scanned.
-OWNER_SKIP = {"rossops/mra-alternatives_mister", "rossops/bennugd_mister"}
+OWNER_SKIP = {"rossops/mra-alternatives_mister", "rossops/bennugd_mister", "rodimusfvc/rodimus_mister_db"}
 
 # A core is "binary-only" when no public source is known for it: none of the repositories tied to
 # it (its linked ``repo`` and the repositories its MRAs were first seen in) contains HDL source, or
@@ -247,6 +254,8 @@ DB_SOURCES = {
     "decoryah": "https://raw.githubusercontent.com/decoryah/MiSTer_decoryah/db/db.json.zip",
     # TomSVR's cores (github.com/TomSVR-Mister/TomSVR-Arcade-Cores); his repositories are scanned too (OWNER_SOURCES)
     "tomsvr": "https://raw.githubusercontent.com/TomSVR-Mister/TomSVR-Arcade-Cores/db/db.json.zip",
+    # RodimusFVC's cores (github.com/RodimusFVC); his repositories are scanned too (OWNER_SOURCES)
+    "rodimus": "https://raw.githubusercontent.com/RodimusFVC/Rodimus_MiSTer_DB/db/db.json.zip",
     # asturur's cores (github.com/asturur/Mister-cores): builds of jotego-based cores (Power Spikes, F-1 Grand Prix, Round Up 5, ...)
     "asturur": "https://raw.githubusercontent.com/asturur/Mister-cores/db/db.json.zip",
 }
@@ -299,6 +308,7 @@ SOURCE_PAGES = {
     "usquebagh": "https://github.com/Usquebagh?tab=repositories",
     "illegalmp3": "https://github.com/illegalmp3?tab=repositories",
     "yaguboo": "https://github.com/yaguboo?tab=repositories",
+    "rodimus": "https://github.com/RodimusFVC?tab=repositories",
     "decoryah": "https://github.com/decoryah/MiSTer_decoryah",
     "tomsvr": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
     "asturur": "https://github.com/asturur/Mister-cores",
@@ -331,6 +341,7 @@ DB_TITLES = {
     "usquebagh": "Usquebagh (GitHub repositories)",
     "illegalmp3": "illegalmp3 (GitHub repositories)",
     "yaguboo": "yaguboo (GitHub repositories)",
+    "rodimus": "RodimusFVC",
     "decoryah": "decoryah",
     "tomsvr": "TomSVR",
     "asturur": "Andrea Bogazzi (asturur)",
