@@ -326,7 +326,8 @@
  "dist:arabian": [
   "MiSTer-devel/Arcade-Arabian_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "RodimusFVC/Arcade-Arabian_MiSTer"
  ],
  "dist:arkanoid": [
   "MiSTer-devel/Arcade-Arkanoid_MISTer",
@@ -416,7 +417,8 @@
  "dist:blueprint": [
   "MiSTer-devel/Arcade-BluePrint_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "RodimusFVC/Arcade-BluePrint_MiSTer"
  ],
  "dist:bombjack": [
   "MiSTer-devel/Arcade-BombJack_MiSTer",
@@ -485,7 +487,8 @@
  ],
  "dist:championbaseball": [
   "MiSTer-devel/Arcade-ChampionBaseball_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "RodimusFVC/Arcade-ChampionBaseball_MiSTer"
  ],
  "dist:chinagate": [
   "MiSTer-devel/Arcade-ChinaGate_MiSTer",
@@ -555,7 +558,8 @@
  ],
  "dist:decocassette": [
   "MiSTer-devel/Arcade-DECOCassette_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "RodimusFVC/Arcade-DECOCassette_MiSTer"
  ],
  "dist:defender": [
   "MiSTer-devel/Arcade-Defender_MiSTer",
@@ -761,12 +765,14 @@
  "dist:junofirst": [
   "MiSTer-devel/Arcade-JunoFirst_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "RodimusFVC/Arcade-JunoFirst_MiSTer"
  ],
  "dist:kangaroo": [
   "MiSTer-devel/Arcade-Kangaroo_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "RodimusFVC/Arcade-Kangaroo_MiSTer"
  ],
  "dist:kickandrun": [
   "MiSTer-devel/Arcade-KickAndRun_MiSTer",
@@ -780,7 +786,8 @@
  "dist:kyugo": [
   "MiSTer-devel/Arcade-Kyugo_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "RodimusFVC/Arcade-Kyugo_MiSTer"
  ],
  "dist:ladybug": [
   "MiSTer-devel/Arcade-LadyBug_MiSTer",
@@ -789,7 +796,8 @@
  ],
  "dist:laserdiscgames": [
   "MiSTer-devel/Arcade-LaserdiscGames_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "RodimusFVC/Arcade-LaserdiscGames_MiSTer"
  ],
  "dist:legionnaire": [
   "MiSTer-devel/Arcade-Legionnaire_MiSTer",
@@ -893,7 +901,9 @@
   "MiSTer-devel/Arcade-Pacman_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
   "MiSTer-devel/MRA-Alternatives_MiSTer",
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "RodimusFVC/Arcade-Pacman_MiSTer",
+  "RodimusFVC/Arcade-Pacman_MiSTer_Old"
  ],
  "dist:pengo": [
   "MiSTer-devel/Arcade-Pengo_MiSTer",
@@ -914,7 +924,8 @@
   "MiSTer-devel/Arcade-Phoenix_MiSTer",
   "MiSTer-devel/Arcade-Pleiads_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "RodimusFVC/Arcade-Phoenix_MiSTer"
  ],
  "dist:pinballaction": [
   "MiSTer-devel/Arcade-PinballAction",
@@ -926,7 +937,8 @@
  ],
  "dist:poleposition": [
   "MiSTer-devel/Arcade-PolePosition_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "RodimusFVC/Arcade-PolePosition_MiSTer"
  ],
  "dist:polyplay": [
   "MiSTer-devel/Arcade-PolyPlay_MiSTer",
@@ -974,7 +986,8 @@
  ],
  "dist:qix": [
   "MiSTer-devel/Arcade-Qix_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "RodimusFVC/Arcade-Qix_MiSTer"
  ],
  "dist:raiden": [
   "MiSTer-devel/Arcade-Raiden_MiSTer",
@@ -1104,6 +1117,7 @@
  "dist:snk6502": [
   "MiSTer-devel/Arcade-SNK6502_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
+  "RodimusFVC/Arcade-SNK6502_MiSTer",
   "Usquebagh/MiSTer_misc"
  ],
  "dist:snk_triplez80": [
@@ -1250,7 +1264,8 @@
  "dist:tutankham": [
   "MiSTer-devel/Arcade-Tutankham_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "RodimusFVC/Arcade-Tutankham_MiSTer"
  ],
  "dist:ultratank": [
   "MiSTer-devel/Arcade-Ultratank_MiSTer",
@@ -1258,11 +1273,13 @@
  ],
  "dist:uplframebuffer": [
   "MiSTer-devel/Arcade-UPLFramebuffer_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "RodimusFVC/Arcade-UPLFramebuffer_MiSTer"
  ],
  "dist:vastar": [
   "MiSTer-devel/Arcade-Vastar_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "RodimusFVC/Arcade-Vastar_MiSTer"
  ],
  "dist:vball": [
   "MiSTer-devel/Arcade-VBall_MiSTer",
@@ -1412,6 +1429,8 @@
   "jlrh/konami-fpga"
  ],
  "jlrh:ffsauro": [
+  "OngoGablogian/MiSTer_Ongo",
+  "bazset/MiSTer_BAZSET",
   "jlrh/jlrh-misterfpga-db",
   "jlrh/tecfri-fpga"
  ],
@@ -2324,6 +2343,10 @@
   "OngoGablogian/MiSTer_Ongo",
   "fiermanb/LastDuel-MadGear_MiSTer"
  ],
+ "ongo:lethalenforcers": [
+  "OngoGablogian/MiSTer_Ongo",
+  "ppriest/Arcade-LethalEnforcers_MiSTer"
+ ],
  "ongo:limenko": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2333,6 +2356,9 @@
  ],
  "ongo:madmotor": [
   "meathax/meatcores"
+ ],
+ "ongo:mastkin": [
+  "bazset/MiSTer_BAZSET"
  ],
  "ongo:mazeofflott_bazset": [
   "bazset/MiSTer_BAZSET"
@@ -2356,6 +2382,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_ikkisunsoft": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:meathax_madmotor": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_mysteriousstones": [
@@ -2451,6 +2480,9 @@
  "ongo:pgm2": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:plumppop_bazset_b01": [
+  "bazset/MiSTer_BAZSET"
+ ],
  "ongo:pspike": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2485,6 +2517,10 @@
  ],
  "ongo:shogunwarriors_bazset": [
   "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:silkroad": [
+  "OngoGablogian/MiSTer_Ongo",
+  "ppriest/Arcade-Silkroad_MiSTer"
  ],
  "ongo:simple156": [
   "meathax/meatcores"
@@ -2521,6 +2557,9 @@
  ],
  "ongo:taitof3": [
   "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:tee_d_off_bazset": [
+  "bazset/MiSTer_BAZSET"
  ],
  "ongo:thepit": [
   "OngoGablogian/MiSTer_Ongo"
@@ -2676,6 +2715,7 @@
   "shmupfan/Arcade-Dooyong_MiSTer"
  ],
  "repo:dreamworld": [
+  "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-DreamWorld_MiSTer"
  ],
  "repo:eolith": [
@@ -2701,6 +2741,7 @@
   "RodimusFVC/Arcade-Gottlieb_MiSTer"
  ],
  "repo:gstream": [
+  "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-GStream_MiSTer"
  ],
  "repo:gundamex": [
@@ -3046,6 +3087,45 @@
  ],
  "repo:zerowing": [
   "va7deo/zerowing"
+ ],
+ "rodimus:ballymidwaymcr": [
+  "RodimusFVC/Arcade-BallyMidwayMCR_MiSTer"
+ ],
+ "rodimus:crazyclimber": [
+  "RodimusFVC/Arcade-CrazyClimber_MiSTer"
+ ],
+ "rodimus:exidy_testbuild": [
+  "RodimusFVC/Arcade-Exidy_MiSTer"
+ ],
+ "rodimus:galaga": [
+  "RodimusFVC/Arcade-Galaga_MiSTer"
+ ],
+ "rodimus:gottlieb_testbuild": [
+  "RodimusFVC/Arcade-Gottlieb_MiSTer"
+ ],
+ "rodimus:irem1": [
+  "RodimusFVC/Arcade-Irem1_MiSTer"
+ ],
+ "rodimus:konami82": [
+  "RodimusFVC/Arcade-Konami82_MiSTer"
+ ],
+ "rodimus:namco6809": [
+  "RodimusFVC/Arcade-Namco6809_MiSTer"
+ ],
+ "rodimus:nintendo": [
+  "RodimusFVC/Arcade-Nintendo_MiSTer"
+ ],
+ "rodimus:segag80": [
+  "RodimusFVC/Arcade-SegaG80_MiSTer"
+ ],
+ "rodimus:segasystem1-2": [
+  "RodimusFVC/Arcade-SegaSystem1-2_MiSTer"
+ ],
+ "rodimus:universal_testbuild": [
+  "RodimusFVC/Arcade-Universal_MiSTer"
+ ],
+ "rodimus:williams_testbuild": [
+  "RodimusFVC/Arcade-Williams_MiSTer"
  ],
  "rossops:segaspaceharrier": [
   "Usquebagh/MiSTer_misc",
