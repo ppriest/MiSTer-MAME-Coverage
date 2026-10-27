@@ -327,19 +327,22 @@
   ];
   function renderCoresChart() {
     const titles = S.data.meta.sources || {};
-    const series = CORE_SERIES.map(sr => ({ ...sr, label: sr.label || (titles[sr.src] || sr.src), keys: [] }));
+    const series = CORE_SERIES.map(sr => ({ ...sr, label: sr.label || (titles[sr.src] || sr.src), keys: [], drops: [] }));
     let undated = 0;
     const sc = chartScope(), ids = new Set();
     sc.titles.forEach(t => t.sets.forEach(s => { if (sc.setOk(s) && sc.setCovered(s)) s.cores.forEach(r => ids.add(r.core)); }));
     Array.from(ids).map(id => S.cores[id]).filter(Boolean).forEach(c => {
       if (!c.first_date) { undated++; return; }
-      (series.find(sr => sr.src === c.source) || series[3]).keys.push(monthKey(c.first_date));
+      const sr = series.find(x => x.src === c.source) || series[3];
+      sr.keys.push(monthKey(c.first_date));
+      if (c.moved_date) sr.drops.push(monthKey(c.moved_date));   // moved to another source: counted in its old one only until then
     });
     const first = "2019-10", last = monthKey(new Date().toISOString());
     const months = []; for (let k = first; k <= last; k = addMonths(k, 1)) months.push(k);
     series.forEach(sr => {
       const m = new Map(months.map(k => [k, 0])); let c = 0;
       sr.keys.forEach(k => { if (k < first) c++; else if (m.has(k)) m.set(k, m.get(k) + 1); });
+      sr.drops.forEach(k => { if (k < first) c--; else if (m.has(k)) m.set(k, m.get(k) - 1); });
       sr.cum = months.map(k => (c += m.get(k)));
     });
     // cumulative tops, bottom to top
@@ -806,7 +809,7 @@
     $("#cores-table tbody").innerHTML = rows.map(c => `<tr data-c="${esc(c.id)}">
       <td class="exp" title="show details">${S.openCores.has(c.id) ? "▾" : "▸"}</td>
       <td><a href="#" data-core="${esc(c.id)}">${esc(c.name)}</a>${c.binary_only ? ' <span class="flag" title="binary-only: no public source known">bin</span>' : ""}${c.channel && c.channel !== "default" ? ` <span class="flag">${esc(c.channel)}</span>` : ""}</td>
-      <td>${sourceBadge(c)}</td>
+      <td>${sourceBadge(c)}${c.moved_to && S.cores[c.moved_to] ? ` <span class="flag" title="now in ${esc(S.cores[c.moved_to].source_title)} (${esc(c.moved_to)}) since ${esc(c.moved_date)}">moved</span>` : ""}</td>
       <td class="set">${c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.repo)}</a>` : '<span class="muted">not published</span>'}</td>
       <td class="set">${(c.mame_drivers || []).map(esc).join("<br>")}</td>
       <td class="num">${c.ntitles}</td><td class="num">${c.nsets}</td>

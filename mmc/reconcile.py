@@ -475,6 +475,14 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
         oc["ntitles"] = len(core_titles[cid])
         oc["first_date"] = core_first.get(cid)
         out_cores.append(oc)
+    # A core that moved to another source (see mister.MOVED_TO_OFFICIAL): the old record stays, marked with where it went and when.
+    by_id = {c["id"]: c for c in out_cores}
+    for old, spec in mister_mod.MOVED_TO_OFFICIAL.items():
+        new, when = (spec, None) if isinstance(spec, str) else spec
+        when = when or (by_id.get(new) or {}).get("first_date")
+        if old in by_id and new in by_id and when:
+            # never before the old core's own first date (the new core may carry older sets): it then simply never counts as the old source
+            by_id[old]["moved_to"], by_id[old]["moved_date"] = new, max(when, by_id[old]["first_date"] or when)
     # Ongo cores that no set is shown under any more are dropped from the core list.
     shown = {r["core"] for t in out_titles for st in t["sets"] for r in st["cores"]}
     out_cores = [c for c in out_cores if c["source"] != "ongo" or c["id"] in shown]

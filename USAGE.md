@@ -339,6 +339,13 @@ All in `mmc/mister.py`:
 - `SUPERSEDED_CORES`: old core id -> replacement id (for example `repo:hyperng64` -> `ppriest:hyperng64`);
   the old record is removed from the ledger like an excluded core, but only once the replacement was
   observed in that run, so no support is lost while the replacement's source is unreachable.
+- `MOVED_TO_OFFICIAL`: old core id -> new core id, or `(new core id, "YYYY-MM-DD")`, for a core whose
+  build now ships from another source (a core that joined the official distribution, say) while the
+  old record stays. Unlike `SUPERSEDED_CORES` nothing is removed, so history is not rewritten: the
+  core's output record gains `moved_to` and `moved_date` (the date given, else the new core's first
+  date, never before the old core's own first date); the "Cores over time" chart counts it in its
+  old source until that month and stops after it, while the new core counts from its own first date;
+  the Cores tab flags it "moved". Add the entry the day the new core appears.
 - `ROMSET_FILES`: cores that load sets from a list instead of MRAs (the NeoGeo core's
   `releases/romsets.xml`).
 - `DB_SOURCES`: developer downloader databases (ppriest's own `MiSTer_ppriest` among them, which is
