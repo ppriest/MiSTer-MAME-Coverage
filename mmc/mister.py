@@ -119,6 +119,11 @@ SUPERSEDED_CORES = {
     "repo:segaspaceharrier": "rossops:segaspaceharrier", "repo:segayboard": "rossops:segayboard",
 }
 
+# Cores that moved into the official distribution (or any better-placed source) while their old record stays: the old record's history
+# is real (it was unofficial until then), so it is kept, but the "Cores over time" chart stops counting it from the day the new core
+# appeared. old core id -> new core id, or (new core id, "YYYY-MM-DD") to give the date; without one it is the new core's first date.
+MOVED_TO_OFFICIAL: dict[str, str | tuple[str, str]] = {}
+
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
 OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr", "kyledlester": "kyle", "illegalmp3": "illegalmp3", "yaguboo": "yaguboo", "rodimusfvc": "rodimus", "zakk4223": "zakk"}
 # Repositories of those owners that are not cores (forks of the shared MRA collection, a game runtime): never scanned.
