@@ -837,7 +837,9 @@
  ],
  "dist:leland": [
   "MiSTer-devel/Arcade-Leland_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
  ],
  "dist:lunarlander": [
   "MiSTer-devel/Distribution_MiSTer",
@@ -2171,6 +2173,7 @@
   "meathax/meatcores"
  ],
  "ongo:agress": [
+  "OngoGablogian/MiSTer_Ongo",
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:ah": [
@@ -2262,6 +2265,9 @@
  "ongo:bazturtship": [
   "bazset/MiSTer_BAZSET"
  ],
+ "ongo:bigfight": [
+  "meathax/meatcores"
+ ],
  "ongo:blackwine-segasystem1-2": [
   "TheJesusFish/Blackwine-SegaSystem1-2_MiSTer"
  ],
@@ -2295,6 +2301,12 @@
  ],
  "ongo:ddragon3": [
   "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:decomlc": [
+  "ppriest/Arcade-DecoMLC_MiSTer"
+ ],
+ "ongo:decomlc156": [
+  "ppriest/Arcade-DecoMLC_MiSTer"
  ],
  "ongo:deniam": [
   "OngoGablogian/MiSTer_Ongo",
@@ -2436,6 +2448,7 @@
   "meathax/meatcores"
  ],
  "ongo:mastkin": [
+  "OngoGablogian/MiSTer_Ongo",
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:mazeofflott_bazset": [
@@ -2559,7 +2572,14 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:plumppop_bazset_b01": [
+  "OngoGablogian/MiSTer_Ongo",
   "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:ppriest_decomlc": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:ppriest_decomlc156": [
+  "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:pspike": [
   "OngoGablogian/MiSTer_Ongo"
@@ -2637,6 +2657,7 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:tee_d_off_bazset": [
+  "OngoGablogian/MiSTer_Ongo",
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:thepit": [
@@ -2998,6 +3019,7 @@
   "bonna79/s32multi-mycore"
  ],
  "repo:pandora": [
+  "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-Pandora_MiSTer"
  ],
  "repo:penguinkunwars": [
@@ -3091,6 +3113,7 @@
  ],
  "repo:setadowntown": [
   "OngoGablogian/MiSTer_Ongo",
+  "ppriest/Arcade-SetaDowntown_MiSTer",
   "ppriest/Arcade-Seta_MiSTer"
  ],
  "repo:shadowforce": [
