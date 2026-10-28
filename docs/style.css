@@ -233,6 +233,10 @@ ul.sloplist button { font: inherit; font-size: 11px; padding: 0 8px; margin-left
 .hwsect h4 { margin: 0 0 4px; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-2); }
 .hwsect ul { margin: 0; padding: 0; list-style: none; }
 .hwsect li { padding: 2px 0; }
+/* a long "Other devices" list takes two grid columns and flows in two columns when the window is wide enough (one column in narrow ones and beside the zoomed screen) */
+@media (min-width: 900px) { .hwsect.hwwide { grid-column: span 2; } .hwsect.hwwide ul { columns: 2 220px; column-gap: 24px; } .hwsect.hwwide li { break-inside: avoid; } }
+#lightbox .lb-side .hwsect.hwwide { grid-column: auto; }
+#lightbox .lb-side .hwsect.hwwide ul { columns: auto; }
 .hwsect .chipname { font-weight: 600; }
 .hwsect .clock { color: var(--text-2); }
 .opt { display: inline-block; font-size: 11px; padding: 0 6px; border-radius: 8px; border: 1px solid var(--warn); color: var(--text-2); white-space: nowrap; }

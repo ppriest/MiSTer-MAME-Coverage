@@ -751,7 +751,8 @@
   function hardwareHtml(file, h) {
     const d = h.drivers[file];
     if (!d) return '<p class="muted">no hardware information for this driver</p>';
-    const sect = (title, html) => html ? `<div class="hwsect"><h4>${title}</h4><ul>${html}</ul></div>` : "";
+    const sect = (title, html, cls = "") => html ? `<div class="hwsect${cls}"><h4>${title}</h4><ul>${html}</ul></div>` : "";
+    const devices = d.devices.filter(r => !/^neocart_/.test(r.name));
     const slots = Object.entries(d.slots || {}).map(([k, v]) => `<li><span class="chipname">${esc(k)}</span> <span class="muted">${v.map(esc).join(", ")}</span></li>`).join("");
     const notes = (d.notes || []).length
       ? `<details class="hwnotes"><summary>Notes from the driver source <span class="muted">(comments and diagrams, as written)</span></summary>${d.notes.map(n => `<pre>${esc(n)}</pre>`).join("")}</details>` : "";
@@ -759,7 +760,7 @@
     return `<div class="hwgrid">
         ${sect("CPUs", hwRows(d.cpus, d.sets, true))}
         ${sect("Sound", hwRows(d.sound, d.sets, true))}
-        ${sect("Other devices", hwRows(d.devices.filter(r => !/^neocart_/.test(r.name)), d.sets, false))}
+        ${sect("Other devices", hwRows(devices, d.sets, false), devices.length > 6 ? " hwwide" : "")}
         ${sect("Selectable options (slots)", slots)}
       </div>
       <p class="muted hwsrc">From MAME ${esc(h.mame)}'s declarations for the driver's ${fmt(d.sets)} ${d.sets === 1 ? "set" : "sets"}; a chip marked <span class="opt">in N of M sets</span> is a variant or optional. Source: <a href="${esc(src)}" target="_blank" rel="noopener">${esc(file)}</a>.</p>
