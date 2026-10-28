@@ -254,7 +254,8 @@ h3.hwdrv { margin: 14px 0 6px; font-size: 13px; text-transform: none; letter-spa
 .gallery img { display: block; width: 100%; height: auto; min-height: 60px; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; }   /* natural aspect ratio: shots may be landscape or portrait */
 .gallery figcaption { font-size: 11px; line-height: 1.25; margin-top: 2px; color: var(--text-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .hwslot:empty { display: none; }
-#titles-table tr.detail .hwslot, #cores-table tr.detail .hwslot { margin-top: 12px; }
+#titles-table tr.detail .hwslot, #cores-table tr.detail .hwslot, #wl-titles tr.detail .hwslot, #unmatched-table tr.detail .hwslot { margin-top: 12px; }
+#wl-titles tr[data-t], #unmatched-table tr[data-u] { cursor: pointer; }
 #cores-table td.exp { cursor: pointer; width: 1.2em; color: var(--text-2); }
 
 /* the +1 pill in the Wishlist tab: the same look as the +1 buttons */
