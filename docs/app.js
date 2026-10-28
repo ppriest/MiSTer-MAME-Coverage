@@ -719,7 +719,7 @@
   // shots; for a driver or a core one shot per title (in-game, else title screen), titles on MiSTer first.
   const SHOT_MAX = 50;
   // What the zoom needs to turn a shot over: its kind, the other kind's URL (when the title has both) and the title's description.
-  const altAttrs = (t, k) => { const o = k === "ingame" ? "title" : "ingame"; return `data-kind="${k}" data-desc="${esc(t.desc)}"${t.img[o] ? ` data-alt="${esc(IMAGE_BASE + "/" + t.img[o])}"` : ""}`; };
+  const altAttrs = (t, k) => { const o = k === "ingame" ? "title" : "ingame"; return `data-kind="${k}" data-desc="${esc(t.desc)}"${t.screens_force ? ` data-force="${esc(t.screens_force)}"` : ""}${t.img[o] ? ` data-alt="${esc(IMAGE_BASE + "/" + t.img[o])}"` : ""}`; };
   function galleryHtml(titles, both) {
     if (!IMAGE_BASE) return "";
     const withImg = titles.filter(t => t.img && (t.img.ingame || t.img.title));
@@ -1163,7 +1163,8 @@
   // own 4:3 (or 3:4) display.
   const LB_SIDE = 280, LB_SIDE_MIN = 1180;                   // width of each details panel; the window width from which they are shown
   const LB_GAP = 0.03;                                       // the gap between displays, in display widths (or heights)
-  function inferScreens(ratio, n, port) {
+  function inferScreens(ratio, n, port, force) {
+    if (force && /^\d+[hv]$/.test(force)) return { k: parseInt(force, 10), horiz: force.endsWith("h"), d: 0 };      // data/screens_overrides.json: the guess is wrong for this one
     const pr = port ? 3 / 4 : 4 / 3;
     let best = { k: 1, horiz: true, d: Math.abs(Math.log(ratio / pr)) };
     for (let k = 2; k <= n; k++) {
@@ -1179,7 +1180,7 @@
     const dlg = img.closest("dialog");
     const n = dlg.dataset.broken ? 1 : +img.dataset.n || 1, port = img.dataset.port === "1";
     const nat = img.naturalWidth / img.naturalHeight;
-    const inf = n > 1 ? inferScreens(nat, n, port) : { k: 1, horiz: true };
+    const inf = n > 1 ? inferScreens(nat, n, port, img.dataset.force) : { k: 1, horiz: true };
     img.dataset.k = inf.k; img.dataset.horiz = inf.horiz ? 1 : 0;
     const pr = port ? 3 / 4 : 4 / 3, span = inf.k + (inf.k - 1) * LB_GAP;
     const ratio = inf.k > 1 ? (inf.horiz ? span * pr : pr / span) : nearShape(img) || nat;
@@ -1199,7 +1200,7 @@
     if (!(img instanceof HTMLImageElement) || !img.naturalWidth || img.dataset.crop) return;
     const fig = img.closest(".gallery figure");
     if (fig) {
-      const n = +fig.dataset.n || 1, port = fig.dataset.port === "1", inf = n > 1 ? inferScreens(img.naturalWidth / img.naturalHeight, n, port) : { k: 1 };
+      const n = +fig.dataset.n || 1, port = fig.dataset.port === "1", inf = n > 1 ? inferScreens(img.naturalWidth / img.naturalHeight, n, port, fig.dataset.force) : { k: 1 };
       if (inf.k > 1) { splitFigure(fig, img, inf.k, inf.horiz, port); return; }
       const shape = nearShape(img);
       img.style.aspectRatio = shape ? String(shape) : "";
@@ -1350,7 +1351,7 @@
     const show = n => {
       i = (n + set.length) % set.length;
       const fig = set[i];
-      img.dataset.n = fig.dataset.n || "1"; img.dataset.port = fig.dataset.port || "0";
+      img.dataset.n = fig.dataset.n || "1"; img.dataset.port = fig.dataset.port || "0"; img.dataset.force = fig.dataset.force || "";
       const play = dlg.querySelector(".lb-play");                                // the same launch as the ▶ in the titles table
       play.hidden = !fig.dataset.launch; play.dataset.launch = fig.dataset.launch || ""; play.dataset.title = fig.dataset.title || ""; play.textContent = "▶";
       flipped = false;                                           // every move starts on the shot's own side
