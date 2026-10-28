@@ -387,8 +387,9 @@ label.themepick select option { color: #111; background: #fff; }
   scrollbar-color: #8a3dff #0d0221;
 }
 :root[data-theme="neon"] body { background: radial-gradient(ellipse at 50% -10%, #2a0a5c 0%, #0d0221 55%) fixed; }
-/* faint scanlines over everything (clicks pass through; dialogs sit above) */
-:root[data-theme="neon"] body::after { content: ""; position: fixed; inset: 0; z-index: 15; pointer-events: none; background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, .22) 0 1px, transparent 1px 3px); mix-blend-mode: multiply; }
+/* faint scanlines on the display type only: headings, tab names, the big tile numbers and the charts themselves; never on text to read (tables, descriptions, legends) */
+:root[data-theme="neon"] :is(h1, h2, h3, .tabs button, .tile .v, .chart-body) { position: relative; }
+:root[data-theme="neon"] :is(h1, h2, h3, .tabs button, .tile .v, .chart-body)::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, .26) 0 1px, transparent 1px 3px); }
 :root[data-theme="neon"] code, :root[data-theme="neon"] .set, :root[data-theme="neon"] pre { font-family: "Share Tech Mono", ui-monospace, Menlo, monospace; }
 :root[data-theme="neon"] a { text-shadow: 0 0 6px rgba(0, 240, 255, .45); }
 :root[data-theme="neon"] a:hover { color: #fff; text-shadow: 0 0 8px var(--neon-cyan), 0 0 16px var(--neon-cyan); }
