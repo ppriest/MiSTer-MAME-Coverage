@@ -848,6 +848,22 @@
   $("#c-dir").addEventListener("click", () => { S.dir.c *= -1; $("#c-dir").textContent = S.dir.c > 0 ? "↑" : "↓"; applyCores(); });
   $("#c-reset").addEventListener("click", () => { CORE_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.c = 1; $("#c-dir").textContent = "↑"; applyCores(); });
 
+  // ---------- theme: System Default (no choice: the OS's light/dark), Light, Dark, Neon ----------
+  const NEON_FONTS = "https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Exo+2:wght@400;500;700&family=Share+Tech+Mono&display=swap";
+  function applyTheme(t) {
+    if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme;
+    if (t === "neon" && !$("#neon-fonts")) {            // the neon fonts are fetched only when the theme is chosen
+      const l = document.createElement("link"); l.id = "neon-fonts"; l.rel = "stylesheet"; l.href = NEON_FONTS; document.head.appendChild(l);
+    }
+  }
+  (function () {
+    const sel = $("#theme"); let t = "";
+    try { t = localStorage.getItem("theme") || ""; } catch (e) { /* storage unavailable */ }
+    if (!["light", "dark", "neon"].includes(t)) t = "";
+    sel.value = t; applyTheme(t);
+    sel.addEventListener("change", () => { applyTheme(sel.value); try { sel.value ? localStorage.setItem("theme", sel.value) : localStorage.removeItem("theme"); } catch (e) { /* not saved */ } });
+  })();
+
   // ---------- wishlist (votes live in the /api functions; the page works without them) ----------
   $("#d-plus1").hidden = !DRIVER_WISHLIST;
   S.api = { ok: false, votes: { title: new Map(), driver: new Map() }, mine: { title: new Set(), driver: new Set() }, list: { titles: [], drivers: [] } };
