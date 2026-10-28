@@ -372,10 +372,11 @@ header.top { position: sticky; top: 0; z-index: 20; }
 
 /* ---------- theme dropdown, top right of the heading ---------- */
 .top .wrap { position: relative; }
-label.themepick { position: absolute; top: -6px; right: 16px; font-size: 12px; color: rgba(255, 255, 255, .92); display: inline-flex; align-items: center; gap: 6px; text-shadow: 0 1px 2px rgba(0, 30, 60, .45); }
+.themebar { position: absolute; top: -6px; right: 16px; z-index: 3; display: flex; align-items: center; gap: 12px; }
+label.themepick { font-size: 12px; color: rgba(255, 255, 255, .92); display: inline-flex; align-items: center; gap: 6px; text-shadow: 0 1px 2px rgba(0, 30, 60, .45); }
 label.themepick select { font: inherit; font-size: 12px; padding: 2px 6px; border: 1px solid rgba(255, 255, 255, .75); border-radius: 8px; background: rgba(255, 255, 255, .16); color: #fff; cursor: pointer; }
 label.themepick select option { color: #111; background: #fff; }
-@media (max-width: 640px) { label.themepick { position: static; justify-content: flex-end; margin: -8px 0 6px; display: flex; } }
+@media (max-width: 640px) { .themebar { position: static; justify-content: flex-end; margin: -8px 0 6px; } }
 
 /* ---------- Neon: 80s synthwave. Deep indigo, hot magenta, electric cyan, glowing type, a grid floor under the heading, faint scanlines ---------- */
 :root[data-theme="neon"] {
@@ -440,3 +441,16 @@ label.themepick select option { color: #111; background: #fff; }
   :root[data-theme="neon"] .top h1 { animation: neonflicker 9s infinite; }
   @keyframes neonflicker { 0%, 17%, 19%, 23%, 25%, 100% { opacity: 1; } 18%, 24% { opacity: .82; } }
 }
+
+.neonsnd { font: inherit; font-size: 12px; padding: 2px 10px; border-radius: 8px; cursor: pointer; border: 1px solid var(--neon-cyan, #00f0ff); color: var(--neon-cyan, #00f0ff); background: rgba(13, 2, 33, .6); text-shadow: 0 0 6px var(--neon-cyan, #00f0ff); box-shadow: 0 0 8px rgba(0, 240, 255, .5); }
+.neonsnd:disabled { cursor: default; opacity: .45; }
+.neonsnd[aria-pressed="false"] { opacity: .6; text-shadow: none; box-shadow: none; }
+/* the zoom tween: while the shot flies between its thumbnail and the big screen the rest of the dialog (details, buttons, caption) is faded out */
+#lightbox > *, #lightbox figcaption { transition: opacity .22s ease; }
+#lightbox.tweening > :not(figure):not(.lb-trail), #lightbox.tweening figcaption { opacity: 0; transition: none; }
+#lightbox .lb-frame { will-change: transform; }
+#lightbox .lb-trail { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1; }   /* under the screen, over the backdrop */
+.neonsnd { display: inline-flex; align-items: center; gap: 6px; }
+.neonsnd:hidden, .neonsnd[hidden] { display: none; }
+.neonsnd .ico { display: inline-flex; align-items: center; justify-content: center; width: 12px; height: 14px; font-style: normal; line-height: 1; }
+.neonsnd .ico:not(:has(svg)) { font-size: 15px; }

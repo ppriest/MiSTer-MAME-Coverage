@@ -14,12 +14,12 @@
 <script>/* the chosen theme is applied before the stylesheet paints (no flash); no choice = the system's */
 try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark" || t === "neon") document.documentElement.dataset.theme = t; } catch (e) { /* storage unavailable: the system theme */ }
 </script>
-<link rel="stylesheet" href="style.css?v=6d12c7f411">
+<link rel="stylesheet" href="style.css?v=9b7ea8769d">
 </head>
 <body>
 <header class="top">
   <div class="wrap">
-    <label class="themepick">Theme <select id="theme" aria-label="Theme"><option value="">System Default</option><option value="light">Light</option><option value="dark">Dark</option><option value="neon">Neon</option></select></label>
+    <div class="themebar"><button type="button" id="neon-trail-btn" class="neonsnd" aria-pressed="true" title="the Neon theme's trails of boxes: behind the pointer and behind the zooming screenshot" hidden><i class="ico"><svg viewBox="2.6 1 10 14.2" width="6.6" height="9.4" aria-hidden="true"><path d="M3 1.5v11.2l3-2.7 2 4.5 2.2-1-2-4.4H12z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg></i><span>Trail: on</span></button><button type="button" id="neon-sound" class="neonsnd" aria-pressed="true" title="the Neon theme's synth sound effects" hidden><i class="ico">♪</i><span>Sound: on</span></button><label class="themepick">Theme <select id="theme" aria-label="Theme"><option value="">System Default</option><option value="light">Light</option><option value="dark">Dark</option><option value="neon">Neon</option></select></label></div>
     <h1>MiSTer <span class="vs">×</span> MAME - Arcade Coverage</h1>
     <h2 class="tagline">See what Arcade PCB titles are covered by MAME, MiSTer, and request support on MiSTer where missing</h2>
     <p class="sub" id="subtitle">Loading data…</p>
@@ -360,6 +360,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=dc91f61a87"></script>
+<script src="app.js?v=0b23f33c6e"></script>
 </body>
 </html>

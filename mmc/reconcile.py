@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import collections
 import datetime as dt
+import json
 import os
 import re
 
@@ -11,6 +12,7 @@ from . import hbmame as hbmame_mod
 from . import mamehist
 from . import mame as mame_mod
 from . import mister as mister_mod
+from . import paths
 
 
 def display_name(name: str) -> str:
@@ -308,8 +310,19 @@ def observe(mister: dict) -> dict:
             "excluded": sorted(excluded), "core_repos": {k: sorted(v) for k, v in core_repos.items()}}
 
 
+def screen_overrides() -> dict[str, str]:
+    """data/screens_overrides.json -> {set: "3h"}: how many displays a multi-screen snapshot shows, and whether side by side (h) or stacked (v)."""
+    try:
+        with open(os.path.join(paths.DATA, "screens_overrides.json"), encoding="utf-8") as f:
+            raw = json.load(f)
+    except (OSError, ValueError):
+        return {}
+    return {k: f"{v['k']}{'h' if v.get('horiz', True) else 'v'}" for k, v in raw.items() if isinstance(v, dict) and v.get("k")}
+
+
 def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
     """Join MAME with the ledger: every arcade set, which cores load it, and since when."""
+    screen_force = screen_overrides()
     machines = mame["machines"]
     cores = ledger["cores"]
     for c in cores.values():            # a core no longer observed keeps its last title otherwise
@@ -415,6 +428,7 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
             "rotate": pm["rotate"],
             "display": pm["display"],
             **({"screens": pm["screens"]} if pm.get("screens", 0) > 1 else {}),      # multi-screen machines (Darius: 3)
+            **({"screens_force": screen_force[parent]} if parent in screen_force else {}),
             "cpus": pm["cpus"],
             "players": pm["players"],
             "nsets": len(sets),

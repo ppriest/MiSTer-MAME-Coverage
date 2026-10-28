@@ -719,7 +719,7 @@
   // shots; for a driver or a core one shot per title (in-game, else title screen), titles on MiSTer first.
   const SHOT_MAX = 50;
   // What the zoom needs to turn a shot over: its kind, the other kind's URL (when the title has both) and the title's description.
-  const altAttrs = (t, k) => { const o = k === "ingame" ? "title" : "ingame"; return `data-kind="${k}" data-desc="${esc(t.desc)}"${t.img[o] ? ` data-alt="${esc(IMAGE_BASE + "/" + t.img[o])}"` : ""}`; };
+  const altAttrs = (t, k) => { const o = k === "ingame" ? "title" : "ingame"; return `data-kind="${k}" data-desc="${esc(t.desc)}"${t.screens_force ? ` data-force="${esc(t.screens_force)}"` : ""}${t.img[o] ? ` data-alt="${esc(IMAGE_BASE + "/" + t.img[o])}"` : ""}`; };
   function galleryHtml(titles, both) {
     if (!IMAGE_BASE) return "";
     const withImg = titles.filter(t => t.img && (t.img.ingame || t.img.title));
@@ -848,10 +848,138 @@
   $("#c-dir").addEventListener("click", () => { S.dir.c *= -1; $("#c-dir").textContent = S.dir.c > 0 ? "↑" : "↓"; applyCores(); });
   $("#c-reset").addEventListener("click", () => { CORE_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.c = 1; $("#c-dir").textContent = "↑"; applyCores(); });
 
+  // ---------- Neon: trails of boxes (behind the pointer and behind the zooming screenshot), and synth sound effects (the Neon theme only) ----------
+  const isNeon = () => document.documentElement.dataset.theme === "neon";
+  const calm = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // The trail: while the zoom flies between the thumbnail and the big screen, outlined boxes the size of the screen at that moment are left
+  // behind it and fade out (a canvas inside the dialog, under the screen).
+  const trail = { cv: null, ctx: null, boxes: [], raf: 0, until: 0, frame: null, last: 0, n: 0 };
+  const TRAIL_COLOURS = ["#ff2bd6", "#00f0ff", "#fff200", "#8a3dff"], TRAIL_LIFE = 650, TRAIL_EVERY = 30;
+  const trailOn = () => { try { return localStorage.getItem("neon-trail") !== "0"; } catch (e) { return true; } };
+  function trailClear() {
+    cancelAnimationFrame(trail.raf); trail.raf = 0; trail.boxes = []; trail.frame = null;
+    if (trail.cv) trail.cv.remove(); trail.cv = trail.ctx = null;
+  }
+  function trailFollow(frame, ms) {                // call as a tween starts: the boxes are emitted for ms, then fade out
+    if (!isNeon() || !trailOn() || calm()) return;
+    const dlg = $("#lightbox"); if (!dlg) return;
+    if (!trail.cv || !trail.cv.isConnected) {
+      const cv = document.createElement("canvas");
+      cv.className = "lb-trail"; cv.setAttribute("aria-hidden", "true"); dlg.insertBefore(cv, dlg.firstChild); trail.cv = cv;
+    }
+    const dpr = devicePixelRatio || 1;
+    trail.cv.width = Math.round(innerWidth * dpr); trail.cv.height = Math.round(innerHeight * dpr);
+    trail.ctx = trail.cv.getContext("2d"); trail.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    trail.frame = frame; trail.until = performance.now() + ms + 40; trail.last = 0;
+    if (!trail.raf) trail.raf = requestAnimationFrame(trailTick);
+  }
+  function trailTick(now) {
+    const c = trail.ctx; if (!c) { trail.raf = 0; return; }
+    if (trail.frame && now < trail.until && now - trail.last >= TRAIL_EVERY) {
+      trail.last = now;
+      const r = trail.frame.getBoundingClientRect();
+      if (r.width > 2) trail.boxes.push({ x: r.left, y: r.top, w: r.width, h: r.height, t: now, c: TRAIL_COLOURS[trail.n++ % TRAIL_COLOURS.length] });
+    }
+    trail.boxes = trail.boxes.filter(b => now - b.t < TRAIL_LIFE);
+    c.clearRect(0, 0, innerWidth, innerHeight);
+    for (const b of trail.boxes) {
+      const a = Math.pow(1 - (now - b.t) / TRAIL_LIFE, 1.6);
+      c.shadowBlur = 16; c.shadowColor = b.c; c.strokeStyle = b.c; c.fillStyle = b.c; c.lineWidth = 2;
+      c.globalAlpha = a * .9; c.beginPath(); c.rect(b.x, b.y, b.w, b.h); c.stroke();
+      c.globalAlpha = a * .07; c.fill();
+    }
+    c.globalAlpha = 1;
+    trail.raf = trail.boxes.length || now < trail.until ? requestAnimationFrame(trailTick) : 0;
+    if (!trail.raf) c.clearRect(0, 0, innerWidth, innerHeight);
+  }
+  // And, as before, a trail of small boxes behind the pointer on the page (mouse and pen).
+  const ptr = { cv: null, ctx: null, boxes: [], raf: 0, lx: -99, ly: -99, n: 0 };
+  const PTR_LIFE = 700, PTR_STEP = 15;
+  function ptrSize() {
+    const dpr = devicePixelRatio || 1;
+    ptr.cv.width = Math.round(innerWidth * dpr); ptr.cv.height = Math.round(innerHeight * dpr);
+    ptr.ctx = ptr.cv.getContext("2d"); ptr.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  function cursorStart() {
+    if (ptr.cv || calm() || !trailOn()) return;
+    const cv = document.createElement("canvas");
+    cv.id = "neon-trail"; cv.setAttribute("aria-hidden", "true");
+    cv.style.cssText = "position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:30";
+    document.body.appendChild(cv); ptr.cv = cv; ptrSize();
+  }
+  function cursorStop() {
+    if (!ptr.cv) return;
+    cancelAnimationFrame(ptr.raf); ptr.raf = 0; ptr.boxes = []; ptr.cv.remove(); ptr.cv = ptr.ctx = null;
+  }
+  function ptrTick(now) {
+    const c = ptr.ctx; if (!c) return;
+    c.clearRect(0, 0, innerWidth, innerHeight);
+    ptr.boxes = ptr.boxes.filter(b => now - b.t < PTR_LIFE);
+    for (const b of ptr.boxes) {
+      const age = (now - b.t) / PTR_LIFE, size = 18 * (1 - age * .7), a = (1 - age) * (1 - age);
+      c.globalAlpha = a; c.shadowBlur = 14; c.shadowColor = b.c; c.strokeStyle = b.c; c.lineWidth = 2; c.fillStyle = b.c;
+      c.strokeRect(b.x - size / 2, b.y - size / 2, size, size);
+      c.globalAlpha = a * .18; c.fillRect(b.x - size / 2, b.y - size / 2, size, size);
+    }
+    ptr.raf = ptr.boxes.length ? requestAnimationFrame(ptrTick) : 0;
+    if (!ptr.raf) c.clearRect(0, 0, innerWidth, innerHeight);
+  }
+  addEventListener("pointermove", ev => {
+    if (!ptr.cv || ev.pointerType === "touch") return;
+    if (Math.hypot(ev.clientX - ptr.lx, ev.clientY - ptr.ly) < PTR_STEP) return;
+    ptr.lx = ev.clientX; ptr.ly = ev.clientY;
+    ptr.boxes.push({ x: ev.clientX, y: ev.clientY, t: performance.now(), c: TRAIL_COLOURS[ptr.n++ % TRAIL_COLOURS.length] });
+    if (!ptr.raf) ptr.raf = requestAnimationFrame(ptrTick);
+  });
+  addEventListener("resize", () => { if (ptr.cv) ptrSize(); });
+  // Web Audio synth: short square/saw blips through a low-pass, quiet. Browsers only start audio after a click or key, which is when these play.
+  let actx = null;
+  const soundOn = () => { try { return localStorage.getItem("neon-sound") !== "0"; } catch (e) { return true; } };
+  function neonSound(kind) {
+    if (!isNeon() || !soundOn()) return;
+    try {
+      actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+      if (actx.state === "suspended") actx.resume();
+      const t0 = actx.currentTime, out = actx.createGain(), lp = actx.createBiquadFilter();
+      out.gain.value = .16; lp.type = "lowpass"; lp.frequency.value = 3400; out.connect(lp); lp.connect(actx.destination);
+      const note = (type, f0, f1, at, dur, vol, attack = .008) => {
+        const o = actx.createOscillator(), g = actx.createGain();
+        o.type = type; o.frequency.setValueAtTime(f0, t0 + at);
+        if (f1 !== f0) o.frequency.exponentialRampToValueAtTime(f1, t0 + at + dur);
+        g.gain.setValueAtTime(.0001, t0 + at); g.gain.exponentialRampToValueAtTime(vol, t0 + at + attack); g.gain.exponentialRampToValueAtTime(.0001, t0 + at + dur);
+        o.connect(g); g.connect(out); o.start(t0 + at); o.stop(t0 + at + dur + .03);
+      };
+      if (kind === "blip") note("square", 880, 1320, 0, .07, .5);
+      else if (kind === "flip") { note("triangle", 520, 1560, 0, .1, .7); note("triangle", 1560, 780, .1, .12, .6); }
+      else if (kind === "open") { note("sawtooth", 180, 1100, 0, .26, .35, .03); [220, 262, 330, 440, 523].forEach((f, k) => note("square", f * 2, f * 2, .05 + k * .055, .09, .32)); }
+      else if (kind === "close") { note("sawtooth", 1000, 160, 0, .24, .35, .02); [523, 392, 294].forEach((f, k) => note("square", f, f, k * .05, .08, .3)); }
+      else if (kind === "power") { [110, 138.6, 164.8, 220].forEach(f => { note("sawtooth", f, f * 1.01, 0, .7, .3, .2); note("sawtooth", f * 1.005, f, 0, .7, .22, .2); }); note("square", 880, 1760, .25, .35, .2, .05); }
+    } catch (e) { /* no audio: silent */ }
+  }
+  function syncSoundButton() {
+    const b = $("#neon-sound"), on = soundOn(), t = $("#neon-trail-btn"), tr = trailOn();
+    b.hidden = t.hidden = !isNeon();
+    b.setAttribute("aria-pressed", on); b.querySelector("span").textContent = on ? "Sound: on" : "Sound: off";
+    t.setAttribute("aria-pressed", tr); t.querySelector("span").textContent = tr ? "Trail: on" : "Trail: off";
+    t.disabled = calm(); if (calm()) t.title = "off: your system asks for reduced motion";
+  }
+  $("#neon-trail-btn").addEventListener("click", () => {
+    const on = !trailOn(); try { localStorage.setItem("neon-trail", on ? "1" : "0"); } catch (e) { /* not saved */ }
+    if (on && isNeon()) cursorStart(); else { cursorStop(); trailClear(); }
+    syncSoundButton(); neonSound("blip");
+  });
+  $("#neon-sound").addEventListener("click", () => {
+    const on = !soundOn(); try { localStorage.setItem("neon-sound", on ? "1" : "0"); } catch (e) { /* not saved */ }
+    syncSoundButton(); if (on) neonSound("blip");
+  });
+  $(".tabs").addEventListener("click", ev => { if (ev.target.closest("button[role=tab]")) neonSound("blip"); });
+
   // ---------- theme: System Default (no choice: the OS's light/dark), Light, Dark, Neon ----------
   const NEON_FONTS = "https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Exo+2:wght@400;500;700&family=Share+Tech+Mono&display=swap";
   function applyTheme(t) {
     if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme;
+    if (t === "neon") cursorStart(); else { cursorStop(); trailClear(); }
+    syncSoundButton();
     if (t === "neon" && !$("#neon-fonts")) {            // the neon fonts are fetched only when the theme is chosen
       const l = document.createElement("link"); l.id = "neon-fonts"; l.rel = "stylesheet"; l.href = NEON_FONTS; document.head.appendChild(l);
     }
@@ -861,7 +989,7 @@
     try { t = localStorage.getItem("theme") || ""; } catch (e) { /* storage unavailable */ }
     if (!["light", "dark", "neon"].includes(t)) t = "";
     sel.value = t; applyTheme(t);
-    sel.addEventListener("change", () => { applyTheme(sel.value); try { sel.value ? localStorage.setItem("theme", sel.value) : localStorage.removeItem("theme"); } catch (e) { /* not saved */ } });
+    sel.addEventListener("change", () => { applyTheme(sel.value); if (sel.value === "neon") neonSound("power"); try { sel.value ? localStorage.setItem("theme", sel.value) : localStorage.removeItem("theme"); } catch (e) { /* not saved */ } });
   })();
 
   // ---------- wishlist (votes live in the /api functions; the page works without them) ----------
@@ -1085,7 +1213,8 @@
   // own 4:3 (or 3:4) display.
   const LB_SIDE = 280, LB_SIDE_MIN = 1180;                   // width of each details panel; the window width from which they are shown
   const LB_GAP = 0.03;                                       // the gap between displays, in display widths (or heights)
-  function inferScreens(ratio, n, port) {
+  function inferScreens(ratio, n, port, force) {
+    if (force && /^\d+[hv]$/.test(force)) return { k: parseInt(force, 10), horiz: force.endsWith("h"), d: 0 };      // data/screens_overrides.json: the guess is wrong for this one
     const pr = port ? 3 / 4 : 4 / 3;
     let best = { k: 1, horiz: true, d: Math.abs(Math.log(ratio / pr)) };
     for (let k = 2; k <= n; k++) {
@@ -1101,7 +1230,7 @@
     const dlg = img.closest("dialog");
     const n = dlg.dataset.broken ? 1 : +img.dataset.n || 1, port = img.dataset.port === "1";
     const nat = img.naturalWidth / img.naturalHeight;
-    const inf = n > 1 ? inferScreens(nat, n, port) : { k: 1, horiz: true };
+    const inf = n > 1 ? inferScreens(nat, n, port, img.dataset.force) : { k: 1, horiz: true };
     img.dataset.k = inf.k; img.dataset.horiz = inf.horiz ? 1 : 0;
     const pr = port ? 3 / 4 : 4 / 3, span = inf.k + (inf.k - 1) * LB_GAP;
     const ratio = inf.k > 1 ? (inf.horiz ? span * pr : pr / span) : nearShape(img) || nat;
@@ -1121,7 +1250,7 @@
     if (!(img instanceof HTMLImageElement) || !img.naturalWidth || img.dataset.crop) return;
     const fig = img.closest(".gallery figure");
     if (fig) {
-      const n = +fig.dataset.n || 1, port = fig.dataset.port === "1", inf = n > 1 ? inferScreens(img.naturalWidth / img.naturalHeight, n, port) : { k: 1 };
+      const n = +fig.dataset.n || 1, port = fig.dataset.port === "1", inf = n > 1 ? inferScreens(img.naturalWidth / img.naturalHeight, n, port, fig.dataset.force) : { k: 1 };
       if (inf.k > 1) { splitFigure(fig, img, inf.k, inf.horiz, port); return; }
       const shape = nearShape(img);
       img.style.aspectRatio = shape ? String(shape) : "";
@@ -1272,7 +1401,7 @@
     const show = n => {
       i = (n + set.length) % set.length;
       const fig = set[i];
-      img.dataset.n = fig.dataset.n || "1"; img.dataset.port = fig.dataset.port || "0";
+      img.dataset.n = fig.dataset.n || "1"; img.dataset.port = fig.dataset.port || "0"; img.dataset.force = fig.dataset.force || "";
       const play = dlg.querySelector(".lb-play");                                // the same launch as the ▶ in the titles table
       play.hidden = !fig.dataset.launch; play.dataset.launch = fig.dataset.launch || ""; play.dataset.title = fig.dataset.title || ""; play.textContent = "▶";
       flipped = false;                                           // every move starts on the shot's own side
@@ -1310,6 +1439,7 @@
     const flip = async () => {
       const fig = set[i];
       if (!fig || !fig.dataset.alt || flipping) return;
+      neonSound("flip");
       const frame = dlg.querySelector(".lb-frame");
       if (matchMedia("(prefers-reduced-motion: reduce)").matches || !frame.animate) { flipped = !flipped; paint(); return; }
       flipping = true;
@@ -1321,19 +1451,65 @@
         await turn(-90, 0, "ease-out");
       } finally { frame.getAnimations().forEach(a => a.cancel()); flipping = false; }
     };
+    // The zoom is a tween: the shot grows from its thumbnail to the big screen and shrinks back to it on close (the dialog's other parts fade
+    // in after it lands and out before it leaves). The frame is moved with a transform from the thumbnail's rectangle to its own.
+    const thumbRect = fig => {
+      const el = fig && fig.isConnected && fig.querySelector(".multi, img"); if (!el) return null;
+      const r = el.getBoundingClientRect();
+      return r.width > 4 && r.height > 4 && r.bottom > 0 && r.right > 0 && r.top < innerHeight && r.left < innerWidth ? r : null;      // on screen
+    };
+    const tweenFrames = (from, to) => [{ transformOrigin: "0 0", transform: `translate(${from.left - to.left}px, ${from.top - to.top}px) scale(${from.width / to.width}, ${from.height / to.height})` }, { transformOrigin: "0 0", transform: "none" }];
+    const backdrop = (a, b, ms) => { try { dlg.animate([{ backgroundColor: `rgba(0,0,0,${a})` }, { backgroundColor: `rgba(0,0,0,${b})` }], { duration: ms, easing: "ease-out", pseudoElement: "::backdrop" }); } catch (e) { /* no animated backdrop */ } };
+    const shotReady = () => new Promise(res => {
+      const want = flipped && set[i].dataset.alt ? set[i].dataset.alt : set[i].dataset.src;
+      if (img.complete && img.naturalWidth && img.src === want) return res();
+      img.addEventListener("load", res, { once: true }); setTimeout(res, 700);
+    });
+    const frameEl = dlg.querySelector(".lb-frame");
+    async function openTween(from) {
+      if (!from || calm() || !frameEl.animate) return;
+      dlg.classList.add("tweening");
+      try {
+        await shotReady();
+        const to = frameEl.getBoundingClientRect();
+        if (to.width && to.height) {
+          backdrop(0, .86, 320);
+          trailFollow(frameEl, 340);
+          await frameEl.animate(tweenFrames(from, to), { duration: 340, easing: "cubic-bezier(.2,.75,.25,1)" }).finished;
+        }
+      } catch (e) { /* cancelled */ } finally { dlg.classList.remove("tweening"); }
+    }
+    let closing = false;
+    async function requestClose() {
+      if (closing || !dlg.open) return;
+      neonSound("close");
+      const to = thumbRect(set[i]);
+      if (!to || calm() || !frameEl.animate || flipping) { dlg.close(); return; }
+      closing = true; dlg.classList.add("tweening");
+      try {
+        const from = frameEl.getBoundingClientRect();
+        backdrop(.86, 0, 260); trailFollow(frameEl, 260);
+        await frameEl.animate([{ transformOrigin: "0 0", transform: "none" }, tweenFrames(to, from)[0]], { duration: 260, easing: "cubic-bezier(.5,0,.75,.25)", fill: "forwards" }).finished;
+      } catch (e) { /* cancelled */ } finally {
+        frameEl.getAnimations().forEach(a => a.cancel()); dlg.classList.remove("tweening"); closing = false;
+        if (dlg.open) dlg.close();
+      }
+    }
+    dlg.addEventListener("cancel", ev => { ev.preventDefault(); requestClose(); });      // Esc
     document.addEventListener("click", ev => {
       if (ev.target.closest("button, a")) return;                // a tile's Play and +1 are not a zoom
       const t = ev.target.closest(".gallery figure"); if (!t || !t.dataset.src) return;
       set = Array.from(t.closest(".gallery").querySelectorAll("figure"));
-      applyInfo(); show(set.indexOf(t)); dlg.showModal();
+      const from = thumbRect(t);
+      applyInfo(); show(set.indexOf(t)); dlg.showModal(); neonSound("open"); openTween(from);
     });
     dlg.addEventListener("click", ev => {
-      if (ev.target.closest(".lb-prev")) show(i - 1);
-      else if (ev.target.closest(".lb-next")) show(i + 1);
+      if (ev.target.closest(".lb-prev")) { show(i - 1); neonSound("blip"); }
+      else if (ev.target.closest(".lb-next")) { show(i + 1); neonSound("blip"); }
       else if (ev.target.closest('[data-fx="info"]')) setInfo(!info);
       else if (ev.target.closest('[data-fx="scan"]')) setScan(!scan);
       else if (ev.target.closest('[data-fx="crt"]')) setCrt(!crt);
-      else if (ev.target.closest(".lb-close") || ev.target === dlg) dlg.close();      // the backdrop is the dialog itself
+      else if (ev.target.closest(".lb-close") || ev.target === dlg) requestClose();      // the backdrop is the dialog itself
       else if (ev.target === img || ev.target === cv) flip();
     });
     dlg.addEventListener("keydown", ev => {

@@ -1,0 +1,5 @@
+{
+  "_note": "Multi-screen machines whose snapshot the page's screen-count guess (docs/app.js inferScreens) gets wrong: set -> {\"k\": number of displays in the picture, \"horiz\": side by side (true) or stacked (false)}. TX-1 and Buggy Boy are three screens side by side, each 256x240 in the snapshot's pixels, which the guess (every display 4:3) reads as two.",
+  "tx1": { "k": 3, "horiz": true },
+  "buggyboy": { "k": 3, "horiz": true }
+}
