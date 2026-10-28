@@ -887,8 +887,9 @@
     const note = $("#wishlist-note");
     $("#wl-drivers-h").hidden = $("#wl-drivers-wrap").hidden = !DRIVER_WISHLIST;
     $$("#wl-view button").forEach(b => { const on = b.dataset.view === S.wlView; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
-    if (!S.api.ok) { $("#wl-drivers tbody").innerHTML = ""; $("#wl-titles tbody").innerHTML = '<tr><td colspan="9" class="muted">The wishlist service is not reachable right now (' + esc(S.api.error || "unknown") + '). Open /api/health to see what is missing.</td></tr>'; return; }
+    if (!S.api.ok) { $("#wl-drivers tbody").innerHTML = ""; $("#wl-titles tbody").innerHTML = '<tr><td colspan="11" class="muted">The wishlist service is not reachable right now (' + esc(S.api.error || "unknown") + '). Open /api/health to see what is missing.</td></tr>'; return; }
     const fulfilled = S.wlView === "fulfilled";
+    $("#wl-core-th").hidden = !fulfilled;      // the Core column is for the fulfilled ones
     const none = c => `<tr><td colspan="${c}" class="muted">${fulfilled ? "Nothing fulfilled yet." : "No requests yet."}</td></tr>`;
     const all = { drivers: DRIVER_WISHLIST ? S.api.list.drivers : [], titles: S.api.list.titles };
     const nFul = all.drivers.filter(driverDone).length + all.titles.filter(titleDone).length;
@@ -902,9 +903,10 @@
       <td>${voters(v)}</td><td class="num" title="first vote ${esc(ago(v.first_vote))}">${esc(ago(v.last_vote))}</td></tr>`; }).join("") : none(6);
     const ti = all.titles.filter(v => titleDone(v) === fulfilled);
     $("#wl-titles tbody").innerHTML = ti.length ? ti.map((v, i) => { const t = S.titles.find(x => x.name === v.key); return `<tr>
-      <td class="num">${i + 1}</td><td>${t ? `<a href="#" data-wl-title="${esc(v.key)}">${esc(t.desc)}</a>` : ""}</td><td class="set">${esc(v.key)}</td>
+      <td class="num">${i + 1}</td><td>${t ? `<a href="#" data-wl-title="${esc(v.key)}">${esc(t.desc)}</a>` : ""}</td><td class="set">${esc(v.key)}</td><td class="set">${t ? esc(t.sourcefile) : ""}</td>
       <td class="num">${t ? esc(t.year) : ""}</td><td>${t ? esc(t.manufacturer) : ""}</td><td class="num">${t ? `${t.ncovered_working}/${t.nworking}` : ""}</td>
-      <td class="act">${action("title", v, fulfilled)}</td><td>${voters(v)}</td><td class="num" title="first vote ${esc(ago(v.first_vote))}">${esc(ago(v.last_vote))}</td></tr>`; }).join("") : none(9);
+      ${fulfilled ? `<td>${t ? t.cores.map(id => S.cores[id] ? esc(S.cores[id].name) : esc(id)).join(", ") : ""}</td>` : ""}
+      <td class="act">${action("title", v, fulfilled)}</td><td>${voters(v)}</td><td class="num" title="first vote ${esc(ago(v.first_vote))}">${esc(ago(v.last_vote))}</td></tr>`; }).join("") : none(fulfilled ? 11 : 10);
   }
   $("#wl-view").addEventListener("click", ev => { const b = ev.target.closest("button[data-view]"); if (!b) return; S.wlView = b.dataset.view; writeHash(); renderWishlist(); refreshPlus1(); });
   $("#tab-wishlist").addEventListener("click", ev => {
