@@ -233,6 +233,10 @@ ul.sloplist button { font: inherit; font-size: 11px; padding: 0 8px; margin-left
 .hwsect h4 { margin: 0 0 4px; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-2); }
 .hwsect ul { margin: 0; padding: 0; list-style: none; }
 .hwsect li { padding: 2px 0; }
+/* a long "Other devices" list takes two grid columns and flows in two columns when the window is wide enough (one column in narrow ones and beside the zoomed screen) */
+@media (min-width: 900px) { .hwsect.hwwide { grid-column: span 2; } .hwsect.hwwide ul { columns: 2 220px; column-gap: 24px; } .hwsect.hwwide li { break-inside: avoid; } }
+#lightbox .lb-side .hwsect.hwwide { grid-column: auto; }
+#lightbox .lb-side .hwsect.hwwide ul { columns: auto; }
 .hwsect .chipname { font-weight: 600; }
 .hwsect .clock { color: var(--text-2); }
 .opt { display: inline-block; font-size: 11px; padding: 0 6px; border-radius: 8px; border: 1px solid var(--warn); color: var(--text-2); white-space: nowrap; }
@@ -250,7 +254,8 @@ h3.hwdrv { margin: 14px 0 6px; font-size: 13px; text-transform: none; letter-spa
 .gallery img { display: block; width: 100%; height: auto; min-height: 60px; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; }   /* natural aspect ratio: shots may be landscape or portrait */
 .gallery figcaption { font-size: 11px; line-height: 1.25; margin-top: 2px; color: var(--text-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .hwslot:empty { display: none; }
-#titles-table tr.detail .hwslot, #cores-table tr.detail .hwslot { margin-top: 12px; }
+#titles-table tr.detail .hwslot, #cores-table tr.detail .hwslot, #wl-titles tr.detail .hwslot, #unmatched-table tr.detail .hwslot { margin-top: 12px; }
+#wl-titles tr[data-t], #unmatched-table tr[data-u] { cursor: pointer; }
 #cores-table td.exp { cursor: pointer; width: 1.2em; color: var(--text-2); }
 
 /* the +1 pill in the Wishlist tab: the same look as the +1 buttons */

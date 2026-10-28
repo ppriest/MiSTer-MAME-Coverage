@@ -11,16 +11,16 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=b210e9083d">
+<link rel="stylesheet" href="style.css?v=eb08a38490">
 </head>
 <body>
 <header class="top">
   <div class="wrap">
-    <h1>MiSTer <span class="vs">×</span> MAME Arcade Coverage</h1>
+    <h1>MiSTer <span class="vs">×</span> MAME - Arcade Coverage</h1>
     <h2 class="tagline">See what Arcade PCB titles are covered by MAME, MiSTer, and request support on MiSTer where missing</h2>
     <p class="sub" id="subtitle">Loading data…</p>
     <button type="button" id="zap-settings" class="zapset" title="set your local MiSTer IP address for Zaparoo launch">⚙ Local MiSTer IP address</button>
-    <div class="issue"><a class="issue-title" href="#" title="back to the top">MiSTer <span class="vs">×</span> MAME Arcade Coverage</a><a class="issue-link" href="https://github.com/ppriest/MiSTer-MAME-Coverage/issues" target="_blank" rel="noopener" title="report a problem or suggest something on GitHub">Create Issue / Suggestion</a> <a class="issue-link slopjump" href="#tab=databases" id="slop-jump"><span class="newtag">NEW</span>Downloader .ini</a></div>
+    <div class="issue"><a class="issue-title" href="#" title="back to the top">MiSTer <span class="vs">×</span> MAME - Arcade Coverage</a><a class="issue-link" href="https://github.com/ppriest/MiSTer-MAME-Coverage/issues" target="_blank" rel="noopener" title="report a problem or suggest something on GitHub">Create Issue / Suggestion</a> <a class="issue-link slopjump" href="#tab=databases" id="slop-jump"><span class="newtag">NEW</span>Downloader .ini</a></div>
   </div>
 </header>
 
@@ -175,7 +175,7 @@
     </details>
     <div class="viewbar">
       <span class="seg" id="t-view" role="group" aria-label="Titles view"><button type="button" data-view="list" class="on" aria-pressed="true">List</button><button type="button" data-view="gallery" aria-pressed="false">Gallery</button></span>
-      <span class="seg" id="g-kind" role="group" aria-label="Screenshot" hidden><button type="button" data-kind="ingame" class="on" aria-pressed="true">In game</button><button type="button" data-kind="title" aria-pressed="false">Title screen</button></span>
+      <span class="seg" id="g-kind" role="group" aria-label="Screenshot"><button type="button" data-kind="ingame" class="on" aria-pressed="true">In game</button><button type="button" data-kind="title" aria-pressed="false">Title screen</button></span>
     </div>
     <div id="titles-gallery" hidden></div>
     <div class="tablewrap">
@@ -258,7 +258,7 @@
     <h2 class="wl-h" id="wl-drivers-h">Drivers</h2>
     <div class="tablewrap" id="wl-drivers-wrap"><table class="grid" id="wl-drivers"><thead><tr><th>#</th><th>MAME Driver</th><th>On MiSTer</th><th>Votes</th><th>Recent voters</th><th>Last vote</th></tr></thead><tbody></tbody></table></div>
     <h2 class="wl-h">Titles</h2>
-    <div class="tablewrap"><table class="grid" id="wl-titles"><thead><tr><th>#</th><th>Title</th><th>Set</th><th>MAME Driver</th><th>Year</th><th>Manufacturer</th><th>Sets on MiSTer</th><th id="wl-core-th" hidden>Core</th><th>Votes</th><th>Recent voters</th><th>Last vote</th></tr></thead><tbody></tbody></table></div>
+    <div class="tablewrap"><table class="grid" id="wl-titles"><thead><tr><th></th><th>#</th><th>Title</th><th>Set</th><th>MAME Driver</th><th>Year</th><th>Manufacturer</th><th>Sets on MiSTer</th><th id="wl-core-th" hidden>Cores</th><th>Votes</th><th>Recent voters</th><th>Last vote</th></tr></thead><tbody></tbody></table></div>
   </section>
 
   <section id="tab-databases" class="tab" role="tabpanel" hidden>
@@ -293,7 +293,7 @@
     </form>
     <p class="count" id="unmatched-count"></p>
     <div class="tablewrap">
-      <table class="grid" id="unmatched-table"><thead><tr><th data-sort="set">Set name</th><th data-sort="desc">HBMAME description</th><th data-sort="year">Year</th><th data-sort="manufacturer">Manufacturer</th><th data-sort="ncores">Cores</th></tr></thead><tbody></tbody></table>
+      <table class="grid" id="unmatched-table"><thead><tr><th></th><th data-sort="set">Set name</th><th data-sort="desc">HBMAME description</th><th data-sort="year">Year</th><th data-sort="manufacturer">Manufacturer</th><th data-sort="ncores">Cores</th></tr></thead><tbody></tbody></table>
     </div>
   </section>
 
@@ -308,6 +308,7 @@
       <li><strong>Dates.</strong> Each repository is cloned without file contents and <code>git log</code> gives the day each MRA file was first committed. The earliest date across every source is the date a set became available; a title (MAME parent set plus its clones) takes the earliest of its sets. Where a repository's history was squashed (jotego's jtbin in May 2024, the official distribution starts September 2021) the per-core repository history fills in; where no history exists at all the core's latest build date is used and marked approximate.</li>
       <li><strong>Genre.</strong> From MAME's category file <code>catver.ini</code> first (a current copy at <code>data/catver.ini</code> if present, else the copies libretro vendors), then the MiSTer Arcade Database, then the MRA's own <code>&lt;category&gt;</code> tag. A set without a category takes its parent's, else a clone's. The raw strings (135 spellings across sources) are remapped to a short common list by <code>data/genre_map.json</code>, which is meant to be edited. The raw value and its source show in the title's tooltip.</li>
       <li><strong>When a set entered MAME.</strong> From <code>catver.ini</code>'s <code>VerAdded</code> section up to 0.180 and from the <code>mame.lst</code> of every later release on GitHub (a set in release N's list but not N−1's was added in N); release dates come from mamedev's git tags, with the few pre-2007 versions interpolated from known dates. A set is counted as "in MAME" from that date even if it was not working then; renamed sets are dated by their new name. Kept in <code>data/mame_added.json</code>.</li>
+      <li><strong>Screenshots.</strong> The title screens and in-game shots are from the <a href="https://www.progettosnaps.net/snapshots/" target="_blank" rel="noopener">Progetto-SNAPS</a> Snap and Titles packs (the full sets, then the update packs for each later MAME release), shown unchanged and only for sets that have them. Many thanks to Progetto-SNAPS, and to everyone who contributes snaps to it.</li>
       <li><strong>BIOS sets</strong> (MAME <code>isbios</code>, e.g. "Acclaim ZN-1", "Neo-Geo") are not games and are left out entirely.</li>
       <li><strong>Charts.</strong> They sit under the Titles filters and follow all of them, Coverage included; when the filters match no title they collapse. The "MAME and MiSTer over time" chart counts sets, the others titles.</li>
       <li><strong>Titles vs sets.</strong> A <em>title</em> is a MAME parent set with all its clones. It counts as covered when any of its sets loads on any core. The burndown therefore shows titles, not individual ROM sets.</li>
@@ -355,6 +356,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=11b33f39d7"></script>
+<script src="app.js?v=5cf1755188"></script>
 </body>
 </html>

@@ -505,8 +505,7 @@
     $(".viewbar").hidden = !GALLERY_ENABLED;
     $("#t-view").querySelectorAll("button").forEach(b => { const on = b.dataset.view === S.tview; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
     $("#t-view").querySelector('[data-view="gallery"]').disabled = !IMAGE_BASE;
-    $("#g-kind").hidden = !g;
-    $("#g-kind").querySelectorAll("button").forEach(b => { const on = b.dataset.kind === S.gkind; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
+    $("#g-kind").querySelectorAll("button").forEach(b => { const on = b.dataset.kind === S.gkind; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); b.disabled = !g; });   // only the Gallery shows it
     $("#titles-table").closest(".tablewrap").hidden = g;
     $("#titles-gallery").hidden = !g;
     if (g) $("#titles-more").hidden = true;
@@ -751,7 +750,8 @@
   function hardwareHtml(file, h) {
     const d = h.drivers[file];
     if (!d) return '<p class="muted">no hardware information for this driver</p>';
-    const sect = (title, html) => html ? `<div class="hwsect"><h4>${title}</h4><ul>${html}</ul></div>` : "";
+    const sect = (title, html, cls = "") => html ? `<div class="hwsect${cls}"><h4>${title}</h4><ul>${html}</ul></div>` : "";
+    const devices = d.devices.filter(r => !/^neocart_/.test(r.name));
     const slots = Object.entries(d.slots || {}).map(([k, v]) => `<li><span class="chipname">${esc(k)}</span> <span class="muted">${v.map(esc).join(", ")}</span></li>`).join("");
     const notes = (d.notes || []).length
       ? `<details class="hwnotes"><summary>Notes from the driver source <span class="muted">(comments and diagrams, as written)</span></summary>${d.notes.map(n => `<pre>${esc(n)}</pre>`).join("")}</details>` : "";
@@ -759,7 +759,7 @@
     return `<div class="hwgrid">
         ${sect("CPUs", hwRows(d.cpus, d.sets, true))}
         ${sect("Sound", hwRows(d.sound, d.sets, true))}
-        ${sect("Other devices", hwRows(d.devices.filter(r => !/^neocart_/.test(r.name)), d.sets, false))}
+        ${sect("Other devices", hwRows(devices, d.sets, false), devices.length > 6 ? " hwwide" : "")}
         ${sect("Selectable options (slots)", slots)}
       </div>
       <p class="muted hwsrc">From MAME ${esc(h.mame)}'s declarations for the driver's ${fmt(d.sets)} ${d.sets === 1 ? "set" : "sets"}; a chip marked <span class="opt">in N of M sets</span> is a variant or optional. Source: <a href="${esc(src)}" target="_blank" rel="noopener">${esc(file)}</a>.</p>
@@ -887,9 +887,9 @@
     const note = $("#wishlist-note");
     $("#wl-drivers-h").hidden = $("#wl-drivers-wrap").hidden = !DRIVER_WISHLIST;
     $$("#wl-view button").forEach(b => { const on = b.dataset.view === S.wlView; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
-    if (!S.api.ok) { $("#wl-drivers tbody").innerHTML = ""; $("#wl-titles tbody").innerHTML = '<tr><td colspan="11" class="muted">The wishlist service is not reachable right now (' + esc(S.api.error || "unknown") + '). Open /api/health to see what is missing.</td></tr>'; return; }
+    if (!S.api.ok) { $("#wl-drivers tbody").innerHTML = ""; $("#wl-titles tbody").innerHTML = '<tr><td colspan="12" class="muted">The wishlist service is not reachable right now (' + esc(S.api.error || "unknown") + '). Open /api/health to see what is missing.</td></tr>'; return; }
     const fulfilled = S.wlView === "fulfilled";
-    $("#wl-core-th").hidden = !fulfilled;      // the Core column is for the fulfilled ones
+    $("#wl-core-th").hidden = !fulfilled;      // the Cores column is for the fulfilled ones
     const none = c => `<tr><td colspan="${c}" class="muted">${fulfilled ? "Nothing fulfilled yet." : "No requests yet."}</td></tr>`;
     const all = { drivers: DRIVER_WISHLIST ? S.api.list.drivers : [], titles: S.api.list.titles };
     const nFul = all.drivers.filter(driverDone).length + all.titles.filter(titleDone).length;
@@ -902,12 +902,27 @@
       <td class="num">${d ? `${d.covered}/${d.titles}` : ""}</td><td class="act">${action("driver", v, fulfilled)}</td>
       <td>${voters(v)}</td><td class="num" title="first vote ${esc(ago(v.first_vote))}">${esc(ago(v.last_vote))}</td></tr>`; }).join("") : none(6);
     const ti = all.titles.filter(v => titleDone(v) === fulfilled);
-    $("#wl-titles tbody").innerHTML = ti.length ? ti.map((v, i) => { const t = S.titles.find(x => x.name === v.key); return `<tr>
-      <td class="num">${i + 1}</td><td>${t ? `<a href="#" data-wl-title="${esc(v.key)}">${esc(t.desc)}</a>` : ""}</td><td class="set">${esc(v.key)}</td><td class="set">${t ? esc(t.sourcefile) : ""}</td>
+    $("#wl-titles tbody").innerHTML = ti.length ? ti.map((v, i) => { const t = S.titles.find(x => x.name === v.key); return `<tr${t ? ` data-t="${esc(t.name)}"` : ""}>
+      <td class="exp" title="show sets, hardware and screenshots">${t ? (S.wlOpen.has(t.name) ? "▾" : "▸") : ""}</td><td class="num">${i + 1}</td><td>${t ? `<a href="#" data-wl-title="${esc(v.key)}">${esc(t.desc)}</a>` : ""}</td><td class="set">${esc(v.key)}</td><td class="set">${t ? esc(t.sourcefile) : ""}</td>
       <td class="num">${t ? esc(t.year) : ""}</td><td>${t ? esc(t.manufacturer) : ""}</td><td class="num">${t ? `${t.ncovered_working}/${t.nworking}` : ""}</td>
-      ${fulfilled ? `<td>${t ? t.cores.map(id => S.cores[id] ? esc(S.cores[id].name) : esc(id)).join(", ") : ""}</td>` : ""}
-      <td class="act">${action("title", v, fulfilled)}</td><td>${voters(v)}</td><td class="num" title="first vote ${esc(ago(v.first_vote))}">${esc(ago(v.last_vote))}</td></tr>`; }).join("") : none(fulfilled ? 11 : 10);
+      ${fulfilled ? `<td>${t ? t.cores.map(id => badge(id)).join("") : ""}</td>` : ""}
+      <td class="act">${action("title", v, fulfilled)}</td><td>${voters(v)}</td><td class="num" title="first vote ${esc(ago(v.first_vote))}">${esc(ago(v.last_vote))}</td></tr>`; }).join("") : none(fulfilled ? 12 : 11);
+    $$("#wl-titles tbody tr[data-t]").forEach(tr => { if (S.wlOpen.has(tr.dataset.t)) openWlDetail(tr); });
   }
+  // the twist-open of a Wishlist title: the same detail (sets and their cores, hardware, screenshots) as on the Titles tab
+  S.wlOpen = new Set();
+  function openWlDetail(tr) {
+    const t = S.titles.find(x => x.name === tr.dataset.t); if (!t) return;
+    tr.insertAdjacentHTML("afterend", detailRow(t));
+    tr.nextElementSibling.firstElementChild.colSpan = tr.cells.length;
+    tr.firstElementChild.textContent = "▾"; fillHardware(tr.nextElementSibling);
+  }
+  $("#wl-titles").addEventListener("click", ev => {
+    const tr = ev.target.closest("tr[data-t]"); if (!tr || ev.target.closest("a, button, summary, input")) return;
+    const name = tr.dataset.t;
+    if (S.wlOpen.has(name)) { S.wlOpen.delete(name); tr.nextElementSibling?.classList.contains("detail") && tr.nextElementSibling.remove(); tr.firstElementChild.textContent = "▸"; }
+    else { S.wlOpen.add(name); openWlDetail(tr); }
+  });
   $("#wl-view").addEventListener("click", ev => { const b = ev.target.closest("button[data-view]"); if (!b) return; S.wlView = b.dataset.view; writeHash(); renderWishlist(); refreshPlus1(); });
   $("#tab-wishlist").addEventListener("click", ev => {
     const d = ev.target.closest("a[data-wl-drv]"), t = ev.target.closest("a[data-wl-title]");
@@ -1358,6 +1373,25 @@
   });
 
   // ---------- unmatched + about ----------
+  // the twist-open of an unmatched set: the cores that load it (and their databases) and, for a hack of a MAME set, that set's driver hardware
+  S.uOpen = new Set();
+  function openUnmatchedDetail(tr) {
+    const u = S.data.unmatched.find(x => x.set === tr.dataset.u); if (!u) return;
+    const par = u.parent && S.titles.find(t => t.sets.some(s => s.name === u.parent));
+    const cores = u.cores.map(id => { const c = S.cores[id]; return `<tr><td>${badge(id)}</td><td>${esc(c ? c.source_title : "")}</td><td class="set">${c && c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.repo)}</a>` : ""}</td></tr>`; }).join("");
+    const hw = par && par.sourcefile ? `<p class="muted">A clone of <a href="#" data-unm-title="${esc(par.name)}">${esc(par.desc)}</a> (<span class="set">${esc(u.parent)}</span>); the hardware of its driver:</p><div class="hwslot" data-hwfile="${esc(par.sourcefile)}"></div>`
+      : `<p class="muted">${u.parent ? `A clone of ${esc(u.parent)}, which is not a MAME arcade set here.` : "No MAME driver: the set is not in this MAME version."}</p>`;
+    tr.insertAdjacentHTML("afterend", `<tr class="detail"><td colspan="${tr.cells.length}"><table><thead><tr><th>Core</th><th>Database</th><th>Repository</th></tr></thead><tbody>${cores}</tbody></table>${hw}</td></tr>`);
+    tr.firstElementChild.textContent = "▾"; fillHardware(tr.nextElementSibling);
+  }
+  $("#unmatched-table").addEventListener("click", ev => {
+    const a = ev.target.closest("a[data-unm-title]");
+    if (a) { ev.preventDefault(); clearIds(FILTER_IDS.filter(id => id !== "f-q" && id !== "f-sort")); $("#f-q").value = a.dataset.unmTitle; $("#f-cat").value = "all"; $("#f-work").value = "all"; applyTitles(); showTab("titles"); return; }
+    const tr = ev.target.closest("tr[data-u]"); if (!tr || ev.target.closest("a, button")) return;
+    const name = tr.dataset.u;
+    if (S.uOpen.has(name)) { S.uOpen.delete(name); tr.nextElementSibling?.classList.contains("detail") && tr.nextElementSibling.remove(); tr.firstElementChild.textContent = "▸"; }
+    else { S.uOpen.add(name); openUnmatchedDetail(tr); }
+  });
   function applyUnmatched() {
     const words = $("#u-q").value.trim().toLowerCase().split(/\s+/).filter(Boolean), hb = $("#u-hb").value;
     const rows = S.data.unmatched.filter(u => {
@@ -1373,7 +1407,8 @@
     $("#unmatched-count").textContent = `${fmt(rows.length)} of ${fmt(S.data.unmatched.length)} sets`;
     $("#unmatched-note").textContent = "Set names found in MiSTer MRAs that do not exist in this MAME version: hacks, homebrew, renamed or removed sets, or MRA typos." +
       (h.version ? ` ${fmt(nhb)} of them are in HBMAME ${h.version} and are labelled homebrew/hacks.` : "");
-    $("#unmatched-table tbody").innerHTML = rows.map(u => `<tr><td class="set">${esc(u.set)}${u.hbmame ? ' <span class="flag" title="exists in HBMAME ' + esc(h.version || "") + '">homebrew/hacks</span>' : ""}</td><td>${esc(u.desc || "")}${u.parent ? ` <span class="flag">clone of ${esc(u.parent)}</span>` : ""}</td><td class="num">${esc(u.year || "")}</td><td>${esc(u.manufacturer || "")}</td><td>${u.cores.map(id => badge(id)).join("")}</td></tr>`).join("");
+    $("#unmatched-table tbody").innerHTML = rows.map(u => `<tr data-u="${esc(u.set)}"><td class="exp" title="show cores and hardware">${S.uOpen.has(u.set) ? "▾" : "▸"}</td><td class="set">${esc(u.set)}${u.hbmame ? ' <span class="flag" title="exists in HBMAME ' + esc(h.version || "") + '">homebrew/hacks</span>' : ""}</td><td>${esc(u.desc || "")}${u.parent ? ` <span class="flag">clone of ${esc(u.parent)}</span>` : ""}</td><td class="num">${esc(u.year || "")}</td><td>${esc(u.manufacturer || "")}</td><td>${u.cores.map(id => badge(id)).join("")}</td></tr>`).join("");
+    $$("#unmatched-table tbody tr[data-u]").forEach(tr => { if (S.uOpen.has(tr.dataset.u)) openUnmatchedDetail(tr); });
     writeHash();
   }
   $("#u-hb").addEventListener("change", applyUnmatched);
