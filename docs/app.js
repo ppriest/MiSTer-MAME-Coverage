@@ -858,8 +858,9 @@
     trail.cv.width = Math.round(innerWidth * dpr); trail.cv.height = Math.round(innerHeight * dpr);
     trail.ctx = trail.cv.getContext("2d"); trail.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
+  const trailOn = () => { try { return localStorage.getItem("neon-trail") !== "0"; } catch (e) { return true; } };
   function trailStart() {
-    if (trail.cv || calm()) return;
+    if (trail.cv || calm() || !trailOn()) return;
     const cv = document.createElement("canvas");
     cv.id = "neon-trail"; cv.setAttribute("aria-hidden", "true");
     cv.style.cssText = "position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:30";
@@ -915,9 +916,17 @@
     } catch (e) { /* no audio: silent */ }
   }
   function syncSoundButton() {
-    const b = $("#neon-sound"), on = soundOn();
-    b.hidden = !isNeon(); b.setAttribute("aria-pressed", on); b.textContent = on ? "♪ Sound: on" : "♪ Sound: off";
+    const b = $("#neon-sound"), on = soundOn(), t = $("#neon-trail-btn"), tr = trailOn();
+    b.hidden = t.hidden = !isNeon();
+    b.setAttribute("aria-pressed", on); b.textContent = on ? "♪ Sound: on" : "♪ Sound: off";
+    t.setAttribute("aria-pressed", tr); t.textContent = tr ? "▫ Trail: on" : "▫ Trail: off";
+    t.disabled = calm(); if (calm()) t.title = "off: your system asks for reduced motion";
   }
+  $("#neon-trail-btn").addEventListener("click", () => {
+    const on = !trailOn(); try { localStorage.setItem("neon-trail", on ? "1" : "0"); } catch (e) { /* not saved */ }
+    if (on && isNeon()) trailStart(); else trailStop();
+    syncSoundButton(); neonSound("blip");
+  });
   $("#neon-sound").addEventListener("click", () => {
     const on = !soundOn(); try { localStorage.setItem("neon-sound", on ? "1" : "0"); } catch (e) { /* not saved */ }
     syncSoundButton(); if (on) neonSound("blip");
