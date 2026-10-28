@@ -505,8 +505,7 @@
     $(".viewbar").hidden = !GALLERY_ENABLED;
     $("#t-view").querySelectorAll("button").forEach(b => { const on = b.dataset.view === S.tview; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
     $("#t-view").querySelector('[data-view="gallery"]').disabled = !IMAGE_BASE;
-    $("#g-kind").hidden = !g;
-    $("#g-kind").querySelectorAll("button").forEach(b => { const on = b.dataset.kind === S.gkind; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
+    $("#g-kind").querySelectorAll("button").forEach(b => { const on = b.dataset.kind === S.gkind; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); b.disabled = !g; });   // only the Gallery shows it
     $("#titles-table").closest(".tablewrap").hidden = g;
     $("#titles-gallery").hidden = !g;
     if (g) $("#titles-more").hidden = true;
