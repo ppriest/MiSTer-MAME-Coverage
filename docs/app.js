@@ -889,7 +889,7 @@
     $$("#wl-view button").forEach(b => { const on = b.dataset.view === S.wlView; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
     if (!S.api.ok) { $("#wl-drivers tbody").innerHTML = ""; $("#wl-titles tbody").innerHTML = '<tr><td colspan="12" class="muted">The wishlist service is not reachable right now (' + esc(S.api.error || "unknown") + '). Open /api/health to see what is missing.</td></tr>'; return; }
     const fulfilled = S.wlView === "fulfilled";
-    $("#wl-core-th").hidden = !fulfilled;      // the Core column is for the fulfilled ones
+    $("#wl-core-th").hidden = !fulfilled;      // the Cores column is for the fulfilled ones
     const none = c => `<tr><td colspan="${c}" class="muted">${fulfilled ? "Nothing fulfilled yet." : "No requests yet."}</td></tr>`;
     const all = { drivers: DRIVER_WISHLIST ? S.api.list.drivers : [], titles: S.api.list.titles };
     const nFul = all.drivers.filter(driverDone).length + all.titles.filter(titleDone).length;
@@ -905,7 +905,7 @@
     $("#wl-titles tbody").innerHTML = ti.length ? ti.map((v, i) => { const t = S.titles.find(x => x.name === v.key); return `<tr${t ? ` data-t="${esc(t.name)}"` : ""}>
       <td class="exp" title="show sets, hardware and screenshots">${t ? (S.wlOpen.has(t.name) ? "▾" : "▸") : ""}</td><td class="num">${i + 1}</td><td>${t ? `<a href="#" data-wl-title="${esc(v.key)}">${esc(t.desc)}</a>` : ""}</td><td class="set">${esc(v.key)}</td><td class="set">${t ? esc(t.sourcefile) : ""}</td>
       <td class="num">${t ? esc(t.year) : ""}</td><td>${t ? esc(t.manufacturer) : ""}</td><td class="num">${t ? `${t.ncovered_working}/${t.nworking}` : ""}</td>
-      ${fulfilled ? `<td>${t ? t.cores.map(id => S.cores[id] ? esc(S.cores[id].name) : esc(id)).join(", ") : ""}</td>` : ""}
+      ${fulfilled ? `<td>${t ? t.cores.map(id => badge(id)).join("") : ""}</td>` : ""}
       <td class="act">${action("title", v, fulfilled)}</td><td>${voters(v)}</td><td class="num" title="first vote ${esc(ago(v.first_vote))}">${esc(ago(v.last_vote))}</td></tr>`; }).join("") : none(fulfilled ? 12 : 11);
     $$("#wl-titles tbody tr[data-t]").forEach(tr => { if (S.wlOpen.has(tr.dataset.t)) openWlDetail(tr); });
   }
