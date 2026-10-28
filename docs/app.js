@@ -861,7 +861,7 @@
     if (trail.cv) trail.cv.remove(); trail.cv = trail.ctx = null;
   }
   function trailFollow(frame, ms) {                // call as a tween starts: the boxes are emitted for ms, then fade out
-    if (!isNeon() || !trailOn() || calm()) return;
+    if (!isNeon() || calm()) return;                // always part of Neon (the Trail button is for the pointer's trail only)
     const dlg = $("#lightbox"); if (!dlg) return;
     if (!trail.cv || !trail.cv.isConnected) {
       const cv = document.createElement("canvas");
@@ -965,7 +965,7 @@
   }
   $("#neon-trail-btn").addEventListener("click", () => {
     const on = !trailOn(); try { localStorage.setItem("neon-trail", on ? "1" : "0"); } catch (e) { /* not saved */ }
-    if (on && isNeon()) cursorStart(); else { cursorStop(); trailClear(); }
+    if (on && isNeon()) cursorStart(); else cursorStop();
     syncSoundButton(); neonSound("blip");
   });
   $("#neon-sound").addEventListener("click", () => {
