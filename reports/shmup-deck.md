@@ -6,7 +6,9 @@ Generated 2026-10-28 by `tools/reconcile_shmups.py` from MAME 0289 data and [shm
 
 ## New since the previous report
 
-Nothing new: the same titles disagree as before.
+**1 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
+
+- `silvmil` Silver Millennium (1995; Shooter / Flying Vertical)
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -17,12 +19,13 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (125)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (126)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
+| **NEW** `silvmil` | Silver Millennium | 1995 | Shooter / Flying Vertical (catver) | silvmil |
 | `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
@@ -66,13 +69,13 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `gondo` | Gondomania (World) | 1987 | Shooter / Flying Vertical (catver) | DEC8, DEC8 (shmupfan), Gondomania (Eggsecutioner528), dec8 |
 | `pc_grdus` | Gradius (PlayChoice-10) | 1986 | Shooter / Flying Horizontal (catver) | PlayChoice10 |
 | `gradius4` | Gradius IV: Fukkatsu (ver JAC) | 1998 | Shooter / Flying Horizontal (catver) | KonamiHornet |
-| `gwar` | Guerrilla War (US) | 1987 | Shooter / Walking (catver) | ffgwar |
+| `gwar` | Guerrilla War (US) | 1987 | Shooter / Walking (catver) | ffgwar, SNKTripleZ80 |
 | `gundhara` | Gundhara | 1995 | Shooter / Walking (catver) | Seta |
 | `heatbrl` | Heated Barrel (World version 3) | 1992 | Shooter / Walking (catver) | HeatedBarrel |
 | `hbarrel` | Heavy Barrel (World) | 1987 | Shooter / Walking (catver) | jtninja, HeavyBarrelTwinStick |
 | `hvyunit` | Heavy Unit (World) | 1988 | Shooter / Flying Horizontal (catver) | heavyunit (decoryah), HeavyUnit |
 | `ikari3` | Ikari III - The Rescue (World version 1, 8-Way Joystick) | 1989 | Shooter / Walking (catver) | SNK68, SNK68 (va7deo) |
-| `ikari` | Ikari Warriors (US JAMMA) | 1986 | Shooter / Walking (catver) | IkariWarriors |
+| `ikari` | Ikari Warriors (US JAMMA) | 1986 | Shooter / Walking (catver) | IkariWarriors, SNKTripleZ80 |
 | `kikikai` | KiKi KaiKai | 1986 | Shooter / Walking (catver) | kikikai, Kikikaikai (alpuy) |
 | `lasthope` | Last Hope (bootleg AES to MVS conversion, no coin support) | 2005 | Shooter / Flying Horizontal (catver) | NeoGeo |
 | `liberate` | Liberation | 1984 | Shooter / Flying (catver) | DataEastLiberation |
@@ -137,7 +140,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `turtship` | Turtle Ship (North America) | 1988 | Shooter / Flying Horizontal (catver) | bazturtship |
 | `valkyrie` | Valkyrie no Densetsu (Japan) | 1989 | Shooter / Walking (catver) | NamcoS2_STD |
 | `vmetal` | Varia Metal | 1995 | Shooter / Flying Vertical (catver) | metro, metro (decoryah) |
-| `victroad` | Victory Road | 1986 | Shooter / Walking (catver) | IkariWarriors |
+| `victroad` | Victory Road | 1986 | Shooter / Walking (catver) | IkariWarriors, SNKTripleZ80 |
 | `vsgradus` | Vs. Gradius (US, set GR E) | 1986 | Shooter / Flying Horizontal (catver) | VSnes |
 | `bnglngby` | Vs. Raid on Bungeling Bay (RD4-2 B) | 1985 | Shooter / Flying (catver) | VSnes |
 | `vsskykid` | Vs. Super SkyKid | 1985 | Shooter / Flying Horizontal (catver) | VSnes |

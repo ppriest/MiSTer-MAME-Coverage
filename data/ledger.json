@@ -6,15 +6,6 @@
 {
 "date": "2026-10-16",
 "note": "alamone 2026-10-12",
-"cores": 4,
-"sets": 5,
-"pairs": 9,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
-"date": "2026-10-16",
-"note": "alamone 2026-10-12",
 "cores": 5,
 "sets": 43,
 "pairs": 69,
@@ -460,6 +451,15 @@
 "sets": 9,
 "pairs": 30,
 "dates_improved": 2,
+"cores_removed": 0
+},
+{
+"date": "2026-10-28",
+"note": "alamone 2026-10-26",
+"cores": 6,
+"sets": 22,
+"pairs": 54,
+"dates_improved": 0,
 "cores_removed": 0
 }
 ]
@@ -3279,6 +3279,24 @@
 "note": null,
 "first_recorded": "2026-10-21",
 "aliases": [],
+"last_seen": "2026-10-28"
+},
+"decoryah:silvmil": {
+"id": "decoryah:silvmil",
+"name": "silvmil",
+"source": "decoryah",
+"source_title": "decoryah",
+"channel": null,
+"rbf": "silvmil.rbf",
+"repo": "decoryah/Arcade-SilverMillennium_MiSTer",
+"url": "https://github.com/decoryah/Arcade-SilverMillennium_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-28",
 "last_seen": "2026-10-28"
 },
 "decoryah:taitol": {
@@ -11610,6 +11628,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "meat:crystalsystem": {
@@ -11647,6 +11666,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "meat:darkmist": {
@@ -11851,6 +11871,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "meat:heavybarreltwinstick": {
@@ -11869,6 +11890,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "meat:heavyunit": {
@@ -12011,6 +12033,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "meat:mcr68": {
@@ -12069,6 +12092,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "meat:mysteriousstones": {
@@ -12231,6 +12255,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "meat:segasystem24": {
@@ -12336,6 +12361,24 @@
 "note": "",
 "first_recorded": "2026-10-12",
 "aliases": [],
+"last_seen": "2026-10-28"
+},
+"meat:snktriplez80": {
+"id": "meat:snktriplez80",
+"name": "Arcade-SNKTripleZ80",
+"source": "meat",
+"source_title": "MeatCores (meathax)",
+"channel": null,
+"rbf": "Arcade-SNKTripleZ80.rbf",
+"repo": "meathax/meatcores",
+"url": "https://github.com/meathax/meatcores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-28",
 "last_seen": "2026-10-28"
 },
 "meat:spy": {
@@ -12774,6 +12817,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "ongo:bazset_aquajack": {
@@ -13077,6 +13121,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "ongo:bazset_millemiglia2": {
@@ -13114,6 +13159,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "ongo:bazset_plumppop": {
@@ -13132,6 +13178,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "ongo:bazset_pushman": {
@@ -13226,6 +13273,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "ongo:bazset_turtleship": {
@@ -13434,6 +13482,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "ongo:chacknpop": {
@@ -13566,6 +13615,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "ongo:dataeastliberation": {
@@ -14154,6 +14204,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "ongo:galmedes_bazset": {
@@ -14229,6 +14280,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "ongo:heavyunit": {
@@ -14721,6 +14773,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "ongo:mastkin": {
@@ -14872,6 +14925,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "ongo:meathax_exterminator": {
@@ -15250,6 +15304,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "ongo:midway-y-unit": {
@@ -15761,6 +15816,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "ongo:sci_bazset": {
@@ -15913,6 +15969,24 @@
 "first_recorded": "2026-10-04",
 "aliases": [],
 "last_seen": "2026-10-04"
+},
+"ongo:snktriplez80": {
+"id": "ongo:snktriplez80",
+"name": "Arcade-SNKTripleZ80",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Arcade-SNKTripleZ80.rbf",
+"repo": "meathax/meatcores",
+"url": "https://github.com/meathax/meatcores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 },
 "ongo:sorcerstriker": {
 "id": "ongo:sorcerstriker",
@@ -17797,6 +17871,24 @@
 "first_recorded": "2026-10-26",
 "last_seen": "2026-10-28"
 },
+"repo:model2c": {
+"id": "repo:model2c",
+"name": "Model2C",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": null,
+"rbf": "Model2C.rbf",
+"repo": "alphanu1/sega-model2-mister",
+"url": "https://github.com/alphanu1/sega-model2-mister",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
 "repo:outrunners": {
 "id": "repo:outrunners",
 "name": "outrunners",
@@ -19596,6 +19688,24 @@
 "aliases": [],
 "last_seen": "2026-10-28"
 },
+"tomsvr:tomsvr_bottom9": {
+"id": "tomsvr:tomsvr_bottom9",
+"name": "TomSVR_bottom9",
+"source": "tomsvr",
+"source_title": "TomSVR",
+"channel": null,
+"rbf": "TomSVR_bottom9.rbf",
+"repo": "TomSVR-Mister/TomSVR-Arcade-Cores",
+"url": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
 "tomsvr:tomsvr_chqflag": {
 "id": "tomsvr:tomsvr_chqflag",
 "name": "TomSVR_chqflag",
@@ -19919,6 +20029,24 @@
 "aliases": [],
 "last_seen": "2026-10-28"
 },
+"tomsvr:tomsvr_nss": {
+"id": "tomsvr:tomsvr_nss",
+"name": "TomSVR_nss",
+"source": "tomsvr",
+"source_title": "TomSVR",
+"channel": null,
+"rbf": "TomSVR_nss.rbf",
+"repo": "TomSVR-Mister/TomSVR-Arcade-Cores",
+"url": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
 "tomsvr:tomsvr_othunder": {
 "id": "tomsvr:tomsvr_othunder",
 "name": "TomSVR_othunder",
@@ -19973,6 +20101,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-28",
+"aliases": [],
 "last_seen": "2026-10-28"
 },
 "tomsvr:tomsvr_playmark": {
@@ -35280,6 +35409,36 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
 "mra": "_Arcade/_alternatives/_Botanic/Botanic (French).mra"
+}
+},
+"bottom9": {
+"tomsvr:tomsvr_bottom9": {
+"core": "tomsvr:tomsvr_bottom9",
+"date": "2026-10-28",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Bottom of the Ninth (version T) [TomSVR].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
+"bottom9n": {
+"tomsvr:tomsvr_bottom9": {
+"core": "tomsvr:tomsvr_bottom9",
+"date": "2026-10-28",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Bottom of the Ninth (version N) [TomSVR].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "bouldash": {
@@ -61128,6 +61287,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
 "mra": "_Arcade/Forgotten Worlds (World).mra"
+},
+"meat:forgottenworldstwinstick": {
+"core": "meat:forgottenworldstwinstick",
+"date": "2020-06-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Forgotten Worlds -World-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Forgotten Worlds (World) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
+"ongo:forgottenworldstwinstick": {
+"core": "ongo:forgottenworldstwinstick",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Forgotten Worlds -World-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Forgotten Worlds (World) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "forgottnj": {
@@ -61158,6 +61343,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
 "mra": "_Arcade/Forgotten Worlds (USA, B-Board 88621B-2, Rev. C).mra"
+},
+"meat:forgottenworldstwinstick": {
+"core": "meat:forgottenworldstwinstick",
+"date": "2020-06-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Forgotten Worlds -USA, B-Board 88621B-2, Rev. C-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Forgotten Worlds (USA, B-Board 88621B-2, Rev. C) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
+"ongo:forgottenworldstwinstick": {
+"core": "ongo:forgottenworldstwinstick",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Forgotten Worlds -USA, B-Board 88621B-2, Rev. C-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Forgotten Worlds (USA, B-Board 88621B-2, Rev. C) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "forgottnua": {
@@ -61173,6 +61384,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
 "mra": "_Arcade/Forgotten Worlds (USA, B-Board 88618B-2, Rev. A).mra"
+},
+"meat:forgottenworldstwinstick": {
+"core": "meat:forgottenworldstwinstick",
+"date": "2020-06-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Forgotten Worlds -USA, B-Board 88618B-2, Rev. A-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. A) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
+"ongo:forgottenworldstwinstick": {
+"core": "ongo:forgottenworldstwinstick",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Forgotten Worlds -USA, B-Board 88618B-2, Rev. A-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. A) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "forgottnuaa": {
@@ -61188,6 +61425,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
 "mra": "_Arcade/Forgotten Worlds (USA, B-Board 88618B-2, Rev. AA).mra"
+},
+"meat:forgottenworldstwinstick": {
+"core": "meat:forgottenworldstwinstick",
+"date": "2020-06-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Forgotten Worlds -USA, B-Board 88618B-2, Rev. AA-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. AA) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
+"ongo:forgottenworldstwinstick": {
+"core": "ongo:forgottenworldstwinstick",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Forgotten Worlds -USA, B-Board 88618B-2, Rev. AA-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. AA) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "forgottnuc": {
@@ -61203,6 +61466,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
 "mra": "_Arcade/Forgotten Worlds (USA, B-Board 88618B-2, Rev. C).mra"
+},
+"meat:forgottenworldstwinstick": {
+"core": "meat:forgottenworldstwinstick",
+"date": "2020-06-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Forgotten Worlds -USA, B-Board 88618B-2, Rev. C-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. C) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
+"ongo:forgottenworldstwinstick": {
+"core": "ongo:forgottenworldstwinstick",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Forgotten Worlds -USA, B-Board 88618B-2, Rev. C-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. C) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "forgottnue": {
@@ -61218,6 +61507,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
 "mra": "_Arcade/Forgotten Worlds (USA, B-Board 88618B-2, Rev. E).mra"
+},
+"meat:forgottenworldstwinstick": {
+"core": "meat:forgottenworldstwinstick",
+"date": "2020-06-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Forgotten Worlds -USA, B-Board 88618B-2, Rev. E-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. E) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
+"ongo:forgottenworldstwinstick": {
+"core": "ongo:forgottenworldstwinstick",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Forgotten Worlds -USA, B-Board 88618B-2, Rev. E-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. E) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "fort2b": {
@@ -71305,6 +71620,19 @@
 "last_seen": "2026-10-28",
 "mra": "_Arcade/Guerrilla War (FF, SNK, 1987).mra"
 },
+"meat:snktriplez80": {
+"core": "meat:snktriplez80",
+"date": "2026-10-08",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "jlrh/snk-fpga",
+"first_path": "cores/gwar/mra/Guerrilla War (FF, SNK, 1987).mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/Guerrilla War (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
 "ongo:ffgwar": {
 "core": "ongo:ffgwar",
 "date": "2026-10-06",
@@ -71317,6 +71645,19 @@
 "first_recorded": "2026-10-06",
 "last_seen": "2026-10-11",
 "mra": "_Arcade/Guerrilla War (FF, SNK, 1987).mra"
+},
+"ongo:snktriplez80": {
+"core": "ongo:snktriplez80",
+"date": "2026-10-14",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "jlrh/snk-fpga",
+"first_path": "cores/gwar/mra/Guerrilla War (FF, SNK, 1987).mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/Guerrilla War (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "gwarrior": {
@@ -74297,6 +74638,21 @@
 "last_seen": "2026-10-04"
 }
 },
+"hotd": {
+"repo:model2c": {
+"core": "repo:model2c",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/mra/The House of the Dead (Revision A) [15kHz CRT].mra",
+"mra": "_Arcade/The House of the Dead (Revision A) [15kHz CRT].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
 "hotdebut": {
 "dist:psikyosh2": {
 "core": "dist:psikyosh2",
@@ -76268,6 +76624,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
 "mra": "_Arcade/Ikari Warriors.mra"
+},
+"meat:snktriplez80": {
+"core": "meat:snktriplez80",
+"date": "2026-07-15",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-IkariWarriors_MiSTer",
+"first_path": "releases/Ikari Warriors.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/Ikari Warriors (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
+"ongo:snktriplez80": {
+"core": "ongo:snktriplez80",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-IkariWarriors_MiSTer",
+"first_path": "releases/Ikari Warriors.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/Ikari Warriors (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "ikari3": {
@@ -78157,7 +78539,7 @@
 "first_path": "releases/Jackal (W, Rotary).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
-"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/Jackal (World, Rotary Joystick).mra"
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/Jackal (Twin Stick).mra"
 }
 },
 "jackrabt": {
@@ -87027,6 +87409,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
 "mra": "_Arcade/Lost Worlds (Japan).mra"
+},
+"meat:forgottenworldstwinstick": {
+"core": "meat:forgottenworldstwinstick",
+"date": "2020-06-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Lost Worlds -Japan-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Lost Worlds (Japan) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
+"ongo:forgottenworldstwinstick": {
+"core": "ongo:forgottenworldstwinstick",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Lost Worlds -Japan-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Lost Worlds (Japan) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "lostwrldo": {
@@ -87042,6 +87450,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
 "mra": "_Arcade/Lost Worlds (Japan Old Ver.).mra"
+},
+"meat:forgottenworldstwinstick": {
+"core": "meat:forgottenworldstwinstick",
+"date": "2020-06-02",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Lost Worlds -Japan Old Ver.-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Lost Worlds (Japan Old Ver.) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
+"ongo:forgottenworldstwinstick": {
+"core": "ongo:forgottenworldstwinstick",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/CPS1/_alt/Lost Worlds -Japan Old Ver.-.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Lost Worlds (Japan Old Ver.) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "lotlot": {
@@ -91814,6 +92248,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
 "mra": "_Arcade/Midnight Resistance (US).mra"
+},
+"meat:midnightresistancetwinstick": {
+"core": "meat:midnightresistancetwinstick",
+"date": "2022-03-14",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/_alternatives/_Midnight Resistance/Midnight Resistance (US).mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Midnight Resistance (US) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
+"ongo:midnightresistancetwinstick": {
+"core": "ongo:midnightresistancetwinstick",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/_alternatives/_Midnight Resistance/Midnight Resistance (US).mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Midnight Resistance (US) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "miexchng": {
@@ -95727,6 +96187,32 @@
 }
 },
 "mplanetsuk": {
+"meat:madplanetstwinstick": {
+"core": "meat:madplanetstwinstick",
+"date": "2026-10-18",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-Gottlieb_MiSTer",
+"first_path": "releases/_alternatives/_Mad Planets/Mad Planets (UK).mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Mad Planets (UK) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
+"ongo:madplanetstwinstick": {
+"core": "ongo:madplanetstwinstick",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-Gottlieb_MiSTer",
+"first_path": "releases/_alternatives/_Mad Planets/Mad Planets (UK).mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/Mad Planets (UK) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
 "rodimus:gottlieb_testbuild": {
 "core": "rodimus:gottlieb_testbuild",
 "date": "2026-10-18",
@@ -98013,6 +98499,21 @@
 "first_path": null,
 "mra": "_Arcade/_TomSVR/Miss Puzzle (Clone of Gumbo) [TomSVR].mra",
 "first_recorded": "2026-10-23",
+"last_seen": "2026-10-28"
+}
+},
+"mstadium": {
+"tomsvr:tomsvr_bottom9": {
+"core": "tomsvr:tomsvr_bottom9",
+"date": "2026-10-28",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Main Stadium (Japan) [TomSVR].mra",
+"first_recorded": "2026-10-28",
 "last_seen": "2026-10-28"
 }
 },
@@ -103160,6 +103661,186 @@
 "mra": "_Arcade/Nintendo Super System.mra"
 }
 },
+"nss_actr": {
+"tomsvr:tomsvr_nss": {
+"core": "tomsvr:tomsvr_nss",
+"date": "2026-10-28",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Act Raiser [TomSVR].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
+"nss_adam": {
+"tomsvr:tomsvr_nss": {
+"core": "tomsvr:tomsvr_nss",
+"date": "2026-10-28",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/The Addams Family [TomSVR].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
+"nss_aten": {
+"tomsvr:tomsvr_nss": {
+"core": "tomsvr:tomsvr_nss",
+"date": "2026-10-28",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/David Crane's Amazing Tennis [TomSVR].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
+"nss_con3": {
+"tomsvr:tomsvr_nss": {
+"core": "tomsvr:tomsvr_nss",
+"date": "2026-10-28",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Contra 3 - The Alien Wars [TomSVR].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
+"nss_fzer": {
+"tomsvr:tomsvr_nss": {
+"core": "tomsvr:tomsvr_nss",
+"date": "2026-10-28",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/F-Zero [TomSVR].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
+"nss_lwep": {
+"tomsvr:tomsvr_nss": {
+"core": "tomsvr:tomsvr_nss",
+"date": "2026-10-28",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Lethal Weapon [TomSVR].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
+"nss_ncaa": {
+"tomsvr:tomsvr_nss": {
+"core": "tomsvr:tomsvr_nss",
+"date": "2026-10-28",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/NCAA Basketball [TomSVR].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
+"nss_rob3": {
+"tomsvr:tomsvr_nss": {
+"core": "tomsvr:tomsvr_nss",
+"date": "2026-10-28",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Robocop 3 [TomSVR].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
+"nss_skin": {
+"tomsvr:tomsvr_nss": {
+"core": "tomsvr:tomsvr_nss",
+"date": "2026-10-28",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Skins Game [TomSVR].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
+"nss_smw": {
+"tomsvr:tomsvr_nss": {
+"core": "tomsvr:tomsvr_nss",
+"date": "2026-10-28",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Super Mario World [TomSVR].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
+"nss_ssoc": {
+"tomsvr:tomsvr_nss": {
+"core": "tomsvr:tomsvr_nss",
+"date": "2026-10-28",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Super Soccer [TomSVR].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
+"nss_sten": {
+"tomsvr:tomsvr_nss": {
+"core": "tomsvr:tomsvr_nss",
+"date": "2026-10-28",
+"date_quality": "observed",
+"via": "tomsvr",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_TomSVR/Super Tennis [TomSVR].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
 "nstocker": {
 "ppriest:ballysente": {
 "core": "ppriest:ballysente",
@@ -105887,6 +106568,21 @@
 "first_path": "cores/overdriv/mra/Over Drive (FF, Konami, 1990).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-04"
+}
+},
+"overrev": {
+"repo:model2c": {
+"core": "repo:model2c",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/mra/Over Rev (Model 2C, Revision A) [15kHz CRT].mra",
+"mra": "_Arcade/Over Rev (Model 2C, Revision A) [15kHz CRT].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "overtop": {
@@ -117762,6 +118458,36 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
 "mra": "_Arcade/Puzz Loop (USA).mra"
+}
+},
+"puzzlove": {
+"decoryah:silvmil": {
+"core": "decoryah:silvmil",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-SilverMillennium_MiSTer",
+"first_path": "mra/PuzzLove.mra",
+"mra": "_Arcade/PuzzLove.mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
+"puzzlovek": {
+"decoryah:silvmil": {
+"core": "decoryah:silvmil",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-SilverMillennium_MiSTer",
+"first_path": "mra/_alternatives/_PuzzLove/PuzzLove (Korea).mra",
+"mra": "_Arcade/PuzzLove (Korea).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "puzznic": {
@@ -130276,6 +131002,32 @@
 "last_seen": "2026-10-28",
 "mra": "_Arcade/_alternatives/_S.A.R. - Search and Rescue/SAR - Search And Rescue (Japan version 3).mra"
 },
+"meat:sartwinstick": {
+"core": "meat:sartwinstick",
+"date": "2022-09-09",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "va7deo/SNK68",
+"first_path": "dev/mra/_alternatives/_S.A.R. - Search and Rescue/SAR - Search And Rescue (Japan version 3).mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/SAR - Search And Rescue (Japan version 3) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
+"ongo:sartwinstick": {
+"core": "ongo:sartwinstick",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "va7deo/SNK68",
+"first_path": "dev/mra/_alternatives/_S.A.R. - Search and Rescue/SAR - Search And Rescue (Japan version 3).mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/SAR - Search And Rescue (Japan version 3) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
 "repo:snk68": {
 "core": "repo:snk68",
 "date": "2022-09-09",
@@ -130303,6 +131055,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
 "mra": "_Arcade/_alternatives/_S.A.R. - Search and Rescue/SAR - Search And Rescue (US).mra"
+},
+"meat:sartwinstick": {
+"core": "meat:sartwinstick",
+"date": "2022-09-09",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": true,
+"first_repo": "va7deo/SNK68",
+"first_path": "dev/mra/_alternatives/_S.A.R. - Search and Rescue/SAR - Search And Rescue (US).mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/SAR - Search And Rescue (US) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
+"ongo:sartwinstick": {
+"core": "ongo:sartwinstick",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": true,
+"first_repo": "va7deo/SNK68",
+"first_path": "dev/mra/_alternatives/_S.A.R. - Search and Rescue/SAR - Search And Rescue (US).mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/_alternatives/SAR - Search And Rescue (US) (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 },
 "repo:snk68": {
 "core": "repo:snk68",
@@ -136128,6 +136906,21 @@
 "first_path": "releases/Silver Land.mra",
 "mra": "_Arcade/Silver Land (Hack Of River Patrol).mra",
 "first_recorded": "2026-10-26",
+"last_seen": "2026-10-28"
+}
+},
+"silvmil": {
+"decoryah:silvmil": {
+"core": "decoryah:silvmil",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-SilverMillennium_MiSTer",
+"first_path": "mra/Silver Millennium.mra",
+"mra": "_Arcade/Silver Millennium.mra",
+"first_recorded": "2026-10-28",
 "last_seen": "2026-10-28"
 }
 },
@@ -146026,6 +146819,21 @@
 "mra": "_Arcade/Star Wars (Rev 2).mra"
 }
 },
+"stcc": {
+"repo:model2c": {
+"core": "repo:model2c",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "repo",
+"wip": false,
+"alt": false,
+"first_repo": "alphanu1/sega-model2-mister",
+"first_path": "releases/mra/Sega Touring Car Championship (newer) [15kHz CRT].mra",
+"mra": "_Arcade/Sega Touring Car Championship (newer) [15kHz CRT].mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+}
+},
 "stdragon": {
 "coinop:megasys1_a": {
 "core": "coinop:megasys1_a",
@@ -155369,6 +156177,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
 "mra": "_Arcade/TNKIII.mra"
+},
+"meat:snktriplez80": {
+"core": "meat:snktriplez80",
+"date": "2026-04-27",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-TNKIII_MiSTer",
+"first_path": "releases/TNKIII.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/T.N.K III (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
+"ongo:snktriplez80": {
+"core": "ongo:snktriplez80",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-TNKIII_MiSTer",
+"first_path": "releases/TNKIII.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/T.N.K III (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "tnk3j": {
@@ -162425,6 +163259,32 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-28",
 "mra": "_Arcade/Victory Road.mra"
+},
+"meat:snktriplez80": {
+"core": "meat:snktriplez80",
+"date": "2026-07-15",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-IkariWarriors_MiSTer",
+"first_path": "releases/Victory Road.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/Victory Road (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
+},
+"ongo:snktriplez80": {
+"core": "ongo:snktriplez80",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-IkariWarriors_MiSTer",
+"first_path": "releases/Victory Road.mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/Victory Road (Twin Stick).mra",
+"first_recorded": "2026-10-28",
+"last_seen": "2026-10-28"
 }
 },
 "vidvince": {
@@ -177425,6 +178285,9 @@
 "ongo": "Shooter",
 "kuze": "Shooter"
 },
+"hotd": {
+"repo": "Shooter / Gun"
+},
 "hotdogst": {
 "dist": "Shooter"
 },
@@ -179458,7 +180321,9 @@
 },
 "mplanetsuk": {
 "repo": "Shooter",
-"rodimus": "Shooter"
+"rodimus": "Shooter",
+"ongo": "Platform",
+"meat": "Platform"
 },
 "mraker": {
 "repo": "Shooter",
@@ -180469,6 +181334,9 @@
 "ottopza": {
 "dist": "Maze",
 "rodimus": "Maze"
+},
+"overrev": {
+"repo": "Driving"
 },
 "ozmawars": {
 "dist": "Space / Shooter",
@@ -185073,6 +185941,9 @@
 },
 "starwars": {
 "dist": "Shooter"
+},
+"stcc": {
+"repo": "Driving"
 },
 "stealsee": {
 "ppriest": "Puzzle",

@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-28T11:13:06+00:00",
+  "generated": "2026-10-28T20:35:18+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-28T11:12:44+00:00",
+  "mister_generated": "2026-10-28T20:35:04+00:00",
   "alamone_generated": "2026-10-26T09:17:05+00:00",
   "ledger_updated": "2026-10-28",
   "ledger_runs": [
-   {
-    "date": "2026-10-26",
-    "note": "alamone 2026-10-26",
-    "cores": 5,
-    "sets": 78,
-    "pairs": 212,
-    "dates_improved": 394,
-    "cores_removed": 4
-   },
    {
     "date": "2026-10-26",
     "note": "alamone 2026-10-26",
@@ -51,15 +42,24 @@
     "pairs": 30,
     "dates_improved": 2,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-28",
+    "note": "alamone 2026-10-26",
+    "cores": 6,
+    "sets": 22,
+    "pairs": 54,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
    "overrides": 0,
    "local_categories": 1,
-   "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5490 sets, 5490 used); mame2016: catver_mame2016.ini (37065 sets, 32543 used)",
-   "catver_entries": 38033,
+   "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5491 sets, 5491 used); mame2016: catver_mame2016.ini (37065 sets, 32543 used)",
+   "catver_entries": 38034,
    "mad_entries": 2995,
-   "mra_entries": 4173,
+   "mra_entries": 4176,
    "unmapped": [
     {
      "raw": "not classified",
@@ -536,7 +536,7 @@
     "source": "dist",
     "repo": "MiSTer-devel/Arcade-ChampionBaseball_MiSTer",
     "dirs": null,
-    "mras": 14
+    "mras": 18
    },
    {
     "source": "dist",
@@ -1838,7 +1838,7 @@
     "source": "rodimus",
     "repo": "RodimusFVC/Arcade-CrazyClimber_MiSTer",
     "dirs": null,
-    "mras": 42
+    "mras": 63
    },
    {
     "source": "rodimus",
@@ -2046,7 +2046,7 @@
     "source": "repo",
     "repo": "alphanu1/sega-model2-mister",
     "dirs": null,
-    "mras": 39
+    "mras": 45
    },
    {
     "source": "repo",
@@ -2996,7 +2996,7 @@
     "source": "ongo",
     "repo": "meathax/meatcores",
     "dirs": null,
-    "mras": 234
+    "mras": 250
    },
    {
     "source": "ongo",
@@ -3219,6 +3219,12 @@
     "mras": 73
    },
    {
+    "source": "decoryah",
+    "repo": "decoryah/Arcade-SilverMillennium_MiSTer",
+    "dirs": null,
+    "mras": 3
+   },
+   {
     "source": "xela",
     "repo": "XelaNotPu/SYSTEM12_MiSTer",
     "dirs": null,
@@ -3264,7 +3270,7 @@
     "source": "rodimus",
     "repo": "RodimusFVC/Arcade-ChampionBaseball_MiSTer",
     "dirs": null,
-    "mras": 14
+    "mras": 18
    },
    {
     "source": "rodimus",
@@ -3419,6 +3425,18 @@
   ],
   "repo_errors": [
    [
+    "meathax/SVV",
+    "fatal: could not read Username for 'https://github.com': No such device or address"
+   ],
+   [
+    "meathax/s32multi",
+    "fatal: could not read Username for 'https://github.com': No such device or address"
+   ],
+   [
+    "meathax/s32",
+    "fatal: could not read Username for 'https://github.com': No such device or address"
+   ],
+   [
     "GalaxyBrian/Ibara_Showtime_Patcher",
     "fatal: could not read Username for 'https://github.com': No such device or address"
    ],
@@ -3458,12 +3476,12 @@
   "counts": {
    "titles": 6826,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2496,
+   "working_arcade_titles_covered": 2499,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 6511,
-   "working_arcade_titles_source": 2266,
+   "working_arcade_sets_covered": 6517,
+   "working_arcade_titles_source": 2269,
    "working_arcade_titles_binary_only": 230,
-   "cores": 813,
+   "cores": 818,
    "binary_only_cores": 302,
    "unmatched_sets": 515
   }
@@ -6864,6 +6882,28 @@
    "nsets": 15,
    "ntitles": 5,
    "first_date": "2026-10-20"
+  },
+  {
+   "id": "decoryah:silvmil",
+   "name": "silvmil",
+   "source": "decoryah",
+   "source_title": "decoryah",
+   "channel": null,
+   "rbf": "silvmil.rbf",
+   "repo": "decoryah/Arcade-SilverMillennium_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-SilverMillennium_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 2,
+   "first_date": "2026-10-28"
   },
   {
    "id": "decoryah:taitol",
@@ -16774,6 +16814,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": false,
    "nsets": 1,
@@ -16819,6 +16860,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": true,
    "nsets": 1,
@@ -17063,9 +17105,10 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": true,
-   "nsets": 1,
+   "nsets": 9,
    "ntitles": 1,
    "first_date": "2020-06-02"
   },
@@ -17085,6 +17128,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": true,
    "nsets": 1,
@@ -17255,9 +17299,10 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": false,
-   "nsets": 1,
+   "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-07-17"
   },
@@ -17325,9 +17370,10 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": true,
-   "nsets": 1,
+   "nsets": 2,
    "ntitles": 1,
    "first_date": "2022-03-14"
   },
@@ -17519,9 +17565,10 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": false,
-   "nsets": 1,
+   "nsets": 3,
    "ntitles": 1,
    "first_date": "2022-09-09"
   },
@@ -17649,6 +17696,28 @@
    "nsets": 9,
    "ntitles": 1,
    "first_date": "2023-08-11"
+  },
+  {
+   "id": "meat:snktriplez80",
+   "name": "SNKTripleZ80",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-SNKTripleZ80.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "binary_only": false,
+   "nsets": 4,
+   "ntitles": 4,
+   "first_date": "2026-04-27"
   },
   {
    "id": "meat:spy",
@@ -19866,6 +19935,28 @@
    "first_date": "2026-10-25"
   },
   {
+   "id": "repo:model2c",
+   "name": "Model2C",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "Model2C.rbf",
+   "repo": "alphanu1/sega-model2-mister",
+   "url": "https://github.com/alphanu1/sega-model2-mister",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "binary_only": false,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": "2026-10-28"
+  },
+  {
    "id": "repo:outrunners",
    "name": "outrunners",
    "source": "repo",
@@ -22005,6 +22096,28 @@
    "first_date": "2022-07-22"
   },
   {
+   "id": "tomsvr:tomsvr_bottom9",
+   "name": "TomSVR_bottom9",
+   "source": "tomsvr",
+   "source_title": "TomSVR",
+   "channel": null,
+   "rbf": "TomSVR_bottom9.rbf",
+   "repo": "TomSVR-Mister/TomSVR-Arcade-Cores",
+   "url": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 1,
+   "first_date": "2026-10-28"
+  },
+  {
    "id": "tomsvr:tomsvr_chqflag",
    "name": "TomSVR_chqflag",
    "source": "tomsvr",
@@ -22396,6 +22509,28 @@
    "first_date": "2026-10-23"
   },
   {
+   "id": "tomsvr:tomsvr_nss",
+   "name": "TomSVR_nss",
+   "source": "tomsvr",
+   "source_title": "TomSVR",
+   "channel": null,
+   "rbf": "TomSVR_nss.rbf",
+   "repo": "TomSVR-Mister/TomSVR-Arcade-Cores",
+   "url": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "binary_only": false,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": "2026-10-28"
+  },
+  {
    "id": "tomsvr:tomsvr_othunder",
    "name": "TomSVR_othunder",
    "source": "tomsvr",
@@ -22457,6 +22592,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": false,
    "nsets": 7,
@@ -25887,11 +26023,13 @@
   {
    "sourcefile": "f32/silvmil.cpp",
    "titles": 2,
-   "covered": 0,
+   "covered": 2,
    "sets": 3,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 3,
+   "cores": [
+    "decoryah:silvmil"
+   ],
+   "first": "2026-10-28"
   },
   {
    "sourcefile": "funtech/funtech_z80.cpp",
@@ -26959,11 +27097,13 @@
   {
    "sourcefile": "konami/bottom9.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 3,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 3,
+   "cores": [
+    "tomsvr:tomsvr_bottom9"
+   ],
+   "first": "2026-10-28"
   },
   {
    "sourcefile": "konami/chqflag.cpp",
@@ -31226,7 +31366,8 @@
     "dist:ikariwarriors",
     "dist:snk_triplez80",
     "dist:tnkiii",
-    "jlrh:ffgwar"
+    "jlrh:ffgwar",
+    "meat:snktriplez80"
    ],
    "first": "2022-05-09"
   },
