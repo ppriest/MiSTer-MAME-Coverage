@@ -16,7 +16,7 @@
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
+  :root:not([data-theme]) {
     color-scheme: dark;
     --surface: #1a1a19; --surface-2: #232322; --line: #363633; --text: #fff; --text-2: #c3c2b7;
     --muted: #8f8e86; --accent: #3987e5; --accent-2: #d95926; --accent-3: #199e70; --grid: #2a2a28;
@@ -369,3 +369,73 @@ header.top { position: sticky; top: 0; z-index: 20; }
 #tab-databases details.slopbox { margin: 0 0 14px; }   /* inside the Databases tab, above its table */
 #slopbox { scroll-margin-top: 64px; }   /* the jump from the header link leaves the box's heading clear of the sticky header */
 @media (max-width: 700px) { #slopbox { scroll-margin-top: 112px; } }   /* the header is taller on a narrow screen */
+
+/* ---------- theme dropdown, top right of the heading ---------- */
+.top .wrap { position: relative; }
+label.themepick { position: absolute; top: -6px; right: 16px; font-size: 12px; color: rgba(255, 255, 255, .92); display: inline-flex; align-items: center; gap: 6px; text-shadow: 0 1px 2px rgba(0, 30, 60, .45); }
+label.themepick select { font: inherit; font-size: 12px; padding: 2px 6px; border: 1px solid rgba(255, 255, 255, .75); border-radius: 8px; background: rgba(255, 255, 255, .16); color: #fff; cursor: pointer; }
+label.themepick select option { color: #111; background: #fff; }
+@media (max-width: 640px) { label.themepick { position: static; justify-content: flex-end; margin: -8px 0 6px; display: flex; } }
+
+/* ---------- Neon: 80s synthwave. Deep indigo, hot magenta, electric cyan, glowing type, a grid floor under the heading, faint scanlines ---------- */
+:root[data-theme="neon"] {
+  color-scheme: dark;
+  --surface: #0d0221; --surface-2: #190a3a; --line: #43208a; --text: #f7ecff; --text-2: #d3bcff; --muted: #a08fd0;
+  --accent: #00f0ff; --accent-2: #ff2bd6; --accent-3: #fff200; --ok: #39ff14; --warn: #ffb000; --bad: #ff4d6d; --grid: #261150;
+  --neon-pink: #ff2bd6; --neon-cyan: #00f0ff; --neon-violet: #8a3dff;
+  font-family: "Exo 2", "Avenir Next", "Trebuchet MS", system-ui, sans-serif;
+  scrollbar-color: #8a3dff #0d0221;
+}
+:root[data-theme="neon"] body { background: radial-gradient(ellipse at 50% -10%, #2a0a5c 0%, #0d0221 55%) fixed; }
+/* faint scanlines over everything (clicks pass through; dialogs sit above) */
+:root[data-theme="neon"] body::after { content: ""; position: fixed; inset: 0; z-index: 15; pointer-events: none; background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, .22) 0 1px, transparent 1px 3px); mix-blend-mode: multiply; }
+:root[data-theme="neon"] code, :root[data-theme="neon"] .set, :root[data-theme="neon"] pre { font-family: "Share Tech Mono", ui-monospace, Menlo, monospace; }
+:root[data-theme="neon"] a { text-shadow: 0 0 6px rgba(0, 240, 255, .45); }
+:root[data-theme="neon"] a:hover { color: #fff; text-shadow: 0 0 8px var(--neon-cyan), 0 0 16px var(--neon-cyan); }
+/* heading: a sunset gradient with a perspective grid floor */
+:root[data-theme="neon"] .top { position: sticky; overflow: hidden; background: linear-gradient(to bottom, #12012e 0%, #3b0a7a 50%, #c2189f 100%); border-bottom: 2px solid var(--neon-pink); box-shadow: 0 0 18px rgba(255, 43, 214, .65), 0 4px 30px rgba(138, 61, 255, .5); }
+:root[data-theme="neon"] .top::before { content: ""; position: absolute; left: -10%; right: -10%; bottom: 0; height: 55%; pointer-events: none; opacity: .55;
+  background: repeating-linear-gradient(to right, rgba(0, 240, 255, .75) 0 1px, transparent 1px 44px), repeating-linear-gradient(to bottom, rgba(255, 43, 214, .75) 0 1px, transparent 1px 14px);
+  transform: perspective(160px) rotateX(58deg); transform-origin: bottom; -webkit-mask: linear-gradient(to top, #000 15%, transparent); mask: linear-gradient(to top, #000 15%, transparent); }
+:root[data-theme="neon"] .top .wrap { position: relative; z-index: 1; }
+:root[data-theme="neon"] .top h1 { font-family: "Orbitron", "Eurostile", "Bank Gothic", "Trebuchet MS", sans-serif; font-weight: 900; font-size: 24px; letter-spacing: .08em; text-transform: uppercase; color: #fff;
+  text-shadow: 0 0 4px #fff, 0 0 10px var(--neon-pink), 0 0 22px var(--neon-pink), 0 0 42px var(--neon-violet); }
+:root[data-theme="neon"] .top .vs { color: var(--neon-cyan); text-shadow: 0 0 8px var(--neon-cyan), 0 0 18px var(--neon-cyan); }
+:root[data-theme="neon"] .top .tagline { color: #bdfaff; text-shadow: 0 0 8px rgba(0, 240, 255, .7); }
+:root[data-theme="neon"] .top .sub, :root[data-theme="neon"] .top .issue a, :root[data-theme="neon"] .top .issue-title { color: #ffd6fa; text-shadow: 0 0 6px rgba(255, 43, 214, .8); }
+:root[data-theme="neon"] .top button.zapset, :root[data-theme="neon"] label.themepick select { border-color: var(--neon-cyan); color: var(--neon-cyan); background: rgba(13, 2, 33, .6); text-shadow: 0 0 6px var(--neon-cyan); box-shadow: 0 0 8px rgba(0, 240, 255, .5), inset 0 0 6px rgba(0, 240, 255, .2); }
+:root[data-theme="neon"] label.themepick { color: #ffd6fa; text-shadow: 0 0 6px rgba(255, 43, 214, .8); }
+:root[data-theme="neon"] .top button.zapset:hover, :root[data-theme="neon"] label.themepick select:hover { background: rgba(0, 240, 255, .2); box-shadow: 0 0 14px var(--neon-cyan); }
+:root[data-theme="neon"] label.themepick select option { background: #190a3a; color: #f7ecff; }
+/* tiles, meters, tabs, tables, controls */
+:root[data-theme="neon"] .tile { background: linear-gradient(160deg, #1b0b40, #10052a); border: 1px solid var(--line); box-shadow: 0 0 0 1px rgba(255, 43, 214, .18), 0 0 18px rgba(138, 61, 255, .3); }
+:root[data-theme="neon"] .tile .v { font-family: "Orbitron", "Eurostile", "Trebuchet MS", sans-serif; font-weight: 700; color: var(--neon-cyan); text-shadow: 0 0 8px var(--neon-cyan), 0 0 20px rgba(0, 240, 255, .6); }
+:root[data-theme="neon"] .meter { background: #25104f; box-shadow: inset 0 0 4px #000; }
+:root[data-theme="neon"] .meter > i { background: linear-gradient(to right, var(--neon-cyan), var(--neon-pink)); box-shadow: 0 0 10px var(--neon-pink); }
+:root[data-theme="neon"] .tabs { border-bottom: 1px solid var(--neon-violet); box-shadow: 0 1px 10px rgba(138, 61, 255, .45); }
+:root[data-theme="neon"] .tabs button { font-family: "Orbitron", "Eurostile", "Trebuchet MS", sans-serif; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; }
+:root[data-theme="neon"] .tabs button:hover { color: #fff; text-shadow: 0 0 8px var(--neon-pink); }
+:root[data-theme="neon"] .tabs button[aria-selected="true"] { color: #fff; border-bottom-color: var(--neon-pink); text-shadow: 0 0 6px #fff, 0 0 14px var(--neon-pink); box-shadow: 0 6px 12px -6px var(--neon-pink); font-weight: 700; }
+:root[data-theme="neon"] h2, :root[data-theme="neon"] h3 { font-family: "Orbitron", "Eurostile", "Trebuchet MS", sans-serif; letter-spacing: .05em; text-shadow: 0 0 10px rgba(255, 43, 214, .55); }
+:root[data-theme="neon"] .grid th { color: var(--neon-cyan); text-transform: uppercase; font-size: 12px; letter-spacing: .06em; text-shadow: 0 0 6px rgba(0, 240, 255, .5); border-bottom: 1px solid var(--neon-violet); }
+:root[data-theme="neon"] .grid tbody tr:hover td { background: rgba(138, 61, 255, .16); }
+:root[data-theme="neon"] .badge { background: #150636; border-color: var(--neon-violet); color: #e6d6ff; }
+:root[data-theme="neon"] .badge.src-dist { border-color: var(--neon-cyan); box-shadow: 0 0 6px rgba(0, 240, 255, .45); }
+:root[data-theme="neon"] .badge.src-jt { border-color: var(--accent-3); box-shadow: 0 0 6px rgba(255, 242, 0, .35); }
+:root[data-theme="neon"] .badge.src-coinop { border-color: var(--warn); }
+:root[data-theme="neon"] .badge.src-ongo { border-color: var(--neon-pink); box-shadow: 0 0 6px rgba(255, 43, 214, .45); }
+:root[data-theme="neon"] input, :root[data-theme="neon"] select, :root[data-theme="neon"] textarea { background: #12062e; color: var(--text); border: 1px solid var(--neon-violet); border-radius: 6px; }
+:root[data-theme="neon"] input:focus, :root[data-theme="neon"] select:focus, :root[data-theme="neon"] textarea:focus { outline: none; border-color: var(--neon-cyan); box-shadow: 0 0 10px rgba(0, 240, 255, .6); }
+:root[data-theme="neon"] .seg { border-color: var(--neon-violet); box-shadow: 0 0 8px rgba(138, 61, 255, .4); }
+:root[data-theme="neon"] .seg button { background: #12062e; }
+:root[data-theme="neon"] .seg button.on { background: var(--neon-pink); color: #fff; text-shadow: 0 0 6px #fff; box-shadow: 0 0 12px var(--neon-pink); }
+:root[data-theme="neon"] button.launch, :root[data-theme="neon"] button.plus1 { border-color: var(--neon-cyan); color: var(--neon-cyan); background: #12062e; box-shadow: 0 0 6px rgba(0, 240, 255, .4); }
+:root[data-theme="neon"] button.launch:hover, :root[data-theme="neon"] button.plus1:hover { background: var(--neon-cyan); color: #0d0221; box-shadow: 0 0 14px var(--neon-cyan); }
+:root[data-theme="neon"] .tabs .tab-plus1 { background: #12062e; }
+:root[data-theme="neon"] dialog { background: #12062e; color: var(--text); border: 1px solid var(--neon-pink); box-shadow: 0 0 24px rgba(255, 43, 214, .55); }
+:root[data-theme="neon"] .tooltip { background: #12062e; border: 1px solid var(--neon-cyan); box-shadow: 0 0 14px rgba(0, 240, 255, .55); color: var(--text); }
+/* a slow, subtle flicker on the heading, for those who allow motion */
+@media (prefers-reduced-motion: no-preference) {
+  :root[data-theme="neon"] .top h1 { animation: neonflicker 9s infinite; }
+  @keyframes neonflicker { 0%, 17%, 19%, 23%, 25%, 100% { opacity: 1; } 18%, 24% { opacity: .82; } }
+}

@@ -11,11 +11,15 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=eb08a38490">
+<script>/* the chosen theme is applied before the stylesheet paints (no flash); no choice = the system's */
+try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark" || t === "neon") document.documentElement.dataset.theme = t; } catch (e) { /* storage unavailable: the system theme */ }
+</script>
+<link rel="stylesheet" href="style.css?v=afd5afa6f9">
 </head>
 <body>
 <header class="top">
   <div class="wrap">
+    <label class="themepick">Theme <select id="theme" aria-label="Theme"><option value="">System Default</option><option value="light">Light</option><option value="dark">Dark</option><option value="neon">Neon</option></select></label>
     <h1>MiSTer <span class="vs">×</span> MAME - Arcade Coverage</h1>
     <h2 class="tagline">See what Arcade PCB titles are covered by MAME, MiSTer, and request support on MiSTer where missing</h2>
     <p class="sub" id="subtitle">Loading data…</p>
@@ -356,6 +360,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=5cf1755188"></script>
+<script src="app.js?v=dc91f61a87"></script>
 </body>
 </html>
