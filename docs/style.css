@@ -447,5 +447,7 @@ label.themepick select option { color: #111; background: #fff; }
 .neonsnd[aria-pressed="false"] { opacity: .6; text-shadow: none; box-shadow: none; }
 /* the zoom tween: while the shot flies between its thumbnail and the big screen the rest of the dialog (details, buttons, caption) is faded out */
 #lightbox > *, #lightbox figcaption { transition: opacity .22s ease; }
-#lightbox.tweening > :not(figure), #lightbox.tweening figcaption { opacity: 0; transition: none; }
+#lightbox.tweening > :not(figure):not(.lb-trail), #lightbox.tweening figcaption { opacity: 0; transition: none; }
 #lightbox .lb-frame { will-change: transform; }
+#lightbox .lb-trail { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1; }   /* under the screen, over the backdrop */
+.neonsnd .ico { vertical-align: -1px; }
