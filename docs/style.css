@@ -450,4 +450,7 @@ label.themepick select option { color: #111; background: #fff; }
 #lightbox.tweening > :not(figure):not(.lb-trail), #lightbox.tweening figcaption { opacity: 0; transition: none; }
 #lightbox .lb-frame { will-change: transform; }
 #lightbox .lb-trail { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1; }   /* under the screen, over the backdrop */
-.neonsnd .ico { vertical-align: -1px; }
+.neonsnd { display: inline-flex; align-items: center; gap: 6px; }
+.neonsnd:hidden, .neonsnd[hidden] { display: none; }
+.neonsnd .ico { display: inline-flex; align-items: center; justify-content: center; width: 12px; height: 14px; font-style: normal; line-height: 1; }
+.neonsnd .ico:not(:has(svg)) { font-size: 15px; }

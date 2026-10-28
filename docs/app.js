@@ -959,7 +959,7 @@
   function syncSoundButton() {
     const b = $("#neon-sound"), on = soundOn(), t = $("#neon-trail-btn"), tr = trailOn();
     b.hidden = t.hidden = !isNeon();
-    b.setAttribute("aria-pressed", on); b.textContent = on ? "♪ Sound: on" : "♪ Sound: off";
+    b.setAttribute("aria-pressed", on); b.querySelector("span").textContent = on ? "Sound: on" : "Sound: off";
     t.setAttribute("aria-pressed", tr); t.querySelector("span").textContent = tr ? "Trail: on" : "Trail: off";
     t.disabled = calm(); if (calm()) t.title = "off: your system asks for reduced motion";
   }
