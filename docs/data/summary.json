@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-28T00:31:00+00:00",
+  "generated": "2026-10-28T11:13:06+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-28T00:30:55+00:00",
+  "mister_generated": "2026-10-28T11:12:44+00:00",
   "alamone_generated": "2026-10-26T09:17:05+00:00",
   "ledger_updated": "2026-10-28",
   "ledger_runs": [
-   {
-    "date": "2026-10-26",
-    "note": "alamone 2026-10-26",
-    "cores": 22,
-    "sets": 23,
-    "pairs": 368,
-    "dates_improved": 49,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-26",
     "note": "alamone 2026-10-26",
@@ -51,6 +42,15 @@
     "pairs": 50,
     "dates_improved": 8,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-28",
+    "note": "alamone 2026-10-26",
+    "cores": 21,
+    "sets": 9,
+    "pairs": 30,
+    "dates_improved": 2,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5490 sets, 5490 used); mame2016: catver_mame2016.ini (37065 sets, 32543 used)",
    "catver_entries": 38033,
    "mad_entries": 2995,
-   "mra_entries": 4172,
+   "mra_entries": 4173,
    "unmapped": [
     {
      "raw": "not classified",
@@ -290,7 +290,7 @@
     "dirs": [
      "_Arcade"
     ],
-    "mras": 1614
+    "mras": 1615
    },
    {
     "source": "dist",
@@ -302,7 +302,7 @@
     "source": "dist",
     "repo": "MiSTer-devel/Arcade-Arabian_MiSTer",
     "dirs": null,
-    "mras": 2
+    "mras": 4
    },
    {
     "source": "dist",
@@ -452,7 +452,7 @@
     "source": "dist",
     "repo": "MiSTer-devel/Arcade-BluePrint_MiSTer",
     "dirs": null,
-    "mras": 4
+    "mras": 6
    },
    {
     "source": "dist",
@@ -1820,7 +1820,7 @@
     "source": "repo",
     "repo": "RetroShrimp/Arcade-SegaSystem32_MiSTer",
     "dirs": null,
-    "mras": 19
+    "mras": 21
    },
    {
     "source": "rodimus",
@@ -2996,7 +2996,7 @@
     "source": "ongo",
     "repo": "meathax/meatcores",
     "dirs": null,
-    "mras": 226
+    "mras": 234
    },
    {
     "source": "ongo",
@@ -3252,13 +3252,13 @@
     "source": "rodimus",
     "repo": "RodimusFVC/Arcade-Arabian_MiSTer",
     "dirs": null,
-    "mras": 2
+    "mras": 4
    },
    {
     "source": "rodimus",
     "repo": "RodimusFVC/Arcade-BluePrint_MiSTer",
     "dirs": null,
-    "mras": 4
+    "mras": 6
    },
    {
     "source": "rodimus",
@@ -3458,13 +3458,13 @@
   "counts": {
    "titles": 6826,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2493,
+   "working_arcade_titles_covered": 2496,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 6503,
-   "working_arcade_titles_source": 2264,
-   "working_arcade_titles_binary_only": 229,
-   "cores": 805,
-   "binary_only_cores": 288,
+   "working_arcade_sets_covered": 6511,
+   "working_arcade_titles_source": 2266,
+   "working_arcade_titles_binary_only": 230,
+   "cores": 813,
+   "binary_only_cores": 302,
    "unmatched_sets": 515
   }
  },
@@ -3901,6 +3901,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": true,
    "nsets": 1,
@@ -4153,6 +4154,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": true,
    "nsets": 1,
@@ -9182,8 +9184,11 @@
     "konami/jackal.cpp"
    ],
    "note": null,
+   "aliases": [
+    "meat:jackaltwinstick",
+    "ongo:jackaltwinstick"
+   ],
    "first_recorded": "2026-10-04",
-   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": false,
    "nsets": 6,
@@ -16754,6 +16759,28 @@
    "first_date": "2026-08-12"
   },
   {
+   "id": "meat:caliber50twinstick",
+   "name": "Caliber50TwinStick",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-Caliber50TwinStick.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-09-19"
+  },
+  {
    "id": "meat:crystalsystem",
    "name": "CrystalSystem",
    "source": "meat",
@@ -16775,6 +16802,28 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-04"
+  },
+  {
+   "id": "meat:daikaiju",
+   "name": "Daikaiju",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-Daikaiju.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-28"
   },
   {
    "id": "meat:darkmist",
@@ -16945,11 +16994,12 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": true,
    "nsets": 1,
    "ntitles": 1,
-   "first_date": "2026-10-28"
+   "first_date": "2026-10-27"
   },
   {
    "id": "meat:exterminator",
@@ -16996,6 +17046,50 @@
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
+  },
+  {
+   "id": "meat:forgottenworldstwinstick",
+   "name": "ForgottenWorldsTwinStick",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-ForgottenWorldsTwinStick.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2020-06-02"
+  },
+  {
+   "id": "meat:heavybarreltwinstick",
+   "name": "HeavyBarrelTwinStick",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-HeavyBarrelTwinStick.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2021-12-06"
   },
   {
    "id": "meat:heavyunit",
@@ -17146,6 +17240,28 @@
    "first_date": "2026-10-25"
   },
   {
+   "id": "meat:madplanetstwinstick",
+   "name": "MadPlanetsTwinStick",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-MadPlanetsTwinStick.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-07-17"
+  },
+  {
    "id": "meat:mcr68",
    "name": "MCR68",
    "source": "meat",
@@ -17192,6 +17308,28 @@
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2026-10-06"
+  },
+  {
+   "id": "meat:midnightresistancetwinstick",
+   "name": "MidnightResistanceTwinStick",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-MidnightResistanceTwinStick.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2022-03-14"
   },
   {
    "id": "meat:mysteriousstones",
@@ -17364,6 +17502,28 @@
    "nsets": 9,
    "ntitles": 2,
    "first_date": "2026-10-18"
+  },
+  {
+   "id": "meat:sartwinstick",
+   "name": "SARTwinStick",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-SARTwinStick.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2022-09-09"
   },
   {
    "id": "meat:segasystem24",
@@ -18033,6 +18193,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": false,
    "nsets": 1,
@@ -20076,8 +20237,8 @@
    "first_recorded": "2026-10-19",
    "last_seen": "2026-10-28",
    "binary_only": false,
-   "nsets": 19,
-   "ntitles": 8,
+   "nsets": 21,
+   "ntitles": 9,
    "first_date": "2026-10-16"
   },
   {
@@ -21263,6 +21424,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": false,
    "nsets": 9,
@@ -21787,6 +21949,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": false,
    "nsets": 2,
@@ -21834,6 +21997,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": false,
    "nsets": 3,
@@ -22132,6 +22296,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-28",
+   "aliases": [],
    "last_seen": "2026-10-28",
    "binary_only": false,
    "nsets": 16,
@@ -22275,6 +22440,28 @@
    "nsets": 13,
    "ntitles": 7,
    "first_date": "2026-10-23"
+  },
+  {
+   "id": "tomsvr:tomsvr_pipedrm",
+   "name": "TomSVR_pipedrm",
+   "source": "tomsvr",
+   "source_title": "TomSVR",
+   "channel": null,
+   "rbf": "TomSVR_pipedrm.rbf",
+   "repo": "TomSVR-Mister/TomSVR-Arcade-Cores",
+   "url": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "binary_only": false,
+   "nsets": 7,
+   "ntitles": 2,
+   "first_date": "2026-10-28"
   },
   {
    "id": "tomsvr:tomsvr_playmark",
@@ -24459,7 +24646,8 @@
    "cores": [
     "jt:jtcps1",
     "jt:jtcps15",
-    "jt:jtcps2"
+    "jt:jtcps2",
+    "meat:forgottenworldstwinstick"
    ],
    "first": "2020-05-22"
   },
@@ -24968,7 +25156,9 @@
     "jt:jtcop",
     "jt:jtmidres",
     "jt:jtninja",
-    "jt:jtslyspy"
+    "jt:jtslyspy",
+    "meat:heavybarreltwinstick",
+    "meat:midnightresistancetwinstick"
    ],
    "first": "2021-10-15"
   },
@@ -26014,6 +26204,7 @@
     "bazset:krull_bazset",
     "dist:laserdiscgames",
     "dist:qbert",
+    "meat:madplanetstwinstick",
     "rodimus:gottlieb_testbuild"
    ],
    "first": "2021-01-02"
@@ -30794,6 +30985,7 @@
     "jt:jtarblst",
     "jt:jtcal50",
     "meat:arbalester",
+    "meat:caliber50twinstick",
     "meat:jtarblst",
     "ppriest:setadowntown"
    ],
@@ -31057,6 +31249,7 @@
    "sets_covered": 15,
    "cores": [
     "coinop:snk68",
+    "meat:sartwinstick",
     "repo:snk68"
    ],
    "first": "2022-09-08"
@@ -31585,11 +31778,13 @@
   {
    "sourcefile": "taito/lsasquad.cpp",
    "titles": 2,
-   "covered": 0,
+   "covered": 1,
    "sets": 4,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 1,
+   "cores": [
+    "meat:daikaiju"
+   ],
+   "first": "2026-10-28"
   },
   {
    "sourcefile": "taito/minivadr.cpp",
@@ -33047,11 +33242,13 @@
   {
    "sourcefile": "vsystem/pipedrm.cpp",
    "titles": 2,
-   "covered": 0,
+   "covered": 2,
    "sets": 7,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 7,
+   "cores": [
+    "tomsvr:tomsvr_pipedrm"
+   ],
+   "first": "2026-10-28"
   },
   {
    "sourcefile": "vsystem/pspikes.cpp",

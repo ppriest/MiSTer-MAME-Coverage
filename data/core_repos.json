@@ -782,7 +782,8 @@
   "MiSTer-devel/Arcade-Jackal_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
   "MiSTer-devel/MRA-Alternatives_MiSTer",
-  "Usquebagh/MiSTer_misc"
+  "Usquebagh/MiSTer_misc",
+  "meathax/meatcores"
  ],
  "dist:jailbreak": [
   "MiSTer-devel/Arcade-Jailbreak_MiSTer",
@@ -2203,6 +2204,9 @@
  "ongo:bazdiamrun": [
   "bazset/MiSTer_BAZSET"
  ],
+ "ongo:bazset_agress": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:bazset_aquajack": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2248,7 +2252,16 @@
  "ongo:bazset_krull": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:bazset_mastersofkin": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:bazset_millemiglia2": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:bazset_nss": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:bazset_plumppop": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_pushman": [
@@ -2261,6 +2274,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_shogunwarriors": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:bazset_teedoff": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_turtleship": [
@@ -2287,6 +2303,9 @@
  "ongo:cadash_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
+ "ongo:caliber50twinstick": [
+  "meathax/meatcores"
+ ],
  "ongo:chacknpop": [
   "bazset/MiSTer_BAZSET"
  ],
@@ -2305,6 +2324,9 @@
  ],
  "ongo:ctribe": [
   "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:daikaiju": [
+  "meathax/meatcores"
  ],
  "ongo:dataeastliberation": [
   "meathax/meatcores"
@@ -2382,6 +2404,9 @@
  "ongo:fftrckydoc": [
   "jlrh/jlrh-misterfpga-db"
  ],
+ "ongo:forgottenworldstwinstick": [
+  "meathax/meatcores"
+ ],
  "ongo:galmedes_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
@@ -2390,6 +2415,9 @@
  ],
  "ongo:gm0rk_midway-y-unit": [
   "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:heavybarreltwinstick": [
+  "meathax/meatcores"
  ],
  "ongo:heavyunit": [
   "meathax/meatcores"
@@ -2466,6 +2494,9 @@
  "ongo:madmotor": [
   "meathax/meatcores"
  ],
+ "ongo:madplanetstwinstick": [
+  "meathax/meatcores"
+ ],
  "ongo:mastkin": [
   "OngoGablogian/MiSTer_Ongo",
   "bazset/MiSTer_BAZSET"
@@ -2486,6 +2517,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_dataeastliberation": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:meathax_esd16": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_exterminator": [
@@ -2538,6 +2572,9 @@
  ],
  "ongo:meathax_zeroteam": [
   "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:midnightresistancetwinstick": [
+  "meathax/meatcores"
  ],
  "ongo:midway-y-unit": [
   "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
@@ -2624,6 +2661,9 @@
  "ongo:rshark": [
   "OngoGablogian/MiSTer_Ongo",
   "kyledlester/R_Shark_Super_X_MiSTer"
+ ],
+ "ongo:sartwinstick": [
+  "meathax/meatcores"
  ],
  "ongo:sci_bazset": [
   "bazset/MiSTer_BAZSET"

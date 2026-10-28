@@ -6,9 +6,7 @@ Generated 2026-10-28 by `tools/reconcile_shmups.py` from MAME 0289 data and [shm
 
 ## New since the previous report
 
-**1 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
-
-- `srmdb` Sunset Riders (scrambled bootleg of Mega Drive version) (1993; Shooter / Misc. Horizontal)
+Nothing new: the same titles disagree as before.
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -25,7 +23,6 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
-| **NEW** `srmdb` | Sunset Riders (scrambled bootleg of Mega Drive version) | 1993 | Shooter / Misc. Horizontal (catver) | TomSVR_mdboot |
 | `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
@@ -43,7 +40,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `bucky` | Bucky O'Hare (ver EAB) | 1992 | Shooter / Walking (catver) | Bucky |
 | `bullet` | Bullet (FD1094 317-0041) | 1987 | Shooter / Walking (catver) | jts16b |
 | `butasan` | Butasan - Pig's & Bomber's (Japan, English) | 1987 | Shooter / Walking (catver) | jtargus, Argus |
-| `calibr50` | Caliber 50 (Ver. 1.01) | 1989 | Shooter / Walking (catver) | jtcal50, SetaDowntown |
+| `calibr50` | Caliber 50 (Ver. 1.01) | 1989 | Shooter / Walking (catver) | jtcal50, Caliber50TwinStick, SetaDowntown |
 | `pc_cshwk` | Captain Sky Hawk (PlayChoice-10) | 1989 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `choplift` | Choplifter (8751 315-5151) | 1985 | Shooter / Flying Horizontal (catver) | SEGASYS1_B23_FULL, Blackwine-SegaSystem1-2, SegaSys1+2 (TheJesusFish), SegaSystem1-2, SegaSystem1-2_TestBuild (RodimusFVC) |
 | `colony7` | Colony 7 (set 1) | 1981 | Shooter / Command (catver) | Defender, Williams_TestBuild (RodimusFVC) |
@@ -72,7 +69,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `gwar` | Guerrilla War (US) | 1987 | Shooter / Walking (catver) | ffgwar |
 | `gundhara` | Gundhara | 1995 | Shooter / Walking (catver) | Seta |
 | `heatbrl` | Heated Barrel (World version 3) | 1992 | Shooter / Walking (catver) | HeatedBarrel |
-| `hbarrel` | Heavy Barrel (World) | 1987 | Shooter / Walking (catver) | jtninja |
+| `hbarrel` | Heavy Barrel (World) | 1987 | Shooter / Walking (catver) | jtninja, HeavyBarrelTwinStick |
 | `hvyunit` | Heavy Unit (World) | 1988 | Shooter / Flying Horizontal (catver) | heavyunit (decoryah), HeavyUnit |
 | `ikari3` | Ikari III - The Rescue (World version 1, 8-Way Joystick) | 1989 | Shooter / Walking (catver) | SNK68, SNK68 (va7deo) |
 | `ikari` | Ikari Warriors (US JAMMA) | 1986 | Shooter / Walking (catver) | IkariWarriors |
@@ -108,7 +105,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `rampart` | Rampart (Trackball) | 1990 | Shooter / Command (catver) | Rampart |
 | `redclash` | Red Clash | 1981 | Shooter / Flying Vertical (catver) | Universal_TestBuild (RodimusFVC) |
 | `rescue` | Rescue | 1982 | Shooter / Flying (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |
-| `searchar` | SAR - Search And Rescue (World) | 1989 | Shooter / Walking (catver) | SNK68, SNK68 (va7deo) |
+| `searchar` | SAR - Search And Rescue (World) | 1989 | Shooter / Walking (catver) | SNK68, SARTwinStick, SNK68 (va7deo) |
 | `sauro` | Sauro (set 1) | 1987 | Shooter / Flying Horizontal (catver) | ffsauro, Sauro (shimian5) |
 | `scotrsht` | Scooter Shooter | 1985 | Shooter / Flying (catver) | ScooterShooter |
 | `scorpion` | Scorpion (set 1) | 1982 | Shooter / Flying Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
@@ -124,6 +121,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `ar_sprg` | Space Ranger (Arcadia, V 2.0) | 1987 | Shooter / Flying Horizontal (catver) | arcadiasystems (decoryah) |
 | `stargate` | Stargate | 1981 | Shooter / Flying (catver) | Robotron, Williams_TestBuild (RodimusFVC) |
 | `strkforc` | Strike Force (rev 1 02/25/91) | 1991 | Shooter / Flying (catver) | blahm1d_yunit, Midway-Y-Unit |
+| `srmdb` | Sunset Riders (scrambled bootleg of Mega Drive version) | 1993 | Shooter / Misc. Horizontal (catver) | TomSVR_mdboot |
 | `superbik` | Superbike | 1983 | Shooter / Driving Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `syvalion` | Syvalion (Japan) | 1988 | Shooter / Flying Horizontal (catver) | Syvalion (diegov-au) |
 | `tacscan` | Tac/Scan | 1982 | Shooter / Flying Vertical (catver) | SegaG80V, SegaG80 (RodimusFVC) |
