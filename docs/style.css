@@ -451,6 +451,6 @@ label.themepick select option { color: #111; background: #fff; }
 #lightbox .lb-frame { will-change: transform; }
 #lightbox .lb-trail { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1; }   /* under the screen, over the backdrop */
 .neonsnd { display: inline-flex; align-items: center; gap: 6px; }
-.neonsnd:hidden, .neonsnd[hidden] { display: none; }
+.neonsnd[hidden] { display: none; }   /* beats the display above (a hidden attribute alone loses to it) */
 .neonsnd .ico { display: inline-flex; align-items: center; justify-content: center; width: 12px; height: 14px; font-style: normal; line-height: 1; }
 .neonsnd .ico:not(:has(svg)) { font-size: 15px; }
