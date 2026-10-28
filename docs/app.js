@@ -848,10 +848,88 @@
   $("#c-dir").addEventListener("click", () => { S.dir.c *= -1; $("#c-dir").textContent = S.dir.c > 0 ? "↑" : "↓"; applyCores(); });
   $("#c-reset").addEventListener("click", () => { CORE_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.c = 1; $("#c-dir").textContent = "↑"; applyCores(); });
 
+  // ---------- Neon: a trail of boxes behind the pointer, and synth sound effects (the Neon theme only) ----------
+  const isNeon = () => document.documentElement.dataset.theme === "neon";
+  const calm = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const trail = { cv: null, ctx: null, boxes: [], raf: 0, lx: -99, ly: -99, n: 0 };
+  const TRAIL_COLOURS = ["#ff2bd6", "#00f0ff", "#fff200", "#8a3dff"], TRAIL_LIFE = 700, TRAIL_STEP = 15;
+  function trailSize() {
+    const dpr = devicePixelRatio || 1;
+    trail.cv.width = Math.round(innerWidth * dpr); trail.cv.height = Math.round(innerHeight * dpr);
+    trail.ctx = trail.cv.getContext("2d"); trail.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  function trailStart() {
+    if (trail.cv || calm()) return;
+    const cv = document.createElement("canvas");
+    cv.id = "neon-trail"; cv.setAttribute("aria-hidden", "true");
+    cv.style.cssText = "position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:30";
+    document.body.appendChild(cv); trail.cv = cv; trailSize();
+  }
+  function trailStop() {
+    if (!trail.cv) return;
+    cancelAnimationFrame(trail.raf); trail.raf = 0; trail.boxes = []; trail.cv.remove(); trail.cv = trail.ctx = null;
+  }
+  function trailTick(now) {
+    const c = trail.ctx; if (!c) return;
+    c.clearRect(0, 0, innerWidth, innerHeight);
+    trail.boxes = trail.boxes.filter(b => now - b.t < TRAIL_LIFE);
+    for (const b of trail.boxes) {
+      const age = (now - b.t) / TRAIL_LIFE, size = 18 * (1 - age * .7), a = (1 - age) * (1 - age);
+      c.globalAlpha = a; c.shadowBlur = 14; c.shadowColor = b.c; c.strokeStyle = b.c; c.lineWidth = 2; c.fillStyle = b.c;
+      c.strokeRect(b.x - size / 2, b.y - size / 2, size, size);
+      c.globalAlpha = a * .18; c.fillRect(b.x - size / 2, b.y - size / 2, size, size);
+    }
+    trail.raf = trail.boxes.length ? requestAnimationFrame(trailTick) : 0;
+    if (!trail.raf) c.clearRect(0, 0, innerWidth, innerHeight);
+  }
+  addEventListener("pointermove", ev => {
+    if (!trail.cv || ev.pointerType === "touch") return;
+    if (Math.hypot(ev.clientX - trail.lx, ev.clientY - trail.ly) < TRAIL_STEP) return;
+    trail.lx = ev.clientX; trail.ly = ev.clientY;
+    trail.boxes.push({ x: ev.clientX, y: ev.clientY, t: performance.now(), c: TRAIL_COLOURS[trail.n++ % TRAIL_COLOURS.length] });
+    if (!trail.raf) trail.raf = requestAnimationFrame(trailTick);
+  });
+  addEventListener("resize", () => { if (trail.cv) trailSize(); });
+  // Web Audio synth: short square/saw blips through a low-pass, quiet. Browsers only start audio after a click or key, which is when these play.
+  let actx = null;
+  const soundOn = () => { try { return localStorage.getItem("neon-sound") !== "0"; } catch (e) { return true; } };
+  function neonSound(kind) {
+    if (!isNeon() || !soundOn()) return;
+    try {
+      actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+      if (actx.state === "suspended") actx.resume();
+      const t0 = actx.currentTime, out = actx.createGain(), lp = actx.createBiquadFilter();
+      out.gain.value = .16; lp.type = "lowpass"; lp.frequency.value = 3400; out.connect(lp); lp.connect(actx.destination);
+      const note = (type, f0, f1, at, dur, vol, attack = .008) => {
+        const o = actx.createOscillator(), g = actx.createGain();
+        o.type = type; o.frequency.setValueAtTime(f0, t0 + at);
+        if (f1 !== f0) o.frequency.exponentialRampToValueAtTime(f1, t0 + at + dur);
+        g.gain.setValueAtTime(.0001, t0 + at); g.gain.exponentialRampToValueAtTime(vol, t0 + at + attack); g.gain.exponentialRampToValueAtTime(.0001, t0 + at + dur);
+        o.connect(g); g.connect(out); o.start(t0 + at); o.stop(t0 + at + dur + .03);
+      };
+      if (kind === "blip") note("square", 880, 1320, 0, .07, .5);
+      else if (kind === "flip") { note("triangle", 520, 1560, 0, .1, .7); note("triangle", 1560, 780, .1, .12, .6); }
+      else if (kind === "open") { note("sawtooth", 180, 1100, 0, .26, .35, .03); [220, 262, 330, 440, 523].forEach((f, k) => note("square", f * 2, f * 2, .05 + k * .055, .09, .32)); }
+      else if (kind === "close") { note("sawtooth", 1000, 160, 0, .24, .35, .02); [523, 392, 294].forEach((f, k) => note("square", f, f, k * .05, .08, .3)); }
+      else if (kind === "power") { [110, 138.6, 164.8, 220].forEach(f => { note("sawtooth", f, f * 1.01, 0, .7, .3, .2); note("sawtooth", f * 1.005, f, 0, .7, .22, .2); }); note("square", 880, 1760, .25, .35, .2, .05); }
+    } catch (e) { /* no audio: silent */ }
+  }
+  function syncSoundButton() {
+    const b = $("#neon-sound"), on = soundOn();
+    b.hidden = !isNeon(); b.setAttribute("aria-pressed", on); b.textContent = on ? "♪ Sound: on" : "♪ Sound: off";
+  }
+  $("#neon-sound").addEventListener("click", () => {
+    const on = !soundOn(); try { localStorage.setItem("neon-sound", on ? "1" : "0"); } catch (e) { /* not saved */ }
+    syncSoundButton(); if (on) neonSound("blip");
+  });
+  $(".tabs").addEventListener("click", ev => { if (ev.target.closest("button[role=tab]")) neonSound("blip"); });
+
   // ---------- theme: System Default (no choice: the OS's light/dark), Light, Dark, Neon ----------
   const NEON_FONTS = "https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Exo+2:wght@400;500;700&family=Share+Tech+Mono&display=swap";
   function applyTheme(t) {
     if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme;
+    if (t === "neon") trailStart(); else trailStop();
+    syncSoundButton();
     if (t === "neon" && !$("#neon-fonts")) {            // the neon fonts are fetched only when the theme is chosen
       const l = document.createElement("link"); l.id = "neon-fonts"; l.rel = "stylesheet"; l.href = NEON_FONTS; document.head.appendChild(l);
     }
@@ -861,7 +939,7 @@
     try { t = localStorage.getItem("theme") || ""; } catch (e) { /* storage unavailable */ }
     if (!["light", "dark", "neon"].includes(t)) t = "";
     sel.value = t; applyTheme(t);
-    sel.addEventListener("change", () => { applyTheme(sel.value); try { sel.value ? localStorage.setItem("theme", sel.value) : localStorage.removeItem("theme"); } catch (e) { /* not saved */ } });
+    sel.addEventListener("change", () => { applyTheme(sel.value); if (sel.value === "neon") neonSound("power"); try { sel.value ? localStorage.setItem("theme", sel.value) : localStorage.removeItem("theme"); } catch (e) { /* not saved */ } });
   })();
 
   // ---------- wishlist (votes live in the /api functions; the page works without them) ----------
@@ -1310,6 +1388,7 @@
     const flip = async () => {
       const fig = set[i];
       if (!fig || !fig.dataset.alt || flipping) return;
+      neonSound("flip");
       const frame = dlg.querySelector(".lb-frame");
       if (matchMedia("(prefers-reduced-motion: reduce)").matches || !frame.animate) { flipped = !flipped; paint(); return; }
       flipping = true;
@@ -1321,19 +1400,64 @@
         await turn(-90, 0, "ease-out");
       } finally { frame.getAnimations().forEach(a => a.cancel()); flipping = false; }
     };
+    // The zoom is a tween: the shot grows from its thumbnail to the big screen and shrinks back to it on close (the dialog's other parts fade
+    // in after it lands and out before it leaves). The frame is moved with a transform from the thumbnail's rectangle to its own.
+    const thumbRect = fig => {
+      const el = fig && fig.isConnected && fig.querySelector(".multi, img"); if (!el) return null;
+      const r = el.getBoundingClientRect();
+      return r.width > 4 && r.height > 4 && r.bottom > 0 && r.right > 0 && r.top < innerHeight && r.left < innerWidth ? r : null;      // on screen
+    };
+    const tweenFrames = (from, to) => [{ transformOrigin: "0 0", transform: `translate(${from.left - to.left}px, ${from.top - to.top}px) scale(${from.width / to.width}, ${from.height / to.height})` }, { transformOrigin: "0 0", transform: "none" }];
+    const backdrop = (a, b, ms) => { try { dlg.animate([{ backgroundColor: `rgba(0,0,0,${a})` }, { backgroundColor: `rgba(0,0,0,${b})` }], { duration: ms, easing: "ease-out", pseudoElement: "::backdrop" }); } catch (e) { /* no animated backdrop */ } };
+    const shotReady = () => new Promise(res => {
+      const want = flipped && set[i].dataset.alt ? set[i].dataset.alt : set[i].dataset.src;
+      if (img.complete && img.naturalWidth && img.src === want) return res();
+      img.addEventListener("load", res, { once: true }); setTimeout(res, 700);
+    });
+    const frameEl = dlg.querySelector(".lb-frame");
+    async function openTween(from) {
+      if (!from || calm() || !frameEl.animate) return;
+      dlg.classList.add("tweening");
+      try {
+        await shotReady();
+        const to = frameEl.getBoundingClientRect();
+        if (to.width && to.height) {
+          backdrop(0, .86, 320);
+          await frameEl.animate(tweenFrames(from, to), { duration: 340, easing: "cubic-bezier(.2,.75,.25,1)" }).finished;
+        }
+      } catch (e) { /* cancelled */ } finally { dlg.classList.remove("tweening"); }
+    }
+    let closing = false;
+    async function requestClose() {
+      if (closing || !dlg.open) return;
+      neonSound("close");
+      const to = thumbRect(set[i]);
+      if (!to || calm() || !frameEl.animate || flipping) { dlg.close(); return; }
+      closing = true; dlg.classList.add("tweening");
+      try {
+        const from = frameEl.getBoundingClientRect();
+        backdrop(.86, 0, 260);
+        await frameEl.animate([{ transformOrigin: "0 0", transform: "none" }, tweenFrames(to, from)[0]], { duration: 260, easing: "cubic-bezier(.5,0,.75,.25)", fill: "forwards" }).finished;
+      } catch (e) { /* cancelled */ } finally {
+        frameEl.getAnimations().forEach(a => a.cancel()); dlg.classList.remove("tweening"); closing = false;
+        if (dlg.open) dlg.close();
+      }
+    }
+    dlg.addEventListener("cancel", ev => { ev.preventDefault(); requestClose(); });      // Esc
     document.addEventListener("click", ev => {
       if (ev.target.closest("button, a")) return;                // a tile's Play and +1 are not a zoom
       const t = ev.target.closest(".gallery figure"); if (!t || !t.dataset.src) return;
       set = Array.from(t.closest(".gallery").querySelectorAll("figure"));
-      applyInfo(); show(set.indexOf(t)); dlg.showModal();
+      const from = thumbRect(t);
+      applyInfo(); show(set.indexOf(t)); dlg.showModal(); neonSound("open"); openTween(from);
     });
     dlg.addEventListener("click", ev => {
-      if (ev.target.closest(".lb-prev")) show(i - 1);
-      else if (ev.target.closest(".lb-next")) show(i + 1);
+      if (ev.target.closest(".lb-prev")) { show(i - 1); neonSound("blip"); }
+      else if (ev.target.closest(".lb-next")) { show(i + 1); neonSound("blip"); }
       else if (ev.target.closest('[data-fx="info"]')) setInfo(!info);
       else if (ev.target.closest('[data-fx="scan"]')) setScan(!scan);
       else if (ev.target.closest('[data-fx="crt"]')) setCrt(!crt);
-      else if (ev.target.closest(".lb-close") || ev.target === dlg) dlg.close();      // the backdrop is the dialog itself
+      else if (ev.target.closest(".lb-close") || ev.target === dlg) requestClose();      // the backdrop is the dialog itself
       else if (ev.target === img || ev.target === cv) flip();
     });
     dlg.addEventListener("keydown", ev => {
