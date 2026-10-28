@@ -1,6 +1,6 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-10-27 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
+Generated 2026-10-28 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
 
 **Agreement:** 308 of 310 deck titles are Shmup in our data (99.4%).
 
@@ -8,7 +8,7 @@ Generated 2026-10-27 by `tools/reconcile_shmups.py` from MAME 0289 data and [shm
 
 **1 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
 
-- `asylum` Asylum (prototype) (1991; Shooter / Walking)
+- `srmdb` Sunset Riders (scrambled bootleg of Mega Drive version) (1993; Shooter / Misc. Horizontal)
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -19,19 +19,20 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (124)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (125)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
-| **NEW** `asylum` | Asylum (prototype) | 1991 | Shooter / Walking (catver) | Leland |
+| **NEW** `srmdb` | Sunset Riders (scrambled bootleg of Mega Drive version) | 1993 | Shooter / Misc. Horizontal (catver) | TomSVR_mdboot |
 | `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
 | `aliensec` | Alien Sector | 1985 | Shooter / Flying Horizontal (catver) | jtthundr |
 | `alpha1v` | Alpha One (Vision Electronics) | 1988 | Shooter / Flying Horizontal (catver) | Irem1, Irem1_TestBuild (RodimusFVC) |
 | `argus` | Argus | 1986 | Shooter / Flying Vertical (catver) | jtargus, Argus |
+| `asylum` | Asylum (prototype) | 1991 | Shooter / Walking (catver) | Leland |
 | `robokid` | Atomic Robo-kid (World, Type-2) | 1988 | Shooter / Flying Horizontal (catver) | UPLFramebuffer |
 | `bwings` | B-Wings (Japan new Ver.) | 1984 | Shooter / Flying Vertical (catver) | DataEastLiberation |
 | `bakutotu` | Bakutotsu Kijuutei | 1988 | Shooter / Flying Horizontal (catver) | jtshouse |

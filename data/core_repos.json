@@ -68,7 +68,8 @@
   "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:batrider": [
-  "Coin-OpCollection/Distribution-MiSTerFPGA"
+  "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "TheJesusFish/Slop-Core"
  ],
  "coinop:bbakraid": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
@@ -2220,6 +2221,9 @@
  "ongo:bazset_brapboys": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:bazset_chacknpop": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:bazset_chasehq": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2236,6 +2240,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_kickle": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:bazset_knucklejoe": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_krull": [
@@ -2278,6 +2285,9 @@
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:cadash_bazset": [
+  "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:chacknpop": [
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:chase_hq_bazset": [
@@ -2326,6 +2336,9 @@
  "ongo:enigma": [
   "OngoGablogian/MiSTer_Ongo",
   "nic24-rgb/Enigma2"
+ ],
+ "ongo:esd16": [
+  "meathax/meatcores"
  ],
  "ongo:expro02_bazset": [
   "bazset/MiSTer_BAZSET"
@@ -2415,6 +2428,12 @@
  "ongo:killerinstinct": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:kingdomgrandprix": [
+  "TheJesusFish/Slop-Core"
+ ],
+ "ongo:knucklejoe": [
+  "bazset/MiSTer_BAZSET"
+ ],
  "ongo:konamigxt1": [
   "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-KonamiGX_MiSTer"
@@ -2461,6 +2480,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_battletoads": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:meathax_bigfight": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_dataeastliberation": [
@@ -2613,6 +2635,10 @@
   "OngoGablogian/MiSTer_Ongo",
   "rossops/Arcade-SegaYBoard_MiSTer"
  ],
+ "ongo:shanghai3": [
+  "OngoGablogian/MiSTer_Ongo",
+  "YoAaronD/Shanghai3_MiSTer"
+ ],
  "ongo:shogunwarriors_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
@@ -2622,6 +2648,9 @@
  ],
  "ongo:simple156": [
   "meathax/meatcores"
+ ],
+ "ongo:sorcerstriker": [
+  "TheJesusFish/Slop-Core"
  ],
  "ongo:spy": [
   "meathax/meatcores"
@@ -3272,6 +3301,9 @@
  "rodimus:nintendo_testbuild": [
   "RodimusFVC/Arcade-Nintendo_MiSTer"
  ],
+ "rodimus:punchout": [
+  "RodimusFVC/Arcade-PunchOut_MiSTer"
+ ],
  "rodimus:robots": [
   "RodimusFVC/VCR_Robots"
  ],
@@ -3433,6 +3465,7 @@
   "yaguboo/Arcade-SuperSlams_MiSTer"
  ],
  "zakk:bakraid": [
+  "TheJesusFish/Slop-Core",
   "zakk4223/Arcade-Raizing_MiSTer",
   "zakk4223/Distribution-MiSTerFPGA",
   "zakk4223/pr4m0d-MISTer-bin"
@@ -3443,6 +3476,7 @@
   "zakk4223/pr4m0d-MISTer-bin"
  ],
  "zakk:garegga": [
+  "TheJesusFish/Slop-Core",
   "zakk4223/Arcade-Raizing_MiSTer",
   "zakk4223/Distribution-MiSTerFPGA",
   "zakk4223/pr4m0d-MISTer-bin"
