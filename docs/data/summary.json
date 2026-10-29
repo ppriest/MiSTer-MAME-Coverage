@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-29T11:25:31+00:00",
+  "generated": "2026-10-29T15:36:00+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-29T11:25:18+00:00",
+  "mister_generated": "2026-10-29T15:35:45+00:00",
   "alamone_generated": "2026-10-26T09:17:05+00:00",
   "ledger_updated": "2026-10-29",
   "ledger_runs": [
-   {
-    "date": "2026-10-27",
-    "note": "alamone 2026-10-26",
-    "cores": 6,
-    "sets": 16,
-    "pairs": 48,
-    "dates_improved": 18,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-28",
     "note": "alamone 2026-10-26",
@@ -51,6 +42,15 @@
     "pairs": 173,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-29",
+    "note": "alamone 2026-10-26",
+    "cores": 9,
+    "sets": 9,
+    "pairs": 14,
+    "dates_improved": 0,
+    "cores_removed": 7
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5491 sets, 5491 used); mame2016: catver_mame2016.ini (37065 sets, 32543 used)",
    "catver_entries": 38034,
    "mad_entries": 2995,
-   "mra_entries": 4185,
+   "mra_entries": 4188,
    "unmapped": [
     {
      "raw": "not classified",
@@ -2900,7 +2900,7 @@
     "source": "ongo",
     "repo": "bazset/MiSTer_BAZSET",
     "dirs": null,
-    "mras": 55
+    "mras": 58
    },
    {
     "source": "ongo",
@@ -2996,7 +2996,7 @@
     "source": "ongo",
     "repo": "meathax/meatcores",
     "dirs": null,
-    "mras": 273
+    "mras": 275
    },
    {
     "source": "ongo",
@@ -3229,6 +3229,12 @@
     "repo": "decoryah/Arcade-SilverMillennium_MiSTer",
     "dirs": null,
     "mras": 3
+   },
+   {
+    "source": "decoryah",
+    "repo": "decoryah/Arcade-SlapShot_MiSTer",
+    "dirs": null,
+    "mras": 5
    },
    {
     "source": "xela",
@@ -3494,13 +3500,13 @@
   "counts": {
    "titles": 6826,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2518,
+   "working_arcade_titles_covered": 2523,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 6548,
-   "working_arcade_titles_source": 2311,
-   "working_arcade_titles_binary_only": 207,
-   "cores": 824,
-   "binary_only_cores": 315,
+   "working_arcade_sets_covered": 6556,
+   "working_arcade_titles_source": 2313,
+   "working_arcade_titles_binary_only": 210,
+   "cores": 822,
+   "binary_only_cores": 321,
    "unmatched_sets": 515
   }
  },
@@ -3914,11 +3920,34 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-29",
+   "aliases": [],
    "last_seen": "2026-10-29",
    "binary_only": true,
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-28"
+  },
+  {
+   "id": "bazset:buccaneers",
+   "name": "Buccaneers",
+   "source": "bazset",
+   "source_title": "bazset (MiSTer_BAZSET)",
+   "channel": null,
+   "rbf": "Arcade-Buccaneers.rbf",
+   "repo": "bazset/MiSTer_BAZSET",
+   "url": "https://github.com/bazset/MiSTer_BAZSET",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-29"
   },
   {
    "id": "bazset:cadash_bazset",
@@ -4241,6 +4270,28 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-07-17"
+  },
+  {
+   "id": "bazset:kungfutaikun",
+   "name": "KungFuTaikun",
+   "source": "bazset",
+   "source_title": "bazset (MiSTer_BAZSET)",
+   "channel": null,
+   "rbf": "Arcade-KungFuTaikun.rbf",
+   "repo": "bazset/MiSTer_BAZSET",
+   "url": "https://github.com/bazset/MiSTer_BAZSET",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-29"
   },
   {
    "id": "bazset:mastkin",
@@ -4609,6 +4660,28 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-08-06"
+  },
+  {
+   "id": "bazset:wiz",
+   "name": "Wiz",
+   "source": "bazset",
+   "source_title": "bazset (MiSTer_BAZSET)",
+   "channel": null,
+   "rbf": "Arcade-Wiz.rbf",
+   "repo": "bazset/MiSTer_BAZSET",
+   "url": "https://github.com/bazset/MiSTer_BAZSET",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-29"
   },
   {
    "id": "blackwine:blackwine-segasystem1-2",
@@ -6336,6 +6409,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-29",
+   "aliases": [],
    "last_seen": "2026-10-29",
    "binary_only": false,
    "nsets": 3,
@@ -6967,6 +7041,28 @@
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2026-10-28"
+  },
+  {
+   "id": "decoryah:slapshot",
+   "name": "slapshot",
+   "source": "decoryah",
+   "source_title": "decoryah",
+   "channel": null,
+   "rbf": "slapshot.rbf",
+   "repo": "decoryah/Arcade-SlapShot_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-SlapShot_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "binary_only": false,
+   "nsets": 5,
+   "ntitles": 2,
+   "first_date": "2026-10-29"
   },
   {
    "id": "decoryah:taitol",
@@ -16679,6 +16775,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-29",
+   "aliases": [],
    "last_seen": "2026-10-29",
    "binary_only": true,
    "nsets": 2,
@@ -17213,6 +17310,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-29",
+   "aliases": [],
    "last_seen": "2026-10-29",
    "binary_only": true,
    "nsets": 1,
@@ -17976,6 +18074,28 @@
    "nsets": 3,
    "ntitles": 3,
    "first_date": "2026-09-09"
+  },
+  {
+   "id": "meat:timesoldierstwinstick",
+   "name": "TimeSoldiersTwinStick",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-TimeSoldiersTwinStick.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-29",
+   "last_seen": "2026-10-29",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2022-11-21"
   },
   {
    "id": "meat:tumble",
@@ -19058,31 +19178,6 @@
    "first_date": "2026-10-10"
   },
   {
-   "id": "repo:braveblade",
-   "name": "BraveBlade (kyledlester)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "BraveBlade_20261002.rbf",
-   "repo": "kyledlester/Brave_Blade_MiSTer",
-   "url": "https://github.com/kyledlester/Brave_Blade_MiSTer",
-   "build_date": "2026-09-30",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 30,
-   "mame_drivers": [
-    "sony/zn.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-10-23",
-   "binary_only": false,
-   "nsets": 4,
-   "ntitles": 1,
-   "first_date": "2026-10-04"
-  },
-  {
    "id": "repo:breakout",
    "name": "Breakout (KrishRVH)",
    "source": "repo",
@@ -19208,81 +19303,6 @@
    "nsets": 5,
    "ntitles": 1,
    "first_date": "2023-05-11"
-  },
-  {
-   "id": "repo:deniam",
-   "name": "Deniam (kyledlester)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Deniam_20261016.rbf",
-   "repo": "kyledlester/Deniam_MiSTer_FPGA",
-   "url": "https://github.com/kyledlester/Deniam_MiSTer_FPGA",
-   "build_date": "2026-10-16",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 29,
-   "mame_drivers": [
-    "sega/deniam.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-10-23",
-   "binary_only": false,
-   "nsets": 5,
-   "ntitles": 3,
-   "first_date": "2026-10-16"
-  },
-  {
-   "id": "repo:djmain",
-   "name": "DJMain (kyledlester)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "DJMain_20261016.rbf",
-   "repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-   "url": "https://github.com/kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-   "build_date": "2026-10-16",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 22,
-   "mame_drivers": [
-    "konami/djmain.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-10-23",
-   "binary_only": false,
-   "nsets": 18,
-   "ntitles": 17,
-   "first_date": "2026-10-16"
-  },
-  {
-   "id": "repo:djmainsd",
-   "name": "DJMainSD (kyledlester)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "DJMainSD_20261016.rbf",
-   "repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-   "url": "https://github.com/kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-   "build_date": "2026-10-16",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 22,
-   "mame_drivers": [
-    "konami/djmain.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-10-23",
-   "binary_only": false,
-   "nsets": 18,
-   "ntitles": 17,
-   "first_date": "2026-10-16"
   },
   {
    "id": "repo:donkeykong3",
@@ -19579,31 +19599,6 @@
    "nsets": 2,
    "ntitles": 2,
    "first_date": "2026-08-26"
-  },
-  {
-   "id": "repo:konamigv",
-   "name": "KonamiGV (kyledlester)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "KonamiGV_20261015.rbf",
-   "repo": "kyledlester/Konami_GV_MiSTer",
-   "url": "https://github.com/kyledlester/Konami_GV_MiSTer",
-   "build_date": "2026-10-14",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 20,
-   "mame_drivers": [
-    "konami/konamigv.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-10-23",
-   "binary_only": false,
-   "nsets": 11,
-   "ntitles": 9,
-   "first_date": "2026-10-14"
   },
   {
    "id": "repo:konamigx",
@@ -20252,31 +20247,6 @@
    "first_date": "2026-10-11"
   },
   {
-   "id": "repo:rshark",
-   "name": "RShark (kyledlester)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "RShark_20261003.rbf",
-   "repo": "kyledlester/R_Shark_Super_X_MiSTer",
-   "url": "https://github.com/kyledlester/R_Shark_Super_X_MiSTer",
-   "build_date": "2026-10-03",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 33,
-   "mame_drivers": [
-    "dooyong/dooyong.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-10-23",
-   "binary_only": false,
-   "nsets": 4,
-   "ntitles": 2,
-   "first_date": "2026-10-06"
-  },
-  {
    "id": "repo:s32",
    "name": "S32 (RetroShrimp)",
    "source": "repo",
@@ -20804,31 +20774,6 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-05-31"
-  },
-  {
-   "id": "repo:tenkomori",
-   "name": "Tenkomori (kyledlester)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Tenkomori_20261018.rbf",
-   "repo": "kyledlester/Tenkomori_Shooting_MiSTer",
-   "url": "https://github.com/kyledlester/Tenkomori_Shooting_MiSTer",
-   "build_date": "2026-10-18",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 28,
-   "mame_drivers": [
-    "namco/namcos12.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-10-23",
-   "binary_only": false,
-   "nsets": 2,
-   "ntitles": 1,
-   "first_date": "2026-10-16"
   },
   {
    "id": "repo:thepit",
@@ -22151,6 +22096,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-29",
+   "aliases": [],
    "last_seen": "2026-10-29",
    "binary_only": false,
    "nsets": 8,
@@ -22702,6 +22648,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-29",
+   "aliases": [],
    "last_seen": "2026-10-29",
    "binary_only": false,
    "nsets": 4,
@@ -23104,6 +23051,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-29",
+   "aliases": [],
    "last_seen": "2026-10-29",
    "binary_only": true,
    "nsets": 0,
@@ -23126,6 +23074,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-29",
+   "aliases": [],
    "last_seen": "2026-10-29",
    "binary_only": false,
    "nsets": 23,
@@ -23173,6 +23122,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-29",
+   "aliases": [],
    "last_seen": "2026-10-29",
    "binary_only": false,
    "nsets": 54,
@@ -23195,6 +23145,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-29",
+   "aliases": [],
    "last_seen": "2026-10-29",
    "binary_only": true,
    "nsets": 7,
@@ -23217,6 +23168,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-29",
+   "aliases": [],
    "last_seen": "2026-10-29",
    "binary_only": true,
    "nsets": 17,
@@ -23264,6 +23216,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-29",
+   "aliases": [],
    "last_seen": "2026-10-29",
    "binary_only": true,
    "nsets": 3,
@@ -23786,6 +23739,7 @@
    "sets_covered": 14,
    "cores": [
     "coinop:alpha68k",
+    "meat:timesoldierstwinstick",
     "repo:alpha68k"
    ],
    "first": "2022-10-12"
@@ -25837,7 +25791,6 @@
    "sets_covered": 24,
    "cores": [
     "kyle:rshark",
-    "repo:rshark",
     "shmupfan:dooyong"
    ],
    "first": "2026-09-28"
@@ -26793,10 +26746,11 @@
   {
    "sourcefile": "irem/vigilant.cpp",
    "titles": 4,
-   "covered": 2,
+   "covered": 3,
    "sets": 15,
-   "sets_covered": 9,
+   "sets_covered": 10,
    "cores": [
+    "bazset:buccaneers",
     "bazset:kickle",
     "jt:jtvigil",
     "jtpr:jtmeikyu",
@@ -27355,9 +27309,7 @@
    "sets_covered": 18,
    "cores": [
     "kyle:djmain",
-    "kyle:djmainsd",
-    "repo:djmain",
-    "repo:djmainsd"
+    "kyle:djmainsd"
    ],
    "first": "2026-10-15"
   },
@@ -27572,8 +27524,7 @@
    "sets": 11,
    "sets_covered": 11,
    "cores": [
-    "kyle:konamigv",
-    "repo:konamigv"
+    "kyle:konamigv"
    ],
    "first": "2026-10-12"
   },
@@ -29492,7 +29443,6 @@
    "sets_covered": 59,
    "cores": [
     "kyle:tenkomori",
-    "repo:tenkomori",
     "xela:system11",
     "xela:xnsystem11",
     "xela:xnsystem12"
@@ -30676,8 +30626,7 @@
    "sets": 5,
    "sets_covered": 5,
    "cores": [
-    "kyle:deniam",
-    "repo:deniam"
+    "kyle:deniam"
    ],
    "first": "2026-10-16"
   },
@@ -31237,11 +31186,14 @@
   {
    "sourcefile": "seibu/wiz.cpp",
    "titles": 4,
-   "covered": 0,
+   "covered": 2,
    "sets": 10,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 2,
+   "cores": [
+    "bazset:kungfutaikun",
+    "bazset:wiz"
+   ],
+   "first": "2026-10-29"
   },
   {
    "sourcefile": "seta/albazc.cpp",
@@ -31573,7 +31525,6 @@
     "kyle:xnzn1fxa",
     "kyle:xnzn1rz",
     "meat:primal2",
-    "repo:braveblade",
     "xela:xnzn1",
     "xela:xnzn1taitofx1b",
     "xela:zn1capcom",
@@ -32264,11 +32215,13 @@
   {
    "sourcefile": "taito/slapshot.cpp",
    "titles": 2,
-   "covered": 0,
+   "covered": 2,
    "sets": 5,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 5,
+   "cores": [
+    "decoryah:slapshot"
+   ],
+   "first": "2026-10-29"
   },
   {
    "sourcefile": "taito/spdheat.cpp",

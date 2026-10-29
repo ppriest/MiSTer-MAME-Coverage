@@ -335,6 +335,9 @@
  "decoryah:silvmil": [
   "decoryah/Arcade-SilverMillennium_MiSTer"
  ],
+ "decoryah:slapshot": [
+  "decoryah/Arcade-SlapShot_MiSTer"
+ ],
  "decoryah:taitol": [
   "decoryah/Arcade-TaitoLSystem_MiSTer"
  ],
@@ -2313,6 +2316,9 @@
  "ongo:brapboysspecial": [
   "bazset/MiSTer_BAZSET"
  ],
+ "ongo:buccaneers": [
+  "bazset/MiSTer_BAZSET"
+ ],
  "ongo:cadash_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
@@ -2490,6 +2496,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:krull_bazset": [
+  "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:kungfutaikun": [
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:lastduel": [
@@ -2760,6 +2769,9 @@
  "ongo:thepit": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:timesoldierstwinstick": [
+  "meathax/meatcores"
+ ],
  "ongo:twinhawk_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
@@ -2772,6 +2784,9 @@
  ],
  "ongo:vsnes": [
   "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:wiz": [
+  "bazset/MiSTer_BAZSET"
  ],
  "ongo:wwfwfest": [
   "OngoGablogian/MiSTer_Ongo"

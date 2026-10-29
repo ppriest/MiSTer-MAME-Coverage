@@ -6,13 +6,7 @@ Generated 2026-10-29 by `tools/reconcile_shmups.py` from MAME 0289 data and [shm
 
 ## New since the previous report
 
-**5 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
-
-- `airbustr` Air Buster: Trouble Specialty Raid Unit (World) (1990; Shooter / Flying Horizontal)
-- `bermudat` Bermuda Triangle (World?) (1987; Shooter / Flying Vertical)
-- `chopper` Chopper I (US Ver 2) (1988; Shooter / Flying Vertical)
-- `hal21` HAL21 (1985; Shooter / Flying Vertical)
-- `worldwar` World Wars (World?) (1987; Shooter / Flying Vertical)
+Nothing new: the same titles disagree as before.
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -29,14 +23,10 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
-| **NEW** `airbustr` | Air Buster: Trouble Specialty Raid Unit (World) | 1990 | Shooter / Flying Horizontal (catver) | AirBuster, TomSVR_djboy |
-| **NEW** `bermudat` | Bermuda Triangle (World?) | 1987 | Shooter / Flying Vertical (catver) | SNKTripleZ80 |
-| **NEW** `chopper` | Chopper I (US Ver 2) | 1988 | Shooter / Flying Vertical (catver) | SNKTripleZ80 |
-| **NEW** `hal21` | HAL21 | 1985 | Shooter / Flying Vertical (catver) | SNKTripleZ80 |
-| **NEW** `worldwar` | World Wars (World?) | 1987 | Shooter / Flying Vertical (catver) | SNKTripleZ80 |
 | `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
+| `airbustr` | Air Buster: Trouble Specialty Raid Unit (World) | 1990 | Shooter / Flying Horizontal (catver) | AirBuster, TomSVR_djboy |
 | `aliensec` | Alien Sector | 1985 | Shooter / Flying Horizontal (catver) | jtthundr |
 | `alpha1v` | Alpha One (Vision Electronics) | 1988 | Shooter / Flying Horizontal (catver) | Irem1, Irem1_TestBuild (RodimusFVC) |
 | `argus` | Argus | 1986 | Shooter / Flying Vertical (catver) | jtargus, Argus |
@@ -46,6 +36,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `bakutotu` | Bakutotsu Kijuutei | 1988 | Shooter / Flying Horizontal (catver) | jtshouse |
 | `baryon` | Baryon - Future Assault (set 1) | 1997 | Shooter / Flying Vertical (catver) | DreamWorld |
 | `bchopper` | Battle Chopper (World) | 1987 | Shooter / Flying (catver) | IremM72 |
+| `bermudat` | Bermuda Triangle (World?) | 1987 | Shooter / Flying Vertical (catver) | SNKTripleZ80 |
 | `boomrang` | Boomer Rang'r / Genesis (set 1) | 1983 | Shooter / Walking (catver) | DataEastLiberation |
 | `brkthru` | Break Thru (World) | 1986 | Shooter / Driving Horizontal (catver) | xnbrkthru (XelaNotPu) |
 | `bucky` | Bucky O'Hare (ver EAB) | 1992 | Shooter / Walking (catver) | Bucky |
@@ -54,6 +45,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `calibr50` | Caliber 50 (Ver. 1.01) | 1989 | Shooter / Walking (catver) | jtcal50, Caliber50TwinStick, SetaDowntown |
 | `pc_cshwk` | Captain Sky Hawk (PlayChoice-10) | 1989 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `choplift` | Choplifter (8751 315-5151) | 1985 | Shooter / Flying Horizontal (catver) | SEGASYS1_B23_FULL, Blackwine-SegaSystem1-2, SegaSys1+2 (TheJesusFish), SegaSystem1-2, SegaSystem1-2_TestBuild (RodimusFVC) |
+| `chopper` | Chopper I (US Ver 2) | 1988 | Shooter / Flying Vertical (catver) | SNKTripleZ80 |
 | `colony7` | Colony 7 (set 1) | 1981 | Shooter / Command (catver) | Defender, Williams_TestBuild (RodimusFVC) |
 | `commando` | Commando (World) | 1985 | Shooter / Walking (catver) | jtcommnd |
 | `dcon` | D-Con | 1992 | Shooter / Command (catver) | DCon |
@@ -79,6 +71,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `gradius4` | Gradius IV: Fukkatsu (ver JAC) | 1998 | Shooter / Flying Horizontal (catver) | KonamiHornet |
 | `gwar` | Guerrilla War (US) | 1987 | Shooter / Walking (catver) | ffgwar, SNKTripleZ80 |
 | `gundhara` | Gundhara | 1995 | Shooter / Walking (catver) | Seta |
+| `hal21` | HAL21 | 1985 | Shooter / Flying Vertical (catver) | SNKTripleZ80 |
 | `heatbrl` | Heated Barrel (World version 3) | 1992 | Shooter / Walking (catver) | HeatedBarrel |
 | `hbarrel` | Heavy Barrel (World) | 1987 | Shooter / Walking (catver) | jtninja, HeavyBarrelTwinStick |
 | `hvyunit` | Heavy Unit (World) | 1988 | Shooter / Flying Horizontal (catver) | heavyunit (decoryah), HeavyUnit |
@@ -142,7 +135,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `thndrbld` | Thunder Blade (upright) (FD1094 317-0056) | 1987 | Shooter / Flying (catver) | SegaXBoard |
 | `thndzone` | Thunder Zone (World, Rev 1) | 1991 | Shooter / Walking (catver) | thndzone |
 | `timefgtr` | Time Fighter (Time Pilot conversion on Galaxian hardware) | 198? | Shooter / Flying (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
-| `timesold` | Time Soldiers (US Rev 3) | 1987 | Shooter / Walking (catver) | Alpha68k, Alpha68k (va7deo) |
+| `timesold` | Time Soldiers (US Rev 3) | 1987 | Shooter / Walking (catver) | Alpha68k, TimeSoldiersTwinStick, Alpha68k (va7deo) |
 | `tokisens` | Toki no Senshi - Chrono Soldier (MC-8123, 317-0040) | 1987 | Shooter / Walking (catver) | SegaSystem1-2, SegaSystem1-2_TestBuild (RodimusFVC) |
 | `totcarn` | Total Carnage (rev LA1 03/10/92) | 1992 | Shooter / Walking (catver) | blahm1d_yunitadpcm, Midway-Y-Unit |
 | `tricktrp` | Trick Trap (World?) | 1987 | Shooter / Walking (catver) | jtlabrun |
@@ -156,6 +149,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `supxevs` | Vs. Super Xevious | 1986 | Shooter / Flying Vertical (catver) | VSnes |
 | `wwestern` | Wild Western (set 1) | 1982 | Shooter / Misc. Vertical (catver) | TaitoSJ |
 | `wivernwg` | Wivern Wings | 2001 | Shooter / Flying Vertical (catver) | Vamphalf |
+| `worldwar` | World Wars (World?) | 1987 | Shooter / Flying Vertical (catver) | SNKTripleZ80 |
 | `ar_xeon` | Xenon (Arcadia, V 2.3) | 1988 | Shooter / Misc. Vertical (catver) | arcadiasystems (decoryah) |
 | `xxmissio` | XX Mission | 1986 | Shooter / Flying Vertical (catver) | UPLFramebuffer |
 | `zaviga` | Zaviga | 1984 | Shooter / Misc. Vertical (catver) | DataEastLiberation |

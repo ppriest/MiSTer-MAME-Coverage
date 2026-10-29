@@ -6,15 +6,6 @@
 {
 "date": "2026-10-16",
 "note": "alamone 2026-10-12",
-"cores": 0,
-"sets": 2,
-"pairs": 2,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
-"date": "2026-10-16",
-"note": "alamone 2026-10-12",
 "cores": 3,
 "sets": 0,
 "pairs": 20,
@@ -461,6 +452,15 @@
 "pairs": 173,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-29",
+"note": "alamone 2026-10-26",
+"cores": 9,
+"sets": 9,
+"pairs": 14,
+"dates_improved": 0,
+"cores_removed": 7
 }
 ]
 },
@@ -806,6 +806,25 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
+"last_seen": "2026-10-29"
+},
+"bazset:buccaneers": {
+"id": "bazset:buccaneers",
+"name": "Arcade-Buccaneers",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Arcade-Buccaneers.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-29",
 "last_seen": "2026-10-29"
 },
 "bazset:cadash_bazset": {
@@ -1072,6 +1091,24 @@
 "note": null,
 "first_recorded": "2026-10-08",
 "aliases": [],
+"last_seen": "2026-10-29"
+},
+"bazset:kungfutaikun": {
+"id": "bazset:kungfutaikun",
+"name": "Arcade-KungFuTaikun",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Arcade-KungFuTaikun.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-29",
 "last_seen": "2026-10-29"
 },
 "bazset:mastkin": {
@@ -1376,6 +1413,24 @@
 "note": null,
 "first_recorded": "2026-10-08",
 "aliases": [],
+"last_seen": "2026-10-29"
+},
+"bazset:wiz": {
+"id": "bazset:wiz",
+"name": "Arcade-Wiz",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Arcade-Wiz.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-29",
 "last_seen": "2026-10-29"
 },
 "blackwine:blackwine-segasystem1-2": {
@@ -2808,6 +2863,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "decoryah:crospang": {
@@ -3334,6 +3390,24 @@
 "note": null,
 "first_recorded": "2026-10-28",
 "aliases": [],
+"last_seen": "2026-10-29"
+},
+"decoryah:slapshot": {
+"id": "decoryah:slapshot",
+"name": "slapshot",
+"source": "decoryah",
+"source_title": "decoryah",
+"channel": null,
+"rbf": "slapshot.rbf",
+"repo": "decoryah/Arcade-SlapShot_MiSTer",
+"url": "https://github.com/decoryah/Arcade-SlapShot_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-29",
 "last_seen": "2026-10-29"
 },
 "decoryah:taitol": {
@@ -11499,6 +11573,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "meat:alpha68kn": {
@@ -11945,6 +12020,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "meat:heavybarreltwinstick": {
@@ -12581,6 +12657,24 @@
 "aliases": [],
 "last_seen": "2026-10-29"
 },
+"meat:timesoldierstwinstick": {
+"id": "meat:timesoldierstwinstick",
+"name": "Arcade-TimeSoldiersTwinStick",
+"source": "meat",
+"source_title": "MeatCores (meathax)",
+"channel": null,
+"rbf": "Arcade-TimeSoldiersTwinStick.rbf",
+"repo": "meathax/meatcores",
+"url": "https://github.com/meathax/meatcores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-29",
+"last_seen": "2026-10-29"
+},
 "meat:tumble": {
 "id": "meat:tumble",
 "name": "Arcade-Tumble",
@@ -12739,6 +12833,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "ongo:aqua_jack": {
@@ -13546,6 +13641,25 @@
 "source_title": "MiSTer_Ongo (OngoGablogian)",
 "channel": null,
 "rbf": "Arcade-BRapBoysSpecial.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-29",
+"aliases": [],
+"last_seen": "2026-10-29"
+},
+"ongo:buccaneers": {
+"id": "ongo:buccaneers",
+"name": "Arcade-Buccaneers",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Arcade-Buccaneers.rbf",
 "repo": "bazset/MiSTer_BAZSET",
 "url": "https://github.com/bazset/MiSTer_BAZSET",
 "build_date": null,
@@ -14390,6 +14504,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "ongo:heavybarreltwinstick": {
@@ -14772,6 +14887,24 @@
 "aliases": [],
 "last_seen": "2026-10-29"
 },
+"ongo:kungfutaikun": {
+"id": "ongo:kungfutaikun",
+"name": "Arcade-KungFuTaikun",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Arcade-KungFuTaikun.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-29",
+"last_seen": "2026-10-29"
+},
 "ongo:kuze_tumble": {
 "id": "ongo:kuze_tumble",
 "name": "kuze_Tumble",
@@ -14977,6 +15110,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "ongo:meathax_argus": {
@@ -15052,6 +15186,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "ongo:meathax_dataeastliberation": {
@@ -15601,6 +15736,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "ongo:mysteriousstones": {
@@ -16437,6 +16573,24 @@
 "aliases": [],
 "last_seen": "2026-10-11"
 },
+"ongo:timesoldierstwinstick": {
+"id": "ongo:timesoldierstwinstick",
+"name": "Arcade-TimeSoldiersTwinStick",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Arcade-TimeSoldiersTwinStick.rbf",
+"repo": "meathax/meatcores",
+"url": "https://github.com/meathax/meatcores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-29",
+"last_seen": "2026-10-29"
+},
 "ongo:tumble": {
 "id": "ongo:tumble",
 "name": "Arcade-Tumble",
@@ -16549,6 +16703,24 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-10-29"
+},
+"ongo:wiz": {
+"id": "ongo:wiz",
+"name": "Arcade-Wiz",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Arcade-Wiz.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-29",
 "last_seen": "2026-10-29"
 },
 "ongo:wwfwfest": {
@@ -17343,27 +17515,6 @@
 "aliases": [],
 "last_seen": "2026-10-29"
 },
-"repo:braveblade": {
-"id": "repo:braveblade",
-"name": "BraveBlade (kyledlester)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "BraveBlade_20261002.rbf",
-"repo": "kyledlester/Brave_Blade_MiSTer",
-"url": "https://github.com/kyledlester/Brave_Blade_MiSTer",
-"build_date": "2026-09-30",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 30,
-"mame_drivers": [
-"sony/zn.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
-"aliases": [],
-"last_seen": "2026-10-23"
-},
 "repo:breakout": {
 "id": "repo:breakout",
 "name": "Arcade-Breakout (KrishRVH)",
@@ -17470,69 +17621,6 @@
 "first_recorded": "2026-10-19",
 "aliases": [],
 "last_seen": "2026-10-29"
-},
-"repo:deniam": {
-"id": "repo:deniam",
-"name": "Deniam (kyledlester)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Deniam_20261016.rbf",
-"repo": "kyledlester/Deniam_MiSTer_FPGA",
-"url": "https://github.com/kyledlester/Deniam_MiSTer_FPGA",
-"build_date": "2026-10-16",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 29,
-"mame_drivers": [
-"sega/deniam.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
-"aliases": [],
-"last_seen": "2026-10-23"
-},
-"repo:djmain": {
-"id": "repo:djmain",
-"name": "DJMain (kyledlester)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "DJMain_20261016.rbf",
-"repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"url": "https://github.com/kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"build_date": "2026-10-16",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 22,
-"mame_drivers": [
-"konami/djmain.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
-"aliases": [],
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"id": "repo:djmainsd",
-"name": "DJMainSD (kyledlester)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "DJMainSD_20261016.rbf",
-"repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"url": "https://github.com/kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"build_date": "2026-10-16",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 22,
-"mame_drivers": [
-"konami/djmain.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
-"aliases": [],
-"last_seen": "2026-10-23"
 },
 "repo:donkeykong3": {
 "id": "repo:donkeykong3",
@@ -17781,27 +17869,6 @@
 "first_recorded": "2026-10-11",
 "aliases": [],
 "last_seen": "2026-10-29"
-},
-"repo:konamigv": {
-"id": "repo:konamigv",
-"name": "KonamiGV (kyledlester)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "KonamiGV_20261015.rbf",
-"repo": "kyledlester/Konami_GV_MiSTer",
-"url": "https://github.com/kyledlester/Konami_GV_MiSTer",
-"build_date": "2026-10-14",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 20,
-"mame_drivers": [
-"konami/konamigv.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
-"aliases": [],
-"last_seen": "2026-10-23"
 },
 "repo:konamigx": {
 "id": "repo:konamigx",
@@ -18345,27 +18412,6 @@
 "aliases": [],
 "last_seen": "2026-10-29"
 },
-"repo:rshark": {
-"id": "repo:rshark",
-"name": "RShark (kyledlester)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "RShark_20261003.rbf",
-"repo": "kyledlester/R_Shark_Super_X_MiSTer",
-"url": "https://github.com/kyledlester/R_Shark_Super_X_MiSTer",
-"build_date": "2026-10-03",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 33,
-"mame_drivers": [
-"dooyong/dooyong.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
-"aliases": [],
-"last_seen": "2026-10-23"
-},
 "repo:s32": {
 "id": "repo:s32",
 "name": "S32 (RetroShrimp)",
@@ -18810,27 +18856,6 @@
 "first_recorded": "2026-10-04",
 "aliases": [],
 "last_seen": "2026-10-29"
-},
-"repo:tenkomori": {
-"id": "repo:tenkomori",
-"name": "Tenkomori (kyledlester)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Tenkomori_20261018.rbf",
-"repo": "kyledlester/Tenkomori_Shooting_MiSTer",
-"url": "https://github.com/kyledlester/Tenkomori_Shooting_MiSTer",
-"build_date": "2026-10-18",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 28,
-"mame_drivers": [
-"namco/namcos12.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
-"aliases": [],
-"last_seen": "2026-10-23"
 },
 "repo:thepit": {
 "id": "repo:thepit",
@@ -19945,6 +19970,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "tomsvr:tomsvr_dynduke": {
@@ -20400,6 +20426,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "tomsvr:tomsvr_wrally": {
@@ -20734,6 +20761,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "xela:xnsuper22": {
@@ -20752,6 +20780,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "xela:xnsystem11": {
@@ -20791,6 +20820,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "xela:xnsystem21": {
@@ -20809,6 +20839,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "xela:xnsystem22": {
@@ -20827,6 +20858,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "xela:xnsystemfl": {
@@ -20866,6 +20898,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-29",
+"aliases": [],
 "last_seen": "2026-10-29"
 },
 "xela:xnzn1": {
@@ -34030,32 +34063,6 @@
 "mra": "_Arcade/beatmania (ver JA-B) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania (ver JA-B) [480i].mra",
-"mra": "_Arcade/beatmania (ver JA-B).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania (ver JA-B) [480i].mra",
-"mra": "_Arcade/beatmania (ver JA-B) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "bm2ndmix": {
@@ -34110,32 +34117,6 @@
 "mra": "_Arcade/beatmania 2nd MIX (ver JA-B) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania 2nd MIX (ver JA-B) [480i].mra",
-"mra": "_Arcade/beatmania 2nd MIX (ver JA-B).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania 2nd MIX (ver JA-B) [480i].mra",
-"mra": "_Arcade/beatmania 2nd MIX (ver JA-B) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "bm3rdmix": {
@@ -34190,32 +34171,6 @@
 "mra": "_Arcade/beatmania 3rd MIX (ver JA-B) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania 3rd MIX (ver JA-B) [480i].mra",
-"mra": "_Arcade/beatmania 3rd MIX (ver JA-B).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania 3rd MIX (ver JA-B) [480i].mra",
-"mra": "_Arcade/beatmania 3rd MIX (ver JA-B) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "bm4thmix": {
@@ -34270,32 +34225,6 @@
 "mra": "_Arcade/beatmania 4th MIX (ver JA-A) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania 4th MIX (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania 4th MIX (ver JA-A).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania 4th MIX (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania 4th MIX (ver JA-A) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "bm5thmix": {
@@ -34350,32 +34279,6 @@
 "mra": "_Arcade/beatmania 5th MIX (ver JA-A) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania 5th MIX (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania 5th MIX (ver JA-A).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania 5th MIX (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania 5th MIX (ver JA-A) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "bm6thmix": {
@@ -34430,32 +34333,6 @@
 "mra": "_Arcade/beatmania 6th MIX (ver JA-A) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania 6th MIX (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania 6th MIX (ver JA-A).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania 6th MIX (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania 6th MIX (ver JA-A) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "bm7thmix": {
@@ -34510,32 +34387,6 @@
 "mra": "_Arcade/beatmania 7th MIX (ver JA-B) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania 7th MIX (ver JA-B) [480i].mra",
-"mra": "_Arcade/beatmania 7th MIX (ver JA-B).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania 7th MIX (ver JA-B) [480i].mra",
-"mra": "_Arcade/beatmania 7th MIX (ver JA-B) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "bmaster": {
@@ -34620,32 +34471,6 @@
 "mra": "_Arcade/beatmania Club MIX (ver JA-A) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania Club MIX (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania Club MIX (ver JA-A).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania Club MIX (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania Club MIX (ver JA-A) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "bmcmxaac": {
@@ -34700,32 +34525,6 @@
 "mra": "_Arcade/beatmania complete MIX (ver AA-C) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania complete MIX (ver AA-C) [480i].mra",
-"mra": "_Arcade/beatmania complete MIX (ver AA-C).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania complete MIX (ver AA-C) [480i].mra",
-"mra": "_Arcade/beatmania complete MIX (ver AA-C) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "bmcompm2": {
@@ -34780,32 +34579,6 @@
 "mra": "_Arcade/beatmania complete MIX 2 (ver JA-A) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania complete MIX 2 (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania complete MIX 2 (ver JA-A).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania complete MIX 2 (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania complete MIX 2 (ver JA-A) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "bmcompmx": {
@@ -34860,32 +34633,6 @@
 "mra": "_Arcade/beatmania complete MIX (ver JA-C) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania complete MIX (ver JA-C) [480i].mra",
-"mra": "_Arcade/beatmania complete MIX (ver JA-C).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania complete MIX (ver JA-C) [480i].mra",
-"mra": "_Arcade/beatmania complete MIX (ver JA-C) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "bmcorerm": {
@@ -34940,32 +34687,6 @@
 "mra": "_Arcade/beatmania CORE REMIX (ver JA-A) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania CORE REMIX (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania CORE REMIX (ver JA-A).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania CORE REMIX (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania CORE REMIX (ver JA-A) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "bmdct": {
@@ -35020,32 +34741,6 @@
 "mra": "_Arcade/beatmania featuring Dreams Come True (ver JA-A) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania featuring Dreams Come True (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania featuring Dreams Come True (ver JA-A).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania featuring Dreams Come True (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania featuring Dreams Come True (ver JA-A) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "bmfinal": {
@@ -35100,32 +34795,6 @@
 "mra": "_Arcade/beatmania THE FINAL (ver JA-A) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania THE FINAL (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania THE FINAL (ver JA-A).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/_CRT 480i/beatmania THE FINAL (ver JA-A) [480i].mra",
-"mra": "_Arcade/beatmania THE FINAL (ver JA-A) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "bmxstunts": {
@@ -36846,19 +36515,6 @@
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Brave Blade (World).mra"
 },
-"repo:braveblade": {
-"core": "repo:braveblade",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "XelaNotPu/ZN1_MiSTer",
-"first_path": "release/_Arcade/Brave Blade (World).mra",
-"mra": "_Arcade/Brave Blade (World) (with music).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
 "xela:xnzn1": {
 "core": "xela:xnzn1",
 "date": "2026-07-18",
@@ -36925,19 +36581,6 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Asia).mra"
-},
-"repo:braveblade": {
-"core": "repo:braveblade",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "XelaNotPu/ZN1_MiSTer",
-"first_path": "release/_Arcade/_alternatives/_Brave Blade/Brave Blade (Asia).mra",
-"mra": "_Arcade/Brave Blade (Asia) (with music).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 },
 "xela:xnzn1": {
 "core": "xela:xnzn1",
@@ -37006,19 +36649,6 @@
 "last_seen": "2026-10-18",
 "mra": "_Arcade/_alternatives/_Brave Blade/Brave Blade (Japan).mra"
 },
-"repo:braveblade": {
-"core": "repo:braveblade",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "XelaNotPu/ZN1_MiSTer",
-"first_path": "release/_Arcade/_alternatives/_Brave Blade/Brave Blade (Japan).mra",
-"mra": "_Arcade/Brave Blade (Japan) (with music).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
 "xela:xnzn1": {
 "core": "xela:xnzn1",
 "date": "2026-07-18",
@@ -37085,19 +36715,6 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/_alternatives/_Brave Blade/Brave Blade (USA).mra"
-},
-"repo:braveblade": {
-"core": "repo:braveblade",
-"date": "2026-10-04",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "XelaNotPu/ZN1_MiSTer",
-"first_path": "release/_Arcade/_alternatives/_Brave Blade/Brave Blade (USA).mra",
-"mra": "_Arcade/Brave Blade (USA) (with music).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 },
 "xela:xnzn1": {
 "core": "xela:xnzn1",
@@ -37280,19 +36897,6 @@
 "mra": "_Arcade/Beat the Champ (GV053 UAA01).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-29"
-},
-"repo:konamigv": {
-"core": "repo:konamigv",
-"date": "2026-10-14",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_GV_MiSTer",
-"first_path": "MRA/Beat the Champ (GV053 UAA01).mra",
-"mra": "_Arcade/Beat the Champ (GV053 UAA01).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "btime": {
@@ -37956,6 +37560,34 @@
 "first_path": "releases/_alternatives/_Puck Man/Buccaneer (Set 2).mra",
 "mra": "_Arcade/Buccaneer (Set 2).mra",
 "first_recorded": "2026-10-26",
+"last_seen": "2026-10-29"
+}
+},
+"buccanrs": {
+"bazset:buccaneers": {
+"core": "bazset:buccaneers",
+"date": "2026-10-29",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Buccaneers (set 1).mra",
+"mra": "_Arcade/_BAZSET/Buccaneers (set 1).mra",
+"first_recorded": "2026-10-29",
+"last_seen": "2026-10-29"
+},
+"ongo:buccaneers": {
+"core": "ongo:buccaneers",
+"date": "2026-10-29",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Buccaneers (set 1).mra",
+"mra": "_Arcade/_BAZSET/Buccaneers (set 1).mra",
+"first_recorded": "2026-10-29",
 "last_seen": "2026-10-29"
 }
 },
@@ -45460,19 +45092,6 @@
 "mra": "_Arcade/_alternatives/_Logic Pro/Croquis (Korea).mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:deniam": {
-"core": "repo:deniam",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Deniam_MiSTer_FPGA",
-"first_path": "MRA/_alternatives/_Logic Pro/Croquis (Korea).mra",
-"mra": "_Arcade/_alternatives/_Logic Pro/Croquis (Korea).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "croquisg": {
@@ -45501,19 +45120,6 @@
 "mra": "_Arcade/_alternatives/_Logic Pro/Croquis (Germany).mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:deniam": {
-"core": "repo:deniam",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Deniam_MiSTer_FPGA",
-"first_path": "MRA/_alternatives/_Logic Pro/Croquis (Germany).mra",
-"mra": "_Arcade/_alternatives/_Logic Pro/Croquis (Germany).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "crospang": {
@@ -77440,19 +77046,6 @@
 "mra": "_Arcade/Hyper Athlete (GV021 JAPAN 1.00).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-29"
-},
-"repo:konamigv": {
-"core": "repo:konamigv",
-"date": "2026-10-14",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_GV_MiSTer",
-"first_path": "MRA/Hyper Athlete (GV021 JAPAN 1.00).mra",
-"mra": "_Arcade/Hyper Athlete (GV021 JAPAN 1.00).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "hyperbbc": {
@@ -82183,19 +81776,6 @@
 "mra": "_Arcade/Karian Cross (Rev. 1.0).mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:deniam": {
-"core": "repo:deniam",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Deniam_MiSTer_FPGA",
-"first_path": "MRA/Karian Cross (Rev. 1.0).mra",
-"mra": "_Arcade/Karian Cross (Rev. 1.0).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "karnov": {
@@ -82504,19 +82084,6 @@
 "mra": "_Arcade/Dead Eye (GV054 UAA01).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-29"
-},
-"repo:konamigv": {
-"core": "repo:konamigv",
-"date": "2026-10-14",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_GV_MiSTer",
-"first_path": "MRA/Dead Eye (GV054 UAA01).mra",
-"mra": "_Arcade/Dead Eye (GV054 UAA01).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "kengo": {
@@ -86034,6 +85601,34 @@
 "mra": "_Arcade/Kung-Fu Master (W).mra"
 }
 },
+"kungfut": {
+"bazset:kungfutaikun": {
+"core": "bazset:kungfutaikun",
+"date": "2026-10-29",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Kung-Fu Taikun.mra",
+"mra": "_Arcade/_BAZSET/Kung-Fu Taikun.mra",
+"first_recorded": "2026-10-29",
+"last_seen": "2026-10-29"
+},
+"ongo:kungfutaikun": {
+"core": "ongo:kungfutaikun",
+"date": "2026-10-29",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Kung-Fu Taikun.mra",
+"mra": "_Arcade/_BAZSET/Kung-Fu Taikun.mra",
+"first_recorded": "2026-10-29",
+"last_seen": "2026-10-29"
+}
+},
 "kuniokun": {
 "jt:jtkunio": {
 "core": "jt:jtkunio",
@@ -86287,19 +85882,6 @@
 "mra": "_Arcade/Let's Attack Crazy Cross (GV027 ASIA 1.10).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-29"
-},
-"repo:konamigv": {
-"core": "repo:konamigv",
-"date": "2026-10-14",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Konami_GV_MiSTer",
-"first_path": "MRA/_alternatives/_Susume! Taisen Puzzle-Dama/Let's Attack Crazy Cross (GV027 ASIA 1.10).mra",
-"mra": "_Arcade/Let's Attack Crazy Cross (GV027 ASIA 1.10).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "ladybug": {
@@ -88564,19 +88146,6 @@
 "mra": "_Arcade/Logic Pro 2 (Japan).mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:deniam": {
-"core": "repo:deniam",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Deniam_MiSTer_FPGA",
-"first_path": "MRA/Logic Pro 2 (Japan).mra",
-"mra": "_Arcade/Logic Pro 2 (Japan).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "logicpro": {
@@ -88605,19 +88174,6 @@
 "mra": "_Arcade/Logic Pro (Japan).mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:deniam": {
-"core": "repo:deniam",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Deniam_MiSTer_FPGA",
-"first_path": "MRA/Logic Pro (Japan).mra",
-"mra": "_Arcade/Logic Pro (Japan).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "loht": {
@@ -102251,19 +101807,6 @@
 "mra": "_Arcade/Nagano Winter Olympics '98 (GX720 EAA).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-29"
-},
-"repo:konamigv": {
-"core": "repo:konamigv",
-"date": "2026-10-14",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Konami_GV_MiSTer",
-"first_path": "MRA/_alternatives/_Hyper Olympic in Nagano/Nagano Winter Olympics '98 (GX720 EAA).mra",
-"mra": "_Arcade/Nagano Winter Olympics '98 (GX720 EAA).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "naganoj": {
@@ -102279,19 +101822,6 @@
 "mra": "_Arcade/Hyper Olympic in Nagano (GX720 JAA).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-29"
-},
-"repo:konamigv": {
-"core": "repo:konamigv",
-"date": "2026-10-14",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_GV_MiSTer",
-"first_path": "MRA/Hyper Olympic in Nagano (GX720 JAA).mra",
-"mra": "_Arcade/Hyper Olympic in Nagano (GX720 JAA).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "nam1975": {
@@ -106430,6 +105960,51 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-29",
 "mra": "_Arcade/Operation Wolf (World, rev 2, set 1).mra"
+}
+},
+"opwolf3": {
+"decoryah:slapshot": {
+"core": "decoryah:slapshot",
+"date": "2026-10-29",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-SlapShot_MiSTer",
+"first_path": "mra/Operation Wolf 3.mra",
+"mra": "_Arcade/Operation Wolf 3.mra",
+"first_recorded": "2026-10-29",
+"last_seen": "2026-10-29"
+}
+},
+"opwolf3j": {
+"decoryah:slapshot": {
+"core": "decoryah:slapshot",
+"date": "2026-10-29",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-SlapShot_MiSTer",
+"first_path": "mra/_alternatives/_Operation Wolf 3/Operation Wolf 3 (Japan).mra",
+"mra": "_Arcade/Operation Wolf 3 (Japan).mra",
+"first_recorded": "2026-10-29",
+"last_seen": "2026-10-29"
+}
+},
+"opwolf3u": {
+"decoryah:slapshot": {
+"core": "decoryah:slapshot",
+"date": "2026-10-29",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-SlapShot_MiSTer",
+"first_path": "mra/_alternatives/_Operation Wolf 3/Operation Wolf 3 (US).mra",
+"mra": "_Arcade/Operation Wolf 3 (US).mra",
+"first_recorded": "2026-10-29",
+"last_seen": "2026-10-29"
 }
 },
 "opwolfa": {
@@ -117030,32 +116605,6 @@
 "mra": "_Arcade/Pop'n Music (ver TA-A, HDD 1.01) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/Pop'n Music (ver TA-A, HDD 1.01).mra",
-"mra": "_Arcade/Pop'n Music (ver TA-A, HDD 1.01).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/Pop'n Music (ver TA-A, HDD 1.01).mra",
-"mra": "_Arcade/Pop'n Music (ver TA-A, HDD 1.01) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "popn2": {
@@ -117110,32 +116659,6 @@
 "mra": "_Arcade/Pop'n Music 2 (ver JA-A) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/Pop'n Music 2 (ver JA-A).mra",
-"mra": "_Arcade/Pop'n Music 2 (ver JA-A).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/Pop'n Music 2 (ver JA-A).mra",
-"mra": "_Arcade/Pop'n Music 2 (ver JA-A) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "popn3": {
@@ -117190,32 +116713,6 @@
 "mra": "_Arcade/Pop'n Music 3 (ver JA-A) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/Pop'n Music 3 (ver JA-A).mra",
-"mra": "_Arcade/Pop'n Music 3 (ver JA-A).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/Pop'n Music 3 (ver JA-A).mra",
-"mra": "_Arcade/Pop'n Music 3 (ver JA-A) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "popnpop": {
@@ -117298,32 +116795,6 @@
 "mra": "_Arcade/Pop'n Stage EX (ver JB-A) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
-},
-"repo:djmain": {
-"core": "repo:djmain",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/Pop'n Stage EX (ver JB-A).mra",
-"mra": "_Arcade/Pop'n Stage EX (ver JB-A).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
-"repo:djmainsd": {
-"core": "repo:djmainsd",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA",
-"first_path": "MRA/Pop'n Stage EX (ver JB-A).mra",
-"mra": "_Arcade/Pop'n Stage EX (ver JB-A) [480i].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "popspops": {
@@ -117726,19 +117197,6 @@
 "mra": "_Arcade/Jikkyou Powerful Pro Yakyuu '96 (GV017 JAPAN 1.03).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-29"
-},
-"repo:konamigv": {
-"core": "repo:konamigv",
-"date": "2026-10-14",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_GV_MiSTer",
-"first_path": "MRA/Jikkyou Powerful Pro Yakyuu '96 (GV017 JAPAN 1.03).mra",
-"mra": "_Arcade/Jikkyou Powerful Pro Yakyuu '96 (GV017 JAPAN 1.03).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "pplusad": {
@@ -128152,19 +127610,6 @@
 "last_seen": "2026-10-18",
 "mra": "_Arcade/R-Shark (set 1).mra"
 },
-"repo:rshark": {
-"core": "repo:rshark",
-"date": "2026-10-06",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/R_Shark_Super_X_MiSTer",
-"first_path": "MRA/R-Shark (set 1).mra",
-"mra": "_Arcade/R-Shark (set 1).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -128205,19 +127650,6 @@
 "first_recorded": "2026-10-05",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/_alternatives/_R-Shark/R-Shark (set 2) [kyledlester].mra"
-},
-"repo:rshark": {
-"core": "repo:rshark",
-"date": "2026-10-06",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/R_Shark_Super_X_MiSTer",
-"first_path": "MRA/_alternatives/_R-Shark/R-Shark (set 2).mra",
-"mra": "_Arcade/_alternatives/_R-Shark/R-Shark (set 2) [kyledlester].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 },
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
@@ -138829,19 +138261,6 @@
 "mra": "_Arcade/The Simpsons Bowling (GQ829 UAA).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-29"
-},
-"repo:konamigv": {
-"core": "repo:konamigv",
-"date": "2026-10-14",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_GV_MiSTer",
-"first_path": "MRA/The Simpsons Bowling (GQ829 UAA).mra",
-"mra": "_Arcade/The Simpsons Bowling (GQ829 UAA).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "simpsons": {
@@ -140621,6 +140040,36 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-29",
 "mra": "_Arcade/SlapFight Bootleg (Visibility Mod) [v1.0].mra"
+}
+},
+"slapshot": {
+"decoryah:slapshot": {
+"core": "decoryah:slapshot",
+"date": "2026-10-29",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-SlapShot_MiSTer",
+"first_path": "mra/Slap Shot.mra",
+"mra": "_Arcade/Slap Shot.mra",
+"first_recorded": "2026-10-29",
+"last_seen": "2026-10-29"
+}
+},
+"slapshotj": {
+"decoryah:slapshot": {
+"core": "decoryah:slapshot",
+"date": "2026-10-29",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-SlapShot_MiSTer",
+"first_path": "mra/_alternatives/_Slap Shot/Slap Shot (Ver 2.2 J).mra",
+"mra": "_Arcade/Slap Shot (Ver 2.2 J).mra",
+"first_recorded": "2026-10-29",
+"last_seen": "2026-10-29"
 }
 },
 "slapshtr": {
@@ -150802,19 +150251,6 @@
 "last_seen": "2026-10-18",
 "mra": "_Arcade/Super-X (NTC).mra"
 },
-"repo:rshark": {
-"core": "repo:rshark",
-"date": "2026-10-06",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/R_Shark_Super_X_MiSTer",
-"first_path": "MRA/Super-X (NTC).mra",
-"mra": "_Arcade/Super-X (NTC).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
 "date": "2026-09-29",
@@ -150855,19 +150291,6 @@
 "first_recorded": "2026-10-05",
 "last_seen": "2026-10-18",
 "mra": "_Arcade/_alternatives/_Super-X/Super-X (Mitchell) [kyledlester].mra"
-},
-"repo:rshark": {
-"core": "repo:rshark",
-"date": "2026-10-06",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/R_Shark_Super_X_MiSTer",
-"first_path": "MRA/_alternatives/_Super-X/Super-X (Mitchell).mra",
-"mra": "_Arcade/_alternatives/_Super-X/Super-X (Mitchell) [kyledlester].mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 },
 "shmupfan:dooyong": {
 "core": "shmupfan:dooyong",
@@ -151335,19 +150758,6 @@
 "mra": "_Arcade/Susume! Taisen Puzzle-Dama (GV027 JAPAN 1.20).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-29"
-},
-"repo:konamigv": {
-"core": "repo:konamigv",
-"date": "2026-10-14",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_GV_MiSTer",
-"first_path": "MRA/Susume! Taisen Puzzle-Dama (GV027 JAPAN 1.20).mra",
-"mra": "_Arcade/Susume! Taisen Puzzle-Dama (GV027 JAPAN 1.20).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "sutapper": {
@@ -155318,19 +154728,6 @@
 "first_recorded": "2026-10-14",
 "last_seen": "2026-10-18"
 },
-"repo:tenkomori": {
-"core": "repo:tenkomori",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Tenkomori_Shooting_MiSTer",
-"first_path": "MRA/Tenkomori Shooting (World, TKM2-VER.A1).mra",
-"mra": "_Arcade/Tenkomori Shooting (World, TKM2-VER.A1).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
-},
 "xela:xnsystem12": {
 "core": "xela:xnsystem12",
 "date": "2026-10-29",
@@ -155371,19 +154768,6 @@
 "mra": "_Arcade/_alternatives/_Tenkomori Shooting/Tenkomori Shooting (Japan, TKM1-VER.A1).mra",
 "first_recorded": "2026-10-14",
 "last_seen": "2026-10-18"
-},
-"repo:tenkomori": {
-"core": "repo:tenkomori",
-"date": "2026-10-16",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Tenkomori_Shooting_MiSTer",
-"first_path": "MRA/_alternatives/_Tenkomori Shooting/Tenkomori Shooting (Japan, TKM1-VER.A1).mra",
-"mra": "_Arcade/_alternatives/_Tenkomori Shooting/Tenkomori Shooting (Japan, TKM1-VER.A1).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 },
 "xela:xnsystem12": {
 "core": "xela:xnsystem12",
@@ -157439,6 +156823,32 @@
 "last_seen": "2026-10-29",
 "mra": "_Arcade/Time Soldiers (US Rev 3).mra"
 },
+"meat:timesoldierstwinstick": {
+"core": "meat:timesoldierstwinstick",
+"date": "2022-11-21",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "va7deo/alpha68k",
+"first_path": "dev/mra/Time Soldiers (US Rev 3).mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/Time Soldiers (Twin Stick).mra",
+"first_recorded": "2026-10-29",
+"last_seen": "2026-10-29"
+},
+"ongo:timesoldierstwinstick": {
+"core": "ongo:timesoldierstwinstick",
+"date": "2026-10-30",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "va7deo/alpha68k",
+"first_path": "dev/mra/Time Soldiers (US Rev 3).mra",
+"mra": "_Arcade/_MeatCores/_Dual Analog Conversions/Time Soldiers (Twin Stick).mra",
+"first_recorded": "2026-10-29",
+"last_seen": "2026-10-29"
+},
 "repo:alpha68k": {
 "core": "repo:alpha68k",
 "date": "2022-11-21",
@@ -158425,19 +157835,6 @@
 "mra": "_Arcade/Tokimeki Memorial Oshiete Your Heart (GQ673 JAA).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-29"
-},
-"repo:konamigv": {
-"core": "repo:konamigv",
-"date": "2026-10-14",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_GV_MiSTer",
-"first_path": "MRA/Tokimeki Memorial Oshiete Your Heart (GQ673 JAA).mra",
-"mra": "_Arcade/Tokimeki Memorial Oshiete Your Heart (GQ673 JAA).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "tmoshs": {
@@ -158453,19 +157850,6 @@
 "mra": "_Arcade/Tokimeki Memorial Oshiete Your Heart Seal Version (GE755 JAA).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-29"
-},
-"repo:konamigv": {
-"core": "repo:konamigv",
-"date": "2026-10-14",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_GV_MiSTer",
-"first_path": "MRA/Tokimeki Memorial Oshiete Your Heart Seal Version (GE755 JAA).mra",
-"mra": "_Arcade/Tokimeki Memorial Oshiete Your Heart Seal Version (GE755 JAA).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "tmoshsp": {
@@ -158481,19 +157865,6 @@
 "mra": "_Arcade/Tokimeki Memorial Oshiete Your Heart Seal Version Plus (GE756 JAB).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-29"
-},
-"repo:konamigv": {
-"core": "repo:konamigv",
-"date": "2026-10-14",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_GV_MiSTer",
-"first_path": "MRA/Tokimeki Memorial Oshiete Your Heart Seal Version Plus (GE756 JAB).mra",
-"mra": "_Arcade/Tokimeki Memorial Oshiete Your Heart Seal Version Plus (GE756 JAB).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "tmoshspa": {
@@ -158509,19 +157880,6 @@
 "mra": "_Arcade/Tokimeki Memorial Oshiete Your Heart Seal Version Plus (GE756 JAA).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-29"
-},
-"repo:konamigv": {
-"core": "repo:konamigv",
-"date": "2026-10-14",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "kyledlester/Konami_GV_MiSTer",
-"first_path": "MRA/_alternatives/_Tokimeki Memorial Oshiete Your Heart Seal Version Plus/Tokimeki Memorial Oshiete Your Heart Seal Version Plus (GE756 JAA).mra",
-"mra": "_Arcade/Tokimeki Memorial Oshiete Your Heart Seal Version Plus (GE756 JAA).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "tndrcade": {
@@ -169520,19 +168878,6 @@
 "mra": "_Arcade/Wedding Rhapsody (GX624 JAA).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-10-29"
-},
-"repo:konamigv": {
-"core": "repo:konamigv",
-"date": "2026-10-14",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": false,
-"first_repo": "kyledlester/Konami_GV_MiSTer",
-"first_path": "MRA/Wedding Rhapsody (GX624 JAA).mra",
-"mra": "_Arcade/Wedding Rhapsody (GX624 JAA).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-10-23"
 }
 },
 "wexpress": {
@@ -170187,6 +169532,34 @@
 "first_recorded": "2026-10-09",
 "last_seen": "2026-10-29",
 "mra": "_Arcade/Wivern Wings.mra"
+}
+},
+"wiz": {
+"bazset:wiz": {
+"core": "bazset:wiz",
+"date": "2026-10-29",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Wiz.mra",
+"mra": "_Arcade/_BAZSET/Wiz.mra",
+"first_recorded": "2026-10-29",
+"last_seen": "2026-10-29"
+},
+"ongo:wiz": {
+"core": "ongo:wiz",
+"date": "2026-10-29",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Wiz.mra",
+"mra": "_Arcade/_BAZSET/Wiz.mra",
+"first_recorded": "2026-10-29",
+"last_seen": "2026-10-29"
 }
 },
 "wizdfire": {
@@ -176444,6 +175817,10 @@
 "bucanera": {
 "rodimus": "Maze"
 },
+"buccanrs": {
+"ongo": "Arcade action",
+"bazset": "Arcade action"
+},
 "buckrogn": {
 "dist": "Shooter - Flying",
 "repo": "Shooter - Flying"
@@ -181904,6 +181281,10 @@
 },
 "kungfum": {
 "dist": "Beat 'em Up"
+},
+"kungfut": {
+"ongo": "Arcade",
+"bazset": "Arcade"
 },
 "kurufev": {
 "dist": "Puzzle"
@@ -190926,6 +190307,10 @@
 "ppriest": "Shooter",
 "ongo": "Shooter",
 "repo": "Shooter"
+},
+"wiz": {
+"ongo": "Arcade",
+"bazset": "Arcade"
 },
 "wizdfire": {
 "coinop": "Hack &amp; Slash"
