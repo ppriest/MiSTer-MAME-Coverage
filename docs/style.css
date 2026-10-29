@@ -391,9 +391,11 @@ label.themepick select option { color: #111; background: #fff; }
 /* faint scanlines on the display type only: headings, tab names, the big tile numbers and the charts themselves; never on text to read (tables, descriptions, legends) */
 :root[data-theme="neon"] :is(h1, h2, h3, .tabs button, .tile .v, .chart-body) { position: relative; }
 :root[data-theme="neon"] :is(h1, h2, h3, .tile .v) { width: fit-content; max-width: 100%; }      /* the lines cover the type itself, not the empty width of its line */
-:root[data-theme="neon"] :is(h1, h2, h3, .tabs button, .tile .v, .chart-body)::after { content: ""; position: absolute; inset: 0; pointer-events: none; /* The lines are pinned to the screen (fixed), not to each element, so every heading, tab and chart shares one grid of 4 px dark, 4 px clear: whole device
-     pixels at 100%, 125%, 150%, 175% and 200% scaling, the same weight everywhere, and they stay put as the page scrolls, like a real raster. */
-  background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, .3) 0 4px, transparent 4px 8px) fixed; }
+:root[data-theme="neon"] :is(h1, h2, h3, .tabs button, .tile .v, .chart-body)::after { content: ""; position: absolute; inset: 0; pointer-events: none; /* The lines are pinned to the screen (fixed), not to each element, so every heading, tab and chart shares one grid: 2 px dark, 2 px clear (4 px a
+     cycle, a whole number of device pixels at 100, 125, 150, 175 and 200% scaling), the same weight everywhere, steady as the page scrolls. They are
+     not solid: a mask cuts each dark line into dashes (6 px on, 2 px off), so it reads as a broken line rather than a bar. */
+  background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, .36) 0 2px, transparent 2px 4px) fixed;
+  -webkit-mask: repeating-linear-gradient(to right, #000 0 6px, transparent 6px 8px); mask: repeating-linear-gradient(to right, #000 0 6px, transparent 6px 8px); }
 :root[data-theme="neon"] code, :root[data-theme="neon"] .set, :root[data-theme="neon"] pre { font-family: "Share Tech Mono", ui-monospace, Menlo, monospace; }
 :root[data-theme="neon"] a { text-shadow: 0 0 6px rgba(0, 240, 255, .45); }
 :root[data-theme="neon"] a:hover { color: #fff; text-shadow: 0 0 8px var(--neon-cyan), 0 0 16px var(--neon-cyan); }
