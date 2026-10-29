@@ -1362,12 +1362,13 @@
   }
   // One source scanline is k device pixels tall: the first half lit, the second half dark (4 lit and 4 dark when it is 8; 2 and 2 when 4). k is
   // the largest even number up to 8 that fits the window. The shader computes the same weights.
-  const beamAt = (j, k) => j < Math.ceil(k / 2) ? 1 : .3;
+  let SCAN_DARK = .3;                                                       // how bright the dark half of a row is: .3 strong, .85 soft
+  const beamAt = (j, k) => j < Math.ceil(k / 2) ? 1 : SCAN_DARK;
   // The overlay is a bitmap, k device pixels long and one wide, tiled with nearest-neighbour scaling: every device pixel is exactly one of the
   // row's weights (a gradient's hard stops can land between pixels and blur some lines).
   const scanTiles = new Map();
   function scanTile(k, vert) {
-    const key = k + (vert ? "v" : "h");
+    const key = k + (vert ? "v" : "h") + SCAN_DARK;
     if (!scanTiles.has(key)) {
       const c = document.createElement("canvas"); c.width = vert ? k : 1; c.height = vert ? 1 : k;
       const g = c.getContext("2d");
@@ -1466,10 +1467,17 @@
     // Scanlines (one dark line per pixel row of the original) and a CRT curve over the zoomed shot; the choices are remembered.
     const stored = k => { try { return localStorage.getItem(k) !== "0"; } catch (e) { return true; } };
     const store = (k, on) => { try { localStorage.setItem(k, on ? "1" : "0"); } catch (e) { /* ignore */ } };
-    let scan = stored("lb-scanlines"), crt = stored("lb-crt"), crtBroken = false;
+    const scanModeStored = () => { try { const v = localStorage.getItem("lb-scanlines"); return v === "2" ? 2 : v === "0" ? 0 : 1; } catch (e) { return 1; } };      // 1 strong, 2 soft, 0 off
+    let scanMode = scanModeStored(), scan = scanMode > 0, crt = stored("lb-crt"), crtBroken = false;
+    SCAN_DARK = scanMode === 2 ? .85 : .3;
     dlg.dataset.scan = scan ? "1" : "0";
-    const label = () => { fxScan.textContent = scan ? "Scanlines: on" : "Scanlines: off"; fxCrt.textContent = crtBroken ? "CRT curve: unavailable" : crt ? "CRT curve: on" : "CRT curve: off"; fxCrt.disabled = crtBroken; if (crtBroken) dlg.dataset.broken = "1"; };
-    const setScan = on => { scan = on; store("lb-scanlines", on); dlg.dataset.scan = on ? "1" : "0"; label(); if (img.naturalWidth) fitLightbox(img); else render(); };
+    const label = () => { fxScan.textContent = scanMode === 1 ? "Scanlines: strong" : scanMode === 2 ? "Scanlines: soft" : "Scanlines: off"; fxCrt.textContent = crtBroken ? "CRT curve: unavailable" : crt ? "CRT curve: on" : "CRT curve: off"; fxCrt.disabled = crtBroken; if (crtBroken) dlg.dataset.broken = "1"; };
+    const setScan = m => {            // strong (dark half at 30%), soft (85%: a gentle shading, like most CSS scanline overlays), off
+      scanMode = m; scan = m > 0; SCAN_DARK = m === 2 ? .85 : .3; scanTiles.clear();
+      try { localStorage.setItem("lb-scanlines", String(m)); } catch (e) { /* not saved */ }
+      dlg.dataset.scan = scan ? "1" : "0"; label(); if (img.naturalWidth) fitLightbox(img); else render();
+    };
+    const nextScan = () => scanMode === 1 ? 2 : scanMode === 2 ? 0 : 1;
     const setCrt = on => { crt = on; store("lb-crt", on); label(); render(); };
 
     // The curve is a WebGL shader (barrel distortion, scanlines that follow it, a vignette, nearest-neighbour sampling). Its texture
@@ -1482,7 +1490,7 @@
       prog = gl.createProgram();
       gl.attachShader(prog, sh(gl.VERTEX_SHADER, "attribute vec2 p; varying vec2 uv; void main(){ uv = p * .5 + .5; gl_Position = vec4(p, 0., 1.); }"));
       gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, `precision mediump float; varying vec2 uv; uniform sampler2D tex;
-        uniform float n; uniform float horiz; uniform float gap; uniform float curve; uniform float rows; uniform float scan; uniform float vert; uniform float asp; uniform float kpx; uniform float fx;
+        uniform float n; uniform float horiz; uniform float gap; uniform float curve; uniform float rows; uniform float scan; uniform float vert; uniform float asp; uniform float kpx; uniform float fx; uniform float dk;
         void main(){
           // n displays side by side (horiz) or stacked, each its own CRT; a is the position along the row of displays
           float a = horiz > .5 ? uv.x : 1. - uv.y;
@@ -1510,7 +1518,7 @@
           // pixels per row (kpx) every row is lit the same way: the first half lit, the second half dark (the same weights as the page's beamAt()). Without it, a smooth sine.
           float f = fract(mix(1. - p.y, p.x, vert) * rows);
           float beam;
-          if (kpx > 1.5) beam = floor(f * kpx) < ceil(kpx * .5) ? 1. : .3;            // the first half of the row lit, the second dark
+          if (kpx > 1.5) beam = floor(f * kpx) < ceil(kpx * .5) ? 1. : dk;            // the first half of the row lit, the second dark
           else beam = .5 + .5 * sin(3.14159 * f);
           col *= mix(1., beam, scan);
           float v = 16. * s.x * s.y * (1. - s.x) * (1. - s.y);
@@ -1563,7 +1571,7 @@
           const pitch = vert ? dispW / srcW : dispH / srcH;
           const u = (name, v) => gl.uniform1f(gl.getUniformLocation(prog, name), v);
           u("n", k); u("horiz", horiz ? 1 : 0); u("gap", gapP * pw); u("curve", crt ? 1 : 0);
-          u("rows", vert ? srcW : srcH); u("vert", vert ? 1 : 0); u("scan", scan && pitch * dpr >= 2 ? 1 : 0); u("asp", dispW / dispH); u("kpx", +img.dataset.kpx || 0); u("fx", crt ? 1 : 0);
+          u("rows", vert ? srcW : srcH); u("vert", vert ? 1 : 0); u("scan", scan && pitch * dpr >= 2 ? 1 : 0); u("asp", dispW / dispH); u("kpx", +img.dataset.kpx || 0); u("fx", crt ? 1 : 0); u("dk", SCAN_DARK);
           gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
           cv.hidden = false; img.style.opacity = "0";
           sl.style.display = "none";
@@ -1697,7 +1705,7 @@
       if (ev.target.closest(".lb-prev")) { show(i - 1); neonSound("blip"); }
       else if (ev.target.closest(".lb-next")) { show(i + 1); neonSound("blip"); }
       else if (ev.target.closest('[data-fx="info"]')) setInfo(!info);
-      else if (ev.target.closest('[data-fx="scan"]')) setScan(!scan);
+      else if (ev.target.closest('[data-fx="scan"]')) setScan(nextScan());
       else if (ev.target.closest('[data-fx="crt"]')) setCrt(!crt);
       else if (ev.target.closest(".lb-close") || ev.target === dlg) requestClose();      // the backdrop is the dialog itself
       else if (ev.target === img || ev.target === cv) flip();
@@ -1707,7 +1715,7 @@
       else if (ev.key === "ArrowRight" && set.length > 1) { ev.preventDefault(); show(i + 1); }
       else if (ev.key === "i" || ev.key === "I") { if (innerWidth >= LB_SIDE_MIN) setInfo(!info); }
       else if (ev.key === "t" || ev.key === "T") flip();
-      else if (ev.key === "s" || ev.key === "S") setScan(!scan);
+      else if (ev.key === "s" || ev.key === "S") setScan(nextScan());
       else if (ev.key === "c" || ev.key === "C") { if (!crtBroken) setCrt(!crt); }
     });
     dlg.addEventListener("close", () => { img.removeAttribute("src"); cv.hidden = true; img.style.opacity = ""; });
