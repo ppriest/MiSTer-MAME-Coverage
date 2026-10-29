@@ -12,7 +12,7 @@
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script>/* the chosen theme is applied before the stylesheet paints (no flash); no choice = the system's */
-try { var t = localStorage.getItem("theme"); if (["light", "dark", "neon", "halloween", "maze"].includes(t)) document.documentElement.dataset.theme = t; } catch (e) { /* storage unavailable: the system theme */ }
+try { var t = localStorage.getItem("theme"); if (["light", "dark", "neon", "halloween"].includes(t)) document.documentElement.dataset.theme = t; } catch (e) { /* storage unavailable: the system theme */ }
 </script>
 <link rel="stylesheet" href="style.css?v=be281dcfcc">
 </head>
@@ -20,7 +20,7 @@ try { var t = localStorage.getItem("theme"); if (["light", "dark", "neon", "hall
 <header class="top">
   <div class="deco" aria-hidden="true"><i class="haze c"></i><i class="skyline"></i><i class="moon"></i><i class="haze a"></i><i class="haze b"></i><i class="ghost"></i><i class="garg"></i><i class="spider"></i></div>
   <div class="wrap">
-    <div class="themebar"><button type="button" id="neon-trail-btn" class="neonsnd" aria-pressed="true" title="the theme's trail behind the pointer (the zooming screenshot always leaves its trail)" hidden><i class="ico"><svg viewBox="2.6 1 10 14.2" width="6.6" height="9.4" aria-hidden="true"><path d="M3 1.5v11.2l3-2.7 2 4.5 2.2-1-2-4.4H12z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg></i><span>Trail: on</span></button><button type="button" id="neon-sound" class="neonsnd" aria-pressed="true" title="the theme's synth sound effects" hidden><i class="ico">♪</i><span>Sound: on</span></button><label class="themepick">Theme <select id="theme" aria-label="Theme"><option value="">System Default</option><option value="light">Light</option><option value="dark">Dark</option><option value="neon">Neon</option><option value="halloween">Halloween</option><option value="maze">Maze</option></select></label></div>
+    <div class="themebar"><button type="button" id="neon-trail-btn" class="neonsnd" aria-pressed="true" title="the theme's trail behind the pointer (the zooming screenshot always leaves its trail)" hidden><i class="ico"><svg viewBox="2.6 1 10 14.2" width="6.6" height="9.4" aria-hidden="true"><path d="M3 1.5v11.2l3-2.7 2 4.5 2.2-1-2-4.4H12z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg></i><span>Trail: on</span></button><button type="button" id="neon-sound" class="neonsnd" aria-pressed="true" title="the theme's synth sound effects" hidden><i class="ico">♪</i><span>Sound: on</span></button><label class="themepick">Theme <select id="theme" aria-label="Theme"><option value="">System Default</option><option value="light">Light</option><option value="dark">Dark</option><option value="neon">Neon</option><option value="halloween">Halloween</option><!-- Maze is built but switched off for now: add <option value="maze">Maze</option> here and drop it from DISABLED_THEMES in app.js --></select></label></div>
     <h1>MiSTer <span class="vs">×</span> MAME - Arcade Coverage</h1>
     <h2 class="tagline">See what Arcade PCB titles are covered by MAME, MiSTer, and request support on MiSTer where missing</h2>
     <p class="sub" id="subtitle">Loading data…</p>
@@ -361,6 +361,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=01cbabcbe0"></script>
+<script src="app.js?v=d8a6bb5966"></script>
 </body>
 </html>

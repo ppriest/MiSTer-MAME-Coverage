@@ -859,6 +859,7 @@
     maze: { colours: ["#2f2fff", "#ffb8ff", "#00ffff", "#ffb852", "#ff2a2a"], echo: "wall", pointer: "pellet",
       fonts: "https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;500;700&display=swap" },
   };
+  const DISABLED_THEMES = ["maze"];                 // built, but not offered for now (see the comment in index.html)
   const fxTheme = () => { const t = document.documentElement.dataset.theme; return FX[t] ? t : ""; };
   const calm = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
   const fxColour = n => { const c = FX[fxTheme()]?.colours || FX.neon.colours; return c[n % c.length]; };
@@ -1036,7 +1037,7 @@
   (function () {
     const sel = $("#theme"); let t = "";
     try { t = localStorage.getItem("theme") || ""; } catch (e) { /* storage unavailable */ }
-    if (!["light", "dark", ...Object.keys(FX)].includes(t)) t = "";
+    if (!["light", "dark", ...Object.keys(FX)].includes(t) || DISABLED_THEMES.includes(t)) t = "";      // (a stored choice of a switched-off theme falls back to System Default)
     sel.value = t; applyTheme(t);
     sel.addEventListener("change", () => { applyTheme(sel.value); if (FX[sel.value]) neonSound("power"); try { sel.value ? localStorage.setItem("theme", sel.value) : localStorage.removeItem("theme"); } catch (e) { /* not saved */ } });
   })();
