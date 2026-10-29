@@ -323,7 +323,7 @@
     });
   }
 
-  // Titles by release year with the screen turned 90 degrees clockwise (MAME ROT90) or counter-clockwise (ROT270): two cumulative lines.
+  // Titles by release year with the screen turned 90 degrees clockwise (MAME ROT90) or counter-clockwise (ROT270): two cumulative bars a year.
   function renderRotChart() {
     const sc = chartScope(), cw = new Map(), ccw = new Map();
     let flat = 0, undated = 0;
@@ -339,33 +339,31 @@
     for (let y = y0; y <= y1; y++) { const da = cw.get(y) || 0, db = ccw.get(y) || 0; a += da; b += db; rows.push({ y, cw: a, ccw: b, dcw: da, dccw: db }); }
     const max = Math.max(a, b, 1);
     const W = chartW("#chart-rot"), H = chartH("#chart-rot", W), m = { t: 12, r: 14, b: 26, l: 44 };
-    const x = i => m.l + (W - m.l - m.r) * (rows.length > 1 ? i / (rows.length - 1) : .5), yy = v => m.t + (H - m.t - m.b) * (1 - v / max);
-    const line = k => rows.map((r, i) => `${i ? "L" : "M"}${x(i).toFixed(1)} ${yy(r[k]).toFixed(1)}`).join("");
-    const area = k => `${line(k)}L${x(rows.length - 1).toFixed(1)} ${yy(0)}L${x(0).toFixed(1)} ${yy(0)}Z`;
+    const bw = (W - m.l - m.r) / rows.length, bar = Math.max(1, (bw - 2) / 2), yy = v => m.t + (H - m.t - m.b) * (1 - v / max);
     const yTicks = [0, .25, .5, .75, 1].map(f => Math.round(max * f)).filter((v, i, arr) => arr.indexOf(v) === i);
-    const every = Math.max(1, Math.ceil(36 / ((W - m.l - m.r) / Math.max(1, rows.length - 1))));
+    const every = Math.max(1, Math.ceil(30 / bw));
+    // two bars a year: the running total of clockwise (left) and counter-clockwise (right) titles up to and including that year
+    const bars = rows.map((r, i) => { const x0 = m.l + i * bw + 1;
+      return `<rect x="${x0}" y="${yy(r.cw)}" width="${bar}" height="${Math.max(0, yy(0) - yy(r.cw))}" fill="var(--accent)" rx="1"/><rect x="${x0 + bar}" y="${yy(r.ccw)}" width="${bar}" height="${Math.max(0, yy(0) - yy(r.ccw))}" fill="var(--accent-2)" rx="1"/>`; }).join("");
     $("#chart-rot").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Cumulative titles by release year, screen rotated clockwise or counter-clockwise">
       <g class="grid">${yTicks.map(v => `<line x1="${m.l}" x2="${W - m.r}" y1="${yy(v)}" y2="${yy(v)}"/>`).join("")}</g>
       ${yTicks.map(v => `<text x="${m.l - 6}" y="${yy(v) + 4}" text-anchor="end">${fmt(v)}</text>`).join("")}
-      <path d="${area("ccw")}" fill="var(--accent-2)" fill-opacity=".14"/><path d="${area("cw")}" fill="var(--accent)" fill-opacity=".14"/>
-      <path d="${line("ccw")}" fill="none" stroke="var(--accent-2)" stroke-width="2" stroke-linejoin="round"/><path d="${line("cw")}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/>
+      <rect id="rot-band" y="${m.t}" width="${bw}" height="${H - m.t - m.b}" fill="var(--text)" fill-opacity=".08" hidden/>
+      ${bars}
       <g class="axis"><line x1="${m.l}" x2="${W - m.r}" y1="${yy(0)}" y2="${yy(0)}"/></g>
-      ${rows.map((r, i) => i % every === 0 ? `<text x="${x(i)}" y="${H - 8}" text-anchor="middle">${r.y}</text>` : "").join("")}
-      <text x="${W - m.r}" y="${Math.max(11, yy(a) - 6)}" text-anchor="end" fill="var(--accent)">${fmt(a)} CW</text><text x="${W - m.r}" y="${Math.max(11, yy(b) + (Math.abs(yy(a) - yy(b)) < 16 ? 14 : -6))}" text-anchor="end" fill="var(--accent-2)">${fmt(b)} CCW</text>
-      <line id="rot-guide" y1="${m.t}" y2="${yy(0)}" stroke="var(--muted)" stroke-dasharray="3 3" hidden/><circle id="rot-dcw" r="4" fill="var(--accent)" hidden/><circle id="rot-dccw" r="4" fill="var(--accent-2)" hidden/>
+      ${rows.map((r, i) => i % every === 0 ? `<text x="${m.l + i * bw + bw / 2}" y="${H - 8}" text-anchor="middle">${r.y}</text>` : "").join("")}
       <rect x="${m.l}" y="${m.t}" width="${W - m.l - m.r}" height="${H - m.t - m.b}" fill="transparent" id="rot-hit"/>
     </svg>`;
     const tot = a + b;
     $("#legend-rot").innerHTML = `<span><i style="background:var(--accent)"></i>clockwise (ROT90): ${fmt(a)} (${pct(a, tot)})</span><span><i style="background:var(--accent-2)"></i>counter-clockwise (ROT270): ${fmt(b)} (${pct(b, tot)})</span>
       <span class="muted">${fmt(flat)} titles not rotated 90° either way are left out${undated ? `; ${fmt(undated)} without a year` : ""}</span>`;
-    const hit = $("#rot-hit"), guide = $("#rot-guide"), d1 = $("#rot-dcw"), d2 = $("#rot-dccw");
+    const hit = $("#rot-hit"), band = $("#rot-band");
     hit.addEventListener("mousemove", ev => {
-      const box = hit.getBoundingClientRect(), f = (ev.clientX - box.left) / box.width, i = Math.max(0, Math.min(rows.length - 1, Math.round(f * (rows.length - 1)))), r = rows[i];
-      guide.setAttribute("x1", x(i)); guide.setAttribute("x2", x(i)); d1.setAttribute("cx", x(i)); d1.setAttribute("cy", yy(r.cw)); d2.setAttribute("cx", x(i)); d2.setAttribute("cy", yy(r.ccw));
-      [guide, d1, d2].forEach(e => e.removeAttribute("hidden"));
+      const box = hit.getBoundingClientRect(), i = Math.max(0, Math.min(rows.length - 1, Math.floor((ev.clientX - box.left) / box.width * rows.length))), r = rows[i];
+      band.setAttribute("x", m.l + i * bw); band.removeAttribute("hidden");
       showTip(`<b>${r.y}</b><br>clockwise: ${fmt(r.cw)}${r.dcw ? ` (+${fmt(r.dcw)} that year)` : ""}<br>counter-clockwise: ${fmt(r.ccw)}${r.dccw ? ` (+${fmt(r.dccw)} that year)` : ""}`, ev.clientX, ev.clientY);
     });
-    hit.addEventListener("mouseleave", () => { hideTip(); [guide, d1, d2].forEach(e => e.setAttribute("hidden", "")); });
+    hit.addEventListener("mouseleave", () => { hideTip(); band.setAttribute("hidden", ""); });
   }
 
   function renderGenreChart() {
