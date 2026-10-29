@@ -848,20 +848,67 @@
   $("#c-dir").addEventListener("click", () => { S.dir.c *= -1; $("#c-dir").textContent = S.dir.c > 0 ? "↑" : "↓"; applyCores(); });
   $("#c-reset").addEventListener("click", () => { CORE_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.c = 1; $("#c-dir").textContent = "↑"; applyCores(); });
 
-  // ---------- Neon: trails of boxes (behind the pointer and behind the zooming screenshot), and synth sound effects (the Neon theme only) ----------
-  const isNeon = () => document.documentElement.dataset.theme === "neon";
+  // ---------- themes with effects (Neon, Halloween, Maze): trails behind the pointer and the zooming screenshot, and synth sounds ----------
+  // Each has its own colours, the shape left behind the zooming screen ("echo"), the sprite behind the pointer, its fonts (fetched only when
+  // the theme is chosen) and its sound (see fxSound).
+  const FX = {
+    neon: { colours: ["#ff2bd6", "#00f0ff", "#fff200", "#8a3dff"], echo: "box", pointer: "box",
+      fonts: "https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Exo+2:wght@400;500;700&family=Share+Tech+Mono&display=swap" },
+    halloween: { colours: ["#ff7a18", "#a855f7", "#7cff3a", "#ffb703"], echo: "ghost", pointer: "bat",
+      fonts: "https://fonts.googleapis.com/css2?family=Creepster&family=Alegreya+Sans:wght@400;500;700&family=Share+Tech+Mono&display=swap" },
+    maze: { colours: ["#2f2fff", "#ffb8ff", "#00ffff", "#ffb852", "#ff2a2a"], echo: "wall", pointer: "pellet",
+      fonts: "https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;500;700&display=swap" },
+  };
+  const fxTheme = () => { const t = document.documentElement.dataset.theme; return FX[t] ? t : ""; };
   const calm = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
-  // The trail: while the zoom flies between the thumbnail and the big screen, outlined boxes the size of the screen at that moment are left
-  // behind it and fade out (a canvas inside the dialog, under the screen).
+  const fxColour = n => { const c = FX[fxTheme()]?.colours || FX.neon.colours; return c[n % c.length]; };
+  // How the shapes are drawn (c: 2d context, alpha a, 0..1)
+  function drawBat(c, x, y, s, flap) {                  // a small bat, wings beating
+    c.save(); c.translate(x, y); c.scale(s, s * (.55 + .45 * Math.abs(Math.sin(flap))));
+    c.beginPath(); c.moveTo(0, -2);
+    c.bezierCurveTo(1, -5, 3, -5, 4, -3); c.bezierCurveTo(6, -6, 9, -5, 11, -1);
+    c.bezierCurveTo(9, -2, 8, 0, 7, 2); c.bezierCurveTo(6, 0, 4, 0, 3, 3); c.bezierCurveTo(2, 1, 1, 1, 0, 3);
+    c.bezierCurveTo(-1, 1, -2, 1, -3, 3); c.bezierCurveTo(-4, 0, -6, 0, -7, 2); c.bezierCurveTo(-8, 0, -9, -2, -11, -1);
+    c.bezierCurveTo(-9, -5, -6, -6, -4, -3); c.bezierCurveTo(-3, -5, -1, -5, 0, -2); c.closePath(); c.fill(); c.restore();
+  }
+  function drawEcho(c, b, a) {                          // what the zooming screen leaves behind
+    const th = fxTheme();
+    c.shadowColor = b.c; c.strokeStyle = b.c; c.fillStyle = b.c;
+    if (th === "halloween") {                           // a ghost's sheet: rounded top, scalloped hem
+      const n = Math.max(3, Math.round(b.w / 46)), r = b.w / n / 2, top = Math.min(b.w, b.h) * .22;
+      c.shadowBlur = 14; c.lineWidth = 2; c.setLineDash([7, 5]);
+      c.beginPath(); c.moveTo(b.x, b.y + b.h - r); c.lineTo(b.x, b.y + top); c.quadraticCurveTo(b.x, b.y, b.x + top, b.y);
+      c.lineTo(b.x + b.w - top, b.y); c.quadraticCurveTo(b.x + b.w, b.y, b.x + b.w, b.y + top); c.lineTo(b.x + b.w, b.y + b.h - r);
+      for (let i = n - 1; i >= 0; i--) c.arc(b.x + (i + .5) * 2 * r, b.y + b.h - r, r, 0, Math.PI);
+      c.closePath(); c.globalAlpha = a * .85; c.stroke(); c.setLineDash([]); c.globalAlpha = a * .09; c.fill();
+    } else if (th === "maze") {                         // a maze wall: a double line with rounded corners
+      const rr = Math.min(18, b.w / 6, b.h / 6); c.shadowBlur = 10; c.lineJoin = "round";
+      c.beginPath(); c.roundRect ? c.roundRect(b.x, b.y, b.w, b.h, rr) : c.rect(b.x, b.y, b.w, b.h);
+      c.globalAlpha = a; c.lineWidth = 6; c.stroke();
+      c.shadowBlur = 0; c.globalCompositeOperation = "destination-out"; c.lineWidth = 2; c.globalAlpha = a; c.stroke(); c.globalCompositeOperation = "source-over";
+    } else {                                            // neon: an outlined glowing box
+      c.shadowBlur = 16; c.lineWidth = 2; c.globalAlpha = a * .9; c.beginPath(); c.rect(b.x, b.y, b.w, b.h); c.stroke(); c.globalAlpha = a * .07; c.fill();
+    }
+  }
+  function drawPointer(c, b, age, a) {                  // the small sprite behind the pointer
+    c.shadowColor = b.c; c.strokeStyle = b.c; c.fillStyle = b.c; const th = fxTheme();
+    if (th === "halloween") { c.shadowBlur = 10; c.globalAlpha = a; drawBat(c, b.x, b.y - age * 16, 1.5 - age * .5, b.n * 1.7 + age * 14); }
+    else if (th === "maze") {                           // pellets; every fifth is a power pellet
+      c.shadowBlur = 0; c.fillStyle = "#ffb8ae"; c.globalAlpha = a; const big = b.n % 5 === 0;
+      c.beginPath(); c.arc(b.x, b.y, big ? 6 - age * 2 : 3, 0, Math.PI * 2); c.fill();
+    } else { const size = 18 * (1 - age * .7); c.shadowBlur = 14; c.lineWidth = 2; c.globalAlpha = a; c.strokeRect(b.x - size / 2, b.y - size / 2, size, size); c.globalAlpha = a * .18; c.fillRect(b.x - size / 2, b.y - size / 2, size, size); }
+  }
+  // The echo: while the zoom flies between the thumbnail and the big screen, a shape the size of the screen at that moment is left behind it
+  // and fades out (a canvas inside the dialog, under the screen).
   const trail = { cv: null, ctx: null, boxes: [], raf: 0, until: 0, frame: null, last: 0, n: 0 };
-  const TRAIL_COLOURS = ["#ff2bd6", "#00f0ff", "#fff200", "#8a3dff"], TRAIL_LIFE = 650, TRAIL_EVERY = 30;
+  const TRAIL_LIFE = 650, TRAIL_EVERY = 30;
   const trailOn = () => { try { return localStorage.getItem("neon-trail") !== "0"; } catch (e) { return true; } };
   function trailClear() {
     cancelAnimationFrame(trail.raf); trail.raf = 0; trail.boxes = []; trail.frame = null;
     if (trail.cv) trail.cv.remove(); trail.cv = trail.ctx = null;
   }
-  function trailFollow(frame, ms) {                // call as a tween starts: the boxes are emitted for ms, then fade out
-    if (!isNeon() || calm()) return;                // always part of Neon (the Trail button is for the pointer's trail only)
+  function trailFollow(frame, ms) {                // call as a tween starts: the echoes are emitted for ms, then fade out
+    if (!fxTheme() || calm()) return;               // always part of these themes (the Trail button is for the pointer's trail only)
     const dlg = $("#lightbox"); if (!dlg) return;
     if (!trail.cv || !trail.cv.isConnected) {
       const cv = document.createElement("canvas");
@@ -878,21 +925,15 @@
     if (trail.frame && now < trail.until && now - trail.last >= TRAIL_EVERY) {
       trail.last = now;
       const r = trail.frame.getBoundingClientRect();
-      if (r.width > 2) trail.boxes.push({ x: r.left, y: r.top, w: r.width, h: r.height, t: now, c: TRAIL_COLOURS[trail.n++ % TRAIL_COLOURS.length] });
+      if (r.width > 2) trail.boxes.push({ x: r.left, y: r.top, w: r.width, h: r.height, t: now, c: fxColour(trail.n++) });
     }
     trail.boxes = trail.boxes.filter(b => now - b.t < TRAIL_LIFE);
     c.clearRect(0, 0, innerWidth, innerHeight);
-    for (const b of trail.boxes) {
-      const a = Math.pow(1 - (now - b.t) / TRAIL_LIFE, 1.6);
-      c.shadowBlur = 16; c.shadowColor = b.c; c.strokeStyle = b.c; c.fillStyle = b.c; c.lineWidth = 2;
-      c.globalAlpha = a * .9; c.beginPath(); c.rect(b.x, b.y, b.w, b.h); c.stroke();
-      c.globalAlpha = a * .07; c.fill();
-    }
-    c.globalAlpha = 1;
+    for (const b of trail.boxes) { c.save(); drawEcho(c, b, Math.pow(1 - (now - b.t) / TRAIL_LIFE, 1.6)); c.restore(); }
     trail.raf = trail.boxes.length || now < trail.until ? requestAnimationFrame(trailTick) : 0;
     if (!trail.raf) c.clearRect(0, 0, innerWidth, innerHeight);
   }
-  // And, as before, a trail of small boxes behind the pointer on the page (mouse and pen).
+  // And a trail of small sprites behind the pointer on the page (mouse and pen).
   const ptr = { cv: null, ctx: null, boxes: [], raf: 0, lx: -99, ly: -99, n: 0 };
   const PTR_LIFE = 700, PTR_STEP = 15;
   function ptrSize() {
@@ -901,7 +942,7 @@
     ptr.ctx = ptr.cv.getContext("2d"); ptr.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
   function cursorStart() {
-    if (ptr.cv || calm() || !trailOn()) return;
+    if (ptr.cv || calm() || !trailOn() || !fxTheme()) return;
     const cv = document.createElement("canvas");
     cv.id = "neon-trail"; cv.setAttribute("aria-hidden", "true");
     cv.style.cssText = "position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:30";
@@ -915,12 +956,7 @@
     const c = ptr.ctx; if (!c) return;
     c.clearRect(0, 0, innerWidth, innerHeight);
     ptr.boxes = ptr.boxes.filter(b => now - b.t < PTR_LIFE);
-    for (const b of ptr.boxes) {
-      const age = (now - b.t) / PTR_LIFE, size = 18 * (1 - age * .7), a = (1 - age) * (1 - age);
-      c.globalAlpha = a; c.shadowBlur = 14; c.shadowColor = b.c; c.strokeStyle = b.c; c.lineWidth = 2; c.fillStyle = b.c;
-      c.strokeRect(b.x - size / 2, b.y - size / 2, size, size);
-      c.globalAlpha = a * .18; c.fillRect(b.x - size / 2, b.y - size / 2, size, size);
-    }
+    for (const b of ptr.boxes) { const age = (now - b.t) / PTR_LIFE; c.save(); drawPointer(c, b, age, (1 - age) * (1 - age)); c.restore(); }
     ptr.raf = ptr.boxes.length ? requestAnimationFrame(ptrTick) : 0;
     if (!ptr.raf) c.clearRect(0, 0, innerWidth, innerHeight);
   }
@@ -928,44 +964,61 @@
     if (!ptr.cv || ev.pointerType === "touch") return;
     if (Math.hypot(ev.clientX - ptr.lx, ev.clientY - ptr.ly) < PTR_STEP) return;
     ptr.lx = ev.clientX; ptr.ly = ev.clientY;
-    ptr.boxes.push({ x: ev.clientX, y: ev.clientY, t: performance.now(), c: TRAIL_COLOURS[ptr.n++ % TRAIL_COLOURS.length] });
+    ptr.boxes.push({ x: ev.clientX, y: ev.clientY, t: performance.now(), c: fxColour(ptr.n), n: ptr.n++ });
     if (!ptr.raf) ptr.raf = requestAnimationFrame(ptrTick);
   });
   addEventListener("resize", () => { if (ptr.cv) ptrSize(); });
-  // Web Audio synth: short square/saw blips through a low-pass, quiet. Browsers only start audio after a click or key, which is when these play.
-  let actx = null;
+  // Web Audio synth, quiet, through a low-pass. Browsers only start audio after a click or key, which is when these play. Neon: arcade
+  // square/saw blips and sweeps. Halloween: a theremin that wavers, organ chords, creaks and bone knocks. Maze: waka-waka blips and
+  // little arpeggios and slides.
+  let actx = null, waka = false;
   const soundOn = () => { try { return localStorage.getItem("neon-sound") !== "0"; } catch (e) { return true; } };
   function neonSound(kind) {
-    if (!isNeon() || !soundOn()) return;
+    const th = fxTheme(); if (!th || !soundOn()) return;
     try {
       actx = actx || new (window.AudioContext || window.webkitAudioContext)();
       if (actx.state === "suspended") actx.resume();
       const t0 = actx.currentTime, out = actx.createGain(), lp = actx.createBiquadFilter();
-      out.gain.value = .16; lp.type = "lowpass"; lp.frequency.value = 3400; out.connect(lp); lp.connect(actx.destination);
-      const note = (type, f0, f1, at, dur, vol, attack = .008) => {
+      out.gain.value = .16; lp.type = "lowpass"; lp.frequency.value = th === "halloween" ? 2200 : 3400; out.connect(lp); lp.connect(actx.destination);
+      const note = (type, f0, f1, at, dur, vol, attack = .008, vib = 0) => {
         const o = actx.createOscillator(), g = actx.createGain();
         o.type = type; o.frequency.setValueAtTime(f0, t0 + at);
         if (f1 !== f0) o.frequency.exponentialRampToValueAtTime(f1, t0 + at + dur);
+        if (vib) { const l = actx.createOscillator(), lg = actx.createGain(); l.frequency.value = 6; lg.gain.value = vib; l.connect(lg); lg.connect(o.frequency); l.start(t0 + at); l.stop(t0 + at + dur + .03); }   // a wavering pitch
         g.gain.setValueAtTime(.0001, t0 + at); g.gain.exponentialRampToValueAtTime(vol, t0 + at + attack); g.gain.exponentialRampToValueAtTime(.0001, t0 + at + dur);
         o.connect(g); g.connect(out); o.start(t0 + at); o.stop(t0 + at + dur + .03);
       };
-      if (kind === "blip") note("square", 880, 1320, 0, .07, .5);
-      else if (kind === "flip") { note("triangle", 520, 1560, 0, .1, .7); note("triangle", 1560, 780, .1, .12, .6); }
-      else if (kind === "open") { note("sawtooth", 180, 1100, 0, .26, .35, .03); [220, 262, 330, 440, 523].forEach((f, k) => note("square", f * 2, f * 2, .05 + k * .055, .09, .32)); }
-      else if (kind === "close") { note("sawtooth", 1000, 160, 0, .24, .35, .02); [523, 392, 294].forEach((f, k) => note("square", f, f, k * .05, .08, .3)); }
-      else if (kind === "power") { [110, 138.6, 164.8, 220].forEach(f => { note("sawtooth", f, f * 1.01, 0, .7, .3, .2); note("sawtooth", f * 1.005, f, 0, .7, .22, .2); }); note("square", 880, 1760, .25, .35, .2, .05); }
+      if (th === "halloween") {
+        if (kind === "blip") { note("triangle", 190, 85, 0, .09, .8); note("sine", 1500, 1100, 0, .03, .25); }                    // a bone knock
+        else if (kind === "flip") note("sawtooth", 95, 190, 0, .24, .3, .05, 9);                                                    // a creak
+        else if (kind === "open") { note("sine", 220, 740, 0, .38, .6, .06, 14); [220, 261.6, 329.6].forEach(f => note("sawtooth", f, f, .22, .45, .16, .03)); }   // theremin up, organ stab (A minor)
+        else if (kind === "close") { note("sine", 700, 150, 0, .34, .55, .03, 14); note("sawtooth", 110, 98, .05, .3, .22, .02); }
+        else if (kind === "power") { [110, 130.8, 155.6, 185].forEach(f => note("sawtooth", f, f * 1.005, 0, .95, .22, .3)); note("sine", 880, 880, .35, .9, .25, .01); note("sine", 1318.5, 1318.5, .5, .8, .15, .01); }   // a diminished chord and a bell
+      } else if (th === "maze") {
+        if (kind === "blip") { waka = !waka; note("triangle", waka ? 280 : 560, waka ? 560 : 280, 0, .075, .8); }                 // waka, waka
+        else if (kind === "flip") { note("square", 659, 659, 0, .06, .35); note("square", 880, 880, .07, .08, .35); }
+        else if (kind === "open") [262, 330, 392, 523, 659, 784].forEach((f, k) => note("square", f, f, k * .05, .08, .3));          // a rising run
+        else if (kind === "close") note("square", 900, 110, 0, .45, .28, .01);                                                      // a falling slide
+        else if (kind === "power") { [262, 330, 392, 523, 392, 523, 659, 784].forEach((f, k) => note("square", f, f, k * .075, .09, .3)); note("triangle", 131, 131, 0, .6, .5, .02); }
+      } else {
+        if (kind === "blip") note("square", 880, 1320, 0, .07, .5);
+        else if (kind === "flip") { note("triangle", 520, 1560, 0, .1, .7); note("triangle", 1560, 780, .1, .12, .6); }
+        else if (kind === "open") { note("sawtooth", 180, 1100, 0, .26, .35, .03); [220, 262, 330, 440, 523].forEach((f, k) => note("square", f * 2, f * 2, .05 + k * .055, .09, .32)); }
+        else if (kind === "close") { note("sawtooth", 1000, 160, 0, .24, .35, .02); [523, 392, 294].forEach((f, k) => note("square", f, f, k * .05, .08, .3)); }
+        else if (kind === "power") { [110, 138.6, 164.8, 220].forEach(f => { note("sawtooth", f, f * 1.01, 0, .7, .3, .2); note("sawtooth", f * 1.005, f, 0, .7, .22, .2); }); note("square", 880, 1760, .25, .35, .2, .05); }
+      }
     } catch (e) { /* no audio: silent */ }
   }
   function syncSoundButton() {
     const b = $("#neon-sound"), on = soundOn(), t = $("#neon-trail-btn"), tr = trailOn();
-    b.hidden = t.hidden = !isNeon();
+    b.hidden = t.hidden = !fxTheme();
     b.setAttribute("aria-pressed", on); b.querySelector("span").textContent = on ? "Sound: on" : "Sound: off";
     t.setAttribute("aria-pressed", tr); t.querySelector("span").textContent = tr ? "Trail: on" : "Trail: off";
     t.disabled = calm(); if (calm()) t.title = "off: your system asks for reduced motion";
   }
   $("#neon-trail-btn").addEventListener("click", () => {
     const on = !trailOn(); try { localStorage.setItem("neon-trail", on ? "1" : "0"); } catch (e) { /* not saved */ }
-    if (on && isNeon()) cursorStart(); else cursorStop();
+    if (on && fxTheme()) cursorStart(); else cursorStop();
     syncSoundButton(); neonSound("blip");
   });
   $("#neon-sound").addEventListener("click", () => {
@@ -974,22 +1027,22 @@
   });
   $(".tabs").addEventListener("click", ev => { if (ev.target.closest("button[role=tab]")) neonSound("blip"); });
 
-  // ---------- theme: System Default (no choice: the OS's light/dark), Light, Dark, Neon ----------
-  const NEON_FONTS = "https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Exo+2:wght@400;500;700&family=Share+Tech+Mono&display=swap";
+  // ---------- theme: System Default (no choice: the OS's light/dark), Light, Dark, Neon, Halloween, Maze ----------
   function applyTheme(t) {
     if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme;
-    if (t === "neon") cursorStart(); else { cursorStop(); trailClear(); }
+    cursorStop(); trailClear();                        // the sprites belong to the theme they were made for
+    if (FX[t]) cursorStart();
     syncSoundButton();
-    if (t === "neon" && !$("#neon-fonts")) {            // the neon fonts are fetched only when the theme is chosen
-      const l = document.createElement("link"); l.id = "neon-fonts"; l.rel = "stylesheet"; l.href = NEON_FONTS; document.head.appendChild(l);
+    if (FX[t] && !$("#fonts-" + t)) {                  // a theme's fonts are fetched only when it is chosen
+      const l = document.createElement("link"); l.id = "fonts-" + t; l.rel = "stylesheet"; l.href = FX[t].fonts; document.head.appendChild(l);
     }
   }
   (function () {
     const sel = $("#theme"); let t = "";
     try { t = localStorage.getItem("theme") || ""; } catch (e) { /* storage unavailable */ }
-    if (!["light", "dark", "neon"].includes(t)) t = "";
+    if (!["light", "dark", ...Object.keys(FX)].includes(t)) t = "";
     sel.value = t; applyTheme(t);
-    sel.addEventListener("change", () => { applyTheme(sel.value); if (sel.value === "neon") neonSound("power"); try { sel.value ? localStorage.setItem("theme", sel.value) : localStorage.removeItem("theme"); } catch (e) { /* not saved */ } });
+    sel.addEventListener("change", () => { applyTheme(sel.value); if (FX[sel.value]) neonSound("power"); try { sel.value ? localStorage.setItem("theme", sel.value) : localStorage.removeItem("theme"); } catch (e) { /* not saved */ } });
   })();
 
   // ---------- wishlist (votes live in the /api functions; the page works without them) ----------

@@ -454,3 +454,106 @@ label.themepick select option { color: #111; background: #fff; }
 .neonsnd[hidden] { display: none; }   /* beats the display above (a hidden attribute alone loses to it) */
 .neonsnd .ico { display: inline-flex; align-items: center; justify-content: center; width: 12px; height: 14px; font-style: normal; line-height: 1; }
 .neonsnd .ico:not(:has(svg)) { font-size: 15px; }
+
+/* ---------- Halloween and Maze: two more themes built on one set of variables ---------- */
+:root[data-theme="halloween"] {
+  color-scheme: dark;
+  --surface: #0f0716; --surface-2: #1b0f27; --line: #4b2b66; --text: #f5ecff; --text-2: #d2bdea; --muted: #a18bbb;
+  --accent: #ff7a18; --accent-2: #a855f7; --accent-3: #7cff3a; --ok: #7cff3a; --warn: #ffb703; --bad: #ff4d4d; --grid: #2b1839;
+  --fx: #ff7a18; --fx2: #a855f7; --neon-cyan: #ff7a18; --neon-pink: #a855f7; --neon-violet: #7cff3a;
+  --font-display: "Creepster", "Chiller", "Papyrus", fantasy; --h1-glow: 0 0 8px #ff7a18, 0 0 22px rgba(255, 122, 24, .65), 2px 2px 0 #3a0a52;
+  --page-bg: radial-gradient(ellipse at 50% -10%, #2b0f3d 0%, #0f0716 58%) fixed;
+  --top-bg: linear-gradient(to bottom, #12041f 0%, #2a0b45 55%, #8a2f06 100%); --top-border: 2px solid #ff7a18; --top-shadow: 0 0 18px rgba(255, 122, 24, .6), 0 4px 30px rgba(168, 85, 247, .4);
+  --top-text: #ffe2c2; --top-glow: 0 0 6px rgba(255, 122, 24, .8);
+  --tile-bg: linear-gradient(160deg, #20112e, #130a1c); --tile-border: 1px solid #4b2b66; --tile-radius: 12px; --tile-shadow: 0 0 0 1px rgba(255, 122, 24, .15), 0 0 16px rgba(168, 85, 247, .25);
+  font-family: "Alegreya Sans", "Gill Sans", "Trebuchet MS", system-ui, sans-serif; scrollbar-color: #a855f7 #0f0716;
+}
+:root[data-theme="maze"] {
+  color-scheme: dark;
+  --surface: #000000; --surface-2: #0a0a24; --line: #2f2fff; --text: #ffffff; --text-2: #d6d6ff; --muted: #9a9ad8;
+  --accent: #ffe600; --accent-2: #ff2a2a; --accent-3: #00ffff; --ok: #39ff14; --warn: #ffb852; --bad: #ff2a2a; --grid: #10103a;
+  --fx: #ffe600; --fx2: #2f2fff; --neon-cyan: #ffe600; --neon-pink: #2f2fff; --neon-violet: #ffb8ff;
+  --font-display: "Press Start 2P", "Courier New", monospace; --h1-glow: 0 0 6px #ffe600, 3px 3px 0 #2f2fff;
+  --page-bg: #000; --top-bg: #000; --top-border: 4px double #2f2fff; --top-shadow: 0 0 14px rgba(47, 47, 255, .7);
+  --top-text: #d6d6ff; --top-glow: none;
+  --tile-bg: #000; --tile-border: 4px double #2f2fff; --tile-radius: 12px; --tile-shadow: none;
+  font-family: "Pixelify Sans", "Courier New", monospace; scrollbar-color: #2f2fff #000;
+}
+:root:is([data-theme="halloween"], [data-theme="maze"]) body { background: var(--page-bg); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) a { color: var(--fx); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) a:hover { color: #fff; text-shadow: 0 0 8px var(--fx); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .top { position: sticky; overflow: hidden; background: var(--top-bg); border-bottom: var(--top-border); box-shadow: var(--top-shadow); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .top .wrap { position: relative; z-index: 1; }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .top h1 { font-family: var(--font-display); font-weight: 400; color: var(--fx); text-shadow: var(--h1-glow); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .top .vs { color: var(--fx2); text-shadow: none; }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .top .tagline, :root:is([data-theme="halloween"], [data-theme="maze"]) .top .sub,
+:root:is([data-theme="halloween"], [data-theme="maze"]) .top .issue a, :root:is([data-theme="halloween"], [data-theme="maze"]) .top .issue-title, :root:is([data-theme="halloween"], [data-theme="maze"]) label.themepick { color: var(--top-text); text-shadow: var(--top-glow); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .top button.zapset, :root:is([data-theme="halloween"], [data-theme="maze"]) label.themepick select { border-color: var(--fx); color: var(--fx); background: rgba(0, 0, 0, .55); text-shadow: none; box-shadow: 0 0 8px color-mix(in srgb, var(--fx) 45%, transparent); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) label.themepick select option { background: var(--surface-2); color: var(--text); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .tile { background: var(--tile-bg); border: var(--tile-border); border-radius: var(--tile-radius); box-shadow: var(--tile-shadow); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .tile .v { font-family: var(--font-display); font-weight: 400; color: var(--fx); text-shadow: 0 0 8px color-mix(in srgb, var(--fx) 70%, transparent); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .meter { background: #1a1a2a; box-shadow: inset 0 0 4px #000; }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .meter > i { background: linear-gradient(to right, var(--fx), var(--fx2)); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .tabs { border-bottom: 1px solid var(--line); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .tabs button { font-family: var(--font-display); letter-spacing: .04em; }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .tabs button:hover { color: #fff; text-shadow: 0 0 8px var(--fx); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .tabs button[aria-selected="true"] { color: var(--fx); border-bottom-color: var(--fx); text-shadow: 0 0 8px var(--fx); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) h2, :root:is([data-theme="halloween"], [data-theme="maze"]) h3 { font-family: var(--font-display); font-weight: 400; color: var(--fx); letter-spacing: .03em; }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .grid th { color: var(--fx); border-bottom: 1px solid var(--line); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .grid tbody tr:hover td { background: color-mix(in srgb, var(--fx2) 16%, transparent); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .badge { background: var(--surface-2); border-color: var(--line); color: var(--text-2); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) input, :root:is([data-theme="halloween"], [data-theme="maze"]) select, :root:is([data-theme="halloween"], [data-theme="maze"]) textarea { background: var(--surface-2); color: var(--text); border: 1px solid var(--line); border-radius: 6px; }
+:root:is([data-theme="halloween"], [data-theme="maze"]) input:focus, :root:is([data-theme="halloween"], [data-theme="maze"]) select:focus { outline: none; border-color: var(--fx); box-shadow: 0 0 8px color-mix(in srgb, var(--fx) 60%, transparent); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .seg { border-color: var(--line); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .seg button { background: var(--surface-2); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .seg button.on { background: var(--fx); color: #000; }
+:root:is([data-theme="halloween"], [data-theme="maze"]) button.launch, :root:is([data-theme="halloween"], [data-theme="maze"]) button.plus1 { border-color: var(--fx); color: var(--fx); background: var(--surface-2); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) button.launch:hover, :root:is([data-theme="halloween"], [data-theme="maze"]) button.plus1:hover { background: var(--fx); color: #000; }
+:root:is([data-theme="halloween"], [data-theme="maze"]) dialog { background: var(--surface-2); color: var(--text); border: 1px solid var(--fx); box-shadow: 0 0 22px color-mix(in srgb, var(--fx) 50%, transparent); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .tooltip { background: var(--surface-2); border: 1px solid var(--fx); color: var(--text); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .tabs .tab-plus1 { background: var(--surface); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) #lightbox { background: transparent; border: 0; box-shadow: none; }
+
+/* Halloween's heading: a cobweb in the corner, a moon, bats drifting across */
+:root[data-theme="halloween"] .top::before { content: ""; position: absolute; top: 0; left: 0; width: 180px; height: 140px; pointer-events: none; opacity: .5;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 140'%3E%3Cg stroke='%23e6d6ff' stroke-width='1' fill='none'%3E%3Cpath d='M0 0L180 0M0 0L160 75M0 0L108 124M0 0L48 140M0 0L0 140'/%3E%3Cpath d='M42 0Q38 38 0 42M90 0Q80 80 0 86M138 0Q122 118 0 130'/%3E%3C/g%3E%3C/svg%3E") no-repeat; }
+:root[data-theme="halloween"] .top::after { content: ""; position: absolute; top: 16px; right: 330px; width: 50px; height: 50px; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle at 35% 35%, #fff6d6, #ffd37a 62%, #e09b30); box-shadow: 0 0 30px 8px rgba(255, 200, 100, .35); }
+:root[data-theme="halloween"] .top .wrap::after { content: ""; position: absolute; left: -16px; right: -16px; top: 10px; height: 60px; pointer-events: none; opacity: .75;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='460' height='60' viewBox='0 0 460 60'%3E%3Cg fill='%23090310'%3E%3Cpath d='M60 30c5-9 11-10 15-4 4-6 8-5 10 1 2-6 6-7 10-1 4-6 10-5 15 4-6-3-10-1-13 3-4-4-8-4-12 0-4-4-8-4-12 0-3-4-7-6-13-3z'/%3E%3Cpath transform='translate(250 18) scale(.7)' d='M60 30c5-9 11-10 15-4 4-6 8-5 10 1 2-6 6-7 10-1 4-6 10-5 15 4-6-3-10-1-13 3-4-4-8-4-12 0-4-4-8-4-12 0-3-4-7-6-13-3z'/%3E%3C/g%3E%3C/svg%3E") 0 0 / 460px 60px repeat-x; }
+@media (prefers-reduced-motion: no-preference) {
+  :root[data-theme="halloween"] .top .wrap::after { animation: batfly 22s linear infinite; }
+  @keyframes batfly { from { background-position-x: 0; } to { background-position-x: -460px; } }
+  :root[data-theme="halloween"] .top h1 { animation: candle 5s infinite; }
+  @keyframes candle { 0%, 100% { opacity: 1; } 8% { opacity: .9; } 12% { opacity: 1; } 47% { opacity: .93; } 52% { opacity: 1; } }
+}
+:root[data-theme="halloween"] .top h1 { font-size: 30px; letter-spacing: .06em; }
+:root[data-theme="halloween"] .tabs button { font-size: 18px; }
+:root[data-theme="halloween"] .tile .v { font-size: 32px; }
+
+/* Maze's heading: pellets along the bottom and a chomping hero eating its way across; pixel type; scanlines on the display type */
+:root[data-theme="maze"] .top::before { content: ""; position: absolute; left: 0; right: 0; bottom: 5px; height: 8px; pointer-events: none;
+  background: radial-gradient(circle, #ffb8ae 2px, transparent 2.6px) 0 0 / 24px 8px repeat-x; }
+:root[data-theme="maze"] .top::after { content: ""; position: absolute; bottom: 0; left: -30px; width: 18px; height: 18px; border-radius: 50%; pointer-events: none;
+  background: conic-gradient(#ffe600 0 55deg, transparent 55deg 125deg, #ffe600 125deg 360deg); }
+@media (prefers-reduced-motion: no-preference) {
+  :root[data-theme="maze"] .top::after { animation: pacmove 18s linear infinite, pacchomp .28s steps(1) infinite; }
+  @keyframes pacmove { from { left: -30px; } to { left: calc(100% + 30px); } }
+  @keyframes pacchomp { 0% { background: conic-gradient(#ffe600 0 55deg, transparent 55deg 125deg, #ffe600 125deg 360deg); } 50% { background: conic-gradient(#ffe600 0 82deg, transparent 82deg 98deg, #ffe600 98deg 360deg); } }
+}
+:root[data-theme="maze"] .top h1 { font-size: 18px; line-height: 1.5; letter-spacing: .04em; }
+:root[data-theme="maze"] .top .tagline { font-size: 14px; }
+:root[data-theme="maze"] .tabs button { font-size: 10px; text-transform: uppercase; }
+:root[data-theme="maze"] .tile .v { font-size: 20px; }
+:root[data-theme="maze"] h2, :root[data-theme="maze"] h3 { font-size: 14px; }
+:root[data-theme="maze"] .grid th { font-family: "Press Start 2P", monospace; font-size: 9px; font-weight: 400; text-transform: uppercase; }
+:root[data-theme="maze"] .badge { border-radius: 4px; }
+:root[data-theme="maze"] .badge.src-dist { border-color: #00ffff; }
+:root[data-theme="maze"] .badge.src-jt { border-color: #ffb8ff; }
+:root[data-theme="maze"] .badge.src-ongo { border-color: #ff2a2a; }
+:root[data-theme="maze"] :is(h1, h2, h3, .tabs button, .tile .v, .chart-body) { position: relative; }
+:root[data-theme="maze"] :is(h1, h2, h3, .tabs button, .tile .v, .chart-body)::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, .3) 0 1px, transparent 1px 3px); }
+:root:is([data-theme="halloween"], [data-theme="maze"]) .top .tagline { font-family: inherit; font-weight: 500; text-transform: none; letter-spacing: 0; color: var(--top-text); }
+:root[data-theme="maze"] .top .tagline { font-size: 17px; }
+:root[data-theme="halloween"] .top .tagline { font-size: 17px; }
+:root[data-theme="maze"] { font-variant-ligatures: none; font-feature-settings: "liga" 0, "clig" 0; }   /* Pixelify Sans draws "fi" and "ff" as odd glyphs */
