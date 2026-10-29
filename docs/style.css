@@ -607,3 +607,7 @@ label.themepick select option { color: #111; background: #fff; }
 
 :root[data-theme="halloween"] .top .wrap::after { right: auto; left: 100%; width: 700px; }      /* three different bats, once each, flying across */
 @media (prefers-reduced-motion: reduce) { :root[data-theme="halloween"] .top .wrap::after { left: 30%; } }
+
+/* the dark theme's heading: the same blue, a good deal darker (System Default when the OS is dark, and the explicit Dark) */
+:root[data-theme="dark"] .top { background: linear-gradient(to bottom, #02202f 0%, #07405c 100%); box-shadow: 0 3px 12px rgba(0, 0, 0, .55); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme]) .top { background: linear-gradient(to bottom, #02202f 0%, #07405c 100%); box-shadow: 0 3px 12px rgba(0, 0, 0, .55); } }
