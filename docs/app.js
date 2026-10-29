@@ -1360,14 +1360,6 @@
     }
     return best;
   }
-  // One source scanline of k device pixels: with 2, alternate lit and dark lines; with more, a beam that is brightest in the middle of the row
-  // and dark between rows (the same profile as the shader's beam()).
-  const beamAt = (f, k) => k < 2.5 ? (f < .5 ? 1 : .42) : .38 + .62 * Math.exp(-((f - .5) * (f - .5)) / (2 * .2 * .2));
-  function scanGradient(k, dprC, vert) {
-    const px = 1 / dprC, stops = [];
-    for (let j = 0; j < k; j++) stops.push(`rgba(0,0,0,${((1 - beamAt((j + .5) / k, k)) * .9).toFixed(3)}) ${(j * px).toFixed(4)}px ${((j + 1) * px).toFixed(4)}px`);
-    return `repeating-linear-gradient(${vert ? "to right" : "to bottom"}, ${stops.join(",")})`;
-  }
   const fitBox = (ratio, maxW, maxH) => { const w = Math.min(maxW, maxH * ratio); return [w, w / ratio]; };
   function fitLightbox(img) {                       // the zoomed shot: as large as the window allows, in its shown shape
     if (!img.naturalWidth) return;
@@ -1380,23 +1372,13 @@
     const ratio = inf.k > 1 ? (inf.horiz ? span * pr : pr / span) : nearShape(img) || nat;
     const side = dlg.classList.contains("info") ? 2 * (LB_SIDE + 12) : 0;                // the details panels beside the screen
     const maxW = Math.max(200, innerWidth - (innerWidth <= 640 ? 112 : 150) - side), maxH = Math.max(150, innerHeight - 64);
-    let [w, h] = fitBox(ratio, maxW, maxH);
+    const [w, h] = fitBox(ratio, maxW, maxH);
+    img.style.width = Math.round(w) + "px"; img.style.height = Math.round(h) + "px";
     const vert = inf.k > 1 ? port : ratio < 1;                             // a 3:4 (rotated) display: its scanlines run vertically
-    // Scanlines are drawn 1:1 with the picture's own scanlines: when they are on, the zoom is sized so that every source row (or column, for a
-    // rotated display) is a whole number of device pixels, so each row has the same height on screen and the pattern never beats against it.
-    const dprC = Math.min(2, devicePixelRatio || 1), rowsN = vert ? img.naturalWidth : img.naturalHeight;
-    let kpx = 0;                                                           // device pixels per source scanline (0: no snapping, a smooth pattern)
-    if (dlg.dataset.scan !== "0" && (inf.k === 1 || (inf.horiz && !port))) {
-      const along = vert ? w : h, K = Math.floor(along * dprC / rowsN + 1e-6);
-      if (K >= 2) { const f = (rowsN * K / dprC) / along; w *= f; h *= f; kpx = K; }
-    }
-    img.dataset.kpx = kpx; img.dataset.cw = w; img.dataset.ch = h;
-    img.style.width = kpx ? w.toFixed(3) + "px" : Math.round(w) + "px"; img.style.height = kpx ? h.toFixed(3) + "px" : Math.round(h) + "px";
-    const pitch = kpx ? kpx / dprC : vert ? w / img.naturalWidth : h / img.naturalHeight;     // css pixels per scanline (flat, single display)
+    const pitch = vert ? w / img.naturalWidth : h / img.naturalHeight;     // screen pixels per scanline (flat, single display)
     const sl = img.parentElement.querySelector(".lb-scan");
     sl.classList.toggle("vert", vert);
-    sl.style.setProperty("--ph", pitch.toFixed(3) + "px"); sl.hidden = inf.k > 1 || (!kpx && pitch < 2);      // too fine to draw when shrunk
-    sl.style.background = kpx ? scanGradient(kpx, dprC, vert) : "";          // exact device-pixel bands when aligned
+    sl.style.setProperty("--ph", pitch.toFixed(3) + "px"); sl.hidden = inf.k > 1 || pitch < 2;      // too fine to draw when shrunk
     document.dispatchEvent(new Event("lb-render"));
   }
   document.addEventListener("load", ev => {          // load does not bubble: capture it
@@ -1441,9 +1423,8 @@
     const stored = k => { try { return localStorage.getItem(k) !== "0"; } catch (e) { return true; } };
     const store = (k, on) => { try { localStorage.setItem(k, on ? "1" : "0"); } catch (e) { /* ignore */ } };
     let scan = stored("lb-scanlines"), crt = stored("lb-crt"), crtBroken = false;
-    dlg.dataset.scan = scan ? "1" : "0";
     const label = () => { fxScan.textContent = scan ? "Scanlines: on" : "Scanlines: off"; fxCrt.textContent = crtBroken ? "CRT curve: unavailable" : crt ? "CRT curve: on" : "CRT curve: off"; fxCrt.disabled = crtBroken; if (crtBroken) dlg.dataset.broken = "1"; };
-    const setScan = on => { scan = on; store("lb-scanlines", on); dlg.dataset.scan = on ? "1" : "0"; label(); if (img.naturalWidth) fitLightbox(img); else render(); };
+    const setScan = on => { scan = on; store("lb-scanlines", on); label(); render(); };
     const setCrt = on => { crt = on; store("lb-crt", on); label(); render(); };
 
     // The curve is a WebGL shader (barrel distortion, scanlines that follow it, a vignette, nearest-neighbour sampling). Its texture
@@ -1456,7 +1437,7 @@
       prog = gl.createProgram();
       gl.attachShader(prog, sh(gl.VERTEX_SHADER, "attribute vec2 p; varying vec2 uv; void main(){ uv = p * .5 + .5; gl_Position = vec4(p, 0., 1.); }"));
       gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, `precision mediump float; varying vec2 uv; uniform sampler2D tex;
-        uniform float n; uniform float horiz; uniform float gap; uniform float curve; uniform float rows; uniform float scan; uniform float vert; uniform float asp; uniform float kpx;
+        uniform float n; uniform float horiz; uniform float gap; uniform float curve; uniform float rows; uniform float scan; uniform float vert; uniform float asp;
         void main(){
           // n displays side by side (horiz) or stacked, each its own CRT; a is the position along the row of displays
           float a = horiz > .5 ? uv.x : 1. - uv.y;
@@ -1478,12 +1459,7 @@
           vec2 q = vec2(s.x, 1. - s.y);                                        // in the display, origin top left
           vec2 t = horiz > .5 ? vec2((idx + q.x) / n, q.y) : vec2(q.x, (idx + q.y) / n);
           vec3 col = texture2D(tex, t).rgb;
-          // scanlines: f is the position inside the source row (from the top, or from the left for a rotated display). With a whole number of
-          // device pixels per row (kpx) every row is lit the same way: 2 px = alternate lit and dark lines; more = a beam, brightest in the
-          // middle of the row, dark between rows. Without it, a smooth sine.
-          float f = fract(mix(q.y, q.x, vert) * rows);
-          float beam = kpx > 1.5 ? (kpx < 2.5 ? (f < .5 ? 1. : .42) : .38 + .62 * exp(-(f - .5) * (f - .5) / .08)) : .5 + .5 * sin(3.14159 * f);
-          col *= mix(1., beam, scan);
+          col *= 1. - scan * .5 * (1. - sin(3.14159 * fract(mix(s.y, s.x, vert) * rows)));
           float v = 16. * s.x * s.y * (1. - s.x) * (1. - s.y);
           col *= .55 + .45 * pow(v, .25);                                       // vignette
           col *= .83 + .17 * smoothstep(0., .11, e);                            // roll-off: the picture dims toward all four edges
@@ -1518,8 +1494,8 @@
       const draw = () => {
         try {
           if (!gl) initGl();
-          const dpr = Math.min(2, devicePixelRatio || 1), w = +img.dataset.cw || img.clientWidth, h = +img.dataset.ch || img.clientHeight;      // (the exact size, not a rounded one)
-          cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); cv.style.width = w.toFixed(3) + "px"; cv.style.height = h.toFixed(3) + "px";
+          const dpr = Math.min(2, devicePixelRatio || 1), w = img.clientWidth, h = img.clientHeight;
+          cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); cv.style.width = w + "px"; cv.style.height = h + "px";
           gl.viewport(0, 0, cv.width, cv.height);
           gl.clearColor(0, 0, 0, 0); gl.clear(gl.COLOR_BUFFER_BIT);
           gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
@@ -1533,7 +1509,7 @@
           const pitch = vert ? dispW / srcW : dispH / srcH;
           const u = (name, v) => gl.uniform1f(gl.getUniformLocation(prog, name), v);
           u("n", k); u("horiz", horiz ? 1 : 0); u("gap", gapP * pw); u("curve", crt ? 1 : 0);
-          u("rows", vert ? srcW : srcH); u("vert", vert ? 1 : 0); u("scan", scan && pitch * dpr >= 2 ? 1 : 0); u("asp", dispW / dispH); u("kpx", +img.dataset.kpx || 0);
+          u("rows", vert ? srcW : srcH); u("vert", vert ? 1 : 0); u("scan", scan && pitch >= 2 ? 1 : 0); u("asp", dispW / dispH);
           gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
           cv.hidden = false; img.style.opacity = "0";
           sl.style.display = "none";
