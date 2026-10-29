@@ -863,13 +863,9 @@
   const calm = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
   const fxColour = n => { const c = FX[fxTheme()]?.colours || FX.neon.colours; return c[n % c.length]; };
   // How the shapes are drawn (c: 2d context, alpha a, 0..1)
-  function drawBat(c, x, y, s, flap) {                  // a small bat, wings beating
-    c.save(); c.translate(x, y); c.scale(s, s * (.55 + .45 * Math.abs(Math.sin(flap))));
-    c.beginPath(); c.moveTo(0, -2);
-    c.bezierCurveTo(1, -5, 3, -5, 4, -3); c.bezierCurveTo(6, -6, 9, -5, 11, -1);
-    c.bezierCurveTo(9, -2, 8, 0, 7, 2); c.bezierCurveTo(6, 0, 4, 0, 3, 3); c.bezierCurveTo(2, 1, 1, 1, 0, 3);
-    c.bezierCurveTo(-1, 1, -2, 1, -3, 3); c.bezierCurveTo(-4, 0, -6, 0, -7, 2); c.bezierCurveTo(-8, 0, -9, -2, -11, -1);
-    c.bezierCurveTo(-9, -5, -6, -6, -4, -3); c.bezierCurveTo(-3, -5, -1, -5, 0, -2); c.closePath(); c.fill(); c.restore();
+  const BAT = new Path2D("M0 -2.4L1.1 -4.6L1.9 -2.1Q4 -5.5 8.5 -6Q11.5 -5.5 13 -1.5Q10.6 -1.6 9.6 0.8Q7.8 -0.6 6.2 1.4Q4.4 0.6 3 2.6L1.2 3.6L0 4.4L-1.2 3.6L-3 2.6Q-4.4 0.6 -6.2 1.4Q-7.8 -0.6 -9.6 0.8Q-10.6 -1.6 -13 -1.5Q-11.5 -5.5 -8.5 -6Q-4 -5.5 -1.9 -2.1L-1.1 -4.6Z");               // a bat, seen from the front: ears, a small body, three scallops to each wing's trailing edge
+  function drawBat(c, x, y, s, flap) {
+    c.save(); c.translate(x, y); c.scale(s, s * (.6 + .4 * Math.abs(Math.sin(flap)))); c.fill(BAT); c.restore();      // the wings beat
   }
   function drawEcho(c, b, a) {                          // what the zooming screen leaves behind
     const th = fxTheme();
@@ -892,7 +888,7 @@
   }
   function drawPointer(c, b, age, a) {                  // the small sprite behind the pointer
     c.shadowColor = b.c; c.strokeStyle = b.c; c.fillStyle = b.c; const th = fxTheme();
-    if (th === "halloween") { c.shadowBlur = 10; c.globalAlpha = a; drawBat(c, b.x, b.y - age * 16, 1.5 - age * .5, b.n * 1.7 + age * 14); }
+    if (th === "halloween") { c.shadowBlur = 10; c.globalAlpha = a; drawBat(c, b.x, b.y - age * 16, 1.6 - age * .5, b.n * 1.7 + age * 14); }
     else if (th === "maze") {                           // pellets; every fifth is a power pellet
       c.shadowBlur = 0; c.fillStyle = "#ffb8ae"; c.globalAlpha = a; const big = b.n % 5 === 0;
       c.beginPath(); c.arc(b.x, b.y, big ? 6 - age * 2 : 3, 0, Math.PI * 2); c.fill();
