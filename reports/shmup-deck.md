@@ -1,14 +1,18 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-10-28 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
+Generated 2026-10-29 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
 
 **Agreement:** 308 of 310 deck titles are Shmup in our data (99.4%).
 
 ## New since the previous report
 
-**1 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
+**5 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
 
-- `silvmil` Silver Millennium (1995; Shooter / Flying Vertical)
+- `airbustr` Air Buster: Trouble Specialty Raid Unit (World) (1990; Shooter / Flying Horizontal)
+- `bermudat` Bermuda Triangle (World?) (1987; Shooter / Flying Vertical)
+- `chopper` Chopper I (US Ver 2) (1988; Shooter / Flying Vertical)
+- `hal21` HAL21 (1985; Shooter / Flying Vertical)
+- `worldwar` World Wars (World?) (1987; Shooter / Flying Vertical)
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -19,13 +23,17 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (126)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (131)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
-| **NEW** `silvmil` | Silver Millennium | 1995 | Shooter / Flying Vertical (catver) | silvmil |
+| **NEW** `airbustr` | Air Buster: Trouble Specialty Raid Unit (World) | 1990 | Shooter / Flying Horizontal (catver) | AirBuster, TomSVR_djboy |
+| **NEW** `bermudat` | Bermuda Triangle (World?) | 1987 | Shooter / Flying Vertical (catver) | SNKTripleZ80 |
+| **NEW** `chopper` | Chopper I (US Ver 2) | 1988 | Shooter / Flying Vertical (catver) | SNKTripleZ80 |
+| **NEW** `hal21` | HAL21 | 1985 | Shooter / Flying Vertical (catver) | SNKTripleZ80 |
+| **NEW** `worldwar` | World Wars (World?) | 1987 | Shooter / Flying Vertical (catver) | SNKTripleZ80 |
 | `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
@@ -118,6 +126,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `shocktro` | Shock Troopers (set 1) | 1997 | Shooter / Walking (catver) | NeoGeo |
 | `shocktr2` | Shock Troopers - 2nd Squad | 1998 | Shooter / Walking (catver) | NeoGeo |
 | `ar_sdwr` | Sidewinder (Arcadia, set 1, V 2.1) | 1988 | Shooter / Flying Vertical (catver) | arcadiasystems (decoryah) |
+| `silvmil` | Silver Millennium | 1995 | Shooter / Flying Vertical (catver) | silvmil |
 | `skyalert` | Sky Alert | 1992 | Shooter / Flying Vertical (catver) | metro, metro (decoryah) |
 | `skyskipr` | Sky Skipper | 1981 | Shooter / Flying (catver) | Popeye, jtpopeye, Nintendo, Nintendo_TestBuild (RodimusFVC) |
 | `amazon` | Soldier Girl Amazon | 1986 | Shooter / Walking (catver) | terracresta |

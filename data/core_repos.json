@@ -255,6 +255,9 @@
  "decoryah:arcadiasystems": [
   "decoryah/Arcade-ArcadiaSystems_MiSTer"
  ],
+ "decoryah:crashrace": [
+  "decoryah/Arcade-LethalCrashRace_MiSTer"
+ ],
  "decoryah:crospang": [
   "decoryah/Arcade-CrossPang_MiSTer"
  ],
@@ -991,7 +994,8 @@
  ],
  "dist:pong": [
   "MiSTer-devel/Arcade-Pong_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "RodimusFVC/Arcade-Pong_MiSTer"
  ],
  "dist:pooyan": [
   "MiSTer-devel/Arcade-Pooyan_MiSTer",
@@ -2184,6 +2188,9 @@
  "ongo:ah": [
   "meathax/meatcores"
  ],
+ "ongo:airbuster": [
+  "meathax/meatcores"
+ ],
  "ongo:aqua_jack": [
   "bazset/MiSTer_BAZSET"
  ],
@@ -2303,6 +2310,9 @@
  "ongo:brapboys_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
+ "ongo:brapboysspecial": [
+  "bazset/MiSTer_BAZSET"
+ ],
  "ongo:cadash_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
@@ -2419,6 +2429,9 @@
  "ongo:gm0rk_midway-y-unit": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:hangzo": [
+  "meathax/meatcores"
+ ],
  "ongo:heavybarreltwinstick": [
   "meathax/meatcores"
  ],
@@ -2510,6 +2523,9 @@
  "ongo:meathax_actionhollywood": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:meathax_airbuster": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:meathax_argus": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2517,6 +2533,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_bigfight": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:meathax_daikaiju": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_dataeastliberation": [
@@ -2598,6 +2617,9 @@
   "alphanu1/sega-model2-mister"
  ],
  "ongo:model2a": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:model2c": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:mysteriousstones": [
@@ -2900,6 +2922,7 @@
   "RodimusFVC/Arcade-Exidy_MiSTer"
  ],
  "repo:fifelix": [
+  "OngoGablogian/MiSTer_Ongo",
   "niknakniknak/FixItFelixArcadeForMister"
  ],
  "repo:firetrap": [
@@ -3463,30 +3486,55 @@
  ],
  "xela:xnbrkthru": [
   "OngoGablogian/MiSTer_Ongo",
-  "XelaNotPu/BreakThru_MiSTer"
+  "XelaNotPu/BreakThru_MiSTer",
+  "XelaNotPu/XelaNotPu_MiSTer_DB"
+ ],
+ "xela:xngorgon": [
+  "XelaNotPu/XelaNotPu_MiSTer_DB"
+ ],
+ "xela:xnsuper22": [
+  "XelaNotPu/XelaNotPu_MiSTer_DB"
  ],
  "xela:xnsystem11": [
-  "XelaNotPu/SYSTEM11_MiSTer-Supporter"
+  "XelaNotPu/SYSTEM11_MiSTer-Supporter",
+  "XelaNotPu/XelaNotPu_MiSTer_DB"
+ ],
+ "xela:xnsystem12": [
+  "XelaNotPu/XelaNotPu_MiSTer_DB"
+ ],
+ "xela:xnsystem21": [
+  "XelaNotPu/XelaNotPu_MiSTer_DB"
+ ],
+ "xela:xnsystem22": [
+  "XelaNotPu/XelaNotPu_MiSTer_DB"
  ],
  "xela:xnsystemfl": [
   "OngoGablogian/MiSTer_Ongo",
-  "XelaNotPu/SYSTEMFL_MiSTer-Supporter"
+  "XelaNotPu/SYSTEMFL_MiSTer-Supporter",
+  "XelaNotPu/XelaNotPu_MiSTer_DB"
+ ],
+ "xela:xnwinrun": [
+  "XelaNotPu/XelaNotPu_MiSTer_DB"
  ],
  "xela:xnzn1": [
   "OngoGablogian/MiSTer_Ongo",
+  "XelaNotPu/XelaNotPu_MiSTer_DB",
   "XelaNotPu/ZN1_MiSTer",
   "kyledlester/ZN1_MiSTer"
  ],
  "xela:xnzn1taitofx1b": [
   "OngoGablogian/MiSTer_Ongo",
+  "XelaNotPu/XelaNotPu_MiSTer_DB",
   "XelaNotPu/ZN1-TaitoFX1B_MiSTer"
  ],
  "xela:zn1capcom": [
   "OngoGablogian/MiSTer_Ongo",
+  "XelaNotPu/XelaNotPu_MiSTer_DB",
   "XelaNotPu/ZN1-Capcom_MiSTer"
  ],
  "xela:zn2capcom": [
   "OngoGablogian/MiSTer_Ongo",
+  "XelaNotPu/XelaNotPu_MiSTer_DB",
   "XelaNotPu/ZN2-Capcom_MiSTer"
  ],
  "yaguboo:heavysmash": [
