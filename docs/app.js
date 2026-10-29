@@ -1360,38 +1360,13 @@
     }
     return best;
   }
-  // One source scanline is k device pixels tall: the first half lit, the second half dark (4 lit and 4 dark when it is 8; 2 and 2 when 4). k is
-  // the largest even number up to 8 that fits the window. The shader computes the same weights.
-  const beamAt = (j, k) => j < Math.ceil(k / 2) ? 1 : .3;
-  // The overlay is a bitmap, k device pixels long and one wide, tiled with nearest-neighbour scaling: every device pixel is exactly one of the
-  // row's weights (a gradient's hard stops can land between pixels and blur some lines).
-  const scanTiles = new Map();
-  function scanTile(k, vert) {
-    const key = k + (vert ? "v" : "h");
-    if (!scanTiles.has(key)) {
-      const c = document.createElement("canvas"); c.width = vert ? k : 1; c.height = vert ? 1 : k;
-      const g = c.getContext("2d");
-      for (let j = 0; j < k; j++) { g.fillStyle = `rgba(0,0,0,${(1 - beamAt(j, k)).toFixed(3)})`; g.fillRect(vert ? j : 0, vert ? 0 : j, 1, 1); }
-      scanTiles.set(key, c.toDataURL());
-    }
-    return scanTiles.get(key);
-  }
-  function scanStyle(sl, k, dprC, vert) {
-    sl.style.backgroundImage = `url(${scanTile(k, vert)})`; sl.style.backgroundRepeat = vert ? "repeat-x" : "repeat-y";
-    sl.style.backgroundSize = vert ? `${k / dprC}px 100%` : `100% ${k / dprC}px`; sl.style.backgroundPosition = "0 0"; sl.style.imageRendering = "pixelated";
-  }
-  // Centring can leave the picture on a half device pixel, which smears the lines over two pixels (heavier, lighter). After layout, nudge the
-  // frame (a relative offset, not a transform) so its top-left corner is on a whole device pixel.
-  function snapFrame(fr) {
-    if (!fr) return;
-    fr.style.left = fr.style.top = "0px";
-    const anims = fr.getAnimations();
-    if (anims.length) { Promise.allSettled(anims.map(x => x.finished)).then(() => snapFrame(fr)); return; }      // mid-tween the rectangle is transformed: measure when it has landed
-    requestAnimationFrame(() => {
-      const dpr = devicePixelRatio || 1, r = fr.getBoundingClientRect();
-      if (!r.width) return;
-      fr.style.left = (Math.round(r.left * dpr) - r.left * dpr) / dpr + "px"; fr.style.top = (Math.round(r.top * dpr) - r.top * dpr) / dpr + "px";
-    });
+  // One source scanline is k device pixels tall (4 CSS pixels where the window allows): a lit body, gently humped, and a dark gap of about a
+  // quarter of the row at the bottom (1 device pixel for k = 2..5), so every line looks the same. The shader computes the same weights.
+  const beamAt = (j, k) => { const gap = Math.max(1, Math.floor(k * .25 + .5)), body = k - gap; return j < body ? .8 + .2 * Math.sin(Math.PI * (j + .5) / body) : .36; };
+  function scanGradient(k, dprC, vert) {
+    const px = 1 / dprC, stops = [];
+    for (let j = 0; j < k; j++) stops.push(`rgba(0,0,0,${(1 - beamAt(j, k)).toFixed(3)}) ${(j * px).toFixed(4)}px ${((j + 1) * px).toFixed(4)}px`);
+    return `repeating-linear-gradient(${vert ? "to right" : "to bottom"}, ${stops.join(",")})`;
   }
   const fitBox = (ratio, maxW, maxH) => { const w = Math.min(maxW, maxH * ratio); return [w, w / ratio]; };
   function fitLightbox(img) {                       // the zoomed shot: as large as the window allows, in its shown shape
@@ -1412,7 +1387,7 @@
     const dprC = Math.min(2, devicePixelRatio || 1), rowsN = vert ? img.naturalWidth : img.naturalHeight;
     let kpx = 0;                                                           // device pixels per source scanline (0: no snapping, a smooth pattern)
     if (dlg.dataset.scan !== "0" && (inf.k === 1 || (inf.horiz && !port))) {
-      const along = vert ? w : h, Kfit = Math.floor(along * dprC / rowsN + 1e-6), K = Math.min(Kfit, 8) & ~1;      // whole device pixels a row, even, at most 8
+      const along = vert ? w : h, K = Math.min(Math.floor(along * dprC / rowsN + 1e-6), Math.round(4 * dprC));      // up to 4 CSS pixels a row
       if (K >= 2) { const f = (rowsN * K / dprC) / along; w *= f; h *= f; kpx = K; }
     }
     img.dataset.kpx = kpx; img.dataset.cw = w; img.dataset.ch = h;
@@ -1421,8 +1396,7 @@
     const sl = img.parentElement.querySelector(".lb-scan");
     sl.classList.toggle("vert", vert);
     sl.style.setProperty("--ph", pitch.toFixed(3) + "px"); sl.hidden = inf.k > 1 || (!kpx && pitch < 2);      // too fine to draw when shrunk
-    if (kpx) scanStyle(sl, kpx, dprC, vert); else { sl.style.backgroundImage = sl.style.backgroundSize = sl.style.backgroundRepeat = sl.style.imageRendering = ""; }      // exact device-pixel bands when aligned
-    snapFrame(img.closest(".lb-frame"));
+    sl.style.background = kpx ? scanGradient(kpx, dprC, vert) : "";          // exact device-pixel bands when aligned
     document.dispatchEvent(new Event("lb-render"));
   }
   document.addEventListener("load", ev => {          // load does not bubble: capture it
@@ -1482,7 +1456,7 @@
       prog = gl.createProgram();
       gl.attachShader(prog, sh(gl.VERTEX_SHADER, "attribute vec2 p; varying vec2 uv; void main(){ uv = p * .5 + .5; gl_Position = vec4(p, 0., 1.); }"));
       gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, `precision mediump float; varying vec2 uv; uniform sampler2D tex;
-        uniform float n; uniform float horiz; uniform float gap; uniform float curve; uniform float rows; uniform float scan; uniform float vert; uniform float asp; uniform float kpx; uniform float fx;
+        uniform float n; uniform float horiz; uniform float gap; uniform float curve; uniform float rows; uniform float scan; uniform float vert; uniform float asp; uniform float kpx;
         void main(){
           // n displays side by side (horiz) or stacked, each its own CRT; a is the position along the row of displays
           float a = horiz > .5 ? uv.x : 1. - uv.y;
@@ -1498,24 +1472,26 @@
           vec2 s = (c + c * o * o) * .5 + .5;                                  // barrel: the corners fall off the glass
           // distance (in display heights) from the rounded edge of the glass, positive inside; asp = on-screen width / height
           vec2 pp = (s - .5) * vec2(asp, 1.);
-          float rad = mix(.006, .0375, fx);                                       // the plain zoom has nearly square corners
-          vec2 dq = abs(pp) - (vec2(asp, 1.) * .5 - rad);
-          float e = rad - (length(max(dq, 0.)) + min(max(dq.x, dq.y), 0.));
+          vec2 dq = abs(pp) - (vec2(asp, 1.) * .5 - .0375);
+          float e = .0375 - (length(max(dq, 0.)) + min(max(dq.x, dq.y), 0.));
           if (e < 0.) { gl_FragColor = vec4(0.); return; }                    // off the glass or in a rounded corner: transparent
           vec2 q = vec2(s.x, 1. - s.y);                                        // in the display, origin top left
           vec2 t = horiz > .5 ? vec2((idx + q.x) / n, q.y) : vec2(q.x, (idx + q.y) / n);
           vec3 col = texture2D(tex, t).rgb;
           // scanlines, in screen space so the lines stay straight, evenly spaced and the same weight across the whole glass (only the picture
           // bends): f is the position inside the source row from the top (from the left for a rotated display). With a whole number of device
-          // pixels per row (kpx) every row is lit the same way: the first half lit, the second half dark (the same weights as the page's beamAt()). Without it, a smooth sine.
+          // pixels per row (kpx) every row is lit the same way: a gently humped body and a dark gap of about a quarter of the row at the bottom
+          // (the same weights as the page's beamAt()). Without it, a smooth sine.
           float f = fract(mix(1. - p.y, p.x, vert) * rows);
           float beam;
-          if (kpx > 1.5) beam = floor(f * kpx) < ceil(kpx * .5) ? 1. : .3;            // the first half of the row lit, the second dark
-          else beam = .5 + .5 * sin(3.14159 * f);
+          if (kpx > 1.5) {
+            float j = floor(f * kpx), gp = max(1., floor(kpx * .25 + .5)), bd = kpx - gp;
+            beam = j < bd ? .8 + .2 * sin(3.14159 * (j + .5) / bd) : .36;
+          } else beam = .5 + .5 * sin(3.14159 * f);
           col *= mix(1., beam, scan);
           float v = 16. * s.x * s.y * (1. - s.x) * (1. - s.y);
-          col *= mix(1., .55 + .45 * pow(v, .25), fx);                           // vignette
-          col *= mix(1., .83 + .17 * smoothstep(0., .11, e), fx);                 // roll-off: the picture dims toward all four edges
+          col *= .55 + .45 * pow(v, .25);                                       // vignette
+          col *= .83 + .17 * smoothstep(0., .11, e);                            // roll-off: the picture dims toward all four edges
           float al = smoothstep(0., .006, e);                                   // a soft edge to the screen
           // The glass: a curved front surface lit from above left. Its normal tilts outward from the centre (c), so a broad soft
           // highlight sits up and to the left, a tighter one inside it, and the curved rim catches a little light.
@@ -1524,8 +1500,8 @@
           float nh = max(dot(nrm, hv), 0.);
           float glare = .07 * pow(nh, 14.) + .09 * pow(nh, 90.);               // broad sheen + hot spot
           glare += .035 * smoothstep(.04, .01, e) * smoothstep(0., .01, e);      // the rim of the tube
-          glare *= (.6 + .4 * (1. - dot(col, vec3(.333)))) * fx;                  // shows less over bright picture; none on the plain zoom
-          gl_FragColor = vec4((col * mix(1., 1.08, fx) + vec3(glare)) * al, al);              // premultiplied
+          glare *= .6 + .4 * (1. - dot(col, vec3(.333)));                       // shows less over bright picture
+          gl_FragColor = vec4((col * 1.08 + vec3(glare)) * al, al);              // premultiplied
         }`));
       gl.linkProgram(prog);
       if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(prog));
@@ -1542,8 +1518,7 @@
       const sl = dlg.querySelector(".lb-scan");
       sl.style.display = scan && !sl.hidden && !(crt && !crtBroken && !cv.hidden) ? "" : "none";
       const k = +img.dataset.k || 1;                                      // displays in this shot
-      const aligned = scan && +img.dataset.kpx >= 2;                          // scanlines on a whole number of device pixels: drawn by the canvas, which is exact at any display scale
-      if ((!crt && k < 2 && !aligned) || crtBroken || !img.src || !img.naturalWidth || !dlg.open) { flat(); sl.style.display = scan && !sl.hidden ? "" : "none"; return; }
+      if ((!crt && k < 2) || crtBroken || !img.src || !img.naturalWidth || !dlg.open) { flat(); sl.style.display = scan && !sl.hidden ? "" : "none"; return; }
       const url = img.currentSrc || img.src;
       const draw = () => {
         try {
@@ -1563,7 +1538,7 @@
           const pitch = vert ? dispW / srcW : dispH / srcH;
           const u = (name, v) => gl.uniform1f(gl.getUniformLocation(prog, name), v);
           u("n", k); u("horiz", horiz ? 1 : 0); u("gap", gapP * pw); u("curve", crt ? 1 : 0);
-          u("rows", vert ? srcW : srcH); u("vert", vert ? 1 : 0); u("scan", scan && pitch * dpr >= 2 ? 1 : 0); u("asp", dispW / dispH); u("kpx", +img.dataset.kpx || 0); u("fx", crt ? 1 : 0);
+          u("rows", vert ? srcW : srcH); u("vert", vert ? 1 : 0); u("scan", scan && pitch * dpr >= 2 ? 1 : 0); u("asp", dispW / dispH); u("kpx", +img.dataset.kpx || 0);
           gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
           cv.hidden = false; img.style.opacity = "0";
           sl.style.display = "none";
