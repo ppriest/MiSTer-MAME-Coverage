@@ -14,7 +14,7 @@
 <script>/* the chosen theme is applied before the stylesheet paints (no flash); no choice = the system's */
 try { var t = localStorage.getItem("theme"); if (["light", "dark", "neon", "halloween"].includes(t)) document.documentElement.dataset.theme = t; } catch (e) { /* storage unavailable: the system theme */ }
 </script>
-<link rel="stylesheet" href="style.css?v=6fd27c589f">
+<link rel="stylesheet" href="style.css?v=5857bcd987">
 </head>
 <body>
 <header class="top">
@@ -137,7 +137,9 @@ try { var t = localStorage.getItem("theme"); if (["light", "dark", "neon", "hall
     </form>
     <p class="count" id="titles-count"></p>
     <details class="charts-box" id="charts-box" open>
-      <summary><span class="twisty"></span>Charts <span class="muted" id="charts-note">for the titles matching the filters above</span></summary>
+      <summary><span class="twisty"></span>Charts <span class="muted" id="charts-note">for the titles matching the filters above</span>
+        <span class="chartpick" id="chartpick"><button type="button" class="linkbtn" id="chartpick-btn" aria-haspopup="true" aria-expanded="false" title="choose which charts to show"></button><div class="chartpick-menu" id="chartpick-menu" role="group" aria-label="Charts to show" hidden></div></span></summary>
+    <p class="muted" id="charts-none" hidden>No charts selected: use the menu at the right to choose some.</p>
     <section class="charts">
     <figure class="chart" id="fig-time">
       <button type="button" class="chart-zoom" aria-label="Show this chart full screen" title="full screen">⤢</button>
@@ -175,6 +177,15 @@ try { var t = localStorage.getItem("theme"); if (["light", "dark", "neon", "hall
       </figcaption>
       <div class="chart-body" id="chart-year"></div>
       <div class="legend" id="legend-year"></div>
+    </figure>
+    <figure class="chart" id="fig-rot" hidden>
+      <button type="button" class="chart-zoom" aria-label="Show this chart full screen" title="full screen">⤢</button>
+      <figcaption>
+        <strong>Screen rotation by release year</strong>
+        <span class="muted">cumulative number of the filtered titles whose screen MAME turns 90° clockwise (CW, ROT90) or 90° counter-clockwise (CCW, ROT270), by the year MAME gives the parent set; titles that are not rotated are left out</span>
+      </figcaption>
+      <div class="chart-body" id="chart-rot"></div>
+      <div class="legend" id="legend-rot"></div>
     </figure>
     </section>
     </details>
@@ -361,6 +372,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=d8a6bb5966"></script>
+<script src="app.js?v=f9189f8afe"></script>
 </body>
 </html>

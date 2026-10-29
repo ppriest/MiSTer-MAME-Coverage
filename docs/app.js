@@ -36,6 +36,7 @@
     S.wlView = p.get("wl") === "fulfilled" ? "fulfilled" : "requested";   // Wishlist: Requested / Fulfilled
     S.tview = GALLERY_ENABLED && p.get("view") === "gallery" ? "gallery" : "list";            // Titles: List / Gallery
     S.gkind = GALLERY_ENABLED && p.get("shot") === "title" ? "title" : "ingame";              // Gallery: In game / Title screen
+    S.chartsShown = new Set(p.has("charts") ? parseCharts(p.get("charts")) : loadChartsPref());                // which charts are shown (hash, else the remembered choice)
     if (p.has("tab")) showTab(p.get("tab"), false);
     $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓"; $("#d-dir").textContent = S.dir.d > 0 ? "↑" : "↓"; $("#c-dir").textContent = S.dir.c > 0 ? "↑" : "↓";
   }
@@ -50,6 +51,8 @@
     if (S.wlView === "fulfilled") p.set("wl", "fulfilled");
     if (S.tview === "gallery") p.set("view", "gallery");
     if (S.gkind === "title") p.set("shot", "title");
+    const shown = CHARTS.filter(c => S.chartsShown.has(c.id)).map(c => c.id);
+    if (shown.join() !== CHARTS_DEFAULT.join()) p.set("charts", shown.join(",") || "none");
     history.replaceState(null, "", "#" + p.toString());
   }
 
@@ -130,6 +133,44 @@
     const date = f.work === "working" ? t => t.date_working : t => t.date;
     return { titles, setOk, covered, setCovered, date, work: f.work };
   }
+  // Which charts are shown: a compact menu in the Charts heading; the choice is remembered and kept in the URL (charts=time,cores,...).
+  const CHARTS = [
+    { id: "time", label: "MAME and MiSTer over time" }, { id: "cores", label: "Cores over time, by database" },
+    { id: "genre", label: "Coverage by genre" }, { id: "year", label: "Coverage by release year" },
+    { id: "rot", label: "Screen rotation by release year (CW / CCW)" },
+  ];
+  const CHARTS_DEFAULT = ["time", "cores", "genre", "year"];       // the rotation chart is there for the asking
+  const parseCharts = str => str === "none" ? [] : str.split(",").filter(id => CHARTS.some(c => c.id === id));
+  function loadChartsPref() { try { const v = localStorage.getItem("charts-shown"); if (v !== null) return parseCharts(v || "none"); } catch (e) { /* storage unavailable */ } return CHARTS_DEFAULT; }
+  S.chartsShown = new Set(CHARTS_DEFAULT);
+  function applyChartSelection() {
+    CHARTS.forEach(c => { const f = $("#fig-" + c.id); if (f) f.hidden = !S.chartsShown.has(c.id); });
+    $("#chartpick-btn").textContent = `Charts: ${S.chartsShown.size} of ${CHARTS.length} ▾`;
+    $$("#chartpick-menu input").forEach(i => { i.checked = S.chartsShown.has(i.dataset.chart); });
+    $("#charts-none").hidden = S.chartsShown.size > 0 || $("#charts-box").classList.contains("disabled");
+  }
+  (function () {
+    const menu = $("#chartpick-menu"), btn = $("#chartpick-btn");
+    menu.innerHTML = CHARTS.map(c => `<label><input type="checkbox" data-chart="${c.id}"> ${esc(c.label)}</label>`).join("");
+    const close = () => { menu.hidden = true; btn.setAttribute("aria-expanded", "false"); };
+    btn.addEventListener("click", () => { menu.hidden = !menu.hidden; btn.setAttribute("aria-expanded", String(!menu.hidden)); });
+    menu.addEventListener("change", ev => {
+      const i = ev.target.closest("input[data-chart]"); if (!i) return;
+      i.checked ? S.chartsShown.add(i.dataset.chart) : S.chartsShown.delete(i.dataset.chart);
+      try { localStorage.setItem("charts-shown", CHARTS.filter(c => S.chartsShown.has(c.id)).map(c => c.id).join(",") || "none"); } catch (e) { /* not saved */ }
+      writeHash(); applyChartSelection(); if ($("#charts-box").open) drawCharts();
+    });
+    document.addEventListener("click", ev => { if (!menu.hidden && !ev.target.closest("#chartpick")) close(); });
+    document.addEventListener("keydown", ev => { if (ev.key === "Escape" && !menu.hidden) { close(); btn.focus(); } });
+  })();
+  function drawCharts() {
+    const on = id => S.chartsShown.has(id);
+    if (on("time")) renderTimeChart();
+    if (on("year")) renderYearChart();
+    if (on("genre")) renderGenreChart();
+    if (on("cores")) renderCoresChart();
+    if (on("rot")) renderRotChart();
+  }
   function renderCharts() {
     const box = $("#charts-box"), note = $("#charts-note");
     const enabled = S.filtered.length > 0;
@@ -144,14 +185,15 @@
       box.open = open;
     }
     S.chartsLock = false;
-    if (enabled) { renderTimeChart(); renderYearChart(); renderGenreChart(); renderCoresChart(); }
+    applyChartSelection();
+    if (enabled) drawCharts();
   }
 
   // The charts are drawn at the width they are shown at (their text stays the same size), up to 640: four fit in a row on a wide screen.
   const zoomed = sel => !!$(sel).closest(".chart.zoomed");
   const chartW = sel => Math.max(240, Math.min(zoomed(sel) ? 2000 : 640, Math.round(($(sel) && $(sel).clientWidth) || 640)));
   const chartH = (sel, W) => zoomed(sel) ? Math.max(300, Math.min(innerHeight - 190, Math.round(W * .5))) : 260;
-  function redrawCharts() { hideTip(); if (S.data && $("#charts-box").open && !S.chartsLock) { renderTimeChart(); renderYearChart(); renderGenreChart(); renderCoresChart(); } }
+  function redrawCharts() { hideTip(); if (S.data && $("#charts-box").open && !S.chartsLock) drawCharts(); }
   // Full-screen zoom of one chart: the figure itself covers the window (so its hover and drag still work) and is drawn again, larger.
   function zoomChart(fig, on) {
     fig.classList.toggle("zoomed", on);
@@ -279,6 +321,51 @@
       g.addEventListener("mouseleave", hideTip);
       g.addEventListener("click", () => { hideTip(); const y0 = r.k === "≤1974" ? "" : r.k === "2006+" ? "2006" : r.k === "n/a" ? "" : r.k; const y1 = r.k === "≤1974" ? "1974" : r.k === "2006+" ? "" : y0; $("#f-y0").value = y0; $("#f-y1").value = y1; applyTitles(); showTab("titles"); });
     });
+  }
+
+  // Titles by release year with the screen turned 90 degrees clockwise (MAME ROT90) or counter-clockwise (ROT270): two cumulative lines.
+  function renderRotChart() {
+    const sc = chartScope(), cw = new Map(), ccw = new Map();
+    let flat = 0, undated = 0;
+    sc.titles.forEach(t => {
+      if (t.rotate !== 90 && t.rotate !== 270) { flat++; return; }
+      const y = /^(19|20)\d\d$/.test(t.year) ? +t.year : 0; if (!y) { undated++; return; }      // "198?" and the like have no year
+      const m = t.rotate === 90 ? cw : ccw; m.set(y, (m.get(y) || 0) + 1);
+    });
+    const years = [...cw.keys(), ...ccw.keys()];
+    if (!years.length) { $("#chart-rot").innerHTML = '<p class="muted">no rotated titles match</p>'; $("#legend-rot").innerHTML = ""; return; }
+    const y0 = Math.min(...years), y1 = Math.max(...years), rows = [];
+    let a = 0, b = 0;
+    for (let y = y0; y <= y1; y++) { const da = cw.get(y) || 0, db = ccw.get(y) || 0; a += da; b += db; rows.push({ y, cw: a, ccw: b, dcw: da, dccw: db }); }
+    const max = Math.max(a, b, 1);
+    const W = chartW("#chart-rot"), H = chartH("#chart-rot", W), m = { t: 12, r: 14, b: 26, l: 44 };
+    const x = i => m.l + (W - m.l - m.r) * (rows.length > 1 ? i / (rows.length - 1) : .5), yy = v => m.t + (H - m.t - m.b) * (1 - v / max);
+    const line = k => rows.map((r, i) => `${i ? "L" : "M"}${x(i).toFixed(1)} ${yy(r[k]).toFixed(1)}`).join("");
+    const area = k => `${line(k)}L${x(rows.length - 1).toFixed(1)} ${yy(0)}L${x(0).toFixed(1)} ${yy(0)}Z`;
+    const yTicks = [0, .25, .5, .75, 1].map(f => Math.round(max * f)).filter((v, i, arr) => arr.indexOf(v) === i);
+    const every = Math.max(1, Math.ceil(36 / ((W - m.l - m.r) / Math.max(1, rows.length - 1))));
+    $("#chart-rot").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Cumulative titles by release year, screen rotated clockwise or counter-clockwise">
+      <g class="grid">${yTicks.map(v => `<line x1="${m.l}" x2="${W - m.r}" y1="${yy(v)}" y2="${yy(v)}"/>`).join("")}</g>
+      ${yTicks.map(v => `<text x="${m.l - 6}" y="${yy(v) + 4}" text-anchor="end">${fmt(v)}</text>`).join("")}
+      <path d="${area("ccw")}" fill="var(--accent-2)" fill-opacity=".14"/><path d="${area("cw")}" fill="var(--accent)" fill-opacity=".14"/>
+      <path d="${line("ccw")}" fill="none" stroke="var(--accent-2)" stroke-width="2" stroke-linejoin="round"/><path d="${line("cw")}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/>
+      <g class="axis"><line x1="${m.l}" x2="${W - m.r}" y1="${yy(0)}" y2="${yy(0)}"/></g>
+      ${rows.map((r, i) => i % every === 0 ? `<text x="${x(i)}" y="${H - 8}" text-anchor="middle">${r.y}</text>` : "").join("")}
+      <text x="${W - m.r}" y="${Math.max(11, yy(a) - 6)}" text-anchor="end" fill="var(--accent)">${fmt(a)} CW</text><text x="${W - m.r}" y="${Math.max(11, yy(b) + (Math.abs(yy(a) - yy(b)) < 16 ? 14 : -6))}" text-anchor="end" fill="var(--accent-2)">${fmt(b)} CCW</text>
+      <line id="rot-guide" y1="${m.t}" y2="${yy(0)}" stroke="var(--muted)" stroke-dasharray="3 3" hidden/><circle id="rot-dcw" r="4" fill="var(--accent)" hidden/><circle id="rot-dccw" r="4" fill="var(--accent-2)" hidden/>
+      <rect x="${m.l}" y="${m.t}" width="${W - m.l - m.r}" height="${H - m.t - m.b}" fill="transparent" id="rot-hit"/>
+    </svg>`;
+    const tot = a + b;
+    $("#legend-rot").innerHTML = `<span><i style="background:var(--accent)"></i>clockwise (ROT90): ${fmt(a)} (${pct(a, tot)})</span><span><i style="background:var(--accent-2)"></i>counter-clockwise (ROT270): ${fmt(b)} (${pct(b, tot)})</span>
+      <span class="muted">${fmt(flat)} titles not rotated 90° either way are left out${undated ? `; ${fmt(undated)} without a year` : ""}</span>`;
+    const hit = $("#rot-hit"), guide = $("#rot-guide"), d1 = $("#rot-dcw"), d2 = $("#rot-dccw");
+    hit.addEventListener("mousemove", ev => {
+      const box = hit.getBoundingClientRect(), f = (ev.clientX - box.left) / box.width, i = Math.max(0, Math.min(rows.length - 1, Math.round(f * (rows.length - 1)))), r = rows[i];
+      guide.setAttribute("x1", x(i)); guide.setAttribute("x2", x(i)); d1.setAttribute("cx", x(i)); d1.setAttribute("cy", yy(r.cw)); d2.setAttribute("cx", x(i)); d2.setAttribute("cy", yy(r.ccw));
+      [guide, d1, d2].forEach(e => e.removeAttribute("hidden"));
+      showTip(`<b>${r.y}</b><br>clockwise: ${fmt(r.cw)}${r.dcw ? ` (+${fmt(r.dcw)} that year)` : ""}<br>counter-clockwise: ${fmt(r.ccw)}${r.dccw ? ` (+${fmt(r.dccw)} that year)` : ""}`, ev.clientX, ev.clientY);
+    });
+    hit.addEventListener("mouseleave", () => { hideTip(); [guide, d1, d2].forEach(e => e.setAttribute("hidden", "")); });
   }
 
   function renderGenreChart() {
@@ -1052,6 +1139,7 @@
   };
   function refreshPlus1() {
     $$("button.plus1").forEach(b => {
+      if (!b.dataset.kind) return;            // the disabled one shown while the wishlist service is unreachable
       const kind = b.dataset.kind, key = b.dataset.key, n = S.api.votes[kind].get(key) || 0, voted = S.api.mine[kind].has(key);
       b.classList.toggle("voted", voted); b.innerHTML = `+1${n ? `<span class="n">${n}</span>` : ""}`;
     });
