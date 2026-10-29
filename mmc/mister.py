@@ -93,6 +93,9 @@ SUPERSEDED_CORES = {
     # kyledlester's repositories became the "kyle" source (his MiSTer_DB database no longer exists: his repositories, OWNER_SOURCES, are the source)
     "repo:namco_na1_na2": "kyle:namco_na1_na2", "repo:namco_nb1": "kyle:namco_nb1", "repo:namco_nb2": "kyle:namco_nb2",
     "repo:nerattechu": "kyle:nerattechu", "repo:nostradamus": "kyle:nostradamus", "repo:crystal": "kyle:crystal",
+    # ... and the rest of his repositories, whose loose records were also left behind (a title then listed his core twice)
+    "repo:braveblade": "kyle:braveblade", "repo:deniam": "kyle:deniam", "repo:djmain": "kyle:djmain", "repo:djmainsd": "kyle:djmainsd",
+    "repo:konamigv": "kyle:konamigv", "repo:rshark": "kyle:rshark", "repo:tenkomori": "kyle:tenkomori",
     # XelaNotPu's repositories became the "xela" source
     "repo:xnsystem11": "xela:xnsystem11", "repo:xnsystemfl": "xela:xnsystemfl",
     # Usquebagh's repositories became the "usquebagh" source
