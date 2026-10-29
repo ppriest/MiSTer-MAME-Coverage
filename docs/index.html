@@ -182,7 +182,7 @@ try { var t = localStorage.getItem("theme"); if (["light", "dark", "neon", "hall
       <button type="button" class="chart-zoom" aria-label="Show this chart full screen" title="full screen">⤢</button>
       <figcaption>
         <strong>Screen rotation by release year</strong>
-        <span class="muted">cumulative number of the filtered titles whose screen MAME turns 90° clockwise (CW, ROT90) or 90° counter-clockwise (CCW, ROT270), by the year MAME gives the parent set; titles that are not rotated are left out</span>
+        <span class="muted">the filtered titles whose screen MAME turns 90° clockwise (CW, ROT90, bottom) or 90° counter-clockwise (CCW, ROT270, top), stacked by the year MAME gives the parent set; titles that are not rotated are left out</span>
       </figcaption>
       <div class="chart-body" id="chart-rot"></div>
       <div class="legend" id="legend-rot"></div>
@@ -372,6 +372,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=e1fa1a361e"></script>
+<script src="app.js?v=934b1e1926"></script>
 </body>
 </html>
