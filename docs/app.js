@@ -1360,12 +1360,12 @@
     }
     return best;
   }
-  // One source scanline is k device pixels tall (4 CSS pixels where the window allows): a lit body, gently humped, and a dark gap of about a
-  // quarter of the row at the bottom (1 device pixel for k = 2..5), so every line looks the same. The shader computes the same weights.
-  const beamAt = (j, k) => { const gap = Math.max(1, Math.floor(k * .25 + .5)), body = k - gap; return j < body ? .8 + .2 * Math.sin(Math.PI * (j + .5) / body) : .36; };
+  // One source scanline of k device pixels: with 2, alternate lit and dark lines; with more, a beam that is brightest in the middle of the row
+  // and dark between rows (the same profile as the shader's beam()).
+  const beamAt = (f, k) => k < 2.5 ? (f < .5 ? 1 : .42) : .38 + .62 * Math.exp(-((f - .5) * (f - .5)) / (2 * .2 * .2));
   function scanGradient(k, dprC, vert) {
     const px = 1 / dprC, stops = [];
-    for (let j = 0; j < k; j++) stops.push(`rgba(0,0,0,${(1 - beamAt(j, k)).toFixed(3)}) ${(j * px).toFixed(4)}px ${((j + 1) * px).toFixed(4)}px`);
+    for (let j = 0; j < k; j++) stops.push(`rgba(0,0,0,${((1 - beamAt((j + .5) / k, k)) * .9).toFixed(3)}) ${(j * px).toFixed(4)}px ${((j + 1) * px).toFixed(4)}px`);
     return `repeating-linear-gradient(${vert ? "to right" : "to bottom"}, ${stops.join(",")})`;
   }
   const fitBox = (ratio, maxW, maxH) => { const w = Math.min(maxW, maxH * ratio); return [w, w / ratio]; };
@@ -1387,7 +1387,7 @@
     const dprC = Math.min(2, devicePixelRatio || 1), rowsN = vert ? img.naturalWidth : img.naturalHeight;
     let kpx = 0;                                                           // device pixels per source scanline (0: no snapping, a smooth pattern)
     if (dlg.dataset.scan !== "0" && (inf.k === 1 || (inf.horiz && !port))) {
-      const along = vert ? w : h, K = Math.min(Math.floor(along * dprC / rowsN + 1e-6), Math.round(4 * dprC));      // up to 4 CSS pixels a row
+      const along = vert ? w : h, K = Math.floor(along * dprC / rowsN + 1e-6);
       if (K >= 2) { const f = (rowsN * K / dprC) / along; w *= f; h *= f; kpx = K; }
     }
     img.dataset.kpx = kpx; img.dataset.cw = w; img.dataset.ch = h;
@@ -1478,16 +1478,11 @@
           vec2 q = vec2(s.x, 1. - s.y);                                        // in the display, origin top left
           vec2 t = horiz > .5 ? vec2((idx + q.x) / n, q.y) : vec2(q.x, (idx + q.y) / n);
           vec3 col = texture2D(tex, t).rgb;
-          // scanlines, in screen space so the lines stay straight, evenly spaced and the same weight across the whole glass (only the picture
-          // bends): f is the position inside the source row from the top (from the left for a rotated display). With a whole number of device
-          // pixels per row (kpx) every row is lit the same way: a gently humped body and a dark gap of about a quarter of the row at the bottom
-          // (the same weights as the page's beamAt()). Without it, a smooth sine.
-          float f = fract(mix(1. - p.y, p.x, vert) * rows);
-          float beam;
-          if (kpx > 1.5) {
-            float j = floor(f * kpx), gp = max(1., floor(kpx * .25 + .5)), bd = kpx - gp;
-            beam = j < bd ? .8 + .2 * sin(3.14159 * (j + .5) / bd) : .36;
-          } else beam = .5 + .5 * sin(3.14159 * f);
+          // scanlines: f is the position inside the source row (from the top, or from the left for a rotated display). With a whole number of
+          // device pixels per row (kpx) every row is lit the same way: 2 px = alternate lit and dark lines; more = a beam, brightest in the
+          // middle of the row, dark between rows. Without it, a smooth sine.
+          float f = fract(mix(q.y, q.x, vert) * rows);
+          float beam = kpx > 1.5 ? (kpx < 2.5 ? (f < .5 ? 1. : .42) : .38 + .62 * exp(-(f - .5) * (f - .5) / .08)) : .5 + .5 * sin(3.14159 * f);
           col *= mix(1., beam, scan);
           float v = 16. * s.x * s.y * (1. - s.x) * (1. - s.y);
           col *= .55 + .45 * pow(v, .25);                                       // vignette
