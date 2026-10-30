@@ -255,6 +255,9 @@
  "decoryah:arcadiasystems": [
   "decoryah/Arcade-ArcadiaSystems_MiSTer"
  ],
+ "decoryah:blockhl": [
+  "decoryah/Arcade-BlockHole_MiSTer"
+ ],
  "decoryah:crashrace": [
   "decoryah/Arcade-LethalCrashRace_MiSTer"
  ],
@@ -2238,6 +2241,12 @@
  "ongo:bazset_brapboys": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:bazset_brapboysspecial": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:bazset_buccaneers": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:bazset_chacknpop": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2263,6 +2272,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_krull": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:bazset_kungfutaikun": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_mastersofkin": [
@@ -2293,6 +2305,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_turtleship": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:bazset_wiz": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazsetpushman": [
@@ -2556,6 +2571,9 @@
  "ongo:meathax_exterminator": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:meathax_hangzo": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:meathax_heavyunit": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2690,6 +2708,9 @@
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:rmgalivan": [
+  "rmonic79/rmcores"
+ ],
+ "ongo:rmpowerspikes": [
   "rmonic79/rmcores"
  ],
  "ongo:rshark": [
