@@ -197,12 +197,18 @@ heavily with OngoGablogian's MiSTer_Ongo, so use one or the other.
 A ppriest core's twist-open (Cores tab) shows a small **floorplan** of the Cyclone V (where its logic sits, from the core's repository
 tooling), and a click opens it in the zoom without the scanlines, the CRT curve or the screen details. The pictures are in the Blob store
 with the screenshots (`image-base`), listed in `data/floorplans.json` (`{revision: {"file", "w", "h"}}`; a revision belongs to the core whose
-build name it carries: `SetaDowntown`, or `MS32` for JalecoMS32). To add or refresh them:
+build name it carries: `SetaDowntown`, or `MS32` for JalecoMS32). `docs/floorplans.html` shows the same pictures full size, a section
+per system, with each block's resources; `data/floorplans_page.json` holds its layout (system, repository, revision, label) and, per
+revision, the fit date and block table. Each picture is the core's own `docs/floorplan/<rev>.png` with `<rev>_groups.md`, made by its
+`scripts/floorplan.py` from the compiled design. To add a core, add its entry to `data/floorplans_page.json`; then, to add or refresh:
 
-1. `python3 tools/floorplans_extract.py --out <folder>` reads the pictures embedded in `docs/floorplans.html` (or `--from-dir DIR` with
-   `DIR/<revision>.png`, such as a core's `debug/floorplan/`), names each `fp-<revision>-<sha256 start>.png` and rewrites `data/floorplans.json`.
-2. `cd tools && BLOB_READ_WRITE_TOKEN=... node blob_upload.mjs <folder> --index ../data/floorplans.json` sends only new or changed files.
-3. Commit `data/floorplans.json`; the next `mmc build` ties the revisions to their cores.
+1. `python3 tools/floorplans.py collect --cores-dir <dir> [--cores-dir <dir>] --out <folder>` reads each entry from the core checkouts,
+   names each picture `fp-<revision>-<sha256 start>.png` in `<folder>`, and rewrites `data/floorplans.json` and
+   `data/floorplans_page.json`.
+2. `cd tools && BLOB_READ_WRITE_TOKEN=... node blob_upload.mjs <folder> --index <folder>/upload.json` sends what this folder has not
+   sent before (reuse the folder: a new one sends every picture again, one Blob operation each).
+3. `python3 tools/floorplans.py page` writes `docs/floorplans.html` with the pictures at `image-base`. Commit the two JSON files and the
+   page; the next `mmc build` ties the revisions to their cores.
 
 ## Databases tab
 

@@ -232,7 +232,7 @@ FLOORPLANS_FILE = os.path.join(paths.DATA, "floorplans.json")
 
 
 def load_floorplans() -> dict[str, dict]:
-    """data/floorplans.json (tools/floorplans_extract.py): ``{revision: {"file": name in the Blob store, "w": ..., "h": ...}}``."""
+    """data/floorplans.json (tools/floorplans.py collect): ``{revision: {"file": name in the Blob store, "w": ..., "h": ...}}``."""
     try:
         with open(FLOORPLANS_FILE, encoding="utf-8") as f:
             return json.load(f)
