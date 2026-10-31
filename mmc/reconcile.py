@@ -90,7 +90,7 @@ def merge_duplicate_cores(cores: dict[str, dict], sets_by_core: dict[str, set[st
             if k["source"] == "ongo" and c["source"] != "ongo":
                 continue        # MiSTer_Ongo is an aggregator, not a source: a developer's own build never folds into its copy
             if k["source"] in mister_mod.OWNER_SOURCES.values() and c["source"] in mister_mod.DB_SOURCES and c["source"] not in (k["source"], "ongo"):
-                continue        # one developer's own build never folds into another developer's core (ppriest's KonamiGX is a fork of yaguboo's: two cores)
+                continue        # one developer's own build never folds into another developer's core (ppriest's KonamiGX and yaguboo's are two cores that happen to share a name)
             if k["source"] == "jtpr" and c["source"] in mister_mod.DB_SOURCES:
                 continue        # a pending-core placeholder yields to a developer's published build (SUPERSEDED_CORES), it does not absorb it
             if k["source"] == "repo" and c["source"] in mister_mod.DB_SOURCES and c.get("repo") and c["repo"] == k.get("repo"):
