@@ -25,7 +25,7 @@ if (!token && !opt["dry-run"]) { console.error("set BLOB_READ_WRITE_TOKEN (Verce
 const store = token.split("_")[3] || "";   // vercel_blob_rw_<store id>_<secret>; the id is public (it is in the URLs)
 
 const TYPES = { ".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".webp": "image/webp" };
-const files = [...new Set(Object.values(JSON.parse(await readFile(opt.index, "utf8"))).flatMap(Object.values))].sort();
+const files = [...new Set(Object.values(JSON.parse(await readFile(opt.index, "utf8"))).flatMap(Object.values).filter(v => typeof v === "string"))].sort();      // (floorplans.json also has sizes)
 const manifestPath = join(dir, "uploaded.json");
 let manifest = {};
 try { manifest = JSON.parse(await readFile(manifestPath, "utf8")); } catch { /* first run */ }

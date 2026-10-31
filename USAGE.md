@@ -192,6 +192,18 @@ previous section, and one that is not a valid database is skipped. The daily ref
 `docs/downloader-ini/` (`arcade-ai-cores.ini`, `sources.md`, `status.json`). The box warns that the list overlaps
 heavily with OngoGablogian's MiSTer_Ongo, so use one or the other.
 
+## Floorplans
+
+A ppriest core's twist-open (Cores tab) shows a small **floorplan** of the Cyclone V (where its logic sits, from the core's repository
+tooling), and a click opens it in the zoom without the scanlines, the CRT curve or the screen details. The pictures are in the Blob store
+with the screenshots (`image-base`), listed in `data/floorplans.json` (`{revision: {"file", "w", "h"}}`; a revision belongs to the core whose
+build name it carries: `SetaDowntown`, or `MS32` for JalecoMS32). To add or refresh them:
+
+1. `python3 tools/floorplans_extract.py --out <folder>` reads the pictures embedded in `docs/floorplans.html` (or `--from-dir DIR` with
+   `DIR/<revision>.png`, such as a core's `debug/floorplan/`), names each `fp-<revision>-<sha256 start>.png` and rewrites `data/floorplans.json`.
+2. `cd tools && BLOB_READ_WRITE_TOKEN=... node blob_upload.mjs <folder> --index ../data/floorplans.json` sends only new or changed files.
+3. Commit `data/floorplans.json`; the next `mmc build` ties the revisions to their cores.
+
 ## Databases tab
 
 One row per source (`DB_TITLES`): cores, working arcade titles and sets loaded by at least one core

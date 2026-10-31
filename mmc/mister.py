@@ -228,6 +228,18 @@ def scan_repo_sources(repos) -> dict[str, bool]:
     return known
 
 
+FLOORPLANS_FILE = os.path.join(paths.DATA, "floorplans.json")
+
+
+def load_floorplans() -> dict[str, dict]:
+    """data/floorplans.json (tools/floorplans_extract.py): ``{revision: {"file": name in the Blob store, "w": ..., "h": ...}}``."""
+    try:
+        with open(FLOORPLANS_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
 def is_binary_only(core: dict, repos=(), repo_source: dict | None = None) -> bool:
     """``repos``: the repositories tied to the core besides its own ``repo`` (where its MRAs live)."""
     if core["id"] in BINARY_ONLY_CORES:
