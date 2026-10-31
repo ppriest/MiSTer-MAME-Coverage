@@ -56,6 +56,17 @@
     history.replaceState(null, "", "#" + p.toString());
   }
 
+  // Only one twist-open is open in a grid at a time: opening another closes the rest (their detail rows go, their arrows turn back).
+  function closeOthers(table, attr, set, keep) {
+    set.forEach(k => {
+      if (k === keep) return;
+      set.delete(k);
+      const tr = $(`${table} tr[${attr}="${CSS.escape(k)}"]`); if (!tr) return;        // (not on the page: nothing to take away)
+      const n = tr.nextElementSibling; if (n && (n.classList.contains("detail") || n.classList.contains("hw"))) n.remove();
+      const e = tr.firstElementChild; if (e && e.classList.contains("exp")) e.textContent = "▸";
+    });
+  }
+
   // ---------- tabs ----------
   function showTab(name, update = true) {
     $$(".tabs button").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === name));
@@ -670,7 +681,7 @@
     if (ev.target.closest("a, button")) return;
     const name = tr.dataset.t, t = S.titles.find(x => x.name === name);
     if (S.open.has(name)) { S.open.delete(name); tr.nextElementSibling?.classList.contains("detail") && tr.nextElementSibling.remove(); tr.firstElementChild.textContent = "▸"; }
-    else { S.open.add(name); tr.insertAdjacentHTML("afterend", detailRow(t)); tr.firstElementChild.textContent = "▾"; fillHardware(tr.nextElementSibling); }
+    else { closeOthers("#titles-table", "data-t", S.open, name); S.open.add(name); tr.insertAdjacentHTML("afterend", detailRow(t)); tr.firstElementChild.textContent = "▾"; fillHardware(tr.nextElementSibling); }
   });
   $("#titles-more").addEventListener("click", () => S.tview === "gallery" ? renderMoreGallery() : renderMoreTitles());
   $("#f-dir").addEventListener("click", () => { S.dir.t *= -1; $("#f-dir").textContent = S.dir.t > 0 ? "↑" : "↓"; applyTitles(); });
@@ -855,6 +866,7 @@
     let next = tr.nextElementSibling;
     const has = next && next.classList.contains("hw");
     if (!open) { if (has) next.remove(); btn.setAttribute("aria-expanded", "false"); btn.textContent = "▸"; S.hwOpen.delete(file); return; }
+    S.hwOpen.forEach(f => { if (f === file) return; const b = $(`#drivers-table .hwtoggle[data-hw="${CSS.escape(f)}"]`); if (b) showHardware(b, false); else S.hwOpen.delete(f); });      // one at a time
     S.hwOpen.add(file);
     btn.setAttribute("aria-expanded", "true");
     btn.textContent = "▾";
@@ -921,7 +933,7 @@
     if (tr && !ev.target.closest("a, button")) {
       const id = tr.dataset.c, c = S.cores[id];
       if (S.openCores.has(id)) { S.openCores.delete(id); tr.nextElementSibling?.classList.contains("detail") && tr.nextElementSibling.remove(); tr.firstElementChild.textContent = "▸"; }
-      else { S.openCores.add(id); tr.insertAdjacentHTML("afterend", coreDetail(c)); tr.firstElementChild.textContent = "▾"; fillHardware(tr.nextElementSibling); }
+      else { closeOthers("#cores-table", "data-c", S.openCores, id); S.openCores.add(id); tr.insertAdjacentHTML("afterend", coreDetail(c)); tr.firstElementChild.textContent = "▾"; fillHardware(tr.nextElementSibling); }
       return;
     }
     const d = ev.target.closest("a[data-drv]");
@@ -1203,7 +1215,7 @@
     const tr = ev.target.closest("tr[data-t]"); if (!tr || ev.target.closest("a, button, summary, input")) return;
     const name = tr.dataset.t;
     if (S.wlOpen.has(name)) { S.wlOpen.delete(name); tr.nextElementSibling?.classList.contains("detail") && tr.nextElementSibling.remove(); tr.firstElementChild.textContent = "▸"; }
-    else { S.wlOpen.add(name); openWlDetail(tr); }
+    else { closeOthers("#wl-titles", "data-t", S.wlOpen, name); S.wlOpen.add(name); openWlDetail(tr); }
   });
   $("#wl-view").addEventListener("click", ev => { const b = ev.target.closest("button[data-view]"); if (!b) return; S.wlView = b.dataset.view; writeHash(); renderWishlist(); refreshPlus1(); });
   $("#tab-wishlist").addEventListener("click", ev => {
@@ -1720,7 +1732,7 @@
     const tr = ev.target.closest("tr[data-u]"); if (!tr || ev.target.closest("a, button")) return;
     const name = tr.dataset.u;
     if (S.uOpen.has(name)) { S.uOpen.delete(name); tr.nextElementSibling?.classList.contains("detail") && tr.nextElementSibling.remove(); tr.firstElementChild.textContent = "▸"; }
-    else { S.uOpen.add(name); openUnmatchedDetail(tr); }
+    else { closeOthers("#unmatched-table", "data-u", S.uOpen, name); S.uOpen.add(name); openUnmatchedDetail(tr); }
   });
   function applyUnmatched() {
     const words = $("#u-q").value.trim().toLowerCase().split(/\s+/).filter(Boolean), hb = $("#u-hb").value;
