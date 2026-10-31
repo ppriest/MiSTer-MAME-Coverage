@@ -472,7 +472,11 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
     core_sets = collections.Counter()
     core_titles = collections.defaultdict(set)
     core_first = {}
+    core_drv = collections.defaultdict(collections.Counter)         # core -> MAME driver -> titles it loads (for cores alamone has no driver list for)
     for t in out_titles:
+        for cid in t["cores"]:
+            if t["sourcefile"]:
+                core_drv[cid][t["sourcefile"]] += 1
         for s in t["sets"]:
             for r in s["cores"]:
                 if s["working"] and t["category"] == "arcade":
@@ -488,6 +492,8 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
         oc["nsets"] = core_sets[cid]
         oc["ntitles"] = len(core_titles[cid])
         oc["first_date"] = core_first.get(cid)
+        if not oc["mame_drivers"] and core_drv.get(cid):          # no driver list from alamone's analysis (a core built from MRAs alone): the drivers of the sets it loads
+            oc["drivers_loaded"] = [d for d, _ in sorted(core_drv[cid].items(), key=lambda kv: (-kv[1], kv[0]))]
         out_cores.append(oc)
     # A core that moved to another source (see mister.MOVED_TO_OFFICIAL): the old record stays, marked with where it went and when.
     by_id = {c["id"]: c for c in out_cores}

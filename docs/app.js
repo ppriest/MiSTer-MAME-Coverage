@@ -890,7 +890,7 @@
   // ---------- cores ----------
   function applyCores() {
     const q = $("#c-q").value.trim().toLowerCase(), src = $("#c-src").value, bin = $("#c-bin").value, sort = $("#c-sort").value, dir = S.dir.c;
-    let rows = S.data.cores.filter(c => (!src || c.source === src) && (!bin || (bin === "binary") === !!c.binary_only) && (!q || [c.name, c.repo, c.rbf, ...(c.mame_drivers || [])].join(" ").toLowerCase().includes(q)));
+    let rows = S.data.cores.filter(c => (!src || c.source === src) && (!bin || (bin === "binary") === !!c.binary_only) && (!q || [c.name, c.repo, c.rbf, ...(c.mame_drivers || []), ...(c.drivers_loaded || [])].join(" ").toLowerCase().includes(q)));
     const cmp = {
       name: (a, b) => a.name.localeCompare(b.name),
       source: (a, b) => a.source.localeCompare(b.source) || a.name.localeCompare(b.name),
@@ -908,7 +908,7 @@
       <td><a href="#" data-core="${esc(c.id)}">${esc(c.name)}</a>${c.binary_only ? ' <span class="flag" title="binary-only: no public source known">bin</span>' : ""}${c.channel && c.channel !== "default" ? ` <span class="flag">${esc(c.channel)}</span>` : ""}</td>
       <td>${sourceBadge(c)}${c.moved_to && S.cores[c.moved_to] ? ` <span class="flag" title="now in ${esc(S.cores[c.moved_to].source_title)} (${esc(c.moved_to)}) since ${esc(c.moved_date)}">moved</span>` : ""}</td>
       <td class="set">${c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.repo)}</a>` : '<span class="muted">not published</span>'}</td>
-      <td class="set">${(c.mame_drivers || []).map(esc).join("<br>")}</td>
+      <td class="set">${(c.mame_drivers || []).length ? c.mame_drivers.map(esc).join("<br>") : (c.drivers_loaded || []).length ? `<span class="muted" title="no driver list from alamone's analysis of this core; these are the drivers of the sets it loads">${c.drivers_loaded.map(esc).join("<br>")}</span>` : ""}</td>
       <td class="num">${c.ntitles}</td><td class="num">${c.nsets}</td>
       <td class="num">${c.first_date || ""}</td><td class="num">${c.build_date || ""}</td>
       <td>${c.reading ? `<a href="${FVA_URL}" target="_blank" rel="noopener" title="what this core's own source says it was verified against: alamone's fpga-verified-against results">${esc(c.reading)}${c.score != null ? ` <span class="flag">${c.score}</span>` : ""}</a>` : '<span class="muted">' + esc(c.status || "") + "</span>"}</td></tr>${S.openCores.has(c.id) ? coreDetail(c) : ""}`).join("");
