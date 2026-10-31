@@ -298,6 +298,10 @@ def observe(mister: dict) -> dict:
             for h in hit:
                 if not h.get("repo"):
                     h["repo"], h["url"] = c["repo"], c.get("url")
+                # alamone analysed the repository's build, not the database's copy of it: the database core takes over what it found
+                for k in ("status", "reading", "score", "mame_drivers", "build_date", "note"):
+                    if not h.get(k) and c.get(k):
+                        h[k] = c[k]
     # MRA <category> tags, per set and source (kept in the ledger for the genre step).
     categories: dict[str, dict[str, str]] = collections.defaultdict(dict)
     for m in mister["mras"]:
