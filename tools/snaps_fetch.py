@@ -2,8 +2,8 @@
 """Download the Progetto-SNAPS "Snap" (in-game) and "Titles" packs and turn them into the folder layout
 ``tools/shots.py`` reads.
 
-    python3 tools/snaps_fetch.py --work D:/mame-shots            # find the packs, download, extract
-    python3 tools/snaps_fetch.py --work D:/mame-shots --shots    # ... and run shots.py (needs IMAGE_SALT)
+    python3 tools/snaps_fetch.py --work D:/MAME-Coverage-ScreenShots            # find the packs, download, extract
+    python3 tools/snaps_fetch.py --work D:/MAME-Coverage-ScreenShots --shots    # ... and run shots.py (needs IMAGE_SALT)
 
 Layout under --work:  downloads/<pack>.zip,  src/ingame/<set>.png (Snap),  src/title/<set>.png (Titles),
 src/versions.json (the MAME version each folder is at). Nothing here is committed to git.

@@ -27,7 +27,7 @@ in from `data/images.json`.
 
 ## Setup
 
-- Work folder: `D:/mame-shots` on the maintainer's Windows machine; elsewhere ask. `WORK=D:/mame-shots`.
+- Work folder: `D:/MAME-Coverage-ScreenShots` on the maintainer's Windows machine; elsewhere ask. `WORK=D:/MAME-Coverage-ScreenShots`.
 - Python 3.10+ (stdlib only). 7-Zip (`7z`, or `C:\Program Files\7-Zip\7z.exe`) or bsdtar (Windows 10+ `tar.exe`):
   the full sets keep their images in a `.7z` inside the zip.
 - Node 20+. If `node` is not on PATH, use the portable copy:
