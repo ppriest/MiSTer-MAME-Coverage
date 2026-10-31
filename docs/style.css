@@ -619,3 +619,10 @@ label.themepick select option { color: #111; background: #fff; }
 .chartpick-menu { position: absolute; right: 0; top: 100%; z-index: 40; min-width: 300px; padding: 8px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 8px 24px rgba(0, 0, 0, .3); }
 .chartpick-menu label { display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 13px; cursor: pointer; white-space: nowrap; }
 .chartpick-menu[hidden] { display: none; }
+
+/* floorplans: small pictures in a core's detail; in the zoom they are plain (no scanlines, no curve, no details, smooth scaling) */
+.gallery.fp { grid-template-columns: repeat(auto-fill, minmax(140px, 200px)); }
+.gallery figure[data-plain] { cursor: zoom-in; }
+.gallery.fp img { min-height: 0; background: #fff; }
+#lightbox.plain .lb-fxs, #lightbox.plain .lb-scan, #lightbox.plain .lb-side, #lightbox.plain .lb-crt { display: none !important; }
+#lightbox.plain img { image-rendering: auto; background: #fff; border-radius: 2px; }

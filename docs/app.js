@@ -917,6 +917,13 @@
   const FVA_URL = "https://alamone.github.io/fpga-verified-against/results/";      // where the "Verified against" readings come from (alamone/fpga-verified-against)
   // Twist-open of a core: what it is, the hardware of the system(s) it implements, then screenshots of its titles.
   S.openCores = new Set();
+  // A ppriest core's floorplan (where its logic sits on the FPGA; the pictures are in the Blob store with the screenshots, listed in data/floorplans.json): a small picture that
+  // opens in the zoom, plain (no scanlines, no CRT, no screen details).
+  function floorplanHtml(c) {
+    if (!IMAGE_BASE || !c.floorplans || !c.floorplans.length) return "";
+    return `<div class="gallery-box"><h4>Floorplan <span class="muted">(where the logic sits on the Cyclone V)</span></h4><div class="gallery fp">${c.floorplans.map(f => `<figure data-plain="1" data-src="${esc(IMAGE_BASE + "/" + f.file)}" title="${esc(f.name)}: click for full screen">
+      <img loading="lazy" src="${esc(IMAGE_BASE + "/" + f.file)}" alt="Floorplan of ${esc(f.name)}" onerror="this.closest('figure').remove()"><figcaption>${esc(f.name)}</figcaption></figure>`).join("")}</div></div>`;
+  }
   function coreDetail(c) {
     const ts = S.titles.filter(t => t.cores.includes(c.id));
     const byDrv = new Map(); ts.forEach(t => { if (t.sourcefile) byDrv.set(t.sourcefile, (byDrv.get(t.sourcefile) || 0) + 1); });
@@ -926,7 +933,7 @@
     return `<tr class="detail"><td colspan="10">
       <p class="muted">${esc(c.source_title)}${c.url ? ` · <a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.repo)}</a>` : ""}${c.binary_only ? " · binary-only" : ""} · ${fmt(ts.length)} ${ts.length === 1 ? "title" : "titles"}, ${fmt(c.nsets)} sets</p>
       ${/playch/i.test(c.name + " " + (c.rbf || "")) || ts.some(t => t.sets.some(x => isPc10(x.name))) ? cabinetLink : ""}
-      ${hw}${rest}${galleryHtml(ts)}</td></tr>`;
+      ${hw}${rest}${floorplanHtml(c)}${galleryHtml(ts)}</td></tr>`;
   }
   $("#cores-table").addEventListener("click", ev => {
     const tr = ev.target.closest("tr[data-c]");
@@ -1383,8 +1390,9 @@
     const inf = n > 1 ? inferScreens(nat, n, port, img.dataset.force) : { k: 1, horiz: true };
     img.dataset.k = inf.k; img.dataset.horiz = inf.horiz ? 1 : 0;
     const pr = port ? 3 / 4 : 4 / 3, span = inf.k + (inf.k - 1) * LB_GAP;
-    const ratio = inf.k > 1 ? (inf.horiz ? span * pr : pr / span) : nearShape(img) || nat;
-    const side = dlg.classList.contains("info") ? 2 * (LB_SIDE + 12) : 0;                // the details panels beside the screen
+    const plain = dlg.classList.contains("plain");                        // a floorplan, not a screenshot
+    const ratio = plain ? nat : inf.k > 1 ? (inf.horiz ? span * pr : pr / span) : nearShape(img) || nat;
+    const side = dlg.classList.contains("info") && !plain ? 2 * (LB_SIDE + 12) : 0;                // the details panels beside the screen
     const maxW = Math.max(200, innerWidth - (innerWidth <= 640 ? 112 : 150) - side), maxH = Math.max(150, innerHeight - 64);
     const [w, h] = fitBox(ratio, maxW, maxH);
     img.style.width = Math.round(w) + "px"; img.style.height = Math.round(h) + "px";
@@ -1392,13 +1400,14 @@
     const pitch = vert ? w / img.naturalWidth : h / img.naturalHeight;     // screen pixels per scanline (flat, single display)
     const sl = img.parentElement.querySelector(".lb-scan");
     sl.classList.toggle("vert", vert);
-    sl.style.setProperty("--ph", pitch.toFixed(3) + "px"); sl.hidden = inf.k > 1 || pitch < 2;      // too fine to draw when shrunk
+    sl.style.setProperty("--ph", pitch.toFixed(3) + "px"); sl.hidden = plain || inf.k > 1 || pitch < 2;      // too fine to draw when shrunk
     document.dispatchEvent(new Event("lb-render"));
   }
   document.addEventListener("load", ev => {          // load does not bubble: capture it
     const img = ev.target;
     if (!(img instanceof HTMLImageElement) || !img.naturalWidth || img.dataset.crop) return;
     const fig = img.closest(".gallery figure");
+    if (fig && fig.dataset.plain) return;                  // a floorplan: shown as it is
     if (fig) {
       const n = +fig.dataset.n || 1, port = fig.dataset.port === "1", inf = n > 1 ? inferScreens(img.naturalWidth / img.naturalHeight, n, port, fig.dataset.force) : { k: 1 };
       if (inf.k > 1) { splitFigure(fig, img, inf.k, inf.horiz, port); return; }
@@ -1501,6 +1510,7 @@
     const flat = () => { cv.hidden = true; img.style.opacity = ""; };       // the plain zoom (with the CSS scanline overlay)
     function render() {
       const sl = dlg.querySelector(".lb-scan");
+      if (dlg.classList.contains("plain")) { flat(); sl.style.display = "none"; return; }      // a floorplan: no scanlines, no curve
       sl.style.display = scan && !sl.hidden && !(crt && !crtBroken && !cv.hidden) ? "" : "none";
       const k = +img.dataset.k || 1;                                      // displays in this shot
       if ((!crt && k < 2) || crtBroken || !img.src || !img.naturalWidth || !dlg.open) { flat(); sl.style.display = scan && !sl.hidden ? "" : "none"; return; }
@@ -1650,6 +1660,7 @@
       if (ev.target.closest("button, a")) return;                // a tile's Play and +1 are not a zoom
       const t = ev.target.closest(".gallery figure"); if (!t || !t.dataset.src) return;
       set = Array.from(t.closest(".gallery").querySelectorAll("figure"));
+      dlg.classList.toggle("plain", !!t.dataset.plain);
       const from = thumbRect(t);
       applyInfo(); show(set.indexOf(t)); dlg.showModal(); neonSound("open"); openTween(from);
     });
@@ -1660,7 +1671,7 @@
       else if (ev.target.closest('[data-fx="scan"]')) setScan(!scan);
       else if (ev.target.closest('[data-fx="crt"]')) setCrt(!crt);
       else if (ev.target.closest(".lb-close") || ev.target === dlg) requestClose();      // the backdrop is the dialog itself
-      else if (ev.target === img || ev.target === cv) flip();
+      else if (ev.target === img || ev.target === cv) { if (dlg.classList.contains("plain")) requestClose(); else flip(); }
     });
     dlg.addEventListener("keydown", ev => {
       if (ev.key === "ArrowLeft" && set.length > 1) { ev.preventDefault(); show(i - 1); }

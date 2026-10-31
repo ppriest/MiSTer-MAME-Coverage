@@ -497,6 +497,20 @@ def build(mame: dict, ledger: dict, mister_meta: dict | None = None) -> dict:
         if old in by_id and new in by_id and when:
             # never before the old core's own first date (the new core may carry older sets): it then simply never counts as the old source
             by_id[old]["moved_to"], by_id[old]["moved_date"] = new, max(when, by_id[old]["first_date"] or when)
+    # Floorplan pictures (data/floorplans.json, uploaded to the Blob store): a revision belongs to the ppriest core whose build name it carries
+    # ("SetaDowntown" is the core SetaDowntown); a name that is only the end of the core's ("MS32" for JalecoMS32, "MS32F1" for JalecoMS32F1) counts
+    # when no longer revision of the same list claims it.
+    fp = mister_mod.load_floorplans()
+    flat = lambda t: re.sub(r"[^a-z0-9]", "", (t or "").lower())
+    for oc in out_cores:
+        if oc["source"] != "ppriest" or not fp:
+            continue
+        keys = {flat(oc["name"]), flat((oc.get("rbf") or "").removesuffix(".rbf")), oc["id"].split(":", 1)[-1]} - {""}
+        mine = [r for r in fp if flat(r) in keys]
+        if not mine:
+            mine = [r for r in fp if any(k.endswith(flat(r)) and not any(len(flat(o)) > len(flat(r)) and k.endswith(flat(o)) for o in fp) for k in keys)]
+        if mine:
+            oc["floorplans"] = [{"name": r, "file": fp[r]["file"], "w": fp[r].get("w"), "h": fp[r].get("h")} for r in sorted(mine)]
     # Ongo cores that no set is shown under any more are dropped from the core list.
     shown = {r["core"] for t in out_titles for st in t["sets"] for r in st["cores"]}
     out_cores = [c for c in out_cores if c["source"] != "ongo" or c["id"] in shown]
