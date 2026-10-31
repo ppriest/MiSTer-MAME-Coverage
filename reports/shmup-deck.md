@@ -1,12 +1,16 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-10-30 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
+Generated 2026-10-31 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
 
 **Agreement:** 308 of 310 deck titles are Shmup in our data (99.4%).
 
 ## New since the previous report
 
-Nothing new: the same titles disagree as before.
+**3 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
+
+- `scion` Scion (1984; Shooter / Flying Vertical)
+- `stinger` Stinger (1983; Shooter / Flying Horizontal)
+- `thunderj` ThunderJaws (rev 3) (1990; Shooter / Misc. Horizontal)
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -17,12 +21,15 @@ Grouped by the raw category our genre came from. Rows marked *kept* are vehicle 
 | `lastduel` | Last Duel (US New Ver.) | Shooter | Shooter / Driving Vertical (catver) | Last Duel |  |
 | `tndrcade` | Thundercade / Twin Formation | Shooter | Shooter / Driving Vertical (catver) | Thundercade |  |
 
-## B. Titles we call Shmup, on MiSTer, that the deck does not list (131)
+## B. Titles we call Shmup, on MiSTer, that the deck does not list (134)
 
 Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiSTer cores with an MRA for any set of the title.
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
+| **NEW** `scion` | Scion | 1984 | Shooter / Flying Vertical (catver) | Scion |
+| **NEW** `stinger` | Stinger | 1983 | Shooter / Flying Horizontal (catver) | Stinger |
+| **NEW** `thunderj` | ThunderJaws (rev 3) | 1990 | Shooter / Misc. Horizontal (catver) | ThunderJaws |
 | `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
@@ -75,7 +82,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `heatbrl` | Heated Barrel (World version 3) | 1992 | Shooter / Walking (catver) | HeatedBarrel |
 | `hbarrel` | Heavy Barrel (World) | 1987 | Shooter / Walking (catver) | jtninja, HeavyBarrelTwinStick |
 | `hvyunit` | Heavy Unit (World) | 1988 | Shooter / Flying Horizontal (catver) | heavyunit (decoryah), HeavyUnit |
-| `ikari3` | Ikari III - The Rescue (World version 1, 8-Way Joystick) | 1989 | Shooter / Walking (catver) | SNK68, SNK68 (va7deo) |
+| `ikari3` | Ikari III - The Rescue (World version 1, 8-Way Joystick) | 1989 | Shooter / Walking (catver) | SNK68, IkariIIITwinStick, SNK68 (va7deo) |
 | `ikari` | Ikari Warriors (US JAMMA) | 1986 | Shooter / Walking (catver) | IkariWarriors, SNKTripleZ80 |
 | `kikikai` | KiKi KaiKai | 1986 | Shooter / Walking (catver) | kikikai, Kikikaikai (alpuy) |
 | `lasthope` | Last Hope (bootleg AES to MVS conversion, no coin support) | 2005 | Shooter / Flying Horizontal (catver) | NeoGeo |
@@ -127,7 +134,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `stargate` | Stargate | 1981 | Shooter / Flying (catver) | Robotron, Williams_TestBuild (RodimusFVC) |
 | `strkforc` | Strike Force (rev 1 02/25/91) | 1991 | Shooter / Flying (catver) | blahm1d_yunit, Midway-Y-Unit |
 | `srmdb` | Sunset Riders (scrambled bootleg of Mega Drive version) | 1993 | Shooter / Misc. Horizontal (catver) | TomSVR_mdboot |
-| `superbik` | Superbike | 1983 | Shooter / Driving Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
+| `superbik` | Superbike | 1983 | Shooter / Driving Horizontal (catver) | BAZSET_CVS, Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `syvalion` | Syvalion (Japan) | 1988 | Shooter / Flying Horizontal (catver) | Syvalion (diegov-au) |
 | `tacscan` | Tac/Scan | 1982 | Shooter / Flying Vertical (catver) | SegaG80V, SegaG80 (RodimusFVC) |
 | `tazmania` | Tazz-Mania (set 1) | 1982 | Shooter / Walking (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |

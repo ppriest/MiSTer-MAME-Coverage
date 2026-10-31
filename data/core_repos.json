@@ -341,6 +341,9 @@
  "decoryah:slapshot": [
   "decoryah/Arcade-SlapShot_MiSTer"
  ],
+ "decoryah:supduck": [
+  "decoryah/Arcade-SuperDuck_MiSTer"
+ ],
  "decoryah:taitol": [
   "decoryah/Arcade-TaitoLSystem_MiSTer"
  ],
@@ -1454,6 +1457,9 @@
   "jlrh/gaelco-fpga",
   "jlrh/jlrh-misterfpga-db"
  ],
+ "jlrh:ffgticlub": [
+  "jlrh/konami-fpga"
+ ],
  "jlrh:ffgwar": [
   "jlrh/jlrh-misterfpga-db",
   "jlrh/snk-fpga"
@@ -2256,6 +2262,9 @@
  "ongo:bazset_continentalcircus": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:bazset_cvs": [
+  "bazset/MiSTer_BAZSET"
+ ],
  "ongo:bazset_diamondrun": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2417,6 +2426,9 @@
  "ongo:ffdeadang": [
   "jlrh/jlrh-misterfpga-db"
  ],
+ "ongo:ffgticlub": [
+  "jlrh/jlrh-misterfpga-db"
+ ],
  "ongo:ffgwar": [
   "jlrh/jlrh-misterfpga-db"
  ],
@@ -2461,6 +2473,9 @@
  ],
  "ongo:ikacore_cv1k": [
   "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:ikariiiitwinstick": [
+  "meathax/meatcores"
  ],
  "ongo:ikkisunsoft": [
   "meathax/meatcores"
@@ -2723,6 +2738,9 @@
  "ongo:sci_bazset": [
   "bazset/MiSTer_BAZSET"
  ],
+ "ongo:scion": [
+  "bazset/MiSTer_BAZSET"
+ ],
  "ongo:segasys1_b23_full": [
   "bazset/MiSTer_BAZSET"
  ],
@@ -2755,6 +2773,9 @@
  ],
  "ongo:steelforce": [
   "meathax/meatcores"
+ ],
+ "ongo:stinger": [
+  "bazset/MiSTer_BAZSET"
  ],
  "ongo:suck_my_bouncing_balls": [
   "bazset/MiSTer_BAZSET"
@@ -2789,6 +2810,9 @@
  ],
  "ongo:thepit": [
   "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:thunderjaws": [
+  "meathax/meatcores"
  ],
  "ongo:timesoldierstwinstick": [
   "meathax/meatcores"
