@@ -128,7 +128,7 @@ SUPERSEDED_CORES = {
 MOVED_TO_OFFICIAL: dict[str, str | tuple[str, str]] = {}
 
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
-OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr", "kyledlester": "kyle", "illegalmp3": "illegalmp3", "yaguboo": "yaguboo", "rodimusfvc": "rodimus", "zakk4223": "zakk"}
+OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr", "kyledlester": "kyle", "illegalmp3": "illegalmp3", "yaguboo": "yaguboo", "rodimusfvc": "rodimus", "zakk4223": "zakk", "djb-rh": "djb"}
 # Repositories of those owners that are not cores (forks of the shared MRA collection, a game runtime): never scanned.
 OWNER_SKIP = {"rossops/mra-alternatives_mister", "rossops/bennugd_mister", "rodimusfvc/rodimus_mister_db",
               # zakk4223's tools and non-arcade projects (a USB/IP service, a controller database, a ROM database builder, a Sun workstation)
@@ -335,6 +335,7 @@ SOURCE_PAGES = {
     "yaguboo": "https://github.com/yaguboo?tab=repositories",
     "rodimus": "https://github.com/RodimusFVC?tab=repositories",
     "zakk": "https://github.com/zakk4223?tab=repositories",
+    "djb": "https://github.com/djb-rh?tab=repositories",
     "decoryah": "https://github.com/decoryah/MiSTer_decoryah",
     "tomsvr": "https://github.com/TomSVR-Mister/TomSVR-Arcade-Cores",
     "asturur": "https://github.com/asturur/Mister-cores",
@@ -369,6 +370,7 @@ DB_TITLES = {
     "yaguboo": "yaguboo (GitHub repositories)",
     "rodimus": "RodimusFVC",
     "zakk": "zakk4223 (GitHub repositories)",
+    "djb": "djb-rh (GitHub repositories)",
     "decoryah": "decoryah",
     "tomsvr": "TomSVR",
     "asturur": "Andrea Bogazzi (asturur)",
