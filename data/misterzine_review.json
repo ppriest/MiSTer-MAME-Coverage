@@ -1,0 +1,70 @@
+{
+  "description": "Gaps found by comparing https://misterzine.fyi/releases/?collection=all (data.json, Arcade entries only; arcadepatches.com patches/translations ignored) with data/ledger.json. Each item says what was checked; act on it, then remove it.",
+  "compared": {
+    "misterzine_arcade_entries": 2653,
+    "ledger_cores": 1054,
+    "ledger_sets": 7421,
+    "sets_on_misterzine_missing_from_ledger": ["spacerace", "twinbeeb", "SpaceDemon"],
+    "sets_note": "None is a MAME set; spacerace and twinbeeb are already in IGNORED_CORES/IGNORED_SETS. No MAME set coverage is missing."
+  },
+  "items": [
+    {
+      "kind": "source_repo_for_binary_only_core",
+      "core": "bazset:rainbowislands_bazset",
+      "sets": ["rbisland", "rbislande"],
+      "repo": "bazset/Rainbow-Islands-FPGA",
+      "evidence": "public, 173 HDL files, 2 MRAs; misterzine links this core to it. Ledger has the core as binary_only (repo bazset/MiSTer_BAZSET).",
+      "action": "map the core to this source repository (mister.SOURCE_REPOS or SOURCE_AVAILABLE_CORES) so it is no longer binary-only"
+    },
+    {
+      "kind": "source_repo_for_binary_only_core",
+      "core": "bazset:volfied",
+      "sets": ["volfied"],
+      "repo": "bazset/Volfied-FPGA",
+      "evidence": "public, 147 HDL files, 1 MRA; misterzine core name Volfied_bazset. Ledger: binary_only.",
+      "action": "as above"
+    },
+    {
+      "kind": "source_repo_for_binary_only_core",
+      "core": "bazset:superman_bazset",
+      "sets": ["superman"],
+      "repo": "bazset/Superman-FPGA",
+      "evidence": "public, 162 HDL files, 1 MRA. Ledger: binary_only.",
+      "action": "as above"
+    },
+    {
+      "kind": "no_change",
+      "core": "bazset:chase_hq_bazset",
+      "sets": ["chasehq"],
+      "repo": "bazset/Chase.HQ-FPGA",
+      "evidence": "misterzine links it, but the repository has no HDL, MRA or RBF files.",
+      "action": "keep binary-only; recheck later"
+    },
+    {
+      "kind": "database_cores_not_in_ledger",
+      "source": "rmcores",
+      "db": "https://raw.githubusercontent.com/rmonic79/rmcores/db/db.json.zip",
+      "cores": {
+        "rmTaitoAsuka": {"repo": "rmonic79/rm-TaitoAsuka_MiSTer", "sets": ["asuka", "bonzeadv", "cadash", "earthjkr", "eto", "galmedes", "mofflott"]},
+        "rmRaiden": {"repo": "rmonic79/rm-Raiden_MiSTer", "sets": ["raiden"]},
+        "rmNightSlashers": {"repo": "rmonic79/rm_NightSlashers_MiSTer", "sets": ["nslasher"]},
+        "rmSeibuCupSoccer": {"repo": "rmonic79/rm-SeibuCupSoccer_MiSTer", "sets": ["cupsoc"]},
+        "rmBoogieWings": {"repo": "rmonic79/rm-BoogieWings_MiSTer", "sets": ["boogwing"]}
+      },
+      "evidence": "The database (read daily via DB_SOURCES['rmcores']) has 7 arcade .rbf files and 83 MRAs under _Arcade/_rmCores/; the ledger records only rmcores:rmgalivan and rmcores:rmpowerspikes. All five repositories are public with HDL (148-272 files). The sets are already covered by dist cores, so this is attribution, not coverage. Cause not confirmed: is_launcher/keep_launcher accept .mra, so the drop is later (possibly dedup against the dist builds by the same developer).",
+      "action": "find why these MRAs do not become rmcores cores, and record them with their repositories"
+    },
+    {
+      "kind": "repo_for_cores_without_one",
+      "source": "coinop",
+      "repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
+      "evidence": "misterzine lists 85 coinop entries with this repository; the ledger's 55 coinop cores have repo null.",
+      "action": "optional: record the repository on coinop cores (a distribution, not source; binary-only status unchanged)"
+    }
+  ],
+  "not_gaps": [
+    "jotego/jtcores/tree/master/cores/<core>: misterzine's per-core links into jotego/jtcores, which the ledger already reads (via jtbin).",
+    "decoryah/MiSTer_decoryah, ppriest/MiSTer_ppriest: database repositories already in DB_SOURCES.",
+    "Core-name differences per source (e.g. coinop batrider_mister vs batrider, ongo ppriest_* names, decoryah names): the sets match."
+  ]
+}
