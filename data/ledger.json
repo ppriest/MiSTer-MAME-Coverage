@@ -24,15 +24,6 @@
 {
 "date": "2026-10-17",
 "note": "alamone 2026-10-12",
-"cores": 0,
-"sets": 0,
-"pairs": 0,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
-"date": "2026-10-17",
-"note": "alamone 2026-10-12",
 "cores": 7,
 "sets": 7,
 "pairs": 64,
@@ -461,6 +452,15 @@
 "pairs": 1,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-31",
+"note": "alamone 2026-10-26",
+"cores": 2,
+"sets": 1,
+"pairs": 14,
+"dates_improved": 0,
+"cores_removed": 1
 }
 ]
 },
@@ -7963,11 +7963,13 @@
 "rbf": "Atari-G1.rbf",
 "repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
 "url": "https://github.com/Gm0rk/Arcade-Atari-G1_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-25",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 34,
+"mame_drivers": [
+"atari/atarig1.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-16",
 "aliases": [],
@@ -7982,11 +7984,13 @@
 "rbf": "Arcade-Atari-G42.rbf",
 "repo": "Gm0rk/Arcade-Atari-G42_MiSTer",
 "url": "https://github.com/Gm0rk/Arcade-Atari-G42_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-17",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 37,
+"mame_drivers": [
+"atari/atarig42.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-16",
 "aliases": [],
@@ -8001,11 +8005,14 @@
 "rbf": "Arcade-ITech8.rbf",
 "repo": "Gm0rk/ITech8_MiSTer",
 "url": "https://github.com/Gm0rk/ITech8_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-15",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 33,
+"mame_drivers": [
+"itech/capbowl.cpp",
+"itech/itech8.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-16",
 "aliases": [],
@@ -8020,11 +8027,13 @@
 "rbf": "Arcade-Midway-Y-Unit.rbf",
 "repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
 "url": "https://github.com/Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-25",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 24,
+"mame_drivers": [
+"williams/midyunit.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-21",
 "aliases": [],
@@ -17406,11 +17415,13 @@
 "rbf": "BallySente.rbf",
 "repo": "ppriest/Arcade-BallySente_MiSTer",
 "url": "https://github.com/ppriest/Arcade-BallySente_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-25",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 20,
+"mame_drivers": [
+"bally/balsente.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-09",
 "aliases": [],
@@ -17463,11 +17474,13 @@
 "rbf": "DreamWorld.rbf",
 "repo": "ppriest/Arcade-DreamWorld_MiSTer",
 "url": "https://github.com/ppriest/Arcade-DreamWorld_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-17",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 33,
+"mame_drivers": [
+"misc/dreamwld.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-17",
 "aliases": [],
@@ -17482,11 +17495,15 @@
 "rbf": "Eolith.rbf",
 "repo": "ppriest/Arcade-Eolith_MiSTer",
 "url": "https://github.com/ppriest/Arcade-Eolith_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-11",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 29,
+"mame_drivers": [
+"eolith/eolith.cpp",
+"eolith/eolith16.cpp",
+"eolith/vegaeo.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-11",
 "aliases": [],
@@ -17501,11 +17518,13 @@
 "rbf": "GStream.rbf",
 "repo": "ppriest/Arcade-GStream_MiSTer",
 "url": "https://github.com/ppriest/Arcade-GStream_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-14",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 24,
+"mame_drivers": [
+"promat/gstream.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-14",
 "aliases": [],
@@ -17520,11 +17539,13 @@
 "rbf": "HyperNG64.rbf",
 "repo": "ppriest/Arcade-HyperNG64_MiSTer",
 "url": "https://github.com/ppriest/Arcade-HyperNG64_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-06",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 20,
+"mame_drivers": [
+"snk/hng64.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-09",
 "aliases": [],
@@ -17539,11 +17560,13 @@
 "rbf": "JalecoMS32.rbf",
 "repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "url": "https://github.com/ppriest/Arcade-JalecoMS32_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-09-19",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 18,
+"mame_drivers": [
+"jaleco/ms32.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-09",
 "aliases": [],
@@ -17558,11 +17581,13 @@
 "rbf": "JalecoMS32F1.rbf",
 "repo": "ppriest/Arcade-JalecoMS32_MiSTer",
 "url": "https://github.com/ppriest/Arcade-JalecoMS32_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-09-26",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 16,
+"mame_drivers": [
+"jaleco/ms32.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-09",
 "aliases": [],
@@ -17577,15 +17602,17 @@
 "rbf": "KonamiGX.rbf",
 "repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-13",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 29,
+"mame_drivers": [
+"konami/konamigx.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-09",
 "aliases": [],
-"last_seen": "2026-10-25"
+"last_seen": "2026-10-31"
 },
 "ppriest:konamigxt1": {
 "id": "ppriest:konamigxt1",
@@ -17596,11 +17623,13 @@
 "rbf": "KonamiGXT1.rbf",
 "repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-13",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 29,
+"mame_drivers": [
+"konami/konamigx.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-10",
 "aliases": [],
@@ -17615,11 +17644,13 @@
 "rbf": "KonamiGXT34.rbf",
 "repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-10",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 28,
+"mame_drivers": [
+"konami/konamigx.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-09",
 "aliases": [],
@@ -17634,11 +17665,13 @@
 "rbf": "KonamiHornet.rbf",
 "repo": "ppriest/Arcade-KonamiHornet_MiSTer",
 "url": "https://github.com/ppriest/Arcade-KonamiHornet_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-25",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 26,
+"mame_drivers": [
+"konami/hornet.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-24",
 "aliases": [],
@@ -17653,11 +17686,13 @@
 "rbf": "LethalEnforcers.rbf",
 "repo": "ppriest/Arcade-LethalEnforcers_MiSTer",
 "url": "https://github.com/ppriest/Arcade-LethalEnforcers_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-19",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 22,
+"mame_drivers": [
+"konami/lethal.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-19",
 "aliases": [],
@@ -17672,11 +17707,13 @@
 "rbf": "Limenko.rbf",
 "repo": "ppriest/Arcade-Vamphalf_MiSTer",
 "url": "https://github.com/ppriest/Arcade-Vamphalf_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-13",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 31,
+"mame_drivers": [
+"misc/limenko.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-14",
 "aliases": [],
@@ -17691,11 +17728,13 @@
 "rbf": "NixPirates.rbf",
 "repo": "ppriest/Arcade-NixPirates_MiSTer",
 "url": "https://github.com/ppriest/Arcade-NixPirates_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-10",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 31,
+"mame_drivers": [
+"nix/pirates.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-10",
 "aliases": [],
@@ -17710,11 +17749,13 @@
 "rbf": "Pandora.rbf",
 "repo": "ppriest/Arcade-Pandora_MiSTer",
 "url": "https://github.com/ppriest/Arcade-Pandora_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-25",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 26,
+"mame_drivers": [
+"kaneko/snowbros.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-21",
 "aliases": [],
@@ -17729,11 +17770,13 @@
 "rbf": "PlayChoice10.rbf",
 "repo": "ppriest/Arcade-PlayChoice10_MiSTer",
 "url": "https://github.com/ppriest/Arcade-PlayChoice10_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-19",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 33,
+"mame_drivers": [
+"nintendo/playch10.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-18",
 "aliases": [],
@@ -17748,11 +17791,13 @@
 "rbf": "Seta.rbf",
 "repo": "ppriest/Arcade-Seta_MiSTer",
 "url": "https://github.com/ppriest/Arcade-Seta_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-09-19",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 38,
+"mame_drivers": [
+"seta/seta.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-09",
 "aliases": [],
@@ -17767,11 +17812,13 @@
 "rbf": "SetaDowntown.rbf",
 "repo": "ppriest/Arcade-Seta_MiSTer",
 "url": "https://github.com/ppriest/Arcade-Seta_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-09-21",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 38,
+"mame_drivers": [
+"seta/downtown.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-09",
 "aliases": [],
@@ -17786,11 +17833,13 @@
 "rbf": "Silkroad.rbf",
 "repo": "ppriest/Arcade-Silkroad_MiSTer",
 "url": "https://github.com/ppriest/Arcade-Silkroad_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-24",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 27,
+"mame_drivers": [
+"unico/silkroad.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-24",
 "aliases": [],
@@ -17805,11 +17854,13 @@
 "rbf": "Vamphalf.rbf",
 "repo": "ppriest/Arcade-Vamphalf_MiSTer",
 "url": "https://github.com/ppriest/Arcade-Vamphalf_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-10",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 32,
+"mame_drivers": [
+"misc/vamphalf.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-09",
 "aliases": [],
@@ -18276,29 +18327,6 @@
 "note": null,
 "first_recorded": "2026-10-11",
 "aliases": [],
-"last_seen": "2026-10-31"
-},
-"repo:konamigx": {
-"id": "repo:konamigx",
-"name": "Arcade-KonamiGX (ppriest)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Arcade-KonamiGX_20261013.rbf",
-"repo": "ppriest/Arcade-KonamiGX_MiSTer",
-"url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
-"build_date": "2026-10-13",
-"status": "analyzed",
-"reading": "mostly MAME",
-"score": 29,
-"mame_drivers": [
-"konami/konamigx.cpp"
-],
-"note": null,
-"aliases": [
-"ongo:ppriest_konamigx"
-],
-"first_recorded": "2026-10-25",
 "last_seen": "2026-10-31"
 },
 "repo:lastduel": {
@@ -19439,11 +19467,13 @@
 "rbf": "rmGalivan.rbf",
 "repo": "rmonic79/rm-Galivan_MiSTer",
 "url": "https://github.com/rmonic79/rm-Galivan_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-09-17",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 25,
+"mame_drivers": [
+"nichibutsu/galivan.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-09",
 "aliases": [],
@@ -20053,11 +20083,13 @@
 "rbf": "1945kiii.rbf",
 "repo": "shmupfan/Arcade-1945kIII_MiSTer",
 "url": "https://github.com/shmupfan/Arcade-1945kIII_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-06",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 26,
+"mame_drivers": [
+"promat/1945kiii.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
@@ -20091,11 +20123,13 @@
 "rbf": "dooyong.rbf",
 "repo": "shmupfan/Arcade-Dooyong_MiSTer",
 "url": "https://github.com/shmupfan/Arcade-Dooyong_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-06",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 17,
+"mame_drivers": [
+"dooyong/dooyong.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
@@ -20110,11 +20144,13 @@
 "rbf": "TaitoGNET.rbf",
 "repo": "shmupfan/Arcade-TaitoGNET_MiSTer",
 "url": "https://github.com/shmupfan/Arcade-TaitoGNET_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-22",
+"status": "analyzed",
+"reading": "both",
+"score": 44,
+"mame_drivers": [
+"sony/taitogn.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-07",
 "aliases": [],
@@ -20129,11 +20165,13 @@
 "rbf": "tecmo16.rbf",
 "repo": "shmupfan/Arcade-Tecmo16_MiSTer",
 "url": "https://github.com/shmupfan/Arcade-Tecmo16_MiSTer",
-"build_date": null,
-"status": null,
-"reading": null,
-"score": null,
-"mame_drivers": [],
+"build_date": "2026-10-06",
+"status": "analyzed",
+"reading": "mostly MAME",
+"score": 29,
+"mame_drivers": [
+"tecmo/tecmo16.cpp"
+],
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
@@ -20158,6 +20196,42 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-10-31"
+},
+"slop:battlebakraid": {
+"id": "slop:battlebakraid",
+"name": "BattleBakraid",
+"source": "slop",
+"source_title": "Slop Cores (TheJesusFish)",
+"channel": null,
+"rbf": "BattleBakraid.rbf",
+"repo": "TheJesusFish/Slop-Core",
+"url": "https://github.com/TheJesusFish/Slop-Core",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
+},
+"slop:battlegaregga": {
+"id": "slop:battlegaregga",
+"name": "BattleGaregga",
+"source": "slop",
+"source_title": "Slop Cores (TheJesusFish)",
+"channel": null,
+"rbf": "BattleGaregga.rbf",
+"repo": "TheJesusFish/Slop-Core",
+"url": "https://github.com/TheJesusFish/Slop-Core",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-31",
 "last_seen": "2026-10-31"
 },
 "slop:dogyuun": {
@@ -21491,10 +21565,10 @@
 "konami/konamigx.cpp"
 ],
 "note": null,
+"first_recorded": "2026-10-25",
 "aliases": [
 "ppriest:konamigx"
 ],
-"first_recorded": "2026-10-25",
 "last_seen": "2026-10-31"
 },
 "yaguboo:namcona2": {
@@ -31614,6 +31688,19 @@
 "last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Battle Bakraid/Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999).mra"
 },
+"slop:battlebakraid": {
+"core": "slop:battlebakraid",
+"date": "2022-07-11",
+"date_quality": "git",
+"via": "slop",
+"wip": false,
+"alt": false,
+"first_repo": "zakk4223/pr4m0d-MISTer-bin",
+"first_path": "Bakraid/mra/Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999).mra",
+"mra": "_Arcade/_Slop Cores/Battle Bakraid - Unlimited Version Special Ver. (USA) (Tue Jun 8 1999).mra",
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
+},
 "zakk:bakraid": {
 "core": "zakk:bakraid",
 "date": "2022-07-11",
@@ -31641,6 +31728,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Battle Bakraid/Battle Bakraid - Unlimited Version (China) (Tue Jun 8 1999).mra"
+},
+"slop:battlebakraid": {
+"core": "slop:battlebakraid",
+"date": "2022-07-12",
+"date_quality": "git",
+"via": "slop",
+"wip": false,
+"alt": true,
+"first_repo": "zakk4223/pr4m0d-MISTer-bin",
+"first_path": "Bakraid/mra/_alt/_Battle Bakraid/Battle Bakraid - Unlimited Version (China) (Tue Jun 8 1999).mra",
+"mra": "_Arcade/_Slop Cores/_alternatives/_Battle Bakraid/Battle Bakraid - Unlimited Version (China) (Tue Jun 8 1999).mra",
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
 },
 "zakk:bakraid": {
 "core": "zakk:bakraid",
@@ -31670,6 +31770,19 @@
 "last_seen": "2026-10-31",
 "mra": "_Arcade/Battle Bakraid - Unlimited Version (Japan) (Tue Jun 8 1999).mra"
 },
+"slop:battlebakraid": {
+"core": "slop:battlebakraid",
+"date": "2022-07-12",
+"date_quality": "git",
+"via": "slop",
+"wip": false,
+"alt": true,
+"first_repo": "zakk4223/pr4m0d-MISTer-bin",
+"first_path": "Bakraid/mra/_alt/_Battle Bakraid/Battle Bakraid - Unlimited Version (Japan) (Tue Jun 8 1999).mra",
+"mra": "_Arcade/_Slop Cores/_alternatives/_Battle Bakraid/Battle Bakraid - Unlimited Version (Japan) (Tue Jun 8 1999).mra",
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
+},
 "zakk:bakraid": {
 "core": "zakk:bakraid",
 "date": "2022-07-12",
@@ -31697,6 +31810,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Battle Bakraid/Battle Bakraid (Japan) (Wed Apr 7 1999).mra"
+},
+"slop:battlebakraid": {
+"core": "slop:battlebakraid",
+"date": "2022-07-12",
+"date_quality": "git",
+"via": "slop",
+"wip": false,
+"alt": true,
+"first_repo": "zakk4223/pr4m0d-MISTer-bin",
+"first_path": "Bakraid/mra/_alt/_Battle Bakraid/Battle Bakraid (Japan) (Wed Apr 7 1999).mra",
+"mra": "_Arcade/_Slop Cores/_alternatives/_Battle Bakraid/Battle Bakraid (Japan) (Wed Apr 7 1999).mra",
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
 },
 "zakk:bakraid": {
 "core": "zakk:bakraid",
@@ -32367,6 +32493,19 @@
 "last_seen": "2026-10-31",
 "mra": "_Arcade/Battle Garegga (Europe - USA - Japan - Asia) (Sat Feb 3 1996).mra"
 },
+"slop:battlegaregga": {
+"core": "slop:battlegaregga",
+"date": "2022-07-22",
+"date_quality": "git",
+"via": "slop",
+"wip": false,
+"alt": false,
+"first_repo": "zakk4223/pr4m0d-MISTer-bin",
+"first_path": "Garegga/mra/Battle Garegga (Europe  USA  Japan  Asia) (Sat Feb 3 1996).mra",
+"mra": "_Arcade/_Slop Cores/Battle Garegga (Europe - USA - Japan - Asia) (Sat Feb 3 1996).mra",
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
+},
 "zakk:garegga": {
 "core": "zakk:garegga",
 "date": "2022-07-22",
@@ -32394,6 +32533,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Battle Garegga/Battle Garegga - Type 2 (Denmark - China) (Tue Apr 2 1996).mra"
+},
+"slop:battlegaregga": {
+"core": "slop:battlegaregga",
+"date": "2022-08-01",
+"date_quality": "git",
+"via": "slop",
+"wip": false,
+"alt": true,
+"first_repo": "zakk4223/Arcade-Raizing_MiSTer",
+"first_path": "rom/mra/_alternatives/_Battle Garegga/Battle Garegga - Type 2 (Denmark - China) (Tue Apr 2 1996).mra",
+"mra": "_Arcade/_Slop Cores/_alternatives/_Battle Garegga/Battle Garegga - Type 2 (Denmark - China) (Tue Apr 2 1996).mra",
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
 },
 "zakk:garegga": {
 "core": "zakk:garegga",
@@ -32423,6 +32575,19 @@
 "last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Battle Garegga/Battle Garegga (Austria - Hong Kong) (Sat Feb 3 1996).mra"
 },
+"slop:battlegaregga": {
+"core": "slop:battlegaregga",
+"date": "2022-08-01",
+"date_quality": "git",
+"via": "slop",
+"wip": false,
+"alt": true,
+"first_repo": "zakk4223/Arcade-Raizing_MiSTer",
+"first_path": "rom/mra/_alternatives/_Battle Garegga/Battle Garegga (Austria - Hong Kong) (Sat Feb 3 1996).mra",
+"mra": "_Arcade/_Slop Cores/_alternatives/_Battle Garegga/Battle Garegga (Austria - Hong Kong) (Sat Feb 3 1996).mra",
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
+},
 "zakk:garegga": {
 "core": "zakk:garegga",
 "date": "2022-08-01",
@@ -32450,6 +32615,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Battle Garegga/Battle Garegga (Korea - Greece) (Wed Feb 7 1996).mra"
+},
+"slop:battlegaregga": {
+"core": "slop:battlegaregga",
+"date": "2026-10-06",
+"date_quality": "git",
+"via": "slop",
+"wip": false,
+"alt": true,
+"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
+"first_path": "_Arcade/_alternatives/_Battle Garegga/Battle Garegga (Korea - Greece) (Wed Feb 7 1996).mra",
+"mra": "_Arcade/_Slop Cores/_alternatives/_Battle Garegga/Battle Garegga (Korea - Greece) (Wed Feb 7 1996).mra",
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
 },
 "zakk:garegga": {
 "core": "zakk:garegga",
@@ -32479,6 +32657,19 @@
 "last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Battle Garegga/Battle Garegga - New Version (Austria - Hong Kong) (Sat Mar 2 1996).mra"
 },
+"slop:battlegaregga": {
+"core": "slop:battlegaregga",
+"date": "2022-08-01",
+"date_quality": "git",
+"via": "slop",
+"wip": false,
+"alt": true,
+"first_repo": "zakk4223/Arcade-Raizing_MiSTer",
+"first_path": "rom/mra/_alternatives/_Battle Garegga/Battle Garegga - New Version (Austria - Hong Kong) (Sat Mar 2 1996).mra",
+"mra": "_Arcade/_Slop Cores/_alternatives/_Battle Garegga/Battle Garegga - New Version (Austria - Hong Kong) (Sat Mar 2 1996).mra",
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
+},
 "zakk:garegga": {
 "core": "zakk:garegga",
 "date": "2022-08-01",
@@ -32506,6 +32697,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Battle Garegga/Battle Garegga (location test) (Wed Jan 17 1996).mra"
+},
+"slop:battlegaregga": {
+"core": "slop:battlegaregga",
+"date": "2022-08-01",
+"date_quality": "git",
+"via": "slop",
+"wip": true,
+"alt": true,
+"first_repo": "zakk4223/Arcade-Raizing_MiSTer",
+"first_path": "rom/mra/_alternatives/_Battle Garegga/Battle Garegga (location test) (Wed Jan 17 1996).mra",
+"mra": "_Arcade/_Slop Cores/_alternatives/_Battle Garegga/Battle Garegga (location test) (Wed Jan 17 1996).mra",
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
 },
 "zakk:garegga": {
 "core": "zakk:garegga",
@@ -32535,6 +32739,19 @@
 "last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Battle Garegga/Battle Garegga - Type 2 (Europe - USA - Japan - Asia) (Sat Mar 2 1996).mra"
 },
+"slop:battlegaregga": {
+"core": "slop:battlegaregga",
+"date": "2022-08-01",
+"date_quality": "git",
+"via": "slop",
+"wip": false,
+"alt": true,
+"first_repo": "zakk4223/Arcade-Raizing_MiSTer",
+"first_path": "rom/mra/_alternatives/_Battle Garegga/Battle Garegga - Type 2 (Europe - USA - Japan - Asia) (Sat Mar 2 1996).mra",
+"mra": "_Arcade/_Slop Cores/_alternatives/_Battle Garegga/Battle Garegga - Type 2 (Europe - USA - Japan - Asia) (Sat Mar 2 1996).mra",
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
+},
 "zakk:garegga": {
 "core": "zakk:garegga",
 "date": "2022-08-01",
@@ -32563,6 +32780,19 @@
 "last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Battle Garegga/Battle Garegga (Taiwan - Germany) (Thu Feb 1 1996).mra"
 },
+"slop:battlegaregga": {
+"core": "slop:battlegaregga",
+"date": "2022-08-01",
+"date_quality": "git",
+"via": "slop",
+"wip": false,
+"alt": true,
+"first_repo": "zakk4223/Arcade-Raizing_MiSTer",
+"first_path": "rom/mra/_alternatives/_Battle Garegga/Battle Garegga (Taiwan - Germany) (Thu Feb 1 1996).mra",
+"mra": "_Arcade/_Slop Cores/_alternatives/_Battle Garegga/Battle Garegga (Taiwan - Germany) (Thu Feb 1 1996).mra",
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
+},
 "zakk:garegga": {
 "core": "zakk:garegga",
 "date": "2022-08-01",
@@ -32578,6 +32808,19 @@
 }
 },
 "bgareggz": {
+"slop:battlegaregga": {
+"core": "slop:battlegaregga",
+"date": "2023-09-10",
+"date_quality": "git",
+"via": "slop",
+"wip": false,
+"alt": true,
+"first_repo": "zakk4223/Distribution-MiSTerFPGA",
+"first_path": "_Arcade/_alternatives/_Battle Garegga/Battle Garegga (Zakk roms) (Europe USA Japan Asia) (Sat Feb 3 1996).mra",
+"mra": "_Arcade/_Slop Cores/_alternatives/_Battle Garegga/Battle Garegga (Zakk roms) (Europe USA Japan Asia) (Sat Feb 3 1996).mra",
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
+},
 "zakk:garegga": {
 "core": "zakk:garegga",
 "date": "2023-09-10",
@@ -46198,21 +46441,8 @@
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/Crazy Cross (ver EAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/Crazy Cross (ver EAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Crazy Cross (ver EAA).mra",
-"mra": "_Arcade/Crazy Cross (ver EAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -47688,21 +47918,8 @@
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/Daisu-Kiss (ver JAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/Daisu-Kiss (ver JAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Daisu-Kiss (ver JAA).mra",
-"mra": "_Arcade/Daisu-Kiss (ver JAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -55889,21 +56106,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Dragoon Might (ver AAB).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/Dragoon Might (ver AAB).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Dragoon Might (ver AAB).mra",
-"mra": "_Arcade/Dragoon Might (ver AAB).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -55930,21 +56134,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Dragoon Might (ver AAB)/Dragoon Might (ver JAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Dragoon Might (ver AAB)/Dragoon Might (ver JAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Dragoon Might (ver JAA).mra",
-"mra": "_Arcade/Dragoon Might (ver JAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -60144,21 +60335,8 @@
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/Fantastic Journey (ver EAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/Fantastic Journey (ver EAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Fantastic Journey (ver EAA).mra",
-"mra": "_Arcade/Fantastic Journey (ver EAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -60185,21 +60363,8 @@
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/_alternatives/Fantastic Journey (ver EAA)/Fantastic Journey (ver AAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Fantastic Journey (ver EAA)/Fantastic Journey (ver AAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Fantastic Journey (ver AAA).mra",
-"mra": "_Arcade/Fantastic Journey (ver AAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -70484,21 +70649,8 @@
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/_alternatives/Fantastic Journey (ver EAA)/Gokujou Parodius Kako no Eikou o Motomete (ver JAD).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Fantastic Journey (ver EAA)/Gokujou Parodius Kako no Eikou o Motomete (ver JAD).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Gokujou Parodius - Kako no Eikou o Motomete (ver JAD).mra",
-"mra": "_Arcade/Gokujou Parodius Kako no Eikou o Motomete (ver JAD).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -88343,21 +88495,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Lethal Enforcers II - Gun Fighters (ver EAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/Lethal Enforcers II Gun Fighters (ver EAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
-"first_path": "releases/Lethal Enforcers II Gun Fighters (ver EAA).mra",
-"mra": "_Arcade/Lethal Enforcers II Gun Fighters (ver EAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -88384,21 +88523,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II - The Western (ver JAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II The Western (ver JAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
-"first_path": "releases/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II The Western (ver JAA).mra",
-"mra": "_Arcade/Lethal Enforcers II The Western (ver JAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -88425,21 +88551,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II - Gun Fighters (ver UAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II Gun Fighters (ver UAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
-"first_path": "releases/_alternatives/_Lethal Enforcers II Gun Fighters (ver EAA)/Lethal Enforcers II Gun Fighters (ver UAA).mra",
-"mra": "_Arcade/Lethal Enforcers II Gun Fighters (ver UAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -101958,21 +102071,8 @@
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/_alternatives/Twin Bee Yahhoo! (ver JAA)/Magical Twin Bee (ver EAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Twin Bee Yahhoo! (ver JAA)/Magical Twin Bee (ver EAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Magical Twin Bee (ver EAA).mra",
-"mra": "_Arcade/Magical Twin Bee (ver EAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -120851,21 +120951,8 @@
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/_alternatives/Crazy Cross (ver EAA)/Taisen Puzzle-dama (ver JAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Crazy Cross (ver EAA)/Taisen Puzzle-dama (ver JAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Taisen Puzzle-dama (ver JAA).mra",
-"mra": "_Arcade/Taisen Puzzle-dama (ver JAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -130921,21 +131008,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Salamander 2 (ver JAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/Salamander 2 (ver JAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Salamander 2 (ver JAA).mra",
-"mra": "_Arcade/Salamander 2 (ver JAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -130962,21 +131036,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Salamander 2 (ver JAA)/Salamander 2 (ver AAB).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Salamander 2 (ver JAA)/Salamander 2 (ver AAB).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Salamander 2 (ver AAB).mra",
-"mra": "_Arcade/Salamander 2 (ver AAB).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -134861,21 +134922,8 @@
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/Sexy Parodius (ver JAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/Sexy Parodius (ver JAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Sexy Parodius (ver JAA).mra",
-"mra": "_Arcade/Sexy Parodius (ver JAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -134902,21 +134950,8 @@
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/_alternatives/Sexy Parodius (ver JAA)/Sexy Parodius (ver AAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Sexy Parodius (ver JAA)/Sexy Parodius (ver AAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Sexy Parodius (ver AAA).mra",
-"mra": "_Arcade/Sexy Parodius (ver AAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -154838,21 +154873,8 @@
 "first_repo": "ppriest/Arcade-KonamiGX_MiSTer",
 "first_path": "releases/Twin Bee Yahhoo! (ver JAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/Twin Bee Yahhoo! (ver JAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Twin Bee Yahhoo! (ver JAA).mra",
-"mra": "_Arcade/Twin Bee Yahhoo! (ver JAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -159113,21 +159135,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Tokimeki Memorial Taisen Puzzle-dama (ver JAB).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/Tokimeki Memorial Taisen Puzzle-dama (ver JAB).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Tokimeki Memorial Taisen Puzzle-dama (ver JAB).mra",
-"mra": "_Arcade/Tokimeki Memorial Taisen Puzzle-dama (ver JAB).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -160493,21 +160502,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Taisen Tokkae-dama (ver JAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/Taisen Tokkae-dama (ver JAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Taisen Tokkae-dama (ver JAA).mra",
-"mra": "_Arcade/Taisen Tokkae-dama (ver JAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -171576,21 +171572,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Winning Spike (ver EAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/Winning Spike (ver EAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": false,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Winning Spike (ver EAA).mra",
-"mra": "_Arcade/Winning Spike (ver EAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -171617,21 +171600,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Winning Spike (ver EAA)/Winning Spike (ver AAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Winning Spike (ver EAA)/Winning Spike (ver AAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Winning Spike (ver AAA).mra",
-"mra": "_Arcade/Winning Spike (ver AAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",
@@ -171658,21 +171628,8 @@
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Winning Spike (ver EAA)/Winning Spike (ver JAA).mra",
 "first_recorded": "2026-10-09",
-"last_seen": "2026-10-25",
+"last_seen": "2026-10-31",
 "mra": "_Arcade/_alternatives/_Winning Spike (ver EAA)/Winning Spike (ver JAA).mra"
-},
-"repo:konamigx": {
-"core": "repo:konamigx",
-"date": "2026-10-13",
-"date_quality": "git",
-"via": "ongo",
-"wip": false,
-"alt": true,
-"first_repo": "yaguboo/Arcade-KonamiGX_MiSTer",
-"first_path": "SD/_Arcade/_Kaze's Cores/Winning Spike (ver JAA).mra",
-"mra": "_Arcade/Winning Spike (ver JAA).mra",
-"first_recorded": "2026-10-25",
-"last_seen": "2026-10-31"
 },
 "yaguboo:konamigx": {
 "core": "yaguboo:konamigx",

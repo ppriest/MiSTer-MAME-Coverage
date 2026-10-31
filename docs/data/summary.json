@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-31T13:01:50+00:00",
+  "generated": "2026-10-31T13:15:24+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-31T13:01:34+00:00",
+  "mister_generated": "2026-10-31T13:15:03+00:00",
   "alamone_generated": "2026-10-26T09:17:05+00:00",
   "ledger_updated": "2026-10-31",
   "ledger_runs": [
-   {
-    "date": "2026-10-30",
-    "note": "alamone 2026-10-26",
-    "cores": 10,
-    "sets": 39,
-    "pairs": 79,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-31",
     "note": "alamone 2026-10-26",
@@ -51,6 +42,15 @@
     "pairs": 1,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-31",
+    "note": "alamone 2026-10-26",
+    "cores": 2,
+    "sets": 1,
+    "pairs": 14,
+    "dates_improved": 0,
+    "cores_removed": 1
    }
   ],
   "genre": {
@@ -3528,8 +3528,8 @@
    "working_arcade_sets_covered": 6608,
    "working_arcade_titles_source": 2335,
    "working_arcade_titles_binary_only": 226,
-   "cores": 835,
-   "binary_only_cores": 333,
+   "cores": 836,
+   "binary_only_cores": 334,
    "unmatched_sets": 518
   }
  },
@@ -12947,11 +12947,13 @@
    "rbf": "Atari-G1.rbf",
    "repo": "Gm0rk/Arcade-Atari-G1_MiSTer",
    "url": "https://github.com/Gm0rk/Arcade-Atari-G1_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-25",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 34,
+   "mame_drivers": [
+    "atari/atarig1.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-16",
    "aliases": [],
@@ -12959,10 +12961,7 @@
    "binary_only": false,
    "nsets": 13,
    "ntitles": 2,
-   "first_date": "2026-09-25",
-   "drivers_loaded": [
-    "atari/atarig1.cpp"
-   ]
+   "first_date": "2026-09-25"
   },
   {
    "id": "gm0rk:atari-g42",
@@ -12973,11 +12972,13 @@
    "rbf": "Arcade-Atari-G42.rbf",
    "repo": "Gm0rk/Arcade-Atari-G42_MiSTer",
    "url": "https://github.com/Gm0rk/Arcade-Atari-G42_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-17",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 37,
+   "mame_drivers": [
+    "atari/atarig42.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-16",
    "aliases": [],
@@ -12985,10 +12986,7 @@
    "binary_only": false,
    "nsets": 5,
    "ntitles": 3,
-   "first_date": "2026-09-28",
-   "drivers_loaded": [
-    "atari/atarig42.cpp"
-   ]
+   "first_date": "2026-09-28"
   },
   {
    "id": "gm0rk:itech8",
@@ -12999,11 +12997,14 @@
    "rbf": "Arcade-ITech8.rbf",
    "repo": "Gm0rk/ITech8_MiSTer",
    "url": "https://github.com/Gm0rk/ITech8_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-15",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 33,
+   "mame_drivers": [
+    "itech/capbowl.cpp",
+    "itech/itech8.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-16",
    "aliases": [],
@@ -13011,11 +13012,7 @@
    "binary_only": false,
    "nsets": 33,
    "ntitles": 13,
-   "first_date": "2026-09-27",
-   "drivers_loaded": [
-    "itech/itech8.cpp",
-    "itech/capbowl.cpp"
-   ]
+   "first_date": "2026-09-27"
   },
   {
    "id": "gm0rk:midway-y-unit",
@@ -13026,11 +13023,13 @@
    "rbf": "Arcade-Midway-Y-Unit.rbf",
    "repo": "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
    "url": "https://github.com/Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-25",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 24,
+   "mame_drivers": [
+    "williams/midyunit.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-21",
    "aliases": [],
@@ -13038,11 +13037,7 @@
    "binary_only": false,
    "nsets": 51,
    "ntitles": 8,
-   "first_date": "2026-09-24",
-   "drivers_loaded": [
-    "williams/midyunit.cpp",
-    "williams/midtunit.cpp"
-   ]
+   "first_date": "2026-09-24"
   },
   {
    "id": "illegalmp3:konami_system_573",
@@ -19575,11 +19570,13 @@
    "rbf": "BallySente.rbf",
    "repo": "ppriest/Arcade-BallySente_MiSTer",
    "url": "https://github.com/ppriest/Arcade-BallySente_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-25",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 20,
+   "mame_drivers": [
+    "bally/balsente.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-09",
    "aliases": [],
@@ -19588,9 +19585,6 @@
    "nsets": 40,
    "ntitles": 26,
    "first_date": "2026-09-26",
-   "drivers_loaded": [
-    "bally/balsente.cpp"
-   ],
    "floorplans": [
     {
      "name": "BallySente",
@@ -19677,11 +19671,13 @@
    "rbf": "DreamWorld.rbf",
    "repo": "ppriest/Arcade-DreamWorld_MiSTer",
    "url": "https://github.com/ppriest/Arcade-DreamWorld_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-17",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 33,
+   "mame_drivers": [
+    "misc/dreamwld.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-17",
    "aliases": [],
@@ -19690,9 +19686,6 @@
    "nsets": 7,
    "ntitles": 5,
    "first_date": "2026-10-17",
-   "drivers_loaded": [
-    "misc/dreamwld.cpp"
-   ],
    "floorplans": [
     {
      "name": "DreamWorld",
@@ -19711,11 +19704,15 @@
    "rbf": "Eolith.rbf",
    "repo": "ppriest/Arcade-Eolith_MiSTer",
    "url": "https://github.com/ppriest/Arcade-Eolith_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-11",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 29,
+   "mame_drivers": [
+    "eolith/eolith.cpp",
+    "eolith/eolith16.cpp",
+    "eolith/vegaeo.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-11",
    "aliases": [],
@@ -19724,11 +19721,6 @@
    "nsets": 22,
    "ntitles": 15,
    "first_date": "2026-10-10",
-   "drivers_loaded": [
-    "eolith/eolith.cpp",
-    "eolith/eolith16.cpp",
-    "eolith/vegaeo.cpp"
-   ],
    "floorplans": [
     {
      "name": "Eolith",
@@ -19747,11 +19739,13 @@
    "rbf": "GStream.rbf",
    "repo": "ppriest/Arcade-GStream_MiSTer",
    "url": "https://github.com/ppriest/Arcade-GStream_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-14",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 24,
+   "mame_drivers": [
+    "promat/gstream.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-14",
    "aliases": [],
@@ -19760,9 +19754,6 @@
    "nsets": 1,
    "ntitles": 1,
    "first_date": "2026-10-14",
-   "drivers_loaded": [
-    "promat/gstream.cpp"
-   ],
    "floorplans": [
     {
      "name": "GStream",
@@ -19781,11 +19772,13 @@
    "rbf": "HyperNG64.rbf",
    "repo": "ppriest/Arcade-HyperNG64_MiSTer",
    "url": "https://github.com/ppriest/Arcade-HyperNG64_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-06",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 20,
+   "mame_drivers": [
+    "snk/hng64.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-09",
    "aliases": [],
@@ -19794,9 +19787,6 @@
    "nsets": 7,
    "ntitles": 7,
    "first_date": "2026-09-20",
-   "drivers_loaded": [
-    "snk/hng64.cpp"
-   ],
    "floorplans": [
     {
      "name": "HyperNG64",
@@ -19815,11 +19805,13 @@
    "rbf": "JalecoMS32.rbf",
    "repo": "ppriest/Arcade-JalecoMS32_MiSTer",
    "url": "https://github.com/ppriest/Arcade-JalecoMS32_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-09-19",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 18,
+   "mame_drivers": [
+    "jaleco/ms32.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-09",
    "aliases": [],
@@ -19828,11 +19820,6 @@
    "nsets": 13,
    "ntitles": 10,
    "first_date": "2026-09-13",
-   "drivers_loaded": [
-    "jaleco/ms32.cpp",
-    "jaleco/bnstars.cpp",
-    "jaleco/tetrisp2.cpp"
-   ],
    "floorplans": [
     {
      "name": "MS32",
@@ -19851,11 +19838,13 @@
    "rbf": "JalecoMS32F1.rbf",
    "repo": "ppriest/Arcade-JalecoMS32_MiSTer",
    "url": "https://github.com/ppriest/Arcade-JalecoMS32_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-09-26",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 16,
+   "mame_drivers": [
+    "jaleco/ms32.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-09",
    "aliases": [],
@@ -19864,9 +19853,6 @@
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2026-09-26",
-   "drivers_loaded": [
-    "jaleco/ms32.cpp"
-   ],
    "floorplans": [
     {
      "name": "MS32F1",
@@ -19885,22 +19871,21 @@
    "rbf": "KonamiGX.rbf",
    "repo": "ppriest/Arcade-KonamiGX_MiSTer",
    "url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-13",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 29,
+   "mame_drivers": [
+    "konami/konamigx.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-09",
    "aliases": [],
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-31",
    "binary_only": false,
    "nsets": 22,
    "ntitles": 11,
    "first_date": "2026-09-19",
-   "drivers_loaded": [
-    "konami/konamigx.cpp"
-   ],
    "floorplans": [
     {
      "name": "KonamiGX",
@@ -19919,11 +19904,13 @@
    "rbf": "KonamiGXT1.rbf",
    "repo": "ppriest/Arcade-KonamiGX_MiSTer",
    "url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-13",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 29,
+   "mame_drivers": [
+    "konami/konamigx.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-10",
    "aliases": [],
@@ -19932,9 +19919,6 @@
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2026-10-10",
-   "drivers_loaded": [
-    "konami/konamigx.cpp"
-   ],
    "floorplans": [
     {
      "name": "KonamiGXT1",
@@ -19953,11 +19937,13 @@
    "rbf": "KonamiGXT34.rbf",
    "repo": "ppriest/Arcade-KonamiGX_MiSTer",
    "url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-10",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 28,
+   "mame_drivers": [
+    "konami/konamigx.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-09",
    "aliases": [],
@@ -19966,9 +19952,6 @@
    "nsets": 13,
    "ntitles": 4,
    "first_date": "2026-10-08",
-   "drivers_loaded": [
-    "konami/konamigx.cpp"
-   ],
    "floorplans": [
     {
      "name": "KonamiGXT34",
@@ -19987,11 +19970,13 @@
    "rbf": "KonamiHornet.rbf",
    "repo": "ppriest/Arcade-KonamiHornet_MiSTer",
    "url": "https://github.com/ppriest/Arcade-KonamiHornet_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-25",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 26,
+   "mame_drivers": [
+    "konami/hornet.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-24",
    "aliases": [],
@@ -20000,9 +19985,6 @@
    "nsets": 7,
    "ntitles": 2,
    "first_date": "2026-10-24",
-   "drivers_loaded": [
-    "konami/hornet.cpp"
-   ],
    "floorplans": [
     {
      "name": "KonamiHornet",
@@ -20021,11 +20003,13 @@
    "rbf": "LethalEnforcers.rbf",
    "repo": "ppriest/Arcade-LethalEnforcers_MiSTer",
    "url": "https://github.com/ppriest/Arcade-LethalEnforcers_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-19",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 22,
+   "mame_drivers": [
+    "konami/lethal.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-19",
    "aliases": [],
@@ -20034,9 +20018,6 @@
    "nsets": 9,
    "ntitles": 1,
    "first_date": "2026-10-19",
-   "drivers_loaded": [
-    "konami/lethal.cpp"
-   ],
    "floorplans": [
     {
      "name": "LethalEnforcers",
@@ -20055,11 +20036,13 @@
    "rbf": "Limenko.rbf",
    "repo": "ppriest/Arcade-Vamphalf_MiSTer",
    "url": "https://github.com/ppriest/Arcade-Vamphalf_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-13",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 31,
+   "mame_drivers": [
+    "misc/limenko.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-14",
    "aliases": [],
@@ -20068,9 +20051,6 @@
    "nsets": 6,
    "ntitles": 5,
    "first_date": "2026-10-13",
-   "drivers_loaded": [
-    "misc/limenko.cpp"
-   ],
    "floorplans": [
     {
      "name": "Limenko",
@@ -20089,11 +20069,13 @@
    "rbf": "NixPirates.rbf",
    "repo": "ppriest/Arcade-NixPirates_MiSTer",
    "url": "https://github.com/ppriest/Arcade-NixPirates_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-10",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 31,
+   "mame_drivers": [
+    "nix/pirates.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-10",
    "aliases": [],
@@ -20102,9 +20084,6 @@
    "nsets": 3,
    "ntitles": 2,
    "first_date": "2026-10-10",
-   "drivers_loaded": [
-    "nix/pirates.cpp"
-   ],
    "floorplans": [
     {
      "name": "NixPirates",
@@ -20123,11 +20102,13 @@
    "rbf": "Pandora.rbf",
    "repo": "ppriest/Arcade-Pandora_MiSTer",
    "url": "https://github.com/ppriest/Arcade-Pandora_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-25",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 26,
+   "mame_drivers": [
+    "kaneko/snowbros.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-21",
    "aliases": [],
@@ -20136,9 +20117,6 @@
    "nsets": 28,
    "ntitles": 16,
    "first_date": "2026-10-06",
-   "drivers_loaded": [
-    "kaneko/snowbros.cpp"
-   ],
    "floorplans": [
     {
      "name": "Pandora",
@@ -20157,11 +20135,13 @@
    "rbf": "PlayChoice10.rbf",
    "repo": "ppriest/Arcade-PlayChoice10_MiSTer",
    "url": "https://github.com/ppriest/Arcade-PlayChoice10_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-19",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 33,
+   "mame_drivers": [
+    "nintendo/playch10.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-18",
    "aliases": [],
@@ -20170,9 +20150,6 @@
    "nsets": 56,
    "ntitles": 54,
    "first_date": "2026-10-18",
-   "drivers_loaded": [
-    "nintendo/playch10.cpp"
-   ],
    "floorplans": [
     {
      "name": "PlayChoice10",
@@ -20191,11 +20168,13 @@
    "rbf": "Seta.rbf",
    "repo": "ppriest/Arcade-Seta_MiSTer",
    "url": "https://github.com/ppriest/Arcade-Seta_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-09-19",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 38,
+   "mame_drivers": [
+    "seta/seta.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-09",
    "aliases": [],
@@ -20204,9 +20183,6 @@
    "nsets": 34,
    "ntitles": 27,
    "first_date": "2026-09-10",
-   "drivers_loaded": [
-    "seta/seta.cpp"
-   ],
    "floorplans": [
     {
      "name": "Seta",
@@ -20225,11 +20201,13 @@
    "rbf": "SetaDowntown.rbf",
    "repo": "ppriest/Arcade-Seta_MiSTer",
    "url": "https://github.com/ppriest/Arcade-Seta_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-09-21",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 38,
+   "mame_drivers": [
+    "seta/downtown.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-09",
    "aliases": [],
@@ -20238,9 +20216,6 @@
    "nsets": 10,
    "ntitles": 6,
    "first_date": "2026-03-13",
-   "drivers_loaded": [
-    "seta/downtown.cpp"
-   ],
    "floorplans": [
     {
      "name": "SetaDowntown",
@@ -20259,11 +20234,13 @@
    "rbf": "Silkroad.rbf",
    "repo": "ppriest/Arcade-Silkroad_MiSTer",
    "url": "https://github.com/ppriest/Arcade-Silkroad_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-24",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 27,
+   "mame_drivers": [
+    "unico/silkroad.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-24",
    "aliases": [],
@@ -20272,9 +20249,6 @@
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2026-10-24",
-   "drivers_loaded": [
-    "unico/silkroad.cpp"
-   ],
    "floorplans": [
     {
      "name": "Silkroad",
@@ -20293,11 +20267,13 @@
    "rbf": "Vamphalf.rbf",
    "repo": "ppriest/Arcade-Vamphalf_MiSTer",
    "url": "https://github.com/ppriest/Arcade-Vamphalf_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-10",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 32,
+   "mame_drivers": [
+    "misc/vamphalf.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-09",
    "aliases": [],
@@ -20306,9 +20282,6 @@
    "nsets": 31,
    "ntitles": 18,
    "first_date": "2026-10-07",
-   "drivers_loaded": [
-    "misc/vamphalf.cpp"
-   ],
    "floorplans": [
     {
      "name": "Vamphalf",
@@ -20871,33 +20844,6 @@
    "drivers_loaded": [
     "rare/kinst.cpp"
    ]
-  },
-  {
-   "id": "repo:konamigx",
-   "name": "KonamiGX (ppriest)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Arcade-KonamiGX_20261013.rbf",
-   "repo": "ppriest/Arcade-KonamiGX_MiSTer",
-   "url": "https://github.com/ppriest/Arcade-KonamiGX_MiSTer",
-   "build_date": "2026-10-13",
-   "status": "analyzed",
-   "reading": "mostly MAME",
-   "score": 29,
-   "mame_drivers": [
-    "konami/konamigx.cpp"
-   ],
-   "note": null,
-   "aliases": [
-    "ongo:ppriest_konamigx"
-   ],
-   "first_recorded": "2026-10-25",
-   "last_seen": "2026-10-31",
-   "binary_only": false,
-   "nsets": 22,
-   "ntitles": 11,
-   "first_date": "2026-10-13"
   },
   {
    "id": "repo:lastduel",
@@ -22277,11 +22223,13 @@
    "rbf": "rmGalivan.rbf",
    "repo": "rmonic79/rm-Galivan_MiSTer",
    "url": "https://github.com/rmonic79/rm-Galivan_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-09-17",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 25,
+   "mame_drivers": [
+    "nichibutsu/galivan.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-09",
    "aliases": [],
@@ -22289,10 +22237,7 @@
    "binary_only": false,
    "nsets": 11,
    "ntitles": 3,
-   "first_date": "2022-08-31",
-   "drivers_loaded": [
-    "nichibutsu/galivan.cpp"
-   ]
+   "first_date": "2022-08-31"
   },
   {
    "id": "rmcores:rmpowerspikes",
@@ -23046,11 +22991,13 @@
    "rbf": "1945kiii.rbf",
    "repo": "shmupfan/Arcade-1945kIII_MiSTer",
    "url": "https://github.com/shmupfan/Arcade-1945kIII_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-06",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 26,
+   "mame_drivers": [
+    "promat/1945kiii.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
@@ -23058,10 +23005,7 @@
    "binary_only": false,
    "nsets": 6,
    "ntitles": 3,
-   "first_date": "2026-10-03",
-   "drivers_loaded": [
-    "promat/1945kiii.cpp"
-   ]
+   "first_date": "2026-10-03"
   },
   {
    "id": "shmupfan:dec8",
@@ -23098,11 +23042,13 @@
    "rbf": "dooyong.rbf",
    "repo": "shmupfan/Arcade-Dooyong_MiSTer",
    "url": "https://github.com/shmupfan/Arcade-Dooyong_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-06",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 17,
+   "mame_drivers": [
+    "dooyong/dooyong.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
@@ -23110,10 +23056,7 @@
    "binary_only": false,
    "nsets": 24,
    "ntitles": 9,
-   "first_date": "2026-09-28",
-   "drivers_loaded": [
-    "dooyong/dooyong.cpp"
-   ]
+   "first_date": "2026-09-28"
   },
   {
    "id": "shmupfan:taitognet",
@@ -23124,11 +23067,13 @@
    "rbf": "TaitoGNET.rbf",
    "repo": "shmupfan/Arcade-TaitoGNET_MiSTer",
    "url": "https://github.com/shmupfan/Arcade-TaitoGNET_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-22",
+   "status": "analyzed",
+   "reading": "both",
+   "score": 44,
+   "mame_drivers": [
+    "sony/taitogn.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-07",
    "aliases": [],
@@ -23136,10 +23081,7 @@
    "binary_only": false,
    "nsets": 29,
    "ntitles": 21,
-   "first_date": "2026-10-06",
-   "drivers_loaded": [
-    "sony/taitogn.cpp"
-   ]
+   "first_date": "2026-10-06"
   },
   {
    "id": "shmupfan:tecmo16",
@@ -23150,11 +23092,13 @@
    "rbf": "tecmo16.rbf",
    "repo": "shmupfan/Arcade-Tecmo16_MiSTer",
    "url": "https://github.com/shmupfan/Arcade-Tecmo16_MiSTer",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
+   "build_date": "2026-10-06",
+   "status": "analyzed",
+   "reading": "mostly MAME",
+   "score": 29,
+   "mame_drivers": [
+    "tecmo/tecmo16.cpp"
+   ],
    "note": null,
    "first_recorded": "2026-10-04",
    "aliases": [],
@@ -23162,10 +23106,7 @@
    "binary_only": false,
    "nsets": 7,
    "ntitles": 3,
-   "first_date": "2026-10-03",
-   "drivers_loaded": [
-    "tecmo/tecmo16.cpp"
-   ]
+   "first_date": "2026-10-03"
   },
   {
    "id": "slop:batsugun",
@@ -23191,6 +23132,56 @@
    "nsets": 4,
    "ntitles": 1,
    "first_date": "2026-07-17"
+  },
+  {
+   "id": "slop:battlebakraid",
+   "name": "BattleBakraid",
+   "source": "slop",
+   "source_title": "Slop Cores (TheJesusFish)",
+   "channel": null,
+   "rbf": "BattleBakraid.rbf",
+   "repo": "TheJesusFish/Slop-Core",
+   "url": "https://github.com/TheJesusFish/Slop-Core",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-31",
+   "last_seen": "2026-10-31",
+   "binary_only": true,
+   "nsets": 4,
+   "ntitles": 1,
+   "first_date": "2022-07-11",
+   "drivers_loaded": [
+    "toaplan/raizing_batrider.cpp"
+   ]
+  },
+  {
+   "id": "slop:battlegaregga",
+   "name": "BattleGaregga",
+   "source": "slop",
+   "source_title": "Slop Cores (TheJesusFish)",
+   "channel": null,
+   "rbf": "BattleGaregga.rbf",
+   "repo": "TheJesusFish/Slop-Core",
+   "url": "https://github.com/TheJesusFish/Slop-Core",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-31",
+   "last_seen": "2026-10-31",
+   "binary_only": false,
+   "nsets": 8,
+   "ntitles": 1,
+   "first_date": "2022-07-22",
+   "drivers_loaded": [
+    "toaplan/raizing.cpp"
+   ]
   },
   {
    "id": "slop:dogyuun",
@@ -24937,10 +24928,10 @@
     "konami/konamigx.cpp"
    ],
    "note": null,
+   "first_recorded": "2026-10-25",
    "aliases": [
     "ppriest:konamigx"
    ],
-   "first_recorded": "2026-10-25",
    "last_seen": "2026-10-31",
    "binary_only": false,
    "nsets": 22,
@@ -28514,7 +28505,10 @@
    "cores": [
     "ppriest:jalecoms32"
    ],
-   "first": "2026-09-13"
+   "first": "2026-09-13",
+   "cores_claimed": [
+    "ppriest:jalecoms32f1"
+   ]
   },
   {
    "sourcefile": "jaleco/psychic5.cpp",
@@ -29120,10 +29114,12 @@
    "cores": [
     "ppriest:konamigx",
     "ppriest:konamigxt34",
-    "repo:konamigx",
     "yaguboo:konamigx"
    ],
-   "first": "2026-09-19"
+   "first": "2026-09-19",
+   "cores_claimed": [
+    "ppriest:konamigxt1"
+   ]
   },
   {
    "sourcefile": "konami/konamim2.cpp",
@@ -34619,6 +34615,7 @@
     "coinop:bgaregga",
     "coinop:kingdmgp",
     "coinop:sstriker",
+    "slop:battlegaregga",
     "slop:kingdomgrandprix",
     "slop:sorcerstriker",
     "zakk:garegga"
@@ -34634,6 +34631,7 @@
    "cores": [
     "coinop:batrider",
     "coinop:bbakraid",
+    "slop:battlebakraid",
     "zakk:bakraid",
     "zakk:batrider"
    ],
@@ -35608,6 +35606,7 @@
   {
    "set": "bgareggz",
    "cores": [
+    "slop:battlegaregga",
     "zakk:garegga"
    ],
    "hbmame": false
