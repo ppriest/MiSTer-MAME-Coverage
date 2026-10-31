@@ -4,15 +4,6 @@
 "updated": "2026-10-31",
 "runs": [
 {
-"date": "2026-10-16",
-"note": "alamone 2026-10-12",
-"cores": 0,
-"sets": 0,
-"pairs": 0,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
 "date": "2026-10-17",
 "note": "alamone 2026-10-12",
 "cores": 0,
@@ -459,6 +450,15 @@
 "cores": 2,
 "sets": 3,
 "pairs": 3,
+"dates_improved": 0,
+"cores_removed": 0
+},
+{
+"date": "2026-10-31",
+"note": "alamone 2026-10-26",
+"cores": 0,
+"sets": 1,
+"pairs": 1,
 "dates_improved": 0,
 "cores_removed": 0
 }
@@ -7932,6 +7932,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-31",
+"aliases": [],
 "last_seen": "2026-10-31"
 },
 "djb:racedrivin_compact": {
@@ -7950,6 +7951,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-31",
+"aliases": [],
 "last_seen": "2026-10-31"
 },
 "gm0rk:atari-g1": {
