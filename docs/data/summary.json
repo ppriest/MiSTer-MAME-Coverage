@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-31T10:50:28+00:00",
+  "generated": "2026-10-31T12:00:43+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-31T10:50:12+00:00",
+  "mister_generated": "2026-10-31T12:00:22+00:00",
   "alamone_generated": "2026-10-26T09:17:05+00:00",
   "ledger_updated": "2026-10-31",
   "ledger_runs": [
-   {
-    "date": "2026-10-28",
-    "note": "alamone 2026-10-26",
-    "cores": 6,
-    "sets": 22,
-    "pairs": 54,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-29",
     "note": "alamone 2026-10-26",
@@ -49,6 +40,15 @@
     "cores": 12,
     "sets": 25,
     "pairs": 50,
+    "dates_improved": 0,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-10-31",
+    "note": "alamone 2026-10-26",
+    "cores": 0,
+    "sets": 1,
+    "pairs": 1,
     "dates_improved": 0,
     "cores_removed": 0
    }
@@ -3817,6 +3817,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-31",
+   "aliases": [],
    "last_seen": "2026-10-31",
    "binary_only": true,
    "nsets": 16,
@@ -4598,6 +4599,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-31",
+   "aliases": [],
    "last_seen": "2026-10-31",
    "binary_only": true,
    "nsets": 1,
@@ -7163,6 +7165,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-31",
+   "aliases": [],
    "last_seen": "2026-10-31",
    "binary_only": false,
    "nsets": 1,
@@ -12970,6 +12973,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-31",
+   "aliases": [],
    "last_seen": "2026-10-31",
    "binary_only": false,
    "nsets": 1,
@@ -17533,6 +17537,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-31",
+   "aliases": [],
    "last_seen": "2026-10-31",
    "binary_only": false,
    "nsets": 1,
@@ -18240,6 +18245,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-31",
+   "aliases": [],
    "last_seen": "2026-10-31",
    "binary_only": true,
    "nsets": 1,
@@ -18662,6 +18668,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-10-31",
+   "aliases": [],
    "last_seen": "2026-10-31",
    "binary_only": true,
    "nsets": 1,
@@ -18758,7 +18765,15 @@
    "binary_only": false,
    "nsets": 40,
    "ntitles": 26,
-   "first_date": "2026-09-26"
+   "first_date": "2026-09-26",
+   "floorplans": [
+    {
+     "name": "BallySente",
+     "file": "fp-BallySente-b81a02c29d.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:decomlc",
@@ -18781,7 +18796,15 @@
    "binary_only": false,
    "nsets": 2,
    "ntitles": 1,
-   "first_date": "2026-10-26"
+   "first_date": "2026-10-26",
+   "floorplans": [
+    {
+     "name": "DecoMLC",
+     "file": "fp-DecoMLC-1a2a85596a.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:decomlc156",
@@ -18804,7 +18827,15 @@
    "binary_only": false,
    "nsets": 8,
    "ntitles": 3,
-   "first_date": "2026-10-26"
+   "first_date": "2026-10-26",
+   "floorplans": [
+    {
+     "name": "DecoMLC156",
+     "file": "fp-DecoMLC156-3ad815754a.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:dreamworld",
@@ -18827,7 +18858,15 @@
    "binary_only": false,
    "nsets": 7,
    "ntitles": 5,
-   "first_date": "2026-10-17"
+   "first_date": "2026-10-17",
+   "floorplans": [
+    {
+     "name": "DreamWorld",
+     "file": "fp-DreamWorld-2b60385cb6.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:eolith",
@@ -18850,7 +18889,15 @@
    "binary_only": false,
    "nsets": 22,
    "ntitles": 15,
-   "first_date": "2026-10-10"
+   "first_date": "2026-10-10",
+   "floorplans": [
+    {
+     "name": "Eolith",
+     "file": "fp-Eolith-d4ec3b87c7.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:gstream",
@@ -18873,7 +18920,15 @@
    "binary_only": false,
    "nsets": 1,
    "ntitles": 1,
-   "first_date": "2026-10-14"
+   "first_date": "2026-10-14",
+   "floorplans": [
+    {
+     "name": "GStream",
+     "file": "fp-GStream-8c573542ad.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:hyperng64",
@@ -18896,7 +18951,15 @@
    "binary_only": false,
    "nsets": 7,
    "ntitles": 7,
-   "first_date": "2026-09-20"
+   "first_date": "2026-09-20",
+   "floorplans": [
+    {
+     "name": "HyperNG64",
+     "file": "fp-HyperNG64-c939e985a6.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:jalecoms32",
@@ -18919,7 +18982,15 @@
    "binary_only": false,
    "nsets": 13,
    "ntitles": 10,
-   "first_date": "2026-09-13"
+   "first_date": "2026-09-13",
+   "floorplans": [
+    {
+     "name": "MS32",
+     "file": "fp-MS32-d4210973f1.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:jalecoms32f1",
@@ -18942,7 +19013,15 @@
    "binary_only": false,
    "nsets": 0,
    "ntitles": 0,
-   "first_date": "2026-09-26"
+   "first_date": "2026-09-26",
+   "floorplans": [
+    {
+     "name": "MS32F1",
+     "file": "fp-MS32F1-5ed3b8b895.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:konamigx",
@@ -18965,7 +19044,15 @@
    "binary_only": false,
    "nsets": 22,
    "ntitles": 11,
-   "first_date": "2026-09-19"
+   "first_date": "2026-09-19",
+   "floorplans": [
+    {
+     "name": "KonamiGX",
+     "file": "fp-KonamiGX-7a876885bd.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:konamigxt1",
@@ -18988,7 +19075,15 @@
    "binary_only": false,
    "nsets": 0,
    "ntitles": 0,
-   "first_date": "2026-10-10"
+   "first_date": "2026-10-10",
+   "floorplans": [
+    {
+     "name": "KonamiGXT1",
+     "file": "fp-KonamiGXT1-cc2d50b7df.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:konamigxt34",
@@ -19011,7 +19106,15 @@
    "binary_only": false,
    "nsets": 13,
    "ntitles": 4,
-   "first_date": "2026-10-08"
+   "first_date": "2026-10-08",
+   "floorplans": [
+    {
+     "name": "KonamiGXT34",
+     "file": "fp-KonamiGXT34-cb71992bce.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:konamihornet",
@@ -19034,7 +19137,15 @@
    "binary_only": false,
    "nsets": 7,
    "ntitles": 2,
-   "first_date": "2026-10-24"
+   "first_date": "2026-10-24",
+   "floorplans": [
+    {
+     "name": "KonamiHornet",
+     "file": "fp-KonamiHornet-7c4a59ec0c.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:lethalenforcers",
@@ -19057,7 +19168,15 @@
    "binary_only": false,
    "nsets": 9,
    "ntitles": 1,
-   "first_date": "2026-10-19"
+   "first_date": "2026-10-19",
+   "floorplans": [
+    {
+     "name": "LethalEnforcers",
+     "file": "fp-LethalEnforcers-87c6f77d60.png",
+     "w": 1056,
+     "h": 654
+    }
+   ]
   },
   {
    "id": "ppriest:limenko",
@@ -19080,7 +19199,15 @@
    "binary_only": false,
    "nsets": 6,
    "ntitles": 5,
-   "first_date": "2026-10-13"
+   "first_date": "2026-10-13",
+   "floorplans": [
+    {
+     "name": "Limenko",
+     "file": "fp-Limenko-a0fb7dfb34.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:nixpirates",
@@ -19103,7 +19230,15 @@
    "binary_only": false,
    "nsets": 3,
    "ntitles": 2,
-   "first_date": "2026-10-10"
+   "first_date": "2026-10-10",
+   "floorplans": [
+    {
+     "name": "NixPirates",
+     "file": "fp-NixPirates-d278bb1014.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:pandora",
@@ -19126,7 +19261,15 @@
    "binary_only": false,
    "nsets": 28,
    "ntitles": 16,
-   "first_date": "2026-10-06"
+   "first_date": "2026-10-06",
+   "floorplans": [
+    {
+     "name": "Pandora",
+     "file": "fp-Pandora-90fef50591.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:playchoice10",
@@ -19149,7 +19292,15 @@
    "binary_only": false,
    "nsets": 56,
    "ntitles": 54,
-   "first_date": "2026-10-18"
+   "first_date": "2026-10-18",
+   "floorplans": [
+    {
+     "name": "PlayChoice10",
+     "file": "fp-PlayChoice10-4e2bfab8e9.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:seta",
@@ -19172,7 +19323,15 @@
    "binary_only": false,
    "nsets": 34,
    "ntitles": 27,
-   "first_date": "2026-09-10"
+   "first_date": "2026-09-10",
+   "floorplans": [
+    {
+     "name": "Seta",
+     "file": "fp-Seta-3d1cfbb478.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:setadowntown",
@@ -19195,7 +19354,15 @@
    "binary_only": false,
    "nsets": 10,
    "ntitles": 6,
-   "first_date": "2026-03-13"
+   "first_date": "2026-03-13",
+   "floorplans": [
+    {
+     "name": "SetaDowntown",
+     "file": "fp-SetaDowntown-3206bea47d.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:silkroad",
@@ -19218,7 +19385,15 @@
    "binary_only": false,
    "nsets": 2,
    "ntitles": 1,
-   "first_date": "2026-10-24"
+   "first_date": "2026-10-24",
+   "floorplans": [
+    {
+     "name": "Silkroad",
+     "file": "fp-Silkroad-717d58c235.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "ppriest:vamphalf",
@@ -19241,7 +19416,15 @@
    "binary_only": false,
    "nsets": 31,
    "ntitles": 18,
-   "first_date": "2026-10-07"
+   "first_date": "2026-10-07",
+   "floorplans": [
+    {
+     "name": "Vamphalf",
+     "file": "fp-Vamphalf-f78d0f83c7.png",
+     "w": 1072,
+     "h": 678
+    }
+   ]
   },
   {
    "id": "repo:10yardfight",

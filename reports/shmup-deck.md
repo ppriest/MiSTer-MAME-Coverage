@@ -6,11 +6,7 @@ Generated 2026-10-31 by `tools/reconcile_shmups.py` from MAME 0289 data and [shm
 
 ## New since the previous report
 
-**3 title(s) we deem Shmup that the deck does not list** (check each: add to the deck, or fix our genre):
-
-- `scion` Scion (1984; Shooter / Flying Vertical)
-- `stinger` Stinger (1983; Shooter / Flying Horizontal)
-- `thunderj` ThunderJaws (rev 3) (1990; Shooter / Misc. Horizontal)
+Nothing new: the same titles disagree as before.
 
 ## A. Deck games our data does not call Shmup (2)
 
@@ -27,9 +23,6 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 
 | Set | Title | Year | Raw category (source) | Cores |
 |---|---|---|---|---|
-| **NEW** `scion` | Scion | 1984 | Shooter / Flying Vertical (catver) | Scion |
-| **NEW** `stinger` | Stinger | 1983 | Shooter / Flying Horizontal (catver) | Stinger |
-| **NEW** `thunderj` | ThunderJaws (rev 3) | 1990 | Shooter / Misc. Horizontal (catver) | ThunderJaws |
 | `pc_1942` | 1942 (PlayChoice-10) | 1987 | Shooter / Flying Vertical (catver) | PlayChoice10 |
 | `1943mii` | 1943: The Battle of Midway Mark II (US) | 1987 | Shooter / Flying Vertical (catver) | jt1943 |
 | `afighter` | Action Fighter (FD1089A 317-0018) | 1986 | Shooter / Misc. Vertical (catver) | jts16, jts16b |
@@ -118,6 +111,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `rescue` | Rescue | 1982 | Shooter / Flying (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |
 | `searchar` | SAR - Search And Rescue (World) | 1989 | Shooter / Walking (catver) | SNK68, SARTwinStick, SNK68 (va7deo) |
 | `sauro` | Sauro (set 1) | 1987 | Shooter / Flying Horizontal (catver) | ffsauro, Sauro (shimian5) |
+| `scion` | Scion | 1984 | Shooter / Flying Vertical (catver) | Scion |
 | `scotrsht` | Scooter Shooter | 1985 | Shooter / Flying (catver) | ScooterShooter |
 | `scorpion` | Scorpion (set 1) | 1982 | Shooter / Flying Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `sfposeid` | Sea Fighter Poseidon | 1984 | Shooter / Misc. Horizontal (catver) | TaitoSJ |
@@ -132,6 +126,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `amazon` | Soldier Girl Amazon | 1986 | Shooter / Walking (catver) | terracresta |
 | `ar_sprg` | Space Ranger (Arcadia, V 2.0) | 1987 | Shooter / Flying Horizontal (catver) | arcadiasystems (decoryah) |
 | `stargate` | Stargate | 1981 | Shooter / Flying (catver) | Robotron, Williams_TestBuild (RodimusFVC) |
+| `stinger` | Stinger | 1983 | Shooter / Flying Horizontal (catver) | Stinger |
 | `strkforc` | Strike Force (rev 1 02/25/91) | 1991 | Shooter / Flying (catver) | blahm1d_yunit, Midway-Y-Unit |
 | `srmdb` | Sunset Riders (scrambled bootleg of Mega Drive version) | 1993 | Shooter / Misc. Horizontal (catver) | TomSVR_mdboot |
 | `superbik` | Superbike | 1983 | Shooter / Driving Horizontal (catver) | BAZSET_CVS, Galaxian, Galaxian_TestBuild (RodimusFVC) |
@@ -141,6 +136,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `ghostb` | The Real Ghostbusters (US 2 Players, revision 2) | 1987 | Shooter / Walking (catver) | DEC8 |
 | `thndrbld` | Thunder Blade (upright) (FD1094 317-0056) | 1987 | Shooter / Flying (catver) | SegaXBoard |
 | `thndzone` | Thunder Zone (World, Rev 1) | 1991 | Shooter / Walking (catver) | thndzone |
+| `thunderj` | ThunderJaws (rev 3) | 1990 | Shooter / Misc. Horizontal (catver) | ThunderJaws |
 | `timefgtr` | Time Fighter (Time Pilot conversion on Galaxian hardware) | 198? | Shooter / Flying (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `timesold` | Time Soldiers (US Rev 3) | 1987 | Shooter / Walking (catver) | Alpha68k, TimeSoldiersTwinStick, Alpha68k (va7deo) |
 | `tokisens` | Toki no Senshi - Chrono Soldier (MC-8123, 317-0040) | 1987 | Shooter / Walking (catver) | SegaSystem1-2, SegaSystem1-2_TestBuild (RodimusFVC) |

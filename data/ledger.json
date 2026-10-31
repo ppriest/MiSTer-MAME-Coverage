@@ -6,15 +6,6 @@
 {
 "date": "2026-10-16",
 "note": "alamone 2026-10-12",
-"cores": 1,
-"sets": 5,
-"pairs": 5,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
-"date": "2026-10-16",
-"note": "alamone 2026-10-12",
 "cores": 0,
 "sets": 0,
 "pairs": 0,
@@ -461,6 +452,15 @@
 "pairs": 50,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-10-31",
+"note": "alamone 2026-10-26",
+"cores": 0,
+"sets": 1,
+"pairs": 1,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -711,6 +711,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-31",
+"aliases": [],
 "last_seen": "2026-10-31"
 },
 "bazset:bazsetpushman": {
@@ -1356,6 +1357,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-31",
+"aliases": [],
 "last_seen": "2026-10-31"
 },
 "bazset:suck_my_bouncing_balls": {
@@ -3485,6 +3487,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-31",
+"aliases": [],
 "last_seen": "2026-10-31"
 },
 "decoryah:taitol": {
@@ -8364,6 +8367,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-31",
+"aliases": [],
 "last_seen": "2026-10-31"
 },
 "jlrh:ffgwar": {
@@ -12195,6 +12199,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-31",
+"aliases": [],
 "last_seen": "2026-10-31"
 },
 "meat:ikki": {
@@ -12786,6 +12791,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-31",
+"aliases": [],
 "last_seen": "2026-10-31"
 },
 "meat:timesoldierstwinstick": {
@@ -13364,6 +13370,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-31",
+"aliases": [],
 "last_seen": "2026-10-31"
 },
 "ongo:bazset_diamondrun": {
@@ -14427,6 +14434,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-31",
+"aliases": [],
 "last_seen": "2026-10-31"
 },
 "ongo:ffgwar": {
@@ -14825,6 +14833,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-31",
+"aliases": [],
 "last_seen": "2026-10-31"
 },
 "ongo:ikkisunsoft": {
@@ -16474,6 +16483,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-31",
+"aliases": [],
 "last_seen": "2026-10-31"
 },
 "ongo:segasys1_b23_full": {
@@ -16700,6 +16710,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-31",
+"aliases": [],
 "last_seen": "2026-10-31"
 },
 "ongo:stoneball": {
@@ -16927,6 +16938,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-10-31",
+"aliases": [],
 "last_seen": "2026-10-31"
 },
 "ongo:timesoldierstwinstick": {
