@@ -1120,9 +1120,11 @@
     }
   }
   (function () {
-    const sel = $("#theme"); let t = "";
-    try { t = localStorage.getItem("theme") || ""; } catch (e) { /* storage unavailable */ }
-    if (!["light", "dark", ...Object.keys(FX)].includes(t) || DISABLED_THEMES.includes(t)) t = "";      // (a stored choice of a switched-off theme falls back to System Default)
+    const sel = $("#theme"); let t = null;
+    try { t = localStorage.getItem("theme"); } catch (e) { /* storage unavailable */ }
+    const now = new Date();
+    if (t === null && now.getMonth() === 9 && now.getDate() === 31) t = "halloween";      // no theme set: Halloween is the default on 31 October (not saved, so it lapses the next day)
+    if (!["light", "dark", ...Object.keys(FX)].includes(t) || DISABLED_THEMES.includes(t)) t = "";      // nothing stored (System Default), or a switched-off theme      // (a stored choice of a switched-off theme falls back to System Default)
     sel.value = t; applyTheme(t);
     sel.addEventListener("change", () => { applyTheme(sel.value); if (FX[sel.value]) neonSound("power"); try { sel.value ? localStorage.setItem("theme", sel.value) : localStorage.removeItem("theme"); } catch (e) { /* not saved */ } });
   })();

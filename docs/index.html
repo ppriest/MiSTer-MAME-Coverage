@@ -11,8 +11,8 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<script>/* the chosen theme is applied before the stylesheet paints (no flash); no choice = the system's */
-try { var t = localStorage.getItem("theme"); if (["light", "dark", "neon", "halloween"].includes(t)) document.documentElement.dataset.theme = t; } catch (e) { /* storage unavailable: the system theme */ }
+<script>/* the chosen theme is applied before the stylesheet paints (no flash); no choice = the system's, except that on 31 October (the browser's date) Halloween is the default */
+try { var t = localStorage.getItem("theme"), d = new Date(); if (t === null && d.getMonth() === 9 && d.getDate() === 31) t = "halloween"; if (["light", "dark", "neon", "halloween"].includes(t)) document.documentElement.dataset.theme = t; } catch (e) { /* storage unavailable: the system theme */ }
 </script>
 <link rel="stylesheet" href="style.css?v=5857bcd987">
 </head>
@@ -372,6 +372,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=95995a4408"></script>
+<script src="app.js?v=982ca61f86"></script>
 </body>
 </html>
