@@ -1390,6 +1390,12 @@
   "MiSTer-devel/MRA-Alternatives_MiSTer",
   "zakk4223/Mister-MRA"
  ],
+ "djb:racedrivin_cockpit": [
+  "djb-rh/Arcade-RaceDrivin_MiSTer"
+ ],
+ "djb:racedrivin_compact": [
+  "djb-rh/Arcade-RaceDrivin_MiSTer"
+ ],
  "illegalmp3:konami_system_573": [
   "illegalmp3/System573_MiSTer"
  ],

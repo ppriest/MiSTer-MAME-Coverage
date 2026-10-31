@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-31T12:00:43+00:00",
+  "generated": "2026-10-31T12:47:50+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-10-31T12:00:22+00:00",
+  "mister_generated": "2026-10-31T12:47:38+00:00",
   "alamone_generated": "2026-10-26T09:17:05+00:00",
   "ledger_updated": "2026-10-31",
   "ledger_runs": [
-   {
-    "date": "2026-10-29",
-    "note": "alamone 2026-10-26",
-    "cores": 18,
-    "sets": 35,
-    "pairs": 173,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-29",
     "note": "alamone 2026-10-26",
@@ -51,6 +42,15 @@
     "pairs": 1,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-10-31",
+    "note": "alamone 2026-10-26",
+    "cores": 2,
+    "sets": 3,
+    "pairs": 3,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5491 sets, 5491 used); mame2016: catver_mame2016.ini (37065 sets, 32543 used)",
    "catver_entries": 38034,
    "mad_entries": 2995,
-   "mra_entries": 4219,
+   "mra_entries": 4221,
    "unmapped": [
     {
      "raw": "not classified",
@@ -126,6 +126,7 @@
    "yaguboo": "yaguboo (GitHub repositories)",
    "rodimus": "RodimusFVC",
    "zakk": "zakk4223 (GitHub repositories)",
+   "djb": "djb-rh (GitHub repositories)",
    "decoryah": "decoryah",
    "tomsvr": "TomSVR",
    "asturur": "Andrea Bogazzi (asturur)",
@@ -224,6 +225,10 @@
    },
    "zakk": {
     "page": "https://github.com/zakk4223?tab=repositories",
+    "db_url": null
+   },
+   "djb": {
+    "page": "https://github.com/djb-rh?tab=repositories",
     "db_url": null
    },
    "decoryah": {
@@ -3457,6 +3462,12 @@
     "repo": "zakk4223/pr4m0d-MISTer-bin",
     "dirs": null,
     "mras": 15
+   },
+   {
+    "source": "djb",
+    "repo": "djb-rh/Arcade-RaceDrivin_MiSTer",
+    "dirs": null,
+    "mras": 4
    }
   ],
   "repo_errors": [
@@ -3512,12 +3523,12 @@
   "counts": {
    "titles": 6826,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2560,
+   "working_arcade_titles_covered": 2561,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 6606,
-   "working_arcade_titles_source": 2334,
+   "working_arcade_sets_covered": 6608,
+   "working_arcade_titles_source": 2335,
    "working_arcade_titles_binary_only": 226,
-   "cores": 833,
+   "cores": 835,
    "binary_only_cores": 333,
    "unmatched_sets": 518
   }
@@ -12437,6 +12448,50 @@
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2019-12-19"
+  },
+  {
+   "id": "djb:racedrivin_cockpit",
+   "name": "RaceDrivin_cockpit",
+   "source": "djb",
+   "source_title": "djb-rh (GitHub repositories)",
+   "channel": null,
+   "rbf": "RaceDrivin_cockpit.rbf",
+   "repo": "djb-rh/Arcade-RaceDrivin_MiSTer",
+   "url": "https://github.com/djb-rh/Arcade-RaceDrivin_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-31",
+   "last_seen": "2026-10-31",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-27"
+  },
+  {
+   "id": "djb:racedrivin_compact",
+   "name": "RaceDrivin_compact",
+   "source": "djb",
+   "source_title": "djb-rh (GitHub repositories)",
+   "channel": null,
+   "rbf": "RaceDrivin_compact.rbf",
+   "repo": "djb-rh/Arcade-RaceDrivin_MiSTer",
+   "url": "https://github.com/djb-rh/Arcade-RaceDrivin_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-10-31",
+   "last_seen": "2026-10-31",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-27"
   },
   {
    "id": "gm0rk:atari-g1",
@@ -24672,10 +24727,12 @@
   {
    "sourcefile": "atari/harddriv.cpp",
    "titles": 6,
-   "covered": 2,
+   "covered": 3,
    "sets": 54,
-   "sets_covered": 2,
+   "sets_covered": 4,
    "cores": [
+    "djb:racedrivin_cockpit",
+    "djb:racedrivin_compact",
     "meat:stunrunner",
     "repo:harddrivin_cockpit"
    ],

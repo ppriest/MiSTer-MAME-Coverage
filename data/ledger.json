@@ -9,15 +9,6 @@
 "cores": 0,
 "sets": 0,
 "pairs": 0,
-"dates_improved": 6,
-"cores_removed": 0
-},
-{
-"date": "2026-10-16",
-"note": "alamone 2026-10-12",
-"cores": 0,
-"sets": 0,
-"pairs": 0,
 "dates_improved": 0,
 "cores_removed": 0
 },
@@ -459,6 +450,15 @@
 "cores": 0,
 "sets": 1,
 "pairs": 1,
+"dates_improved": 0,
+"cores_removed": 0
+},
+{
+"date": "2026-10-31",
+"note": "alamone 2026-10-26",
+"cores": 2,
+"sets": 3,
+"pairs": 3,
 "dates_improved": 0,
 "cores_removed": 0
 }
@@ -7914,6 +7914,42 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-10-31"
+},
+"djb:racedrivin_cockpit": {
+"id": "djb:racedrivin_cockpit",
+"name": "RaceDrivin_cockpit",
+"source": "djb",
+"source_title": "djb-rh (GitHub repositories)",
+"channel": null,
+"rbf": "RaceDrivin_cockpit.rbf",
+"repo": "djb-rh/Arcade-RaceDrivin_MiSTer",
+"url": "https://github.com/djb-rh/Arcade-RaceDrivin_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
+},
+"djb:racedrivin_compact": {
+"id": "djb:racedrivin_compact",
+"name": "RaceDrivin_compact",
+"source": "djb",
+"source_title": "djb-rh (GitHub repositories)",
+"channel": null,
+"rbf": "RaceDrivin_compact.rbf",
+"repo": "djb-rh/Arcade-RaceDrivin_MiSTer",
+"url": "https://github.com/djb-rh/Arcade-RaceDrivin_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-10-31",
 "last_seen": "2026-10-31"
 },
 "gm0rk:atari-g1": {
@@ -122407,6 +122443,36 @@
 "last_seen": "2026-10-31"
 }
 },
+"racedriv": {
+"djb:racedrivin_cockpit": {
+"core": "djb:racedrivin_cockpit",
+"date": "2026-10-27",
+"date_quality": "git",
+"via": "djb",
+"wip": false,
+"alt": false,
+"first_repo": "djb-rh/Arcade-RaceDrivin_MiSTer",
+"first_path": "releases/Race Drivin' (Cockpit, rev 5).mra",
+"mra": "_Arcade/Race Drivin' (Cockpit, rev 5).mra",
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
+}
+},
+"racedrivc": {
+"djb:racedrivin_compact": {
+"core": "djb:racedrivin_compact",
+"date": "2026-10-27",
+"date_quality": "git",
+"via": "djb",
+"wip": false,
+"alt": false,
+"first_repo": "djb-rh/Arcade-RaceDrivin_MiSTer",
+"first_path": "releases/Race Drivin' (Compact, rev 5).mra",
+"mra": "_Arcade/Race Drivin' (Compact, rev 5).mra",
+"first_recorded": "2026-10-31",
+"last_seen": "2026-10-31"
+}
+},
 "rachero": {
 "dist:segaxboard": {
 "core": "dist:segaxboard",
@@ -187222,6 +187288,12 @@
 "repo": "Platform",
 "ppriest": "Platform",
 "ongo": "Platform"
+},
+"racedriv": {
+"djb": "Racing"
+},
+"racedrivc": {
+"djb": "Racing"
 },
 "rachero": {
 "dist": "Shooter / Flight",
