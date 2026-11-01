@@ -626,3 +626,11 @@ label.themepick select option { color: #111; background: #fff; }
 .gallery.fp img { min-height: 0; background: #fff; }
 #lightbox.plain .lb-fxs, #lightbox.plain .lb-scan, #lightbox.plain .lb-side, #lightbox.plain .lb-crt { display: none !important; }
 #lightbox.plain img { image-rendering: auto; background: #fff; border-radius: 2px; }
+
+/* a driver's screenshots: bordered like the charts (blue: on MiSTer, orange: not on MiSTer) */
+.gallery figure.on img, .gallery figure.on .scr { border: 2px solid var(--accent); }
+.gallery figure.off img, .gallery figure.off .scr { border: 2px solid var(--accent-2); }
+.covkey { font-weight: 400; text-transform: none; letter-spacing: 0; margin-left: 8px; color: var(--text-2); }
+.covkey i { display: inline-block; width: 10px; height: 10px; margin: 0 4px 0 8px; vertical-align: -1px; border-radius: 2px; }
+.covkey i:first-child { margin-left: 0; }
+.covkey i.on { background: var(--accent); } .covkey i.off { background: var(--accent-2); }

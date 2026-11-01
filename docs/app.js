@@ -833,7 +833,7 @@
   const SHOT_MAX = 50;
   // What the zoom needs to turn a shot over: its kind, the other kind's URL (when the title has both) and the title's description.
   const altAttrs = (t, k) => { const o = k === "ingame" ? "title" : "ingame"; return `data-kind="${k}" data-desc="${esc(t.desc)}"${t.screens_force ? ` data-force="${esc(t.screens_force)}"` : ""}${t.img[o] ? ` data-alt="${esc(IMAGE_BASE + "/" + t.img[o])}"` : ""}`; };
-  function galleryHtml(titles, both) {
+  function galleryHtml(titles, both, mark) {      // mark: border each shot by whether its title is on MiSTer (the colours of the charts)
     if (!IMAGE_BASE) return "";
     const withImg = titles.filter(t => t.img && (t.img.ingame || t.img.title));
     if (!withImg.length) return "";
@@ -842,7 +842,7 @@
       : withImg.slice().sort((x, y) => (y.covered - x.covered) || x.desc.localeCompare(y.desc)).map(t => ({ t, k: t.img.ingame ? "ingame" : "title" }));
     const shown = items.slice(0, SHOT_MAX);
     const note = items.length > shown.length ? ` <span class="muted">(first ${shown.length} of ${fmt(items.length)})</span>` : "";
-    return `<div class="gallery-box"><h4>Screenshots${note}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure title="${esc(t.desc)} (${esc(t.year)})" data-t="${esc(t.name)}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" ${altAttrs(t, k)} data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
+    return `<div class="gallery-box"><h4>Screenshots${note}${mark ? ' <span class="covkey"><i class="on"></i>on MiSTer <i class="off"></i>not on MiSTer</span>' : ""}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure${mark ? ` class="${t.covered_working > 0 ? "on" : "off"}"` : ""} title="${esc(t.desc)} (${esc(t.year)})" data-t="${esc(t.name)}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" ${altAttrs(t, k)} data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
       <img loading="lazy" src="${esc(IMAGE_BASE + "/" + t.img[k])}" alt="${esc(t.desc)}" onerror="this.closest('figure').remove()">
       <figcaption>${esc(t.desc)}${both ? ` <span class="muted">${k === "title" ? "title screen" : "in game"}</span>` : ""}</figcaption></figure>`).join("")}</div></div>`;
   }
@@ -890,7 +890,7 @@
     if (has) return;
     const row = document.createElement("tr");
     row.className = "hw";
-    row.innerHTML = `<td colspan="${tr.cells.length}">${/(^|\/)playch10\.cpp$/.test(file) ? cabinetLink : ""}<div class="hwslot" data-hwfile="${esc(file)}"></div>${galleryHtml(S.titles.filter(t => t.sourcefile === file))}</td>`;
+    row.innerHTML = `<td colspan="${tr.cells.length}">${/(^|\/)playch10\.cpp$/.test(file) ? cabinetLink : ""}<div class="hwslot" data-hwfile="${esc(file)}"></div>${galleryHtml(S.titles.filter(t => t.sourcefile === file), false, true)}</td>`;
     tr.after(row);
     fillHardware(row);
   }
