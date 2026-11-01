@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-11-01T11:47:03+00:00",
+  "generated": "2026-11-01T23:25:51+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-11-01T11:46:44+00:00",
+  "mister_generated": "2026-11-01T23:25:32+00:00",
   "alamone_generated": "2026-10-26T09:17:05+00:00",
   "ledger_updated": "2026-11-01",
   "ledger_runs": [
-   {
-    "date": "2026-10-31",
-    "note": "alamone 2026-10-26",
-    "cores": 0,
-    "sets": 1,
-    "pairs": 1,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-10-31",
     "note": "alamone 2026-10-26",
@@ -51,6 +42,15 @@
     "pairs": 146,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-11-01",
+    "note": "alamone 2026-10-26",
+    "cores": 8,
+    "sets": 17,
+    "pairs": 22,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5491 sets, 5491 used); mame2016: catver_mame2016.ini (37065 sets, 32543 used)",
    "catver_entries": 38034,
    "mad_entries": 2995,
-   "mra_entries": 4359,
+   "mra_entries": 4371,
    "unmapped": [
     {
      "raw": "not classified",
@@ -2905,7 +2905,7 @@
     "source": "ongo",
     "repo": "bazset/MiSTer_BAZSET",
     "dirs": null,
-    "mras": 76
+    "mras": 77
    },
    {
     "source": "ongo",
@@ -3529,13 +3529,13 @@
   "counts": {
    "titles": 6826,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2561,
+   "working_arcade_titles_covered": 2570,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 6614,
-   "working_arcade_titles_source": 2335,
-   "working_arcade_titles_binary_only": 226,
-   "cores": 864,
-   "binary_only_cores": 364,
+   "working_arcade_sets_covered": 6627,
+   "working_arcade_titles_source": 2343,
+   "working_arcade_titles_binary_only": 227,
+   "cores": 869,
+   "binary_only_cores": 367,
    "unmatched_sets": 519
   }
  },
@@ -3590,6 +3590,81 @@
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2026-08-26"
+  },
+  {
+   "id": "asturur:jtapach3",
+   "name": "jtapach3",
+   "source": "asturur",
+   "source_title": "Andrea Bogazzi (asturur)",
+   "channel": null,
+   "rbf": "jtapach3.rbf",
+   "repo": "asturur/Mister-cores",
+   "url": "https://github.com/asturur/Mister-cores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-01",
+   "last_seen": "2026-11-01",
+   "binary_only": false,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": "2026-11-01",
+   "drivers_loaded": [
+    "tatsumi/apache3.cpp"
+   ]
+  },
+  {
+   "id": "asturur:jtcrshrc",
+   "name": "jtcrshrc",
+   "source": "asturur",
+   "source_title": "Andrea Bogazzi (asturur)",
+   "channel": null,
+   "rbf": "jtcrshrc.rbf",
+   "repo": "asturur/Mister-cores",
+   "url": "https://github.com/asturur/Mister-cores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-01",
+   "last_seen": "2026-11-01",
+   "binary_only": false,
+   "nsets": 3,
+   "ntitles": 1,
+   "first_date": "2026-10-28",
+   "drivers_loaded": [
+    "vsystem/crshrace.cpp"
+   ]
+  },
+  {
+   "id": "asturur:jtf1gpr2",
+   "name": "jtf1gpr2",
+   "source": "asturur",
+   "source_title": "Andrea Bogazzi (asturur)",
+   "channel": null,
+   "rbf": "jtf1gpr2.rbf",
+   "repo": "asturur/Mister-cores",
+   "url": "https://github.com/asturur/Mister-cores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-01",
+   "last_seen": "2026-11-01",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-11-01",
+   "drivers_loaded": [
+    "vsystem/f1gp.cpp"
+   ]
   },
   {
    "id": "asturur:jtf1grpr",
@@ -4529,6 +4604,31 @@
    ]
   },
   {
+   "id": "bazset:mustacheboy",
+   "name": "MustacheBoy",
+   "source": "bazset",
+   "source_title": "bazset (MiSTer_BAZSET)",
+   "channel": null,
+   "rbf": "Arcade-MustacheBoy.rbf",
+   "repo": "bazset/MiSTer_BAZSET",
+   "url": "https://github.com/bazset/MiSTer_BAZSET",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-01",
+   "last_seen": "2026-11-01",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-11-01",
+   "drivers_loaded": [
+    "seibu/mustache.cpp"
+   ]
+  },
+  {
    "id": "bazset:night_striker_bazset",
    "name": "Night_Striker_bazset",
    "source": "bazset",
@@ -4682,6 +4782,31 @@
    "first_date": "2026-10-07",
    "drivers_loaded": [
     "taito/taito_z.cpp"
+   ]
+  },
+  {
+   "id": "bazset:scion",
+   "name": "Scion",
+   "source": "bazset",
+   "source_title": "bazset (MiSTer_BAZSET)",
+   "channel": null,
+   "rbf": "Arcade-Scion.rbf",
+   "repo": "bazset/MiSTer_BAZSET",
+   "url": "https://github.com/bazset/MiSTer_BAZSET",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-01",
+   "last_seen": "2026-11-01",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-10-31",
+   "drivers_loaded": [
+    "seibu/wiz.cpp"
    ]
   },
   {
@@ -5351,6 +5476,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 4,
@@ -5376,6 +5502,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 4,
@@ -5636,6 +5763,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 5,
@@ -5661,6 +5789,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 6,
@@ -5764,6 +5893,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 2,
@@ -5921,6 +6051,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 4,
@@ -5972,6 +6103,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 12,
@@ -5997,6 +6129,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 9,
@@ -6048,6 +6181,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 4,
@@ -6151,6 +6285,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 4,
@@ -6176,6 +6311,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 6,
@@ -6279,6 +6415,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 3,
@@ -6330,6 +6467,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 4,
@@ -6381,6 +6519,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 4,
@@ -6406,6 +6545,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 2,
@@ -6483,6 +6623,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 4,
@@ -6586,6 +6727,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 3,
@@ -6637,6 +6779,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 1,
@@ -6688,6 +6831,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 2,
@@ -6713,6 +6857,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 1,
@@ -6816,6 +6961,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 25,
@@ -6841,6 +6987,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 10,
@@ -6866,6 +7013,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 3,
@@ -6995,6 +7143,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 4,
@@ -7255,6 +7404,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 3,
@@ -7306,6 +7456,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 5,
@@ -7384,6 +7535,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-01",
+   "aliases": [],
    "last_seen": "2026-11-01",
    "binary_only": true,
    "nsets": 4,
@@ -19905,31 +20057,6 @@
    ]
   },
   {
-   "id": "ongo:bazset_scion",
-   "name": "bazset_Scion",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "bazset_Scion.rbf",
-   "repo": "OngoGablogian/MiSTer_Ongo",
-   "url": "https://github.com/OngoGablogian/MiSTer_Ongo",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-11-01",
-   "last_seen": "2026-11-01",
-   "binary_only": true,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-10-30",
-   "drivers_loaded": [
-    "seibu/wiz.cpp"
-   ]
-  },
-  {
    "id": "ongo:ctribe",
    "name": "ctribe_mister",
    "source": "ongo",
@@ -20164,32 +20291,6 @@
    ]
   },
   {
-   "id": "ongo:scion",
-   "name": "Scion",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Arcade-Scion.rbf",
-   "repo": "bazset/MiSTer_BAZSET",
-   "url": "https://github.com/bazset/MiSTer_BAZSET",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-10-31",
-   "aliases": [],
-   "last_seen": "2026-11-01",
-   "binary_only": true,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-10-30",
-   "drivers_loaded": [
-    "seibu/wiz.cpp"
-   ]
-  },
-  {
    "id": "ongo:shanghai3",
    "name": "Shanghai3",
    "source": "ongo",
@@ -20298,6 +20399,31 @@
      "w": 1072,
      "h": 678
     }
+   ]
+  },
+  {
+   "id": "ppriest:cischeat",
+   "name": "Cischeat",
+   "source": "ppriest",
+   "source_title": "ppriest (Tourniquet)",
+   "channel": null,
+   "rbf": "Cischeat.rbf",
+   "repo": "ppriest/Arcade-Cischeat_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-Cischeat_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-01",
+   "last_seen": "2026-11-01",
+   "binary_only": false,
+   "nsets": 7,
+   "ntitles": 4,
+   "first_date": "2026-11-01",
+   "drivers_loaded": [
+    "jaleco/cischeat.cpp"
    ]
   },
   {
@@ -20434,6 +20560,31 @@
      "w": 1072,
      "h": 678
     }
+   ]
+  },
+  {
+   "id": "ppriest:firebeat",
+   "name": "Firebeat",
+   "source": "ppriest",
+   "source_title": "ppriest (Tourniquet)",
+   "channel": null,
+   "rbf": "Firebeat.rbf",
+   "repo": "ppriest/Arcade-Firebeat_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-Firebeat_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-01",
+   "last_seen": "2026-11-01",
+   "binary_only": false,
+   "nsets": 4,
+   "ntitles": 3,
+   "first_date": "2026-11-01",
+   "drivers_loaded": [
+    "konami/firebeat.cpp"
    ]
   },
   {
@@ -29140,11 +29291,13 @@
   {
    "sourcefile": "jaleco/cischeat.cpp",
    "titles": 4,
-   "covered": 0,
+   "covered": 4,
    "sets": 7,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 7,
+   "cores": [
+    "ppriest:cischeat"
+   ],
+   "first": "2026-11-01"
   },
   {
    "sourcefile": "jaleco/citycon.cpp",
@@ -29648,11 +29801,13 @@
   {
    "sourcefile": "konami/firebeat.cpp",
    "titles": 19,
-   "covered": 0,
+   "covered": 3,
    "sets": 26,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 4,
+   "cores": [
+    "ppriest:firebeat"
+   ],
+   "first": "2026-11-01"
   },
   {
    "sourcefile": "konami/flkatck.cpp",
@@ -33428,11 +33583,13 @@
   {
    "sourcefile": "seibu/mustache.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 2,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 1,
+   "cores": [
+    "bazset:mustacheboy"
+   ],
+   "first": "2026-11-01"
   },
   {
    "sourcefile": "seibu/r2dx_v33.cpp",
@@ -33508,10 +33665,9 @@
    "sets_covered": 4,
    "cores": [
     "bazset:kungfutaikun",
+    "bazset:scion",
     "bazset:stinger",
-    "bazset:wiz",
-    "ongo:bazset_scion",
-    "ongo:scion"
+    "bazset:wiz"
    ],
    "first": "2026-10-29"
   },
@@ -35774,6 +35930,7 @@
    "sets": 3,
    "sets_covered": 3,
    "cores": [
+    "asturur:jtcrshrc",
     "decoryah:crashrace"
    ],
    "first": "2026-10-28"
@@ -35781,10 +35938,11 @@
   {
    "sourcefile": "vsystem/f1gp.cpp",
    "titles": 2,
-   "covered": 1,
+   "covered": 2,
    "sets": 3,
-   "sets_covered": 2,
+   "sets_covered": 3,
    "cores": [
+    "asturur:jtf1gpr2",
     "asturur:jtf1grpr"
    ],
    "first": "2026-09-16"

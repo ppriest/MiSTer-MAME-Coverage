@@ -111,7 +111,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `rescue` | Rescue | 1982 | Shooter / Flying (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |
 | `searchar` | SAR - Search And Rescue (World) | 1989 | Shooter / Walking (catver) | SNK68, SARTwinStick, SNK68 (va7deo) |
 | `sauro` | Sauro (set 1) | 1987 | Shooter / Flying Horizontal (catver) | ffsauro, Sauro (shimian5) |
-| `scion` | Scion | 1984 | Shooter / Flying Vertical (catver) | bazset_Scion, Scion |
+| `scion` | Scion | 1984 | Shooter / Flying Vertical (catver) | Scion |
 | `scotrsht` | Scooter Shooter | 1985 | Shooter / Flying (catver) | ScooterShooter |
 | `scorpion` | Scorpion (set 1) | 1982 | Shooter / Flying Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `sfposeid` | Sea Fighter Poseidon | 1984 | Shooter / Misc. Horizontal (catver) | TaitoSJ |

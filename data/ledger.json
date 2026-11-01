@@ -6,15 +6,6 @@
 {
 "date": "2026-10-17",
 "note": "alamone 2026-10-12",
-"cores": 0,
-"sets": 0,
-"pairs": 0,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
-"date": "2026-10-17",
-"note": "alamone 2026-10-12",
 "cores": 7,
 "sets": 7,
 "pairs": 64,
@@ -461,6 +452,15 @@
 "pairs": 146,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-11-01",
+"note": "alamone 2026-10-26",
+"cores": 8,
+"sets": 17,
+"pairs": 22,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -503,6 +503,60 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-11-01"
+},
+"asturur:jtapach3": {
+"id": "asturur:jtapach3",
+"name": "jtapach3",
+"source": "asturur",
+"source_title": "Andrea Bogazzi (asturur)",
+"channel": null,
+"rbf": "jtapach3.rbf",
+"repo": "asturur/Mister-cores",
+"url": "https://github.com/asturur/Mister-cores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+},
+"asturur:jtcrshrc": {
+"id": "asturur:jtcrshrc",
+"name": "jtcrshrc",
+"source": "asturur",
+"source_title": "Andrea Bogazzi (asturur)",
+"channel": null,
+"rbf": "jtcrshrc.rbf",
+"repo": "asturur/Mister-cores",
+"url": "https://github.com/asturur/Mister-cores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+},
+"asturur:jtf1gpr2": {
+"id": "asturur:jtf1gpr2",
+"name": "jtf1gpr2",
+"source": "asturur",
+"source_title": "Andrea Bogazzi (asturur)",
+"channel": null,
+"rbf": "jtf1gpr2.rbf",
+"repo": "asturur/Mister-cores",
+"url": "https://github.com/asturur/Mister-cores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-01",
 "last_seen": "2026-11-01"
 },
 "asturur:jtf1grpr": {
@@ -1189,6 +1243,24 @@
 "aliases": [],
 "last_seen": "2026-11-01"
 },
+"bazset:mustacheboy": {
+"id": "bazset:mustacheboy",
+"name": "Arcade-MustacheBoy",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Arcade-MustacheBoy.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+},
 "bazset:night_striker_bazset": {
 "id": "bazset:night_striker_bazset",
 "name": "Night_Striker_bazset",
@@ -1301,6 +1373,24 @@
 "note": null,
 "first_recorded": "2026-10-08",
 "aliases": [],
+"last_seen": "2026-11-01"
+},
+"bazset:scion": {
+"id": "bazset:scion",
+"name": "Arcade-Scion",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Arcade-Scion.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-01",
 "last_seen": "2026-11-01"
 },
 "bazset:segasys1_b23_full": {
@@ -1794,6 +1884,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:3wonders": {
@@ -1812,6 +1903,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:alpha68k": {
@@ -2001,6 +2093,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:cawing": {
@@ -2019,6 +2112,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:cbuster": {
@@ -2094,6 +2188,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:darkmist": {
@@ -2209,6 +2304,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:edrandy": {
@@ -2246,6 +2342,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:forgottn": {
@@ -2264,6 +2361,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:fshark": {
@@ -2301,6 +2399,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:gijoe": {
@@ -2376,6 +2475,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:kod": {
@@ -2394,6 +2494,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:lkage": {
@@ -2469,6 +2570,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:megasys1_a": {
@@ -2506,6 +2608,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:metamrph": {
@@ -2543,6 +2646,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:mtwins": {
@@ -2561,6 +2665,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:mutantf": {
@@ -2617,6 +2722,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:nextspace": {
@@ -2692,6 +2798,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:pipibibs": {
@@ -2729,6 +2836,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:prehisle": {
@@ -2766,6 +2874,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:qtono2j": {
@@ -2784,6 +2893,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:rallybike": {
@@ -2859,6 +2969,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:sf2ce": {
@@ -2877,6 +2988,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:sf2hf": {
@@ -2895,6 +3007,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:snk68": {
@@ -2989,6 +3102,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:supbtime": {
@@ -3178,6 +3292,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:vaportra": {
@@ -3215,6 +3330,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:vimana": {
@@ -3271,6 +3387,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "coinop:wizdfire": {
@@ -14188,6 +14305,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "ongo:bazset_shogunwarriors": {
@@ -14225,6 +14343,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "ongo:bazset_teedoff": {
@@ -16388,6 +16507,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-01",
+"aliases": [],
 "last_seen": "2026-11-01"
 },
 "ongo:meathax_viostorm": {
@@ -16616,6 +16736,24 @@
 "note": null,
 "first_recorded": "2026-10-29",
 "aliases": [],
+"last_seen": "2026-11-01"
+},
+"ongo:mustacheboy": {
+"id": "ongo:mustacheboy",
+"name": "Arcade-MustacheBoy",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Arcade-MustacheBoy.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-01",
 "last_seen": "2026-11-01"
 },
 "ongo:mysteriousstones": {
@@ -17967,6 +18105,24 @@
 "aliases": [],
 "last_seen": "2026-11-01"
 },
+"ppriest:cischeat": {
+"id": "ppriest:cischeat",
+"name": "Cischeat",
+"source": "ppriest",
+"source_title": "ppriest (Tourniquet)",
+"channel": null,
+"rbf": "Cischeat.rbf",
+"repo": "ppriest/Arcade-Cischeat_MiSTer",
+"url": "https://github.com/ppriest/Arcade-Cischeat_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+},
 "ppriest:decomlc": {
 "id": "ppriest:decomlc",
 "name": "DecoMLC",
@@ -18047,6 +18203,24 @@
 "note": null,
 "first_recorded": "2026-10-11",
 "aliases": [],
+"last_seen": "2026-11-01"
+},
+"ppriest:firebeat": {
+"id": "ppriest:firebeat",
+"name": "Firebeat",
+"source": "ppriest",
+"source_title": "ppriest (Tourniquet)",
+"channel": null,
+"rbf": "Firebeat.rbf",
+"repo": "ppriest/Arcade-Firebeat_MiSTer",
+"url": "https://github.com/ppriest/Arcade-Firebeat_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-01",
 "last_seen": "2026-11-01"
 },
 "ppriest:gstream": {
@@ -27263,6 +27437,51 @@
 "mra": "_Arcade/Age Of Heroes - Silkroad 2 (v0.63 - 2001-02-07).mra"
 }
 },
+"apache3": {
+"asturur:jtapach3": {
+"core": "asturur:jtapach3",
+"date": "2026-11-01",
+"date_quality": "observed",
+"via": "asturur",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Apache 3 (rev F).mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+}
+},
+"apache3a": {
+"asturur:jtapach3": {
+"core": "asturur:jtapach3",
+"date": "2026-11-01",
+"date_quality": "observed",
+"via": "asturur",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Apache 3/Apache 3 (rev E).mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+}
+},
+"apache3b": {
+"asturur:jtapach3": {
+"core": "asturur:jtapach3",
+"date": "2026-11-01",
+"date_quality": "observed",
+"via": "asturur",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Apache 3/Apache 3 (Kana Corporation license, rev G).mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+}
+},
 "apb": {
 "dist:atarisys2": {
 "core": "dist:atarisys2",
@@ -33678,6 +33897,36 @@
 "first_path": "releases/_alternatives/_Crazy Kong/Big Kong (Bootleg Of Crazy Kong On Galaxian Hardware).mra",
 "mra": null,
 "first_recorded": "2026-10-26",
+"last_seen": "2026-11-01"
+}
+},
+"bigrun": {
+"ppriest:cischeat": {
+"core": "ppriest:cischeat",
+"date": "2026-11-01",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Big Run (11th Rallye version, Europe).mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+}
+},
+"bigrunu": {
+"ppriest:cischeat": {
+"core": "ppriest:cischeat",
+"date": "2026-11-01",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Big Run (11th Rallye version, Europe)/Big Run (11th Rallye version, US).mra",
+"first_recorded": "2026-11-01",
 "last_seen": "2026-11-01"
 }
 },
@@ -43609,6 +43858,21 @@
 "last_seen": "2026-11-01"
 }
 },
+"cischeat": {
+"ppriest:cischeat": {
+"core": "ppriest:cischeat",
+"date": "2026-11-01",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Cisco Heat.mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+}
+},
 "cityatta": {
 "dist:phoenix": {
 "core": "dist:phoenix",
@@ -46928,6 +47192,19 @@
 }
 },
 "crshrace": {
+"asturur:jtcrshrc": {
+"core": "asturur:jtcrshrc",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "asturur",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-LethalCrashRace_MiSTer",
+"first_path": "mra/Lethal Crash Race (set 1).mra",
+"mra": "_Arcade/Lethal Crash Race - Bakuretsu Crash Race (set 1).mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+},
 "decoryah:crashrace": {
 "core": "decoryah:crashrace",
 "date": "2026-10-28",
@@ -46943,6 +47220,19 @@
 }
 },
 "crshrace2": {
+"asturur:jtcrshrc": {
+"core": "asturur:jtcrshrc",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "asturur",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-LethalCrashRace_MiSTer",
+"first_path": "mra/_alternatives/_Crash Race/Lethal Crash Race (set 2).mra",
+"mra": "_Arcade/_alternatives/_Lethal Crash Race/Lethal Crash Race - Bakuretsu Crash Race (set 2).mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+},
 "decoryah:crashrace": {
 "core": "decoryah:crashrace",
 "date": "2026-10-28",
@@ -46958,6 +47248,19 @@
 }
 },
 "crshrace2a": {
+"asturur:jtcrshrc": {
+"core": "asturur:jtcrshrc",
+"date": "2026-10-28",
+"date_quality": "git",
+"via": "asturur",
+"wip": false,
+"alt": true,
+"first_repo": "decoryah/Arcade-LethalCrashRace_MiSTer",
+"first_path": "mra/_alternatives/_Crash Race/Lethal Crash Race (set 2, alternate sound ROM).mra",
+"mra": "_Arcade/_alternatives/_Lethal Crash Race/Lethal Crash Race - Bakuretsu Crash Race (set 2, alternate sound ROM).mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+},
 "decoryah:crashrace": {
 "core": "decoryah:crashrace",
 "date": "2026-10-28",
@@ -60947,6 +61250,21 @@
 "last_seen": "2026-10-09"
 }
 },
+"f1gp2": {
+"asturur:jtf1gpr2": {
+"core": "asturur:jtf1gpr2",
+"date": "2026-11-01",
+"date_quality": "observed",
+"via": "asturur",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/F-1 Grand Prix Part II.mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+}
+},
 "f1gpa": {
 "asturur:jtf1grpr": {
 "core": "asturur:jtf1grpr",
@@ -60972,6 +61290,66 @@
 "first_path": "_Arcade/_alternatives/_F-1 Grand Prix/F-1 Grand Prix (set 2).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-10-09"
+}
+},
+"f1gpstar": {
+"ppriest:cischeat": {
+"core": "ppriest:cischeat",
+"date": "2026-11-01",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/Grand Prix Star (ver 4.0).mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+}
+},
+"f1gpstar2": {
+"ppriest:cischeat": {
+"core": "ppriest:cischeat",
+"date": "2026-11-01",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Grand Prix Star (ver 4.0)/Grand Prix Star (ver 2.0).mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+}
+},
+"f1gpstar3": {
+"ppriest:cischeat": {
+"core": "ppriest:cischeat",
+"date": "2026-11-01",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_Grand Prix Star (ver 4.0)/Grand Prix Star (ver 3.0).mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+}
+},
+"f1gpstr2": {
+"ppriest:cischeat": {
+"core": "ppriest:cischeat",
+"date": "2026-11-01",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/F-1 Grand Prix Star II.mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
 }
 },
 "f1superb": {
@@ -103834,6 +104212,34 @@
 "last_seen": "2026-10-18"
 }
 },
+"mustache": {
+"bazset:mustacheboy": {
+"core": "bazset:mustacheboy",
+"date": "2026-11-01",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Mustache Boy (Japan).mra",
+"mra": "_Arcade/_BAZSET/Mustache Boy (Japan).mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+},
+"ongo:mustacheboy": {
+"core": "ongo:mustacheboy",
+"date": "2026-11-01",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/Mustache Boy (Japan).mra",
+"mra": "_Arcade/_BAZSET/Mustache Boy (Japan).mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+}
+},
 "mustang": {
 "kuze:nmk16_gunnail": {
 "core": "kuze:nmk16_gunnail",
@@ -120371,6 +120777,21 @@
 "last_seen": "2026-11-01"
 }
 },
+"ppd": {
+"ppriest:firebeat": {
+"core": "ppriest:firebeat",
+"date": "2026-11-01",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/ParaParaDancing.mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+}
+},
 "pplusad": {
 "dist:pacman": {
 "core": "dist:pacman",
@@ -120384,6 +120805,51 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-01",
 "mra": "_Arcade/Pacman Plus After Dark.mra"
+}
+},
+"ppp": {
+"ppriest:firebeat": {
+"core": "ppriest:firebeat",
+"date": "2026-11-01",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/ParaParaParadise.mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+}
+},
+"ppp11": {
+"ppriest:firebeat": {
+"core": "ppriest:firebeat",
+"date": "2026-11-01",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/ParaParaParadise v1.1.mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+}
+},
+"ppp1mp": {
+"ppriest:firebeat": {
+"core": "ppriest:firebeat",
+"date": "2026-11-01",
+"date_quality": "observed",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": null,
+"first_path": null,
+"mra": "_Arcade/_alternatives/_ParaParaParadise/ParaParaParadise 1st Mix Plus.mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
 }
 },
 "pprobe": {
@@ -134403,6 +134869,19 @@
 }
 },
 "scion": {
+"bazset:scion": {
+"core": "bazset:scion",
+"date": "2026-10-31",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "OngoGablogian/MiSTer_Ongo",
+"first_path": "_Arcade/Scion.mra",
+"mra": "_Arcade/_BAZSET/Scion.mra",
+"first_recorded": "2026-11-01",
+"last_seen": "2026-11-01"
+},
 "ongo:bazset_scion": {
 "core": "ongo:bazset_scion",
 "date": "2026-10-30",
@@ -179935,6 +180414,12 @@
 "repo": "Shooter",
 "rodimus": "Shooter"
 },
+"bigrun": {
+"ppriest": "Arcade"
+},
+"bigrunu": {
+"ppriest": "Arcade"
+},
 "bigstrik": {
 "ongo": "Arcade",
 "kuze": "Arcade"
@@ -181180,6 +181665,9 @@
 "circuso": {
 "repo": "Action",
 "rodimus": "Action"
+},
+"cischeat": {
+"ppriest": "Arcade"
 },
 "cityatta": {
 "rodimus": "Shooter"
@@ -183265,6 +183753,18 @@
 },
 "f1dream": {
 "zakk": "Racing / F1"
+},
+"f1gpstar": {
+"ppriest": "Arcade"
+},
+"f1gpstar2": {
+"ppriest": "Arcade"
+},
+"f1gpstar3": {
+"ppriest": "Arcade"
+},
+"f1gpstr2": {
+"ppriest": "Arcade"
 },
 "fa": {
 "ongo": "Shoot 'em Up",
@@ -187701,6 +188201,10 @@
 "ongo": "Pinball",
 "jlrh": "Pinball"
 },
+"mustache": {
+"ongo": "Arcade",
+"bazset": "Arcade"
+},
 "mustang": {
 "ongo": "Shooter",
 "kuze": "Shooter"
@@ -189610,9 +190114,21 @@
 "kyle": "Sports",
 "repo": "Sports"
 },
+"ppd": {
+"ppriest": "Rhythm"
+},
 "pplusad": {
 "dist": "Maze / Pac-Man",
 "zakk": "Maze / Pac-Man"
+},
+"ppp": {
+"ppriest": "Rhythm"
+},
+"ppp11": {
+"ppriest": "Rhythm"
+},
+"ppp1mp": {
+"ppriest": "Rhythm"
 },
 "pprobe": {
 "dist": "Shooter",
@@ -191340,7 +191856,8 @@
 "rodimus": "Maze"
 },
 "scion": {
-"ongo": "Arcade"
+"ongo": "Arcade",
+"bazset": "Arcade"
 },
 "scobra": {
 "dist": "Shooter - Horizontal",
