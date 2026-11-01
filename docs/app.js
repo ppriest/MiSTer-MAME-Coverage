@@ -899,7 +899,7 @@
     if (has) return;
     const row = document.createElement("tr");
     row.className = "hw";
-    row.innerHTML = `<td colspan="${tr.cells.length}">${/(^|\/)playch10\.cpp$/.test(file) ? cabinetLink : ""}<div class="hwslot" data-hwfile="${esc(file)}"></div>${galleryHtml(S.titles.filter(t => t.sourcefile === file))}</td>`;
+    row.innerHTML = `<td colspan="${tr.cells.length}">${galleryHtml(S.titles.filter(t => t.sourcefile === file))}${/(^|\/)playch10\.cpp$/.test(file) ? cabinetLink : ""}<div class="hwslot" data-hwfile="${esc(file)}"></div></td>`;
     tr.after(row);
     fillHardware(row);
   }
@@ -959,7 +959,7 @@
     return `<tr class="detail"><td colspan="10">
       <p class="muted">${esc(c.source_title)}${c.url ? ` · <a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.repo)}</a>` : ""}${c.binary_only ? " · binary-only" : ""} · ${fmt(ts.length)} ${ts.length === 1 ? "title" : "titles"}, ${fmt(c.nsets)} sets</p>
       ${/playch/i.test(c.name + " " + (c.rbf || "")) || ts.some(t => t.sets.some(x => isPc10(x.name))) ? cabinetLink : ""}
-      ${hw}${rest}${floorplanHtml(c)}${galleryHtml(ts)}</td></tr>`;
+      ${galleryHtml(ts)}${floorplanHtml(c)}${hw}${rest}</td></tr>`;
   }
   $("#cores-table").addEventListener("click", ev => {
     const tr = ev.target.closest("tr[data-c]");
