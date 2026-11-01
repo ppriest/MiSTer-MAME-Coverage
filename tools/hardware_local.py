@@ -43,10 +43,14 @@ def driver_list(path=None):
 def parse_listxml(exe, wanted):
     """driver source -> one record per runnable set. Streams `exe -listxml` (no 300 MB file)."""
     out = collections.defaultdict(list)
-    p = subprocess.Popen([exe, "-listxml"], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
-                         cwd=os.path.dirname(exe) or None)
+    if exe.lower().endswith(".xml"):      # a saved listxml (e.g. the release's mameNNNNlx.zip, unzipped)
+        p, stream = None, open(exe, "rb")
+    else:
+        p = subprocess.Popen([exe, "-listxml"], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
+                             cwd=os.path.dirname(exe) or None)
+        stream = p.stdout
     build = None
-    for ev, el in ET.iterparse(p.stdout, events=("start", "end")):
+    for ev, el in ET.iterparse(stream, events=("start", "end")):
         if ev == "start":
             if el.tag == "mame":
                 build = el.get("build")
@@ -70,7 +74,8 @@ def parse_listxml(exe, wanted):
             out[src].append({"set": el.get("name"), "chips": chips, "devices": devs,
                              "slots": {k: v for k, v in slots.items() if v}})
         el.clear()
-    p.wait()
+    if p:
+        p.wait()
     return out, build
 
 
