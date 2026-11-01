@@ -16,7 +16,7 @@
   // open tab, so a view can be linked or restored. Only values that differ from the default are
   // written.
   const FILTER_IDS = ["f-q", "f-cov", "f-sup", "f-work", "f-cat", "f-y0", "f-y1", "f-m0y", "f-m0m", "f-m1y", "f-m1m", "f-a0y", "f-a0m", "f-a1y", "f-a1m", "f-genre", "f-manu", "f-drv", "f-dcov", "f-core", "f-db", "f-rot", "f-sort"];
-  const DRIVER_IDS = ["d-q", "d-cov", "d-genre", "d-sort"];
+  const DRIVER_IDS = ["d-q", "d-cov", "d-genre", "d-y0", "d-y1", "d-sort"];
   const CORE_IDS = ["c-q", "c-src", "c-bin", "c-sort"];
   const UNMATCHED_IDS = ["u-q", "u-hb"];
   const ALL_IDS = [...FILTER_IDS, ...DRIVER_IDS, ...CORE_IDS, ...UNMATCHED_IDS];
@@ -754,6 +754,17 @@
   }
   const ZERO = { titles: 0, covered: 0, sets: 0, sets_covered: 0 };
 
+  // The span of years of a driver's titles (the arcade titles it has, by the year MAME gives the parent set): {min, max, n}, or null with no dated title.
+  function driverYears() {
+    if (S.driverYears) return S.driverYears;
+    const m = new Map();
+    S.titles.forEach(t => {
+      if (!isArcadeWorking(t) || !t.sourcefile || !/^(19|20)\d\d$/.test(t.year)) return;
+      const y = +t.year, r = m.get(t.sourcefile);
+      if (!r) m.set(t.sourcefile, { min: y, max: y, n: 1 }); else { r.min = Math.min(r.min, y); r.max = Math.max(r.max, y); r.n++; }
+    });
+    return (S.driverYears = m);
+  }
   function applyDrivers() {
     const q = $("#d-q").value.trim().toLowerCase(), cov = $("#d-cov").value, genre = $("#d-genre").value, dir = S.dir.d;
     const gs = genre ? driverGenreStats() : null;
@@ -763,7 +774,11 @@
     if (!genre && $("#d-sort").value === "gremaining") $("#d-sort").value = "remaining";
     const sort = $("#d-sort").value;
     $$("#drivers-table th.gcol").forEach((th, i) => { th.hidden = !genre; th.textContent = genre ? `${genre} ${i ? "sets" : "titles"}` : ""; });
+    const dy = driverYears(), y0 = parseInt($("#d-y0").value, 10), y1 = parseInt($("#d-y1").value, 10), ranged = !isNaN(y0) || !isNaN(y1);
+    // a driver stays when the range asked for and the driver's own range of years overlap (a driver with no dated title cannot match a range)
+    const overlaps = d => { const r = dy.get(d.sourcefile); return !!r && (isNaN(y1) || r.min <= y1) && (isNaN(y0) || r.max >= y0); };
     let rows = S.data.drivers.filter(d => (!q || d.sourcefile.toLowerCase().includes(q) || d.cores.some(c => coreName(c).toLowerCase().includes(q)))
+      && (!ranged || overlaps(d))
       && (cov === "all" || (cov === "none" && d.covered === 0) || (cov === "partial" && d.covered > 0 && d.covered < d.titles) || (cov === "notfull" && d.covered < d.titles) || (cov === "full" && d.covered === d.titles))
       && (!genre || gstat(d).titles > 0));
     const cmp = {
@@ -773,6 +788,7 @@
       titles: (a, b) => a.titles - b.titles || a.sourcefile.localeCompare(b.sourcefile),
       pct: (a, b) => a.covered / a.titles - b.covered / b.titles || a.sourcefile.localeCompare(b.sourcefile),
       first: (a, b) => (a.first || "9999").localeCompare(b.first || "9999") || a.sourcefile.localeCompare(b.sourcefile),
+      years: (a, b) => ((dy.get(a.sourcefile) || { min: 9999 }).min - (dy.get(b.sourcefile) || { min: 9999 }).min) || ((dy.get(a.sourcefile) || { max: 9999 }).max - (dy.get(b.sourcefile) || { max: 9999 }).max) || a.sourcefile.localeCompare(b.sourcefile),
     }[sort];
     rows.sort((a, b) => dir * cmp(a, b));
     markSort("drivers-table", sort, dir);
@@ -781,6 +797,7 @@
     $("#drivers-count").textContent = `${fmt(rows.length)} drivers · ${fmt(rows.reduce((n, d) => n + d.titles - d.covered, 0))} titles remaining${grem} · click a driver to list its titles`;
     $("#drivers-table tbody").innerHTML = rows.map(d => { const g = gstat(d); return `<tr class="${d.covered === 0 ? "uncovered" : d.covered < d.titles ? "partial" : "covered"}" data-d="${esc(d.sourcefile)}">
       <td class="set"><button type="button" class="hwtoggle" aria-expanded="false" data-hw="${esc(d.sourcefile)}" title="hardware: CPUs, sound chips, clocks, options">▸</button><a href="#" data-drv="${esc(d.sourcefile)}">${esc(d.sourcefile)}</a></td>
+      <td class="num" title="${(dy.get(d.sourcefile) || {}).n ? `${dy.get(d.sourcefile).n} dated titles` : "no dated title"}">${(r => !r ? "" : r.min === r.max ? r.min : `${r.min}–${r.max}`)(dy.get(d.sourcefile))}</td>
       <td class="num">${d.covered}/${d.titles}</td>
       <td><span class="pct" title="${pct(d.covered, d.titles)}"><i style="width:${(100 * d.covered / d.titles).toFixed(1)}%"></i></span></td>
       <td class="num">${d.sets_covered}/${d.sets}</td>
@@ -883,7 +900,7 @@
     const a = ev.target.closest("a[data-drv]"); if (!a) return; ev.preventDefault();
     $("#f-drv").value = a.dataset.drv; $("#f-cov").value = "all"; $("#f-genre").value = $("#d-genre").value; applyTitles(); showTab("titles");
   });
-  ["d-q", "d-cov", "d-genre", "d-sort"].forEach(id => $("#" + id).addEventListener(id === "d-q" ? "input" : "change", applyDrivers));
+  ["d-q", "d-cov", "d-genre", "d-y0", "d-y1", "d-sort"].forEach(id => $("#" + id).addEventListener(["d-q", "d-y0", "d-y1"].includes(id) ? "input" : "change", applyDrivers));
   $("#d-dir").addEventListener("click", () => { S.dir.d *= -1; $("#d-dir").textContent = S.dir.d > 0 ? "↑" : "↓"; applyDrivers(); });
   $("#d-reset").addEventListener("click", () => { DRIVER_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.d = -1; $("#d-dir").textContent = "↓"; applyDrivers(); });
 
