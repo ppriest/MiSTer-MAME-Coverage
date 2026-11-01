@@ -58,6 +58,12 @@
   "OngoGablogian/MiSTer_Ongo",
   "blahm1d/MiSTer-cores"
  ],
+ "coinop:1941": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:3wonders": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
  "coinop:alpha68k": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
   "furrtek/Arcade-TMNT_MiSTer",
@@ -89,6 +95,12 @@
  "coinop:captaven": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
+ "coinop:captcomm": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:cawing": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
  "coinop:cbuster": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
@@ -96,6 +108,9 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:cobracom": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:cworld2j": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:darkmist": [
@@ -116,12 +131,24 @@
  "coinop:dietgo": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
+ "coinop:dynwar": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
  "coinop:edrandy": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:ffight": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:forgottn": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:fshark": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
   "OngoGablogian/MiSTer_Ongo"
+ ],
+ "coinop:ghouls": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:gijoe": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
@@ -130,6 +157,12 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:kingdmgp": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:knights": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:kod": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:lkage": [
@@ -141,17 +174,32 @@
  "coinop:matmania": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
+ "coinop:megaman": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
  "coinop:megasys1_a": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
   "zakk4223/Distribution-MiSTerFPGA"
  ],
+ "coinop:mercs": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
  "coinop:metamrph": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:msword": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:mtwins": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:mutantf": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:mystwarr": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:nemo": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:nextspace": [
@@ -164,13 +212,25 @@
  "coinop:oscar": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
+ "coinop:pang3": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
  "coinop:pipibibs": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
   "zakk4223/Distribution-MiSTerFPGA"
  ],
+ "coinop:pnickj": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
  "coinop:prehisle": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
   "zakk4223/Distribution-MiSTerFPGA"
+ ],
+ "coinop:qad": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:qtono2j": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:rallybike": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
@@ -180,6 +240,15 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:rohga": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:sf2": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:sf2ce": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:sf2hf": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:snk68": [
@@ -194,6 +263,9 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:sstriker": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:strider": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:supbtime": [
@@ -228,7 +300,13 @@
   "Coin-OpCollection/Distribution-MiSTerFPGA",
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "coinop:unsquad": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
  "coinop:vaportra": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:varth": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:vimana": [
@@ -236,6 +314,9 @@
   "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:wardner": [
+  "Coin-OpCollection/Distribution-MiSTerFPGA"
+ ],
+ "coinop:willow": [
   "Coin-OpCollection/Distribution-MiSTerFPGA"
  ],
  "coinop:wizdfire": [
@@ -2269,6 +2350,7 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_cvs": [
+  "OngoGablogian/MiSTer_Ongo",
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:bazset_diamondrun": [
@@ -2313,7 +2395,13 @@
  "ongo:bazset_sci": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:bazset_scion": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:bazset_shogunwarriors": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:bazset_stinger": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_teedoff": [
@@ -2632,6 +2720,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_suna8bit": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:meathax_thunderjaws": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_yellowcab": [

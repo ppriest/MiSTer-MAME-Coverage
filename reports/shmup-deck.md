@@ -1,6 +1,6 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-10-31 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
+Generated 2026-11-01 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
 
 **Agreement:** 308 of 310 deck titles are Shmup in our data (99.4%).
 
@@ -85,7 +85,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `mayday` | Mayday (set 1) | 1980 | Shooter / Flying Horizontal (catver) | Defender, Williams_TestBuild (RodimusFVC) |
 | `megaphx` | Mega Phoenix | 1991 | Shooter / Flying Vertical (catver) | ffmegaphx |
 | `meikyuh` | Meikyuu Hunter G (Japan) | 1987 | Shooter / Walking (catver) | DEC8 |
-| `mercs` | Mercs (World 900302) | 1990 | Shooter / Walking (catver) | jtcps1 |
+| `mercs` | Mercs (World 900302) | 1990 | Shooter / Walking (catver) | mercs_mister, jtcps1 |
 | `metlhawk` | Metal Hawk (Rev C) | 1988 | Shooter / Flying (catver) | NamcoS2_MH |
 | `mimonkey` | Mighty Monkey | 1982 | Shooter / Flying Horizontal (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |
 | `minefld` | Minefield | 1983 | Shooter / Driving Horizontal (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |
@@ -111,7 +111,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `rescue` | Rescue | 1982 | Shooter / Flying (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |
 | `searchar` | SAR - Search And Rescue (World) | 1989 | Shooter / Walking (catver) | SNK68, SARTwinStick, SNK68 (va7deo) |
 | `sauro` | Sauro (set 1) | 1987 | Shooter / Flying Horizontal (catver) | ffsauro, Sauro (shimian5) |
-| `scion` | Scion | 1984 | Shooter / Flying Vertical (catver) | Scion |
+| `scion` | Scion | 1984 | Shooter / Flying Vertical (catver) | bazset_Scion, Scion |
 | `scotrsht` | Scooter Shooter | 1985 | Shooter / Flying (catver) | ScooterShooter |
 | `scorpion` | Scorpion (set 1) | 1982 | Shooter / Flying Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `sfposeid` | Sea Fighter Poseidon | 1984 | Shooter / Misc. Horizontal (catver) | TaitoSJ |
