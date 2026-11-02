@@ -43,10 +43,14 @@ def driver_list(path=None):
 def parse_listxml(exe, wanted):
     """driver source -> one record per runnable set. Streams `exe -listxml` (no 300 MB file)."""
     out = collections.defaultdict(list)
-    p = subprocess.Popen([exe, "-listxml"], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
-                         cwd=os.path.dirname(exe) or None)
+    if exe.lower().endswith(".xml"):      # a saved listxml (e.g. the release's mameNNNNlx.zip, unzipped)
+        p, stream = None, open(exe, "rb")
+    else:
+        p = subprocess.Popen([exe, "-listxml"], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
+                             cwd=os.path.dirname(exe) or None)
+        stream = p.stdout
     build = None
-    for ev, el in ET.iterparse(p.stdout, events=("start", "end")):
+    for ev, el in ET.iterparse(stream, events=("start", "end")):
         if ev == "start":
             if el.tag == "mame":
                 build = el.get("build")
@@ -70,7 +74,8 @@ def parse_listxml(exe, wanted):
             out[src].append({"set": el.get("name"), "chips": chips, "devices": devs,
                              "slots": {k: v for k, v in slots.items() if v}})
         el.clear()
-    p.wait()
+    if p:
+        p.wait()
     return out, build
 
 
@@ -84,16 +89,28 @@ def summarise(machines):
             rows.append({"name": k, "count": max(m[k] for m in have), "sets": len(have)})
         return sorted(rows, key=lambda r: (-r["sets"], r["name"]))
 
+    names = [m["set"] for m in machines]
+
+    def membership(rows, per_machine):
+        """A chip that not every set has lists the sets that do ("in"), so a page can show one title's own hardware."""
+        for r in rows:
+            if r["sets"] < n:
+                r["in"] = [names[i] for i, m in enumerate(per_machine) if m[r["name"]]]
+
     cpus = tally([collections.Counter(c[2] for c in m["chips"] if c[0] == "cpu") for m in machines])
     sound = tally([collections.Counter(c[2] for c in m["chips"] if c[0] == "audio") for m in machines])
+    membership(cpus, [collections.Counter(c[2] for c in m["chips"] if c[0] == "cpu") for m in machines])
+    membership(sound, [collections.Counter(c[2] for c in m["chips"] if c[0] == "audio") for m in machines])
     for rows, typ in ((cpus, "cpu"), (sound, "audio")):
         for r in rows:
-            clocks = collections.Counter()
-            for m in machines:
+            clocks = collections.Counter(); who = collections.defaultdict(list)
+            for i, m in enumerate(machines):
                 for hz in {c[3] for c in m["chips"] if c[0] == typ and c[2] == r["name"]}:
-                    clocks[hz] += 1
-            r["clocks"] = [[hz, k] for hz, k in sorted(clocks.items(), key=lambda x: (-x[1], x[0])) if hz]
-    devs = tally([collections.Counter(m["devices"]) for m in machines])
+                    clocks[hz] += 1; who[hz].append(names[i])
+            r["clocks"] = [[hz, k] + ([who[hz]] if len(clocks) > 1 else []) for hz, k in sorted(clocks.items(), key=lambda x: (-x[1], x[0])) if hz]
+    dev_pm = [collections.Counter(m["devices"]) for m in machines]
+    devs = tally(dev_pm)
+    membership(devs, dev_pm)
     slots = {}
     for m in machines:
         for s, opts in m["slots"].items():

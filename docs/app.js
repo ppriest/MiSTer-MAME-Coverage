@@ -16,7 +16,7 @@
   // open tab, so a view can be linked or restored. Only values that differ from the default are
   // written.
   const FILTER_IDS = ["f-q", "f-cov", "f-sup", "f-work", "f-cat", "f-y0", "f-y1", "f-m0y", "f-m0m", "f-m1y", "f-m1m", "f-a0y", "f-a0m", "f-a1y", "f-a1m", "f-genre", "f-manu", "f-drv", "f-dcov", "f-core", "f-db", "f-rot", "f-sort"];
-  const DRIVER_IDS = ["d-q", "d-cov", "d-genre", "d-sort"];
+  const DRIVER_IDS = ["d-q", "d-cov", "d-genre", "d-y0", "d-y1", "d-sort"];
   const CORE_IDS = ["c-q", "c-src", "c-bin", "c-sort"];
   const UNMATCHED_IDS = ["u-q", "u-hb"];
   const ALL_IDS = [...FILTER_IDS, ...DRIVER_IDS, ...CORE_IDS, ...UNMATCHED_IDS];
@@ -610,7 +610,7 @@
     const k = t.img[S.gkind] ? S.gkind : S.gkind === "ingame" ? "title" : "ingame";     // the other kind when this one has no shot
     const nsets = f.work === "working" ? t.nworking : t.nsets, ncov = f.work === "working" ? t.ncovered_working : t.ncovered;
     const cls = ncov === 0 ? "uncovered" : ncov < nsets ? "partial" : "covered";
-    return `<figure class="tile ${cls}" data-t="${esc(t.name)}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" ${altAttrs(t, k)} data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
+    return `<figure class="tile ${cls} ${supportCls(t)}" data-t="${esc(t.name)}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" ${altAttrs(t, k)} data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
       <img loading="lazy" src="${esc(IMAGE_BASE + "/" + t.img[k])}" alt="${esc(t.desc)}" onerror="this.closest('figure').remove()">
       <figcaption class="tt" title="${esc(t.desc)}">${esc(t.desc)}</figcaption>
       <div class="pub" title="${esc(t.manufacturer)}">${esc(t.manufacturer)}${t.year ? ` · ${esc(t.year)}` : ""}</div>
@@ -671,9 +671,9 @@
       <td class="status-${esc(s.status)}">${esc(s.status)}${s.working ? "" : " (not working)"}</td>
       <td>${s.cores.length ? s.cores.map(r => badge(r.core, r) + `<span class="flag">${r.date ? r.date + (r.date_quality !== "git" ? "≈" : "") : ""}</span> `).join("") : '<span class="muted">—</span>'}</td>
     </tr>`).join("");
-    return `<tr class="detail"><td colspan="12"><table><thead><tr><th>Set</th><th>Description</th><th>MAME</th><th>Cores (date first seen; ≈ approximate)</th></tr></thead><tbody>${rows}</tbody></table>
+    return `<tr class="detail"><td colspan="12">${galleryHtml([t], true)}<table><thead><tr><th>Set</th><th>Description</th><th>MAME</th><th>Cores (date first seen; ≈ approximate)</th></tr></thead><tbody>${rows}</tbody></table>
       ${t.sets.some(x => isPc10(x.name)) ? cabinetLink : ""}
-      ${t.sourcefile ? `<div class="hwslot" data-hwfile="${esc(t.sourcefile)}"></div>` : ""}${galleryHtml([t], true)}</td></tr>`;
+      ${t.sourcefile ? `<div class="hwslot" data-hwfile="${esc(t.sourcefile)}" data-hwsets="${esc(t.sets.map(x => x.name).join(","))}"></div>` : ""}</td></tr>`;
   }
 
   $("#titles-table").addEventListener("click", ev => {
@@ -754,6 +754,17 @@
   }
   const ZERO = { titles: 0, covered: 0, sets: 0, sets_covered: 0 };
 
+  // The span of years of a driver's titles (the arcade titles it has, by the year MAME gives the parent set): {min, max, n}, or null with no dated title.
+  function driverYears() {
+    if (S.driverYears) return S.driverYears;
+    const m = new Map();
+    S.titles.forEach(t => {
+      if (!isArcadeWorking(t) || !t.sourcefile || !/^(19|20)\d\d$/.test(t.year)) return;
+      const y = +t.year, r = m.get(t.sourcefile);
+      if (!r) m.set(t.sourcefile, { min: y, max: y, n: 1 }); else { r.min = Math.min(r.min, y); r.max = Math.max(r.max, y); r.n++; }
+    });
+    return (S.driverYears = m);
+  }
   function applyDrivers() {
     const q = $("#d-q").value.trim().toLowerCase(), cov = $("#d-cov").value, genre = $("#d-genre").value, dir = S.dir.d;
     const gs = genre ? driverGenreStats() : null;
@@ -763,7 +774,11 @@
     if (!genre && $("#d-sort").value === "gremaining") $("#d-sort").value = "remaining";
     const sort = $("#d-sort").value;
     $$("#drivers-table th.gcol").forEach((th, i) => { th.hidden = !genre; th.textContent = genre ? `${genre} ${i ? "sets" : "titles"}` : ""; });
+    const dy = driverYears(), y0 = parseInt($("#d-y0").value, 10), y1 = parseInt($("#d-y1").value, 10), ranged = !isNaN(y0) || !isNaN(y1);
+    // a driver stays when the range asked for and the driver's own range of years overlap (a driver with no dated title cannot match a range)
+    const overlaps = d => { const r = dy.get(d.sourcefile); return !!r && (isNaN(y1) || r.min <= y1) && (isNaN(y0) || r.max >= y0); };
     let rows = S.data.drivers.filter(d => (!q || d.sourcefile.toLowerCase().includes(q) || d.cores.some(c => coreName(c).toLowerCase().includes(q)))
+      && (!ranged || overlaps(d))
       && (cov === "all" || (cov === "none" && d.covered === 0) || (cov === "partial" && d.covered > 0 && d.covered < d.titles) || (cov === "notfull" && d.covered < d.titles) || (cov === "full" && d.covered === d.titles))
       && (!genre || gstat(d).titles > 0));
     const cmp = {
@@ -773,6 +788,7 @@
       titles: (a, b) => a.titles - b.titles || a.sourcefile.localeCompare(b.sourcefile),
       pct: (a, b) => a.covered / a.titles - b.covered / b.titles || a.sourcefile.localeCompare(b.sourcefile),
       first: (a, b) => (a.first || "9999").localeCompare(b.first || "9999") || a.sourcefile.localeCompare(b.sourcefile),
+      years: (a, b) => ((dy.get(a.sourcefile) || { min: 9999 }).min - (dy.get(b.sourcefile) || { min: 9999 }).min) || ((dy.get(a.sourcefile) || { max: 9999 }).max - (dy.get(b.sourcefile) || { max: 9999 }).max) || a.sourcefile.localeCompare(b.sourcefile),
     }[sort];
     rows.sort((a, b) => dir * cmp(a, b));
     markSort("drivers-table", sort, dir);
@@ -781,6 +797,7 @@
     $("#drivers-count").textContent = `${fmt(rows.length)} drivers · ${fmt(rows.reduce((n, d) => n + d.titles - d.covered, 0))} titles remaining${grem} · click a driver to list its titles`;
     $("#drivers-table tbody").innerHTML = rows.map(d => { const g = gstat(d); return `<tr class="${d.covered === 0 ? "uncovered" : d.covered < d.titles ? "partial" : "covered"}" data-d="${esc(d.sourcefile)}">
       <td class="set"><button type="button" class="hwtoggle" aria-expanded="false" data-hw="${esc(d.sourcefile)}" title="hardware: CPUs, sound chips, clocks, options">▸</button><a href="#" data-drv="${esc(d.sourcefile)}">${esc(d.sourcefile)}</a></td>
+      <td class="num" title="${(dy.get(d.sourcefile) || {}).n ? `${dy.get(d.sourcefile).n} dated titles` : "no dated title"}">${(r => !r ? "" : r.min === r.max ? r.min : `${r.min}–${r.max}`)(dy.get(d.sourcefile))}</td>
       <td class="num">${d.covered}/${d.titles}</td>
       <td><span class="pct" title="${pct(d.covered, d.titles)}"><i style="width:${(100 * d.covered / d.titles).toFixed(1)}%"></i></span></td>
       <td class="num">${d.sets_covered}/${d.sets}</td>
@@ -807,7 +824,8 @@
       el.dataset.filled = "1";
       const file = el.dataset.hwfile;
       el.innerHTML = '<p class="muted">loading hardware…</p>';
-      loadHardware(file).then(h => { el.innerHTML = hardwareHtml(file, h); },
+      const only = el.dataset.hwsets ? el.dataset.hwsets.split(",") : null;      // a title's own sets: only its hardware
+      loadHardware(file).then(h => { el.innerHTML = hardwareHtml(file, h, only); },
         e => { el.innerHTML = `<p class="muted">hardware information is not available (${esc(String(e.message || e))})</p>`; });
     });
   }
@@ -816,6 +834,9 @@
   const SHOT_MAX = 50;
   // What the zoom needs to turn a shot over: its kind, the other kind's URL (when the title has both) and the title's description.
   const altAttrs = (t, k) => { const o = k === "ingame" ? "title" : "ingame"; return `data-kind="${k}" data-desc="${esc(t.desc)}"${t.screens_force ? ` data-force="${esc(t.screens_force)}"` : ""}${t.img[o] ? ` data-alt="${esc(IMAGE_BASE + "/" + t.img[o])}"` : ""}`; };
+  // Each shot is bordered by its title's support: blue on MiSTer, orange not on MiSTer, grey not working in MAME (and not on MiSTer).
+  const supportCls = t => t.cores.length || t.covered_working > 0 ? "on" : !t.working ? "nw" : "off";
+  const covKey = '<span class="covkey"><i class="on"></i>on MiSTer <i class="off"></i>not on MiSTer <i class="nw"></i>not working in MAME</span>';
   function galleryHtml(titles, both) {
     if (!IMAGE_BASE) return "";
     const withImg = titles.filter(t => t.img && (t.img.ingame || t.img.title));
@@ -825,7 +846,7 @@
       : withImg.slice().sort((x, y) => (y.covered - x.covered) || x.desc.localeCompare(y.desc)).map(t => ({ t, k: t.img.ingame ? "ingame" : "title" }));
     const shown = items.slice(0, SHOT_MAX);
     const note = items.length > shown.length ? ` <span class="muted">(first ${shown.length} of ${fmt(items.length)})</span>` : "";
-    return `<div class="gallery-box"><h4>Screenshots${note}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure title="${esc(t.desc)} (${esc(t.year)})" data-t="${esc(t.name)}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" ${altAttrs(t, k)} data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
+    return `<div class="gallery-box"><h4>Screenshots${note}${covKey}</h4><div class="gallery">${shown.map(({ t, k }) => `<figure class="${supportCls(t)}" title="${esc(t.desc)} (${esc(t.year)})" data-t="${esc(t.name)}" data-src="${esc(IMAGE_BASE + "/" + t.img[k])}" ${altAttrs(t, k)} data-n="${t.screens || 1}" data-port="${t.rotate === 90 || t.rotate === 270 ? 1 : 0}"${t.cores.length ? ` data-launch="${esc(launchScript(t))}" data-title="${esc(t.desc)}"` : ""}>
       <img loading="lazy" src="${esc(IMAGE_BASE + "/" + t.img[k])}" alt="${esc(t.desc)}" onerror="this.closest('figure').remove()">
       <figcaption>${esc(t.desc)}${both ? ` <span class="muted">${k === "title" ? "title screen" : "in game"}</span>` : ""}</figcaption></figure>`).join("")}</div></div>`;
   }
@@ -834,16 +855,20 @@
     const n = v => String(+v.toFixed(6));
     return hz >= 1e6 ? `${n(hz / 1e6)} MHz` : hz >= 1e3 ? `${n(hz / 1e3)} kHz` : `${hz} Hz`;
   }
-  function hwRows(rows, total, withClock) {
+  function hwRows(rows, total, withClock, only) {      // only: the names of one title's sets (then just their hardware, with no "in N of M sets")
+    if (only) {
+      const mine = x => !x.in || x.in.some(n => only.includes(n));      // data without "in" (older files) cannot tell: shown
+      rows = rows.filter(mine).map(r => ({ ...r, sets: total, clocks: (r.clocks || []).filter(c => !c[2] || c[2].some(n => only.includes(n))) }));
+    }
     return rows.map(r => {
       const clocks = (r.clocks || []).filter(c => c[0]);
-      const multi = clocks.length > 1;
+      const multi = clocks.length > 1 && !only;
       const clock = withClock && clocks.length ? clocks.map(c => clockText(c[0]) + (multi ? ` <span class="muted">(${fmt(c[1])} ${c[1] === 1 ? "set" : "sets"})</span>` : "")).join(", ") : "";
       const opt = r.sets < total ? `<span class="opt" title="${r.sets} of the driver's ${total} sets have it: a variant, or optional">in ${fmt(r.sets)} of ${fmt(total)} sets</span>` : "";
       return `<li><span class="chipname">${r.count > 1 ? r.count + " × " : ""}${esc(r.name)}</span>${clock ? ` <span class="clock">${clock}</span>` : ""} ${opt}</li>`;
     }).join("");
   }
-  function hardwareHtml(file, h) {
+  function hardwareHtml(file, h, only) {
     const d = h.drivers[file];
     if (!d) return '<p class="muted">no hardware information for this driver</p>';
     const sect = (title, html, cls = "") => html ? `<div class="hwsect${cls}"><h4>${title}</h4><ul>${html}</ul></div>` : "";
@@ -852,13 +877,14 @@
     const notes = (d.notes || []).length
       ? `<details class="hwnotes"><summary>Notes from the driver source <span class="muted">(comments and diagrams, as written)</span></summary>${d.notes.map(n => `<pre>${esc(n)}</pre>`).join("")}</details>` : "";
     const src = `https://github.com/mamedev/mame/blob/master/src/mame/${file}`;
+    const coarse = only && [...d.cpus, ...d.sound, ...d.devices].some(r => r.sets < d.sets && !r.in);      // a data file from before the per-set lists
     return `<div class="hwgrid">
-        ${sect("CPUs", hwRows(d.cpus, d.sets, true))}
-        ${sect("Sound", hwRows(d.sound, d.sets, true))}
-        ${sect("Other devices", hwRows(devices, d.sets, false), devices.length > 6 ? " hwwide" : "")}
+        ${sect("CPUs", hwRows(d.cpus, d.sets, true, only))}
+        ${sect("Sound", hwRows(d.sound, d.sets, true, only))}
+        ${sect("Other devices", hwRows(devices, d.sets, false, only), devices.length > 6 ? " hwwide" : "")}
         ${sect("Selectable options (slots)", slots)}
       </div>
-      <p class="muted hwsrc">From MAME ${esc(h.mame)}'s declarations for the driver's ${fmt(d.sets)} ${d.sets === 1 ? "set" : "sets"}; a chip marked <span class="opt">in N of M sets</span> is a variant or optional. Source: <a href="${esc(src)}" target="_blank" rel="noopener">${esc(file)}</a>.</p>
+      <p class="muted hwsrc">${only ? `From MAME ${esc(h.mame)}'s declarations for ${only.length === 1 ? "this set" : "this title's " + fmt(only.length) + " sets"}.${coarse ? " (This data file lists the whole driver's chips; the per-set lists arrive with the next hardware data refresh.)" : ""}` : `From MAME ${esc(h.mame)}'s declarations for the driver's ${fmt(d.sets)} ${d.sets === 1 ? "set" : "sets"}; a chip marked <span class="opt">in N of M sets</span> is a variant or optional.`} Source: <a href="${esc(src)}" target="_blank" rel="noopener">${esc(file)}</a>.</p>
       ${notes}`;
   }
   function showHardware(btn, open) {
@@ -873,17 +899,23 @@
     if (has) return;
     const row = document.createElement("tr");
     row.className = "hw";
-    row.innerHTML = `<td colspan="${tr.cells.length}">${/(^|\/)playch10\.cpp$/.test(file) ? cabinetLink : ""}<div class="hwslot" data-hwfile="${esc(file)}"></div>${galleryHtml(S.titles.filter(t => t.sourcefile === file))}</td>`;
+    row.innerHTML = `<td colspan="${tr.cells.length}">${galleryHtml(S.titles.filter(t => t.sourcefile === file))}${/(^|\/)playch10\.cpp$/.test(file) ? cabinetLink : ""}<div class="hwslot" data-hwfile="${esc(file)}"></div></td>`;
     tr.after(row);
     fillHardware(row);
   }
   $("#drivers-table").addEventListener("click", ev => {
     const hb = ev.target.closest("button.hwtoggle");
     if (hb) { showHardware(hb, hb.getAttribute("aria-expanded") !== "true"); return; }
-    const a = ev.target.closest("a[data-drv]"); if (!a) return; ev.preventDefault();
+    const a = ev.target.closest("a[data-drv]");
+    if (!a) {                                            // a click anywhere else on a driver's row opens or closes it, like the arrow
+      const tr = ev.target.closest("tbody tr:not(.hw)"), b = tr && tr.querySelector("button.hwtoggle");
+      if (b && !ev.target.closest("a, button, input, select, label") && !getSelection().toString()) showHardware(b, b.getAttribute("aria-expanded") !== "true");
+      return;
+    }
+    ev.preventDefault();
     $("#f-drv").value = a.dataset.drv; $("#f-cov").value = "all"; $("#f-genre").value = $("#d-genre").value; applyTitles(); showTab("titles");
   });
-  ["d-q", "d-cov", "d-genre", "d-sort"].forEach(id => $("#" + id).addEventListener(id === "d-q" ? "input" : "change", applyDrivers));
+  ["d-q", "d-cov", "d-genre", "d-y0", "d-y1", "d-sort"].forEach(id => $("#" + id).addEventListener(["d-q", "d-y0", "d-y1"].includes(id) ? "input" : "change", applyDrivers));
   $("#d-dir").addEventListener("click", () => { S.dir.d *= -1; $("#d-dir").textContent = S.dir.d > 0 ? "↑" : "↓"; applyDrivers(); });
   $("#d-reset").addEventListener("click", () => { DRIVER_IDS.forEach(id => { const el = $("#" + id); el.value = el.dataset.default ?? ""; }); S.dir.d = -1; $("#d-dir").textContent = "↓"; applyDrivers(); });
 
@@ -933,7 +965,7 @@
     return `<tr class="detail"><td colspan="10">
       <p class="muted">${esc(c.source_title)}${c.url ? ` · <a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.repo)}</a>` : ""}${c.binary_only ? " · binary-only" : ""} · ${fmt(ts.length)} ${ts.length === 1 ? "title" : "titles"}, ${fmt(c.nsets)} sets</p>
       ${/playch/i.test(c.name + " " + (c.rbf || "")) || ts.some(t => t.sets.some(x => isPc10(x.name))) ? cabinetLink : ""}
-      ${hw}${rest}${floorplanHtml(c)}${galleryHtml(ts)}</td></tr>`;
+      ${galleryHtml(ts)}${floorplanHtml(c)}${hw}${rest}</td></tr>`;
   }
   $("#cores-table").addEventListener("click", ev => {
     const tr = ev.target.closest("tr[data-c]");
@@ -1141,11 +1173,13 @@
   (function () {
     const sel = $("#theme"); let t = null;
     try { t = localStorage.getItem("theme"); } catch (e) { /* storage unavailable */ }
-    const now = new Date();
-    if (t === null && now.getMonth() === 9 && now.getDate() === 31) t = "halloween";      // no theme set: Halloween is the default on 31 October (not saved, so it lapses the next day)
-    if (!["light", "dark", ...Object.keys(FX)].includes(t) || DISABLED_THEMES.includes(t)) t = "";      // nothing stored (System Default), or a switched-off theme      // (a stored choice of a switched-off theme falls back to System Default)
+    const now = new Date(), halloween = now.getMonth() === 9 && now.getDate() === 31;      // Halloween is offered only on 31 October (the browser's date)
+    if (!halloween) { const o = sel.querySelector('option[value="halloween"]'); if (o) o.remove(); }
+    if (t === null) t = halloween ? "halloween" : "neon";      // no choice stored: Neon (Halloween on 31 October); not saved, so the default follows the date
+    if (t === "system") t = "";                                  // System Default chosen explicitly
+    if (!["light", "dark", ...Object.keys(FX)].includes(t) || DISABLED_THEMES.includes(t) || (t === "halloween" && !halloween)) t = "neon";      // a switched-off or out-of-season theme falls back to the default
     sel.value = t; applyTheme(t);
-    sel.addEventListener("change", () => { applyTheme(sel.value); if (FX[sel.value]) neonSound("power"); try { sel.value ? localStorage.setItem("theme", sel.value) : localStorage.removeItem("theme"); } catch (e) { /* not saved */ } });
+    sel.addEventListener("change", () => { applyTheme(sel.value); if (FX[sel.value]) neonSound("power"); try { localStorage.setItem("theme", sel.value || "system"); } catch (e) { /* not saved */ } });
   })();
 
   // ---------- wishlist (votes live in the /api functions; the page works without them) ----------
@@ -1589,7 +1623,7 @@
       L.innerHTML = `<h4>${esc(t.desc)}</h4><p class="muted">${esc(t.manufacturer)}${t.year ? " · " + esc(t.year) : ""}${t.genre ? " · " + esc(t.genre) : ""}<br><span class="set">${esc(t.sourcefile)}</span></p>
         <h5>Cores on MiSTer</h5><div>${t.cores.length ? t.cores.map(id => badge(id)).join("") : '<span class="muted">none yet</span>'}</div>
         <h5>${nsets === 1 ? "Set" : fmt(nsets) + " sets"}</h5><ul>${sets}</ul>`;
-      R.innerHTML = `<h4>Hardware</h4>${/(^|\/)playch10\.cpp$/.test(t.sourcefile) ? cabinetLink : ""}<div class="hwslot" data-hwfile="${esc(t.sourcefile)}"></div>`;
+      R.innerHTML = `<h4>Hardware</h4>${/(^|\/)playch10\.cpp$/.test(t.sourcefile) ? cabinetLink : ""}<div class="hwslot" data-hwfile="${esc(t.sourcefile)}" data-hwsets="${esc(t.sets.map(x => x.name).join(","))}"></div>`;
       fillHardware(R);
     }
     addEventListener("resize", () => { if (dlg.open) applyInfo(); });

@@ -11,10 +11,10 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<script>/* the chosen theme is applied before the stylesheet paints (no flash); no choice = the system's, except that on 31 October (the browser's date) Halloween is the default */
-try { var t = localStorage.getItem("theme"), d = new Date(); if (t === null && d.getMonth() === 9 && d.getDate() === 31) t = "halloween"; if (["light", "dark", "neon", "halloween"].includes(t)) document.documentElement.dataset.theme = t; } catch (e) { /* storage unavailable: the system theme */ }
+<script>/* the chosen theme is applied before the stylesheet paints (no flash); nothing stored = Neon (Halloween on 31 October, the browser's date); "system" = System Default */
+try { var t = localStorage.getItem("theme"), d = new Date(), hw = d.getMonth() === 9 && d.getDate() === 31; if (t === null) t = hw ? "halloween" : "neon"; if (t === "halloween" && !hw) t = "neon"; if (["light", "dark", "neon", "halloween"].includes(t)) document.documentElement.dataset.theme = t; } catch (e) { document.documentElement.dataset.theme = "neon"; }
 </script>
-<link rel="stylesheet" href="style.css?v=b1d2355922">
+<link rel="stylesheet" href="style.css?v=24bbaedf22">
 </head>
 <body>
 <header class="top">
@@ -207,6 +207,7 @@ try { var t = localStorage.getItem("theme"), d = new Date(); if (t === null && d
     <form class="filters" onsubmit="return false">
       <label>Search <input type="search" id="d-q" placeholder="driver source file…"></label>
       <label>Genre <select id="d-genre" title="adds the genre's title and set counts per driver and a sort on its remaining titles"><option value="">any</option></select></label>
+      <label title="keep the drivers whose years of titles overlap this range (a driver covering 1984–1992 matches 1990–1995)">Released <span class="row"><input type="number" id="d-y0" placeholder="from" min="1970" max="2030" class="yr"> – <input type="number" id="d-y1" placeholder="to" min="1970" max="2030" class="yr"></span></label>
       <label>Show
         <select id="d-cov">
           <option value="all">all drivers</option>
@@ -224,6 +225,7 @@ try { var t = localStorage.getItem("theme"), d = new Date(); if (t === null && d
           <option value="titles">titles</option>
           <option value="pct">% covered</option>
           <option value="first">first on MiSTer</option>
+          <option value="years">years (earliest)</option>
         </select>
         <button type="button" id="d-dir" title="toggle direction">↓</button>
       </span></label>
@@ -232,7 +234,7 @@ try { var t = localStorage.getItem("theme"), d = new Date(); if (t === null && d
     <p class="count" id="drivers-count"></p>
     <div class="tablewrap">
       <table class="grid" id="drivers-table">
-        <thead><tr><th data-sort="sourcefile">MAME Driver</th><th data-sort="pct">Titles covered</th><th></th><th>Sets covered</th><th class="gcol">Genre titles</th><th class="gcol">Genre sets</th><th data-sort="first">First on MiSTer</th><th>Cores</th><th id="d-plus1" title="request a port">+1</th></tr></thead>
+        <thead><tr><th data-sort="sourcefile">MAME Driver</th><th data-sort="years" title="the earliest and latest year of the driver's titles">Years</th><th data-sort="pct">Titles covered</th><th></th><th>Sets covered</th><th class="gcol">Genre titles</th><th class="gcol">Genre sets</th><th data-sort="first">First on MiSTer</th><th>Cores</th><th id="d-plus1" title="request a port">+1</th></tr></thead>
         <tbody></tbody>
       </table>
     </div>
@@ -372,6 +374,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=69362fcd2e"></script>
+<script src="app.js?v=02d2af90ed"></script>
 </body>
 </html>
