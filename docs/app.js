@@ -906,7 +906,13 @@
   $("#drivers-table").addEventListener("click", ev => {
     const hb = ev.target.closest("button.hwtoggle");
     if (hb) { showHardware(hb, hb.getAttribute("aria-expanded") !== "true"); return; }
-    const a = ev.target.closest("a[data-drv]"); if (!a) return; ev.preventDefault();
+    const a = ev.target.closest("a[data-drv]");
+    if (!a) {                                            // a click anywhere else on a driver's row opens or closes it, like the arrow
+      const tr = ev.target.closest("tbody tr:not(.hw)"), b = tr && tr.querySelector("button.hwtoggle");
+      if (b && !ev.target.closest("a, button, input, select, label") && !getSelection().toString()) showHardware(b, b.getAttribute("aria-expanded") !== "true");
+      return;
+    }
+    ev.preventDefault();
     $("#f-drv").value = a.dataset.drv; $("#f-cov").value = "all"; $("#f-genre").value = $("#d-genre").value; applyTitles(); showTab("titles");
   });
   ["d-q", "d-cov", "d-genre", "d-y0", "d-y1", "d-sort"].forEach(id => $("#" + id).addEventListener(["d-q", "d-y0", "d-y1"].includes(id) ? "input" : "change", applyDrivers));

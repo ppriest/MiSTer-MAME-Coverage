@@ -14,7 +14,7 @@
 <script>/* the chosen theme is applied before the stylesheet paints (no flash); nothing stored = Neon (Halloween on 31 October, the browser's date); "system" = System Default */
 try { var t = localStorage.getItem("theme"), d = new Date(), hw = d.getMonth() === 9 && d.getDate() === 31; if (t === null) t = hw ? "halloween" : "neon"; if (t === "halloween" && !hw) t = "neon"; if (["light", "dark", "neon", "halloween"].includes(t)) document.documentElement.dataset.theme = t; } catch (e) { document.documentElement.dataset.theme = "neon"; }
 </script>
-<link rel="stylesheet" href="style.css?v=09f94de2b3">
+<link rel="stylesheet" href="style.css?v=24bbaedf22">
 </head>
 <body>
 <header class="top">
@@ -374,6 +374,6 @@ allow_run = ['^\*\*launch:_Arcade/.*\.mra', '^\*\*launch\.title:Arcade/.*']</pre
       </div>
     </form>
   </dialog>
-<script src="app.js?v=0fd61c79a4"></script>
+<script src="app.js?v=02d2af90ed"></script>
 </body>
 </html>

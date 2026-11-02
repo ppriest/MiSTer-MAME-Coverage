@@ -635,3 +635,6 @@ label.themepick select option { color: #111; background: #fff; }
 .covkey i { display: inline-block; width: 10px; height: 10px; margin: 0 4px 0 8px; vertical-align: -1px; border-radius: 2px; }
 .covkey i:first-child { margin-left: 0; }
 .covkey i.on { background: var(--accent); } .covkey i.off { background: var(--accent-2); } .covkey i.nw { background: var(--muted); }
+
+#drivers-table tbody tr:not(.hw) { cursor: pointer; }
+#drivers-table tbody tr:not(.hw) a { cursor: pointer; }
