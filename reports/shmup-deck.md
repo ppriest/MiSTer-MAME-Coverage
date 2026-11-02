@@ -1,6 +1,6 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-11-01 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
+Generated 2026-11-02 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
 
 **Agreement:** 308 of 310 deck titles are Shmup in our data (99.4%).
 
@@ -30,7 +30,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `aliensec` | Alien Sector | 1985 | Shooter / Flying Horizontal (catver) | jtthundr |
 | `alpha1v` | Alpha One (Vision Electronics) | 1988 | Shooter / Flying Horizontal (catver) | Irem1, Irem1_TestBuild (RodimusFVC) |
 | `argus` | Argus | 1986 | Shooter / Flying Vertical (catver) | jtargus, Argus |
-| `asylum` | Asylum (prototype) | 1991 | Shooter / Walking (catver) | Leland |
+| `asylum` | Asylum (prototype) | 1991 | Shooter / Walking (catver) | Leland, Leland |
 | `robokid` | Atomic Robo-kid (World, Type-2) | 1988 | Shooter / Flying Horizontal (catver) | UPLFramebuffer |
 | `bwings` | B-Wings (Japan new Ver.) | 1984 | Shooter / Flying Vertical (catver) | DataEastLiberation |
 | `bakutotu` | Bakutotsu Kijuutei | 1988 | Shooter / Flying Horizontal (catver) | jtshouse |
@@ -85,7 +85,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `mayday` | Mayday (set 1) | 1980 | Shooter / Flying Horizontal (catver) | Defender, Williams_TestBuild (RodimusFVC) |
 | `megaphx` | Mega Phoenix | 1991 | Shooter / Flying Vertical (catver) | ffmegaphx |
 | `meikyuh` | Meikyuu Hunter G (Japan) | 1987 | Shooter / Walking (catver) | DEC8 |
-| `mercs` | Mercs (World 900302) | 1990 | Shooter / Walking (catver) | mercs_mister, jtcps1 |
+| `mercs` | Mercs (World 900302) | 1990 | Shooter / Walking (catver) | mercs, jtcps1 |
 | `metlhawk` | Metal Hawk (Rev C) | 1988 | Shooter / Flying (catver) | NamcoS2_MH |
 | `mimonkey` | Mighty Monkey | 1982 | Shooter / Flying Horizontal (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |
 | `minefld` | Minefield | 1983 | Shooter / Driving Horizontal (catver) | Galaxian, Scramble, Galaxian_TestBuild (RodimusFVC) |
@@ -102,7 +102,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `opaopa` | Opa Opa (MC-8123, 317-0042) | 1987 | Shooter / Flying Horizontal (catver) | SMS |
 | `orbitron` | Orbitron | 1982 | Shooter / Command (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `phantom2` | Phantom II | 1979 | Shooter / Flying Vertical (catver) | SpaceInvaders, SpaceInvaders_TestBuild (RodimusFVC) |
-| `pltkids` | Pilot Kids (Model 2B, Revision A) | 1998 | Shooter / Flying Horizontal (catver) | Model2A, Model2A (alphanu1) |
+| `pltkids` | Pilot Kids (Model 2B, Revision A) | 1998 | Shooter / Flying Horizontal (catver) | Model2A (alphanu1), Model2A (alphanu1) |
 | `pballoon` | Pioneer Balloon | 1982 | Shooter / Flying Horizontal (catver) | SNK6502 |
 | `porky` | Porky | 1985 | Shooter / Driving Horizontal (catver) | Pacman |
 | `rabiolep` | Rabio Lepus (Japan) | 1987 | Shooter / Flying Horizontal (catver) | RabbitPunch (mlc4050) |
@@ -116,11 +116,11 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `scorpion` | Scorpion (set 1) | 1982 | Shooter / Flying Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `sfposeid` | Sea Fighter Poseidon | 1984 | Shooter / Misc. Horizontal (catver) | TaitoSJ |
 | `seganinj` | Sega Ninja (315-5102) | 1985 | Shooter / Walking (catver) | SEGASYS1, SegaSystem1-2, SegaSystem1-2_TestBuild (RodimusFVC) |
-| `seicross` | Seicross (set 1) | 1984 | Shooter / Driving Horizontal (catver) | jtseicro |
+| `seicross` | Seicross (set 1) | 1984 | Shooter / Driving Horizontal (catver) | jtseicro, Seicross |
 | `shocktro` | Shock Troopers (set 1) | 1997 | Shooter / Walking (catver) | NeoGeo |
 | `shocktr2` | Shock Troopers - 2nd Squad | 1998 | Shooter / Walking (catver) | NeoGeo |
 | `ar_sdwr` | Sidewinder (Arcadia, set 1, V 2.1) | 1988 | Shooter / Flying Vertical (catver) | arcadiasystems (decoryah) |
-| `silvmil` | Silver Millennium | 1995 | Shooter / Flying Vertical (catver) | silvmil |
+| `silvmil` | Silver Millennium | 1995 | Shooter / Flying Vertical (catver) | silvmil (decoryah) |
 | `skyalert` | Sky Alert | 1992 | Shooter / Flying Vertical (catver) | metro, metro (decoryah) |
 | `skyskipr` | Sky Skipper | 1981 | Shooter / Flying (catver) | Popeye, jtpopeye, Nintendo, Nintendo_TestBuild (RodimusFVC) |
 | `amazon` | Soldier Girl Amazon | 1986 | Shooter / Walking (catver) | terracresta |

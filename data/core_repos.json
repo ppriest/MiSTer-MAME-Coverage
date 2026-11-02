@@ -345,6 +345,12 @@
  "decoryah:crospang": [
   "decoryah/Arcade-CrossPang_MiSTer"
  ],
+ "decoryah:gaelco3d": [
+  "decoryah/Arcade-Gaelco3D_MiSTer"
+ ],
+ "decoryah:gaelco3d020": [
+  "decoryah/Arcade-Gaelco3D_MiSTer"
+ ],
  "decoryah:gaiapolis": [
   "decoryah/Arcade-Gaiapolis_MiSTer"
  ],
@@ -1545,6 +1551,7 @@
   "jlrh/jlrh-misterfpga-db"
  ],
  "jlrh:ffgticlub": [
+  "jlrh/jlrh-misterfpga-db",
   "jlrh/konami-fpga"
  ],
  "jlrh:ffgwar": [
@@ -1658,7 +1665,8 @@
   "jotego/jtbin"
  ],
  "jt:jtarblst": [
-  "jotego/jtbin"
+  "jotego/jtbin",
+  "meathax/meatcores"
  ],
  "jt:jtbiocom": [
   "jotego/jtbin"
@@ -2109,6 +2117,10 @@
  "meat:ah": [
   "meathax/meatcores"
  ],
+ "meat:airbuster": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
  "meat:alpha68kn": [
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
@@ -2130,6 +2142,10 @@
   "meathax/BattletoadsMain",
   "meathax/meatcores"
  ],
+ "meat:bigfight": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
  "meat:blackpanther": [
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
@@ -2138,7 +2154,14 @@
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
+ "meat:caliber50twinstick": [
+  "meathax/meatcores"
+ ],
  "meat:crystalsystem": [
+  "meathax/meatcores"
+ ],
+ "meat:daikaiju": [
+  "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
  "meat:dataeastliberation": [
@@ -2163,12 +2186,29 @@
   "meathax/escapekids",
   "meathax/meatcores"
  ],
+ "meat:esd16": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
+ "meat:forgottenworldstwinstick": [
+  "meathax/meatcores"
+ ],
+ "meat:hangzo": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
+ "meat:heavybarreltwinstick": [
+  "meathax/meatcores"
+ ],
  "meat:heavyunit": [
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
  "meat:i-robot": [
   "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
+ "meat:ikariiiitwinstick": [
   "meathax/meatcores"
  ],
  "meat:ikki": [
@@ -2179,8 +2219,14 @@
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
+ "meat:jackaltwinstick": [
+  "meathax/meatcores"
+ ],
  "meat:madmotor": [
   "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
+ "meat:madplanetstwinstick": [
   "meathax/meatcores"
  ],
  "meat:mcr68": [
@@ -2188,6 +2234,9 @@
   "meathax/meatcores"
  ],
  "meat:metamorphicforce": [
+  "meathax/meatcores"
+ ],
+ "meat:midnightresistancetwinstick": [
   "meathax/meatcores"
  ],
  "meat:mysteriousstones": [
@@ -2217,6 +2266,9 @@
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
+ "meat:sartwinstick": [
+  "meathax/meatcores"
+ ],
  "meat:segasystem24": [
   "meathax/meatcores"
  ],
@@ -2230,11 +2282,17 @@
   "meathax/meatcores",
   "meathax/s32multi"
  ],
+ "meat:seicross": [
+  "meathax/meatcores"
+ ],
  "meat:simple156": [
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
  "meat:simpsons": [
+  "meathax/meatcores"
+ ],
+ "meat:snktriplez80": [
   "meathax/meatcores"
  ],
  "meat:spy": [
@@ -2259,6 +2317,13 @@
   "meathax/meatcores"
  ],
  "meat:suna8bit": [
+  "meathax/meatcores"
+ ],
+ "meat:thunderjaws": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
+ "meat:timesoldierstwinstick": [
   "meathax/meatcores"
  ],
  "meat:tumble": [
@@ -3034,6 +3099,9 @@
  "repo:cinematronics": [
   "Usquebagh/Arcade-Cinematronics_MiSTer"
  ],
+ "repo:cischeat": [
+  "ppriest/Arcade-Cischeat_MiSTer"
+ ],
  "repo:cloakanddagger": [
   "harlock74/Arcade-CloakDagger_MiSTer"
  ],
@@ -3048,6 +3116,14 @@
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores",
   "shmupfan/Arcade-DEC8_MiSTer"
+ ],
+ "repo:decomlc": [
+  "OngoGablogian/MiSTer_Ongo",
+  "ppriest/Arcade-DecoMLC_MiSTer"
+ ],
+ "repo:decomlc156": [
+  "OngoGablogian/MiSTer_Ongo",
+  "ppriest/Arcade-DecoMLC_MiSTer"
  ],
  "repo:demonwld": [
   "va7deo/demonswld"
@@ -3084,6 +3160,9 @@
  "repo:fifelix": [
   "OngoGablogian/MiSTer_Ongo",
   "niknakniknak/FixItFelixArcadeForMister"
+ ],
+ "repo:firebeat": [
+  "ppriest/Arcade-Firebeat_MiSTer"
  ],
  "repo:firetrap": [
   "Usquebagh/Arcade-FireTrap_MiSTer"
@@ -3233,6 +3312,7 @@
   "retrorepair/sega-model2-mister"
  ],
  "repo:model2a": [
+  "OngoGablogian/MiSTer_Ongo",
   "alphanu1/sega-model2-mister"
  ],
  "repo:model2a_20261024b": [
@@ -3240,6 +3320,7 @@
   "alphanu1/sega-model2-mister"
  ],
  "repo:model2c": [
+  "OngoGablogian/MiSTer_Ongo",
   "alphanu1/sega-model2-mister"
  ],
  "repo:monstermaulers": [
@@ -3332,6 +3413,10 @@
   "rmonic79/rm-Galivan_MiSTer",
   "rmonic79/rmcores"
  ],
+ "repo:rmpowerspikes": [
+  "rmonic79/rm_PowerSpikes_MiSTer",
+  "rmonic79/rmcores"
+ ],
  "repo:roundup": [
   "harlock74/Arcade-RoundUp_MiSTer"
  ],
@@ -3380,6 +3465,9 @@
  "repo:shadowforce": [
   "yaguboo/Arcade-ShadowForce_MiSTer"
  ],
+ "repo:shanghai3": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "repo:silkroad": [
   "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-Silkroad_MiSTer"
@@ -3402,6 +3490,10 @@
   "MiSTer-devel/Distribution_MiSTer",
   "Usquebagh/MiSTer_misc",
   "Videodr0me/Arcade-StarCastle_MiSTer"
+ ],
+ "repo:sunsoftga9201": [
+  "YoAaronD/Shanghai3_MiSTer",
+  "YoAaronD/SunsoftGA9201_MiSTer"
  ],
  "repo:superbagman": [
   "cavemanxzx/MiSTer-Arcade-SuperBagman",
@@ -3536,6 +3628,10 @@
  "rodimus:punchout": [
   "RodimusFVC/Arcade-PunchOut_MiSTer"
  ],
+ "rodimus:punchout_testbuild": [
+  "OngoGablogian/MiSTer_Ongo",
+  "RodimusFVC/Arcade-PunchOut_MiSTer"
+ ],
  "rodimus:robots": [
   "RodimusFVC/VCR_Robots"
  ],
@@ -3579,6 +3675,12 @@
   "TheJesusFish/Arcade-Batsugun_MiSTer",
   "TheJesusFish/Slop-Core"
  ],
+ "slop:battlebakraid": [
+  "TheJesusFish/Slop-Core"
+ ],
+ "slop:battlegaregga": [
+  "TheJesusFish/Slop-Core"
+ ],
  "slop:dogyuun": [
   "TheJesusFish/Arcade-Dogyuun_MiSTer",
   "TheJesusFish/Slop-Core"
@@ -3599,8 +3701,14 @@
   "TheJesusFish/Arcade-ITech32_MiSTer",
   "TheJesusFish/Slop-Core"
  ],
+ "slop:kingdomgrandprix": [
+  "TheJesusFish/Slop-Core"
+ ],
  "slop:knucklebash": [
   "TheJesusFish/Arcade-KnuckleBash_MiSTer",
+  "TheJesusFish/Slop-Core"
+ ],
+ "slop:sorcerstriker": [
   "TheJesusFish/Slop-Core"
  ],
  "usquebagh:cinematronics": [
@@ -3741,9 +3849,18 @@
  "zakk:jtf1dream": [
   "zakk4223/Mister-MRA"
  ],
+ "zakk:segasystem32": [
+  "zakk4223/s32"
+ ],
+ "zakk:segasystem32multi": [
+  "zakk4223/s32multi"
+ ],
  "zakk:seibuspi": [
   "OngoGablogian/MiSTer_Ongo",
   "kyledlester/Arcade-SeibuSPI_MiSTer",
   "zakk4223/Arcade-SeibuSPI_MiSTer"
+ ],
+ "zakk:ssv": [
+  "zakk4223/SVV"
  ]
 }
