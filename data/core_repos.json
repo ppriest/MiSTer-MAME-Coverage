@@ -336,6 +336,9 @@
  "decoryah:arcadiasystems": [
   "decoryah/Arcade-ArcadiaSystems_MiSTer"
  ],
+ "decoryah:atarigx2": [
+  "decoryah/Arcade-AtariGX2_MiSTer"
+ ],
  "decoryah:blockhl": [
   "decoryah/Arcade-BlockHole_MiSTer"
  ],
@@ -349,6 +352,12 @@
   "decoryah/Arcade-Gaelco3D_MiSTer"
  ],
  "decoryah:gaelco3d020": [
+  "decoryah/Arcade-Gaelco3D_MiSTer"
+ ],
+ "decoryah:gaelco3d020_20261102b": [
+  "decoryah/Arcade-Gaelco3D_MiSTer"
+ ],
+ "decoryah:gaelco3d_20261102b": [
   "decoryah/Arcade-Gaelco3D_MiSTer"
  ],
  "decoryah:gaiapolis": [
@@ -715,12 +724,14 @@
   "MiSTer-devel/Arcade-DonkeyKong_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
   "MiSTer-devel/MRA-Alternatives_MiSTer",
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "bazset/MiSTer_BAZSET"
  ],
  "dist:donkeykong3": [
   "MiSTer-devel/Arcade-DonkeyKong3_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "bazset/MiSTer_BAZSET"
  ],
  "dist:donkeykongjunior": [
   "MiSTer-devel/Arcade-DonkeyKongJunior_MiSTer",
@@ -2177,6 +2188,9 @@
   "Usquebagh/MiSTer_misc",
   "meathax/meatcores"
  ],
+ "meat:downtowntwinstick": [
+  "meathax/meatcores"
+ ],
  "meat:drmicro": [
   "OngoGablogian/MiSTer_Ongo",
   "meathax/drmicro",
@@ -2482,6 +2496,9 @@
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:bazturtship": [
+  "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:berlinwall": [
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:bigfight": [
@@ -2932,6 +2949,9 @@
  ],
  "ongo:sorcerstriker": [
   "TheJesusFish/Slop-Core"
+ ],
+ "ongo:spinalbreakers": [
+  "meathax/meatcores"
  ],
  "ongo:spy": [
   "meathax/meatcores"
@@ -3492,6 +3512,7 @@
   "Videodr0me/Arcade-StarCastle_MiSTer"
  ],
  "repo:sunsoftga9201": [
+  "OngoGablogian/MiSTer_Ongo",
   "YoAaronD/Shanghai3_MiSTer",
   "YoAaronD/SunsoftGA9201_MiSTer"
  ],
