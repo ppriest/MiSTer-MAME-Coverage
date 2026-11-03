@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-11-03T08:02:22+00:00",
+  "generated": "2026-11-03T12:43:58+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-11-03T08:02:09+00:00",
+  "mister_generated": "2026-11-03T12:43:37+00:00",
   "alamone_generated": "2026-11-02T17:48:49+00:00",
   "ledger_updated": "2026-11-03",
   "ledger_runs": [
-   {
-    "date": "2026-10-31",
-    "note": "alamone 2026-10-26",
-    "cores": 2,
-    "sets": 1,
-    "pairs": 14,
-    "dates_improved": 0,
-    "cores_removed": 1
-   },
    {
     "date": "2026-11-01",
     "note": "alamone 2026-10-26",
@@ -50,6 +41,15 @@
     "sets": 40,
     "pairs": 51,
     "dates_improved": 7,
+    "cores_removed": 0
+   },
+   {
+    "date": "2026-11-03",
+    "note": "alamone 2026-11-02",
+    "cores": 2,
+    "sets": 2,
+    "pairs": 3,
+    "dates_improved": 0,
     "cores_removed": 0
    }
   ],
@@ -3069,7 +3069,7 @@
     "source": "ongo",
     "repo": "meathax/meatcores",
     "dirs": null,
-    "mras": 283
+    "mras": 284
    },
    {
     "source": "ongo",
@@ -3545,13 +3545,13 @@
   "counts": {
    "titles": 6826,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2586,
+   "working_arcade_titles_covered": 2587,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 6672,
+   "working_arcade_sets_covered": 6673,
    "working_arcade_titles_source": 2357,
-   "working_arcade_titles_binary_only": 229,
-   "cores": 888,
-   "binary_only_cores": 375,
+   "working_arcade_titles_binary_only": 230,
+   "cores": 889,
+   "binary_only_cores": 377,
    "unmatched_sets": 519
   }
  },
@@ -4040,6 +4040,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-03",
+   "aliases": [],
    "last_seen": "2026-11-03",
    "binary_only": true,
    "nsets": 1,
@@ -7737,6 +7738,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-03",
+   "aliases": [],
    "last_seen": "2026-11-03",
    "binary_only": false,
    "nsets": 9,
@@ -18914,6 +18916,31 @@
    ]
   },
   {
+   "id": "meat:dfjail",
+   "name": "DFJail",
+   "source": "meat",
+   "source_title": "MeatCores (meathax)",
+   "channel": null,
+   "rbf": "Arcade-DFJail.rbf",
+   "repo": "meathax/meatcores",
+   "url": "https://github.com/meathax/meatcores",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-03",
+   "last_seen": "2026-11-03",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-11-03",
+   "drivers_loaded": [
+    "sega/segas16b.cpp"
+   ]
+  },
+  {
    "id": "meat:docastle",
    "name": "DoCastle",
    "source": "meat",
@@ -18958,6 +18985,7 @@
    "mame_drivers": [],
    "note": "",
    "first_recorded": "2026-11-03",
+   "aliases": [],
    "last_seen": "2026-11-03",
    "binary_only": false,
    "nsets": 1,
@@ -19955,6 +19983,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-03",
+   "aliases": [],
    "last_seen": "2026-11-03",
    "binary_only": true,
    "nsets": 1,
@@ -33808,12 +33837,13 @@
   {
    "sourcefile": "sega/segas16b.cpp",
    "titles": 32,
-   "covered": 26,
+   "covered": 27,
    "sets": 127,
-   "sets_covered": 76,
+   "sets_covered": 77,
    "cores": [
     "jt:jts16",
-    "jt:jts16b"
+    "jt:jts16b",
+    "meat:dfjail"
    ],
    "first": "2021-06-11"
   },

@@ -6,15 +6,6 @@
 {
 "date": "2026-10-17",
 "note": "alamone 2026-10-12",
-"cores": 5,
-"sets": 1,
-"pairs": 49,
-"dates_improved": 41,
-"cores_removed": 3
-},
-{
-"date": "2026-10-17",
-"note": "alamone 2026-10-12",
 "cores": 7,
 "sets": 22,
 "pairs": 56,
@@ -461,6 +452,15 @@
 "pairs": 51,
 "dates_improved": 7,
 "cores_removed": 0
+},
+{
+"date": "2026-11-03",
+"note": "alamone 2026-11-02",
+"cores": 2,
+"sets": 2,
+"pairs": 3,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -825,6 +825,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-03",
+"aliases": [],
 "last_seen": "2026-11-03"
 },
 "bazset:bonksadventure": {
@@ -3530,6 +3531,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-03",
+"aliases": [],
 "last_seen": "2026-11-03"
 },
 "decoryah:blockhl": {
@@ -12760,6 +12762,24 @@
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 },
+"meat:dfjail": {
+"id": "meat:dfjail",
+"name": "Arcade-DFJail",
+"source": "meat",
+"source_title": "MeatCores (meathax)",
+"channel": null,
+"rbf": "Arcade-DFJail.rbf",
+"repo": "meathax/meatcores",
+"url": "https://github.com/meathax/meatcores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-03",
+"last_seen": "2026-11-03"
+},
 "meat:docastle": {
 "id": "meat:docastle",
 "name": "Arcade-DoCastle",
@@ -12798,6 +12818,7 @@
 "mame_drivers": [],
 "note": "",
 "first_recorded": "2026-11-03",
+"aliases": [],
 "last_seen": "2026-11-03"
 },
 "meat:drmicro": {
@@ -13537,6 +13558,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-03",
+"aliases": [],
 "last_seen": "2026-11-03"
 },
 "meat:spy": {
@@ -14697,6 +14719,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-03",
+"aliases": [],
 "last_seen": "2026-11-03"
 },
 "ongo:bigfight": {
@@ -15116,6 +15139,24 @@
 "first_recorded": "2026-10-17",
 "aliases": [],
 "last_seen": "2026-10-18"
+},
+"ongo:dfjail": {
+"id": "ongo:dfjail",
+"name": "Arcade-DFJail",
+"source": "ongo",
+"source_title": "MiSTer_Ongo (OngoGablogian)",
+"channel": null,
+"rbf": "Arcade-DFJail.rbf",
+"repo": "meathax/meatcores",
+"url": "https://github.com/meathax/meatcores",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-03",
+"last_seen": "2026-11-03"
 },
 "ongo:djmain": {
 "id": "ongo:djmain",
@@ -17656,6 +17697,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-03",
+"aliases": [],
 "last_seen": "2026-11-03"
 },
 "ongo:spy": {
@@ -24990,7 +25032,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Action Hollywood.mra",
-"mra": "_Arcade/_MeatCores/Action Hollywood.mra",
+"mra": "_Arcade/_Meatcores/Action Hollywood.mra",
 "first_recorded": "2026-10-23",
 "last_seen": "2026-11-03"
 },
@@ -25762,7 +25804,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Air Buster - Trouble Specialty Raid Unit (World).mra",
-"mra": "_Arcade/_MeatCores/Air Buster.mra",
+"mra": "_Arcade/_Meatcores/Air Buster.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -25831,7 +25873,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Air Buster - Trouble Specialty Raid Unit/Air Buster - Trouble Specialty Raid Unit (Japan).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Air Buster/Air Buster (Japan).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Air Buster/Air Buster (Japan).mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -26299,7 +26341,7 @@
 "first_path": "mra/Alien3 The Gun (World).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Alien3 The Gun.mra"
+"mra": "_Arcade/_Meatcores/Alien3 The Gun.mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -26340,7 +26382,7 @@
 "first_path": "mra/Alien3 The Gun (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Alien3 The Gun/Alien3 The Gun (Japan).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Alien3 The Gun/Alien3 The Gun (Japan).mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -26381,7 +26423,7 @@
 "first_path": "mra/Alien3 The Gun (US, Rev A).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Alien3 The Gun/Alien3 The Gun (US, Rev A).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Alien3 The Gun/Alien3 The Gun (US, Rev A).mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -27969,7 +28011,7 @@
 "first_path": null,
 "mra": "_Arcade/Apache 3 (rev F).mra",
 "first_recorded": "2026-11-01",
-"last_seen": "2026-11-02"
+"last_seen": "2026-11-03"
 }
 },
 "apache3a": {
@@ -28744,7 +28786,7 @@
 "first_path": "mra/Arabian Fight (World).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Arabian Fight.mra"
+"mra": "_Arcade/_Meatcores/Arabian Fight.mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -28785,7 +28827,7 @@
 "first_path": "mra/Arabian Fight (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Arabian Fight/Arabian Fight (Japan).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Arabian Fight/Arabian Fight (Japan).mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -28826,7 +28868,7 @@
 "first_path": "mra/Arabian Fight (US).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Arabian Fight/Arabian Fight (US).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Arabian Fight/Arabian Fight (US).mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -29048,7 +29090,7 @@
 "first_path": "_Arcade/Arch Rivals (rev 4.0 6-29-89).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Arch Rivals.mra"
+"mra": "_Arcade/_Meatcores/Arch Rivals.mra"
 }
 },
 "area88": {
@@ -29119,7 +29161,7 @@
 "first_path": "mra/Air Rescue (World).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Air Rescue.mra"
+"mra": "_Arcade/_Meatcores/Air Rescue.mra"
 }
 },
 "arescuej": {
@@ -29175,7 +29217,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Argus.mra",
-"mra": "_Arcade/_MeatCores/Argus.mra",
+"mra": "_Arcade/_Meatcores/Argus.mra",
 "first_recorded": "2026-10-14",
 "last_seen": "2026-11-03"
 },
@@ -29981,7 +30023,7 @@
 "alt": false,
 "first_repo": "MiSTer-devel/Arcade-SNK_TripleZ80_MiSTer",
 "first_path": "releases/ASO.mra",
-"mra": "_Arcade/_MeatCores/ASO - Armored Scrum Object.mra",
+"mra": "_Arcade/_Meatcores/ASO - Armored Scrum Object.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -30011,7 +30053,7 @@
 "first_path": "_Arcade/American Soccer (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Indoor Soccer/American Soccer.mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Indoor Soccer/American Soccer.mra"
 },
 "rodimus:universal_testbuild": {
 "core": "rodimus:universal_testbuild",
@@ -30696,7 +30738,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Asylum (prototype).mra",
-"mra": "_Arcade/_MeatCores/Asylum (prototype).mra",
+"mra": "_Arcade/_Meatcores/Asylum (prototype).mra",
 "first_recorded": "2026-10-27",
 "last_seen": "2026-11-03"
 },
@@ -30709,7 +30751,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Asylum (prototype).mra",
-"mra": "_Arcade/_MeatCores/Asylum (prototype).mra",
+"mra": "_Arcade/_Meatcores/Asylum (prototype).mra",
 "first_recorded": "2026-11-02",
 "last_seen": "2026-11-03"
 }
@@ -30870,7 +30912,7 @@
 "alt": false,
 "first_repo": "MiSTer-devel/Arcade-Athena_MiSTer",
 "first_path": "releases/Athena.mra",
-"mra": "_Arcade/_MeatCores/Athena.mra",
+"mra": "_Arcade/_Meatcores/Athena.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -32038,7 +32080,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/BanBam.mra",
-"mra": "_Arcade/_MeatCores/BanBam.mra",
+"mra": "_Arcade/_Meatcores/BanBam.mra",
 "first_recorded": "2026-10-11",
 "last_seen": "2026-11-03"
 },
@@ -33705,7 +33747,7 @@
 "first_path": "_Arcade/_MeatCores/B.C. Story.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/B.C. Story.mra"
+"mra": "_Arcade/_Meatcores/B.C. Story.mra"
 },
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
@@ -33938,7 +33980,7 @@
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/jlrh/gwar/releases/mra/Bermuda Triangle (World).mra",
-"mra": "_Arcade/_MeatCores/Bermuda Triangle World.mra",
+"mra": "_Arcade/_Meatcores/Bermuda Triangle World.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -34502,7 +34544,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Big Fight Big Trouble In The Atlantic Ocean.mra",
-"mra": "_Arcade/_MeatCores/Big Fight Big Trouble In The Atlantic Ocean.mra",
+"mra": "_Arcade/_Meatcores/Big Fight Big Trouble In The Atlantic Ocean.mra",
 "first_recorded": "2026-10-27",
 "last_seen": "2026-11-03"
 },
@@ -35171,7 +35213,7 @@
 "first_path": "_Arcade/Blasted.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Blasted.mra"
+"mra": "_Arcade/_Meatcores/Blasted.mra"
 }
 },
 "blaster": {
@@ -35713,7 +35755,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Black Panther.mra",
-"mra": "_Arcade/_MeatCores/Black Panther.mra",
+"mra": "_Arcade/_Meatcores/Black Panther.mra",
 "first_recorded": "2026-10-19",
 "last_seen": "2026-11-03"
 }
@@ -37441,7 +37483,7 @@
 "first_path": "_Arcade/Bonanza Bros (US, Floppy DS3-5000-07d Based).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Bonanza Bros.mra"
+"mra": "_Arcade/_Meatcores/Bonanza Bros.mra"
 },
 "ongo:meathax_segasystem24": {
 "core": "ongo:meathax_segasystem24",
@@ -37951,7 +37993,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Boomer Rang'r - Genesis.mra",
-"mra": "_Arcade/_MeatCores/Boomer Rang'r - Genesis.mra",
+"mra": "_Arcade/_Meatcores/Boomer Rang'r - Genesis.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-11-03"
 },
@@ -38771,7 +38813,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Shackled/Breywood (Japan revision 2).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Shackled/Breywood (Japan revision 2).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Shackled/Breywood (Japan revision 2).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -38788,7 +38830,7 @@
 "first_path": "_Arcade/Brick Zone (v6.0, Joystick).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Brick Zone.mra"
+"mra": "_Arcade/_Meatcores/Brick Zone.mra"
 },
 "ongo:meathax_suna8bit": {
 "core": "ongo:meathax_suna8bit",
@@ -38816,7 +38858,7 @@
 "first_path": "mra/Burning Rival (World).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Burning Rival.mra"
+"mra": "_Arcade/_Meatcores/Burning Rival.mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -38857,7 +38899,7 @@
 "first_path": "mra/Burning Rival (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Burning Rival/Burning Rival (Japan).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Burning Rival/Burning Rival (Japan).mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -40238,7 +40280,7 @@
 "first_path": "_Arcade/Bucky O'Hare (ver EAB).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Bucky O'Hare.mra"
+"mra": "_Arcade/_Meatcores/Bucky O'Hare.mra"
 }
 },
 "buckyaa": {
@@ -40550,7 +40592,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Butasan - Pig's & Bomber's.mra",
-"mra": "_Arcade/_MeatCores/Butasan - Pig's & Bomber's.mra",
+"mra": "_Arcade/_Meatcores/Butasan - Pig's & Bomber's.mra",
 "first_recorded": "2026-10-14",
 "last_seen": "2026-11-03"
 },
@@ -40679,7 +40721,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/B-Wings.mra",
-"mra": "_Arcade/_MeatCores/B-Wings.mra",
+"mra": "_Arcade/_Meatcores/B-Wings.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-11-03"
 },
@@ -41131,7 +41173,7 @@
 "alt": false,
 "first_repo": "ppriest/Arcade-SetaDowntown_MiSTer",
 "first_path": "releases/Caliber 50 (Ver. 1.01).mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/Caliber 50 (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/Caliber 50 (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -41272,7 +41314,7 @@
 "first_path": "_Arcade/_alternatives/_Osman/Cannon Dancer (Japan).mra",
 "first_recorded": "2026-10-08",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Osman/Cannon Dancer (Japan).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Osman/Cannon Dancer (Japan).mra"
 },
 "ongo:meathax_simple156": {
 "core": "ongo:meathax_simple156",
@@ -43298,7 +43340,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Chain Reaction (World, Master Version 2.2, 1995.09.25).mra",
-"mra": "_Arcade/_MeatCores/Chain Reaction.mra",
+"mra": "_Arcade/_Meatcores/Chain Reaction.mra",
 "first_recorded": "2026-10-21",
 "last_seen": "2026-11-03"
 }
@@ -43551,7 +43593,7 @@
 "first_path": "_Arcade/Charlie Ninja.mra",
 "first_recorded": "2026-10-06",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Charlie Ninja.mra"
+"mra": "_Arcade/_Meatcores/Charlie Ninja.mra"
 },
 "ongo:meathax_simple156": {
 "core": "ongo:meathax_simple156",
@@ -43732,7 +43774,7 @@
 "first_path": "_Arcade/Cheese Chase.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Cheese Chase.mra"
+"mra": "_Arcade/_Meatcores/Cheese Chase.mra"
 },
 "ongo:meathax_stoneball": {
 "core": "ongo:meathax_stoneball",
@@ -43977,7 +44019,7 @@
 "first_path": "_Arcade/_MeatCores/Choky! Choky!.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Choky! Choky!.mra"
+"mra": "_Arcade/_Meatcores/Choky! Choky!.mra"
 },
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
@@ -44193,7 +44235,7 @@
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/jlrh/gwar/releases/mra/Chopper I (US Ver 2).mra",
-"mra": "_Arcade/_MeatCores/Chopper I.mra",
+"mra": "_Arcade/_Meatcores/Chopper I.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -45746,7 +45788,7 @@
 "alt": false,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/Cobra-Command (World, Rev. 5).mra",
-"mra": "_Arcade/_MeatCores/Cobra-Command.mra",
+"mra": "_Arcade/_Meatcores/Cobra-Command.mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -45774,7 +45816,7 @@
 "alt": true,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/_alternatives/_Cobra-Command/Cobra-Command (World, Rev. 4).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Cobra-Command/Cobra-Command (World-US revision 4).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Cobra-Command/Cobra-Command (World-US revision 4).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -45802,7 +45844,7 @@
 "alt": true,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/_alternatives/_Cobra-Command/Cobra-Command (World).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Cobra-Command/Cobra-Command (World-US).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Cobra-Command/Cobra-Command (World-US).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -45830,7 +45872,7 @@
 "alt": true,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/_alternatives/_Cobra-Command/Cobra-Command (Japan).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Cobra-Command/Cobra-Command (Japan).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Cobra-Command/Cobra-Command (Japan).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -45845,7 +45887,7 @@
 "alt": true,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/_alternatives/_Cobra-Command/Cobra-Command (Japan, bootleg).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Cobra-Command/Cobra-Command (Japan, bootleg).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Cobra-Command/Cobra-Command (Japan, bootleg).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -46520,7 +46562,7 @@
 "first_path": "_Arcade/_MeatCores/Cookie & Bibi.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Cookie & Bibi.mra"
+"mra": "_Arcade/_Meatcores/Cookie & Bibi.mra"
 },
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
@@ -47245,7 +47287,7 @@
 "alt": false,
 "first_repo": "MiSTer-devel/Arcade-Athena_MiSTer",
 "first_path": "releases/Country Club.mra",
-"mra": "_Arcade/_MeatCores/Country Club.mra",
+"mra": "_Arcade/_Meatcores/Country Club.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -47828,7 +47870,7 @@
 "first_path": "_Arcade/Crack Down (World, Floppy Based, FD1094 317-0058-04c).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Crack Down.mra"
+"mra": "_Arcade/_Meatcores/Crack Down.mra"
 },
 "ongo:meathax_segasystem24": {
 "core": "ongo:meathax_segasystem24",
@@ -48307,7 +48349,7 @@
 "first_path": "mra/The Crystal of Kings.mra",
 "first_recorded": "2026-10-08",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/The Crystal of Kings.mra"
+"mra": "_Arcade/_Meatcores/The Crystal of Kings.mra"
 },
 "ongo:crystal": {
 "core": "ongo:crystal",
@@ -48651,7 +48693,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Captain Silver (World).mra",
-"mra": "_Arcade/_MeatCores/Captain Silver.mra",
+"mra": "_Arcade/_Meatcores/Captain Silver.mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -48666,7 +48708,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Captain Silver/Captain Silver (Japan, revision 2).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Captain Silver/Captain Silver (Japan, revision 2).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Captain Silver/Captain Silver (Japan, revision 2).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -48681,7 +48723,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Captain Silver/Captain Silver (Japan, revision 1).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Captain Silver/Captain Silver (Japan, revision 1).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Captain Silver/Captain Silver (Japan, revision 1).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -49604,7 +49646,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Cycle Warriors.mra",
-"mra": "_Arcade/_MeatCores/Cycle Warriors.mra",
+"mra": "_Arcade/_Meatcores/Cycle Warriors.mra",
 "first_recorded": "2026-10-27",
 "last_seen": "2026-11-03"
 },
@@ -49705,7 +49747,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Daikaiju no Gyakushu.mra",
-"mra": "_Arcade/_MeatCores/Daikaiju no Gyakushu.mra",
+"mra": "_Arcade/_Meatcores/Daikaiju no Gyakushu.mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -50682,7 +50724,7 @@
 "first_path": "mra/Dark Edge (World).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Dark Edge.mra"
+"mra": "_Arcade/_Meatcores/Dark Edge.mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -50723,7 +50765,7 @@
 "first_path": "mra/Dark Edge (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Dark Edge/Dark Edge (Japan).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Dark Edge/Dark Edge (Japan).mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -50775,7 +50817,7 @@
 "alt": false,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/The Lost Castle In Darkmist [CoC].mra",
-"mra": "_Arcade/_MeatCores/The Lost Castle In Darkmist.mra",
+"mra": "_Arcade/_Meatcores/The Lost Castle In Darkmist.mra",
 "first_recorded": "2026-10-19",
 "last_seen": "2026-11-03"
 }
@@ -51187,7 +51229,7 @@
 "first_path": "mra/Dragon Ball Z V.R. V.S. (Japan, Rev A).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Dragon Ball Z V.R. V.S..mra"
+"mra": "_Arcade/_Meatcores/Dragon Ball Z V.R. V.S..mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -54275,7 +54317,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Devastators (ver. Z).mra",
-"mra": "_Arcade/_MeatCores/Devastators.mra",
+"mra": "_Arcade/_Meatcores/Devastators.mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-11-03"
 },
@@ -54303,7 +54345,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Devastators/Devastators (ver. 2).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Devastators/Devastators (ver. 2).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Devastators/Devastators (ver. 2).mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-11-03"
 },
@@ -54331,7 +54373,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Devastators/Devastators (ver. V).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Devastators/Devastators (ver. V).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Devastators/Devastators (ver. V).mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-11-03"
 },
@@ -54359,7 +54401,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Devastators/Devastators (ver. X).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Devastators/Devastators (ver. X).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Devastators/Devastators (ver. X).mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-11-03"
 },
@@ -54463,6 +54505,34 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
 "mra": "_Arcade/Dangun Feveron (No discomen).mra"
+}
+},
+"dfjail": {
+"meat:dfjail": {
+"core": "meat:dfjail",
+"date": "2026-11-03",
+"date_quality": "git",
+"via": "meat",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_Meatcores/The Destroyer From Jail.mra",
+"mra": "_Arcade/_Meatcores/The Destroyer From Jail.mra",
+"first_recorded": "2026-11-03",
+"last_seen": "2026-11-03"
+},
+"ongo:dfjail": {
+"core": "ongo:dfjail",
+"date": "2026-11-03",
+"date_quality": "git",
+"via": "ongo",
+"wip": false,
+"alt": false,
+"first_repo": "meathax/meatcores",
+"first_path": "_Arcade/_Meatcores/The Destroyer From Jail.mra",
+"mra": "_Arcade/_Meatcores/The Destroyer From Jail.mra",
+"first_recorded": "2026-11-03",
+"last_seen": "2026-11-03"
 }
 },
 "dfkbl": {
@@ -56913,7 +56983,7 @@
 "first_path": "_Arcade/Mr. Do's Castle (set 1).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Mr. Do's Castle.mra"
+"mra": "_Arcade/_Meatcores/Mr. Do's Castle.mra"
 },
 "rodimus:universal_testbuild": {
 "core": "rodimus:universal_testbuild",
@@ -57538,7 +57608,7 @@
 "first_path": "_Arcade/Do! Run Run (set 1).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Do! Run Run.mra"
+"mra": "_Arcade/_Meatcores/Do! Run Run.mra"
 },
 "rodimus:universal_testbuild": {
 "core": "rodimus:universal_testbuild",
@@ -57836,7 +57906,7 @@
 "first_path": "_Arcade/Mr. Do's Wild Ride.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Mr. Do's Wild Ride.mra"
+"mra": "_Arcade/_Meatcores/Mr. Do's Wild Ride.mra"
 },
 "rodimus:universal_testbuild": {
 "core": "rodimus:universal_testbuild",
@@ -59100,7 +59170,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Dual Assault.mra",
-"mra": "_Arcade/_MeatCores/Dual Assault.mra",
+"mra": "_Arcade/_Meatcores/Dual Assault.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-11-03"
 },
@@ -61097,7 +61167,7 @@
 "first_path": "releases/Escape Kids (Asia, 4 Players).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Escape Kids.mra"
+"mra": "_Arcade/_Meatcores/Escape Kids.mra"
 }
 },
 "esckidsj": {
@@ -61125,7 +61195,7 @@
 "first_path": "releases/Escape Kids (Japan, 2 Players).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Escape Kids/Escape Kids (Japan, 2 Players).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Escape Kids/Escape Kids (Japan, 2 Players).mra"
 }
 },
 "escmars": {
@@ -61835,7 +61905,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Exterminator.mra",
-"mra": "_Arcade/_MeatCores/Exterminator.mra",
+"mra": "_Arcade/_Meatcores/Exterminator.mra",
 "first_recorded": "2026-10-19",
 "last_seen": "2026-11-03"
 },
@@ -61848,7 +61918,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Exterminator.mra",
-"mra": "_Arcade/_MeatCores/Exterminator.mra",
+"mra": "_Arcade/_Meatcores/Exterminator.mra",
 "first_recorded": "2026-10-19",
 "last_seen": "2026-11-03"
 },
@@ -62791,7 +62861,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Farmers Rebellion.mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Ikki/Farmers Rebellion.mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Ikki/Farmers Rebellion.mra",
 "first_recorded": "2026-10-11",
 "last_seen": "2026-11-03"
 },
@@ -64557,7 +64627,7 @@
 "alt": false,
 "first_repo": "MiSTer-devel/Arcade-Athena_MiSTer",
 "first_path": "releases/Fighting Golf.mra",
-"mra": "_Arcade/_MeatCores/Lee Trevino's Fighting Golf.mra",
+"mra": "_Arcade/_Meatcores/Lee Trevino's Fighting Golf.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -65366,7 +65436,7 @@
 "first_path": "_Arcade/_MeatCores/Fancy World - Earth of Crisis.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Fancy World - Earth of Crisis.mra"
+"mra": "_Arcade/_Meatcores/Fancy World - Earth of Crisis.mra"
 },
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
@@ -65629,7 +65699,7 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/CPS1/Forgotten Worlds -World, newer-.mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/Forgotten Worlds (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/Forgotten Worlds (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -65683,7 +65753,7 @@
 "alt": true,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/CPS1/_alt/Forgotten Worlds -World-.mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/_alternatives/Forgotten Worlds (World) (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/_alternatives/Forgotten Worlds (World) (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -65752,7 +65822,7 @@
 "alt": true,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/CPS1/_alt/Forgotten Worlds -USA, B-Board 88621B-2, Rev. C-.mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/_alternatives/Forgotten Worlds (USA, B-Board 88621B-2, Rev. C) (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/_alternatives/Forgotten Worlds (USA, B-Board 88621B-2, Rev. C) (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -65806,7 +65876,7 @@
 "alt": true,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/CPS1/_alt/Forgotten Worlds -USA, B-Board 88618B-2, Rev. A-.mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. A) (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. A) (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -65860,7 +65930,7 @@
 "alt": true,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/CPS1/_alt/Forgotten Worlds -USA, B-Board 88618B-2, Rev. AA-.mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. AA) (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. AA) (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -65914,7 +65984,7 @@
 "alt": true,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/CPS1/_alt/Forgotten Worlds -USA, B-Board 88618B-2, Rev. C-.mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. C) (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. C) (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -65968,7 +66038,7 @@
 "alt": true,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/CPS1/_alt/Forgotten Worlds -USA, B-Board 88618B-2, Rev. E-.mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. E) (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/_alternatives/Forgotten Worlds (USA, B-Board 88618B-2, Rev. E) (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -66956,7 +67026,7 @@
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/jlrh/gwar/releases/mra/Fighting Soccer (version 4).mra",
-"mra": "_Arcade/_MeatCores/Fighting Soccer.mra",
+"mra": "_Arcade/_Meatcores/Fighting Soccer.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -67343,7 +67413,7 @@
 "first_path": "_Arcade/_MeatCores/Funky Jet (bootleg).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Funky Jet.mra"
+"mra": "_Arcade/_Meatcores/Funky Jet.mra"
 },
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
@@ -67605,7 +67675,7 @@
 "first_path": "mra/Golden Axe The Revenge of Death Adder (World, Rev B).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Golden Axe The Revenge of Death Adder.mra"
+"mra": "_Arcade/_Meatcores/Golden Axe The Revenge of Death Adder.mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -67659,7 +67729,7 @@
 "first_path": "mra/Golden Axe The Revenge of Death Adder (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Golden Axe The Revenge of Death Adder/Golden Axe The Revenge of Death Adder (Japan).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Golden Axe The Revenge of Death Adder/Golden Axe The Revenge of Death Adder (Japan).mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -67700,7 +67770,7 @@
 "first_path": "mra/Golden Axe The Revenge of Death Adder (US, Rev A).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Golden Axe The Revenge of Death Adder/Golden Axe The Revenge of Death Adder (US, Rev A).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Golden Axe The Revenge of Death Adder/Golden Axe The Revenge of Death Adder (US, Rev A).mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -70747,7 +70817,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Devastators/Garuka (Japan ver. W).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Devastators/Garuka (Japan ver. W).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Devastators/Garuka (Japan ver. W).mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-11-03"
 },
@@ -70775,7 +70845,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Garyo Retsuden (Japan).mra",
-"mra": "_Arcade/_MeatCores/Garyo Retsuden.mra",
+"mra": "_Arcade/_Meatcores/Garyo Retsuden.mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -71925,7 +71995,7 @@
 "first_path": "_Arcade/Gain Ground (World, 3 Players, Floppy Based, FD1094 317-0058-03d Rev A).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Gain Ground.mra"
+"mra": "_Arcade/_Meatcores/Gain Ground.mra"
 },
 "ongo:meathax_segasystem24": {
 "core": "ongo:meathax_segasystem24",
@@ -71994,7 +72064,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/The Real Ghostbusters (US 2 Players, revision 2).mra",
-"mra": "_Arcade/_MeatCores/The Real Ghostbusters.mra",
+"mra": "_Arcade/_Meatcores/The Real Ghostbusters.mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -72009,7 +72079,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_The Real Ghostbusters/The Real Ghostbusters (US 2 Players).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_The Real Ghostbusters/The Real Ghostbusters (US 2 Players).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_The Real Ghostbusters/The Real Ghostbusters (US 2 Players).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -72024,7 +72094,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_The Real Ghostbusters/The Real Ghostbusters (US 3 Players, revision 3B).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_The Real Ghostbusters/The Real Ghostbusters (US 3 Players, revision 3B-).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_The Real Ghostbusters/The Real Ghostbusters (US 3 Players, revision 3B-).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -72039,7 +72109,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_The Real Ghostbusters/The Real Ghostbusters (US 3 Players, revision 2).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_The Real Ghostbusters/The Real Ghostbusters (US 3 Players, revision 2).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_The Real Ghostbusters/The Real Ghostbusters (US 3 Players, revision 2).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -73439,7 +73509,7 @@
 "alt": false,
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/Gondomania (World).mra",
-"mra": "_Arcade/_MeatCores/Gondomania.mra",
+"mra": "_Arcade/_Meatcores/Gondomania.mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 },
@@ -73493,7 +73563,7 @@
 "alt": true,
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/_alternatives/_Gondomania/Gondomania (US).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Gondomania/Gondomania (US).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Gondomania/Gondomania (US).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 },
@@ -76296,7 +76366,7 @@
 "alt": false,
 "first_repo": "jlrh/snk-fpga",
 "first_path": "cores/gwar/mra/Guerrilla War (FF, SNK, 1987).mra",
-"mra": "_Arcade/_MeatCores/Guerrilla War.mra",
+"mra": "_Arcade/_Meatcores/Guerrilla War.mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -76649,7 +76719,7 @@
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/jlrh/gwar/releases/mra/HAL21.mra",
-"mra": "_Arcade/_MeatCores/HAL21.mra",
+"mra": "_Arcade/_Meatcores/HAL21.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -76911,7 +76981,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Hangzo.mra",
-"mra": "_Arcade/_MeatCores/Hangzo.mra",
+"mra": "_Arcade/_Meatcores/Hangzo.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -77029,7 +77099,7 @@
 "first_path": "mra/Hard Dunk (World).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Hard Dunk.mra"
+"mra": "_Arcade/_Meatcores/Hard Dunk.mra"
 },
 "zakk:segasystem32multi": {
 "core": "zakk:segasystem32multi",
@@ -77057,7 +77127,7 @@
 "first_path": "mra/Hard Dunk (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Hard Dunk/Hard Dunk (Japan).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Hard Dunk/Hard Dunk (Japan).mra"
 },
 "zakk:segasystem32multi": {
 "core": "zakk:segasystem32multi",
@@ -77113,7 +77183,7 @@
 "first_path": "_Arcade/Hard Head 2 (v2.0, Music Program v2.4).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Hard Head 2.mra"
+"mra": "_Arcade/_Meatcores/Hard Head 2.mra"
 },
 "ongo:meathax_suna8bit": {
 "core": "ongo:meathax_suna8bit",
@@ -77141,7 +77211,7 @@
 "first_path": "_Arcade/Hard Head.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Hard Head.mra"
+"mra": "_Arcade/_Meatcores/Hard Head.mra"
 },
 "ongo:meathax_suna8bit": {
 "core": "ongo:meathax_suna8bit",
@@ -77388,7 +77458,7 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/Heavy Barrel (World).mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/Heavy Barrel (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/Heavy Barrel (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -77845,7 +77915,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/HeliFire (set 1).mra",
-"mra": "_Arcade/_MeatCores/HeliFire.mra",
+"mra": "_Arcade/_Meatcores/HeliFire.mra",
 "first_recorded": "2026-10-13",
 "last_seen": "2026-11-03"
 },
@@ -78346,7 +78416,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/SF-HiSplitter (set 1).mra",
-"mra": "_Arcade/_MeatCores/SF-HiSplitter.mra",
+"mra": "_Arcade/_Meatcores/SF-HiSplitter.mra",
 "first_recorded": "2026-10-13",
 "last_seen": "2026-11-03"
 },
@@ -79166,7 +79236,7 @@
 "first_path": "mra/Holosseum (US, Rev A).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Holosseum.mra"
+"mra": "_Arcade/_Meatcores/Holosseum.mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -80683,7 +80753,7 @@
 "alt": false,
 "first_repo": "yaguboo/Arcade-HeavySmash_MiSTer",
 "first_path": "SD/_Arcade/_Kaze's Cores/Heavy Smash (Europe version -2, 1993_06_30).mra",
-"mra": "_Arcade/_MeatCores/Heavy Smash.mra",
+"mra": "_Arcade/_Meatcores/Heavy Smash.mra",
 "first_recorded": "2026-10-21",
 "last_seen": "2026-11-03"
 },
@@ -80780,7 +80850,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Heavy Unit.mra",
-"mra": "_Arcade/_MeatCores/Heavy Unit.mra",
+"mra": "_Arcade/_Meatcores/Heavy Unit.mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-11-03"
 },
@@ -80834,7 +80904,7 @@
 "alt": true,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/_alternatives/_HeavyUnit/Heavy Unit (Japan, newer).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_HeavyUnit/Heavy Unit (Japan, newer).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_HeavyUnit/Heavy Unit (Japan, newer).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-11-03"
 },
@@ -80888,7 +80958,7 @@
 "alt": true,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/_alternatives/_HeavyUnit/Heavy Unit (Japan, alternate ROM format).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_HeavyUnit/Heavy Unit (Japan, alternate ROM format).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_HeavyUnit/Heavy Unit (Japan, alternate ROM format).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-11-03"
 },
@@ -80942,7 +81012,7 @@
 "alt": true,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/_alternatives/_HeavyUnit/Heavy Unit (Japan, older).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_HeavyUnit/Heavy Unit (Japan, older).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_HeavyUnit/Heavy Unit (Japan, older).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-11-03"
 },
@@ -80996,7 +81066,7 @@
 "alt": true,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/_alternatives/_HeavyUnit/Heavy Unit (US).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_HeavyUnit/Heavy Unit (US).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_HeavyUnit/Heavy Unit (US).mra",
 "first_recorded": "2026-10-15",
 "last_seen": "2026-11-03"
 },
@@ -81512,7 +81582,7 @@
 "first_path": "_Arcade/Indoor Soccer (set 1).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Indoor Soccer.mra"
+"mra": "_Arcade/_Meatcores/Indoor Soccer.mra"
 },
 "rodimus:universal_testbuild": {
 "core": "rodimus:universal_testbuild",
@@ -81609,7 +81679,7 @@
 "alt": false,
 "first_repo": "MiSTer-devel/Arcade-IkariWarriors_MiSTer",
 "first_path": "releases/Ikari Warriors.mra",
-"mra": "_Arcade/_MeatCores/Ikari Warriors.mra",
+"mra": "_Arcade/_Meatcores/Ikari Warriors.mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -81762,7 +81832,7 @@
 "alt": false,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/_alternatives/_Ikari III - The Rescue/Ikari III - The Rescue (World, Rotary Joystick).mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/Ikari III - The Rescue (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/Ikari III - The Rescue (Twin Stick).mra",
 "first_recorded": "2026-10-31",
 "last_seen": "2026-11-03"
 },
@@ -81831,7 +81901,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Ikki (Japan).mra",
-"mra": "_Arcade/_MeatCores/Ikki.mra",
+"mra": "_Arcade/_Meatcores/Ikki.mra",
 "first_recorded": "2026-10-11",
 "last_seen": "2026-11-03"
 },
@@ -83362,7 +83432,7 @@
 "first_path": "_Arcade/I, Robot.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/I, Robot.mra"
+"mra": "_Arcade/_Meatcores/I, Robot.mra"
 }
 },
 "iron": {
@@ -83581,7 +83651,7 @@
 "alt": false,
 "first_repo": "MiSTer-devel/MRA-Alternatives_MiSTer",
 "first_path": "_alternatives/_Jackal/Jackal (W, Rotary).mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/Jackal (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/Jackal (Twin Stick).mra",
 "first_recorded": "2026-11-02",
 "last_seen": "2026-11-03"
 }
@@ -83608,7 +83678,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Jack Rabbit (set 1).mra",
-"mra": "_Arcade/_MeatCores/Jack Rabbit.mra",
+"mra": "_Arcade/_Meatcores/Jack Rabbit.mra",
 "first_recorded": "2026-10-19",
 "last_seen": "2026-11-03"
 },
@@ -83781,7 +83851,7 @@
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/jlrh/gwar/releases/mra/Jumping Cross (set 1).mra",
-"mra": "_Arcade/_MeatCores/Jumping Cross.mra",
+"mra": "_Arcade/_Meatcores/Jumping Cross.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -84010,7 +84080,7 @@
 "first_path": "_Arcade/Jumping Jack.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Jumping Jack.mra"
+"mra": "_Arcade/_Meatcores/Jumping Jack.mra"
 },
 "rodimus:universal_testbuild": {
 "core": "rodimus:universal_testbuild",
@@ -84098,7 +84168,7 @@
 "first_path": "mra/The J.League 1994 (Japan, Rev A).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Super Visual Football European Sega Cup/The J.League 1994 (Japan, Rev A).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Super Visual Football European Sega Cup/The J.League 1994 (Japan, Rev A).mra"
 },
 "zakk:segasystem32": {
 "core": "zakk:segasystem32",
@@ -84239,7 +84309,7 @@
 "first_path": "_Arcade/Joe & Mac Returns (World, Master Version 1.1, 1994.05.27).mra",
 "first_recorded": "2026-10-06",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Joe & Mac Returns.mra"
+"mra": "_Arcade/_Meatcores/Joe & Mac Returns.mra"
 },
 "ongo:meathax_simple156": {
 "core": "ongo:meathax_simple156",
@@ -84640,7 +84710,7 @@
 "first_path": "mra/Jurassic Park (World, Rev A).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Jurassic Park.mra"
+"mra": "_Arcade/_Meatcores/Jurassic Park.mra"
 },
 "zakk:segasystem32": {
 "core": "zakk:segasystem32",
@@ -84668,7 +84738,7 @@
 "first_path": "mra/Jurassic Park (Japan, Rev A, Deluxe).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Jurassic Park/Jurassic Park (Japan, Rev A, Deluxe).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Jurassic Park/Jurassic Park (Japan, Rev A, Deluxe).mra"
 },
 "zakk:segasystem32": {
 "core": "zakk:segasystem32",
@@ -84696,7 +84766,7 @@
 "first_path": "mra/Jurassic Park (Japan, Deluxe).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Jurassic Park/Jurassic Park (Japan, Deluxe).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Jurassic Park/Jurassic Park (Japan, Deluxe).mra"
 },
 "zakk:segasystem32": {
 "core": "zakk:segasystem32",
@@ -84724,7 +84794,7 @@
 "first_path": "mra/Jurassic Park (Japan, Rev A, Conversion).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Jurassic Park/Jurassic Park (Japan, Rev A, Conversion).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Jurassic Park/Jurassic Park (Japan, Rev A, Conversion).mra"
 },
 "zakk:segasystem32": {
 "core": "zakk:segasystem32",
@@ -85083,7 +85153,7 @@
 "first_path": "_Arcade/_MeatCores/Jump Kids.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Jump Kids.mra"
+"mra": "_Arcade/_Meatcores/Jump Kids.mra"
 },
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
@@ -87071,7 +87141,7 @@
 "first_path": "_Arcade/Kick Rider.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Kick Rider.mra"
+"mra": "_Arcade/_Meatcores/Kick Rider.mra"
 },
 "rodimus:universal_testbuild": {
 "core": "rodimus:universal_testbuild",
@@ -90278,7 +90348,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Kyros.mra",
-"mra": "_Arcade/_MeatCores/Kyros.mra",
+"mra": "_Arcade/_Meatcores/Kyros.mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-11-03"
 }
@@ -90293,7 +90363,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_Kyros/Kyros no Yakata (Japan).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Kyros/Kyros no Yakata (Japan).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Kyros/Kyros no Yakata (Japan).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-11-03"
 }
@@ -91093,7 +91163,7 @@
 "alt": false,
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/Last Mission (World revision 8).mra",
-"mra": "_Arcade/_MeatCores/Last Mission.mra",
+"mra": "_Arcade/_Meatcores/Last Mission.mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 },
@@ -91134,7 +91204,7 @@
 "alt": true,
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/_alternatives/_Last Mission/Last Mission (Japan).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Last Mission/Last Mission (Japan).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Last Mission/Last Mission (Japan).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 },
@@ -91175,7 +91245,7 @@
 "alt": true,
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/_alternatives/_Last Mission/Last Mission (US revision 5).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Last Mission/Last Mission (US revision 5).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Last Mission/Last Mission (US revision 5).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 },
@@ -91216,7 +91286,7 @@
 "alt": true,
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/_alternatives/_Last Mission/Last Mission (US revision 6).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Last Mission/Last Mission (US revision 6).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Last Mission/Last Mission (US revision 6).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 },
@@ -92204,7 +92274,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Liberation.mra",
-"mra": "_Arcade/_MeatCores/Liberation.mra",
+"mra": "_Arcade/_Meatcores/Liberation.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-11-03"
 },
@@ -92904,7 +92974,7 @@
 "alt": true,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/CPS1/_alt/Lost Worlds -Japan-.mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/_alternatives/Lost Worlds (Japan) (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/_alternatives/Lost Worlds (Japan) (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -92958,7 +93028,7 @@
 "alt": true,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/CPS1/_alt/Lost Worlds -Japan Old Ver.-.mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/_alternatives/Lost Worlds (Japan Old Ver.) (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/_alternatives/Lost Worlds (Japan Old Ver.) (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -93776,7 +93846,7 @@
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/jlrh/gwar/releases/mra/Mad Crasher.mra",
-"mra": "_Arcade/_MeatCores/Mad Crasher.mra",
+"mra": "_Arcade/_Meatcores/Mad Crasher.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -93875,7 +93945,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Mad Motor (prototype, set 1).mra",
-"mra": "_Arcade/_MeatCores/Mad Motor (prototype).mra",
+"mra": "_Arcade/_Meatcores/Mad Motor (prototype).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-11-03"
 },
@@ -93944,7 +94014,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Magical Drop (Japan, Master Version 1.5, 1995.06.21).mra",
-"mra": "_Arcade/_MeatCores/Magical Drop.mra",
+"mra": "_Arcade/_Meatcores/Magical Drop.mra",
 "first_recorded": "2026-10-21",
 "last_seen": "2026-11-03"
 }
@@ -94000,7 +94070,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Magical Drop Plus 1 (Japan, Master Version 2.1, 1995.09.12).mra",
-"mra": "_Arcade/_MeatCores/Magical Drop Plus 1.mra",
+"mra": "_Arcade/_Meatcores/Magical Drop Plus 1.mra",
 "first_recorded": "2026-10-21",
 "last_seen": "2026-11-03"
 }
@@ -94092,7 +94162,7 @@
 "first_path": "_Arcade/_MeatCores/Magic Purple.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Magic Purple.mra"
+"mra": "_Arcade/_Meatcores/Magic Purple.mra"
 },
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
@@ -94386,7 +94456,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/The Main Event (4 Players ver. Y).mra",
-"mra": "_Arcade/_MeatCores/The Main Event.mra",
+"mra": "_Arcade/_Meatcores/The Main Event.mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-11-03"
 },
@@ -94414,7 +94484,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_The Main Event/The Main Event (2 Players ver. X).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_The Main Event/The Main Event (2 Players ver. X).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_The Main Event/The Main Event (2 Players ver. X).mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-11-03"
 },
@@ -94442,7 +94512,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_The Main Event/The Main Event (4 Players ver. F).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_The Main Event/The Main Event (4 Players ver. F).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_The Main Event/The Main Event (4 Players ver. F).mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-11-03"
 },
@@ -94710,7 +94780,7 @@
 "alt": true,
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/_alternatives/_Gondomania/Makyou Senshi (Japan).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Gondomania/Makyou Senshi (Japan).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Gondomania/Makyou Senshi (Japan).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 },
@@ -95530,7 +95600,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Markham.mra",
-"mra": "_Arcade/_MeatCores/Markham.mra",
+"mra": "_Arcade/_Meatcores/Markham.mra",
 "first_recorded": "2026-10-11",
 "last_seen": "2026-11-03"
 },
@@ -95774,7 +95844,7 @@
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/jlrh/gwar/releases/mra/Marvin's Maze.mra",
-"mra": "_Arcade/_MeatCores/Marvins Maze.mra",
+"mra": "_Arcade/_Meatcores/Marvins Maze.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -96865,7 +96935,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Meikyuu Hunter G (Japan).mra",
-"mra": "_Arcade/_MeatCores/Meikyuu Hunter G.mra",
+"mra": "_Arcade/_Meatcores/Meikyuu Hunter G.mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -97143,7 +97213,7 @@
 "alt": false,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/Metamorphic Force (World, EAA).mra",
-"mra": "_Arcade/_MeatCores/Metamorphic Force.mra",
+"mra": "_Arcade/_Meatcores/Metamorphic Force.mra",
 "first_recorded": "2026-10-19",
 "last_seen": "2026-11-03"
 }
@@ -97184,7 +97254,7 @@
 "alt": true,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/_alternatives/_Metamorphic Force/Metamorphic Force (Asia, AAA).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Metamorphic Force/Metamorphic Force (ver AAA).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Metamorphic Force/Metamorphic Force (ver AAA).mra",
 "first_recorded": "2026-10-19",
 "last_seen": "2026-11-03"
 }
@@ -97225,7 +97295,7 @@
 "alt": true,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/_alternatives/_Metamorphic Force/Metamorphic Force (World, EAA).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Metamorphic Force/Metamorphic Force (ver EAA - alternate).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Metamorphic Force/Metamorphic Force (ver EAA - alternate).mra",
 "first_recorded": "2026-10-19",
 "last_seen": "2026-11-03"
 }
@@ -97266,7 +97336,7 @@
 "alt": true,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/_alternatives/_Metamorphic Force/Metamorphic Force (Japan, JAA).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Metamorphic Force/Metamorphic Force (ver JAA).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Metamorphic Force/Metamorphic Force (ver JAA).mra",
 "first_recorded": "2026-10-19",
 "last_seen": "2026-11-03"
 }
@@ -97307,7 +97377,7 @@
 "alt": true,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/_alternatives/_Metamorphic Force/Metamorphic Force (US, UAA).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Metamorphic Force/Metamorphic Force (ver UAA).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Metamorphic Force/Metamorphic Force (ver UAA).mra",
 "first_recorded": "2026-10-19",
 "last_seen": "2026-11-03"
 }
@@ -97427,7 +97497,7 @@
 "first_path": "_Arcade/_MeatCores/Metal Saver.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Metal Saver.mra"
+"mra": "_Arcade/_Meatcores/Metal Saver.mra"
 },
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
@@ -97832,7 +97902,7 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/Midnight Resistance (World).mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/Midnight Resistance (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/Midnight Resistance (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -97903,7 +97973,7 @@
 "alt": true,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_Midnight Resistance/Midnight Resistance (US).mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/_alternatives/Midnight Resistance (US) (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/_alternatives/Midnight Resistance (US) (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -100080,7 +100150,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Money Money (set 1).mra",
-"mra": "_Arcade/_MeatCores/Money Money.mra",
+"mra": "_Arcade/_Meatcores/Money Money.mra",
 "first_recorded": "2026-10-19",
 "last_seen": "2026-11-03"
 },
@@ -101030,7 +101100,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Mortal Race.mra",
-"mra": "_Arcade/_MeatCores/Mortal Race.mra",
+"mra": "_Arcade/_Meatcores/Mortal Race.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-11-03"
 },
@@ -101875,7 +101945,7 @@
 "alt": false,
 "first_repo": "MiSTer-devel/Arcade-QBert_MiSTer",
 "first_path": "releases/Mad Planets.mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/Mad Planets (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/Mad Planets (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -101916,7 +101986,7 @@
 "alt": true,
 "first_repo": "RodimusFVC/Arcade-Gottlieb_MiSTer",
 "first_path": "releases/_alternatives/_Mad Planets/Mad Planets (UK).mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/_alternatives/Mad Planets (UK) (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/_alternatives/Mad Planets (UK) (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -106360,7 +106430,7 @@
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/mystston/releases/mra/Mysterious Stones Dr. John's Adventure.mra",
-"mra": "_Arcade/_MeatCores/Mysterious Stones.mra",
+"mra": "_Arcade/_Meatcores/Mysterious Stones.mra",
 "first_recorded": "2026-10-14",
 "last_seen": "2026-11-03"
 },
@@ -106744,7 +106814,7 @@
 "first_path": "_Arcade/Narc (rev 7.00) [Meathax].mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/NARC.mra"
+"mra": "_Arcade/_Meatcores/NARC.mra"
 }
 },
 "narc1": {
@@ -107178,7 +107248,7 @@
 "first_path": "_Arcade/Namco Classic Collection Vol.1.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Namco Classic Collection Vol.1.mra"
+"mra": "_Arcade/_Meatcores/Namco Classic Collection Vol.1.mra"
 },
 "ongo:meathax_namcond1": {
 "core": "ongo:meathax_namcond1",
@@ -107236,7 +107306,7 @@
 "first_path": "_Arcade/Namco Classic Collection Vol.2.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Namco Classic Collection Vol.2.mra"
+"mra": "_Arcade/_Meatcores/Namco Classic Collection Vol.2.mra"
 },
 "ongo:meathax_namcond1": {
 "core": "ongo:meathax_namcond1",
@@ -111524,7 +111594,7 @@
 "first_path": "mra/OutRunners (World).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/OutRunners.mra"
+"mra": "_Arcade/_Meatcores/OutRunners.mra"
 },
 "repo:segasystem32multi": {
 "core": "repo:segasystem32multi",
@@ -111565,7 +111635,7 @@
 "first_path": "mra/OutRunners (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Outrunners/OutRunners (Japan).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Outrunners/OutRunners (Japan).mra"
 },
 "repo:segasystem32multi": {
 "core": "repo:segasystem32multi",
@@ -111606,7 +111676,7 @@
 "first_path": "mra/OutRunners (US).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Outrunners/OutRunners (US).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Outrunners/OutRunners (US).mra"
 },
 "repo:outrunners": {
 "core": "repo:outrunners",
@@ -111671,7 +111741,7 @@
 "alt": false,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/Psycho-Nics Oscar (World).mra",
-"mra": "_Arcade/_MeatCores/Psycho-Nics Oscar.mra",
+"mra": "_Arcade/_Meatcores/Psycho-Nics Oscar.mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -111686,7 +111756,7 @@
 "alt": true,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/_alternatives/_Psycho-Nics Oscar/Psycho-Nics Oscar (World revision 0, bootleg).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Psycho-Nics Oscar/Psycho-Nics Oscar (World revision 0, bootleg).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Psycho-Nics Oscar/Psycho-Nics Oscar (World revision 0, bootleg).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -111714,7 +111784,7 @@
 "alt": true,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/_alternatives/_Psycho-Nics Oscar/Psycho-Nics Oscar (Japan Revision 1).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Psycho-Nics Oscar/Psycho-Nics Oscar (Japan revision 1).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Psycho-Nics Oscar/Psycho-Nics Oscar (Japan revision 1).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -111742,7 +111812,7 @@
 "alt": true,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/_alternatives/_Psycho-Nics Oscar/Psycho-Nics Oscar (Japan Revision 2).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Psycho-Nics Oscar/Psycho-Nics Oscar (Japan revision 2).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Psycho-Nics Oscar/Psycho-Nics Oscar (Japan revision 2).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -111770,7 +111840,7 @@
 "alt": true,
 "first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
 "first_path": "_Arcade/_alternatives/_Psycho-Nics Oscar/Psycho-Nics Oscar (US).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Psycho-Nics Oscar/Psycho-Nics Oscar (US).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Psycho-Nics Oscar/Psycho-Nics Oscar (US).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -111787,7 +111857,7 @@
 "first_path": "_Arcade/Osman (World).mra",
 "first_recorded": "2026-10-06",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Osman.mra"
+"mra": "_Arcade/_Meatcores/Osman.mra"
 },
 "ongo:meathax_simple156": {
 "core": "ongo:meathax_simple156",
@@ -114710,7 +114780,7 @@
 "first_path": "_Arcade/_MeatCores/Pang Pang.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Pang Pang.mra"
+"mra": "_Arcade/_Meatcores/Pang Pang.mra"
 },
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
@@ -116829,7 +116899,7 @@
 "alt": false,
 "first_repo": "decoryah/Arcade-Seta2_MiSTer",
 "first_path": "mra/Penguin Brothers.mra",
-"mra": "_Arcade/_MeatCores/Penguin Brothers.mra",
+"mra": "_Arcade/_Meatcores/Penguin Brothers.mra",
 "first_recorded": "2026-10-21",
 "last_seen": "2026-11-03"
 },
@@ -118395,7 +118465,7 @@
 "first_path": "_Arcade/Pigskin 621AD (rev 1.1K 8-01-90).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Pigskin 621AD.mra"
+"mra": "_Arcade/_Meatcores/Pigskin 621AD.mra"
 }
 },
 "pingpong": {
@@ -122494,7 +122564,7 @@
 "first_path": "_Arcade/_MeatCores/Primal Rage 2.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Primal Rage 2.mra"
+"mra": "_Arcade/_Meatcores/Primal Rage 2.mra"
 }
 },
 "primrage": {
@@ -122822,7 +122892,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Pro Sports.mra",
-"mra": "_Arcade/_MeatCores/Pro Sports.mra",
+"mra": "_Arcade/_Meatcores/Pro Sports.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-11-03"
 },
@@ -123120,7 +123190,7 @@
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/jlrh/gwar/releases/mra/Psycho Soldier (US).mra",
-"mra": "_Arcade/_MeatCores/Psycho Soldier.mra",
+"mra": "_Arcade/_Meatcores/Psycho Soldier.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -123148,7 +123218,7 @@
 "alt": true,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/jlrh/gwar/releases/mra/alternatives/_Psycho Soldier/Psycho Soldier (Japan).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_Psycho Soldier/Psycho Soldier (Japan).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_Psycho Soldier/Psycho Soldier (Japan).mra",
 "first_recorded": "2026-10-30",
 "last_seen": "2026-11-03"
 },
@@ -126495,7 +126565,7 @@
 "first_path": "mra/Rad Mobile (World).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Rad Mobile.mra"
+"mra": "_Arcade/_Meatcores/Rad Mobile.mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -126577,7 +126647,7 @@
 "first_path": "mra/Rad Rally (World).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Rad Rally.mra"
+"mra": "_Arcade/_Meatcores/Rad Rally.mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -126661,7 +126731,7 @@
 "first_path": "mra/Rad Rally (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Rad Rally/Rad Rally (Japan).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Rad Rally/Rad Rally (Japan).mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -126702,7 +126772,7 @@
 "first_path": "mra/Rad Rally (US).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Rad Rally/Rad Rally (US).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Rad Rally/Rad Rally (US).mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -131389,7 +131459,7 @@
 "alt": true,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/_alternatives/_The Main Event/Ring no Ohja (Japan 2 Players ver. N).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_The Main Event/Ring no Ohja (Japan 2 Players ver. N).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_The Main Event/Ring no Ohja (Japan 2 Players ver. N).mra",
 "first_recorded": "2026-10-18",
 "last_seen": "2026-11-03"
 },
@@ -137721,7 +137791,7 @@
 "first_path": "mra/Stadium Cross (World).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Stadium Cross.mra"
+"mra": "_Arcade/_Meatcores/Stadium Cross.mra"
 },
 "zakk:segasystem32multi": {
 "core": "zakk:segasystem32multi",
@@ -137749,7 +137819,7 @@
 "first_path": "mra/Stadium Cross (US).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Stadium Cross/Stadium Cross (US).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Stadium Cross/Stadium Cross (US).mra"
 },
 "zakk:segasystem32multi": {
 "core": "zakk:segasystem32multi",
@@ -137777,7 +137847,7 @@
 "first_path": "_Arcade/_MeatCores/SD Fighters.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/SD Fighters.mra"
+"mra": "_Arcade/_Meatcores/SD Fighters.mra"
 },
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
@@ -137946,7 +138016,7 @@
 "alt": false,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/SAR - Search And Rescue (World).mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/SAR - Search And Rescue (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/SAR - Search And Rescue (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -138000,7 +138070,7 @@
 "alt": true,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/_alternatives/_S.A.R. - Search and Rescue/SAR - Search And Rescue (Japan version 3).mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/_alternatives/SAR - Search And Rescue (Japan version 3) (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/_alternatives/SAR - Search And Rescue (Japan version 3) (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -138054,7 +138124,7 @@
 "alt": true,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/_alternatives/_S.A.R. - Search and Rescue/SAR - Search And Rescue (US).mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/_alternatives/SAR - Search And Rescue (US) (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/_alternatives/SAR - Search And Rescue (US) (Twin Stick).mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -142506,7 +142576,7 @@
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/jlrh/gwar/releases/mra/Gladiator 1984.mra",
-"mra": "_Arcade/_MeatCores/Gladiator 1984.mra",
+"mra": "_Arcade/_Meatcores/Gladiator 1984.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -142594,7 +142664,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Shackled (US).mra",
-"mra": "_Arcade/_MeatCores/Shackled.mra",
+"mra": "_Arcade/_Meatcores/Shackled.mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 }
@@ -143069,7 +143139,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Sheriff.mra",
-"mra": "_Arcade/_MeatCores/Sheriff.mra",
+"mra": "_Arcade/_Meatcores/Sheriff.mra",
 "first_recorded": "2026-10-13",
 "last_seen": "2026-11-03"
 },
@@ -144642,7 +144712,7 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_The Simpsons/The Simpsons (2 Players World, set 1).mra",
-"mra": "_Arcade/_MeatCores/The Simpsons.mra",
+"mra": "_Arcade/_Meatcores/The Simpsons.mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-11-03"
 }
@@ -144670,7 +144740,7 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_The Simpsons/The Simpsons (2 Players World, set 2).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_The Simpsons/The Simpsons (2 Players World, set 2).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_The Simpsons/The Simpsons (2 Players World, set 2).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-11-03"
 }
@@ -144698,7 +144768,7 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_The Simpsons/The Simpsons (2 Players World, set 3).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_The Simpsons/The Simpsons (2 Players World, set 3).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_The Simpsons/The Simpsons (2 Players World, set 3).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-11-03"
 }
@@ -144726,7 +144796,7 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_The Simpsons/The Simpsons (2 Players Asia).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_The Simpsons/The Simpsons (2 Players Asia).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_The Simpsons/The Simpsons (2 Players Asia).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-11-03"
 }
@@ -144754,7 +144824,7 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_The Simpsons/The Simpsons (2 Players Japan).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_The Simpsons/The Simpsons (2 Players Japan).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_The Simpsons/The Simpsons (2 Players Japan).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-11-03"
 }
@@ -144797,7 +144867,7 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_The Simpsons/The Simpsons (4 Players Asia).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_The Simpsons/The Simpsons (4 Players Asia).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_The Simpsons/The Simpsons (4 Players Asia).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-11-03"
 }
@@ -144825,7 +144895,7 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_The Simpsons/The Simpsons (4 Players World, set 2).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_The Simpsons/The Simpsons (4 Players World, set 2).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_The Simpsons/The Simpsons (4 Players World, set 2).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-11-03"
 }
@@ -144853,7 +144923,7 @@
 "alt": false,
 "first_repo": "jotego/jtbin",
 "first_path": "mra/_alternatives/_The Simpsons/The Simpsons (4 Players World, set 3).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_The Simpsons/The Simpsons (4 Players World, set 3).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_The Simpsons/The Simpsons (4 Players World, set 3).mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-11-03"
 }
@@ -146427,7 +146497,7 @@
 "first_path": "mra/Slip Stream (Brazil 950515).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Slip Stream.mra"
+"mra": "_Arcade/_Meatcores/Slip Stream.mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -146468,7 +146538,7 @@
 "first_path": "mra/Slip Stream (Hispanic 950515).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Slip Stream/Slip Stream (Hispanic 950515).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Slip Stream/Slip Stream (Hispanic 950515).mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -147993,7 +148063,7 @@
 "first_path": "mra/SegaSonic The Hedgehog (Japan, rev. C).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/SegaSonic The Hedgehog.mra"
+"mra": "_Arcade/_Meatcores/SegaSonic The Hedgehog.mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -149444,7 +149514,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Space Fever (new version).mra",
-"mra": "_Arcade/_MeatCores/Space Fever.mra",
+"mra": "_Arcade/_Meatcores/Space Fever.mra",
 "first_recorded": "2026-10-13",
 "last_seen": "2026-11-03"
 },
@@ -149595,7 +149665,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Space Launcher.mra",
-"mra": "_Arcade/_MeatCores/Space Launcher.mra",
+"mra": "_Arcade/_Meatcores/Space Launcher.mra",
 "first_recorded": "2026-10-13",
 "last_seen": "2026-11-03"
 },
@@ -151217,7 +151287,7 @@
 "first_path": "mra/Spider-Man The Videogame (World).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Spider-Man The Videogame.mra"
+"mra": "_Arcade/_Meatcores/Spider-Man The Videogame.mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -151258,7 +151328,7 @@
 "first_path": "mra/Spider-Man The Videogame (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Spider-Man The Videogame/Spider-Man The Videogame (Japan).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Spider-Man The Videogame/Spider-Man The Videogame (Japan).mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -151299,7 +151369,7 @@
 "first_path": "mra/Spider-Man The Videogame (US, Rev A).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Spider-Man The Videogame/Spider-Man The Videogame (US, Rev A).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Spider-Man The Videogame/Spider-Man The Videogame (US, Rev A).mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -151340,7 +151410,7 @@
 "first_path": "_Arcade/Super Pierrot (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Do! Run Run/Super Pierrot.mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Do! Run Run/Super Pierrot.mra"
 },
 "rodimus:universal_testbuild": {
 "core": "rodimus:universal_testbuild",
@@ -151932,7 +152002,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/S.P.Y. - Special Project Y.mra",
-"mra": "_Arcade/_MeatCores/S.P.Y. - Special Project Y.mra",
+"mra": "_Arcade/_Meatcores/S.P.Y. - Special Project Y.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-11-03"
 },
@@ -152033,7 +152103,7 @@
 "alt": true,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/_alternatives/_S.P.Y/S.P.Y. - Special Project Y. (US ver. M).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_S.P.Y/S.P.Y. - Special Project Y. (US ver. M).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_S.P.Y/S.P.Y. - Special Project Y. (US ver. M).mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-11-03"
 },
@@ -152336,7 +152406,7 @@
 "alt": false,
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/SRD - Super Real Darwin (World).mra",
-"mra": "_Arcade/_MeatCores/SRD - Super Real Darwin.mra",
+"mra": "_Arcade/_Meatcores/SRD - Super Real Darwin.mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 },
@@ -152390,7 +152460,7 @@
 "alt": true,
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/_alternatives/_SRD Super Real Darwin/SRD - Super Real Darwin (Japan, bootleg).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_SRD Super Real Darwin/SRD - Super Real Darwin (Japan, bootleg).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_SRD Super Real Darwin/SRD - Super Real Darwin (Japan, bootleg).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 },
@@ -152431,7 +152501,7 @@
 "alt": true,
 "first_repo": "shmupfan/Arcade-DEC8_MiSTer",
 "first_path": "releases/_alternatives/_SRD Super Real Darwin/SRD - Super Real Darwin (Japan).mra",
-"mra": "_Arcade/_MeatCores/_alternatives/_SRD Super Real Darwin/SRD - Super Real Darwin (Japan).mra",
+"mra": "_Arcade/_Meatcores/_alternatives/_SRD Super Real Darwin/SRD - Super Real Darwin (Japan).mra",
 "first_recorded": "2026-10-26",
 "last_seen": "2026-11-03"
 },
@@ -153761,7 +153831,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Super Stingray (Japan).mra",
-"mra": "_Arcade/_MeatCores/Super Stingray.mra",
+"mra": "_Arcade/_Meatcores/Super Stingray.mra",
 "first_recorded": "2026-10-12",
 "last_seen": "2026-11-03"
 }
@@ -155279,7 +155349,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Steel Force.mra",
-"mra": "_Arcade/_MeatCores/Steel Force.mra",
+"mra": "_Arcade/_Meatcores/Steel Force.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-11-03"
 },
@@ -155395,7 +155465,7 @@
 "first_path": "_Arcade/Stone Ball (4 Players, v1-20 13-12-1994).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Stone Ball.mra"
+"mra": "_Arcade/_Meatcores/Stone Ball.mra"
 },
 "ongo:meathax_stoneball": {
 "core": "ongo:meathax_stoneball",
@@ -156221,7 +156291,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Strength & Skill.mra",
-"mra": "_Arcade/_MeatCores/Strength & Skill.mra",
+"mra": "_Arcade/_Meatcores/Strength & Skill.mra",
 "first_recorded": "2026-10-11",
 "last_seen": "2026-11-03"
 },
@@ -156335,7 +156405,7 @@
 "first_path": "_Arcade/S.T.U.N. Runner (rev 6).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/S.T.U.N. Runner.mra"
+"mra": "_Arcade/_Meatcores/S.T.U.N. Runner.mra"
 }
 },
 "subhunt": {
@@ -157444,7 +157514,7 @@
 "first_path": "_Arcade/_MeatCores/Super Trio.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Super Trio.mra"
+"mra": "_Arcade/_Meatcores/Super Trio.mra"
 },
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
@@ -157801,7 +157871,7 @@
 "first_path": "mra/Super Visual Football European Sega Cup (Rev A).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Super Visual Football European Sega Cup.mra"
+"mra": "_Arcade/_Meatcores/Super Visual Football European Sega Cup.mra"
 },
 "repo:s32": {
 "core": "repo:s32",
@@ -158192,7 +158262,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/SWAT Police.mra",
-"mra": "_Arcade/_MeatCores/SWAT Police.mra",
+"mra": "_Arcade/_Meatcores/SWAT Police.mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -159825,7 +159895,7 @@
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/jlrh/gwar/releases/mra/TouchDown Fever (US).mra",
-"mra": "_Arcade/_MeatCores/TouchDown Fever.mra",
+"mra": "_Arcade/_Meatcores/TouchDown Fever.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -163075,7 +163145,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/ThunderJaws.mra",
-"mra": "_Arcade/_MeatCores/ThunderJaws.mra",
+"mra": "_Arcade/_Meatcores/ThunderJaws.mra",
 "first_recorded": "2026-10-31",
 "last_seen": "2026-11-03"
 },
@@ -163799,7 +163869,7 @@
 "alt": false,
 "first_repo": "va7deo/alpha68k",
 "first_path": "dev/mra/Time Soldiers (US Rev 3).mra",
-"mra": "_Arcade/_MeatCores/_AnalogAim/Time Soldiers (Twin Stick).mra",
+"mra": "_Arcade/_Meatcores/_AnalogAim/Time Soldiers (Twin Stick).mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -164001,7 +164071,7 @@
 "first_path": "mra/Title Fight (World).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Title Fight.mra"
+"mra": "_Arcade/_Meatcores/Title Fight.mra"
 },
 "zakk:segasystem32multi": {
 "core": "zakk:segasystem32multi",
@@ -164029,7 +164099,7 @@
 "first_path": "mra/Title Fight (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Title Fight/Title Fight (Japan).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Title Fight/Title Fight (Japan).mra"
 },
 "zakk:segasystem32multi": {
 "core": "zakk:segasystem32multi",
@@ -164057,7 +164127,7 @@
 "first_path": "mra/Title Fight (US).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Title Fight/Title Fight (US).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Title Fight/Title Fight (US).mra"
 },
 "zakk:segasystem32multi": {
 "core": "zakk:segasystem32multi",
@@ -164988,7 +165058,7 @@
 "alt": false,
 "first_repo": "MiSTer-devel/Arcade-TNKIII_MiSTer",
 "first_path": "releases/TNKIII.mra",
-"mra": "_Arcade/_MeatCores/T.N.K III.mra",
+"mra": "_Arcade/_Meatcores/T.N.K III.mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -168429,7 +168499,7 @@
 "first_path": "_Arcade/_MeatCores/Tumble Pop (bootleg).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Tumble Pop (bootleg).mra"
+"mra": "_Arcade/_Meatcores/Tumble Pop (bootleg).mra"
 },
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
@@ -168468,7 +168538,7 @@
 "first_path": "_Arcade/_MeatCores/Tumble Pop (bootleg with PIC).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Tumble Pop (bootleg with PIC).mra"
+"mra": "_Arcade/_Meatcores/Tumble Pop (bootleg with PIC).mra"
 },
 "ongo:kuze_tumble": {
 "core": "ongo:kuze_tumble",
@@ -170063,7 +170133,7 @@
 "first_path": "_Arcade/Ultimate Tennis.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Ultimate Tennis.mra"
+"mra": "_Arcade/_Meatcores/Ultimate Tennis.mra"
 },
 "ongo:meathax_stoneball": {
 "core": "ongo:meathax_stoneball",
@@ -170498,7 +170568,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Valtric.mra",
-"mra": "_Arcade/_MeatCores/Valtric.mra",
+"mra": "_Arcade/_Meatcores/Valtric.mra",
 "first_recorded": "2026-10-14",
 "last_seen": "2026-11-03"
 },
@@ -170758,7 +170828,7 @@
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/jlrh/gwar/releases/mra/Vanguard II.mra",
-"mra": "_Arcade/_MeatCores/Vanguard II.mra",
+"mra": "_Arcade/_Meatcores/Vanguard II.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -172438,7 +172508,7 @@
 "alt": false,
 "first_repo": "MiSTer-devel/Arcade-IkariWarriors_MiSTer",
 "first_path": "releases/Victory Road.mra",
-"mra": "_Arcade/_MeatCores/Victory Road.mra",
+"mra": "_Arcade/_Meatcores/Victory Road.mra",
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-03"
 },
@@ -172948,7 +173018,7 @@
 "first_path": "_Arcade/Violent Storm (ver EAC).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Violent Storm.mra"
+"mra": "_Arcade/_Meatcores/Violent Storm.mra"
 },
 "ongo:meathax_viostorm": {
 "core": "ongo:meathax_viostorm",
@@ -173000,7 +173070,7 @@
 "first_path": "_Arcade/_alternatives/_Violent Storm/Violent Storm (ver AAC).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Violent Storm/Violent Storm (ver AAC).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Violent Storm/Violent Storm (ver AAC).mra"
 },
 "ongo:meathax_viostorm": {
 "core": "ongo:meathax_viostorm",
@@ -173052,7 +173122,7 @@
 "first_path": "_Arcade/_alternatives/_Violent Storm/Violent Storm (ver AAB).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Violent Storm/Violent Storm (ver AAB).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Violent Storm/Violent Storm (ver AAB).mra"
 },
 "ongo:meathax_viostorm": {
 "core": "ongo:meathax_viostorm",
@@ -173104,7 +173174,7 @@
 "first_path": "_Arcade/_alternatives/_Violent Storm/Violent Storm (ver EAB).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Violent Storm/Violent Storm (ver EAB).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Violent Storm/Violent Storm (ver EAB).mra"
 },
 "ongo:meathax_viostorm": {
 "core": "ongo:meathax_viostorm",
@@ -173156,7 +173226,7 @@
 "first_path": "_Arcade/_alternatives/_Violent Storm/Violent Storm (ver JAC).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Violent Storm/Violent Storm (ver JAC).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Violent Storm/Violent Storm (ver JAC).mra"
 },
 "ongo:meathax_viostorm": {
 "core": "ongo:meathax_viostorm",
@@ -173208,7 +173278,7 @@
 "first_path": "_Arcade/_alternatives/_Violent Storm/Violent Storm (ver UAC).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Violent Storm/Violent Storm (ver UAC).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Violent Storm/Violent Storm (ver UAC).mra"
 },
 "ongo:meathax_viostorm": {
 "core": "ongo:meathax_viostorm",
@@ -173260,7 +173330,7 @@
 "first_path": "_Arcade/_alternatives/_Violent Storm/Violent Storm (ver UAB).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Violent Storm/Violent Storm (ver UAB).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Violent Storm/Violent Storm (ver UAB).mra"
 },
 "ongo:meathax_viostorm": {
 "core": "ongo:meathax_viostorm",
@@ -177520,7 +177590,7 @@
 "alt": false,
 "first_repo": "bmo00/arcfpga-cores",
 "first_path": "cores/jlrh/gwar/releases/mra/World Wars (World).mra",
-"mra": "_Arcade/_MeatCores/World Wars World.mra",
+"mra": "_Arcade/_Meatcores/World Wars World.mra",
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-03"
 },
@@ -178487,7 +178557,7 @@
 "first_path": "_Arcade/Xenophobe.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Xenophobe.mra"
+"mra": "_Arcade/_Meatcores/Xenophobe.mra"
 }
 },
 "xensad": {
@@ -179963,7 +180033,7 @@
 "alt": false,
 "first_repo": "OngoGablogian/MiSTer_Ongo",
 "first_path": "_Arcade/Yellow Cab (Japan).mra",
-"mra": "_Arcade/_MeatCores/Yellow Cab.mra",
+"mra": "_Arcade/_Meatcores/Yellow Cab.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-11-03"
 },
@@ -180430,7 +180500,7 @@
 "alt": false,
 "first_repo": "meathax/meatcores",
 "first_path": "_Arcade/_MeatCores/Zaviga.mra",
-"mra": "_Arcade/_MeatCores/Zaviga.mra",
+"mra": "_Arcade/_Meatcores/Zaviga.mra",
 "first_recorded": "2026-10-16",
 "last_seen": "2026-11-03"
 },
@@ -180719,7 +180789,7 @@
 "first_path": "_Arcade/_MeatCores/Zero Team USA (4 players).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/Zero Team USA.mra"
+"mra": "_Arcade/_Meatcores/Zero Team USA.mra"
 },
 "ongo:meathax_zeroteam": {
 "core": "ongo:meathax_zeroteam",
@@ -180760,7 +180830,7 @@
 "first_path": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Japan, earlier, set 1).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Japan, earlier, set 1).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Zero Team/Zero Team (Japan, earlier, set 1).mra"
 },
 "ongo:meathax_zeroteam": {
 "core": "ongo:meathax_zeroteam",
@@ -180801,7 +180871,7 @@
 "first_path": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Japan, later batteryless).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Japan, later batteryless).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Zero Team/Zero Team (Japan, later batteryless).mra"
 },
 "ongo:meathax_zeroteam": {
 "core": "ongo:meathax_zeroteam",
@@ -180842,7 +180912,7 @@
 "first_path": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Taiwan).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Taiwan).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Zero Team/Zero Team (Taiwan).mra"
 },
 "ongo:meathax_zeroteam": {
 "core": "ongo:meathax_zeroteam",
@@ -180883,7 +180953,7 @@
 "first_path": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Korea).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Korea).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Zero Team/Zero Team (Korea).mra"
 },
 "ongo:meathax_zeroteam": {
 "core": "ongo:meathax_zeroteam",
@@ -180924,7 +180994,7 @@
 "first_path": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Japan, earlier, set 2).mra",
 "first_recorded": "2026-10-09",
 "last_seen": "2026-11-03",
-"mra": "_Arcade/_MeatCores/_alternatives/_Zero Team/Zero Team (Japan, earlier, set 2).mra"
+"mra": "_Arcade/_Meatcores/_alternatives/_Zero Team/Zero Team (Japan, earlier, set 2).mra"
 },
 "ongo:meathax_zeroteam": {
 "core": "ongo:meathax_zeroteam",

@@ -2563,6 +2563,9 @@
   "OngoGablogian/MiSTer_Ongo",
   "kyledlester/Deniam_MiSTer_FPGA"
  ],
+ "ongo:dfjail": [
+  "meathax/meatcores"
+ ],
  "ongo:djmain": [
   "OngoGablogian/MiSTer_Ongo",
   "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA"
