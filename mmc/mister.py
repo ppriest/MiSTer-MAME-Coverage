@@ -67,15 +67,7 @@ EXTRA_REPOS = [
     ("ppriest", "ppriest/Arcade-HyperNG64_MiSTer", None),
     ("repo", "MiSTer-devel/Arcade-KillerInstinct_MiSTer", ["releases"]),   # official core; neither the distribution nor alamone lists it yet
     ("decoryah", "decoryah/Arcade-TaitoLSystem_MiSTer", ["mra"]),
-    # XelaNotPu (github.com/XelaNotPu; supporter builds also on patreon.com/cw/XelaNotPu). SYSTEM12_MiSTer holds only a README so far.
-    ("repo", "XelaNotPu/SYSTEM11_MiSTer", ["releases/_Arcade"]),
-    ("repo", "XelaNotPu/SYSTEM11_MiSTer-Supporter", ["releases/_Arcade"]),
-    ("repo", "XelaNotPu/SYSTEMFL_MiSTer-Supporter", ["_Arcade"]),
-    ("repo", "XelaNotPu/ZN1_MiSTer", ["release/_Arcade"]),
-    ("repo", "XelaNotPu/ZN1-Capcom_MiSTer", ["releases/_Arcade"]),
-    ("repo", "XelaNotPu/ZN1-TaitoFX1B_MiSTer", ["releases/_Arcade"]),
-    ("repo", "XelaNotPu/ZN2-Capcom_MiSTer", ["releases/_Arcade"]),
-    ("repo", "XelaNotPu/BreakThru_MiSTer", ["RELEASE/_Arcade"]),
+    # XelaNotPu: his Downloader database (DB_SOURCES) and his repositories (OWNER_SOURCES) are the sources; nothing is listed here.
     ("repo", "alphanu1/sega-model2-mister", ["releases"]),    # Sega Model 2 (Daytona USA, Desert Tank, Virtua Cop); beta
     ("decoryah", "decoryah/Arcade-OhMyGod_MiSTer", ["mra"]),
     ("decoryah", "decoryah/Arcade-MonsterMaulers_MiSTer", ["mra"]),
@@ -130,7 +122,7 @@ MOVED_TO_OFFICIAL: dict[str, str | tuple[str, str]] = {}
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
 OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr", "kyledlester": "kyle", "illegalmp3": "illegalmp3", "yaguboo": "yaguboo", "rodimusfvc": "rodimus", "zakk4223": "zakk", "djb-rh": "djb"}
 # Repositories of those owners that are not cores (forks of the shared MRA collection, a game runtime): never scanned.
-OWNER_SKIP = {"rossops/mra-alternatives_mister", "rossops/bennugd_mister", "rodimusfvc/rodimus_mister_db",
+OWNER_SKIP = {"xelanotpu/xelanotpu_mister_db", "rossops/mra-alternatives_mister", "rossops/bennugd_mister", "rodimusfvc/rodimus_mister_db",
               # zakk4223's tools and non-arcade projects (a USB/IP service, a controller database, a ROM database builder, a Sun workstation)
               "zakk4223/mister_usbip", "zakk4223/main_mister_zqol", "zakk4223/mister-gamecontrollerdb", "zakk4223/arcaderomsdb_mister",
               "zakk4223/sunsparcstation20_mister"}
@@ -283,6 +275,9 @@ DB_SOURCES = {
     "rodimus": "https://raw.githubusercontent.com/RodimusFVC/Rodimus_MiSTer_DB/db/db.json.zip",
     # asturur's cores (github.com/asturur/Mister-cores): builds of jotego-based cores (Power Spikes, F-1 Grand Prix, Round Up 5, ...)
     "asturur": "https://raw.githubusercontent.com/asturur/Mister-cores/db/db.json.zip",
+    # XelaNotPu's cores (github.com/XelaNotPu/XelaNotPu_MiSTer_DB, branch db): System 11/12/21/22/FL, ZN-1/2, Break Thru, ...
+    # His repositories are scanned too (OWNER_SOURCES). Deliberately not in the downloader.ini list we serve (data/downloader_databases.json).
+    "xela": "https://raw.githubusercontent.com/XelaNotPu/XelaNotPu_MiSTer_DB/db/db.json.zip",
 }
 # Cores that load ROM sets from a list instead of MRAs: (source, repo, file, core name).
 ROMSET_FILES = [
