@@ -557,7 +557,8 @@
  "dist:bombjack": [
   "MiSTer-devel/Arcade-BombJack_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "bazset/MiSTer_BAZSET"
  ],
  "dist:boogiewings": [
   "MiSTer-devel/Arcade-BoogieWings_MiSTer",
@@ -1398,7 +1399,8 @@
  "dist:timepilot84": [
   "MiSTer-devel/Arcade-TimePilot84_MISTer",
   "MiSTer-devel/Distribution_MiSTer",
-  "MiSTer-devel/MRA-Alternatives_MiSTer"
+  "MiSTer-devel/MRA-Alternatives_MiSTer",
+  "bazset/MiSTer_BAZSET"
  ],
  "dist:tnkiii": [
   "MiSTer-devel/Arcade-TNKIII_MiSTer",
@@ -2369,6 +2371,9 @@
  "ongo:airbuster": [
   "meathax/meatcores"
  ],
+ "ongo:apache3": [
+  "meathax/meatcores"
+ ],
  "ongo:aqua_jack": [
   "bazset/MiSTer_BAZSET"
  ],
@@ -2529,6 +2534,9 @@
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:chase_hq_bazset": [
+  "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:commandocrt": [
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:continental_circus": [
@@ -2692,6 +2700,9 @@
  ],
  "ongo:knucklejoe": [
   "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:konami353396a": [
+  "meathax/meatcores"
  ],
  "ongo:konamigxt1": [
   "OngoGablogian/MiSTer_Ongo",
@@ -3185,6 +3196,9 @@
   "niknakniknak/FixItFelixArcadeForMister"
  ],
  "repo:firebeat": [
+  "ppriest/Arcade-Firebeat_MiSTer"
+ ],
+ "repo:firebeat_popn": [
   "ppriest/Arcade-Firebeat_MiSTer"
  ],
  "repo:firetrap": [
