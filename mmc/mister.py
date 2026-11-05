@@ -82,6 +82,9 @@ EXTRA_REPOS = [
 # ppriest database is unreachable while MiSTer_ppriest is private); it carries the same sets.
 SUPERSEDED_CORES = {
     "repo:hyperng64": "ppriest:hyperng64",      # old id -> replacement
+    # the Firebeat repository's builds: the database's two cores (Firebeat_ppp, Firebeat_popn) replace the single "Firebeat" core it had
+    # at first and the loose record of the repository's own release, which listed ParaParaParadise's titles three times
+    "ppriest:firebeat": "ppriest:firebeat_ppp", "repo:firebeat": "ppriest:firebeat_ppp",
     # kyledlester's repositories became the "kyle" source (his MiSTer_DB database no longer exists: his repositories, OWNER_SOURCES, are the source)
     "repo:namco_na1_na2": "kyle:namco_na1_na2", "repo:namco_nb1": "kyle:namco_nb1", "repo:namco_nb2": "kyle:namco_nb2",
     "repo:nerattechu": "kyle:nerattechu", "repo:nostradamus": "kyle:nostradamus", "repo:crystal": "kyle:crystal",
