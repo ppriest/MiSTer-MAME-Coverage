@@ -221,5 +221,17 @@
   ],
   "sets_auto": true,
   "merged": false
+ },
+ {
+  "name": "jttrcdoc",
+  "game": "feat(): Tricky doc -  tecfri z80 game",
+  "pr": 1693,
+  "date": "2026-08-09",
+  "sets": [
+   "trckydoc",
+   "trckydoca"
+  ],
+  "sets_auto": true,
+  "merged": false
  }
 ]

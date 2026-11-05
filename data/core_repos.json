@@ -2001,6 +2001,9 @@
  "jtpr:jttaitob": [
   "jotego/jtcores"
  ],
+ "jtpr:jttrcdoc": [
+  "jotego/jtcores"
+ ],
  "kuze:ginganin": [
   "kuzearcade/Arcade-GingaNin_MiSTer",
   "kuzearcade/kuzecores"

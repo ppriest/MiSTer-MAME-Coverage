@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-11-05T11:05:22+00:00",
+  "generated": "2026-11-05T13:02:01+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-11-05T11:05:04+00:00",
+  "mister_generated": "2026-11-05T13:01:38+00:00",
   "alamone_generated": "2026-11-02T17:48:49+00:00",
   "ledger_updated": "2026-11-05",
   "ledger_runs": [
-   {
-    "date": "2026-11-02",
-    "note": "alamone 2026-11-02",
-    "cores": 14,
-    "sets": 7,
-    "pairs": 92,
-    "dates_improved": 13,
-    "cores_removed": 0
-   },
    {
     "date": "2026-11-03",
     "note": "alamone 2026-11-02",
@@ -51,6 +42,15 @@
     "pairs": 177,
     "dates_improved": 1,
     "cores_removed": 2
+   },
+   {
+    "date": "2026-11-05",
+    "note": "alamone 2026-11-02",
+    "cores": 1,
+    "sets": 1,
+    "pairs": 3,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -3556,7 +3556,7 @@
    "working_arcade_sets_covered": 6795,
    "working_arcade_titles_source": 2377,
    "working_arcade_titles_binary_only": 230,
-   "cores": 896,
+   "cores": 897,
    "binary_only_cores": 389,
    "unmatched_sets": 521
   }
@@ -4280,6 +4280,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-05",
+   "aliases": [],
    "last_seen": "2026-11-05",
    "binary_only": true,
    "nsets": 1,
@@ -4851,6 +4852,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-05",
+   "aliases": [],
    "last_seen": "2026-11-05",
    "binary_only": true,
    "nsets": 0,
@@ -8124,6 +8126,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-05",
+   "aliases": [],
    "last_seen": "2026-11-05",
    "binary_only": false,
    "nsets": 1,
@@ -17712,6 +17715,31 @@
    ]
   },
   {
+   "id": "jtpr:jttrcdoc",
+   "name": "jttrcdoc",
+   "source": "jtpr",
+   "source_title": "jtcores unreleased (PRs, branches)",
+   "channel": null,
+   "rbf": "jttrcdoc.rbf",
+   "repo": "jotego/jtcores",
+   "url": "https://github.com/jotego/jtcores/pull/1693",
+   "build_date": null,
+   "status": "open PR",
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": "feat(): Tricky doc -  tecfri z80 game",
+   "first_recorded": "2026-11-05",
+   "last_seen": "2026-11-05",
+   "binary_only": false,
+   "nsets": 2,
+   "ntitles": 1,
+   "first_date": "2026-08-09",
+   "drivers_loaded": [
+    "tecfri/sauro.cpp"
+   ]
+  },
+  {
    "id": "kuze:ginganin",
    "name": "GingaNin",
    "source": "kuze",
@@ -20320,6 +20348,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-05",
+   "aliases": [],
    "last_seen": "2026-11-05",
    "binary_only": false,
    "nsets": 96,
@@ -35844,9 +35873,10 @@
    "cores": [
     "jlrh:ffsauro",
     "jlrh:fftrckydoc",
+    "jtpr:jttrcdoc",
     "repo:sauro"
    ],
-   "first": "2026-10-07"
+   "first": "2026-08-09"
   },
   {
    "sourcefile": "tecfri/speedbal.cpp",

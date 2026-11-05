@@ -24,15 +24,6 @@
 {
 "date": "2026-10-18",
 "note": "alamone 2026-10-12",
-"cores": 0,
-"sets": 0,
-"pairs": 0,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
-"date": "2026-10-18",
-"note": "alamone 2026-10-12",
 "cores": 4,
 "sets": 0,
 "pairs": 32,
@@ -461,6 +452,15 @@
 "pairs": 177,
 "dates_improved": 1,
 "cores_removed": 2
+},
+{
+"date": "2026-11-05",
+"note": "alamone 2026-11-02",
+"cores": 1,
+"sets": 1,
+"pairs": 3,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -996,6 +996,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-05",
+"aliases": [],
 "last_seen": "2026-11-05"
 },
 "bazset:continental_circus": {
@@ -1413,6 +1414,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-05",
+"aliases": [],
 "last_seen": "2026-11-05"
 },
 "bazset:sci_bazset": {
@@ -3836,6 +3838,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-05",
+"aliases": [],
 "last_seen": "2026-11-05"
 },
 "decoryah:mcatadv": {
@@ -11786,6 +11789,24 @@
 "aliases": [],
 "last_seen": "2026-11-05"
 },
+"jtpr:jttrcdoc": {
+"id": "jtpr:jttrcdoc",
+"name": "jttrcdoc",
+"source": "jtpr",
+"source_title": "jtcores unreleased (PRs, branches)",
+"channel": null,
+"rbf": "jttrcdoc.rbf",
+"repo": "jotego/jtcores",
+"url": "https://github.com/jotego/jtcores/pull/1693",
+"build_date": null,
+"status": "open PR",
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": "feat(): Tricky doc -  tecfri z80 game",
+"first_recorded": "2026-11-05",
+"last_seen": "2026-11-05"
+},
 "kuze:ginganin": {
 "id": "kuze:ginganin",
 "name": "Arcade-GingaNin",
@@ -13805,6 +13826,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-05",
+"aliases": [],
 "last_seen": "2026-11-05"
 },
 "meat:thunderjaws": {
@@ -14252,6 +14274,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-05",
+"aliases": [],
 "last_seen": "2026-11-05"
 },
 "ongo:bazset_birdietry": {
@@ -14631,6 +14654,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-05",
+"aliases": [],
 "last_seen": "2026-11-05"
 },
 "ongo:bazset_nss": {
@@ -14725,6 +14749,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-05",
+"aliases": [],
 "last_seen": "2026-11-05"
 },
 "ongo:bazset_sci": {
@@ -16623,6 +16648,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-05",
+"aliases": [],
 "last_seen": "2026-11-05"
 },
 "ongo:meathax_argus": {
@@ -16736,6 +16762,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-05",
+"aliases": [],
 "last_seen": "2026-11-05"
 },
 "ongo:meathax_esd16": {
@@ -16849,6 +16876,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-05",
+"aliases": [],
 "last_seen": "2026-11-05"
 },
 "ongo:meathax_madmotor": {
@@ -17018,6 +17046,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-05",
+"aliases": [],
 "last_seen": "2026-11-05"
 },
 "ongo:meathax_spy": {
@@ -17757,6 +17786,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-05",
+"aliases": [],
 "last_seen": "2026-11-05"
 },
 "ongo:rshark": {
@@ -170762,6 +170792,19 @@
 "first_recorded": "2026-10-15",
 "last_seen": "2026-11-05"
 },
+"jtpr:jttrcdoc": {
+"core": "jtpr:jttrcdoc",
+"date": "2026-08-09",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1693",
+"mra": null,
+"first_recorded": "2026-11-05",
+"last_seen": "2026-11-05"
+},
 "ongo:fftrckydoc": {
 "core": "ongo:fftrckydoc",
 "date": "2026-10-14",
@@ -170801,6 +170844,19 @@
 "first_path": "_Arcade/_alternatives/_Tricky Doc/Tricky Doc (FF, Tecfri, 1987, set 2).mra",
 "mra": "_Arcade/_alternatives/_Tricky Doc/Tricky Doc (FF, Tecfri, 1987, set 2).mra",
 "first_recorded": "2026-10-15",
+"last_seen": "2026-11-05"
+},
+"jtpr:jttrcdoc": {
+"core": "jtpr:jttrcdoc",
+"date": "2026-08-09",
+"date_quality": "git",
+"via": "jtpr",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtcores",
+"first_path": "pull/1693",
+"mra": null,
+"first_recorded": "2026-11-05",
 "last_seen": "2026-11-05"
 },
 "ongo:fftrckydoc": {
