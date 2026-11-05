@@ -375,6 +375,9 @@
  "decoryah:jchan": [
   "decoryah/Arcade-JackieChan_MiSTer"
  ],
+ "decoryah:konamim2": [
+  "decoryah/Arcade-KonamiM2_MiSTer"
+ ],
  "decoryah:mcatadv": [
   "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer"
  ],
@@ -2299,6 +2302,7 @@
   "meathax/s32multi"
  ],
  "meat:seicross": [
+  "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
  "meat:simple156": [
@@ -2406,6 +2410,9 @@
  "ongo:bazset_bazbirdtry": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:bazset_berlinwall": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:bazset_birdietry": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2464,6 +2471,9 @@
  "ongo:bazset_millemiglia2": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:bazset_mustacheboy": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:bazset_nss": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2474,6 +2484,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_reaktor": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:bazset_roundup5": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:bazset_sci": [
@@ -2755,6 +2768,9 @@
  "ongo:meathax_airbuster": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:meathax_apache3": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:meathax_argus": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2770,6 +2786,9 @@
  "ongo:meathax_dataeastliberation": [
   "OngoGablogian/MiSTer_Ongo"
  ],
+ "ongo:meathax_dfjail": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:meathax_esd16": [
   "OngoGablogian/MiSTer_Ongo"
  ],
@@ -2783,6 +2802,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_ikkisunsoft": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:meathax_konami353396a": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_madmotor": [
@@ -2807,6 +2829,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_simple156": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:meathax_spinalbreakers": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_spy": [
@@ -2924,6 +2949,9 @@
  "ongo:rmpowerspikes": [
   "rmonic79/rmcores"
  ],
+ "ongo:roundup5": [
+  "bazset/MiSTer_BAZSET"
+ ],
  "ongo:rshark": [
   "OngoGablogian/MiSTer_Ongo",
   "kyledlester/R_Shark_Super_X_MiSTer"
@@ -3001,7 +3029,8 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:taitof3": [
-  "OngoGablogian/MiSTer_Ongo"
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
  ],
  "ongo:tee_d_off_bazset": [
   "OngoGablogian/MiSTer_Ongo",
