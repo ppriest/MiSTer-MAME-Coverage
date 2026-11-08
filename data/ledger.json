@@ -15,15 +15,6 @@
 {
 "date": "2026-10-18",
 "note": "alamone 2026-10-12",
-"cores": 4,
-"sets": 0,
-"pairs": 32,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
-"date": "2026-10-18",
-"note": "alamone 2026-10-12",
 "cores": 6,
 "sets": 1,
 "pairs": 34,
@@ -461,6 +452,15 @@
 "pairs": 26,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-11-08",
+"note": "alamone 2026-11-02",
+"cores": 0,
+"sets": 1,
+"pairs": 1,
+"dates_improved": 0,
+"cores_removed": 1
 }
 ]
 },
@@ -8255,6 +8255,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-08",
+"aliases": [],
 "last_seen": "2026-11-08"
 },
 "dist:tecmo": {
@@ -11710,25 +11711,6 @@
 "mame_drivers": [],
 "note": "feat(nemesis,blkpan): Konami GX400 and GX604 cores",
 "first_recorded": "2026-10-18",
-"aliases": [],
-"last_seen": "2026-11-08"
-},
-"jtpr:jtmeikyu": {
-"id": "jtpr:jtmeikyu",
-"name": "jtmeikyu",
-"source": "jtpr",
-"source_title": "jtcores unreleased (PRs, branches)",
-"channel": null,
-"rbf": "jtmeikyu.rbf",
-"repo": "jotego/jtcores",
-"url": "https://github.com/jotego/jtcores/pull/1480",
-"build_date": null,
-"status": "open PR",
-"reading": null,
-"score": null,
-"mame_drivers": [],
-"note": "Meikyu Jima",
-"first_recorded": "2026-10-09",
 "aliases": [],
 "last_seen": "2026-11-08"
 },
@@ -17884,6 +17866,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-08",
+"aliases": [],
 "last_seen": "2026-11-08"
 },
 "ongo:roundup5": {
@@ -19242,6 +19225,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-08",
+"aliases": [],
 "last_seen": "2026-11-08"
 },
 "ppriest:lethalenforcers": {
@@ -21148,6 +21132,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-08",
+"aliases": [],
 "last_seen": "2026-11-08"
 },
 "rodimus:ballymidwaymcr": {
@@ -23056,6 +23041,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-08",
+"aliases": [],
 "last_seen": "2026-11-08"
 },
 "xela:xnsuper23s": {
@@ -23074,6 +23060,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-08",
+"aliases": [],
 "last_seen": "2026-11-08"
 },
 "xela:xnsystem11": {
@@ -23170,6 +23157,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-08",
+"aliases": [],
 "last_seen": "2026-11-08"
 },
 "xela:xnsystemfl": {
@@ -90249,18 +90237,6 @@
 "first_path": "_Arcade/Meikyu Jima (Japan).mra",
 "mra": "_Arcade/_BAZSET/Kickle Cubicle (English title).mra",
 "first_recorded": "2026-10-13",
-"last_seen": "2026-11-08"
-},
-"jtpr:jtmeikyu": {
-"core": "jtpr:jtmeikyu",
-"date": "2026-07-18",
-"date_quality": "git",
-"via": "jtpr",
-"wip": false,
-"alt": false,
-"first_repo": "jotego/jtcores",
-"first_path": "pull/1480",
-"first_recorded": "2026-10-09",
 "last_seen": "2026-11-08"
 },
 "ongo:bazset_kickle": {

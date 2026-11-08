@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-11-08T00:19:38+00:00",
+  "generated": "2026-11-08T11:50:53+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-11-08T00:19:16+00:00",
+  "mister_generated": "2026-11-08T11:50:31+00:00",
   "alamone_generated": "2026-11-02T17:48:49+00:00",
   "ledger_updated": "2026-11-08",
   "ledger_runs": [
-   {
-    "date": "2026-11-05",
-    "note": "alamone 2026-11-02",
-    "cores": 12,
-    "sets": 66,
-    "pairs": 177,
-    "dates_improved": 1,
-    "cores_removed": 2
-   },
    {
     "date": "2026-11-05",
     "note": "alamone 2026-11-02",
@@ -51,6 +42,15 @@
     "pairs": 26,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-11-08",
+    "note": "alamone 2026-11-02",
+    "cores": 0,
+    "sets": 1,
+    "pairs": 1,
+    "dates_improved": 0,
+    "cores_removed": 1
    }
   ],
   "genre": {
@@ -3572,9 +3572,9 @@
    "working_arcade_titles_covered": 2613,
    "working_arcade_sets": 9981,
    "working_arcade_sets_covered": 6830,
-   "working_arcade_titles_source": 2387,
-   "working_arcade_titles_binary_only": 226,
-   "cores": 905,
+   "working_arcade_titles_source": 2386,
+   "working_arcade_titles_binary_only": 227,
+   "cores": 904,
    "binary_only_cores": 396,
    "unmatched_sets": 531
   }
@@ -13445,6 +13445,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-08",
+   "aliases": [],
    "last_seen": "2026-11-08",
    "binary_only": false,
    "nsets": 1,
@@ -17628,32 +17629,6 @@
    ]
   },
   {
-   "id": "jtpr:jtmeikyu",
-   "name": "jtmeikyu",
-   "source": "jtpr",
-   "source_title": "jtcores unreleased (PRs, branches)",
-   "channel": null,
-   "rbf": "jtmeikyu.rbf",
-   "repo": "jotego/jtcores",
-   "url": "https://github.com/jotego/jtcores/pull/1480",
-   "build_date": null,
-   "status": "open PR",
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": "Meikyu Jima",
-   "first_recorded": "2026-10-09",
-   "aliases": [],
-   "last_seen": "2026-11-08",
-   "binary_only": false,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-07-18",
-   "drivers_loaded": [
-    "irem/vigilant.cpp"
-   ]
-  },
-  {
    "id": "jtpr:jtmnymny",
    "name": "jtmnymny",
    "source": "jtpr",
@@ -21514,6 +21489,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-08",
+   "aliases": [],
    "last_seen": "2026-11-08",
    "binary_only": false,
    "nsets": 1,
@@ -23880,6 +23856,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-08",
+   "aliases": [],
    "last_seen": "2026-11-08",
    "binary_only": true,
    "nsets": 1,
@@ -26349,6 +26326,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-08",
+   "aliases": [],
    "last_seen": "2026-11-08",
    "binary_only": true,
    "nsets": 0,
@@ -26374,6 +26352,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-08",
+   "aliases": [],
    "last_seen": "2026-11-08",
    "binary_only": true,
    "nsets": 0,
@@ -26502,6 +26481,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-08",
+   "aliases": [],
    "last_seen": "2026-11-08",
    "binary_only": true,
    "nsets": 0,
@@ -30218,7 +30198,6 @@
     "bazset:buccaneers",
     "bazset:kickle",
     "jt:jtvigil",
-    "jtpr:jtmeikyu",
     "ongo:bazset_kickle"
    ],
    "first": "2022-05-06"
