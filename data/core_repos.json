@@ -674,7 +674,8 @@
   "MiSTer-devel/Arcade-Darius_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
   "MiSTer-devel/MRA-Alternatives_MiSTer",
-  "rmonic79/Arcade-Darius_MiSTer"
+  "rmonic79/Arcade-Darius_MiSTer",
+  "rmonic79/rmcores"
  ],
  "dist:darius2ninjawarriors": [
   "MiSTer-devel/Arcade-Darius2NinjaWarriors_MiSTer",
@@ -1379,6 +1380,10 @@
  ],
  "dist:tankbattalion": [
   "MiSTer-devel/Arcade-TankBattalion_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer"
+ ],
+ "dist:tattooassassins": [
+  "MiSTer-devel/Arcade-TattooAssassins_MiSTer",
   "MiSTer-devel/Distribution_MiSTer"
  ],
  "dist:tecmo": [
@@ -2957,6 +2962,9 @@
   "rmonic79/rmcores"
  ],
  "ongo:rmpowerspikes": [
+  "rmonic79/rmcores"
+ ],
+ "ongo:rmtattooassassins": [
   "rmonic79/rmcores"
  ],
  "ongo:roundup5": [
