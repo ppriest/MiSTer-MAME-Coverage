@@ -339,6 +339,9 @@
  "decoryah:atarigx2": [
   "decoryah/Arcade-AtariGX2_MiSTer"
  ],
+ "decoryah:atarigx2_20261031b": [
+  "decoryah/Arcade-AtariGX2_MiSTer"
+ ],
  "decoryah:blockhl": [
   "decoryah/Arcade-BlockHole_MiSTer"
  ],
@@ -502,6 +505,10 @@
   "MiSTer-devel/Arcade-Athena_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
   "MiSTer-devel/MRA-Alternatives_MiSTer"
+ ],
+ "dist:aztarac": [
+  "MiSTer-devel/Arcade-Aztarac_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer"
  ],
  "dist:badlands": [
   "MiSTer-devel/Arcade-Badlands_MiSTer",
@@ -1195,6 +1202,11 @@
   "MiSTer-devel/Distribution_MiSTer",
   "MiSTer-devel/MRA-Alternatives_MiSTer"
  ],
+ "dist:s32": [
+  "MiSTer-devel/Arcade-SegaSystem32_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer",
+  "Usquebagh/MiSTer_misc"
+ ],
  "dist:salamander": [
   "MiSTer-devel/Arcade-Salamander_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
@@ -1384,7 +1396,8 @@
  ],
  "dist:tattooassassins": [
   "MiSTer-devel/Arcade-TattooAssassins_MiSTer",
-  "MiSTer-devel/Distribution_MiSTer"
+  "MiSTer-devel/Distribution_MiSTer",
+  "rmonic79/rmcores"
  ],
  "dist:tecmo": [
   "MiSTer-devel/Arcade-Tecmo_MiSTer",
@@ -1539,6 +1552,10 @@
   "jlrh/gaelco-fpga",
   "jlrh/jlrh-misterfpga-db"
  ],
+ "jlrh:ffbkungfu": [
+  "jlrh/irem-fpga",
+  "jlrh/jlrh-misterfpga-db"
+ ],
  "jlrh:ffblswhstl": [
   "jlrh/jlrh-misterfpga-db",
   "jlrh/konami-fpga"
@@ -1572,6 +1589,10 @@
   "jlrh/jlrh-misterfpga-db"
  ],
  "jlrh:ffgticlub": [
+  "jlrh/jlrh-misterfpga-db",
+  "jlrh/konami-fpga"
+ ],
+ "jlrh:ffgticlubsd": [
   "jlrh/jlrh-misterfpga-db",
   "jlrh/konami-fpga"
  ],
@@ -2149,6 +2170,10 @@
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
+ "meat:apache3": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
  "meat:appoooh": [
   "OngoGablogian/MiSTer_Ongo",
   "meathax/appoooh",
@@ -2193,6 +2218,10 @@
   "meathax/meatcores"
  ],
  "meat:dec8": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
+ "meat:dfjail": [
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
@@ -2247,6 +2276,10 @@
   "meathax/meatcores"
  ],
  "meat:jackaltwinstick": [
+  "meathax/meatcores"
+ ],
+ "meat:konami353396a": [
+  "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
  ],
  "meat:madmotor": [
@@ -2323,6 +2356,10 @@
  "meat:snktriplez80": [
   "meathax/meatcores"
  ],
+ "meat:spinalbreakers": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
  "meat:spy": [
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
@@ -2347,6 +2384,10 @@
  "meat:suna8bit": [
   "meathax/meatcores"
  ],
+ "meat:taitof3": [
+  "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
  "meat:thunderjaws": [
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
@@ -2360,6 +2401,9 @@
  ],
  "meat:viostorm": [
   "OngoGablogian/MiSTer_Ongo",
+  "meathax/meatcores"
+ ],
+ "meat:xmen6p": [
   "meathax/meatcores"
  ],
  "meat:yellowcab": [
@@ -3251,6 +3295,9 @@
  "repo:firebeat_popn": [
   "ppriest/Arcade-Firebeat_MiSTer"
  ],
+ "repo:firebeat_ppp": [
+  "ppriest/Arcade-Firebeat_MiSTer"
+ ],
  "repo:firetrap": [
   "Usquebagh/Arcade-FireTrap_MiSTer"
  ],
@@ -3350,6 +3397,9 @@
   "OngoGablogian/MiSTer_Ongo",
   "fiermanb/LastDuel-MadGear_MiSTer"
  ],
+ "repo:lemmings": [
+  "ppriest/Arcade-Lemmings_MiSTer"
+ ],
  "repo:lethalenforcers": [
   "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-LethalEnforcers_MiSTer"
@@ -3384,6 +3434,11 @@
   "decoryah/Arcade-MetamorphicForce_MiSTer",
   "meathax/meatcores"
  ],
+ "repo:midway-t-unit": [
+  "Gm0rk/Arcade-Midway-T-Unit_MiSTer",
+  "Gm0rk/Gm0rkCores",
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "repo:midway-y-unit": [
   "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
   "Gm0rk/Gm0rkCores",
@@ -3409,6 +3464,9 @@
  "repo:model2c": [
   "OngoGablogian/MiSTer_Ongo",
   "alphanu1/sega-model2-mister"
+ ],
+ "repo:monacogp": [
+  "pippazzu/MonacoGP_MiSTer"
  ],
  "repo:monstermaulers": [
   "decoryah/Arcade-MonsterMaulers_MiSTer"
