@@ -381,6 +381,9 @@
  "decoryah:konamim2": [
   "decoryah/Arcade-KonamiM2_MiSTer"
  ],
+ "decoryah:konamim2heat": [
+  "decoryah/Arcade-KonamiM2_MiSTer"
+ ],
  "decoryah:mcatadv": [
   "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer"
  ],
@@ -2009,6 +2012,9 @@
  "jtpr:jtnemesis": [
   "GX400-Friends/gx400-bin",
   "OngoGablogian/MiSTer_Ongo",
+  "jotego/jtcores"
+ ],
+ "jtpr:jtnemsis": [
   "jotego/jtcores"
  ],
  "jtpr:jtpopeye": [

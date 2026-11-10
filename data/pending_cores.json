@@ -206,7 +206,7 @@
    "tetrist"
   ],
   "sets_auto": true,
-  "merged": false
+  "merged": true
  },
  {
   "name": "jtargus",
@@ -230,6 +230,38 @@
   "sets": [
    "trckydoc",
    "trckydoca"
+  ],
+  "sets_auto": true,
+  "merged": false
+ },
+ {
+  "name": "jtnemsis",
+  "game": "feat(nemsis): integrate GX400 Nemesis core",
+  "pr": 1696,
+  "date": "2026-11-08",
+  "sets": [
+   "blkpnthr",
+   "bs_gradius",
+   "bs_gwarrior",
+   "bs_rf2",
+   "bs_twinbee",
+   "citybomb",
+   "citybombj",
+   "gwarrior",
+   "hcrash",
+   "hcrashc",
+   "kittenk",
+   "konamigt",
+   "lifefrce",
+   "lifefrcej",
+   "nemesis",
+   "nemesisuk",
+   "nyanpani",
+   "rf2",
+   "salamand",
+   "salamandj",
+   "salamandt",
+   "twinbee"
   ],
   "sets_auto": true,
   "merged": false
