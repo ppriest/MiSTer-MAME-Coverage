@@ -345,6 +345,12 @@
  "decoryah:blockhl": [
   "decoryah/Arcade-BlockHole_MiSTer"
  ],
+ "decoryah:cojag020": [
+  "decoryah/Arcade-CoJag_MiSTer"
+ ],
+ "decoryah:cojagr3k": [
+  "decoryah/Arcade-CoJag_MiSTer"
+ ],
  "decoryah:crashrace": [
   "decoryah/Arcade-LethalCrashRace_MiSTer"
  ],
@@ -2697,6 +2703,9 @@
   "jlrh/jlrh-misterfpga-db"
  ],
  "ongo:ffmechatt": [
+  "jlrh/jlrh-misterfpga-db"
+ ],
+ "ongo:ffphelios": [
   "jlrh/jlrh-misterfpga-db"
  ],
  "ongo:ffsauro": [
