@@ -1617,6 +1617,9 @@
   "jlrh/jlrh-misterfpga-db",
   "jlrh/konami-fpga"
  ],
+ "jlrh:ffjetwave": [
+  "jlrh/konami-fpga"
+ ],
  "jlrh:ffkonamigt": [
   "jlrh/jlrh-misterfpga-db",
   "jlrh/konami-fpga"
@@ -2702,6 +2705,9 @@
  "ongo:ffholeland": [
   "jlrh/jlrh-misterfpga-db"
  ],
+ "ongo:ffjetwave": [
+  "jlrh/jlrh-misterfpga-db"
+ ],
  "ongo:ffmechatt": [
   "jlrh/jlrh-misterfpga-db"
  ],
@@ -3126,6 +3132,9 @@
   "meathax/meatcores"
  ],
  "ongo:twinhawk_bazset": [
+  "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:tx1": [
   "bazset/MiSTer_BAZSET"
  ],
  "ongo:vamphalf": [
