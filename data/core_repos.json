@@ -390,6 +390,12 @@
  "decoryah:konamim2heat": [
   "decoryah/Arcade-KonamiM2_MiSTer"
  ],
+ "decoryah:konamim2hellnight": [
+  "decoryah/Arcade-KonamiM2_MiSTer"
+ ],
+ "decoryah:konamim2tryst": [
+  "decoryah/Arcade-KonamiM2_MiSTer"
+ ],
  "decoryah:mcatadv": [
   "decoryah/Arcade-MagicalCatAdventure_Nostradamus_MiSTer"
  ],
@@ -3319,6 +3325,9 @@
  "repo:firebeat": [
   "ppriest/Arcade-Firebeat_MiSTer"
  ],
+ "repo:firebeat_kbm": [
+  "ppriest/Arcade-Firebeat_MiSTer"
+ ],
  "repo:firebeat_popn": [
   "ppriest/Arcade-Firebeat_MiSTer"
  ],
@@ -3819,6 +3828,9 @@
  ],
  "rodimus:segasystem1-2_testbuild": [
   "RodimusFVC/Arcade-SegaSystem1-2_MiSTer"
+ ],
+ "rodimus:segavicdual": [
+  "RodimusFVC/Arcade-SegaVICDual_MiSTer"
  ],
  "rodimus:universal_testbuild": [
   "RodimusFVC/Arcade-Universal_MiSTer"

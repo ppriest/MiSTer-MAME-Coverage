@@ -4,15 +4,6 @@
 "updated": "2026-11-14",
 "runs": [
 {
-"date": "2026-10-20",
-"note": "alamone 2026-10-19",
-"cores": 8,
-"sets": 2,
-"pairs": 58,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
 "date": "2026-10-21",
 "note": "alamone 2026-10-19",
 "cores": 15,
@@ -459,6 +450,15 @@
 "cores": 3,
 "sets": 5,
 "pairs": 9,
+"dates_improved": 0,
+"cores_removed": 0
+},
+{
+"date": "2026-11-14",
+"note": "alamone 2026-11-09",
+"cores": 5,
+"sets": 40,
+"pairs": 67,
 "dates_improved": 0,
 "cores_removed": 0
 }
@@ -1605,6 +1605,24 @@
 "note": null,
 "first_recorded": "2026-10-10",
 "aliases": [],
+"last_seen": "2026-11-14"
+},
+"bazset:tx1": {
+"id": "bazset:tx1",
+"name": "Arcade-TX1",
+"source": "bazset",
+"source_title": "bazset (MiSTer_BAZSET)",
+"channel": null,
+"rbf": "Arcade-TX1.rbf",
+"repo": "bazset/MiSTer_BAZSET",
+"url": "https://github.com/bazset/MiSTer_BAZSET",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-14",
 "last_seen": "2026-11-14"
 },
 "bazset:volfied": {
@@ -3940,6 +3958,42 @@
 "note": null,
 "first_recorded": "2026-11-10",
 "aliases": [],
+"last_seen": "2026-11-14"
+},
+"decoryah:konamim2hellnight": {
+"id": "decoryah:konamim2hellnight",
+"name": "KonamiM2HellNight",
+"source": "decoryah",
+"source_title": "decoryah",
+"channel": null,
+"rbf": "KonamiM2HellNight.rbf",
+"repo": "decoryah/Arcade-KonamiM2_MiSTer",
+"url": "https://github.com/decoryah/Arcade-KonamiM2_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+},
+"decoryah:konamim2tryst": {
+"id": "decoryah:konamim2tryst",
+"name": "KonamiM2Tryst",
+"source": "decoryah",
+"source_title": "decoryah",
+"channel": null,
+"rbf": "KonamiM2Tryst.rbf",
+"repo": "decoryah/Arcade-KonamiM2_MiSTer",
+"url": "https://github.com/decoryah/Arcade-KonamiM2_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-14",
 "last_seen": "2026-11-14"
 },
 "decoryah:mcatadv": {
@@ -9539,6 +9593,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-14",
+"aliases": [],
 "last_seen": "2026-11-14"
 },
 "jlrh:ffkonamigt": {
@@ -16035,6 +16090,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-14",
+"aliases": [],
 "last_seen": "2026-11-14"
 },
 "ongo:ffkonamigt": {
@@ -18804,6 +18860,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-14",
+"aliases": [],
 "last_seen": "2026-11-14"
 },
 "ongo:vamphalf": {
@@ -19312,6 +19369,24 @@
 "note": null,
 "first_recorded": "2026-10-11",
 "aliases": [],
+"last_seen": "2026-11-14"
+},
+"ppriest:firebeat_kbm": {
+"id": "ppriest:firebeat_kbm",
+"name": "Firebeat_kbm",
+"source": "ppriest",
+"source_title": "ppriest (Tourniquet)",
+"channel": null,
+"rbf": "Firebeat_kbm.rbf",
+"repo": "ppriest/Arcade-Firebeat_MiSTer",
+"url": "https://github.com/ppriest/Arcade-Firebeat_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-14",
 "last_seen": "2026-11-14"
 },
 "ppriest:firebeat_popn": {
@@ -21994,6 +22069,24 @@
 "rodimus:segasystem1-2"
 ],
 "first_recorded": "2026-10-26",
+"last_seen": "2026-11-14"
+},
+"rodimus:segavicdual": {
+"id": "rodimus:segavicdual",
+"name": "SegaVICDual",
+"source": "rodimus",
+"source_title": "RodimusFVC",
+"channel": null,
+"rbf": "SegaVICDual.rbf",
+"repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"url": "https://github.com/RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-14",
 "last_seen": "2026-11-14"
 },
 "rodimus:spaceinvaders_testbuild": {
@@ -27917,6 +28010,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Alpha Fighter + Head On.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": true,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Alpha Fighter + Head On.mra",
+"mra": "_Arcade/Alpha Fighter - Head On.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "alphahob": {
@@ -27932,6 +28038,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Missile + Circuit.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": true,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Missile + Circuit.mra",
+"mra": "_Arcade/Missile - Circuit (Bootleg Of Alpha Fighter - Head On).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "alpham2": {
@@ -40285,6 +40404,21 @@
 "last_seen": "2026-11-14"
 }
 },
+"brdrlinb": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Borderline/Borderline (Karateco Bootleg).mra",
+"mra": "_Arcade/Borderline (Karateco Bootleg).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
 "brdrline": {
 "dist:segavicz80": {
 "core": "dist:segavicz80",
@@ -40298,6 +40432,49 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Borderline.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Borderline.mra",
+"mra": "_Arcade/Borderline.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"brdrlinet": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Borderline/Borderline (Tranquillizer Gun Conversion).mra",
+"mra": "_Arcade/Borderline (Tranquillizer Gun Conversion).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"brdrlins": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Borderline/Borderline (Sidam Bootleg).mra",
+"mra": "_Arcade/Borderline (Sidam Bootleg).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "breakers": {
@@ -41280,6 +41457,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/_alternatives/_Battle K-Road/Battle K-Road (Korea).mra"
+}
+},
+"btltryst": {
+"decoryah:konamim2tryst": {
+"core": "decoryah:konamim2tryst",
+"date": "2026-11-12",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-KonamiM2_MiSTer",
+"first_path": "mra/Battle Tryst (ver JAC).mra",
+"mra": "_Arcade/Battle Tryst (ver JAC).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "btoads": {
@@ -42397,6 +42589,21 @@
 "first_path": "releases/_alternatives/_Bulls Eye Darts/Bulls Eye Darts (Galaxian Conversion).mra",
 "mra": null,
 "first_recorded": "2026-10-26",
+"last_seen": "2026-11-14"
+}
+},
+"bumba": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Head On/Bumba (Bootleg Of Head On).mra",
+"mra": "_Arcade/Bumba (Bootleg Of Head On).mra",
+"first_recorded": "2026-11-14",
 "last_seen": "2026-11-14"
 }
 },
@@ -43786,6 +43993,21 @@
 "mra": "_Arcade/Captain Commando (USA 910928).mra"
 }
 },
+"car2": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Head On 2/Car 2 (Bootleg Of Head On 2).mra",
+"mra": "_Arcade/Car 2 (Bootleg Of Head On 2).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
 "caractn": {
 "dist:burningrubber": {
 "core": "dist:burningrubber",
@@ -43829,6 +44051,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Car Hunt + Deep Scan (France).mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Car Hunt + Deep Scan (France).mra",
+"mra": "_Arcade/Car Hunt - Deep Scan.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "carnival": {
@@ -43844,6 +44079,94 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Carnival.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "releases/Carnival.mra",
+"mra": "_Arcade/Carnival.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"carnivalb": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Carnival/Carnival (Upright, PIT8253 Music).mra",
+"mra": "_Arcade/Carnival (Upright, PIT8253 Music).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"carnivalc": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Carnival/Carnival (Cocktail).mra",
+"mra": "_Arcade/Carnival (Cocktail).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"carnivalh": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Carnival/Carnival (Head On Hardware, Set 1).mra",
+"mra": "_Arcade/Carnival (Head On Hardware, Set 1).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"carnivalha": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Carnival/Carnival (Head On Hardware, Set 2).mra",
+"mra": "_Arcade/Carnival (Head On Hardware, Set 2).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"carnivalmm": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Carnival/Carnival (ManilaMatic Bootleg).mra",
+"mra": "_Arcade/Carnival (ManilaMatic Bootleg).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "carpolo": {
@@ -47950,6 +48273,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Ocean To Ocean (DECO).mra"
+}
+},
+"colision": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Head On/Colision (Bootleg Of Head On).mra",
+"mra": "_Arcade/Colision (Bootleg Of Head On).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "colmns97": {
@@ -56325,6 +56663,36 @@
 "last_seen": "2026-11-14"
 }
 },
+"depthch": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/Depthcharge.mra",
+"mra": "_Arcade/Depthcharge.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"depthcho": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Depthcharge/Depthcharge (Older).mra",
+"mra": "_Arcade/Depthcharge (Older).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
 "desert": {
 "ongo:model2": {
 "core": "ongo:model2",
@@ -57427,6 +57795,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Digger.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Digger.mra",
+"mra": "_Arcade/Digger.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "diggerc": {
@@ -69778,6 +70159,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Frogs.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Frogs.mra",
+"mra": "_Arcade/Frogs.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "froman2b": {
@@ -81516,6 +81910,34 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Head On.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Head On.mra",
+"mra": "_Arcade/Head On.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"headon1": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Head On/Head On (1 Player).mra",
+"mra": "_Arcade/Head On (1 Player).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "headon2": {
@@ -81531,6 +81953,49 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Head On 2.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Head On 2.mra",
+"mra": "_Arcade/Head On 2.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"headon2s": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Head On 2/Head On 2 (Sidam Bootleg).mra",
+"mra": "_Arcade/Head On 2 (Sidam Bootleg).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"headon2sl": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Head On 2/Head On 2 (Sega Slimline).mra",
+"mra": "_Arcade/Head On 2 (Sega Slimline).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "headonch": {
@@ -81561,6 +82026,64 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Head On (bootleg alt maze).mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Head On (bootleg alt maze).mra",
+"mra": "_Arcade/Head On (Bootleg, Alt Maze).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"headonn": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Head On/Head On N.mra",
+"mra": "_Arcade/Head On N.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"headons": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Head On/Head On (Sidam Bootleg, Set 1).mra",
+"mra": "_Arcade/Head On (Sidam Bootleg, Set 1).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"headonsa": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Head On/Head On (Sidam Bootleg, Set 2).mra",
+"mra": "_Arcade/Head On (Sidam Bootleg, Set 2).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "heartatk": {
@@ -81814,6 +82337,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Heiankyo Alien.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Heiankyo Alien.mra",
+"mra": "_Arcade/Heiankyo Alien.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "helifire": {
@@ -82020,6 +82556,21 @@
 "first_path": "dev/_Hellfire/Hellfire (2P set, older).mra",
 "mra": "_Arcade/Hellfire (2P Set, Older).mra",
 "first_recorded": "2026-10-19",
+"last_seen": "2026-11-14"
+}
+},
+"hellngt": {
+"decoryah:konamim2hellnight": {
+"core": "decoryah:konamim2hellnight",
+"date": "2026-11-12",
+"date_quality": "git",
+"via": "decoryah",
+"wip": false,
+"alt": false,
+"first_repo": "decoryah/Arcade-KonamiM2_MiSTer",
+"first_path": "mra/Hell Night (ver EAA).mra",
+"mra": "_Arcade/Hell Night (ver EAA).mra",
+"first_recorded": "2026-11-14",
 "last_seen": "2026-11-14"
 }
 },
@@ -83048,6 +83599,21 @@
 "first_path": "releases/_alternatives/_Hunchback Olympic/Hunchback Olympic (Scramble Hardware).mra",
 "mra": null,
 "first_recorded": "2026-10-26",
+"last_seen": "2026-11-14"
+}
+},
+"hocrash": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Head On/Crash (Bootleg Of Head On).mra",
+"mra": "_Arcade/Crash (Bootleg Of Head On).mra",
+"first_recorded": "2026-11-14",
 "last_seen": "2026-11-14"
 }
 },
@@ -87030,6 +87596,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Invinco + Car Hunt (Germany).mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Invinco + Car Hunt (Germany).mra",
+"mra": "_Arcade/Invinco - Car Hunt.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "invds": {
@@ -87045,6 +87624,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Invinco + Deep Scan.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Invinco + Deep Scan.mra",
+"mra": "_Arcade/Invinco - Deep Scan.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "invho2": {
@@ -87060,6 +87652,34 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Invinco + Head On 2.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Invinco + Head On 2.mra",
+"mra": "_Arcade/Invinco - Head On 2.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"invho2a": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Invinco - Head On 2/Invinco - Head On 2 (Set 2).mra",
+"mra": "_Arcade/Invinco - Head On 2 (Set 2).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "invinco": {
@@ -87075,6 +87695,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Invinco.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Invinco.mra",
+"mra": "_Arcade/Invinco.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "invmulti": {
@@ -90835,6 +91468,66 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Knuckle Bash (location test).mra"
+}
+},
+"kbh": {
+"ppriest:firebeat_kbm": {
+"core": "ppriest:firebeat_kbm",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": true,
+"first_repo": "ppriest/Arcade-Firebeat_MiSTer",
+"first_path": "releases/_alternatives/_Keyboardmania/Keyboardheaven (Korea).mra",
+"mra": "_Arcade/_alternatives/_Keyboardmania/Keyboardheaven (Korea).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"kbm": {
+"ppriest:firebeat_kbm": {
+"core": "ppriest:firebeat_kbm",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-Firebeat_MiSTer",
+"first_path": "releases/Keyboardmania.mra",
+"mra": "_Arcade/Keyboardmania.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"kbm2nd": {
+"ppriest:firebeat_kbm": {
+"core": "ppriest:firebeat_kbm",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-Firebeat_MiSTer",
+"first_path": "releases/Keyboardmania 2nd Mix.mra",
+"mra": "_Arcade/Keyboardmania 2nd Mix.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"kbm3rd": {
+"ppriest:firebeat_kbm": {
+"core": "ppriest:firebeat_kbm",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-Firebeat_MiSTer",
+"first_path": "releases/Keyboardmania 3rd Mix.mra",
+"mra": "_Arcade/Keyboardmania 3rd Mix.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "kchamp": {
@@ -115373,6 +116066,21 @@
 "last_seen": "2026-11-14"
 }
 },
+"nostromo": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/Nostromo.mra",
+"mra": "_Arcade/Nostromo.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
 "nouryoku": {
 "kuze:nmk16_gunnail": {
 "core": "kuze:nmk16_gunnail",
@@ -116107,6 +116815,34 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/N-Sub.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/N-Sub.mra",
+"mra": "_Arcade/N-Sub.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"nsubc": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_N-Sub/N-Sub (Cocktail).mra",
+"mra": "_Arcade/N-Sub (Cocktail).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "numanath": {
@@ -131013,6 +131749,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Pulsar.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "releases/Pulsar.mra",
+"mra": "_Arcade/Pulsar.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "pulstar": {
@@ -141841,6 +142590,34 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Safari.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Safari.mra",
+"mra": "_Arcade/Safari.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"safaria": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Safari/Safari (Set 2, Bootleg).mra",
+"mra": "_Arcade/Safari (Set 2, Bootleg).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "sagaia": {
@@ -142713,6 +143490,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Samurai.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Samurai.mra",
+"mra": "_Arcade/Samurai.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "samuraia": {
@@ -142743,6 +143533,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/_alternatives/_Samurai Aces/Samurai Aces (Korea).mra"
+}
+},
+"samuraij": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Samurai/Samurai (Japan).mra",
+"mra": "_Arcade/Samurai (Japan).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "sandor": {
@@ -157484,6 +158289,34 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Space Trek.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Space Trek.mra",
+"mra": "_Arcade/Space Trek.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"spacetrkc": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Space Trek/Space Trek (Cocktail).mra",
+"mra": "_Arcade/Space Trek (Cocktail).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "spacewar": {
@@ -161157,6 +161990,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Space Attack + Head On.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Space Attack + Head On.mra",
+"mra": "_Arcade/Space Attack - Head On.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "sspaceat": {
@@ -161172,6 +162018,64 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Space Attack.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Space Attack.mra",
+"mra": "_Arcade/Space Attack.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"sspaceat2": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Space Attack/Space Attack (Upright Set 2).mra",
+"mra": "_Arcade/Space Attack (Upright Set 2).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"sspaceat3": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Space Attack/Space Attack (Upright Set 3).mra",
+"mra": "_Arcade/Space Attack (Upright Set 3).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
+"sspaceatc": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Space Attack/Space Attack (Cocktail).mra",
+"mra": "_Arcade/Space Attack (Cocktail).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "sspirits": {
@@ -162495,6 +163399,21 @@
 "mra": "_Arcade/_Nintendo VS. System/Vs. Star Luster.mra"
 }
 },
+"starrkr": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Borderline/Star Raker.mra",
+"mra": "_Arcade/Star Raker.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+}
+},
 "starslayer": {
 "dist:asteroids": {
 "core": "dist:asteroids",
@@ -162688,6 +163607,21 @@
 "first_path": "releases/_alternatives/Star Trek (bootleg of Defender).mra",
 "mra": "_Arcade/Star Trek (Bootleg Of Defender).mra",
 "first_recorded": "2026-10-26",
+"last_seen": "2026-11-14"
+}
+},
+"startrks": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Nostromo/Star Trek (Head On Hardware).mra",
+"mra": "_Arcade/Star Trek (Head On Hardware).mra",
+"first_recorded": "2026-11-14",
 "last_seen": "2026-11-14"
 }
 },
@@ -164158,6 +165092,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Sub Hunt.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Sub Hunt.mra",
+"mra": "_Arcade/Sub Hunter (Gremlin - Taito).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "subs": {
@@ -164336,6 +165283,21 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/_alternatives/_Super Burger Time/Super Burger Time (Japan).mra"
+}
+},
+"supcrash": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Head On/Super Crash (Bootleg Of Head On).mra",
+"mra": "_Arcade/Super Crash (Bootleg Of Head On).mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "supduck": {
@@ -174866,6 +175828,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Tranquilizer Gun.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Tranquilizer Gun.mra",
+"mra": "_Arcade/Tranquillizer Gun.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "transfrm": {
@@ -178002,6 +178977,19 @@
 }
 },
 "tx1": {
+"bazset:tx1": {
+"core": "bazset:tx1",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "bazset",
+"wip": false,
+"alt": false,
+"first_repo": "bazset/MiSTer_BAZSET",
+"first_path": "_Arcade/_BAZSET/TX-1.mra",
+"mra": "_Arcade/_BAZSET/TX-1.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
+},
 "ongo:tx1": {
 "core": "ongo:tx1",
 "date": "2026-11-13",
@@ -180130,6 +181118,21 @@
 "first_path": "releases/Venus (bootleg of Gyruss).mra",
 "mra": "_Arcade/Venus (Bootleg Of Gyruss).mra",
 "first_recorded": "2026-10-26",
+"last_seen": "2026-11-14"
+}
+},
+"verbena": {
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": true,
+"first_repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+"first_path": "releases/_alternatives/_Carnival/Verbena (Bootleg Of Carnival).mra",
+"mra": "_Arcade/Verbena (Bootleg Of Carnival).mra",
+"first_recorded": "2026-11-14",
 "last_seen": "2026-11-14"
 }
 },
@@ -183280,6 +184283,19 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-14",
 "mra": "_Arcade/Wanted.mra"
+},
+"rodimus:segavicdual": {
+"core": "rodimus:segavicdual",
+"date": "2026-11-14",
+"date_quality": "git",
+"via": "rodimus",
+"wip": false,
+"alt": false,
+"first_repo": "MiSTer-devel/Arcade-SegaVICZ80_MiSTer",
+"first_path": "unreleased/Wanted.mra",
+"mra": "_Arcade/Wanted.mra",
+"first_recorded": "2026-11-14",
+"last_seen": "2026-11-14"
 }
 },
 "wardner": {
@@ -190318,6 +191334,12 @@
 "alpha1v": {
 "rodimus": "Shooter"
 },
+"alphaho": {
+"rodimus": "Maze"
+},
+"alphahob": {
+"rodimus": "Maze"
+},
 "alphamis": {
 "dist": "Shooter / Flying Vertical"
 },
@@ -191728,6 +192750,18 @@
 "ongo": "Beat'em Up",
 "bazset": "Beat'em Up"
 },
+"brdrlinb": {
+"rodimus": "Maze"
+},
+"brdrline": {
+"rodimus": "Maze"
+},
+"brdrlinet": {
+"rodimus": "Maze"
+},
+"brdrlins": {
+"rodimus": "Maze"
+},
 "breakout": {
 "dist": "Ball and Paddle",
 "repo": "Ball and Paddle",
@@ -191863,6 +192897,9 @@
 "bullsdrtg": {
 "repo": "Sports - Darts",
 "rodimus": "Sports - Darts"
+},
+"bumba": {
+"rodimus": "Maze"
 },
 "burnforc": {
 "ongo": "Arcade",
@@ -192071,14 +193108,36 @@
 "captcommu": {
 "coinop": "Beat &apos;Em Up"
 },
+"car2": {
+"rodimus": "Maze"
+},
 "caractn": {
 "dist": "Racing"
 },
 "caractn2": {
 "dist": "Racing"
 },
+"carhntds": {
+"rodimus": "Maze"
+},
 "carnival": {
-"dist": "Shooter - Fixed vertical"
+"dist": "Shooter - Fixed vertical",
+"rodimus": "Maze"
+},
+"carnivalb": {
+"rodimus": "Maze"
+},
+"carnivalc": {
+"rodimus": "Maze"
+},
+"carnivalh": {
+"rodimus": "Maze"
+},
+"carnivalha": {
+"rodimus": "Maze"
+},
+"carnivalmm": {
+"rodimus": "Maze"
 },
 "carpolo": {
 "repo": "Sports",
@@ -192711,6 +193770,9 @@
 "cocean6b": {
 "dist": "Action",
 "rodimus": "Action"
+},
+"colision": {
+"rodimus": "Maze"
 },
 "colony7": {
 "dist": "Shooter - Gallery",
@@ -193612,6 +194674,12 @@
 "denjinmka": {
 "dist": "Beat'em up"
 },
+"depthch": {
+"rodimus": "Maze"
+},
+"depthcho": {
+"rodimus": "Maze"
+},
 "desert": {
 "ongo": "Shooter",
 "repo": "Shooter"
@@ -193738,6 +194806,9 @@
 "digdugat1": {
 "dist": "Maze",
 "repo": "Maze",
+"rodimus": "Maze"
+},
+"digger": {
 "rodimus": "Maze"
 },
 "diggerc": {
@@ -195189,6 +196260,9 @@
 "rodimus": "Shooter",
 "zakk": "Maze"
 },
+"frogs": {
+"rodimus": "Maze"
+},
 "frontlin": {
 "dist": "Action"
 },
@@ -196552,10 +197626,37 @@
 "ongo": "Arcade",
 "kuze": "Arcade"
 },
+"headon": {
+"rodimus": "Maze"
+},
+"headon1": {
+"rodimus": "Maze"
+},
+"headon2": {
+"rodimus": "Maze"
+},
+"headon2s": {
+"rodimus": "Maze"
+},
+"headon2sl": {
+"rodimus": "Maze"
+},
 "headonch": {
 "ongo": "Arcade",
 "arcfpga": "Arcade",
 "repo": "Arcade"
+},
+"headonmz": {
+"rodimus": "Maze"
+},
+"headonn": {
+"rodimus": "Maze"
+},
+"headons": {
+"rodimus": "Maze"
+},
+"headonsa": {
+"rodimus": "Maze"
 },
 "heartatk": {
 "ongo": "Arcade",
@@ -196586,6 +197687,9 @@
 "heberpop": {
 "repo": "Puzzle",
 "ongo": "Puzzle"
+},
+"heiankyo": {
+"rodimus": "Maze"
 },
 "helifire": {
 "ongo": "Shooter",
@@ -196742,6 +197846,9 @@
 "hncholms": {
 "repo": "Shooter",
 "rodimus": "Shooter"
+},
+"hocrash": {
+"rodimus": "Maze"
 },
 "holeland": {
 "ongo": "Shooter",
@@ -197176,6 +198283,21 @@
 "repo": "Shooter",
 "rodimus": "Shooter"
 },
+"invcarht": {
+"rodimus": "Maze"
+},
+"invds": {
+"rodimus": "Maze"
+},
+"invho2": {
+"rodimus": "Maze"
+},
+"invho2a": {
+"rodimus": "Maze"
+},
+"invinco": {
+"rodimus": "Maze"
+},
 "invmulti": {
 "repo": "Shooter",
 "rodimus": "Shooter"
@@ -197544,6 +198666,22 @@
 "kbashp": {
 "slop": "Beat 'em up",
 "ongo": "Beat 'em up"
+},
+"kbh": {
+"repo": "Rhythm",
+"ppriest": "Rhythm"
+},
+"kbm": {
+"repo": "Rhythm",
+"ppriest": "Rhythm"
+},
+"kbm2nd": {
+"repo": "Rhythm",
+"ppriest": "Rhythm"
+},
+"kbm3rd": {
+"repo": "Rhythm",
+"ppriest": "Rhythm"
 },
 "kdeadeye": {
 "kyle": "Shooter",
@@ -199897,6 +201035,9 @@
 "ongo": "Shooter",
 "kyle": "Shooter"
 },
+"nostromo": {
+"rodimus": "Maze"
+},
 "nouryoku": {
 "ongo": "Shooter",
 "kuze": "Shooter"
@@ -199959,6 +201100,12 @@
 "dist": "Action",
 "ongo": "Action",
 "rmcores": "Action"
+},
+"nsub": {
+"rodimus": "Maze"
+},
+"nsubc": {
+"rodimus": "Maze"
 },
 "numanath": {
 "ongo": "Sports",
@@ -201635,7 +202782,8 @@
 "zakk": "Maze / Pac-Man"
 },
 "pulsar": {
-"dist": "Maze shooter"
+"dist": "Maze shooter",
+"rodimus": "Maze"
 },
 "punchita": {
 "rodimus": "Sports"
@@ -202993,6 +204141,12 @@
 "ongo": "Shooter",
 "kuze": "Shooter"
 },
+"safari": {
+"rodimus": "Maze"
+},
+"safaria": {
+"rodimus": "Maze"
+},
 "sagaia": {
 "dist": "Shooter"
 },
@@ -203069,11 +204223,17 @@
 "repo": "Arcade",
 "ppriest": "Arcade"
 },
+"samurai": {
+"rodimus": "Maze"
+},
 "samuraia": {
 "dist": "Shoot 'Em Up"
 },
 "samuraiak": {
 "dist": "Shoot 'Em Up"
+},
+"samuraij": {
+"rodimus": "Maze"
 },
 "sandscrp": {
 "ongo": "Shooter",
@@ -204598,6 +205758,12 @@
 "spaceskr": {
 "dist": "Shooter"
 },
+"spacetrk": {
+"rodimus": "Maze"
+},
+"spacetrkc": {
+"rodimus": "Maze"
+},
 "spacewar": {
 "usquebagh": "Shooter",
 "repo": "Shooter",
@@ -204932,6 +206098,21 @@
 "arcfpga": "Arcade",
 "repo": "Arcade"
 },
+"sspacaho": {
+"rodimus": "Maze"
+},
+"sspaceat": {
+"rodimus": "Maze"
+},
+"sspaceat2": {
+"rodimus": "Maze"
+},
+"sspaceat3": {
+"rodimus": "Maze"
+},
+"sspaceatc": {
+"rodimus": "Maze"
+},
 "ssprint": {
 "dist": "Arcade"
 },
@@ -205083,6 +206264,9 @@
 "dist": "Shooter - Vertical",
 "rodimus": "Action"
 },
+"starrkr": {
+"rodimus": "Maze"
+},
 "starslayer": {
 "dist": "Shooter - Multidirectional"
 },
@@ -205101,6 +206285,9 @@
 "repo": "Shooter",
 "rodimus": "Shooter",
 "zakk": "Space / Defender"
+},
+"startrks": {
+"rodimus": "Maze"
 },
 "starw": {
 "repo": "Shooter",
@@ -205257,6 +206444,9 @@
 "ongo": "Racing",
 "meat": "Racing"
 },
+"subhunt": {
+"rodimus": "Maze"
+},
 "subs": {
 "dist": "Racing"
 },
@@ -205284,6 +206474,9 @@
 },
 "supbtimej": {
 "coinop": "Platform"
+},
+"supcrash": {
+"rodimus": "Maze"
 },
 "superabc": {
 "rodimus": "Maze"
@@ -206371,6 +207564,9 @@
 "dist": "Shooter - Multidirectional",
 "rodimus": "Shooter"
 },
+"tranqgun": {
+"rodimus": "Maze"
+},
 "transfrm": {
 "dist": "Shooter"
 },
@@ -206957,6 +208153,9 @@
 "rodimus": "Shooter",
 "zakk": "Space"
 },
+"verbena": {
+"rodimus": "Maze"
+},
 "vf": {
 "ongo": "Fighter",
 "repo": "Fighter"
@@ -207243,6 +208442,9 @@
 "wallst": {
 "ongo": "Arcade",
 "bazset": "Arcade"
+},
+"wantsega": {
+"rodimus": "Maze"
 },
 "wardner": {
 "coinop": "Platform"

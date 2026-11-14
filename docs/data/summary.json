@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-11-14T12:01:01+00:00",
+  "generated": "2026-11-14T23:37:26+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-11-14T12:00:49+00:00",
+  "mister_generated": "2026-11-14T23:37:06+00:00",
   "alamone_generated": "2026-11-09T11:59:26+00:00",
   "ledger_updated": "2026-11-14",
   "ledger_runs": [
-   {
-    "date": "2026-11-10",
-    "note": "alamone 2026-11-09",
-    "cores": 2,
-    "sets": 2,
-    "pairs": 25,
-    "dates_improved": 0,
-    "cores_removed": 1
-   },
    {
     "date": "2026-11-11",
     "note": "alamone 2026-11-09",
@@ -51,6 +42,15 @@
     "pairs": 9,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-11-14",
+    "note": "alamone 2026-11-09",
+    "cores": 5,
+    "sets": 40,
+    "pairs": 67,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5491 sets, 5491 used); mame2016: catver_mame2016.ini (37065 sets, 32543 used)",
    "catver_entries": 38034,
    "mad_entries": 2995,
-   "mra_entries": 4534,
+   "mra_entries": 4594,
    "unmapped": [
     {
      "raw": "not classified",
@@ -2169,7 +2169,7 @@
     "source": "decoryah",
     "repo": "decoryah/Arcade-KonamiM2_MiSTer",
     "dirs": null,
-    "mras": 4
+    "mras": 6
    },
    {
     "source": "decoryah",
@@ -2507,7 +2507,7 @@
     "source": "repo",
     "repo": "ppriest/Arcade-Firebeat_MiSTer",
     "dirs": null,
-    "mras": 18
+    "mras": 22
    },
    {
     "source": "repo",
@@ -3449,6 +3449,12 @@
    },
    {
     "source": "rodimus",
+    "repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+    "dirs": null,
+    "mras": 73
+   },
+   {
+    "source": "rodimus",
     "repo": "RodimusFVC/Arcade-Tutankham_MiSTer",
     "dirs": null,
     "mras": 4
@@ -3589,13 +3595,13 @@
   "counts": {
    "titles": 6827,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2625,
+   "working_arcade_titles_covered": 2629,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 6857,
-   "working_arcade_titles_source": 2396,
+   "working_arcade_sets_covered": 6894,
+   "working_arcade_titles_source": 2400,
    "working_arcade_titles_binary_only": 229,
-   "cores": 918,
-   "binary_only_cores": 402,
+   "cores": 922,
+   "binary_only_cores": 403,
    "unmatched_sets": 532
   }
  },
@@ -5158,6 +5164,31 @@
    "first_date": "2026-08-14",
    "drivers_loaded": [
     "taito/taito_x.cpp"
+   ]
+  },
+  {
+   "id": "bazset:tx1",
+   "name": "TX1",
+   "source": "bazset",
+   "source_title": "bazset (MiSTer_BAZSET)",
+   "channel": null,
+   "rbf": "Arcade-TX1.rbf",
+   "repo": "bazset/MiSTer_BAZSET",
+   "url": "https://github.com/bazset/MiSTer_BAZSET",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-11-14",
+   "drivers_loaded": [
+    "tatsumi/tx1.cpp"
    ]
   },
   {
@@ -8300,6 +8331,56 @@
    "nsets": 0,
    "ntitles": 0,
    "first_date": "2026-11-07",
+   "drivers_loaded": [
+    "konami/konamim2.cpp"
+   ]
+  },
+  {
+   "id": "decoryah:konamim2hellnight",
+   "name": "KonamiM2HellNight",
+   "source": "decoryah",
+   "source_title": "decoryah",
+   "channel": null,
+   "rbf": "KonamiM2HellNight.rbf",
+   "repo": "decoryah/Arcade-KonamiM2_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-KonamiM2_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-11-12",
+   "drivers_loaded": [
+    "konami/konamim2.cpp"
+   ]
+  },
+  {
+   "id": "decoryah:konamim2tryst",
+   "name": "KonamiM2Tryst",
+   "source": "decoryah",
+   "source_title": "decoryah",
+   "channel": null,
+   "rbf": "KonamiM2Tryst.rbf",
+   "repo": "decoryah/Arcade-KonamiM2_MiSTer",
+   "url": "https://github.com/decoryah/Arcade-KonamiM2_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "binary_only": false,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": "2026-11-12",
    "drivers_loaded": [
     "konami/konamim2.cpp"
    ]
@@ -15026,6 +15107,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-14",
+   "aliases": [],
    "last_seen": "2026-11-14",
    "binary_only": false,
    "nsets": 3,
@@ -21226,31 +21308,6 @@
    ]
   },
   {
-   "id": "ongo:tx1",
-   "name": "TX1",
-   "source": "ongo",
-   "source_title": "MiSTer_Ongo (OngoGablogian)",
-   "channel": null,
-   "rbf": "Arcade-TX1.rbf",
-   "repo": "bazset/MiSTer_BAZSET",
-   "url": "https://github.com/bazset/MiSTer_BAZSET",
-   "build_date": null,
-   "status": null,
-   "reading": null,
-   "score": null,
-   "mame_drivers": [],
-   "note": null,
-   "first_recorded": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "binary_only": true,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2026-11-13",
-   "drivers_loaded": [
-    "tatsumi/tx1.cpp"
-   ]
-  },
-  {
    "id": "ongo:vsnes",
    "name": "VSnes",
    "source": "ongo",
@@ -21492,6 +21549,31 @@
      "w": 1072,
      "h": 678
     }
+   ]
+  },
+  {
+   "id": "ppriest:firebeat_kbm",
+   "name": "Firebeat_kbm",
+   "source": "ppriest",
+   "source_title": "ppriest (Tourniquet)",
+   "channel": null,
+   "rbf": "Firebeat_kbm.rbf",
+   "repo": "ppriest/Arcade-Firebeat_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-Firebeat_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "binary_only": false,
+   "nsets": 4,
+   "ntitles": 3,
+   "first_date": "2026-11-14",
+   "drivers_loaded": [
+    "konami/firebeat.cpp"
    ]
   },
   {
@@ -24879,6 +24961,31 @@
    "nsets": 92,
    "ntitles": 28,
    "first_date": "2026-10-20"
+  },
+  {
+   "id": "rodimus:segavicdual",
+   "name": "SegaVICDual",
+   "source": "rodimus",
+   "source_title": "RodimusFVC",
+   "channel": null,
+   "rbf": "SegaVICDual.rbf",
+   "repo": "RodimusFVC/Arcade-SegaVICDual_MiSTer",
+   "url": "https://github.com/RodimusFVC/Arcade-SegaVICDual_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "binary_only": false,
+   "nsets": 57,
+   "ntitles": 24,
+   "first_date": "2026-11-14",
+   "drivers_loaded": [
+    "sega/vicdual.cpp"
+   ]
   },
   {
    "id": "rodimus:spaceinvaders_testbuild",
@@ -31180,10 +31287,11 @@
   {
    "sourcefile": "konami/firebeat.cpp",
    "titles": 19,
-   "covered": 11,
+   "covered": 14,
    "sets": 26,
-   "sets_covered": 17,
+   "sets_covered": 21,
    "cores": [
+    "ppriest:firebeat_kbm",
     "ppriest:firebeat_popn",
     "ppriest:firebeat_ppp"
    ],
@@ -31398,9 +31506,10 @@
    "titles": 3,
    "covered": 3,
    "sets": 4,
-   "sets_covered": 3,
+   "sets_covered": 4,
    "cores": [
-    "decoryah:konamim2"
+    "decoryah:konamim2",
+    "decoryah:konamim2hellnight"
    ],
    "first": "2026-11-05"
   },
@@ -34838,11 +34947,12 @@
   {
    "sourcefile": "sega/vicdual.cpp",
    "titles": 24,
-   "covered": 23,
+   "covered": 24,
    "sets": 57,
-   "sets_covered": 25,
+   "sets_covered": 57,
    "cores": [
-    "dist:segavicz80"
+    "dist:segavicz80",
+    "rodimus:segavicdual"
    ],
    "first": "2024-01-21"
   },
@@ -36398,7 +36508,7 @@
    "sets_covered": 2,
    "cores": [
     "bazset:buggyboyjunior",
-    "ongo:tx1"
+    "bazset:tx1"
    ],
    "first": "2026-11-10"
   },

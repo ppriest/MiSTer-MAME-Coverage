@@ -285,6 +285,7 @@
  "RodimusFVC/Arcade-SNK6502_MiSTer": true,
  "RodimusFVC/Arcade-SegaG80_MiSTer": true,
  "RodimusFVC/Arcade-SegaSystem1-2_MiSTer": true,
+ "RodimusFVC/Arcade-SegaVICDual_MiSTer": true,
  "RodimusFVC/Arcade-SpaceInvaders_MiSTer": true,
  "RodimusFVC/Arcade-Tutankham_MiSTer": true,
  "RodimusFVC/Arcade-UPLFramebuffer_MiSTer": true,
