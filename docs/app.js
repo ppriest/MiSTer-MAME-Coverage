@@ -1217,6 +1217,9 @@
   const voters = v => (v.voters || []).map(x => `<span class="badge" title="${esc(x.at)}">${esc(x.nickname)}</span>`).join("") + (v.votes > (v.voters || []).length ? ` <span class="flag">+${v.votes - v.voters.length} more</span>` : "");
   // A request is fulfilled once it is on MiSTer: a title when its main (parent) set is, a driver when at least one of its titles is.
   const titleDone = v => { const t = S.titles.find(x => x.name === v.key); if (!t) return false; const p = t.sets.find(s => s.name === t.name); return p ? p.cores.length > 0 : t.ncovered > 0; };
+  // when it reached MiSTer: a title's earliest core date; a driver's earliest among its titles (dates are YYYY-MM-DD)
+  const titleAdded = v => { const t = S.titles.find(x => x.name === v.key); return t && t.date || ""; };
+  const driverAdded = v => S.titles.reduce((m, t) => t.sourcefile === v.key && t.date && (!m || t.date < m) ? t.date : m, "");
   const driverDone = v => { const d = S.driverByFile[v.key]; return !!d && d.covered > 0; };
   function renderWishlist() {
     const note = $("#wishlist-note");
@@ -1225,6 +1228,7 @@
     if (!S.api.ok) { $("#wl-drivers tbody").innerHTML = ""; $("#wl-titles tbody").innerHTML = '<tr><td colspan="12" class="muted">The wishlist service is not reachable right now (' + esc(S.api.error || "unknown") + '). Open /api/health to see what is missing.</td></tr>'; return; }
     const fulfilled = S.wlView === "fulfilled";
     $("#wl-core-th").hidden = !fulfilled;      // the Cores column is for the fulfilled ones
+    $$(".wl-last-th").forEach(th => { th.textContent = fulfilled ? "Added to MiSTer" : "Last vote"; });      // the date column: when it came to MiSTer (fulfilled) or the last vote (requested)
     const none = c => `<tr><td colspan="${c}" class="muted">${fulfilled ? "Nothing fulfilled yet." : "No requests yet."}</td></tr>`;
     const all = { drivers: DRIVER_WISHLIST ? S.api.list.drivers : [], titles: S.api.list.titles };
     const nFul = all.drivers.filter(driverDone).length + all.titles.filter(titleDone).length;
@@ -1235,13 +1239,13 @@
     $("#wl-drivers tbody").innerHTML = dr.length ? dr.map((v, i) => { const d = S.driverByFile[v.key]; return `<tr>
       <td class="num">${i + 1}</td><td class="set"><a href="#" data-wl-drv="${esc(v.key)}">${esc(v.key)}</a></td>
       <td class="num">${d ? `${d.covered}/${d.titles}` : ""}</td><td class="act">${action("driver", v, fulfilled)}</td>
-      <td>${voters(v)}</td><td class="num" title="first vote ${esc(ago(v.first_vote))}">${esc(ago(v.last_vote))}</td></tr>`; }).join("") : none(6);
+      <td>${voters(v)}</td><td class="num" ${fulfilled ? 'title="the earliest date a core loading one of its titles was seen on MiSTer"' : `title="first vote ${esc(ago(v.first_vote))}"`}>${esc(fulfilled ? driverAdded(v) : ago(v.last_vote))}</td></tr>`; }).join("") : none(6);
     const ti = all.titles.filter(v => titleDone(v) === fulfilled);
     $("#wl-titles tbody").innerHTML = ti.length ? ti.map((v, i) => { const t = S.titles.find(x => x.name === v.key); return `<tr${t ? ` data-t="${esc(t.name)}"` : ""}>
       <td class="exp" title="show sets, hardware and screenshots">${t ? (S.wlOpen.has(t.name) ? "▾" : "▸") : ""}</td><td class="num">${i + 1}</td><td>${t ? `<a href="#" data-wl-title="${esc(v.key)}">${esc(t.desc)}</a>` : ""}</td><td class="set">${esc(v.key)}</td><td class="set">${t ? esc(t.sourcefile) : ""}</td>
       <td class="num">${t ? esc(t.year) : ""}</td><td>${t ? esc(t.manufacturer) : ""}</td><td class="num">${t ? `${t.ncovered_working}/${t.nworking}` : ""}</td>
       ${fulfilled ? `<td>${t ? t.cores.map(id => badge(id)).join("") : ""}</td>` : ""}
-      <td class="act">${action("title", v, fulfilled)}</td><td>${voters(v)}</td><td class="num" title="first vote ${esc(ago(v.first_vote))}">${esc(ago(v.last_vote))}</td></tr>`; }).join("") : none(fulfilled ? 12 : 11);
+      <td class="act">${action("title", v, fulfilled)}</td><td>${voters(v)}</td><td class="num" ${fulfilled ? 'title="the date the first core with this title was seen on MiSTer"' : `title="first vote ${esc(ago(v.first_vote))}"`}>${esc(fulfilled ? titleAdded(v) : ago(v.last_vote))}</td></tr>`; }).join("") : none(fulfilled ? 12 : 11);
     $$("#wl-titles tbody tr[data-t]").forEach(tr => { if (S.wlOpen.has(tr.dataset.t)) openWlDetail(tr); });
   }
   // the twist-open of a Wishlist title: the same detail (sets and their cores, hardware, screenshots) as on the Titles tab
