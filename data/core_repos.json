@@ -1184,6 +1184,10 @@
   "MiSTer-devel/Distribution_MiSTer",
   "MiSTer-devel/MRA-Alternatives_MiSTer"
  ],
+ "dist:raizingmd": [
+  "MiSTer-devel/Arcade-RaizingMD_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer"
+ ],
  "dist:rallyx": [
   "MiSTer-devel/Arcade-RallyX_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
