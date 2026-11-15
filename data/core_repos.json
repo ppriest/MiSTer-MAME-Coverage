@@ -71,6 +71,7 @@
  ],
  "coinop:armedf": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "va7deo/ArmedF",
   "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:batrider": [
@@ -204,6 +205,7 @@
  ],
  "coinop:nextspace": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "va7deo/NextSpace",
   "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:nitrobal": [
@@ -280,6 +282,7 @@
  "coinop:terracresta": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
   "OngoGablogian/MiSTer_Ongo",
+  "va7deo/TerraCresta",
   "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:thndzone": [
@@ -3939,6 +3942,30 @@
  ],
  "usquebagh:vsnes": [
   "Usquebagh/MiSTer_misc"
+ ],
+ "va7deo:alpha68k": [
+  "va7deo/alpha68k"
+ ],
+ "va7deo:demonwld": [
+  "va7deo/demonswld"
+ ],
+ "va7deo:megasys1_a": [
+  "va7deo/MegaSys1_A"
+ ],
+ "va7deo:prehisle": [
+  "va7deo/PrehistoricIsle"
+ ],
+ "va7deo:rallybike": [
+  "va7deo/rallybike"
+ ],
+ "va7deo:snk68": [
+  "va7deo/SNK68"
+ ],
+ "va7deo:vimana": [
+  "va7deo/vimana"
+ ],
+ "va7deo:zerowing": [
+  "va7deo/zerowing"
  ],
  "xela:system11": [
   "OngoGablogian/MiSTer_Ongo",

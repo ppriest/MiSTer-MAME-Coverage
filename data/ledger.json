@@ -6,15 +6,6 @@
 {
 "date": "2026-10-21",
 "note": "alamone 2026-10-19",
-"cores": 11,
-"sets": 108,
-"pairs": 178,
-"dates_improved": 1,
-"cores_removed": 0
-},
-{
-"date": "2026-10-21",
-"note": "alamone 2026-10-19",
 "cores": 7,
 "sets": 35,
 "pairs": 102,
@@ -461,6 +452,15 @@
 "pairs": 28,
 "dates_improved": 0,
 "cores_removed": 0
+},
+{
+"date": "2026-11-15",
+"note": "alamone 2026-11-09",
+"cores": 8,
+"sets": 7,
+"pairs": 94,
+"dates_improved": 25,
+"cores_removed": 8
 }
 ]
 },
@@ -7502,6 +7502,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-15",
+"aliases": [],
 "last_seen": "2026-11-15"
 },
 "dist:rallyx": {
@@ -19852,27 +19853,6 @@
 "aliases": [],
 "last_seen": "2026-11-15"
 },
-"repo:alpha68k": {
-"id": "repo:alpha68k",
-"name": "Alpha68k (va7deo)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "Alpha68k_20221223.rbf",
-"repo": "va7deo/alpha68k",
-"url": "https://github.com/va7deo/alpha68k",
-"build_date": "2022-12-23",
-"status": "analyzed",
-"reading": "mostly hardware",
-"score": 79,
-"mame_drivers": [
-"alpha/alpha68k.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
-"aliases": [],
-"last_seen": "2026-11-15"
-},
 "repo:battlantis_20261018c": {
 "id": "repo:battlantis_20261018c",
 "name": "Battlantis (Eggsecutioner528)",
@@ -20022,27 +20002,6 @@
 ],
 "note": null,
 "first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-11-15"
-},
-"repo:demonwld": {
-"id": "repo:demonwld",
-"name": "demonwld (va7deo)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "demonwld_20230610.rbf",
-"repo": "va7deo/demonswld",
-"url": "https://github.com/va7deo/demonswld",
-"build_date": "2023-06-10",
-"status": "analyzed",
-"reading": "not enough evidence",
-"score": 56,
-"mame_drivers": [
-"toaplan/toaplan1.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
 "aliases": [],
 "last_seen": "2026-11-15"
 },
@@ -20435,27 +20394,6 @@
 "aliases": [],
 "last_seen": "2026-11-15"
 },
-"repo:megasys1_a": {
-"id": "repo:megasys1_a",
-"name": "MegaSys1_A (va7deo)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "MegaSys1_A_20240106.rbf",
-"repo": "va7deo/MegaSys1_A",
-"url": "https://github.com/va7deo/MegaSys1_A",
-"build_date": "2024-01-06",
-"status": "analyzed",
-"reading": "both",
-"score": 42,
-"mame_drivers": [
-"jaleco/megasys1.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
-"aliases": [],
-"last_seen": "2026-11-15"
-},
 "repo:model1": {
 "id": "repo:model1",
 "name": "Model1 (alphanu1)",
@@ -20684,27 +20622,6 @@
 "aliases": [],
 "last_seen": "2026-11-15"
 },
-"repo:prehisle": {
-"id": "repo:prehisle",
-"name": "prehisle (va7deo)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "prehisle_20230708.rbf",
-"repo": "va7deo/PrehistoricIsle",
-"url": "https://github.com/va7deo/PrehistoricIsle",
-"build_date": "2023-07-08",
-"status": "analyzed",
-"reading": "not enough evidence",
-"score": 36,
-"mame_drivers": [
-"snk/prehisle.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
-"aliases": [],
-"last_seen": "2026-11-15"
-},
 "repo:primalrage": {
 "id": "repo:primalrage",
 "name": "Arcade-PrimalRage (nortido)",
@@ -20809,27 +20726,6 @@
 ],
 "note": null,
 "first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-11-15"
-},
-"repo:rallybike": {
-"id": "repo:rallybike",
-"name": "rallybike (va7deo)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "rallybike_20230602.rbf",
-"repo": "va7deo/rallybike",
-"url": "https://github.com/va7deo/rallybike",
-"build_date": "2023-06-02",
-"status": "analyzed",
-"reading": "not enough evidence",
-"score": 60,
-"mame_drivers": [
-"toaplan/rallybik.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
 "aliases": [],
 "last_seen": "2026-11-15"
 },
@@ -21024,27 +20920,6 @@
 ],
 "note": null,
 "first_recorded": "2026-10-04",
-"aliases": [],
-"last_seen": "2026-11-15"
-},
-"repo:snk68": {
-"id": "repo:snk68",
-"name": "SNK68 (va7deo)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "SNK68_20221019.rbf",
-"repo": "va7deo/SNK68",
-"url": "https://github.com/va7deo/SNK68",
-"build_date": "2022-10-19",
-"status": "analyzed",
-"reading": "mostly hardware",
-"score": 81,
-"mame_drivers": [
-"snk/snk68.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
 "aliases": [],
 "last_seen": "2026-11-15"
 },
@@ -21426,28 +21301,6 @@
 "aliases": [],
 "last_seen": "2026-11-15"
 },
-"repo:vimana": {
-"id": "repo:vimana",
-"name": "vimana (va7deo)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "vimana_20230606.rbf",
-"repo": "va7deo/vimana",
-"url": "https://github.com/va7deo/vimana",
-"build_date": "2023-06-06",
-"status": "analyzed",
-"reading": "not enough evidence",
-"score": 54,
-"mame_drivers": [
-"toaplan/fireshrk.cpp",
-"toaplan/toaplan1.cpp"
-],
-"note": null,
-"first_recorded": "2026-10-19",
-"aliases": [],
-"last_seen": "2026-11-15"
-},
 "repo:wolfunit": {
 "id": "repo:wolfunit",
 "name": "Arcade-WolfUnit (Kuba-J)",
@@ -21504,27 +21357,6 @@
 "reading": "mostly MAME",
 "score": 28,
 "mame_drivers": [],
-"note": null,
-"first_recorded": "2026-10-19",
-"aliases": [],
-"last_seen": "2026-11-15"
-},
-"repo:zerowing": {
-"id": "repo:zerowing",
-"name": "zerowing (va7deo)",
-"source": "repo",
-"source_title": "GitHub repository only",
-"channel": "repository only",
-"rbf": "zerowing_20230606.rbf",
-"repo": "va7deo/zerowing",
-"url": "https://github.com/va7deo/zerowing",
-"build_date": "2023-06-06",
-"status": "analyzed",
-"reading": "not enough evidence",
-"score": 54,
-"mame_drivers": [
-"toaplan/toaplan1.cpp"
-],
 "note": null,
 "first_recorded": "2026-10-19",
 "aliases": [],
@@ -23418,6 +23250,167 @@
 "note": null,
 "first_recorded": "2026-10-17",
 "aliases": [],
+"last_seen": "2026-11-15"
+},
+"va7deo:alpha68k": {
+"id": "va7deo:alpha68k",
+"name": "Alpha68k (va7deo)",
+"source": "va7deo",
+"source_title": "Erin Olafsen (va7deo)",
+"channel": "repository only",
+"rbf": "Alpha68k_20221223.rbf",
+"repo": "va7deo/alpha68k",
+"url": "https://github.com/va7deo/alpha68k",
+"build_date": "2022-12-23",
+"status": "analyzed",
+"reading": "mostly hardware",
+"score": 79,
+"mame_drivers": [
+"alpha/alpha68k.cpp"
+],
+"note": null,
+"first_recorded": "2026-11-15",
+"last_seen": "2026-11-15"
+},
+"va7deo:demonwld": {
+"id": "va7deo:demonwld",
+"name": "demonwld (va7deo)",
+"source": "va7deo",
+"source_title": "Erin Olafsen (va7deo)",
+"channel": "repository only",
+"rbf": "demonwld_20230610.rbf",
+"repo": "va7deo/demonswld",
+"url": "https://github.com/va7deo/demonswld",
+"build_date": "2023-06-10",
+"status": "analyzed",
+"reading": "not enough evidence",
+"score": 56,
+"mame_drivers": [
+"toaplan/toaplan1.cpp"
+],
+"note": null,
+"first_recorded": "2026-11-15",
+"last_seen": "2026-11-15"
+},
+"va7deo:megasys1_a": {
+"id": "va7deo:megasys1_a",
+"name": "MegaSys1_A (va7deo)",
+"source": "va7deo",
+"source_title": "Erin Olafsen (va7deo)",
+"channel": "repository only",
+"rbf": "MegaSys1_A_20240106.rbf",
+"repo": "va7deo/MegaSys1_A",
+"url": "https://github.com/va7deo/MegaSys1_A",
+"build_date": "2024-01-06",
+"status": "analyzed",
+"reading": "both",
+"score": 42,
+"mame_drivers": [
+"jaleco/megasys1.cpp"
+],
+"note": null,
+"first_recorded": "2026-11-15",
+"last_seen": "2026-11-15"
+},
+"va7deo:prehisle": {
+"id": "va7deo:prehisle",
+"name": "prehisle (va7deo)",
+"source": "va7deo",
+"source_title": "Erin Olafsen (va7deo)",
+"channel": "repository only",
+"rbf": "prehisle_20230708.rbf",
+"repo": "va7deo/PrehistoricIsle",
+"url": "https://github.com/va7deo/PrehistoricIsle",
+"build_date": "2023-07-08",
+"status": "analyzed",
+"reading": "not enough evidence",
+"score": 36,
+"mame_drivers": [
+"snk/prehisle.cpp"
+],
+"note": null,
+"first_recorded": "2026-11-15",
+"last_seen": "2026-11-15"
+},
+"va7deo:rallybike": {
+"id": "va7deo:rallybike",
+"name": "rallybike (va7deo)",
+"source": "va7deo",
+"source_title": "Erin Olafsen (va7deo)",
+"channel": "repository only",
+"rbf": "rallybike_20230602.rbf",
+"repo": "va7deo/rallybike",
+"url": "https://github.com/va7deo/rallybike",
+"build_date": "2023-06-02",
+"status": "analyzed",
+"reading": "not enough evidence",
+"score": 60,
+"mame_drivers": [
+"toaplan/rallybik.cpp"
+],
+"note": null,
+"first_recorded": "2026-11-15",
+"last_seen": "2026-11-15"
+},
+"va7deo:snk68": {
+"id": "va7deo:snk68",
+"name": "SNK68 (va7deo)",
+"source": "va7deo",
+"source_title": "Erin Olafsen (va7deo)",
+"channel": "repository only",
+"rbf": "SNK68_20221019.rbf",
+"repo": "va7deo/SNK68",
+"url": "https://github.com/va7deo/SNK68",
+"build_date": "2022-10-19",
+"status": "analyzed",
+"reading": "mostly hardware",
+"score": 81,
+"mame_drivers": [
+"snk/snk68.cpp"
+],
+"note": null,
+"first_recorded": "2026-11-15",
+"last_seen": "2026-11-15"
+},
+"va7deo:vimana": {
+"id": "va7deo:vimana",
+"name": "vimana (va7deo)",
+"source": "va7deo",
+"source_title": "Erin Olafsen (va7deo)",
+"channel": "repository only",
+"rbf": "vimana_20230606.rbf",
+"repo": "va7deo/vimana",
+"url": "https://github.com/va7deo/vimana",
+"build_date": "2023-06-06",
+"status": "analyzed",
+"reading": "not enough evidence",
+"score": 54,
+"mame_drivers": [
+"toaplan/fireshrk.cpp",
+"toaplan/toaplan1.cpp"
+],
+"note": null,
+"first_recorded": "2026-11-15",
+"last_seen": "2026-11-15"
+},
+"va7deo:zerowing": {
+"id": "va7deo:zerowing",
+"name": "zerowing (va7deo)",
+"source": "va7deo",
+"source_title": "Erin Olafsen (va7deo)",
+"channel": "repository only",
+"rbf": "zerowing_20230606.rbf",
+"repo": "va7deo/zerowing",
+"url": "https://github.com/va7deo/zerowing",
+"build_date": "2023-06-06",
+"status": "analyzed",
+"reading": "not enough evidence",
+"score": 54,
+"mame_drivers": [
+"toaplan/toaplan1.cpp"
+],
+"note": null,
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 },
 "xela:system11": {
@@ -28470,13 +28463,13 @@
 "amatelas": {
 "coinop:terracresta": {
 "core": "coinop:terracresta",
-"date": "2022-09-22",
+"date": "2022-04-02",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": false,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/Sei Senshi Amatelass.mra",
+"first_repo": "va7deo/TerraCresta",
+"first_path": "dev/mra/Sei Senshi Amatelass.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Sei Senshi Amatelass.mra"
@@ -28485,13 +28478,13 @@
 "amazon": {
 "coinop:terracresta": {
 "core": "coinop:terracresta",
-"date": "2022-09-22",
+"date": "2022-04-02",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": true,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/_alternatives/_Soldier Girl Amazon/Soldier Girl Amazon.mra",
+"first_repo": "va7deo/TerraCresta",
+"first_path": "dev/mra/_alternatives/_Soldier Girl Amazon/Soldier Girl Amazon.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Soldier Girl Amazon/Soldier Girl Amazon.mra"
@@ -28500,13 +28493,13 @@
 "amazont": {
 "coinop:terracresta": {
 "core": "coinop:terracresta",
-"date": "2022-09-22",
+"date": "2022-04-02",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": true,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/_alternatives/_Soldier Girl Amazon/Soldier Girl Amazon (Tecfri license).mra",
+"first_repo": "va7deo/TerraCresta",
+"first_path": "dev/mra/_alternatives/_Soldier Girl Amazon/Soldier Girl Amazon (Tecfri license).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Soldier Girl Amazon/Soldier Girl Amazon (Tecfri license).mra"
@@ -31229,13 +31222,13 @@
 "armedf": {
 "coinop:armedf": {
 "core": "coinop:armedf",
-"date": "2022-09-22",
+"date": "2022-05-08",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": false,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/Armed F (Japan).mra",
+"first_repo": "va7deo/ArmedF",
+"first_path": "dev/mra/Armed F (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Armed F (Japan).mra"
@@ -31244,16 +31237,16 @@
 "armedff": {
 "coinop:armedf": {
 "core": "coinop:armedf",
-"date": "2022-09-22",
+"date": "2022-05-08",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
-"alt": true,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/_alternatives/_Formation Armed F/Armed F (Fillmore license).mra",
+"alt": false,
+"first_repo": "va7deo/ArmedF",
+"first_path": "dev/mra/_alts/_Formation Armed F/Armed F (Fillmore license).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
-"mra": "_Arcade/_alternatives/_Formation Armed F/Armed F (Fillmore license).mra"
+"mra": "_Arcade/Armed F (Fillmore license).mra"
 }
 },
 "armora": {
@@ -32205,17 +32198,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_The Astyanax/The Astyanax (EPROM Version).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-07-01",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/_alternatives/_The Astyanax/The Astyanax (EPROM Version).mra",
 "mra": "_Arcade/The Astyanax (EPROM Version).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -32233,17 +32226,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_The Astyanax/The Astyanax (Mask ROM Version).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-07-01",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/_alternatives/_The Astyanax/The Astyanax (Mask ROM Version).mra",
 "mra": "_Arcade/The Astyanax (Mask ROM Version).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -36488,13 +36481,13 @@
 "bigfghtr": {
 "coinop:armedf": {
 "core": "coinop:armedf",
-"date": "2022-09-22",
+"date": "2022-05-25",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": false,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/Tatakae! Big Fighter (Japan).mra",
+"first_repo": "va7deo/ArmedF",
+"first_path": "dev/mra/Tatakae! Big Fighter.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Tatakae! Big Fighter (Japan).mra"
@@ -39893,6 +39886,21 @@
 "mra": "_Arcade/Bonze Adventure (US, rev 1).mra"
 }
 },
+"boobhack": {
+"coinop:terracresta": {
+"core": "coinop:terracresta",
+"date": "2022-06-10",
+"date_quality": "git",
+"via": "va7deo",
+"wip": false,
+"alt": true,
+"first_repo": "va7deo/TerraCresta",
+"first_path": "dev/mra/_alternatives/_Booby Kids/Booby Kids (Italian Bootleg).mra",
+"mra": "_Arcade/Booby Kids (Italian Bootleg).mra",
+"first_recorded": "2026-11-15",
+"last_seen": "2026-11-15"
+}
+},
 "boogwing": {
 "coinop:boogwing": {
 "core": "coinop:boogwing",
@@ -41711,17 +41719,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Time Soldiers/Battle Field (Japan).mra"
 },
-"repo:alpha68k": {
-"core": "repo:alpha68k",
+"va7deo:alpha68k": {
+"core": "va7deo:alpha68k",
 "date": "2022-11-24",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/alpha68k",
 "first_path": "dev/mra/_alternatives/_Time Soldiers/Battle Field (Japan).mra",
 "mra": "_Arcade/Battle Field (Japan).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -45352,13 +45360,13 @@
 "cclimbr2": {
 "coinop:armedf": {
 "core": "coinop:armedf",
-"date": "2022-09-22",
+"date": "2022-05-26",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": false,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/Crazy Climber 2 (Japan).mra",
+"first_repo": "va7deo/ArmedF",
+"first_path": "dev/mra/Crazy Climber 2 (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Crazy Climber 2 (Japan).mra"
@@ -45367,16 +45375,16 @@
 "cclimbr2a": {
 "coinop:armedf": {
 "core": "coinop:armedf",
-"date": "2022-09-22",
+"date": "2022-05-26",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
-"alt": true,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/_alternatives/_Crazy Climber 2/Crazy Climber 2 (Japan, Harder).mra",
+"alt": false,
+"first_repo": "va7deo/ArmedF",
+"first_path": "dev/mra/_alts/_Crazy Climber 2/Crazy Climber 2 (Japan, Harder).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
-"mra": "_Arcade/_alternatives/_Crazy Climber 2/Crazy Climber 2 (Japan, Harder).mra"
+"mra": "_Arcade/Crazy Climber 2 (Japan, Harder).mra"
 }
 },
 "cclimbroper": {
@@ -56758,17 +56766,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Demon's World/Demon's World - Horror Story (Set 1).mra"
 },
-"repo:demonwld": {
-"core": "repo:demonwld",
+"va7deo:demonwld": {
+"core": "va7deo:demonwld",
 "date": "2023-05-11",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/demonswld",
 "first_path": "dev/mra/Demons World - Horror Story (Set 1).mra",
 "mra": "_Arcade/Demons World - Horror Story (Set 1).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -56786,17 +56794,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Demon's World/Demon's World - Horror Story (Set 2).mra"
 },
-"repo:demonwld": {
-"core": "repo:demonwld",
+"va7deo:demonwld": {
+"core": "va7deo:demonwld",
 "date": "2023-06-01",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/demonswld",
 "first_path": "releases/_alternatives/_Demon's World/Demons World - Horror Story (Set 2).mra",
 "mra": "_Arcade/Demons World - Horror Story (Set 2).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -56814,17 +56822,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Demon's World - Horror Story (Set 3).mra"
 },
-"repo:demonwld": {
-"core": "repo:demonwld",
+"va7deo:demonwld": {
+"core": "va7deo:demonwld",
 "date": "2023-05-11",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/demonswld",
 "first_path": "dev/mra/_alternatives/_Demon's World/Demons World - Horror Story (Set 3).mra",
 "mra": "_Arcade/Demons World - Horror Story (Set 3).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -56842,17 +56850,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Demon's World/Demon's World - Horror Story (Set 4).mra"
 },
-"repo:demonwld": {
-"core": "repo:demonwld",
+"va7deo:demonwld": {
+"core": "va7deo:demonwld",
 "date": "2023-05-11",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/demonswld",
 "first_path": "dev/mra/_alternatives/_Demon's World/Demons World - Horror Story (Set 4).mra",
 "mra": "_Arcade/Demons World - Horror Story (Set 4).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -56870,17 +56878,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Demon's World/Demon's World - Horror Story (Set 5).mra"
 },
-"repo:demonwld": {
-"core": "repo:demonwld",
+"va7deo:demonwld": {
+"core": "va7deo:demonwld",
 "date": "2023-05-11",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/demonswld",
 "first_path": "dev/mra/_alternatives/_Demon's World/Demons World - Horror Story (Set 5).mra",
 "mra": "_Arcade/Demons World - Horror Story (Set 5).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -63258,17 +63266,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_E.D.F. - Earth Defense Force/E.D.F. -  Earth Defense Force (Japan, Prototype).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2024-01-01",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/_alternatives/_E.D.F. - Earth Defense Force/E.D.F. -  Earth Defense Force (Japan, Prototype).mra",
 "mra": "_Arcade/E.D.F. -  Earth Defense Force (Japan, Prototype).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -67858,17 +67866,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Fire Shark/Fire Shark.mra"
 },
-"repo:vimana": {
-"core": "repo:vimana",
+"va7deo:vimana": {
+"core": "va7deo:vimana",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/Fire Shark.mra",
 "mra": "_Arcade/Fire Shark.mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -67886,17 +67894,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Fire Shark/Fire Shark (Earlier).mra"
 },
-"repo:vimana": {
-"core": "repo:vimana",
+"va7deo:vimana": {
+"core": "va7deo:vimana",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/_Fire Shark/Fire Shark (earlier).mra",
 "mra": "_Arcade/Fire Shark (Earlier).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -67914,17 +67922,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Fire Shark/Fire Shark (Korea, Set 1, Easier).mra"
 },
-"repo:vimana": {
-"core": "repo:vimana",
+"va7deo:vimana": {
+"core": "va7deo:vimana",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/_Fire Shark/Fire Shark (Korea, set 1, easier).mra",
 "mra": "_Arcade/Fire Shark (Korea, Set 1, Easier).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -67942,17 +67950,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Fire Shark/Fire Shark (Korea, Set 2, Harder).mra"
 },
-"repo:vimana": {
-"core": "repo:vimana",
+"va7deo:vimana": {
+"core": "va7deo:vimana",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/_Fire Shark/Fire Shark (Korea, set 2, harder).mra",
 "mra": "_Arcade/Fire Shark (Korea, Set 2, Harder).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -69027,7 +69035,7 @@
 "alt": false,
 "first_repo": "decoryah/Arcade-Gaelco3D_MiSTer",
 "first_path": "mra/Football Power (Version 4.6).mra",
-"mra": "_Arcade/Football Power (rasterizer player, attract mode).mra",
+"mra": "_Arcade/_Decoryah/_Gaelco3D/Football Power (rasterizer player, attract mode).mra",
 "first_recorded": "2026-11-03",
 "last_seen": "2026-11-15"
 }
@@ -74049,17 +74057,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Gang Wars.mra"
 },
-"repo:alpha68k": {
-"core": "repo:alpha68k",
+"va7deo:alpha68k": {
+"core": "va7deo:alpha68k",
 "date": "2022-11-15",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/alpha68k",
 "first_path": "dev/mra/Gang Wars.mra",
 "mra": "_Arcade/Gang Wars.mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -74077,17 +74085,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Gang Wars/Gang Wars (Bootleg).mra"
 },
-"repo:alpha68k": {
-"core": "repo:alpha68k",
+"va7deo:alpha68k": {
+"core": "va7deo:alpha68k",
 "date": "2022-11-15",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/alpha68k",
 "first_path": "dev/mra/_alternatives/_Gang Wars/Gang Wars (Bootleg).mra",
 "mra": "_Arcade/Gang Wars (Bootleg).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -74105,17 +74113,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Gang Wars/Gang Wars (Japan).mra"
 },
-"repo:alpha68k": {
-"core": "repo:alpha68k",
+"va7deo:alpha68k": {
+"core": "va7deo:alpha68k",
 "date": "2022-11-15",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/alpha68k",
 "first_path": "dev/mra/_alternatives/_Gang Wars/Gang Wars (Japan).mra",
 "mra": "_Arcade/Gang Wars (Japan).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -74133,17 +74141,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Gang Wars/Gang Wars (US).mra"
 },
-"repo:alpha68k": {
-"core": "repo:alpha68k",
+"va7deo:alpha68k": {
+"core": "va7deo:alpha68k",
 "date": "2022-11-15",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/alpha68k",
 "first_path": "dev/mra/_alternatives/_Gang Wars/Gang Wars (US).mra",
 "mra": "_Arcade/Gang Wars (US).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -75554,17 +75562,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Prehistoric Isle in 1930/Genshitou 1930s.mra"
 },
-"repo:prehisle": {
-"core": "repo:prehisle",
+"va7deo:prehisle": {
+"core": "va7deo:prehisle",
 "date": "2022-08-15",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/PrehistoricIsle",
 "first_path": "releases/_alternatives/_Prehistoric Isle in 1930/Genshitou 1930s.mra",
 "mra": "_Arcade/Genshitou 1930s.mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -77191,17 +77199,17 @@
 }
 },
 "goldmedl": {
-"repo:alpha68k": {
-"core": "repo:alpha68k",
+"va7deo:alpha68k": {
+"core": "va7deo:alpha68k",
 "date": "2022-11-21",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": true,
 "alt": false,
 "first_repo": "va7deo/alpha68k",
 "first_path": "dev/mra/Gold Medalist (Set 1, Alpha68k II PCB).mra",
 "mra": "_Arcade/Gold Medalist (Set 1, Alpha68k II PCB).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -81255,17 +81263,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Hachoo.mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2024-01-01",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/Hachoo.mra",
 "mra": "_Arcade/Hachoo.mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -82757,17 +82765,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Hellfire (2P Set).mra"
 },
-"repo:zerowing": {
-"core": "repo:zerowing",
+"va7deo:zerowing": {
+"core": "va7deo:zerowing",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/Hellfire (2P set).mra",
 "mra": "_Arcade/Hellfire (2P Set).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -82785,17 +82793,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Hellfire/Hellfire (1P Set).mra"
 },
-"repo:zerowing": {
-"core": "repo:zerowing",
+"va7deo:zerowing": {
+"core": "va7deo:zerowing",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/_Hellfire/Hellfire (1P set).mra",
 "mra": "_Arcade/Hellfire (1P Set).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -82813,17 +82821,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Hellfire/Hellfire (1P Set, Older).mra"
 },
-"repo:zerowing": {
-"core": "repo:zerowing",
+"va7deo:zerowing": {
+"core": "va7deo:zerowing",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/_Hellfire/Hellfire (1P set, older).mra",
 "mra": "_Arcade/Hellfire (1P Set, Older).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -82841,17 +82849,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Hellfire/Hellfire (2P Set, Older).mra"
 },
-"repo:zerowing": {
-"core": "repo:zerowing",
+"va7deo:zerowing": {
+"core": "va7deo:zerowing",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/_Hellfire/Hellfire (2P set, older).mra",
 "mra": "_Arcade/Hellfire (2P Set, Older).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -84211,13 +84219,13 @@
 "horekid": {
 "coinop:terracresta": {
 "core": "coinop:terracresta",
-"date": "2022-09-22",
+"date": "2022-04-02",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": false,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/Kid no Hore Hore Daisakusen.mra",
+"first_repo": "va7deo/TerraCresta",
+"first_path": "dev/mra/Kid no Hore Hore Daisakusen.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Kid no Hore Hore Daisakusen.mra"
@@ -84226,13 +84234,13 @@
 "horekidb": {
 "coinop:terracresta": {
 "core": "coinop:terracresta",
-"date": "2022-09-22",
+"date": "2022-06-10",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": true,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/_alternatives/_Booby Kids/Kid no Hore Hore Daisakusen (Bootleg Set 1).mra",
+"first_repo": "va7deo/TerraCresta",
+"first_path": "releases/_alternatives/_Booby Kids/Kid no Hore Hore Daisakusen (Bootleg Set 1).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Booby Kids/Kid no Hore Hore Daisakusen (Bootleg Set 1).mra"
@@ -84241,13 +84249,13 @@
 "horekidb2": {
 "coinop:terracresta": {
 "core": "coinop:terracresta",
-"date": "2022-09-22",
+"date": "2022-04-23",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": true,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/_alternatives/_Booby Kids/Kid no Hore Hore Daisakusen (Bootleg Set 2).mra",
+"first_repo": "va7deo/TerraCresta",
+"first_path": "releases/_alternatives/_Booby Kids/Kid no Hore Hore Daisakusen (Bootleg Set 2).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Booby Kids/Kid no Hore Hore Daisakusen (Bootleg Set 2).mra"
@@ -86596,17 +86604,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Iga Ninjyutsuden (Japan).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-09-23",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/Iga Ninjyutsuden (Japan).mra",
 "mra": "_Arcade/Iga Ninjyutsuden (Japan).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -86665,17 +86673,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Ikari III - The Rescue (World Version 1, 8-Way Joystick).mra"
 },
-"repo:snk68": {
-"core": "repo:snk68",
+"va7deo:snk68": {
+"core": "va7deo:snk68",
 "date": "2022-09-08",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/Ikari III - The Rescue (World Version 1, 8-Way Joystick).mra",
 "mra": "_Arcade/Ikari III - The Rescue (World Version 1, 8-Way Joystick).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -86693,17 +86701,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Ikari III - The Rescue/Ikari Three (Japan, Rotary Joystick).mra"
 },
-"repo:snk68": {
-"core": "repo:snk68",
+"va7deo:snk68": {
+"core": "va7deo:snk68",
 "date": "2022-09-08",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/_alternatives/_Ikari III - The Rescue/Ikari Three (Japan, Rotary Joystick).mra",
 "mra": "_Arcade/Ikari Three (Japan, Rotary Joystick).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -86721,17 +86729,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Ikari III - The Rescue/Ikari Three (Korea, 8-Way Joystick).mra"
 },
-"repo:snk68": {
-"core": "repo:snk68",
+"va7deo:snk68": {
+"core": "va7deo:snk68",
 "date": "2022-09-08",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/_alternatives/_Ikari III - The Rescue/Ikari Three (Korea, 8-Way Joystick).mra",
 "mra": "_Arcade/Ikari Three (Korea, 8-Way Joystick).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -86749,17 +86757,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Ikari III - The Rescue/Ikari III - The Rescue (US, Rotary Joystick).mra"
 },
-"repo:snk68": {
-"core": "repo:snk68",
+"va7deo:snk68": {
+"core": "va7deo:snk68",
 "date": "2022-09-08",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/_alternatives/_Ikari III - The Rescue/Ikari III - The Rescue (US, Rotary Joystick).mra",
 "mra": "_Arcade/Ikari III - The Rescue (US, Rotary Joystick).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -86803,17 +86811,17 @@
 "first_recorded": "2026-10-31",
 "last_seen": "2026-11-01"
 },
-"repo:snk68": {
-"core": "repo:snk68",
+"va7deo:snk68": {
+"core": "va7deo:snk68",
 "date": "2022-09-08",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/_alternatives/_Ikari III - The Rescue/Ikari III - The Rescue (World, Rotary Joystick).mra",
 "mra": "_Arcade/Ikari III - The Rescue (World, Rotary Joystick).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -88440,17 +88448,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/In Your Face (US, Prototype).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2024-01-01",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/In Your Face (US, Prototype).mra",
 "mra": "_Arcade/In Your Face (US, Prototype).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -89198,17 +89206,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Jitsuryoku!! Pro Yakyuu (Japan).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2024-01-06",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/Jitsuryoku!! Pro Yakyuu (Japan).mra",
 "mra": "_Arcade/Jitsuryoku!! Pro Yakyuu (Japan).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -91707,17 +91715,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Ninja Kazan/Ninja Kazan (World).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-09-23",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/_alternatives/_Ninja Kazan/Ninja Kazan (World).mra",
 "mra": "_Arcade/Ninja Kazan (World).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -95324,13 +95332,13 @@
 "kozure": {
 "coinop:armedf": {
 "core": "coinop:armedf",
-"date": "2022-09-22",
+"date": "2022-05-08",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": false,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/Kozure Ookami (Japan).mra",
+"first_repo": "va7deo/ArmedF",
+"first_path": "dev/mra/Kozure Ookami (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Kozure Ookami (Japan).mra"
@@ -97360,31 +97368,76 @@
 "legion": {
 "coinop:armedf": {
 "core": "coinop:armedf",
-"date": "2022-09-22",
+"date": "2022-05-08",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
-"alt": true,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/_alternatives/_Chouji Meikyuu Legion/Legion - Spinner-87 (World ver 2.03).mra",
+"alt": false,
+"first_repo": "va7deo/ArmedF",
+"first_path": "dev/mra/Legion - Spinner-87 (World ver 2.03).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
-"mra": "_Arcade/_alternatives/_Chouji Meikyuu Legion/Legion - Spinner-87 (World ver 2.03).mra"
+"mra": "_Arcade/Legion - Spinner-87 (World ver 2.03).mra"
+}
+},
+"legionj": {
+"coinop:armedf": {
+"core": "coinop:armedf",
+"date": "2022-05-08",
+"date_quality": "git",
+"via": "va7deo",
+"wip": false,
+"alt": false,
+"first_repo": "va7deo/ArmedF",
+"first_path": "dev/mra/_alts/_Chouji Meikyuu Legion/Chouji Meikyuu Legion (Japan ver 1.05, set 1).mra",
+"mra": "_Arcade/Chouji Meikyuu Legion (Japan ver 1.05, set 1).mra",
+"first_recorded": "2026-11-15",
+"last_seen": "2026-11-15"
 }
 },
 "legionj2": {
 "coinop:armedf": {
 "core": "coinop:armedf",
-"date": "2022-09-22",
+"date": "2022-05-08",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": false,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/Chouji Meikyuu Legion (Japan ver 1.05, set 2).mra",
+"first_repo": "va7deo/ArmedF",
+"first_path": "dev/mra/_alts/_Chouji Meikyuu Legion/Chouji Meikyuu Legion (Japan ver 1.05, set 2).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Chouji Meikyuu Legion (Japan ver 1.05, set 2).mra"
+}
+},
+"legionjb": {
+"coinop:armedf": {
+"core": "coinop:armedf",
+"date": "2022-05-08",
+"date_quality": "git",
+"via": "va7deo",
+"wip": false,
+"alt": false,
+"first_repo": "va7deo/ArmedF",
+"first_path": "dev/mra/_alts/_Chouji Meikyuu Legion/Chouji Meikyuu Legion (Japan ver 1.05, bootleg set 1).mra",
+"mra": "_Arcade/Chouji Meikyuu Legion (Japan ver 1.05, bootleg set 1).mra",
+"first_recorded": "2026-11-15",
+"last_seen": "2026-11-15"
+}
+},
+"legionjb2": {
+"coinop:armedf": {
+"core": "coinop:armedf",
+"date": "2022-05-08",
+"date_quality": "git",
+"via": "va7deo",
+"wip": false,
+"alt": false,
+"first_repo": "va7deo/ArmedF",
+"first_path": "dev/mra/_alts/_Chouji Meikyuu Legion/Chouji Meikyuu Legion (Japan ver 1.05, bootleg set 2).mra",
+"mra": "_Arcade/Chouji Meikyuu Legion (Japan ver 1.05, bootleg set 2).mra",
+"first_recorded": "2026-11-15",
+"last_seen": "2026-11-15"
 }
 },
 "legionna": {
@@ -98477,17 +98530,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/The Lord of King (Japan).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-07-01",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/The Lord of King (Japan).mra",
 "mra": "_Arcade/The Lord of King (Japan).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -119733,17 +119786,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Out Zone.mra"
 },
-"repo:zerowing": {
-"core": "repo:zerowing",
+"va7deo:zerowing": {
+"core": "va7deo:zerowing",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/Out Zone.mra",
 "mra": "_Arcade/Out Zone.mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -119776,17 +119829,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Out Zone/Out Zone (Old Set).mra"
 },
-"repo:zerowing": {
-"core": "repo:zerowing",
+"va7deo:zerowing": {
+"core": "va7deo:zerowing",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/_Out Zone/Out Zone (old set).mra",
 "mra": "_Arcade/Out Zone (Old Set).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -119819,17 +119872,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Out Zone/Out Zone (Older set).mra"
 },
-"repo:zerowing": {
-"core": "repo:zerowing",
+"va7deo:zerowing": {
+"core": "va7deo:zerowing",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/_Out Zone/Out Zone (older set).mra",
 "mra": "_Arcade/Out Zone (Older Set).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -119862,17 +119915,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Out Zone/Out Zone (Zero Wing TP-015 PCB Conversion).mra"
 },
-"repo:zerowing": {
-"core": "repo:zerowing",
+"va7deo:zerowing": {
+"core": "va7deo:zerowing",
 "date": "2022-01-26",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "releases/Out Zone (Zero Wing TP-015 PCB conversion).mra",
 "mra": "_Arcade/Out Zone (Zero Wing TP-015 PCB Conversion).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -119905,17 +119958,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Out Zone/Out Zone (Harder).mra"
 },
-"repo:zerowing": {
-"core": "repo:zerowing",
+"va7deo:zerowing": {
+"core": "va7deo:zerowing",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/_Out Zone/Out Zone (harder).mra",
 "mra": "_Arcade/Out Zone (Harder).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -120157,17 +120210,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_P-47 - The Freedom Fighter/P-47 - The Phantom Fighter (World).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-07-01",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/_alternatives/_P-47 - The Freedom Fighter/P-47 - The Phantom Fighter (World).mra",
 "mra": "_Arcade/P-47 - The Phantom Fighter (World).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -120215,17 +120268,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/P-47 - The Freedom Fighter (Japan).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-07-01",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/P-47 - The Freedom Fighter (Japan).mra",
 "mra": "_Arcade/P-47 - The Freedom Fighter (Japan).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -120243,17 +120296,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_P-47 - The Freedom Fighter/P-47 - The Freedom Fighter (Japan, Export).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-07-01",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/_alternatives/_P-47 - The Freedom Fighter/P-47 - The Freedom Fighter (Japan, Export).mra",
 "mra": "_Arcade/P-47 - The Freedom Fighter (Japan, Export).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -121825,13 +121878,13 @@
 "paddlema": {
 "coinop:nextspace": {
 "core": "coinop:nextspace",
-"date": "2023-03-30",
+"date": "2023-03-23",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": false,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/Paddle Mania.mra",
+"first_repo": "va7deo/NextSpace",
+"first_path": "dev/mra/Paddle Mania.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Paddle Mania.mra"
@@ -125170,17 +125223,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Avenging Spirit/Phantasm (Japan).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-07-08",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/_alternatives/_Avenging Spirit/Phantasm (Japan).mra",
 "mra": "_Arcade/Phantasm (Japan).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -127596,17 +127649,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Plus Alpha.mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2024-01-06",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": true,
 "alt": false,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/Plus Alpha.mra",
 "mra": "_Arcade/Plus Alpha.mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -129980,17 +130033,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/P.O.W. - Prisoners of War (US Version 1).mra"
 },
-"repo:snk68": {
-"core": "repo:snk68",
+"va7deo:snk68": {
+"core": "va7deo:snk68",
 "date": "2022-09-09",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/P.O.W. - Prisoners of War (US Version 1).mra",
 "mra": "_Arcade/P.O.W. - Prisoners of War (US Version 1).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -130008,17 +130061,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_P.O.W. - Prisoners of War/P.O.W. - Prisoners of War (US Version 1, Mask ROM Sprites).mra"
 },
-"repo:snk68": {
-"core": "repo:snk68",
+"va7deo:snk68": {
+"core": "va7deo:snk68",
 "date": "2022-09-09",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/_alternatives/_P.O.W. - Prisoners of War/P.O.W. - Prisoners of War (US Version 1, Mask ROM Sprites).mra",
 "mra": "_Arcade/P.O.W. - Prisoners of War (US Version 1, Mask ROM Sprites).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -130193,17 +130246,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_P.O.W. - Prisoners of War/Datsugoku - Prisoners of War (Japan).mra"
 },
-"repo:snk68": {
-"core": "repo:snk68",
+"va7deo:snk68": {
+"core": "va7deo:snk68",
 "date": "2022-09-09",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/_alternatives/_P.O.W. - Prisoners of War/Datsugoku - Prisoners of War (Japan).mra",
 "mra": "_Arcade/Datsugoku - Prisoners of War (Japan).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -130341,17 +130394,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Prehistoric Isle in 1930 (World).mra"
 },
-"repo:prehisle": {
-"core": "repo:prehisle",
+"va7deo:prehisle": {
+"core": "va7deo:prehisle",
 "date": "2022-08-14",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/PrehistoricIsle",
 "first_path": "releases/Prehistoric Isle in 1930 (World).mra",
 "mra": "_Arcade/Prehistoric Isle in 1930 (World).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -130369,17 +130422,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Prehistoric Isle in 1930/Wonsido 1930s (Korea).mra"
 },
-"repo:prehisle": {
-"core": "repo:prehisle",
+"va7deo:prehisle": {
+"core": "va7deo:prehisle",
 "date": "2022-08-15",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/PrehistoricIsle",
 "first_path": "releases/_alternatives/_Prehistoric Isle in 1930/Wonsido 1930s (Korea).mra",
 "mra": "_Arcade/Wonsido 1930s (Korea).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -130397,17 +130450,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Prehistoric Isle in 1930/Prehistoric Isle in 1930 (US).mra"
 },
-"repo:prehisle": {
-"core": "repo:prehisle",
+"va7deo:prehisle": {
+"core": "va7deo:prehisle",
 "date": "2022-08-15",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/PrehistoricIsle",
 "first_path": "releases/_alternatives/_Prehistoric Isle in 1930/Prehistoric Isle in 1930 (US).mra",
 "mra": "_Arcade/Prehistoric Isle in 1930 (US).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -134699,7 +134752,7 @@
 "alt": false,
 "first_repo": "decoryah/Arcade-Gaelco3D_MiSTer",
 "first_path": "mra/Radikal Bikers (Version 2.02).mra",
-"mra": "_Arcade/Radikal Bikers (rasterizer player, attract mode).mra",
+"mra": "_Arcade/_Decoryah/_Gaelco3D/Radikal Bikers (rasterizer player, attract mode).mra",
 "first_recorded": "2026-11-03",
 "last_seen": "2026-11-15"
 }
@@ -136302,17 +136355,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Rally Bike - Dash Yarou.mra"
 },
-"repo:rallybike": {
-"core": "repo:rallybike",
+"va7deo:rallybike": {
+"core": "va7deo:rallybike",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/Rally Bike - Dash Yarou.mra",
 "mra": "_Arcade/Rally Bike - Dash Yarou.mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -140041,17 +140094,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Rod-Land/R&T (Rod-Land Prototype).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-05-13",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/_alternatives/_Rod-Land/R&T (Rod-Land Prototype).mra",
 "mra": "_Arcade/R&T (Rod-Land Prototype).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -141139,17 +141192,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Rod-Land (World, Set 1).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-05-13",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/Rod-Land (World, Set 1).mra",
 "mra": "_Arcade/Rod-Land (World, Set 1).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -141167,17 +141220,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Rod-Land/Rod-Land (World, Set 2).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-05-13",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/_alternatives/_Rod-Land/Rod-Land (World, Set 2).mra",
 "mra": "_Arcade/Rod-Land (World, Set 2).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -141195,17 +141248,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Rod-Land/Rod-Land (Japan).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-05-13",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/_alternatives/_Rod-Land/Rod-Land (Japan).mra",
 "mra": "_Arcade/Rod-Land (Japan).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -143461,17 +143514,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Fire Shark/Same! Same! Same! (1P Set).mra"
 },
-"repo:vimana": {
-"core": "repo:vimana",
+"va7deo:vimana": {
+"core": "va7deo:vimana",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/_Fire Shark/Same! Same! Same! (1P set).mra",
 "mra": "_Arcade/Same! Same! Same! (1P Set).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -143489,17 +143542,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Same! Same! Same! (2P Set).mra"
 },
-"repo:vimana": {
-"core": "repo:vimana",
+"va7deo:vimana": {
+"core": "va7deo:vimana",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/_Fire Shark/Same! Same! Same! (2P set).mra",
 "mra": "_Arcade/Same! Same! Same! (2P Set).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -143517,17 +143570,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Fire Shark/Jiao! Jiao! Jiao! (Hong Kong, 2P set).mra"
 },
-"repo:vimana": {
-"core": "repo:vimana",
+"va7deo:vimana": {
+"core": "va7deo:vimana",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/_Fire Shark/Jiao! Jiao! Jiao! (China, 2P set).mra",
 "mra": "_Arcade/Jiao! Jiao! Jiao! (Hong Kong, 2P set).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -143545,17 +143598,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Fire Shark/Same! Same! Same! (1P Set, New Ver.).mra"
 },
-"repo:vimana": {
-"core": "repo:vimana",
+"va7deo:vimana": {
+"core": "va7deo:vimana",
 "date": "2023-05-23",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/vimana",
 "first_path": "releases/_alternatives/_Fire Shark/Same! Same! Same! (1P Set, New Ver.).mra",
 "mra": "_Arcade/Same! Same! Same! (1P Set, New Ver.).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -144534,17 +144587,17 @@
 }
 },
 "sbasebal": {
-"repo:alpha68k": {
-"core": "repo:alpha68k",
+"va7deo:alpha68k": {
+"core": "va7deo:alpha68k",
 "date": "2022-11-16",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/alpha68k",
 "first_path": "dev/mra/Super Champion Baseball (US).mra",
 "mra": "_Arcade/Super Champion Baseball (US).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -144562,17 +144615,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Super Champion Baseball/Super Champion Baseball (Japan).mra"
 },
-"repo:alpha68k": {
-"core": "repo:alpha68k",
+"va7deo:alpha68k": {
+"core": "va7deo:alpha68k",
 "date": "2022-11-16",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/alpha68k",
 "first_path": "dev/mra/_alternatives/_Super Baseball Champion/Super Champion Baseball (Japan).mra",
 "mra": "_Arcade/Super Champion Baseball (Japan).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -146629,17 +146682,17 @@
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-01"
 },
-"repo:snk68": {
-"core": "repo:snk68",
+"va7deo:snk68": {
+"core": "va7deo:snk68",
 "date": "2022-09-09",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/SAR - Search And Rescue (World).mra",
 "mra": "_Arcade/SAR - Search And Rescue (World).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -146683,17 +146736,17 @@
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-01"
 },
-"repo:snk68": {
-"core": "repo:snk68",
+"va7deo:snk68": {
+"core": "va7deo:snk68",
 "date": "2022-09-09",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/_alternatives/_S.A.R. - Search and Rescue/SAR - Search And Rescue (Japan version 3).mra",
 "mra": "_Arcade/SAR - Search And Rescue (Japan version 3).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -146737,17 +146790,17 @@
 "first_recorded": "2026-10-28",
 "last_seen": "2026-11-01"
 },
-"repo:snk68": {
-"core": "repo:snk68",
+"va7deo:snk68": {
+"core": "va7deo:snk68",
 "date": "2022-09-09",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/_alternatives/_S.A.R. - Search and Rescue/SAR - Search And Rescue (US).mra",
 "mra": "_Arcade/SAR - Search And Rescue (US).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -154336,32 +154389,32 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Sky Adventure (World).mra"
 },
-"repo:alpha68k": {
-"core": "repo:alpha68k",
+"va7deo:alpha68k": {
+"core": "va7deo:alpha68k",
 "date": "2022-10-12",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/alpha68k",
 "first_path": "releases/skyadvnt.mra",
 "mra": "_Arcade/Sky Adventure (World).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
 "skyadvntb": {
-"repo:alpha68k": {
-"core": "repo:alpha68k",
+"va7deo:alpha68k": {
+"core": "va7deo:alpha68k",
 "date": "2022-11-16",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/alpha68k",
 "first_path": "dev/mra/_alternatives/_Sky Adventure/Sky Adventure (Bootleg).mra",
 "mra": "_Arcade/Sky Adventure (Bootleg).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -154379,17 +154432,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Sky Adventure/Sky Adventure (Japan).mra"
 },
-"repo:alpha68k": {
-"core": "repo:alpha68k",
+"va7deo:alpha68k": {
+"core": "va7deo:alpha68k",
 "date": "2022-11-16",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/alpha68k",
 "first_path": "dev/mra/_alternatives/_Sky Adventure/Sky Adventure (Japan).mra",
 "mra": "_Arcade/Sky Adventure (Japan).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -154407,17 +154460,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Sky Adventure/Sky Adventure (US).mra"
 },
-"repo:alpha68k": {
-"core": "repo:alpha68k",
+"va7deo:alpha68k": {
+"core": "va7deo:alpha68k",
 "date": "2022-11-16",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/alpha68k",
 "first_path": "dev/mra/_alternatives/_Sky Adventure/Sky Adventure (US).mra",
 "mra": "_Arcade/Sky Adventure (US).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -154678,16 +154731,16 @@
 "skyrobo": {
 "coinop:armedf": {
 "core": "coinop:armedf",
-"date": "2022-09-22",
+"date": "2022-05-26",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
-"alt": true,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/_alternatives/_Sky Robo/Sky Robo.mra",
+"alt": false,
+"first_repo": "va7deo/ArmedF",
+"first_path": "dev/mra/Sky Robo.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
-"mra": "_Arcade/_alternatives/_Sky Robo/Sky Robo.mra"
+"mra": "_Arcade/Sky Robo.mra"
 }
 },
 "skyshark": {
@@ -154874,17 +154927,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Sky Soldiers (US).mra"
 },
-"repo:alpha68k": {
-"core": "repo:alpha68k",
+"va7deo:alpha68k": {
+"core": "va7deo:alpha68k",
 "date": "2022-11-20",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/alpha68k",
 "first_path": "dev/mra/Sky Soldiers (US).mra",
 "mra": "_Arcade/Sky Soldiers (US).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -156541,17 +156594,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Soldam.mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-05-19",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/Soldam.mra",
 "mra": "_Arcade/Soldam.mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -156569,17 +156622,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Soldam/Soldam (Japan).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-05-19",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/_alternatives/_Soldam/Soldam (Japan).mra",
 "mra": "_Arcade/Soldam (Japan).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -159960,7 +160013,7 @@
 "alt": false,
 "first_repo": "decoryah/Arcade-Gaelco3D_MiSTer",
 "first_path": "mra/Speed Up (Version 2.20).mra",
-"mra": "_Arcade/Speed Up (rasterizer player, attract mode, 68020 core).mra",
+"mra": "_Arcade/_Decoryah/_Gaelco3D/Speed Up (rasterizer player, attract mode, 68020 core).mra",
 "first_recorded": "2026-11-03",
 "last_seen": "2026-11-15"
 },
@@ -164127,17 +164180,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Saint Dragon (Set 1).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-07-15",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/Saint Dragon (Set 1).mra",
 "mra": "_Arcade/Saint Dragon (Set 1).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -164155,17 +164208,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Saint Dragon/Saint Dragon (Set 2).mra"
 },
-"repo:megasys1_a": {
-"core": "repo:megasys1_a",
+"va7deo:megasys1_a": {
+"core": "va7deo:megasys1_a",
 "date": "2023-07-15",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/MegaSys1_A",
 "first_path": "releases/_alternatives/_Saint Dragon/Saint Dragon (Set 2).mra",
 "mra": "_Arcade/Saint Dragon (Set 2).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -164781,17 +164834,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Street Smart (US Version 2).mra"
 },
-"repo:snk68": {
-"core": "repo:snk68",
+"va7deo:snk68": {
+"core": "va7deo:snk68",
 "date": "2022-09-09",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/Street Smart (US Version 2).mra",
 "mra": "_Arcade/Street Smart (US Version 2).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -164809,17 +164862,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Street Smart/Street Smart (US version 1).mra"
 },
-"repo:snk68": {
-"core": "repo:snk68",
+"va7deo:snk68": {
+"core": "va7deo:snk68",
 "date": "2022-09-08",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/_alternatives/_Street Smart/Street Smart (US version 1).mra",
 "mra": "_Arcade/Street Smart (US version 1).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -164837,17 +164890,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Street Smart/Street Smart (Japan version 1).mra"
 },
-"repo:snk68": {
-"core": "repo:snk68",
+"va7deo:snk68": {
+"core": "va7deo:snk68",
 "date": "2022-09-08",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/_alternatives/_Street Smart/Street Smart (Japan version 1).mra",
 "mra": "_Arcade/Street Smart (Japan version 1).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -164865,17 +164918,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Street Smart/Street Smart (World version 1).mra"
 },
-"repo:snk68": {
-"core": "repo:snk68",
+"va7deo:snk68": {
+"core": "va7deo:snk68",
 "date": "2022-09-08",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/SNK68",
 "first_path": "dev/mra/_alternatives/_Street Smart/Street Smart (World version 1).mra",
 "mra": "_Arcade/Street Smart (World version 1).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -171277,13 +171330,13 @@
 "terracre": {
 "coinop:terracresta": {
 "core": "coinop:terracresta",
-"date": "2022-09-22",
+"date": "2022-04-02",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": false,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/Terra Cresta (YM3526 set 1).mra",
+"first_repo": "va7deo/TerraCresta",
+"first_path": "Terra Cresta (YM3526 set 1).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Terra Cresta (YM3526 set 1).mra"
@@ -171307,13 +171360,13 @@
 "terracrea": {
 "coinop:terracresta": {
 "core": "coinop:terracresta",
-"date": "2022-09-22",
+"date": "2022-04-02",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": true,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/_alternatives/_Terra Cresta/Terra Cresta (YM3526 set 3).mra",
+"first_repo": "va7deo/TerraCresta",
+"first_path": "releases/_alternatives/_Terra Cresta/Terra Cresta (YM3526 set 3).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Terra Cresta/Terra Cresta (YM3526 set 3).mra"
@@ -171337,13 +171390,13 @@
 "terracreo": {
 "coinop:terracresta": {
 "core": "coinop:terracresta",
-"date": "2022-09-22",
+"date": "2022-04-02",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": true,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/_alternatives/_Terra Cresta/Terra Cresta (YM3526 set 2).mra",
+"first_repo": "va7deo/TerraCresta",
+"first_path": "releases/_alternatives/_Terra Cresta/Terra Cresta (YM3526 set 2).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Terra Cresta/Terra Cresta (YM3526 set 2).mra"
@@ -171367,46 +171420,76 @@
 "terraf": {
 "coinop:armedf": {
 "core": "coinop:armedf",
-"date": "2022-09-22",
+"date": "2022-04-24",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
-"alt": true,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/_alternatives/_Terra Force/Terra Force.mra",
+"alt": false,
+"first_repo": "va7deo/ArmedF",
+"first_path": "release/Terra Force.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
-"mra": "_Arcade/_alternatives/_Terra Force/Terra Force.mra"
+"mra": "_Arcade/Terra Force.mra"
+}
+},
+"terrafb": {
+"coinop:armedf": {
+"core": "coinop:armedf",
+"date": "2022-05-08",
+"date_quality": "git",
+"via": "va7deo",
+"wip": false,
+"alt": false,
+"first_repo": "va7deo/ArmedF",
+"first_path": "dev/mra/_alts/_Terra Force/Terra Force (Japan, bootleg set 2).mra",
+"mra": "_Arcade/Terra Force (Japan, bootleg set 2).mra",
+"first_recorded": "2026-11-15",
+"last_seen": "2026-11-15"
 }
 },
 "terrafj": {
 "coinop:armedf": {
 "core": "coinop:armedf",
-"date": "2022-09-22",
+"date": "2022-05-08",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": false,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/Terra Force (Japan).mra",
+"first_repo": "va7deo/ArmedF",
+"first_path": "dev/mra/_alts/_Terra Force/Terra Force (Japan).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Terra Force (Japan).mra"
 }
 },
+"terrafjb": {
+"coinop:armedf": {
+"core": "coinop:armedf",
+"date": "2022-04-24",
+"date_quality": "git",
+"via": "va7deo",
+"wip": false,
+"alt": false,
+"first_repo": "va7deo/ArmedF",
+"first_path": "release/Terra Force jb.mra",
+"mra": "_Arcade/Terra Force (Japan, bootleg with additional Z80).mra",
+"first_recorded": "2026-11-15",
+"last_seen": "2026-11-15"
+}
+},
 "terrafu": {
 "coinop:armedf": {
 "core": "coinop:armedf",
-"date": "2022-09-22",
+"date": "2022-05-08",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
-"alt": true,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/_alternatives/_Terra Force/Terra Force (US).mra",
+"alt": false,
+"first_repo": "va7deo/ArmedF",
+"first_path": "dev/mra/_alts/_Terra Force/Terra Force (US).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
-"mra": "_Arcade/_alternatives/_Terra Force/Terra Force (US).mra"
+"mra": "_Arcade/Terra Force (US).mra"
 }
 },
 "tetris": {
@@ -173183,17 +173266,17 @@
 "first_recorded": "2026-10-29",
 "last_seen": "2026-11-01"
 },
-"repo:alpha68k": {
-"core": "repo:alpha68k",
+"va7deo:alpha68k": {
+"core": "va7deo:alpha68k",
 "date": "2022-11-21",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/alpha68k",
 "first_path": "dev/mra/Time Soldiers (US Rev 3).mra",
 "mra": "_Arcade/Time Soldiers (US Rev 3).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -173211,17 +173294,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Time Soldiers/Time Soldiers (US Rev 1).mra"
 },
-"repo:alpha68k": {
-"core": "repo:alpha68k",
+"va7deo:alpha68k": {
+"core": "va7deo:alpha68k",
 "date": "2022-11-24",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/alpha68k",
 "first_path": "dev/mra/_alternatives/_Time Soldiers/Time Soldiers (US Rev 1).mra",
 "mra": "_Arcade/Time Soldiers (US Rev 1).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -174139,7 +174222,7 @@
 "first_repo": "furrtek/Arcade-TMNT_MiSTer",
 "first_path": "releases/_alternatives/_Teenage Mutant Ninja Turtles/Teenage Mutant Ninja Turtles (US 4 Players, version J).mra",
 "first_recorded": "2026-10-04",
-"last_seen": "2026-10-18",
+"last_seen": "2026-11-15",
 "mra": "_Arcade/Teenage Mutant Ninja Turtles (US 4 Players, version J).mra"
 },
 "jt:jttmnt": {
@@ -174154,19 +174237,6 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Teenage Mutant Ninja Turtles (US 4 Players, version J).mra"
-},
-"repo:alpha68k": {
-"core": "repo:alpha68k",
-"date": "2023-04-29",
-"date_quality": "git",
-"via": "repo",
-"wip": false,
-"alt": true,
-"first_repo": "furrtek/Arcade-TMNT_MiSTer",
-"first_path": "releases/_alternatives/_Teenage Mutant Ninja Turtles/Teenage Mutant Ninja Turtles (US 4 Players, version J).mra",
-"mra": "_Arcade/Teenage Mutant Ninja Turtles (US 4 Players, version J).mra",
-"first_recorded": "2026-10-19",
-"last_seen": "2026-11-15"
 }
 },
 "tmntuc": {
@@ -174290,13 +174360,13 @@
 "tnextspc": {
 "coinop:nextspace": {
 "core": "coinop:nextspace",
-"date": "2023-03-30",
+"date": "2023-03-23",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": true,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/_alternatives/_The Next Space/The Next Space (Set 1).mra",
+"first_repo": "va7deo/NextSpace",
+"first_path": "releases/_alternatives/_The Next Space/The Next Space (Set 1).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_The Next Space/The Next Space (Set 1).mra"
@@ -174305,13 +174375,13 @@
 "tnextspc2": {
 "coinop:nextspace": {
 "core": "coinop:nextspace",
-"date": "2023-03-30",
+"date": "2023-03-23",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": true,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/_alternatives/_The Next Space/The Next Space (Set 2).mra",
+"first_repo": "va7deo/NextSpace",
+"first_path": "dev/mra/_alternatives/_The Next Space/The Next Space (Set 2).mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_The Next Space/The Next Space (Set 2).mra"
@@ -174320,13 +174390,13 @@
 "tnextspcj": {
 "coinop:nextspace": {
 "core": "coinop:nextspace",
-"date": "2023-03-30",
+"date": "2023-03-13",
 "date_quality": "git",
 "via": "coinop",
 "wip": false,
 "alt": false,
-"first_repo": "Coin-OpCollection/Distribution-MiSTerFPGA",
-"first_path": "_Arcade/The Next Space (Japan).mra",
+"first_repo": "va7deo/NextSpace",
+"first_path": "releases/NextSpace.mra",
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-15",
 "mra": "_Arcade/The Next Space (Japan).mra"
@@ -177622,17 +177692,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Truxton - Tatsujin.mra"
 },
-"repo:zerowing": {
-"core": "repo:zerowing",
+"va7deo:zerowing": {
+"core": "va7deo:zerowing",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/Truxton - Tatsujin.mra",
 "mra": "_Arcade/Truxton - Tatsujin.mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -182247,17 +182317,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Vimana/Vimana (World, Set 1).mra"
 },
-"repo:vimana": {
-"core": "repo:vimana",
+"va7deo:vimana": {
+"core": "va7deo:vimana",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/Vimana (World, set 1).mra",
 "mra": "_Arcade/Vimana (World, Set 1).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -182275,17 +182345,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Vimana (Japan).mra"
 },
-"repo:vimana": {
-"core": "repo:vimana",
+"va7deo:vimana": {
+"core": "va7deo:vimana",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/_Vimana/Vimana (Japan).mra",
 "mra": "_Arcade/Vimana (Japan).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -182303,17 +182373,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Vimana/Vimana (World, Set 2).mra"
 },
-"repo:vimana": {
-"core": "repo:vimana",
+"va7deo:vimana": {
+"core": "va7deo:vimana",
 "date": "2022-01-27",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "dev/_Vimana/Vimana (World, set 2).mra",
 "mra": "_Arcade/Vimana (World, Set 2).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -190877,17 +190947,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/Zero Wing (2P Set).mra"
 },
-"repo:zerowing": {
-"core": "repo:zerowing",
+"va7deo:zerowing": {
+"core": "va7deo:zerowing",
 "date": "2022-01-21",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": false,
 "first_repo": "va7deo/zerowing",
 "first_path": "releases/zerowing.mra",
 "mra": "_Arcade/Zero Wing (2P Set).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -190905,17 +190975,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Zero Wing/Zero Wing (1P Set).mra"
 },
-"repo:zerowing": {
-"core": "repo:zerowing",
+"va7deo:zerowing": {
+"core": "va7deo:zerowing",
 "date": "2022-01-26",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "releases/_alternatives/Zero Wing (1P set).mra",
 "mra": "_Arcade/Zero Wing (1P Set).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -190933,17 +191003,17 @@
 "last_seen": "2026-11-15",
 "mra": "_Arcade/_alternatives/_Zero Wing/Zero Wing (2P Set, Williams License).mra"
 },
-"repo:zerowing": {
-"core": "repo:zerowing",
+"va7deo:zerowing": {
+"core": "va7deo:zerowing",
 "date": "2022-01-26",
 "date_quality": "git",
-"via": "repo",
+"via": "va7deo",
 "wip": false,
 "alt": true,
 "first_repo": "va7deo/zerowing",
 "first_path": "releases/_alternatives/Zero Wing (2P set, Williams license).mra",
 "mra": "_Arcade/Zero Wing (2P Set, Williams License).mra",
-"first_recorded": "2026-10-19",
+"first_recorded": "2026-11-15",
 "last_seen": "2026-11-15"
 }
 },
@@ -191746,15 +191816,18 @@
 },
 "amatelas": {
 "coinop": "Shoot 'em up",
-"zakk": "Shoot 'em up"
+"zakk": "Shoot 'em up",
+"va7deo": "Shoot 'em up"
 },
 "amazon": {
 "coinop": "Shoot 'em up",
-"zakk": "Shoot 'em up"
+"zakk": "Shoot 'em up",
+"va7deo": "Shoot 'em up"
 },
 "amazont": {
 "coinop": "Shoot 'em up",
-"zakk": "Shoot 'em up"
+"zakk": "Shoot 'em up",
+"va7deo": "Shoot 'em up"
 },
 "ambush": {
 "ongo": "Shooter",
@@ -191985,11 +192058,13 @@
 },
 "armedf": {
 "coinop": "Shoot 'em up",
-"zakk": "Shoot 'em up"
+"zakk": "Shoot 'em up",
+"va7deo": "Shoot 'em up"
 },
 "armedff": {
 "coinop": "Shoot 'em up",
-"zakk": "Shoot 'em up"
+"zakk": "Shoot 'em up",
+"va7deo": "Shoot 'em up"
 },
 "armora": {
 "repo": "Shooter",
@@ -192625,7 +192700,8 @@
 },
 "bigfghtr": {
 "coinop": "Shoot 'em up",
-"zakk": "Shoot 'em up"
+"zakk": "Shoot 'em up",
+"va7deo": "Shoot 'em up"
 },
 "bigfight": {
 "ongo": "Fighter / Beat 'em up",
@@ -193017,6 +193093,9 @@
 "dist": "Platform",
 "ongo": "Platform",
 "rmcores": "Platform"
+},
+"boobhack": {
+"va7deo": "Platformer"
 },
 "boogwing": {
 "dist": "Action",
@@ -193677,11 +193756,13 @@
 },
 "cclimbr2": {
 "coinop": "Platformer",
-"zakk": "Platformer"
+"zakk": "Platformer",
+"va7deo": "Platformer"
 },
 "cclimbr2a": {
 "coinop": "Platformer",
-"zakk": "Platformer"
+"zakk": "Platformer",
+"va7deo": "Platformer"
 },
 "cclimbroper": {
 "repo": "Platform - Climb",
@@ -198263,15 +198344,18 @@
 },
 "horekid": {
 "coinop": "Platformer",
-"zakk": "Platformer"
+"zakk": "Platformer",
+"va7deo": "Platformer"
 },
 "horekidb": {
 "coinop": "Platformer",
-"zakk": "Platformer"
+"zakk": "Platformer",
+"va7deo": "Platformer"
 },
 "horekidb2": {
 "coinop": "Platformer",
-"zakk": "Platformer"
+"zakk": "Platformer",
+"va7deo": "Platformer"
 },
 "horizon": {
 "dist": "Shooter - Horizontal"
@@ -199257,7 +199341,8 @@
 },
 "kozure": {
 "coinop": "Beat 'em up",
-"zakk": "Beat 'em up"
+"zakk": "Beat 'em up",
+"va7deo": "Beat 'em up"
 },
 "kram": {
 "dist": "Maze",
@@ -199434,11 +199519,22 @@
 },
 "legion": {
 "coinop": "Shoot 'em up",
-"zakk": "Shoot 'em up"
+"zakk": "Shoot 'em up",
+"va7deo": "Shoot 'em up"
+},
+"legionj": {
+"va7deo": "Shoot 'em up"
 },
 "legionj2": {
 "coinop": "Shoot 'em up",
-"zakk": "Shoot 'em up"
+"zakk": "Shoot 'em up",
+"va7deo": "Shoot 'em up"
+},
+"legionjb": {
+"va7deo": "Shoot 'em up"
+},
+"legionjb2": {
+"va7deo": "Shoot 'em up"
 },
 "legionna": {
 "dist": "Beat-em-up"
@@ -205705,7 +205801,8 @@
 },
 "skyrobo": {
 "coinop": "Shoot 'em up",
-"zakk": "Shoot 'em up"
+"zakk": "Shoot 'em up",
+"va7deo": "Shoot 'em up"
 },
 "skyshark": {
 "coinop": "Shoot &apos;Em Up"
@@ -207465,36 +207562,48 @@
 },
 "terracre": {
 "coinop": "Shoot 'em up",
-"zakk": "Shoot 'em up"
+"zakk": "Shoot 'em up",
+"va7deo": "Shoot 'em up"
 },
 "terracre_v": {
 "ongo": "Shoot 'em up"
 },
 "terracrea": {
 "coinop": "Shoot 'em up",
-"zakk": "Shoot 'em up"
+"zakk": "Shoot 'em up",
+"va7deo": "Shoot 'em up"
 },
 "terracrea_v": {
 "ongo": "Shoot 'em up"
 },
 "terracreo": {
 "coinop": "Shoot 'em up",
-"zakk": "Shoot 'em up"
+"zakk": "Shoot 'em up",
+"va7deo": "Shoot 'em up"
 },
 "terracreo_v": {
 "ongo": "Shoot 'em up"
 },
 "terraf": {
 "coinop": "Shoot 'em up",
-"zakk": "Shoot 'em up"
+"zakk": "Shoot 'em up",
+"va7deo": "Shoot 'em up"
+},
+"terrafb": {
+"va7deo": "Shoot 'em up"
 },
 "terrafj": {
 "coinop": "Shoot 'em up",
-"zakk": "Shoot 'em up"
+"zakk": "Shoot 'em up",
+"va7deo": "Shoot 'em up"
+},
+"terrafjb": {
+"va7deo": "Shoot 'em up"
 },
 "terrafu": {
 "coinop": "Shoot 'em up",
-"zakk": "Shoot 'em up"
+"zakk": "Shoot 'em up",
+"va7deo": "Shoot 'em up"
 },
 "tetrisse": {
 "dist": "Puzzle / Drop"

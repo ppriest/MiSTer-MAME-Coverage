@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-11-15T12:38:12+00:00",
+  "generated": "2026-11-15T17:33:49+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-11-15T12:37:52+00:00",
+  "mister_generated": "2026-11-15T17:33:25+00:00",
   "alamone_generated": "2026-11-09T11:59:26+00:00",
   "ledger_updated": "2026-11-15",
   "ledger_runs": [
-   {
-    "date": "2026-11-12",
-    "note": "alamone 2026-11-09",
-    "cores": 4,
-    "sets": 22,
-    "pairs": 25,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-11-13",
     "note": "alamone 2026-11-09",
@@ -51,6 +42,15 @@
     "pairs": 28,
     "dates_improved": 0,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-11-15",
+    "note": "alamone 2026-11-09",
+    "cores": 8,
+    "sets": 7,
+    "pairs": 94,
+    "dates_improved": 25,
+    "cores_removed": 8
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5491 sets, 5491 used); mame2016: catver_mame2016.ini (37065 sets, 32543 used)",
    "catver_entries": 38034,
    "mad_entries": 2995,
-   "mra_entries": 4594,
+   "mra_entries": 4600,
    "unmapped": [
     {
      "raw": "not classified",
@@ -132,6 +132,7 @@
    "asturur": "Andrea Bogazzi (asturur)",
    "rossops": "rossops (GitHub repositories)",
    "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
+   "va7deo": "Erin Olafsen (va7deo)",
    "repo": "GitHub repository only"
   },
   "source_info": {
@@ -250,6 +251,10 @@
    "xela": {
     "page": "https://github.com/XelaNotPu?tab=repositories",
     "db_url": "https://raw.githubusercontent.com/XelaNotPu/XelaNotPu_MiSTer_DB/db/db.json.zip"
+   },
+   "va7deo": {
+    "page": "https://github.com/va7deo?tab=repositories",
+    "db_url": null
    },
    "repo": {
     "page": null,
@@ -2125,7 +2130,7 @@
     "source": "decoryah",
     "repo": "decoryah/Arcade-Gaelco3D_MiSTer",
     "dirs": null,
-    "mras": 12
+    "mras": 4
    },
    {
     "source": "decoryah",
@@ -2700,49 +2705,49 @@
     "mras": 40
    },
    {
-    "source": "repo",
+    "source": "va7deo",
     "repo": "va7deo/MegaSys1_A",
     "dirs": null,
     "mras": 22
    },
    {
-    "source": "repo",
+    "source": "va7deo",
     "repo": "va7deo/PrehistoricIsle",
     "dirs": null,
     "mras": 4
    },
    {
-    "source": "repo",
+    "source": "va7deo",
     "repo": "va7deo/SNK68",
     "dirs": null,
     "mras": 30
    },
    {
-    "source": "repo",
+    "source": "va7deo",
     "repo": "va7deo/alpha68k",
     "dirs": null,
     "mras": 27
    },
    {
-    "source": "repo",
+    "source": "va7deo",
     "repo": "va7deo/demonswld",
     "dirs": null,
     "mras": 10
    },
    {
-    "source": "repo",
+    "source": "va7deo",
     "repo": "va7deo/rallybike",
     "dirs": null,
     "mras": 1
    },
    {
-    "source": "repo",
+    "source": "va7deo",
     "repo": "va7deo/vimana",
     "dirs": null,
     "mras": 11
    },
    {
-    "source": "repo",
+    "source": "va7deo",
     "repo": "va7deo/zerowing",
     "dirs": null,
     "mras": 14
@@ -3542,6 +3547,270 @@
     "repo": "zakk4223/pr4m0d-MISTer-bin",
     "dirs": null,
     "mras": 15
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/ArmedF",
+    "dirs": null,
+    "mras": 29
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/Assemblies-of-putative-SARS-CoV2-spike-encoding-mRNA-sequences-for-vaccines-BNT-162b2-and-mRNA-1273",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/DECA",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/DECA-1",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/Demo_project",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/Digital",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/Dynamic-Frequency-Phase-Sweeping",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/EASy68K",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/FPGADesignElements",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/FlashFloppy",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/InteractiveHtmlBom",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/J-SMU",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/NextSpace",
+    "dirs": null,
+    "mras": 5
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/Nuked-OPL3",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/Pipistrello",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/Rack",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/STM32F4HUB",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/TerraCresta",
+    "dirs": null,
+    "mras": 10
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/UsbHost",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/cbmsrc",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/core_dbg_bridge",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/demo68k",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/emu8950",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/esp32_usb_soft_host",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/fluxengine",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/gcc-ia16",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/hoard-of-bitfonts",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/hsdaoh",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/i2c_sdd1306_framebuffer",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/jtopl",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/latent-diffusion",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/mame",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/mbed",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/mem_ctrl",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/opl3_fpga",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/pal_prom",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/radzen-blazor",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/sdram-fpga",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/soft-15khz",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/spartan-edge-esp32-boot",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/spartan-edge-ioex",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/spi2gpio",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/sv2v",
+    "dirs": null,
+    "mras": 0
+   },
+   {
+    "source": "va7deo",
+    "repo": "va7deo/ymfm",
+    "dirs": null,
+    "mras": 0
    }
   ],
   "repo_errors": [
@@ -3603,11 +3872,11 @@
    "working_arcade_titles": 3725,
    "working_arcade_titles_covered": 2629,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 6894,
-   "working_arcade_titles_source": 2400,
-   "working_arcade_titles_binary_only": 229,
+   "working_arcade_sets_covered": 6900,
+   "working_arcade_titles_source": 2411,
+   "working_arcade_titles_binary_only": 218,
    "cores": 923,
-   "binary_only_cores": 403,
+   "binary_only_cores": 400,
    "unmatched_sets": 532
   }
  },
@@ -5764,10 +6033,10 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-11-15",
-   "binary_only": true,
-   "nsets": 12,
+   "binary_only": false,
+   "nsets": 17,
    "ntitles": 6,
-   "first_date": "2022-09-22",
+   "first_date": "2022-04-24",
    "drivers_loaded": [
     "nichibutsu/armedf.cpp"
    ]
@@ -6858,10 +7127,10 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-11-15",
-   "binary_only": true,
+   "binary_only": false,
    "nsets": 4,
    "ntitles": 2,
-   "first_date": "2023-03-30",
+   "first_date": "2023-03-13",
    "drivers_loaded": [
     "alpha/alpha68k_i.cpp"
    ]
@@ -7457,10 +7726,10 @@
    "first_recorded": "2026-10-04",
    "aliases": [],
    "last_seen": "2026-11-15",
-   "binary_only": true,
-   "nsets": 9,
+   "binary_only": false,
+   "nsets": 10,
    "ntitles": 3,
-   "first_date": "2022-09-22",
+   "first_date": "2022-04-02",
    "drivers_loaded": [
     "nichibutsu/terracre.cpp"
    ]
@@ -12602,6 +12871,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-15",
+   "aliases": [],
    "last_seen": "2026-11-15",
    "binary_only": false,
    "nsets": 25,
@@ -22274,31 +22544,6 @@
    "first_date": "2026-10-04"
   },
   {
-   "id": "repo:alpha68k",
-   "name": "Alpha68k (va7deo)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "Alpha68k_20221223.rbf",
-   "repo": "va7deo/alpha68k",
-   "url": "https://github.com/va7deo/alpha68k",
-   "build_date": "2022-12-23",
-   "status": "analyzed",
-   "reading": "mostly hardware",
-   "score": 79,
-   "mame_drivers": [
-    "alpha/alpha68k.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-11-15",
-   "binary_only": false,
-   "nsets": 15,
-   "ntitles": 7,
-   "first_date": "2022-10-12"
-  },
-  {
    "id": "repo:battlantis_20261018c",
    "name": "Battlantis (Eggsecutioner528)",
    "source": "repo",
@@ -22477,31 +22722,6 @@
    "nsets": 2,
    "ntitles": 1,
    "first_date": "2020-01-12"
-  },
-  {
-   "id": "repo:demonwld",
-   "name": "demonwld (va7deo)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "demonwld_20230610.rbf",
-   "repo": "va7deo/demonswld",
-   "url": "https://github.com/va7deo/demonswld",
-   "build_date": "2023-06-10",
-   "status": "analyzed",
-   "reading": "not enough evidence",
-   "score": 56,
-   "mame_drivers": [
-    "toaplan/toaplan1.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-11-15",
-   "binary_only": false,
-   "nsets": 5,
-   "ntitles": 1,
-   "first_date": "2023-05-11"
   },
   {
    "id": "repo:donkeykong3",
@@ -22978,31 +23198,6 @@
    ]
   },
   {
-   "id": "repo:megasys1_a",
-   "name": "MegaSys1_A (va7deo)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "MegaSys1_A_20240106.rbf",
-   "repo": "va7deo/MegaSys1_A",
-   "url": "https://github.com/va7deo/MegaSys1_A",
-   "build_date": "2024-01-06",
-   "status": "analyzed",
-   "reading": "both",
-   "score": 42,
-   "mame_drivers": [
-    "jaleco/megasys1.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-11-15",
-   "binary_only": false,
-   "nsets": 22,
-   "ntitles": 12,
-   "first_date": "2023-05-13"
-  },
-  {
    "id": "repo:model1",
    "name": "Model1 (alphanu1)",
    "source": "repo",
@@ -23284,31 +23479,6 @@
    ]
   },
   {
-   "id": "repo:prehisle",
-   "name": "prehisle (va7deo)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "prehisle_20230708.rbf",
-   "repo": "va7deo/PrehistoricIsle",
-   "url": "https://github.com/va7deo/PrehistoricIsle",
-   "build_date": "2023-07-08",
-   "status": "analyzed",
-   "reading": "not enough evidence",
-   "score": 36,
-   "mame_drivers": [
-    "snk/prehisle.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-11-15",
-   "binary_only": false,
-   "nsets": 4,
-   "ntitles": 1,
-   "first_date": "2022-08-14"
-  },
-  {
    "id": "repo:primalrage",
    "name": "PrimalRage (nortido)",
    "source": "repo",
@@ -23434,31 +23604,6 @@
    "nsets": 32,
    "ntitles": 2,
    "first_date": "2026-08-09"
-  },
-  {
-   "id": "repo:rallybike",
-   "name": "rallybike (va7deo)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "rallybike_20230602.rbf",
-   "repo": "va7deo/rallybike",
-   "url": "https://github.com/va7deo/rallybike",
-   "build_date": "2023-06-02",
-   "status": "analyzed",
-   "reading": "not enough evidence",
-   "score": 60,
-   "mame_drivers": [
-    "toaplan/rallybik.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-11-15",
-   "binary_only": false,
-   "nsets": 1,
-   "ntitles": 1,
-   "first_date": "2022-01-27"
   },
   {
    "id": "repo:rayforce_20260908b",
@@ -23689,31 +23834,6 @@
    "nsets": 38,
    "ntitles": 14,
    "first_date": "2026-08-18"
-  },
-  {
-   "id": "repo:snk68",
-   "name": "SNK68 (va7deo)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "SNK68_20221019.rbf",
-   "repo": "va7deo/SNK68",
-   "url": "https://github.com/va7deo/SNK68",
-   "build_date": "2022-10-19",
-   "status": "analyzed",
-   "reading": "mostly hardware",
-   "score": 81,
-   "mame_drivers": [
-    "snk/snk68.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-11-15",
-   "binary_only": false,
-   "nsets": 15,
-   "ntitles": 4,
-   "first_date": "2022-09-08"
   },
   {
    "id": "repo:srd",
@@ -24169,32 +24289,6 @@
    ]
   },
   {
-   "id": "repo:vimana",
-   "name": "vimana (va7deo)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "vimana_20230606.rbf",
-   "repo": "va7deo/vimana",
-   "url": "https://github.com/va7deo/vimana",
-   "build_date": "2023-06-06",
-   "status": "analyzed",
-   "reading": "not enough evidence",
-   "score": 54,
-   "mame_drivers": [
-    "toaplan/fireshrk.cpp",
-    "toaplan/toaplan1.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-11-15",
-   "binary_only": false,
-   "nsets": 11,
-   "ntitles": 2,
-   "first_date": "2022-01-27"
-  },
-  {
    "id": "repo:wolfunit",
    "name": "WolfUnit (Kuba-J)",
    "source": "repo",
@@ -24266,31 +24360,6 @@
    "nsets": 0,
    "ntitles": 0,
    "first_date": null
-  },
-  {
-   "id": "repo:zerowing",
-   "name": "zerowing (va7deo)",
-   "source": "repo",
-   "source_title": "GitHub repository only",
-   "channel": "repository only",
-   "rbf": "zerowing_20230606.rbf",
-   "repo": "va7deo/zerowing",
-   "url": "https://github.com/va7deo/zerowing",
-   "build_date": "2023-06-06",
-   "status": "analyzed",
-   "reading": "not enough evidence",
-   "score": 54,
-   "mame_drivers": [
-    "toaplan/toaplan1.cpp"
-   ],
-   "note": null,
-   "first_recorded": "2026-10-19",
-   "aliases": [],
-   "last_seen": "2026-11-15",
-   "binary_only": false,
-   "nsets": 13,
-   "ntitles": 4,
-   "first_date": "2022-01-21"
   },
   {
    "id": "rmcores:rmgalivan",
@@ -26737,6 +26806,199 @@
    ]
   },
   {
+   "id": "va7deo:alpha68k",
+   "name": "Alpha68k (va7deo)",
+   "source": "va7deo",
+   "source_title": "Erin Olafsen (va7deo)",
+   "channel": "repository only",
+   "rbf": "Alpha68k_20221223.rbf",
+   "repo": "va7deo/alpha68k",
+   "url": "https://github.com/va7deo/alpha68k",
+   "build_date": "2022-12-23",
+   "status": "analyzed",
+   "reading": "mostly hardware",
+   "score": 79,
+   "mame_drivers": [
+    "alpha/alpha68k.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "binary_only": false,
+   "nsets": 14,
+   "ntitles": 6,
+   "first_date": "2022-10-12"
+  },
+  {
+   "id": "va7deo:demonwld",
+   "name": "demonwld (va7deo)",
+   "source": "va7deo",
+   "source_title": "Erin Olafsen (va7deo)",
+   "channel": "repository only",
+   "rbf": "demonwld_20230610.rbf",
+   "repo": "va7deo/demonswld",
+   "url": "https://github.com/va7deo/demonswld",
+   "build_date": "2023-06-10",
+   "status": "analyzed",
+   "reading": "not enough evidence",
+   "score": 56,
+   "mame_drivers": [
+    "toaplan/toaplan1.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "binary_only": false,
+   "nsets": 5,
+   "ntitles": 1,
+   "first_date": "2023-05-11"
+  },
+  {
+   "id": "va7deo:megasys1_a",
+   "name": "MegaSys1_A (va7deo)",
+   "source": "va7deo",
+   "source_title": "Erin Olafsen (va7deo)",
+   "channel": "repository only",
+   "rbf": "MegaSys1_A_20240106.rbf",
+   "repo": "va7deo/MegaSys1_A",
+   "url": "https://github.com/va7deo/MegaSys1_A",
+   "build_date": "2024-01-06",
+   "status": "analyzed",
+   "reading": "both",
+   "score": 42,
+   "mame_drivers": [
+    "jaleco/megasys1.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "binary_only": false,
+   "nsets": 22,
+   "ntitles": 12,
+   "first_date": "2023-05-13"
+  },
+  {
+   "id": "va7deo:prehisle",
+   "name": "prehisle (va7deo)",
+   "source": "va7deo",
+   "source_title": "Erin Olafsen (va7deo)",
+   "channel": "repository only",
+   "rbf": "prehisle_20230708.rbf",
+   "repo": "va7deo/PrehistoricIsle",
+   "url": "https://github.com/va7deo/PrehistoricIsle",
+   "build_date": "2023-07-08",
+   "status": "analyzed",
+   "reading": "not enough evidence",
+   "score": 36,
+   "mame_drivers": [
+    "snk/prehisle.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "binary_only": false,
+   "nsets": 4,
+   "ntitles": 1,
+   "first_date": "2022-08-14"
+  },
+  {
+   "id": "va7deo:rallybike",
+   "name": "rallybike (va7deo)",
+   "source": "va7deo",
+   "source_title": "Erin Olafsen (va7deo)",
+   "channel": "repository only",
+   "rbf": "rallybike_20230602.rbf",
+   "repo": "va7deo/rallybike",
+   "url": "https://github.com/va7deo/rallybike",
+   "build_date": "2023-06-02",
+   "status": "analyzed",
+   "reading": "not enough evidence",
+   "score": 60,
+   "mame_drivers": [
+    "toaplan/rallybik.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "binary_only": false,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2022-01-27"
+  },
+  {
+   "id": "va7deo:snk68",
+   "name": "SNK68 (va7deo)",
+   "source": "va7deo",
+   "source_title": "Erin Olafsen (va7deo)",
+   "channel": "repository only",
+   "rbf": "SNK68_20221019.rbf",
+   "repo": "va7deo/SNK68",
+   "url": "https://github.com/va7deo/SNK68",
+   "build_date": "2022-10-19",
+   "status": "analyzed",
+   "reading": "mostly hardware",
+   "score": 81,
+   "mame_drivers": [
+    "snk/snk68.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "binary_only": false,
+   "nsets": 15,
+   "ntitles": 4,
+   "first_date": "2022-09-08"
+  },
+  {
+   "id": "va7deo:vimana",
+   "name": "vimana (va7deo)",
+   "source": "va7deo",
+   "source_title": "Erin Olafsen (va7deo)",
+   "channel": "repository only",
+   "rbf": "vimana_20230606.rbf",
+   "repo": "va7deo/vimana",
+   "url": "https://github.com/va7deo/vimana",
+   "build_date": "2023-06-06",
+   "status": "analyzed",
+   "reading": "not enough evidence",
+   "score": 54,
+   "mame_drivers": [
+    "toaplan/fireshrk.cpp",
+    "toaplan/toaplan1.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "binary_only": false,
+   "nsets": 11,
+   "ntitles": 2,
+   "first_date": "2022-01-27"
+  },
+  {
+   "id": "va7deo:zerowing",
+   "name": "zerowing (va7deo)",
+   "source": "va7deo",
+   "source_title": "Erin Olafsen (va7deo)",
+   "channel": "repository only",
+   "rbf": "zerowing_20230606.rbf",
+   "repo": "va7deo/zerowing",
+   "url": "https://github.com/va7deo/zerowing",
+   "build_date": "2023-06-06",
+   "status": "analyzed",
+   "reading": "not enough evidence",
+   "score": 54,
+   "mame_drivers": [
+    "toaplan/toaplan1.cpp"
+   ],
+   "note": null,
+   "first_recorded": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "binary_only": false,
+   "nsets": 13,
+   "ntitles": 4,
+   "first_date": "2022-01-21"
+  },
+  {
    "id": "xela:system11",
    "name": "SYSTEM11 (XelaNotPu)",
    "source": "xela",
@@ -27667,7 +27929,7 @@
    "cores": [
     "coinop:alpha68k",
     "meat:timesoldierstwinstick",
-    "repo:alpha68k"
+    "va7deo:alpha68k"
    ],
    "first": "2022-10-12"
   },
@@ -27680,7 +27942,7 @@
    "cores": [
     "coinop:nextspace"
    ],
-   "first": "2023-03-30"
+   "first": "2023-03-13"
   },
   {
    "sourcefile": "alpha/alpha68k_n.cpp",
@@ -30891,7 +31153,7 @@
     "coinop:megasys1_a",
     "kuze:jalecoms1bcd",
     "kuze:jalecoms1z",
-    "repo:megasys1_a"
+    "va7deo:megasys1_a"
    ],
    "first": "2023-05-13"
   },
@@ -31932,7 +32194,6 @@
     "coinop:alpha68k",
     "jt:jttmnt",
     "jt:jttwin16",
-    "repo:alpha68k",
     "repo:tmnt"
    ],
    "first": "2023-04-01"
@@ -33643,11 +33904,11 @@
    "titles": 6,
    "covered": 6,
    "sets": 18,
-   "sets_covered": 12,
+   "sets_covered": 17,
    "cores": [
     "coinop:armedf"
    ],
-   "first": "2022-09-22"
+   "first": "2022-04-24"
   },
   {
    "sourcefile": "nichibutsu/cclimber.cpp",
@@ -33785,11 +34046,11 @@
    "titles": 3,
    "covered": 3,
    "sets": 11,
-   "sets_covered": 9,
+   "sets_covered": 10,
    "cores": [
     "coinop:terracresta"
    ],
-   "first": "2022-09-22"
+   "first": "2022-04-02"
   },
   {
    "sourcefile": "nichibutsu/tubep.cpp",
@@ -35484,7 +35745,7 @@
    "sets_covered": 4,
    "cores": [
     "coinop:prehisle",
-    "repo:prehisle"
+    "va7deo:prehisle"
    ],
    "first": "2022-08-14"
   },
@@ -35525,7 +35786,7 @@
     "coinop:snk68",
     "meat:ikariiiitwinstick",
     "meat:sartwinstick",
-    "repo:snk68"
+    "va7deo:snk68"
    ],
    "first": "2022-09-08"
   },
@@ -37005,7 +37266,7 @@
    "sets_covered": 8,
    "cores": [
     "coinop:vimana",
-    "repo:vimana"
+    "va7deo:vimana"
    ],
    "first": "2022-01-27"
   },
@@ -37097,7 +37358,7 @@
    "sets_covered": 1,
    "cores": [
     "coinop:rallybike",
-    "repo:rallybike"
+    "va7deo:rallybike"
    ],
    "first": "2022-01-27"
   },
@@ -37155,9 +37416,9 @@
     "coinop:demonwld",
     "coinop:vimana",
     "coinop:zerowing",
-    "repo:demonwld",
-    "repo:vimana",
-    "repo:zerowing"
+    "va7deo:demonwld",
+    "va7deo:vimana",
+    "va7deo:zerowing"
    ],
    "first": "2022-01-21"
   },
@@ -41620,7 +41881,7 @@
   {
    "set": "skyadvntb",
    "cores": [
-    "repo:alpha68k"
+    "va7deo:alpha68k"
    ],
    "hbmame": false
   },
