@@ -111,6 +111,9 @@ SUPERSEDED_CORES = {
     "repo:segag80": "rodimus:segag80", "repo:spaceinvaders_testbuild": "rodimus:spaceinvaders_testbuild",
     "repo:universal": "rodimus:universal_testbuild", "repo:universal_testbuild": "rodimus:universal_testbuild",
     "repo:williams_testbuild": "rodimus:williams_testbuild",
+    # va7deo's repositories (Erin Olafsen) became the "va7deo" source
+    "repo:alpha68k": "va7deo:alpha68k", "repo:demonwld": "va7deo:demonwld", "repo:megasys1_a": "va7deo:megasys1_a", "repo:prehisle": "va7deo:prehisle",
+    "repo:rallybike": "va7deo:rallybike", "repo:snk68": "va7deo:snk68", "repo:vimana": "va7deo:vimana", "repo:zerowing": "va7deo:zerowing",
     # zakk4223's repositories became the "zakk" source
     "repo:bakraid": "zakk:bakraid", "repo:batrider": "zakk:batrider", "repo:garegga": "zakk:garegga", "repo:seibuspi": "zakk:seibuspi",
     # rossops's repositories became the "rossops" source
@@ -123,8 +126,11 @@ SUPERSEDED_CORES = {
 MOVED_TO_OFFICIAL: dict[str, str | tuple[str, str]] = {}
 
 # Developers whose GitHub repositories are treated collectively as one source: owner (lower case) -> source id.
-OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr", "kyledlester": "kyle", "illegalmp3": "illegalmp3", "yaguboo": "yaguboo", "rodimusfvc": "rodimus", "zakk4223": "zakk", "djb-rh": "djb"}
+OWNER_SOURCES = {"usquebagh": "usquebagh", "decoryah": "decoryah", "rossops": "rossops", "xelanotpu": "xela", "tomsvr-mister": "tomsvr", "kyledlester": "kyle", "illegalmp3": "illegalmp3", "yaguboo": "yaguboo", "rodimusfvc": "rodimus", "zakk4223": "zakk", "djb-rh": "djb", "va7deo": "va7deo"}
 # Repositories of those owners that are not cores (forks of the shared MRA collection, a game runtime): never scanned.
+# Owners whose repositories are named for the game (alpha68k, zerowing, ...), not "..._MiSTer": every public, non-archived repository is scanned, not only
+# those with "mister" in the name (a repository without a build is ignored by the scan).
+OWNER_ALL = {"va7deo"}
 OWNER_SKIP = {"xelanotpu/xelanotpu_mister_db", "rossops/mra-alternatives_mister", "rossops/bennugd_mister", "rodimusfvc/rodimus_mister_db",
               # zakk4223's tools and non-arcade projects (a USB/IP service, a controller database, a ROM database builder, a Sun workstation)
               "zakk4223/mister_usbip", "zakk4223/main_mister_zqol", "zakk4223/mister-gamecontrollerdb", "zakk4223/arcaderomsdb_mister",
@@ -339,6 +345,7 @@ SOURCE_PAGES = {
     "asturur": "https://github.com/asturur/Mister-cores",
     "rossops": "https://github.com/rossops?tab=repositories",
     "xela": "https://github.com/XelaNotPu?tab=repositories",
+    "va7deo": "https://github.com/va7deo?tab=repositories",
     "jtpr": "https://github.com/jotego/jtcores/tree/andrea-cores/cores",
     "repo": None,
 }
@@ -374,6 +381,7 @@ DB_TITLES = {
     "asturur": "Andrea Bogazzi (asturur)",
     "rossops": "rossops (GitHub repositories)",
     "xela": "XelaNotPu (GitHub repositories; supporter builds on Patreon)",
+    "va7deo": "Erin Olafsen (va7deo)",
     "repo": "GitHub repository only",
 }
 
@@ -467,7 +475,7 @@ def owner_repos(owner: str) -> list[str]:
             page += 1
         names = []
         for x in repos:
-            if "mister" not in x["name"].lower() or x.get("archived") or x["full_name"].lower() in OWNER_SKIP:
+            if ("mister" not in x["name"].lower() and owner.lower() not in OWNER_ALL) or x.get("archived") or x["full_name"].lower() in OWNER_SKIP:
                 continue
             if x.get("fork"):
                 info = api(f"https://api.github.com/repos/{x['full_name']}")   # the list has no parent; the repository does
