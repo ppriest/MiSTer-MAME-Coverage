@@ -351,7 +351,13 @@
  "decoryah:cojag020": [
   "decoryah/Arcade-CoJag_MiSTer"
  ],
+ "decoryah:cojag020_20261110d": [
+  "decoryah/Arcade-CoJag_MiSTer"
+ ],
  "decoryah:cojagr3k": [
+  "decoryah/Arcade-CoJag_MiSTer"
+ ],
+ "decoryah:cojagr3k_20261110d": [
   "decoryah/Arcade-CoJag_MiSTer"
  ],
  "decoryah:crashrace": [
@@ -489,6 +495,10 @@
   "MiSTer-devel/Arcade-Arkanoid_MISTer",
   "MiSTer-devel/Distribution_MiSTer",
   "MiSTer-devel/MRA-Alternatives_MiSTer"
+ ],
+ "dist:armedfmd": [
+  "MiSTer-devel/Arcade-ArmedF_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer"
  ],
  "dist:asteroids": [
   "MiSTer-devel/Arcade-Asteroids_MiSTer",
@@ -1631,6 +1641,7 @@
   "jlrh/konami-fpga"
  ],
  "jlrh:ffjetwave": [
+  "jlrh/jlrh-misterfpga-db",
   "jlrh/konami-fpga"
  ],
  "jlrh:ffkonamigt": [
@@ -1664,6 +1675,9 @@
  "jlrh:ffoverdriv": [
   "jlrh/jlrh-misterfpga-db",
   "jlrh/konami-fpga"
+ ],
+ "jlrh:ffphelios": [
+  "jlrh/jlrh-misterfpga-db"
  ],
  "jlrh:ffsauro": [
   "OngoGablogian/MiSTer_Ongo",
@@ -3513,7 +3527,8 @@
   "pippazzu/MonacoGP_MiSTer"
  ],
  "repo:monstermaulers": [
-  "decoryah/Arcade-MonsterMaulers_MiSTer"
+  "decoryah/Arcade-MonsterMaulers_MiSTer",
+  "robloasd/Arcade-MonsterMaulers_MiSTer"
  ],
  "repo:namco_na1_na2": [
   "OngoGablogian/MiSTer_Ongo",
@@ -3595,6 +3610,7 @@
   "spacestate1/Arcade-taitoF3_MiSTer"
  ],
  "repo:rayforce_20260908b": [
+  "DanimanX/SpaceFish",
   "Usquebagh/MiSTer_misc",
   "spacestate1/Arcade-taitoF3_MiSTer"
  ],
@@ -3837,6 +3853,9 @@
   "RodimusFVC/Arcade-SegaSystem1-2_MiSTer"
  ],
  "rodimus:segavicdual": [
+  "RodimusFVC/Arcade-SegaVICDual_MiSTer"
+ ],
+ "rodimus:segavicdual_testbuild": [
   "RodimusFVC/Arcade-SegaVICDual_MiSTer"
  ],
  "rodimus:universal_testbuild": [

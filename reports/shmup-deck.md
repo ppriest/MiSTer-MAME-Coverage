@@ -1,6 +1,6 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-11-15 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
+Generated 2026-11-16 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
 
 **Agreement:** 308 of 310 deck titles are Shmup in our data (99.4%).
 
@@ -51,7 +51,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `dcon` | D-Con | 1992 | Shooter / Command (catver) | DCon |
 | `dambustr` | Dambusters (US, set 1) | 1981 | Shooter / Flying Horizontal (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `dangerex` | Danger Express (prototype) | 1992 | Shooter / Misc. Vertical (catver) | Atari-G42 |
-| `dariusgx` | Darius Gaiden - Silver Hawk Extra Version (Ver 2.7J 1995/03/06) (Official Hack) | 1994 | Shooter / Flying Horizontal (catver) | TaitoF3, Rayforce (spacestate1) |
+| `dariusgx` | Darius Gaiden - Silver Hawk Extra Version (Ver 2.7J 1995/03/06) (Official Hack) | 1994 | Shooter / Flying Horizontal (catver) | TaitoF3, Rayforce (DanimanX) |
 | `defender` | Defender (Red label) | 1980 | Shooter / Flying Horizontal (catver) | Defender, Williams_TestBuild (RodimusFVC) |
 | `desertbr` | Desert Breaker (World) (FD1094 317-0196) | 1992 | Shooter / Walking (catver) | jts18 |
 | `devilw` | Devil World | 1987 | Shooter / Walking (catver) | jttwin16 |

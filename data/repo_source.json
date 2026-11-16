@@ -1,5 +1,6 @@
 {
  "Coin-OpCollection/Distribution-MiSTerFPGA": false,
+ "DanimanX/SpaceFish": true,
  "Eggsecutioner528/Battlantis_Mister_Core": true,
  "Eggsecutioner528/Gondomania_Mister_Core": true,
  "Eggsecutioner528/Mister-FPGA-Blades-of-Steel": true,
@@ -32,6 +33,7 @@
  "MiSTer-devel/Arcade-ActFancer_MISTer": true,
  "MiSTer-devel/Arcade-Arabian_MiSTer": true,
  "MiSTer-devel/Arcade-Arkanoid_MISTer": true,
+ "MiSTer-devel/Arcade-ArmedF_MiSTer": true,
  "MiSTer-devel/Arcade-AsteroidsDeluxe_MiSTer": true,
  "MiSTer-devel/Arcade-Asteroids_MiSTer": true,
  "MiSTer-devel/Arcade-Astrocade_MiSTer": true,
@@ -504,6 +506,7 @@
  "rmonic79/rm-Galivan_MiSTer": true,
  "rmonic79/rm_PowerSpikes_MiSTer": true,
  "rmonic79/rmcores": false,
+ "robloasd/Arcade-MonsterMaulers_MiSTer": true,
  "rossops/Arcade-SegaSpaceHarrier_MiSTer": true,
  "rossops/Arcade-SegaXBoard_MiSTer": true,
  "rossops/Arcade-SegaYBoard_MiSTer": true,
