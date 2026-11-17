@@ -281,6 +281,8 @@
  ],
  "coinop:terracresta": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "MiSTer-devel/Arcade-TerraCresta_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer",
   "OngoGablogian/MiSTer_Ongo",
   "va7deo/TerraCresta",
   "zakk4223/Distribution-MiSTerFPGA"
@@ -1656,6 +1658,12 @@
   "jlrh/inder-dinamic-fpga",
   "jlrh/jlrh-misterfpga-db"
  ],
+ "jlrh:ffmidnrun": [
+  "jlrh/konami-fpga"
+ ],
+ "jlrh:ffmidnrunsd": [
+  "jlrh/konami-fpga"
+ ],
  "jlrh:ffmoomesa": [
   "jlrh/jlrh-misterfpga-db",
   "jlrh/konami-fpga"
@@ -2738,6 +2746,12 @@
  "ongo:ffmechatt": [
   "jlrh/jlrh-misterfpga-db"
  ],
+ "ongo:ffmidnrun": [
+  "jlrh/jlrh-misterfpga-db"
+ ],
+ "ongo:ffmidnrunsd": [
+  "jlrh/jlrh-misterfpga-db"
+ ],
  "ongo:ffphelios": [
   "jlrh/jlrh-misterfpga-db"
  ],
@@ -3231,6 +3245,8 @@
   "ppriest/Arcade-HyperNG64_MiSTer"
  ],
  "repo:10yardfight": [
+  "MiSTer-devel/Arcade-10YardFight_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer",
   "adreeve/Arcade-10YardFight_MiSTer",
   "harlock74/Arcade-10YardFight_MiSTer"
  ],
