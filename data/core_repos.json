@@ -1045,6 +1045,10 @@
   "MiSTer-devel/MRA-Alternatives_MiSTer",
   "zakk4223/Mister-MRA"
  ],
+ "dist:megasys1_amd": [
+  "MiSTer-devel/Arcade-MegaSys1A_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer"
+ ],
  "dist:missilecommand": [
   "MiSTer-devel/Arcade-MissileCommand_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
