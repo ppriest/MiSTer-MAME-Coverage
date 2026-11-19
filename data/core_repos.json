@@ -451,6 +451,9 @@
   "OngoGablogian/MiSTer_Ongo",
   "decoryah/Arcade-IGSPGM2_MiSTer"
  ],
+ "decoryah:polygonet": [
+  "decoryah/Arcade-Polygonet_MiSTer"
+ ],
  "decoryah:rabbit": [
   "decoryah/Arcade-Rabbit_MiSTer"
  ],
@@ -474,6 +477,9 @@
  ],
  "decoryah:taitol": [
   "decoryah/Arcade-TaitoLSystem_MiSTer"
+ ],
+ "decoryah:tecmosys": [
+  "decoryah/Arcade-TecmoSystem_MiSTer"
  ],
  "decoryah:violentstorm": [
   "decoryah/Arcade-ViolentStorm_MiSTer"
