@@ -169,9 +169,13 @@ the steps, all in a work folder **outside the repository** (`<work>`):
    `<meta name="image-base" content="…">` in `docs/index.html`; with the meta empty the feature is off. Commit
    only `data/images.json` and `docs/index.html`.
 
-   Cloudflare R2 is the cheaper long-term alternative (free egress, 1 million writes a month free):
-   `rclone copy <work>/upload r2:<bucket> --header-upload "Cache-Control: public, max-age=31536000, immutable"
-   --transfers 16 --checkers 32 --fast-list --size-only`.
+   `--target r2` sends the same files to a Cloudflare R2 bucket instead (free tier: 10 GB, 1 million writes a
+   month, free egress), at the same paths, so moving the site is a change of `image-base`. It reads
+   `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` (an R2 API token with Object Read & Write on the
+   bucket), `R2_BUCKET` and `R2_PUBLIC_URL` (the bucket's public custom domain or r2.dev URL), and keeps its
+   own record, `uploaded-r2.json`. Upload the floorplan folder the same way before switching. The bucket needs
+   a CORS policy (Settings → CORS policy: `[{"AllowedOrigins":["*"],"AllowedMethods":["GET","HEAD"]}]`): the
+   zoom's CRT effect draws the picture in WebGL, which needs `Access-Control-Allow-Origin` (Vercel Blob sends it).
 
 Hashed names deter guessing and bulk scraping; they do not hide the files from someone who watches the page's
 requests. For real hotlink protection add a referer rule on the bucket (Cloudflare WAF custom rule, or a

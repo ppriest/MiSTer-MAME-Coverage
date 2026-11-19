@@ -3,5 +3,8 @@
   "private": true,
   "type": "module",
   "description": "Local helper scripts (blob_upload.mjs)",
-  "dependencies": { "@vercel/blob": "^2.8.1" }
+  "dependencies": {
+    "@vercel/blob": "^2.8.1",
+    "aws4fetch": "^1.0.20"
+  }
 }
