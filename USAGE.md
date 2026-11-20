@@ -174,8 +174,10 @@ the steps, all in a work folder **outside the repository** (`<work>`):
    `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` (an R2 API token with Object Read & Write on the
    bucket), `R2_BUCKET` and `R2_PUBLIC_URL` (the bucket's public custom domain or r2.dev URL), and keeps its
    own record, `uploaded-r2.json`. Upload the floorplan folder the same way before switching. The bucket needs
-   a CORS policy (Settings → CORS policy: `[{"AllowedOrigins":["*"],"AllowedMethods":["GET","HEAD"]}]`): the
-   zoom's CRT effect draws the picture in WebGL, which needs `Access-Control-Allow-Origin` (Vercel Blob sends it).
+   a CORS policy (Settings → CORS policy): the zoom's CRT effect draws the picture in WebGL, which needs
+   `Access-Control-Allow-Origin` (Vercel Blob sends `*`). The site, its preview builds and the local preview:
+   `[{"AllowedOrigins":["https://mister-mame-coverage-docs.vercel.app","https://mister-mame-coverage-docs-*-pp-riest.vercel.app","http://localhost:8000"],"AllowedMethods":["GET","HEAD"]}]`.
+   CORS does not stop other sites showing the images in an `<img>`; it only keeps the WebGL effect to these origins.
 
 Hashed names deter guessing and bulk scraping; they do not hide the files from someone who watches the page's
 requests. For real hotlink protection add a referer rule on the bucket (Cloudflare WAF custom rule, or a

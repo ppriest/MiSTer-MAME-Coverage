@@ -36,8 +36,8 @@ in from `data/images.json`.
   (store → `.env.local`) goes into `secrets.env`. Or a Cloudflare R2 bucket with public access (custom domain,
   or the rate-limited r2.dev URL): `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` (R2 API token,
   Object Read & Write on the bucket), `R2_BUCKET`, `R2_PUBLIC_URL` in `secrets.env`, and `--target r2` on every
-  `blob_upload.mjs` command below. The bucket needs a CORS policy allowing GET from any origin (the zoom's
-  WebGL CRT effect); check with `curl -sI -H "Origin: https://x" <url> | grep -i access-control`.
+  `blob_upload.mjs` command below. The bucket needs the CORS policy in USAGE.md (the zoom's WebGL CRT
+  effect); check with `curl -sI -H "Origin: https://mister-mame-coverage-docs.vercel.app" <url> | grep -i access-control`.
 
 ## A + B. Download and extract
 
