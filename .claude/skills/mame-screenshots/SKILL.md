@@ -33,7 +33,11 @@ in from `data/images.json`.
 - Node 20+. If `node` is not on PATH, use the portable copy:
   `export PATH="$(ls -d "$WORK"/node/node-*/ | tail -1):$PATH"`. Once: `cd tools && npm install`.
 - A **public** Vercel Blob store (Vercel → Storage → Create → Blob → access Public). Its `BLOB_READ_WRITE_TOKEN`
-  (store → `.env.local`) goes into `secrets.env`.
+  (store → `.env.local`) goes into `secrets.env`. Or a Cloudflare R2 bucket with public access (custom domain,
+  or the rate-limited r2.dev URL): `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` (R2 API token,
+  Object Read & Write on the bucket), `R2_BUCKET`, `R2_PUBLIC_URL` in `secrets.env`, and `--target r2` on every
+  `blob_upload.mjs` command below. The bucket needs the CORS policy in USAGE.md (the zoom's WebGL CRT
+  effect); check with `curl -sI -H "Origin: https://mister-mame-coverage-docs.vercel.app" <url> | grep -i access-control`.
 
 ## A + B. Download and extract
 
@@ -75,9 +79,9 @@ cd tools
 
 - Run `--dry-run` first and give the user the count. Each file sent is one Blob advanced operation: Hobby
   includes 2,000 a month and blocks Blob for 30 days past that (ask, then `--limit N`); Pro bills about $5 per
-  million.
-- Only files named in `images.json` are sent. `uploaded.json` (store id and SHA-256 per file) skips what is
-  already there; a different token's store starts over.
+  million. On R2 each is one Class A operation (1 million a month free).
+- Only files named in `images.json` are sent. `uploaded.json` (`uploaded-r2.json` for R2; store id and SHA-256
+  per file) skips what is already there; a different token's store or bucket starts over.
 - It prints `image base URL: https://<store>.public.blob.vercel-storage.com`. Check three files:
 
 ```bash
@@ -85,8 +89,8 @@ BASE=<printed base URL>
 for f in $(python3 -I -c "import json; d=json.load(open('data/images.json')); print(*[x for v in list(d.values())[:2] for x in v.values()][:3])"); do curl -sSI "$BASE/$f" | grep -iE '^(HTTP|content-type|cache-control)'; done
 ```
 
-  Expect `200`, `image/png`, `Cache-Control: public, max-age=31536000` (Blob sets only the max-age; it has no
-  option for `immutable`).
+  Expect `200`, `image/png`, `Cache-Control: public, max-age=31536000` (both targets: names are not
+  content-hashed, so no `immutable`). On R2 the base URL is `R2_PUBLIC_URL`.
 
 ## E. Publish
 
