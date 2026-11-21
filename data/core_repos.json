@@ -66,6 +66,8 @@
  ],
  "coinop:alpha68k": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "MiSTer-devel/Arcade-Alpha68k_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer",
   "furrtek/Arcade-TMNT_MiSTer",
   "zakk4223/Distribution-MiSTerFPGA"
  ],
@@ -205,6 +207,8 @@
  ],
  "coinop:nextspace": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "MiSTer-devel/Arcade-NextSpace_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer",
   "va7deo/NextSpace",
   "zakk4223/Distribution-MiSTerFPGA"
  ],
@@ -2709,6 +2713,9 @@
  "ongo:djmainsd": [
   "OngoGablogian/MiSTer_Ongo",
   "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA"
+ ],
+ "ongo:double_axle": [
+  "bazset/MiSTer_BAZSET"
  ],
  "ongo:earthjoker_bazset": [
   "bazset/MiSTer_BAZSET"
