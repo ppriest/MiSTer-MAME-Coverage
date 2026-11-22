@@ -1,21 +1,12 @@
 {
  "meta": {
-  "generated": "2026-11-22T13:13:11+00:00",
+  "generated": "2026-11-22T19:33:50+00:00",
   "mame_version": "0289",
   "mame_build": "0.289 (mame0289)",
-  "mister_generated": "2026-11-22T13:12:52+00:00",
+  "mister_generated": "2026-11-22T19:33:21+00:00",
   "alamone_generated": "2026-11-16T11:52:27+00:00",
   "ledger_updated": "2026-11-22",
   "ledger_runs": [
-   {
-    "date": "2026-11-18",
-    "note": "alamone 2026-11-16",
-    "cores": 1,
-    "sets": 13,
-    "pairs": 35,
-    "dates_improved": 0,
-    "cores_removed": 0
-   },
    {
     "date": "2026-11-19",
     "note": "alamone 2026-11-16",
@@ -51,6 +42,15 @@
     "pairs": 9,
     "dates_improved": 1,
     "cores_removed": 0
+   },
+   {
+    "date": "2026-11-22",
+    "note": "alamone 2026-11-16",
+    "cores": 4,
+    "sets": 13,
+    "pairs": 14,
+    "dates_improved": 0,
+    "cores_removed": 0
    }
   ],
   "genre": {
@@ -59,7 +59,7 @@
    "catver": "mame2003plus: Based on CATVER.ini 0.239 / 01-Jan-22 / MAME 0.239 / http://www.progettosnaps.net/catver/ (5491 sets, 5491 used); mame2016: catver_mame2016.ini (37065 sets, 32543 used)",
    "catver_entries": 38034,
    "mad_entries": 2995,
-   "mra_entries": 4625,
+   "mra_entries": 4630,
    "unmapped": [
     {
      "raw": "not classified",
@@ -288,7 +288,7 @@
     "dirs": [
      "mra"
     ],
-    "mras": 1284
+    "mras": 1297
    },
    {
     "source": "coinop",
@@ -2540,7 +2540,7 @@
     "source": "repo",
     "repo": "ppriest/Arcade-Firebeat_MiSTer",
     "dirs": null,
-    "mras": 22
+    "mras": 27
    },
    {
     "source": "repo",
@@ -3938,14 +3938,14 @@
   "counts": {
    "titles": 6827,
    "working_arcade_titles": 3725,
-   "working_arcade_titles_covered": 2653,
+   "working_arcade_titles_covered": 2659,
    "working_arcade_sets": 9981,
-   "working_arcade_sets_covered": 6948,
-   "working_arcade_titles_source": 2429,
-   "working_arcade_titles_binary_only": 224,
-   "cores": 947,
-   "binary_only_cores": 415,
-   "unmatched_sets": 541
+   "working_arcade_sets_covered": 6959,
+   "working_arcade_titles_source": 2434,
+   "working_arcade_titles_binary_only": 225,
+   "cores": 951,
+   "binary_only_cores": 417,
+   "unmatched_sets": 542
   }
  },
  "cores": [
@@ -4797,6 +4797,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-22",
+   "aliases": [],
    "last_seen": "2026-11-22",
    "binary_only": true,
    "nsets": 1,
@@ -5212,6 +5213,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-22",
+   "aliases": [],
    "last_seen": "2026-11-22",
    "binary_only": true,
    "nsets": 1,
@@ -5289,6 +5291,7 @@
    "mame_drivers": [],
    "note": null,
    "first_recorded": "2026-11-22",
+   "aliases": [],
    "last_seen": "2026-11-22",
    "binary_only": true,
    "nsets": 2,
@@ -17413,6 +17416,31 @@
    "first_date": "2021-05-21"
   },
   {
+   "id": "jt:jtmeikyu",
+   "name": "jtmeikyu",
+   "source": "jt",
+   "source_title": "JTCORES (jotego)",
+   "channel": null,
+   "rbf": "jtmeikyu.rbf",
+   "repo": "jotego/jtbin",
+   "url": "https://github.com/jotego/jtbin",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-22",
+   "last_seen": "2026-11-22",
+   "binary_only": true,
+   "nsets": 1,
+   "ntitles": 1,
+   "first_date": "2026-11-15",
+   "drivers_loaded": [
+    "irem/vigilant.cpp"
+   ]
+  },
+  {
    "id": "jt:jtmidres",
    "name": "jtmidres",
    "source": "jt",
@@ -17486,6 +17514,31 @@
    "nsets": 3,
    "ntitles": 1,
    "first_date": "2021-09-03"
+  },
+  {
+   "id": "jt:jtmzone",
+   "name": "jtmzone",
+   "source": "jt",
+   "source_title": "JTCORES (jotego)",
+   "channel": null,
+   "rbf": "jtmzone.rbf",
+   "repo": "jotego/jtbin",
+   "url": "https://github.com/jotego/jtbin",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-22",
+   "last_seen": "2026-11-22",
+   "binary_only": true,
+   "nsets": 6,
+   "ntitles": 1,
+   "first_date": "2026-11-15",
+   "drivers_loaded": [
+    "konami/megazone.cpp"
+   ]
   },
   {
    "id": "jt:jtnarc",
@@ -22266,6 +22319,31 @@
    ]
   },
   {
+   "id": "ppriest:firebeat_bm3",
+   "name": "Firebeat_bm3",
+   "source": "ppriest",
+   "source_title": "ppriest (Tourniquet)",
+   "channel": null,
+   "rbf": "Firebeat_bm3.rbf",
+   "repo": "ppriest/Arcade-Firebeat_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-Firebeat_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-22",
+   "last_seen": "2026-11-22",
+   "binary_only": false,
+   "nsets": 5,
+   "ntitles": 5,
+   "first_date": "2026-11-22",
+   "drivers_loaded": [
+    "konami/firebeat.cpp"
+   ]
+  },
+  {
    "id": "ppriest:firebeat_kbm",
    "name": "Firebeat_kbm",
    "source": "ppriest",
@@ -23173,6 +23251,28 @@
    "note": null,
    "first_recorded": "2026-10-26",
    "aliases": [],
+   "last_seen": "2026-11-22",
+   "binary_only": false,
+   "nsets": 0,
+   "ntitles": 0,
+   "first_date": null
+  },
+  {
+   "id": "repo:firebeatcd",
+   "name": "FirebeatCD",
+   "source": "repo",
+   "source_title": "GitHub repository only",
+   "channel": null,
+   "rbf": "FirebeatCD.rbf",
+   "repo": "ppriest/Arcade-Firebeat_MiSTer",
+   "url": "https://github.com/ppriest/Arcade-Firebeat_MiSTer",
+   "build_date": null,
+   "status": null,
+   "reading": null,
+   "score": null,
+   "mame_drivers": [],
+   "note": null,
+   "first_recorded": "2026-11-22",
    "last_seen": "2026-11-22",
    "binary_only": false,
    "nsets": 0,
@@ -31708,6 +31808,7 @@
    "cores": [
     "bazset:buccaneers",
     "bazset:kickle",
+    "jt:jtmeikyu",
     "jt:jtvigil",
     "ongo:bazset_kickle"
    ],
@@ -32302,10 +32403,11 @@
   {
    "sourcefile": "konami/firebeat.cpp",
    "titles": 19,
-   "covered": 14,
+   "covered": 19,
    "sets": 26,
-   "sets_covered": 21,
+   "sets_covered": 26,
    "cores": [
+    "ppriest:firebeat_bm3",
     "ppriest:firebeat_kbm",
     "ppriest:firebeat_popn",
     "ppriest:firebeat_ppp"
@@ -32610,11 +32712,13 @@
   {
    "sourcefile": "konami/megazone.cpp",
    "titles": 1,
-   "covered": 0,
+   "covered": 1,
    "sets": 6,
-   "sets_covered": 0,
-   "cores": [],
-   "first": null
+   "sets_covered": 6,
+   "cores": [
+    "jt:jtmzone"
+   ],
+   "first": "2026-11-15"
   },
   {
    "sourcefile": "konami/mikie.cpp",
@@ -39831,6 +39935,13 @@
    "set": "ffightae_cps2",
    "cores": [
     "jt:jtcps2"
+   ],
+   "hbmame": false
+  },
+  {
+   "set": "firebeatcd",
+   "cores": [
+    "repo:firebeatcd"
    ],
    "hbmame": false
   },

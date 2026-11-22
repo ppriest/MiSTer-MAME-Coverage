@@ -6,15 +6,6 @@
 {
 "date": "2026-10-24",
 "note": "alamone 2026-10-19",
-"cores": 5,
-"sets": 6,
-"pairs": 13,
-"dates_improved": 0,
-"cores_removed": 0
-},
-{
-"date": "2026-10-24",
-"note": "alamone 2026-10-19",
 "cores": 4,
 "sets": 11,
 "pairs": 12,
@@ -461,6 +452,15 @@
 "pairs": 9,
 "dates_improved": 1,
 "cores_removed": 0
+},
+{
+"date": "2026-11-22",
+"note": "alamone 2026-11-16",
+"cores": 4,
+"sets": 13,
+"pairs": 14,
+"dates_improved": 0,
+"cores_removed": 0
 }
 ]
 },
@@ -711,6 +711,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-22",
+"aliases": [],
 "last_seen": "2026-11-22"
 },
 "bazset:asuka_bazset": {
@@ -1394,6 +1395,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-22",
+"aliases": [],
 "last_seen": "2026-11-22"
 },
 "bazset:ordyne_bazset": {
@@ -1450,6 +1452,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-22",
+"aliases": [],
 "last_seen": "2026-11-22"
 },
 "bazset:rainbowislands_bazset": {
@@ -11201,6 +11204,24 @@
 "aliases": [],
 "last_seen": "2026-11-22"
 },
+"jt:jtmeikyu": {
+"id": "jt:jtmeikyu",
+"name": "jtmeikyu",
+"source": "jt",
+"source_title": "JTCORES (jotego)",
+"channel": null,
+"rbf": "jtmeikyu.rbf",
+"repo": "jotego/jtbin",
+"url": "https://github.com/jotego/jtbin",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-22",
+"last_seen": "2026-11-22"
+},
 "jt:jtmidres": {
 "id": "jt:jtmidres",
 "name": "jtmidres",
@@ -11262,6 +11283,24 @@
 "note": null,
 "first_recorded": "2026-10-04",
 "aliases": [],
+"last_seen": "2026-11-22"
+},
+"jt:jtmzone": {
+"id": "jt:jtmzone",
+"name": "jtmzone",
+"source": "jt",
+"source_title": "JTCORES (jotego)",
+"channel": null,
+"rbf": "jtmzone.rbf",
+"repo": "jotego/jtbin",
+"url": "https://github.com/jotego/jtbin",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-22",
 "last_seen": "2026-11-22"
 },
 "jt:jtnarc": {
@@ -14712,6 +14751,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-22",
+"aliases": [],
 "last_seen": "2026-11-22"
 },
 "ongo:argus": {
@@ -18357,6 +18397,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-22",
+"aliases": [],
 "last_seen": "2026-11-22"
 },
 "ongo:ordyne_bazset": {
@@ -18545,6 +18586,7 @@
 "mame_drivers": [],
 "note": null,
 "first_recorded": "2026-11-22",
+"aliases": [],
 "last_seen": "2026-11-22"
 },
 "ongo:rainbowislands_bazset": {
@@ -19795,6 +19837,24 @@
 "aliases": [],
 "last_seen": "2026-11-22"
 },
+"ppriest:firebeat_bm3": {
+"id": "ppriest:firebeat_bm3",
+"name": "Firebeat_bm3",
+"source": "ppriest",
+"source_title": "ppriest (Tourniquet)",
+"channel": null,
+"rbf": "Firebeat_bm3.rbf",
+"repo": "ppriest/Arcade-Firebeat_MiSTer",
+"url": "https://github.com/ppriest/Arcade-Firebeat_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-22",
+"last_seen": "2026-11-22"
+},
 "ppriest:firebeat_kbm": {
 "id": "ppriest:firebeat_kbm",
 "name": "Firebeat_kbm",
@@ -20447,6 +20507,24 @@
 "note": null,
 "first_recorded": "2026-10-26",
 "aliases": [],
+"last_seen": "2026-11-22"
+},
+"repo:firebeatcd": {
+"id": "repo:firebeatcd",
+"name": "FirebeatCD",
+"source": "repo",
+"source_title": "GitHub repository only",
+"channel": null,
+"rbf": "FirebeatCD.rbf",
+"repo": "ppriest/Arcade-Firebeat_MiSTer",
+"url": "https://github.com/ppriest/Arcade-Firebeat_MiSTer",
+"build_date": null,
+"status": null,
+"reading": null,
+"score": null,
+"mame_drivers": [],
+"note": null,
+"first_recorded": "2026-11-22",
 "last_seen": "2026-11-22"
 },
 "repo:gondomania": {
@@ -39553,6 +39631,81 @@
 "mra": "_Arcade/beatmania 2nd MIX (ver JA-B) [480i].mra",
 "first_recorded": "2026-10-17",
 "last_seen": "2026-10-18"
+}
+},
+"bm3": {
+"ppriest:firebeat_bm3": {
+"core": "ppriest:firebeat_bm3",
+"date": "2026-11-22",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-Firebeat_MiSTer",
+"first_path": "releases/Beatmania III.mra",
+"mra": "_Arcade/Beatmania III.mra",
+"first_recorded": "2026-11-22",
+"last_seen": "2026-11-22"
+}
+},
+"bm36th": {
+"ppriest:firebeat_bm3": {
+"core": "ppriest:firebeat_bm3",
+"date": "2026-11-22",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-Firebeat_MiSTer",
+"first_path": "releases/Beatmania III Append 6th Mix.mra",
+"mra": "_Arcade/Beatmania III Append 6th Mix.mra",
+"first_recorded": "2026-11-22",
+"last_seen": "2026-11-22"
+}
+},
+"bm37th": {
+"ppriest:firebeat_bm3": {
+"core": "ppriest:firebeat_bm3",
+"date": "2026-11-22",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-Firebeat_MiSTer",
+"first_path": "releases/Beatmania III Append 7th Mix.mra",
+"mra": "_Arcade/Beatmania III Append 7th Mix.mra",
+"first_recorded": "2026-11-22",
+"last_seen": "2026-11-22"
+}
+},
+"bm3core": {
+"ppriest:firebeat_bm3": {
+"core": "ppriest:firebeat_bm3",
+"date": "2026-11-22",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-Firebeat_MiSTer",
+"first_path": "releases/Beatmania III Append Core Remix.mra",
+"mra": "_Arcade/Beatmania III Append Core Remix.mra",
+"first_recorded": "2026-11-22",
+"last_seen": "2026-11-22"
+}
+},
+"bm3final": {
+"ppriest:firebeat_bm3": {
+"core": "ppriest:firebeat_bm3",
+"date": "2026-11-22",
+"date_quality": "git",
+"via": "ppriest",
+"wip": false,
+"alt": false,
+"first_repo": "ppriest/Arcade-Firebeat_MiSTer",
+"first_path": "releases/Beatmania III The Final.mra",
+"mra": "_Arcade/Beatmania III The Final.mra",
+"first_recorded": "2026-11-22",
+"last_seen": "2026-11-22"
 }
 },
 "bm3rdmix": {
@@ -69316,6 +69469,21 @@
 "mra": "_Arcade/_alternatives/_Air Assault/Fire Barrel (Japan).mra"
 }
 },
+"firebeatcd": {
+"repo:firebeatcd": {
+"core": "repo:firebeatcd",
+"date": "2026-11-22",
+"date_quality": "git",
+"via": "repo",
+"wip": true,
+"alt": false,
+"first_repo": "ppriest/Arcade-Firebeat_MiSTer",
+"first_path": "releases/_dev/Firebeat CD path test.mra",
+"mra": "_Arcade/Firebeat CD path test.mra",
+"first_recorded": "2026-11-22",
+"last_seen": "2026-11-22"
+}
+},
 "firehawk": {
 "kuze:nmk16_afega": {
 "core": "kuze:nmk16_afega",
@@ -94869,6 +95037,19 @@
 "first_recorded": "2026-10-13",
 "last_seen": "2026-11-22"
 },
+"jt:jtmeikyu": {
+"core": "jt:jtmeikyu",
+"date": "2026-11-15",
+"date_quality": "git",
+"via": "jt",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/Meikyu Jima (Japan).mra",
+"mra": "_Arcade/Meikyu Jima (Japan).mra",
+"first_recorded": "2026-11-22",
+"last_seen": "2026-11-22"
+},
 "ongo:bazset_kickle": {
 "core": "ongo:bazset_kickle",
 "date": "2026-10-12",
@@ -105084,6 +105265,96 @@
 "first_recorded": "2026-10-04",
 "last_seen": "2026-11-22",
 "mra": "_Arcade/Mega Phoenix (FF, Dinamic-Inder, 1991).mra"
+}
+},
+"megazone": {
+"jt:jtmzone": {
+"core": "jt:jtmzone",
+"date": "2026-11-15",
+"date_quality": "git",
+"via": "jt",
+"wip": false,
+"alt": false,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/Mega Zone (program code L).mra",
+"mra": "_Arcade/Mega Zone (program code L).mra",
+"first_recorded": "2026-11-22",
+"last_seen": "2026-11-22"
+}
+},
+"megazonea": {
+"jt:jtmzone": {
+"core": "jt:jtmzone",
+"date": "2026-11-15",
+"date_quality": "git",
+"via": "jt",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/_alternatives/_Mega Zone/Mega Zone (unknown program code 1).mra",
+"mra": "_Arcade/Mega Zone (unknown program code 1).mra",
+"first_recorded": "2026-11-22",
+"last_seen": "2026-11-22"
+}
+},
+"megazoneb": {
+"jt:jtmzone": {
+"core": "jt:jtmzone",
+"date": "2026-11-15",
+"date_quality": "git",
+"via": "jt",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/_alternatives/_Mega Zone/Mega Zone (unknown program code 2).mra",
+"mra": "_Arcade/Mega Zone (unknown program code 2).mra",
+"first_recorded": "2026-11-22",
+"last_seen": "2026-11-22"
+}
+},
+"megazoneh": {
+"jt:jtmzone": {
+"core": "jt:jtmzone",
+"date": "2026-11-15",
+"date_quality": "git",
+"via": "jt",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/_alternatives/_Mega Zone/Mega Zone (program code H).mra",
+"mra": "_Arcade/Mega Zone (program code H).mra",
+"first_recorded": "2026-11-22",
+"last_seen": "2026-11-22"
+}
+},
+"megazonei": {
+"jt:jtmzone": {
+"core": "jt:jtmzone",
+"date": "2026-11-15",
+"date_quality": "git",
+"via": "jt",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/_alternatives/_Mega Zone/Mega Zone (program code I).mra",
+"mra": "_Arcade/Mega Zone (program code I).mra",
+"first_recorded": "2026-11-22",
+"last_seen": "2026-11-22"
+}
+},
+"megazonej": {
+"jt:jtmzone": {
+"core": "jt:jtmzone",
+"date": "2026-11-15",
+"date_quality": "git",
+"via": "jt",
+"wip": false,
+"alt": true,
+"first_repo": "jotego/jtbin",
+"first_path": "mra/_alternatives/_Mega Zone/Mega Zone (program code J).mra",
+"mra": "_Arcade/Mega Zone (program code J).mra",
+"first_recorded": "2026-11-22",
+"last_seen": "2026-11-22"
 }
 },
 "megrescu": {
@@ -116060,7 +116331,7 @@
 "alt": false,
 "first_repo": "blahm1d/MiSTer-cores",
 "first_path": "_Arcade/_blahm1d/NARC/Narc (rev 7.00).mra",
-"mra": "_Arcade/Narc (rev 7.00).mra",
+"mra": "_Arcade/Narc (15kHz) (rev 7.00).mra",
 "first_recorded": "2026-10-25",
 "last_seen": "2026-11-22"
 },
@@ -197347,6 +197618,26 @@
 "kyle": "Music / Rhythm",
 "ongo": "Music / Rhythm",
 "repo": "Music / Rhythm"
+},
+"bm3": {
+"repo": "Rhythm",
+"ppriest": "Rhythm"
+},
+"bm36th": {
+"repo": "Rhythm",
+"ppriest": "Rhythm"
+},
+"bm37th": {
+"repo": "Rhythm",
+"ppriest": "Rhythm"
+},
+"bm3core": {
+"repo": "Rhythm",
+"ppriest": "Rhythm"
+},
+"bm3final": {
+"repo": "Rhythm",
+"ppriest": "Rhythm"
 },
 "bm3rdmix": {
 "kyle": "Music / Rhythm",

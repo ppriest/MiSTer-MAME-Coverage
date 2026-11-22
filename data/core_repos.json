@@ -1892,6 +1892,9 @@
  "jt:jtlabrun": [
   "jotego/jtbin"
  ],
+ "jt:jtmeikyu": [
+  "jotego/jtbin"
+ ],
  "jt:jtmidres": [
   "jotego/jtbin"
  ],
@@ -1899,6 +1902,9 @@
   "jotego/jtbin"
  ],
  "jt:jtmx5k": [
+  "jotego/jtbin"
+ ],
+ "jt:jtmzone": [
   "jotego/jtbin"
  ],
  "jt:jtnarc": [
@@ -3391,6 +3397,9 @@
  "repo:firebeat": [
   "ppriest/Arcade-Firebeat_MiSTer"
  ],
+ "repo:firebeat_bm3": [
+  "ppriest/Arcade-Firebeat_MiSTer"
+ ],
  "repo:firebeat_kbm": [
   "ppriest/Arcade-Firebeat_MiSTer"
  ],
@@ -3398,6 +3407,9 @@
   "ppriest/Arcade-Firebeat_MiSTer"
  ],
  "repo:firebeat_ppp": [
+  "ppriest/Arcade-Firebeat_MiSTer"
+ ],
+ "repo:firebeatcd": [
   "ppriest/Arcade-Firebeat_MiSTer"
  ],
  "repo:firetrap": [
