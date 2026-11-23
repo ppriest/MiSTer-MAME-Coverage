@@ -1,6 +1,6 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-11-22 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
+Generated 2026-11-23 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
 
 **Agreement:** 308 of 310 deck titles are Shmup in our data (99.4%).
 
@@ -123,7 +123,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `silvmil` | Silver Millennium | 1995 | Shooter / Flying Vertical (catver) | silvmil (decoryah) |
 | `skyalert` | Sky Alert | 1992 | Shooter / Flying Vertical (catver) | metro, metro (decoryah) |
 | `skyskipr` | Sky Skipper | 1981 | Shooter / Flying (catver) | Popeye, jtpopeye, Nintendo, Nintendo_TestBuild (RodimusFVC) |
-| `amazon` | Soldier Girl Amazon | 1986 | Shooter / Walking (catver) | terracresta |
+| `amazon` | Soldier Girl Amazon | 1986 | Shooter / Walking (catver) | terracresta, TerraCrestaMD |
 | `ar_sprg` | Space Ranger (Arcadia, V 2.0) | 1987 | Shooter / Flying Horizontal (catver) | arcadiasystems (decoryah) |
 | `stargate` | Stargate | 1981 | Shooter / Flying (catver) | Robotron, Williams_TestBuild (RodimusFVC) |
 | `stinger` | Stinger | 1983 | Shooter / Flying Horizontal (catver) | Stinger |
@@ -138,7 +138,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `thndzone` | Thunder Zone (World, Rev 1) | 1991 | Shooter / Walking (catver) | thndzone |
 | `thunderj` | ThunderJaws (rev 3) | 1990 | Shooter / Misc. Horizontal (catver) | ThunderJaws |
 | `timefgtr` | Time Fighter (Time Pilot conversion on Galaxian hardware) | 198? | Shooter / Flying (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
-| `timesold` | Time Soldiers (US Rev 3) | 1987 | Shooter / Walking (catver) | Alpha68k, TimeSoldiersTwinStick, Alpha68k (va7deo) |
+| `timesold` | Time Soldiers (US Rev 3) | 1987 | Shooter / Walking (catver) | Alpha68k, Alpha68kMD, TimeSoldiersTwinStick, Alpha68k (va7deo) |
 | `tokisens` | Toki no Senshi - Chrono Soldier (MC-8123, 317-0040) | 1987 | Shooter / Walking (catver) | SegaSystem1-2, SegaSystem1-2_TestBuild (RodimusFVC) |
 | `totcarn` | Total Carnage (rev LA1 03/10/92) | 1992 | Shooter / Walking (catver) | blahm1d_yunitadpcm, Midway-Y-Unit |
 | `tricktrp` | Trick Trap (World?) | 1987 | Shooter / Walking (catver) | jtlabrun |

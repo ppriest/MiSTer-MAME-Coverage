@@ -69,6 +69,7 @@
   "MiSTer-devel/Arcade-Alpha68k_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
   "furrtek/Arcade-TMNT_MiSTer",
+  "va7deo/alpha68k",
   "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:armedf": [
@@ -182,6 +183,7 @@
  ],
  "coinop:megasys1_a": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "va7deo/MegaSys1_A",
   "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:mercs": [
@@ -458,6 +460,9 @@
  "decoryah:polygonet": [
   "decoryah/Arcade-Polygonet_MiSTer"
  ],
+ "decoryah:polygonet_20261121d": [
+  "decoryah/Arcade-Polygonet_MiSTer"
+ ],
  "decoryah:rabbit": [
   "decoryah/Arcade-Rabbit_MiSTer"
  ],
@@ -485,8 +490,15 @@
  "decoryah:tecmosys": [
   "decoryah/Arcade-TecmoSystem_MiSTer"
  ],
+ "decoryah:tecmosys_20261121d": [
+  "decoryah/Arcade-TecmoSystem_MiSTer"
+ ],
  "decoryah:violentstorm": [
   "decoryah/Arcade-ViolentStorm_MiSTer"
+ ],
+ "dist:10yardfight": [
+  "MiSTer-devel/Arcade-10YardFight_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer"
  ],
  "dist:actfancer": [
   "MiSTer-devel/Arcade-ActFancer_MISTer",
@@ -496,6 +508,10 @@
  "dist:aleck64": [
   "MiSTer-devel/Distribution_MiSTer",
   "MiSTer-devel/MRA-Alternatives_MiSTer"
+ ],
+ "dist:alpha68kmd": [
+  "MiSTer-devel/Arcade-Alpha68k_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer"
  ],
  "dist:arabian": [
   "MiSTer-devel/Arcade-Arabian_MiSTer",
@@ -1091,6 +1107,10 @@
  "dist:neogeo": [
   "MiSTer-devel/NeoGeo_MiSTer"
  ],
+ "dist:nextspacemd": [
+  "MiSTer-devel/Arcade-NextSpace_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer"
+ ],
  "dist:nightslashers": [
   "MiSTer-devel/Arcade-NightSlashers_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
@@ -1456,6 +1476,10 @@
   "MiSTer-devel/Arcade-Tempest_MiSTer",
   "MiSTer-devel/Distribution_MiSTer"
  ],
+ "dist:terracrestamd": [
+  "MiSTer-devel/Arcade-TerraCresta_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer"
+ ],
  "dist:tiamc1": [
   "MiSTer-devel/Arcade-TIAMC1_MiSTer",
   "MiSTer-devel/Distribution_MiSTer"
@@ -1660,6 +1684,10 @@
   "jlrh/jlrh-misterfpga-db",
   "jlrh/konami-fpga"
  ],
+ "jlrh:ffjetwavesd": [
+  "jlrh/jlrh-misterfpga-db",
+  "jlrh/konami-fpga"
+ ],
  "jlrh:ffkonamigt": [
   "jlrh/jlrh-misterfpga-db",
   "jlrh/konami-fpga"
@@ -1673,9 +1701,11 @@
   "jlrh/jlrh-misterfpga-db"
  ],
  "jlrh:ffmidnrun": [
+  "jlrh/jlrh-misterfpga-db",
   "jlrh/konami-fpga"
  ],
  "jlrh:ffmidnrunsd": [
+  "jlrh/jlrh-misterfpga-db",
   "jlrh/konami-fpga"
  ],
  "jlrh:ffmoomesa": [
@@ -2319,6 +2349,9 @@
  "meat:forgottenworldstwinstick": [
   "meathax/meatcores"
  ],
+ "meat:galacticstorm": [
+  "meathax/meatcores"
+ ],
  "meat:hangzo": [
   "OngoGablogian/MiSTer_Ongo",
   "meathax/meatcores"
@@ -2495,6 +2528,9 @@
   "meathax/meatcores"
  ],
  "ongo:airbuster": [
+  "meathax/meatcores"
+ ],
+ "ongo:alpha68kn": [
   "meathax/meatcores"
  ],
  "ongo:apache3": [
@@ -2915,6 +2951,9 @@
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_airbuster": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:meathax_alpha68kn": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:meathax_apache3": [
@@ -3367,6 +3406,7 @@
  ],
  "repo:djmain": [
   "OngoGablogian/MiSTer_Ongo",
+  "dj6502/DJMain-MiSTer",
   "kyledlester/Konami_Bemani_DJ-Main_MiSTer_FPGA"
  ],
  "repo:djmainsd": [
@@ -3481,7 +3521,8 @@
  "repo:kaneko16": [
   "OngoGablogian/MiSTer_Ongo",
   "alphanu1/kaneko16-mister",
-  "kyledlester/kaneko16-mister"
+  "kyledlester/kaneko16-mister",
+  "maurodvilarino/kaneko-16-crt"
  ],
  "repo:kikikaikai": [
   "alpuy/Arcade-Kikikaikai_MiSTer"
@@ -3828,6 +3869,9 @@
  "repo:vamphalf": [
   "OngoGablogian/MiSTer_Ongo",
   "ppriest/Arcade-Vamphalf_MiSTer"
+ ],
+ "repo:vastar": [
+  "cizar-szymon/Amiga_Game_VASTAR"
  ],
  "repo:vimana": [
   "va7deo/vimana"
