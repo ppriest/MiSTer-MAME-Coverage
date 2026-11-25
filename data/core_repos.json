@@ -1378,6 +1378,9 @@
   "MiSTer-devel/Arcade-Sonson_MiSTer",
   "MiSTer-devel/Distribution_MiSTer"
  ],
+ "dist:spaceduel": [
+  "Videodr0me/Arcade-SpaceDuel_MiSTer"
+ ],
  "dist:spacefirebird": [
   "MiSTer-devel/Arcade-SpaceFirebird_MiSTer",
   "MiSTer-devel/Distribution_MiSTer"
@@ -3193,6 +3196,9 @@
  "ongo:sorcerstriker": [
   "TheJesusFish/Slop-Core"
  ],
+ "ongo:space_gun": [
+  "bazset/MiSTer_BAZSET"
+ ],
  "ongo:spinalbreakers": [
   "meathax/meatcores"
  ],
@@ -3615,6 +3621,9 @@
  ],
  "repo:model2a_20261024b": [
   "OngoGablogian/MiSTer_Ongo",
+  "alphanu1/sega-model2-mister"
+ ],
+ "repo:model2b": [
   "alphanu1/sega-model2-mister"
  ],
  "repo:model2c": [

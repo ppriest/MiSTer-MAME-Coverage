@@ -1,6 +1,6 @@
 # Shmup genre vs shmup-deck
 
-Generated 2026-11-24 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
+Generated 2026-11-25 by `tools/reconcile_shmups.py` from MAME 0289 data and [shmup-deck](https://github.com/shmupfan/shmup-deck)'s `games.json` (318 games).
 
 **Agreement:** 308 of 310 deck titles are Shmup in our data (99.4%).
 
@@ -102,7 +102,7 @@ Candidates for the deck, or games our map wrongly calls Shmup. Cores are the MiS
 | `opaopa` | Opa Opa (MC-8123, 317-0042) | 1987 | Shooter / Flying Horizontal (catver) | SMS |
 | `orbitron` | Orbitron | 1982 | Shooter / Command (catver) | Galaxian, Galaxian_TestBuild (RodimusFVC) |
 | `phantom2` | Phantom II | 1979 | Shooter / Flying Vertical (catver) | SpaceInvaders, SpaceInvaders_TestBuild (RodimusFVC) |
-| `pltkids` | Pilot Kids (Model 2B, Revision A) | 1998 | Shooter / Flying Horizontal (catver) | Model2A (alphanu1), Model2A (alphanu1) |
+| `pltkids` | Pilot Kids (Model 2B, Revision A) | 1998 | Shooter / Flying Horizontal (catver) | Model2A (alphanu1), Model2A (alphanu1), Model2B |
 | `pballoon` | Pioneer Balloon | 1982 | Shooter / Flying Horizontal (catver) | SNK6502 |
 | `porky` | Porky | 1985 | Shooter / Driving Horizontal (catver) | Pacman |
 | `rabiolep` | Rabio Lepus (Japan) | 1987 | Shooter / Flying Horizontal (catver) | RabbitPunch (mlc4050) |
