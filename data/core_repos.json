@@ -261,6 +261,8 @@
  ],
  "coinop:snk68": [
   "Coin-OpCollection/Distribution-MiSTerFPGA",
+  "MiSTer-devel/Arcade-SNK68_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer",
   "zakk4223/Distribution-MiSTerFPGA"
  ],
  "coinop:snowbro2": [
@@ -1189,6 +1191,10 @@
   "MiSTer-devel/Arcade-Popeye_MiSTer",
   "MiSTer-devel/Distribution_MiSTer",
   "zakk4223/Mister-MRA"
+ ],
+ "dist:prehistoricislemd": [
+  "MiSTer-devel/Arcade-PrehistoricIsle_MiSTer",
+  "MiSTer-devel/Distribution_MiSTer"
  ],
  "dist:primalrage": [
   "MiSTer-devel/Arcade-PrimalRage_MiSTer",
@@ -3053,6 +3059,9 @@
   "Gm0rk/Arcade-Midway-T-Unit_MiSTer",
   "Gm0rk/Gm0rkCores"
  ],
+ "ongo:midway-wolf-unit": [
+  "Gm0rk/Gm0rkCores"
+ ],
  "ongo:midway-y-unit": [
   "Gm0rk/Arcade-Midway-Y-Unit_MiSTer",
   "Gm0rk/Gm0rkCores"
@@ -3072,6 +3081,9 @@
   "alphanu1/sega-model2-mister"
  ],
  "ongo:model2a": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
+ "ongo:model2b": [
   "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:model2c": [
