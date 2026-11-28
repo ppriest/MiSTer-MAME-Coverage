@@ -1593,6 +1593,7 @@
   "zakk4223/Mister-MRA"
  ],
  "djb:racedrivin_cockpit": [
+  "OngoGablogian/MiSTer_Ongo",
   "djb-rh/Arcade-RaceDrivin_MiSTer"
  ],
  "djb:racedrivin_compact": [
@@ -3147,6 +3148,9 @@
  "ongo:pwb351024a": [
   "meathax/meatcores"
  ],
+ "ongo:racedrivin_compact": [
+  "OngoGablogian/MiSTer_Ongo"
+ ],
  "ongo:rainbow_islands_b02": [
   "bazset/MiSTer_BAZSET"
  ],
@@ -3225,6 +3229,9 @@
  ],
  "ongo:suck_my_bouncing_balls": [
   "bazset/MiSTer_BAZSET"
+ ],
+ "ongo:suna16": [
+  "OngoGablogian/MiSTer_Ongo"
  ],
  "ongo:superdodgeball": [
   "OngoGablogian/MiSTer_Ongo"
