@@ -595,7 +595,8 @@ def sync_repo(full: str, dirs: list[str] | None = None, fetch_existing: bool = T
 
 
 def ls_files(d: str) -> list[str]:
-    return git("ls-tree", "-r", "--name-only", "HEAD", cwd=d).stdout.splitlines()
+    """Paths at HEAD; none for a repository without commits (a new, still empty one has no HEAD: "Not a valid object name HEAD")."""
+    return git("ls-tree", "-r", "--name-only", "HEAD", cwd=d, check=False).stdout.splitlines()
 
 
 def mra_history(d: str, dirs: list[str] | None = None) -> list[tuple[str, str, str]]:
